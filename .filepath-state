@@ -227,6 +227,9 @@
   "86e262854fc39a32a634a961141af97326944359": [
     "virtualization\\windowscontainers\\management\\manage_resources.md"
   ],
+  "2dc4275e8ca76cb14938cd4b6e6d98e8a0ce9a85": [
+    "virtualization\\windowscontainers\\quick_start\\azure_setup.md"
+  ],
   "44c73a3f1487c6d403bcd27fd4d51292304891d7": [
     "virtualization\\windowscontainers\\quick_start\\azure_setup.md"
   ],
@@ -248,11 +251,20 @@
   "ac6168b0f3d4e8b2044dd10d1dba101e2290f1d8": [
     "virtualization\\windowscontainers\\quick_start\\media\\newazure7.png"
   ],
+  "29785adeb2bae751806ce5202e193ed5e79b813d": [
+    "virtualization\\windowscontainers\\quick_start\\container_setup.md"
+  ],
   "aea8d7f91f129a6ca3318bb0de18e3534c334d49": [
     "virtualization\\windowscontainers\\quick_start\\container_setup.md"
   ],
+  "13c6415abbcceba3093a7df9522c5b6f6c92a0ed": [
+    "virtualization\\windowscontainers\\quick_start\\inplace_setup.md"
+  ],
   "ace4fb5e5d09d4ce9b2b96d92d8d47e367894256": [
     "virtualization\\windowscontainers\\quick_start\\inplace_setup.md"
+  ],
+  "c4c950b59b09baf5036a380bc5d5a61df3325bf7": [
+    "virtualization\\windowscontainers\\quick_start\\manage_docker.md"
   ],
   "7dbbbf6be904ef72f88e3babf23d3ccb69729c32": [
     "virtualization\\windowscontainers\\quick_start\\manage_docker.md"
@@ -265,6 +277,9 @@
   ],
   "24a79a8377a34797a7b590421167fc4e5f843e60": [
     "virtualization\\windowscontainers\\quick_start\\media\\dockerfile2.png"
+  ],
+  "9e52289a11ac8165fc68edf6f65992b0207a3e58": [
+    "virtualization\\windowscontainers\\quick_start\\manage_powershell.md"
   ],
   "7a435b402887b16a9dbb2a26eac7474952466711": [
     "virtualization\\windowscontainers\\quick_start\\manage_powershell.md"
