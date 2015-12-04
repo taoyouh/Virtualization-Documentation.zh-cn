@@ -1,7 +1,7 @@
 # <a name='report-top'></a> Localization Handback Report
 
 ## Summary
- Total Files | 261
+ Total Files | 262
 
 ## File List
  Source File | Status | Details 
@@ -63,6 +63,7 @@
  [TODO.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/38e40fc004ec64851a0520575139936eed7b331e/TODO.md) | Ignored | [Details](#5ea94825845d248743af1d792b3ae91660ff096654)
  [Tools\NuGet\Nuget.Config](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/38e40fc004ec64851a0520575139936eed7b331e/Tools/NuGet/Nuget.Config) | Ignored | [Details](#37d5a2d0c8a81313cf7e92800e699f2f86a9f9f955)
  [Tools\NuGet\nuget.exe](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/38e40fc004ec64851a0520575139936eed7b331e/Tools/NuGet/nuget.exe) | Ignored | [Details](#7469c905e04001f8250137d2da57bbc7bec2d35856)
+ [virtualization\community\contribute_to_docs.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/38e40fc004ec64851a0520575139936eed7b331e/virtualization/community/contribute_to_docs.md) | Ignored | [Details](#0898f47e513977c7bb5d130bbe961a7d3fc08dec58)
  [virtualization\community\docfx.json](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/38e40fc004ec64851a0520575139936eed7b331e/virtualization/community/docfx.json) | Ignored | [Details](#63821ccd19e5a21742458bf42a0a1eea46969adf59)
  [virtualization\hyperv_on_windows\about\media\ProductionCheckpoints.png](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/38e40fc004ec64851a0520575139936eed7b331e/virtualization/hyperv_on_windows/about/media/ProductionCheckpoints.png) | Ignored | [Details](#00f8d7cfb9fbdf0f9d67f239aff5575dcdaaaed065)
  [virtualization\hyperv_on_windows\about\media\StandardCheckpoints.png](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/38e40fc004ec64851a0520575139936eed7b331e/virtualization/hyperv_on_windows/about/media/StandardCheckpoints.png) | Ignored | [Details](#907679edd04736394d4e796f706436d114baec4f66)
@@ -830,6 +831,16 @@
 * [Back to Top](#report-top)
 
 ##### <a name='7469c905e04001f8250137d2da57bbc7bec2d35856'></a> Source: [Tools\NuGet\nuget.exe](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/38e40fc004ec64851a0520575139936eed7b331e/Tools/NuGet/nuget.exe)
+* Status: Ignored
+* Target File: 
+* Handoff File: 
+* Handoff Datetime: 0001-01-01 00:00:00
+* Handoff Reason: Ignored
+* Handback File: 
+* Handback Datetime: 0001-01-01 00:00:00
+* [Back to Top](#report-top)
+
+##### <a name='0898f47e513977c7bb5d130bbe961a7d3fc08dec58'></a> Source: [virtualization\community\contribute_to_docs.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/38e40fc004ec64851a0520575139936eed7b331e/virtualization/community/contribute_to_docs.md)
 * Status: Ignored
 * Target File: 
 * Handoff File: 

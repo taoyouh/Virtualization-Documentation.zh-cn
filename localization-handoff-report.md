@@ -1,25 +1,14 @@
 # <a name='report-top'></a> Localization Handoff Report
 
 ## Summary
- Total Files | 2
+ Total Files | 1
 
 ## File List
  Source File | Status | Details 
  ----------- | ------ | ------- 
- [virtualization\community\contribute_to_docs.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/38e40fc004ec64851a0520575139936eed7b331e/virtualization/community/contribute_to_docs.md) | HandedOff | [Details](#2af02fc3245cd9adfb1478494d65dd8f245da7a358)
  [virtualization\hyperv_on_windows\user_guide\vmsession.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/38e40fc004ec64851a0520575139936eed7b331e/virtualization/hyperv_on_windows/user_guide/vmsession.md) | HandedOff | [Details](#436e5d14aced41f8066ac5b9379e85e377cc2468178)
 
 ## Item Details
-##### <a name='2af02fc3245cd9adfb1478494d65dd8f245da7a358'></a> Source: [virtualization\community\contribute_to_docs.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/38e40fc004ec64851a0520575139936eed7b331e/virtualization/community/contribute_to_docs.md)
-* Status: HandedOff
-* Target File: 
-* Handoff File: [contribute_to_docs.d73574c30ea237d679cf11495f670244e941fb1d.zh-cn.xlf](https://github.com/Microsoft/Virtualization-Documentation-Private.handoff/blob/3fe9ffa66e1e817310da5977e79b8ac97ed88716/ol-handoff/Microsoft/Virtualization-Documentation-Private.zh-cn/live/contribute_to_docs.d73574c30ea237d679cf11495f670244e941fb1d.zh-cn.xlf)
-* Handoff Datetime: 2015-12-04 18:45:06
-* Handoff Reason: Include
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* [Back to Top](#report-top)
-
 ##### <a name='436e5d14aced41f8066ac5b9379e85e377cc2468178'></a> Source: [virtualization\hyperv_on_windows\user_guide\vmsession.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/38e40fc004ec64851a0520575139936eed7b331e/virtualization/hyperv_on_windows/user_guide/vmsession.md)
 * Status: HandedOff
 * Target File: 

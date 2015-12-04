@@ -4,16 +4,15 @@
  Property | Value 
  -------- | ----- 
  Total Files | 360
-[ Handoff Files ](#handoff-list)| 99
+[ Handoff Files ](#handoff-list)| 98
 [ Partial Handback Files ](#partial-handback-list)| 0
 [ Full Handback Files ](#full-handback-list)| 0
-[ Ignored Files ](#ignored-list)| 261
+[ Ignored Files ](#ignored-list)| 262
 
 ## <a name='handoff-list'></a> Handoff File List
  Source File | Status | Details 
  ----------- | ------ | ------- 
  [virtualization\community\community_overview.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/beb2ff361edf5d86391458d4e37c8cef9fc6d1ae/virtualization/community/community_overview.md) | HandedOff | [Details](#5090f6d60b5cbdce0990242d795d9e4e3736e79157)
- [virtualization\community\contribute_to_docs.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/38e40fc004ec64851a0520575139936eed7b331e/virtualization/community/contribute_to_docs.md) | HandedOff | [Details](#2af02fc3245cd9adfb1478494d65dd8f245da7a358)
  [virtualization\community\media\editDoc.png](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/3159040b68e16ad8fd1c001ef5d195d40f1dea7c/virtualization/community/media/editDoc.png) | HandedOff | [Details](#462549855f0dc3ac092960bf1709fb01c3a02b3a60)
  [virtualization\community\media\GitHubEdit.png](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/3159040b68e16ad8fd1c001ef5d195d40f1dea7c/virtualization/community/media/GitHubEdit.png) | HandedOff | [Details](#85d871f168742e3e1fcb2d260e42863b96c3f1f961)
  [virtualization\community\media\GitHubView.png](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/3159040b68e16ad8fd1c001ef5d195d40f1dea7c/virtualization/community/media/GitHubView.png) | HandedOff | [Details](#065cffd9e2e4355f0c575a80c81537e77ee7a10a62)
@@ -176,6 +175,7 @@
  [TODO.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/38e40fc004ec64851a0520575139936eed7b331e/TODO.md) | Ignored | [Details](#5ea94825845d248743af1d792b3ae91660ff096654)
  [Tools\NuGet\Nuget.Config](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/38e40fc004ec64851a0520575139936eed7b331e/Tools/NuGet/Nuget.Config) | Ignored | [Details](#37d5a2d0c8a81313cf7e92800e699f2f86a9f9f955)
  [Tools\NuGet\nuget.exe](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/38e40fc004ec64851a0520575139936eed7b331e/Tools/NuGet/nuget.exe) | Ignored | [Details](#7469c905e04001f8250137d2da57bbc7bec2d35856)
+ [virtualization\community\contribute_to_docs.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/38e40fc004ec64851a0520575139936eed7b331e/virtualization/community/contribute_to_docs.md) | Ignored | [Details](#0898f47e513977c7bb5d130bbe961a7d3fc08dec58)
  [virtualization\community\docfx.json](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/38e40fc004ec64851a0520575139936eed7b331e/virtualization/community/docfx.json) | Ignored | [Details](#63821ccd19e5a21742458bf42a0a1eea46969adf59)
  [virtualization\hyperv_on_windows\about\media\ProductionCheckpoints.png](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/38e40fc004ec64851a0520575139936eed7b331e/virtualization/hyperv_on_windows/about/media/ProductionCheckpoints.png) | Ignored | [Details](#00f8d7cfb9fbdf0f9d67f239aff5575dcdaaaed065)
  [virtualization\hyperv_on_windows\about\media\StandardCheckpoints.png](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/38e40fc004ec64851a0520575139936eed7b331e/virtualization/hyperv_on_windows/about/media/StandardCheckpoints.png) | Ignored | [Details](#907679edd04736394d4e796f706436d114baec4f66)
@@ -962,12 +962,12 @@
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='2af02fc3245cd9adfb1478494d65dd8f245da7a358'></a> Source: [virtualization\community\contribute_to_docs.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/38e40fc004ec64851a0520575139936eed7b331e/virtualization/community/contribute_to_docs.md)
-* Status: HandedOff
+##### <a name='0898f47e513977c7bb5d130bbe961a7d3fc08dec58'></a> Source: [virtualization\community\contribute_to_docs.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/38e40fc004ec64851a0520575139936eed7b331e/virtualization/community/contribute_to_docs.md)
+* Status: Ignored
 * Target File: 
-* Handoff File: [contribute_to_docs.d73574c30ea237d679cf11495f670244e941fb1d.zh-cn.xlf](https://github.com/Microsoft/Virtualization-Documentation-Private.handoff/blob/3fe9ffa66e1e817310da5977e79b8ac97ed88716/ol-handoff/Microsoft/Virtualization-Documentation-Private.zh-cn/live/contribute_to_docs.d73574c30ea237d679cf11495f670244e941fb1d.zh-cn.xlf)
-* Handoff Datetime: 2015-12-04 18:45:06
-* Handoff Reason: Include
+* Handoff File: 
+* Handoff Datetime: 0001-01-01 00:00:00
+* Handoff Reason: Ignored
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
