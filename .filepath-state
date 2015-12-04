@@ -155,6 +155,9 @@
   "0699418429f113abee439384e0acf7450a8610b5": [
     "virtualization\\hyperv_on_windows\\user_guide\\user_guide_nav.md"
   ],
+  "436e5d14aced41f8066ac5b9379e85e377cc2468": [
+    "virtualization\\hyperv_on_windows\\user_guide\\vmsession.md"
+  ],
   "30f3757e0ee4385a8b0dee7053c35c9b62a2127b": [
     "virtualization\\hyperv_on_windows\\user_guide\\vmsession.md"
   ],
@@ -301,6 +304,9 @@
   ],
   "35a1884ef10c6b2efd5a3c5e60a550738187bb38": [
     "virtualization\\windowscontainers\\TOC.md"
+  ],
+  "2af02fc3245cd9adfb1478494d65dd8f245da7a3": [
+    "virtualization\\community\\contribute_to_docs.md"
   ],
   "0b443bc817963a134b1c11977b88ea0698ee80a4": [
     "virtualization\\community\\contribute_to_docs.md"
