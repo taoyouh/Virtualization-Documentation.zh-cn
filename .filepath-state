@@ -2,6 +2,9 @@
   "5090f6d60b5cbdce0990242d795d9e4e3736e791": [
     "virtualization\\community\\community_overview.md"
   ],
+  "a784d37b2419ca37ea9add2d919a80297e929acb": [
+    "virtualization\\community\\TOC.md"
+  ],
   "f9aaabe28f8a72e58825d4a26e7379ad20543ef5": [
     "virtualization\\community\\TOC.md"
   ],
@@ -295,5 +298,11 @@
   ],
   "35a1884ef10c6b2efd5a3c5e60a550738187bb38": [
     "virtualization\\windowscontainers\\TOC.md"
+  ],
+  "00c4ba77dd38943689459271e9344cc74ef3c4ab": [
+    "virtualization\\community\\contribute_to_docs.md"
+  ],
+  "8ce658930fa961b8c29b394a25a23c23c2217774": [
+    "virtualization\\community\\media\\editDoc.png"
   ]
 }
