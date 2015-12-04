@@ -2,6 +2,9 @@
   "5090f6d60b5cbdce0990242d795d9e4e3736e791": [
     "virtualization\\community\\community_overview.md"
   ],
+  "24a1d42fcc8316abe4da25996c694d16cc8695e4": [
+    "virtualization\\community\\TOC.md"
+  ],
   "a784d37b2419ca37ea9add2d919a80297e929acb": [
     "virtualization\\community\\TOC.md"
   ],
@@ -299,10 +302,22 @@
   "35a1884ef10c6b2efd5a3c5e60a550738187bb38": [
     "virtualization\\windowscontainers\\TOC.md"
   ],
+  "0b443bc817963a134b1c11977b88ea0698ee80a4": [
+    "virtualization\\community\\contribute_to_docs.md"
+  ],
   "00c4ba77dd38943689459271e9344cc74ef3c4ab": [
     "virtualization\\community\\contribute_to_docs.md"
   ],
+  "462549855f0dc3ac092960bf1709fb01c3a02b3a": [
+    "virtualization\\community\\media\\editDoc.png"
+  ],
   "8ce658930fa961b8c29b394a25a23c23c2217774": [
     "virtualization\\community\\media\\editDoc.png"
+  ],
+  "065cffd9e2e4355f0c575a80c81537e77ee7a10a": [
+    "virtualization\\community\\media\\GitHubView.png"
+  ],
+  "85d871f168742e3e1fcb2d260e42863b96c3f1f9": [
+    "virtualization\\community\\media\\GitHubEdit.png"
   ]
 }
