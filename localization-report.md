@@ -169,7 +169,7 @@
  [hyperv-tools\Convert-WindowsImage\Convert-WindowsImage.ps1](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/38e40fc004ec64851a0520575139936eed7b331e/hyperv-tools/Convert-WindowsImage/Convert-WindowsImage.ps1) | Ignored | [Details](#1d0631cf3bf375c41e5fceee5139697d2a1e10fe47)
  [hyperv-tools\Convert-WindowsImage\README.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/38e40fc004ec64851a0520575139936eed7b331e/hyperv-tools/Convert-WindowsImage/README.md) | Ignored | [Details](#bcaedeb606cb2698e288ad58bd7483825329983848)
  [hyperv-tools\Nested\Enable-NestedVm.ps1](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/38e40fc004ec64851a0520575139936eed7b331e/hyperv-tools/Nested/Enable-NestedVm.ps1) | Ignored | [Details](#3eb232c984b842f7cbe908e22886705bda00c9ce49)
- [hyperv-tools\Nested\Get-NestedVirtStatus.ps1](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/38e40fc004ec64851a0520575139936eed7b331e/hyperv-tools/Nested/Get-NestedVirtStatus.ps1) | Ignored | [Details](#629a48232006014c15b8ab7427e40a8f302acaad50)
+ [hyperv-tools\Nested\Get-NestedVirtStatus.ps1](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/38e40fc004ec64851a0520575139936eed7b331e/hyperv-tools/Nested/Get-NestedVirtStatus.ps1) | Ignored | [Details](#0dcf5b29ba833ff419e62f9a22c248302338f80150)
  [LICENSE.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/38e40fc004ec64851a0520575139936eed7b331e/LICENSE.md) | Ignored | [Details](#269c9a27125e4bbab11858c6ea097dcbbd37c9b751)
  [packages.config](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/38e40fc004ec64851a0520575139936eed7b331e/packages.config) | Ignored | [Details](#35e64e3675af499b08de0a295cbd0394dce36fbf52)
  [README.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/38e40fc004ec64851a0520575139936eed7b331e/README.md) | Ignored | [Details](#9bfdc812282e259a8a7daaa1329c318c1569368153)
@@ -882,7 +882,7 @@
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='629a48232006014c15b8ab7427e40a8f302acaad50'></a> Source: [hyperv-tools\Nested\Get-NestedVirtStatus.ps1](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/38e40fc004ec64851a0520575139936eed7b331e/hyperv-tools/Nested/Get-NestedVirtStatus.ps1)
+##### <a name='0dcf5b29ba833ff419e62f9a22c248302338f80150'></a> Source: [hyperv-tools\Nested\Get-NestedVirtStatus.ps1](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/38e40fc004ec64851a0520575139936eed7b331e/hyperv-tools/Nested/Get-NestedVirtStatus.ps1)
 * Status: Ignored
 * Target File: 
 * Handoff File: 
