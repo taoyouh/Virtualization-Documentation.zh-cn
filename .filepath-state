@@ -194,6 +194,9 @@
   "d4319ca7dc578b138d2ddb9fb16ba9488d0a269c": [
     "virtualization\\windowscontainers\\containers_welcome.md"
   ],
+  "f8299eb5b51a0611510bc0aaebec04f707b6359a": [
+    "virtualization\\windowscontainers\\deployment\\deployment.md"
+  ],
   "19a177379b66d56e02b55eac649c786ddcce7588": [
     "virtualization\\windowscontainers\\deployment\\deployment.md"
   ],
@@ -217,6 +220,9 @@
   ],
   "872baaa41af6965a01248ffdedac4b7043ae45f1": [
     "virtualization\\windowscontainers\\management\\hcs_powershell.md"
+  ],
+  "e3467d95ff42cd306cabf383d6a45da5d18c996c": [
+    "virtualization\\windowscontainers\\management\\hyperv_container.md"
   ],
   "4b6bf9876e0223fb5edb800a8c8d550e28980602": [
     "virtualization\\windowscontainers\\management\\hyperv_container.md"
