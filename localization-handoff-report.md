@@ -1,34 +1,57 @@
 # <a name='report-top'></a> Localization Handoff Report
 
 ## Summary
- Total Files | 2
+ Total Files | 4
 
 ## File List
  Source File | Status | Details 
  ----------- | ------ | ------- 
- [virtualization\community\contribute_to_docs.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/fc0ac1c10af0cbf0ce71b2951353eadf843c27cc/virtualization/community/contribute_to_docs.md) | HandedOff | [Details](#f30dc81d93ba83db4d65458248dbde05e0fc980858)
- [virtualization\community\media\GitHubEditor.png](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/fc0ac1c10af0cbf0ce71b2951353eadf843c27cc/virtualization/community/media/GitHubEditor.png) | HandedOff | [Details](#9c6a41fac79a6f72b721a2b2928aef0f10cb938362)
+ [virtualization\community\contribute_to_docs.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/db90888421cdefeaa32dbc76f3be62134300fad9/virtualization/community/contribute_to_docs.md) | HandedOff | [Details](#03521968cf3de38757b3e2e3b201d8516e67779d58)
+ [virtualization\community\media\GitHubCreatePR.png](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/db90888421cdefeaa32dbc76f3be62134300fad9/virtualization/community/media/GitHubCreatePR.png) | HandedOff | [Details](#c368db13f720190f3fb4a8fbdb2301c6a8148cc861)
+ [virtualization\community\media\GitHubProposeChange.png](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/db90888421cdefeaa32dbc76f3be62134300fad9/virtualization/community/media/GitHubProposeChange.png) | HandedOff | [Details](#39f7222f931560f015a403585a741e400f24262c65)
+ [virtualization\windowscontainers\management\manage_containers.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/db90888421cdefeaa32dbc76f3be62134300fad9/virtualization/windowscontainers/management/manage_containers.md) | HandedOff | [Details](#109913d7830e5799ff7e6665d61eff34ccaec3ea209)
 
 ## Item Details
-##### <a name='f30dc81d93ba83db4d65458248dbde05e0fc980858'></a> Source: [virtualization\community\contribute_to_docs.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/fc0ac1c10af0cbf0ce71b2951353eadf843c27cc/virtualization/community/contribute_to_docs.md)
+##### <a name='03521968cf3de38757b3e2e3b201d8516e67779d58'></a> Source: [virtualization\community\contribute_to_docs.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/db90888421cdefeaa32dbc76f3be62134300fad9/virtualization/community/contribute_to_docs.md)
 * Status: HandedOff
 * Target File: 
-* Handoff File: [contribute_to_docs.d73574c30ea237d679cf11495f670244e941fb1d.zh-cn.xlf](https://github.com/Microsoft/Virtualization-Documentation-Private.handoff/blob/4030b976328269e736af20212a8495d9125121a5/ol-handoff/Microsoft/Virtualization-Documentation-Private.zh-cn/live/contribute_to_docs.d73574c30ea237d679cf11495f670244e941fb1d.zh-cn.xlf)
-* Handoff Datetime: 2015-12-09 01:10:27
+* Handoff File: [contribute_to_docs.d73574c30ea237d679cf11495f670244e941fb1d.zh-cn.xlf](https://github.com/Microsoft/Virtualization-Documentation-Private.handoff/blob/32c1e8b4474b24ffe29b6bf51c35a8c2209d167a/ol-handoff/Microsoft/Virtualization-Documentation-Private.zh-cn/live/contribute_to_docs.d73574c30ea237d679cf11495f670244e941fb1d.zh-cn.xlf)
+* Handoff Datetime: 2015-12-09 22:02:38
 * Handoff Reason: Include
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='9c6a41fac79a6f72b721a2b2928aef0f10cb938362'></a> Source: [virtualization\community\media\GitHubEditor.png](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/fc0ac1c10af0cbf0ce71b2951353eadf843c27cc/virtualization/community/media/GitHubEditor.png)
+##### <a name='c368db13f720190f3fb4a8fbdb2301c6a8148cc861'></a> Source: [virtualization\community\media\GitHubCreatePR.png](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/db90888421cdefeaa32dbc76f3be62134300fad9/virtualization/community/media/GitHubCreatePR.png)
 * Status: HandedOff
 * Target File: 
-* Handoff File: [9c6a41fac79a6f72b721a2b2928aef0f10cb9383.png](https://github.com/Microsoft/Virtualization-Documentation-Private.handoff/blob/4030b976328269e736af20212a8495d9125121a5/ol-handoff/Microsoft/Virtualization-Documentation-Private.zh-cn/live/9c6a41fac79a6f72b721a2b2928aef0f10cb9383.png)
-* Handoff Datetime: 2015-12-09 01:10:27
+* Handoff File: [c368db13f720190f3fb4a8fbdb2301c6a8148cc8.png](https://github.com/Microsoft/Virtualization-Documentation-Private.handoff/blob/32c1e8b4474b24ffe29b6bf51c35a8c2209d167a/ol-handoff/Microsoft/Virtualization-Documentation-Private.zh-cn/live/c368db13f720190f3fb4a8fbdb2301c6a8148cc8.png)
+* Handoff Datetime: 2015-12-09 22:02:38
 * Handoff Reason: IsDependency
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
 * Dependency From: virtualization\community\contribute_to_docs.md
+* [Back to Top](#report-top)
+
+##### <a name='39f7222f931560f015a403585a741e400f24262c65'></a> Source: [virtualization\community\media\GitHubProposeChange.png](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/db90888421cdefeaa32dbc76f3be62134300fad9/virtualization/community/media/GitHubProposeChange.png)
+* Status: HandedOff
+* Target File: 
+* Handoff File: [39f7222f931560f015a403585a741e400f24262c.png](https://github.com/Microsoft/Virtualization-Documentation-Private.handoff/blob/32c1e8b4474b24ffe29b6bf51c35a8c2209d167a/ol-handoff/Microsoft/Virtualization-Documentation-Private.zh-cn/live/39f7222f931560f015a403585a741e400f24262c.png)
+* Handoff Datetime: 2015-12-09 22:02:38
+* Handoff Reason: IsDependency
+* Handback File: 
+* Handback Datetime: 0001-01-01 00:00:00
+* Dependency From: virtualization\community\contribute_to_docs.md
+* [Back to Top](#report-top)
+
+##### <a name='109913d7830e5799ff7e6665d61eff34ccaec3ea209'></a> Source: [virtualization\windowscontainers\management\manage_containers.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/db90888421cdefeaa32dbc76f3be62134300fad9/virtualization/windowscontainers/management/manage_containers.md)
+* Status: HandedOff
+* Target File: 
+* Handoff File: [manage_containers.c2c3307892a740ec0efc895be0c78ac01e92a328.zh-cn.xlf](https://github.com/Microsoft/Virtualization-Documentation-Private.handoff/blob/32c1e8b4474b24ffe29b6bf51c35a8c2209d167a/ol-handoff/Microsoft/Virtualization-Documentation-Private.zh-cn/live/manage_containers.c2c3307892a740ec0efc895be0c78ac01e92a328.zh-cn.xlf)
+* Handoff Datetime: 2015-12-09 22:02:38
+* Handoff Reason: Include
+* Handback File: 
+* Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
 

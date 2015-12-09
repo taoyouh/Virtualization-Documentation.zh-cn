@@ -233,6 +233,9 @@
   "08a8593c07246a17ec035e6138533034bf266f9f": [
     "virtualization\\windowscontainers\\management\\media\\process.png"
   ],
+  "109913d7830e5799ff7e6665d61eff34ccaec3ea": [
+    "virtualization\\windowscontainers\\management\\manage_containers.md"
+  ],
   "40578592492eca1efe7e9a7eb361e260a6dc4721": [
     "virtualization\\windowscontainers\\management\\manage_containers.md"
   ],
@@ -314,6 +317,9 @@
   "35a1884ef10c6b2efd5a3c5e60a550738187bb38": [
     "virtualization\\windowscontainers\\TOC.md"
   ],
+  "03521968cf3de38757b3e2e3b201d8516e67779d": [
+    "virtualization\\community\\contribute_to_docs.md"
+  ],
   "f30dc81d93ba83db4d65458248dbde05e0fc9808": [
     "virtualization\\community\\contribute_to_docs.md"
   ],
@@ -343,5 +349,11 @@
   ],
   "9c6a41fac79a6f72b721a2b2928aef0f10cb9383": [
     "virtualization\\community\\media\\GitHubEditor.png"
+  ],
+  "39f7222f931560f015a403585a741e400f24262c": [
+    "virtualization\\community\\media\\GitHubProposeChange.png"
+  ],
+  "c368db13f720190f3fb4a8fbdb2301c6a8148cc8": [
+    "virtualization\\community\\media\\GitHubCreatePR.png"
   ]
 }
