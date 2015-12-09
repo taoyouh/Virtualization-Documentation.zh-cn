@@ -314,6 +314,9 @@
   "35a1884ef10c6b2efd5a3c5e60a550738187bb38": [
     "virtualization\\windowscontainers\\TOC.md"
   ],
+  "f30dc81d93ba83db4d65458248dbde05e0fc9808": [
+    "virtualization\\community\\contribute_to_docs.md"
+  ],
   "0898f47e513977c7bb5d130bbe961a7d3fc08dec": [
     "virtualization\\community\\contribute_to_docs.md"
   ],
@@ -337,5 +340,8 @@
   ],
   "85d871f168742e3e1fcb2d260e42863b96c3f1f9": [
     "virtualization\\community\\media\\GitHubEdit.png"
+  ],
+  "9c6a41fac79a6f72b721a2b2928aef0f10cb9383": [
+    "virtualization\\community\\media\\GitHubEditor.png"
   ]
 }
