@@ -23,6 +23,9 @@
   "e5aad90dd8dd7facdb532a3465d1596646e69cfc": [
     "virtualization\\hyperv_on_windows\\develop\\make_mgmt_service.md"
   ],
+  "5a46028faa5e86b84806c030c956f71465edcfc9": [
+    "virtualization\\hyperv_on_windows\\develop\\powershell_snippets.md"
+  ],
   "2fe214e2a741bb53de8e5d3ff3d2129f195a3208": [
     "virtualization\\hyperv_on_windows\\develop\\powershell_snippets.md"
   ],
