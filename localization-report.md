@@ -256,7 +256,7 @@
  [virtualization\windowscontainers\docfx.json](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/722053b7db662b0d046f6eea87b7569fac0ee125/virtualization/windowscontainers/docfx.json) | Ignored | [Details](#d03873cb289bc97d547e1edcf34861ce8a48ff9e205)
  [virtualization\windowscontainers\management\media\imagecommit.png](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/722053b7db662b0d046f6eea87b7569fac0ee125/virtualization/windowscontainers/management/media/imagecommit.png) | Ignored | [Details](#70d9d123171e564192e70631951058b0639e0f67213)
  [virtualization\windowscontainers\management\media\imagelayer.png](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/722053b7db662b0d046f6eea87b7569fac0ee125/virtualization/windowscontainers/management/media/imagelayer.png) | Ignored | [Details](#79ca6518022758718f4adb9f5af0b408051b4180214)
- [virtualization\windowscontainers\management\media\nat1.png](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/722053b7db662b0d046f6eea87b7569fac0ee125/virtualization/windowscontainers/management/media/nat1.png) | Ignored | [Details](#c9f9b54e6d5b310b9bffc23f0416ad8c3d8afa7e215)
+ [virtualization\windowscontainers\management\media\nat1.png](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/722053b7db662b0d046f6eea87b7569fac0ee125/virtualization/windowscontainers/management/media/nat1.png) | Ignored | [Details](#4d662bf6e123797b4670dfdf6a6aee32e4e95e54215)
  [virtualization\windowscontainers\management\media\nwconfig.png](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/722053b7db662b0d046f6eea87b7569fac0ee125/virtualization/windowscontainers/management/media/nwconfig.png) | Ignored | [Details](#f38c2cd178b4cd8c1dd2e187ef4fa05546755d43216)
  [virtualization\windowscontainers\management\media\PortMapping.png](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/722053b7db662b0d046f6eea87b7569fac0ee125/virtualization/windowscontainers/management/media/PortMapping.png) | Ignored | [Details](#1d21dac1815f54f70a991c693ab882575f601e8d217)
  [virtualization\windowscontainers\Media\explore.png](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/722053b7db662b0d046f6eea87b7569fac0ee125/virtualization/windowscontainers/Media/explore.png) | Ignored | [Details](#367d56d6ba500771f4a03e2296eca6bb079d891e220)
@@ -377,8 +377,8 @@
  [windows-server-container-tools\container_glyphs\WhiteGlyphs\VMConsole.png](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/722053b7db662b0d046f6eea87b7569fac0ee125/windows-server-container-tools/container_glyphs/WhiteGlyphs/VMConsole.png) | Ignored | [Details](#65a44f5860d1576b6a6a370604e48cab3bd276c9354)
  [windows-server-container-tools\container_glyphs\WhiteGlyphs\VMwithApp.png](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/722053b7db662b0d046f6eea87b7569fac0ee125/windows-server-container-tools/container_glyphs/WhiteGlyphs/VMwithApp.png) | Ignored | [Details](#e6aedba89b4997a1e155c7c76cfc35d8ff889e42355)
  [windows-server-container-tools\container_glyphs\WhiteGlyphs\WindowsContainer.png](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/722053b7db662b0d046f6eea87b7569fac0ee125/windows-server-container-tools/container_glyphs/WhiteGlyphs/WindowsContainer.png) | Ignored | [Details](#57d19a8d3ebccf4b250335c7eb51aad4b2a89ea0356)
- [windows-server-container-tools\Install-ContainerHost\Install-ContainerHost.ps1](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/722053b7db662b0d046f6eea87b7569fac0ee125/windows-server-container-tools/Install-ContainerHost/Install-ContainerHost.ps1) | Ignored | [Details](#f87be5a6328e46081e41bd6aeb8c917179a0a431357)
- [windows-server-container-tools\New-ContainerHost\New-ContainerHost.ps1](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/722053b7db662b0d046f6eea87b7569fac0ee125/windows-server-container-tools/New-ContainerHost/New-ContainerHost.ps1) | Ignored | [Details](#551d140756e398f44f6ada5b62b54145555c2ebd358)
+ [windows-server-container-tools\Install-ContainerHost\Install-ContainerHost.ps1](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/722053b7db662b0d046f6eea87b7569fac0ee125/windows-server-container-tools/Install-ContainerHost/Install-ContainerHost.ps1) | Ignored | [Details](#97f498acb79abb2f29b4634303f8a40d624e9102357)
+ [windows-server-container-tools\New-ContainerHost\New-ContainerHost.ps1](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/722053b7db662b0d046f6eea87b7569fac0ee125/windows-server-container-tools/New-ContainerHost/New-ContainerHost.ps1) | Ignored | [Details](#2310962e916fa56e878f7e7f2ebfba7c4937c494358)
  [windows-server-container-tools\README.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/722053b7db662b0d046f6eea87b7569fac0ee125/windows-server-container-tools/README.md) | Ignored | [Details](#6315ce9797c9eb6e6245deded1be01c2330ac6f8359)
  [windows-server-container-tools\Update-ContainerHost\Update-ContainerHost.ps1](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/722053b7db662b0d046f6eea87b7569fac0ee125/windows-server-container-tools/Update-ContainerHost/Update-ContainerHost.ps1) | Ignored | [Details](#49463dab4a38167ce638ec997b9564b53478ed96360)
  [windows-server-container-tools\VMM  - VM Template\AdminAutoLogon.xml](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/722053b7db662b0d046f6eea87b7569fac0ee125/windows-server-container-tools/VMM  - VM Template/AdminAutoLogon.xml) | Ignored | [Details](#2c58a9f2bd75bd35758f04fcc10e07f6be3ffbe9361)
@@ -2599,7 +2599,7 @@
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='c9f9b54e6d5b310b9bffc23f0416ad8c3d8afa7e215'></a> Source: [virtualization\windowscontainers\management\media\nat1.png](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/722053b7db662b0d046f6eea87b7569fac0ee125/virtualization/windowscontainers/management/media/nat1.png)
+##### <a name='4d662bf6e123797b4670dfdf6a6aee32e4e95e54215'></a> Source: [virtualization\windowscontainers\management\media\nat1.png](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/722053b7db662b0d046f6eea87b7569fac0ee125/virtualization/windowscontainers/management/media/nat1.png)
 * Status: Ignored
 * Target File: 
 * Handoff File: 
@@ -4009,7 +4009,7 @@
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='f87be5a6328e46081e41bd6aeb8c917179a0a431357'></a> Source: [windows-server-container-tools\Install-ContainerHost\Install-ContainerHost.ps1](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/722053b7db662b0d046f6eea87b7569fac0ee125/windows-server-container-tools/Install-ContainerHost/Install-ContainerHost.ps1)
+##### <a name='97f498acb79abb2f29b4634303f8a40d624e9102357'></a> Source: [windows-server-container-tools\Install-ContainerHost\Install-ContainerHost.ps1](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/722053b7db662b0d046f6eea87b7569fac0ee125/windows-server-container-tools/Install-ContainerHost/Install-ContainerHost.ps1)
 * Status: Ignored
 * Target File: 
 * Handoff File: 
@@ -4019,7 +4019,7 @@
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='551d140756e398f44f6ada5b62b54145555c2ebd358'></a> Source: [windows-server-container-tools\New-ContainerHost\New-ContainerHost.ps1](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/722053b7db662b0d046f6eea87b7569fac0ee125/windows-server-container-tools/New-ContainerHost/New-ContainerHost.ps1)
+##### <a name='2310962e916fa56e878f7e7f2ebfba7c4937c494358'></a> Source: [windows-server-container-tools\New-ContainerHost\New-ContainerHost.ps1](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/722053b7db662b0d046f6eea87b7569fac0ee125/windows-server-container-tools/New-ContainerHost/New-ContainerHost.ps1)
 * Status: Ignored
 * Target File: 
 * Handoff File: 
