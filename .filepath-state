@@ -32,6 +32,9 @@
   "2b84c3d3efe43330cac6f8dd759ada08eaf219b6": [
     "virtualization\\hyperv_on_windows\\quick_start\\walkthrough.md"
   ],
+  "c30704a0c60b0bb75d9b1194c7d4639c259997c1": [
+    "virtualization\\hyperv_on_windows\\quick_start\\walkthrough_checkpoints.md"
+  ],
   "34e2d3a1dd2ec2270605e5e43aa841b73611a62f": [
     "virtualization\\hyperv_on_windows\\quick_start\\walkthrough_checkpoints.md"
   ],
@@ -64,6 +67,9 @@
   ],
   "d386c086a47d50518b256b7f1967d65d2004887e": [
     "virtualization\\hyperv_on_windows\\quick_start\\media\\OSDeploy_upd.png"
+  ],
+  "169ec8f0dc462e9cf51f7ffb6e01b2d3e80f41b2": [
+    "virtualization\\hyperv_on_windows\\quick_start\\walkthrough_export_import.md"
   ],
   "6d3a068be3bf54b34c4db54678b59b7fcb98787a": [
     "virtualization\\hyperv_on_windows\\quick_start\\walkthrough_export_import.md"
@@ -101,11 +107,17 @@
   "dc04e26b6b30d2de9b6d25fc96eb5ff248a877e0": [
     "virtualization\\hyperv_on_windows\\quick_start\\media\\pen_changes_upd.png"
   ],
+  "1c0c55f6de28523ab331a692da0405f13a0dd4ef": [
+    "virtualization\\hyperv_on_windows\\TOC.md"
+  ],
   "39da54847d1221998e8d0fa2582c18a97081e825": [
     "virtualization\\hyperv_on_windows\\TOC.md"
   ],
   "15ca83a671c5bc684c7d4c7634b537c068af3643": [
     "virtualization\\hyperv_on_windows\\user_guide\\checkpoints.md"
+  ],
+  "bc9176a2abcde30da2d7ed682112241564b945df": [
+    "virtualization\\hyperv_on_windows\\user_guide\\export_import.md"
   ],
   "b0f3c5c8333342ab9cc2868caef8ce71e7f0ea25": [
     "virtualization\\hyperv_on_windows\\user_guide\\export_import.md"
