@@ -116,6 +116,9 @@
   "15ca83a671c5bc684c7d4c7634b537c068af3643": [
     "virtualization\\hyperv_on_windows\\user_guide\\checkpoints.md"
   ],
+  "2cc583a503b2ec2bbd7b725709a5390466709ce8": [
+    "virtualization\\hyperv_on_windows\\user_guide\\export_import.md"
+  ],
   "bc9176a2abcde30da2d7ed682112241564b945df": [
     "virtualization\\hyperv_on_windows\\user_guide\\export_import.md"
   ],

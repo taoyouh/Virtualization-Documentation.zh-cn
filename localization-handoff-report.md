@@ -1,52 +1,19 @@
 # <a name='report-top'></a> Localization Handoff Report
 
 ## Summary
- Total Files | 4
+ Total Files | 1
 
 ## File List
  Source File | Status | Details 
  ----------- | ------ | ------- 
- [virtualization\hyperv_on_windows\quick_start\walkthrough_checkpoints.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/f4925b74a45cbc4286422f85b25170972c0cf2be/virtualization/hyperv_on_windows/quick_start/walkthrough_checkpoints.md) | HandedOff | [Details](#c30704a0c60b0bb75d9b1194c7d4639c259997c1154)
- [virtualization\hyperv_on_windows\quick_start\walkthrough_export_import.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/f4925b74a45cbc4286422f85b25170972c0cf2be/virtualization/hyperv_on_windows/quick_start/walkthrough_export_import.md) | HandedOff | [Details](#169ec8f0dc462e9cf51f7ffb6e01b2d3e80f41b2157)
- [virtualization\hyperv_on_windows\TOC.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/f4925b74a45cbc4286422f85b25170972c0cf2be/virtualization/hyperv_on_windows/TOC.md) | HandedOff | [Details](#1c0c55f6de28523ab331a692da0405f13a0dd4ef161)
- [virtualization\hyperv_on_windows\user_guide\export_import.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/f4925b74a45cbc4286422f85b25170972c0cf2be/virtualization/hyperv_on_windows/user_guide/export_import.md) | HandedOff | [Details](#bc9176a2abcde30da2d7ed682112241564b945df163)
+ [virtualization\hyperv_on_windows\user_guide\export_import.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/e91e0025a4e7cbefde36c4084e36417b1e76e6e2/virtualization/hyperv_on_windows/user_guide/export_import.md) | HandedOff | [Details](#2cc583a503b2ec2bbd7b725709a5390466709ce8163)
 
 ## Item Details
-##### <a name='c30704a0c60b0bb75d9b1194c7d4639c259997c1154'></a> Source: [virtualization\hyperv_on_windows\quick_start\walkthrough_checkpoints.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/f4925b74a45cbc4286422f85b25170972c0cf2be/virtualization/hyperv_on_windows/quick_start/walkthrough_checkpoints.md)
+##### <a name='2cc583a503b2ec2bbd7b725709a5390466709ce8163'></a> Source: [virtualization\hyperv_on_windows\user_guide\export_import.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/e91e0025a4e7cbefde36c4084e36417b1e76e6e2/virtualization/hyperv_on_windows/user_guide/export_import.md)
 * Status: HandedOff
 * Target File: 
-* Handoff File: [walkthrough_checkpoints.06ccef918ac38bd6b778e8f9277879f20d6e1fd9.zh-cn.xlf](https://github.com/Microsoft/Virtualization-Documentation-Private.handoff/blob/3c08dc63e6048c2f904d74c919032ba4a2bc60d6/ol-handoff/Microsoft/Virtualization-Documentation-Private.zh-cn/live/walkthrough_checkpoints.06ccef918ac38bd6b778e8f9277879f20d6e1fd9.zh-cn.xlf)
-* Handoff Datetime: 2015-12-11 06:10:52
-* Handoff Reason: Include
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* [Back to Top](#report-top)
-
-##### <a name='169ec8f0dc462e9cf51f7ffb6e01b2d3e80f41b2157'></a> Source: [virtualization\hyperv_on_windows\quick_start\walkthrough_export_import.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/f4925b74a45cbc4286422f85b25170972c0cf2be/virtualization/hyperv_on_windows/quick_start/walkthrough_export_import.md)
-* Status: HandedOff
-* Target File: 
-* Handoff File: [walkthrough_export_import.357da837e16b81b7e63ec02325c79b3b0eb2e511.zh-cn.xlf](https://github.com/Microsoft/Virtualization-Documentation-Private.handoff/blob/3c08dc63e6048c2f904d74c919032ba4a2bc60d6/ol-handoff/Microsoft/Virtualization-Documentation-Private.zh-cn/live/walkthrough_export_import.357da837e16b81b7e63ec02325c79b3b0eb2e511.zh-cn.xlf)
-* Handoff Datetime: 2015-12-11 06:10:52
-* Handoff Reason: Include
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* [Back to Top](#report-top)
-
-##### <a name='1c0c55f6de28523ab331a692da0405f13a0dd4ef161'></a> Source: [virtualization\hyperv_on_windows\TOC.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/f4925b74a45cbc4286422f85b25170972c0cf2be/virtualization/hyperv_on_windows/TOC.md)
-* Status: HandedOff
-* Target File: 
-* Handoff File: [TOC.dc6d280c11d16ece7fbc1f22991c5fc34412dd1a.zh-cn.xlf](https://github.com/Microsoft/Virtualization-Documentation-Private.handoff/blob/3c08dc63e6048c2f904d74c919032ba4a2bc60d6/ol-handoff/Microsoft/Virtualization-Documentation-Private.zh-cn/live/TOC.dc6d280c11d16ece7fbc1f22991c5fc34412dd1a.zh-cn.xlf)
-* Handoff Datetime: 2015-12-11 06:10:52
-* Handoff Reason: Include
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* [Back to Top](#report-top)
-
-##### <a name='bc9176a2abcde30da2d7ed682112241564b945df163'></a> Source: [virtualization\hyperv_on_windows\user_guide\export_import.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/f4925b74a45cbc4286422f85b25170972c0cf2be/virtualization/hyperv_on_windows/user_guide/export_import.md)
-* Status: HandedOff
-* Target File: 
-* Handoff File: [export_import.c0c14674ac282e57d9bff1c585b3081c9fcc2b14.zh-cn.xlf](https://github.com/Microsoft/Virtualization-Documentation-Private.handoff/blob/3c08dc63e6048c2f904d74c919032ba4a2bc60d6/ol-handoff/Microsoft/Virtualization-Documentation-Private.zh-cn/live/export_import.c0c14674ac282e57d9bff1c585b3081c9fcc2b14.zh-cn.xlf)
-* Handoff Datetime: 2015-12-11 06:10:52
+* Handoff File: [export_import.c0c14674ac282e57d9bff1c585b3081c9fcc2b14.zh-cn.xlf](https://github.com/Microsoft/Virtualization-Documentation-Private.handoff/blob/4a9edc0a98d181cd815433320f125b2695d55f7d/ol-handoff/Microsoft/Virtualization-Documentation-Private.zh-cn/live/export_import.c0c14674ac282e57d9bff1c585b3081c9fcc2b14.zh-cn.xlf)
+* Handoff Datetime: 2015-12-11 06:30:20
 * Handoff Reason: Include
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
