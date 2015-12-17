@@ -32,6 +32,9 @@
   "2b84c3d3efe43330cac6f8dd759ada08eaf219b6": [
     "virtualization\\hyperv_on_windows\\quick_start\\walkthrough.md"
   ],
+  "30ec773c62830bc68972b0c8eb5a57b8df8b8ec9": [
+    "virtualization\\hyperv_on_windows\\quick_start\\walkthrough_checkpoints.md"
+  ],
   "c30704a0c60b0bb75d9b1194c7d4639c259997c1": [
     "virtualization\\hyperv_on_windows\\quick_start\\walkthrough_checkpoints.md"
   ],
@@ -39,22 +42,25 @@
     "virtualization\\hyperv_on_windows\\quick_start\\walkthrough_checkpoints.md"
   ],
   "7746c4675bfca7f94a2145e6b08059a99ea6b2c5": [
-    "virtualization\\hyperv_on_windows\\quick_start\\media\\checkpoint_upd.png"
+    "virtualization\\hyperv_on_windows\\user_guide\\media\\checkpoint_upd.png"
   ],
   "3436e8146018e5a07a847a00dc72d134d19506a1": [
-    "virtualization\\hyperv_on_windows\\quick_start\\media\\std_checkpoint_upd.png"
+    "virtualization\\hyperv_on_windows\\user_guide\\media\\std_checkpoint_upd.png"
   ],
   "1808dbf613804162cbe255a058de2d5cc4f9f794": [
-    "virtualization\\hyperv_on_windows\\quick_start\\media\\apply_standard_upd.png"
+    "virtualization\\hyperv_on_windows\\user_guide\\media\\apply_standard_upd.png"
   ],
   "5dbb953b1b4dbaf1291bfa0a590c49b539c54cb7": [
-    "virtualization\\hyperv_on_windows\\quick_start\\media\\production_Checkpoin_upd.png"
+    "virtualization\\hyperv_on_windows\\user_guide\\media\\production_Checkpoin_upd.png"
   ],
   "52b5a54e0a2b24d8a365780e6d098db77794bdcd": [
     "virtualization\\hyperv_on_windows\\quick_start\\walkthrough_compatibility.md"
   ],
   "c830f164a513bd6125dc1a30f7cf1990e1c9470a": [
     "virtualization\\hyperv_on_windows\\quick_start\\media\\SystemInfo_upd.png"
+  ],
+  "2dd6d879387c7c82a2e8247079b52bdd01719b89": [
+    "virtualization\\hyperv_on_windows\\quick_start\\walkthrough_create_vm.md"
   ],
   "c71c4727c8fccbc8aa67a51ba896c180f38368ef": [
     "virtualization\\hyperv_on_windows\\quick_start\\walkthrough_create_vm.md"
@@ -107,11 +113,17 @@
   "dc04e26b6b30d2de9b6d25fc96eb5ff248a877e0": [
     "virtualization\\hyperv_on_windows\\quick_start\\media\\pen_changes_upd.png"
   ],
+  "c7e089310a240c22f551d10e090a307092b0e042": [
+    "virtualization\\hyperv_on_windows\\TOC.md"
+  ],
   "1c0c55f6de28523ab331a692da0405f13a0dd4ef": [
     "virtualization\\hyperv_on_windows\\TOC.md"
   ],
   "39da54847d1221998e8d0fa2582c18a97081e825": [
     "virtualization\\hyperv_on_windows\\TOC.md"
+  ],
+  "712a1cbfab6af2b3235d8e258097e7e4adb7aca8": [
+    "virtualization\\hyperv_on_windows\\user_guide\\checkpoints.md"
   ],
   "15ca83a671c5bc684c7d4c7634b537c068af3643": [
     "virtualization\\hyperv_on_windows\\user_guide\\checkpoints.md"
@@ -218,6 +230,9 @@
   "f086e39f3b6d5667fa8b01d1f6f42007bb2f6521": [
     "virtualization\\windowscontainers\\containers_welcome.md"
   ],
+  "3023c7ac81a50ecd184462f5235d419fe2f6bd61": [
+    "virtualization\\windowscontainers\\deployment\\deployment.md"
+  ],
   "46e130aa20ab7eb6bb06afcb4dc458eb12a17847": [
     "virtualization\\windowscontainers\\deployment\\deployment.md"
   ],
@@ -263,6 +278,9 @@
   "08a8593c07246a17ec035e6138533034bf266f9f": [
     "virtualization\\windowscontainers\\management\\media\\process.png"
   ],
+  "ef8be0da4c6a51a417d50cd06fb83d878e03dd04": [
+    "virtualization\\windowscontainers\\management\\manage_containers.md"
+  ],
   "109913d7830e5799ff7e6665d61eff34ccaec3ea": [
     "virtualization\\windowscontainers\\management\\manage_containers.md"
   ],
@@ -271,6 +289,9 @@
   ],
   "49aac2184fe868443566d44dc58373c3af539ace": [
     "virtualization\\windowscontainers\\management\\manage_data.md"
+  ],
+  "124b03731bd25cd261811ccf2068c58f7bcb3ed0": [
+    "virtualization\\windowscontainers\\management\\manage_images.md"
   ],
   "d5a9b82df61e853e4418051651f952a0b8819d0f": [
     "virtualization\\windowscontainers\\management\\manage_images.md"
@@ -307,6 +328,9 @@
   ],
   "aea8d7f91f129a6ca3318bb0de18e3534c334d49": [
     "virtualization\\windowscontainers\\quick_start\\container_setup.md"
+  ],
+  "1321d10ebf8a3ac49c51cc646c08a7c31149c49a": [
+    "virtualization\\windowscontainers\\quick_start\\inplace_setup.md"
   ],
   "13c6415abbcceba3093a7df9522c5b6f6c92a0ed": [
     "virtualization\\windowscontainers\\quick_start\\inplace_setup.md"
