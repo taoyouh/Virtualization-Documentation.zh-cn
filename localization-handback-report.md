@@ -7,7 +7,7 @@
  Source File | Status | Details 
  ----------- | ------ | ------- 
  [.gitignore](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/de683b7746b4dcc8703c0053e854ee7447d87132/.gitignore) | Ignored | [Details](#8e3ad5641d0493f8a43c5ab0193fb7467c988ebe0)
- [.localization-config](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/de683b7746b4dcc8703c0053e854ee7447d87132/.localization-config) | Ignored | [Details](#495c7ca9c5694d2f7bc68cc494d3d0eeb93bcfce1)
+ [.localization-config](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/de683b7746b4dcc8703c0053e854ee7447d87132/.localization-config) | Ignored | [Details](#e62c8c528b4ab38737761d819bdfa4540d1347731)
  [.openpublishing.build.mdproj](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/de683b7746b4dcc8703c0053e854ee7447d87132/.openpublishing.build.mdproj) | Ignored | [Details](#0734d2215d6219fae6671ec968e15771d0963af62)
  [.openpublishing.publish.config.json](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/de683b7746b4dcc8703c0053e854ee7447d87132/.openpublishing.publish.config.json) | Ignored | [Details](#8505bbebb7c8e34919be6a01ee40a033c3d6d1153)
  [demos\2015-BigBuild\BigBuild.ps1](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/de683b7746b4dcc8703c0053e854ee7447d87132/demos/2015-BigBuild/BigBuild.ps1) | Ignored | [Details](#9b8f358da5b6d7c3aaa158344cc7178f67816b094)
@@ -278,7 +278,7 @@
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='495c7ca9c5694d2f7bc68cc494d3d0eeb93bcfce1'></a> Source: [.localization-config](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/de683b7746b4dcc8703c0053e854ee7447d87132/.localization-config)
+##### <a name='e62c8c528b4ab38737761d819bdfa4540d1347731'></a> Source: [.localization-config](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/de683b7746b4dcc8703c0053e854ee7447d87132/.localization-config)
 * Status: Ignored
 * Target File: 
 * Handoff File: 
