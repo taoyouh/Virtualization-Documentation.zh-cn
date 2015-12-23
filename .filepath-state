@@ -201,13 +201,15 @@
     "virtualization\\hyperv_on_windows\\windows_welcome.md"
   ],
   "215adae041390b1edb10b314dc7ce21f6b39592e": [
-    "virtualization\\hyperv_on_windows\\media\\MeetsRequirements_65.png"
+    "virtualization\\hyperv_on_windows\\media\\MeetsRequirements_65.png",
+    "virtualization\\windowscontainers\\media\\1.png"
   ],
   "8489e1cb35de12a7cc54a8c1b29f40672eaac851": [
     "virtualization\\hyperv_on_windows\\media\\All_ContentTypeIcons_VisualWalkthrough_65.png"
   ],
   "7de8389ab2b14e0926c142bf61be560037fc2658": [
-    "virtualization\\hyperv_on_windows\\media\\Chat_65.png"
+    "virtualization\\hyperv_on_windows\\media\\Chat_65.png",
+    "virtualization\\windowscontainers\\media\\question.png"
   ],
   "7e2a65e10cd49e4598d091eb16968abf7b7ca70b": [
     "virtualization\\windowscontainers\\about\\about_overview.md"
@@ -229,6 +231,9 @@
   ],
   "b3c5d5d7ae2df4fb99eeeec77898905960598bc5": [
     "virtualization\\windowscontainers\\about\\work_in_progress.md"
+  ],
+  "5547f0f37b1d84d2930f4b54c156f06cd29f407e": [
+    "virtualization\\windowscontainers\\containers_welcome.md"
   ],
   "d4319ca7dc578b138d2ddb9fb16ba9488d0a269c": [
     "virtualization\\windowscontainers\\containers_welcome.md"
@@ -262,6 +267,9 @@
   ],
   "a653bcff2897c8e5d5ba6475acb1187625f34a1a": [
     "virtualization\\windowscontainers\\deployment\\media\\nssm3.png"
+  ],
+  "4ff8bc1286463449cb8c93aee680da31aab5d8a0": [
+    "virtualization\\windowscontainers\\deployment\\system_requirements.md"
   ],
   "946a841b5f50a8672afe8c1b28f88fe51f14798b": [
     "virtualization\\windowscontainers\\deployment\\system_requirements.md"
@@ -347,6 +355,9 @@
   "ace4fb5e5d09d4ce9b2b96d92d8d47e367894256": [
     "virtualization\\windowscontainers\\quick_start\\inplace_setup.md"
   ],
+  "d637af744a26827ceeebc9574d1d1cf24b5a7258": [
+    "virtualization\\windowscontainers\\quick_start\\manage_docker.md"
+  ],
   "7dbbbf6be904ef72f88e3babf23d3ccb69729c32": [
     "virtualization\\windowscontainers\\quick_start\\manage_docker.md"
   ],
@@ -361,6 +372,9 @@
   ],
   "24a79a8377a34797a7b590421167fc4e5f843e60": [
     "virtualization\\windowscontainers\\quick_start\\media\\dockerfile2.png"
+  ],
+  "7c1a1ddd6a66a967a0b99bcc0b48ff6f26cddbf8": [
+    "virtualization\\windowscontainers\\quick_start\\manage_powershell.md"
   ],
   "7a435b402887b16a9dbb2a26eac7474952466711": [
     "virtualization\\windowscontainers\\quick_start\\manage_powershell.md"
@@ -442,5 +456,11 @@
   ],
   "1d21dac1815f54f70a991c693ab882575f601e8d": [
     "virtualization\\windowscontainers\\management\\media\\portmapping.png"
+  ],
+  "7244a1a0ddcebfe36147f05577bceb7671592b96": [
+    "virtualization\\windowscontainers\\media\\try.png"
+  ],
+  "367d56d6ba500771f4a03e2296eca6bb079d891e": [
+    "virtualization\\windowscontainers\\media\\explore.png"
   ]
 }
