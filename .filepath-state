@@ -241,6 +241,9 @@
   "f086e39f3b6d5667fa8b01d1f6f42007bb2f6521": [
     "virtualization\\windowscontainers\\containers_welcome.md"
   ],
+  "e18147d9412a67b9e69eab34133112d898e26476": [
+    "virtualization\\windowscontainers\\deployment\\deployment.md"
+  ],
   "3023c7ac81a50ecd184462f5235d419fe2f6bd61": [
     "virtualization\\windowscontainers\\deployment\\deployment.md"
   ],
@@ -307,6 +310,9 @@
   "49aac2184fe868443566d44dc58373c3af539ace": [
     "virtualization\\windowscontainers\\management\\manage_data.md"
   ],
+  "effea986e28cb43e3472993a5697ddd876ee47c0": [
+    "virtualization\\windowscontainers\\management\\manage_images.md"
+  ],
   "a271342b6080025791fa96cab59603653750f03c": [
     "virtualization\\windowscontainers\\management\\manage_images.md"
   ],
@@ -315,6 +321,9 @@
   ],
   "d5a9b82df61e853e4418051651f952a0b8819d0f": [
     "virtualization\\windowscontainers\\management\\manage_images.md"
+  ],
+  "a04c4849b1aebdb14e50c6ea3464ee26d3d2c4fe": [
+    "virtualization\\windowscontainers\\management\\manage_resources.md"
   ],
   "86e262854fc39a32a634a961141af97326944359": [
     "virtualization\\windowscontainers\\management\\manage_resources.md"
@@ -348,6 +357,9 @@
   ],
   "aea8d7f91f129a6ca3318bb0de18e3534c334d49": [
     "virtualization\\windowscontainers\\quick_start\\container_setup.md"
+  ],
+  "5ce121f3108c1c4a43601355fb4f15ff26875e0a": [
+    "virtualization\\windowscontainers\\quick_start\\inplace_setup.md"
   ],
   "1321d10ebf8a3ac49c51cc646c08a7c31149c49a": [
     "virtualization\\windowscontainers\\quick_start\\inplace_setup.md"
@@ -399,6 +411,9 @@
   ],
   "35a1884ef10c6b2efd5a3c5e60a550738187bb38": [
     "virtualization\\windowscontainers\\TOC.md"
+  ],
+  "4a312891b6e0ffe403bf43fdc020aa5fc970f99f": [
+    "virtualization\\community\\contribute_to_docs.md"
   ],
   "783a9f5fce186f3915164a09dcbf1265944b26e0": [
     "virtualization\\community\\contribute_to_docs.md"
