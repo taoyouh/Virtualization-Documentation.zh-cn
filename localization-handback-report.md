@@ -1,7 +1,7 @@
 # <a name='report-top'></a> Localization Handback Report
 
 ## Summary
- Total Files | 255
+ Total Files | 260
 
 ## File List
  Source File | Status | Details 
@@ -63,6 +63,7 @@
  [TODO.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/8eea4a41035cab6dbd9635abfc80fa7d475cd075/TODO.md) | Ignored | [Details](#5ea94825845d248743af1d792b3ae91660ff096654)
  [Tools\NuGet\Nuget.Config](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/8eea4a41035cab6dbd9635abfc80fa7d475cd075/Tools/NuGet/Nuget.Config) | Ignored | [Details](#37d5a2d0c8a81313cf7e92800e699f2f86a9f9f955)
  [Tools\NuGet\nuget.exe](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/8eea4a41035cab6dbd9635abfc80fa7d475cd075/Tools/NuGet/nuget.exe) | Ignored | [Details](#7469c905e04001f8250137d2da57bbc7bec2d35856)
+ [virtualization\community\contribute_to_docs.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/8eea4a41035cab6dbd9635abfc80fa7d475cd075/virtualization/community/contribute_to_docs.md) | Ignored | [Details](#4a312891b6e0ffe403bf43fdc020aa5fc970f99f58)
  [virtualization\community\docfx.json](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/8eea4a41035cab6dbd9635abfc80fa7d475cd075/virtualization/community/docfx.json) | Ignored | [Details](#63821ccd19e5a21742458bf42a0a1eea46969adf59)
  [virtualization\community\media\GitHubPR.png](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/8eea4a41035cab6dbd9635abfc80fa7d475cd075/virtualization/community/media/GitHubPR.png) | Ignored | [Details](#cc076518815cc7ac821ae2cd3b1c52e7de60b18d64)
  [virtualization\hyperv_on_windows\about\media\ProductionCheckpoints.png](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/8eea4a41035cab6dbd9635abfc80fa7d475cd075/virtualization/hyperv_on_windows/about/media/ProductionCheckpoints.png) | Ignored | [Details](#00f8d7cfb9fbdf0f9d67f239aff5575dcdaaaed069)
@@ -134,10 +135,14 @@
  [virtualization\windowscontainers\about\media\isolationSpectrum.png](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/8eea4a41035cab6dbd9635abfc80fa7d475cd075/virtualization/windowscontainers/about/media/isolationSpectrum.png) | Ignored | [Details](#373704c083355e83e39ac41a351b6e350719d681194)
  [virtualization\windowscontainers\about\media\overheadSpectrum.png](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/8eea4a41035cab6dbd9635abfc80fa7d475cd075/virtualization/windowscontainers/about/media/overheadSpectrum.png) | Ignored | [Details](#8666862f14deb4e0523570cc3a3194fdfe115c3a195)
  [virtualization\windowscontainers\about\media\WindowsServerContainer.png](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/8eea4a41035cab6dbd9635abfc80fa7d475cd075/virtualization/windowscontainers/about/media/WindowsServerContainer.png) | Ignored | [Details](#1bf883f69ce268f31b33e5fe2228655c206d7479196)
+ [virtualization\windowscontainers\deployment\deployment.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/8eea4a41035cab6dbd9635abfc80fa7d475cd075/virtualization/windowscontainers/deployment/deployment.md) | Ignored | [Details](#e18147d9412a67b9e69eab34133112d898e26476199)
  [virtualization\windowscontainers\docfx.json](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/8eea4a41035cab6dbd9635abfc80fa7d475cd075/virtualization/windowscontainers/docfx.json) | Ignored | [Details](#d03873cb289bc97d547e1edcf34861ce8a48ff9e205)
+ [virtualization\windowscontainers\management\manage_images.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/8eea4a41035cab6dbd9635abfc80fa7d475cd075/virtualization/windowscontainers/management/manage_images.md) | Ignored | [Details](#effea986e28cb43e3472993a5697ddd876ee47c0213)
+ [virtualization\windowscontainers\management\manage_resources.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/8eea4a41035cab6dbd9635abfc80fa7d475cd075/virtualization/windowscontainers/management/manage_resources.md) | Ignored | [Details](#a04c4849b1aebdb14e50c6ea3464ee26d3d2c4fe214)
  [virtualization\windowscontainers\management\media\imagecommit.png](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/8eea4a41035cab6dbd9635abfc80fa7d475cd075/virtualization/windowscontainers/management/media/imagecommit.png) | Ignored | [Details](#70d9d123171e564192e70631951058b0639e0f67215)
  [virtualization\windowscontainers\management\media\imagelayer.png](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/8eea4a41035cab6dbd9635abfc80fa7d475cd075/virtualization/windowscontainers/management/media/imagelayer.png) | Ignored | [Details](#79ca6518022758718f4adb9f5af0b408051b4180216)
  [virtualization\windowscontainers\management\media\nwconfig.png](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/8eea4a41035cab6dbd9635abfc80fa7d475cd075/virtualization/windowscontainers/management/media/nwconfig.png) | Ignored | [Details](#f38c2cd178b4cd8c1dd2e187ef4fa05546755d43218)
+ [virtualization\windowscontainers\quick_start\inplace_setup.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/8eea4a41035cab6dbd9635abfc80fa7d475cd075/virtualization/windowscontainers/quick_start/inplace_setup.md) | Ignored | [Details](#5ce121f3108c1c4a43601355fb4f15ff26875e0a227)
  [virtualization\windowscontainers\quick_start\media\App-in-Container-Green.png](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/8eea4a41035cab6dbd9635abfc80fa7d475cd075/virtualization/windowscontainers/quick_start/media/App-in-Container-Green.png) | Ignored | [Details](#62712c1c810e5e6fd902a4a81b1b55400408aa3f230)
  [virtualization\windowscontainers\quick_start\media\AzureGallery.PNG](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/8eea4a41035cab6dbd9635abfc80fa7d475cd075/virtualization/windowscontainers/quick_start/media/AzureGallery.PNG) | Ignored | [Details](#8b54791fb03e146b4c42f2bcfcb672d51a1492ac231)
  [virtualization\windowscontainers\quick_start\media\AzurePorts.PNG](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/8eea4a41035cab6dbd9635abfc80fa7d475cd075/virtualization/windowscontainers/quick_start/media/AzurePorts.PNG) | Ignored | [Details](#643fd60b3cc1e02e2f754ed061ab2979450ae137232)
@@ -824,6 +829,16 @@
 * [Back to Top](#report-top)
 
 ##### <a name='7469c905e04001f8250137d2da57bbc7bec2d35856'></a> Source: [Tools\NuGet\nuget.exe](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/8eea4a41035cab6dbd9635abfc80fa7d475cd075/Tools/NuGet/nuget.exe)
+* Status: Ignored
+* Target File: 
+* Handoff File: 
+* Handoff Datetime: 0001-01-01 00:00:00
+* Handoff Reason: Ignored
+* Handback File: 
+* Handback Datetime: 0001-01-01 00:00:00
+* [Back to Top](#report-top)
+
+##### <a name='4a312891b6e0ffe403bf43fdc020aa5fc970f99f58'></a> Source: [virtualization\community\contribute_to_docs.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/8eea4a41035cab6dbd9635abfc80fa7d475cd075/virtualization/community/contribute_to_docs.md)
 * Status: Ignored
 * Target File: 
 * Handoff File: 
@@ -1543,7 +1558,37 @@
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
+##### <a name='e18147d9412a67b9e69eab34133112d898e26476199'></a> Source: [virtualization\windowscontainers\deployment\deployment.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/8eea4a41035cab6dbd9635abfc80fa7d475cd075/virtualization/windowscontainers/deployment/deployment.md)
+* Status: Ignored
+* Target File: 
+* Handoff File: 
+* Handoff Datetime: 0001-01-01 00:00:00
+* Handoff Reason: Ignored
+* Handback File: 
+* Handback Datetime: 0001-01-01 00:00:00
+* [Back to Top](#report-top)
+
 ##### <a name='d03873cb289bc97d547e1edcf34861ce8a48ff9e205'></a> Source: [virtualization\windowscontainers\docfx.json](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/8eea4a41035cab6dbd9635abfc80fa7d475cd075/virtualization/windowscontainers/docfx.json)
+* Status: Ignored
+* Target File: 
+* Handoff File: 
+* Handoff Datetime: 0001-01-01 00:00:00
+* Handoff Reason: Ignored
+* Handback File: 
+* Handback Datetime: 0001-01-01 00:00:00
+* [Back to Top](#report-top)
+
+##### <a name='effea986e28cb43e3472993a5697ddd876ee47c0213'></a> Source: [virtualization\windowscontainers\management\manage_images.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/8eea4a41035cab6dbd9635abfc80fa7d475cd075/virtualization/windowscontainers/management/manage_images.md)
+* Status: Ignored
+* Target File: 
+* Handoff File: 
+* Handoff Datetime: 0001-01-01 00:00:00
+* Handoff Reason: Ignored
+* Handback File: 
+* Handback Datetime: 0001-01-01 00:00:00
+* [Back to Top](#report-top)
+
+##### <a name='a04c4849b1aebdb14e50c6ea3464ee26d3d2c4fe214'></a> Source: [virtualization\windowscontainers\management\manage_resources.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/8eea4a41035cab6dbd9635abfc80fa7d475cd075/virtualization/windowscontainers/management/manage_resources.md)
 * Status: Ignored
 * Target File: 
 * Handoff File: 
@@ -1574,6 +1619,16 @@
 * [Back to Top](#report-top)
 
 ##### <a name='f38c2cd178b4cd8c1dd2e187ef4fa05546755d43218'></a> Source: [virtualization\windowscontainers\management\media\nwconfig.png](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/8eea4a41035cab6dbd9635abfc80fa7d475cd075/virtualization/windowscontainers/management/media/nwconfig.png)
+* Status: Ignored
+* Target File: 
+* Handoff File: 
+* Handoff Datetime: 0001-01-01 00:00:00
+* Handoff Reason: Ignored
+* Handback File: 
+* Handback Datetime: 0001-01-01 00:00:00
+* [Back to Top](#report-top)
+
+##### <a name='5ce121f3108c1c4a43601355fb4f15ff26875e0a227'></a> Source: [virtualization\windowscontainers\quick_start\inplace_setup.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/8eea4a41035cab6dbd9635abfc80fa7d475cd075/virtualization/windowscontainers/quick_start/inplace_setup.md)
 * Status: Ignored
 * Target File: 
 * Handoff File: 
