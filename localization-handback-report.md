@@ -1,7 +1,7 @@
 # <a name='report-top'></a> Localization Handback Report
 
 ## Summary
- Total Files | 96
+ Total Files | 95
 
 ## File List
  Source File | Status | Details 
@@ -101,7 +101,6 @@
  [virtualization\windowscontainers\reference\app_compat.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/beb2ff361edf5d86391458d4e37c8cef9fc6d1ae/virtualization/windowscontainers/reference/app_compat.md) | FullHandedBack | [Details](#5eab8f6f2a0520fdd8b588efcadc9ec30e16c5b4270)
  [virtualization\windowscontainers\reference\powershell_overview.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/beb2ff361edf5d86391458d4e37c8cef9fc6d1ae/virtualization/windowscontainers/reference/powershell_overview.md) | FullHandedBack | [Details](#1b45d4b9f527888a9fd808064bd61b7b2932f58f271)
  [virtualization\windowscontainers\reference\ps_docker_comparison.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/beb2ff361edf5d86391458d4e37c8cef9fc6d1ae/virtualization/windowscontainers/reference/ps_docker_comparison.md) | FullHandedBack | [Details](#7b5d0f445fe0bfa4a7403661ccc72074e4d84460272)
- [virtualization\windowscontainers\TOC.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/955d199d111b55d44b5eb42fc9d10d2c8a3309ad/virtualization/windowscontainers/TOC.md) | FullHandedBack | [Details](#1a83732b9948cb3944c4dc6d01bc655049e4a117273)
 
 ## Item Details
 ##### <a name='5090f6d60b5cbdce0990242d795d9e4e3736e79157'></a> Source: [virtualization\community\community_overview.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/beb2ff361edf5d86391458d4e37c8cef9fc6d1ae/virtualization/community/community_overview.md)
@@ -1106,16 +1105,6 @@
 * Handoff Datetime: 2015-12-03 10:35:29
 * Handoff Reason: Include
 * Handback File: [ps_docker_comparison.ebee670390084537f2252c760f11eefb8de5efa5.zh-cn.xlf](https://github.com/Microsoft/Virtualization-Documentation-Private.handback/blob/6780680e67566edf05a81dc5772160630d36fcad/ol-handback/Microsoft/Virtualization-Documentation-Private.zh-cn/live/ps_docker_comparison.ebee670390084537f2252c760f11eefb8de5efa5.zh-cn.xlf)
-* Handback Datetime: 2016-01-04 21:52:22
-* [Back to Top](#report-top)
-
-##### <a name='1a83732b9948cb3944c4dc6d01bc655049e4a117273'></a> Source: [virtualization\windowscontainers\TOC.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/955d199d111b55d44b5eb42fc9d10d2c8a3309ad/virtualization/windowscontainers/TOC.md)
-* Status: FullHandedBack
-* Target File: [virtualization\windowscontainers\TOC.md](https://github.com/Microsoft/Virtualization-Documentation-Private.zh-cn/blob/aeef3e608573f22771796c084b7d4c8c0c421d30/virtualization/windowscontainers/TOC.md)
-* Handoff File: [TOC.13173dbdc376543cb6eb74ef16484f39c0ef0fdb.zh-cn.xlf](https://github.com/Microsoft/Virtualization-Documentation-Private.handoff/blob/b4c78125da9babce3e185b1006bbfc728167c68a/ol-handoff/Microsoft/Virtualization-Documentation-Private.zh-cn/live/TOC.13173dbdc376543cb6eb74ef16484f39c0ef0fdb.zh-cn.xlf)
-* Handoff Datetime: 2015-12-11 03:55:14
-* Handoff Reason: Include
-* Handback File: [TOC.13173dbdc376543cb6eb74ef16484f39c0ef0fdb.zh-cn.xlf](https://github.com/Microsoft/Virtualization-Documentation-Private.handback/blob/6780680e67566edf05a81dc5772160630d36fcad/ol-handback/Microsoft/Virtualization-Documentation-Private.zh-cn/live/TOC.13173dbdc376543cb6eb74ef16484f39c0ef0fdb.zh-cn.xlf)
 * Handback Datetime: 2016-01-04 21:52:22
 * [Back to Top](#report-top)
 
