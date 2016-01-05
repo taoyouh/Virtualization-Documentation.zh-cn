@@ -316,6 +316,9 @@
   "7b5d0f445fe0bfa4a7403661ccc72074e4d84460": [
     "virtualization\\windowscontainers\\reference\\ps_docker_comparison.md"
   ],
+  "04d101913570c35c791327d521dd996ab9f681c2": [
+    "virtualization\\windowscontainers\\TOC.md"
+  ],
   "87f65c4adb94d4e19f9369a590b74ef24d80233f": [
     "virtualization\\windowscontainers\\TOC.md"
   ],
@@ -363,5 +366,8 @@
   ],
   "367d56d6ba500771f4a03e2296eca6bb079d891e": [
     "virtualization\\windowscontainers\\media\\explore.png"
+  ],
+  "aa26c5fc60bcdfd7cd521799700e2f6eea48eb17": [
+    "virtualization\\windowscontainers\\Nano_EULA.md"
   ]
 }
