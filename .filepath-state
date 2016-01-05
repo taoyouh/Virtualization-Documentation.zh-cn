@@ -152,13 +152,7 @@
   "02a74d5f1ff50a45b6cac5cf935d1b321d1f7331": [
     "virtualization\\hyperv_on_windows\\user_guide\\vmsession.md"
   ],
-  "436e5d14aced41f8066ac5b9379e85e377cc2468": [
-    "virtualization\\hyperv_on_windows\\user_guide\\vmsession.md"
-  ],
   "55e6b7d576cdaa06773b63556435753e1d191803": [
-    "virtualization\\hyperv_on_windows\\windows_welcome.md"
-  ],
-  "e4d80492c026a6e7f79eae336ea20d3291dc18d2": [
     "virtualization\\hyperv_on_windows\\windows_welcome.md"
   ],
   "215adae041390b1edb10b314dc7ce21f6b39592e": [
@@ -193,12 +187,6 @@
   "5547f0f37b1d84d2930f4b54c156f06cd29f407e": [
     "virtualization\\windowscontainers\\containers_welcome.md"
   ],
-  "d4319ca7dc578b138d2ddb9fb16ba9488d0a269c": [
-    "virtualization\\windowscontainers\\containers_welcome.md"
-  ],
-  "f086e39f3b6d5667fa8b01d1f6f42007bb2f6521": [
-    "virtualization\\windowscontainers\\containers_welcome.md"
-  ],
   "e18147d9412a67b9e69eab34133112d898e26476": [
     "virtualization\\windowscontainers\\deployment\\deployment.md"
   ],
@@ -218,9 +206,6 @@
     "virtualization\\windowscontainers\\deployment\\media\\nssm3.png"
   ],
   "4ff8bc1286463449cb8c93aee680da31aab5d8a0": [
-    "virtualization\\windowscontainers\\deployment\\system_requirements.md"
-  ],
-  "946a841b5f50a8672afe8c1b28f88fe51f14798b": [
     "virtualization\\windowscontainers\\deployment\\system_requirements.md"
   ],
   "f2cb1cdc1a98bf328a24610af6f7313a1071b079": [
@@ -289,9 +274,6 @@
   "d637af744a26827ceeebc9574d1d1cf24b5a7258": [
     "virtualization\\windowscontainers\\quick_start\\manage_docker.md"
   ],
-  "7dbbbf6be904ef72f88e3babf23d3ccb69729c32": [
-    "virtualization\\windowscontainers\\quick_start\\manage_docker.md"
-  ],
   "05351786546d43e78bf4fe953c9dbf6bde7f1bba": [
     "virtualization\\windowscontainers\\quick_start\\media\\iis1.png"
   ],
@@ -302,9 +284,6 @@
     "virtualization\\windowscontainers\\quick_start\\media\\dockerfile2.png"
   ],
   "7c1a1ddd6a66a967a0b99bcc0b48ff6f26cddbf8": [
-    "virtualization\\windowscontainers\\quick_start\\manage_powershell.md"
-  ],
-  "7a435b402887b16a9dbb2a26eac7474952466711": [
     "virtualization\\windowscontainers\\quick_start\\manage_powershell.md"
   ],
   "5eab8f6f2a0520fdd8b588efcadc9ec30e16c5b4": [
