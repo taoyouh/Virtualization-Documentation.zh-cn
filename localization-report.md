@@ -5,9 +5,9 @@
  -------- | ----- 
  Total Files | 370
 [ Handoff Files ](#handoff-list)| 1
-[ Partial Handback Files ](#partial-handback-list)| 10
+[ Partial Handback Files ](#partial-handback-list)| 9
 [ Full Handback Files ](#full-handback-list)| 101
-[ Ignored Files ](#ignored-list)| 258
+[ Ignored Files ](#ignored-list)| 259
 
 ## <a name='handoff-list'></a> Handoff File List
  Source File | Status | Details 
@@ -22,7 +22,6 @@
  [virtualization\windowscontainers\deployment\deployment.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/ab798d22c2ecdc0297b5949ffcd8180eed271914/virtualization/windowscontainers/deployment/deployment.md) | PartialHandedBack | [Details](#e18147d9412a67b9e69eab34133112d898e26476199)
  [virtualization\windowscontainers\deployment\docker_windows.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/5355136c0d8cf96346976b40bb94a87abd3c21f6/virtualization/windowscontainers/deployment/docker_windows.md) | PartialHandedBack | [Details](#73f98cc3a66d271b274ebf25174facd5d3bedf33200)
  [virtualization\windowscontainers\management\container_networking.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/3a8f4fb9a71ca837eaad4d949d68b47a528fd6a3/virtualization/windowscontainers/management/container_networking.md) | PartialHandedBack | [Details](#32705895b793260ec4ab4735fd6db7275230ddae208)
- [virtualization\windowscontainers\management\hyperv_container.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/8eea4a41035cab6dbd9635abfc80fa7d475cd075/virtualization/windowscontainers/management/hyperv_container.md) | PartialHandedBack | [Details](#bb2a0b7a8e0680fea128ceccdff87abf4281d402210)
  [virtualization\windowscontainers\management\manage_images.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/ab798d22c2ecdc0297b5949ffcd8180eed271914/virtualization/windowscontainers/management/manage_images.md) | PartialHandedBack | [Details](#effea986e28cb43e3472993a5697ddd876ee47c0213)
  [virtualization\windowscontainers\management\manage_resources.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/ab798d22c2ecdc0297b5949ffcd8180eed271914/virtualization/windowscontainers/management/manage_resources.md) | PartialHandedBack | [Details](#a04c4849b1aebdb14e50c6ea3464ee26d3d2c4fe214)
  [virtualization\windowscontainers\quick_start\inplace_setup.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/ab798d22c2ecdc0297b5949ffcd8180eed271914/virtualization/windowscontainers/quick_start/inplace_setup.md) | PartialHandedBack | [Details](#5ce121f3108c1c4a43601355fb4f15ff26875e0a228)
@@ -265,6 +264,7 @@
  [virtualization\windowscontainers\about\media\overheadSpectrum.png](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/3a8f4fb9a71ca837eaad4d949d68b47a528fd6a3/virtualization/windowscontainers/about/media/overheadSpectrum.png) | Ignored | [Details](#8666862f14deb4e0523570cc3a3194fdfe115c3a195)
  [virtualization\windowscontainers\about\media\WindowsServerContainer.png](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/3a8f4fb9a71ca837eaad4d949d68b47a528fd6a3/virtualization/windowscontainers/about/media/WindowsServerContainer.png) | Ignored | [Details](#1bf883f69ce268f31b33e5fe2228655c206d7479196)
  [virtualization\windowscontainers\docfx.json](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/3a8f4fb9a71ca837eaad4d949d68b47a528fd6a3/virtualization/windowscontainers/docfx.json) | Ignored | [Details](#d03873cb289bc97d547e1edcf34861ce8a48ff9e205)
+ [virtualization\windowscontainers\management\hyperv_container.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/3a8f4fb9a71ca837eaad4d949d68b47a528fd6a3/virtualization/windowscontainers/management/hyperv_container.md) | Ignored | [Details](#b716fd35553420c0e01c9cc3597e9e913ff30f1a210)
  [virtualization\windowscontainers\management\media\imagecommit.png](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/3a8f4fb9a71ca837eaad4d949d68b47a528fd6a3/virtualization/windowscontainers/management/media/imagecommit.png) | Ignored | [Details](#70d9d123171e564192e70631951058b0639e0f67215)
  [virtualization\windowscontainers\management\media\imagelayer.png](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/3a8f4fb9a71ca837eaad4d949d68b47a528fd6a3/virtualization/windowscontainers/management/media/imagelayer.png) | Ignored | [Details](#79ca6518022758718f4adb9f5af0b408051b4180216)
  [virtualization\windowscontainers\management\media\nwconfig.png](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/3a8f4fb9a71ca837eaad4d949d68b47a528fd6a3/virtualization/windowscontainers/management/media/nwconfig.png) | Ignored | [Details](#f38c2cd178b4cd8c1dd2e187ef4fa05546755d43218)
@@ -2564,17 +2564,14 @@
 * Handback Datetime: 2016-01-04 21:52:22
 * [Back to Top](#report-top)
 
-##### <a name='bb2a0b7a8e0680fea128ceccdff87abf4281d402210'></a> Source: [virtualization\windowscontainers\management\hyperv_container.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/8eea4a41035cab6dbd9635abfc80fa7d475cd075/virtualization/windowscontainers/management/hyperv_container.md)
-* Status: PartialHandedBack
+##### <a name='b716fd35553420c0e01c9cc3597e9e913ff30f1a210'></a> Source: [virtualization\windowscontainers\management\hyperv_container.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/3a8f4fb9a71ca837eaad4d949d68b47a528fd6a3/virtualization/windowscontainers/management/hyperv_container.md)
+* Status: Ignored
 * Target File: 
-* Handoff File: [hyperv_container.081f9802174235940087cf2891a3f48eaec73707.zh-cn.xlf](https://github.com/Microsoft/Virtualization-Documentation-Private.handoff/blob/d773ea4dd073ac59be2400d67ebc646d03c34b0a/ol-handoff/Microsoft/Virtualization-Documentation-Private.zh-cn/live/hyperv_container.081f9802174235940087cf2891a3f48eaec73707.zh-cn.xlf)
-* Handoff Datetime: 2016-01-04 22:17:42
-* Handoff Reason: Include
+* Handoff File: 
+* Handoff Datetime: 0001-01-01 00:00:00
+* Handoff Reason: Ignored
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [virtualization\windowscontainers\management\hyperv_container.md](https://github.com/Microsoft/Virtualization-Documentation-Private.zh-cn/blob/aeef3e608573f22771796c084b7d4c8c0c421d30/virtualization/windowscontainers/management/hyperv_container.md)
-* Current Handback File: [hyperv_container.081f9802174235940087cf2891a3f48eaec73707.zh-cn.xlf](https://github.com/Microsoft/Virtualization-Documentation-Private.handback/blob/6780680e67566edf05a81dc5772160630d36fcad/ol-handback/Microsoft/Virtualization-Documentation-Private.zh-cn/live/hyperv_container.081f9802174235940087cf2891a3f48eaec73707.zh-cn.xlf)
-* Current Handback Datetime: 2016-01-04 21:52:22
 * [Back to Top](#report-top)
 
 ##### <a name='ef8be0da4c6a51a417d50cd06fb83d878e03dd04211'></a> Source: [virtualization\windowscontainers\management\manage_containers.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/870148f03087d9b37bdd0e3c40dd0541f42750d5/virtualization/windowscontainers/management/manage_containers.md)
