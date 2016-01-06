@@ -1,5 +1,5 @@
 {
-  "LastProcessedCommit": "3a8f4fb9a71ca837eaad4d949d68b47a528fd6a3",
+  "LastProcessedCommit": "5cc0e8f278f58115048b79ad5527137dd0e69cab",
   "LastTranslatedCommit": "2539099f07e0c477ef1ae6ac53ac19ecc7184f53",
   "Items": {
     "5090f6d60b5cbdce0990242d795d9e4e3736e791": {
@@ -3280,6 +3280,25 @@
       "DependencyFrom": null,
       "FilePathList": [
         "virtualization\\windowscontainers\\management\\container_networking.md"
+      ]
+    },
+    "b716fd35553420c0e01c9cc3597e9e913ff30f1a": {
+      "FileHash": "b716fd35553420c0e01c9cc3597e9e913ff30f1a",
+      "SourceFileCommit": "5cc0e8f278f58115048b79ad5527137dd0e69cab",
+      "SourceFilePath": "virtualization\\windowscontainers\\management\\hyperv_container.md",
+      "TargetFileCommit": null,
+      "TargetFilePath": null,
+      "HandoffFilePath": "ol-handoff\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\hyperv_container.081f9802174235940087cf2891a3f48eaec73707.zh-cn.xlf",
+      "HandoffFileCommit": "c6d0bf0d27bc961a2e80d2076f4f511a429b73ab",
+      "HandoffReason": 1,
+      "HandoffDateTime": "2016-01-06T05:47:22.0015961Z",
+      "HandbackFilePath": null,
+      "HandbackFileCommit": null,
+      "HandbackDateTime": "0001-01-01T00:00:00",
+      "UpdatedDateTime": "0001-01-01T00:00:00",
+      "DependencyFrom": null,
+      "FilePathList": [
+        "virtualization\\windowscontainers\\management\\hyperv_container.md"
       ]
     }
   }
