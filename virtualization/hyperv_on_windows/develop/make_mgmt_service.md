@@ -91,7 +91,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Virtualization\G
 在最基本的情况下，定义套接字需要地址系列、连接类型和协议。
 
 下面是一个简单的 [套接字定义](
-https://msdn.microsoft.com/zh-cn/library/windows/desktop/ms740506 (v=vs.85).aspx
+https://msdn.microsoft.com/zh-cn/library/windows/desktop/ms740506(v=vs.85).aspx
 )
 
 ``` C
