@@ -1,5 +1,5 @@
 {
-  "LastProcessedCommit": "561c94db1199e03bbac4a74ade92f0199ac63736",
+  "LastProcessedCommit": "3a8f4fb9a71ca837eaad4d949d68b47a528fd6a3",
   "LastTranslatedCommit": "2539099f07e0c477ef1ae6ac53ac19ecc7184f53",
   "Items": {
     "5090f6d60b5cbdce0990242d795d9e4e3736e791": {
@@ -3261,6 +3261,25 @@
       "DependencyFrom": null,
       "FilePathList": [
         "virtualization\\windowscontainers\\about\\work_in_progress.md"
+      ]
+    },
+    "32705895b793260ec4ab4735fd6db7275230ddae": {
+      "FileHash": "32705895b793260ec4ab4735fd6db7275230ddae",
+      "SourceFileCommit": "3a8f4fb9a71ca837eaad4d949d68b47a528fd6a3",
+      "SourceFilePath": "virtualization\\windowscontainers\\management\\container_networking.md",
+      "TargetFileCommit": null,
+      "TargetFilePath": null,
+      "HandoffFilePath": "ol-handoff\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\container_networking.7cf72391b3aa727681997232feeeb0a32d363edc.zh-cn.xlf",
+      "HandoffFileCommit": "5f69f135f796aecc9853e7e163555c015233d4c0",
+      "HandoffReason": 1,
+      "HandoffDateTime": "2016-01-06T05:26:51.1963366Z",
+      "HandbackFilePath": null,
+      "HandbackFileCommit": null,
+      "HandbackDateTime": "0001-01-01T00:00:00",
+      "UpdatedDateTime": "0001-01-01T00:00:00",
+      "DependencyFrom": null,
+      "FilePathList": [
+        "virtualization\\windowscontainers\\management\\container_networking.md"
       ]
     }
   }
