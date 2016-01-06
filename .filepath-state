@@ -295,6 +295,9 @@
   "24a79a8377a34797a7b590421167fc4e5f843e60": [
     "virtualization\\windowscontainers\\quick_start\\media\\dockerfile2.png"
   ],
+  "80b21c67eeefc5cf7874dc7f9a0981911918ad50": [
+    "virtualization\\windowscontainers\\quick_start\\manage_powershell.md"
+  ],
   "7c1a1ddd6a66a967a0b99bcc0b48ff6f26cddbf8": [
     "virtualization\\windowscontainers\\quick_start\\manage_powershell.md"
   ],

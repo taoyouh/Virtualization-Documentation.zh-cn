@@ -1,5 +1,5 @@
 {
-  "LastProcessedCommit": "a1cd5a5735c98779195b8d8b93157a4747cf9017",
+  "LastProcessedCommit": "524f61ef8290a73608cc1cc138adfc59432f0db5",
   "LastTranslatedCommit": "2539099f07e0c477ef1ae6ac53ac19ecc7184f53",
   "Items": {
     "5090f6d60b5cbdce0990242d795d9e4e3736e791": {
@@ -3318,6 +3318,25 @@
       "DependencyFrom": null,
       "FilePathList": [
         "virtualization\\windowscontainers\\management\\manage_resources.md"
+      ]
+    },
+    "80b21c67eeefc5cf7874dc7f9a0981911918ad50": {
+      "FileHash": "80b21c67eeefc5cf7874dc7f9a0981911918ad50",
+      "SourceFileCommit": "524f61ef8290a73608cc1cc138adfc59432f0db5",
+      "SourceFilePath": "virtualization\\windowscontainers\\quick_start\\manage_powershell.md",
+      "TargetFileCommit": null,
+      "TargetFilePath": null,
+      "HandoffFilePath": "ol-handoff\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\manage_powershell.fccfd13be3f4bd16afbe4f31a5ca5ed4e93806b7.zh-cn.xlf",
+      "HandoffFileCommit": "cad8bb61e2785169f727336459c635bb7e334930",
+      "HandoffReason": 1,
+      "HandoffDateTime": "2016-01-06T18:41:50.1542287Z",
+      "HandbackFilePath": null,
+      "HandbackFileCommit": null,
+      "HandbackDateTime": "0001-01-01T00:00:00",
+      "UpdatedDateTime": "0001-01-01T00:00:00",
+      "DependencyFrom": null,
+      "FilePathList": [
+        "virtualization\\windowscontainers\\quick_start\\manage_powershell.md"
       ]
     }
   }
