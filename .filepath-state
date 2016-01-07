@@ -253,6 +253,9 @@
   "a271342b6080025791fa96cab59603653750f03c": [
     "virtualization\\windowscontainers\\management\\manage_images.md"
   ],
+  "415ef437d68aa931b219d1ff7ae271044c1982a7": [
+    "virtualization\\windowscontainers\\management\\manage_resources.md"
+  ],
   "5a82d33ca629f2f3243e201815f493c7d26a6ba2": [
     "virtualization\\windowscontainers\\management\\manage_resources.md"
   ],
