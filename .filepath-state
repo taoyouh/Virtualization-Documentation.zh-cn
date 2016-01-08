@@ -199,6 +199,9 @@
   "3023c7ac81a50ecd184462f5235d419fe2f6bd61": [
     "virtualization\\windowscontainers\\deployment\\deployment.md"
   ],
+  "6ab8c7e34af1beb406dd40e2464cde0dc2fbb8ea": [
+    "virtualization\\windowscontainers\\deployment\\docker_windows.md"
+  ],
   "99e52dc7dfbaeb9c3f20f10847e603a738f0c2ed": [
     "virtualization\\windowscontainers\\deployment\\docker_windows.md"
   ],

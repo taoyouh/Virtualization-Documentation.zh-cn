@@ -1,5 +1,5 @@
 {
-  "LastProcessedCommit": "f2b0ae48709301cfdf5482fa35520a3c52bd612f",
+  "LastProcessedCommit": "17ea7858c35d436f9b1fc149c098bcedd9fa6bae",
   "LastTranslatedCommit": "2539099f07e0c477ef1ae6ac53ac19ecc7184f53",
   "Items": {
     "5090f6d60b5cbdce0990242d795d9e4e3736e791": {
@@ -3489,6 +3489,25 @@
       "DependencyFrom": null,
       "FilePathList": [
         "virtualization\\windowscontainers\\management\\manage_resources.md"
+      ]
+    },
+    "6ab8c7e34af1beb406dd40e2464cde0dc2fbb8ea": {
+      "FileHash": "6ab8c7e34af1beb406dd40e2464cde0dc2fbb8ea",
+      "SourceFileCommit": "17ea7858c35d436f9b1fc149c098bcedd9fa6bae",
+      "SourceFilePath": "virtualization\\windowscontainers\\deployment\\docker_windows.md",
+      "TargetFileCommit": null,
+      "TargetFilePath": null,
+      "HandoffFilePath": "ol-handoff\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\docker_windows.48c2b5c855b2e2f9c878a0dd97aec82b1b8b1a92.zh-cn.xlf",
+      "HandoffFileCommit": "38e17843730febbc059686dbb3ae06c19e42cd14",
+      "HandoffReason": 1,
+      "HandoffDateTime": "2016-01-08T19:31:24.6354444Z",
+      "HandbackFilePath": null,
+      "HandbackFileCommit": null,
+      "HandbackDateTime": "0001-01-01T00:00:00",
+      "UpdatedDateTime": "0001-01-01T00:00:00",
+      "DependencyFrom": null,
+      "FilePathList": [
+        "virtualization\\windowscontainers\\deployment\\docker_windows.md"
       ]
     }
   }
