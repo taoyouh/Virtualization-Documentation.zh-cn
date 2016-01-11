@@ -1,6 +1,6 @@
 {
   "LastProcessedCommit": "17ea7858c35d436f9b1fc149c098bcedd9fa6bae",
-  "LastTranslatedCommit": "6610873cbcd22289db4c6d0fe7c38e03a78f24ae",
+  "LastTranslatedCommit": "c22570196134a464ea238d9b936fa8e2d7753613",
   "Items": {
     "5090f6d60b5cbdce0990242d795d9e4e3736e791": {
       "FileHash": "5090f6d60b5cbdce0990242d795d9e4e3736e791",
@@ -696,14 +696,14 @@
       "HandoffDateTime": "2015-12-03T10:35:29.0779956Z",
       "HandoffException": null,
       "HandoffFailureTimes": 0,
-      "TargetFileCommit": "aeef3e608573f22771796c084b7d4c8c0c421d30",
+      "TargetFileCommit": "c22570196134a464ea238d9b936fa8e2d7753613",
       "TargetFilePath": "virtualization\\hyperv_on_windows\\quick_start\\walkthrough_virtual_switch.md",
       "HandbackFilePath": "ol-handback\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\walkthrough_virtual_switch.27dde78ebf41bbbdb946f00af1eb221b79cbb05a.zh-cn.xlf",
-      "HandbackFileCommit": "6780680e67566edf05a81dc5772160630d36fcad",
-      "HandbackDateTime": "2016-01-04T21:52:22.6591255Z",
+      "HandbackFileCommit": "2d6fe54cc4f49eba58f98bbc87c3f9d593af13b8",
+      "HandbackDateTime": "2016-01-11T22:38:47.3862603Z",
       "HandbackException": null,
       "HandbackFailureTimes": 0,
-      "UpdatedDateTime": "2016-01-04T21:52:22.6591255Z"
+      "UpdatedDateTime": "2016-01-11T22:38:47.3862603Z"
     },
     "d71d2800e3c9442a264de165813142157420b5f6": {
       "FileHash": "d71d2800e3c9442a264de165813142157420b5f6",
