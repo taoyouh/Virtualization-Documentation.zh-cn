@@ -14,27 +14,27 @@
 
 1. 打开 Hyper-V 管理器。
 
-2. 右键单击 Hyper-V 主机的名称，然后选择**“虚拟交换机管理器”**。
+2. 右键单击 Hyper-V 主机的名称，然后选择“虚拟交换机管理器”。
 
-3. 在“虚拟交换机”下，选择**“新建虚拟网络交换机”**。
+3. 在“虚拟交换机”下，选择“新建虚拟网络交换机”。
 
-4. 在“创建虚拟交换机”下，选择**“外部”**。
+4. 在“创建虚拟交换机”下，选择“外部”。
 
-5. 选择**“创建虚拟交换机”**按钮。
+5. 选择“创建虚拟交换机”按钮。
 
-6. 在“虚拟交换机属性”下，为新交换机命名，如**“外部 VM 交换机”**。
+6. 在“虚拟交换机属性”下，为新交换机命名，如“外部 VM 交换机”>。
 
-7. 在“连接类型”下，确保已选择**“外部网络”**。
+7. 在“连接类型”下，确保已选择“外部网络”。
 
 8. 选择要与新的虚拟交换机配对的物理网卡，即以物理方式连接到网络的网卡。
 
-    ![](media/newSwitch_upd.png)
+![](media/newSwitch_upd.png)
 
-9. 选择**“应用”**来创建虚拟交换机。 此时，你很可能看到以下消息，单击**“是”**以继续。
+9. 选择“应用”>来创建虚拟交换机。 此时，你很可能看到以下消息，单击“是”以继续。
 
-    ![](media/pen_changes_upd.png)
+![](media/pen_changes_upd.png)
 
-10. 选择**“确定”**以关闭虚拟交换机管理器窗口。
+10. 选择“确定”以关闭虚拟交换机管理器窗口。
 
 ## 使用 PowerShell 创建虚拟交换机
 
@@ -42,26 +42,26 @@
 
 1. 使用 **Get-NetAdapter** 返回连接到 Windows 10 系统的网络适配器列表。
 
-    ```powershell
-    PS C:\> Get-NetAdapter
-    
-    Name                      InterfaceDescription                    ifIndex Status       MacAddress             LinkSpeed
-    ----                      --------------------                    ------- ------       ----------             ---------
-    Ethernet 2                Broadcom NetXtreme 57xx Gigabit Cont...       5 Up           BC-30-5B-A8-C1-7F         1 Gbps
-    Ethernet                  Intel(R) PRO/100 M Desktop Adapter            3 Up           00-0E-0C-A8-DC-31        10 Mbps  
-    ```
+```powershell
+PS C:\> Get-NetAdapter
+
+Name                      InterfaceDescription                    ifIndex Status       MacAddress             LinkSpeed
+----                      --------------------                    ------- ------       ----------             ---------
+Ethernet 2                Broadcom NetXtreme 57xx Gigabit Cont...       5 Up           BC-30-5B-A8-C1-7F         1 Gbps
+Ethernet                  Intel(R) PRO/100 M Desktop Adapter            3 Up           00-0E-0C-A8-DC-31        10 Mbps  
+```
 
 2. 选择要用于 Hyper-V 交换机的网络适配器并将一个实例放入名为 **$net** 的变量中。
 
-    ```
-    $net = Get-NetAdapter -Name 'Ethernet'
-    ```
+```
+$net = Get-NetAdapter -Name 'Ethernet'
+```
 
 3. 执行以下命令来创建新的 Hyper-V 虚拟交换机。
 
-    ```
-    New-VMSwitch -Name "External VM Switch" -AllowManagementOS $True -NetAdapterName $net.Name
-    ```
+```
+New-VMSwitch -Name "External VM Switch" -AllowManagementOS $True -NetAdapterName $net.Name
+```
 
 ## 虚拟交换机和笔记本电脑
 
@@ -74,3 +74,4 @@
 
 
 
+<!--HONumber=Dec15_HO1-->
