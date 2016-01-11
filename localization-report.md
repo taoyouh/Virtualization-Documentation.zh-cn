@@ -2283,7 +2283,7 @@
 * Handoff Datetime: 2016-01-04 22:17:42
 * Handoff Reason: Include
 * Handback File: [vmsession.5b8e9c3583d826412e0ae8e2f58f1deca9901582.zh-cn.xlf](https://github.com/Microsoft/Virtualization-Documentation-Private.handback/blob/3fc798f6b9c36415f0058a6b2656b8dd02168d19/ol-handback/Microsoft/Virtualization-Documentation-Private.zh-cn/live/vmsession.5b8e9c3583d826412e0ae8e2f58f1deca9901582.zh-cn.xlf)
-* Handback Datetime: 2016-01-11 15:59:28
+* Handback Datetime: 2016-01-11 16:01:18
 * Handback Error: [handback_transform_failed](#02a74d5f1ff50a45b6cac5cf935d1b321d1f7331182handback_transform_failed)
 * [Back to Top](#report-top)
 
