@@ -1,6 +1,6 @@
 {
   "LastProcessedCommit": "17ea7858c35d436f9b1fc149c098bcedd9fa6bae",
-  "LastTranslatedCommit": "2a478d1ffe41ab3c1802de6dc0debfabc1bf93a6",
+  "LastTranslatedCommit": "260770f0be8a6a8c80eab6ecc94dbbcb0ddded5c",
   "Items": {
     "5090f6d60b5cbdce0990242d795d9e4e3736e791": {
       "FileHash": "5090f6d60b5cbdce0990242d795d9e4e3736e791",
@@ -3523,7 +3523,7 @@
       "TargetFilePath": "virtualization\\hyperv_on_windows\\user_guide\\vmsession.md",
       "HandbackFilePath": "ol-handback\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\vmsession.5b8e9c3583d826412e0ae8e2f58f1deca9901582.zh-cn.xlf",
       "HandbackFileCommit": "3fc798f6b9c36415f0058a6b2656b8dd02168d19",
-      "HandbackDateTime": "2016-01-11T16:08:48.5186863Z",
+      "HandbackDateTime": "2016-01-11T16:18:52.6737848Z",
       "HandbackException": {
         "internal_error_code": "handback_transform_failed",
         "internal_error_message": "Handback file: C:\\ol\\master\\VDP.handback\\0e62d1\\ol-handback\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\vmsession.5b8e9c3583d826412e0ae8e2f58f1deca9901582.zh-cn.xlf failed.",
@@ -3533,7 +3533,7 @@
         "stack_trace": "   at Microsoft.Content.Build.Components.XliffToMarkdownTransformHandler.Transform(ILocalizationFile source)\r\n   at Microsoft.OpenLocalization.Transformer.MarkdownTransformer.XliffToMarkdownCore(Stream xliffStream, Stream sklStream, Stream markdownStream)\r\n   at Microsoft.OpenLocalization.Transformer.XliffTransformerExtensions.XliffToMarkdown(IMarkdownTransformer markdownTransformer, Stream xliffStream, Stream skeletonStream, Stream targetStream)\r\n   at Microsoft.OpenLocalization.Transformer.XliffTransformerExtensions.XliffToMarkdown(IMarkdownTransformer markdownTransformer, String xliffFile, String skeletonFile, String markdownFile)\r\n   at Microsoft.OpenLocalization.Helper.XliffTransformUtil.XliffToMarkdown(String skeletonFile, String xliffFile, String mdfile, Boolean useJavascriptTransformer) in D:\\DevEnlistments\\Source\\OpenLocalization.V2\\src\\OpenLocalization\\Helper\\XliffTransformUtil.cs:line 40\r\n   at Microsoft.OpenLocalization.Localization.LocalizationCore.GetHandbackFiles(GitRepo sourceRepo, GitRepo targetRepo, GitRepo handoffRepo, GitRepo handbackRepo, TranslationState translationInfo, TranslationOptions config, Dictionary`2 filePathInfo) in D:\\DevEnlistments\\Source\\OpenLocalization.V2\\src\\OpenLocalization\\Localization\\HandbackCore.cs:line 376",
         "extended_information": null
       },
-      "HandbackFailureTimes": 3,
+      "HandbackFailureTimes": 4,
       "UpdatedDateTime": "2016-01-05T22:04:48.0237414Z"
     },
     "5547f0f37b1d84d2930f4b54c156f06cd29f407e": {
