@@ -101,6 +101,9 @@
   "2cc583a503b2ec2bbd7b725709a5390466709ce8": [
     "virtualization\\hyperv_on_windows\\user_guide\\export_import.md"
   ],
+  "b822f41f453cbc427f59050cde0941dd90782724": [
+    "virtualization\\hyperv_on_windows\\user_guide\\managing_ics.md"
+  ],
   "19a5ba665b931c8eac1d698d74b325ba165fdea6": [
     "virtualization\\hyperv_on_windows\\user_guide\\managing_ics.md"
   ],
@@ -154,6 +157,9 @@
   ],
   "0699418429f113abee439384e0acf7450a8610b5": [
     "virtualization\\hyperv_on_windows\\user_guide\\user_guide_nav.md"
+  ],
+  "2569e28280c6fd85a0df7ad483ae127e4a6c50eb": [
+    "virtualization\\hyperv_on_windows\\user_guide\\vmsession.md"
   ],
   "02a74d5f1ff50a45b6cac5cf935d1b321d1f7331": [
     "virtualization\\hyperv_on_windows\\user_guide\\vmsession.md"
