@@ -199,6 +199,9 @@
   "3023c7ac81a50ecd184462f5235d419fe2f6bd61": [
     "virtualization\\windowscontainers\\deployment\\deployment.md"
   ],
+  "aa659c18a731357315e593dcf6024af4dd16a9a2": [
+    "virtualization\\windowscontainers\\deployment\\docker_windows.md"
+  ],
   "6ab8c7e34af1beb406dd40e2464cde0dc2fbb8ea": [
     "virtualization\\windowscontainers\\deployment\\docker_windows.md"
   ],
@@ -288,6 +291,9 @@
   ],
   "ac6168b0f3d4e8b2044dd10d1dba101e2290f1d8": [
     "virtualization\\windowscontainers\\quick_start\\media\\newazure7.png"
+  ],
+  "29847bf207e3d89ea77cf6871eabad0db0f7da3c": [
+    "virtualization\\windowscontainers\\quick_start\\container_setup.md"
   ],
   "29785adeb2bae751806ce5202e193ed5e79b813d": [
     "virtualization\\windowscontainers\\quick_start\\container_setup.md"
