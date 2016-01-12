@@ -1,31 +1,31 @@
-# Windows Containers Quick Start - PowerShell
+# Windows 容器快速入门 - PowerShell
 
-Windows Containers can be used to rapidly deploy many isolated applications on a single computer system. This quick start demonstrates deployment and management of both Windows Server and Hyper-V containers using PowerShell. Throughout this exercise you will build from the ground up a very simple ‘hello world’ application, running in both a Windows Server and a Hyper-V Container. During this process, you will create container images, work with container shared folders, and manage the container lifecycle. When completed, you will have a basic understanding of Widows Container deployment and management.
+Windows 容器可用于在单个计算机系统上快速部署多个独立应用程序。 本快速入门演示了如何使用 PowerShell 部署和管理 Windows Server 和 Hyper-V 容器。 在本练习中，你将从头开始生成一个非常简单的“Hello World”应用程序，该应用程序可在 Windows Server 和 Hyper-V 容器中运行。 在此过程中，你将创建容器映像、使用容器共享文件夹和管理容器生命周期。 完成该过程后，你将基本了解 Windows 容器的部署和管理。
 
-This walkthrough details both Windows Server containers and Hyper-V containers. Each type of container has its own basic requirements. Included with the Windows Container documentation is a procedure for quickly deploying a container host. This is the easiest way to quickly start with Windows Containers. If you do not already have a container host, see the [Container Host Deployment Quick Start](./container_setup.md).
+本演练详细介绍了 Windows Server 容器和 Hyper-V 容器。 每种类型的容器都有其自己的基本要求。 Windows 容器文档中包含了快速部署容器主机的过程。 这是 Windows 容器快速入门的最简单方法。 如果你还没有容器主机，请参阅[容器主机部署快速入门](./container_setup.md)。
 
-The following items are required for each exercise.
+每个练习都需要以下项目。
 
-**Windows Server Containers:**
+**Windows Server 容器：**
 
-- A Windows Container Host running Windows Server 2016 Core, either on-prem or in Azure.
+- 在本地或 Azure 中运行 Windows Server 2016 Core 的 Windows 容器主机。
 
-**Hyper-V Containers:**
+**Hyper-V 容器：**
 
-- A Windows Container host enabled with Nested Virtualization.
-- The Windows Server 2016 Media - [Download](https://aka.ms/tp4/serveriso).
+- 通过嵌套虚拟化启用的 Windows 容器主机。
+- Windows Server 2016 媒体 - [下载](https://aka.ms/tp4/serveriso)。
 
-> Microsoft Azure does not support Hyper-V containers. To complete the Hyper-V exercises, you need an on-prem container host.
+>Microsoft Azure 不支持 Hyper-V 容器。 若要完成 Hyper-V 练习，你需要本地容器主机。
 
-## Windows Server Container
+## Windows Server 容器
 
-Windows Server Containers provide an isolated, portable, and resource controlled operating environment for running applications and hosting processes. Windows Server Containers provide isolation between the container and host, and between containers running on the host, through process and namespace isolation.
+Windows Server 容器提供一个独立的可移植并且受资源控制的操作环境，用于运行应用程序和托管进程。 Windows Server 容器通过进程和命名空间的隔离，提供了容器和主机之间以及在主机上运行的容器之间的隔离。
 
-### Create Container <!--1-->
+### 创建容器
 
-At the time of TP4, Windows Server Containers running on a Windows Server 2016, or a Windows Server 2016 core, require the Windows Server 2016 Core OS Image.
+使用 TP4 时，在 Windows Server 2016 或 Windows Server 2016 Core 上运行的 Windows Server 容器需要 Windows Server 2016 Core 操作系统映像。
 
-Start a PowerShell session by typing `powershell`.
+通过键入 `powershell` 来启动 PowerShell 会话。
 
 ```powershell
 C:\> powershell
@@ -35,7 +35,7 @@ Copyright (C) 2015 Microsoft Corporation. All rights reserved.
 PS C:\>
 ```
 
-To validate that the Windows Server Core OS Image has been installed, use the `Get-ContainerImage` command. You may see multiple OS images, which is ok.
+若要验证是否已安装 Windows Server Core 操作系统映像，请使用 `Get-ContainerImage` 命令。 你可能会看到多个操作系统映像，这是正常现象。
 
 ```powershell
 PS C:\> Get-ContainerImage
@@ -46,7 +46,7 @@ NanoServer        CN=Microsoft 10.0.10586.0 True
 WindowsServerCore CN=Microsoft 10.0.10586.0 True
 ```
 
-To create a Windows Server Container, use the `New-Container` command. The below example creates a container named `TP4Demo` from the `WindowsServerCore` OS Image, and connects the container to a VM Switch named `Virtual Switch`. Note that the output, an object representing the container, is stored in a variable `$con`. This variable is used in subsequent commands.
+若要创建 Windows Server 容器，请使用 `New-Container` 命令。 下面的示例从 `WindowsServerCore` 操作系统映像创建一个名为 `TP4Demo` 的容器，并将该容器连接到名为 `irtual Switch` 的 VM 交换机。 请注意，输出（即一个表示容器的对象）存储在变量 `$con` 中。 此变量在后续命令中使用。
 
 ```powershell
 PS C:\> New-Container -Name TP4Demo -ContainerImageName WindowsServerCore -SwitchName "Virtual Switch"
@@ -56,7 +56,7 @@ Name    State Uptime   ParentImageName
 TP4Demo Off   00:00:00 WindowsServerCore
 ```
 
-To visualize exisiting containers, use the `Get-Container` command.
+若要可视化现有容器，请使用 `Get-Container` 命令。
 
 ```powershell
 PS C:\> Get-Container
@@ -66,13 +66,13 @@ Name    State Uptime   ParentImageName
 TP4Demo Off   00:00:00 WindowsServerCore
 ```
 
-Start the container using the `Start-Container` command.
+使用 `Start-Container` 命令启动该容器。
 
 ```powershell
 PS C:\> Start-Container -Name TP4Demo
 ```
 
-Connect to the container using the `Enter-PSSession` command. Notice that when the PowerShell session has been created with the container, the PowerShell prompt changes to reflect the container name.
+使用 `Enter-PSSession` 命令连接到该容器。 请注意，在创建与容器的 PowerShell 会话时，PowerShell 提示用于反映容器名称的更改。
 
 ```powershell
 PS C:\> Enter-PSSession -ContainerName TP4Demo -RunAsAdministrator
@@ -80,11 +80,11 @@ PS C:\> Enter-PSSession -ContainerName TP4Demo -RunAsAdministrator
 [TP4Demo]: PS C:\Windows\system32>
 ```
 
-### Create IIS Image <!--1-->
+### 创建 IIS 映像
 
-Now the container can be modified, and these modifications captured to create a new container image. For this example, IIS is installed.
+现在可以修改此容器，并捕获这些修改来创建一个新的容器映像。 在本示例中，已安装 IIS。
 
-To install the IIS role in the container, use the `Install-WindowsFeature` command.
+若要在容器中安装 IIS 角色，请使用 `Install-WindowsFeature` 命令。
 
 ```powershell
 [TP4Demo]: PS C:\> Install-WindowsFeature web-server
@@ -94,22 +94,22 @@ Success Restart Needed Exit Code      Feature Result
 True    No             Success        {Common HTTP Features, Default Document, D...
 ```
 
-When the IIS installation has completed, exit the container by typing `exit`. This returns the PowerShell session to that of the container host.
+IIS 安装完成后，请通过键入 `exit` 退出容器。 这会将 PowerShell 会话返回到容器主机的会话。
 
 ```powershell
 [TP4Demo]: PS C:\> exit
 PS C:\>
 ```
 
-Finally, stop the container using the `Stop-Container` command.
+最后，使用 `Stop-Container` 命令停止该容器。
 
 ```powershell
 PS C:\> Stop-Container -Name TP4Demo
 ```
 
-The state of this container can now be captured into a new container image. Do so using the `New-ContainerImage` command.
+现在可以将此容器的状态捕获到新的容器映像中。 使用 `New-ContainerImage` 命令执行此操作。
 
-This example creates a new container image named `WindowsServerCoreIIS`, with a publisher of `Demo`, and a version `1.0`.
+本示例创建一个名为 `WindowsServerCoreIIS` 的新容器映像，其中发布者为 `Demo`，版本为 `1.0`。
 
 ```powershell
 PS C:\> New-ContainerImage -ContainerName TP4Demo -Name WindowsServerCoreIIS -Publisher Demo -Version 1.0
@@ -119,16 +119,16 @@ Name                 Publisher Version IsOSImage
 WindowsServerCoreIIS CN=Demo   1.0.0.0 False
 ```
 
-Now that the container has been captured into the new image, it is no longer needed. You may remove it using the `Remove-Container` command.
+现在，容器已被捕获到新的映像，不再需要该容器。 您可以使用 `Remove-Container` 命令删除它。
 
 ```powershell
 PS C:\> Remove-Container -Name TP4Demo -Force
 ```
 
 
-### Create IIS Container <!--1-->
+### 创建 IIS 容器
 
-Create a new container, this time from the `WindowsServerCoreIIS` container image.
+这次从 `WindowsServerCoreIIS` 容器映像创建新容器。
 
 ```powershell
 PS C:\> New-Container -Name IIS -ContainerImageName WindowsServerCoreIIS -SwitchName "Virtual Switch"
@@ -136,20 +136,20 @@ PS C:\> New-Container -Name IIS -ContainerImageName WindowsServerCoreIIS -Switch
 Name State Uptime   ParentImageName
 ---- ----- ------   ---------------
 IIS  Off   00:00:00 WindowsServerCoreIIS
-```    
-Start the container.
+```
+启动容器。
 
 ```powershell
 PS C:\> Start-Container -Name IIS
 ```
 
-### Configure Networking <!--1-->
+### 配置网络
 
-The default network configuration for the Windows Container Quick Starts, is to have containers connected to a virtual switch configured with Network Address Translation (NAT). Because of this, in order to connect to an application running inside of a container, a port on the container host, needs to be mapped to a port on the container.
+Windows 容器快速入门的默认网络配置是将容器连接到使用网络地址转换 (NAT) 配置的虚拟交换机。 因此，为了连接到在容器内部运行的应用程序，需要将容器主机上的某个端口映射到容器上的某个端口。
 
-For this exercise, a website is hosted in IIS, running inside of a container. To access the website on port 80, map port 80 of the container hosts IP address, to port 80 of the containers IP address.
+对于本练习，网站在 IIS 中托管，并在容器内部运行。 若要访问端口 80 上的网站，请将容器主机 IP 地址的端口 80 映射到容器 IP 地址的端口 80。
 
-Run the following to return the IP address of the container.
+运行以下内容以返回容器的 IP 地址。
 
 ```powershell
 PS C:\> Invoke-Command -ContainerName IIS {ipconfig}
@@ -166,7 +166,7 @@ Ethernet adapter vEthernet (Virtual Switch-7570F6B1-E1CA-41F1-B47D-F3CA73121654-
    Default Gateway . . . . . . . . . : 172.16.0.1
 ```
 
-To create the NAT port mapping, use the `Add-NetNatStaticMapping` command. The following example checks for an existing port mapping rule, and if one does not exist, creates it. Note, the `-InternalIPAddress` needs to match the IP address of the container.
+若要创建 NAT 端口映射，请使用 `Add-NetNatStaticMapping` 命令。 以下示例将检查现有的端口映射规则，如果不存在规则，则创建一个规则。 请注意，`-InternalIPAddress` 需要与容器的 IP 地址相匹配。
 
 ```powershell
 if (!(Get-NetNatStaticMapping | where {$_.ExternalPort -eq 80})) {
@@ -174,7 +174,7 @@ Add-NetNatStaticMapping -NatName "ContainerNat" -Protocol TCP -ExternalIPAddress
 }
 ```
 
-When the port mapping has been created, you also need to configure an inbound firewall rule for the configured port. To do so for port 80, run the following script. Note, if you’ve created a NAT rule for an external port other then 80, the firewall rule needs to be created to match.
+创建端口映射时，你还需要为配置的端口配置一个入站防火墙规则。 若要为端口 80 执行此操作，请运行以下脚本。 请注意，如果你已为 80 除外的外部端口创建 NAT 规则，则需要创建该防火墙规则以进行匹配。
 
 ```powershell
 if (!(Get-NetFirewallRule | where {$_.Name -eq "TCP80"})) {
@@ -182,72 +182,72 @@ if (!(Get-NetFirewallRule | where {$_.Name -eq "TCP80"})) {
 }
 ```
 
-If you are working in Azure, and have not already created a Network Security Group, you need to create one now. For more information on Network Security Groups see this article: [What is a Network Security Group](https://azure.microsoft.com/en-us/documentation/articles/virtual-networks-nsg/).
+如果你正在 Azure 中工作，并且尚未创建网络安全组，则需要立即创建一个网络安全组。 有关网络安全组的详细信息，请参阅文章：[什么是网络安全组](https://azure.microsoft.com/en-us/documentation/articles/virtual-networks-nsg/)。
 
-### Create Application <!--1-->
+### 创建应用程序
 
-Now that a container has been created from the IIS image, and networking configured, open up a browser and browse to the IP address of the container host. You should see the IIS splash screen.
+现在已从 IIS 映像创建一个容器并已配置网络，请打开浏览器并浏览到容器主机的 IP 地址。 你应该可以看到 IIS 初始屏幕。
 
 ![](media/iis1.png)
 
-With the IIS instances verified as running, you can now create a ‘Hello World’ application, and host this in the IIS instance. To do so, create a PowerShell session with the container.
+经过验证，IIS 实例正在运行，你可以立即创建“Hello World”应用程序，并在 IIS 实例中托管它。 若要执行此操作，请创建与该容器的 PowerShell 会话。
 
 ```powershell
 PS C:\> Enter-PSSession -ContainerName IIS -RunAsAdministrator
 [IIS]: PS C:\Windows\system32>
 ```
 
-Run the following command to remove the IIS splash screen.
+运行以下命令来删除 IIS 初始屏幕。
 
 ```powershell
 [IIS]: PS C:\> del C:\inetpub\wwwroot\iisstart.htm
 ```
-Run the following command to replace the default IIS site with a new static site.
+运行以下命令来将默认 IIS 站点替换为新的静态站点。
 
 ```powershell
 [IIS]: PS C:\> "Hello World From a Windows Server Container" > C:\inetpub\wwwroot\index.html
 ```
 
-Browse again to the IP Address of the container host, you should now see the ‘Hello World’ application. Note – you may need to close any existing browser connections, or clear browser cache to see the updated application.
+再次浏览到容器主机的 IP 地址，你现在应该可以看到“Hello World”应用程序。 请注意，为了查看更新的应用程序，你可能需要关闭任何现有浏览器连接或清除浏览器缓存。
 
 ![](media/HWWINServer.png)
 
-Exit the remote container session.
+退出远程容器会话。
 
 ```powershell
 [IIS]: PS C:\> exit
 PS C:\>
 ```
 
-### Remove Container
+### 删除容器
 
-A container needs to be stopped, before it can be removed.
+在删除容器之前，需要将其停止。
 
 ```powershell
 PS C:\> Stop-Container -Name IIS
 ```
 
-When the container has been stopped, it can be removed with the `Remove-Container` command.
+停止容器时，可以使用 `Remove-Container` 命令将其删除。
 
 ```powershell
 PS C:\> Remove-Container -Name IIS -Force
 ```
 
-Finally, a container image can be removed using the `Remove-ContainerImage` command.
+最后，可以使用 `Remove-ContainerImage` 命令删除容器映像。
 
 ```powershell
 PS C:\> Remove-ContainerImage -Name WindowsServerCoreIIS -Force
 ```
 
-## Hyper-V Container
+## Hyper-V 容器
 
-Hyper-V Containers provide an additional layer of isolation over Windows Server Containers. Each Hyper-V Container is created within a highly optimized virtual machine. Where a Windows Server Container shares a kernel with the Container host, and all other Windows Server Containers running on that host, a Hyper-V container is completely isolated from other containers. Hyper-V Containers are created and managed identically to Windows Server Containers. For more information about Hyper-V Containers see [Managing Hyper-V Containers](../management/hyperv_container.md).
+Hyper-V 容器通过 Windows Server 容器提供额外的隔离层。 每个 Hyper-V 容器都在高度优化的虚拟机中创建。 如果 Windows Server 容器与容器主机以及在该主机上运行的所有其他 Windows Server 容器共享内核，Hyper-V 容器将完全与其他容器隔离。 Hyper-V 容器的创建和管理方式与 Windows Server 容器相同。 有关 Hyper-V 容器的详细信息，请参阅[管理 Hyper-V 容器](../management/hyperv_container.md)。
 
-> Microsoft Azure does not support Hyper-V containers. To complete the Hyper-V Container exercises, you need an on-prem container host.
+>Microsoft Azure 不支持 Hyper-V 容器。 若要完成 Hyper-V 容器练习，你需要本地容器主机。
 
-### Create Container <!--2-->
+### 创建容器
 
-At the time of TP4, Hyper-V containers must use a Nano Server Core OS Image. To validate that the Nano Server OS image has been installed, use the `Get-ContainerImage` command.
+使用 TP4 时，Hyper-V 容器必须使用 Nano Server Core 操作系统映像。 若要验证是否已安装 Nano Server 操作系统映像，请使用 `Get-ContainerImage` 命令。
 
 ```powershell
 PS C:\> Get-ContainerImage
@@ -258,7 +258,7 @@ NanoServer        CN=Microsoft 10.0.10586.0 True
 WindowsServerCore CN=Microsoft 10.0.10586.0 True
 ```
 
-To create a Hyper-V container, use the `New-Container` command, specifying a Runtime of HyperV.
+若要创建 Hyper-V 容器，请使用 `New-Container` 命令，从而指定 HyperV 的运行时。
 
 ```powershell
 PS C:\> New-Container -Name HYPV -ContainerImageName NanoServer -SwitchName "Virtual Switch" -RuntimeType HyperV
@@ -268,13 +268,13 @@ Name State Uptime   ParentImageName
 HYPV Off   00:00:00 NanoServer
 ```
 
-When the container has been created, **do not start it**.
+创建容器后，**不要启动它**。
 
-### Create a Shared Folder
+### 创建共享文件夹
 
-Shared folders expose a directory from the container host, to the container. When a shared folder has been created, any files placed in the shared folder are available in the container. A shared folder is used in this example to copy the Nano Server IIS packages into the container. These packages will then be used to install IIS. For more information on shared folder see [Managing Container Data](../management/manage_data.md). 
+共享文件夹会向该容器显示容器主机中的目录。 创建共享文件夹后，在共享文件夹中放置的任何文件在该容器中都可用。 在本示例中，共享文件夹用于将 Nano Server IIS 程序包复制到该容器中。 然后，使用这些程序包安装 IIS。 有关共享文件夹的详细信息，请参阅[管理容器数据](../management/manage_data.md)。
 
-Create a directory named `c:\share\en-us` on the container host.
+在容器主机上创建一个名为 `c:\share\en-us` 的目录。
 
 ```powershell
 S C:\> New-Item -Type Directory c:\share\en-us
@@ -286,9 +286,9 @@ Mode                LastWriteTime         Length Name
 d-----       11/18/2015   5:27 PM                en-us
 ```
 
-Use the `Add-ContainerSharedFolder` command to create a new shared folder on the new container.
+使用 `Add-ContainerSharedFolder` 命令在新容器上创建新的共享文件夹。
 
-> The container must be in a stopped stated when creating a shared folder.
+>创建共享文件夹时，容器必须处于停止状态。
 
 ```powershell
 PS C:\> Add-ContainerSharedFolder -ContainerName HYPV -SourcePath c:\share -DestinationPath c:\iisinstall
@@ -298,18 +298,18 @@ ContainerName SourcePath DestinationPath AccessMode
 HYPV          c:\share   c:\iisinstall   ReadWrite
 ```
 
-When the shared folder has been created, start the container.
+创建共享文件夹后，启动该容器。
 
 ```powershell
 PS C:\> Start-Container -Name HYPV
 ```
-Create a PowerShell remote session with the container using the `Enter-PSSession` command.
+使用 `Enter-PSSession` 命令创建一个与该容器的 PowerShell 远程会话。
 
 ```powershell
 PS C:\> Enter-PSSession -ContainerName HYPV -RunAsAdministrator
 [HYPV]: PS C:\windows\system32\config\systemprofile\Documents>cd /
 ```
-When in the remote session, notice that the shared folder `c:\iisinstall\en-us` has been created, however is empty.
+在进行远程会话时，请注意，虽然共享文件夹 `c:\iisinstall\en-us` 已创建，但它是空文件夹。
 
 ```powershell
 [HYPV]: PS C:\> ls c:\iisinstall
@@ -321,15 +321,15 @@ Mode                LastWriteTime         Length Name
 d-----       11/18/2015   5:27 PM                en-us
 ```
 
-### Create IIS Image <!--2-->
+### 创建 IIS 映像
 
-Because the container is running a Nano Server OS Image, the Nano Server IIS packages are needed to install IIS. These can be found on the Windows Sever 2016 TP4 Installation media, under the `NanoServer\Packages` directory.
+由于容器要运行 Nano Server 操作系统映像，因此需要 Nano Server IIS 程序包才能安装 IIS。 这些程序包可以在 `NanoServer\Packages` 目录下的 Windows Sever 2016 TP4 安装媒体中找到。
 
-Copy `Microsoft-NanoServer-IIS-Package.cab` from `NanoServer\Packages` to `c:\share` on the container host. 
+将 `Microsoft-NanoServer-IIS-Package.cab` 从 `NanoServer\Packages` 复制到容器主机上的 `c:\share`。
 
-Copy `NanoServer\Packages\en-us\Microsoft-NanoServer-IIS-Package.cab` to `c:\share\en-us` on the container host.
+将 `NanoServer\Packages\en-us\Microsoft-NanoServer-IIS-Package.cab` 复制到容器主机上的 `c:\share\en-us`。
 
-Create a file in the c:\share folder named unattend.xml, copy this text into the unattend.xml file.
+在 c:\share 文件夹中，创建名为 unattend.xml 的文件，并将此文本复制到 unattend.xml 文件中。
 
 ```powershell
 <?xml version="1.0" encoding="utf-8"?>
@@ -347,7 +347,7 @@ Create a file in the c:\share folder named unattend.xml, copy this text into the
 </unattend>
 ```
 
-When completed, the `c:\share` directory, on the container host, should be configured like this.
+完成后，应对容器主机上的 `c:\share` 目录进行如下配置。
 
 ```
 c:\share
@@ -358,7 +358,7 @@ c:\share
 |-- unattend.xml
 ```
 
-Back in the remote session on the container, note that the IIS packages and unattended.xml files are now visible in the c:\iisinstall directory.
+回到容器上的远程会话中，请注意，IIS 程序包和 unattended.xml 文件现已在 c:\iisinstall 目录中可见。
 
 ```powershell
 [HYPV]: PS C:\> ls c:\iisinstall
@@ -372,7 +372,7 @@ d-----       11/18/2015   5:32 PM                en-us
 -a----       11/18/2015   5:31 PM            789 unattend.xml
 ```
 
-Run the following command to install IIS.
+运行以下命令来安装 IIS。
 
 ```powershell
 [HYPV]: PS C:\> dism /online /apply-unattend:c:\iisinstall\unattend.xml
@@ -392,7 +392,7 @@ Image Version: 10.0.10586.0
 [===============            26.2%                          ]
 ```
 
-When the IIS installation has complete, manually start IIS with the following command.
+完成 IIS 安装后，使用以下命令手动启动 IIS。
 
 ```powershell
 [HYPV]: PS C:\> Net start w3svc
@@ -400,21 +400,21 @@ The World Wide Web Publishing Service service is starting.
 The World Wide Web Publishing Service service was started successfully.
 ```
 
-Exit the container session.
+退出容器会话。
 
 ```powershell
 [HYPV]: PS C:\> exit
 ```
 
-Stop the container.
+停止容器。
 
 ```powershell
 PS C:\> Stop-Container -Name HYPV
 ```
 
-The state of this container can now be captured into a new container image.
+现在可以将此容器的状态捕获到新的容器映像中。
 
-This example creates a new container image named `NanoServerIIS`, with a publisher of `Demo`, and a version `1.0`.
+本示例创建一个名为 `NanoServerIIS` 的新容器映像，其中发布者为 `Demo`，版本为 `1.0`。
 
 ```powershell
 PS C:\> New-ContainerImage -ContainerName HYPV -Name NanoServerIIS -Publisher Demo -Version 1.0
@@ -424,9 +424,9 @@ Name          Publisher Version IsOSImage
 NanoServerIIS CN=Demo   1.0.0.0 False
 ```
 
-### Create IIS Container <!--2-->
+### 创建 IIS 容器
 
-Create a new Hyper-V container from the IIS image using the `New-Container` command.
+使用 `New-Container` 命令从 IIS 映像创建新的 Hyper-V 容器。
 
 ```powershell
 PS C:\> New-Container -Name IISApp -ContainerImageName NanoServerIIS -SwitchName "Virtual Switch" -RuntimeType HyperV
@@ -436,19 +436,19 @@ Name   State Uptime   ParentImageName
 IISApp Off   00:00:00 NanoServerIIS
 ```
 
-Start the container.
+启动容器。
 
 ```powershell
 PS C:\> Start-Container -Name IISApp
 ```
 
-### Configure Networking <!--2-->
+### 配置网络
 
-The default network configuration for the Windows Container Quick Starts is to have containers connected to a virtual switch, configured with Network Address Translation (NAT). Because of this, in order to connect to an application running inside of a container, a port on the container host, needs to be mapped to a port on the container.
+Windows 容器快速入门的默认网络配置是将容器连接到使用网络地址转换 (NAT) 配置的虚拟交换机。 因此，为了连接到在容器内部运行的应用程序，需要将容器主机上的某个端口映射到容器上的某个端口。
 
-For this exercise, a website is hosted in IIS, running inside of a container. To access the website on port 80, map port 80 of the container hosts IP address, to port 80 of the containers IP address.
+对于本练习，网站在 IIS 中托管，并在容器内部运行。 若要访问端口 80 上的网站，请将容器主机 IP 地址的端口 80 映射到容器 IP 地址的端口 80。
 
-Run the following to return the IP address of the container.
+运行以下内容以返回容器的 IP 地址。
 
 ```powershell
 PS C:\> Invoke-Command -ContainerName IISApp {ipconfig}
@@ -465,14 +465,14 @@ Ethernet adapter Ethernet:
    Default Gateway . . . . . . . . . : 172.16.0.1
 ```
 
-To create the NAT port mapping, use the `Add-NetNatStaticMapping` command. The following examples checks for an existing port mapping rule, and if one does not exist, creates it. Note, the `-InternalIPAddress` needs to match the IP address of the container.
+若要创建 NAT 端口映射，请使用 `Add-NetNatStaticMapping` 命令。 以下示例将检查现有的端口映射规则，如果不存在规则，则创建一个规则。 请注意，`-InternalIPAddress` 需要与容器的 IP 地址相匹配。
 
 ```powershell
 if (!(Get-NetNatStaticMapping | where {$_.ExternalPort -eq 80})) {
 Add-NetNatStaticMapping -NatName "ContainerNat" -Protocol TCP -ExternalIPAddress 0.0.0.0 -InternalIPAddress 172.16.0.2 -InternalPort 80 -ExternalPort 80
 }
 ```
-You also need to open up port 80 on the container host. Note, if you’ve created a NAT rule for an external port other then 80, the firewall rule needs to be created to match.
+你还需要在容器主机上打开端口 80。 请注意，如果你已为 80 除外的外部端口创建 NAT 规则，则需要创建该防火墙规则以进行匹配。
 
 ```powershell
 if (!(Get-NetFirewallRule | where {$_.Name -eq "TCP80"})) {
@@ -480,36 +480,41 @@ if (!(Get-NetFirewallRule | where {$_.Name -eq "TCP80"})) {
 }
 ```
 
-### Create Application <!--2-->
+### 创建应用程序
 
-Now that a container has been created from the IIS image, and networking configured, open up a browser and browse to the IP address of the container host, you should see the IIS splash screen.
+现在已从 IIS 映像创建一个容器并已配置网络，请打开浏览器并浏览到容器主机的 IP 地址，你应该可以看到 IIS 初始屏幕。
 
 ![](media/iis1.png)
 
-With the IIS instances verified as running, you can now create a ‘Hello World’ application, and host this on the IIS instance. To do so, create a PowerShell session with the container.
+经过验证，IIS 实例正在运行，你可以立即创建“Hello World”应用程序，并在 IIS 实例上托管它。 若要执行此操作，请创建与该容器的 PowerShell 会话。
 
 ```powershell
 PS C:\> Enter-PSSession -ContainerName IISApp -RunAsAdministrator
 [IISApp]: PS C:\windows\system32\config\systemprofile\Documents>
 ```
 
-Run the following command to remove the IIS splash screen.
+运行以下命令来删除 IIS 初始屏幕。
 
 ```powershell
 [IIS]: PS C:\> del C:\inetpub\wwwroot\iisstart.htm
 ```
-Run the following command to replace the default IIS site with a new static site.
+运行以下命令来将默认 IIS 站点替换为新的静态站点。
 
 ```powershell
 [IISApp]: PS C:\> "Hello World From a Hyper-V Container" > C:\inetpub\wwwroot\index.html
 ```
 
-Browse again to the IP Address of the container host, you should now see the ‘Hello World’ application. Note – you may need to close any existing browser connections, or clear browser cache to see the updated application.
+再次浏览到容器主机的 IP 地址，你现在应该可以看到“Hello World”应用程序。 请注意，为了查看更新的应用程序，你可能需要关闭任何现有浏览器连接或清除浏览器缓存。
 
 ![](media/HWWINServer.png)
 
-Exit the remote container session.
+退出远程容器会话。
 
 ```powershell
 exit
 ```
+
+
+
+
+<!--HONumber=Jan16_HO1-->
