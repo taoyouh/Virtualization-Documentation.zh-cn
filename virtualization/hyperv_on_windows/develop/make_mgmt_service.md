@@ -31,7 +31,7 @@
 若要编写简单的应用程序，你将需要：
 * C 编译器。 如果没有该功能，请查看 [Visual Studio 代码](https://aka.ms/vs)
 * 一台运行 Hyper-V 和虚拟机的计算机。
-    * 主机和来宾 (VM) 操作系统必须是 Windows 10 、Windows Server Technical Preview 3 或更高版本。
+* 主机和来宾 (VM) 操作系统必须是 Windows 10 、Windows Server Technical Preview 3 或更高版本。
 * Windows SDK - 下面是包含 `hvsocket.h` 的 [Win10 SDK](https://dev.windows.com/en-us/downloads/windows-10-sdk) 的链接。
 
 ## 注册新应用程序
@@ -66,7 +66,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Virtualization\G
 
 每个服务的注册表中的信息：
 * `服务 GUID`
-    * `ElementName (REG_SZ)` - 这是服务的友好名称
+* `ElementName (REG_SZ)` - 这是服务的友好名称
 
 若要注册你自己的服务，请使用你自己的 GUID 和友好名称来创建新的注册表项。
 
@@ -81,7 +81,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Virtualization\G
         ElementName REG_SZ  Your Service Friendly Name
 ```
 
-> ** 提示：**若要在 PowerShell 中生成 GUID，并将其复制到剪贴板，请运行：
+>** 提示：**若要在 PowerShell 中生成 GUID，并将其复制到剪贴板，请运行：
 ``` PowerShell
 [System.Guid]::NewGuid().ToString() | clip.exe
 ```
@@ -91,7 +91,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Virtualization\G
 在最基本的情况下，定义套接字需要地址系列、连接类型和协议。
 
 下面是一个简单的 [套接字定义](
-https://msdn.microsoft.com/zh-cn/library/windows/desktop/ms740506 (v=vs.85).aspx
+https://msdn.microsoft.com/zh-cn/library/windows/desktop/ms740506(v=vs.85).aspx
 )
 
 ``` C
@@ -165,12 +165,12 @@ struct SOCKADDR_HV
 | HV_GUID_PARENT| a42e7cda-d03f-480c-9cc2-a4de20abb878| 父地址。使用此 VMID 连接到该连接器的父分区。*|
 
 
-***HV_GUID_PARENT**  
-虚拟机的父级是其主机。 容器的父级是容器的主机。  
-从在虚拟机中运行的容器进行连接将连接到托管该容器的 VM。  
-侦听此 VMID 可接受以下来源的连接：  
-（内部容器）：容器主机。  
-（内部 VM：容器主机/非容器）：VM 主机。  
+***HV_GUID_PARENT**
+虚拟机的父级是其主机。 容器的父级是容器的主机。
+从在虚拟机中运行的容器进行连接将连接到托管该容器的 VM。
+侦听此 VMID 可接受以下来源的连接：
+（内部容器）：容器主机。
+（内部 VM：容器主机/非容器）：VM 主机。
 （非内部 VM：容器主机/非容器）：不受支持。
 
 ## 受支持的套接字命令
@@ -191,3 +191,4 @@ Accept()
 
 
 
+<!--HONumber=Dec15_HO1-->
