@@ -1012,9 +1012,9 @@
 * Handoff Reason: Include
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [virtualization\community\contribute_to_docs.md](https://github.com/Microsoft/Virtualization-Documentation-Private.zh-cn/blob/aeef3e608573f22771796c084b7d4c8c0c421d30/virtualization/community/contribute_to_docs.md)
-* Current Handback File: [contribute_to_docs.d73574c30ea237d679cf11495f670244e941fb1d.zh-cn.xlf](https://github.com/Microsoft/Virtualization-Documentation-Private.handback/blob/6780680e67566edf05a81dc5772160630d36fcad/ol-handback/Microsoft/Virtualization-Documentation-Private.zh-cn/live/contribute_to_docs.d73574c30ea237d679cf11495f670244e941fb1d.zh-cn.xlf)
-* Current Handback Datetime: 2016-01-04 21:52:22
+* Current Target File: [virtualization\community\contribute_to_docs.md](https://github.com/Microsoft/Virtualization-Documentation-Private.zh-cn/blob/09738d9cdb67c997ef8ac1fd7dc54c47d859c0b4/virtualization/community/contribute_to_docs.md)
+* Current Handback File: [contribute_to_docs.d73574c30ea237d679cf11495f670244e941fb1d.zh-cn.xlf](https://github.com/Microsoft/Virtualization-Documentation-Private.handback/blob/cfb9cb2ca8f8cbcedd968c8e3a29c80602595a3e/ol-handback/Microsoft/Virtualization-Documentation-Private.zh-cn/live/contribute_to_docs.d73574c30ea237d679cf11495f670244e941fb1d.zh-cn.xlf)
+* Current Handback Datetime: 2016-01-14 23:40:04
 * [Back to Top](#report-top)
 
 ##### <a name='63821ccd19e5a21742458bf42a0a1eea46969adf61'></a> Source: [virtualization\community\docfx.json](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/fd01d85031748c73615a0fafeec80238f11b5cd6/virtualization/community/docfx.json)
@@ -1997,22 +1997,22 @@
 
 ##### <a name='52b5a54e0a2b24d8a365780e6d098db77794bdcd151'></a> Source: [virtualization\hyperv_on_windows\quick_start\walkthrough_compatibility.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/beb2ff361edf5d86391458d4e37c8cef9fc6d1ae/virtualization/hyperv_on_windows/quick_start/walkthrough_compatibility.md)
 * Status: InSyncHandedBackSuccess
-* Target File: [virtualization\hyperv_on_windows\quick_start\walkthrough_compatibility.md](https://github.com/Microsoft/Virtualization-Documentation-Private.zh-cn/blob/aeef3e608573f22771796c084b7d4c8c0c421d30/virtualization/hyperv_on_windows/quick_start/walkthrough_compatibility.md)
+* Target File: [virtualization\hyperv_on_windows\quick_start\walkthrough_compatibility.md](https://github.com/Microsoft/Virtualization-Documentation-Private.zh-cn/blob/09738d9cdb67c997ef8ac1fd7dc54c47d859c0b4/virtualization/hyperv_on_windows/quick_start/walkthrough_compatibility.md)
 * Handoff File: [walkthrough_compatibility.b81630a3813897e1115f050cb3fb67a3db007cf8.zh-cn.xlf](https://github.com/Microsoft/Virtualization-Documentation-Private.handoff/blob/d7056f797fc3b699a9d595a3b5a74e1269387a76/ol-handoff/Microsoft/Virtualization-Documentation-Private.zh-cn/live/walkthrough_compatibility.b81630a3813897e1115f050cb3fb67a3db007cf8.zh-cn.xlf)
 * Handoff Datetime: 2015-12-03 10:35:29
 * Handoff Reason: Include
-* Handback File: [walkthrough_compatibility.b81630a3813897e1115f050cb3fb67a3db007cf8.zh-cn.xlf](https://github.com/Microsoft/Virtualization-Documentation-Private.handback/blob/6780680e67566edf05a81dc5772160630d36fcad/ol-handback/Microsoft/Virtualization-Documentation-Private.zh-cn/live/walkthrough_compatibility.b81630a3813897e1115f050cb3fb67a3db007cf8.zh-cn.xlf)
-* Handback Datetime: 2016-01-04 21:52:22
+* Handback File: [walkthrough_compatibility.b81630a3813897e1115f050cb3fb67a3db007cf8.zh-cn.xlf](https://github.com/Microsoft/Virtualization-Documentation-Private.handback/blob/cfb9cb2ca8f8cbcedd968c8e3a29c80602595a3e/ol-handback/Microsoft/Virtualization-Documentation-Private.zh-cn/live/walkthrough_compatibility.b81630a3813897e1115f050cb3fb67a3db007cf8.zh-cn.xlf)
+* Handback Datetime: 2016-01-14 23:40:04
 * [Back to Top](#report-top)
 
 ##### <a name='2dd6d879387c7c82a2e8247079b52bdd01719b89152'></a> Source: [virtualization\hyperv_on_windows\quick_start\walkthrough_create_vm.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/870148f03087d9b37bdd0e3c40dd0541f42750d5/virtualization/hyperv_on_windows/quick_start/walkthrough_create_vm.md)
 * Status: InSyncHandedBackSuccess
-* Target File: [virtualization\hyperv_on_windows\quick_start\walkthrough_create_vm.md](https://github.com/Microsoft/Virtualization-Documentation-Private.zh-cn/blob/aeef3e608573f22771796c084b7d4c8c0c421d30/virtualization/hyperv_on_windows/quick_start/walkthrough_create_vm.md)
+* Target File: [virtualization\hyperv_on_windows\quick_start\walkthrough_create_vm.md](https://github.com/Microsoft/Virtualization-Documentation-Private.zh-cn/blob/09738d9cdb67c997ef8ac1fd7dc54c47d859c0b4/virtualization/hyperv_on_windows/quick_start/walkthrough_create_vm.md)
 * Handoff File: [walkthrough_create_vm.698a46fb78fa92b3f275f4115d4b77072fff0ed6.zh-cn.xlf](https://github.com/Microsoft/Virtualization-Documentation-Private.handoff/blob/5d0302ec2866249bc49983828536f7a9e615904b/ol-handoff/Microsoft/Virtualization-Documentation-Private.zh-cn/live/walkthrough_create_vm.698a46fb78fa92b3f275f4115d4b77072fff0ed6.zh-cn.xlf)
 * Handoff Datetime: 2015-12-17 05:37:03
 * Handoff Reason: Include
-* Handback File: [walkthrough_create_vm.698a46fb78fa92b3f275f4115d4b77072fff0ed6.zh-cn.xlf](https://github.com/Microsoft/Virtualization-Documentation-Private.handback/blob/6780680e67566edf05a81dc5772160630d36fcad/ol-handback/Microsoft/Virtualization-Documentation-Private.zh-cn/live/walkthrough_create_vm.698a46fb78fa92b3f275f4115d4b77072fff0ed6.zh-cn.xlf)
-* Handback Datetime: 2016-01-04 21:52:22
+* Handback File: [walkthrough_create_vm.698a46fb78fa92b3f275f4115d4b77072fff0ed6.zh-cn.xlf](https://github.com/Microsoft/Virtualization-Documentation-Private.handback/blob/cfb9cb2ca8f8cbcedd968c8e3a29c80602595a3e/ol-handback/Microsoft/Virtualization-Documentation-Private.zh-cn/live/walkthrough_create_vm.698a46fb78fa92b3f275f4115d4b77072fff0ed6.zh-cn.xlf)
+* Handback Datetime: 2016-01-14 23:40:04
 * [Back to Top](#report-top)
 
 ##### <a name='169ec8f0dc462e9cf51f7ffb6e01b2d3e80f41b2153'></a> Source: [virtualization\hyperv_on_windows\quick_start\walkthrough_export_import.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/f4925b74a45cbc4286422f85b25170972c0cf2be/virtualization/hyperv_on_windows/quick_start/walkthrough_export_import.md)
@@ -2027,22 +2027,22 @@
 
 ##### <a name='5bfa75f71c817093a49b2496cd19bbce9b596407154'></a> Source: [virtualization\hyperv_on_windows\quick_start\walkthrough_install.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/beb2ff361edf5d86391458d4e37c8cef9fc6d1ae/virtualization/hyperv_on_windows/quick_start/walkthrough_install.md)
 * Status: InSyncHandedBackSuccess
-* Target File: [virtualization\hyperv_on_windows\quick_start\walkthrough_install.md](https://github.com/Microsoft/Virtualization-Documentation-Private.zh-cn/blob/aeef3e608573f22771796c084b7d4c8c0c421d30/virtualization/hyperv_on_windows/quick_start/walkthrough_install.md)
+* Target File: [virtualization\hyperv_on_windows\quick_start\walkthrough_install.md](https://github.com/Microsoft/Virtualization-Documentation-Private.zh-cn/blob/09738d9cdb67c997ef8ac1fd7dc54c47d859c0b4/virtualization/hyperv_on_windows/quick_start/walkthrough_install.md)
 * Handoff File: [walkthrough_install.775f3dd3ffd893bcec04436e9648ed46ba3e501e.zh-cn.xlf](https://github.com/Microsoft/Virtualization-Documentation-Private.handoff/blob/d7056f797fc3b699a9d595a3b5a74e1269387a76/ol-handoff/Microsoft/Virtualization-Documentation-Private.zh-cn/live/walkthrough_install.775f3dd3ffd893bcec04436e9648ed46ba3e501e.zh-cn.xlf)
 * Handoff Datetime: 2015-12-03 10:35:29
 * Handoff Reason: Include
-* Handback File: [walkthrough_install.775f3dd3ffd893bcec04436e9648ed46ba3e501e.zh-cn.xlf](https://github.com/Microsoft/Virtualization-Documentation-Private.handback/blob/6780680e67566edf05a81dc5772160630d36fcad/ol-handback/Microsoft/Virtualization-Documentation-Private.zh-cn/live/walkthrough_install.775f3dd3ffd893bcec04436e9648ed46ba3e501e.zh-cn.xlf)
-* Handback Datetime: 2016-01-04 21:52:22
+* Handback File: [walkthrough_install.775f3dd3ffd893bcec04436e9648ed46ba3e501e.zh-cn.xlf](https://github.com/Microsoft/Virtualization-Documentation-Private.handback/blob/cfb9cb2ca8f8cbcedd968c8e3a29c80602595a3e/ol-handback/Microsoft/Virtualization-Documentation-Private.zh-cn/live/walkthrough_install.775f3dd3ffd893bcec04436e9648ed46ba3e501e.zh-cn.xlf)
+* Handback Datetime: 2016-01-14 23:40:04
 * [Back to Top](#report-top)
 
 ##### <a name='44067893b45092aa9a553c1c11abc7bf3b3287e1155'></a> Source: [virtualization\hyperv_on_windows\quick_start\walkthrough_powershell.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/beb2ff361edf5d86391458d4e37c8cef9fc6d1ae/virtualization/hyperv_on_windows/quick_start/walkthrough_powershell.md)
 * Status: InSyncHandedBackSuccess
-* Target File: [virtualization\hyperv_on_windows\quick_start\walkthrough_powershell.md](https://github.com/Microsoft/Virtualization-Documentation-Private.zh-cn/blob/aeef3e608573f22771796c084b7d4c8c0c421d30/virtualization/hyperv_on_windows/quick_start/walkthrough_powershell.md)
+* Target File: [virtualization\hyperv_on_windows\quick_start\walkthrough_powershell.md](https://github.com/Microsoft/Virtualization-Documentation-Private.zh-cn/blob/09738d9cdb67c997ef8ac1fd7dc54c47d859c0b4/virtualization/hyperv_on_windows/quick_start/walkthrough_powershell.md)
 * Handoff File: [walkthrough_powershell.f20d7c387d05f1e6da38e694c8255c1b0044b10b.zh-cn.xlf](https://github.com/Microsoft/Virtualization-Documentation-Private.handoff/blob/d7056f797fc3b699a9d595a3b5a74e1269387a76/ol-handoff/Microsoft/Virtualization-Documentation-Private.zh-cn/live/walkthrough_powershell.f20d7c387d05f1e6da38e694c8255c1b0044b10b.zh-cn.xlf)
 * Handoff Datetime: 2015-12-03 10:35:29
 * Handoff Reason: Include
-* Handback File: [walkthrough_powershell.f20d7c387d05f1e6da38e694c8255c1b0044b10b.zh-cn.xlf](https://github.com/Microsoft/Virtualization-Documentation-Private.handback/blob/6780680e67566edf05a81dc5772160630d36fcad/ol-handback/Microsoft/Virtualization-Documentation-Private.zh-cn/live/walkthrough_powershell.f20d7c387d05f1e6da38e694c8255c1b0044b10b.zh-cn.xlf)
-* Handback Datetime: 2016-01-04 21:52:22
+* Handback File: [walkthrough_powershell.f20d7c387d05f1e6da38e694c8255c1b0044b10b.zh-cn.xlf](https://github.com/Microsoft/Virtualization-Documentation-Private.handback/blob/cfb9cb2ca8f8cbcedd968c8e3a29c80602595a3e/ol-handback/Microsoft/Virtualization-Documentation-Private.zh-cn/live/walkthrough_powershell.f20d7c387d05f1e6da38e694c8255c1b0044b10b.zh-cn.xlf)
+* Handback Datetime: 2016-01-14 23:40:04
 * [Back to Top](#report-top)
 
 ##### <a name='5fdfacccc393533a78cd34c17ceab37b50634569156'></a> Source: [virtualization\hyperv_on_windows\quick_start\walkthrough_virtual_switch.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/beb2ff361edf5d86391458d4e37c8cef9fc6d1ae/virtualization/hyperv_on_windows/quick_start/walkthrough_virtual_switch.md)
@@ -2067,22 +2067,22 @@
 
 ##### <a name='712a1cbfab6af2b3235d8e258097e7e4adb7aca8158'></a> Source: [virtualization\hyperv_on_windows\user_guide\checkpoints.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/870148f03087d9b37bdd0e3c40dd0541f42750d5/virtualization/hyperv_on_windows/user_guide/checkpoints.md)
 * Status: InSyncHandedBackSuccess
-* Target File: [virtualization\hyperv_on_windows\user_guide\checkpoints.md](https://github.com/Microsoft/Virtualization-Documentation-Private.zh-cn/blob/aeef3e608573f22771796c084b7d4c8c0c421d30/virtualization/hyperv_on_windows/user_guide/checkpoints.md)
+* Target File: [virtualization\hyperv_on_windows\user_guide\checkpoints.md](https://github.com/Microsoft/Virtualization-Documentation-Private.zh-cn/blob/09738d9cdb67c997ef8ac1fd7dc54c47d859c0b4/virtualization/hyperv_on_windows/user_guide/checkpoints.md)
 * Handoff File: [checkpoints.fb864e32f956b43d9a6ce0ccc72ba67b60ea8362.zh-cn.xlf](https://github.com/Microsoft/Virtualization-Documentation-Private.handoff/blob/5d0302ec2866249bc49983828536f7a9e615904b/ol-handoff/Microsoft/Virtualization-Documentation-Private.zh-cn/live/checkpoints.fb864e32f956b43d9a6ce0ccc72ba67b60ea8362.zh-cn.xlf)
 * Handoff Datetime: 2015-12-17 05:37:03
 * Handoff Reason: Include
-* Handback File: [checkpoints.fb864e32f956b43d9a6ce0ccc72ba67b60ea8362.zh-cn.xlf](https://github.com/Microsoft/Virtualization-Documentation-Private.handback/blob/6780680e67566edf05a81dc5772160630d36fcad/ol-handback/Microsoft/Virtualization-Documentation-Private.zh-cn/live/checkpoints.fb864e32f956b43d9a6ce0ccc72ba67b60ea8362.zh-cn.xlf)
-* Handback Datetime: 2016-01-04 21:52:22
+* Handback File: [checkpoints.fb864e32f956b43d9a6ce0ccc72ba67b60ea8362.zh-cn.xlf](https://github.com/Microsoft/Virtualization-Documentation-Private.handback/blob/cfb9cb2ca8f8cbcedd968c8e3a29c80602595a3e/ol-handback/Microsoft/Virtualization-Documentation-Private.zh-cn/live/checkpoints.fb864e32f956b43d9a6ce0ccc72ba67b60ea8362.zh-cn.xlf)
+* Handback Datetime: 2016-01-14 23:40:04
 * [Back to Top](#report-top)
 
 ##### <a name='2cc583a503b2ec2bbd7b725709a5390466709ce8159'></a> Source: [virtualization\hyperv_on_windows\user_guide\export_import.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/e91e0025a4e7cbefde36c4084e36417b1e76e6e2/virtualization/hyperv_on_windows/user_guide/export_import.md)
 * Status: InSyncHandedBackSuccess
-* Target File: [virtualization\hyperv_on_windows\user_guide\export_import.md](https://github.com/Microsoft/Virtualization-Documentation-Private.zh-cn/blob/aeef3e608573f22771796c084b7d4c8c0c421d30/virtualization/hyperv_on_windows/user_guide/export_import.md)
+* Target File: [virtualization\hyperv_on_windows\user_guide\export_import.md](https://github.com/Microsoft/Virtualization-Documentation-Private.zh-cn/blob/09738d9cdb67c997ef8ac1fd7dc54c47d859c0b4/virtualization/hyperv_on_windows/user_guide/export_import.md)
 * Handoff File: [export_import.c0c14674ac282e57d9bff1c585b3081c9fcc2b14.zh-cn.xlf](https://github.com/Microsoft/Virtualization-Documentation-Private.handoff/blob/4a9edc0a98d181cd815433320f125b2695d55f7d/ol-handoff/Microsoft/Virtualization-Documentation-Private.zh-cn/live/export_import.c0c14674ac282e57d9bff1c585b3081c9fcc2b14.zh-cn.xlf)
 * Handoff Datetime: 2015-12-11 06:30:20
 * Handoff Reason: Include
-* Handback File: [export_import.c0c14674ac282e57d9bff1c585b3081c9fcc2b14.zh-cn.xlf](https://github.com/Microsoft/Virtualization-Documentation-Private.handback/blob/6780680e67566edf05a81dc5772160630d36fcad/ol-handback/Microsoft/Virtualization-Documentation-Private.zh-cn/live/export_import.c0c14674ac282e57d9bff1c585b3081c9fcc2b14.zh-cn.xlf)
-* Handback Datetime: 2016-01-04 21:52:22
+* Handback File: [export_import.c0c14674ac282e57d9bff1c585b3081c9fcc2b14.zh-cn.xlf](https://github.com/Microsoft/Virtualization-Documentation-Private.handback/blob/cfb9cb2ca8f8cbcedd968c8e3a29c80602595a3e/ol-handback/Microsoft/Virtualization-Documentation-Private.zh-cn/live/export_import.c0c14674ac282e57d9bff1c585b3081c9fcc2b14.zh-cn.xlf)
+* Handback Datetime: 2016-01-14 23:40:04
 * [Back to Top](#report-top)
 
 ##### <a name='b822f41f453cbc427f59050cde0941dd90782724160'></a> Source: [virtualization\hyperv_on_windows\user_guide\managing_ics.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/698efa7853e524adb9334b4630f447b9b3c46cfa/virtualization/hyperv_on_windows/user_guide/managing_ics.md)
@@ -2270,22 +2270,22 @@
 
 ##### <a name='8101d43c62dfbadc864f33d851bca9800888cdcc181'></a> Source: [virtualization\hyperv_on_windows\user_guide\remote_host_management.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/beb2ff361edf5d86391458d4e37c8cef9fc6d1ae/virtualization/hyperv_on_windows/user_guide/remote_host_management.md)
 * Status: InSyncHandedBackSuccess
-* Target File: [virtualization\hyperv_on_windows\user_guide\remote_host_management.md](https://github.com/Microsoft/Virtualization-Documentation-Private.zh-cn/blob/9d7d3b028570e8593dcc45f27937cab7feb2aa3e/virtualization/hyperv_on_windows/user_guide/remote_host_management.md)
+* Target File: [virtualization\hyperv_on_windows\user_guide\remote_host_management.md](https://github.com/Microsoft/Virtualization-Documentation-Private.zh-cn/blob/09738d9cdb67c997ef8ac1fd7dc54c47d859c0b4/virtualization/hyperv_on_windows/user_guide/remote_host_management.md)
 * Handoff File: [remote_host_management.40d5636e508c5b95bb2917be75ca6b5aa426a915.zh-cn.xlf](https://github.com/Microsoft/Virtualization-Documentation-Private.handoff/blob/d7056f797fc3b699a9d595a3b5a74e1269387a76/ol-handoff/Microsoft/Virtualization-Documentation-Private.zh-cn/live/remote_host_management.40d5636e508c5b95bb2917be75ca6b5aa426a915.zh-cn.xlf)
 * Handoff Datetime: 2015-12-03 10:35:29
 * Handoff Reason: Include
-* Handback File: [remote_host_management.40d5636e508c5b95bb2917be75ca6b5aa426a915.zh-cn.xlf](https://github.com/Microsoft/Virtualization-Documentation-Private.handback/blob/4da0aae466b4ae254af2ccb03b6bb899f2f5f2f5/ol-handback/Microsoft/Virtualization-Documentation-Private.zh-cn/live/remote_host_management.40d5636e508c5b95bb2917be75ca6b5aa426a915.zh-cn.xlf)
-* Handback Datetime: 2016-01-14 18:40:00
+* Handback File: [remote_host_management.40d5636e508c5b95bb2917be75ca6b5aa426a915.zh-cn.xlf](https://github.com/Microsoft/Virtualization-Documentation-Private.handback/blob/cfb9cb2ca8f8cbcedd968c8e3a29c80602595a3e/ol-handback/Microsoft/Virtualization-Documentation-Private.zh-cn/live/remote_host_management.40d5636e508c5b95bb2917be75ca6b5aa426a915.zh-cn.xlf)
+* Handback Datetime: 2016-01-14 23:40:04
 * [Back to Top](#report-top)
 
 ##### <a name='033950f25a30f7bccb308c22d6fa96b166d7ed01182'></a> Source: [virtualization\hyperv_on_windows\user_guide\troubleshooting.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/beb2ff361edf5d86391458d4e37c8cef9fc6d1ae/virtualization/hyperv_on_windows/user_guide/troubleshooting.md)
 * Status: InSyncHandedBackSuccess
-* Target File: [virtualization\hyperv_on_windows\user_guide\troubleshooting.md](https://github.com/Microsoft/Virtualization-Documentation-Private.zh-cn/blob/aeef3e608573f22771796c084b7d4c8c0c421d30/virtualization/hyperv_on_windows/user_guide/troubleshooting.md)
+* Target File: [virtualization\hyperv_on_windows\user_guide\troubleshooting.md](https://github.com/Microsoft/Virtualization-Documentation-Private.zh-cn/blob/09738d9cdb67c997ef8ac1fd7dc54c47d859c0b4/virtualization/hyperv_on_windows/user_guide/troubleshooting.md)
 * Handoff File: [troubleshooting.551250f086d151b3edaaeda1dd07411092c8b348.zh-cn.xlf](https://github.com/Microsoft/Virtualization-Documentation-Private.handoff/blob/d7056f797fc3b699a9d595a3b5a74e1269387a76/ol-handoff/Microsoft/Virtualization-Documentation-Private.zh-cn/live/troubleshooting.551250f086d151b3edaaeda1dd07411092c8b348.zh-cn.xlf)
 * Handoff Datetime: 2015-12-03 10:35:29
 * Handoff Reason: Include
-* Handback File: [troubleshooting.551250f086d151b3edaaeda1dd07411092c8b348.zh-cn.xlf](https://github.com/Microsoft/Virtualization-Documentation-Private.handback/blob/6780680e67566edf05a81dc5772160630d36fcad/ol-handback/Microsoft/Virtualization-Documentation-Private.zh-cn/live/troubleshooting.551250f086d151b3edaaeda1dd07411092c8b348.zh-cn.xlf)
-* Handback Datetime: 2016-01-04 21:52:22
+* Handback File: [troubleshooting.551250f086d151b3edaaeda1dd07411092c8b348.zh-cn.xlf](https://github.com/Microsoft/Virtualization-Documentation-Private.handback/blob/cfb9cb2ca8f8cbcedd968c8e3a29c80602595a3e/ol-handback/Microsoft/Virtualization-Documentation-Private.zh-cn/live/troubleshooting.551250f086d151b3edaaeda1dd07411092c8b348.zh-cn.xlf)
+* Handback Datetime: 2016-01-14 23:40:04
 * [Back to Top](#report-top)
 
 ##### <a name='0699418429f113abee439384e0acf7450a8610b5183'></a> Source: [virtualization\hyperv_on_windows\user_guide\user_guide_nav.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/beb2ff361edf5d86391458d4e37c8cef9fc6d1ae/virtualization/hyperv_on_windows/user_guide/user_guide_nav.md)
