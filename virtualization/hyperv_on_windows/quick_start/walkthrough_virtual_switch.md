@@ -28,11 +28,11 @@
 
 8. 选择要与新的虚拟交换机配对的物理网卡，即以物理方式连接到网络的网卡。
 
-![](media/newSwitch_upd.png)
+    ![](media/newSwitch_upd.png)
 
 9. 选择“应用”>来创建虚拟交换机。 此时，你很可能看到以下消息，单击“是”以继续。
 
-![](media/pen_changes_upd.png)
+    ![](media/pen_changes_upd.png)
 
 10. 选择“确定”以关闭虚拟交换机管理器窗口。
 
