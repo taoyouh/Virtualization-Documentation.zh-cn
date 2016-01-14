@@ -2270,12 +2270,12 @@
 
 ##### <a name='8101d43c62dfbadc864f33d851bca9800888cdcc181'></a> Source: [virtualization\hyperv_on_windows\user_guide\remote_host_management.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/beb2ff361edf5d86391458d4e37c8cef9fc6d1ae/virtualization/hyperv_on_windows/user_guide/remote_host_management.md)
 * Status: InSyncHandedBackSuccess
-* Target File: [virtualization\hyperv_on_windows\user_guide\remote_host_management.md](https://github.com/Microsoft/Virtualization-Documentation-Private.zh-cn/blob/aeef3e608573f22771796c084b7d4c8c0c421d30/virtualization/hyperv_on_windows/user_guide/remote_host_management.md)
+* Target File: [virtualization\hyperv_on_windows\user_guide\remote_host_management.md](https://github.com/Microsoft/Virtualization-Documentation-Private.zh-cn/blob/9d7d3b028570e8593dcc45f27937cab7feb2aa3e/virtualization/hyperv_on_windows/user_guide/remote_host_management.md)
 * Handoff File: [remote_host_management.40d5636e508c5b95bb2917be75ca6b5aa426a915.zh-cn.xlf](https://github.com/Microsoft/Virtualization-Documentation-Private.handoff/blob/d7056f797fc3b699a9d595a3b5a74e1269387a76/ol-handoff/Microsoft/Virtualization-Documentation-Private.zh-cn/live/remote_host_management.40d5636e508c5b95bb2917be75ca6b5aa426a915.zh-cn.xlf)
 * Handoff Datetime: 2015-12-03 10:35:29
 * Handoff Reason: Include
-* Handback File: [remote_host_management.40d5636e508c5b95bb2917be75ca6b5aa426a915.zh-cn.xlf](https://github.com/Microsoft/Virtualization-Documentation-Private.handback/blob/6780680e67566edf05a81dc5772160630d36fcad/ol-handback/Microsoft/Virtualization-Documentation-Private.zh-cn/live/remote_host_management.40d5636e508c5b95bb2917be75ca6b5aa426a915.zh-cn.xlf)
-* Handback Datetime: 2016-01-04 21:52:22
+* Handback File: [remote_host_management.40d5636e508c5b95bb2917be75ca6b5aa426a915.zh-cn.xlf](https://github.com/Microsoft/Virtualization-Documentation-Private.handback/blob/4da0aae466b4ae254af2ccb03b6bb899f2f5f2f5/ol-handback/Microsoft/Virtualization-Documentation-Private.zh-cn/live/remote_host_management.40d5636e508c5b95bb2917be75ca6b5aa426a915.zh-cn.xlf)
+* Handback Datetime: 2016-01-14 18:40:00
 * [Back to Top](#report-top)
 
 ##### <a name='033950f25a30f7bccb308c22d6fa96b166d7ed01182'></a> Source: [virtualization\hyperv_on_windows\user_guide\troubleshooting.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/beb2ff361edf5d86391458d4e37c8cef9fc6d1ae/virtualization/hyperv_on_windows/user_guide/troubleshooting.md)
