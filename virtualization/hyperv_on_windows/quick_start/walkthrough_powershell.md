@@ -4,24 +4,24 @@
 
 ### 返回 Hyper-V 命令列表
 
-1.  单击 Windows“开始”按钮，键入“PowerShell”****。
+1.  单击 Windows“开始”按钮，键入“PowerShell”。
 2.  运行以下命令以显示适用于 Hyper-V PowerShell 模块的 PowerShell 命令的可搜索列表。
 
  ```powershell
 get-command –module hyper-v | out-gridview
  ```
-  获取的内容如下所示：
+获取的内容如下所示：
 
-  ![](media\command_grid.png)
+![](media\command_grid.png)
 
 3. 若要了解有关特定 PowerShell 命令的详细信息，请使用 `get-help`。 例如，运行以下命令将返回有关 `get-vm` Hyper-V 命令的信息。
 
   ```powershell
 get-help get-vm
   ```
- 该输出向你显示构建命令的方法、必需和可选参数定义以及可以使用的别名。
+该输出向你显示构建命令的方法、必需和可选参数定义以及可以使用的别名。
 
- ![](media\get_help.png)
+![](media\get_help.png)
 
 
 ### 返回虚拟机列表
@@ -33,9 +33,9 @@ get-help get-vm
  ```powershell
 get-vm
  ```
- 显示内容如下所示：
+显示内容如下所示：
 
- ![](media\get_vm.png)
+![](media\get_vm.png)
 
 2. 若要仅返回已启动的虚拟机列表，请将筛选器添加到 `get-vm` 命令。 可通过使用 where-object 命令添加筛选器。 有关筛选的详细信息，请参阅[使用 Where-Object](https://technet.microsoft.com/en-us/library/ee177028.aspx) 文档。
 
@@ -105,3 +105,4 @@ get-vm
 
 
 
+<!--HONumber=Dec15_HO1-->

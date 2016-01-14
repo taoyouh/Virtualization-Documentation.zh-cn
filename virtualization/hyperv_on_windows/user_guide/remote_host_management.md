@@ -4,7 +4,7 @@ Hyper-V 管理器是内置工具，用于诊断和管理本地 Hyper-V 主机和
 
 >像在[“任何包括 Hyper-V 的 Windows 操作系统”](../quick_start/walkthrough_compatibility.md#OperatingSystemRequirements)上的“Hyper-V 管理工具”****一样，Hyper-V 管理器通过**“程序和功能”**提供。 管理远程主机无需启用 Hyper-V 平台。
 
-若要在 Hyper-V 管理器中连接 Hyper-V 主机，请确保在左侧窗格中选择“Hyper-V 管理器”****，然后在右侧窗格中选择“连接到服务器...”****。
+若要在 Hyper-V 管理器中连接 Hyper-V 主机，请确保在左侧窗格中选择“Hyper-V 管理器”，然后在右侧窗格中选择“连接到服务器...”。
 
 ![](media/HyperVManager-ConnectToHost.png)
 
@@ -33,7 +33,7 @@ Hyper-V 在 Windows 8 上的 Windows 中可用。 在 Windows 8.1/Server 2012 �
 
 ## 管理 localhost
 
-若要将 localhost 作为 Hyper-V 主机添加到 Hyper-V 管理器，请选择“选择计算机”****对话框中的“本地计算机”****。
+若要将 localhost 作为 Hyper-V 主机添加到 Hyper-V 管理器，请选择“选择计算机”对话框中的“本地计算机”。
 
 ![](media/HyperVManager-ConnectToLocalHost.png)
 
@@ -45,7 +45,7 @@ Hyper-V 在 Windows 8 上的 Windows 中可用。 在 Windows 8.1/Server 2012 �
 
 ## 在相同域中管理其他 Hyper-V 主机
 
-若要将远程 Hyper-V 主机添加到 Hyper-V 管理器，请选择“选择计算机”****对话框中的“其他计算机”****，并将远程主机的主机名、NetBIOS 或 FQDN 输入到文本字段中。
+若要将远程 Hyper-V 主机添加到 Hyper-V 管理器，请选择“选择计算机”对话框中的“其他计算机”，并将远程主机的主机名、NetBIOS 或 FQDN 输入到文本字段中。
 
 ![](media/HyperVManager-ConnectToRemoteHost.png)
 
@@ -57,7 +57,7 @@ Hyper-V 在 Windows 8 上的 Windows 中可用。 在 Windows 8.1/Server 2012 �
 winrm quickconfig
 ```
 
-如果当前用户帐户与远程主机上的 Hyper-V Administrator 帐户相匹配，请继续操作并按“确定”****进行连接。
+如果当前用户帐户与远程主机上的 Hyper-V Administrator 帐户相匹配，请继续操作并按“确定”进行连接。
 
 >这是在 Windows 8 或 Windows 8.1 的 Hyper-V 管理器中管理远程主机的唯一受支持的方法。
 
@@ -72,7 +72,7 @@ Windows 10 极大地增加了远程连接类型的可能组合。
 
 在 Windows 10 中，如果没有使用远程主机的正确用户帐户运行，可以以拥有备用凭据的其他用户身份连接。
 
-若要指定远程 Hyper-V 主机的凭据，请选中“以其他用户身份连接: **在选择计算机中**”****对话框，然后选择“设置用户...”****。
+若要指定远程 Hyper-V 主机的凭据，请选中“以其他用户身份连接: **在选择计算机中**”对话框，然后选择“设置用户...”。
 
 ![](media/HyperVManager-ConnectToRemoteHostAltCreds.png)
 
@@ -83,7 +83,7 @@ Windows 10 极大地增加了远程连接类型的可能组合。
 
 有时使用 IP 地址会比使用主机名更易于连接。 Windows 10 就可以让你做到这一点。
 
-若要使用 IP 地址连接，请将 IP 地址输入到“其他计算机”****文本字段中。
+若要使用 IP 地址连接，请将 IP 地址输入到“其他计算机”文本字段中。
 
 
 ## 在域之外（或没有域的情况下）管理 Hyper-V 主机
