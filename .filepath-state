@@ -1,10 +1,4 @@
 {
-  "5090f6d60b5cbdce0990242d795d9e4e3736e791": [
-    "virtualization\\community\\community_overview.md"
-  ],
-  "24a1d42fcc8316abe4da25996c694d16cc8695e4": [
-    "virtualization\\community\\TOC.md"
-  ],
   "8353640c257688b361ac7da3912d9e9d749c37f2": [
     "virtualization\\hyperv_on_windows\\about\\hyperv_on_windows.md"
   ],
@@ -360,30 +354,6 @@
   ],
   "1a83732b9948cb3944c4dc6d01bc655049e4a117": [
     "virtualization\\windowscontainers\\TOC.md"
-  ],
-  "4a312891b6e0ffe403bf43fdc020aa5fc970f99f": [
-    "virtualization\\community\\contribute_to_docs.md"
-  ],
-  "783a9f5fce186f3915164a09dcbf1265944b26e0": [
-    "virtualization\\community\\contribute_to_docs.md"
-  ],
-  "462549855f0dc3ac092960bf1709fb01c3a02b3a": [
-    "virtualization\\community\\media\\editDoc.png"
-  ],
-  "065cffd9e2e4355f0c575a80c81537e77ee7a10a": [
-    "virtualization\\community\\media\\GitHubView.png"
-  ],
-  "85d871f168742e3e1fcb2d260e42863b96c3f1f9": [
-    "virtualization\\community\\media\\GitHubEdit.png"
-  ],
-  "9c6a41fac79a6f72b721a2b2928aef0f10cb9383": [
-    "virtualization\\community\\media\\GitHubEditor.png"
-  ],
-  "691e0ac052b6fbf09f2245ceb2eea32dac6621a5": [
-    "virtualization\\community\\media\\GitHubProposeChange.png"
-  ],
-  "c368db13f720190f3fb4a8fbdb2301c6a8148cc8": [
-    "virtualization\\community\\media\\GitHubCreatePR.png"
   ],
   "1797139de807cc6b81980c15a9ddb1bf45dbe900": [
     "virtualization\\windowscontainers\\Examples\\dotnet35.md"
