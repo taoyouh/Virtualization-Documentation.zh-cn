@@ -143,7 +143,7 @@
  Source File | Status | Details 
  ----------- | ------ | ------- 
  [.gitignore](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/fd01d85031748c73615a0fafeec80238f11b5cd6/.gitignore) | Ignored | [Details](#add3bd122b0062bf95e7120598c48e5583a4547f0)
- [.localization-config](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/fd01d85031748c73615a0fafeec80238f11b5cd6/.localization-config) | Ignored | [Details](#e62c8c528b4ab38737761d819bdfa4540d1347731)
+ [.localization-config](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/fd01d85031748c73615a0fafeec80238f11b5cd6/.localization-config) | Ignored | [Details](#426033afd171d92f5badf65380821278504c4e071)
  [.openpublishing.build.ps1](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/fd01d85031748c73615a0fafeec80238f11b5cd6/.openpublishing.build.ps1) | Ignored | [Details](#21cd29cbfb24b46f4feb52e76e167967ec26b21b2)
  [.openpublishing.publish.config.json](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/fd01d85031748c73615a0fafeec80238f11b5cd6/.openpublishing.publish.config.json) | Ignored | [Details](#8505bbebb7c8e34919be6a01ee40a033c3d6d1153)
  [demos\2015-BigBuild\BigBuild.ps1](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/fd01d85031748c73615a0fafeec80238f11b5cd6/demos/2015-BigBuild/BigBuild.ps1) | Ignored | [Details](#9b8f358da5b6d7c3aaa158344cc7178f67816b094)
@@ -192,7 +192,7 @@
  [hyperv-tools\Convert-WindowsImage\Convert-WindowsImage.ps1](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/fd01d85031748c73615a0fafeec80238f11b5cd6/hyperv-tools/Convert-WindowsImage/Convert-WindowsImage.ps1) | Ignored | [Details](#08dc3edf28291472231e25e0c0b312b054664d2247)
  [hyperv-tools\Convert-WindowsImage\README.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/fd01d85031748c73615a0fafeec80238f11b5cd6/hyperv-tools/Convert-WindowsImage/README.md) | Ignored | [Details](#bcaedeb606cb2698e288ad58bd7483825329983848)
  [hyperv-tools\Nested\Enable-NestedVm.ps1](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/fd01d85031748c73615a0fafeec80238f11b5cd6/hyperv-tools/Nested/Enable-NestedVm.ps1) | Ignored | [Details](#79f461843e0826401eabdfb45289136291c37a9c49)
- [hyperv-tools\Nested\Get-NestedVirtStatus.ps1](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/fd01d85031748c73615a0fafeec80238f11b5cd6/hyperv-tools/Nested/Get-NestedVirtStatus.ps1) | Ignored | [Details](#abb8be7b536ec05e5060d5b200b8ec63faf9d5fc50)
+ [hyperv-tools\Nested\Get-NestedVirtStatus.ps1](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/fd01d85031748c73615a0fafeec80238f11b5cd6/hyperv-tools/Nested/Get-NestedVirtStatus.ps1) | Ignored | [Details](#10b66982e9ff7475b860baad9e9d1b5574217c7e50)
  [LICENSE.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/fd01d85031748c73615a0fafeec80238f11b5cd6/LICENSE.md) | Ignored | [Details](#269c9a27125e4bbab11858c6ea097dcbbd37c9b751)
  [prospective-docs\Hyper-V-Backup-2016.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/fd01d85031748c73615a0fafeec80238f11b5cd6/prospective-docs/Hyper-V-Backup-2016.md) | Ignored | [Details](#fe4c587eff6b6b717d9122482f5aabe520fe3e5652)
  [prospective-docs\media\HVBackupArchitecture.png](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/fd01d85031748c73615a0fafeec80238f11b5cd6/prospective-docs/media/HVBackupArchitecture.png) | Ignored | [Details](#462a39c672c724be82ded4ec9c02c49f5410372b53)
@@ -414,7 +414,7 @@
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='e62c8c528b4ab38737761d819bdfa4540d1347731'></a> Source: [.localization-config](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/fd01d85031748c73615a0fafeec80238f11b5cd6/.localization-config)
+##### <a name='426033afd171d92f5badf65380821278504c4e071'></a> Source: [.localization-config](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/fd01d85031748c73615a0fafeec80238f11b5cd6/.localization-config)
 * Status: Ignored
 * Target File: 
 * Handoff File: 
@@ -904,7 +904,7 @@
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='abb8be7b536ec05e5060d5b200b8ec63faf9d5fc50'></a> Source: [hyperv-tools\Nested\Get-NestedVirtStatus.ps1](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/fd01d85031748c73615a0fafeec80238f11b5cd6/hyperv-tools/Nested/Get-NestedVirtStatus.ps1)
+##### <a name='10b66982e9ff7475b860baad9e9d1b5574217c7e50'></a> Source: [hyperv-tools\Nested\Get-NestedVirtStatus.ps1](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/fd01d85031748c73615a0fafeec80238f11b5cd6/hyperv-tools/Nested/Get-NestedVirtStatus.ps1)
 * Status: Ignored
 * Target File: 
 * Handoff File: 
