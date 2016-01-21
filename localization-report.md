@@ -7,9 +7,9 @@
 [ Handoff Failed Files ](#handoff-failed-list)| 0
 [ Handoff Success Files ](#handoff-success-list)| 1
 [ Handback Failed Files ](#handback-failed-list)| 0
-[ Out Of Sync Handback Files ](#outofsync-handback-success-list)| 16
+[ Out Of Sync Handback Files ](#outofsync-handback-success-list)| 15
 [ In Sync Handback Files ](#insync-handback-success-list)| 95
-[ Ignored Files ](#ignored-list)| 263
+[ Ignored Files ](#ignored-list)| 264
 
 ## <a name='handoff-failed-list'></a> Handoff Failed File List
 
@@ -24,7 +24,6 @@
  Source File | Status | Details 
  ----------- | ------ | ------- 
  [virtualization\community\contribute_to_docs.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/ab798d22c2ecdc0297b5949ffcd8180eed271914/virtualization/community/contribute_to_docs.md) | OutofSyncHandedBackSuccess | [Details](#4a312891b6e0ffe403bf43fdc020aa5fc970f99f63)
- [virtualization\hyperv_on_windows\user_guide\managing_ics.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/698efa7853e524adb9334b4630f447b9b3c46cfa/virtualization/hyperv_on_windows/user_guide/managing_ics.md) | OutofSyncHandedBackSuccess | [Details](#b822f41f453cbc427f59050cde0941dd90782724163)
  [virtualization\hyperv_on_windows\user_guide\vmsession.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/698efa7853e524adb9334b4630f447b9b3c46cfa/virtualization/hyperv_on_windows/user_guide/vmsession.md) | OutofSyncHandedBackSuccess | [Details](#2569e28280c6fd85a0df7ad483ae127e4a6c50eb187)
  [virtualization\windowscontainers\about\work_in_progress.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/0e474918caeaae4e235a98e06470daa94088a5d6/virtualization/windowscontainers/about/work_in_progress.md) | OutofSyncHandedBackSuccess | [Details](#521e5b85b7c4f8fd131970a600090f91986c6f52202)
  [virtualization\windowscontainers\deployment\deployment.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/ab798d22c2ecdc0297b5949ffcd8180eed271914/virtualization/windowscontainers/deployment/deployment.md) | OutofSyncHandedBackSuccess | [Details](#e18147d9412a67b9e69eab34133112d898e26476204)
@@ -193,7 +192,7 @@
  [hyperv-tools\Convert-WindowsImage\README.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/0e474918caeaae4e235a98e06470daa94088a5d6/hyperv-tools/Convert-WindowsImage/README.md) | Ignored | [Details](#bcaedeb606cb2698e288ad58bd7483825329983848)
  [hyperv-tools\ic-update\offline-update-guest.ps1](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/0e474918caeaae4e235a98e06470daa94088a5d6/hyperv-tools/ic-update/offline-update-guest.ps1) | Ignored | [Details](#6ea5e1bfce3fa660693c5772f13a46d96c4507f349)
  [hyperv-tools\ic-update\offline-update-host.ps1](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/0e474918caeaae4e235a98e06470daa94088a5d6/hyperv-tools/ic-update/offline-update-host.ps1) | Ignored | [Details](#1760a7a76e081f69fea4034668642b971c89b85f50)
- [hyperv-tools\ic-update\README.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/0e474918caeaae4e235a98e06470daa94088a5d6/hyperv-tools/ic-update/README.md) | Ignored | [Details](#599e0d0eb6622eb6a9f818e62e1bade87805a1c751)
+ [hyperv-tools\ic-update\README.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/0e474918caeaae4e235a98e06470daa94088a5d6/hyperv-tools/ic-update/README.md) | Ignored | [Details](#21c38a419da0395147d3c47fc2c4ea8d991a37d451)
  [hyperv-tools\Nested\Enable-NestedVm.ps1](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/0e474918caeaae4e235a98e06470daa94088a5d6/hyperv-tools/Nested/Enable-NestedVm.ps1) | Ignored | [Details](#79f461843e0826401eabdfb45289136291c37a9c52)
  [hyperv-tools\Nested\Get-NestedVirtStatus.ps1](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/0e474918caeaae4e235a98e06470daa94088a5d6/hyperv-tools/Nested/Get-NestedVirtStatus.ps1) | Ignored | [Details](#10b66982e9ff7475b860baad9e9d1b5574217c7e53)
  [LICENSE.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/0e474918caeaae4e235a98e06470daa94088a5d6/LICENSE.md) | Ignored | [Details](#269c9a27125e4bbab11858c6ea097dcbbd37c9b754)
@@ -263,6 +262,7 @@
  [virtualization\hyperv_on_windows\quick_start\media\virtual_switch_manager.png](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/0e474918caeaae4e235a98e06470daa94088a5d6/virtualization/hyperv_on_windows/quick_start/media/virtual_switch_manager.png) | Ignored | [Details](#64a15781d204035d9309edfbfb5d9da7489f707e149)
  [virtualization\hyperv_on_windows\quick_start\media\virtual_switch_manager1.png](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/0e474918caeaae4e235a98e06470daa94088a5d6/virtualization/hyperv_on_windows/quick_start/media/virtual_switch_manager1.png) | Ignored | [Details](#2d6238ee2a2ab32abb8c554ed523d991dd2872a5150)
  [virtualization\hyperv_on_windows\quick_start\media\vmconnect_start_button.png](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/0e474918caeaae4e235a98e06470daa94088a5d6/virtualization/hyperv_on_windows/quick_start/media/vmconnect_start_button.png) | Ignored | [Details](#264bde04cf7bc72f9718fbe8753b29f714c02572151)
+ [virtualization\hyperv_on_windows\user_guide\managing_ics.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/0e474918caeaae4e235a98e06470daa94088a5d6/virtualization/hyperv_on_windows/user_guide/managing_ics.md) | Ignored | [Details](#86229e8504f52f959d1b564fce5fba821d2677e3163)
  [virtualization\hyperv_on_windows\user_guide\media\checkpoint.png](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/0e474918caeaae4e235a98e06470daa94088a5d6/virtualization/hyperv_on_windows/user_guide/media/checkpoint.png) | Ignored | [Details](#dcc854e9982c81a2ad99872fd40bbd940733ccdb165)
  [virtualization\hyperv_on_windows\user_guide\media\checkpoint_button.png](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/0e474918caeaae4e235a98e06470daa94088a5d6/virtualization/hyperv_on_windows/user_guide/media/checkpoint_button.png) | Ignored | [Details](#0d2809240461a6599a34c795b237533f55698452166)
  [virtualization\hyperv_on_windows\user_guide\media\EnterCreds.png](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/0e474918caeaae4e235a98e06470daa94088a5d6/virtualization/hyperv_on_windows/user_guide/media/EnterCreds.png) | Ignored | [Details](#e4bd46363518215cafab94f61cd83be673624f7e168)
@@ -917,7 +917,7 @@
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='599e0d0eb6622eb6a9f818e62e1bade87805a1c751'></a> Source: [hyperv-tools\ic-update\README.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/0e474918caeaae4e235a98e06470daa94088a5d6/hyperv-tools/ic-update/README.md)
+##### <a name='21c38a419da0395147d3c47fc2c4ea8d991a37d451'></a> Source: [hyperv-tools\ic-update\README.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/0e474918caeaae4e235a98e06470daa94088a5d6/hyperv-tools/ic-update/README.md)
 * Status: Ignored
 * Target File: 
 * Handoff File: 
@@ -2118,17 +2118,14 @@
 * Handback Datetime: 2016-01-14 23:40:04
 * [Back to Top](#report-top)
 
-##### <a name='b822f41f453cbc427f59050cde0941dd90782724163'></a> Source: [virtualization\hyperv_on_windows\user_guide\managing_ics.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/698efa7853e524adb9334b4630f447b9b3c46cfa/virtualization/hyperv_on_windows/user_guide/managing_ics.md)
-* Status: OutofSyncHandedBackSuccess
+##### <a name='86229e8504f52f959d1b564fce5fba821d2677e3163'></a> Source: [virtualization\hyperv_on_windows\user_guide\managing_ics.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/0e474918caeaae4e235a98e06470daa94088a5d6/virtualization/hyperv_on_windows/user_guide/managing_ics.md)
+* Status: Ignored
 * Target File: 
-* Handoff File: [managing_ics.8df7555f0b61b9ddcddca7419ee655ef1d9a2119.zh-cn.xlf](https://github.com/Microsoft/Virtualization-Documentation-Private.handoff/blob/8d140404269c21172eab784a2a66831a9f5cc747/ol-handoff/Microsoft/Virtualization-Documentation-Private.zh-cn/live/managing_ics.8df7555f0b61b9ddcddca7419ee655ef1d9a2119.zh-cn.xlf)
-* Handoff Datetime: 2016-01-12 22:20:07
-* Handoff Reason: Include
+* Handoff File: 
+* Handoff Datetime: 0001-01-01 00:00:00
+* Handoff Reason: Ignored
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [virtualization\hyperv_on_windows\user_guide\managing_ics.md](https://github.com/Microsoft/Virtualization-Documentation-Private.zh-cn/blob/aeef3e608573f22771796c084b7d4c8c0c421d30/virtualization/hyperv_on_windows/user_guide/managing_ics.md)
-* Current Handback File: [managing_ics.8df7555f0b61b9ddcddca7419ee655ef1d9a2119.zh-cn.xlf](https://github.com/Microsoft/Virtualization-Documentation-Private.handback/blob/6780680e67566edf05a81dc5772160630d36fcad/ol-handback/Microsoft/Virtualization-Documentation-Private.zh-cn/live/managing_ics.8df7555f0b61b9ddcddca7419ee655ef1d9a2119.zh-cn.xlf)
-* Current Handback Datetime: 2016-01-04 21:52:22
 * [Back to Top](#report-top)
 
 ##### <a name='dcc854e9982c81a2ad99872fd40bbd940733ccdb165'></a> Source: [virtualization\hyperv_on_windows\user_guide\media\checkpoint.png](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/0e474918caeaae4e235a98e06470daa94088a5d6/virtualization/hyperv_on_windows/user_guide/media/checkpoint.png)
