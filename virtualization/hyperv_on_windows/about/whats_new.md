@@ -4,7 +4,7 @@
 
 ## Windows PowerShell Direct
 
-现在，提供了一种从主机操作系统在虚拟机内运行 Windows PowerShell 命令的简单且可靠的方法。 没有任何网络或防火墙要求，或任何特殊配置。 
+现在，提供了一种从主机操作系统在虚拟机内运行 Windows PowerShell 命令的简单且可靠的方法。 没有任何网络或防火墙要求，或任何特殊配置。
 无论你的远程管理配置如何，它都可以工作。 若要使用它，必须在主机和虚拟机来宾操作系统上运行 Windows 10 或 Windows Server Technical Preview。
 
 若要创建 PowerShell Direct 会话，请使用下列命令之一：
@@ -41,7 +41,7 @@ Windows PowerShell Direct 提供功能强大的脚本处理和自动执行体验
 借助生产检查点，可以轻松创建虚拟机的“时间点”映像，这些映像稍后可以以所有生产工作负荷完全支持的方法进行还原。 此操作通过使用来宾内的备份技术创建检查点（而而不是使用已保存状态技术）实现。 对于生产检查点，卷快照服务 (VSS) 可在 Windows 虚拟机内使用。 Linux 虚拟机会刷新其文件系统缓冲区来创建文件系统一致性检查点。 如果你想要使用已保存状态技术创建检查点，仍可以选择将标准检查点用于虚拟机。
 
 
-> **重要提示：**新虚拟机的默认行为是创建生产检查点，备用方案为创建标准检查点。
+>**重要提示：**新虚拟机的默认行为是创建生产检查点，备用方案为创建标准检查点。
 
 
 ## Hyper-V 管理器改进
@@ -57,8 +57,8 @@ Windows PowerShell Direct 提供功能强大的脚本处理和自动执行体验
 
 在使用始终可用/始终连接 (AOAC) 电源模型的计算机上启用 Hyper-V 时，“连接待机”电源状态立即可用。
 
-在 Windows 8 和 8.1 中，Hyper-V 导致使用始终可用/始终连接 (AOAC) 电源模型（也称为 InstantON）的计算机永远不会进入睡眠状态。 有关完整说明，请参阅此 [知识库文章]
-(https://support.microsoft.com/zh-cn/kb/2973536)。
+在 Windows 8 和 8.1 中，Hyper-V 导致使用始终可用/始终连接 (AOAC) 电源模型（也称为 InstantON）的计算机永远不会进入睡眠状态。 有关完整说明，请参阅此 [知识库文章](
+https://support.microsoft.com/zh-cn/kb/2973536)。
 
 
 ## Linux 安全启动
@@ -110,7 +110,7 @@ Update-VmConfigurationVersion <vmobject>
 虚拟机现在具有新的配置文件格式，该文件格式旨在提高读取和写入虚拟机配置数据的效率。 它还旨在降低因存储故障而导致数据损坏的可能性。 新的配置文件将 .VMCX 扩展名用于虚拟机配置数据，而将 .VMRS 扩展名用于运行时状态数据。
 
 
-> **重要提示：**.VMCX 文件为二进制格式。 不支持直接编辑 .VMCX 或 .VMRS 文件。
+>**重要提示：**.VMCX 文件为二进制格式。 不支持直接编辑 .VMCX 或 .VMRS 文件。
 
 ## 通过 Windows 更新的集成服务
 
@@ -140,7 +140,7 @@ Update-VmConfigurationVersion <vmobject>
 有关安装集成服务的详细演练，请查看[此博客](http://blogs.msdn.com/b/virtual_pc_guy/archive/2014/11/12/updating-integration-components-over-windows-update.aspx)文章。
 
 
-> **重要提示：**更新集成组件不再需要 ISO 映像文件 vmguest.iso。 它未包含在 Windows 10 上的 Hyper-V 中。
+>**重要提示：**更新集成组件不再需要 ISO 映像文件 vmguest.iso。 它未包含在 Windows 10 上的 Hyper-V 中。
 
 
 ## 下一步
@@ -149,3 +149,4 @@ Update-VmConfigurationVersion <vmobject>
 
 
 
+<!--HONumber=Dec15_HO1-->
