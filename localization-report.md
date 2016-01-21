@@ -1188,12 +1188,12 @@
 
 ##### <a name='bf7c9a1b7e544d684898d97e3a260f8d89586e6677'></a> Source: [virtualization\hyperv_on_windows\about\whats_new.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/beb2ff361edf5d86391458d4e37c8cef9fc6d1ae/virtualization/hyperv_on_windows/about/whats_new.md)
 * Status: InSyncHandedBackSuccess
-* Target File: [virtualization\hyperv_on_windows\about\whats_new.md](https://github.com/Microsoft/Virtualization-Documentation-Private.zh-cn/blob/aeef3e608573f22771796c084b7d4c8c0c421d30/virtualization/hyperv_on_windows/about/whats_new.md)
+* Target File: [virtualization\hyperv_on_windows\about\whats_new.md](https://github.com/Microsoft/Virtualization-Documentation-Private.zh-cn/blob/f23167323ce4ff12c87d85582f55b3cb0997d591/virtualization/hyperv_on_windows/about/whats_new.md)
 * Handoff File: [whats_new.dae7a7074466e85ccbefc13ff0f5e799912523e9.zh-cn.xlf](https://github.com/Microsoft/Virtualization-Documentation-Private.handoff/blob/d7056f797fc3b699a9d595a3b5a74e1269387a76/ol-handoff/Microsoft/Virtualization-Documentation-Private.zh-cn/live/whats_new.dae7a7074466e85ccbefc13ff0f5e799912523e9.zh-cn.xlf)
 * Handoff Datetime: 2015-12-03 10:35:29
 * Handoff Reason: Include
-* Handback File: [whats_new.dae7a7074466e85ccbefc13ff0f5e799912523e9.zh-cn.xlf](https://github.com/Microsoft/Virtualization-Documentation-Private.handback/blob/6780680e67566edf05a81dc5772160630d36fcad/ol-handback/Microsoft/Virtualization-Documentation-Private.zh-cn/live/whats_new.dae7a7074466e85ccbefc13ff0f5e799912523e9.zh-cn.xlf)
-* Handback Datetime: 2016-01-04 21:52:22
+* Handback File: [whats_new.dae7a7074466e85ccbefc13ff0f5e799912523e9.zh-cn.xlf](https://github.com/Microsoft/Virtualization-Documentation-Private.handback/blob/c74c66ce111ba9186c956a6f272a9d5042adcbb4/ol-handback/Microsoft/Virtualization-Documentation-Private.zh-cn/live/whats_new.dae7a7074466e85ccbefc13ff0f5e799912523e9.zh-cn.xlf)
+* Handback Datetime: 2016-01-21 00:25:51
 * [Back to Top](#report-top)
 
 ##### <a name='e5aad90dd8dd7facdb532a3465d1596646e69cfc78'></a> Source: [virtualization\hyperv_on_windows\develop\make_mgmt_service.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/beb2ff361edf5d86391458d4e37c8cef9fc6d1ae/virtualization/hyperv_on_windows/develop/make_mgmt_service.md)
