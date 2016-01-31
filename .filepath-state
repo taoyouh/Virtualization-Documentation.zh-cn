@@ -205,6 +205,9 @@
   "5547f0f37b1d84d2930f4b54c156f06cd29f407e": [
     "virtualization\\windowscontainers\\containers_welcome.md"
   ],
+  "59439790683c9c315093c6a6d42bd3264859d5b6": [
+    "virtualization\\windowscontainers\\deployment\\deployment.md"
+  ],
   "e18147d9412a67b9e69eab34133112d898e26476": [
     "virtualization\\windowscontainers\\deployment\\deployment.md"
   ],
@@ -355,6 +358,9 @@
   "7b5d0f445fe0bfa4a7403661ccc72074e4d84460": [
     "virtualization\\windowscontainers\\reference\\ps_docker_comparison.md"
   ],
+  "7ab57df3af2cdeb8d5bcb429dc34b1bc91738996": [
+    "virtualization\\windowscontainers\\TOC.md"
+  ],
   "db868b19b62ade34e24e83a6f5186f2c3c038474": [
     "virtualization\\windowscontainers\\TOC.md"
   ],
@@ -393,5 +399,8 @@
   ],
   "aa26c5fc60bcdfd7cd521799700e2f6eea48eb17": [
     "virtualization\\windowscontainers\\Nano_EULA.md"
+  ],
+  "a2a4d70bfe731be88af709ed37dc5ede9b5e8df3": [
+    "virtualization\\windowscontainers\\deployment\\deployment_nano.md"
   ]
 }
