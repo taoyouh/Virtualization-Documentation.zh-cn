@@ -271,6 +271,9 @@
   "08a8593c07246a17ec035e6138533034bf266f9f": [
     "virtualization\\windowscontainers\\management\\media\\process.png"
   ],
+  "2306744cc09d56e57bade8027ed57af408ceeb37": [
+    "virtualization\\windowscontainers\\management\\manage_containers.md"
+  ],
   "ef8be0da4c6a51a417d50cd06fb83d878e03dd04": [
     "virtualization\\windowscontainers\\management\\manage_containers.md"
   ],
@@ -381,6 +384,9 @@
   ],
   "1797139de807cc6b81980c15a9ddb1bf45dbe900": [
     "virtualization\\windowscontainers\\Examples\\dotnet35.md"
+  ],
+  "16af7f584a70679bf94f05714b9b832ed18739e3": [
+    "virtualization\\windowscontainers\\management\\container_networking.md"
   ],
   "62d11f3e6183264cd59cc47d61bda12b9ceadb0e": [
     "virtualization\\windowscontainers\\management\\container_networking.md"
