@@ -2,10 +2,10 @@
 
 ## Install-ContainerOSImage
 
-**名称**      
+**名称**
 Install-ContainerOSImage
 
-**摘要**  
+**摘要**
 安装给定 WIM 作为容器操作系统映像，以供与 Windows Server 或 Hyper-V 容器一起使用。
 
 
@@ -14,7 +14,7 @@ Install-ContainerOSImage
 Install-ContainerOSImage [-WimPath] <String> [-Force] [< CommonParameters >]
 ```
 
-**说明**  
+**说明**
 将 WIM 文件的基础映像安装到 Windows Server 和 Hyper-V 容器功能的共享中央映像存储区中。
 
 **参数**
@@ -43,13 +43,13 @@ Install-ContainerOSImage [-WimPath] <String> [-Force] [< CommonParameters >]
         about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 ```
 
-**输入**      
+**输入**
 无
 
-**输出**  
+**输出**
 无
 
-**别名**  
+**别名**
 无
 
 -------------------------- 示例 1 --------------------------
@@ -60,10 +60,10 @@ PS C:\>Install-ContainerOSImage c:\baseimage.wim
 
 ## Uninstall-ContainerOSImage
 
-**名称**  
+**名称**
 Uninstall-ContainerOSImage
 
-**摘要**  
+**摘要**
 删除以前安装的容器操作系统映像
 
 **语法**
@@ -109,22 +109,22 @@ Uninstall-ContainerOSImage [-ContainerImage] <Object> [-Force]  [< CommonParamet
         about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 ```
 
-**输入**  
+**输入**
 无
 
 
-**输出**  
+**输出**
 System.Object
 
-**别名**  
+**别名**
 无
 
 ## Add-ContainerNetworkAdapter
 
-**名称**  
+**名称**
 Add-ContainerNetworkAdapter
 
-**摘要**  
+**摘要**
 将新网络适配器添加到现有容器
 
 **语法**
@@ -255,24 +255,24 @@ Add-ContainerNetworkAdapter [-ContainerName] <string[]> [-CimSession <CimSession
 ```
 
 
-**输入**  
-System.String\[\]  
+**输入**
+System.String\[\]
 Microsoft.Containers.PowerShell.Objects.Container\[\]
 
 
-**输出**  
+**输出**
 Microsoft.Containers.PowerShell.Objects.ContainerNetworkAdapter
 
 
-**别名**  
+**别名**
 无
 
 ## Connect-ContainerNetworkAdapter
 
-**名称**  
+**名称**
 Connect-ContainerNetworkAdapter
 
-**摘要**  
+**摘要**
 将容器网络适配器连接到虚拟交换机
 
 **语法**
@@ -384,23 +384,23 @@ Connect-ContainerNetworkAdapter
         about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 ```
 
-**输入**  
+**输入**
 Microsoft.Containers.PowerShell.Objects.ContainerNetworkAdapter\[\]
 
 
-**输出**  
+**输出**
 Microsoft.Containers.PowerShell.Objects.ContainerNetworkAdapter
 
 
-**别名**  
+**别名**
 无
 
 ## Disconnect-ContainerNetworkAdapter
 
-**名称**  
+**名称**
 Disconnect-ContainerNetworkAdapter
 
-**摘要**  
+**摘要**
 从虚拟交换机断开容器网络适配器连接
 
 **语法**
@@ -502,23 +502,23 @@ Disconnect-ContainerNetworkAdapter
         about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 ```
 
-**输入**  
+**输入**
 Microsoft.Containers.PowerShell.Objects.ContainerNetworkAdapter\[\]
 
 
-**输出**  
+**输出**
 Microsoft.Containers.PowerShell.Objects.ContainerNetworkAdapter
 
 
-**别名**  
+**别名**
 无
 
 ## Export-ContainerImage
 
-**名称**  
+**名称**
 Export-ContainerImage
 
-**摘要**  
+**摘要**
 从本地存储中复制容器映像
 
 **语法**
@@ -648,23 +648,23 @@ Export-ContainerImage
         about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 ```
 
-**输入**  
+**输入**
 Microsoft.Containers.PowerShell.Objects.ContainerImage\[\]
 
 
-**输出**  
+**输出**
 Microsoft.Containers.PowerShell.Objects.ContainerImage
 
 
-**别名**  
+**别名**
 无
 
 ## Get-Container
 
-**名称**  
+**名称**
 Get-Container
 
-**摘要**  
+**摘要**
 枚举当前系统上的容器
 
 **语法**
@@ -730,24 +730,24 @@ Get-Container
         about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 ```
 
-**输入**  
-System.String\[\]  
+**输入**
+System.String\[\]
 System.Guid
 
 
-**输出**  
+**输出**
 Microsoft.Containers.PowerShell.Objects.Container
 
 
-**别名**  
+**别名**
 无
 
 ## Get-ContainerHost
 
-**名称**  
+**名称**
 Get-ContainerHost
 
-**摘要**  
+**摘要**
 获取容器主机的主机对象
 
 **语法**
@@ -793,25 +793,25 @@ Get-ContainerHost
         about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 ```
 
-**输入**  
-Microsoft.Management.Infrastructure.CimSession\[\]  
-System.String\[\]  
+**输入**
+Microsoft.Management.Infrastructure.CimSession\[\]
+System.String\[\]
 System.Management.Automation.PSCredential\[]
 
 
-**输出**  
+**输出**
 Microsoft.Containers.PowerShell.Objects.ContainerHost
 
 
-**别名**  
+**别名**
 无
 
 ## Get-ContainerImage
 
-**名称**  
+**名称**
 Get-ContainerImage
 
-**摘要**  
+**摘要**
 列出容器主机上的容器映像
 
 **语法**
@@ -892,23 +892,23 @@ Get-ContainerImage [[-Name] <string>] [[-Publisher] <string>] [[-Version] <versi
         about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 ```
 
-**输入**  
+**输入**
 无
 
 
-**输出**  
+**输出**
 Microsoft.Containers.PowerShell.Objects.ContainerImage
 
 
-**别名**  
+**别名**
 无
 
 ## 获取 ContainerNetworkAdapter
 
-**名称**  
+**名称**
 获取 ContainerNetworkAdapter
 
-**摘要**  
+**摘要**
 列出与容器相关联的网络适配器
 
 **语法**
@@ -982,24 +982,24 @@ Microsoft.Containers.PowerShell.Objects.ContainerImage
         about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 ```
 
-**输入**  
-Microsoft.Containers.PowerShell.Objects.Container\[\]  
+**输入**
+Microsoft.Containers.PowerShell.Objects.Container\[\]
 System.String\[\]
 
 
-**输出**  
+**输出**
 Microsoft.Containers.PowerShell.Objects.ContainerNetworkAdapter
 
 
-**别名**  
+**别名**
 无
 
 ## Import-ContainerImage
 
-**名称**  
+**名称**
 Import-ContainerImage
 
-**摘要**  
+**摘要**
 导入已从其他计算机导出的容器映像
 
 **语法**
@@ -1080,23 +1080,23 @@ Import-ContainerImage
         about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 ```
 
-**输入**  
+**输入**
 System.String
 
 
-**输出**  
+**输出**
 Microsoft.Containers.PowerShell.Objects.ContainerImage
 
 
-**别名**  
+**别名**
 无
 
 ## Move-ContainerImageRepository
 
-**名称**  
+**名称**
 Move-ContainerImageRepository
 
-**摘要**  
+**摘要**
 更改容器映像的存储位置。 必须是本地磁盘上的位置。 只能在系统上没有显示任何映像的情况下更改。
 
 **语法**
@@ -1186,11 +1186,11 @@ Move-ContainerImageRepository
         about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 ```
 
-**输入**  
+**输入**
 无
 
 
-**输出**  
+**输出**
 Microsoft.HyperV.PowerShell.VMHost
 
 
@@ -1199,10 +1199,10 @@ Microsoft.HyperV.PowerShell.VMHost
 
 ## New-Container
 
-**名称**  
+**名称**
 New-Container
 
-**摘要**  
+**摘要**
 创建新容器
 
 **语法**
@@ -1351,23 +1351,23 @@ New-Container
         about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 ```
 
-**输入**  
+**输入**
 Microsoft.Containers.PowerShell.Objects.ContainerImage
 
 
-**输出**  
+**输出**
 Microsoft.Containers.PowerShell.Objects.Container
 
 
-**别名**  
+**别名**
 无
 
 ## New-ContainerImage
 
-**名称**  
+**名称**
 New-ContainerImage
 
-**摘要**  
+**摘要**
 从现有容器创建新容器映像
 
 **语法**
@@ -1492,23 +1492,23 @@ New-ContainerImage
         about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 ```
 
-**输入**  
+**输入**
 Microsoft.Containers.PowerShell.Objects.Container
 
 
-**输出**  
+**输出**
 Microsoft.Containers.PowerShell.Objects.ContainerImage
 
 
-**别名**  
+**别名**
 无
 
 ## Remove-Container
 
-**名称**  
+**名称**
 Remove-Container
 
-**摘要**  
+**摘要**
 从系统中删除现有容器
 
 **语法**
@@ -1619,24 +1619,24 @@ Remove-Container
         about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 ```
 
-**输入**  
-System.String\[\]  
+**输入**
+System.String\[\]
 Microsoft.Containers.PowerShell.Objects.Container\[\]
 
 
-**输出**  
+**输出**
 Microsoft.Containers.PowerShell.Objects.Container
 
 
-**别名**  
+**别名**
 无
 
 ## Remove-ContainerImage
 
-**名称**  
+**名称**
 Remove-ContainerImage
 
-**摘要**  
+**摘要**
 从容器主机中删除容器映像
 
 **语法**
@@ -1747,22 +1747,22 @@ Remove-ContainerImage
         about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 ```
 
-**输入**  
+**输入**
 Microsoft.Containers.PowerShell.Objects.ContainerImage
 
 
-**输出**  
+**输出**
 System.Object
 
-**别名**  
+**别名**
 无
 
 ## Remove-ContainerNetworkAdapter
 
-**名称**  
+**名称**
 Remove-ContainerNetworkAdapter
 
-**摘要**  
+**摘要**
 从容器中删除网络适配器
 
 **语法**
@@ -1876,25 +1876,25 @@ Remove-ContainerNetworkAdapter
         about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 ```
 
-**输入**  
-Microsoft.Containers.PowerShell.Objects.ContainerNetworkAdapter\[\]  
-System.String\[\]  
+**输入**
+Microsoft.Containers.PowerShell.Objects.ContainerNetworkAdapter\[\]
+System.String\[\]
 Microsoft.Containers.PowerShell.Objects.Container\[\]
 
 
-**输出**  
+**输出**
 Microsoft.Containers.PowerShell.Objects.ContainerNetworkAdapter
 
 
-**别名**  
+**别名**
 无
 
 ## Set-ContainerNetworkAdapter
 
-**名称**  
+**名称**
 Set-ContainerNetworkAdapter
 
-**摘要**  
+**摘要**
 在容器中的网络适配器上设置 MAC 地址
 
 **语法**
@@ -2027,25 +2027,25 @@ Set-ContainerNetworkAdapter
         about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 ```
 
-**输入**  
-System.String  
-Microsoft.Containers.PowerShell.Objects.ContainerNetworkAdapter  
+**输入**
+System.String
+Microsoft.Containers.PowerShell.Objects.ContainerNetworkAdapter
 Microsoft.Containers.PowerShell.Objects.Container
 
 
-**输出**  
+**输出**
 Microsoft.Containers.PowerShell.Objects.ContainerNetworkAdapter
 
 
-**别名**  
+**别名**
 无
 
 ## Start-Container
 
-**名称**  
+**名称**
 Start-Container
 
-**摘要**  
+**摘要**
 启动容器
 
 **语法**
@@ -2146,24 +2146,24 @@ Start-Container
         about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 ```
 
-**输入**  
-Microsoft.Containers.PowerShell.Objects.Container\[\]  
+**输入**
+Microsoft.Containers.PowerShell.Objects.Container\[\]
 System.String\[\]
 
 
-**输出**  
+**输出**
 Microsoft.Containers.PowerShell.Objects.Container
 
 
-**别名**  
+**别名**
 无
 
 ## Stop-Container
 
-**名称**  
+**名称**
 Stop-Container
 
-**摘要**  
+**摘要**
 停止容器
 
 **语法**
@@ -2274,24 +2274,24 @@ Stop-Container
         about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 ```
 
-**输入**  
-Microsoft.Containers.PowerShell.Objects.Container\[\]  
+**输入**
+Microsoft.Containers.PowerShell.Objects.Container\[\]
 System.String\[\]
 
 
-**输出**  
+**输出**
 Microsoft.Containers.PowerShell.Objects.Container
 
 
-**别名**  
+**别名**
 无
 
 ## Test-ContainerImage
 
-**名称**  
+**名称**
 Test-ContainerImage
 
-**摘要**  
+**摘要**
 验证容器主机系统上的容器映像
 
 **语法**
@@ -2401,16 +2401,17 @@ Test-ContainerImage
         about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 ```
 
-**输入**  
+**输入**
 Microsoft.Containers.PowerShell.Objects.ContainerImage
 
 
-**输出**  
+**输出**
 Microsoft.Containers.PowerShell.Objects.ContainerImageReport
 
 
-**别名**  
+**别名**
 无
 
 
 
+<!--HONumber=Dec15_HO1-->

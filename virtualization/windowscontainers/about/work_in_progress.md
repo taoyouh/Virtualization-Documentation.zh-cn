@@ -78,7 +78,7 @@ PS C:\> Set-ContainerProcessor -ContainerName test2 -Maximum 3
 PS C:\> Start-Container test2
 ```
 
-** 解决方法：**  
+**解决方法：**  
 增加可用于容器的处理器、不显式指定可用于容器的处理器或减少可用于 VM 的处理器。
 
 --------------------------
@@ -100,7 +100,7 @@ PS C:\> Start-Container test2
 容器获得 169.254.***.*** APIPA IP 地址。
 
 **解决方法：**
-这是共享内核的副作用。 所有容器都显著具有相同的 MAC 地址。
+这是共享内核的副作用。 所有容器实际上具有相同的 MAC 地址。
 
 支持在容器主机上进行 MAC 地址欺骗。
 
@@ -108,6 +108,9 @@ PS C:\> Start-Container test2
 ```
 Get-VMNetworkAdapter -VMName "[YourVMNameHere]"  | Set-VMNetworkAdapter -MacAddressSpoofing On
 ```
+### 不支持 HTTPS 和 TLS
+
+Window Server 容器和 Hyper-V 容器不支持 HTTPS 或 TLS。 我们致力于在将来实现这一点。
 
 --------------------------
 
@@ -162,9 +165,8 @@ No Instance(s) Available.
 
 ### 并非所有 Docker 命令都起作用
 
-Docker 执行程序无法在 Hyper-V 容器中运行。
-
-尚不支持与 DockerHub 相关的命令。
+* Docker 执行程序无法在 Hyper-V 容器中运行。
+* 尚不支持与 DockerHub 相关的命令。
 
 如果任何不在此列表中的内容无法运行（或者如果某个命令的运行方式与预期迥然不同），请通过[论坛](https://social.msdn.microsoft.com/Forums/en-US/home?forum=windowscontainers)告知我们。
 
@@ -187,6 +189,11 @@ net use S: \\your\sources\here /User:shareuser [yourpassword]
 ```
 
 
+--------------------------
+
+
+
+
 ## 远程桌面
 
 Windows 容器无法通过 TP4 中的 RDP 会话进行管理/与之交互。
@@ -200,8 +207,36 @@ Windows 容器无法通过 TP4 中的 RDP 会话进行管理/与之交互。
 
 这是正确的。 我们正计划将来对 cimsession 提供完全支持。
 
-随时在[论坛](https://social.msdn.microsoft.com/Forums/en-US/home?forum=windowscontainers)上发布功能请求。
+### 无法使用“exit”退出 Nano Server 容器主机中的容器。
+
+如果你尝试退出 Nano Server 容器主机中的容器，使用“exit”将断开与 Nano Server 容器主机的连接，而且不会退出该容器。
+
+**解决方法：**
+改为使用 Exit-PSSession 退出该容器。
+
+随时在[论坛](https://social.msdn.microsoft.com/Forums/en-US/home?forum=windowscontainers)中发布功能请求。
+
+
+--------------------------
+
+
+
+## 用户和域
+
+### 本地用户
+
+可以创建本地用户帐户并将其用于在容器中运行 Windows 服务和应用程序。
+
+
+### 域成员身份
+
+容器无法加入 Active Directory 域，并且无法以域用户的身份运行服务或应用程序、服务帐户或计算机帐户。
+
+容器旨在快速启动到环境几乎不可知的已知一致状态。 加入域并从域应用组策略设置将增加启动容器的时间、随时间推移更改其运行方式并限制在开发人员之间以及跨部署移动或共享映像的功能。
+
+我们会谨慎考虑有关服务和应用程序如何使用 Active Directory 的反馈以及在容器中部署这些内容的交集。如果你具有最适合你的内容的相关详细信息，请在[论坛](https://social.msdn.microsoft.com/Forums/en-US/home?forum=windowscontainers)中与我们进行共享。我们正在积极地寻找解决方案以支持这些类型的方案。
 
 
 
 
+<!--HONumber=Jan16_HO3-->

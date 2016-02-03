@@ -7,13 +7,13 @@
 ## 使用 Hyper-V 管理器启用或禁用集成服务
 
 1. 选择虚拟机并打开设置。
-    ![](./media/HyperVManager-OpenVMSettings.png)
+  ![](./media/HyperVManager-OpenVMSettings.png)
 
 2. 从虚拟机设置窗口中，转到“管理”下的“集成服务”选项卡。
 
-    ![](./media/HyperVManager-IntegrationServices.png)
+  ![](./media/HyperVManager-IntegrationServices.png)
 
-    在此你可以看到此 Hyper-V 主机上可用的所有集成服务。 值得注意的是，来宾操作系统可能会也可能不会支持列出的所有集成服务。
+  在此你可以看到此 Hyper-V 主机上可用的所有集成服务。 值得注意的是，来宾操作系统可能会也可能不会支持列出的所有集成服务。
 
 ## 使用 PowerShell 启用或禁用集成服务
 
@@ -39,15 +39,15 @@
   demovm      VSS                     True    OK
   ```
 
-2. 启用“来宾服务接口”``集成服务
+2. 启用`来宾服务接口`集成服务
 
    ``` PowerShell
    Enable-VMIntegrationService -VMName "demovm" -Name "Guest Service Interface"
    ```
 
-   如果你运行 `Get-VMIntegrationService -VMName "demovm"`，将看到来宾服务接口集成服务已启用。
+   如果运行 `Get-VMIntegrationService -VMName "demovm"`，将看到来宾服务接口集成服务已启用。
 
-3. 禁用“来宾服务接口”``集成服务
+3. 禁用`来宾服务接口`集成服务
 
    ``` PowerShell
    Disable-VMIntegrationService -VMName "demovm" -Name "Guest Service Interface"
@@ -87,7 +87,7 @@ Stopped  vmicvmsession      Hyper-V VM Session Service
 Running  vmicvss            Hyper-V Volume Shadow Copy Requestor
 ```
 
-使用 [`Start-Service`] (https://technet.microsoft.com/zh-cn/library/hh849825.aspx) 或 [`Stop-Service`] (https://technet.microsoft.com/zh-cn/library/hh849790.aspx) 启动或停止服务。
+使用 [`Start-Service`](https://technet.microsoft.com/zh-cn/library/hh849825.aspx) 或 [`Stop-Service`](https://technet.microsoft.com/zh-cn/library/hh849790.aspx) 启动或停止服务。
 
 默认情况下，所有集成服务在来宾操作系统中均已启用。
 
@@ -147,11 +147,11 @@ Linux 集成服务通常通过 Linux 内核提供。
   ```
 
   在集成服务守护程序中，你可能会看到：
-* **`hv_vss_daemon`** – 创建实时 Linux 虚拟机备份需要此守护程序。
-* **`hv_kvp_daemon`** – 此守护程序允许设置和查询内部和外部密钥值对。
-* **`hv_fcopy_daemon`** – 此守护程序实现在主机和来宾之间复制服务的文件。
+  * **`hv_vss_daemon`** – 创建实时 Linux 虚拟机备份需要此守护程序。
+  * **`hv_kvp_daemon`** – 此守护程序允许设置和查询内部和外部密钥值对。
+  * **`hv_fcopy_daemon`** – 此守护程序在主机和来宾之间实现文件复制服务。
 
-> **注意：**如果上述集成服务守护程序不可用，可能是这些守护程序在你的系统上不受支持或尚未安装。 在[此处](https://technet.microsoft.com/en-us/library/dn531030.aspx)查找更具体的信息。
+> **注意：**如果上述集成服务守护程序不可用，可能是这些守护程序在你的系统上不受支持或尚未安装。 在[此处](https://technet.microsoft.com/en-us/library/dn531030.aspx)查找更多特定于发行版的信息。
 
 在此示例中，我们将停止和启动 KVP 守护程序 `hv_kvp_daemon`。
 
@@ -161,7 +161,7 @@ Linux 集成服务通常通过 Linux 内核提供。
 sudo kill -15 `pidof hv_kvp_daemon`
 ```
 
-现在，如果你再次运行 `ps -ef | hv`，将发现所有 `hv_kvp_daemon` 进程均已消失。
+现在，如果你再次运行 `ps -ef | hv`，将发现所有 `hv_kvp_daemon` 进程已消失。
 
 若要再次启用守护程序，请将守护程序作为根运行。
 
@@ -169,7 +169,7 @@ sudo kill -15 `pidof hv_kvp_daemon`
 sudo hv_kvp_daemon
 ```
 
-现在，如果你再次运行 `ps -ef | hv`，将发现有新进程 ID 的 `hv_kvp_daemon` 进程。
+现在，如果你再次运行 `ps -ef | hv`，将发现某个 `hv_kvp_daemon` 进程且带有新进程 ID。
 
 
 ## 集成服务维护
@@ -188,11 +188,12 @@ sudo hv_kvp_daemon
 | -| | |
 | Windows Server 2012 R2| Windows 更新| |
 | Windows Server 2012| Windows 更新| 需要数据交换集成服务。*****|
-| Windows Server 2008 R2| Windows 更新| 需要数据交换集成服务。*****|
-| Windows Server 2008 (SP 2)| Windows 更新| 需要数据交换集成服务。*****|
-| Windows Home Server 2011| Windows 更新| 需要数据交换集成服务。*****|
-| Windows Small Business Server 2011| Windows 更新| 需要数据交换集成服务。*****|
-
+| Windows Server 2008 R2 (SP 1)| Windows 更新| 需要数据交换集成服务。*****|
+| Windows Server 2008 (SP 2)| Windows 更新| 仅 Server 2016 中提供扩展支持（[阅读详细信息](https://support.microsoft.com/en-us/lifecycle?p1=12925))）。|
+| Windows Home Server 2011| Windows 更新| 在 Server 2016 中不受支持（[阅读详细信息](https://support.microsoft.com/en-us/lifecycle?p1=15820))）。|
+| Windows Small Business Server 2011| Windows 更新| 不受主流支持（[阅读详细信息](https://support.microsoft.com/en-us/lifecycle?p1=15817))）。|
+| -| | |
+| Linux 来宾| 程序包管理器| 适用于 Linux 的集成组件内置于发行版中，但可能有可选的更新可用。********|
 
 **\*** 如果无法启用数据交换集成服务，这些来宾的集成组件将在下载中心的[此处](https://support.microsoft.com/en-us/kb/3071740)作为 Cabinet (cab) 文件提供。 有关应用 cab 的说明在[此处](http://blogs.technet.com/b/virtualization/archive/2015/07/24/integration-components-available-for-virtual-machines-not-connected-to-windows-update.aspx)提供。
 
@@ -216,6 +217,9 @@ sudo hv_kvp_daemon
 | Windows Small Business Server 2011| 集成服务磁盘| |
 | Windows Server 2003 R2 (SP 2)| 集成服务磁盘| |
 | Windows Server 2003 (SP 2)| 集成服务磁盘| |
+| -| | |
+| Linux 来宾| 程序包管理器| 适用于 Linux 的集成组件内置于发行版中，但可能有可选的更新可用。********|
+
 
 **对于在 Windows 8 主机上运行的虚拟机：**
 
@@ -235,11 +239,15 @@ sudo hv_kvp_daemon
 | Windows Small Business Server 2011| 集成服务磁盘| |
 | Windows Server 2003 R2 (SP 2)| 集成服务磁盘| |
 | Windows Server 2003 (SP 2)| 集成服务磁盘| |
+| -| | |
+| Linux 来宾| 程序包管理器| 适用于 Linux 的集成组件内置于发行版中，但可能有可选的更新可用。********|
+
 
 有关通过 Windows 8 和 Windows 8.1 的集成服务磁盘进行更新的说明在[此处](https://technet.microsoft.com/en-us/library/hh846766.aspx#BKMK_step4)提供。
 
-**\*\*** 在[此处](https://technet.microsoft.com/en-us/library/dn531030.aspx)查找有关 Linux 来宾的详细信息。
+ **\****** 在[此处](https://technet.microsoft.com/en-us/library/dn531030.aspx)查找有关 Linux 来宾的详细信息。
 
 
 
 
+<!--HONumber=Jan16_HO3-->

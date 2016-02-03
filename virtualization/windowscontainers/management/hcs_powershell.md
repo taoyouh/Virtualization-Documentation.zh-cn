@@ -23,7 +23,7 @@ e49cd35542..                                      e49cd35542..                  
 
 若要停止容器（无需考虑是使用 PowerShell 还是 Docker 创建的容器），请使用 `Stop-ComputeProcess` 命令。
 
-> 撰写本文时，需要重新启动 VMMS 服务，以便在使用 `Get-Container` 命令时，容器显示为停止状态。
+>撰写本文时，需要重新启动 VMMS 服务，以便在使用 `Get-Container` 命令时，容器显示为停止状态。
 
 ```powershell
 PS C:\> Stop-ComputeProcess -Id 2088E0FA-1F7C-44DE-A4BC-1E29445D082B -Force
@@ -32,3 +32,4 @@ PS C:\> Stop-ComputeProcess -Id 2088E0FA-1F7C-44DE-A4BC-1E29445D082B -Force
 
 
 
+<!--HONumber=Dec15_HO1-->

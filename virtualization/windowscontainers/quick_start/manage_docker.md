@@ -96,7 +96,7 @@ if (!(Get-NetFirewallRule | where {$_.Name -eq "TCP80"})) {
 
 你现在拥有一个包含 IIS 的容器映像，可用于部署为操作环境准备的 IIS。
 
-若要从新映像创建容器，请使用 `docker run` 命令，这次要指定 IIS 映像的名称。 请注意，本示例已指定参数 `-p 80:80`。 由于容器已连接到通过网络地址转换提供 IP 地址的虚拟交换机，因此需要将某个端口从容器主机映射到容器 NAT IP 地址上的端口。 有关 `-p` 的详细信息，请参阅 [docker.com 上的 Docker Run 参考](https://docs.docker.com/engine/reference/run/)
+若要从新映像创建容器，请使用 `docker run` 命令，此时要指定 IIS 映像的名称。 请注意，本示例已指定参数 `-p 80:80`。 由于容器已连接到通过网络地址转换提供 IP 地址的虚拟交换机，因此需要将某个端口从容器主机映射到容器 NAT IP 地址上的端口。 有关 `-p` 的详细信息，请参阅 [docker.com 上的 Docker Run 参考](https://docs.docker.com/engine/reference/run/)
 
 ```powershell
 C:\> docker run --name iisdemo -it -p 80:80 windowsservercoreiis cmd
@@ -159,7 +159,7 @@ C:\> powershell new-item c:\build\dockerfile -Force
 C:\> notepad c:\build\dockerfile
 ```
 
-将以下文本复制到 dockerfile 并保存该文件。 这些命令会指示 Docker 使用 `windosservercore` 创建新映像作为基础映像，并包含使用 `RUN` 指定的修改。 有关 Dockerfile 的详细信息，请参阅 [docker.com 上的 Dockerfile 参考](http://docs.docker.com/engine/reference/builder/)。
+将以下文本复制到 dockerfile 并保存该文件。 这些命令会指示 Docker 使用 `windowsservercore` 作为基础创建新映像，并包含使用 `RUN` 指定的修改。 有关 Dockerfile 的详细信息，请参阅 [docker.com 上的 Dockerfile 参考](http://docs.docker.com/engine/reference/builder/)。
 
 ```powershell
 FROM windowsservercore
@@ -167,7 +167,7 @@ RUN dism /online /enable-feature /all /featurename:iis-webserver /NoRestart
 RUN echo "Hello World - Dockerfile" > c:\inetpub\wwwroot\index.html
 ```
 
-此命令将启动自动映像生成过程。 `-t` 参数会指示此过程将新映像命名为 `iis`。
+此命令将启动自动映像生成过程。 `-t` 参数会指示此过程来将新映像命名为 `iis`。
 
 ```powershell
 C:\> docker build -t iis c:\Build
@@ -255,7 +255,7 @@ C:\> powershell New-Item -Type Directory c:\share\en-us
 </unattend>
 ```
 
-完成后，应对容器主机上的 `c:\share` 目录进行如下配置。
+完成后，应对容器主机上的 `c:\share` 目录进行上述配置。
 
 ```
 c:\share

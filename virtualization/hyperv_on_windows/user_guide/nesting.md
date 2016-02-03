@@ -1,6 +1,6 @@
 # 嵌套虚拟化
 
-> **注意：**此早期的预览功能仅向运行版本 10565 或更高版本的 Windows 预览体验成员提供，并且不保证性能或稳定性。
+>**注意：**此早期的预览功能仅向运行版本 10565 或更高版本的 Windows 预览体验成员提供，并且不保证性能或稳定性。
 
 嵌套虚拟化在虚拟化的环境中运行虚拟化。 换句话说，嵌套允许你在虚拟机中运行 Hyper-V 服务器角色。
 
@@ -33,7 +33,7 @@ Hyper-V 依赖硬件虚拟化支持（例如 Intel VT-x 和 AMD-V）来运行虚
 
 2. 在 Hyper-V 主机上以管理员身份运行[此脚本](https://github.com/Microsoft/Virtualization-Documentation/blob/master/hyperv-tools/Nested/Enable-NestedVm.ps1)。
 
-    在此早期预览版中，嵌套具有一些配置要求。 为使操作变得更简单，[此 PowerShell 脚本](https://github.com/Microsoft/Virtualization-Documentation/blob/master/hyperv-tools/Nested/Enable-NestedVm.ps1)脚本会检查你的配置、更改错误内容，并为指定的虚拟机启用嵌套虚拟化。
+在此早期预览版中，嵌套具有一些配置要求。 为使操作变得更简单，[此 PowerShell 脚本](https://github.com/Microsoft/Virtualization-Documentation/blob/master/hyperv-tools/Nested/Enable-NestedVm.ps1)脚本会检查你的配置、更改错误内容，并为指定的虚拟机启用嵌套虚拟化。
 
   ``` PowerShell
   Invoke-WebRequest https://raw.githubusercontent.com/Microsoft/Virtualization-Documentation/master/hyperv-tools/Nested/Enable-NestedVm.ps1 -OutFile ~/Enable-NestedVm.ps1 
@@ -55,15 +55,15 @@ Hyper-V 依赖硬件虚拟化支持（例如 Intel VT-x 和 AMD-V）来运行虚
 
 * 启用了基于虚拟化的安全 (VBS) 的主机无法向来宾公开虚拟化扩展。 若要预览嵌套虚拟化，必须先禁用 VBS。
 
-* 在虚拟机中启用嵌套虚拟化后，以下功能将不再与该 VM 兼容。  
-    这些操作将失败或导致虚拟机无法启动（如果该虚拟机托管了其他虚拟机）：
-    * 必须关闭动态内存。 这会阻止 VM 启动。
-    * 无法调整运行时内存大小。
-    * 无法将检查点应用到正在运行的 VM。
-    * 无法进行实时迁移，也即是说，无法实时迁移托管其他 VM 的 VM。
-    * 无法保存/还原。
+* 在虚拟机中启用嵌套虚拟化后，以下功能将不再与该 VM 兼容。
+这些操作将失败或导致虚拟机无法启动（如果该虚拟机托管了其他虚拟机）：
+* 必须关闭动态内存。 这会阻止 VM 启动。
+* 无法调整运行时内存大小。
+* 无法将检查点应用到正在运行的 VM。
+* 无法进行实时迁移，也即是说，无法实时迁移托管其他 VM 的 VM。
+* 无法保存/还原。
 
-    > **注意：**这些功能在“内部”来宾 VM 中仍然可用。 这些限制仅适用于第一层 VM。
+>**注意：**这些功能在“内部”来宾 VM 中仍然可用。 这些限制仅适用于第一层 VM。
 
 * 启用了嵌套虚拟化后，必须在虚拟机中启用 MAC 欺骗，以便在“内部”来宾中联网。
 
@@ -74,7 +74,7 @@ Hyper-V 依赖硬件虚拟化支持（例如 Intel VT-x 和 AMD-V）来运行虚
 1. 请确保动态内存已关闭。
 2. 在主机上从提升的提示符中运行此 PowerShell 脚本。
 
-    此脚本报告是否针对嵌套正确配置了主机和 VM。
+此脚本报告是否针对嵌套正确配置了主机和 VM。
 
   ``` PowerShell
   Invoke-WebRequest https://raw.githubusercontent.com/Microsoft/Virtualization-Documentation/master/hyperv-tools/Nested/Get-NestedVirtStatus.ps1 -OutFile ~/Get-NestedVirtStatus.ps1 
@@ -93,3 +93,4 @@ Hyper-V 依赖硬件虚拟化支持（例如 Intel VT-x 和 AMD-V）来运行虚
 
 
 
+<!--HONumber=Dec15_HO1-->

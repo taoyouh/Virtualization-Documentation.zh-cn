@@ -1,4 +1,4 @@
-## 容器主机部署
+# 容器主机部署
 
 **这是初步内容，可能还会更改。**
 
@@ -13,9 +13,9 @@ PowerShell 脚本可用于自动执行 Windows 容器主机的部署。
 
 ### Windows Server 主机
 
-此表中列出的步骤可用于将容器主机部署到 Windows Server 2016 TP4 和 Windows Server Core 2016。 所含内容是 Windows Server 和 Hyper-V 容器所需的配置。
+此表中列出的步骤可用于将容器主机部署到 Windows Server 2016 和 Windows Server 2016 Core 中。 所含内容是 Windows Server 和 Hyper-V 容器所需的配置。
 
-\* 仅在将部署 Hyper-V 容器时需要。  
+\* 仅在将部署 Hyper-V 容器时需要。
 \*\* 仅在 Docker 用于创建和管理容器时需要。
 
 <table border="1" style="background-color:FFFFCC;border-collapse:collapse;border:1px solid FFCC00;color:000000;width:100%" cellpadding="5" cellspacing="5">
@@ -34,6 +34,10 @@ PowerShell 脚本可用于自动执行 Windows 容器主机的部署。
 <tr>
 <td>[配置虚拟处理器 *](#proc)</td>
 <td>如果容器主机本身是 Hyper-V 虚拟机，则需要配置至少两个虚拟处理器。</td>
+</tr>
+<tr>
+<td>[禁用动态内存 *](#dyn)</td>
+<td>如果容器主机本身是 Hyper-V 虚拟机，则必须禁用动态内存。</td>
 </tr>
 <tr>
 <td>[启用 Hyper-V 角色 *](#hypv) </td>
@@ -65,7 +69,7 @@ PowerShell 脚本可用于自动执行 Windows 容器主机的部署。
 
 此表中列出的步骤可用于将容器主机部署到 Nano Server。 所含内容是 Windows Server 和 Hyper-V 容器所需的配置。
 
-\* 仅在将部署 Hyper-V 容器时需要。  
+\* 仅在将部署 Hyper-V 容器时需要。
 \*\* 仅在 Docker 用于创建和管理容器时需要。
 
 <table border="1" style="background-color:FFFFCC;border-collapse:collapse;border:1px solid FFCC00;color:000000;width:100%" cellpadding="5" cellspacing="5">
@@ -86,6 +90,10 @@ PowerShell 脚本可用于自动执行 Windows 容器主机的部署。
 <td>如果容器主机本身是 Hyper-V 虚拟机，则需要配置至少两个虚拟处理器。</td>
 </tr>
 <tr>
+<tr>
+<td>[禁用动态内存 *](#dyn)</td>
+<td>如果容器主机本身是 Hyper-V 虚拟机，则必须禁用动态内存。</td>
+</tr>
 <td>[创建虚拟交换机](#vswitch)</td>
 <td>容器连接到虚拟交换机以获取网络连接。</td>
 </tr>
@@ -167,10 +175,10 @@ PS C:\> New-NanoServerImage -MediaPath $WindowsMedia -BasePath c:\nano -TargetPa
 
 如果容器主机本身将在 Hyper-V 虚拟机上运行，并且还将托管 Hyper-V 容器，则需要启用嵌套虚拟化。 可以使用以下 PowerShell 命令完成此操作。
 
-> 在运行此命令时，必须关闭虚拟机。
+>在运行此命令时，必须关闭虚拟机。
 
 ```powershell
-PS C:\> Set-VMProcessor -VMName <container host vm> -ExposeVirtualizationExtensions $true
+PS C:\> Set-VMProcessor -VMName <VM Name> -ExposeVirtualizationExtensions $true
 ```
 
 ### <a name=proc></a>配置虚拟处理器
@@ -179,6 +187,16 @@ PS C:\> Set-VMProcessor -VMName <container host vm> -ExposeVirtualizationExtensi
 
 ```poweshell
 PS C:\> Set-VMProcessor –VMName <VM Name> -Count 2
+```
+
+### <a name=dyn></a>禁用动态内存
+
+如果容器主机本身是 Hyper-V 虚拟机，则必须在容器主机虚拟机上禁用动态内存。 这可以通过虚拟机的设置或使用以下 PowerShell 脚本进行配置。
+
+>在运行此命令时，必须关闭虚拟机。
+
+```poweshell
+PS C:\> Set-VMMemory <VM Name> -DynamicMemoryEnabled $false
 ```
 
 ### <a name=hypv></a>启用 Hyper-V 角色
@@ -191,7 +209,7 @@ PS C:\> Install-WindowsFeature hyper-v
 
 ### <a name=vswitch></a>创建虚拟交换机
 
-需要将每个容器连接到虚拟交换机，以便通过网络进行通信。 虚拟交换机使用 `New-VMSwitch` 命令创建。 容器支持类型为 `External` 或 `NAT` 的虚拟交换机。
+需要将每个容器连接到虚拟交换机，以便通过网络进行通信。 使用 `New-VMSwitch` 命令创建虚拟交换机。 容器支持类型为 `External` 或 `NAT` 的虚拟交换机。
 
 此示例创建一个名为“Virtual Switch”、类型为 NAT 且 Nat 子网为 172.16.0.0/12 的虚拟交换机。
 
@@ -223,14 +241,14 @@ Active                           : True
 <a name=mac></a>最后，如果容器主机在 Hyper-V 虚拟机内部运行，必须启用 MAC 欺骗。这使每个容器都可以接收 IP 地址。若要启用 MAC 地址欺骗，请在 Hyper-V 主机上运行以下命令。VMName 属性将是容器主机的名称。
 
 ```powershell
-PS C:\> Get-VMNetworkAdapter -VMName <contianer host vm> | Set-VMNetworkAdapter -MacAddressSpoofing On
+PS C:\> Get-VMNetworkAdapter -VMName <VM Name> | Set-VMNetworkAdapter -MacAddressSpoofing On
 ```
 
 ### <a name=img></a>安装操作系统映像
 
 操作系统映像用作任何 Windows Server 或 Hyper-V 容器的基础。 此映像用于部署容器，然后可以修改该容器，并将其捕获到新的容器映像中。 已将 Windows Server Core 和 Nano Server 作为基础操作系统创建操作系统映像。
 
-可使用 ContainerProvider PowerShell 模块找到并安装容器操作系统映像。 在使用此模块之前，需要安装它。 以下命令可用于安装该模块。
+可使用 ContainerProvider PowerShell 模块找到并安装容器操作系统映像。 在使用此模块之前，需要安装它。 可以使用以下命令安装此模块。
 
 ```powershell
 PS C:\> Install-PackageProvider ContainerProvider -Force
@@ -255,7 +273,7 @@ Downloaded in 0 hours, 0 minutes, 10 seconds.
 
 此外，此命令下载和安装 Windows Server Core 基础操作系统映像。
 
-> **问题：**Save-ContainerImage 和 Install-ContainerImage cmdlet 无法通过远程 PowerShell 会话使用 WindowsServerCore 容器映像。<br />**解决方法：**使用远程桌面登录到计算机并直接使用 Save-ContainerImage cmdlet。
+>**问题：**Save-ContainerImage 和 Install-ContainerImage cmdlet 无法通过远程 PowerShell 会话使用 WindowsServerCore 容器映像。<br />**解决方法：**使用远程桌面登录计算机并直接使用 Save-ContainerImage cmdlet。
 
 ```powershell
 PS C:\> Install-ContainerImage -Name WindowsServerCore -Version 10.0.10586.0
@@ -281,4 +299,4 @@ Windows 中未附带 Docker 守护程序和命令行接口，并且这些功能�
 
 
 
-
+<!--HONumber=Jan16_HO1-->

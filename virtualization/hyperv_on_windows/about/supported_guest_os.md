@@ -33,7 +33,7 @@ Microsoft 按如下方式为来宾操作系统提供支持：
 | Windows Home Server 2011| 4| |
 | Windows Small Business Server 2011| Essentials 版本 - 2，Standard 版本 - 4| |
 
-> Windows 10 可以作为来宾操作系统在 Windows 8.1 和 Windows Server 2012 R2 Hyper-V 主机上运行。
+>Windows 10 可以作为来宾操作系统在 Windows 8.1 和 Windows Server 2012 R2 Hyper-V 主机上运行。
 
 ## 受支持的 Linux 和 FreeBSD
 
@@ -51,3 +51,4 @@ Microsoft 按如下方式为来宾操作系统提供支持：
 
 
 
+<!--HONumber=Dec15_HO1-->

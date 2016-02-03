@@ -2,7 +2,7 @@
 
 在 Azure 中创建和管理 Windows Server 容器前，你需要部署 Windows Server 2016 Technical Preview 映像，该映像已使用 Windows Server 容器功能进行预配置。 本指南向你演练此过程。
 
-> Microsoft Azure 不支持 Hyper-V 容器。 若要完成 Hyper-V 容器练习，你需要本地容器主机。
+>Microsoft Azure 不支持 Hyper-V 容器。 若要完成 Hyper-V 容器练习，你需要本地容器主机。
 
 ## 开始使用 Azure 门户
 
@@ -44,15 +44,16 @@
 
 ## 视频演练
 
-<iframe src="https://channel9.msdn.com/Blogs/containers/Quick-Start-Configure-Windows-Server-Containers-in-Microsoft-Azure/player#ccLang=zh-cn" width="800" height="450"  allowFullScreen="true" frameBorder="0" scrolling="no"></iframe>
+<iframe src="https://channel9.msdn.com/Blogs/containers/Quick-Start-Configure-Windows-Server-Containers-in-Microsoft-Azure/player" width="800" height="450"  allowFullScreen="true" frameBorder="0" scrolling="no"></iframe>
 
 
 ## 后续步骤：开始使用容器
 
 现在你有运行 Windows Server 容器功能的 Windows Server 2016 系统，请跳到以下指南来开始使用 Windows Server 容器和 Windows Server 容器映像。
 
-[快速入门：Windows 容器和 Docker](./manage_docker.md)  
+[快速入门：Windows 容器和 Docker](./manage_docker.md)
 [快速入门：Windows 容器和 PowerShell](./manage_powershell.md)
 
 
 
+<!--HONumber=Dec15_HO1-->

@@ -1,6 +1,6 @@
 # 将 Windows 容器主机部署到现有虚拟或物理系统
 
-本文档介绍使用 PowerShell 脚本将 Windows 容器主机部署到现有虚拟或物理系统的步骤。
+本文档介绍使用 PowerShell 脚本在现有物理或虚拟系统上部署并配置 Windows 容器角色的步骤。
 
 若要介绍脚本化部署配置为 Windows 容器主机的新 Hyper-V 虚拟机的步骤，请参阅[新 Hyper-V Windows 容器主机](./container_setup.md)。
 
@@ -8,12 +8,9 @@
 
 为了完成本快速入门中的 Windows Server 容器和 Hyper-V 容器练习，需要以下内容。
 
-* 运行 Windows 10 版本 10586 或更高版本/Windows Server Technical Preview 4 或更高版本的系统。
-* 已启用的 Hyper-V 角色（[请参阅说明](https://msdn.microsoft.com/virtualization/hyperv_on_windows/quick_start/walkthrough_install#UsingPowerShell)）。
+* 运行 Windows Server Technical Preview 4 或更高版本的系统。
 * 容器主机映像、基础操作系统映像和安装程序脚本有 10GB 的可用存储。
-* Hyper-V 主机上的管理员权限。
-
-> 运行 Hyper-V 容器的虚拟化容器主机将需要嵌套虚拟化。 物理主机和虚拟主机都将需要运行支持嵌套虚拟化的操作系统。
+* 系统上的管理员权限。
 
 ## 为容器安装现有的虚拟机或裸机主机。
 
@@ -37,14 +34,14 @@ PS C:\> start-process powershell -Verb runas
 PS C:\> wget -uri https://aka.ms/tp4/Install-ContainerHost -OutFile C:\Install-ContainerHost.ps1
 ```
 
- 下载完成后，执行该脚本。
+下载完成后，执行该脚本。
 ``` PowerShell
 PS C:\> C:\Install-ContainerHost.ps1 -HyperV
 ```
 
-然后，该脚本将开始下载并配置 Windows 容器组件。 由于下载较大，此过程可能需要很长一段时间。 在此过程中，计算机可能重新启动。 完成后，你的计算机将进行配置，并随时供你使用 PowerShell 和 Docker 创建并管理 Windows 容器和 Windows 容器映像。
+然后，此脚本将开始下载和配置 Windows 容器组件。 由于下载较大，此过程可能需要很长一段时间。 在此过程中，计算机可能重新启动。 完成后，你的计算机将进行配置，并随时供你使用 PowerShell 和 Docker 创建并管理 Windows 容器和 Windows 容器映像。
 
- 完成这些项目后，你的系统应已为 Windows 容器准备就绪。
+完成这些项目后，你的系统应已为 Windows 容器准备就绪。
 
 ## 后续步骤：开始使用容器
 
@@ -57,3 +54,4 @@ PS C:\> C:\Install-ContainerHost.ps1 -HyperV
 
 
 
+<!--HONumber=Jan16_HO1-->

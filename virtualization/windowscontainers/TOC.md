@@ -12,9 +12,9 @@
 
 ## [Azure 中的容器](quick_start/azure_setup.md)
 
-## [新 Hyper-V 虚拟机中的容器](quick_start/container_setup.md)
+## [新 Hyper-V VM 中的容器](quick_start/container_setup.md)
 
-## [现有虚拟或物理系统中的容器](quick_start/inplace_setup.md)
+## [现有系统中的容器](quick_start/inplace_setup.md)
 
 ## [PowerShell 快速入门](quick_start/manage_powershell.md)
 
@@ -38,7 +38,7 @@
 
 ## [容器网络](management/container_networking.md)
 
-## [容器数据](management/manage_data.md)
+## [容器共享文件夹](management/manage_data.md)
 
 ## [容器资源控件](management/manage_resources.md)
 
@@ -60,6 +60,9 @@
 
 ## [应用程序兼容性](reference/app_compat.md)
 
-# [EULA](EULA.md)
+# [Windows Server EULA](EULA.md)
+
+# [Nano Server EULA](Nano_EULA.md)
 
 
+<!--HONumber=Jan16_HO1-->

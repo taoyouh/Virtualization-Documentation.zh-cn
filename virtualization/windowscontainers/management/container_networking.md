@@ -23,7 +23,7 @@
 ```powershell
 New-VMSwitch -Name "NAT" -SwitchType NAT -NATSubnetAddress "172.16.0.0/12"
 ```
-创建网络地址转换对象。 此对象将负责 NAT 地址转换。 有关 **New-NetNat** 命令的详细信息，请参阅 [New-NetNat 参考](https://technet.microsoft.com/en-us/library/dn283361.aspx)。
+创建网络地址转换对象。 此对象负责 NAT 地址转换。 有关 **New-NetNat** 命令的详细信息，请参阅 [New-NetNat 参考](https://technet.microsoft.com/en-us/library/dn283361.aspx)
 
 ```powershell
 New-NetNat -Name NAT -InternalIPInterfaceAddressPrefix "172.16.0.0/12" 
@@ -70,7 +70,7 @@ Add-NetNatStaticMapping -NatName "Nat" -Protocol TCP -ExternalIPAddress 0.0.0.0 
 ```powershell
 Add-NetNatStaticMapping -NatName "Nat" -Protocol TCP -ExternalIPAddress 0.0.0.0 -InternalIPAddress 172.16.0.3 -InternalPort 80 -ExternalPort 82
 ```
-> 每个外部端口都将需要相应的防火墙规则。 此规则可使用 `New-NetFirewallRule` 创建。 有关详细信息，请参阅 [New-NetFirewallRule 参考](https://technet.microsoft.com/en-us/library/jj554908.aspx)。
+>每个外部端口都将需要相应的防火墙规则。 此规则可使用 `New-NetFirewallRule` 创建。 有关详细信息，请参阅 [New-NetFirewallRule 参考](https://technet.microsoft.com/en-us/library/jj554908.aspx)。
 
 在创建端口映射后，可通过容器主机（物理或虚拟）的 IP 地址和公开的外部端口访问容器应用程序。 例如，下图描述了 NAT 配置，具有面向容器主机的外部端口 **82** 的请求。 根据端口映射，此请求将返回在容器 2 中托管的应用程序。
 
@@ -103,7 +103,7 @@ Get-VMNetworkAdapter -VMName DemoVM | Set-VMNetworkAdapter -MacAddressSpoofing O
 
 ## Docker 配置
 
-启动 Docker 守护程序时，可以选择一个网桥。 在 Windows 上运行 Docker 时，此守护程序为 External 或 NAT 虚拟交换机。 以下示例启动 Docker 守护程序，并指定一个名为 `Virtual Switch` 的虚拟交换机。
+启动 Docker 守护程序时，可以选择一个网桥。 在 Windows 上运行 Docker 时，此守护程序为 External 或 NAT 虚拟交换机。 以下示例启动 Docker 守护程序，从而指定一个名为 `Virtual Switch` 的虚拟交换机。
 
 ```powershell
 Docker daemon –D –b “Virtual Switch” -H 0.0.0.0:2375
@@ -128,7 +128,7 @@ docker daemon -D -b “New Switch Name"
 Start-Service docker
 ```
 
-## 管理容器网络适配器
+## 管理网络适配器
 
 无论是哪种网络配置（NAT 或不透明），可以使用多个 PowerShell 命令来管理容器网络适配器和虚拟交换机连接。
 
@@ -149,3 +149,4 @@ Start-Service docker
 
 
 
+<!--HONumber=Jan16_HO1-->

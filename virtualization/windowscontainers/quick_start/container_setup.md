@@ -4,12 +4,12 @@
 
 若要介绍将 Windows 容器主机脚本化部署到现有虚拟或物理系统的步骤，请参阅[就地 Windows 容器主机部署](./inplace_setup.md)。
 
-**请在安装容器操作系统映像前阅读：**Microsoft Windows Server 预发行软件的许可条款（“许可条款”）适用于使用 Microsoft Windows 容器操作系统映像补充（“补充软件”）。 通过下载和使用补充软件，即表示你同意许可条款，并且如果你未接受许可条款，则无法使用它。 Windows Server 预发行软件和补充软件均由 Microsoft Corporation 授权。
+**请在安装容器操作系统映像前阅读：**Microsoft Windows Server 预发行软件的许可条款（“许可条款”）适用于使用 Microsoft Windows 容器操作系统映像补充（“补充软件”）。 通过下载和使用补充软件，即表示你同意许可条款，并且如果你未接受许可条款，则无法使用它。 Windows Server 预发行版软件和补充软件均由 Microsoft Corporation 授权。
 
 若要完成此快速入门中的 **Windows Server** 和 **Hyper-V 容器**练习，需要以下内容。
 
-* 运行 Windows 10 版本 1056 或更高版本/Windows Server Technical Preview 4 或更高版本的系统。
-* 已启用的 Hyper-V 角色（[请参阅说明](https://msdn.microsoft.com/virtualization/hyperv_on_windows/quick_start/walkthrough_install#UsingPowerShell)）。
+* 运行 Windows 10 版本 10586 或更高版本/Windows Server Technical Preview 4 或更高版本的系统。
+* 已启用的 Hyper-V 角色（[请参阅说明](https://msdn.microsoft.com/virtualization/hyperv_on_windows/quick_start/walkthrough_install#UsingPowerShell))）。
 * 容器主机映像的 20GB 可用存储，操作系统基础映像和设置脚本。
 * Hyper-V 主机上的管理员权限。
 
@@ -39,7 +39,7 @@ PS C:\> Get-VMSwitch | where {$_.SwitchType –eq “External”}
 PS C:\> wget -uri https://aka.ms/tp4/New-ContainerHost -OutFile c:\New-ContainerHost.ps1
 ```
 
-运行以下命令来创建和配置容器主机，其中 `<containerhost>` 将是虚拟机名称。
+运行以下命令来创建和配置容器主机，其中 `&lt;containerhost&gt;` 将是虚拟机名称。
 
 ``` powershell
 PS C:\> c:\New-ContainerHost.ps1 –VmName <containerhost> -WindowsImage ServerDatacenterCore -Hyperv
@@ -71,3 +71,5 @@ license terms. Please confirm you have accepted and agree to the license terms.
 
 
 
+
+<!--HONumber=Jan16_HO2-->

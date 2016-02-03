@@ -36,7 +36,7 @@ Enter-PSSession -VMGUID <VMGUID>
 Exit-PSSession 
 ```
 
->注意：如果会话无法连接，请确保将凭据用于正在连接的虚拟机，而非 Hyper-V 主机。
+> 注意：如果会话无法连接，请确保将凭据用于正在连接的虚拟机，而非 Hyper-V 主机。
 
 若要了解有关这些 cmdlet 的详细信息，请参阅 [Enter-PSSession](http://technet.microsoft.com/library/hh849707.aspx) 和 [Exit-PSSession](http://technet.microsoft.com/library/hh849743.aspx)。
 
@@ -60,24 +60,39 @@ PowerShell Direct 显示了一小部分的常见错误消息。 以下是最常�
 
 ### 错误：远程会话可能已结束
 
-错误消息：
+**错误消息：**
 ```
 Enter-PSSession : An error has occurred which Windows PowerShell cannot handle. A remote session might have ended.
 ```
 
-可能的原因：
+**可能的原因：**
 * 虚拟机未运行
-* 来宾操作系统不支持 PowerShell Direct（请参阅[要求](#Requirements)）
+* 来宾操作系统不支持 PowerShell Direct（请参阅[要求](#Requirements))）
 * PowerShell 尚不可用于来宾
-* 操作系统没有完成启动
-* 操作系统无法正常启动
-* 某些启动时事件需要用户输入
+  * 操作系统没有完成启动
+  * 操作系统无法正常启动
+  * 某些启动时事件需要用户输入
 * 无法验证来宾凭据
-* 提供的凭据不正确
-* 来宾操作系统中没有任何用户帐户（操作系统以前未启动）
-* 如果以管理员身份进行连接：管理员还未设置为活动用户。 在[此处](https://technet.microsoft.com/en-us/library/hh825104.aspx)了解详细信息。
+  * 提供的凭据不正确
+  * 来宾操作系统中没有任何用户帐户（操作系统以前未启动）
+  * 如果以管理员身份进行连接：管理员还未设置为活动用户。 在[此处](https://technet.microsoft.com/en-us/library/hh825104.aspx)了解详细信息。
 
 你可以使用 [Get-VM](http://technet.microsoft.com/library/hh848479.aspx) cmdlet 检查使用中的凭据是否具有 Hyper-V 管理员角色并查看哪些 VM 在主机上本地运行并已启动。
+
+### 错误：无法解析参数集
+
+**错误消息：**
+``` 
+Enter-PSSession : Parameter set cannot be resolved using the specified named parameters.
+```
+
+**可能的原因：**  
+在连接到虚拟机时，不支持 `-RunAsAdministrator`。
+
+PowerShell Direct 在连接到虚拟机与 Windows 容器时具有不同的行为。 连接到 Windows 容器时，`-RunAsAdministrator` 标志将允许管理员连接，而无需显式凭据。 由于虚拟机未授予主机默示的管理员访问权限，因此你需要显式输入凭据。
+
+使用 `-credential` 参数或通过在系统提示时手动输入，可将管理员凭据传递给虚拟机。
+
 
 ## 示例
 
@@ -87,4 +102,5 @@ Enter-PSSession : An error has occurred which Windows PowerShell cannot handle. 
 
 
 
-<!--HONumber=Jan16_HO1-->
+
+<!--HONumber=Jan16_HO2-->

@@ -16,12 +16,12 @@ PS C:\> New-Container –Name TestContainer –MaximumMemoryBytes 256MB -Contain
 你还可以使用 `Set-ContainerMemory` cmdlet 设置现有容器的内存限制。
 
 ```powershell
-PS C:\> Set-ContainerMemory -ContainerName TestContainer -MaximumBytes 500mb
+PS C:\> Set-ContainerMemory -ContainerName TestContainer -MaximumBytes 256mb
 ```
 
 ### 网络带宽
 
-可以在现有容器上设置网络带宽限制。 若要执行此操作，请使用 `Get-ContainerNetworkAdapter` 命令确保容器具有网络适配器。 如果网络适配器不存在，请使用 `Add-ContainerNetworkAdapter` 命令创建一个。 最后，使用 `Set-ContainerNetworkAdapter` 命令限制容器的最大出口网络带宽。
+可以在现有容器上设置网络带宽限制。 若要执行此操作，请使用 `Get-ContainerNetworkAdapter` 命令确保容器具有网络适配器。 如果不存在网络适配器，请使用 `Add-ContainerNetworkAdapter` 命令创建一个。 最后，使用 `Set-ContainerNetworkAdapter` 命令限制容器的最大出口网络带宽。
 
 以下示例将最大带宽设置为 100Mbps。
 
@@ -36,7 +36,7 @@ PS C:\> Set-ContainerNetworkAdapter –ContainerName TestContainer –MaximumBan
 下面将容器的相对权重设置为 1000。 容器的默认权重是 100，所以此容器在具有某个容器的 10 倍优先级时，可设置为默认容器。 最大值为 10000。
 
 ```powershell
-PS C:\> Set-ContainerProcessor -ContainerName Container1 –RelativeWeight 10000.
+PS C:\> Set-ContainerProcessor -ContainerName Container1 –RelativeWeight 10000
 ```
 
 对于 CPU 时间的百分比，你也可以对容器可使用的 CPU 量设置硬性限制。 默认情况下，容器可以使用 100% 的 CPU。 下面将容器可以使用的最大 CPU 百分比设置为 30%。 使用 –Maximum 标志自动将 RelativeWeight 设置为 100。
@@ -62,7 +62,7 @@ PS C:\> Set-ContainerStorage -ContainerName Container1 -MaximumIOPS 32
 
 ### CPU
 
-可以在运行时通过 --cpu-shares 标志管理容器之间的 CPU 共享。 默认情况下，所有容器均享有相等比例的 CPU 时间。 若要更改容器使用的 CPU 的相对共享，请运行值范围从 1 到 10000 的 --cpu-shares 标志。 默认情况下，所有容器接收的权重为 5000。
+可以在运行时通过 --cpu-shares 标志管理容器之间的 CPU 共享。 默认情况下，所有容器均享有相等比例的 CPU 时间。 若要更改容器使用的 CPU 的相对共享，请运行值范围从 1 到 10000 的 --cpu-shares 标志。 默认情况下，所有容器接收的权重为 5000。 有关 CPU 共享约束的详细信息，请参阅 [Docker Run 参考](https://docs.docker.com/engine/reference/run/#cpu-share-constraint)。
 
 ```powershell 
 C:\> docker run –it --cpu-shares 2 --name dockerdemo windowsservercore cmd
@@ -77,3 +77,4 @@ C:\> docker run –it --cpu-shares 2 --name dockerdemo windowsservercore cmd
 
 
 
+<!--HONumber=Jan16_HO1-->

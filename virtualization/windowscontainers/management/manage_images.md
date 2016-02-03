@@ -13,7 +13,7 @@
 
 ### 列出映像
 
-运行 `Get-ContainerImage` 以在容器主机上返回映像列表。 当使用 `IsOSImage` 属性时，可以区分容器映像类型。
+运行 `Get-ContainerImage` 以返回容器主机上的映像列表。 当使用 `IsOSImage` 属性时，可以区分容器映像类型。
 
 ```powershell
 PS C:\> Get-ContainerImage
@@ -27,7 +27,7 @@ WindowsServerCoreIIS    CN=Demo         1.0.0.0         False
 
 ### 安装基础操作系统映像
 
-可以找到容器操作系统映像，然后使用 ContainerProvider PowerShell 模块进行安装。 需要先安装此模块，然后才能进行使用。 可以使用以下命令安装此模块。
+可使用 ContainerProvider PowerShell 模块找到并安装容器操作系统映像。 需要先安装此模块，然后才能进行使用。 可以使用以下命令安装此模块。
 
 ```powershell
 PS C:\> Install-PackageProvider ContainerProvider -Force
@@ -43,7 +43,7 @@ NanoServer           10.0.10586.0            Container OS Image of Windows Serve
 WindowsServerCore    10.0.10586.0            Container OS Image of Windows Server 2016 Techn...
 ```
 
-若要下载并安装 Nano Server 基础操作系统映像，请运行以下内容。
+若要下载和安装 Nano Server 基础操作系统映像，请运行以下内容。 `–version` 参数为可选参数。 如果没有指定基础操作系统映像版本，将安装最新版本。
 
 ```powershell
 PS C:\> Install-ContainerImage -Name NanoServer -Version 10.0.10586.0
@@ -51,9 +51,9 @@ PS C:\> Install-ContainerImage -Name NanoServer -Version 10.0.10586.0
 Downloaded in 0 hours, 0 minutes, 10 seconds.
 ```
 
-此外，此命令将下载并安装 Windows Server Core 基础操作系统映像。
+此外，此命令将下载并安装 Windows Server Core 基础操作系统映像。 `–version` 参数为可选参数。 如果没有指定基础操作系统映像版本，将安装最新版本。
 
-> **问题** Save-ContainerImage 和 Install-ContainerImage cmdlet 无法在 PowerShell 远程会话中使用 WindowsServerCore 容器映像。 **解决方法：**使用远程桌面登录计算机并直接使用 Save-ContainerImage cmdlet。
+>**问题** Save-ContainerImage 和 Install-ContainerImage cmdlet 无法在 PowerShell 远程会话中使用 WindowsServerCore 容器映像。 **解决方法：**使用远程桌面登录计算机并直接使用 Save-ContainerImage cmdlet。
 
 ```powershell
 PS C:\> Install-ContainerImage -Name WindowsServerCore -Version 10.0.10586.0
@@ -177,7 +177,7 @@ f9e8a4cc8f6c: Pull complete
 b71a5b8be5a2: Download complete
 ```
 
-在运行 `docker images` 时，将可以看到该映像。
+当运行 `docker images` 时，可以立即看到该映像。
 
 ```powershell
 C:\> docker images
@@ -202,3 +202,4 @@ IMAGE               CREATED             CREATED BY          SIZE                
 
 
 
+<!--HONumber=Jan16_HO1-->

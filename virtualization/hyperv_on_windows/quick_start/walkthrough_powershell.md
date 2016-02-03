@@ -4,7 +4,7 @@
 
 ### 返回 Hyper-V 命令列表
 
-1.  单击 Windows“开始”按钮，键入“PowerShell”。
+1.  单击 Windows“开始”按钮，键入“PowerShell”****。
 2.  运行以下命令以显示适用于 Hyper-V PowerShell 模块的 PowerShell 命令的可搜索列表。
 
  ```powershell
