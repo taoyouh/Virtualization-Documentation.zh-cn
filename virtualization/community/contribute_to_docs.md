@@ -1,55 +1,55 @@
-# 参与编辑文档
+# Contribute to the docs
 
->**注意：**若要参与，必须具有 [GitHub](https://www.github.com) 帐户。
+>**Note:**  In order to contribute, you must have a [GitHub](https://www.github.com) account.
 
-## 编辑现有的文档
+## Edit an existing doc
 
-1. 查找你想要编辑的文档。
+1. Find the doc you'd like to edit.
 
-2. 选择“参与本主题”
+2. Select **Contribute to this topic**
 ![](media/editDoc.png)
 
-这会自动将你重定向到 GitHub 中与此文件相关联的标记文件。
+This will automatically redirect you to the markdown file in GitHub associated with this file.
 
-请确保已登录到 GitHub。 如果未登录，请登录或创建 GitHub 帐户。
+Make sure you are signed into GitHub. If not, either sign in or create a GitHub account.
 
 ![](media/GitHubView.png)
 
-3. 选择要使用浏览器编辑器进行编辑的编辑图标。
+3. Select the edit icon to edit with the in browser editor.
 
 ![](media/GitHubEdit.png)
 
-4. 使更改内联。
+4. Make changes inline.
 
-可能的操作：
-1. 编辑文件
-2. 预览更改
-3. 重命名文件（你不太可能需要执行此操作）
+Possible actions:
+1. Edit file
+2. Preview changes
+3. Rename the file (it's very unlikely you'll want to do this)
 
 ![](media/GitHubEditor.png)
 
-5. 提出你的更改作为拉取请求
+5. Propose your changes as a pull request
 
 ![](media/GitHubProposeChange.png)
 
-6. 查看你的更改
+6. Review your changes
 
-**要在拉取请求中查找的内容**
-* 更改正确 - 它准确地体现了此技术
-* 拼写/语法正确无误
-* 文档中的逻辑位置
+**What we're looking for in a pull request**
+* The change is correct -- it accurately represents the technology
+* Spelling/grammar are correct
+* Logical location in the documentation
 
 ![](media/GitHubCreatePR.png)
 
-7. 创建[拉取请求](contribute_to_docs.md#pull-requests)
+7. Create a [pull request](contribute_to_docs.md#pull-requests)
 
-## 拉取请求
+## Pull requests
 
-大多数更改将通过拉取请求提交 拉取请求是一种通过多个查看器查看更改集、对当前内容进行更改和注释的方式。
-
-
+Most changes will be committed via pull request. A pull request is a way of reviewing a change set with multiple reviewers, changing, and commenting on the current content.
 
 
 
 
-<!--HONumber=Dec15_HO2-->
+
+
+<!--HONumber=Jan16_HO1-->
