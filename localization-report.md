@@ -4,19 +4,16 @@
  Property | Value 
  -------- | ----- 
  Total Files | 408
-[ Handoff Failed Files ](#handoff-failed-list)| 1
+[ Handoff Failed Files ](#handoff-failed-list)| 0
 [ Handoff Success Files ](#handoff-success-list)| 1
 [ Archive Failed Files ](#archive-failed-list)| 0
 [ Archive Success Files ](#archive-success-list)| 0
 [ Handback Failed Files ](#handback-failed-list)| 0
-[ Out Of Sync Handback Files ](#outofsync-handback-success-list)| 8
+[ Out Of Sync Handback Files ](#outofsync-handback-success-list)| 7
 [ In Sync Handback Files ](#insync-handback-success-list)| 102
-[ Ignored Files ](#ignored-list)| 296
+[ Ignored Files ](#ignored-list)| 298
 
 ## <a name='handoff-failed-list'></a> Handoff Failed File List
- Source File | Status | Details 
- ----------- | ------ | ------- 
- [virtualization\windowscontainers\deployment\deployment_nano.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/5d2cef0ba13561091e4587dedbb45f4d959b09d4/virtualization/windowscontainers/deployment/deployment_nano.md) | HandedOffFailed | [Details](#a2a4d70bfe731be88af709ed37dc5ede9b5e8df3207)
 
 ## <a name='handoff-success-list'></a> Handoff Success File List
  Source File | Status | Details 
@@ -35,7 +32,6 @@
  [virtualization\hyperv_on_windows\develop\make_mgmt_service.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/36b4d5bd906d6cee501afa71db24657f558fc3c7/virtualization/hyperv_on_windows/develop/make_mgmt_service.md) | OutofSyncHandedBackSuccess | [Details](#ce98026a6ec670f3d743f28a12c8b974722b29aa80)
  [virtualization\hyperv_on_windows\TOC.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/941d4b77c1969175733d2ebbc154803dcf70ae99/virtualization/hyperv_on_windows/TOC.md) | OutofSyncHandedBackSuccess | [Details](#f470829df10e8b1da1cad19a468e8c45a666a089162)
  [virtualization\windowscontainers\about\work_in_progress.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/d214b4f8d3d680da513bc44d874e45551fd29c61/virtualization/windowscontainers/about/work_in_progress.md) | OutofSyncHandedBackSuccess | [Details](#7bc2ef8a631e8ae802173b52bf92d35edd6afa31204)
- [virtualization\windowscontainers\deployment\deployment.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/5d2cef0ba13561091e4587dedbb45f4d959b09d4/virtualization/windowscontainers/deployment/deployment.md) | OutofSyncHandedBackSuccess | [Details](#59439790683c9c315093c6a6d42bd3264859d5b6206)
  [virtualization\windowscontainers\management\container_networking.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/d34ad3d01e68f1f9c051a2b2480878cfbe43ba0b/virtualization/windowscontainers/management/container_networking.md) | OutofSyncHandedBackSuccess | [Details](#16af7f584a70679bf94f05714b9b832ed18739e3216)
  [virtualization\windowscontainers\management\manage_containers.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/d34ad3d01e68f1f9c051a2b2480878cfbe43ba0b/virtualization/windowscontainers/management/manage_containers.md) | OutofSyncHandedBackSuccess | [Details](#2306744cc09d56e57bade8027ed57af408ceeb37219)
  [virtualization\windowscontainers\quick_start\manage_powershell.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/71bb79ebf64f0d34b0b2ee417d09097e8670e1bb/virtualization/windowscontainers/quick_start/manage_powershell.md) | OutofSyncHandedBackSuccess | [Details](#e813c7c1c9a04e812f0ce51171a4ba7dd6a03bfb238)
@@ -286,6 +282,8 @@
  [virtualization\windowscontainers\about\media\isolationSpectrum.png](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/941d4b77c1969175733d2ebbc154803dcf70ae99/virtualization/windowscontainers/about/media/isolationSpectrum.png) | Ignored | [Details](#373704c083355e83e39ac41a351b6e350719d681201)
  [virtualization\windowscontainers\about\media\overheadSpectrum.png](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/941d4b77c1969175733d2ebbc154803dcf70ae99/virtualization/windowscontainers/about/media/overheadSpectrum.png) | Ignored | [Details](#8666862f14deb4e0523570cc3a3194fdfe115c3a202)
  [virtualization\windowscontainers\about\media\WindowsServerContainer.png](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/941d4b77c1969175733d2ebbc154803dcf70ae99/virtualization/windowscontainers/about/media/WindowsServerContainer.png) | Ignored | [Details](#1bf883f69ce268f31b33e5fe2228655c206d7479203)
+ [virtualization\windowscontainers\deployment\deployment.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/941d4b77c1969175733d2ebbc154803dcf70ae99/virtualization/windowscontainers/deployment/deployment.md) | Ignored | [Details](#c6cd32f55e545c024d4a53481adf7840d3a87b91206)
+ [virtualization\windowscontainers\deployment\deployment_nano.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/941d4b77c1969175733d2ebbc154803dcf70ae99/virtualization/windowscontainers/deployment/deployment_nano.md) | Ignored | [Details](#9f1e1bbd25cf45f9cad66c6542769e0d769bf047207)
  [virtualization\windowscontainers\docfx.json](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/941d4b77c1969175733d2ebbc154803dcf70ae99/virtualization/windowscontainers/docfx.json) | Ignored | [Details](#d03873cb289bc97d547e1edcf34861ce8a48ff9e213)
  [virtualization\windowscontainers\management\media\imagecommit.png](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/941d4b77c1969175733d2ebbc154803dcf70ae99/virtualization/windowscontainers/management/media/imagecommit.png) | Ignored | [Details](#70d9d123171e564192e70631951058b0639e0f67223)
  [virtualization\windowscontainers\management\media\imagelayer.png](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/941d4b77c1969175733d2ebbc154803dcf70ae99/virtualization/windowscontainers/management/media/imagelayer.png) | Ignored | [Details](#79ca6518022758718f4adb9f5af0b408051b4180224)
@@ -2968,29 +2966,24 @@
 * Handback Datetime: 2016-01-05 22:04:48
 * [Back to Top](#report-top)
 
-##### <a name='59439790683c9c315093c6a6d42bd3264859d5b6206'></a> Source: [virtualization\windowscontainers\deployment\deployment.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/5d2cef0ba13561091e4587dedbb45f4d959b09d4/virtualization/windowscontainers/deployment/deployment.md)
-* Status: OutofSyncHandedBackSuccess
+##### <a name='c6cd32f55e545c024d4a53481adf7840d3a87b91206'></a> Source: [virtualization\windowscontainers\deployment\deployment.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/941d4b77c1969175733d2ebbc154803dcf70ae99/virtualization/windowscontainers/deployment/deployment.md)
+* Status: Ignored
 * Target File: 
 * Handoff File: 
 * Handoff Datetime: 0001-01-01 00:00:00
 * Handoff Reason: Ignored
-* Handoff Error: [handoff_transform_failed](#59439790683c9c315093c6a6d42bd3264859d5b6206handoff_transform_failed)
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [virtualization\windowscontainers\deployment\deployment.md](https://github.com/Microsoft/Virtualization-Documentation-Private.zh-cn/blob/ae7e805e2efbc8a18c140181f584a7896808db7e/virtualization/windowscontainers/deployment/deployment.md)
-* Current Handback File: [deployment.4ddcd8318b2db72f246478d26d82fb4a73b6da65.zh-cn.xlf](https://github.com/Microsoft/Virtualization-Documentation-Private.handback/blob/e0c02c05ed981048559a0f52e28f07afff1979ef/ol-handback/Microsoft/Virtualization-Documentation-Private.zh-cn/live/deployment.4ddcd8318b2db72f246478d26d82fb4a73b6da65.zh-cn.xlf)
-* Current Handback Datetime: 2016-02-03 21:59:07
 * [Back to Top](#report-top)
 
-##### <a name='a2a4d70bfe731be88af709ed37dc5ede9b5e8df3207'></a> Source: [virtualization\windowscontainers\deployment\deployment_nano.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/5d2cef0ba13561091e4587dedbb45f4d959b09d4/virtualization/windowscontainers/deployment/deployment_nano.md)
-* Status: HandedOffFailed
+##### <a name='9f1e1bbd25cf45f9cad66c6542769e0d769bf047207'></a> Source: [virtualization\windowscontainers\deployment\deployment_nano.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/941d4b77c1969175733d2ebbc154803dcf70ae99/virtualization/windowscontainers/deployment/deployment_nano.md)
+* Status: Ignored
 * Target File: 
 * Handoff File: 
 * Handoff Datetime: 0001-01-01 00:00:00
 * Handoff Reason: Ignored
-* Handoff Error: [handoff_transform_failed](#a2a4d70bfe731be88af709ed37dc5ede9b5e8df3207handoff_transform_failed)
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
@@ -5430,17 +5423,5 @@
 
 
 ## Error Details
-##### <a name='59439790683c9c315093c6a6d42bd3264859d5b6206handoff_transform_failed'></a> Source: [virtualization\windowscontainers\deployment\deployment.md](#59439790683c9c315093c6a6d42bd3264859d5b6206)
-* Error Code: handoff_transform_failed
-* Error Message: Handoff source file: virtualization\windowscontainers\deployment\deployment.md transformed failed.
-* Retriable: False
-* Error Details: {"internal_error_code":"handoff_transform_failed","internal_error_message":"Handoff source file: virtualization\\windowscontainers\\deployment\\deployment.md transformed failed.","internal_error_retriable":false,"exception_message":"Invalid Xml when parsing: <table border=\"1\" style=\"background-color:FFFFCC;border-collapse:collapse;border:1px solid FFCC00;color:000000;width:100%\" cellpadding=\"5\" cellspacing=\"5\">\n<tr valign=\"top\">\n<td width = \"30%\"><strong>Deployment Action</strong></td>\n<td width = \"70%\"><strong>Details</strong></td>\n</tr>\n<tr>\n<td>[Enable Hyper-V Role](#hypv) </td>\n<td>Hyper-V is only required if Hyper-V Containers will be used.</td>\n</tr>\n<td>[Enable Nested Virtualization *](#nest)</td>\n<td>If the Container Host is itself a Hyper-V Virtual machine, Nested Virtualization needs to be enabled.</td>\n</tr>\n<tr>\n<td>[Configure Virtual Processors *](#proc)</td>\n<td>If the Container Host is itself a Hyper-V Virtual machine, at least two virtual processors will need to be configured.</td>\n</tr>\n<tr>\n<td>[Disable Dynamic Memory *](#dyn)</td>\n<td>If the Container Host is itself a Hyper-V Virtual machine, dynamic memory must be disabled.</td>\n</tr>\n<td>[Configure MAC Address Spoofing *](#mac)</td>\n<td>If the container host is virtualized, MAC spoofing will need to be enabled.</td>\n</tr>\n</table>.","exception_type":"System.ArgumentException","stack_trace":"   at Microsoft.Content.Build.Components.MarkdownHtmlBlock..ctor(String value)\r\n   at Microsoft.Content.Build.Components.MarkdownBlockParser.<>c.<ParseHtmlQuote>b__23_0(Match match, List`1 itemList)\r\n   at Microsoft.Content.Build.Components.MarkdownBlockParser.ParseBlockItemCommon(List`1 inputItems, Regex regex, Action`2 action)\r\n   at Microsoft.Content.Build.Components.MarkdownFile.LoadInternal(String fileContent)\r\n   at Microsoft.OpenLocalization.Transformer.MarkdownTransformer.MarkdownToXliffCore(Stream markdownStream, Stream xliffStream, Stream sklStream, String contentClass, String locale)\r\n   at Microsoft.OpenLocalization.Transformer.XliffTransformerExtensions.MarkdownToXliff(IMarkdownTransformer markdownTransformer, Stream sourceStream, Stream xliffStream, Stream skeletonStream, String contentClass, String locale, String xliffVersion)\r\n   at Microsoft.OpenLocalization.Transformer.XliffTransformerExtensions.MarkdownToXliff(IMarkdownTransformer markdownTransformer, String markdownFile, String xliffFile, String skeletonFile, String locale, String xliffVersion)\r\n   at Microsoft.OpenLocalization.Helper.XliffTransformUtil.MarkdownToXliff(String mdfile, String xliffFile, String skeletonFile, String targetLocale, String xliffVersion, Boolean useJavascriptTransformer) in E:\\VSC\\OL\\src\\OpenLocalization\\Helper\\XliffTransformUtil.cs:line 26\r\n   at Microsoft.OpenLocalization.Localization.LocalizationCore.GetHandoffFiles(GitRepo sourceRepo, GitRepo targetRepo, GitRepo handoffRepo, TranslationState translationState, TranslationOptions config, Dictionary`2 filePathInfo) in E:\\VSC\\OL\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 276","extended_information":null}
-
-##### <a name='a2a4d70bfe731be88af709ed37dc5ede9b5e8df3207handoff_transform_failed'></a> Source: [virtualization\windowscontainers\deployment\deployment_nano.md](#a2a4d70bfe731be88af709ed37dc5ede9b5e8df3207)
-* Error Code: handoff_transform_failed
-* Error Message: Handoff source file: virtualization\windowscontainers\deployment\deployment_nano.md transformed failed.
-* Retriable: False
-* Error Details: {"internal_error_code":"handoff_transform_failed","internal_error_message":"Handoff source file: virtualization\\windowscontainers\\deployment\\deployment_nano.md transformed failed.","internal_error_retriable":false,"exception_message":"Invalid Xml when parsing: <table border=\"1\" style=\"background-color:FFFFCC;border-collapse:collapse;border:1px solid FFCC00;color:000000;width:100%\" cellpadding=\"5\" cellspacing=\"5\">\n<tr valign=\"top\">\n<td width = \"30%\"><strong>Deployment Action</strong></td>\n<td width = \"70%\"><strong>Details</strong></td>\n</tr>\n<tr>\n<td>[Enable Hyper-V Role](#hypv) </td>\n<td>Hyper-V is only required if Hyper-V Containers will be used.</td>\n</tr>\n<tr>\n<td>[Enable Nested Virtualization *](#nest)</td>\n<td>If the Container Host is itself a Hyper-V Virtual machine, Nested Virtualization needs to be enabled.</td>\n</tr>\n<tr>\n<td>[Configure Virtual Processors *](#proc)</td>\n<td>If the Container Host is itself a Hyper-V Virtual machine, at least two virtual processors will need to be configured.</td>\n</tr>\n<tr>\n<td>[Disable Dynamic Memory *](#dyn)</td>\n<td>If the Container Host is itself a Hyper-V Virtual machine, dynamic memory must be disabled.</td>\n</tr>\n<td>[Configure MAC Address Spoofing *](#mac)</td>\n<td>If the container host is virtualized, MAC spoofing will need to be enabled.</td>\n</tr>\n</table>.","exception_type":"System.ArgumentException","stack_trace":"   at Microsoft.Content.Build.Components.MarkdownHtmlBlock..ctor(String value)\r\n   at Microsoft.Content.Build.Components.MarkdownBlockParser.<>c.<ParseHtmlQuote>b__23_0(Match match, List`1 itemList)\r\n   at Microsoft.Content.Build.Components.MarkdownBlockParser.ParseBlockItemCommon(List`1 inputItems, Regex regex, Action`2 action)\r\n   at Microsoft.Content.Build.Components.MarkdownFile.LoadInternal(String fileContent)\r\n   at Microsoft.OpenLocalization.Transformer.MarkdownTransformer.MarkdownToXliffCore(Stream markdownStream, Stream xliffStream, Stream sklStream, String contentClass, String locale)\r\n   at Microsoft.OpenLocalization.Transformer.XliffTransformerExtensions.MarkdownToXliff(IMarkdownTransformer markdownTransformer, Stream sourceStream, Stream xliffStream, Stream skeletonStream, String contentClass, String locale, String xliffVersion)\r\n   at Microsoft.OpenLocalization.Transformer.XliffTransformerExtensions.MarkdownToXliff(IMarkdownTransformer markdownTransformer, String markdownFile, String xliffFile, String skeletonFile, String locale, String xliffVersion)\r\n   at Microsoft.OpenLocalization.Helper.XliffTransformUtil.MarkdownToXliff(String mdfile, String xliffFile, String skeletonFile, String targetLocale, String xliffVersion, Boolean useJavascriptTransformer) in E:\\VSC\\OL\\src\\OpenLocalization\\Helper\\XliffTransformUtil.cs:line 26\r\n   at Microsoft.OpenLocalization.Localization.LocalizationCore.GetHandoffFiles(GitRepo sourceRepo, GitRepo targetRepo, GitRepo handoffRepo, TranslationState translationState, TranslationOptions config, Dictionary`2 filePathInfo) in E:\\VSC\\OL\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 276","extended_information":null}
-
 
 Generated by OpenLocalization.
