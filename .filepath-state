@@ -190,6 +190,9 @@
   "521e5b85b7c4f8fd131970a600090f91986c6f52": [
     "virtualization\\windowscontainers\\about\\work_in_progress.md"
   ],
+  "22ac0a8efe4c536d813b0bccea52ecc030684e1e": [
+    "virtualization\\windowscontainers\\containers_welcome.md"
+  ],
   "5547f0f37b1d84d2930f4b54c156f06cd29f407e": [
     "virtualization\\windowscontainers\\containers_welcome.md"
   ],
@@ -363,5 +366,8 @@
   ],
   "54974198eb9f9f9ea840b99e83eab5952f3f6b9a": [
     "virtualization\\community\\media\\GitFromWinCMD.png"
+  ],
+  "3ae897bd58e90c4c7c21ef5f940d4234cccec78f": [
+    "virtualization\\windowscontainers\\media\\video.png"
   ]
 }
