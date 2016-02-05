@@ -229,6 +229,9 @@
   "872baaa41af6965a01248ffdedac4b7043ae45f1": [
     "virtualization\\windowscontainers\\management\\hcs_powershell.md"
   ],
+  "ee1c5fea02d96e750ccc8e4ca982345dea616cee": [
+    "virtualization\\windowscontainers\\management\\hyperv_container.md"
+  ],
   "b716fd35553420c0e01c9cc3597e9e913ff30f1a": [
     "virtualization\\windowscontainers\\management\\hyperv_container.md"
   ],
@@ -241,11 +244,17 @@
   "ef8be0da4c6a51a417d50cd06fb83d878e03dd04": [
     "virtualization\\windowscontainers\\management\\manage_containers.md"
   ],
+  "e7dae01557ec7307bb24bc59aa4219c7839d73f6": [
+    "virtualization\\windowscontainers\\management\\manage_data.md"
+  ],
   "49aac2184fe868443566d44dc58373c3af539ace": [
     "virtualization\\windowscontainers\\management\\manage_data.md"
   ],
   "effea986e28cb43e3472993a5697ddd876ee47c0": [
     "virtualization\\windowscontainers\\management\\manage_images.md"
+  ],
+  "db230b985728dc043b72091584992e7efeebc23c": [
+    "virtualization\\windowscontainers\\management\\manage_resources.md"
   ],
   "415ef437d68aa931b219d1ff7ae271044c1982a7": [
     "virtualization\\windowscontainers\\management\\manage_resources.md"
