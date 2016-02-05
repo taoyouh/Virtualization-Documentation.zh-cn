@@ -259,6 +259,9 @@
   "415ef437d68aa931b219d1ff7ae271044c1982a7": [
     "virtualization\\windowscontainers\\management\\manage_resources.md"
   ],
+  "fe1d5c6d1027b1b77b130a3293033f3236af555f": [
+    "virtualization\\windowscontainers\\quick_start\\azure_setup.md"
+  ],
   "1126c09027a88966654ac24b3ce66946f18a0074": [
     "virtualization\\windowscontainers\\quick_start\\azure_setup.md"
   ],
