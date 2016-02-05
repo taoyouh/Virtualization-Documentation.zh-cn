@@ -190,6 +190,9 @@
   "521e5b85b7c4f8fd131970a600090f91986c6f52": [
     "virtualization\\windowscontainers\\about\\work_in_progress.md"
   ],
+  "dc07075c1d887a8702fb9feff018c60b8f215597": [
+    "virtualization\\windowscontainers\\containers_welcome.md"
+  ],
   "22ac0a8efe4c536d813b0bccea52ecc030684e1e": [
     "virtualization\\windowscontainers\\containers_welcome.md"
   ],
@@ -246,6 +249,9 @@
   ],
   "415ef437d68aa931b219d1ff7ae271044c1982a7": [
     "virtualization\\windowscontainers\\management\\manage_resources.md"
+  ],
+  "1126c09027a88966654ac24b3ce66946f18a0074": [
+    "virtualization\\windowscontainers\\quick_start\\azure_setup.md"
   ],
   "2dc4275e8ca76cb14938cd4b6e6d98e8a0ce9a85": [
     "virtualization\\windowscontainers\\quick_start\\azure_setup.md"
