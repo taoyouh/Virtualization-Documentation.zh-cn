@@ -1,110 +1,110 @@
-# Nano Server installation option of Windows Server Technical Preview 4 for Developers
+# 面向开发人员的 Windows Server Technical Preview 4 纳米服务器安装选项
 
-PLEASE READ PRIOR TO DOWNLOAD: By downloading and using the VHD at the link below, you agree to the License Terms, and you may not use it if you have not accepted the License Terms.
+请于下载前阅读：通过以下链接下载并使用 VHD，即表示您同意许可条款；若不接受许可条款，则不得使用 VHD。
 
-Download VHD:  [Nano Server installation option of Windows Server Technical Preview 4 for Developers](http://aka.ms/nanoevalvhd)
+下载 VHD：[面向开发人员的 Windows Server Technical Preview 4 纳米服务器安装选项](http://aka.ms/nanoevalvhd)
 
-# End User License Agreement
+# 最终用户许可协议
 
-MICROSOFT LICENSE TERMS FOR A VIRTUAL HARD DISK IMAGE OF THE FOLLOWING SOFTWARE:
+适用于以下软件的虚拟硬盘镜像的微软许可条款：
 MICROSOFT WINDOWS SERVER
 
 ---------------------
 
 
-These license terms are an agreement between Microsoft Corporation (or based on where you live, one of its affiliates) and you. Please read them. They apply to the software product identified above and any documentation, which includes the media on which you received it (collectively referred to as the "software" or "VHD"). The terms also apply to any Microsoft Internet-based services for this software.
+这些许可条款是微软公司（或您所在地的微软关联公司）与您之间达成的协议。 请阅读条款内容。 这些条款适用于上述软件产品和任何文档，包括用于接收文件的介质（统称“软件”或“VHD”）。 这些条款还适用于微软随该软件提供的任何基于 Internet 的服务。
 
-**BY USING THE SOFTWARE, YOU ACCEPT THESE TERMS. IF YOU DO NOT ACCEPT THEM, DO NOT USE THE SOFTWARE.
-AS DESCRIBED BELOW, USING SOME FEATURES ALSO OPERATES AS YOUR CONSENT TO THE TRANSMISSION OF CERTAIN STANDARD COMPUTER INFORMATION FOR INTERNET-BASED SERVICES.
-YOUR RIGHT TO USE THE SOFTWARE IS LIMITED TO A SPECIFIED PERIOD OF TIME. PLEASE REFER TO SECTION 3 FOR DETAILS.**
+**使用该软件，即表示您接受这些条款。 如果您不接受这些条款，请不要使用该软件。
+如下所述，使用某些功能也表示您同意传输某些标准计算机信息以便获取基于 Internet 的服务。
+您使用该软件的权利限定在指定的时间段内。 有关详细信息，请参阅第 3 节。**
 
 ---------------------
 
 
-If you comply with these license terms, you have the rights below.
+如果您遵守这些许可条款，您将拥有以下权利。
 
-1.  **INSTALLATION AND USE RIGHTS.**
-*  Supersede other terms.
-The terms of this license supersede the terms of any Microsoft software license term agreement that requires “acceptance” of a separate license term agreement during installation.
-* Installation.
-You may install and use the software on your device of which you are running any virtualization software able to run Virtual Hard Disk (VHD) formats, including Microsoft Virtual Server.
-*  Limited use rights.
-You may use the software in the virtual hard disk image only to internally demonstrate and evaluate it. You may not use the software in a live operating environment.
-*  No separation.
-The Microsoft software in the virtual hard disk image is licensed as a single piece of software. The software may include tools and components to support new features of the operating system. You may not separate, use, or redistribute these tools or components for any purpose other than for use by those new features that are distributed as part of the operating system. For example, Service Fabric is a software component that may be used by the Network Controller of the operation system only.
-*  Third party programs
-The software may contain third party software programs that are licensed under proprietary terms that are presented to you. The software may also contain third party open source programs that Microsoft, not the third party, licenses to you under Microsoft’s license terms. Notices, if any, for the third party open source programs are included for your information only.
+1.  **安装和使用权利。**
+*  超越其他条款。
+本许可条款超越安装过程中要求“接受”其他许可条款协议的任何 Microsoft 软件许可条款协议。
+* 安装。
+如果您设备上运行的虚拟机软件能够运行虚拟硬盘 (VHD) 格式，则您可以在该设备上安装和使用该软件，这些虚拟机软件包括 Microsoft Virtual Server。
+*  有限使用权利。
+您只能在虚拟硬盘镜像中使用该软件进行内部演示和评估。 您不得在实际操作环境中使用该软件。
+*  不得分离。
+虚拟硬盘镜像中的微软软件是作为一款独立软件授予许可的。 该软件可能包含工具和组件以支持操作系统的新功能。 除了用于随操作系统分发的新功能之外，您不得出于任何其他目的分离、使用或再分发这些工具或组件。 例如，Service Fabric 这一软件组件只能用于操作系统的网络控制器。
+*  第三方程序
+本软件可能包含根据提供给您的专用条款许可您使用的第三方软件程序。 该软件可能还包含根据微软的许可条款由微软（而非第三方）许可给您使用的第三方开放源代码程序。 提供的针对第三方开放源代码程序的声明（如果有）仅供信息参考。
 
-2.  **INTERNET-BASED SERVICES.**
-Microsoft may provide Internet-based services with the software. It may change or cancel them at any time. Should the Virtual Hard Drive Image be configured to transmit over the Internet the following terms apply:
-Consent for Internet-Based Services. Because this software is a pre-release version, we have turned on some internet-based features by default to obtain feedback about them. The software features described below and in the Windows Privacy Statement connect to Microsoft or service provider computer systems over the Internet. In some cases, you will not receive a separate notice when they connect. In some cases, you may switch off these features or not use them. For more information about these features, see go.microsoft.com/fwlink/?LinkId=506737. By using these features, you consent to the transmission of this information to any country Microsoft operates in. The list below may not be fully-inclusive.
-Computer Information. Some software features use Internet protocols, which send to Microsoft (or its suppliers or service providers) computer information, such as your Internet protocol address, the type of operating system, browser and name and version of the software you are using, and the language code of the device where you installed the software. Microsoft uses this information to make the Internet-based services available to you, in accordance with the Privacy Statement at go.microsoft.com/fwlink/?LinkId=506737.
+2.  **基于 INTERNET 的服务。**
+微软可能随该软件提供基于 Internet 的服务， 但可能随时更改或取消这些服务。 但是，如果虚拟硬盘镜像被配置为通过 Internet 传输数据，则适用以下条款：
+同意使用基于 Internet 的服务。 该软件是预发行版，因此默认情况下我们已打开一些基于 Internet 的功能，以便获取有关这些功能的反馈。 下文中以及 Windows 隐私声明中介绍的软件功能可通过 Internet 连接到微软或服务提供商的计算机系统。 某些情况下，连接建立时您不会另外收到通知。 某些情况下，您可以关闭这些功能，或者不使用它们。 有关这些功能的详细信息，请访问 go.microsoft.com/fwlink/?LinkId=506737。 使用这些功能，即表示您同意向微软所在的任何国家/地区传输这些信息。 以下列出的内容可能不完整。
+计算机信息。 该软件的某些功能使用 Internet 协议，将向微软（或其供应商或服务提供商）发送计算机信息，例如您的 Internet 协议地址、操作系统类型、浏览器及所使用软件的名称和版本、安装该软件的设备的语言代码等。 微软依照 go.microsoft.com/fwlink/?LinkId=506737 上的隐私声明使用此类信息向您提供基于 Internet 的服务。
 
-3.  **TIME-SENSITIVE SOFTWARE.**
-The software will stop running on a predetermined date. You will not receive any other notice. You may not be able to access data used with the software when it stops running. Please see go.microsoft.com/fwlink/?LinkId=624232 for specific information about the end date for the software..
+3.  **具有时效性的软件。**
+该软件将于预定日期停止运行。 您不会接收到任何其他通知。 软件停止运行后，您可能无法访问该软件使用的数据。 有关软件结束日期的具体信息，请访问 go.microsoft.com/fwlink/?LinkId=624232。
 
-4.  **NO ACTIVATION.**
-To prevent its unlicensed use, the software may contain activation enforcement technology. Because this is an evaluation-only license, you are not licensed to activate the software for any purpose even if it prompts you to do so.
+4.  **不得激活。**
+为了防止在未经授权的情况下使用，该软件可能包含激活实施技术。 由于这是一份仅适用于评估的许可，您无权出于任何目的激活软件，即使系统提示您这样做。
 
-5.  **PRE-RELEASE SOFTWARE.**
-This software is a pre-release version. It may not work the way a final version of the software will. We may change it for the final, commercial version. We also may not release a commercial version.
+5.  **预发行软件。**
+该软件是预发布版， 其运行方式可能与软件的最终版本不同。 微软可能会对其进行修改，以生成最终的商业版本。 微软也可能不发布商业版本。
 
-6.  **FEEDBACK.**
-If you give feedback about the software to Microsoft, you give to Microsoft, without charge, the right to use, share and commercialize your feedback in any way and for any purpose. You also give to third parties, without charge, any patent rights needed for their products, technologies and services to use or interface with any specific parts of a Microsoft software or service that includes the feedback. You will not give feedback that is subject to a license that requires Microsoft to license its software or documentation to third parties because Microsoft includes your feedback in them. These rights survive this agreement.
+6.  **反馈。**
+如果您向微软提供有关该软件的反馈，则意味着您向微软无偿提供以任何方式、出于任何目的使用和分享您的反馈并将其商业化的权利。 同时向第三方无偿提供所有必需的专利权，以使他们的产品、技术和服务能够使用包含该反馈的微软软件或服务的任何特定部分或与这些部分交互。 如果根据某项许可的规定，微软由于在其软件或文档中包含了您的反馈而不得不向第三方授予该软件或文档的许可，请不要提供这样的反馈。 这些权利在本协议终止后继续有效。
 
-7.  **.NET FRAMEWORK SOFTWARE.**
-The software includes one or more components of the .NET Framework, which you may use only as described at go.microsoft.com/fwlink/?linkid=66406, if you use the .NET Framework components to conduct internal benchmark testing.
+7.  **.NET FRAMEWORK 软件。**
+该软件包含 .NET Framework 的一个或多个组件，如果您使用 .NET Framework 组件进行内部基准测试，则只能按照 go.microsoft.com/fwlink/?linkid=66406 上的规定使用这些组件。
 
-8.  **H.264/AVC AND MPEG-4 VISUAL STANDARDS AND VC-1 AND MPEG-2 VIDEO STANDARDS**
-This software may include H.264/AVC, VC-1, and MPEG-4 Part 2, and MPEG-2 visual compression technology. MPEG LA, L.L.C. requires this notice:
+8.  **H.264/AVC 和 MPEG-4 视频标准以及 VC-1 和 MPEG-2 视频标准**
+该软件可能包含 H.264/AVC、VC-1、MPEG-4 Part 2 及 MPEG-2 视频压缩技术。 MPEG LA, L.L.C. 要求做出以下声明：
 
-THIS PRODUCT IS LICENSED UNDER THE AVC, THE VC-1, THE MPEG-4 PART 2 VISUAL, AND THE MPEG-2 VIDEO PATENT PORTFOLIO LICENSES FOR THE PERSONAL AND NON-COMMERCIAL USE OF A CONSUMER TO (i) ENCODE VIDEO IN COMPLIANCE WITH THE ABOVE STANDARDS (“VIDEO STANDARDS”) AND/OR (ii) DECODE AVC, VC-1, MPEG-4 PART 2 AND MPEG-2 VIDEO THAT WAS ENCODED BY A CONSUMER ENGAGED IN A PERSONAL AND NON-COMMERCIAL ACTIVITY AND/OR WAS OBTAINED FROM A VIDEO PROVIDER LICENSED TO PROVIDE SUCH VIDEO. NO LICENSE IS GRANTED OR SHALL BE IMPLIED FOR ANY OTHER USE. ADDITIONAL INFORMATION MAY BE OBTAINED FROM MPEG LA, L.L.C SEE WWW.MPEGLA.COM.
+该产品受 AVC、VC-1、MPEG-4 PART 2 视频和 MPEG-2 视频专利组合许可限制，仅供消费者个人使用和用于非商业用途，以便 (i) 对符合上述标准（“视频标准”）的视频进行编码和/或 (ii) 对消费者在从事个人和非商业活动过程中编码的 AVC、VC-1、MPEG-4 PART 2 和 MPEG-2 视频和/或自获得提供 AVC、VC-1、MPEG-4 PART 2 和 MPEG-2 视频许可的视频提供商处获得的此类视频进行解码。 不授予或默示授予任何其他用途的许可。 可以从 MPEG LA, L.L.C 处了解其他信息，请访问：WWW.MPEGLA.COM。
 
 9.  **ADOBE FLASH PLAYER**
-The software may include a version of Adobe Flash Player. You agree that your use of the Adobe Flash Player is governed by the license terms for Adobe Systems Incorporated, at go.microsoft.com/fwlink/?LinkID=248532. Adobe and Flash are either registered trademarks or trademarks of Adobe Systems Incorporated in the United States and/or other countries.
-10. **SCOPE OF LICENSE.**
-The software is licensed, not sold. This agreement only gives you some rights     to use the software. Microsoft reserves all other rights. Unless applicable law gives you more rights   despite this limitation, you may use the software only as expressly permitted in this agreement. In     doing so, you must comply with any technical limitations in the software that only allow you to use it  in certain ways. You may not
-*  Disclose the results of any benchmark tests of the software, other than the Microsoft .NET Framework (see separate term above), to any third party without Microsoft’s prior written approval;
-*  work around any technical limitations in the software;
-*  reverse engineer, decompile, or disassemble the software, except and only to the extent that applicable law expressly permits, despite this limitation;
-*  make more copies of the software than specified in this agreement or allowed by applicable law, despite this limitation;
-*  publish the software for others to copy;
-*  rent, lease, or lend the software;
-*  transfer the software or this agreement to any third party; or
-*  use the software for commercial software hosting services.
+该软件可能包含某一版本的 Adobe Flash Player。 您同意，使用 Adobe Flash Player 时将受 go.microsoft.com/fwlink/?LinkID=248532 上的 Adobe Systems Incorporated 许可条款的约束。 Adobe 和 Flash 是 Adobe Systems Incorporated 在美国和/或其他国家/地区的注册商标或商标。
+10. **许可范围。**
+该软件只授予使用许可，而非出售。 本协议只授予您使用该软件的某些权利。 Microsoft 保留所有其他权利。 除非适用的法律赋予您此项限制之外的权利，否则您只能在本协议明确允许的范围内使用该软件。 为此，您必须遵守该软件的任何技术限制，而这些限制只允许您以特定的方式使用该软件。 您不得
+*  未经微软事先书面批准就将该软件（而不是 Microsoft .NET Framework，见上述单独条款规定）的任何基准测试结果披露给任何第三方；
+*  绕过本软件中的任何技术限制；
+*  对软件进行反向工程、反向编译或反汇编；尽管有此项限制，但如果适用的法律明示允许上述活动，并仅在适用的法律明示允许的范围内从事上述活动则不在此限；
+*  制作超过本协议所规定或适用的法律所允许数量（尽管有此项限制）的软件副本；
+*  发布该软件供他人复制；
+*  出租、租赁或出借该软件；
+*  将该软件或本协议转让给任何第三方；或
+*  使用该软件提供商业软件托管服务。
 
-You also may not remove, minimize, block or modify any logos, trademarks, copyright, digital watermarks, or other notices of Microsoft or its suppliers that are included in the software, including any content made available to you through the software.
+您也不得删除、最小化、阻止或修改软件中包含的任何徽标、商标、版权、数字水印或微软或其供应商的任何其他通知，包括通过软件提供给您的任何内容。
 
-Rights to access the software on any device do not give you any right to implement Microsoft patents or other Microsoft intellectual property in software or devices that access that device.
+有权访问设备上的软件并不意味着有权在访问该设备的软件或设备中实施微软专利或其他微软知识产权。
 
-11. **EXPORT RESTRICTIONS.**
-The software is subject to United States export laws and  regulations. You must comply with all domestic and international export laws and regulations that   apply to the software. These laws include restrictions on destinations, end users and end use. For  additional information, see www.microsoft.com/exporting.
+11. **出口限制。**
+该软件受美国出口法律和法规的约束。 您必须遵守适用于该软件的所有国内和国际出口法律和法规。 这些法律包括对目的地、最终用户和最终用途的各种限制。 如需其他信息，请访问 www.microsoft.com/exporting。
 
-12. **SUPPORT SERVICES.**
-Because this software is “as is,” Microsoft may not provide support services  for it.
+12. **支持服务。**
+该软件是按“现状”提供的，所以微软可能不会为其提供支持服务。
 
-13. **ENTIRE AGREEMENT.**
-This agreement, and the terms for supplements, updates, Internet-based services and support services that you use, are the entire agreement for the software and support services.
+13. **完整协议。**
+本协议以及您使用的补充程序、更新、基于 Internet 的服务和支持服务的有关条款，共同构成了该软件和支持服务的完整协议。
 
-14. **APPLICABLE LAW.**
-a. United States. If you acquired the software in the United States, Washington state law governs the interpretation of this agreement and applies to claims for breach of it, regardless of conflict of laws principles. The laws of the state where you live govern all other claims, including claims under state consumer protection laws, unfair competition laws, and in tort.
-b. Outside the United States. If you acquired the software in any other country, the laws of that country apply.
+14. **适用的法律。**
+a. 美国。 如果您在美国购买本软件，则对本协议的解释以及由于违反本协议而引起的索赔均以华盛顿州法律为准并受其管辖，而不考虑冲突法原则。 您所居住的州的法律管辖其他所有索赔项目，包括根据州消费者保护法、不正当竞争法以及侵权行为提出的相关索赔。
+b. 美国以外。 如果您在其他任何国家/地区购买该软件，则应遵守您所在国家/地区的法律。
 
-15. **LEGAL EFFECT.**
-This agreement describes certain legal rights. You may have other rights under    the laws of your country. You may also have rights with respect to the party from whom you  acquired the software. This agreement does not change your rights under the laws of your country if     the laws of your country do not permit it to do so.
+15. **法律效力。**
+本协议规定了某些合法权利。 根据您所在国家/地区的法律规定，您可能享有其他权利。 您还可能享有与您的软件卖方相关的权利。 如果您所在国家/地区的法律不允许本协议改变您所在国家/地区法律赋予您的权利，则本协议将不改变您按照所在国家/地区的法律应享有的权利。
 
-16. **DISCLAIMER OF WARRANTY. THE SOFTWARE IS LICENSED “AS-IS.” YOU BEAR THE RISK OF USING IT. MICROSOFT GIVES NO EXPRESS WARRANTIES, GUARANTEES OR CONDITIONS. YOU MAY HAVE ADDITIONAL CONSUMER RIGHTS OR STATUTORY GUARANTEES UNDER YOUR LOCAL LAWS WHICH THIS AGREEMENT CANNOT CHANGE. TO THE EXTENT PERMITTED UNDER YOUR LOCAL LAWS, MICROSOFT EXCLUDES THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT.
-FOR AUSTRALIA – YOU HAVE STATUTORY GUARANTEES UNDER THE AUSTRALIAN CONSUMER LAW AND NOTHING IN THESE TERMS IS INTENDED TO AFFECT THOSE RIGHTS.**
+16. **保证免责条款。 该软件按“现状”授予许可。 使用该软件的风险需由您自行承担。 微软不提供任何明示的保证、保障或条件。 根据您当地的法律，您可能享有本协议无法改变的其他消费者权利或法定保障。 在您当地法律允许的范围内，微软排除有关适销性、针对特定目的的适用性和不侵权的默示保证。
+以下内容适用于澳大利亚 - 您享有《澳大利亚消费者法》规定的法定保障，这些条款中的任何规定均无意影响这些权利。**
 
-17. **LIMITATION ON AND EXCLUSION OF REMEDIES AND DAMAGES. YOU CAN RECOVER FROM MICROSOFT AND ITS SUPPLIERS ONLY DIRECT DAMAGES UP TO U.S. $5.00. YOU CANNOT RECOVER ANY OTHER DAMAGES, INCLUDING CONSEQUENTIAL, LOST PROFITS, SPECIAL, INDIRECT OR INCIDENTAL DAMAGES.**
+17. **损害和补偿责任的限制和排除。 您只能因直接损害从微软及其供应商处获得退款，且退款金额上限为 5.00 美元。 您不能因其他任何损害获得退款，包括后果性损害、利润损失、特别的损害、间接损害或附带性损害。**
 
-This limitation applies to
-*  anything related to the software, services, content (including code) on third party Internet sites, or third party programs; and
-*  claims for breach of contract, breach of warranty, guarantee or condition, strict liability, negligence, or other tort to the extent permitted by applicable law.
+该限制适用于：
+*  与第三方 Internet 站点上的软件、服务、内容（包括代码）或第三方程序相关的任何情况；以及
+*  在适用的法律允许的范围内，因违约、违反保证、保障或条件、严格责任、过失或其他侵权行为引起的索赔。
 
-It also applies even if Microsoft knew or should have known about the possibility of the damages. The above limitation or exclusion may not apply to you because your country may not allow the exclusion or limitation of incidental, consequential or other damages. If your local law allows you to recover other damages from Microsoft even though we do not, you cannot recover more than $5.00 USD, or the amount you paid for the software, whichever is higher.
+即使微软知道或应该知道可能会出现损害，此项限制也同样适用。 由于您所在国家/地区可能不允许排除或限制附带损害、后果性损害或其他损害的赔偿责任，因此上述限制或排除条款可能对您不适用。 如果您当地的法律允许您因其他损害从微软处获得退款，则即使我们不允许，您也可以获得，但您获得的退款不能超过 5.00 美元或您为该软件支付的金额，以两者中较高者为准。
 
-**Please note: As this software is distributed in Quebec, Canada, some of the clauses in this agreement are provided below in French.**
+**请注意：由于该软件在加拿大魁北克分发，因此本协议的某些条款同时以法语提供如下。**
 
 **Remarque : Ce logiciel étant distribué au Québec, Canada, certaines des clauses dans ce contrat sont fournies ci-dessous en français.**
 
