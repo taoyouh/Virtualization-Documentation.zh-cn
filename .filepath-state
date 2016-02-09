@@ -35,11 +35,17 @@
   "5dbb953b1b4dbaf1291bfa0a590c49b539c54cb7": [
     "virtualization\\hyperv_on_windows\\user_guide\\media\\production_Checkpoin_upd.png"
   ],
+  "bd625e252f0ebbe92252efe16f17066acfebf156": [
+    "virtualization\\hyperv_on_windows\\quick_start\\walkthrough_compatibility.md"
+  ],
   "52b5a54e0a2b24d8a365780e6d098db77794bdcd": [
     "virtualization\\hyperv_on_windows\\quick_start\\walkthrough_compatibility.md"
   ],
   "c830f164a513bd6125dc1a30f7cf1990e1c9470a": [
     "virtualization\\hyperv_on_windows\\quick_start\\media\\SystemInfo_upd.png"
+  ],
+  "98b474eb1e7fef1fc91bb5c48c069f57e3a7305e": [
+    "virtualization\\hyperv_on_windows\\quick_start\\walkthrough_create_vm.md"
   ],
   "2dd6d879387c7c82a2e8247079b52bdd01719b89": [
     "virtualization\\hyperv_on_windows\\quick_start\\walkthrough_create_vm.md"
@@ -88,6 +94,9 @@
   ],
   "dc04e26b6b30d2de9b6d25fc96eb5ff248a877e0": [
     "virtualization\\hyperv_on_windows\\quick_start\\media\\pen_changes_upd.png"
+  ],
+  "960832d7e804a6957bfb37003df7c0cfa020f612": [
+    "virtualization\\hyperv_on_windows\\TOC.md"
   ],
   "f470829df10e8b1da1cad19a468e8c45a666a089": [
     "virtualization\\hyperv_on_windows\\TOC.md"
