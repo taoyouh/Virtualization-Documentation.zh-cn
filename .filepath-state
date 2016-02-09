@@ -289,8 +289,14 @@
   "ac6168b0f3d4e8b2044dd10d1dba101e2290f1d8": [
     "virtualization\\windowscontainers\\quick_start\\media\\newazure7.png"
   ],
+  "3a2d124384b866073f27ec645782f0a27a2c8c9a": [
+    "virtualization\\windowscontainers\\quick_start\\container_setup.md"
+  ],
   "29847bf207e3d89ea77cf6871eabad0db0f7da3c": [
     "virtualization\\windowscontainers\\quick_start\\container_setup.md"
+  ],
+  "1b3d4380e967835c75b30bf694a619886c12b335": [
+    "virtualization\\windowscontainers\\quick_start\\inplace_setup.md"
   ],
   "5ce121f3108c1c4a43601355fb4f15ff26875e0a": [
     "virtualization\\windowscontainers\\quick_start\\inplace_setup.md"
