@@ -1,5 +1,5 @@
 {
-  "LastProcessedCommit": "149d3deef8e16a315325b7808d73cf06c4bdbedb",
+  "LastProcessedCommit": "c74ef33a17061c3f5aee94147a427d189c6083f8",
   "LastTranslatedCommit": "1900796f9b814a69a3bcfd09cc42200b17b0c326",
   "Items": {
     "5090f6d60b5cbdce0990242d795d9e4e3736e791": {
@@ -5519,7 +5519,7 @@
     },
     "54974198eb9f9f9ea840b99e83eab5952f3f6b9a": {
       "FileHash": "54974198eb9f9f9ea840b99e83eab5952f3f6b9a",
-      "SourceFileCommit": "149d3deef8e16a315325b7808d73cf06c4bdbedb",
+      "SourceFileCommit": "c74ef33a17061c3f5aee94147a427d189c6083f8",
       "SourceFilePath": "virtualization\\community\\media\\GitFromWinCMD.png",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -5530,7 +5530,7 @@
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\54974198eb9f9f9ea840b99e83eab5952f3f6b9a.png",
       "HandoffFileCommit": "176b20146de2f8b41666afbe3a005d761b862370",
-      "HandoffDateTime": "2016-02-09T17:59:17.1257397Z",
+      "HandoffDateTime": "2016-02-10T16:59:01.8979588Z",
       "HandoffException": null,
       "HandoffFailureTimes": 0,
       "TargetFileCommit": null,
@@ -5656,7 +5656,7 @@
     },
     "3ae897bd58e90c4c7c21ef5f940d4234cccec78f": {
       "FileHash": "3ae897bd58e90c4c7c21ef5f940d4234cccec78f",
-      "SourceFileCommit": "149d3deef8e16a315325b7808d73cf06c4bdbedb",
+      "SourceFileCommit": "c74ef33a17061c3f5aee94147a427d189c6083f8",
       "SourceFilePath": "virtualization\\windowscontainers\\media\\video.png",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -5667,7 +5667,7 @@
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\3ae897bd58e90c4c7c21ef5f940d4234cccec78f.png",
       "HandoffFileCommit": "176b20146de2f8b41666afbe3a005d761b862370",
-      "HandoffDateTime": "2016-02-09T17:59:17.1257397Z",
+      "HandoffDateTime": "2016-02-10T16:59:01.8979588Z",
       "HandoffException": null,
       "HandoffFailureTimes": 0,
       "TargetFileCommit": null,
