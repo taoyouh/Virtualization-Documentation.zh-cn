@@ -10,7 +10,7 @@
 
 ### 创建容器
 
-创建新容器时，你需要将用作容器基础的容器映像名称。 使用 `Get-ContainerImageName` 命令可以找到该名称。
+创建新容器时，你需要将用作容器基础的容器映像名称。 使用 `Get-ContainerImage` 命令可以找到该名称。
 
 ```powershell
 PS C:\> Get-ContainerImage
@@ -48,7 +48,7 @@ DHCP External   Microsoft Hyper-V Network Adapter
 NAT  NAT
 ```
 
-使用 `Connect-ContainerNetowkrAdapter` 将网络适配器连接到虚拟交换机。 请注意，此操作也可以在使用 –SwitchName 参数创建该容器时完成。
+使用 `Connect-ContainerNetworkAdapter` 将网络适配器连接到虚拟交换机。 请注意，此操作也可以在使用 –SwitchName 参数创建该容器时完成。
 
 ```powershell
 PS C:\> Connect-ContainerNetworkAdapter -ContainerName TST -SwitchName NAT
@@ -198,4 +198,4 @@ dc3e282c064d
 
 
 
-<!--HONumber=Dec15_HO3-->
+<!--HONumber=Feb16_HO1-->

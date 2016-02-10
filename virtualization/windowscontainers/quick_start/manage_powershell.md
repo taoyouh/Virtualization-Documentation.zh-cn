@@ -15,7 +15,7 @@ Windows 容器可用于在单个计算机系统上快速部署多个独立应用
 - 通过嵌套虚拟化启用的 Windows 容器主机。
 - Windows Server 2016 媒体 - [下载](https://aka.ms/tp4/serveriso)。
 
->Microsoft Azure 不支持 Hyper-V 容器。 若要完成 Hyper-V 练习，你需要本地容器主机。
+> Microsoft Azure 不支持 Hyper-V 容器。 若要完成 Hyper-V 练习，你需要本地容器主机。
 
 ## Windows Server 容器
 
@@ -46,7 +46,7 @@ NanoServer        CN=Microsoft 10.0.10586.0 True
 WindowsServerCore CN=Microsoft 10.0.10586.0 True
 ```
 
-若要创建 Windows Server 容器，请使用 `New-Container` 命令。 下面的示例从 `WindowsServerCore` 操作系统映像创建一个名为 `TP4Demo` 的容器，并将该容器连接到名为 `irtual Switch` 的 VM 交换机。
+若要创建 Windows Server 容器，请使用 `New-Container` 命令。 下面的示例从 `WindowsServerCore` 操作系统映像创建一个名为 `TP4Demo` 的容器，并将该容器连接到名为 `Virtual Switch` 的 VM 交换机。
 
 ```powershell
 PS C:\> New-Container -Name TP4Demo -ContainerImageName WindowsServerCore -SwitchName "Virtual Switch"
@@ -182,7 +182,7 @@ if (!(Get-NetFirewallRule | where {$_.Name -eq "TCP80"})) {
 }
 ```
 
-如果你正在 Azure 中工作，并且尚未创建网络安全组，则需要立即创建一个网络安全组。 有关网络安全组的详细信息，请参阅本文章：[什么是网络安全组](https://azure.microsoft.com/en-us/documentation/articles/virtual-networks-nsg/)。
+如果你正在 Azure 中工作，并且尚未创建网络安全组，则需要立即创建一个网络安全组。 有关网络安全组的详细信息，请参阅文章：[什么是网络安全组](https://azure.microsoft.com/en-us/documentation/articles/virtual-networks-nsg/)。
 
 ### 创建应用程序
 
@@ -243,7 +243,7 @@ PS C:\> Remove-ContainerImage -Name WindowsServerCoreIIS -Force
 
 Hyper-V 容器通过 Windows Server 容器提供额外的隔离层。 每个 Hyper-V 容器都在高度优化的虚拟机中创建。 如果 Windows Server 容器与容器主机以及在该主机上运行的所有其他 Windows Server 容器共享内核，Hyper-V 容器将完全与其他容器隔离。 Hyper-V 容器的创建和管理方式与 Windows Server 容器相同。 有关 Hyper-V 容器的详细信息，请参阅[管理 Hyper-V 容器](../management/hyperv_container.md)。
 
->Microsoft Azure 不支持 Hyper-V 容器。 若要完成 Hyper-V 容器练习，你需要本地容器主机。
+> Microsoft Azure 不支持 Hyper-V 容器。 若要完成 Hyper-V 容器练习，你需要本地容器主机。
 
 ### 创建容器
 
@@ -288,7 +288,7 @@ d-----       11/18/2015   5:27 PM                en-us
 
 使用 `Add-ContainerSharedFolder` 命令在新容器上创建新的共享文件夹。
 
->创建共享文件夹时，容器必须处于停止状态。
+> 创建共享文件夹时，容器必须处于停止状态。
 
 ```powershell
 PS C:\> Add-ContainerSharedFolder -ContainerName HYPV -SourcePath c:\share -DestinationPath c:\iisinstall
@@ -517,4 +517,4 @@ exit
 
 
 
-<!--HONumber=Jan16_HO1-->
+<!--HONumber=Feb16_HO1-->

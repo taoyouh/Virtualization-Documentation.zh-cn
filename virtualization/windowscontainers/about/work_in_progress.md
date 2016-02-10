@@ -234,9 +234,10 @@ Windows 容器无法通过 TP4 中的 RDP 会话进行管理/与之交互。
 
 容器旨在快速启动到环境几乎不可知的已知一致状态。 加入域并从域应用组策略设置将增加启动容器的时间、随时间推移更改其运行方式并限制在开发人员之间以及跨部署移动或共享映像的功能。
 
-我们会谨慎考虑有关服务和应用程序如何使用 Active Directory 的反馈以及在容器中部署这些内容的交集。如果你具有最适合你的内容的相关详细信息，请在[论坛](https://social.msdn.microsoft.com/Forums/en-US/home?forum=windowscontainers)中与我们进行共享。我们正在积极地寻找解决方案以支持这些类型的方案。
+我们会谨慎考虑有关服务和应用程序如何使用 Active Directory 的反馈以及在容器中部署这些内容的交集。如果你具有最适合你的内容的相关详细信息，请在[论坛](https://social.msdn.microsoft.com/Forums/en-US/home?forum=windowscontainers)中与我们进行共享。
+
+我们正在积极地寻找解决方案以支持这些类型的方案。
 
 
 
-
-<!--HONumber=Jan16_HO3-->
+<!--HONumber=Feb16_HO1-->

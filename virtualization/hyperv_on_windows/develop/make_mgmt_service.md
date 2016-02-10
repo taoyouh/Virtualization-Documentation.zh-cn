@@ -1,6 +1,6 @@
-# 生成新的管理服务
+# 创建你自己的集成服务
 
-从 Windows 10 开始，Hyper-V 允许在 Hyper-V 来宾和主机之间进行已注册的套接字连接，而不依赖于网络连接。 使用 Hyper-V 套接字，服务可以独立于网络堆栈运行，并且所有数据都保留在相同的物理内存中。
+从 Windows 10 开始，任何人都可以创建非常类似于内置 Hyper-V 集成服务的服务，该服务在 Hyper-V 主机和在其上运行虚拟机之间使用新的基于套接字的通信通道。 使用这些 Hyper-V 套接字，服务可以独立于网络堆栈运行，并且所有数据都保留在相同的物理内存中。
 
 本文档演练了如何创建一个在 Hyper-V 套接字上生成的简单应用程序以及如何开始使用它们。
 
@@ -31,7 +31,7 @@
 若要编写简单的应用程序，你将需要：
 * C 编译器。 如果没有该功能，请查看 [Visual Studio 代码](https://aka.ms/vs)
 * 一台运行 Hyper-V 和虚拟机的计算机。
-* 主机和来宾 (VM) 操作系统必须是 Windows 10 、Windows Server Technical Preview 3 或更高版本。
+  * 主机和来宾 (VM) 操作系统必须是 Windows 10 、Windows Server Technical Preview 3 或更高版本。
 * Windows SDK - 下面是包含 `hvsocket.h` 的 [Win10 SDK](https://dev.windows.com/en-us/downloads/windows-10-sdk) 的链接。
 
 ## 注册新应用程序
@@ -66,7 +66,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Virtualization\G
 
 每个服务的注册表中的信息：
 * `服务 GUID`
-* `ElementName (REG_SZ)` - 这是服务的友好名称
+    * `ElementName (REG_SZ)` - 这是服务的友好名称
 
 若要注册你自己的服务，请使用你自己的 GUID 和友好名称来创建新的注册表项。
 
@@ -81,7 +81,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Virtualization\G
         ElementName REG_SZ  Your Service Friendly Name
 ```
 
->** 提示：**若要在 PowerShell 中生成 GUID，并将其复制到剪贴板，请运行：
+> ** 提示：**若要在 PowerShell 中生成 GUID，并将其复制到剪贴板，请运行：
 ``` PowerShell
 [System.Guid]::NewGuid().ToString() | clip.exe
 ```
@@ -155,7 +155,7 @@ struct SOCKADDR_HV
 
 ### VMID 通配符
 
-| 名称| GUID| 描述|
+| 名称| GUID| 说明|
 |:-----|:-----|:-----|
 | HV_GUID_ZERO| 00000000-0000-0000-0000-000000000000| 侦听器应绑定到此 VMID 以接受所有分区中的连接。|
 | HV_GUID_WILDCARD| 00000000-0000-0000-0000-000000000000| 侦听器应绑定到此 VMID 以接受所有分区中的连接。|
@@ -165,12 +165,12 @@ struct SOCKADDR_HV
 | HV_GUID_PARENT| a42e7cda-d03f-480c-9cc2-a4de20abb878| 父地址。使用此 VMID 连接到该连接器的父分区。*|
 
 
-***HV_GUID_PARENT**
-虚拟机的父级是其主机。 容器的父级是容器的主机。
-从在虚拟机中运行的容器进行连接将连接到托管该容器的 VM。
-侦听此 VMID 可接受以下来源的连接：
-（内部容器）：容器主机。
-（内部 VM：容器主机/非容器）：VM 主机。
+***HV_GUID_PARENT**  
+虚拟机的父级是其主机。 容器的父级是容器的主机。  
+从在虚拟机中运行的容器进行连接将连接到托管该容器的 VM。  
+侦听此 VMID 可接受以下来源的连接：  
+（内部容器）：容器主机。  
+（内部 VM：容器主机/非容器）：VM 主机。  
 （非内部 VM：容器主机/非容器）：不受支持。
 
 ## 受支持的套接字命令
@@ -182,7 +182,7 @@ Send()
 Listen()
 Accept()
 
-[完整的 WinSock API](https://msdn.microsoft.com/en-us/library/windows/desktop/ms741394.aspx)
+[完整 WinSock API](https://msdn.microsoft.com/en-us/library/windows/desktop/ms741394.aspx)
 
 ## 正在进行的工作
 
@@ -191,4 +191,5 @@ Accept()
 
 
 
-<!--HONumber=Dec15_HO1-->
+
+<!--HONumber=Feb16_HO1-->

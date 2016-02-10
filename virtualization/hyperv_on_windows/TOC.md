@@ -42,19 +42,19 @@
 
 # 开发
 
-## [HYPER-V PowerShell](https://technet.microsoft.com/library/hh848559.aspx)
+## [Hyper-V PowerShell](https://technet.microsoft.com/library/hh848559.aspx)
 
 ## [PowerShell 示例](develop/powershell_snippets.md)
 
-## [管理服务](develop/make_mgmt_service.md)
+## [生成集成服务](develop/make_mgmt_service.md)
 
 ## [Hyper-V WMI 提供程序 (V2)](https://msdn.microsoft.com/library/hh850319.aspx)
 
-## [Hyper-V 体系结构](https://msdn.microsoft.com/zh-cn/library/cc768520(v=bts.10).aspx)
+## [Hyper-V 体系结构](https://msdn.microsoft.com/en-us/library/cc768520(v=bts.10).aspx)
 
 # 与社区和支持人员联系
 
 ## [Hyper-V 论坛](https://social.technet.microsoft.com/Forums/windowsserver/en-US/home?forum=winserverhyperv)
 
 
-<!--HONumber=Dec15_HO3-->
+<!--HONumber=Feb16_HO1-->

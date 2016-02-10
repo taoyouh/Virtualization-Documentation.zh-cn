@@ -70,7 +70,7 @@ Add-NetNatStaticMapping -NatName "Nat" -Protocol TCP -ExternalIPAddress 0.0.0.0 
 ```powershell
 Add-NetNatStaticMapping -NatName "Nat" -Protocol TCP -ExternalIPAddress 0.0.0.0 -InternalIPAddress 172.16.0.3 -InternalPort 80 -ExternalPort 82
 ```
->每个外部端口都将需要相应的防火墙规则。 此规则可使用 `New-NetFirewallRule` 创建。 有关详细信息，请参阅 [New-NetFirewallRule 参考](https://technet.microsoft.com/en-us/library/jj554908.aspx)。
+> 每个外部端口都将需要相应的防火墙规则。 此规则可使用 `New-NetFirewallRule` 创建。 有关详细信息，请参阅 [New-NetFirewallRule 参考](https://technet.microsoft.com/en-us/library/jj554908.aspx)。
 
 在创建端口映射后，可通过容器主机（物理或虚拟）的 IP 地址和公开的外部端口访问容器应用程序。 例如，下图描述了 NAT 配置，具有面向容器主机的外部端口 **82** 的请求。 根据端口映射，此请求将返回在容器 2 中托管的应用程序。
 
@@ -117,7 +117,7 @@ Docker daemon –D –b “Virtual Switch” -H 0.0.0.0:2375
 Stop-Service docker
 ```
 
-可在“c:\programdata\docker\runDockerDaemon.cmd”上找到配置文件。 编辑以下行，从而将 `Virtual Switch` 替换为 Docker 服务要使用的虚拟交换机的名称。
+可在 `c:\programdata\docker\runDockerDaemon.cmd` 上找到配置文件。 编辑以下行，从而将 `Virtual Switch` 替换为 Docker 服务要使用的虚拟交换机的名称。
 
 ```powershell
 docker daemon -D -b “New Switch Name"
@@ -135,18 +135,18 @@ Start-Service docker
 管理容器网络适配器
 
 - Add-ContainerNetworkAdapter - 将网络适配器添加到容器。
-- Set-ContainerNetworkAdapter - 修改容器网络适配器。
-- Remove-ContainerNetworkAdapter - 删除容器网络适配器。
-- Remove-ContainerNetworkAdapter - 返回有关容器网络适配器的数据。
+- Set-ContainerNetworkAdapter - 修改容器的网络适配器。
+- Remove-ContainerNetworkAdapter - 删除容器的网络适配器。
+- Remove-ContainerNetworkAdapter - 返回有关容器的网络适配器的数据。
 
 管理容器网络适配器和虚拟交换机之间的连接。
 
 - Connect-ContainerNetworkAdapter - 将容器连接到虚拟交换机。
-- Disconect-ContainerNetworkAdapter - 断开容器与虚拟交换机的连接。
+- Disconnect-ContainerNetworkAdapter - 断开容器与虚拟交换机的连接。
 
 有关其中每个命令的详细信息，请参阅[容器 PowerShell 参考](https://technet.microsoft.com/en-us/library/mt433069.aspx)。
 
 
 
 
-<!--HONumber=Jan16_HO1-->
+<!--HONumber=Feb16_HO1-->

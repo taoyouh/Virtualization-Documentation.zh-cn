@@ -24,9 +24,11 @@
 
 ## [系统要求](deployment/system_requirements.md)
 
-## [部署容器主机](deployment/deployment.md)
+## [Windows Server 上的容器](deployment/deployment.md)
 
-## [在 Windows 上部署 Docker](deployment/docker_windows.md)
+## [Nano Server 上的容器](deployment/deployment_nano.md)
+
+## [Windows 上的 Docker](deployment/docker_windows.md)
 
 # 管理 Windows 容器
 
@@ -34,7 +36,7 @@
 
 ## [Hyper-V 容器](management/hyperv_container.md)
 
-## [容器映像](management/manage_images.md)
+## [Hyper-V 容器](management/manage_images.md)
 
 ## [容器网络](management/container_networking.md)
 
@@ -65,4 +67,4 @@
 # [Nano Server EULA](Nano_EULA.md)
 
 
-<!--HONumber=Jan16_HO1-->
+<!--HONumber=Feb16_HO1-->
