@@ -11,9 +11,6 @@
   "ce98026a6ec670f3d743f28a12c8b974722b29aa": [
     "virtualization\\hyperv_on_windows\\develop\\make_mgmt_service.md"
   ],
-  "e5aad90dd8dd7facdb532a3465d1596646e69cfc": [
-    "virtualization\\hyperv_on_windows\\develop\\make_mgmt_service.md"
-  ],
   "5a46028faa5e86b84806c030c956f71465edcfc9": [
     "virtualization\\hyperv_on_windows\\develop\\powershell_snippets.md"
   ],
@@ -99,9 +96,6 @@
     "virtualization\\hyperv_on_windows\\TOC.md"
   ],
   "f470829df10e8b1da1cad19a468e8c45a666a089": [
-    "virtualization\\hyperv_on_windows\\TOC.md"
-  ],
-  "c7e089310a240c22f551d10e090a307092b0e042": [
     "virtualization\\hyperv_on_windows\\TOC.md"
   ],
   "712a1cbfab6af2b3235d8e258097e7e4adb7aca8": [
@@ -196,9 +190,6 @@
   "7bc2ef8a631e8ae802173b52bf92d35edd6afa31": [
     "virtualization\\windowscontainers\\about\\work_in_progress.md"
   ],
-  "521e5b85b7c4f8fd131970a600090f91986c6f52": [
-    "virtualization\\windowscontainers\\about\\work_in_progress.md"
-  ],
   "dc07075c1d887a8702fb9feff018c60b8f215597": [
     "virtualization\\windowscontainers\\containers_welcome.md"
   ],
@@ -251,9 +242,6 @@
     "virtualization\\windowscontainers\\management\\manage_containers.md"
   ],
   "2306744cc09d56e57bade8027ed57af408ceeb37": [
-    "virtualization\\windowscontainers\\management\\manage_containers.md"
-  ],
-  "ef8be0da4c6a51a417d50cd06fb83d878e03dd04": [
     "virtualization\\windowscontainers\\management\\manage_containers.md"
   ],
   "e7dae01557ec7307bb24bc59aa4219c7839d73f6": [
@@ -325,9 +313,6 @@
   "e813c7c1c9a04e812f0ce51171a4ba7dd6a03bfb": [
     "virtualization\\windowscontainers\\quick_start\\manage_powershell.md"
   ],
-  "d05456becc5cc12f4e383c6bdbe739d5fff3cb6e": [
-    "virtualization\\windowscontainers\\quick_start\\manage_powershell.md"
-  ],
   "5eab8f6f2a0520fdd8b588efcadc9ec30e16c5b4": [
     "virtualization\\windowscontainers\\reference\\app_compat.md"
   ],
@@ -340,16 +325,7 @@
   "5cf886a8a3bf4b3acd7c43002d0e1e8286c82971": [
     "virtualization\\windowscontainers\\TOC.md"
   ],
-  "7ab57df3af2cdeb8d5bcb429dc34b1bc91738996": [
-    "virtualization\\windowscontainers\\TOC.md"
-  ],
-  "db868b19b62ade34e24e83a6f5186f2c3c038474": [
-    "virtualization\\windowscontainers\\TOC.md"
-  ],
   "67d18363bb2da6496ff91bbda6dd57444c685974": [
-    "virtualization\\community\\contribute_to_docs.md"
-  ],
-  "4a312891b6e0ffe403bf43fdc020aa5fc970f99f": [
     "virtualization\\community\\contribute_to_docs.md"
   ],
   "462549855f0dc3ac092960bf1709fb01c3a02b3a": [
@@ -374,9 +350,6 @@
     "virtualization\\windowscontainers\\Examples\\dotnet35.md"
   ],
   "16af7f584a70679bf94f05714b9b832ed18739e3": [
-    "virtualization\\windowscontainers\\management\\container_networking.md"
-  ],
-  "62d11f3e6183264cd59cc47d61bda12b9ceadb0e": [
     "virtualization\\windowscontainers\\management\\container_networking.md"
   ],
   "4d662bf6e123797b4670dfdf6a6aee32e4e95e54": [
