@@ -229,6 +229,9 @@
   "872baaa41af6965a01248ffdedac4b7043ae45f1": [
     "virtualization\\windowscontainers\\management\\hcs_powershell.md"
   ],
+  "c036077146d20d76c282077758d83fe298daa15c": [
+    "virtualization\\windowscontainers\\management\\hyperv_container.md"
+  ],
   "ee1c5fea02d96e750ccc8e4ca982345dea616cee": [
     "virtualization\\windowscontainers\\management\\hyperv_container.md"
   ],
