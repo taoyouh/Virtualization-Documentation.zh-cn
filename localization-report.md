@@ -1427,14 +1427,14 @@
 
 ##### <a name='ce98026a6ec670f3d743f28a12c8b974722b29aa81'></a> Source: [virtualization\hyperv_on_windows\develop\make_mgmt_service.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/36b4d5bd906d6cee501afa71db24657f558fc3c7/virtualization/hyperv_on_windows/develop/make_mgmt_service.md)
 * Status: InSyncHandedBackSuccess
-* Target File: [virtualization\hyperv_on_windows\develop\make_mgmt_service.md](https://github.com/Microsoft/Virtualization-Documentation-Private.zh-cn/blob/63ee6863a69df44b06616c368c18706c11e93152/virtualization/hyperv_on_windows/develop/make_mgmt_service.md)
+* Target File: [virtualization\hyperv_on_windows\develop\make_mgmt_service.md](https://github.com/Microsoft/Virtualization-Documentation-Private.zh-cn/blob/330f6bb3048004f77fbdc5dd3e77cef1e90c5075/virtualization/hyperv_on_windows/develop/make_mgmt_service.md)
 * Handoff File: [make_mgmt_service.f08a72226cda804bf52172777630838cf58daa2b.zh-cn.xlf](https://github.com/Microsoft/Virtualization-Documentation-Private.handoff/blob/a48e4c36a47542dff268d745a83383151bb2bda4/ol-handoff/Microsoft/Virtualization-Documentation-Private.zh-cn/live/make_mgmt_service.f08a72226cda804bf52172777630838cf58daa2b.zh-cn.xlf)
 * Handoff Datetime: 2016-02-02 20:38:29
 * Handoff Reason: Include
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
-* Handback File: [make_mgmt_service.f08a72226cda804bf52172777630838cf58daa2b.zh-cn.xlf](https://github.com/Microsoft/Virtualization-Documentation-Private.handback/blob/0341bfb8585fe0e25e7ca6cd9b4dc95fc5e45b9c/ol-handback/Microsoft/Virtualization-Documentation-Private.zh-cn/live/make_mgmt_service.f08a72226cda804bf52172777630838cf58daa2b.zh-cn.xlf)
-* Handback Datetime: 2016-02-10 22:40:41
+* Handback File: [make_mgmt_service.f08a72226cda804bf52172777630838cf58daa2b.zh-cn.xlf](https://github.com/Microsoft/Virtualization-Documentation-Private.handback/blob/f3f444763a86e291cde9ba64f670f9b3f03851d1/ol-handback/Microsoft/Virtualization-Documentation-Private.zh-cn/live/make_mgmt_service.f08a72226cda804bf52172777630838cf58daa2b.zh-cn.xlf)
+* Handback Datetime: 2016-02-11 23:50:08
 * [Back to Top](#report-top)
 
 ##### <a name='5a46028faa5e86b84806c030c956f71465edcfc982'></a> Source: [virtualization\hyperv_on_windows\develop\powershell_snippets.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/fa7dae2e7399ff8558ca142d3137ef50d479fa2c/virtualization/hyperv_on_windows/develop/powershell_snippets.md)
