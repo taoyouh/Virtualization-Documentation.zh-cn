@@ -35,16 +35,10 @@
   "bd625e252f0ebbe92252efe16f17066acfebf156": [
     "virtualization\\hyperv_on_windows\\quick_start\\walkthrough_compatibility.md"
   ],
-  "52b5a54e0a2b24d8a365780e6d098db77794bdcd": [
-    "virtualization\\hyperv_on_windows\\quick_start\\walkthrough_compatibility.md"
-  ],
   "c830f164a513bd6125dc1a30f7cf1990e1c9470a": [
     "virtualization\\hyperv_on_windows\\quick_start\\media\\SystemInfo_upd.png"
   ],
   "98b474eb1e7fef1fc91bb5c48c069f57e3a7305e": [
-    "virtualization\\hyperv_on_windows\\quick_start\\walkthrough_create_vm.md"
-  ],
-  "2dd6d879387c7c82a2e8247079b52bdd01719b89": [
     "virtualization\\hyperv_on_windows\\quick_start\\walkthrough_create_vm.md"
   ],
   "b638099bf81d9a6f9d3c31f83364d60032084c48": [
@@ -93,9 +87,6 @@
     "virtualization\\hyperv_on_windows\\quick_start\\media\\pen_changes_upd.png"
   ],
   "960832d7e804a6957bfb37003df7c0cfa020f612": [
-    "virtualization\\hyperv_on_windows\\TOC.md"
-  ],
-  "f470829df10e8b1da1cad19a468e8c45a666a089": [
     "virtualization\\hyperv_on_windows\\TOC.md"
   ],
   "712a1cbfab6af2b3235d8e258097e7e4adb7aca8": [
@@ -187,16 +178,7 @@
   "ea783b2a3b7b76777864a0a828151ef82b61a4f2": [
     "virtualization\\windowscontainers\\about\\work_in_progress.md"
   ],
-  "7bc2ef8a631e8ae802173b52bf92d35edd6afa31": [
-    "virtualization\\windowscontainers\\about\\work_in_progress.md"
-  ],
   "dc07075c1d887a8702fb9feff018c60b8f215597": [
-    "virtualization\\windowscontainers\\containers_welcome.md"
-  ],
-  "22ac0a8efe4c536d813b0bccea52ecc030684e1e": [
-    "virtualization\\windowscontainers\\containers_welcome.md"
-  ],
-  "5547f0f37b1d84d2930f4b54c156f06cd29f407e": [
     "virtualization\\windowscontainers\\containers_welcome.md"
   ],
   "c6cd32f55e545c024d4a53481adf7840d3a87b91": [
@@ -232,34 +214,19 @@
   "c036077146d20d76c282077758d83fe298daa15c": [
     "virtualization\\windowscontainers\\management\\hyperv_container.md"
   ],
-  "ee1c5fea02d96e750ccc8e4ca982345dea616cee": [
-    "virtualization\\windowscontainers\\management\\hyperv_container.md"
-  ],
-  "b716fd35553420c0e01c9cc3597e9e913ff30f1a": [
-    "virtualization\\windowscontainers\\management\\hyperv_container.md"
-  ],
   "08a8593c07246a17ec035e6138533034bf266f9f": [
     "virtualization\\windowscontainers\\management\\media\\process.png"
   ],
   "5fbdbe7c6eda9330378b4b2348447caa3a50878b": [
     "virtualization\\windowscontainers\\management\\manage_containers.md"
   ],
-  "2306744cc09d56e57bade8027ed57af408ceeb37": [
-    "virtualization\\windowscontainers\\management\\manage_containers.md"
-  ],
   "e7dae01557ec7307bb24bc59aa4219c7839d73f6": [
-    "virtualization\\windowscontainers\\management\\manage_data.md"
-  ],
-  "49aac2184fe868443566d44dc58373c3af539ace": [
     "virtualization\\windowscontainers\\management\\manage_data.md"
   ],
   "effea986e28cb43e3472993a5697ddd876ee47c0": [
     "virtualization\\windowscontainers\\management\\manage_images.md"
   ],
   "db230b985728dc043b72091584992e7efeebc23c": [
-    "virtualization\\windowscontainers\\management\\manage_resources.md"
-  ],
-  "415ef437d68aa931b219d1ff7ae271044c1982a7": [
     "virtualization\\windowscontainers\\management\\manage_resources.md"
   ],
   "fe1d5c6d1027b1b77b130a3293033f3236af555f": [
@@ -292,19 +259,10 @@
   "3a2d124384b866073f27ec645782f0a27a2c8c9a": [
     "virtualization\\windowscontainers\\quick_start\\container_setup.md"
   ],
-  "29847bf207e3d89ea77cf6871eabad0db0f7da3c": [
-    "virtualization\\windowscontainers\\quick_start\\container_setup.md"
-  ],
   "1b3d4380e967835c75b30bf694a619886c12b335": [
     "virtualization\\windowscontainers\\quick_start\\inplace_setup.md"
   ],
-  "5ce121f3108c1c4a43601355fb4f15ff26875e0a": [
-    "virtualization\\windowscontainers\\quick_start\\inplace_setup.md"
-  ],
   "0e2d798362a70d050689b7f9f0c6f55d0d0892f2": [
-    "virtualization\\windowscontainers\\quick_start\\manage_docker.md"
-  ],
-  "04cb69ea3d33fb1f1e358a38ea10f63dcb306285": [
     "virtualization\\windowscontainers\\quick_start\\manage_docker.md"
   ],
   "05351786546d43e78bf4fe953c9dbf6bde7f1bba": [
