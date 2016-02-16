@@ -2,7 +2,7 @@
 
 Windows 容器提供操作系统级别的虚拟化，允许多个独立的应用程序在单个系统上运行。 该功能附带两种不同类型的容器运行时，每个都有不同程度的应用程序隔离。 Windows Server 容器通过命名空间实现隔离并处理隔离。 Hyper-V 容器在轻型虚拟机中封装每个容器。 除了两个运行时，这两者都可以使用 PowerShell 或 Docker 进行管理。 此文档集提供了有关管理操作的快速入门指南、部署指南和技术详细信息。
 
-<table border="1" style="background-color:FFFFCC;border-collapse:collapse;border:1px solid FFCC00;color:000000;width:80%" cellpadding="25" cellspacing="5">
+<table border="1" style="background-color:FFFFCC;border-collapse:collapse;border:1px solid FFCC00;color:000000;width:90%" cellpadding="25" cellspacing="5">
 <tr>
 <td><center>![](media/try.png)</center></td>
 <td>**快速启动**<br /><br />
@@ -43,6 +43,16 @@ Windows 容器提供操作系统级别的虚拟化，允许多个独立的应用
 </td>
 </tr>
 <tr>
+<td><center>![](media/video.png)</center></td>
+<td>**观看**<br /><br />
+对 Windows 容器团队的演示和访谈感兴趣？<br /><br />
+<ul>
+<li>[容器频道](https://channel9.msdn.com/Blogs/containers)</li>
+</ul>
+<br />
+</td>
+</tr>
+<tr>
 <td><center>![](media/question.png)</center></td>
 <td>**社区**<br /><br />
 与社区交互、试用示例，以及查找其他资源。<br /><br />
@@ -58,3 +68,4 @@ Windows 容器提供操作系统级别的虚拟化，允许多个独立的应用
 
 
 
+<!--HONumber=Feb16_HO1-->

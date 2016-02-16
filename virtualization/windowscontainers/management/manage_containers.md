@@ -21,14 +21,14 @@ NanoServer        CN=Microsoft 10.0.10584.1000 True
 WindowsServerCore CN=Microsoft 10.0.10584.1000 True
 ```
 
-使用 `New-Container` 命令可创建新容器。
+使用 `New-Container` 命令可创建新容器。 还可以使用 `-ContainerComputerName` 参数为该容器提供 NetBIOS 名称。
 
 ```powershell
-PS C:\> New-Container -Name TST -ContainerImageName WindowsServerCore
+PS C:\> New-Container -ContainerImageName WindowsServerCore -Name demo -ContainerComputerName demo
 
 Name State Uptime   ParentImageName
 ---- ----- ------   ---------------
-TST  Off   00:00:00 WindowsServerCore
+demo  Off   00:00:00 WindowsServerCore
 ```
 
 创建容器后，将网络适配器添加到该容器。
@@ -48,7 +48,7 @@ DHCP External   Microsoft Hyper-V Network Adapter
 NAT  NAT
 ```
 
-使用 `Connect-ContainerNetworkAdapter` 将网络适配器连接到虚拟交换机。 请注意，此操作也可以在使用 –SwitchName 参数创建该容器时完成。
+使用 `Connect-ContainerNetworkAdapter` 将网络适配器连接到虚拟交换机。 注意 – 此操作也可以在使用 –SwitchName 参数创建该容器时完成。
 
 ```powershell
 PS C:\> Connect-ContainerNetworkAdapter -ContainerName TST -SwitchName NAT
@@ -162,6 +162,7 @@ PS C:\> docker run -p 80:80 windowsservercoreiis
 
 ```powershell
 PS C:\> docker stop tender_panini
+
 tender_panini
 ```
 

@@ -42,7 +42,7 @@ PS C:\> wget -uri https://aka.ms/tp4/New-ContainerHost -OutFile c:\New-Container
 运行以下命令来创建和配置容器主机，其中 `&lt;containerhost&gt;` 将是虚拟机名称。
 
 ``` powershell
-PS C:\> c:\New-ContainerHost.ps1 –VmName <containerhost> -WindowsImage ServerDatacenterCore -Hyperv
+PS C:\> powershell.exe -NoProfile c:\New-ContainerHost.ps1 –VmName testcont -WindowsImage ServerDatacenterCore -Hyperv
 ```
 
 当脚本开始时，系统将提示你输入密码。 这将是分配给 Administrator 帐户的密码。
@@ -72,4 +72,4 @@ license terms. Please confirm you have accepted and agree to the license terms.
 
 
 
-<!--HONumber=Jan16_HO2-->
+<!--HONumber=Feb16_HO2-->

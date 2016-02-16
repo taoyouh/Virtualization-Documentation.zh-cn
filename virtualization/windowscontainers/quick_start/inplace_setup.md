@@ -34,14 +34,14 @@ PS C:\> start-process powershell -Verb runas
 PS C:\> wget -uri https://aka.ms/tp4/Install-ContainerHost -OutFile C:\Install-ContainerHost.ps1
 ```
 
-下载完成后，执行该脚本。
+ 下载完成后，执行该脚本。
 ``` PowerShell
-PS C:\> C:\Install-ContainerHost.ps1 -HyperV
+PS C:\> powershell.exe -NoProfile C:\Install-ContainerHost.ps1 -HyperV
 ```
 
 然后，此脚本将开始下载和配置 Windows 容器组件。 由于下载较大，此过程可能需要很长一段时间。 在此过程中，计算机可能重新启动。 完成后，你的计算机将进行配置，并随时供你使用 PowerShell 和 Docker 创建并管理 Windows 容器和 Windows 容器映像。
 
-完成这些项目后，你的系统应已为 Windows 容器准备就绪。
+ 完成这些项目后，你的系统应已为 Windows 容器准备就绪。
 
 ## 后续步骤：开始使用容器
 
@@ -54,4 +54,4 @@ PS C:\> C:\Install-ContainerHost.ps1 -HyperV
 
 
 
-<!--HONumber=Jan16_HO1-->
+<!--HONumber=Feb16_HO2-->

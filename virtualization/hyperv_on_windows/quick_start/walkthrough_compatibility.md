@@ -32,12 +32,12 @@ Windows 10 上的 Hyper-V 仅适用于一组特定的硬件和操作系统配置
 
 ## 验证硬件兼容性
 
-若要验证兼容性，请打开 PowerShell 或命令提示符 (cmd.exe)，然后键入 **systeminfo.exe**。 这将返回有关 Hyper-V 兼容性的信息。
-如果列出的所有 Hyper-V 要求都具有值 **Yes**，则你的系统可以运行 Hyper-V 角色。 如果任一项返回 **No**，请查看本文档中列出的要求并进行调整（如果可能）。
+若要验证兼容性，请打开 PowerShell 或命令提示符 (cmd.exe)，然后键入 systeminfo.exe。 这将返回有关 Hyper-V 兼容性的信息。
+如果列出的所有 Hyper-V 要求都具有值“Yes”，则你的系统可以运行 Hyper-V 角色。 如果任一项返回“No”，请查看本文档中列出的要求并进行调整（如果可能）。
 
 ![](media/SystemInfo_upd.png)
 
-当在现有 Hyper-V 主机上运行 **systeminfo.exe** 时，Hyper-V 要求部分读取如下内容：
+当在现有 Hyper-V 主机上运行 systeminfo.exe 时，Hyper-V 要求部分读取如下内容：
 
 ```
 Hyper-V Requirements: A hypervisor has been detected. Features required for Hyper-V are not be displayed.
@@ -45,9 +45,9 @@ Hyper-V Requirements: A hypervisor has been detected. Features required for Hype
 
 ## 下一步 - 安装 Hyper-V
 
-[下一步 - 安装 Hyper-V](walkthrough_install.md)
+[安装 Hyper-V](walkthrough_install.md)
 
 
 
 
-<!--HONumber=Dec15_HO1-->
+<!--HONumber=Feb16_HO2-->

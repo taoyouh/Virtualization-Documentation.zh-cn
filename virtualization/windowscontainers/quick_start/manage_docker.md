@@ -15,7 +15,7 @@ Windows 容器可用于在单个计算机系统上快速部署多个独立应用
 - 通过嵌套虚拟化启用的 Windows 容器主机。
 - Windows Server 2016 媒体 - [下载](https://aka.ms/tp4/serveriso)。
 
->Microsoft Azure 不支持 Hyper-V 容器。 若要完成 Hyper-V 容器练习，你需要本地容器主机。
+> Microsoft Azure 不支持 Hyper-V 容器。 若要完成 Hyper-V 容器练习，你需要本地容器主机。
 
 ## Windows Server 容器
 
@@ -35,7 +35,7 @@ nanoserver          10.0.10586.0        8572198a60f1        2 weeks ago         
 nanoserver          latest              8572198a60f1        2 weeks ago         0 B
 ```
 
-在本示例中，使用 Windows Server Core 映像创建容器。 使用 `docker run 命令`完成此操作。 有关 `docker run` 的详细信息，请参阅 [docker.com 上的 Docker Run 参考](https://docs.docker.com/engine/reference/run/)。
+在本示例中，使用 Windows Server Core 映像创建容器。 使用 `docker run` 命令完成此操作。 有关 `docker run` 的详细信息，请参阅 [docker.com 上的 Docker Run 参考](https://docs.docker.com/engine/reference/run/)。
 
 本示例将创建一个名为 `iisbase` 的容器，并启动与该容器的交互式会话。
 
@@ -82,7 +82,7 @@ nanoserver             latest              8572198a60f1        2 weeks ago      
 
 ### 配置网络
 
-在使用 Docker 创建容器之前，需要为 Windows 防火墙创建一个规则，以允许到容器的网络连接。 运行以下内容来为端口 80 创建一个规则。
+在使用 Docker 创建容器之前，需要为 Windows 防火墙创建一个规则，以允许到容器的网络连接。 运行以下 PowerShell 脚本，以为端口 80 创建一个规则。 注意 - 这需要在 PowerShell 会话中运行。
 
 ```powershell
 if (!(Get-NetFirewallRule | where {$_.Name -eq "TCP80"})) {
@@ -159,7 +159,7 @@ C:\> powershell new-item c:\build\dockerfile -Force
 C:\> notepad c:\build\dockerfile
 ```
 
-将以下文本复制到 dockerfile 并保存该文件。 这些命令会指示 Docker 使用 `windowsservercore` 作为基础创建新映像，并包含使用 `RUN` 指定的修改。 有关 Dockerfile 的详细信息，请参阅 [docker.com 上的 Dockerfile 参考](http://docs.docker.com/engine/reference/builder/)。
+将以下文本复制到 dockerfile 并保存该文件。 这些命令指示 Docker 使用 `windowsservercore` 作为基础创建新映像，并包含使用 `RUN` 指定的修改。 有关 Dockerfile 的详细信息，请参阅 [docker.com 上的 Dockerfile 参考](http://docs.docker.com/engine/reference/builder/)。
 
 ```powershell
 FROM windowsservercore
@@ -167,7 +167,7 @@ RUN dism /online /enable-feature /all /featurename:iis-webserver /NoRestart
 RUN echo "Hello World - Dockerfile" > c:\inetpub\wwwroot\index.html
 ```
 
-此命令将启动自动映像生成过程。 `-t` 参数会指示此过程来将新映像命名为 `iis`。
+此命令将启动自动映像生成过程。 `-t` 参数指示此过程来将新映像命名为 `iis`。
 
 ```powershell
 C:\> docker build -t iis c:\Build
@@ -219,7 +219,7 @@ C:\> docker rmi iis
 
 Hyper-V 容器通过 Windows Server 容器提供额外的隔离层。 每个 Hyper-V 容器都在高度优化的虚拟机中创建。 如果 Windows Server 容器与容器主机共享内核，Hyper-V 容器将会完全隔离。 Hyper-V 容器的创建和管理方式与 Windows Server 容器相同。 有关 Hyper-V 容器的详细信息，请参阅[管理 Hyper-V 容器](../management/hyperv_container.md)。
 
->Microsoft Azure 不支持 Hyper-V 容器。 若要完成 Hyper-V 练习，你需要本地容器主机。
+> Microsoft Azure 不支持 Hyper-V 容器。 若要完成 Hyper-V 练习，你需要本地容器主机。
 
 ### 创建容器
 
@@ -266,7 +266,7 @@ c:\share
 |-- unattend.xml
 ```
 
-若要使用 Docker 创建 Hyper-V 容器，请指定 `--isolation=hyperv` 参数。 本示例会将 `c:\share` 目录从主机中装载到容器的 `c:\iisinstall` 目录，然后创建与该容器的交互式 shell 会话。
+若要使用 Docker 创建 Hyper-V 容器，请指定 `--isolation=hyperv` 参数。 本示例会将 `c:\share` 目录从主机装载到容器的 `c:\iisinstall` 目录，然后创建与该容器的交互式 shell 会话。
 
 ```powershell
 C:\> docker run --name iisnanobase -it -v c:\share:c:\iisinstall --isolation=hyperv nanoserver cmd
@@ -348,4 +348,4 @@ C:\> exit
 
 
 
-<!--HONumber=Jan16_HO1-->
+<!--HONumber=Feb16_HO2-->

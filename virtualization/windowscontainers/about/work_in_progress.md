@@ -93,6 +93,57 @@ PS C:\> Start-Container test2
 **解决方法：**  
 如果容器需要公开多个终结点，请使用 NAT 端口映射。
 
+
+### 静态 NAT 映射可能会通过 Docker 与端口映射发生冲突
+
+如果你要使用 Windows PowerShell 创建容器并且添加静态 NAT 映射，在没有删除它们的情况下即使用 `docker -p &lt;src&gt;:&lt;dst&gt;` 启动某个容器时，它们可能会引起冲突。
+
+以下是一个与端口 80 上的静态映射发生冲突的示例
+```
+PS C:\IISDemo> Add-NetNatStaticMapping -NatName "ContainerNat" -Protocol TCP -ExternalIPAddress 0.0.0.0 -InternalIPAddress
+ 172.16.0.2 -InternalPort 80 -ExternalPort 80
+
+
+StaticMappingID               : 1
+NatName                       : ContainerNat
+Protocol                      : TCP
+RemoteExternalIPAddressPrefix : 0.0.0.0/0
+ExternalIPAddress             : 0.0.0.0
+ExternalPort                  : 80
+InternalIPAddress             : 172.16.0.2
+InternalPort                  : 80
+InternalRoutingDomainId       : {00000000-0000-0000-0000-000000000000}
+Active                        : True
+
+
+
+PS C:\IISDemo> docker run -it -p 80:80 microsoft/iis cmd
+docker: Error response from daemon: Cannot start container 30b17cbe85539f08282340cc01f2797b42517924a70c8133f9d8db83707a2c66: 
+HCSShim::CreateComputeSystem - Win32 API call returned error r1=2147942452 err=You were not connected because a 
+duplicate name exists on the network. If joining a domain, go to System in Control Panel to change the computer name
+ and try again. If joining a workgroup, choose another workgroup name. 
+ id=30b17cbe85539f08282340cc01f2797b42517924a70c8133f9d8db83707a2c66 configuration= {"SystemType":"Container",
+ "Name":"30b17cbe85539f08282340cc01f2797b42517924a70c8133f9d8db83707a2c66","Owner":"docker","IsDummy":false,
+ "VolumePath":"\\\\?\\Volume{4b239270-c94f-11e5-a4c6-00155d016f0a}","Devices":[{"DeviceType":"Network","Connection":
+ {"NetworkName":"Virtual Switch","EnableNat":false,"Nat":{"Name":"ContainerNAT","PortBindings":[{"Protocol":"TCP",
+ InternalPort":80,"ExternalPort":80}]}},"Settings":null}],"IgnoreFlushesDuringBoot":true,
+ "LayerFolderPath":"C:\\ProgramData\\docker\\windowsfilter\\30b17cbe85539f08282340cc01f2797b42517924a70c8133f9d8db83707a2c66",
+ "Layers":[{"ID":"4b91d267-ecbc-53fa-8392-62ac73812c7b","Path":"C:\\ProgramData\\docker\\windowsfilter\\39b8f98ccaf1ed6ae267fa3e98edcfe5e8e0d5414c306f6c6bb1740816e536fb"},
+ {"ID":"ff42c322-58f2-5dbe-86a0-8104fcb55c2a",
+"Path":"C:\\ProgramData\\docker\\windowsfilter\\6a182c7eba7e87f917f4806f53b2a7827d2ff0c8a22d200706cd279025f830f5"},
+{"ID":"84ea5d62-64ed-574d-a0b6-2d19ec831a27",
+"Path":"C:\\ProgramData\\Microsoft\\Windows\\Images\\CN=Microsoft_WindowsServerCore_10.0.10586.0"}],
+"HostName":"30b17cbe8553","MappedDirectories":[],"SandboxPath":"","HvPartition":false}.
+```
+
+
+*缓解*
+这可通过使用 PowerShell 删除端口映射来解决。 这将删除在上述示例中引起的端口 80 冲突。
+```powershell
+Get-NetNatStaticMapping | ? ExternalPort -eq 80 | Remove-NetNatStaticMapping
+```
+
+
 ### Windows 容器未获得 IP
 
 如果你要连接到具有 DHCP VM 开关的 Windows 容器，容器主机可以接收 IP，但该容器不可以。
@@ -237,6 +288,7 @@ Windows 容器无法通过 TP4 中的 RDP 会话进行管理/与之交互。
 我们会谨慎考虑有关服务和应用程序如何使用 Active Directory 的反馈以及在容器中部署这些内容的交集。如果你具有最适合你的内容的相关详细信息，请在[论坛](https://social.msdn.microsoft.com/Forums/en-US/home?forum=windowscontainers)中与我们进行共享。
 
 我们正在积极地寻找解决方案以支持这些类型的方案。
+
 
 
 

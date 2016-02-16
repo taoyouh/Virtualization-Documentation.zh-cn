@@ -10,7 +10,7 @@
 
 若要创建共享文件夹，请使用 `Add-ContainerSharedFolder` 命令。 下面的示例在容器中创建目录 `c:\shared_data`，该目录会映射到主机上的目录 `c:\data_source`。
 
->添加共享文件夹时，容器必须处于停止状态。
+> 添加共享文件夹时，容器必须处于停止状态。
 
 ```powershell
 PS C:\> Add-ContainerSharedFolder -ContainerName DEMO -SourcePath c:\data_source -DestinationPath c:\shared_data
@@ -54,7 +54,7 @@ PS C:\> Set-ContainerSharedFolder -ContainerName SFRO -SourcePath c:\sf1 -Destin
 
 若要删除共享文件夹，请使用 `Remove-ContainerSharedFolder` 命令。
 
->删除共享文件夹时，容器必须处于停止状态
+> 删除共享文件夹时，容器必须处于停止状态
 
 ```powershell
 PS C:\> Remove-ContainerSharedFolder -ContainerName DEMO2 -SourcePath c:\source -DestinationPath c:\source
@@ -73,8 +73,10 @@ PS C:\> docker run -it -v c:\source:c:\destination 1f62aaf73140 cmd
 
 有关使用 Docker 管理容器中的数据的详细信息，请参阅 [Docker.com 上的 Docker 卷](https://docs.docker.com/userguide/dockervolumes/)。
 
+## 视频演练
+
+<iframe src="https://channel9.msdn.com/Blogs/containers/Container-Fundamentals--Part-3-Shared-Folders/player#ccLang=zh-cn" width="800" height="450"  allowFullScreen="true" frameBorder="0" scrolling="no"></iframe>
 
 
 
-
-<!--HONumber=Dec15_HO1-->
+<!--HONumber=Feb16_HO1-->

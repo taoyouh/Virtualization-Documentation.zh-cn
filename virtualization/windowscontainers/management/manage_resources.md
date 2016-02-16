@@ -73,8 +73,12 @@ C:\> docker run –it --cpu-shares 2 --name dockerdemo windowsservercore cmd
 - Hyper-V 容器当前不支持 CPU 和 IO 资源控制。
 - 容器共享文件夹当前不支持 IO 资源控制。
 
+## 视频演练
+
+<iframe src="https://channel9.msdn.com/Blogs/containers/Container-Fundamentals--Part-4-Resource-Management/player#ccLang=zh-cn" width="800" height="450"  allowFullScreen="true" frameBorder="0" scrolling="no"></iframe>
 
 
 
 
-<!--HONumber=Jan16_HO1-->
+
+<!--HONumber=Feb16_HO1-->
