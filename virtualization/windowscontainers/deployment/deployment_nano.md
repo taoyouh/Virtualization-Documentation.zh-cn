@@ -1,89 +1,89 @@
-# Container Host Deployment - Nano Server
+# 容器主机部署 - Nano Server
 
-**This is preliminary content and subject to change.**
+**这是初步内容，可能还会更改。**
 
-Deploying a Windows Container host has different steps depending on the operating system and the host system type (physical or virtual). The steps in this document are used to deploy a Windows Container host to Nano Server, on a physical or virtual system. To install a Windows Container host to Windows Server see [Container Host Deployment - Windows Server](./deployment.md).
+部署 Windows 容器主机具有不同的步骤，具体取决于操作系统和主机系统类型（物理或虚拟）。 本文档中的步骤用于在物理系统或虚拟系统上将 Windows 容器主机部署到 Nano Server。 若要将 Windows 容器主机安装到 Windows Server，请参阅[容器主机部署 - Windows Server](./deployment.md)。
 
-For details on system requirements, see [Windows Container Host System Requirements](./system_requirements.md).
+有关系统要求的详细信息，请参阅 [Windows 容器主机系统要求](./system_requirements.md)。
 
-PowerShell scripts are available to automate the deployment of a Windows Container host.
-- [Deploy a container host in a new Hyper-V Virtual Machine](../quick_start/container_setup.md).
-- [Deploy a container host to an existing system](../quick_start/inplace_setup.md).
+PowerShell 脚本可用于自动执行 Windows 容器主机的部署。
+- [在新的 Hyper-V 虚拟机中部署容器主机](../quick_start/container_setup.md)。
+- [将容器主机部署到现有系统](../quick_start/inplace_setup.md)。
 
 
-# Nano Server Host
+# Nano Server 主机
 
-The steps listed in this table can be used to deploy a container host to Nano Server. Included are the configurations necessary for both Windows Server and Hyper-V Containers.
-
-<table border="1" style="background-color:FFFFCC;border-collapse:collapse;border:1px solid FFCC00;color:000000;width:100%" cellpadding="5" cellspacing="5">
-<tr valign="top">
-<td width="30%"><strong>Deployment Action</strong></td>
-<td width="70%"><strong>Details</strong></td>
-</tr>
-<tr>
-<td>[Prepare Nano Server for Containers](#nano)</td>
-<td>Prepare a Nano Server VHD with the container and Hyper-V capabilities.</td>
-</tr>
-<tr>
-<td>[Create Virtual Switch](#vswitch)</td>
-<td>Containers connect to a virtual switch for network connectivity.</td>
-</tr>
-<tr>
-<td>[Configure NAT](#nat)</td>
-<td>If a virtual switch is configured with Network Address Translation, NAT itself needs configuration.</td>
-</tr>
-<tr>
-<td>[Install Container OS Images](#img)</td>
-<td>OS images provide the base for container deployments.</td>
-</tr>
-<tr>
-<td>[Install Docker](#docker)</td>
-<td>Optional, however necessary in order to create and manage Windows containers with Docker. </td>
-</tr>
-</table>
-
-These steps need to be taken if Hyper-V Containers will be used. Note, the steps marked with and * are only necessary if the container host is itself a Hyper-V virtual machine.
+此表中列出的步骤可用于将容器主机部署到 Nano Server。 所含内容是 Windows Server 和 Hyper-V 容器所需的配置。
 
 <table border="1" style="background-color:FFFFCC;border-collapse:collapse;border:1px solid FFCC00;color:000000;width:100%" cellpadding="5" cellspacing="5">
 <tr valign="top">
-<td width="30%"><strong>Deployment Action</strong></td>
-<td width="70%"><strong>Details</strong></td>
+<td width="30%"><strong>部署操作</strong></td>
+<td width="70%"><strong>详细信息</strong></td>
 </tr>
 <tr>
-<td>[Enable Hyper-V Role](#hypv) </td>
-<td>Hyper-V is only required if Hyper-V Containers will be used.</td>
+<td>[为容器准备 Nano Server](#nano)</td>
+<td>使用容器和 Hyper-V 功能准备 Nano Server VHD。</td>
 </tr>
 <tr>
-<td>[Enable Nested Virtualization *](#nest)</td>
-<td>If the Container Host is itself a Hyper-V Virtual machine, Nested Virtualization needs to be enabled.</td>
+<td>[创建虚拟交换机](#vswitch)</td>
+<td>容器连接到虚拟交换机以获取网络连接。</td>
 </tr>
 <tr>
-<td>[Configure Virtual Processors *](#proc)</td>
-<td>If the Container Host is itself a Hyper-V Virtual machine, at least two virtual processors will need to be configured.</td>
+<td>[配置 NAT](#nat)</td>
+<td>如果使用网络地址转换配置虚拟交换机，则 NAT 本身需要配置。</td>
 </tr>
 <tr>
-<td>[Disable Dynamic Memory *](#dyn)</td>
-<td>If the Container Host is itself a Hyper-V Virtual machine, dynamic memory must be disabled.</td>
+<td>[安装容器操作系统映像](#img)</td>
+<td>操作系统映像提供容器部署的基础。</td>
 </tr>
 <tr>
-<td>[Configure MAC Address Spoofing *](#mac)</td>
-<td>If the container host is virtualized, MAC spoofing will need to be enabled.</td>
+<td>[安装 Docker](#docker)</td>
+<td>可选步骤，但需要执行此步骤才能使用 Docker 创建和管理 Windows 容器。 </td>
 </tr>
 </table>
 
-## Deployment Steps
+使用 Hyper-V 容器时需要采取这些步骤。 请注意，标记有 * 的步骤仅在容器主机本身即是 Hyper-V 虚拟机时才需要。
 
-### <a name=nano></a> Prepare Nano Server
+<table border="1" style="background-color:FFFFCC;border-collapse:collapse;border:1px solid FFCC00;color:000000;width:100%" cellpadding="5" cellspacing="5">
+<tr valign="top">
+<td width="30%"><strong>部署操作</strong></td>
+<td width="70%"><strong>详细信息</strong></td>
+</tr>
+<tr>
+<td>[启用 Hyper-V 角色](#hypv) </td>
+<td>仅在将使用 Hyper-V 容器时需要 Hyper-V。</td>
+</tr>
+<tr>
+<td>[启用嵌套虚拟化 *](#nest)</td>
+<td>如果容器主机本身是 Hyper-V 虚拟机，则需要启用嵌套虚拟化。</td>
+</tr>
+<tr>
+<td>[配置虚拟处理器 *](#proc)</td>
+<td>如果容器主机本身是 Hyper-V 虚拟机，则需要配置至少两个虚拟处理器。</td>
+</tr>
+<tr>
+<td>[禁用动态内存 *](#dyn)</td>
+<td>如果容器主机本身是 Hyper-V 虚拟机，则必须禁用动态内存。</td>
+</tr>
+<tr>
+<td>[配置 MAC 地址欺骗 *](#mac)</td>
+<td>如果虚拟化容器主机，将需要启用 MAC 欺骗。</td>
+</tr>
+</table>
 
-Deploying Nano Server involves creating a prepared virtual hard drive, which includes the Nano Server operating system, and additional feature packages. This guide quickly details preparing a Nano Server virtual hard drive, which can be used for Windows Containers. For more information on Nano Server, and to explore different Nano Server deployment options, see the [Nano Server Documentation](https://technet.microsoft.com/en-us/library/mt126167.aspx).
+## 部署步骤
 
-Create a folder named `nano`.
+### <a name=nano></a> 准备 Nano Server
+
+部署 Nano Server 涉及到创建准备的虚拟硬盘驱动器，其中包括 Nano Server 操作系统和其他功能包。 本指南快速详细介绍准备 Nano Server 虚拟硬盘驱动器，可用于 Windows 容器。 若要了解 Nano Server 的详细信息以及不同的 Nano Server 部署选项，请参阅 [Nano Server 文档](https://technet.microsoft.com/en-us/library/mt126167.aspx)。
+
+创建名为 `nano` 的文件夹。
 
 ```powershell
 PS C:\> New-Item -ItemType Directory c:\nano
 ```
 
-Locate the `NanoServerImageGenerator.psm1` and `Convert-WindowsImage.ps1` files from the Nano Server folder, on the Windows Server Media. Copy these to `c:\nano`.
+在 Windows Server 媒体上，从 Nano Server 文件夹中找到 `NanoServerImageGenerator.psm1` 和 `Convert-WindowsImage.ps1` 文件。 将这些文件复制到 `c:\nano`。
 
 ```powershell
 #Set path to Windows Server 2016 Media
@@ -93,28 +93,28 @@ PS C:\> Copy-Item $WindowsMedia\NanoServer\Convert-WindowsImage.ps1 c:\nano
 
 PS C:\> Copy-Item $WindowsMedia\NanoServer\NanoServerImageGenerator.psm1 c:\nano
 ```
-Run the following to create a Nano Server virtual hard drive. The `–Containers` parameter indicates that the container package is installed, and the `–Compute` parameter takes care of the Hyper-V package. Hyper-V is only required if using Hyper-V containers.
+运行以下内容来创建 Nano Server 虚拟硬盘驱动器。 `–Containers` 参数指示已安装容器程序包，而 `–Compute` 参数负责 Hyper-V 程序包。 仅在使用 Hyper-V 容器时需要 Hyper-V。
 
 ```powershell
 PS C:\> Import-Module C:\nano\NanoServerImageGenerator.psm1
 
 PS C:\> New-NanoServerImage -MediaPath $WindowsMedia -BasePath c:\nano -TargetPath C:\nano\NanoContainer.vhdx -MaxSize 10GB -GuestDrivers -ReverseForwarders -Compute -Containers
 ```
-When completed, create a virtual machine from the `NanoContainer.vhdx` file. This virtual machine will be running the Nano Server OS, and optional packages.
+操作完成后，从 `NanoContainer.vhdx` 文件创建虚拟机。 此虚拟机将运行 Nano Server 操作系统以及可选程序包。
 
-### <a name=vswitch></a>Create Virtual Switch
+### <a name=vswitch></a>创建虚拟交换机
 
-Each container needs to be attached to a virtual switch in order to communicate over a network. A virtual switch is created with the `New-VMSwitch` command. Containers support a virtual switch with type `External` or `NAT`. For more information on Windows Container networking see [Container Networking](../management/container_networking.md).
+需要将每个容器连接到虚拟交换机，以便通过网络进行通信。 使用 `New-VMSwitch` 命令创建虚拟交换机。 容器支持类型为 `External` 或 `NAT` 的虚拟交换机。 有关 Windows 容器网络的详细信息，请参阅[容器网络](../management/container_networking.md)。
 
-This example creates a virtual switch with the name “Virtual Switch”, a type of NAT, and Nat Subnet of 172.16.0.0/12.
+此示例创建一个名为“Virtual Switch”、类型为 NAT 且 Nat 子网为 172.16.0.0/12 的虚拟交换机。
 
 ```powershell
 PS C:\> New-VMSwitch -Name "Virtual Switch" -SwitchType NAT -NATSubnetAddress "172.16.0.0/12"
 ```
 
-### <a name=nat></a>Configure NAT
+### <a name=nat></a>配置 NAT
 
-In addition to creating a virtual switch, if the switch type is NAT, a NAT object needs to be created. This is completed using the `New-NetNat` command. This example creates a NAT object, with the name `ContainerNat`, and an address prefix that matches the NAT subnet assigned to the container switch.
+除了创建虚拟交换机，如果交换机类型为 NAT，还需要创建 NAT 对象。 使用 `New-NetNat` 命令完成此操作。 此示例创建一个 NAT 对象，其名称为 `ContainerNat`，并且地址前缀与分配给容器交换机的 NAT 子网匹配。
 
 ```powershell
 PS C:\> New-NetNat -Name ContainerNat -InternalIPInterfaceAddressPrefix "172.16.0.0/12"
@@ -133,17 +133,17 @@ Store                            : Local
 Active                           : True
 ```
 
-### <a name=img></a>Install OS Images
+### <a name=img></a>安装操作系统映像
 
-An OS image is used as the base to any Windows Server or Hyper-V container. The image is used to deploy a container, which can then be modified, and captured into a new container image. OS images have been created with both Windows Server Core and Nano Server as the underlying operating system.
+操作系统映像用作任何 Windows Server 或 Hyper-V 容器的基础。 此映像用于部署容器，然后可以修改该容器，并将其捕获到新的容器映像中。 已将 Windows Server Core 和 Nano Server 作为基础操作系统创建操作系统映像。
 
-Container OS images can be found and installed using the ContainerProvider PowerShell module. Before using this module, it needs to be installed. The following commands can be used to install the module.
+可使用 ContainerProvider PowerShell 模块找到并安装容器操作系统映像。 在使用此模块之前，需要安装它。 可以使用以下命令安装此模块。
 
 ```powershell
 PS C:\> Install-PackageProvider ContainerProvider -Force
 ```
 
-Use `Find-ContainerImage` to return a list of images from PowerShell OneGet package manager.
+使用 `Find-ContainerImage` 从 PowerShell OneGet 程序包管理器中返回映像列表。
 
 ```powershell
 PS C:\> Find-ContainerImage
@@ -153,7 +153,7 @@ Name                 Version                 Description
 NanoServer           10.0.10586.0            Container OS Image of Windows Server 2016 Techn...
 WindowsServerCore    10.0.10586.0            Container OS Image of Windows Server 2016 Techn...
 ```
-**Note** - At this time, only the Nano Server OS Image is compatible with a Nano Server container host. To download and install the Nano Server base OS image, run the following.
+注意 - 此时，只有 Nano Server 操作系统映像与 Nano Server 容器主机兼容。 若要下载和安装 Nano Server 基础操作系统映像，请运行以下内容。
 
 ```powershell
 PS C:\> Install-ContainerImage -Name NanoServer -Version 10.0.10586.0
@@ -161,7 +161,7 @@ PS C:\> Install-ContainerImage -Name NanoServer -Version 10.0.10586.0
 Downloaded in 0 hours, 0 minutes, 10 seconds.
 ```
 
-Verify that the image is installed using the `Get-ContainerImage` command.
+验证是否已使用 `Get-ContainerImage` 命令安装映像。
 
 ```powershell
 PS C:\> Get-ContainerImage
@@ -170,53 +170,53 @@ Name              Publisher    Version      IsOSImage
 ----              ---------    -------      ---------
 NanoServer        CN=Microsoft 10.0.10586.0 True
 ```
-For more information on Container image management see [Windows Container Images](../management/manage_images.md).
+有关容器映像管理的详细信息，请参阅 [Windows 容器映像](../management/manage_images.md)。
 
 
-### <a name=docker></a>Install Docker
+### <a name=docker></a>安装 Docker
 
-The Docker Daemon and command line interface are not shipped with Windows, and not installed with the Windows Container feature. Docker is not a requirement for working with Windows containers. If you would like to install Docker, follow the instructions in this article [Docker and Windows](./docker_windows.md).
+Windows 中未附带 Docker 守护程序和命令行接口，并且这些功能不与 Windows 容器功能一起安装。 Docker 不是使用 Windows 容器的要求。 如果你希望安装 Docker，请按照本文 [Docker 和 Windows](./docker_windows.md) 中的说明进行操作。
 
 
-## Hyper-V Container Host
+## Hyper V 容器主机
 
-### <a name=hypv></a>Enable the Hyper-V Role
+### <a name=hypv></a>启用 Hyper-V 角色
 
-On Nano Server this can be completed when creating the Nano Server image. See [Prepare Nano Server for Containers](#nano) for these instructions.
+在 Nano Server 上，此操作可以在创建 Nano Server 映像时完成。 有关说明，请参阅[为容器准备 Nano Server](#nano)。
 
-### <a name=nest></a>Configure Nested Virtualization
+### <a name=nest></a>配置嵌套虚拟化
 
-If the container host itself will be running on a Hyper-V virtual machine, and will also be hosting Hyper-V Containers, nested virtualization needs to be enabled. This can be completed with the following PowerShell command.
+如果容器主机本身将在 Hyper-V 虚拟机上运行，并且还将托管 Hyper-V 容器，则需要启用嵌套虚拟化。 可以使用以下 PowerShell 命令完成此操作。
 
-**Note** - The virtual machines must be turned off when running this command.
+注意 - 在运行此命令时，必须关闭虚拟机。
 
 ```powershell
 PS C:\> Set-VMProcessor -VMName <VM Name> -ExposeVirtualizationExtensions $true
 ```
 
-### <a name=proc></a>Configure Virtual Processors
+### <a name=proc></a>配置虚拟处理器
 
-If the container host itself will be running on a Hyper-V virtual machine, and will also be hosting Hyper-V Containers, the virtual machine will require at least two processors. This can be configured through the settings of the virtual machine, or with the following command.
+如果容器主机本身将在 Hyper-V 虚拟机上运行，并且还将托管 Hyper-V 容器，该虚拟机将需要至少两个处理器。 这可以通过虚拟机的设置或使用以下命令进行配置。
 
-**Note** - The virtual machines must be turned off when running this command.
+注意 - 在运行此命令时，必须关闭虚拟机。
 
 ```poweshell
 PS C:\> Set-VMProcessor –VMName <VM Name> -Count 2
 ```
 
-### <a name=dyn></a>Disable Dynamic Memory
+### <a name=dyn></a>禁用动态内存
 
-If the Container Host is itself a Hyper-V Virtual machine, dynamic memory must be disabled on the container host virtual machine. This can be configured through the settings of the virtual machine, or with the following command.
+如果容器主机本身是 Hyper-V 虚拟机，则必须在容器主机虚拟机上禁用动态内存。 这可以通过虚拟机的设置或使用以下命令进行配置。
 
-**Note** - The virtual machines must be turned off when running this command.
+注意 - 在运行此命令时，必须关闭虚拟机。
 
 ```poweshell
 PS C:\> Set-VMMemory <VM Name> -DynamicMemoryEnabled $false
 ```
 
-### <a name=mac></a>Configure MAC Address Spoofing
+### <a name=mac></a>配置 MAC 地址欺骗
 
-Finally, if the container host is running inside of a Hyper-V virtual machine, MAC spoofing must be enable. This allows each container to receive an IP Address. To enable MAC address spoofing, run the following command on the Hyper-V host. The VMName property will be the name of the container host.
+最后，如果容器主机在 Hyper-V 虚拟机内部运行，必须启用 MAC 欺骗。 这使每个容器都可以接收 IP 地址。 若要启用 MAC 地址欺骗，请在 Hyper-V 主机上运行以下命令。 VMName 属性将是容器主机的名称。
 
 ```powershell
 PS C:\> Get-VMNetworkAdapter -VMName <VM Name> | Set-VMNetworkAdapter -MacAddressSpoofing On
