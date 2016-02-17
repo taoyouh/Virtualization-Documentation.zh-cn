@@ -181,6 +181,9 @@
   "dc07075c1d887a8702fb9feff018c60b8f215597": [
     "virtualization\\windowscontainers\\containers_welcome.md"
   ],
+  "d521c9fdbb69f6c445daa99e1354797ec59be013": [
+    "virtualization\\windowscontainers\\deployment\\deployment.md"
+  ],
   "c6cd32f55e545c024d4a53481adf7840d3a87b91": [
     "virtualization\\windowscontainers\\deployment\\deployment.md"
   ],
@@ -330,6 +333,9 @@
   ],
   "aa26c5fc60bcdfd7cd521799700e2f6eea48eb17": [
     "virtualization\\windowscontainers\\Nano_EULA.md"
+  ],
+  "a27c1a982e667e6ffe7de1b227a6ce3c3e01ca39": [
+    "virtualization\\windowscontainers\\deployment\\deployment_nano.md"
   ],
   "9f1e1bbd25cf45f9cad66c6542769e0d769bf047": [
     "virtualization\\windowscontainers\\deployment\\deployment_nano.md"
