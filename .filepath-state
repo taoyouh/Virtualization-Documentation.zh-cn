@@ -190,8 +190,14 @@
   "c6cd32f55e545c024d4a53481adf7840d3a87b91": [
     "virtualization\\windowscontainers\\deployment\\deployment.md"
   ],
+  "6bf478a4ccb9a125b0630a48e3aab747da4a7734": [
+    "virtualization\\windowscontainers\\deployment\\docker_windows.md"
+  ],
   "b96e184c80cc95769159bf698c0c7d2c434f44c1": [
     "virtualization\\windowscontainers\\deployment\\docker_windows.md"
+  ],
+  "22320b32fb8af15c2e7125ec4f50c2b19643b9bf": [
+    "virtualization\\windowscontainers\\deployment\\media\\nssm1.png"
   ],
   "312f08a0f7c0c08c7a7f0c005b76bc4ee38d6bc4": [
     "virtualization\\windowscontainers\\deployment\\media\\nssm1.png"
