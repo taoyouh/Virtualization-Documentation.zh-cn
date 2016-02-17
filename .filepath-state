@@ -187,12 +187,6 @@
   "c6cd32f55e545c024d4a53481adf7840d3a87b91": [
     "virtualization\\windowscontainers\\deployment\\deployment.md"
   ],
-  "59439790683c9c315093c6a6d42bd3264859d5b6": [
-    "virtualization\\windowscontainers\\deployment\\deployment.md"
-  ],
-  "e18147d9412a67b9e69eab34133112d898e26476": [
-    "virtualization\\windowscontainers\\deployment\\deployment.md"
-  ],
   "b96e184c80cc95769159bf698c0c7d2c434f44c1": [
     "virtualization\\windowscontainers\\deployment\\docker_windows.md"
   ],
@@ -233,12 +227,6 @@
     "virtualization\\windowscontainers\\management\\manage_resources.md"
   ],
   "fe1d5c6d1027b1b77b130a3293033f3236af555f": [
-    "virtualization\\windowscontainers\\quick_start\\azure_setup.md"
-  ],
-  "1126c09027a88966654ac24b3ce66946f18a0074": [
-    "virtualization\\windowscontainers\\quick_start\\azure_setup.md"
-  ],
-  "2dc4275e8ca76cb14938cd4b6e6d98e8a0ce9a85": [
     "virtualization\\windowscontainers\\quick_start\\azure_setup.md"
   ],
   "7eaf82d3cdd0a4881f239ce4071eb262b3104dfd": [
