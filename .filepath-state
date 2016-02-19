@@ -256,6 +256,9 @@
   "08a8593c07246a17ec035e6138533034bf266f9f": [
     "virtualization\\windowscontainers\\management\\media\\process.png"
   ],
+  "5b67e2acb767846ab6595de1b8b456eaeacb10ac": [
+    "virtualization\\windowscontainers\\management\\manage_containers.md"
+  ],
   "b632fee70a3424fd1f9ded94faee59f52c52e2b7": [
     "virtualization\\windowscontainers\\management\\manage_containers.md"
   ],
