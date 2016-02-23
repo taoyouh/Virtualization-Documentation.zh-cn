@@ -187,6 +187,9 @@
   "b62d8af1f08bc8085945c8aa154d46d2215879cb": [
     "virtualization\\windowscontainers\\about\\media\\containerfund.png"
   ],
+  "98fb19c97bd3bb80e62d199db1f951d81225f603": [
+    "virtualization\\windowscontainers\\about\\container_ecosystem.md"
+  ],
   "adad0a93d7f093e4a6c7172013fdf7715dc81945": [
     "virtualization\\windowscontainers\\about\\container_ecosystem.md"
   ],
