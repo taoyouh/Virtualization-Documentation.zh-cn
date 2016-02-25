@@ -427,6 +427,9 @@
   "c368db13f720190f3fb4a8fbdb2301c6a8148cc8": [
     "virtualization\\community\\media\\GitHubCreatePR.png"
   ],
+  "ea7ce9566e4745f7c2e295ab271afad83cba54bd": [
+    "virtualization\\windowscontainers\\Examples\\dotnet35.md"
+  ],
   "5a329406c70a423b9ef83424fcd38af13c9b8666": [
     "virtualization\\windowscontainers\\Examples\\dotnet35.md"
   ],
