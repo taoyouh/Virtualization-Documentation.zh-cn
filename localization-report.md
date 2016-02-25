@@ -9,9 +9,9 @@
 [ Archive Failed Files ](#archive-failed-list)| 0
 [ Archive Success Files ](#archive-success-list)| 0
 [ Handback Failed Files ](#handback-failed-list)| 0
-[ Out Of Sync Handback Files ](#outofsync-handback-success-list)| 31
+[ Out Of Sync Handback Files ](#outofsync-handback-success-list)| 30
 [ In Sync Handback Files ](#insync-handback-success-list)| 84
-[ Ignored Files ](#ignored-list)| 299
+[ Ignored Files ](#ignored-list)| 300
 
 ## <a name='handoff-failed-list'></a> Handoff Failed File List
 
@@ -44,7 +44,6 @@
  [virtualization\windowscontainers\deployment\docker_windows.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/f7294e19184c78d256a04bae8ccfff459871eb14/virtualization/windowscontainers/deployment/docker_windows.md) | OutofSyncHandedBackSuccess | [Details](#a402ecf5af8af8da15999878f66fcb625d26ee7f214)
  [virtualization\windowscontainers\deployment\media\nssm1.png](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/f14befebe979751cc2269c7749b983d8167f2804/virtualization/windowscontainers/deployment/media/nssm1.png) | OutofSyncHandedBackSuccess | [Details](#22320b32fb8af15c2e7125ec4f50c2b19643b9bf215)
  [virtualization\windowscontainers\deployment\system_requirements.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/961efcc74b0930cccaa77e82bdb14240ad71100c/virtualization/windowscontainers/deployment/system_requirements.md) | OutofSyncHandedBackSuccess | [Details](#58078d5bfb7b7819c6a6694a3e99dd8fde2f21a4218)
- [virtualization\windowscontainers\Examples\dotnet35.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/961efcc74b0930cccaa77e82bdb14240ad71100c/virtualization/windowscontainers/Examples/dotnet35.md) | OutofSyncHandedBackSuccess | [Details](#5a329406c70a423b9ef83424fcd38af13c9b8666221)
  [virtualization\windowscontainers\management\container_networking.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/f7294e19184c78d256a04bae8ccfff459871eb14/virtualization/windowscontainers/management/container_networking.md) | OutofSyncHandedBackSuccess | [Details](#a69cbc5fab244ec14e7dedbde61af8d7b7a6e46d222)
  [virtualization\windowscontainers\management\hcs_powershell.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/961efcc74b0930cccaa77e82bdb14240ad71100c/virtualization/windowscontainers/management/hcs_powershell.md) | OutofSyncHandedBackSuccess | [Details](#cb795b7f0439e25857d3943c41c41f1591b623c3223)
  [virtualization\windowscontainers\management\hyperv_container.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/f7294e19184c78d256a04bae8ccfff459871eb14/virtualization/windowscontainers/management/hyperv_container.md) | OutofSyncHandedBackSuccess | [Details](#0e2c9435829c76e27d1746e306120d8c91d81623224)
@@ -292,6 +291,7 @@
  [virtualization\windowscontainers\about\media\overheadSpectrum.png](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/f14befebe979751cc2269c7749b983d8167f2804/virtualization/windowscontainers/about/media/overheadSpectrum.png) | Ignored | [Details](#8666862f14deb4e0523570cc3a3194fdfe115c3a208)
  [virtualization\windowscontainers\about\media\WindowsServerContainer.png](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/f14befebe979751cc2269c7749b983d8167f2804/virtualization/windowscontainers/about/media/WindowsServerContainer.png) | Ignored | [Details](#1bf883f69ce268f31b33e5fe2228655c206d7479209)
  [virtualization\windowscontainers\docfx.json](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/f14befebe979751cc2269c7749b983d8167f2804/virtualization/windowscontainers/docfx.json) | Ignored | [Details](#d03873cb289bc97d547e1edcf34861ce8a48ff9e219)
+ [virtualization\windowscontainers\Examples\dotnet35.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/f14befebe979751cc2269c7749b983d8167f2804/virtualization/windowscontainers/Examples/dotnet35.md) | Ignored | [Details](#ea7ce9566e4745f7c2e295ab271afad83cba54bd221)
  [virtualization\windowscontainers\management\media\imagecommit.png](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/f14befebe979751cc2269c7749b983d8167f2804/virtualization/windowscontainers/management/media/imagecommit.png) | Ignored | [Details](#70d9d123171e564192e70631951058b0639e0f67229)
  [virtualization\windowscontainers\management\media\imagelayer.png](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/f14befebe979751cc2269c7749b983d8167f2804/virtualization/windowscontainers/management/media/imagelayer.png) | Ignored | [Details](#79ca6518022758718f4adb9f5af0b408051b4180230)
  [virtualization\windowscontainers\management\media\nwconfig.png](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/f14befebe979751cc2269c7749b983d8167f2804/virtualization/windowscontainers/management/media/nwconfig.png) | Ignored | [Details](#f38c2cd178b4cd8c1dd2e187ef4fa05546755d43232)
@@ -3193,19 +3193,16 @@
 * Handback Datetime: 2016-01-04 21:52:22
 * [Back to Top](#report-top)
 
-##### <a name='5a329406c70a423b9ef83424fcd38af13c9b8666221'></a> Source: [virtualization\windowscontainers\Examples\dotnet35.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/961efcc74b0930cccaa77e82bdb14240ad71100c/virtualization/windowscontainers/Examples/dotnet35.md)
-* Status: OutofSyncHandedBackSuccess
+##### <a name='ea7ce9566e4745f7c2e295ab271afad83cba54bd221'></a> Source: [virtualization\windowscontainers\Examples\dotnet35.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/f14befebe979751cc2269c7749b983d8167f2804/virtualization/windowscontainers/Examples/dotnet35.md)
+* Status: Ignored
 * Target File: 
-* Handoff File: [dotnet35.07ba43b81e23427621b2039de6e95ef8c10ba9ab.zh-cn.xlf](https://github.com/Microsoft/Virtualization-Documentation-Private.handoff/blob/3ac05fb8aabb3a00628f21a0dc833063503eb7f1/ol-handoff/Microsoft/Virtualization-Documentation-Private.zh-cn/live/dotnet35.07ba43b81e23427621b2039de6e95ef8c10ba9ab.zh-cn.xlf)
-* Handoff Datetime: 2016-02-18 21:22:32
-* Handoff Reason: Include
+* Handoff File: 
+* Handoff Datetime: 0001-01-01 00:00:00
+* Handoff Reason: Ignored
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [virtualization\windowscontainers\Examples\dotnet35.md](https://github.com/Microsoft/Virtualization-Documentation-Private.zh-cn/blob/ae7e805e2efbc8a18c140181f584a7896808db7e/virtualization/windowscontainers/Examples/dotnet35.md)
-* Current Handback File: [dotnet35.07ba43b81e23427621b2039de6e95ef8c10ba9ab.zh-cn.xlf](https://github.com/Microsoft/Virtualization-Documentation-Private.handback/blob/e0c02c05ed981048559a0f52e28f07afff1979ef/ol-handback/Microsoft/Virtualization-Documentation-Private.zh-cn/live/dotnet35.07ba43b81e23427621b2039de6e95ef8c10ba9ab.zh-cn.xlf)
-* Current Handback Datetime: 2016-02-03 21:59:07
 * [Back to Top](#report-top)
 
 ##### <a name='a69cbc5fab244ec14e7dedbde61af8d7b7a6e46d222'></a> Source: [virtualization\windowscontainers\management\container_networking.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/f7294e19184c78d256a04bae8ccfff459871eb14/virtualization/windowscontainers/management/container_networking.md)
