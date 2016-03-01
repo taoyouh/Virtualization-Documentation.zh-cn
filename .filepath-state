@@ -403,6 +403,9 @@
   "1b45d4b9f527888a9fd808064bd61b7b2932f58f": [
     "virtualization\\windowscontainers\\reference\\powershell_overview.md"
   ],
+  "5c8977137b82b08bbd8a308dac97df307d329695": [
+    "virtualization\\windowscontainers\\reference\\ps_docker_comparison.md"
+  ],
   "27c526701142883f3875904e3085c44d893c7b3e": [
     "virtualization\\windowscontainers\\reference\\ps_docker_comparison.md"
   ],
