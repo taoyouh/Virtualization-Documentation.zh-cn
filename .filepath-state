@@ -415,6 +415,9 @@
   "e813c7c1c9a04e812f0ce51171a4ba7dd6a03bfb": [
     "virtualization\\windowscontainers\\quick_start\\manage_powershell.md"
   ],
+  "286b729fdce383753a283fa68eba5953582a6c66": [
+    "virtualization\\windowscontainers\\reference\\app_compat.md"
+  ],
   "c3244e69619fa54ad40f20c43aa4811b8a37803f": [
     "virtualization\\windowscontainers\\reference\\app_compat.md"
   ],
