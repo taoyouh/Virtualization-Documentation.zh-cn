@@ -328,6 +328,9 @@
   "e7dae01557ec7307bb24bc59aa4219c7839d73f6": [
     "virtualization\\windowscontainers\\management\\manage_data.md"
   ],
+  "2317edeb11994bdff6f012f13112a27a5779f93c": [
+    "virtualization\\windowscontainers\\management\\manage_images.md"
+  ],
   "5ec58bca4fbc5ba54bab511a4eed9eef5a20f244": [
     "virtualization\\windowscontainers\\management\\manage_images.md"
   ],
