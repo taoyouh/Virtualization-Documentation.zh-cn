@@ -8041,9 +8041,9 @@
       "HandbackException": null,
       "HandbackFailureTimes": 0,
       "UpdatedDateTime": "0001-01-01T00:00:00",
-      "ArchiveFilePath": null,
-      "ArchiveFileCommit": null,
-      "ArchiveFileDateTime": "0001-01-01T00:00:00",
+      "ArchiveFilePath": "ol-handoff\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\archive\\hyperv_on_windows.d9da0ac74ee24f28f940324928905e38e074d9e2.zh-cn.xlf",
+      "ArchiveFileCommit": "f6a07d1ef1c3bed0e1c4dfd8574964cd6b65e499",
+      "ArchiveFileDateTime": "2016-03-10T08:12:34.0785401Z",
       "ArchiveException": null
     },
     "6ae7df8521332b1b6086e68ede218645a51d9431": {
@@ -8069,9 +8069,9 @@
       "HandbackException": null,
       "HandbackFailureTimes": 0,
       "UpdatedDateTime": "0001-01-01T00:00:00",
-      "ArchiveFilePath": null,
-      "ArchiveFileCommit": null,
-      "ArchiveFileDateTime": "0001-01-01T00:00:00",
+      "ArchiveFilePath": "ol-handoff\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\archive\\manage_powershell.fccfd13be3f4bd16afbe4f31a5ca5ed4e93806b7.zh-cn.xlf",
+      "ArchiveFileCommit": "f6a07d1ef1c3bed0e1c4dfd8574964cd6b65e499",
+      "ArchiveFileDateTime": "2016-03-10T08:12:34.0785401Z",
       "ArchiveException": null
     },
     "9ae0b7729c98ff8625a70e80a410bef8da1159dc": {
@@ -8097,9 +8097,9 @@
       "HandbackException": null,
       "HandbackFailureTimes": 0,
       "UpdatedDateTime": "0001-01-01T00:00:00",
-      "ArchiveFilePath": null,
-      "ArchiveFileCommit": null,
-      "ArchiveFileDateTime": "0001-01-01T00:00:00",
+      "ArchiveFilePath": "ol-handoff\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\archive\\system_requirements.579a5475e3bd1d3d3fd9d5b53488ab4ae55a4423.zh-cn.xlf",
+      "ArchiveFileCommit": "f6a07d1ef1c3bed0e1c4dfd8574964cd6b65e499",
+      "ArchiveFileDateTime": "2016-03-10T08:12:34.0785401Z",
       "ArchiveException": null
     },
     "286b729fdce383753a283fa68eba5953582a6c66": {
@@ -8125,9 +8125,9 @@
       "HandbackException": null,
       "HandbackFailureTimes": 0,
       "UpdatedDateTime": "0001-01-01T00:00:00",
-      "ArchiveFilePath": null,
-      "ArchiveFileCommit": null,
-      "ArchiveFileDateTime": "0001-01-01T00:00:00",
+      "ArchiveFilePath": "ol-handoff\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\archive\\app_compat.85ea42fd0d23543a8fad7596dfdec7699ec15654.zh-cn.xlf",
+      "ArchiveFileCommit": "f6a07d1ef1c3bed0e1c4dfd8574964cd6b65e499",
+      "ArchiveFileDateTime": "2016-03-10T08:12:34.0785401Z",
       "ArchiveException": null
     }
   }
