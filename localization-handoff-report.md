@@ -6,22 +6,22 @@
 ## File List
  Source File | Status | Details 
  ----------- | ------ | ------- 
- [virtualization\windowscontainers\about\about_overview.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/4d69a4b3fa6918a1c6cb18266342c72159ef1da7/virtualization/windowscontainers/about/about_overview.md) | OutofSyncHandedBackSuccess | [Details](#4bef4ede34814cd9e6e0445b0fc4a7675e99a526198)
+ [virtualization\windowscontainers\quick_start\azure_setup.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/2e6ddd8b9c0f52c1e11d53ab1ddc007ed53ed816/virtualization/windowscontainers/quick_start/azure_setup.md) | OutofSyncHandedBackSuccess | [Details](#85f4deddc94ea3c722d257b14472238df91d5c3e242)
 
 ## Item Details
-##### <a name='4bef4ede34814cd9e6e0445b0fc4a7675e99a526198'></a> Source: [virtualization\windowscontainers\about\about_overview.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/4d69a4b3fa6918a1c6cb18266342c72159ef1da7/virtualization/windowscontainers/about/about_overview.md)
+##### <a name='85f4deddc94ea3c722d257b14472238df91d5c3e242'></a> Source: [virtualization\windowscontainers\quick_start\azure_setup.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/2e6ddd8b9c0f52c1e11d53ab1ddc007ed53ed816/virtualization/windowscontainers/quick_start/azure_setup.md)
 * Status: OutofSyncHandedBackSuccess
 * Target File: 
-* Handoff File: [about_overview.128dd77ccb6c6a944b03f43ade40980cc30f0f48.zh-cn.xlf](https://github.com/Microsoft/Virtualization-Documentation-Private.handoff/blob/3301917d142870ed70b7fe20431f22051c7770c1/ol-handoff/Microsoft/Virtualization-Documentation-Private.zh-cn/live/about_overview.128dd77ccb6c6a944b03f43ade40980cc30f0f48.zh-cn.xlf)
-* Handoff Datetime: 2016-03-14 21:54:26
+* Handoff File: [azure_setup.efbdfa56db2e296be3a4b34d7841c826cfcc65b5.zh-cn.xlf](https://github.com/Microsoft/Virtualization-Documentation-Private.handoff/blob/e969b962b5c1ef793d7e07f1dbaa8b47b1003271/ol-handoff/Microsoft/Virtualization-Documentation-Private.zh-cn/live/azure_setup.efbdfa56db2e296be3a4b34d7841c826cfcc65b5.zh-cn.xlf)
+* Handoff Datetime: 2016-03-15 17:53:45
 * Handoff Reason: Include
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [virtualization\windowscontainers\about\about_overview.md](https://github.com/Microsoft/Virtualization-Documentation-Private.zh-cn/blob/ae7e805e2efbc8a18c140181f584a7896808db7e/virtualization/windowscontainers/about/about_overview.md)
-* Current Handback File: [about_overview.128dd77ccb6c6a944b03f43ade40980cc30f0f48.zh-cn.xlf](https://github.com/Microsoft/Virtualization-Documentation-Private.handback/blob/e0c02c05ed981048559a0f52e28f07afff1979ef/ol-handback/Microsoft/Virtualization-Documentation-Private.zh-cn/live/about_overview.128dd77ccb6c6a944b03f43ade40980cc30f0f48.zh-cn.xlf)
-* Current Handback Datetime: 2016-02-03 21:59:07
+* Current Target File: [virtualization\windowscontainers\quick_start\azure_setup.md](https://github.com/Microsoft/Virtualization-Documentation-Private.zh-cn/blob/8df87654a9a91df78fd723ff70e338cfad3b4f66/virtualization/windowscontainers/quick_start/azure_setup.md)
+* Current Handback File: [azure_setup.efbdfa56db2e296be3a4b34d7841c826cfcc65b5.zh-cn.xlf](https://github.com/Microsoft/Virtualization-Documentation-Private.handback/blob/e95af5cd0b57f42b85681438ab02cfff9071ab40/ol-handback/Microsoft/Virtualization-Documentation-Private.zh-cn/live/azure_setup.efbdfa56db2e296be3a4b34d7841c826cfcc65b5.zh-cn.xlf)
+* Current Handback Datetime: 2016-02-17 18:21:07
 * [Back to Top](#report-top)
 
 
