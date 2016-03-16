@@ -334,6 +334,9 @@
   "e7dae01557ec7307bb24bc59aa4219c7839d73f6": [
     "virtualization\\windowscontainers\\management\\manage_data.md"
   ],
+  "b39cec275e2c406b5f184078915bfb02640a22ee": [
+    "virtualization\\windowscontainers\\management\\manage_images.md"
+  ],
   "2317edeb11994bdff6f012f13112a27a5779f93c": [
     "virtualization\\windowscontainers\\management\\manage_images.md"
   ],
@@ -381,6 +384,9 @@
   ],
   "ac6168b0f3d4e8b2044dd10d1dba101e2290f1d8": [
     "virtualization\\windowscontainers\\quick_start\\media\\newazure7.png"
+  ],
+  "8303980ee5b2e51ab749a5f67980c528de7aba88": [
+    "virtualization\\windowscontainers\\quick_start\\container_setup.md"
   ],
   "e88551f43a762b597beeee854874758c0b09a1b9": [
     "virtualization\\windowscontainers\\quick_start\\container_setup.md"
@@ -507,6 +513,9 @@
   ],
   "aa26c5fc60bcdfd7cd521799700e2f6eea48eb17": [
     "virtualization\\windowscontainers\\Nano_EULA.md"
+  ],
+  "3ae90098101df784633a40ac99aa5fcdd612aa5f": [
+    "virtualization\\windowscontainers\\deployment\\deployment_nano.md"
   ],
   "eb44caab9e5fff79f1675e2be907b6a22b94383e": [
     "virtualization\\windowscontainers\\deployment\\deployment_nano.md"
