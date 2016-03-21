@@ -11,6 +11,9 @@
   "bf7c9a1b7e544d684898d97e3a260f8d89586e66": [
     "virtualization\\hyperv_on_windows\\about\\whats_new.md"
   ],
+  "745c4494d6fefca50c98b4e4c70b601e98b4cc00": [
+    "virtualization\\hyperv_on_windows\\develop\\make_mgmt_service.md"
+  ],
   "05291add7b58a9b2457475f3eb333db40081e876": [
     "virtualization\\hyperv_on_windows\\develop\\make_mgmt_service.md"
   ],
@@ -181,6 +184,9 @@
   ],
   "2569e28280c6fd85a0df7ad483ae127e4a6c50eb": [
     "virtualization\\hyperv_on_windows\\user_guide\\vmsession.md"
+  ],
+  "ec5ba8f5a387b27405564ad240b53188154f9dfe": [
+    "virtualization\\hyperv_on_windows\\windows_welcome.md"
   ],
   "55e6b7d576cdaa06773b63556435753e1d191803": [
     "virtualization\\hyperv_on_windows\\windows_welcome.md"
