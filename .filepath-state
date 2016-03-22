@@ -11,6 +11,9 @@
   "bf7c9a1b7e544d684898d97e3a260f8d89586e66": [
     "virtualization\\hyperv_on_windows\\about\\whats_new.md"
   ],
+  "9c5aa1998bba388ec2368d8b279fc9b8282cb5be": [
+    "virtualization\\hyperv_on_windows\\develop\\make_mgmt_service.md"
+  ],
   "745c4494d6fefca50c98b4e4c70b601e98b4cc00": [
     "virtualization\\hyperv_on_windows\\develop\\make_mgmt_service.md"
   ],
@@ -561,5 +564,8 @@
   ],
   "b15ccba01980b43ffb3f9554ebd2375433d3623d": [
     "virtualization\\hyperv_on_windows\\develop\\tlfs.md"
+  ],
+  "224b91fc286f31a5c23fe3d7c9d36b178f6b04c3": [
+    "virtualization\\hyperv_on_windows\\develop\\media\\flightingSDK.png"
   ]
 }
