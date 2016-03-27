@@ -343,6 +343,9 @@
   "e7dae01557ec7307bb24bc59aa4219c7839d73f6": [
     "virtualization\\windowscontainers\\management\\manage_data.md"
   ],
+  "e2cb45c4a61bf49851d81fe468acb99d007eb6fa": [
+    "virtualization\\windowscontainers\\management\\manage_images.md"
+  ],
   "8a912700e8e977488658af6b7fdc481b1360265f": [
     "virtualization\\windowscontainers\\management\\manage_images.md"
   ],
@@ -418,6 +421,9 @@
   "1b3d4380e967835c75b30bf694a619886c12b335": [
     "virtualization\\windowscontainers\\quick_start\\inplace_setup.md"
   ],
+  "687d3b8f31d0822cd1723b2a9aa7d84d167d7638": [
+    "virtualization\\windowscontainers\\quick_start\\manage_docker.md"
+  ],
   "b9abc49c84b118a2fbcbb5f33ef263c13024eeac": [
     "virtualization\\windowscontainers\\quick_start\\manage_docker.md"
   ],
@@ -471,6 +477,9 @@
   ],
   "7b5d0f445fe0bfa4a7403661ccc72074e4d84460": [
     "virtualization\\windowscontainers\\reference\\ps_docker_comparison.md"
+  ],
+  "1bc6dc606e5c1c89b1b7a51c247bd641555545ef": [
+    "virtualization\\windowscontainers\\TOC.md"
   ],
   "5cf886a8a3bf4b3acd7c43002d0e1e8286c82971": [
     "virtualization\\windowscontainers\\TOC.md"
