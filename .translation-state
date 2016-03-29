@@ -8787,9 +8787,9 @@
       "HandbackException": null,
       "HandbackFailureTimes": 0,
       "UpdatedDateTime": "0001-01-01T00:00:00",
-      "ArchiveFilePath": null,
-      "ArchiveFileCommit": null,
-      "ArchiveFileDateTime": "0001-01-01T00:00:00",
+      "ArchiveFilePath": "ol-handoff\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\archive\\windows_welcome.5cc1a907523a3cc51d983b8dc14732d35513e54e.zh-cn.xlf",
+      "ArchiveFileCommit": "9d694f28d43633a304eb84ede6d0de6a1bcc21f2",
+      "ArchiveFileDateTime": "2016-03-29T00:01:45.0876133Z",
       "ArchiveException": null
     },
     "9c5aa1998bba388ec2368d8b279fc9b8282cb5be": {
@@ -8816,9 +8816,9 @@
       "HandbackException": null,
       "HandbackFailureTimes": 0,
       "UpdatedDateTime": "0001-01-01T00:00:00",
-      "ArchiveFilePath": null,
-      "ArchiveFileCommit": null,
-      "ArchiveFileDateTime": "0001-01-01T00:00:00",
+      "ArchiveFilePath": "ol-handoff\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\archive\\make_mgmt_service.f08a72226cda804bf52172777630838cf58daa2b.zh-cn.xlf",
+      "ArchiveFileCommit": "9d694f28d43633a304eb84ede6d0de6a1bcc21f2",
+      "ArchiveFileDateTime": "2016-03-29T00:01:45.0876133Z",
       "ArchiveException": null
     },
     "224b91fc286f31a5c23fe3d7c9d36b178f6b04c3": {
