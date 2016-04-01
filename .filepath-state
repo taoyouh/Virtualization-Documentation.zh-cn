@@ -11,6 +11,9 @@
   "bf7c9a1b7e544d684898d97e3a260f8d89586e66": [
     "virtualization\\hyperv_on_windows\\about\\whats_new.md"
   ],
+  "90d44fb267e701f0238afbbb473073d159eb33a5": [
+    "virtualization\\hyperv_on_windows\\develop\\make_mgmt_service.md"
+  ],
   "ed006e592bfabb237a07c51902680b8b094732f9": [
     "virtualization\\hyperv_on_windows\\develop\\make_mgmt_service.md"
   ],
