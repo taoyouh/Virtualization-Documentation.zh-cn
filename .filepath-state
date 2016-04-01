@@ -583,6 +583,9 @@
   "224b91fc286f31a5c23fe3d7c9d36b178f6b04c3": [
     "virtualization\\hyperv_on_windows\\develop\\media\\flightingSDK.png"
   ],
+  "edccce965df9c3f492299012cfbfe7319e985a23": [
+    "virtualization\\windowscontainers\\management\\docker-powershell.md"
+  ],
   "57dad6d7e391f9708f243465d10dca1ef021a9af": [
     "virtualization\\windowscontainers\\management\\docker-powershell.md"
   ]

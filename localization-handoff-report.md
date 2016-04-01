@@ -6,14 +6,14 @@
 ## File List
  Source File | Status | Details 
  ----------- | ------ | ------- 
- [virtualization\windowscontainers\management\docker-powershell.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/42042603af3f3d5a71de6043225a4fda1290a0a9/virtualization/windowscontainers/management/docker-powershell.md) | HandedOffSuccess | [Details](#57dad6d7e391f9708f243465d10dca1ef021a9af225)
+ [virtualization\windowscontainers\management\docker-powershell.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/8242f54acd8d8f9c8447cb2d8a4a8bf033cc5a4b/virtualization/windowscontainers/management/docker-powershell.md) | HandedOffSuccess | [Details](#edccce965df9c3f492299012cfbfe7319e985a23225)
 
 ## Item Details
-##### <a name='57dad6d7e391f9708f243465d10dca1ef021a9af225'></a> Source: [virtualization\windowscontainers\management\docker-powershell.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/42042603af3f3d5a71de6043225a4fda1290a0a9/virtualization/windowscontainers/management/docker-powershell.md)
+##### <a name='edccce965df9c3f492299012cfbfe7319e985a23225'></a> Source: [virtualization\windowscontainers\management\docker-powershell.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/8242f54acd8d8f9c8447cb2d8a4a8bf033cc5a4b/virtualization/windowscontainers/management/docker-powershell.md)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [docker-powershell.b8c99396eda5392c8607d68151efd8b4c3a9cbba.zh-cn.xlf](https://github.com/Microsoft/Virtualization-Documentation-Private.handoff/blob/06e6761faf0bfdfb743c898b73a651ea4f89117a/ol-handoff/Microsoft/Virtualization-Documentation-Private.zh-cn/live/docker-powershell.b8c99396eda5392c8607d68151efd8b4c3a9cbba.zh-cn.xlf)
-* Handoff Datetime: 2016-04-01 04:19:20
+* Handoff File: [docker-powershell.b8c99396eda5392c8607d68151efd8b4c3a9cbba.zh-cn.xlf](https://github.com/Microsoft/Virtualization-Documentation-Private.handoff/blob/58f745f175c78cd8d78a34378eb2ff02097ea9b7/ol-handoff/Microsoft/Virtualization-Documentation-Private.zh-cn/live/docker-powershell.b8c99396eda5392c8607d68151efd8b4c3a9cbba.zh-cn.xlf)
+* Handoff Datetime: 2016-04-01 05:49:08
 * Handoff Reason: Include
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
