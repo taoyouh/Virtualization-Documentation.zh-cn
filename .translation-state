@@ -1,5 +1,5 @@
 {
-  "LastProcessedCommit": "8242f54acd8d8f9c8447cb2d8a4a8bf033cc5a4b",
+  "LastProcessedCommit": "4702a00b81676fd8b48fcf2bcae98b7d014d2a26",
   "LastTranslatedCommit": "a501bae73e0ed144e56ed0ca08c0aeced826ae29",
   "Items": {
     "5090f6d60b5cbdce0990242d795d9e4e3736e791": {
@@ -9039,6 +9039,35 @@
       "HandoffFilePath": "ol-handoff\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\docker-powershell.b8c99396eda5392c8607d68151efd8b4c3a9cbba.zh-cn.xlf",
       "HandoffFileCommit": "58f745f175c78cd8d78a34378eb2ff02097ea9b7",
       "HandoffDateTime": "2016-04-01T05:49:08.5670629Z",
+      "HandoffPriority": "",
+      "HandoffException": null,
+      "HandoffFailureTimes": 0,
+      "TargetFileCommit": null,
+      "TargetFilePath": null,
+      "HandbackFilePath": null,
+      "HandbackFileCommit": null,
+      "HandbackDateTime": "0001-01-01T00:00:00",
+      "HandbackException": null,
+      "HandbackFailureTimes": 0,
+      "UpdatedDateTime": "0001-01-01T00:00:00",
+      "ArchiveFilePath": null,
+      "ArchiveFileCommit": null,
+      "ArchiveFileDateTime": "0001-01-01T00:00:00",
+      "ArchiveException": null
+    },
+    "728b5360b934220b0e78d8359f82b30c6adb7ad0": {
+      "FileHash": "728b5360b934220b0e78d8359f82b30c6adb7ad0",
+      "SourceFileCommit": "4702a00b81676fd8b48fcf2bcae98b7d014d2a26",
+      "SourceFilePath": "virtualization\\windowscontainers\\management\\docker-powershell.md",
+      "HandoffReason": 1,
+      "DependencyFrom": null,
+      "TokenReference": null,
+      "FilePathList": [
+        "virtualization\\windowscontainers\\management\\docker-powershell.md"
+      ],
+      "HandoffFilePath": "ol-handoff\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\docker-powershell.b8c99396eda5392c8607d68151efd8b4c3a9cbba.zh-cn.xlf",
+      "HandoffFileCommit": "535be6b88e6f80acfc7bfecbcfee1c40810977d2",
+      "HandoffDateTime": "2016-04-01T16:18:53.3610227Z",
       "HandoffPriority": "",
       "HandoffException": null,
       "HandoffFailureTimes": 0,
