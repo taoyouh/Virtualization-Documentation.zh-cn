@@ -164,6 +164,9 @@
   "23b750c6cfe2679bdb5dd72285939f46e9141af4": [
     "virtualization\\hyperv_on_windows\\user_guide\\media\\HVNesting.png"
   ],
+  "0ecd65702bc12ec59ae9556d8971352272070dbd": [
+    "virtualization\\hyperv_on_windows\\user_guide\\remote_host_management.md"
+  ],
   "8101d43c62dfbadc864f33d851bca9800888cdcc": [
     "virtualization\\hyperv_on_windows\\user_guide\\remote_host_management.md"
   ],

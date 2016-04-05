@@ -1,5 +1,5 @@
 {
-  "LastProcessedCommit": "cfa339605ed9a5f7cd733092c56270deeab2e940",
+  "LastProcessedCommit": "8899794e0406ced781092ec90c266fc981a69ce3",
   "LastTranslatedCommit": "a501bae73e0ed144e56ed0ca08c0aeced826ae29",
   "Items": {
     "5090f6d60b5cbdce0990242d795d9e4e3736e791": {
@@ -9100,6 +9100,43 @@
       "HandoffPriority": "",
       "HandoffException": null,
       "HandoffFailureTimes": 0,
+      "TargetFileCommit": null,
+      "TargetFilePath": null,
+      "HandbackFilePath": null,
+      "HandbackFileCommit": null,
+      "HandbackDateTime": "0001-01-01T00:00:00",
+      "HandbackException": null,
+      "HandbackFailureTimes": 0,
+      "UpdatedDateTime": "0001-01-01T00:00:00",
+      "ArchiveFilePath": null,
+      "ArchiveFileCommit": null,
+      "ArchiveFileDateTime": "0001-01-01T00:00:00",
+      "ArchiveException": null
+    },
+    "0ecd65702bc12ec59ae9556d8971352272070dbd": {
+      "FileHash": "0ecd65702bc12ec59ae9556d8971352272070dbd",
+      "SourceFileCommit": "8899794e0406ced781092ec90c266fc981a69ce3",
+      "SourceFilePath": "virtualization\\hyperv_on_windows\\user_guide\\remote_host_management.md",
+      "HandoffReason": 1,
+      "DependencyFrom": null,
+      "TokenReference": null,
+      "FilePathList": [
+        "virtualization\\hyperv_on_windows\\user_guide\\remote_host_management.md"
+      ],
+      "HandoffFilePath": null,
+      "HandoffFileCommit": null,
+      "HandoffDateTime": "2016-04-05T21:05:16.0489739Z",
+      "HandoffPriority": "",
+      "HandoffException": {
+        "internal_error_code": "handoff_transform_failed",
+        "internal_error_message": "Handoff source file: virtualization\\hyperv_on_windows\\user_guide\\remote_host_management.md transformed failed.",
+        "internal_error_retriable": false,
+        "exception_message": "Value cannot be null.\r\nParameter name: srcLocale",
+        "exception_type": "System.ArgumentNullException",
+        "stack_trace": "   at Microsoft.OpenLocalization.Guard.ArgumentNotNullOrEmpty(String argumentValue, String argumentName)\r\n   at Microsoft.OpenLocalization.Transformer.MarkdownTransformer.MarkdownToXliffCore(Stream markdownStream, Stream xliffStream, Stream sklStream, String contentClass, String srcLocale, String targetLocale)\r\n   at Microsoft.OpenLocalization.Transformer.XliffTransformerExtensions.MarkdownToXliff(IMarkdownTransformer markdownTransformer, Stream sourceStream, Stream xliffStream, Stream skeletonStream, String contentClass, String srcLocale, String targetLocale, String xliffVersion)\r\n   at Microsoft.OpenLocalization.Transformer.XliffTransformerExtensions.MarkdownToXliff(IMarkdownTransformer markdownTransformer, String markdownFile, String xliffFile, String skeletonFile, String srcLocale, String targetLocale, String xliffVersion)\r\n   at Microsoft.OpenLocalization.Helper.XliffTransformUtil.MarkdownToXliff(String mdfile, String xliffFile, String skeletonFile, String sourceLocale, String targetLocale, String xliffVersion, Boolean useJavascriptTransformer) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Helper\\XliffTransformUtil.cs:line 28\r\n   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass10_1.<GetHandoffFiles>b__1(Tuple`3 handoff) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 376",
+        "extended_information": null
+      },
+      "HandoffFailureTimes": 1,
       "TargetFileCommit": null,
       "TargetFilePath": null,
       "HandbackFilePath": null,
