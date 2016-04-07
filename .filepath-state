@@ -35,6 +35,9 @@
   "5a46028faa5e86b84806c030c956f71465edcfc9": [
     "virtualization\\hyperv_on_windows\\develop\\powershell_snippets.md"
   ],
+  "eff2133b5970f1c04145fc472e357b27094fb167": [
+    "virtualization\\hyperv_on_windows\\quick_start\\walkthrough.md"
+  ],
   "2b84c3d3efe43330cac6f8dd759ada08eaf219b6": [
     "virtualization\\hyperv_on_windows\\quick_start\\walkthrough.md"
   ],
@@ -52,6 +55,9 @@
   ],
   "5dbb953b1b4dbaf1291bfa0a590c49b539c54cb7": [
     "virtualization\\hyperv_on_windows\\user_guide\\media\\production_Checkpoin_upd.png"
+  ],
+  "12695afc9ce6e98c62405bf520ac3723d10ccfbc": [
+    "virtualization\\hyperv_on_windows\\quick_start\\walkthrough_compatibility.md"
   ],
   "bd625e252f0ebbe92252efe16f17066acfebf156": [
     "virtualization\\hyperv_on_windows\\quick_start\\walkthrough_compatibility.md"
@@ -163,6 +169,9 @@
   ],
   "23b750c6cfe2679bdb5dd72285939f46e9141af4": [
     "virtualization\\hyperv_on_windows\\user_guide\\media\\HVNesting.png"
+  ],
+  "710de79fd1d511a029c76d169ee6057135986509": [
+    "virtualization\\hyperv_on_windows\\user_guide\\remote_host_management.md"
   ],
   "0ecd65702bc12ec59ae9556d8971352272070dbd": [
     "virtualization\\hyperv_on_windows\\user_guide\\remote_host_management.md"
