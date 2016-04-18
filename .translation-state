@@ -1,5 +1,5 @@
 {
-  "LastProcessedCommit": "d8f971add824fb602b5aaf733c76c59a02d42220",
+  "LastProcessedCommit": "e23254e325f6ee14d8023a1297bdfc0bec60e811",
   "LastTranslatedCommit": "bc47864182bc3c149e8119e57478d87728af2182",
   "Items": {
     "5090f6d60b5cbdce0990242d795d9e4e3736e791": {
@@ -91,7 +91,7 @@
     },
     "1741b59667074192e6da0da57eb30cf23e644bcd": {
       "FileHash": "1741b59667074192e6da0da57eb30cf23e644bcd",
-      "SourceFileCommit": "beb2ff361edf5d86391458d4e37c8cef9fc6d1ae",
+      "SourceFileCommit": "7583a19cc427770da750f0fd3efcbd6512200340",
       "SourceFilePath": "virtualization\\hyperv_on_windows\\about\\supported_guest_os.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
@@ -120,7 +120,7 @@
     },
     "bf7c9a1b7e544d684898d97e3a260f8d89586e66": {
       "FileHash": "bf7c9a1b7e544d684898d97e3a260f8d89586e66",
-      "SourceFileCommit": "beb2ff361edf5d86391458d4e37c8cef9fc6d1ae",
+      "SourceFileCommit": "7583a19cc427770da750f0fd3efcbd6512200340",
       "SourceFilePath": "virtualization\\hyperv_on_windows\\about\\whats_new.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
@@ -265,8 +265,8 @@
     },
     "7746c4675bfca7f94a2145e6b08059a99ea6b2c5": {
       "FileHash": "7746c4675bfca7f94a2145e6b08059a99ea6b2c5",
-      "SourceFileCommit": "beb2ff361edf5d86391458d4e37c8cef9fc6d1ae",
-      "SourceFilePath": "virtualization\\hyperv_on_windows\\quick_start\\media\\checkpoint_upd.png",
+      "SourceFileCommit": "3b424e20a02876bc3b7209a4d639c2460bf88995",
+      "SourceFilePath": "virtualization\\hyperv_on_windows\\user_guide\\media\\checkpoint_upd.png",
       "HandoffReason": 2,
       "DependencyFrom": [
         "virtualization\\hyperv_on_windows\\quick_start\\walkthrough_checkpoints.md",
@@ -298,8 +298,8 @@
     },
     "3436e8146018e5a07a847a00dc72d134d19506a1": {
       "FileHash": "3436e8146018e5a07a847a00dc72d134d19506a1",
-      "SourceFileCommit": "beb2ff361edf5d86391458d4e37c8cef9fc6d1ae",
-      "SourceFilePath": "virtualization\\hyperv_on_windows\\quick_start\\media\\std_checkpoint_upd.png",
+      "SourceFileCommit": "78f5cb78bdd2bf1ae8cf99094e25a8deb452c1cd",
+      "SourceFilePath": "virtualization\\hyperv_on_windows\\user_guide\\media\\std_checkpoint_upd.png",
       "HandoffReason": 2,
       "DependencyFrom": [
         "virtualization\\hyperv_on_windows\\quick_start\\walkthrough_checkpoints.md",
@@ -331,8 +331,8 @@
     },
     "1808dbf613804162cbe255a058de2d5cc4f9f794": {
       "FileHash": "1808dbf613804162cbe255a058de2d5cc4f9f794",
-      "SourceFileCommit": "beb2ff361edf5d86391458d4e37c8cef9fc6d1ae",
-      "SourceFilePath": "virtualization\\hyperv_on_windows\\quick_start\\media\\apply_standard_upd.png",
+      "SourceFileCommit": "78f5cb78bdd2bf1ae8cf99094e25a8deb452c1cd",
+      "SourceFilePath": "virtualization\\hyperv_on_windows\\user_guide\\media\\apply_standard_upd.png",
       "HandoffReason": 2,
       "DependencyFrom": [
         "virtualization\\hyperv_on_windows\\quick_start\\walkthrough_checkpoints.md",
@@ -364,8 +364,8 @@
     },
     "5dbb953b1b4dbaf1291bfa0a590c49b539c54cb7": {
       "FileHash": "5dbb953b1b4dbaf1291bfa0a590c49b539c54cb7",
-      "SourceFileCommit": "beb2ff361edf5d86391458d4e37c8cef9fc6d1ae",
-      "SourceFilePath": "virtualization\\hyperv_on_windows\\quick_start\\media\\production_Checkpoin_upd.png",
+      "SourceFileCommit": "78f5cb78bdd2bf1ae8cf99094e25a8deb452c1cd",
+      "SourceFilePath": "virtualization\\hyperv_on_windows\\user_guide\\media\\production_Checkpoin_upd.png",
       "HandoffReason": 2,
       "DependencyFrom": [
         "virtualization\\hyperv_on_windows\\quick_start\\walkthrough_checkpoints.md",
@@ -426,7 +426,7 @@
     },
     "c830f164a513bd6125dc1a30f7cf1990e1c9470a": {
       "FileHash": "c830f164a513bd6125dc1a30f7cf1990e1c9470a",
-      "SourceFileCommit": "beb2ff361edf5d86391458d4e37c8cef9fc6d1ae",
+      "SourceFileCommit": "8e8278037051f03756d99948b5f78af54f7a09f3",
       "SourceFilePath": "virtualization\\hyperv_on_windows\\quick_start\\media\\SystemInfo_upd.png",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -486,7 +486,7 @@
     },
     "b638099bf81d9a6f9d3c31f83364d60032084c48": {
       "FileHash": "b638099bf81d9a6f9d3c31f83364d60032084c48",
-      "SourceFileCommit": "beb2ff361edf5d86391458d4e37c8cef9fc6d1ae",
+      "SourceFileCommit": "0cabed24e63c951bd80e77483886bdc5e10966f4",
       "SourceFilePath": "virtualization\\hyperv_on_windows\\quick_start\\media\\new_vm_upd.png",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -517,7 +517,7 @@
     },
     "686bd084704a7ab40ec034df3ae822a114b24b21": {
       "FileHash": "686bd084704a7ab40ec034df3ae822a114b24b21",
-      "SourceFileCommit": "beb2ff361edf5d86391458d4e37c8cef9fc6d1ae",
+      "SourceFileCommit": "0cabed24e63c951bd80e77483886bdc5e10966f4",
       "SourceFilePath": "virtualization\\hyperv_on_windows\\quick_start\\media\\new_vhd_upd.png",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -548,7 +548,7 @@
     },
     "d386c086a47d50518b256b7f1967d65d2004887e": {
       "FileHash": "d386c086a47d50518b256b7f1967d65d2004887e",
-      "SourceFileCommit": "beb2ff361edf5d86391458d4e37c8cef9fc6d1ae",
+      "SourceFileCommit": "2d1b23de689d5af3e1b806b9272ff14f11e6c20a",
       "SourceFilePath": "virtualization\\hyperv_on_windows\\quick_start\\media\\OSDeploy_upd.png",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -637,7 +637,7 @@
     },
     "1323985a77d40a39f3191207c703e3b426a55795": {
       "FileHash": "1323985a77d40a39f3191207c703e3b426a55795",
-      "SourceFileCommit": "beb2ff361edf5d86391458d4e37c8cef9fc6d1ae",
+      "SourceFileCommit": "e7ff2c884993be9ee02f8b60974f9faa7f193c79",
       "SourceFilePath": "virtualization\\hyperv_on_windows\\quick_start\\media\\enable_role_upd.png",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -668,7 +668,7 @@
     },
     "14f7db98c0da674b247f404a300b05fdff35f12d": {
       "FileHash": "14f7db98c0da674b247f404a300b05fdff35f12d",
-      "SourceFileCommit": "beb2ff361edf5d86391458d4e37c8cef9fc6d1ae",
+      "SourceFileCommit": "e7ff2c884993be9ee02f8b60974f9faa7f193c79",
       "SourceFilePath": "virtualization\\hyperv_on_windows\\quick_start\\media\\restart_upd.png",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -699,7 +699,7 @@
     },
     "a303041e7915293e2affe84599cab647d43119a8": {
       "FileHash": "a303041e7915293e2affe84599cab647d43119a8",
-      "SourceFileCommit": "beb2ff361edf5d86391458d4e37c8cef9fc6d1ae",
+      "SourceFileCommit": "87244905a359766bf4c058efc88805e55725b552",
       "SourceFilePath": "virtualization\\hyperv_on_windows\\quick_start\\media\\dism_upd.png",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -759,7 +759,7 @@
     },
     "44a0686f5ce5d1544b8a61bcad0a06eb1e1ce9d4": {
       "FileHash": "44a0686f5ce5d1544b8a61bcad0a06eb1e1ce9d4",
-      "SourceFileCommit": "beb2ff361edf5d86391458d4e37c8cef9fc6d1ae",
+      "SourceFileCommit": "9bb8a189705dca3a9dab6b9facea345998146bfa",
       "SourceFilePath": "virtualization\\hyperv_on_windows\\quick_start\\media\\command_grid.png",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -790,7 +790,7 @@
     },
     "9d753332489389765c1ea1cfa1737126a201644c": {
       "FileHash": "9d753332489389765c1ea1cfa1737126a201644c",
-      "SourceFileCommit": "beb2ff361edf5d86391458d4e37c8cef9fc6d1ae",
+      "SourceFileCommit": "ae56645c324da892ab95b66053c68c16344236a3",
       "SourceFilePath": "virtualization\\hyperv_on_windows\\quick_start\\media\\get_help.png",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -821,7 +821,7 @@
     },
     "579a5b151617e20cfb4e116a6f365a96dbaa9c4a": {
       "FileHash": "579a5b151617e20cfb4e116a6f365a96dbaa9c4a",
-      "SourceFileCommit": "beb2ff361edf5d86391458d4e37c8cef9fc6d1ae",
+      "SourceFileCommit": "a14e76f6c4c5d5eb50567887f83366bd9cd7e3be",
       "SourceFilePath": "virtualization\\hyperv_on_windows\\quick_start\\media\\get_vm.png",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -852,7 +852,7 @@
     },
     "5fdfacccc393533a78cd34c17ceab37b50634569": {
       "FileHash": "5fdfacccc393533a78cd34c17ceab37b50634569",
-      "SourceFileCommit": "beb2ff361edf5d86391458d4e37c8cef9fc6d1ae",
+      "SourceFileCommit": "6f6cf5d83bcd3d7778fdb9dc1c0f99e010b9fc29",
       "SourceFilePath": "virtualization\\hyperv_on_windows\\quick_start\\walkthrough_virtual_switch.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
@@ -881,7 +881,7 @@
     },
     "d71d2800e3c9442a264de165813142157420b5f6": {
       "FileHash": "d71d2800e3c9442a264de165813142157420b5f6",
-      "SourceFileCommit": "beb2ff361edf5d86391458d4e37c8cef9fc6d1ae",
+      "SourceFileCommit": "0cabed24e63c951bd80e77483886bdc5e10966f4",
       "SourceFilePath": "virtualization\\hyperv_on_windows\\quick_start\\media\\newSwitch_upd.png",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -912,7 +912,7 @@
     },
     "dc04e26b6b30d2de9b6d25fc96eb5ff248a877e0": {
       "FileHash": "dc04e26b6b30d2de9b6d25fc96eb5ff248a877e0",
-      "SourceFileCommit": "beb2ff361edf5d86391458d4e37c8cef9fc6d1ae",
+      "SourceFileCommit": "2d1b23de689d5af3e1b806b9272ff14f11e6c20a",
       "SourceFilePath": "virtualization\\hyperv_on_windows\\quick_start\\media\\pen_changes_upd.png",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -1059,7 +1059,7 @@
     },
     "cfd2050910aa411e608428c9f4ae570de2924123": {
       "FileHash": "cfd2050910aa411e608428c9f4ae570de2924123",
-      "SourceFileCommit": "beb2ff361edf5d86391458d4e37c8cef9fc6d1ae",
+      "SourceFileCommit": "73aa4cb10e16fb42450640ee89f083e6e0b80eb7",
       "SourceFilePath": "virtualization\\hyperv_on_windows\\user_guide\\media\\HyperVManager-OpenVMSettings.png",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -1090,7 +1090,7 @@
     },
     "ef17e0a041c2a650fcfbac112f3bf1ef2074bbaa": {
       "FileHash": "ef17e0a041c2a650fcfbac112f3bf1ef2074bbaa",
-      "SourceFileCommit": "beb2ff361edf5d86391458d4e37c8cef9fc6d1ae",
+      "SourceFileCommit": "f97ba75c5176510e6aff92b624b904ad48c65a02",
       "SourceFilePath": "virtualization\\hyperv_on_windows\\user_guide\\media\\HyperVManager-IntegrationServices.png",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -1121,7 +1121,7 @@
     },
     "6f661c5f2ae8b9ec3f4817eb32f3e966daf0649b": {
       "FileHash": "6f661c5f2ae8b9ec3f4817eb32f3e966daf0649b",
-      "SourceFileCommit": "beb2ff361edf5d86391458d4e37c8cef9fc6d1ae",
+      "SourceFileCommit": "f97ba75c5176510e6aff92b624b904ad48c65a02",
       "SourceFilePath": "virtualization\\hyperv_on_windows\\user_guide\\media\\HVServices.png",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -1152,7 +1152,7 @@
     },
     "8fc87aee6cbc6ad9af401a7d555ef2b7656ede53": {
       "FileHash": "8fc87aee6cbc6ad9af401a7d555ef2b7656ede53",
-      "SourceFileCommit": "beb2ff361edf5d86391458d4e37c8cef9fc6d1ae",
+      "SourceFileCommit": "6170c91b5812f8c8c0ee313541a11c21a6e5ae46",
       "SourceFilePath": "virtualization\\hyperv_on_windows\\user_guide\\migrating_vms.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
@@ -1181,7 +1181,7 @@
     },
     "a259ef1a8cd12f803b67d9988d53fbe0340c130d": {
       "FileHash": "a259ef1a8cd12f803b67d9988d53fbe0340c130d",
-      "SourceFileCommit": "beb2ff361edf5d86391458d4e37c8cef9fc6d1ae",
+      "SourceFileCommit": "6170c91b5812f8c8c0ee313541a11c21a6e5ae46",
       "SourceFilePath": "virtualization\\hyperv_on_windows\\user_guide\\nesting.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
@@ -1210,7 +1210,7 @@
     },
     "14c4da87f2ebfd9f7b0232ebafedd2f9cad5a820": {
       "FileHash": "14c4da87f2ebfd9f7b0232ebafedd2f9cad5a820",
-      "SourceFileCommit": "beb2ff361edf5d86391458d4e37c8cef9fc6d1ae",
+      "SourceFileCommit": "95c1728623fefd9878b597c95d6c8b96982fa7f2",
       "SourceFilePath": "virtualization\\hyperv_on_windows\\user_guide\\media\\HyperVNesting.png",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -1241,7 +1241,7 @@
     },
     "4e050e277fbf9c5c12f0a267156827de0f17cf91": {
       "FileHash": "4e050e277fbf9c5c12f0a267156827de0f17cf91",
-      "SourceFileCommit": "beb2ff361edf5d86391458d4e37c8cef9fc6d1ae",
+      "SourceFileCommit": "95c1728623fefd9878b597c95d6c8b96982fa7f2",
       "SourceFilePath": "virtualization\\hyperv_on_windows\\user_guide\\media\\HVNoNesting.png",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -1272,7 +1272,7 @@
     },
     "23b750c6cfe2679bdb5dd72285939f46e9141af4": {
       "FileHash": "23b750c6cfe2679bdb5dd72285939f46e9141af4",
-      "SourceFileCommit": "beb2ff361edf5d86391458d4e37c8cef9fc6d1ae",
+      "SourceFileCommit": "41787ff5de230b2494e520ec7fbf54771a3d4786",
       "SourceFilePath": "virtualization\\hyperv_on_windows\\user_guide\\media\\HVNesting.png",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -1332,7 +1332,7 @@
     },
     "5f21c845594a8663b7458e86c121563d3b199e4d": {
       "FileHash": "5f21c845594a8663b7458e86c121563d3b199e4d",
-      "SourceFileCommit": "beb2ff361edf5d86391458d4e37c8cef9fc6d1ae",
+      "SourceFileCommit": "e4e43ad270d764b96e12133f42ac1cd5629b9ec3",
       "SourceFilePath": "virtualization\\hyperv_on_windows\\user_guide\\media\\HyperVManager-ConnectToHost.png",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -1363,7 +1363,7 @@
     },
     "480f125229e908bd46da36baea6c1628b3b10fb3": {
       "FileHash": "480f125229e908bd46da36baea6c1628b3b10fb3",
-      "SourceFileCommit": "beb2ff361edf5d86391458d4e37c8cef9fc6d1ae",
+      "SourceFileCommit": "48cc0cb00d31d4de91e3892ae31b61465de140f8",
       "SourceFilePath": "virtualization\\hyperv_on_windows\\user_guide\\media\\HyperVManager-ConnectToLocalHost.png",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -1394,7 +1394,7 @@
     },
     "09140851fb0b7b0d268a1beda2d6423fe3c24e1a": {
       "FileHash": "09140851fb0b7b0d268a1beda2d6423fe3c24e1a",
-      "SourceFileCommit": "beb2ff361edf5d86391458d4e37c8cef9fc6d1ae",
+      "SourceFileCommit": "313d16b31bf96e701af2d4c3e2d47c8a1ab6aa37",
       "SourceFilePath": "virtualization\\hyperv_on_windows\\user_guide\\media\\HyperVManager-ConnectToRemoteHost.png",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -1425,7 +1425,7 @@
     },
     "b1547cd8ba6a8ff669e679d64b79773d3878beea": {
       "FileHash": "b1547cd8ba6a8ff669e679d64b79773d3878beea",
-      "SourceFileCommit": "beb2ff361edf5d86391458d4e37c8cef9fc6d1ae",
+      "SourceFileCommit": "79aa10206f5c617b4a2be72115cc962cc9a7bb03",
       "SourceFilePath": "virtualization\\hyperv_on_windows\\user_guide\\media\\HyperVManager-ConnectToRemoteHostAltCreds.png",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -1456,7 +1456,7 @@
     },
     "033950f25a30f7bccb308c22d6fa96b166d7ed01": {
       "FileHash": "033950f25a30f7bccb308c22d6fa96b166d7ed01",
-      "SourceFileCommit": "beb2ff361edf5d86391458d4e37c8cef9fc6d1ae",
+      "SourceFileCommit": "eaf6a06ccb0ffdf77e34d633985b1a84a59cdadd",
       "SourceFilePath": "virtualization\\hyperv_on_windows\\user_guide\\troubleshooting.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
@@ -1485,7 +1485,7 @@
     },
     "0699418429f113abee439384e0acf7450a8610b5": {
       "FileHash": "0699418429f113abee439384e0acf7450a8610b5",
-      "SourceFileCommit": "beb2ff361edf5d86391458d4e37c8cef9fc6d1ae",
+      "SourceFileCommit": "6170c91b5812f8c8c0ee313541a11c21a6e5ae46",
       "SourceFilePath": "virtualization\\hyperv_on_windows\\user_guide\\user_guide_nav.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
@@ -1572,7 +1572,7 @@
     },
     "215adae041390b1edb10b314dc7ce21f6b39592e": {
       "FileHash": "215adae041390b1edb10b314dc7ce21f6b39592e",
-      "SourceFileCommit": "beb2ff361edf5d86391458d4e37c8cef9fc6d1ae",
+      "SourceFileCommit": "240aa916b6122cd564fdee62f723cd199db8dfe5",
       "SourceFilePath": "virtualization\\hyperv_on_windows\\media\\MeetsRequirements_65.png",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -1605,7 +1605,7 @@
     },
     "8489e1cb35de12a7cc54a8c1b29f40672eaac851": {
       "FileHash": "8489e1cb35de12a7cc54a8c1b29f40672eaac851",
-      "SourceFileCommit": "beb2ff361edf5d86391458d4e37c8cef9fc6d1ae",
+      "SourceFileCommit": "240aa916b6122cd564fdee62f723cd199db8dfe5",
       "SourceFilePath": "virtualization\\hyperv_on_windows\\media\\All_ContentTypeIcons_VisualWalkthrough_65.png",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -1636,7 +1636,7 @@
     },
     "7de8389ab2b14e0926c142bf61be560037fc2658": {
       "FileHash": "7de8389ab2b14e0926c142bf61be560037fc2658",
-      "SourceFileCommit": "beb2ff361edf5d86391458d4e37c8cef9fc6d1ae",
+      "SourceFileCommit": "240aa916b6122cd564fdee62f723cd199db8dfe5",
       "SourceFilePath": "virtualization\\hyperv_on_windows\\media\\Chat_65.png",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -1698,7 +1698,7 @@
     },
     "b62d8af1f08bc8085945c8aa154d46d2215879cb": {
       "FileHash": "b62d8af1f08bc8085945c8aa154d46d2215879cb",
-      "SourceFileCommit": "beb2ff361edf5d86391458d4e37c8cef9fc6d1ae",
+      "SourceFileCommit": "caa93f2e8248a2f8e006f299602a1ef1fa5d86e5",
       "SourceFilePath": "virtualization\\windowscontainers\\about\\media\\containerfund.png",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -1758,7 +1758,7 @@
     },
     "93ee375f9efb3462c5d1e4ba45248fe9dde58566": {
       "FileHash": "93ee375f9efb3462c5d1e4ba45248fe9dde58566",
-      "SourceFileCommit": "beb2ff361edf5d86391458d4e37c8cef9fc6d1ae",
+      "SourceFileCommit": "d238cfdfbaadc09ed9c8ebb67ec348cd9ab03e08",
       "SourceFilePath": "virtualization\\windowscontainers\\about\\media\\containerEcosystem.png",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -1965,7 +1965,7 @@
     },
     "6c179de0c9cfec25e8fa46d3c4e35062789a9c35": {
       "FileHash": "6c179de0c9cfec25e8fa46d3c4e35062789a9c35",
-      "SourceFileCommit": "beb2ff361edf5d86391458d4e37c8cef9fc6d1ae",
+      "SourceFileCommit": "76b070fd7dea610d055c6368c3fafd57f119d29b",
       "SourceFilePath": "virtualization\\windowscontainers\\deployment\\media\\nssm2.png",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -1996,7 +1996,7 @@
     },
     "a653bcff2897c8e5d5ba6475acb1187625f34a1a": {
       "FileHash": "a653bcff2897c8e5d5ba6475acb1187625f34a1a",
-      "SourceFileCommit": "beb2ff361edf5d86391458d4e37c8cef9fc6d1ae",
+      "SourceFileCommit": "76b070fd7dea610d055c6368c3fafd57f119d29b",
       "SourceFilePath": "virtualization\\windowscontainers\\deployment\\media\\nssm3.png",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -2056,7 +2056,7 @@
     },
     "f2cb1cdc1a98bf328a24610af6f7313a1071b079": {
       "FileHash": "f2cb1cdc1a98bf328a24610af6f7313a1071b079",
-      "SourceFileCommit": "beb2ff361edf5d86391458d4e37c8cef9fc6d1ae",
+      "SourceFileCommit": "4cff38fe495e9237285d2895bf3e45b99aaf5c6d",
       "SourceFilePath": "virtualization\\windowscontainers\\EULA.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
@@ -2143,7 +2143,7 @@
     },
     "08a8593c07246a17ec035e6138533034bf266f9f": {
       "FileHash": "08a8593c07246a17ec035e6138533034bf266f9f",
-      "SourceFileCommit": "beb2ff361edf5d86391458d4e37c8cef9fc6d1ae",
+      "SourceFileCommit": "099108aa9f2cec81d982b28b6c3fa4d4dc967b30",
       "SourceFilePath": "virtualization\\windowscontainers\\management\\media\\process.png",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -2319,7 +2319,7 @@
     },
     "7eaf82d3cdd0a4881f239ce4071eb262b3104dfd": {
       "FileHash": "7eaf82d3cdd0a4881f239ce4071eb262b3104dfd",
-      "SourceFileCommit": "beb2ff361edf5d86391458d4e37c8cef9fc6d1ae",
+      "SourceFileCommit": "2c54a586e7a1c7e01717fd2659aef16de5ac1dfa",
       "SourceFilePath": "virtualization\\windowscontainers\\quick_start\\media\\newazure1.png",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -2350,7 +2350,7 @@
     },
     "166030c8810a103b840a327b284e19621ef8b64a": {
       "FileHash": "166030c8810a103b840a327b284e19621ef8b64a",
-      "SourceFileCommit": "beb2ff361edf5d86391458d4e37c8cef9fc6d1ae",
+      "SourceFileCommit": "2c54a586e7a1c7e01717fd2659aef16de5ac1dfa",
       "SourceFilePath": "virtualization\\windowscontainers\\quick_start\\media\\tp41.png",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -2381,7 +2381,7 @@
     },
     "36eaa0e483cac9b07a024964cd5fb4f36ac84853": {
       "FileHash": "36eaa0e483cac9b07a024964cd5fb4f36ac84853",
-      "SourceFileCommit": "beb2ff361edf5d86391458d4e37c8cef9fc6d1ae",
+      "SourceFileCommit": "2c54a586e7a1c7e01717fd2659aef16de5ac1dfa",
       "SourceFilePath": "virtualization\\windowscontainers\\quick_start\\media\\newazure2.png",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -2412,7 +2412,7 @@
     },
     "d9d426b676ccb2dc14f35280a0163d77a696e948": {
       "FileHash": "d9d426b676ccb2dc14f35280a0163d77a696e948",
-      "SourceFileCommit": "beb2ff361edf5d86391458d4e37c8cef9fc6d1ae",
+      "SourceFileCommit": "2c54a586e7a1c7e01717fd2659aef16de5ac1dfa",
       "SourceFilePath": "virtualization\\windowscontainers\\quick_start\\media\\newazure3.png",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -2443,7 +2443,7 @@
     },
     "fccb0dc2730588ddf6851ad3189dd6dd4dc06b74": {
       "FileHash": "fccb0dc2730588ddf6851ad3189dd6dd4dc06b74",
-      "SourceFileCommit": "beb2ff361edf5d86391458d4e37c8cef9fc6d1ae",
+      "SourceFileCommit": "146be6c9f1a22ab94dd46c484d97b68eaeb614f7",
       "SourceFilePath": "virtualization\\windowscontainers\\quick_start\\media\\newazure6.png",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -2474,7 +2474,7 @@
     },
     "ac6168b0f3d4e8b2044dd10d1dba101e2290f1d8": {
       "FileHash": "ac6168b0f3d4e8b2044dd10d1dba101e2290f1d8",
-      "SourceFileCommit": "beb2ff361edf5d86391458d4e37c8cef9fc6d1ae",
+      "SourceFileCommit": "6a8c676b5d5653d486cf8c748dcc8370517ba06b",
       "SourceFilePath": "virtualization\\windowscontainers\\quick_start\\media\\newazure7.png",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -2592,7 +2592,7 @@
     },
     "05351786546d43e78bf4fe953c9dbf6bde7f1bba": {
       "FileHash": "05351786546d43e78bf4fe953c9dbf6bde7f1bba",
-      "SourceFileCommit": "beb2ff361edf5d86391458d4e37c8cef9fc6d1ae",
+      "SourceFileCommit": "f26eba5c3fcc28510835538e8bb2da98dda7cc8d",
       "SourceFilePath": "virtualization\\windowscontainers\\quick_start\\media\\iis1.png",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -2624,7 +2624,7 @@
     },
     "b3f2e35411bc72a4b95febc8f74a01e5ba78af38": {
       "FileHash": "b3f2e35411bc72a4b95febc8f74a01e5ba78af38",
-      "SourceFileCommit": "beb2ff361edf5d86391458d4e37c8cef9fc6d1ae",
+      "SourceFileCommit": "0324f75320b60d13d75630d005c5655eab9434e9",
       "SourceFilePath": "virtualization\\windowscontainers\\quick_start\\media\\HWWINServer.png",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -2656,7 +2656,7 @@
     },
     "24a79a8377a34797a7b590421167fc4e5f843e60": {
       "FileHash": "24a79a8377a34797a7b590421167fc4e5f843e60",
-      "SourceFileCommit": "beb2ff361edf5d86391458d4e37c8cef9fc6d1ae",
+      "SourceFileCommit": "2b589764b88c5ee18288777f4e57e29d52a39535",
       "SourceFilePath": "virtualization\\windowscontainers\\quick_start\\media\\dockerfile2.png",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -3095,7 +3095,7 @@
     },
     "462549855f0dc3ac092960bf1709fb01c3a02b3a": {
       "FileHash": "462549855f0dc3ac092960bf1709fb01c3a02b3a",
-      "SourceFileCommit": "3159040b68e16ad8fd1c001ef5d195d40f1dea7c",
+      "SourceFileCommit": "0ff140ad320a9fbdfe51db03f443086e01f96942",
       "SourceFilePath": "virtualization\\community\\media\\editDoc.png",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -3420,7 +3420,7 @@
     },
     "9c6a41fac79a6f72b721a2b2928aef0f10cb9383": {
       "FileHash": "9c6a41fac79a6f72b721a2b2928aef0f10cb9383",
-      "SourceFileCommit": "fc0ac1c10af0cbf0ce71b2951353eadf843c27cc",
+      "SourceFileCommit": "c568292104446fd18fc82c20687d7ef4de363e21",
       "SourceFilePath": "virtualization\\community\\media\\GitHubEditor.png",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -3511,7 +3511,7 @@
     },
     "c368db13f720190f3fb4a8fbdb2301c6a8148cc8": {
       "FileHash": "c368db13f720190f3fb4a8fbdb2301c6a8148cc8",
-      "SourceFileCommit": "db90888421cdefeaa32dbc76f3be62134300fad9",
+      "SourceFileCommit": "23cc84f27047bb3eddac2aaf4cece2eb9636c942",
       "SourceFilePath": "virtualization\\community\\media\\GitHubCreatePR.png",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -3805,7 +3805,7 @@
     },
     "4d662bf6e123797b4670dfdf6a6aee32e4e95e54": {
       "FileHash": "4d662bf6e123797b4670dfdf6a6aee32e4e95e54",
-      "SourceFileCommit": "955d199d111b55d44b5eb42fc9d10d2c8a3309ad",
+      "SourceFileCommit": "5f58ef2766a4580fbe6dca31a0242335e6b7c085",
       "SourceFilePath": "virtualization\\windowscontainers\\management\\media\\nat1.png",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -3925,7 +3925,7 @@
     },
     "169ec8f0dc462e9cf51f7ffb6e01b2d3e80f41b2": {
       "FileHash": "169ec8f0dc462e9cf51f7ffb6e01b2d3e80f41b2",
-      "SourceFileCommit": "f4925b74a45cbc4286422f85b25170972c0cf2be",
+      "SourceFileCommit": "94171b7236fade3d9ec013ac482c677ea9928f1c",
       "SourceFilePath": "virtualization\\hyperv_on_windows\\quick_start\\walkthrough_export_import.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
@@ -4099,7 +4099,7 @@
     },
     "30ec773c62830bc68972b0c8eb5a57b8df8b8ec9": {
       "FileHash": "30ec773c62830bc68972b0c8eb5a57b8df8b8ec9",
-      "SourceFileCommit": "870148f03087d9b37bdd0e3c40dd0541f42750d5",
+      "SourceFileCommit": "34bbec6105b341d7670e2ee12cf86f6f5b362226",
       "SourceFilePath": "virtualization\\hyperv_on_windows\\quick_start\\walkthrough_checkpoints.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
@@ -4799,7 +4799,7 @@
     },
     "aa26c5fc60bcdfd7cd521799700e2f6eea48eb17": {
       "FileHash": "aa26c5fc60bcdfd7cd521799700e2f6eea48eb17",
-      "SourceFileCommit": "e8c2522788395c01addc4987c89d49f6ff1889a8",
+      "SourceFileCommit": "ecff2f18c02e0f5adfb6651a6d5d1b32a627e318",
       "SourceFilePath": "virtualization\\windowscontainers\\Nano_EULA.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
@@ -5888,7 +5888,7 @@
     },
     "67d18363bb2da6496ff91bbda6dd57444c685974": {
       "FileHash": "67d18363bb2da6496ff91bbda6dd57444c685974",
-      "SourceFileCommit": "952fcfcca9c9dc69aaeb2dd75aa157c42fad92a5",
+      "SourceFileCommit": "fa55bc88cc5bea21b3af2c0cbd76435e4c1a4b4b",
       "SourceFilePath": "virtualization\\community\\contribute_to_docs.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
@@ -5917,7 +5917,7 @@
     },
     "54974198eb9f9f9ea840b99e83eab5952f3f6b9a": {
       "FileHash": "54974198eb9f9f9ea840b99e83eab5952f3f6b9a",
-      "SourceFileCommit": "c74ef33a17061c3f5aee94147a427d189c6083f8",
+      "SourceFileCommit": "fa55bc88cc5bea21b3af2c0cbd76435e4c1a4b4b",
       "SourceFilePath": "virtualization\\community\\media\\GitFromWinCMD.png",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -6385,7 +6385,7 @@
     },
     "98b474eb1e7fef1fc91bb5c48c069f57e3a7305e": {
       "FileHash": "98b474eb1e7fef1fc91bb5c48c069f57e3a7305e",
-      "SourceFileCommit": "119ae39c7637598a8ee2d7e285ab7b6e0af1ec1c",
+      "SourceFileCommit": "918ac303143097c6c8f8e5606d270fe82fc29ac1",
       "SourceFilePath": "virtualization\\hyperv_on_windows\\quick_start\\walkthrough_create_vm.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
@@ -6617,7 +6617,7 @@
     },
     "22320b32fb8af15c2e7125ec4f50c2b19643b9bf": {
       "FileHash": "22320b32fb8af15c2e7125ec4f50c2b19643b9bf",
-      "SourceFileCommit": "191f6aaccfbd7914227e8f5983f591020f137743",
+      "SourceFileCommit": "668e326dc9280cc467a8c20ff0318b3c8ca7719f",
       "SourceFilePath": "virtualization\\windowscontainers\\deployment\\media\\nssm1.png",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -6909,7 +6909,7 @@
     },
     "2a715348730100beeb84335946a623c9e87986dd": {
       "FileHash": "2a715348730100beeb84335946a623c9e87986dd",
-      "SourceFileCommit": "961efcc74b0930cccaa77e82bdb14240ad71100c",
+      "SourceFileCommit": "5329a8f547944e96cef0ef7743b2c3cdda518dee",
       "SourceFilePath": "virtualization\\windowscontainers\\containers_welcome.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
@@ -7112,7 +7112,7 @@
     },
     "cb795b7f0439e25857d3943c41c41f1591b623c3": {
       "FileHash": "cb795b7f0439e25857d3943c41c41f1591b623c3",
-      "SourceFileCommit": "961efcc74b0930cccaa77e82bdb14240ad71100c",
+      "SourceFileCommit": "5329a8f547944e96cef0ef7743b2c3cdda518dee",
       "SourceFilePath": "virtualization\\windowscontainers\\management\\hcs_powershell.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
@@ -7199,7 +7199,7 @@
     },
     "4d3422cb4c4b7fe2d978b08d9deb225577a837e6": {
       "FileHash": "4d3422cb4c4b7fe2d978b08d9deb225577a837e6",
-      "SourceFileCommit": "961efcc74b0930cccaa77e82bdb14240ad71100c",
+      "SourceFileCommit": "5329a8f547944e96cef0ef7743b2c3cdda518dee",
       "SourceFilePath": "virtualization\\windowscontainers\\management\\manage_data.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
@@ -7344,7 +7344,7 @@
     },
     "41c8ff9ffd9802357852a36e0653dff9041d1880": {
       "FileHash": "41c8ff9ffd9802357852a36e0653dff9041d1880",
-      "SourceFileCommit": "961efcc74b0930cccaa77e82bdb14240ad71100c",
+      "SourceFileCommit": "5329a8f547944e96cef0ef7743b2c3cdda518dee",
       "SourceFilePath": "virtualization\\windowscontainers\\quick_start\\inplace_setup.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
@@ -7460,7 +7460,7 @@
     },
     "5463412d44bd7c657401c55558bb817df4cc1eb2": {
       "FileHash": "5463412d44bd7c657401c55558bb817df4cc1eb2",
-      "SourceFileCommit": "961efcc74b0930cccaa77e82bdb14240ad71100c",
+      "SourceFileCommit": "5329a8f547944e96cef0ef7743b2c3cdda518dee",
       "SourceFilePath": "virtualization\\windowscontainers\\reference\\powershell_overview.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
@@ -7547,7 +7547,7 @@
     },
     "fbfac50788c16f58eabbe88f17510e6cbb8588c9": {
       "FileHash": "fbfac50788c16f58eabbe88f17510e6cbb8588c9",
-      "SourceFileCommit": "f7294e19184c78d256a04bae8ccfff459871eb14",
+      "SourceFileCommit": "e5af6b1e6851fba642c5666ae3fbf548d23c2f76",
       "SourceFilePath": "virtualization\\hyperv_on_windows\\quick_start\\walkthrough_install.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
@@ -7576,7 +7576,7 @@
     },
     "1ff2fe9d8253430a088e4260273cbcfb8c115414": {
       "FileHash": "1ff2fe9d8253430a088e4260273cbcfb8c115414",
-      "SourceFileCommit": "f7294e19184c78d256a04bae8ccfff459871eb14",
+      "SourceFileCommit": "e5af6b1e6851fba642c5666ae3fbf548d23c2f76",
       "SourceFilePath": "virtualization\\hyperv_on_windows\\quick_start\\walkthrough_powershell.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
@@ -7605,7 +7605,7 @@
     },
     "0766eaeabf18988757d596f08b8bf1233a089d36": {
       "FileHash": "0766eaeabf18988757d596f08b8bf1233a089d36",
-      "SourceFileCommit": "f7294e19184c78d256a04bae8ccfff459871eb14",
+      "SourceFileCommit": "e5af6b1e6851fba642c5666ae3fbf548d23c2f76",
       "SourceFilePath": "virtualization\\hyperv_on_windows\\user_guide\\checkpoints.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
@@ -7634,7 +7634,7 @@
     },
     "8f425f8ff5e6bbba952f5b0fad4e2eff8b6960bb": {
       "FileHash": "8f425f8ff5e6bbba952f5b0fad4e2eff8b6960bb",
-      "SourceFileCommit": "f7294e19184c78d256a04bae8ccfff459871eb14",
+      "SourceFileCommit": "e5af6b1e6851fba642c5666ae3fbf548d23c2f76",
       "SourceFilePath": "virtualization\\hyperv_on_windows\\user_guide\\export_import.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
@@ -7663,7 +7663,7 @@
     },
     "0e295857f91ac08dc0a54e8a46c6763f749c2414": {
       "FileHash": "0e295857f91ac08dc0a54e8a46c6763f749c2414",
-      "SourceFileCommit": "f7294e19184c78d256a04bae8ccfff459871eb14",
+      "SourceFileCommit": "e91871455ace757007ee48343bd78fe8dee1a64c",
       "SourceFilePath": "virtualization\\windowscontainers\\about\\faq.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
@@ -7750,7 +7750,7 @@
     },
     "a402ecf5af8af8da15999878f66fcb625d26ee7f": {
       "FileHash": "a402ecf5af8af8da15999878f66fcb625d26ee7f",
-      "SourceFileCommit": "f7294e19184c78d256a04bae8ccfff459871eb14",
+      "SourceFileCommit": "e5af6b1e6851fba642c5666ae3fbf548d23c2f76",
       "SourceFilePath": "virtualization\\windowscontainers\\deployment\\docker_windows.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
@@ -7779,7 +7779,7 @@
     },
     "a69cbc5fab244ec14e7dedbde61af8d7b7a6e46d": {
       "FileHash": "a69cbc5fab244ec14e7dedbde61af8d7b7a6e46d",
-      "SourceFileCommit": "f7294e19184c78d256a04bae8ccfff459871eb14",
+      "SourceFileCommit": "e5af6b1e6851fba642c5666ae3fbf548d23c2f76",
       "SourceFilePath": "virtualization\\windowscontainers\\management\\container_networking.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
@@ -7895,7 +7895,7 @@
     },
     "92d3a0b946afabc71736c1fd63291a3f06015cdb": {
       "FileHash": "92d3a0b946afabc71736c1fd63291a3f06015cdb",
-      "SourceFileCommit": "f7294e19184c78d256a04bae8ccfff459871eb14",
+      "SourceFileCommit": "e5af6b1e6851fba642c5666ae3fbf548d23c2f76",
       "SourceFilePath": "virtualization\\windowscontainers\\management\\manage_resources.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
@@ -8040,7 +8040,7 @@
     },
     "ea7ce9566e4745f7c2e295ab271afad83cba54bd": {
       "FileHash": "ea7ce9566e4745f7c2e295ab271afad83cba54bd",
-      "SourceFileCommit": "8a2a778a892708ab35f0395c1b2f370dd560b245",
+      "SourceFileCommit": "c7430a08cefa6416aaced6318b49fd3367bbc538",
       "SourceFilePath": "virtualization\\windowscontainers\\Examples\\dotnet35.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
@@ -8098,7 +8098,7 @@
     },
     "5041cc7185a90eaea62a182fc9b55f6931991fbf": {
       "FileHash": "5041cc7185a90eaea62a182fc9b55f6931991fbf",
-      "SourceFileCommit": "900d6aab9ff1d1f632bf62e79150ea6397dd20f9",
+      "SourceFileCommit": "3e783a96ed82947d76488d3e844f9c9ed4d73c8e",
       "SourceFilePath": "virtualization\\windowscontainers\\management\\hyperv_container.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
@@ -8127,7 +8127,7 @@
     },
     "5c8977137b82b08bbd8a308dac97df307d329695": {
       "FileHash": "5c8977137b82b08bbd8a308dac97df307d329695",
-      "SourceFileCommit": "d1a0ad054cfe26986cb2dfb13a0cc392e7fd7e63",
+      "SourceFileCommit": "a12d488a209c3c848a108b8e80ff8e9ccdc4bfbb",
       "SourceFilePath": "virtualization\\windowscontainers\\reference\\ps_docker_comparison.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
@@ -8301,7 +8301,7 @@
     },
     "cb834b4fe44e1716864babc1bfdb20936ebc1d74": {
       "FileHash": "cb834b4fe44e1716864babc1bfdb20936ebc1d74",
-      "SourceFileCommit": "9fa08505c2d0a6d0da4f0ee778cab1a6c301481b",
+      "SourceFileCommit": "c3fd35357fb04088ea6f44bc02209e9ba4465736",
       "SourceFilePath": "virtualization\\hyperv_on_windows\\about\\hyperv_on_windows.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
@@ -8330,7 +8330,7 @@
     },
     "6ae7df8521332b1b6086e68ede218645a51d9431": {
       "FileHash": "6ae7df8521332b1b6086e68ede218645a51d9431",
-      "SourceFileCommit": "097451ac3b5f7e2bcf970cbabf7c226f2f760662",
+      "SourceFileCommit": "1f008fba81aae968b94df0ddc68d14f0dc1c8c6b",
       "SourceFilePath": "virtualization\\windowscontainers\\quick_start\\manage_powershell.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
@@ -8475,7 +8475,7 @@
     },
     "08d829c05c04924e27a1d697bc5d4c4e8218f3f5": {
       "FileHash": "08d829c05c04924e27a1d697bc5d4c4e8218f3f5",
-      "SourceFileCommit": "6e6151f770159837193008650a73ec54355eff80",
+      "SourceFileCommit": "191795037fa9e4f8986cec40139b3d02179f001b",
       "SourceFilePath": "virtualization\\hyperv_on_windows\\develop\\tlfs.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
@@ -8562,7 +8562,7 @@
     },
     "85f4deddc94ea3c722d257b14472238df91d5c3e": {
       "FileHash": "85f4deddc94ea3c722d257b14472238df91d5c3e",
-      "SourceFileCommit": "2e6ddd8b9c0f52c1e11d53ab1ddc007ed53ed816",
+      "SourceFileCommit": "5186691309826ee77e55689f7f995dc45424e6e7",
       "SourceFilePath": "virtualization\\windowscontainers\\quick_start\\azure_setup.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
@@ -8591,7 +8591,7 @@
     },
     "3ae90098101df784633a40ac99aa5fcdd612aa5f": {
       "FileHash": "3ae90098101df784633a40ac99aa5fcdd612aa5f",
-      "SourceFileCommit": "789575ad6c1f51884ca22dc36a649c8cabcc007f",
+      "SourceFileCommit": "88bf723a7fd39c9b0415690923cb7c4421ea7f84",
       "SourceFilePath": "virtualization\\windowscontainers\\deployment\\deployment_nano.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
@@ -8649,7 +8649,7 @@
     },
     "8303980ee5b2e51ab749a5f67980c528de7aba88": {
       "FileHash": "8303980ee5b2e51ab749a5f67980c528de7aba88",
-      "SourceFileCommit": "789575ad6c1f51884ca22dc36a649c8cabcc007f",
+      "SourceFileCommit": "cea089458e71683c5fa8eea03c8fda215b68c895",
       "SourceFilePath": "virtualization\\windowscontainers\\quick_start\\container_setup.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
@@ -8765,7 +8765,7 @@
     },
     "ec5ba8f5a387b27405564ad240b53188154f9dfe": {
       "FileHash": "ec5ba8f5a387b27405564ad240b53188154f9dfe",
-      "SourceFileCommit": "ec087b8c5d9d73c7f7b5adc8034f3e46bf82ea22",
+      "SourceFileCommit": "675ee0a116281a187516c2142bdb0f515bd1f07f",
       "SourceFilePath": "virtualization\\hyperv_on_windows\\windows_welcome.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
@@ -8823,7 +8823,7 @@
     },
     "224b91fc286f31a5c23fe3d7c9d36b178f6b04c3": {
       "FileHash": "224b91fc286f31a5c23fe3d7c9d36b178f6b04c3",
-      "SourceFileCommit": "025cf28322111758d4ea47778246fb494358e9f6",
+      "SourceFileCommit": "4b739fb7cafe89a2bb61e4ede944f41617a1f589",
       "SourceFilePath": "virtualization\\hyperv_on_windows\\develop\\media\\flightingSDK.png",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -8883,7 +8883,7 @@
     },
     "687d3b8f31d0822cd1723b2a9aa7d84d167d7638": {
       "FileHash": "687d3b8f31d0822cd1723b2a9aa7d84d167d7638",
-      "SourceFileCommit": "34624f88146661c5ebaac0e32cc5d669dfc0d683",
+      "SourceFileCommit": "814b4333b381ef4caed7a307523fb00fad11fd60",
       "SourceFilePath": "virtualization\\windowscontainers\\quick_start\\manage_docker.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
@@ -8970,7 +8970,7 @@
     },
     "e84c73578509ab5bbc3762d75775b1dcd838e043": {
       "FileHash": "e84c73578509ab5bbc3762d75775b1dcd838e043",
-      "SourceFileCommit": "e9cd754b3d43e6696cf361710f834a39f2dda062",
+      "SourceFileCommit": "26a82ad3febcffa82aa2f4f3c144e1c4614df9aa",
       "SourceFilePath": "virtualization\\windowscontainers\\deployment\\deployment.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
@@ -9152,7 +9152,7 @@
     },
     "eff2133b5970f1c04145fc472e357b27094fb167": {
       "FileHash": "eff2133b5970f1c04145fc472e357b27094fb167",
-      "SourceFileCommit": "ce90b78c45a493f61556d288363e70817835181e",
+      "SourceFileCommit": "c0a7f491ed5e57e3842aa79b460a3aa10e66216d",
       "SourceFilePath": "virtualization\\hyperv_on_windows\\quick_start\\walkthrough.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
@@ -9181,7 +9181,7 @@
     },
     "12695afc9ce6e98c62405bf520ac3723d10ccfbc": {
       "FileHash": "12695afc9ce6e98c62405bf520ac3723d10ccfbc",
-      "SourceFileCommit": "ce90b78c45a493f61556d288363e70817835181e",
+      "SourceFileCommit": "cb3cd4d6759ecd39b1341eb6892f331e334d5279",
       "SourceFilePath": "virtualization\\hyperv_on_windows\\quick_start\\walkthrough_compatibility.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
@@ -9210,7 +9210,7 @@
     },
     "710de79fd1d511a029c76d169ee6057135986509": {
       "FileHash": "710de79fd1d511a029c76d169ee6057135986509",
-      "SourceFileCommit": "ce90b78c45a493f61556d288363e70817835181e",
+      "SourceFileCommit": "847d4a6ead9788c2048ec13247ab08983df1d7e9",
       "SourceFilePath": "virtualization\\hyperv_on_windows\\user_guide\\remote_host_management.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
@@ -9221,6 +9221,35 @@
       "HandoffFilePath": "ol-handoff\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\remote_host_management.40d5636e508c5b95bb2917be75ca6b5aa426a915.zh-cn.xlf",
       "HandoffFileCommit": "d8e8f75509f9570e3330b406ddc63305d8b6eb58",
       "HandoffDateTime": "2016-04-07T04:32:21.8624523Z",
+      "HandoffPriority": "",
+      "HandoffException": null,
+      "HandoffFailureTimes": 0,
+      "TargetFileCommit": null,
+      "TargetFilePath": null,
+      "HandbackFilePath": null,
+      "HandbackFileCommit": null,
+      "HandbackDateTime": "0001-01-01T00:00:00",
+      "HandbackException": null,
+      "HandbackFailureTimes": 0,
+      "UpdatedDateTime": "0001-01-01T00:00:00",
+      "ArchiveFilePath": null,
+      "ArchiveFileCommit": null,
+      "ArchiveFileDateTime": "0001-01-01T00:00:00",
+      "ArchiveException": null
+    },
+    "ffa8ed231f8eed258b14d34da3e248837ac91ac7": {
+      "FileHash": "ffa8ed231f8eed258b14d34da3e248837ac91ac7",
+      "SourceFileCommit": "e23254e325f6ee14d8023a1297bdfc0bec60e811",
+      "SourceFilePath": "virtualization\\hyperv_on_windows\\TOC.md",
+      "HandoffReason": 1,
+      "DependencyFrom": null,
+      "TokenReference": null,
+      "FilePathList": [
+        "virtualization\\hyperv_on_windows\\TOC.md"
+      ],
+      "HandoffFilePath": "ol-handoff\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\TOC.dc6d280c11d16ece7fbc1f22991c5fc34412dd1a.zh-cn.xlf",
+      "HandoffFileCommit": "2a7ce3deebf9575320c73d99fd5a610c1330f70d",
+      "HandoffDateTime": "2016-04-18T20:17:18.7959769Z",
       "HandoffPriority": "",
       "HandoffException": null,
       "HandoffFailureTimes": 0,
