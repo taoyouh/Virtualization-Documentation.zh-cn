@@ -200,6 +200,9 @@
   "0699418429f113abee439384e0acf7450a8610b5": [
     "virtualization\\hyperv_on_windows\\user_guide\\user_guide_nav.md"
   ],
+  "df21bec2fab07ab5ee6ed626dd2197a63238d4e4": [
+    "virtualization\\hyperv_on_windows\\user_guide\\vmsession.md"
+  ],
   "d3997f4f512580be5e28fbafa51f1bbd6a0a4b44": [
     "virtualization\\hyperv_on_windows\\user_guide\\vmsession.md"
   ],
@@ -216,13 +219,15 @@
     "virtualization\\hyperv_on_windows\\windows_welcome.md"
   ],
   "215adae041390b1edb10b314dc7ce21f6b39592e": [
-    "virtualization\\hyperv_on_windows\\media\\MeetsRequirements_65.png"
+    "virtualization\\hyperv_on_windows\\media\\MeetsRequirements_65.png",
+    "virtualization\\windowscontainers\\Media\\1.png"
   ],
   "8489e1cb35de12a7cc54a8c1b29f40672eaac851": [
     "virtualization\\hyperv_on_windows\\media\\All_ContentTypeIcons_VisualWalkthrough_65.png"
   ],
   "7de8389ab2b14e0926c142bf61be560037fc2658": [
-    "virtualization\\hyperv_on_windows\\media\\Chat_65.png"
+    "virtualization\\hyperv_on_windows\\media\\Chat_65.png",
+    "virtualization\\windowscontainers\\Media\\question.png"
   ],
   "4bef4ede34814cd9e6e0445b0fc4a7675e99a526": [
     "virtualization\\windowscontainers\\about\\about_overview.md"
@@ -548,6 +553,15 @@
   "4d662bf6e123797b4670dfdf6a6aee32e4e95e54": [
     "virtualization\\windowscontainers\\management\\media\\nat1.png"
   ],
+  "1d21dac1815f54f70a991c693ab882575f601e8d": [
+    "virtualization\\windowscontainers\\management\\media\\PortMapping.png"
+  ],
+  "7244a1a0ddcebfe36147f05577bceb7671592b96": [
+    "virtualization\\windowscontainers\\Media\\try.png"
+  ],
+  "367d56d6ba500771f4a03e2296eca6bb079d891e": [
+    "virtualization\\windowscontainers\\Media\\explore.png"
+  ],
   "aa26c5fc60bcdfd7cd521799700e2f6eea48eb17": [
     "virtualization\\windowscontainers\\Nano_EULA.md"
   ],
@@ -568,6 +582,9 @@
   ],
   "54974198eb9f9f9ea840b99e83eab5952f3f6b9a": [
     "virtualization\\community\\media\\GitFromWinCMD.png"
+  ],
+  "3ae897bd58e90c4c7c21ef5f940d4234cccec78f": [
+    "virtualization\\windowscontainers\\Media\\video.png"
   ],
   "08d829c05c04924e27a1d697bc5d4c4e8218f3f5": [
     "virtualization\\hyperv_on_windows\\develop\\tlfs.md"
