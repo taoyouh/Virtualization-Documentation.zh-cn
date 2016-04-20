@@ -8,6 +8,9 @@
   "1741b59667074192e6da0da57eb30cf23e644bcd": [
     "virtualization\\hyperv_on_windows\\about\\supported_guest_os.md"
   ],
+  "376d9acfe8dd79cf5b109fa9555a8f944a771723": [
+    "virtualization\\hyperv_on_windows\\about\\whats_new.md"
+  ],
   "bf7c9a1b7e544d684898d97e3a260f8d89586e66": [
     "virtualization\\hyperv_on_windows\\about\\whats_new.md"
   ],
@@ -119,6 +122,9 @@
   "dc04e26b6b30d2de9b6d25fc96eb5ff248a877e0": [
     "virtualization\\hyperv_on_windows\\quick_start\\media\\pen_changes_upd.png"
   ],
+  "ec037f40e4bb057d58e016903a96679e424e433a": [
+    "virtualization\\hyperv_on_windows\\TOC.md"
+  ],
   "ffa8ed231f8eed258b14d34da3e248837ac91ac7": [
     "virtualization\\hyperv_on_windows\\TOC.md"
   ],
@@ -145,6 +151,9 @@
   ],
   "2cc583a503b2ec2bbd7b725709a5390466709ce8": [
     "virtualization\\hyperv_on_windows\\user_guide\\export_import.md"
+  ],
+  "a15b881eaba50af7ead7722f6364bcc5c7747497": [
+    "virtualization\\hyperv_on_windows\\user_guide\\managing_ics.md"
   ],
   "86229e8504f52f959d1b564fce5fba821d2677e3": [
     "virtualization\\hyperv_on_windows\\user_guide\\managing_ics.md"
@@ -197,8 +206,8 @@
   "033950f25a30f7bccb308c22d6fa96b166d7ed01": [
     "virtualization\\hyperv_on_windows\\user_guide\\troubleshooting.md"
   ],
-  "0699418429f113abee439384e0acf7450a8610b5": [
-    "virtualization\\hyperv_on_windows\\user_guide\\user_guide_nav.md"
+  "f19d9edaaace7e9edbba34f9b49dbbb3942a64c4": [
+    "virtualization\\hyperv_on_windows\\user_guide\\vmsession.md"
   ],
   "18b5f8f1f32e08dae44bf8b116afe8e0afd8c36a": [
     "virtualization\\hyperv_on_windows\\user_guide\\vmsession.md"
@@ -214,6 +223,9 @@
   ],
   "2569e28280c6fd85a0df7ad483ae127e4a6c50eb": [
     "virtualization\\hyperv_on_windows\\user_guide\\vmsession.md"
+  ],
+  "c7dc929f04f77a8063ed68741d753ff64796229c": [
+    "virtualization\\hyperv_on_windows\\windows_welcome.md"
   ],
   "ec5ba8f5a387b27405564ad240b53188154f9dfe": [
     "virtualization\\hyperv_on_windows\\windows_welcome.md"
@@ -615,5 +627,8 @@
   ],
   "57dad6d7e391f9708f243465d10dca1ef021a9af": [
     "virtualization\\windowscontainers\\management\\docker-powershell.md"
+  ],
+  "0e3df0f6619f4f2e4f93644749c9f6485346f902": [
+    "virtualization\\hyperv_on_windows\\index.md"
   ]
 }
