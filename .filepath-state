@@ -567,6 +567,9 @@
   "1b3d4380e967835c75b30bf694a619886c12b335": [
     "virtualization\\windowscontainers\\quick_start\\inplace_setup.md"
   ],
+  "ab9eb445da53d96e5545f684491a3a32b93a5170": [
+    "virtualization\\windowscontainers\\quick_start\\manage_docker.md"
+  ],
   "7741261072625719f9affaf5d472e2ee032d8067": [
     "virtualization\\windowscontainers\\quick_start\\manage_docker.md"
   ],
@@ -743,6 +746,9 @@
   ],
   "224b91fc286f31a5c23fe3d7c9d36b178f6b04c3": [
     "virtualization\\hyperv_on_windows\\develop\\media\\flightingSDK.png"
+  ],
+  "03ceaa83723db0870623cbc579d81b8d4ee6e813": [
+    "virtualization\\windowscontainers\\management\\docker-powershell.md"
   ],
   "728b5360b934220b0e78d8359f82b30c6adb7ad0": [
     "virtualization\\windowscontainers\\management\\docker-powershell.md"
