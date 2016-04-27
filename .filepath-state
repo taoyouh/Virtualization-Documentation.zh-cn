@@ -792,6 +792,9 @@
   "c42402c584404011f48a8e076bb8ff0549427e70": [
     "virtualization\\windowscontainers\\quick_start\\quick_start.md"
   ],
+  "14cd704cb102b26e12a98f54a9de620ee658ba3d": [
+    "virtualization\\windowscontainers\\quick_start\\quick_start_configure_host.md"
+  ],
   "76247e9dcf2f11c27812659bc0d8af8b0ee66c90": [
     "virtualization\\windowscontainers\\quick_start\\quick_start_configure_host.md"
   ],
