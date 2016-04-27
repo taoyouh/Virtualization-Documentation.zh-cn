@@ -218,6 +218,9 @@
   "033950f25a30f7bccb308c22d6fa96b166d7ed01": [
     "virtualization\\hyperv_on_windows\\user_guide\\troubleshooting.md"
   ],
+  "6b9a053b92112091f300c3e95891bcebfdf65e88": [
+    "virtualization\\hyperv_on_windows\\user_guide\\vmsession.md"
+  ],
   "77f3ecac64f256a16bf078f29cb1ace6d0420c6a": [
     "virtualization\\hyperv_on_windows\\user_guide\\vmsession.md"
   ],
