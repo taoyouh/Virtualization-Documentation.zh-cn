@@ -457,6 +457,9 @@
   "e7dae01557ec7307bb24bc59aa4219c7839d73f6": [
     "virtualization\\windowscontainers\\management\\manage_data.md"
   ],
+  "a72c8d5c281186beaf734f280e015ff188e0eb74": [
+    "virtualization\\windowscontainers\\management\\manage_images.md"
+  ],
   "e8ec76fbce4e0b8ff6c3374a1045ad820bdb24fd": [
     "virtualization\\windowscontainers\\management\\manage_images.md"
   ],
@@ -675,6 +678,9 @@
   "367d56d6ba500771f4a03e2296eca6bb079d891e": [
     "virtualization\\windowscontainers\\Media\\explore.png"
   ],
+  "640cdeabb1f10e4e69f909c33d3c4e483dad00aa": [
+    "virtualization\\windowscontainers\\Nano_EULA.md"
+  ],
   "aa26c5fc60bcdfd7cd521799700e2f6eea48eb17": [
     "virtualization\\windowscontainers\\Nano_EULA.md"
   ],
@@ -755,6 +761,9 @@
   ],
   "c42402c584404011f48a8e076bb8ff0549427e70": [
     "virtualization\\windowscontainers\\quick_start\\quick_start.md"
+  ],
+  "67033992a84c3de364ef80551cb5e6b7d1fb39c9": [
+    "virtualization\\windowscontainers\\quick_start\\quick_start_configure_host.md"
   ],
   "45dda5dfec112801d99f596f07807957f642e41f": [
     "virtualization\\windowscontainers\\quick_start\\quick_start_configure_host.md"
