@@ -38,6 +38,10 @@
   "5a46028faa5e86b84806c030c956f71465edcfc9": [
     "virtualization\\hyperv_on_windows\\develop\\powershell_snippets.md"
   ],
+  "380e6aec81d02bed84769a4b31c0d1fdeb72d8dc": [
+    "virtualization\\hyperv_on_windows\\quick_start\\walkthrough.md",
+    "virtualization\\hyperv_on_windows\\quick_start\\index.md"
+  ],
   "eff2133b5970f1c04145fc472e357b27094fb167": [
     "virtualization\\hyperv_on_windows\\quick_start\\walkthrough.md"
   ],
