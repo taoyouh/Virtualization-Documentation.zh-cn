@@ -340,6 +340,9 @@
   "dc07075c1d887a8702fb9feff018c60b8f215597": [
     "virtualization\\windowscontainers\\containers_welcome.md"
   ],
+  "137da381b28cf1f3854e349b3dd4a758f17beccc": [
+    "virtualization\\windowscontainers\\deployment\\deployment.md"
+  ],
   "a6c05fa81b78555ef8d5040e9d93b797c2669361": [
     "virtualization\\windowscontainers\\deployment\\deployment.md"
   ],
@@ -457,6 +460,9 @@
   "e7dae01557ec7307bb24bc59aa4219c7839d73f6": [
     "virtualization\\windowscontainers\\management\\manage_data.md"
   ],
+  "a1d2b0b76143b9049f05fdde3b10d942d8d3397c": [
+    "virtualization\\windowscontainers\\management\\manage_images.md"
+  ],
   "a72c8d5c281186beaf734f280e015ff188e0eb74": [
     "virtualization\\windowscontainers\\management\\manage_images.md"
   ],
@@ -560,6 +566,9 @@
   ],
   "1b3d4380e967835c75b30bf694a619886c12b335": [
     "virtualization\\windowscontainers\\quick_start\\inplace_setup.md"
+  ],
+  "7741261072625719f9affaf5d472e2ee032d8067": [
+    "virtualization\\windowscontainers\\quick_start\\manage_docker.md"
   ],
   "eefe621815579ce7f7e1d617bcad80361963b852": [
     "virtualization\\windowscontainers\\quick_start\\manage_docker.md"
@@ -684,6 +693,9 @@
   "aa26c5fc60bcdfd7cd521799700e2f6eea48eb17": [
     "virtualization\\windowscontainers\\Nano_EULA.md"
   ],
+  "5ad68ad2fda3e6e7f2bc0f3e0194cb574435f64e": [
+    "virtualization\\windowscontainers\\deployment\\deployment_nano.md"
+  ],
   "b80f7e76fdb126467f69ecb93f51b5ebff685180": [
     "virtualization\\windowscontainers\\deployment\\deployment_nano.md"
   ],
@@ -761,6 +773,9 @@
   ],
   "c42402c584404011f48a8e076bb8ff0549427e70": [
     "virtualization\\windowscontainers\\quick_start\\quick_start.md"
+  ],
+  "76247e9dcf2f11c27812659bc0d8af8b0ee66c90": [
+    "virtualization\\windowscontainers\\quick_start\\quick_start_configure_host.md"
   ],
   "67033992a84c3de364ef80551cb5e6b7d1fb39c9": [
     "virtualization\\windowscontainers\\quick_start\\quick_start_configure_host.md"
