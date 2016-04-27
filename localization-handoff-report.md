@@ -1,11 +1,26 @@
 # <a name='report-top'></a> Localization Handoff Report
 
 ## Summary
- Total Files | 0
+ Total Files | 1
 
 ## File List
+ Source File | Status | Details 
+ ----------- | ------ | ------- 
+ [virtualization\windowscontainers\quick_start\quick_start_configure_host.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/dd97060d739bd64ef0b10f05c574f6db0018c091/virtualization/windowscontainers/quick_start/quick_start_configure_host.md) | HandedOffSuccess | [Details](#f35f804e3028baf6674a6629d80f05a4115984ab311)
 
 ## Item Details
+##### <a name='f35f804e3028baf6674a6629d80f05a4115984ab311'></a> Source: [virtualization\windowscontainers\quick_start\quick_start_configure_host.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/dd97060d739bd64ef0b10f05c574f6db0018c091/virtualization/windowscontainers/quick_start/quick_start_configure_host.md)
+* Status: HandedOffSuccess
+* Target File: 
+* Handoff File: [quick_start_configure_host.22eb2cfc649ba7c5d36441e003bf951628b30837.zh-cn.xlf](https://github.com/Microsoft/Virtualization-Documentation-Private.handoff/blob/08595311cfbd141c779275be6eabdef537f1816b/ol-handoff/Microsoft/Virtualization-Documentation-Private.zh-cn/live/quick_start_configure_host.22eb2cfc649ba7c5d36441e003bf951628b30837.zh-cn.xlf)
+* Handoff Datetime: 2016-04-27 23:40:38
+* Handoff Reason: Include
+* Archive File: 
+* Archive Datetime: 0001-01-01 00:00:00
+* Handback File: 
+* Handback Datetime: 0001-01-01 00:00:00
+* [Back to Top](#report-top)
+
 
 ## Error Details
 
