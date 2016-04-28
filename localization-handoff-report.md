@@ -1,42 +1,11 @@
 # <a name='report-top'></a> Localization Handoff Report
 
 ## Summary
- Total Files | 2
+ Total Files | 0
 
 ## File List
- Source File | Status | Details 
- ----------- | ------ | ------- 
- [virtualization\hyperv_on_windows\TOC.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/ce18b842ffa4654e133129ca8d007690b9ce31ce/virtualization/hyperv_on_windows/TOC.md) | OutofSyncHandedBackSuccess | [Details](#1d69f8bb5cb097eb6a394b85121ba064b2ee539f178)
- [virtualization\hyperv_on_windows\user_guide\setup_nat_network.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/71a94de60cbdddb009f1eb41221d11f547449fb9/virtualization/hyperv_on_windows/user_guide/setup_nat_network.md) | HandedOffSuccess | [Details](#fef03f64b1c2ea9f526b84590124f97d303af49b204)
 
 ## Item Details
-##### <a name='1d69f8bb5cb097eb6a394b85121ba064b2ee539f178'></a> Source: [virtualization\hyperv_on_windows\TOC.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/ce18b842ffa4654e133129ca8d007690b9ce31ce/virtualization/hyperv_on_windows/TOC.md)
-* Status: OutofSyncHandedBackSuccess
-* Target File: 
-* Handoff File: [TOC.dc6d280c11d16ece7fbc1f22991c5fc34412dd1a.zh-cn.xlf](https://github.com/Microsoft/Virtualization-Documentation-Private.handoff/blob/906be9ed29e7d94d67e6ca292d6f3419b4f00e00/ol-handoff/Microsoft/Virtualization-Documentation-Private.zh-cn/live/TOC.dc6d280c11d16ece7fbc1f22991c5fc34412dd1a.zh-cn.xlf)
-* Handoff Datetime: 2016-04-28 00:09:45
-* Handoff Reason: Include
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [virtualization\hyperv_on_windows\TOC.md](https://github.com/Microsoft/Virtualization-Documentation-Private.zh-cn/blob/a0a05658a2246bab7ec525f6481507c82382eeb6/virtualization/hyperv_on_windows/TOC.md)
-* Current Handback File: [TOC.dc6d280c11d16ece7fbc1f22991c5fc34412dd1a.zh-cn.xlf](https://github.com/Microsoft/Virtualization-Documentation-Private.handback/blob/a4b204157e24378d379f8e73e4d892560fed24de/ol-handback/Microsoft/Virtualization-Documentation-Private.zh-cn/live/TOC.dc6d280c11d16ece7fbc1f22991c5fc34412dd1a.zh-cn.xlf)
-* Current Handback Datetime: 2016-02-16 21:22:29
-* [Back to Top](#report-top)
-
-##### <a name='fef03f64b1c2ea9f526b84590124f97d303af49b204'></a> Source: [virtualization\hyperv_on_windows\user_guide\setup_nat_network.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/71a94de60cbdddb009f1eb41221d11f547449fb9/virtualization/hyperv_on_windows/user_guide/setup_nat_network.md)
-* Status: HandedOffSuccess
-* Target File: 
-* Handoff File: [setup_nat_network.910a966b84616e203e5739d5dde1b65115f14a37.zh-cn.xlf](https://github.com/Microsoft/Virtualization-Documentation-Private.handoff/blob/906be9ed29e7d94d67e6ca292d6f3419b4f00e00/ol-handoff/Microsoft/Virtualization-Documentation-Private.zh-cn/live/setup_nat_network.910a966b84616e203e5739d5dde1b65115f14a37.zh-cn.xlf)
-* Handoff Datetime: 2016-04-28 00:09:45
-* Handoff Reason: Include
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* [Back to Top](#report-top)
-
 
 ## Error Details
 
