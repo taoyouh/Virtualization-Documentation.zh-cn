@@ -126,6 +126,9 @@
   "dc04e26b6b30d2de9b6d25fc96eb5ff248a877e0": [
     "virtualization\\hyperv_on_windows\\quick_start\\media\\pen_changes_upd.png"
   ],
+  "1d69f8bb5cb097eb6a394b85121ba064b2ee539f": [
+    "virtualization\\hyperv_on_windows\\TOC.md"
+  ],
   "c75292857354100542fbee62fb9ae04a694dc277": [
     "virtualization\\hyperv_on_windows\\TOC.md"
   ],
@@ -819,5 +822,8 @@
   ],
   "e8789c3b127b6b142f245f306595d885a00f18bc": [
     "virtualization\\windowscontainers\\quick_start\\manage_docker_hyperv.md"
+  ],
+  "fef03f64b1c2ea9f526b84590124f97d303af49b": [
+    "virtualization\\hyperv_on_windows\\user_guide\\setup_nat_network.md"
   ]
 }
