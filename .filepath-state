@@ -350,6 +350,9 @@
   "dc07075c1d887a8702fb9feff018c60b8f215597": [
     "virtualization\\windowscontainers\\containers_welcome.md"
   ],
+  "cea69cebc7bc7cb66e34010d44afad4681220e5a": [
+    "virtualization\\windowscontainers\\deployment\\deployment.md"
+  ],
   "137da381b28cf1f3854e349b3dd4a758f17beccc": [
     "virtualization\\windowscontainers\\deployment\\deployment.md"
   ],
