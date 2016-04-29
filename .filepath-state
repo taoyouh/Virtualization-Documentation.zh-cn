@@ -796,11 +796,17 @@
   "19547c2bfef4605a3c0be64fe152cfb7b89b621b": [
     "virtualization\\windowscontainers\\deployment\\deployment_azure.md"
   ],
+  "ec1373d806a3e9a3d8b0667f869017ec688d26c9": [
+    "virtualization\\windowscontainers\\docker\\manage_windows_dockerfile.md"
+  ],
   "6e8378ee0fbeabc5ec636e7344e90e24e05f809a": [
     "virtualization\\windowscontainers\\docker\\manage_windows_dockerfile.md"
   ],
   "fbb194dcdf5957c580e4064b3e5190380ecd9549": [
     "virtualization\\windowscontainers\\docker\\manage_windows_dockerfile.md"
+  ],
+  "79e0a683d29247a0df7c3397fc08922ba212ce64": [
+    "virtualization\\windowscontainers\\docker\\optimize_windows_dockerfile.md"
   ],
   "6607baebed4c0109bbfc1cdbd735ce4bc568012d": [
     "virtualization\\windowscontainers\\docker\\optimize_windows_dockerfile.md"
