@@ -1,5 +1,5 @@
 {
-  "LastProcessedCommit": "d458c9d26acd722c579ac54647e468053a01b9e0",
+  "LastProcessedCommit": "56b256a2dc5bffcd5af7159449ba64d8726d979a",
   "LastTranslatedCommit": "bc47864182bc3c149e8119e57478d87728af2182",
   "Items": {
     "5090f6d60b5cbdce0990242d795d9e4e3736e791": {
@@ -11564,6 +11564,35 @@
       "HandoffFilePath": "ol-handoff\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\manage_windows_dockerfile.cf56579c9136245b4cbef41fabc5df7a6ab9832a.zh-cn.xlf",
       "HandoffFileCommit": "746879613cc7c87fe50c3ec675fe4646551a8d47",
       "HandoffDateTime": "2016-04-29T04:10:57.1881614Z",
+      "HandoffPriority": "",
+      "HandoffException": null,
+      "HandoffFailureTimes": 0,
+      "TargetFileCommit": null,
+      "TargetFilePath": null,
+      "HandbackFilePath": null,
+      "HandbackFileCommit": null,
+      "HandbackDateTime": "0001-01-01T00:00:00",
+      "HandbackException": null,
+      "HandbackFailureTimes": 0,
+      "UpdatedDateTime": "0001-01-01T00:00:00",
+      "ArchiveFilePath": null,
+      "ArchiveFileCommit": null,
+      "ArchiveFileDateTime": "0001-01-01T00:00:00",
+      "ArchiveException": null
+    },
+    "ccffdfd5ea89a9515b03d1081e24bf9a377cc688": {
+      "FileHash": "ccffdfd5ea89a9515b03d1081e24bf9a377cc688",
+      "SourceFileCommit": "56b256a2dc5bffcd5af7159449ba64d8726d979a",
+      "SourceFilePath": "virtualization\\windowscontainers\\management\\manage_images.md",
+      "HandoffReason": 1,
+      "DependencyFrom": null,
+      "TokenReference": null,
+      "FilePathList": [
+        "virtualization\\windowscontainers\\management\\manage_images.md"
+      ],
+      "HandoffFilePath": "ol-handoff\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\manage_images.6d8d709cbc19bb63cc7d4553991616c57920cdfd.zh-cn.xlf",
+      "HandoffFileCommit": "d010c6342a4d973555900a16cfa0065d0176e670",
+      "HandoffDateTime": "2016-04-29T04:39:36.0630242Z",
       "HandoffPriority": "",
       "HandoffException": null,
       "HandoffFailureTimes": 0,
