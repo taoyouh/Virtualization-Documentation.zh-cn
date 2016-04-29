@@ -586,6 +586,9 @@
   "1b3d4380e967835c75b30bf694a619886c12b335": [
     "virtualization\\windowscontainers\\quick_start\\inplace_setup.md"
   ],
+  "952a1c443cd14575c638f8c845f4075bac9ce77b": [
+    "virtualization\\windowscontainers\\quick_start\\manage_docker.md"
+  ],
   "2fcfcdd2e350839ca5bf51dfb3fee3315616783d": [
     "virtualization\\windowscontainers\\quick_start\\manage_docker.md"
   ],
@@ -799,6 +802,9 @@
   "fbb194dcdf5957c580e4064b3e5190380ecd9549": [
     "virtualization\\windowscontainers\\docker\\manage_windows_dockerfile.md"
   ],
+  "6607baebed4c0109bbfc1cdbd735ce4bc568012d": [
+    "virtualization\\windowscontainers\\docker\\optimize_windows_dockerfile.md"
+  ],
   "73ddafb0b779708476e79b4acc473be2d32beff9": [
     "virtualization\\windowscontainers\\docker\\optimize_windows_dockerfile.md"
   ],
@@ -831,6 +837,9 @@
   ],
   "5a10afe0f0adcfa86fe9776efa45cfb935ca1beb": [
     "virtualization\\windowscontainers\\removed\\ps_docker_comparison.md"
+  ],
+  "f7c7ae27d58d57f1a9da8546b23caceafd46bb2d": [
+    "virtualization\\windowscontainers\\quick_start\\manage_docker_hyperv.md"
   ],
   "e8789c3b127b6b142f245f306595d885a00f18bc": [
     "virtualization\\windowscontainers\\quick_start\\manage_docker_hyperv.md"
