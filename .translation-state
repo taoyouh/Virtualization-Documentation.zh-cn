@@ -1,5 +1,5 @@
 {
-  "LastProcessedCommit": "605a819cc1d8d5f3aa79082a5b5c516cb3a0a8b8",
+  "LastProcessedCommit": "d458c9d26acd722c579ac54647e468053a01b9e0",
   "LastTranslatedCommit": "bc47864182bc3c149e8119e57478d87728af2182",
   "Items": {
     "5090f6d60b5cbdce0990242d795d9e4e3736e791": {
@@ -11535,6 +11535,35 @@
       "HandoffFilePath": "ol-handoff\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\deployment.4ddcd8318b2db72f246478d26d82fb4a73b6da65.zh-cn.xlf",
       "HandoffFileCommit": "4bbc8e454dffe378e64310422993232c22816407",
       "HandoffDateTime": "2016-04-28T18:40:44.9455044Z",
+      "HandoffPriority": "",
+      "HandoffException": null,
+      "HandoffFailureTimes": 0,
+      "TargetFileCommit": null,
+      "TargetFilePath": null,
+      "HandbackFilePath": null,
+      "HandbackFileCommit": null,
+      "HandbackDateTime": "0001-01-01T00:00:00",
+      "HandbackException": null,
+      "HandbackFailureTimes": 0,
+      "UpdatedDateTime": "0001-01-01T00:00:00",
+      "ArchiveFilePath": null,
+      "ArchiveFileCommit": null,
+      "ArchiveFileDateTime": "0001-01-01T00:00:00",
+      "ArchiveException": null
+    },
+    "6e8378ee0fbeabc5ec636e7344e90e24e05f809a": {
+      "FileHash": "6e8378ee0fbeabc5ec636e7344e90e24e05f809a",
+      "SourceFileCommit": "23448393e34b3d80aa9150b94eeb836da4d70a41",
+      "SourceFilePath": "virtualization\\windowscontainers\\docker\\manage_windows_dockerfile.md",
+      "HandoffReason": 1,
+      "DependencyFrom": null,
+      "TokenReference": null,
+      "FilePathList": [
+        "virtualization\\windowscontainers\\docker\\manage_windows_dockerfile.md"
+      ],
+      "HandoffFilePath": "ol-handoff\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\manage_windows_dockerfile.cf56579c9136245b4cbef41fabc5df7a6ab9832a.zh-cn.xlf",
+      "HandoffFileCommit": "746879613cc7c87fe50c3ec675fe4646551a8d47",
+      "HandoffDateTime": "2016-04-29T04:10:57.1881614Z",
       "HandoffPriority": "",
       "HandoffException": null,
       "HandoffFailureTimes": 0,
