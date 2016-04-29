@@ -449,6 +449,9 @@
   "c036077146d20d76c282077758d83fe298daa15c": [
     "virtualization\\windowscontainers\\management\\hyperv_container.md"
   ],
+  "8921cbd910bf657ddc4998e4214c1e9f9c3a01e9": [
+    "virtualization\\windowscontainers\\management\\manage_containers.md"
+  ],
   "f301c61d7d6e1183a055fc907948f7a772b4d5cf": [
     "virtualization\\windowscontainers\\management\\manage_containers.md"
   ],
@@ -796,6 +799,9 @@
   "19547c2bfef4605a3c0be64fe152cfb7b89b621b": [
     "virtualization\\windowscontainers\\deployment\\deployment_azure.md"
   ],
+  "ed62cbfa175f05bf9a38646a1798f68d1cac73a1": [
+    "virtualization\\windowscontainers\\docker\\manage_windows_dockerfile.md"
+  ],
   "ec1373d806a3e9a3d8b0667f869017ec688d26c9": [
     "virtualization\\windowscontainers\\docker\\manage_windows_dockerfile.md"
   ],
@@ -804,6 +810,9 @@
   ],
   "fbb194dcdf5957c580e4064b3e5190380ecd9549": [
     "virtualization\\windowscontainers\\docker\\manage_windows_dockerfile.md"
+  ],
+  "ac41a05140219d116cc90b253c92a321124fba76": [
+    "virtualization\\windowscontainers\\docker\\optimize_windows_dockerfile.md"
   ],
   "026510f0ab8ff1b3becdc714e7357029822ec361": [
     "virtualization\\windowscontainers\\docker\\optimize_windows_dockerfile.md"
