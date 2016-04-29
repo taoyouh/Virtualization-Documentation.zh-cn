@@ -1,5 +1,5 @@
 {
-  "LastProcessedCommit": "2d1fc549096f64c782816046537f1a5c00807360",
+  "LastProcessedCommit": "55cff237ae8b9fe1778edeb3243787247763cfa6",
   "LastTranslatedCommit": "bc47864182bc3c149e8119e57478d87728af2182",
   "Items": {
     "5090f6d60b5cbdce0990242d795d9e4e3736e791": {
@@ -11738,6 +11738,35 @@
       "HandoffFilePath": "ol-handoff\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\optimize_windows_dockerfile.8acb58c9a0cb3119d370c90c749222ed5b757368.zh-cn.xlf",
       "HandoffFileCommit": "a2108b0781cedb50a38e5e6f4e85002f9c2f70bc",
       "HandoffDateTime": "2016-04-29T05:39:55.4448755Z",
+      "HandoffPriority": "",
+      "HandoffException": null,
+      "HandoffFailureTimes": 0,
+      "TargetFileCommit": null,
+      "TargetFilePath": null,
+      "HandbackFilePath": null,
+      "HandbackFileCommit": null,
+      "HandbackDateTime": "0001-01-01T00:00:00",
+      "HandbackException": null,
+      "HandbackFailureTimes": 0,
+      "UpdatedDateTime": "0001-01-01T00:00:00",
+      "ArchiveFilePath": null,
+      "ArchiveFileCommit": null,
+      "ArchiveFileDateTime": "0001-01-01T00:00:00",
+      "ArchiveException": null
+    },
+    "026510f0ab8ff1b3becdc714e7357029822ec361": {
+      "FileHash": "026510f0ab8ff1b3becdc714e7357029822ec361",
+      "SourceFileCommit": "b3396fcf488aad4bb3867fd2d7f96f2910eed836",
+      "SourceFilePath": "virtualization\\windowscontainers\\docker\\optimize_windows_dockerfile.md",
+      "HandoffReason": 1,
+      "DependencyFrom": null,
+      "TokenReference": null,
+      "FilePathList": [
+        "virtualization\\windowscontainers\\docker\\optimize_windows_dockerfile.md"
+      ],
+      "HandoffFilePath": "ol-handoff\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\optimize_windows_dockerfile.8acb58c9a0cb3119d370c90c749222ed5b757368.zh-cn.xlf",
+      "HandoffFileCommit": "aef63c8c81a19b51ba902ed1394e636abf554a08",
+      "HandoffDateTime": "2016-04-29T06:11:52.7899947Z",
       "HandoffPriority": "",
       "HandoffException": null,
       "HandoffFailureTimes": 0,
