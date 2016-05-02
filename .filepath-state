@@ -126,6 +126,9 @@
   "dc04e26b6b30d2de9b6d25fc96eb5ff248a877e0": [
     "virtualization\\hyperv_on_windows\\quick_start\\media\\pen_changes_upd.png"
   ],
+  "12d38955637682dc7206bb952e106c027bdf6140": [
+    "virtualization\\hyperv_on_windows\\TOC.md"
+  ],
   "1d69f8bb5cb097eb6a394b85121ba064b2ee539f": [
     "virtualization\\hyperv_on_windows\\TOC.md"
   ],
@@ -227,6 +230,9 @@
   ],
   "033950f25a30f7bccb308c22d6fa96b166d7ed01": [
     "virtualization\\hyperv_on_windows\\user_guide\\troubleshooting.md"
+  ],
+  "4766107e22fa9e987162497e6caf5247648105f1": [
+    "virtualization\\hyperv_on_windows\\user_guide\\vmsession.md"
   ],
   "36d3294d117e68705a01b465cd8f93d719b8b48f": [
     "virtualization\\hyperv_on_windows\\user_guide\\vmsession.md"
