@@ -329,6 +329,9 @@
   "69d398fd8da62b573eeaab74f9bd388ccf6f4318": [
     "virtualization\\windowscontainers\\about\\faq.md"
   ],
+  "9b9b61b4d479de30e88c56825d4528b75f942021": [
+    "virtualization\\windowscontainers\\about\\work_in_progress.md"
+  ],
   "0e1316061ca39eb1c3afd2ae874d5c07a05615c4": [
     "virtualization\\windowscontainers\\about\\work_in_progress.md"
   ],
@@ -487,6 +490,9 @@
   ],
   "e7dae01557ec7307bb24bc59aa4219c7839d73f6": [
     "virtualization\\windowscontainers\\management\\manage_data.md"
+  ],
+  "a9c4307099158a6e548dcca15edba3bd9bd6b222": [
+    "virtualization\\windowscontainers\\management\\manage_images.md"
   ],
   "ccffdfd5ea89a9515b03d1081e24bf9a377cc688": [
     "virtualization\\windowscontainers\\management\\manage_images.md"
@@ -876,6 +882,9 @@
   ],
   "e8789c3b127b6b142f245f306595d885a00f18bc": [
     "virtualization\\windowscontainers\\quick_start\\manage_docker_hyperv.md"
+  ],
+  "84529e2f24986ea1fa91fa594554b01b200c4899": [
+    "virtualization\\hyperv_on_windows\\user_guide\\setup_nat_network.md"
   ],
   "fef03f64b1c2ea9f526b84590124f97d303af49b": [
     "virtualization\\hyperv_on_windows\\user_guide\\setup_nat_network.md"
