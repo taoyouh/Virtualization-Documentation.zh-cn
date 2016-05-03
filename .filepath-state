@@ -50,6 +50,10 @@
   "5a46028faa5e86b84806c030c956f71465edcfc9": [
     "virtualization\\hyperv_on_windows\\develop\\powershell_snippets.md"
   ],
+  "66c618e7572b413896dcdc48be20d94f83f945d8": [
+    "virtualization\\hyperv_on_windows\\quick_start\\walkthrough.md",
+    "virtualization\\hyperv_on_windows\\quick_start\\index.md"
+  ],
   "380e6aec81d02bed84769a4b31c0d1fdeb72d8dc": [
     "virtualization\\hyperv_on_windows\\quick_start\\walkthrough.md",
     "virtualization\\hyperv_on_windows\\quick_start\\index.md"
@@ -59,6 +63,9 @@
   ],
   "2b84c3d3efe43330cac6f8dd759ada08eaf219b6": [
     "virtualization\\hyperv_on_windows\\quick_start\\walkthrough.md"
+  ],
+  "4ec9c178807186e37054ab000e01a37b5899ef4e": [
+    "virtualization\\hyperv_on_windows\\quick_start\\walkthrough_checkpoints.md"
   ],
   "e7cc386452b95f16a3c12340e8027c605732e3e8": [
     "virtualization\\hyperv_on_windows\\quick_start\\walkthrough_checkpoints.md"
@@ -656,6 +663,9 @@
   "db230b985728dc043b72091584992e7efeebc23c": [
     "virtualization\\windowscontainers\\management\\manage_resources.md"
   ],
+  "242a2e426c62eafe53a0a86d6f7ae47284a52a19": [
+    "virtualization\\windowscontainers\\quick_start\\azure_setup.md"
+  ],
   "9ec04b79865d5c5f4726fe7cc8677272528346c9": [
     "virtualization\\windowscontainers\\quick_start\\azure_setup.md"
   ],
@@ -936,6 +946,9 @@
   ],
   "57dad6d7e391f9708f243465d10dca1ef021a9af": [
     "virtualization\\windowscontainers\\management\\docker-powershell.md"
+  ],
+  "54f480f46b6916c56f6189d4c9ef0efeab99d110": [
+    "virtualization\\hyperv_on_windows\\index.md"
   ],
   "0e3df0f6619f4f2e4f93644749c9f6485346f902": [
     "virtualization\\hyperv_on_windows\\index.md"
