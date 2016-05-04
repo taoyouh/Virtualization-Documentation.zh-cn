@@ -7,14 +7,15 @@
 [PowerShell Direct](../user_guide/vmsession.md) 是使用 Hyper-V 套接字进行通信的应用程序（在这种情况下是内置 Windows 服务）的一个示例。
 
 **受支持的主机操作系统**
-* Windows 10
-* Windows Server Technical Preview 3
+* Windows 10 14290 版及更高版本
+* Windows Server Technical Preview 4 及更高版本
 * 未来版本 (Server 2016 +)
 
 **受支持的来宾操作系统**
 * Windows 10
-* Windows Server Technical Preview 3
+* Windows Server Technical Preview 4 及更高版本
 * 未来版本 (Server 2016 +)
+* 使用 Linux Integration Services 的 Linux 来宾（请参阅 [Windows 上的 HYPER-V 支持的 Linux 和 FreeBSD 虚拟机](https://technet.microsoft.com/library/dn531030(ws.12).aspx))）
 
 **功能和限制**
 * 支持内核模式或用户模式操作
@@ -32,7 +33,22 @@
 * C 编译器。 如果没有该功能，请查看 [Visual Studio 代码](https://aka.ms/vs)
 * 一台运行 Hyper-V 和虚拟机的计算机。
   * 主机和来宾 (VM) 操作系统必须是 Windows 10 、Windows Server Technical Preview 3 或更高版本。
-* Windows SDK - 下面是包含 `hvsocket.h` 的 [Win10 SDK](https://dev.windows.com/en-us/downloads/windows-10-sdk) 的链接。
+* 在 HYPER-V 主机上安装的 [Windows 10 SDK](http://aka.ms/flightingSDK)
+
+**Windows SDK 详细信息**
+
+指向 Windows SDK 的链接：
+* [Windows 10 SDK 内部版预览](http://aka.ms/flightingSDK)
+* [Windows 10 SDK](https://dev.windows.com/en-us/downloads/windows-10-sdk)
+
+Windows 10 14290 版中开始提供 HYPER-V 套接字的 API，外部测试下载与最新内部快速跟踪外部测试版本相匹配。  
+如果出现异常行为，请通过 [TechNet 论坛](https://social.technet.microsoft.com/Forums/windowsserver/en-US/home "TechNet 论坛")告知我们。 在你的帖子中，请包括：
+* 意外的行为
+* 主机、来宾和 SDK 的操作系统和版本号。
+
+  SDK 版本号在 SDK 安装程序的标题中可见：  
+  ![](./media/flightingSDK.png)
+
 
 ## 注册新应用程序
 
@@ -49,7 +65,7 @@ $friendlyName = "HV Socket Demo"
 
 # Create a new random GUID and add it to the services list then add the name as a value
 
-$service = New-Item -Path "HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Virtualization\GuestCommunicationServices" -Name ([System.Guid]::NewGuid().ToString())
+$service = New-Item -Path "HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Virtualization\GuestCommunicationServices" -Name ((New-Guid).Guid)
 
 $service.SetValue("ElementName", $friendlyName)
 
@@ -83,7 +99,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Virtualization\G
 
 > ** 提示：**若要在 PowerShell 中生成 GUID，并将其复制到剪贴板，请运行：
 ``` PowerShell
-[System.Guid]::NewGuid().ToString() | clip.exe
+(New-Guid).Guid | clip.exe
 ```
 
 ## 创建 Hyper-V 套接字
@@ -91,7 +107,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Virtualization\G
 在最基本的情况下，定义套接字需要地址系列、连接类型和协议。
 
 下面是一个简单的 [套接字定义](
-https://msdn.microsoft.com/zh-cn/library/windows/desktop/ms740506(v=vs.85).aspx
+https://msdn.microsoft.com/zh-cn/library/windows/desktop/ms740506 (v=vs.85).aspx
 )
 
 ``` C
@@ -104,7 +120,7 @@ SOCKET WSAAPI socket(
 
 对于 Hyper-V 套接字：
 * 地址系列 - `AF_HYPERV`
-* 类型 - `SOCK_STREAM`、`SOCK_DGRAM` 或 `SOCK_RAW`
+* 类型 - `SOCK_STREAM`
 * 协议 - `HV_PROTOCOL_RAW`
 
 
@@ -192,4 +208,8 @@ Accept()
 
 
 
-<!--HONumber=Feb16_HO1-->
+
+
+<!--HONumber=Mar16_HO4-->
+
+
