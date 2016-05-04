@@ -1,12 +1,27 @@
-
-
-
+---
+author: neilpeterson
+---
 
 # Windows 容器要求
 
 **这是初步内容，可能还会更改。**
 
 此指南列出 Windows 容器主机的要求。
+
+## 物理系统上的 Windows 容器
+
+- Windows 容器角色仅在 Windows Server 2016 TP4（Full 和 Core 版本）和 Nano 服务器上可用。
+- 如果将运行 Hyper-V 容器，则需要安装 Hyper-V 角色。
+
+## 虚拟系统上的 Windows 容器
+
+如果 Windows 容器主机将在 Hyper-V 虚拟机上运行，并且还将托管 Hyper-V 容器，则需要启用嵌套虚拟化。 嵌套的虚拟化具有以下要求：
+
+- 至少 4 GB RAM 可用于虚拟化的 Hyper-V 主机。
+- Windows Server 2016 Technical Preview 4 或主机系统上的 Windows 10 build 10565 以及 Windows Server Technical Preview 4（Full、Core）或虚拟机中的 Nano Server。
+- 带有 Intel VT-x 处理器（此功能目前只适用于 Intel 处理器）。
+- 容器主机虚拟机还需要至少 2 个虚拟处理器。
+
 
 ## 支持的操作系统映像
 
@@ -39,21 +54,11 @@
 </tbody>
 </table>
 
-## Hyper-V 容器要求
-
-如果 Windows 容器主机将在 Hyper-V 虚拟机上运行，并且还将托管 Hyper-V 容器，则需要启用嵌套虚拟化。 嵌套的虚拟化具有以下要求：
-
-- 至少 4 GB RAM 可用于虚拟化的 Hyper-V 主机。
-- 在物理和虚拟主机上具有 Windows Server 2016 Technical Preview 4 或 Windows 10 版本 10565。
-- 带有 Intel VT-x 处理器（此功能目前只适用于 Intel 处理器）。
-- 容器主机虚拟机还需要至少 2 个虚拟处理器。
 
 
 
 
 
-
-
-<!--HONumber=Feb16_HO3-->
+<!--HONumber=Mar16_HO1-->
 
 

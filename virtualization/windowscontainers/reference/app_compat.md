@@ -1,6 +1,6 @@
-
-
-
+---
+author: scooley
+---
 
 # Windows 容器中的应用程序兼容性
 
@@ -29,7 +29,7 @@
 | ASP.NET| 5 beta 6| “是”| “是”| X64 和 x86 两者|
 | Django| | “是”| “是”| |
 | Go| 1.4.2| “是”| “是”| |
-| Internet 信息服务| 10.0| “是”| “是”| 如果已加载重复数据删除筛选器，则不会安装 VC ++ 运行时。使用 `fltmc unload dedup` 卸载重复数据删除|
+| Internet 信息服务| 10.0| “是”| 是| HTTPS/TLS 无法工作。如果已加载重复数据删除筛选器，则不会安装 VC ++ 运行时。使用 `fltmc unload dedup` 卸载重复数据删除|
 | Java| 1.8.0_51| “是”| “是”| 使用服务器版本。客户端版本未正确安装|
 | MongoDB| 3.0.4| “是”| 未知| |
 | MySQL| 5.6.26| “是”| “是”| |
@@ -59,7 +59,7 @@
 | ASP.NET| 5 beta 6| “是”| X64 和 x86 两者|
 | Django| | “是”| 如果映像使用 DockerFile 创建，并且复制 Python 二进制文件作为它的一部分，则 Python 不起作用。启动容器，然后复制 Python 二进制文件。|
 | Go| 1.4.2| “是”| |
-| Internet 信息服务| 10.0| “是”| IIS 无法直接使用 dism 安装。使用 dism 命令执行 IIS 的无人参与安装。|
+| Internet 信息服务| 10.0| 是| HTTPS/TLS 无法工作。IIS 无法直接使用 dism 安装。使用 dism 命令执行 IIS 的无人参与安装。|
 | Java| 1.8.0_51| “是”| 使用服务器版本。客户端版本未正确安装|
 | MySQL| 5.6.26| “是”| |
 | NGinx| 1.9.3| “是”| |
@@ -79,6 +79,6 @@
 
 
 
-<!--HONumber=Feb16_HO3-->
+<!--HONumber=Mar16_HO2-->
 
 

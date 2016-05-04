@@ -1,6 +1,6 @@
-
-
-
+---
+author: neilpeterson
+---
 
 # Windows 容器快速入门 - PowerShell
 
@@ -281,7 +281,7 @@ HYPV Off   00:00:00 NanoServer
 在容器主机上创建一个名为 `c:\share\en-us` 的目录。
 
 ```powershell
-S C:\> New-Item -Type Directory c:\share\en-us
+PS C:\> New-Item -Type Directory c:\share\en-us
 
     Directory: C:\share
 
@@ -500,7 +500,7 @@ PS C:\> Enter-PSSession -ContainerName IISApp -RunAsAdministrator
 运行以下命令来删除 IIS 初始屏幕。
 
 ```powershell
-[IIS]: PS C:\> del C:\inetpub\wwwroot\iisstart.htm
+[IISApp]: PS C:\> del C:\inetpub\wwwroot\iisstart.htm
 ```
 运行以下命令来将默认 IIS 站点替换为新的静态站点。
 
@@ -523,6 +523,6 @@ exit
 
 
 
-<!--HONumber=Feb16_HO3-->
+<!--HONumber=Mar16_HO1-->
 
 
