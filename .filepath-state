@@ -184,9 +184,6 @@
   "07461d3c6c45b5d5413d6c8490daee50340b34de": [
     "virtualization\\hyperv_on_windows\\TOC.md"
   ],
-  "c5f718e0d2e3a0ce0e069c9b5d83b09d9bc0c395": [
-    "virtualization\\hyperv_on_windows\\TOC.md"
-  ],
   "1d0df624e4410c1b14edd7f039ae84ad31c80cfe": [
     "virtualization\\hyperv_on_windows\\user_guide\\checkpoints.md"
   ],
@@ -355,9 +352,6 @@
     "virtualization\\windowscontainers\\about\\about_overview.md"
   ],
   "4bef4ede34814cd9e6e0445b0fc4a7675e99a526": [
-    "virtualization\\windowscontainers\\about\\about_overview.md"
-  ],
-  "d43ae1ecbd08190ef0751b5e6dfdb6a21cd336d2": [
     "virtualization\\windowscontainers\\about\\about_overview.md"
   ],
   "b62d8af1f08bc8085945c8aa154d46d2215879cb": [
@@ -549,18 +543,6 @@
   "8a912700e8e977488658af6b7fdc481b1360265f": [
     "virtualization\\windowscontainers\\management\\manage_images.md"
   ],
-  "854f8e67fdc7bec79f34a2a72aafb64178f22f72": [
-    "virtualization\\windowscontainers\\management\\manage_images.md"
-  ],
-  "b39cec275e2c406b5f184078915bfb02640a22ee": [
-    "virtualization\\windowscontainers\\management\\manage_images.md"
-  ],
-  "2317edeb11994bdff6f012f13112a27a5779f93c": [
-    "virtualization\\windowscontainers\\management\\manage_images.md"
-  ],
-  "5ec58bca4fbc5ba54bab511a4eed9eef5a20f244": [
-    "virtualization\\windowscontainers\\management\\manage_images.md"
-  ],
   "1279da0edb01246459d9f32aa7450b6bb7901592": [
     "virtualization\\windowscontainers\\management\\manage_resources.md"
   ],
@@ -577,9 +559,6 @@
     "virtualization\\windowscontainers\\quick_start\\azure_setup.md"
   ],
   "85f4deddc94ea3c722d257b14472238df91d5c3e": [
-    "virtualization\\windowscontainers\\quick_start\\azure_setup.md"
-  ],
-  "f6afbf888146ad5823b5ff11999af862dc5b5c26": [
     "virtualization\\windowscontainers\\quick_start\\azure_setup.md"
   ],
   "7eaf82d3cdd0a4881f239ce4071eb262b3104dfd": [
@@ -609,9 +588,6 @@
     "virtualization\\windowscontainers\\quick_start\\container_setup.md"
   ],
   "8303980ee5b2e51ab749a5f67980c528de7aba88": [
-    "virtualization\\windowscontainers\\quick_start\\container_setup.md"
-  ],
-  "e88551f43a762b597beeee854874758c0b09a1b9": [
     "virtualization\\windowscontainers\\quick_start\\container_setup.md"
   ],
   "abc60480f9b0b1f5df24c9acb5d0ff47a7423c95": [
@@ -761,9 +737,6 @@
   "3ae90098101df784633a40ac99aa5fcdd612aa5f": [
     "virtualization\\windowscontainers\\deployment\\deployment_nano.md"
   ],
-  "eb44caab9e5fff79f1675e2be907b6a22b94383e": [
-    "virtualization\\windowscontainers\\deployment\\deployment_nano.md"
-  ],
   "54974198eb9f9f9ea840b99e83eab5952f3f6b9a": [
     "virtualization\\community\\media\\GitFromWinCMD.png"
   ],
@@ -774,9 +747,6 @@
     "virtualization\\hyperv_on_windows\\develop\\tlfs.md"
   ],
   "08d829c05c04924e27a1d697bc5d4c4e8218f3f5": [
-    "virtualization\\hyperv_on_windows\\develop\\tlfs.md"
-  ],
-  "661df39d6c6677dcb12e5eecf27aee86afb629fa": [
     "virtualization\\hyperv_on_windows\\develop\\tlfs.md"
   ],
   "5463412d44bd7c657401c55558bb817df4cc1eb2": [
