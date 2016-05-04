@@ -45,7 +45,7 @@ author: scooley
 | Ruby| 2.2.2| “是”| “是”| X64 和 x86 两者|
 | Ruby on Rails| 4.2.3| “是”| “是”| |
 | SQLite| 3.8.11.1| “是”| 否| |
-| SQL Server Express| 2014 LocalDB| 否| 否| |
+| SQL Server Express| 2014| “是”| Unknown| 可以通过创建此[社区提供的 Dockerfile](https://github.com/brogersyh/Dockerfiles-for-windows/tree/master/sqlexpress)（用于安装 SQL Express 2014）快速启动。|
 | Sysinternals 工具| *| “是”| “是”| 仅尝试了不需要 GUI 的工具。PsExec 在当前设计下不起作用|
 
 ## Hyper-V 容器
