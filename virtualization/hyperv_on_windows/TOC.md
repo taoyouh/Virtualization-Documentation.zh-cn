@@ -56,11 +56,11 @@
 
 ## [Hyper-V 体系结构](https://msdn.microsoft.com/en-us/library/cc768520(v=bts.10).aspx)
 
-## [虚拟机监控程序 TLFS](develop/tlfs.md)
+## [虚拟机监控程序规范](develop/tlfs.md)
 
 
 
 
-<!--HONumber=Feb16_HO3-->
+<!--HONumber=Mar16_HO2-->
 
 

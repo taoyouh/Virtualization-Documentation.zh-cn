@@ -1,6 +1,6 @@
-
-
-
+---
+author: neilpeterson
+---
 
 
 # 容器主机部署 - Nano Server
@@ -182,6 +182,11 @@ NanoServer        CN=Microsoft 10.0.10586.0 True
 
 Windows 中未附带 Docker 守护程序和命令行接口，并且这些功能不与 Windows 容器功能一起安装。 Docker 不是使用 Windows 容器的要求。 如果你希望安装 Docker，请按照本文 [Docker 和 Windows](./docker_windows.md) 中的说明进行操作。
 
+你可以使用 Hyper-V 管理主机中的 `Enter-PSSession` 命令来连接到容器主机。
+
+```powershell
+PS C:\> Enter-PSSession -VMName <VM Name>
+```
 
 ## Hyper-V 容器主机
 
@@ -232,6 +237,6 @@ PS C:\> Get-VMNetworkAdapter -VMName <VM Name> | Set-VMNetworkAdapter -MacAddres
 
 
 
-<!--HONumber=Feb16_HO4-->
+<!--HONumber=Mar16_HO3-->
 
 
