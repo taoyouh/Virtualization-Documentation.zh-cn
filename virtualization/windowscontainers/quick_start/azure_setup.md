@@ -1,3 +1,7 @@
+
+
+
+
 # Azure 快速入门
 
 在 Azure 中创建和管理 Windows Server 容器前，你需要部署 Windows Server 2016 Technical Preview 映像，该映像已使用 Windows Server 容器功能进行预配置。 本指南向你演练此过程。
@@ -10,7 +14,7 @@
 
 1. 转到 [azure.com](https://azure.com)，然后按照 [Azure 免费试用版](https://azure.microsoft.com/en-us/pricing/free-trial/)的步骤进行操作。
 2. 使用你的 Microsoft 帐户登录。
-3. 当你的帐户准备就绪时，登录 [Azure 管理门户](https://portal.azure.com)。
+3. 当你的帐户准备就绪时，登录到 [Azure 管理门户](https://portal.azure.com)。
 
 ## 创建容器主机 VM
 
@@ -56,4 +60,8 @@
 
 
 
-<!--HONumber=Feb16_HO1-->
+
+
+<!--HONumber=Feb16_HO3-->
+
+

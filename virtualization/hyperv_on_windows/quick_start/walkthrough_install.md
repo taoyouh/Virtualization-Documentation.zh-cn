@@ -2,7 +2,7 @@
 
 必须先启用 Hyper-V 角色，然后才可以在 Windows 10 上创建虚拟机。 可使用 Windows 10 控制面板、PowerShell 或部署映像服务和管理工具 (DISM) 执行此操作。 本文档将演练上述每种方式。
 
->启用 Hyper-V 之前，请确保与你的系统兼容。 有关详细信息，请参阅 [Windows 10 Hyper-V 系统要求](https://msdn.microsoft.com/virtualization/hyperv_on_windows/quick_start/walkthrough_compatibility)。
+> 启用 Hyper-V 之前，请确保与你的系统兼容。 有关详细信息，请参阅 [Windows 10 Hyper-V 系统要求](https://msdn.microsoft.com/virtualization/hyperv_on_windows/quick_start/walkthrough_compatibility)。
 
 ## 手动安装 Hyper-V 角色
 
@@ -25,7 +25,7 @@
 2. 运行以下命令：
 
 ```powershell
-Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Hyper-V –All
+Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Hyper-V -All
 ```
 安装完成后，需要重新启动计算机。
 
@@ -51,4 +51,9 @@ DISM /Online /Enable-Feature /All /FeatureName:Microsoft-Hyper-V
 
 
 
-<!--HONumber=Dec15_HO1-->
+
+
+
+<!--HONumber=Feb16_HO4-->
+
+

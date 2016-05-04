@@ -1,3 +1,7 @@
+
+
+
+
 # 将 Windows 容器主机部署到新的 Hyper-V 虚拟机
 
 本文档演示了使用 PowerShell 脚本部署新的 Hyper-V 虚拟机，然后将其配置为 Windows 容器主机的步骤。
@@ -30,7 +34,7 @@ PS C:\> start-process powershell -Verb runAs
 运行以下内容来返回外部虚拟交换机的列表。 如果未返回任何内容，请创建新的外部虚拟交换机，然后继续转到本指南的下一步。
 
 ```powershell
-PS C:\> Get-VMSwitch | where {$_.SwitchType –eq “External”}
+PS C:\> Get-VMSwitch | where {$_.SwitchType -eq “External”}
 ```
 
 使用以下命令来下载配置脚本。 还可以从此位置手动下载该脚本 - [配置脚本](https://aka.ms/tp4/New-ContainerHost)。
@@ -42,7 +46,7 @@ PS C:\> wget -uri https://aka.ms/tp4/New-ContainerHost -OutFile c:\New-Container
 运行以下命令来创建和配置容器主机，其中 `&lt;containerhost&gt;` 将是虚拟机名称。
 
 ``` powershell
-PS C:\> powershell.exe -NoProfile c:\New-ContainerHost.ps1 –VmName testcont -WindowsImage ServerDatacenterCore -Hyperv
+PS C:\> powershell.exe -NoProfile c:\New-ContainerHost.ps1 -VMName testcont -WindowsImage ServerDatacenterCore -Hyperv
 ```
 
 当脚本开始时，系统将提示你输入密码。 这将是分配给 Administrator 帐户的密码。
@@ -72,4 +76,8 @@ license terms. Please confirm you have accepted and agree to the license terms.
 
 
 
-<!--HONumber=Feb16_HO2-->
+
+
+<!--HONumber=Feb16_HO4-->
+
+

@@ -1,6 +1,10 @@
+
+
+
+
 # PowerShell 与 Docker 在管理 Windows 容器方面的比较
 
-通过使用内置 Windows 工具（在此预览版中是 PowerShell）和开源管理工具（例如 Docker）管理 Windows 容器的方法有很多种。
+通过使用内置 Windows 工具（在此预览版中是 PowerShell）和开源管理工具（例如 Docker）管理 Windows 容器的方法有很多种。  
 下面提供了分别概述这两种方法的指南：
 * [使用 Docker 管理 Windows 容器](../quick_start/manage_docker.md)
 * [使用 PowerShell 管理 Windows 容器](../quick_start/manage_powershell.md)
@@ -40,9 +44,9 @@ PowerShell cmdlet 并非就是完美的奇偶校验，并且有很多命令我�
 
 1.  PowerShell 模型中容器的生命周期略有不同。 在容器 PowerShell 模块中，我们公开了 `New-Container`（会创建已停止的新容器）和 `Start-Container` 的更具体操作。
 
-在创建和启动容器之间，你还可以配置容器的设置；对于 TP3，我们计划公开的另一项唯一配置是设置容器的网络连接功能。 使用 (Add/Remove/Connect/Disconnect/Get/Set)-ContainerNetworkAdapter cmdlet。
+  在创建和启动容器之间，你还可以配置容器的设置；对于 TP3，我们计划公开的另一项唯一配置是设置容器的网络连接功能。 使用 (Add/Remove/Connect/Disconnect/Get/Set)-ContainerNetworkAdapter cmdlet。
 
-2.  当前无法在启动时传递要在容器内运行的命令。但是，你仍可以使用 `Enter-PSSession -ContainerId -ContainerId <正在运行的容器的 ID>` 获取正在运行的容器的交互式 PowerShell 会话，并且你可以使用 `Invoke-Command -ContainerId <容器 ID> -ScriptBlock { 要在容器内运行的代码 }` 或 `Invoke-Command -ContainerId <容器 ID> -FilePath <脚本路径>` 在正在运行的容器中执行命令。
+2.  当前无法在启动时传递要在容器内运行的命令。但是，你仍可以使用 `Enter-PSSession -ContainerId -ContainerId <正在运行的容器的 ID>` 获取正在运行的容器的交互式 PowerShell 会话，并且你可以使用 `Invoke-Command -ContainerId <容器 ID> -ScriptBlock { 要在容器内运行的代码 }` 或 `Invoke-Command -ContainerId <容器 ID> -FilePath <脚本路径>` 在正在运行的容器中执行命令。  
 这两种命令均支持高特权操作的可选 `-RunAsAdministrator` 标志。
 
 
@@ -148,7 +152,7 @@ Start-Container -Container $container2
 
 ### 生成自己的示例
 
-你可以使用 `Get-Command -Module Containers` 查看所有 Containers cmdlet。 还有其他若干 cmdlet 未在此作介绍，留待你自己去了解。
+你可以使用 `Get-Command -Module Containers` 查看所有 Containers cmdlet。 还有其他若干 cmdlet 未在此作介绍，留待你自己去了解。    
 **注意** 这不会返回作为核心 PowerShell 的一部分的 `Enter-PSSession` 和 `Invoke-Command` cmdlet。
 
 你还可以使用 `Get-Help [cmdlet name]` 获取有关任何 cmdlet 的帮助，使用 `[cmdlet name] -?` 也可实现此目的。 如今，帮助输出会自动生成并直接告诉你命令语法；随着离最终确定 cmdlet 设计越来越近，我们会添加更多文档。
@@ -187,4 +191,8 @@ Windows 容器可以通过 Docker 命令管理。 虽然 Windows 容器应该与
 
 
 
-<!--HONumber=Dec15_HO1-->
+
+
+<!--HONumber=Feb16_HO3-->
+
+

@@ -10,7 +10,7 @@
 
 ## [Hyper-V 上的 Linux 和 FreeBSD](https://technet.microsoft.com/library/dn531030.aspx)
 
-# Windows 上的 Hyper-V 快速入门
+# Windows 快速入门上的 Hyper-V
 
 ## [系统要求](quick_start/walkthrough_compatibility.md)
 
@@ -56,5 +56,11 @@
 
 ## [Hyper-V 体系结构](https://msdn.microsoft.com/en-us/library/cc768520(v=bts.10).aspx)
 
+## [虚拟机监控程序 TLFS](develop/tlfs.md)
 
-<!--HONumber=Feb16_HO2-->
+
+
+
+<!--HONumber=Feb16_HO3-->
+
+

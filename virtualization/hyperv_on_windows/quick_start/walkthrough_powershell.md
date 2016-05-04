@@ -4,24 +4,24 @@
 
 ### 返回 Hyper-V 命令列表
 
-1.  单击 Windows“开始”按钮，键入“PowerShell”****。
+1.  单击 Windows“开始”按钮，键入“PowerShell”。
 2.  运行以下命令以显示适用于 Hyper-V PowerShell 模块的 PowerShell 命令的可搜索列表。
 
  ```powershell
-get-command –module hyper-v | out-gridview
+get-command -module hyper-v | out-gridview
  ```
-获取的内容如下所示：
+  获取的内容如下所示：
 
-![](media\command_grid.png)
+  ![](media\command_grid.png)
 
 3. 若要了解有关特定 PowerShell 命令的详细信息，请使用 `get-help`。 例如，运行以下命令将返回有关 `get-vm` Hyper-V 命令的信息。
 
   ```powershell
 get-help get-vm
   ```
-该输出向你显示构建命令的方法、必需和可选参数定义以及可以使用的别名。
+ 该输出向你显示构建命令的方法、必需和可选参数定义以及可以使用的别名。
 
-![](media\get_help.png)
+ ![](media\get_help.png)
 
 
 ### 返回虚拟机列表
@@ -33,19 +33,19 @@ get-help get-vm
  ```powershell
 get-vm
  ```
-显示内容如下所示：
+ 显示内容如下所示：
 
-![](media\get_vm.png)
+ ![](media\get_vm.png)
 
 2. 若要仅返回已启动的虚拟机列表，请将筛选器添加到 `get-vm` 命令。 可通过使用 where-object 命令添加筛选器。 有关筛选的详细信息，请参阅[使用 Where-Object](https://technet.microsoft.com/en-us/library/ee177028.aspx) 文档。
 
  ```powershell
- get-vm | where {$_.State –eq ‘Running’}
+ get-vm | where {$_.State -eq ‘Running’}
  ```
 3.  若要列出所有处于关机状态的虚拟机，请运行以下命令。 此命令是步骤 2 中的命令的副本且筛选器从“正在运行”更改为“关闭”。
 
  ```powershell
- get-vm | where {$_.State –eq ‘Off’}
+ get-vm | where {$_.State -eq ‘Off’}
  ```
 
 ### 启动和关闭虚拟机
@@ -53,18 +53,18 @@ get-vm
 1. 若要启动特定虚拟机，请运行附带虚拟机名称的以下命令：
 
  ```powershell
- Start-vm –Name <virtual machine name>
+ Start-vm -Name <virtual machine name>
  ```
 
 2. 若要启动所有当前已关机的虚拟机，请获取这些虚拟机的列表并将该列表通过管道传递到“start-vm”命令：
 
   ```powershell
- get-vm | where {$_.State –eq ‘Off’} | start-vm
+ get-vm | where {$_.State -eq ‘Off’} | start-vm
   ```
 3. 若要关闭所有正在运行的虚拟机，请运行以下命令：
 
   ```powershell
- get-vm | where {$_.State –eq ‘Running’} | stop-vm
+ get-vm | where {$_.State -eq ‘Running’} | stop-vm
   ```
 
 ### 创建 VM 检查点
@@ -105,4 +105,8 @@ get-vm
 
 
 
-<!--HONumber=Dec15_HO1-->
+
+
+<!--HONumber=Feb16_HO4-->
+
+

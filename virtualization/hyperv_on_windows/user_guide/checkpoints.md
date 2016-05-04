@@ -10,8 +10,8 @@ Windows 10 Hyper-V 包括两种类型的检查点：
 
 默认情况下选择“生产检查点”，但可以使用 Hyper-V 管理器或 PowerShell 对该选择进行更改。
 
->**注意：**Hyper-V PowerShell 模块具有若干别名，以便检查点和快照可以互换使用。
->本文档使用检查点，但是请注意，你可能会看到使用术语快照的类似命令。
+> **注意：**Hyper-V PowerShell 模块具有若干别名，以便检查点和快照可以互换使用。  
+>  本文档使用检查点，但是请注意，你可能会看到使用术语快照的类似命令。
 
 ## 更改检查点类型
 
@@ -60,7 +60,7 @@ Set-VM -Name <vmname> -CheckpointType ProductionOnly
 使用 **CheckPoint-VM** 命令创建检查点。
 
 ```powershell
-Checkpoint-VM –Name <VMName>
+Checkpoint-VM -Name <VMName>
 ```
 
 当检查点过程完成时，使用 **Get-VMCheckpoint** 命令查看虚拟机的检查点列表。
@@ -78,24 +78,24 @@ Get-VMCheckpoint -VMName <VMName>
 1.  在“Hyper-V 管理器”中的“虚拟机”下，选择虚拟机。
 2.  在“检查点”部分中，右键单击你想要使用的检查点，然后单击“应用”。
 3.  将显示一个带有以下选项的对话框：
-* **创建检查点和应用**：在虚拟机应用以前的检查点之前创建新的检查点。
-* **应用**：仅应用已选择的检查点。 不能撤消此操作。
-* **取消**：在不执行任何操作的情况下，关闭该对话框。
+  * **创建检查点和应用**：在虚拟机应用以前的检查点之前创建新的检查点。
+  * **应用**：仅应用已选择的检查点。 不能撤消此操作。
+  * **取消**：在不执行任何操作的情况下，关闭该对话框。
 
-选择任一“应用”选项来创建“应用检查点”。
+  选择任一“应用”选项来创建“应用检查点”。
 
 **使用 PowerShell**
 
 5. 若要查看虚拟机的检查点列表，请使用 **Get-VMCheckpoint** 命令。
 
-```powershell
-Get-VMCheckpoint -VMName <VMName>
-```
+    ```powershell
+    Get-VMCheckpoint -VMName <VMName>
+    ```
 6. 若要应用检查点，请使用 **Restore-VMCheckpoint** 命令。
 
-```powershell
-Restore-VMCheckpoint -Name <checkpoint name> -VMName <VMName> -Confirm:$false
-```
+    ```powershell
+    Restore-VMCheckpoint -Name <checkpoint name> -VMName <VMName> -Confirm:$false
+    ```
 
 ## 重命名检查点
 
@@ -104,7 +104,7 @@ Restore-VMCheckpoint -Name <checkpoint name> -VMName <VMName> -Confirm:$false
 默认情况下，检查点的名称是虚拟机的名称与采用该检查点时的日期和时间的组合。 这是标准格式：
 
 ```
-virtual_machine_name (MM/DD/YYY –hh:mm:ss AM\PM)
+virtual_machine_name (MM/DD/YYY -hh:mm:ss AM\PM)
 ```
 
 名称限制为 100 个字符或更少，并且名称不能为空。
@@ -119,7 +119,7 @@ virtual_machine_name (MM/DD/YYY –hh:mm:ss AM\PM)
 **使用 PowerShell**
 
 ``` powershell
-Rename-VMCheckpoint –VMName <virtual machine name> –Name <checkpoint name> --NewName <new checkpoint name>
+Rename-VMCheckpoint -VMName <virtual machine name> -Name <checkpoint name> --NewName <new checkpoint name>
 ```
 
 ## 删除检查点
@@ -140,7 +140,7 @@ Rename-VMCheckpoint –VMName <virtual machine name> –Name <checkpoint name> -
 
 **使用 PowerShell**
 ```powershell
-Remove-VMCheckpoint –VMName <virtual machine name> –Name <checkpoint name>
+Remove-VMCheckpoint -VMName <virtual machine name> -Name <checkpoint name>
 ```
 
 ## 导出检查点
@@ -149,14 +149,14 @@ Remove-VMCheckpoint –VMName <virtual machine name> –Name <checkpoint name>
 
 **使用 PowerShell**
 ``` powershell
-Export-VMCheckpoint –VMName <virtual machine name>  –Name <checkpoint name> -Path <path for export>
+Export-VMCheckpoint -VMName <virtual machine name>  -Name <checkpoint name> -Path <path for export>
 ```
 
 ## 启用或禁用检查点
 
 1.  在“Hyper-V 管理器”中，右键单击虚拟机的名称，然后单击“设置”。
 2.  在“管理”部分中，选择“检查点”。
-3.  若要允许采用此虚拟机的检查点，请确保已选中“启用检查点”，这是默认的行为。
+3.  若要允许采用此虚拟机的检查点，请确保已选中“启用检查点”，这是默认的行为。  
 若要禁用检查点，请取消选中“启用检查点”复选框。
 4.  单击“应用”来应用你的更改。 如果已完成操作，请单击“确定”来关闭对话框。
 
@@ -230,4 +230,8 @@ Export-VMCheckpoint –VMName <virtual machine name>  –Name <checkpoint name> 
 
 
 
-<!--HONumber=Dec15_HO3-->
+
+
+<!--HONumber=Feb16_HO4-->
+
+

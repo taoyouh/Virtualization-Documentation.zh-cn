@@ -1,3 +1,7 @@
+
+
+
+
 # 正在进行的工作
 
 如果在此处没有看到你的问题已解决或仍有问题，请将其发布到[论坛](https://social.msdn.microsoft.com/Forums/en-US/home?forum=windowscontainers)。
@@ -16,15 +20,6 @@ Windows 容器要求操作系统映像匹配容器主机的版本和修补程序
 
 **解决方法：**   
 下载并安装匹配容器主机的操作系统版本和修补程序级别的容器基础映像。
-
-### 所有非 C:/ 驱动器在容器中均可见
-
-可用于容器主机的所有非 C:/ 驱动器将自动映射到运行的新 Windows 容器中。
-
-此时，无法有选择性地将文件夹映射到容器中，因为将自动映射驱动器的临时解决方法。
-
-**解决方法：**  
-我们正在努力解决它。 将来，会提供文件夹共享。
 
 ### 默认的防火墙行为
 
@@ -94,11 +89,11 @@ PS C:\> Start-Container test2
 如果容器需要公开多个终结点，请使用 NAT 端口映射。
 
 
-### 静态 NAT 映射可能会通过 Docker 与端口映射发生冲突
+### 静态 NAT 映射可能与通过 Docker 的端口映射发生冲突
 
-如果你要使用 Windows PowerShell 创建容器并且添加静态 NAT 映射，在没有删除它们的情况下即使用 `docker -p &lt;src&gt;:&lt;dst&gt;` 启动某个容器时，它们可能会引起冲突。
+当使用 Windows PowerShell 创建容器且添加静态 NAT 映射时，如果在使用 `docker -p &lt;src&gt;:&lt;dst&gt;` 启动容器前未将其删除，则可能导致冲突
 
-以下是一个与端口 80 上的静态映射发生冲突的示例
+下面的示例描述了端口 80 上产生的与静态映射的冲突
 ```
 PS C:\IISDemo> Add-NetNatStaticMapping -NatName "ContainerNat" -Protocol TCP -ExternalIPAddress 0.0.0.0 -InternalIPAddress
  172.16.0.2 -InternalPort 80 -ExternalPort 80
@@ -137,8 +132,8 @@ duplicate name exists on the network. If joining a domain, go to System in Contr
 ```
 
 
-*缓解*
-这可通过使用 PowerShell 删除端口映射来解决。 这将删除在上述示例中引起的端口 80 冲突。
+***缓解***
+使用 PowerShell 删除端口映射即可解决 这将删除上例中产生的端口 80 上的冲突。
 ```powershell
 Get-NetNatStaticMapping | ? ExternalPort -eq 80 | Remove-NetNatStaticMapping
 ```
@@ -292,4 +287,8 @@ Windows 容器无法通过 TP4 中的 RDP 会话进行管理/与之交互。
 
 
 
-<!--HONumber=Feb16_HO1-->
+
+
+<!--HONumber=Feb16_HO4-->
+
+

@@ -1,8 +1,12 @@
+
+
+
+
 # 将 Windows 容器主机部署到现有虚拟或物理系统
 
 本文档介绍使用 PowerShell 脚本在现有物理或虚拟系统上部署并配置 Windows 容器角色的步骤。
 
-若要介绍脚本化部署配置为 Windows 容器主机的新 Hyper-V 虚拟机的步骤，请参阅[新 Hyper-V Windows 容器主机](./container_setup.md)。
+若要了解脚本化部署配置为 Windows 容器主机的新 Hyper-V 虚拟机的步骤，请参阅[新 Hyper-V Windows 容器主机](./container_setup.md)。
 
 **请在安装容器操作系统映像前阅读：**Microsoft Windows Server 预发行软件的许可条款（“许可条款”）适用于使用 Microsoft Windows 容器操作系统映像补充（“补充软件”）。 通过下载和使用补充软件，即表示你同意许可条款，并且如果你未接受许可条款，则无法使用它。 Windows Server 预发行版软件和补充软件均由 Microsoft Corporation 授权。
 
@@ -54,4 +58,8 @@ PS C:\> powershell.exe -NoProfile C:\Install-ContainerHost.ps1 -HyperV
 
 
 
-<!--HONumber=Feb16_HO2-->
+
+
+<!--HONumber=Feb16_HO3-->
+
+

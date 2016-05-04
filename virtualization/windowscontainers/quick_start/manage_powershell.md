@@ -1,3 +1,7 @@
+
+
+
+
 # Windows 容器快速入门 - PowerShell
 
 Windows 容器可用于在单个计算机系统上快速部署多个独立应用程序。 本快速入门演示了如何使用 PowerShell 部署和管理 Windows Server 和 Hyper-V 容器。 在本练习中，你将从头开始生成一个非常简单的“Hello World”应用程序，该应用程序可在 Windows Server 和 Hyper-V 容器中运行。 在此过程中，你将创建容器映像、使用容器共享文件夹和管理容器生命周期。 完成该过程后，你将基本了解 Windows 容器的部署和管理。
@@ -517,4 +521,8 @@ exit
 
 
 
-<!--HONumber=Feb16_HO1-->
+
+
+<!--HONumber=Feb16_HO3-->
+
+

@@ -1,3 +1,7 @@
+
+
+
+
 # Windows 容器
 
 应用程序激发云和移动时代的创新。 容器以及围绕它们开发的生态系统将支持软件开发人员创建下一代的应用程序体验。
@@ -63,16 +67,20 @@ IT 专业人员可以使用容器来为其开发、QA 和生产团队提供标�
 
 ## 视频概述
 
-<iframe
-src="https://channel9.msdn.com/Blogs/containers/Containers-101-with-Microsoft-and-Docker/player" width="800" height="450" allowFullScreen="true" frameBorder="0" scrolling="no"></iframe>
+<iframe 
+src="https://channel9.msdn.com/Blogs/containers/Containers-101-with-Microsoft-and-Docker/player#ccLang=zh-cn" width="800" height="450" allowFullScreen="true" frameBorder="0" scrolling="no"></iframe>
 
 
 ## 试用 Windows Server 容器
 
-[Windows Azure 中的 Windows 容器入门](../quick_start/azure_setup.md)
+[Windows Azure 中的 Windows 容器入门](../quick_start/azure_setup.md)  
 [本地使用 Windows 容器入门](../quick_start/container_setup.md)
 
 
 
 
-<!--HONumber=Dec15_HO2-->
+
+
+<!--HONumber=Feb16_HO3-->
+
+

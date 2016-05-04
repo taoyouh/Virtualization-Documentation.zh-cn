@@ -92,11 +92,15 @@ Import-VM -Path ‘C:\<vm export path>\2B91FEB3-F1E0-4FFF-B8BE-29CED892A95A.vmcx
 若要完成复制导入并将虚拟机文件移动到默认的 Hyper-V 位置，该命令将与此类似。
 
 ``` PowerShell
-Import-VM -Path 'C:\<vm export path>\2B91FEB3-F1E0-4FFF-B8BE-29CED892A95A.vmcx' –Copy -GenerateNewId
+Import-VM -Path 'C:\<vm export path>\2B91FEB3-F1E0-4FFF-B8BE-29CED892A95A.vmcx' -Copy -GenerateNewId
 ```
 
 有关详细信息，请参阅 [Import-VM](https://technet.microsoft.com/library/hh848495.aspx)。
 
 
 
-<!--HONumber=Dec15_HO2-->
+
+
+<!--HONumber=Feb16_HO4-->
+
+

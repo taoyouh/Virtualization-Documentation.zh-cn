@@ -1,3 +1,7 @@
+
+
+
+
 # 容器网络
 
 **这是初步内容，可能还会更改。**
@@ -106,7 +110,7 @@ Get-VMNetworkAdapter -VMName DemoVM | Set-VMNetworkAdapter -MacAddressSpoofing O
 启动 Docker 守护程序时，可以选择一个网桥。 在 Windows 上运行 Docker 时，此守护程序为 External 或 NAT 虚拟交换机。 以下示例启动 Docker 守护程序，从而指定一个名为 `Virtual Switch` 的虚拟交换机。
 
 ```powershell
-Docker daemon –D –b “Virtual Switch” -H 0.0.0.0:2375
+Docker daemon -D -b “Virtual Switch” -H 0.0.0.0:2375
 ```
 
 如果你已使用 Windows 容器快速入门中提供的脚本部署容器主机和 Docker，将创建类型为 NAT 的内部虚拟交换机，并创建预配置为使用此交换机的 Docker 服务。 若要更改 Docker 服务所使用的虚拟交换机，需要停止 Docker 服务、修改配置文件并再次启动该服务。
@@ -149,4 +153,8 @@ Start-Service docker
 
 
 
-<!--HONumber=Feb16_HO1-->
+
+
+<!--HONumber=Feb16_HO4-->
+
+

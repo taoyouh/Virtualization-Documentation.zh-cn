@@ -1,12 +1,16 @@
+
+
+
+
 # 容器主机部署 - Windows Server
 
 **这是初步内容，可能还会更改。**
 
-部署 Windows 容器主机具有不同的步骤，具体取决于操作系统和主机系统类型（物理或虚拟）。 本文档中的步骤用于在物理系统或虚拟系统上将 Windows 容器主机部署到 Windows Server 2016 或 Windows Server Core 2016。 若要将 Windows 容器主机安装到 Nano Server，请参阅[容器主机部署 - Nano Server](./deployment_nano.md)。
+部署 Windows 容器主机具有不同的步骤，具体取决于操作系统和主机系统类型（物理或虚拟）。 本文档中的步骤用于将 Windows 容器主机部署到物理或虚拟系统上的 Windows Server 2016 或 Windows Server Core 2016。 若要将 Windows 容器主机安装到 Nano Server，请参阅[容器主机部署 - Nano Server](./deployment_nano.md)。
 
 有关系统要求的详细信息，请参阅 [Windows 容器主机系统要求](./system_requirements.md)。
 
-PowerShell 脚本也可用于自动部署 Windows 容器主机。
+PowerShell 脚本还可用于自动执行 Windows 容器主机的部署。
 - [在新的 Hyper-V 虚拟机中部署容器主机](../quick_start/container_setup.md)。
 - [将容器主机部署到现有系统](../quick_start/inplace_setup.md)。
 
@@ -37,11 +41,11 @@ PowerShell 脚本也可用于自动部署 Windows 容器主机。
 </tr>
 <tr>
 <td>[安装 Docker](#docker)</td>
-<td>可选步骤，但需要执行此步骤才能使用 Docker 创建和管理 Windows 容器。</td>
+<td>这是可选的，但若要使用 Docker 创建和管理 Windows 容器则需要它。</td>
 </tr>
 </table>
 
-使用 Hyper-V 容器时需要采取这些步骤。 请注意，标记有 * 的步骤仅在容器主机本身即是 Hyper-V 虚拟机时才需要。
+如果将使用 Hyper-V 容器，则需要这些步骤。 请注意，仅当容器主机本身是 Hyper-V 虚拟机时，带有 * 标记的步骤才为必需。
 
 <table border="1" style="background-color:FFFFCC;border-collapse:collapse;border:1px solid FFCC00;color:000000;width:100%" cellpadding="5" cellspacing="5">
 <tr valign="top">
@@ -162,7 +166,7 @@ PS C:\> Install-ContainerImage -Name WindowsServerCore -Version 10.0.10586.0
 Downloaded in 0 hours, 2 minutes, 28 seconds.
 ```
 
-问题：Save-ContainerImage 和 Install-ContainerImage cmdlet 无法通过远程 PowerShell 会话使用 WindowsServerCore 容器映像。<br />解决方法：使用远程桌面登录计算机并直接使用 Save-ContainerImage cmdlet。
+**问题：**Save-ContainerImage 和 Install-ContainerImage cmdlet 无法通过远程 PowerShell 会话使用 WindowsServerCore 容器映像。<br />**解决方法：**使用远程桌面登录计算机并直接使用 Save-ContainerImage cmdlet。
 
 验证是否已使用 `Get-ContainerImage` 命令安装映像。
 
@@ -182,21 +186,21 @@ WindowsServerCore CN=Microsoft 10.0.10586.0 True
 Windows 中未附带 Docker 守护程序和命令行接口，并且这些功能不与 Windows 容器功能一起安装。 Docker 不是使用 Windows 容器的要求。 如果你希望安装 Docker，请按照本文 [Docker 和 Windows](./docker_windows.md) 中的说明进行操作。
 
 
-## Hyper V 容器主机
+## Hyper-V 容器主机
 
 ### <a name=hypv></a>启用 Hyper-V 角色
 
-如果要部署 Hyper-V 容器，则需要在容器主机上启用 Hyper-V 角色。 可使用 `Install-WindowsFeature` 命令在 Windows Server 2016 或 Windows Server 2016 Core 上安装 Hyper-V 角色。 如果容器主机本身是 Hyper-V 虚拟机，则需要首先启用嵌套虚拟化。 若要执行此操作，请参阅[配置嵌套虚拟化](#nest)。
+如果要部署 Hyper-V 容器，则需要在容器主机上启用 Hyper-V 角色。 可使用 `Install-WindowsFeature` 命令在 Windows Server 2016 或 Windows Server 2016 Core 上安装 Hyper-V 角色。 如果容器主机本身是 Hyper-V 虚拟机，则将需要先启用嵌套虚拟化。 为此，请参阅[配置嵌套虚拟化](#nest)。
 
 ```powershell
 PS C:\> Install-WindowsFeature hyper-v
 ```
 
-### <a name=nest></a>配置嵌套虚拟化
+### <a name=nest></a>嵌套虚拟化
 
 如果容器主机本身将在 Hyper-V 虚拟机上运行，并且还将托管 Hyper-V 容器，则需要启用嵌套虚拟化。 可以使用以下 PowerShell 命令完成此操作。
 
-注意 - 在运行此命令时，必须关闭虚拟机。
+**注意** - 在运行此命令时，必须关闭虚拟机。
 
 ```powershell
 PS C:\> Set-VMProcessor -VMName <VM Name> -ExposeVirtualizationExtensions $true
@@ -206,23 +210,23 @@ PS C:\> Set-VMProcessor -VMName <VM Name> -ExposeVirtualizationExtensions $true
 
 如果容器主机本身将在 Hyper-V 虚拟机上运行，并且还将托管 Hyper-V 容器，该虚拟机将需要至少两个处理器。 这可以通过虚拟机的设置或使用以下命令进行配置。
 
-注意 - 在运行此命令时，必须关闭虚拟机。
+**注意** - 在运行此命令时，必须关闭虚拟机。
 
 ```poweshell
-PS C:\> Set-VMProcessor –VMName <VM Name> -Count 2
+PS C:\> Set-VMProcessor -VMName <VM Name> -Count 2
 ```
 
 ### <a name=dyn></a>禁用动态内存
 
 如果容器主机本身是 Hyper-V 虚拟机，则必须在容器主机虚拟机上禁用动态内存。 这可以通过虚拟机的设置或使用以下命令进行配置。
 
-注意 - 在运行此命令时，必须关闭虚拟机。
+**注意** - 在运行此命令时，必须关闭虚拟机。
 
 ```poweshell
 PS C:\> Set-VMMemory <VM Name> -DynamicMemoryEnabled $false
 ```
 
-### <a name=mac></a>配置 MAC 地址欺骗
+### <a name=mac></a>MAC 地址欺骗
 
 最后，如果容器主机在 Hyper-V 虚拟机内部运行，必须启用 MAC 欺骗。 这使每个容器都可以接收 IP 地址。 若要启用 MAC 地址欺骗，请在 Hyper-V 主机上运行以下命令。 VMName 属性将是容器主机的名称。
 
@@ -234,4 +238,8 @@ PS C:\> Get-VMNetworkAdapter -VMName <VM Name> | Set-VMNetworkAdapter -MacAddres
 
 
 
-<!--HONumber=Feb16_HO1-->
+
+
+<!--HONumber=Feb16_HO4-->
+
+

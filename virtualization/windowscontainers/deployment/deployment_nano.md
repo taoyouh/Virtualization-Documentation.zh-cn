@@ -1,8 +1,13 @@
+
+
+
+
+
 # 容器主机部署 - Nano Server
 
 **这是初步内容，可能还会更改。**
 
-部署 Windows 容器主机具有不同的步骤，具体取决于操作系统和主机系统类型（物理或虚拟）。 本文档中的步骤用于在物理系统或虚拟系统上将 Windows 容器主机部署到 Nano Server。 若要将 Windows 容器主机安装到 Windows Server，请参阅[容器主机部署 - Windows Server](./deployment.md)。
+部署 Windows 容器主机具有不同的步骤，具体取决于操作系统和主机系统类型（物理或虚拟）。 本文档中的步骤用于将 Windows 容器主机部署到物理或虚拟系统上的 Nano Server。 若要将 Windows 容器主机安装到 Windows Server，请参阅[容器主机部署 - Windows Server](./deployment.md)。
 
 有关系统要求的详细信息，请参阅 [Windows 容器主机系统要求](./system_requirements.md)。
 
@@ -38,11 +43,11 @@ PowerShell 脚本可用于自动执行 Windows 容器主机的部署。
 </tr>
 <tr>
 <td>[安装 Docker](#docker)</td>
-<td>可选步骤，但需要执行此步骤才能使用 Docker 创建和管理 Windows 容器。 </td>
+<td>这是可选的，但若要使用 Docker 创建和管理 Windows 容器则需要它。 </td>
 </tr>
 </table>
 
-使用 Hyper-V 容器时需要采取这些步骤。 请注意，标记有 * 的步骤仅在容器主机本身即是 Hyper-V 虚拟机时才需要。
+如果将使用 Hyper-V 容器，则需要这些步骤。 请注意，仅当容器主机本身是 Hyper-V 虚拟机时，带有 * 标记的步骤才为必需。
 
 <table border="1" style="background-color:FFFFCC;border-collapse:collapse;border:1px solid FFCC00;color:000000;width:100%" cellpadding="5" cellspacing="5">
 <tr valign="top">
@@ -93,14 +98,14 @@ PS C:\> Copy-Item $WindowsMedia\NanoServer\Convert-WindowsImage.ps1 c:\nano
 
 PS C:\> Copy-Item $WindowsMedia\NanoServer\NanoServerImageGenerator.psm1 c:\nano
 ```
-运行以下内容来创建 Nano Server 虚拟硬盘驱动器。 `–Containers` 参数指示已安装容器程序包，而 `–Compute` 参数负责 Hyper-V 程序包。 仅在使用 Hyper-V 容器时需要 Hyper-V。
+运行以下内容来创建 Nano Server 虚拟硬盘驱动器。 `-Containers` 参数指示已安装容器程序包，而 `-Compute` 参数负责 Hyper-V 程序包。 仅在使用 Hyper-V 容器时需要 Hyper-V。
 
 ```powershell
 PS C:\> Import-Module C:\nano\NanoServerImageGenerator.psm1
 
 PS C:\> New-NanoServerImage -MediaPath $WindowsMedia -BasePath c:\nano -TargetPath C:\nano\NanoContainer.vhdx -MaxSize 10GB -GuestDrivers -ReverseForwarders -Compute -Containers
 ```
-操作完成后，从 `NanoContainer.vhdx` 文件创建虚拟机。 此虚拟机将运行 Nano Server 操作系统以及可选程序包。
+操作完成后，从 `NanoContainer.vhdx` 文件创建虚拟机。 此虚拟机将运行 Nano Server 操作系统和可选的程序包。
 
 ### <a name=vswitch></a>创建虚拟交换机
 
@@ -153,7 +158,7 @@ Name                 Version                 Description
 NanoServer           10.0.10586.0            Container OS Image of Windows Server 2016 Techn...
 WindowsServerCore    10.0.10586.0            Container OS Image of Windows Server 2016 Techn...
 ```
-注意 - 此时，只有 Nano Server 操作系统映像与 Nano Server 容器主机兼容。 若要下载和安装 Nano Server 基础操作系统映像，请运行以下内容。
+**注意** - 此时，只有 Nano Server 操作系统映像与 Nano Server 容器主机兼容。 若要下载和安装 Nano Server 基础操作系统映像，请运行以下内容。
 
 ```powershell
 PS C:\> Install-ContainerImage -Name NanoServer -Version 10.0.10586.0
@@ -161,7 +166,7 @@ PS C:\> Install-ContainerImage -Name NanoServer -Version 10.0.10586.0
 Downloaded in 0 hours, 0 minutes, 10 seconds.
 ```
 
-验证是否已使用 `Get-ContainerImage` 命令安装映像。
+验证是否使用 `Get-ContainerImage` 命令安装映像。
 
 ```powershell
 PS C:\> Get-ContainerImage
@@ -178,17 +183,17 @@ NanoServer        CN=Microsoft 10.0.10586.0 True
 Windows 中未附带 Docker 守护程序和命令行接口，并且这些功能不与 Windows 容器功能一起安装。 Docker 不是使用 Windows 容器的要求。 如果你希望安装 Docker，请按照本文 [Docker 和 Windows](./docker_windows.md) 中的说明进行操作。
 
 
-## Hyper V 容器主机
+## Hyper-V 容器主机
 
 ### <a name=hypv></a>启用 Hyper-V 角色
 
-在 Nano Server 上，此操作可以在创建 Nano Server 映像时完成。 有关说明，请参阅[为容器准备 Nano Server](#nano)。
+在 Nano Server 上，可在创建 Nano Server 映像时完成此操作。 请参阅[为容器准备 Nano Server](#nano) 了解相关说明。
 
-### <a name=nest></a>配置嵌套虚拟化
+### <a name=nest></a>嵌套虚拟化
 
 如果容器主机本身将在 Hyper-V 虚拟机上运行，并且还将托管 Hyper-V 容器，则需要启用嵌套虚拟化。 可以使用以下 PowerShell 命令完成此操作。
 
-注意 - 在运行此命令时，必须关闭虚拟机。
+**注意** - 在运行此命令时，必须关闭虚拟机。
 
 ```powershell
 PS C:\> Set-VMProcessor -VMName <VM Name> -ExposeVirtualizationExtensions $true
@@ -198,23 +203,23 @@ PS C:\> Set-VMProcessor -VMName <VM Name> -ExposeVirtualizationExtensions $true
 
 如果容器主机本身将在 Hyper-V 虚拟机上运行，并且还将托管 Hyper-V 容器，该虚拟机将需要至少两个处理器。 这可以通过虚拟机的设置或使用以下命令进行配置。
 
-注意 - 在运行此命令时，必须关闭虚拟机。
+**注意** - 在运行此命令时，必须关闭虚拟机。
 
 ```poweshell
-PS C:\> Set-VMProcessor –VMName <VM Name> -Count 2
+PS C:\> Set-VMProcessor -VMName <VM Name> -Count 2
 ```
 
 ### <a name=dyn></a>禁用动态内存
 
 如果容器主机本身是 Hyper-V 虚拟机，则必须在容器主机虚拟机上禁用动态内存。 这可以通过虚拟机的设置或使用以下命令进行配置。
 
-注意 - 在运行此命令时，必须关闭虚拟机。
+**注意** - 在运行此命令时，必须关闭虚拟机。
 
 ```poweshell
 PS C:\> Set-VMMemory <VM Name> -DynamicMemoryEnabled $false
 ```
 
-### <a name=mac></a>配置 MAC 地址欺骗
+### <a name=mac></a>MAC 地址欺骗
 
 最后，如果容器主机在 Hyper-V 虚拟机内部运行，必须启用 MAC 欺骗。 这使每个容器都可以接收 IP 地址。 若要启用 MAC 地址欺骗，请在 Hyper-V 主机上运行以下命令。 VMName 属性将是容器主机的名称。
 
@@ -225,4 +230,8 @@ PS C:\> Get-VMNetworkAdapter -VMName <VM Name> | Set-VMNetworkAdapter -MacAddres
 
 
 
-<!--HONumber=Feb16_HO1-->
+
+
+<!--HONumber=Feb16_HO4-->
+
+
