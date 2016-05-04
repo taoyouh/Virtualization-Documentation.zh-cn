@@ -1625,9 +1625,9 @@
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [virtualization\hyperv_on_windows\develop\make_mgmt_service.md](https://github.com/Microsoft/Virtualization-Documentation-Private.zh-cn/blob/330f6bb3048004f77fbdc5dd3e77cef1e90c5075/virtualization/hyperv_on_windows/develop/make_mgmt_service.md)
-* Current Handback File: [make_mgmt_service.f08a72226cda804bf52172777630838cf58daa2b.zh-cn.xlf](https://github.com/Microsoft/Virtualization-Documentation-Private.handback/blob/f3f444763a86e291cde9ba64f670f9b3f03851d1/ol-handback/Microsoft/Virtualization-Documentation-Private.zh-cn/live/make_mgmt_service.f08a72226cda804bf52172777630838cf58daa2b.zh-cn.xlf)
-* Current Handback Datetime: 2016-02-11 23:50:08
+* Current Target File: [virtualization\hyperv_on_windows\develop\make_mgmt_service.md](https://github.com/Microsoft/Virtualization-Documentation-Private.zh-cn/blob/0aaf542b807b4f20aa870385bf2b1992434cc4df/virtualization/hyperv_on_windows/develop/make_mgmt_service.md)
+* Current Handback File: [make_mgmt_service.f08a72226cda804bf52172777630838cf58daa2b.zh-cn.xlf](https://github.com/Microsoft/Virtualization-Documentation-Private.handback/blob/662b0956769c7d0e0683a48a7fda385b947fd794/ol-handback/Microsoft/Virtualization-Documentation-Private.zh-cn/live/make_mgmt_service.f08a72226cda804bf52172777630838cf58daa2b.zh-cn.xlf)
+* Current Handback Datetime: 2016-05-04 08:36:25
 * [Back to Top](#report-top)
 
 ##### <a name='224b91fc286f31a5c23fe3d7c9d36b178f6b04c393'></a> Source: [virtualization\hyperv_on_windows\develop\media\flightingSDK.png](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/4b739fb7cafe89a2bb61e4ede944f41617a1f589/virtualization/hyperv_on_windows/develop/media/flightingSDK.png)
@@ -3097,9 +3097,9 @@
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [virtualization\hyperv_on_windows\windows_welcome.md](https://github.com/Microsoft/Virtualization-Documentation-Private.zh-cn/blob/3e1bb3a0653dba257d018e176d29e380374f7010/virtualization/hyperv_on_windows/windows_welcome.md)
-* Current Handback File: [windows_welcome.5cc1a907523a3cc51d983b8dc14732d35513e54e.zh-cn.xlf](https://github.com/Microsoft/Virtualization-Documentation-Private.handback/blob/6d839339d9d4e28d0fc52145638e6237a2089d5f/ol-handback/Microsoft/Virtualization-Documentation-Private.zh-cn/live/windows_welcome.5cc1a907523a3cc51d983b8dc14732d35513e54e.zh-cn.xlf)
-* Current Handback Datetime: 2016-01-14 21:50:50
+* Current Target File: [virtualization\hyperv_on_windows\windows_welcome.md](https://github.com/Microsoft/Virtualization-Documentation-Private.zh-cn/blob/0aaf542b807b4f20aa870385bf2b1992434cc4df/virtualization/hyperv_on_windows/windows_welcome.md)
+* Current Handback File: [windows_welcome.5cc1a907523a3cc51d983b8dc14732d35513e54e.zh-cn.xlf](https://github.com/Microsoft/Virtualization-Documentation-Private.handback/blob/662b0956769c7d0e0683a48a7fda385b947fd794/ol-handback/Microsoft/Virtualization-Documentation-Private.zh-cn/live/windows_welcome.5cc1a907523a3cc51d983b8dc14732d35513e54e.zh-cn.xlf)
+* Current Handback Datetime: 2016-05-04 08:36:25
 * [Back to Top](#report-top)
 
 ##### <a name='2b1d6d58ca041ec8550e88c53f774a21245afa6e208'></a> Source: [virtualization\windowscontainers\about\about_overview.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/e14ede0a2b13de08cea0a955b37a21a150fb88cf/virtualization/windowscontainers/about/about_overview.md)

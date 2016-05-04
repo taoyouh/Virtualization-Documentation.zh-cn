@@ -32,18 +32,6 @@
   "9c5aa1998bba388ec2368d8b279fc9b8282cb5be": [
     "virtualization\\hyperv_on_windows\\develop\\make_mgmt_service.md"
   ],
-  "745c4494d6fefca50c98b4e4c70b601e98b4cc00": [
-    "virtualization\\hyperv_on_windows\\develop\\make_mgmt_service.md"
-  ],
-  "05291add7b58a9b2457475f3eb333db40081e876": [
-    "virtualization\\hyperv_on_windows\\develop\\make_mgmt_service.md"
-  ],
-  "95c2d9c37551a871d127e11921ab6831a52d36de": [
-    "virtualization\\hyperv_on_windows\\develop\\make_mgmt_service.md"
-  ],
-  "ce98026a6ec670f3d743f28a12c8b974722b29aa": [
-    "virtualization\\hyperv_on_windows\\develop\\make_mgmt_service.md"
-  ],
   "4b8a6905e3497b5fbecf938ea35b6cc57ae37be2": [
     "virtualization\\hyperv_on_windows\\develop\\powershell_snippets.md"
   ],
@@ -329,9 +317,6 @@
     "virtualization\\hyperv_on_windows\\windows_welcome.md"
   ],
   "ec5ba8f5a387b27405564ad240b53188154f9dfe": [
-    "virtualization\\hyperv_on_windows\\windows_welcome.md"
-  ],
-  "55e6b7d576cdaa06773b63556435753e1d191803": [
     "virtualization\\hyperv_on_windows\\windows_welcome.md"
   ],
   "215adae041390b1edb10b314dc7ce21f6b39592e": [
