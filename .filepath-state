@@ -14,6 +14,9 @@
   "1741b59667074192e6da0da57eb30cf23e644bcd": [
     "virtualization\\hyperv_on_windows\\about\\supported_guest_os.md"
   ],
+  "25c9738399f2f88b7a22f5624f97087bcffd02bf": [
+    "virtualization\\hyperv_on_windows\\about\\whats_new.md"
+  ],
   "376d9acfe8dd79cf5b109fa9555a8f944a771723": [
     "virtualization\\hyperv_on_windows\\about\\whats_new.md"
   ],
@@ -387,6 +390,9 @@
   "2a715348730100beeb84335946a623c9e87986dd": [
     "virtualization\\windowscontainers\\containers_welcome.md"
   ],
+  "c426efa049564f2fa84fb8cfdb7163397c62da23": [
+    "virtualization\\windowscontainers\\deployment\\deployment.md"
+  ],
   "a0b86292e1402322945f92c8b9d21d904a62a5e7": [
     "virtualization\\windowscontainers\\deployment\\deployment.md"
   ],
@@ -500,6 +506,9 @@
   ],
   "4d3422cb4c4b7fe2d978b08d9deb225577a837e6": [
     "virtualization\\windowscontainers\\management\\manage_data.md"
+  ],
+  "8fe6e585a37fb388344cafc2fcba5fa943ee6cfc": [
+    "virtualization\\windowscontainers\\management\\manage_images.md"
   ],
   "1fe676ed84b6d74ce29599bfc395b5d37c44a6db": [
     "virtualization\\windowscontainers\\management\\manage_images.md"
