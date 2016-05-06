@@ -1,55 +1,11 @@
 # <a name='report-top'></a> Localization Handoff Report
 
 ## Summary
- Total Files | 3
+ Total Files | 0
 
 ## File List
- Source File | Status | Details 
- ----------- | ------ | ------- 
- [virtualization\windowscontainers\quick_start\container_setup.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/1f710fd6e3b88a7785f0c2a998e259ee3aaeed0c/virtualization/windowscontainers/quick_start/container_setup.md) | OutofSyncHandedBackSuccess | [Details](#654f2f84f6a5d8cbad0e8f1a9c78ee955975df41268)
- [virtualization\windowscontainers\quick_start\quick_start.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/43dd1564c513f744493bd74d2886cb3cd29ab6bc/virtualization/windowscontainers/quick_start/quick_start.md) | HandedOffSuccess | [Details](#0d04de99044b425bbf25f815ab66371d0a75544a311)
- [virtualization\windowscontainers\quick_start\quick_start_configure_host.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/9cd55d10c213fb06ea46c3617e7bb461df560e17/virtualization/windowscontainers/quick_start/quick_start_configure_host.md) | HandedOffSuccess | [Details](#91638b2c8eab687b3e0bdd068352308fd5b51e20312)
 
 ## Item Details
-##### <a name='654f2f84f6a5d8cbad0e8f1a9c78ee955975df41268'></a> Source: [virtualization\windowscontainers\quick_start\container_setup.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/1f710fd6e3b88a7785f0c2a998e259ee3aaeed0c/virtualization/windowscontainers/quick_start/container_setup.md)
-* Status: OutofSyncHandedBackSuccess
-* Target File: 
-* Handoff File: [container_setup.08ea6a3e6a859d063eb84a0b25eb20db0b7bdd52.zh-cn.xlf](https://github.com/Microsoft/Virtualization-Documentation-Private.handoff/blob/a8d3dedc08ee923fbc4b38c61f7904824d9412b3/ol-handoff/Microsoft/Virtualization-Documentation-Private.zh-cn/live/container_setup.08ea6a3e6a859d063eb84a0b25eb20db0b7bdd52.zh-cn.xlf)
-* Handoff Datetime: 2016-05-05 23:17:58
-* Handoff Reason: Include
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [virtualization\windowscontainers\quick_start\container_setup.md](https://github.com/Microsoft/Virtualization-Documentation-Private.zh-cn/blob/f329e2e1d80f401424bc3dce777f4293daef537d/virtualization/windowscontainers/quick_start/container_setup.md)
-* Current Handback File: [container_setup.08ea6a3e6a859d063eb84a0b25eb20db0b7bdd52.zh-cn.xlf](https://github.com/Microsoft/Virtualization-Documentation-Private.handback/blob/42d0da846e2ede6ca2634e0ebfa4b8efd51d04a1/ol-handback/Microsoft/Virtualization-Documentation-Private.zh-cn/live/container_setup.08ea6a3e6a859d063eb84a0b25eb20db0b7bdd52.zh-cn.xlf)
-* Current Handback Datetime: 2016-05-04 08:29:42
-* [Back to Top](#report-top)
-
-##### <a name='0d04de99044b425bbf25f815ab66371d0a75544a311'></a> Source: [virtualization\windowscontainers\quick_start\quick_start.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/43dd1564c513f744493bd74d2886cb3cd29ab6bc/virtualization/windowscontainers/quick_start/quick_start.md)
-* Status: HandedOffSuccess
-* Target File: 
-* Handoff File: [quick_start.95cf1adf4b4529454f2de8a25554a6b86638acc7.zh-cn.xlf](https://github.com/Microsoft/Virtualization-Documentation-Private.handoff/blob/a8d3dedc08ee923fbc4b38c61f7904824d9412b3/ol-handoff/Microsoft/Virtualization-Documentation-Private.zh-cn/live/quick_start.95cf1adf4b4529454f2de8a25554a6b86638acc7.zh-cn.xlf)
-* Handoff Datetime: 2016-05-05 23:17:58
-* Handoff Reason: Include
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* [Back to Top](#report-top)
-
-##### <a name='91638b2c8eab687b3e0bdd068352308fd5b51e20312'></a> Source: [virtualization\windowscontainers\quick_start\quick_start_configure_host.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/9cd55d10c213fb06ea46c3617e7bb461df560e17/virtualization/windowscontainers/quick_start/quick_start_configure_host.md)
-* Status: HandedOffSuccess
-* Target File: 
-* Handoff File: [quick_start_configure_host.22eb2cfc649ba7c5d36441e003bf951628b30837.zh-cn.xlf](https://github.com/Microsoft/Virtualization-Documentation-Private.handoff/blob/a8d3dedc08ee923fbc4b38c61f7904824d9412b3/ol-handoff/Microsoft/Virtualization-Documentation-Private.zh-cn/live/quick_start_configure_host.22eb2cfc649ba7c5d36441e003bf951628b30837.zh-cn.xlf)
-* Handoff Datetime: 2016-05-05 23:17:58
-* Handoff Reason: Include
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* [Back to Top](#report-top)
-
 
 ## Error Details
 
