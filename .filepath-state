@@ -1,4 +1,7 @@
 {
+  "ecb36777ebc4605d9b377bbd9baa1028a2bf555b": [
+    "virtualization\\hyperv_on_windows\\about\\hyperv_on_windows.md"
+  ],
   "d2a574e14c2c3a97fdcd472520c17a4e2bbf07d4": [
     "virtualization\\hyperv_on_windows\\about\\hyperv_on_windows.md"
   ],
@@ -11,11 +14,17 @@
   "8353640c257688b361ac7da3912d9e9d749c37f2": [
     "virtualization\\hyperv_on_windows\\about\\hyperv_on_windows.md"
   ],
+  "19ecce49df066c5816741f375c4610b79d7ad802": [
+    "virtualization\\hyperv_on_windows\\about\\supported_guest_os.md"
+  ],
   "5c965d807b3b5345c3c2fed2ca4ebcc33ff485d1": [
     "virtualization\\hyperv_on_windows\\about\\supported_guest_os.md"
   ],
   "1741b59667074192e6da0da57eb30cf23e644bcd": [
     "virtualization\\hyperv_on_windows\\about\\supported_guest_os.md"
+  ],
+  "1e078bffe1aaf7bfae4e91b19cfa11ad55eed9a2": [
+    "virtualization\\hyperv_on_windows\\about\\whats_new.md"
   ],
   "452489f73ee3ccdb50dbff50f061885a1f834ad1": [
     "virtualization\\hyperv_on_windows\\about\\whats_new.md"
