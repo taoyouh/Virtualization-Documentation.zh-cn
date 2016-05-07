@@ -1,4 +1,7 @@
 {
+  "d2a574e14c2c3a97fdcd472520c17a4e2bbf07d4": [
+    "virtualization\\hyperv_on_windows\\about\\hyperv_on_windows.md"
+  ],
   "bdd758161837cfd88c6762d6ffbb6b75725933c1": [
     "virtualization\\hyperv_on_windows\\about\\hyperv_on_windows.md"
   ],
@@ -13,6 +16,9 @@
   ],
   "1741b59667074192e6da0da57eb30cf23e644bcd": [
     "virtualization\\hyperv_on_windows\\about\\supported_guest_os.md"
+  ],
+  "452489f73ee3ccdb50dbff50f061885a1f834ad1": [
+    "virtualization\\hyperv_on_windows\\about\\whats_new.md"
   ],
   "25c9738399f2f88b7a22f5624f97087bcffd02bf": [
     "virtualization\\hyperv_on_windows\\about\\whats_new.md"
