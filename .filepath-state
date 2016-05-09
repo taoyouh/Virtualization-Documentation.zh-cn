@@ -1,4 +1,7 @@
 {
+  "ea19b576219755e09a4064d0fa6bfde5367967e1": [
+    "virtualization\\hyperv_on_windows\\about\\hyperv_on_windows.md"
+  ],
   "ecb36777ebc4605d9b377bbd9baa1028a2bf555b": [
     "virtualization\\hyperv_on_windows\\about\\hyperv_on_windows.md"
   ],
@@ -847,6 +850,9 @@
   ],
   "c42402c584404011f48a8e076bb8ff0549427e70": [
     "virtualization\\windowscontainers\\quick_start\\quick_start.md"
+  ],
+  "3514315613de3e95e5f1b99cd05200989ccdc098": [
+    "virtualization\\windowscontainers\\quick_start\\quick_start_configure_host.md"
   ],
   "91638b2c8eab687b3e0bdd068352308fd5b51e20": [
     "virtualization\\windowscontainers\\quick_start\\quick_start_configure_host.md"
