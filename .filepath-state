@@ -106,6 +106,9 @@
   "c830f164a513bd6125dc1a30f7cf1990e1c9470a": [
     "virtualization\\hyperv_on_windows\\quick_start\\media\\SystemInfo_upd.png"
   ],
+  "206521ae366d5e0f5f7ca2ca510736cc178557fe": [
+    "virtualization\\hyperv_on_windows\\quick_start\\walkthrough_create_vm.md"
+  ],
   "ef04726915dc100177ab847a3b4cc5b1bbd6b02f": [
     "virtualization\\hyperv_on_windows\\quick_start\\walkthrough_create_vm.md"
   ],
@@ -156,6 +159,9 @@
   ],
   "579a5b151617e20cfb4e116a6f365a96dbaa9c4a": [
     "virtualization\\hyperv_on_windows\\quick_start\\media\\get_vm.png"
+  ],
+  "44470901a9149666c15982a728037a95fc28aaa5": [
+    "virtualization\\hyperv_on_windows\\quick_start\\walkthrough_virtual_switch.md"
   ],
   "cedf1513ec5a4e8b7036df36abed86b918aae620": [
     "virtualization\\hyperv_on_windows\\quick_start\\walkthrough_virtual_switch.md"

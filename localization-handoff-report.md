@@ -6,35 +6,38 @@
 ## File List
  Source File | Status | Details 
  ----------- | ------ | ------- 
- [virtualization\hyperv_on_windows\about\hyperv_on_windows.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/9f1073ecfa4cf836295de81f2bcf9622274ca034/virtualization/hyperv_on_windows/about/hyperv_on_windows.md) | OutofSyncHandedBackSuccess | [Details](#ea19b576219755e09a4064d0fa6bfde5367967e187)
- [virtualization\windowscontainers\quick_start\quick_start_configure_host.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/07e00f91e3bc242399967130343f22af8aba5144/virtualization/windowscontainers/quick_start/quick_start_configure_host.md) | HandedOffSuccess | [Details](#3514315613de3e95e5f1b99cd05200989ccdc098312)
+ [virtualization\hyperv_on_windows\quick_start\walkthrough_create_vm.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/4885ad982804d17c8b3643f8a855fb3f3f834505/virtualization/hyperv_on_windows/quick_start/walkthrough_create_vm.md) | OutofSyncHandedBackSuccess | [Details](#206521ae366d5e0f5f7ca2ca510736cc178557fe173)
+ [virtualization\hyperv_on_windows\quick_start\walkthrough_virtual_switch.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/4885ad982804d17c8b3643f8a855fb3f3f834505/virtualization/hyperv_on_windows/quick_start/walkthrough_virtual_switch.md) | OutofSyncHandedBackSuccess | [Details](#44470901a9149666c15982a728037a95fc28aaa5177)
 
 ## Item Details
-##### <a name='ea19b576219755e09a4064d0fa6bfde5367967e187'></a> Source: [virtualization\hyperv_on_windows\about\hyperv_on_windows.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/9f1073ecfa4cf836295de81f2bcf9622274ca034/virtualization/hyperv_on_windows/about/hyperv_on_windows.md)
+##### <a name='206521ae366d5e0f5f7ca2ca510736cc178557fe173'></a> Source: [virtualization\hyperv_on_windows\quick_start\walkthrough_create_vm.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/4885ad982804d17c8b3643f8a855fb3f3f834505/virtualization/hyperv_on_windows/quick_start/walkthrough_create_vm.md)
 * Status: OutofSyncHandedBackSuccess
 * Target File: 
-* Handoff File: [hyperv_on_windows.d9da0ac74ee24f28f940324928905e38e074d9e2.zh-cn.xlf](https://github.com/Microsoft/Virtualization-Documentation-Private.handoff/blob/9c4a1fd7a6b018a3df90f8edd20f60ccdb36f890/ol-handoff/Microsoft/Virtualization-Documentation-Private.zh-cn/live/hyperv_on_windows.d9da0ac74ee24f28f940324928905e38e074d9e2.zh-cn.xlf)
-* Handoff Datetime: 2016-05-09 05:20:57
+* Handoff File: [walkthrough_create_vm.698a46fb78fa92b3f275f4115d4b77072fff0ed6.zh-cn.xlf](https://github.com/Microsoft/Virtualization-Documentation-Private.handoff/blob/e0a34e58dc8edfcac063a37255cb996320deea02/ol-handoff/Microsoft/Virtualization-Documentation-Private.zh-cn/live/walkthrough_create_vm.698a46fb78fa92b3f275f4115d4b77072fff0ed6.zh-cn.xlf)
+* Handoff Datetime: 2016-05-09 23:23:23
 * Handoff Reason: Include
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [virtualization\hyperv_on_windows\about\hyperv_on_windows.md](https://github.com/Microsoft/Virtualization-Documentation-Private.zh-cn/blob/ae7e805e2efbc8a18c140181f584a7896808db7e/virtualization/hyperv_on_windows/about/hyperv_on_windows.md)
-* Current Handback File: [hyperv_on_windows.d9da0ac74ee24f28f940324928905e38e074d9e2.zh-cn.xlf](https://github.com/Microsoft/Virtualization-Documentation-Private.handback/blob/e0c02c05ed981048559a0f52e28f07afff1979ef/ol-handback/Microsoft/Virtualization-Documentation-Private.zh-cn/live/hyperv_on_windows.d9da0ac74ee24f28f940324928905e38e074d9e2.zh-cn.xlf)
-* Current Handback Datetime: 2016-02-03 21:59:07
+* Current Target File: [virtualization\hyperv_on_windows\quick_start\walkthrough_create_vm.md](https://github.com/Microsoft/Virtualization-Documentation-Private.zh-cn/blob/a0a05658a2246bab7ec525f6481507c82382eeb6/virtualization/hyperv_on_windows/quick_start/walkthrough_create_vm.md)
+* Current Handback File: [walkthrough_create_vm.698a46fb78fa92b3f275f4115d4b77072fff0ed6.zh-cn.xlf](https://github.com/Microsoft/Virtualization-Documentation-Private.handback/blob/a4b204157e24378d379f8e73e4d892560fed24de/ol-handback/Microsoft/Virtualization-Documentation-Private.zh-cn/live/walkthrough_create_vm.698a46fb78fa92b3f275f4115d4b77072fff0ed6.zh-cn.xlf)
+* Current Handback Datetime: 2016-02-16 21:22:29
 * [Back to Top](#report-top)
 
-##### <a name='3514315613de3e95e5f1b99cd05200989ccdc098312'></a> Source: [virtualization\windowscontainers\quick_start\quick_start_configure_host.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/07e00f91e3bc242399967130343f22af8aba5144/virtualization/windowscontainers/quick_start/quick_start_configure_host.md)
-* Status: HandedOffSuccess
+##### <a name='44470901a9149666c15982a728037a95fc28aaa5177'></a> Source: [virtualization\hyperv_on_windows\quick_start\walkthrough_virtual_switch.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/4885ad982804d17c8b3643f8a855fb3f3f834505/virtualization/hyperv_on_windows/quick_start/walkthrough_virtual_switch.md)
+* Status: OutofSyncHandedBackSuccess
 * Target File: 
-* Handoff File: [quick_start_configure_host.22eb2cfc649ba7c5d36441e003bf951628b30837.zh-cn.xlf](https://github.com/Microsoft/Virtualization-Documentation-Private.handoff/blob/9c4a1fd7a6b018a3df90f8edd20f60ccdb36f890/ol-handoff/Microsoft/Virtualization-Documentation-Private.zh-cn/live/quick_start_configure_host.22eb2cfc649ba7c5d36441e003bf951628b30837.zh-cn.xlf)
-* Handoff Datetime: 2016-05-09 05:20:57
+* Handoff File: [walkthrough_virtual_switch.27dde78ebf41bbbdb946f00af1eb221b79cbb05a.zh-cn.xlf](https://github.com/Microsoft/Virtualization-Documentation-Private.handoff/blob/e0a34e58dc8edfcac063a37255cb996320deea02/ol-handoff/Microsoft/Virtualization-Documentation-Private.zh-cn/live/walkthrough_virtual_switch.27dde78ebf41bbbdb946f00af1eb221b79cbb05a.zh-cn.xlf)
+* Handoff Datetime: 2016-05-09 23:23:23
 * Handoff Reason: Include
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
+* Current Target File: [virtualization\hyperv_on_windows\quick_start\walkthrough_virtual_switch.md](https://github.com/Microsoft/Virtualization-Documentation-Private.zh-cn/blob/ae7e805e2efbc8a18c140181f584a7896808db7e/virtualization/hyperv_on_windows/quick_start/walkthrough_virtual_switch.md)
+* Current Handback File: [walkthrough_virtual_switch.27dde78ebf41bbbdb946f00af1eb221b79cbb05a.zh-cn.xlf](https://github.com/Microsoft/Virtualization-Documentation-Private.handback/blob/e0c02c05ed981048559a0f52e28f07afff1979ef/ol-handback/Microsoft/Virtualization-Documentation-Private.zh-cn/live/walkthrough_virtual_switch.27dde78ebf41bbbdb946f00af1eb221b79cbb05a.zh-cn.xlf)
+* Current Handback Datetime: 2016-02-03 21:59:07
 * [Back to Top](#report-top)
 
 
