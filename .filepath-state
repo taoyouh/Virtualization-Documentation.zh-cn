@@ -414,6 +414,9 @@
   "2a715348730100beeb84335946a623c9e87986dd": [
     "virtualization\\windowscontainers\\containers_welcome.md"
   ],
+  "aa93034488349311b5fdd5b96c3b503542b97630": [
+    "virtualization\\windowscontainers\\deployment\\deployment.md"
+  ],
   "c426efa049564f2fa84fb8cfdb7163397c62da23": [
     "virtualization\\windowscontainers\\deployment\\deployment.md"
   ],
@@ -530,6 +533,9 @@
   ],
   "4d3422cb4c4b7fe2d978b08d9deb225577a837e6": [
     "virtualization\\windowscontainers\\management\\manage_data.md"
+  ],
+  "db181123599c72a41ae11517046a2f5ad74b2c73": [
+    "virtualization\\windowscontainers\\management\\manage_images.md"
   ],
   "8fe6e585a37fb388344cafc2fcba5fa943ee6cfc": [
     "virtualization\\windowscontainers\\management\\manage_images.md"
@@ -739,6 +745,9 @@
   ],
   "aa26c5fc60bcdfd7cd521799700e2f6eea48eb17": [
     "virtualization\\windowscontainers\\Nano_EULA.md"
+  ],
+  "8a481f820b855c938fbaa13c96b45bf56e3d0198": [
+    "virtualization\\windowscontainers\\deployment\\deployment_nano.md"
   ],
   "4cf9407b95bbf1a4853b0cf12d0ced9274797ce5": [
     "virtualization\\windowscontainers\\deployment\\deployment_nano.md"
