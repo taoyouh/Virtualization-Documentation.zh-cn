@@ -241,6 +241,9 @@
   "8fc87aee6cbc6ad9af401a7d555ef2b7656ede53": [
     "virtualization\\hyperv_on_windows\\user_guide\\migrating_vms.md"
   ],
+  "1f90b903a56c3da29f3bc582b668461e090d2711": [
+    "virtualization\\hyperv_on_windows\\user_guide\\nesting.md"
+  ],
   "65e87223cbbfc353aad7afb61e1fc09c411e142d": [
     "virtualization\\hyperv_on_windows\\user_guide\\nesting.md"
   ],
