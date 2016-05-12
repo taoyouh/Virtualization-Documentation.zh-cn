@@ -1,5 +1,5 @@
 {
-  "LastProcessedCommit": "360c5db41c5e7bfd613a908ad9c022c3b8b58bb5",
+  "LastProcessedCommit": "db795d70bee57e4aabe300c34d378132a74692ac",
   "LastTranslatedCommit": "2e343de5d6019ba80cae688a424dd4b9b7af96ab",
   "Items": {
     "5090f6d60b5cbdce0990242d795d9e4e3736e791": {
@@ -14310,6 +14310,35 @@
       "HandoffFilePath": "ol-handoff\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\manage_images.6d8d709cbc19bb63cc7d4553991616c57920cdfd.zh-cn.xlf",
       "HandoffFileCommit": "7606892447db6e22601868b17779d35b3dbc6e90",
       "HandoffDateTime": "2016-05-10T17:54:18.7987261Z",
+      "HandoffPriority": "",
+      "HandoffException": null,
+      "HandoffFailureTimes": 0,
+      "TargetFileCommit": null,
+      "TargetFilePath": null,
+      "HandbackFilePath": null,
+      "HandbackFileCommit": null,
+      "HandbackDateTime": "0001-01-01T00:00:00",
+      "HandbackException": null,
+      "HandbackFailureTimes": 0,
+      "UpdatedDateTime": "0001-01-01T00:00:00",
+      "ArchiveFilePath": null,
+      "ArchiveFileCommit": null,
+      "ArchiveFileDateTime": "0001-01-01T00:00:00",
+      "ArchiveException": null
+    },
+    "2caef4c75662f30a9fb5e4f841df5c616af671af": {
+      "FileHash": "2caef4c75662f30a9fb5e4f841df5c616af671af",
+      "SourceFileCommit": "8a061a13955cc812aee9ac6694af735a81603701",
+      "SourceFilePath": "virtualization\\hyperv_on_windows\\user_guide\\setup_nat_network.md",
+      "HandoffReason": 1,
+      "DependencyFrom": null,
+      "TokenReference": null,
+      "FilePathList": [
+        "virtualization\\hyperv_on_windows\\user_guide\\setup_nat_network.md"
+      ],
+      "HandoffFilePath": "ol-handoff\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\setup_nat_network.910a966b84616e203e5739d5dde1b65115f14a37.zh-cn.xlf",
+      "HandoffFileCommit": "c9839c1c06ca054c2f0cd72f5058f896089b0539",
+      "HandoffDateTime": "2016-05-12T00:19:58.225272Z",
       "HandoffPriority": "",
       "HandoffException": null,
       "HandoffFailureTimes": 0,
