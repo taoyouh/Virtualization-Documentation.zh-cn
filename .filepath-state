@@ -653,6 +653,9 @@
     "virtualization\\windowscontainers\\quick_start\\media\\newazure7.png",
     "virtualization\\windowscontainers\\deployment\\media\\newazure7.png"
   ],
+  "77b202767a88ec4659bc118a6754561506af4cf7": [
+    "virtualization\\windowscontainers\\quick_start\\container_setup.md"
+  ],
   "654f2f84f6a5d8cbad0e8f1a9c78ee955975df41": [
     "virtualization\\windowscontainers\\quick_start\\container_setup.md"
   ],
@@ -770,6 +773,9 @@
   "c368db13f720190f3fb4a8fbdb2301c6a8148cc8": [
     "virtualization\\community\\media\\GitHubCreatePR.png"
   ],
+  "8f6f2a03045cb7b487f46b4ca975e680a016c6f2": [
+    "virtualization\\windowscontainers\\management\\container_networking.md"
+  ],
   "a0d98fc9250d025b738ce17079052e2bcdeeba24": [
     "virtualization\\windowscontainers\\management\\container_networking.md"
   ],
@@ -869,6 +875,9 @@
   "19547c2bfef4605a3c0be64fe152cfb7b89b621b": [
     "virtualization\\windowscontainers\\deployment\\deployment_azure.md"
   ],
+  "3e45c454500ce47e22191f4fbc8564286ce5377c": [
+    "virtualization\\windowscontainers\\docker\\manage_windows_dockerfile.md"
+  ],
   "b07821f5f5f76ce108d70d60f32713026004a86a": [
     "virtualization\\windowscontainers\\docker\\manage_windows_dockerfile.md"
   ],
@@ -958,6 +967,9 @@
   ],
   "45dda5dfec112801d99f596f07807957f642e41f": [
     "virtualization\\windowscontainers\\quick_start\\quick_start_configure_host.md"
+  ],
+  "dde80a4599bd099b5361b016b8547169589d4c8e": [
+    "virtualization\\windowscontainers\\removed\\dotnet35.md"
   ],
   "d2d11aaf20eb5a59bd54ef96544317aa90f2b7b6": [
     "virtualization\\windowscontainers\\removed\\dotnet35.md"
