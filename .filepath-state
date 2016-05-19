@@ -504,6 +504,9 @@
   "a653bcff2897c8e5d5ba6475acb1187625f34a1a": [
     "virtualization\\windowscontainers\\deployment\\media\\nssm3.png"
   ],
+  "4177b83725906276a193f20c7d2f153bffd8bdf2": [
+    "virtualization\\windowscontainers\\deployment\\system_requirements.md"
+  ],
   "7996c2069cb749f6658fd9d0c24a1c49552ae68e": [
     "virtualization\\windowscontainers\\deployment\\system_requirements.md"
   ],
@@ -814,6 +817,9 @@
   ],
   "aa26c5fc60bcdfd7cd521799700e2f6eea48eb17": [
     "virtualization\\windowscontainers\\Nano_EULA.md"
+  ],
+  "4662cb70e773ef30b5fac1bcf9ddff37e072b46a": [
+    "virtualization\\windowscontainers\\deployment\\deployment_nano.md"
   ],
   "45085c02a1bfe4933f78d86dd10102c87842ed18": [
     "virtualization\\windowscontainers\\deployment\\deployment_nano.md"
