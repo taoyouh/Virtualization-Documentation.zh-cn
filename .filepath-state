@@ -884,6 +884,9 @@
   "19547c2bfef4605a3c0be64fe152cfb7b89b621b": [
     "virtualization\\windowscontainers\\deployment\\deployment_azure.md"
   ],
+  "bcccbe39268110cbaed0a60dc822873144456d84": [
+    "virtualization\\windowscontainers\\docker\\manage_windows_dockerfile.md"
+  ],
   "3e45c454500ce47e22191f4fbc8564286ce5377c": [
     "virtualization\\windowscontainers\\docker\\manage_windows_dockerfile.md"
   ],
