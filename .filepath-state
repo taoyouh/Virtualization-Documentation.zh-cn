@@ -408,6 +408,9 @@
   "0e295857f91ac08dc0a54e8a46c6763f749c2414": [
     "virtualization\\windowscontainers\\about\\faq.md"
   ],
+  "cebb56775130febd744b0b023d884b82ba0a4518": [
+    "virtualization\\windowscontainers\\about\\work_in_progress.md"
+  ],
   "566e4405f6b69f15fc7f9f9ac320515cb89a41a0": [
     "virtualization\\windowscontainers\\about\\work_in_progress.md"
   ],
@@ -587,6 +590,9 @@
   ],
   "4d3422cb4c4b7fe2d978b08d9deb225577a837e6": [
     "virtualization\\windowscontainers\\management\\manage_data.md"
+  ],
+  "617a8a951d11850c899d8013a9d602a695ee9a68": [
+    "virtualization\\windowscontainers\\management\\manage_images.md"
   ],
   "ee9464db71940124a57e6c9779c24d3031dd7b57": [
     "virtualization\\windowscontainers\\management\\manage_images.md"
