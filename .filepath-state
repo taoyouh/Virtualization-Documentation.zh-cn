@@ -411,6 +411,9 @@
   "0e295857f91ac08dc0a54e8a46c6763f749c2414": [
     "virtualization\\windowscontainers\\about\\faq.md"
   ],
+  "284629aff6ca1da96fe11a212c011d5671bcfe6f": [
+    "virtualization\\windowscontainers\\about\\work_in_progress.md"
+  ],
   "cebb56775130febd744b0b023d884b82ba0a4518": [
     "virtualization\\windowscontainers\\about\\work_in_progress.md"
   ],
@@ -429,6 +432,9 @@
   "fefdd95609280b008c9c5e885c7d44d09d486bdd": [
     "virtualization\\windowscontainers\\about\\work_in_progress.md"
   ],
+  "b50c27e723fb8db13adec37d6b969e93d607243e": [
+    "virtualization\\windowscontainers\\containers_welcome.md"
+  ],
   "36fa54bd0efc0876754a51bc27762c611b382d5b": [
     "virtualization\\windowscontainers\\containers_welcome.md"
   ],
@@ -446,6 +452,9 @@
   ],
   "2a715348730100beeb84335946a623c9e87986dd": [
     "virtualization\\windowscontainers\\containers_welcome.md"
+  ],
+  "696a3e4fa70d94b94f2fc66254b2052bd707e582": [
+    "virtualization\\windowscontainers\\deployment\\deployment.md"
   ],
   "bd7e40f8b7d4e83be82fbaa8d01781e03d2dfa0e": [
     "virtualization\\windowscontainers\\deployment\\deployment.md"
@@ -483,6 +492,9 @@
   "78be50da5eab1ffe3adba755e26ab092d2e4e024": [
     "virtualization\\windowscontainers\\deployment\\deployment.md"
   ],
+  "212135936130561e3e1d951876c5f11945cb8172": [
+    "virtualization\\windowscontainers\\deployment\\docker_windows.md"
+  ],
   "dcfbfdb11cc03f8a15217bb9c29161713411bb9f": [
     "virtualization\\windowscontainers\\deployment\\docker_windows.md"
   ],
@@ -512,6 +524,9 @@
   ],
   "a653bcff2897c8e5d5ba6475acb1187625f34a1a": [
     "virtualization\\windowscontainers\\deployment\\media\\nssm3.png"
+  ],
+  "12ae565f012dc87a2cab883c0486322db42b1dcc": [
+    "virtualization\\windowscontainers\\deployment\\system_requirements.md"
   ],
   "4177b83725906276a193f20c7d2f153bffd8bdf2": [
     "virtualization\\windowscontainers\\deployment\\system_requirements.md"
@@ -648,6 +663,10 @@
   "92d3a0b946afabc71736c1fd63291a3f06015cdb": [
     "virtualization\\windowscontainers\\management\\manage_resources.md"
   ],
+  "207ab784e2c64a6075c427509e7269820ed22d47": [
+    "virtualization\\windowscontainers\\quick_start\\azure_setup.md",
+    "virtualization\\windowscontainers\\deployment\\deployment_azure.md"
+  ],
   "242a2e426c62eafe53a0a86d6f7ae47284a52a19": [
     "virtualization\\windowscontainers\\quick_start\\azure_setup.md"
   ],
@@ -657,28 +676,10 @@
   "85f4deddc94ea3c722d257b14472238df91d5c3e": [
     "virtualization\\windowscontainers\\quick_start\\azure_setup.md"
   ],
-  "7eaf82d3cdd0a4881f239ce4071eb262b3104dfd": [
-    "virtualization\\windowscontainers\\quick_start\\media\\newazure1.png",
-    "virtualization\\windowscontainers\\deployment\\media\\newazure1.png"
-  ],
-  "166030c8810a103b840a327b284e19621ef8b64a": [
-    "virtualization\\windowscontainers\\deployment\\media\\tp41.png"
-  ],
-  "36eaa0e483cac9b07a024964cd5fb4f36ac84853": [
-    "virtualization\\windowscontainers\\quick_start\\media\\newazure2.png",
-    "virtualization\\windowscontainers\\deployment\\media\\newazure2.png"
-  ],
-  "d9d426b676ccb2dc14f35280a0163d77a696e948": [
-    "virtualization\\windowscontainers\\quick_start\\media\\newazure3.png",
-    "virtualization\\windowscontainers\\deployment\\media\\newazure3.png"
-  ],
-  "fccb0dc2730588ddf6851ad3189dd6dd4dc06b74": [
-    "virtualization\\windowscontainers\\quick_start\\media\\newazure6.png",
-    "virtualization\\windowscontainers\\deployment\\media\\newazure6.png"
-  ],
-  "ac6168b0f3d4e8b2044dd10d1dba101e2290f1d8": [
-    "virtualization\\windowscontainers\\quick_start\\media\\newazure7.png",
-    "virtualization\\windowscontainers\\deployment\\media\\newazure7.png"
+  "77b4bb84508a692e387829d6a02b2a6b88fa72cd": [
+    "virtualization\\windowscontainers\\quick_start\\container_setup.md",
+    "virtualization\\windowscontainers\\quick_start\\inplace_setup.md",
+    "virtualization\\windowscontainers\\quick_start\\manage_powershell.md"
   ],
   "77b202767a88ec4659bc118a6754561506af4cf7": [
     "virtualization\\windowscontainers\\quick_start\\container_setup.md"
@@ -697,6 +698,9 @@
   ],
   "41c8ff9ffd9802357852a36e0653dff9041d1880": [
     "virtualization\\windowscontainers\\quick_start\\inplace_setup.md"
+  ],
+  "0646e940d19a9673d049c633734fe9239e00977d": [
+    "virtualization\\windowscontainers\\quick_start\\manage_docker.md"
   ],
   "83bbf690bc7e5f85775a8a54d737972306450e0d": [
     "virtualization\\windowscontainers\\quick_start\\manage_docker.md"
@@ -731,9 +735,6 @@
   "05351786546d43e78bf4fe953c9dbf6bde7f1bba": [
     "virtualization\\windowscontainers\\quick_start\\media\\iis1.png"
   ],
-  "b3f2e35411bc72a4b95febc8f74a01e5ba78af38": [
-    "virtualization\\windowscontainers\\quick_start\\media\\HWWINServer.png"
-  ],
   "24a79a8377a34797a7b590421167fc4e5f843e60": [
     "virtualization\\windowscontainers\\quick_start\\media\\dockerfile2.png"
   ],
@@ -763,6 +764,9 @@
   ],
   "27c526701142883f3875904e3085c44d893c7b3e": [
     "virtualization\\windowscontainers\\reference\\ps_docker_comparison.md"
+  ],
+  "4ef29f9ed13a15e72712b3cf81a9cc933437ed3c": [
+    "virtualization\\windowscontainers\\TOC.md"
   ],
   "e0e558a8233d0efbd822c4e4a202d3b333efee41": [
     "virtualization\\windowscontainers\\TOC.md"
@@ -836,6 +840,9 @@
   "aa26c5fc60bcdfd7cd521799700e2f6eea48eb17": [
     "virtualization\\windowscontainers\\Nano_EULA.md"
   ],
+  "5d8a40cb0b1e88384651d08ed6d64c9415680e8d": [
+    "virtualization\\windowscontainers\\deployment\\deployment_nano.md"
+  ],
   "4662cb70e773ef30b5fac1bcf9ddff37e072b46a": [
     "virtualization\\windowscontainers\\deployment\\deployment_nano.md"
   ],
@@ -908,6 +915,9 @@
   "19547c2bfef4605a3c0be64fe152cfb7b89b621b": [
     "virtualization\\windowscontainers\\deployment\\deployment_azure.md"
   ],
+  "127bef378fd6da1454757375b6f02cb69c2b74a2": [
+    "virtualization\\windowscontainers\\docker\\manage_windows_dockerfile.md"
+  ],
   "bcccbe39268110cbaed0a60dc822873144456d84": [
     "virtualization\\windowscontainers\\docker\\manage_windows_dockerfile.md"
   ],
@@ -934,6 +944,9 @@
   ],
   "fbb194dcdf5957c580e4064b3e5190380ecd9549": [
     "virtualization\\windowscontainers\\docker\\manage_windows_dockerfile.md"
+  ],
+  "4822ff2f0248b2d7752299ea55b08e3499e2e2f7": [
+    "virtualization\\windowscontainers\\docker\\optimize_windows_dockerfile.md"
   ],
   "7aadbce5ec122556c7b8ce94ecf11b31542dd1e7": [
     "virtualization\\windowscontainers\\docker\\optimize_windows_dockerfile.md"
@@ -962,6 +975,9 @@
   "19c1070cee496d52eba1b2ce80f4f939edccdffd": [
     "virtualization\\windowscontainers\\quick_start\\media\\hello.png"
   ],
+  "c0176d4f5445263a5fd522a80ce2a9dca7ac90e6": [
+    "virtualization\\windowscontainers\\quick_start\\quick_start.md"
+  ],
   "788d7915f727940f73061b55b9d25e0c134e62b3": [
     "virtualization\\windowscontainers\\quick_start\\quick_start.md"
   ],
@@ -977,33 +993,6 @@
   "c42402c584404011f48a8e076bb8ff0549427e70": [
     "virtualization\\windowscontainers\\quick_start\\quick_start.md"
   ],
-  "137c36e1f604c2b27367349a171acae6fed9321c": [
-    "virtualization\\windowscontainers\\quick_start\\quick_start_configure_host.md"
-  ],
-  "3514315613de3e95e5f1b99cd05200989ccdc098": [
-    "virtualization\\windowscontainers\\quick_start\\quick_start_configure_host.md"
-  ],
-  "91638b2c8eab687b3e0bdd068352308fd5b51e20": [
-    "virtualization\\windowscontainers\\quick_start\\quick_start_configure_host.md"
-  ],
-  "ff84a3e87b60f0871909957fc59551be6109c867": [
-    "virtualization\\windowscontainers\\quick_start\\quick_start_configure_host.md"
-  ],
-  "f35f804e3028baf6674a6629d80f05a4115984ab": [
-    "virtualization\\windowscontainers\\quick_start\\quick_start_configure_host.md"
-  ],
-  "14cd704cb102b26e12a98f54a9de620ee658ba3d": [
-    "virtualization\\windowscontainers\\quick_start\\quick_start_configure_host.md"
-  ],
-  "76247e9dcf2f11c27812659bc0d8af8b0ee66c90": [
-    "virtualization\\windowscontainers\\quick_start\\quick_start_configure_host.md"
-  ],
-  "67033992a84c3de364ef80551cb5e6b7d1fb39c9": [
-    "virtualization\\windowscontainers\\quick_start\\quick_start_configure_host.md"
-  ],
-  "45dda5dfec112801d99f596f07807957f642e41f": [
-    "virtualization\\windowscontainers\\quick_start\\quick_start_configure_host.md"
-  ],
   "dde80a4599bd099b5361b016b8547169589d4c8e": [
     "virtualization\\windowscontainers\\removed\\dotnet35.md"
   ],
@@ -1012,6 +1001,9 @@
   ],
   "5a10afe0f0adcfa86fe9776efa45cfb935ca1beb": [
     "virtualization\\windowscontainers\\removed\\ps_docker_comparison.md"
+  ],
+  "3b788e7e393323d8f010b5c1a75a5cc20524c162": [
+    "virtualization\\windowscontainers\\quick_start\\manage_docker_hyperv.md"
   ],
   "76b0563ba4b42bc67b0cc3408acd762db0d1a95e": [
     "virtualization\\windowscontainers\\quick_start\\manage_docker_hyperv.md"
@@ -1048,5 +1040,14 @@
   ],
   "fef03f64b1c2ea9f526b84590124f97d303af49b": [
     "virtualization\\hyperv_on_windows\\user_guide\\setup_nat_network.md"
+  ],
+  "d99c45a712767e0fe4ac1ca42eb3b478a2843c83": [
+    "virtualization\\windowscontainers\\quick_start\\quick_start_images.md"
+  ],
+  "6b044c606aa6fabf5dcd7e4bc5196371b2647da8": [
+    "virtualization\\windowscontainers\\quick_start\\quick_start_windows_10.md"
+  ],
+  "4d884287cb782f8b6d0bfc6f9413f4c383c8eb14": [
+    "virtualization\\windowscontainers\\quick_start\\quick_start_windows_server.md"
   ]
 }
