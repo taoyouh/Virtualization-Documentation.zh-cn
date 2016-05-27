@@ -1,11 +1,26 @@
 # <a name='report-top'></a> Localization Handoff Report
 
 ## Summary
- Total Files | 0
+ Total Files | 1
 
 ## File List
+ Source File | Status | Details 
+ ----------- | ------ | ------- 
+ [virtualization\windowscontainers\quick_start\quick_start_windows_10.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/e3b9c9dd08d8b79a52ee77bcf8a44a99c1b5578c/virtualization/windowscontainers/quick_start/quick_start_windows_10.md) | HandedOffSuccess | [Details](#ea0993723f802c801d2635399ade0405c7ab7eab314)
 
 ## Item Details
+##### <a name='ea0993723f802c801d2635399ade0405c7ab7eab314'></a> Source: [virtualization\windowscontainers\quick_start\quick_start_windows_10.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/e3b9c9dd08d8b79a52ee77bcf8a44a99c1b5578c/virtualization/windowscontainers/quick_start/quick_start_windows_10.md)
+* Status: HandedOffSuccess
+* Target File: 
+* Handoff File: [quick_start_windows_10.5f887ea7d45d865c81fe971abab095fb8e272cc8.zh-cn.xlf](https://github.com/Microsoft/Virtualization-Documentation-Private.handoff/blob/fdd8e75e9c2cc0eb843324e2860ea76a0d291f33/ol-handoff/Microsoft/Virtualization-Documentation-Private.zh-cn/live/quick_start_windows_10.5f887ea7d45d865c81fe971abab095fb8e272cc8.zh-cn.xlf)
+* Handoff Datetime: 2016-05-27 00:24:24
+* Handoff Reason: Include
+* Archive File: 
+* Archive Datetime: 0001-01-01 00:00:00
+* Handback File: 
+* Handback Datetime: 0001-01-01 00:00:00
+* [Back to Top](#report-top)
+
 
 ## Error Details
 
