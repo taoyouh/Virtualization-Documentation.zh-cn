@@ -702,6 +702,9 @@
   "41c8ff9ffd9802357852a36e0653dff9041d1880": [
     "virtualization\\windowscontainers\\quick_start\\inplace_setup.md"
   ],
+  "8deff9eeb66ebef03d6b96aa358cd9c1d4ebea4a": [
+    "virtualization\\windowscontainers\\quick_start\\manage_docker.md"
+  ],
   "0646e940d19a9673d049c633734fe9239e00977d": [
     "virtualization\\windowscontainers\\quick_start\\manage_docker.md"
   ],
