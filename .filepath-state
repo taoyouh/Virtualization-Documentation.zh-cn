@@ -498,6 +498,9 @@
   "78be50da5eab1ffe3adba755e26ab092d2e4e024": [
     "virtualization\\windowscontainers\\deployment\\deployment.md"
   ],
+  "af0b7e8fdc5c96cd1fa5d5999c40e3a8c1919498": [
+    "virtualization\\windowscontainers\\deployment\\docker_windows.md"
+  ],
   "212135936130561e3e1d951876c5f11945cb8172": [
     "virtualization\\windowscontainers\\deployment\\docker_windows.md"
   ],
@@ -849,6 +852,9 @@
   "aa26c5fc60bcdfd7cd521799700e2f6eea48eb17": [
     "virtualization\\windowscontainers\\Nano_EULA.md"
   ],
+  "f3b742c80f4eceaaabfbed12d37cc4b2dd8441e9": [
+    "virtualization\\windowscontainers\\deployment\\deployment_nano.md"
+  ],
   "5d8a40cb0b1e88384651d08ed6d64c9415680e8d": [
     "virtualization\\windowscontainers\\deployment\\deployment_nano.md"
   ],
@@ -914,6 +920,9 @@
   ],
   "0e3df0f6619f4f2e4f93644749c9f6485346f902": [
     "virtualization\\hyperv_on_windows\\index.md"
+  ],
+  "7dee9e53f0e95b0c3b0ec0afc5b9d510c1962dbc": [
+    "virtualization\\hyperv_on_windows\\user_guide\\create_pre-release_vm.md"
   ],
   "a04b673327b84aa1293885fbb62e429ae87e552b": [
     "virtualization\\hyperv_on_windows\\user_guide\\create_pre-release_vm.md"
@@ -1032,6 +1041,9 @@
   "e8789c3b127b6b142f245f306595d885a00f18bc": [
     "virtualization\\windowscontainers\\quick_start\\manage_docker_hyperv.md"
   ],
+  "f5b069dc5918a91c7d8918889f44118e0b49a5e3": [
+    "virtualization\\hyperv_on_windows\\user_guide\\setup_nat_network.md"
+  ],
   "d6c12e9ef1026b621c0f96ef32b23616b78f9654": [
     "virtualization\\hyperv_on_windows\\user_guide\\setup_nat_network.md"
   ],
@@ -1058,6 +1070,9 @@
   ],
   "d99c45a712767e0fe4ac1ca42eb3b478a2843c83": [
     "virtualization\\windowscontainers\\quick_start\\quick_start_images.md"
+  ],
+  "952829a0acf624d7c4f9656a464b52f974e2902c": [
+    "virtualization\\windowscontainers\\quick_start\\quick_start_windows_10.md"
   ],
   "9e788127d635a2f0dc164c89631df3ae2ffdb625": [
     "virtualization\\windowscontainers\\quick_start\\quick_start_windows_10.md"
