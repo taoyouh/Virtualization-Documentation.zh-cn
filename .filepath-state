@@ -247,6 +247,9 @@
   "8fc87aee6cbc6ad9af401a7d555ef2b7656ede53": [
     "virtualization\\hyperv_on_windows\\user_guide\\migrating_vms.md"
   ],
+  "b76ef12cd63c3abdcbef6e587232eb33e6c42d78": [
+    "virtualization\\hyperv_on_windows\\user_guide\\nesting.md"
+  ],
   "1f90b903a56c3da29f3bc582b668461e090d2711": [
     "virtualization\\hyperv_on_windows\\user_guide\\nesting.md"
   ],
@@ -258,15 +261,6 @@
   ],
   "a259ef1a8cd12f803b67d9988d53fbe0340c130d": [
     "virtualization\\hyperv_on_windows\\user_guide\\nesting.md"
-  ],
-  "14c4da87f2ebfd9f7b0232ebafedd2f9cad5a820": [
-    "virtualization\\hyperv_on_windows\\user_guide\\media\\HyperVNesting.png"
-  ],
-  "4e050e277fbf9c5c12f0a267156827de0f17cf91": [
-    "virtualization\\hyperv_on_windows\\user_guide\\media\\HVNoNesting.png"
-  ],
-  "23b750c6cfe2679bdb5dd72285939f46e9141af4": [
-    "virtualization\\hyperv_on_windows\\user_guide\\media\\HVNesting.png"
   ],
   "060c57fb79f3009dc486d1bd500361ec7b22e735": [
     "virtualization\\hyperv_on_windows\\user_guide\\remote_host_management.md"
