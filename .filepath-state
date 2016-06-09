@@ -26,6 +26,9 @@
   "1741b59667074192e6da0da57eb30cf23e644bcd": [
     "virtualization\\hyperv_on_windows\\about\\supported_guest_os.md"
   ],
+  "54b496f535b94f0b9aa83cce3ae5504830faee65": [
+    "virtualization\\hyperv_on_windows\\about\\whats_new.md"
+  ],
   "1e078bffe1aaf7bfae4e91b19cfa11ad55eed9a2": [
     "virtualization\\hyperv_on_windows\\about\\whats_new.md"
   ],
@@ -449,6 +452,9 @@
   ],
   "2a715348730100beeb84335946a623c9e87986dd": [
     "virtualization\\windowscontainers\\containers_welcome.md"
+  ],
+  "e652014190e5c9849c7f05c18c429dac8d8701b0": [
+    "virtualization\\windowscontainers\\deployment\\deployment.md"
   ],
   "aa25f079cb8889a978e7ce7221377c6b2244348a": [
     "virtualization\\windowscontainers\\deployment\\deployment.md"
@@ -915,6 +921,9 @@
   "57dad6d7e391f9708f243465d10dca1ef021a9af": [
     "virtualization\\windowscontainers\\management\\docker-powershell.md"
   ],
+  "92b9258423db0c3f6f947197f011e52abde897dd": [
+    "virtualization\\hyperv_on_windows\\index.md"
+  ],
   "54f480f46b6916c56f6189d4c9ef0efeab99d110": [
     "virtualization\\hyperv_on_windows\\index.md"
   ],
@@ -1074,6 +1083,9 @@
   "d99c45a712767e0fe4ac1ca42eb3b478a2843c83": [
     "virtualization\\windowscontainers\\quick_start\\quick_start_images.md"
   ],
+  "e43ce91f3b830db960f5c81135de8747696a5f4d": [
+    "virtualization\\windowscontainers\\quick_start\\quick_start_windows_10.md"
+  ],
   "952829a0acf624d7c4f9656a464b52f974e2902c": [
     "virtualization\\windowscontainers\\quick_start\\quick_start_windows_10.md"
   ],
@@ -1088,6 +1100,9 @@
   ],
   "6b044c606aa6fabf5dcd7e4bc5196371b2647da8": [
     "virtualization\\windowscontainers\\quick_start\\quick_start_windows_10.md"
+  ],
+  "0c5733efca5491cc084e4c8bf10ce69ac7d50e81": [
+    "virtualization\\windowscontainers\\quick_start\\quick_start_windows_server.md"
   ],
   "300d04067aa235878e155af33f6223fb7752764a": [
     "virtualization\\windowscontainers\\quick_start\\quick_start_windows_server.md"
