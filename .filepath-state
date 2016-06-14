@@ -253,18 +253,6 @@
   "b76ef12cd63c3abdcbef6e587232eb33e6c42d78": [
     "virtualization\\hyperv_on_windows\\user_guide\\nesting.md"
   ],
-  "1f90b903a56c3da29f3bc582b668461e090d2711": [
-    "virtualization\\hyperv_on_windows\\user_guide\\nesting.md"
-  ],
-  "65e87223cbbfc353aad7afb61e1fc09c411e142d": [
-    "virtualization\\hyperv_on_windows\\user_guide\\nesting.md"
-  ],
-  "cd904696e077578d89d9b7408f2f24fca9e2fcf7": [
-    "virtualization\\hyperv_on_windows\\user_guide\\nesting.md"
-  ],
-  "a259ef1a8cd12f803b67d9988d53fbe0340c130d": [
-    "virtualization\\hyperv_on_windows\\user_guide\\nesting.md"
-  ],
   "060c57fb79f3009dc486d1bd500361ec7b22e735": [
     "virtualization\\hyperv_on_windows\\user_guide\\remote_host_management.md"
   ],
@@ -796,24 +784,6 @@
     "virtualization\\windowscontainers\\TOC.md"
   ],
   "f95628d0947096b697f50857b2a33bd41e90407c": [
-    "virtualization\\windowscontainers\\TOC.md"
-  ],
-  "4ef29f9ed13a15e72712b3cf81a9cc933437ed3c": [
-    "virtualization\\windowscontainers\\TOC.md"
-  ],
-  "e0e558a8233d0efbd822c4e4a202d3b333efee41": [
-    "virtualization\\windowscontainers\\TOC.md"
-  ],
-  "72286b5dd00c5b7750093a95f5665cf5dce77c03": [
-    "virtualization\\windowscontainers\\TOC.md"
-  ],
-  "592c229e5a3fcfa4c8ac596880834e7033952ae3": [
-    "virtualization\\windowscontainers\\TOC.md"
-  ],
-  "1bc6dc606e5c1c89b1b7a51c247bd641555545ef": [
-    "virtualization\\windowscontainers\\TOC.md"
-  ],
-  "5cf886a8a3bf4b3acd7c43002d0e1e8286c82971": [
     "virtualization\\windowscontainers\\TOC.md"
   ],
   "5d41a694d4b6cac6b6381379bda4a8f959ec4854": [
