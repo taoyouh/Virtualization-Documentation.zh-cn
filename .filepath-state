@@ -202,6 +202,9 @@
   "07461d3c6c45b5d5413d6c8490daee50340b34de": [
     "virtualization\\hyperv_on_windows\\TOC.md"
   ],
+  "bd0ee06f4e5eab4f33bb7e7c6dd71119dddde5c9": [
+    "virtualization\\hyperv_on_windows\\user_guide\\checkpoints.md"
+  ],
   "f2886fc89f3e2eb5bc5fa89f4d7285e91469d677": [
     "virtualization\\hyperv_on_windows\\user_guide\\checkpoints.md"
   ],
@@ -930,6 +933,9 @@
   "19547c2bfef4605a3c0be64fe152cfb7b89b621b": [
     "virtualization\\windowscontainers\\deployment\\deployment_azure.md"
   ],
+  "9e12a0a1ff4e77ddcd4933dea1828bea87b5f3b6": [
+    "virtualization\\windowscontainers\\docker\\manage_windows_dockerfile.md"
+  ],
   "6f29e5199ef922e653aa611fd7f5046ce1d72d78": [
     "virtualization\\windowscontainers\\docker\\manage_windows_dockerfile.md"
   ],
@@ -1097,6 +1103,9 @@
   ],
   "6b044c606aa6fabf5dcd7e4bc5196371b2647da8": [
     "virtualization\\windowscontainers\\quick_start\\quick_start_windows_10.md"
+  ],
+  "589755cfcaa7680bf6a6cf0bfff761a379681705": [
+    "virtualization\\windowscontainers\\quick_start\\quick_start_windows_server.md"
   ],
   "50abbdedf9ad786e644bd95305f65cadd7f7cfd1": [
     "virtualization\\windowscontainers\\quick_start\\quick_start_windows_server.md"
