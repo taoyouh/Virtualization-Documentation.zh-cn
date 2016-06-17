@@ -1,3 +1,7 @@
+---
+redirect_url: http://aka.ms/upgradevmconfig
+---
+
 # 迁移和升级虚拟机
 
 如果将虚拟机移动到最初通过 Windows 8.1 或更早版本中的 Hyper-V 创建的 Windows 10 主机，则在手动更新虚拟机配置版本前，你将无法使用新的虚拟机功能。
@@ -108,4 +112,8 @@ SGC VM      Running         0       538                 00:02:44.8350000    Oper
 
 
 
-<!--HONumber=Dec15_HO1-->
+
+
+<!--HONumber=May16_HO1-->
+
+

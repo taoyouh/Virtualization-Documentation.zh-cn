@@ -1,3 +1,16 @@
+---
+title: &2110268976 在 Windows 10 上安装 Hyper-V
+description: 在 Windows 10 上安装 Hyper-V
+keywords: windows 10, hyper-v
+author: neilpeterson
+manager: timlt
+ms.date: 05/02/2016
+ms.topic: article
+ms.prod: &376210605 windows-10-hyperv
+ms.service: windows-10-hyperv
+ms.assetid: 752dc760-a33c-41bb-902c-3bb2ecd9ac86
+---
+
 # 在 Windows 10 上安装 Hyper-V
 
 必须先启用 Hyper-V 角色，然后才可以在 Windows 10 上创建虚拟机。 可使用 Windows 10 控制面板、PowerShell 或部署映像服务和管理工具 (DISM) 执行此操作。 本文档将演练上述每种方式。
@@ -54,6 +67,6 @@ DISM /Online /Enable-Feature /All /FeatureName:Microsoft-Hyper-V
 
 
 
-<!--HONumber=Feb16_HO4-->
+<!--HONumber=May16_HO1-->
 
 

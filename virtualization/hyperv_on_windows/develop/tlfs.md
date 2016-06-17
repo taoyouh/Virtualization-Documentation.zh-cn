@@ -1,3 +1,16 @@
+---
+title: &314157220 虚拟机监控程序规范
+description: 虚拟机监控程序规范
+keywords: windows 10, hyper-v
+author: scooley
+manager: timlt
+ms.date: 05/02/2016
+ms.topic: article
+ms.prod: &495698213 windows-10-hyperv
+ms.service: windows-10-hyperv
+ms.assetid: aee64ad0-752f-4075-a115-2d6b983b4f49
+---
+
 # 虚拟机监控程序规范
 
 ## 虚拟机监控程序顶层功能规范
@@ -27,6 +40,6 @@ Windows 操作系统需要一组受限制的虚拟机管理程序接口在来宾
 
 
 
-<!--HONumber=Mar16_HO2-->
+<!--HONumber=May16_HO1-->
 
 
