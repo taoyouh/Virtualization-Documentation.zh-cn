@@ -14,17 +14,17 @@
 ## [容器主机 - Windows Server](deployment/deployment.md)
 ## [容器主机 - Nano Server](deployment/deployment_nano.md)
 
+# Windows 上的 Docker
+## [Windows 上的 Docker 守护程序](docker/configure_docker_daemon.md)
+## [Windows 上的 Dockerfile](docker/manage_windows_dockerfile.md)
+## [优化 Dockerfile](docker/optimize_windows_dockerfile.md)
+
 # 管理 Windows 容器
 ## [Hyper-V 容器](management/hyperv_container.md)
 ## [容器映像](management/manage_images.md)
 ## [容器网络](management/container_networking.md)
 ## [容器数据卷](management/manage_data.md)
 ## [容器资源控件](management/manage_resources.md)
-
-# Windows 上的 Docker
-## [Windows 上的 Docker 引擎](deployment/docker_windows.md)
-## [Windows 上的 Dockerfile](docker/manage_windows_dockerfile.md)
-## [优化 Dockerfile](docker/optimize_windows_dockerfile.md)
 
 # 容器示例
 ## [Dockerfile – Windows Server Core](https://github.com/Microsoft/Virtualization-Documentation/tree/master/windows-container-samples/windowsservercore)
@@ -42,6 +42,6 @@
 
 
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 
