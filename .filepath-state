@@ -774,12 +774,6 @@
   "a497db5e3d4b8dacf688b2578e39f92f418d2ac3": [
     "virtualization\\windowscontainers\\TOC.md"
   ],
-  "faf591e7168736a4ac77481760f1b22b2932eeb1": [
-    "virtualization\\windowscontainers\\TOC.md"
-  ],
-  "f95628d0947096b697f50857b2a33bd41e90407c": [
-    "virtualization\\windowscontainers\\TOC.md"
-  ],
   "5d41a694d4b6cac6b6381379bda4a8f959ec4854": [
     "virtualization\\community\\contribute_to_docs.md"
   ],
@@ -1117,9 +1111,6 @@
     "virtualization\\windowscontainers\\quick_start\\quick_start_windows_server.md"
   ],
   "1b8c917e76e30a3a2a3fe908efab3c61e62a804e": [
-    "virtualization\\windowscontainers\\docker\\configure_docker_daemon.md"
-  ],
-  "5b9cff70c6ed45c16af877f424416aaa90813900": [
     "virtualization\\windowscontainers\\docker\\configure_docker_daemon.md"
   ]
 }
