@@ -492,9 +492,6 @@
   "92b9258423db0c3f6f947197f011e52abde897dd": [
     "virtualization\\hyperv_on_windows\\index.md"
   ],
-  "54f480f46b6916c56f6189d4c9ef0efeab99d110": [
-    "virtualization\\hyperv_on_windows\\index.md"
-  ],
   "7dee9e53f0e95b0c3b0ec0afc5b9d510c1962dbc": [
     "virtualization\\hyperv_on_windows\\user_guide\\create_pre-release_vm.md"
   ],
