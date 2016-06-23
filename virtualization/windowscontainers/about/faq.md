@@ -1,6 +1,15 @@
-
-
-
+---
+title: Windows 容器常见问题解答
+description: Windows 容器常见问题解答
+keywords: docker, containers
+author: scooley
+manager: timlt
+ms.date: 05/02/2016
+ms.topic: article
+ms.prod: windows-containers
+ms.service: windows-containers
+ms.assetid: 25de368c-5a10-40a4-b4aa-ac8c9a9ca022
+---
 
 # 常见问题
 
@@ -8,7 +17,7 @@
 
 **什么是 Windows Server 容器？**
 
-Windows Server 容器是一种轻型的操作系统虚拟化方法，用于将单独的应用程序或服务与在同一个容器主机上运行的其他服务分离。 为了启用此功能，每个容器都有其自己的操作系统、进程、文件系统、注册表和 IP 地址的视图。
+Windows Server 容器是一种轻型的操作系统虚拟化方法，用于将单独的应用程序或服务与在同一个容器主机上运行的其他服务分离。 为了启用此功能，每个容器都有其自己的操作系统、进程、文件系统、注册表和 IP 地址的视图。  
 
 **什么是 Hyper-V 容器？**
 
@@ -23,7 +32,7 @@ Linux 和 Windows Server 容器很相似，两者都在其内核和核心操作�
 
 **作为开发人员，我是否必须为每种类型的容器重新编写我的应用？**
 
-否，Windows 容器映像在 Windows Server 容器和 Hyper-V 容器上通用。 在你启动容器时选择容器类型。 从开发人员的角度看，Windows Server 容器和 Hyper-V 容器是同一事物的两种风格。 它们提供相同的开发、编程和管理体验，它们是开放的且可扩展，并且将通过 Docker 包含相同级别的集成和支持。
+否，Windows 容器映像在 Windows Server 容器和 Hyper-V 容器上通用。 在你启动容器时选择容器类型。 从开发人员的角度看，Windows Server 容器和 Hyper-V 容器是同一事物的两种风格。  它们提供相同的开发、编程和管理体验，它们是开放的且可扩展，并且将通过 Docker 包含相同级别的集成和支持。
 
 开发人员可以使用 Windows Server 容器创建容器映像并将其部署为 Hyper-V 容器，反之亦然，而无需除指定相应的运行时标志之外的任何更改。
 
@@ -31,11 +40,11 @@ Linux 和 Windows Server 容器很相似，两者都在其内核和核心操作�
 
 **Hyper-V/Windows Server 容器是否是附加设备，或它们是否将集成在 Windows Server 内？**
 
-容器功能将集成到 Windows Server 2016 中。 请继续关注与公开发行更相关的详细信息。
+容器功能将集成到 Windows Server 2016 中。 请继续关注与公开发行更相关的详细信息。  
 
 **Windows Server 容器和 Drawbridge 之间的关系是什么？**
 
-Drawbridge 是帮助我们获得对容器的有价值见解的众多研究项目之一。 Windows Server 2016 中的许多容器技术都来源于我们在 Drawbridge 中的经验，我们很高兴将把世界级的容器技术带给 Windows Server 2016 的客户。
+Drawbridge 是帮助我们获得对容器的有价值见解的众多研究项目之一。  Windows Server 2016 中的许多容器技术都来源于我们在 Drawbridge 中的经验，我们很高兴将把世界级的容器技术带给 Windows Server 2016 的客户。
 
 **Windows Server 容器和 Hyper-V 容器的先决条件是什么？**
 
@@ -46,24 +55,13 @@ Window Server 容器和 Hyper-V 容器都需要 Windows Server 2016。 这些技
 
 **Hyper-V 容器是否还可用于 Docker 生态系统？**
 
-是，Hyper-V 容器将通过 Docker 提供与 Windows Server 容器相同级别的集成和管理。 目标是打造开放、一致、跨平台的体验。  
+是，Hyper-V 容器将通过 Docker 提供与 Windows Server 容器相同级别的集成和管理。  目标是打造开放、一致、跨平台的体验。  
 Docker 平台还将大大简化和增强跨容器选项工作的体验。 使用 Windows Server 容器开发的应用程序无需更改即可部署为 Hyper-V 容器。
 
-**对于 Windows Server 容器管理，我为何必须在 Docker 和 PowerShell 之间进行选取？**
-
-_这不是所需行为，也非长期计划。_PowerShell 容器管理工具和 Docker 容器管理工具将在将来并行工作。
-
-也就是说，使用多个管理接口管理同一个容器可能很困难。
-
-例如，使用 PowerShell 创建容器并使用大写字符命名映像。 Docker 不支持大写，PowerShell 支持。  
-尽管该特定示例非常易于管理，但更加困难的是处理状态更改（争用条件和不同的预期）、功能集差异或版本…
-
-我们的短期决策是，管理接口（在此情况下为 Docker 和 PowerShell）仅看到它们创建的容器 - 你使用 Docker 创建容器时，PowerShell 看不到它；你使用 PowerShell 创建容器时，Docker 看不到它。
 
 **我是否可以在 ESXi 或其他非 Hyper-V 虚拟机监控程序上运行 Windows 容器？**
 
-是，Windows 容器在任何 TP3 服务器核心安装上运行。 按照有关[就地启用容器功能](../quick_start/inplace_setup.md)的说明进行操作。
-
+是，Windows 容器在任何 TP3 服务器核心安装上运行。  按照有关[就地启用容器功能](../quick_start/inplace_setup.md)的说明进行操作。
 
 ## Microsoft 的开放生态系统
 
@@ -73,18 +71,14 @@ _这不是所需行为，也非长期计划。_PowerShell 容器管理工具和 
 
 **Microsoft 是否真的正在与 Docker 合作？**
 
-是的。  
-我们与 Docker 的合作关系使开发人员可以使用相同的 Docker 工具集创建、管理和部署 Windows Server 和 Linux 容器。 面向 Windows Server 的开发人员将不再需要在使用各种 Windows Server 技术和生成容器化的应用程序之间进行选择。
+是。  
+我们与 Docker 的合作关系使开发人员可以使用相同的 Docker 工具集创建、管理和部署 Windows Server 和 Linux 容器。 面向 Windows Server 的开发人员将不再需要在使用各种 Windows Server 技术和生成容器化的应用程序之间进行选择。  
 
-Docker 包含两方面，即项目的开源组和 Docker 公司。 我们考虑此合作关系同时包含这两者。 Docker 的成功部分是因为围绕 Docker 容器技术所生成的充满活力的生态系统。 Microsoft 正在致力于 Docker 项目，使其支持 Windows Server 容器和 Hyper-V 容器。
+Docker 包含两方面，即项目的开源组和 Docker 公司。 我们考虑此合作关系同时包含这两者。 Docker 的成功部分是因为围绕 Docker 容器技术所生成的充满活力的生态系统。 Microsoft 正在致力于 Docker 项目，使其支持 Windows Server 容器和 Hyper-V 容器。  
 
 有关详细信息，请参阅[新的 Windows Server 容器和对 Docker 的 Azure 支持](http://azure.microsoft.com/blog/2014/10/15/new-windows-server-containers-and-azure-support-for-docker/?WT.mc_id=Blog_ServerCloud_Announce_TTD)博客文章。
 
 
-
-
-
-
-<!--HONumber=Feb16_HO4-->
+<!--HONumber=May16_HO3-->
 
 

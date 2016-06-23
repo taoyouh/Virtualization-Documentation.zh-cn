@@ -1,31 +1,40 @@
 ---
+title: Windows 容器要求
+description: Windows 容器要求。
+keywords: metadata, containers
 author: neilpeterson
+manager: timlt
+ms.date: 05/26/2016
+ms.topic: deployment-article
+ms.prod: windows-containers
+ms.service: windows-containers
+ms.assetid: 3c3d4c69-503d-40e8-973b-ecc4e1f523ed
 ---
 
 # Windows 容器要求
 
-**这是初步内容，可能还会更改。**
+**这是初步内容，可能还会更改。** 
 
-此指南列出 Windows 容器主机的要求。
+本指南列出 Windows 容器主机的要求。
 
-## 物理系统上的 Windows 容器
+## 操作系统要求
 
-- Windows 容器角色仅在 Windows Server 2016 TP4（Full 和 Core 版本）和 Nano 服务器上可用。
+- Windows 容器角色仅在 Windows Server 2016 TP5（Full 和 Core 版本）、Nano Server 和 Windows 10（预览体验成员版本 14352 及更高版本）上可用。
 - 如果将运行 Hyper-V 容器，则需要安装 Hyper-V 角色。
+- Windows Server 容器主机必须将 Windows 安装到 c:\\。 如果将仅部署 Hyper-V 容器，则不会应用此限制。
 
-## 虚拟系统上的 Windows 容器
+## 虚拟化的容器主机
 
-如果 Windows 容器主机将在 Hyper-V 虚拟机上运行，并且还将托管 Hyper-V 容器，则需要启用嵌套虚拟化。 嵌套的虚拟化具有以下要求：
+如果 Windows 容器主机将从 Hyper-V 虚拟机运行，并且还将承载 Hyper-V 容器，则需要启用嵌套虚拟化。 嵌套的虚拟化具有以下要求：
 
 - 至少 4 GB RAM 可用于虚拟化的 Hyper-V 主机。
-- Windows Server 2016 Technical Preview 4 或主机系统上的 Windows 10 build 10565 以及 Windows Server Technical Preview 4（Full、Core）或虚拟机中的 Nano Server。
+- Windows Server 2016 Technical Preview 5 或主机系统上的 Windows 10 10565 版以及 Windows Server Technical Preview 5（Full、Core）或虚拟机中的 Nano Server。
 - 带有 Intel VT-x 处理器（此功能目前只适用于 Intel 处理器）。
 - 容器主机虚拟机还需要至少 2 个虚拟处理器。
 
+## 受支持的操作系统映像
 
-## 支持的操作系统映像
-
-提供 Windows Server Technical Preview 4 并带有两个容器操作系统映像、Windows Server Core 和 Nano 服务器。 并非所有配置都支持这两个操作系统映像。 下表详细介绍所支持的配置。
+提供 Windows Server Technical Preview 5 并带有两个容器操作系统映像、Windows Server Core 和 Nano Server。 并非所有配置都支持这两个操作系统映像。 下表详细介绍所支持的配置。
 
 <table border="1" style="background-color:FFFFCC;border-collapse:collapse;border:1px solid FFCC00;color:000000;width:75%" cellpadding="5" cellspacing="5">
 <thead>
@@ -38,27 +47,28 @@ author: neilpeterson
 <tbody>
 <tr valign="top">
 <td><center>Windows Server 2016 完整用户界面</center></td>
-<td><center>Core 操作系统映像</center></td>
-<td><center>Nano 操作系统映像</center></td>
+<td><center>Server Core 映像</center></td>
+<td><center>Nano Server 映像</center></td>
 </tr>
 <tr valign="top">
 <td><center>Windows Server 2016 Core</center></td>
-<td><center>Core 操作系统映像</center></td>
-<td><center> Nano 操作系统映像</center></td>
+<td><center>Server Core 映像</center></td>
+<td><center> Nano Server 映像</center></td>
 </tr>
 <tr valign="top">
 <td><center>Windows Server 2016 Nano</center></td>
-<td><center> Nano 操作系统映像</center></td>
-<td><center>Nano 操作系统映像</center></td>
+<td><center> Nano Server 映像</center></td>
+<td><center>Nano Server 映像</center></td>
+</tr>
+<tr valign="top">
+<td><center>Windows 10 预览体验成员版本</center></td>
+<td><center>不可用</center></td>
+<td><center>Nano Server 映像</center></td>
 </tr>
 </tbody>
 </table>
 
 
-
-
-
-
-<!--HONumber=Mar16_HO1-->
+<!--HONumber=May16_HO4-->
 
 

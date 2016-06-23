@@ -1,90 +1,111 @@
+---
+title: 容器数据卷
+description: 使用 Windows 容器创建和管理数据卷。
+keywords: docker, containers
+author: neilpeterson
+manager: timlt
+ms.date: 05/02/2016
+ms.topic: article
+ms.prod: windows-containers
+ms.service: windows-containers
+ms.assetid: f5998534-917b-453c-b873-2953e58535b1
+---
 
+# 容器数据卷
 
+**这是初步内容，可能还会更改。** 
 
+创建容器时，你可能需要创建新的数据目录，或将现有的目录添加到容器中。 这可通过添加数据卷来实现。 数据卷对容器和容器主机均可见，并且可以在它们之间共享数据。 在同一容器主机上也可以在多个容器之间共享数据卷。 本文档将详细介绍如何创建、检查和删除数据卷。
 
-# 容器共享文件夹
+## 数据卷
 
-**这是初步内容，可能还会更改。**
+### 创建新的数据卷
 
-共享文件夹允许在容器主机和容器之间共享数据。 创建共享文件夹后，共享文件夹将在容器内部可用。 在主机的共享文件夹中放置的任何数据将在容器内部可用。 在容器内部的共享文件夹中放置的任何数据将在主机上可用。 主机上的单个文件夹可以与多个容器共享，在此配置中，数据可以在运行的容器之间共享。
+使用 `docker run` 命令的 `-v` 参数创建新的数据卷。 默认情况下，新的数据卷存储于主机上的“c:\ProgramData\Docker\volumes”下。
 
-## 管理数据 - PowerShell
+此示例将创建一个名为“new-data-volume”的数据卷。 可以在“c:\new-data-volume”处正在运行的容器中访问此数据卷。
 
-### 创建共享文件夹
-
-若要创建共享文件夹，请使用 `Add-ContainerSharedFolder` 命令。 下面的示例在容器中创建目录 `c:\shared_data`，该目录会映射到主机上的目录 `c:\data_source`。
-
-> 添加共享文件夹时，容器必须处于停止状态。
-
-```powershell
-PS C:\> Add-ContainerSharedFolder -ContainerName DEMO -SourcePath c:\data_source -DestinationPath c:\shared_data
-
-ContainerName SourcePath       DestinationPath AccessMode
-------------- ----------       --------------- ----------
-DEMO          c:\data_source   c:\shared_data  ReadWrite
+```none
+docker run -it -v c:\new-data-volume windowsservercore cmd
 ```
 
-### 仅读取共享文件夹
+有关创建卷的详细信息，请参阅 [Manage data in containers on docker.com](https://docs.docker.com/engine/userguide/containers/dockervolumes/#data-volumes)（在 docker.com 上管理容器中的数据）。
 
-```powershell
-PS C:\> Add-ContainerSharedFolder -ContainerName DEMO -SourcePath c:\sf1 -DestinationPath c:\sf2 -AccessMode ReadOnly
+### 装载现有目录
 
-ContainerName SourcePath DestinationPath AccessMode
-------------- ---------- --------------- ----------
-DEMO         c:\sf1     c:\sf2          ReadOnly
+除了创建新的数据卷之外，你可能希望将现有目录从主机传递到容器中。 这也可以通过使用 `docker run` 命令的 `-v` 参数来实现。 主机目录中所有的文件也可在容器中使用。 任何在已装入卷中由容器创建的文件在主机上都可用。 同一目录可装载到多个容器上。 在此配置中，可以在容器间共享数据。
+
+在此示例中，将源目录“c:\source”作为“c:\destination”装载到容器内。
+
+```none
+docker run -it -v c:\source:c:\destination windowsservercore cmd
 ```
 
-### 列出共享文件夹
+有关装载主机目录的详细信息，请参阅 [Manage data in containers on docker.com](https://docs.docker.com/engine/userguide/containers/dockervolumes/#mount-a-host-directory-as-a-data-volume)（在 docker.com 上管理容器中的数据）。
 
-若要查看特定容器的共享文件夹列表，请使用 `Get-ContainerSharedFolder` 命令。
+### 装载单个文件
 
-```powershell
-PS C:\> Get-ContainerSharedFolder -ContainerName DEMO2
+通过显式指定文件名，可以将单个文件装载到容器中。 在此示例中，将要共享的目录包含许多文件，但只有“config.ini”文件在容器内部可用。 
 
-ContainerName SourcePath DestinationPath AccessMode
-------------- ---------- --------------- ----------
-DEMO         c:\source  c:\source       ReadWrite
+```none
+docker run -it -v c:\container-share\config.ini windowsservercore cmd
 ```
 
-### 修改共享文件夹
+在正在运行的容器内部，仅 config.ini 文件可见。
 
-若要修改现有的共享文件夹配置，请使用 `Set-ContainerSharedFolder` 命令。
+```none
+c:\container-share>dir
+ Volume in drive C has no label.
+ Volume Serial Number is 7CD5-AC14
 
-```powershell
-PS C:\> Set-ContainerSharedFolder -ContainerName SFRO -SourcePath c:\sf1 -DestinationPath c:\sf1
+ Directory of c:\container-share
+
+04/04/2016  12:53 PM    <DIR>          .
+04/04/2016  12:53 PM    <DIR>          ..
+04/04/2016  12:53 PM    <SYMLINKD>     config.ini
+               0 File(s)              0 bytes
+               3 Dir(s)  21,184,208,896 bytes free
 ```
 
-### 删除共享文件夹
+有关装载单个文件的详细信息，请参阅 [Manage data in containers on docker.com](https://docs.docker.com/engine/userguide/containers/dockervolumes/#mount-a-host-directory-as-a-data-volume)（在 docker.com 上管理容器中的数据）。
 
-若要删除共享文件夹，请使用 `Remove-ContainerSharedFolder` 命令。
+### 数据卷容器
 
-> 删除共享文件夹时，容器必须处于停止状态
+可以使用 `docker run` 命令的 `--volumes-from` 参数，从其他正在运行的容器中继承数据卷。 使用此继承，可以创建明确用于为容器化应用程序承载数据卷的容器。 
 
-```powershell
-PS C:\> Remove-ContainerSharedFolder -ContainerName DEMO2 -SourcePath c:\source -DestinationPath c:\source
-```
-## 管理数据 - Docker
+此示例将数据卷从容器“cocky_bell”装载到新的容器中。 新的容器启动后，在此卷中找到的数据可用于在该容器中运行的应用程序。  
 
-### 装载卷
-
-在使用 Docker 管理 Windows 容器时，可以使用 `-v` 选项装载卷。
-
-在下面的示例中，源文件夹是 c:\source，而目标文件夹是 c:\destination。
-
-```powershell
-PS C:\> docker run -it -v c:\source:c:\destination 1f62aaf73140 cmd
+```none
+docker run -it --volumes-from cocky_bell windowsservercore cmd
 ```
 
-有关使用 Docker 管理容器中的数据的详细信息，请参阅 [Docker.com 上的 Docker 卷](https://docs.docker.com/userguide/dockervolumes/)。
+有关数据容器的详细信息，请参阅 [Manage data in containers on docker.com](https://docs.docker.com/engine/userguide/containers/dockervolumes/#mount-a-host-file-as-a-data-volume)（在 docker.com 上管理容器中的数据）。
 
-## 视频演练
+### 检查共享的数据卷
 
-<iframe src="https://channel9.msdn.com/Blogs/containers/Container-Fundamentals--Part-3-Shared-Folders/player#ccLang=zh-cn" width="800" height="450"  allowFullScreen="true" frameBorder="0" scrolling="no"></iframe>
+可以使用 `docker inspect` 命令查看已装入的卷。
+
+```none
+docker inspect backstabbing_kowalevski
+```
+
+这将返回有关容器的信息，包括一个名为“Mounts”的部分，其中包含了有关已装入卷的数据，如源和目标目录。
+
+```none
+"Mounts": [
+    {
+        "Source": "c:\\container-share",
+        "Destination": "c:\\data",
+        "Mode": "",
+        "RW": true,
+        "Propagation": ""
+}
+```
+
+有关检查卷的详细信息，请参阅 [Manage data in containers on docker.com](https://docs.docker.com/engine/userguide/containers/dockervolumes/#locating-a-volume)（在 docker.com 上管理容器中的数据）。
 
 
 
-
-
-<!--HONumber=Feb16_HO3-->
+<!--HONumber=May16_HO4-->
 
 
