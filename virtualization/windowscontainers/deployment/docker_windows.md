@@ -9,6 +9,7 @@ ms.topic: article
 ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: bdfa4545-2291-4827-8165-2d6c98d72d37
+redirect_url: ../docker/configure_docker_daemon
 ---
 
 # Docker 和 Windows
@@ -297,6 +298,6 @@ docker daemon -D —exec-opt isolation=hyperv
 
 
 
-<!--HONumber=May16_HO5-->
+<!--HONumber=Jun16_HO2-->
 
 
