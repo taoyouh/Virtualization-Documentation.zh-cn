@@ -16005,9 +16005,9 @@
       "ArchiveFileCommit": "3f02fa1118b9d5a10d4623b5e2f8b87afadc72c3",
       "ArchiveFileDateTime": "2016-06-02T07:18:59.7667009Z",
       "ArchiveException": null,
-      "BilingualFilePath": null,
-      "BilingualFileCommit": null,
-      "BilingualDateTime": "0001-01-01T00:00:00",
+      "BilingualFilePath": "ol-handback\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\index.ed20041a86dfe858d5ca1a68bb48f4bd5b024074.zh-cn.xlf",
+      "BilingualFileCommit": "bc425de379852528ab9ba1fb33d3f2ce82806a81",
+      "BilingualDateTime": "2016-06-23T16:06:09.4961918Z",
       "BilingualException": null
     },
     "66c618e7572b413896dcdc48be20d94f83f945d8": {
@@ -16516,9 +16516,9 @@
       "ArchiveFileCommit": "3f02fa1118b9d5a10d4623b5e2f8b87afadc72c3",
       "ArchiveFileDateTime": "2016-06-02T07:18:59.7667009Z",
       "ArchiveException": null,
-      "BilingualFilePath": null,
-      "BilingualFileCommit": null,
-      "BilingualDateTime": "0001-01-01T00:00:00",
+      "BilingualFilePath": "ol-handback\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\whats_new.dae7a7074466e85ccbefc13ff0f5e799912523e9.zh-cn.xlf",
+      "BilingualFileCommit": "bc425de379852528ab9ba1fb33d3f2ce82806a81",
+      "BilingualDateTime": "2016-06-23T16:06:09.4961918Z",
       "BilingualException": null
     },
     "ea19b576219755e09a4064d0fa6bfde5367967e1": {
@@ -17842,9 +17842,9 @@
       "ArchiveFileCommit": "3f02fa1118b9d5a10d4623b5e2f8b87afadc72c3",
       "ArchiveFileDateTime": "2016-06-02T07:18:59.7667009Z",
       "ArchiveException": null,
-      "BilingualFilePath": null,
-      "BilingualFileCommit": null,
-      "BilingualDateTime": "0001-01-01T00:00:00",
+      "BilingualFilePath": "ol-handback\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\checkpoints.fb864e32f956b43d9a6ce0ccc72ba67b60ea8362.zh-cn.xlf",
+      "BilingualFileCommit": "bc425de379852528ab9ba1fb33d3f2ce82806a81",
+      "BilingualDateTime": "2016-06-23T16:06:09.4961918Z",
       "BilingualException": null
     },
     "e11c8d1a8fabc6e8282c9396a8efcbc448b9a6d4": {

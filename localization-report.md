@@ -1640,8 +1640,8 @@
 * Current Target File: [virtualization\hyperv_on_windows\about\whats_new.md](https://github.com/Microsoft/Virtualization-Documentation-Private.zh-cn/blob/53cc5073a57a902d33e58fa18c91af726dc7f7bd/virtualization/hyperv_on_windows/about/whats_new.md)
 * Current Handback File: [whats_new.dae7a7074466e85ccbefc13ff0f5e799912523e9.zh-cn.xlf](https://github.com/Microsoft/Virtualization-Documentation-Private.handback/blob/bc425de379852528ab9ba1fb33d3f2ce82806a81/ol-handback/Microsoft/Virtualization-Documentation-Private.zh-cn/live/whats_new.dae7a7074466e85ccbefc13ff0f5e799912523e9.zh-cn.xlf)
 * Current Handback Datetime: 2016-06-23 16:05:30
-* Bilingual File: [whats_new.dae7a7074466e85ccbefc13ff0f5e799912523e9.zh-cn.xlf](https://github.com/Microsoft/Virtualization-Documentation-Private.handback/blob/c74c66ce111ba9186c956a6f272a9d5042adcbb4/ol-handback/Microsoft/Virtualization-Documentation-Private.zh-cn/live/whats_new.dae7a7074466e85ccbefc13ff0f5e799912523e9.zh-cn.xlf)
-* Bilingual Datetime: 2016-06-16 07:48:55
+* Bilingual File: [whats_new.dae7a7074466e85ccbefc13ff0f5e799912523e9.zh-cn.xlf](https://github.com/Microsoft/Virtualization-Documentation-Private.handback/blob/bc425de379852528ab9ba1fb33d3f2ce82806a81/ol-handback/Microsoft/Virtualization-Documentation-Private.zh-cn/live/whats_new.dae7a7074466e85ccbefc13ff0f5e799912523e9.zh-cn.xlf)
+* Bilingual Datetime: 2016-06-23 16:06:09
 * [Back to Top](#report-top)
 
 ##### <a name='e7d6e4f44756f84fc324f2d4cb55f8762dcbba6b93'></a> Source: [virtualization\hyperv_on_windows\develop\make_mgmt_service.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/e14ede0a2b13de08cea0a955b37a21a150fb88cf/virtualization/hyperv_on_windows/develop/make_mgmt_service.md)
@@ -1727,6 +1727,8 @@
 * Current Target File: [virtualization\hyperv_on_windows\index.md](https://github.com/Microsoft/Virtualization-Documentation-Private.zh-cn/blob/53cc5073a57a902d33e58fa18c91af726dc7f7bd/virtualization/hyperv_on_windows/index.md)
 * Current Handback File: [index.ed20041a86dfe858d5ca1a68bb48f4bd5b024074.zh-cn.xlf](https://github.com/Microsoft/Virtualization-Documentation-Private.handback/blob/bc425de379852528ab9ba1fb33d3f2ce82806a81/ol-handback/Microsoft/Virtualization-Documentation-Private.zh-cn/live/index.ed20041a86dfe858d5ca1a68bb48f4bd5b024074.zh-cn.xlf)
 * Current Handback Datetime: 2016-06-23 16:05:30
+* Bilingual File: [index.ed20041a86dfe858d5ca1a68bb48f4bd5b024074.zh-cn.xlf](https://github.com/Microsoft/Virtualization-Documentation-Private.handback/blob/bc425de379852528ab9ba1fb33d3f2ce82806a81/ol-handback/Microsoft/Virtualization-Documentation-Private.zh-cn/live/index.ed20041a86dfe858d5ca1a68bb48f4bd5b024074.zh-cn.xlf)
+* Bilingual Datetime: 2016-06-23 16:06:09
 * [Back to Top](#report-top)
 
 ##### <a name='8489e1cb35de12a7cc54a8c1b29f40672eaac85199'></a> Source: [virtualization\hyperv_on_windows\media\All_ContentTypeIcons_VisualWalkthrough_65.png](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/240aa916b6122cd564fdee62f723cd199db8dfe5/virtualization/hyperv_on_windows/media/All_ContentTypeIcons_VisualWalkthrough_65.png)
@@ -2771,8 +2773,8 @@
 * Current Target File: [virtualization\hyperv_on_windows\user_guide\checkpoints.md](https://github.com/Microsoft/Virtualization-Documentation-Private.zh-cn/blob/53cc5073a57a902d33e58fa18c91af726dc7f7bd/virtualization/hyperv_on_windows/user_guide/checkpoints.md)
 * Current Handback File: [checkpoints.fb864e32f956b43d9a6ce0ccc72ba67b60ea8362.zh-cn.xlf](https://github.com/Microsoft/Virtualization-Documentation-Private.handback/blob/bc425de379852528ab9ba1fb33d3f2ce82806a81/ol-handback/Microsoft/Virtualization-Documentation-Private.zh-cn/live/checkpoints.fb864e32f956b43d9a6ce0ccc72ba67b60ea8362.zh-cn.xlf)
 * Current Handback Datetime: 2016-06-23 16:05:30
-* Bilingual File: [checkpoints.fb864e32f956b43d9a6ce0ccc72ba67b60ea8362.zh-cn.xlf](https://github.com/Microsoft/Virtualization-Documentation-Private.handback/blob/9c2557de76d63df221c4c03f2e00321f48708dc0/ol-handback/Microsoft/Virtualization-Documentation-Private.zh-cn/live/checkpoints.fb864e32f956b43d9a6ce0ccc72ba67b60ea8362.zh-cn.xlf)
-* Bilingual Datetime: 2016-06-16 07:48:55
+* Bilingual File: [checkpoints.fb864e32f956b43d9a6ce0ccc72ba67b60ea8362.zh-cn.xlf](https://github.com/Microsoft/Virtualization-Documentation-Private.handback/blob/bc425de379852528ab9ba1fb33d3f2ce82806a81/ol-handback/Microsoft/Virtualization-Documentation-Private.zh-cn/live/checkpoints.fb864e32f956b43d9a6ce0ccc72ba67b60ea8362.zh-cn.xlf)
+* Bilingual Datetime: 2016-06-23 16:06:09
 * [Back to Top](#report-top)
 
 ##### <a name='7dee9e53f0e95b0c3b0ec0afc5b9d510c1962dbc181'></a> Source: [virtualization\hyperv_on_windows\user_guide\create_pre-release_vm.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/7d97a2177a14f455ed5b54b0773e3003969303e2/virtualization/hyperv_on_windows/user_guide/create_pre-release_vm.md)
