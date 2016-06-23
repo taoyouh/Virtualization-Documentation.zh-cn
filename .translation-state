@@ -1,5 +1,5 @@
 {
-  "LastProcessedCommit": "3db43b433e7b1a9484d530cf209ea80ef269a307",
+  "LastProcessedCommit": "960b40e8c1eda9c19ebff0972df2c87e70c7e8f6",
   "LastTranslatedCommit": "602e6d7c3381a7a8ce7a028a2ddb5f45128d5996",
   "Items": {
     "5090f6d60b5cbdce0990242d795d9e4e3736e791": {
@@ -20380,6 +20380,40 @@
       "HandoffFilePath": "ol-handoff\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\manage_images.6d8d709cbc19bb63cc7d4553991616c57920cdfd.zh-cn.xlf",
       "HandoffFileCommit": "09699ec4b467e1f77aa68c5988059d19265b4dac",
       "HandoffDateTime": "2016-06-21T21:44:34.0549502Z",
+      "HandoffPriority": "",
+      "HandoffException": null,
+      "HandoffFailureTimes": 0,
+      "TargetFileCommit": null,
+      "TargetFilePath": null,
+      "HandbackFilePath": null,
+      "HandbackFileCommit": null,
+      "HandbackDateTime": "0001-01-01T00:00:00",
+      "HandbackException": null,
+      "HandbackFailureTimes": 0,
+      "UpdatedDateTime": "0001-01-01T00:00:00",
+      "ArchiveFilePath": null,
+      "ArchiveFileCommit": null,
+      "ArchiveFileDateTime": "0001-01-01T00:00:00",
+      "ArchiveException": null,
+      "BilingualFilePath": null,
+      "BilingualFileCommit": null,
+      "BilingualDateTime": "0001-01-01T00:00:00",
+      "BilingualException": null
+    },
+    "71e0fb430498f8a5ae4ac5b297cf5e4a2c904098": {
+      "FileHash": "71e0fb430498f8a5ae4ac5b297cf5e4a2c904098",
+      "SourceFileCommit": "960b40e8c1eda9c19ebff0972df2c87e70c7e8f6",
+      "SourceFilePath": "virtualization\\windowscontainers\\docker\\manage_windows_dockerfile.md",
+      "HandoffReason": 1,
+      "DependencyFrom": null,
+      "TokenReference": null,
+      "FilePathList": [
+        "virtualization\\windowscontainers\\docker\\manage_windows_dockerfile.md"
+      ],
+      "HasMetadata": true,
+      "HandoffFilePath": "ol-handoff\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\manage_windows_dockerfile.cf56579c9136245b4cbef41fabc5df7a6ab9832a.zh-cn.xlf",
+      "HandoffFileCommit": "91547a333efd0f966c6fc4cff65d2227f41be762",
+      "HandoffDateTime": "2016-06-23T00:45:13.9804327Z",
       "HandoffPriority": "",
       "HandoffException": null,
       "HandoffFailureTimes": 0,
