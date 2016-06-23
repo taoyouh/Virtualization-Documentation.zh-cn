@@ -321,9 +321,6 @@
   "387789ee9169d2affb9b9ed8e4e0e607071ac29b": [
     "virtualization\\windowscontainers\\deployment\\docker_windows.md"
   ],
-  "af0b7e8fdc5c96cd1fa5d5999c40e3a8c1919498": [
-    "virtualization\\windowscontainers\\deployment\\docker_windows.md"
-  ],
   "22320b32fb8af15c2e7125ec4f50c2b19643b9bf": [
     "virtualization\\windowscontainers\\deployment\\media\\nssm1.png"
   ],
@@ -343,9 +340,6 @@
     "virtualization\\windowscontainers\\management\\hcs_powershell.md"
   ],
   "2677b9228371b4a4ba72c249509cd9ccacc89473": [
-    "virtualization\\windowscontainers\\management\\hyperv_container.md"
-  ],
-  "c80b38a2174cc10a45cfb896145d91ac35f8d3f2": [
     "virtualization\\windowscontainers\\management\\hyperv_container.md"
   ],
   "8921cbd910bf657ddc4998e4214c1e9f9c3a01e9": [
@@ -544,12 +538,6 @@
     "virtualization\\windowscontainers\\quick_start\\quick_start_images.md"
   ],
   "3e85743f97a9facc65532a82f046ded38b90a9a9": [
-    "virtualization\\windowscontainers\\quick_start\\quick_start_windows_10.md"
-  ],
-  "e43ce91f3b830db960f5c81135de8747696a5f4d": [
-    "virtualization\\windowscontainers\\quick_start\\quick_start_windows_10.md"
-  ],
-  "952829a0acf624d7c4f9656a464b52f974e2902c": [
     "virtualization\\windowscontainers\\quick_start\\quick_start_windows_10.md"
   ],
   "589755cfcaa7680bf6a6cf0bfff761a379681705": [
