@@ -32,18 +32,6 @@
   "1e078bffe1aaf7bfae4e91b19cfa11ad55eed9a2": [
     "virtualization\\hyperv_on_windows\\about\\whats_new.md"
   ],
-  "452489f73ee3ccdb50dbff50f061885a1f834ad1": [
-    "virtualization\\hyperv_on_windows\\about\\whats_new.md"
-  ],
-  "25c9738399f2f88b7a22f5624f97087bcffd02bf": [
-    "virtualization\\hyperv_on_windows\\about\\whats_new.md"
-  ],
-  "376d9acfe8dd79cf5b109fa9555a8f944a771723": [
-    "virtualization\\hyperv_on_windows\\about\\whats_new.md"
-  ],
-  "bf7c9a1b7e544d684898d97e3a260f8d89586e66": [
-    "virtualization\\hyperv_on_windows\\about\\whats_new.md"
-  ],
   "e7d6e4f44756f84fc324f2d4cb55f8762dcbba6b": [
     "virtualization\\hyperv_on_windows\\develop\\make_mgmt_service.md"
   ],
@@ -200,12 +188,6 @@
     "virtualization\\hyperv_on_windows\\user_guide\\checkpoints.md"
   ],
   "f2886fc89f3e2eb5bc5fa89f4d7285e91469d677": [
-    "virtualization\\hyperv_on_windows\\user_guide\\checkpoints.md"
-  ],
-  "1d0df624e4410c1b14edd7f039ae84ad31c80cfe": [
-    "virtualization\\hyperv_on_windows\\user_guide\\checkpoints.md"
-  ],
-  "0766eaeabf18988757d596f08b8bf1233a089d36": [
     "virtualization\\hyperv_on_windows\\user_guide\\checkpoints.md"
   ],
   "e11c8d1a8fabc6e8282c9396a8efcbc448b9a6d4": [
@@ -511,9 +493,6 @@
     "virtualization\\hyperv_on_windows\\index.md"
   ],
   "54f480f46b6916c56f6189d4c9ef0efeab99d110": [
-    "virtualization\\hyperv_on_windows\\index.md"
-  ],
-  "0e3df0f6619f4f2e4f93644749c9f6485346f902": [
     "virtualization\\hyperv_on_windows\\index.md"
   ],
   "7dee9e53f0e95b0c3b0ec0afc5b9d510c1962dbc": [
