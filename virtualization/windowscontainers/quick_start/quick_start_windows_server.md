@@ -13,9 +13,9 @@ ms.assetid: e3b2a4dc-9082-4de3-9c95-5d516c03482b
 
 # Windows Server 上的 Windows 容器
 
-**这是初步内容，可能还会更改。** 
+**这是初步内容，可能还会更改。**
 
-本练习将演练 Windows Server 上 Windows 容器功能的基本部署和使用。 完成操作后，你将已安装容器角色，并部署简单的 Windows Server 容器。 在开始本快速入门之前，请先熟悉基本容器概念和术语。 可以在 [Quick Start Introduction](./quick_start.md)（快速入门简介）上找到此信息。 
+本练习将演练 Windows Server 上 Windows 容器功能的基本部署和使用。 完成操作后，你将已安装容器角色，并部署简单的 Windows Server 容器。 在开始本快速入门之前，请先熟悉基本容器概念和术语。 可以在 [Quick Start Introduction](./quick_start.md)（快速入门简介）上找到此信息。
 
 本快速入门特定于 Windows Server 2016 上的 Windows Server 容器。 此页面左侧的目录中提供其他快速入门文档。
 
@@ -25,13 +25,17 @@ ms.assetid: e3b2a4dc-9082-4de3-9c95-5d516c03482b
 
 ## 1.安装容器功能
 
-需要在使用 Windows 容器之前启用容器功能。 要执行此操作，在提升的 PowerShell 会话中运行以下命令。 
+需要在使用 Windows 容器之前启用容器功能。 要执行此操作，在提升的 PowerShell 会话中运行以下命令。
 
 ```none
 Install-WindowsFeature containers
 ```
 
 功能安装完成后，重启计算机。
+
+```none
+Restart-Computer -Force
+```
 
 ## 2.安装 Docker
 
@@ -70,22 +74,22 @@ dockerd --register-service
 安装完成后，可以启动该服务。
 
 ```none
-Start-Service Docker
+Start-Service docker
 ```
 
 ## 3.安装基本容器映像
 
-Windows 容器是从模板或映像部署的。 需要先下载基本操作系统映像，才能部署容器。 以下命令将下载 Windows Server Core 基本映像。 
-    
+Windows 容器是从模板或映像部署的。 需要先下载基本操作系统映像，才能部署容器。 以下命令将下载 Windows Server Core 基本映像。
+
 首先，安装容器映像包提供程序。
 
 ```none
 Install-PackageProvider ContainerImage -Force
 ```
 
-接着，安装 Windows Server Core 映像。 此过程可能需要花费一些时间，所以此时可以休息一会儿，待下载完成后返回继续。
+接着，安装 Windows Server Core 映像。 此过程可能需要花费一些时间，因此稍作休息，待下载完成后返回继续。
 
-```none 
+```none
 Install-ContainerImage -Name WindowsServerCore    
 ```
 
@@ -175,6 +179,8 @@ CONTAINER ID    IMAGE                             COMMAND               CREATED 
 
 从不同的计算机中，打开 Web 浏览器并输入容器主机的 IP 地址。 如果已正确配置所有内容，你应看到 IIS 初始屏幕。 这是从 Windows 容器中托管的 IIS 实例提供的。
 
+**注意：**如果你使用的是 Azure，将需要一个网络安全组规则来允许通过端口 80 通信。 有关详细信息，请参阅 [Create Rule in a Network Security Group]( https://azure.microsoft.com/en-us/documentation/articles/virtual-networks-create-nsg-arm-pportal/#create-rules-in-an-existing-nsg)（在网络安全组中创建规则）。
+
 ![](media/iis1.png)
 
 返回到容器主机上，使用 `docker rm` 命令删除容器。 注意 - 将此示例中的容器名称替换为实际容器名称。
@@ -189,6 +195,6 @@ docker rm -f grave_jang
 [Windows 10 上的 Windows 容器](./quick_start_windows_10.md)
 
 
-<!--HONumber=May16_HO4-->
+<!--HONumber=Jun16_HO3-->
 
 

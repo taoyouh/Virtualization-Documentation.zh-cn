@@ -48,6 +48,8 @@ echo "Hello World From a Windows Server Container" > C:\inetpub\wwwroot\index.ht
 
 从不同的系统，浏览到容器主机的 IP 地址。 你应该可以看到“Hello World”应用程序。
 
+**注意：**如果你使用的是 Azure，将需要一个网络安全组规则来允许通过端口 80 通信。 有关详细信息，请参阅 [Create Rule in a Network Security Group]( https://azure.microsoft.com/en-us/documentation/articles/virtual-networks-create-nsg-arm-pportal/#create-rules-in-an-existing-nsg)（在网络安全组中创建规则）。
+
 ![](media/hello.png)
 
 返回到容器中，退出交互式容器会话。
@@ -159,6 +161,6 @@ docker rm -f cranky_brown
 
 [Windows 10 上的 Windows 容器](./quick_start_windows_10.md)
 
-<!--HONumber=May16_HO4-->
+<!--HONumber=Jun16_HO2-->
 
 

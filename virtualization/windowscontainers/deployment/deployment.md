@@ -13,19 +13,23 @@ ms.assetid: ba4eb594-0cdb-4148-81ac-a83b4bc337bc
 
 # 容器主机部署 - Windows Server
 
-**这是初步内容，可能还会更改。** 
+**这是初步内容，可能还会更改。**
 
 部署 Windows 容器主机的步骤会有所不同，具体取决于操作系统和主机系统类型（物理或虚拟）。 本文档中详细介绍将 Windows 容器主机部署到物理或虚拟系统上的 Windows Server 2016 或 Windows Server Core 2016 的相关内容。
 
 ## 安装容器功能
 
-需要在使用 Windows 容器之前启用容器功能。 要执行此操作，在提升的 PowerShell 会话中运行以下命令。 
+需要在使用 Windows 容器之前启用容器功能。 要执行此操作，在提升的 PowerShell 会话中运行以下命令。
 
 ```none
 Install-WindowsFeature containers
 ```
 
 功能安装完成后，重启计算机。
+
+```none
+Restart-Computer -Force
+```
 
 ## 安装 Docker
 
@@ -71,17 +75,17 @@ Start-Service Docker
 
 ## 安装基本容器映像
 
-需要先下载容器基本操作系统映像，才能部署容器。 下面的示例将下载 Windows Server Core 基本操作系统映像。 安装 Nano Server 基本映像可使用相同的步骤。 安装 Nano Server 基本映像可使用相同的步骤。 有关 Windows 容器映像的详细信息，请参阅[管理容器映像](../management/manage_images.md)。
-    
+需要先下载容器基本操作系统映像，才能部署容器。 下面的示例将下载 Windows Server Core 基本操作系统映像。 安装 Nano Server 基本映像可使用相同的步骤。 有关 Windows 容器映像的详细信息，请参阅[管理容器映像](../management/manage_images.md)。
+
 首先，安装容器映像包提供程序。
 
 ```none
 Install-PackageProvider ContainerImage -Force
 ```
 
-接着，安装 Windows Server Core 映像。 此过程可能需要花费一些时间，所以此时可以休息一会儿，待下载完成后返回继续。
+接着，安装 Windows Server Core 映像。 此过程可能需要花费一些时间，因此稍作休息，待下载完成后返回继续。
 
-```none 
+```none
 Install-ContainerImage -Name WindowsServerCore    
 ```
 
@@ -99,11 +103,11 @@ docker tag windowsservercore:10.0.14300.1000 windowsservercore:latest
 
 ## Hyper-V 容器主机
 
-为部署 Hyper-V 容器，需使用 Hyper-V 角色。 如果 Windows 容器主机本身就是 Hyper-V 虚拟机，则需要在安装 Hyper-V 角色前先启用嵌套虚拟化。 有关嵌套虚拟化的详细信息，请参阅[嵌套虚拟化]( https://msdn.microsoft.com/en-us/virtualization/hyperv_on_windows/user_guide/nesting)。
+要运行 Hyper-V 容器，需要使用 Hyper-V 角色。 如果 Windows 容器主机本身就是 Hyper-V 虚拟机，则需要在安装 Hyper-V 角色前先启用嵌套虚拟化。 有关嵌套虚拟化的详细信息，请参阅[嵌套虚拟化]( https://msdn.microsoft.com/en-us/virtualization/hyperv_on_windows/user_guide/nesting)。
 
 ### 嵌套虚拟化
 
-以下脚本将为容器主机配置嵌套虚拟化。 在托管容器主机虚拟机的 Hyper-V 计算机上运行此脚本。 确保在运行此脚本时，关闭了容器主机虚拟机。
+以下脚本将为容器主机配置嵌套虚拟化。 在父 Hyper-V 计算机上运行此脚本。 确保在运行此脚本时，关闭了容器主机虚拟机。
 
 ```none
 #replace with the virtual machine name
@@ -128,7 +132,6 @@ Install-WindowsFeature hyper-v
 ```
 
 
-
-<!--HONumber=May16_HO4-->
+<!--HONumber=Jun16_HO2-->
 
 
