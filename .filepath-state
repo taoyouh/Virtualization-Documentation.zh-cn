@@ -2,43 +2,13 @@
   "ea19b576219755e09a4064d0fa6bfde5367967e1": [
     "virtualization\\hyperv_on_windows\\about\\hyperv_on_windows.md"
   ],
-  "ecb36777ebc4605d9b377bbd9baa1028a2bf555b": [
-    "virtualization\\hyperv_on_windows\\about\\hyperv_on_windows.md"
-  ],
-  "d2a574e14c2c3a97fdcd472520c17a4e2bbf07d4": [
-    "virtualization\\hyperv_on_windows\\about\\hyperv_on_windows.md"
-  ],
-  "bdd758161837cfd88c6762d6ffbb6b75725933c1": [
-    "virtualization\\hyperv_on_windows\\about\\hyperv_on_windows.md"
-  ],
-  "cb834b4fe44e1716864babc1bfdb20936ebc1d74": [
-    "virtualization\\hyperv_on_windows\\about\\hyperv_on_windows.md"
-  ],
-  "8353640c257688b361ac7da3912d9e9d749c37f2": [
-    "virtualization\\hyperv_on_windows\\about\\hyperv_on_windows.md"
-  ],
   "19ecce49df066c5816741f375c4610b79d7ad802": [
-    "virtualization\\hyperv_on_windows\\about\\supported_guest_os.md"
-  ],
-  "5c965d807b3b5345c3c2fed2ca4ebcc33ff485d1": [
-    "virtualization\\hyperv_on_windows\\about\\supported_guest_os.md"
-  ],
-  "1741b59667074192e6da0da57eb30cf23e644bcd": [
     "virtualization\\hyperv_on_windows\\about\\supported_guest_os.md"
   ],
   "54b496f535b94f0b9aa83cce3ae5504830faee65": [
     "virtualization\\hyperv_on_windows\\about\\whats_new.md"
   ],
   "e7d6e4f44756f84fc324f2d4cb55f8762dcbba6b": [
-    "virtualization\\hyperv_on_windows\\develop\\make_mgmt_service.md"
-  ],
-  "90d44fb267e701f0238afbbb473073d159eb33a5": [
-    "virtualization\\hyperv_on_windows\\develop\\make_mgmt_service.md"
-  ],
-  "ed006e592bfabb237a07c51902680b8b094732f9": [
-    "virtualization\\hyperv_on_windows\\develop\\make_mgmt_service.md"
-  ],
-  "9c5aa1998bba388ec2368d8b279fc9b8282cb5be": [
     "virtualization\\hyperv_on_windows\\develop\\make_mgmt_service.md"
   ],
   "4b8a6905e3497b5fbecf938ea35b6cc57ae37be2": [
@@ -48,23 +18,7 @@
     "virtualization\\hyperv_on_windows\\quick_start\\walkthrough.md",
     "virtualization\\hyperv_on_windows\\quick_start\\index.md"
   ],
-  "380e6aec81d02bed84769a4b31c0d1fdeb72d8dc": [
-    "virtualization\\hyperv_on_windows\\quick_start\\walkthrough.md",
-    "virtualization\\hyperv_on_windows\\quick_start\\index.md"
-  ],
-  "eff2133b5970f1c04145fc472e357b27094fb167": [
-    "virtualization\\hyperv_on_windows\\quick_start\\walkthrough.md"
-  ],
-  "2b84c3d3efe43330cac6f8dd759ada08eaf219b6": [
-    "virtualization\\hyperv_on_windows\\quick_start\\walkthrough.md"
-  ],
   "4ec9c178807186e37054ab000e01a37b5899ef4e": [
-    "virtualization\\hyperv_on_windows\\quick_start\\walkthrough_checkpoints.md"
-  ],
-  "e7cc386452b95f16a3c12340e8027c605732e3e8": [
-    "virtualization\\hyperv_on_windows\\quick_start\\walkthrough_checkpoints.md"
-  ],
-  "30ec773c62830bc68972b0c8eb5a57b8df8b8ec9": [
     "virtualization\\hyperv_on_windows\\quick_start\\walkthrough_checkpoints.md"
   ],
   "7746c4675bfca7f94a2145e6b08059a99ea6b2c5": [
@@ -112,9 +66,6 @@
   "dee716ee6468fdbc3a81518ccf47e6e4072c3645": [
     "virtualization\\hyperv_on_windows\\quick_start\\walkthrough_export_import.md"
   ],
-  "169ec8f0dc462e9cf51f7ffb6e01b2d3e80f41b2": [
-    "virtualization\\hyperv_on_windows\\quick_start\\walkthrough_export_import.md"
-  ],
   "9e2b16f3e6c9882246a5a4c21683112eaa089ce8": [
     "virtualization\\hyperv_on_windows\\quick_start\\walkthrough_install.md"
   ],
@@ -160,27 +111,6 @@
   "1bd6dec14101d8ab485c4bdc1d18b82437401583": [
     "virtualization\\hyperv_on_windows\\TOC.md"
   ],
-  "12d38955637682dc7206bb952e106c027bdf6140": [
-    "virtualization\\hyperv_on_windows\\TOC.md"
-  ],
-  "1d69f8bb5cb097eb6a394b85121ba064b2ee539f": [
-    "virtualization\\hyperv_on_windows\\TOC.md"
-  ],
-  "c75292857354100542fbee62fb9ae04a694dc277": [
-    "virtualization\\hyperv_on_windows\\TOC.md"
-  ],
-  "8e642583e47525eac970cd0f3226df440cfc1fe4": [
-    "virtualization\\hyperv_on_windows\\TOC.md"
-  ],
-  "ec037f40e4bb057d58e016903a96679e424e433a": [
-    "virtualization\\hyperv_on_windows\\TOC.md"
-  ],
-  "ffa8ed231f8eed258b14d34da3e248837ac91ac7": [
-    "virtualization\\hyperv_on_windows\\TOC.md"
-  ],
-  "07461d3c6c45b5d5413d6c8490daee50340b34de": [
-    "virtualization\\hyperv_on_windows\\TOC.md"
-  ],
   "bd0ee06f4e5eab4f33bb7e7c6dd71119dddde5c9": [
     "virtualization\\hyperv_on_windows\\user_guide\\checkpoints.md"
   ],
@@ -200,18 +130,6 @@
     "virtualization\\hyperv_on_windows\\user_guide\\managing_ics.md"
   ],
   "9bdf1c6cc52982df0a5d6f59057bf07492d5c53b": [
-    "virtualization\\hyperv_on_windows\\user_guide\\managing_ics.md"
-  ],
-  "90a37f43e8dd1949ae72fff34644be0038138355": [
-    "virtualization\\hyperv_on_windows\\user_guide\\managing_ics.md"
-  ],
-  "f19bc39fe842791aa28841232a88ea463c142036": [
-    "virtualization\\hyperv_on_windows\\user_guide\\managing_ics.md"
-  ],
-  "a15b881eaba50af7ead7722f6364bcc5c7747497": [
-    "virtualization\\hyperv_on_windows\\user_guide\\managing_ics.md"
-  ],
-  "86229e8504f52f959d1b564fce5fba821d2677e3": [
     "virtualization\\hyperv_on_windows\\user_guide\\managing_ics.md"
   ],
   "cfd2050910aa411e608428c9f4ae570de2924123": [
@@ -339,15 +257,6 @@
   "8921cbd910bf657ddc4998e4214c1e9f9c3a01e9": [
     "virtualization\\windowscontainers\\management\\manage_containers.md"
   ],
-  "f301c61d7d6e1183a055fc907948f7a772b4d5cf": [
-    "virtualization\\windowscontainers\\management\\manage_containers.md"
-  ],
-  "ce0941cd8ebb45055103f490bf2be877a215fc46": [
-    "virtualization\\windowscontainers\\management\\manage_containers.md"
-  ],
-  "a6a086ddf3545b94c7b4f10ac9401505904a154a": [
-    "virtualization\\windowscontainers\\management\\manage_containers.md"
-  ],
   "b8eca51e347f17e787095b7e4349337cc3ae69a7": [
     "virtualization\\windowscontainers\\management\\manage_data.md"
   ],
@@ -385,12 +294,6 @@
     "virtualization\\windowscontainers\\reference\\app_compat.md"
   ],
   "f01125a9e6f8a952ae6a82fb2d1df20bb5f6c900": [
-    "virtualization\\windowscontainers\\reference\\ps_docker_comparison.md"
-  ],
-  "5c8977137b82b08bbd8a308dac97df307d329695": [
-    "virtualization\\windowscontainers\\reference\\ps_docker_comparison.md"
-  ],
-  "27c526701142883f3875904e3085c44d893c7b3e": [
     "virtualization\\windowscontainers\\reference\\ps_docker_comparison.md"
   ],
   "1ee103af6a29395fb07bef855c487d8344167b64": [
@@ -444,9 +347,6 @@
   "640cdeabb1f10e4e69f909c33d3c4e483dad00aa": [
     "virtualization\\windowscontainers\\Nano_EULA.md"
   ],
-  "aa26c5fc60bcdfd7cd521799700e2f6eea48eb17": [
-    "virtualization\\windowscontainers\\Nano_EULA.md"
-  ],
   "f2790186aa641378b1981a1f946665ca46fdbd73": [
     "virtualization\\windowscontainers\\deployment\\deployment_nano.md"
   ],
@@ -469,15 +369,6 @@
     "virtualization\\hyperv_on_windows\\develop\\media\\flightingSDK.png"
   ],
   "03ceaa83723db0870623cbc579d81b8d4ee6e813": [
-    "virtualization\\windowscontainers\\management\\docker-powershell.md"
-  ],
-  "728b5360b934220b0e78d8359f82b30c6adb7ad0": [
-    "virtualization\\windowscontainers\\management\\docker-powershell.md"
-  ],
-  "edccce965df9c3f492299012cfbfe7319e985a23": [
-    "virtualization\\windowscontainers\\management\\docker-powershell.md"
-  ],
-  "57dad6d7e391f9708f243465d10dca1ef021a9af": [
     "virtualization\\windowscontainers\\management\\docker-powershell.md"
   ],
   "92b9258423db0c3f6f947197f011e52abde897dd": [
