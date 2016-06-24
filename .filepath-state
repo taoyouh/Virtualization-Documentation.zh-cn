@@ -36,22 +36,10 @@
   "6364ecd2df13f5abc96fc22da03c9bca65d353b2": [
     "virtualization\\hyperv_on_windows\\quick_start\\walkthrough_compatibility.md"
   ],
-  "12695afc9ce6e98c62405bf520ac3723d10ccfbc": [
-    "virtualization\\hyperv_on_windows\\quick_start\\walkthrough_compatibility.md"
-  ],
-  "bd625e252f0ebbe92252efe16f17066acfebf156": [
-    "virtualization\\hyperv_on_windows\\quick_start\\walkthrough_compatibility.md"
-  ],
   "c830f164a513bd6125dc1a30f7cf1990e1c9470a": [
     "virtualization\\hyperv_on_windows\\quick_start\\media\\SystemInfo_upd.png"
   ],
   "206521ae366d5e0f5f7ca2ca510736cc178557fe": [
-    "virtualization\\hyperv_on_windows\\quick_start\\walkthrough_create_vm.md"
-  ],
-  "ef04726915dc100177ab847a3b4cc5b1bbd6b02f": [
-    "virtualization\\hyperv_on_windows\\quick_start\\walkthrough_create_vm.md"
-  ],
-  "98b474eb1e7fef1fc91bb5c48c069f57e3a7305e": [
     "virtualization\\hyperv_on_windows\\quick_start\\walkthrough_create_vm.md"
   ],
   "b638099bf81d9a6f9d3c31f83364d60032084c48": [
@@ -81,9 +69,6 @@
   "a8e567b6447aa73f14825b7054d977d2b003a726": [
     "virtualization\\hyperv_on_windows\\quick_start\\walkthrough_powershell.md"
   ],
-  "1ff2fe9d8253430a088e4260273cbcfb8c115414": [
-    "virtualization\\hyperv_on_windows\\quick_start\\walkthrough_powershell.md"
-  ],
   "44a0686f5ce5d1544b8a61bcad0a06eb1e1ce9d4": [
     "virtualization\\hyperv_on_windows\\quick_start\\media\\command_grid.png"
   ],
@@ -94,12 +79,6 @@
     "virtualization\\hyperv_on_windows\\quick_start\\media\\get_vm.png"
   ],
   "44470901a9149666c15982a728037a95fc28aaa5": [
-    "virtualization\\hyperv_on_windows\\quick_start\\walkthrough_virtual_switch.md"
-  ],
-  "cedf1513ec5a4e8b7036df36abed86b918aae620": [
-    "virtualization\\hyperv_on_windows\\quick_start\\walkthrough_virtual_switch.md"
-  ],
-  "5fdfacccc393533a78cd34c17ceab37b50634569": [
     "virtualization\\hyperv_on_windows\\quick_start\\walkthrough_virtual_switch.md"
   ],
   "d71d2800e3c9442a264de165813142157420b5f6": [
@@ -114,16 +93,7 @@
   "bd0ee06f4e5eab4f33bb7e7c6dd71119dddde5c9": [
     "virtualization\\hyperv_on_windows\\user_guide\\checkpoints.md"
   ],
-  "f2886fc89f3e2eb5bc5fa89f4d7285e91469d677": [
-    "virtualization\\hyperv_on_windows\\user_guide\\checkpoints.md"
-  ],
   "e11c8d1a8fabc6e8282c9396a8efcbc448b9a6d4": [
-    "virtualization\\hyperv_on_windows\\user_guide\\export_import.md"
-  ],
-  "9a9591d7ff1e22eb5aea74ea0d14b2d52443e32f": [
-    "virtualization\\hyperv_on_windows\\user_guide\\export_import.md"
-  ],
-  "8f425f8ff5e6bbba952f5b0fad4e2eff8b6960bb": [
     "virtualization\\hyperv_on_windows\\user_guide\\export_import.md"
   ],
   "d2fbf3b714ac70e096ba80aadd9533c62cf0c34e": [
@@ -159,15 +129,6 @@
   "060c57fb79f3009dc486d1bd500361ec7b22e735": [
     "virtualization\\hyperv_on_windows\\user_guide\\remote_host_management.md"
   ],
-  "710de79fd1d511a029c76d169ee6057135986509": [
-    "virtualization\\hyperv_on_windows\\user_guide\\remote_host_management.md"
-  ],
-  "0ecd65702bc12ec59ae9556d8971352272070dbd": [
-    "virtualization\\hyperv_on_windows\\user_guide\\remote_host_management.md"
-  ],
-  "8101d43c62dfbadc864f33d851bca9800888cdcc": [
-    "virtualization\\hyperv_on_windows\\user_guide\\remote_host_management.md"
-  ],
   "5f21c845594a8663b7458e86c121563d3b199e4d": [
     "virtualization\\hyperv_on_windows\\user_guide\\media\\HyperVManager-ConnectToHost.png"
   ],
@@ -181,9 +142,6 @@
     "virtualization\\hyperv_on_windows\\user_guide\\media\\HyperVManager-ConnectToRemoteHostAltCreds.png"
   ],
   "97ae940c03df2ab18350a31c56c93da85a348110": [
-    "virtualization\\hyperv_on_windows\\user_guide\\troubleshooting.md"
-  ],
-  "033950f25a30f7bccb308c22d6fa96b166d7ed01": [
     "virtualization\\hyperv_on_windows\\user_guide\\troubleshooting.md"
   ],
   "91927b751021efa9ba2cf696516ba50af28c6e05": [
@@ -305,9 +263,6 @@
   "5d41a694d4b6cac6b6381379bda4a8f959ec4854": [
     "virtualization\\community\\contribute_to_docs.md"
   ],
-  "67d18363bb2da6496ff91bbda6dd57444c685974": [
-    "virtualization\\community\\contribute_to_docs.md"
-  ],
   "462549855f0dc3ac092960bf1709fb01c3a02b3a": [
     "virtualization\\community\\media\\editDoc.png"
   ],
@@ -375,12 +330,6 @@
     "virtualization\\hyperv_on_windows\\index.md"
   ],
   "7dee9e53f0e95b0c3b0ec0afc5b9d510c1962dbc": [
-    "virtualization\\hyperv_on_windows\\user_guide\\create_pre-release_vm.md"
-  ],
-  "a04b673327b84aa1293885fbb62e429ae87e552b": [
-    "virtualization\\hyperv_on_windows\\user_guide\\create_pre-release_vm.md"
-  ],
-  "355dfa0bf1d0687eeff2c7cae7c6de8e1507a3ff": [
     "virtualization\\hyperv_on_windows\\user_guide\\create_pre-release_vm.md"
   ],
   "71e0fb430498f8a5ae4ac5b297cf5e4a2c904098": [
