@@ -1,3 +1,16 @@
+---
+title: &1154589453 Windows 10 上的 Hyper-V 疑难解答
+description: Windows 10 上的 Hyper-V 疑难解答
+keywords: windows 10, hyper-v
+author: scooley
+manager: timlt
+ms.date: 05/02/2016
+ms.topic: article
+ms.prod: &263813930 windows-10-hyperv
+ms.service: windows-10-hyperv
+ms.assetid: f0ec8eb4-ffc4-4bf1-9a19-7a8c3975b359
+---
+
 # Windows 10 上的 Hyper-V 疑难解答
 
 ## 我已更新到 Windows 10，但现在我无法连接到下层（Windows 8.1 或 Server 2012 R2）主机。
@@ -28,4 +41,8 @@ Hyper-V 需要使用 SLAT 才能运行虚拟机。 如果你的计算机不支�
 
 
 
-<!--HONumber=Dec15_HO1-->
+
+
+<!--HONumber=May16_HO1-->
+
+

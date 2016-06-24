@@ -1,116 +1,129 @@
-# Contribute to the docs
+---
+title: &1573745490 社区资源
+description: 社区资源
+keywords: windows 10, hyper-v, container, docker
+author: scooley
+manager: timlt
+ms.date: 05/02/2016
+ms.topic: article
+ms.prod: &1647860582 virtualization
+ms.service: virtualization
+ms.assetid: 731ed95a-ce13-4c6e-a450-49563bdc498c
+---
 
-> **Note:**  In order to contribute, you must have a [GitHub](https://www.github.com) account.
+# 参与编辑文档
 
-## Edit an existing doc
+> **注意：**若要参与，必须具有 [GitHub](https://www.github.com) 帐户。
 
-1. Find the doc you'd like to edit.
+## 编辑现有的文档
 
-2. Select **Contribute to this topic**  
+1. 查找你想要编辑的文档。
+
+2. 选择“参与本主题”  
   ![](media/editDoc.png)
 
-  This will automatically redirect you to the markdown file in GitHub associated with this file.
+  这会自动将你重定向到 GitHub 中与此文件相关联的标记文件。
 
-  Make sure you are signed into GitHub. If not, either sign in or create a GitHub account.
+  请确保已登录到 GitHub。 如果未登录，请登录或创建 GitHub 帐户。
 
   ![](media/GitHubView.png)
 
-3. Select the edit icon to edit with the in browser editor.
+3. 选择要使用浏览器编辑器进行编辑的编辑图标。
 
   ![](media/GitHubEdit.png)
 
-4. Make changes inline.
+4. 使更改内联。
 
-  Possible actions:
-  1. Edit file
-  2. Preview changes
-  3. Rename the file (it's very unlikely you'll want to do this)
+  可能的操作：
+  1. 编辑文件
+  2. 预览更改
+  3. 重命名文件（你不太可能需要执行此操作）
 
   ![](media/GitHubEditor.png)
 
-5. Propose your changes as a pull request
+5. 提出你的更改作为拉取请求
 
   ![](media/GitHubProposeChange.png)
 
-6. Review your changes
+6. 查看你的更改
 
-  **What we're looking for in a pull request**
-  * The change is correct -- it accurately represents the technology
-  * Spelling/grammar are correct
-  * Logical location in the documentation
+  **要在拉取请求中查找的内容**
+  * 更改正确 - 它准确地体现了此技术
+  * 拼写/语法正确无误
+  * 文档中的逻辑位置
 
   ![](media/GitHubCreatePR.png)
 
-7. Create a [pull request](contribute_to_docs.md#pull-requests)
+7. 创建[拉取请求](contribute_to_docs.md#pull-requests)
 
-## Pull requests
+## 拉取请求
 
-Most changes will be committed via pull request. A pull request is a way of reviewing a change set with multiple reviewers, changing, and commenting on the current content.
+大多数更改将通过拉取请求提交 拉取请求是一种通过多个查看器查看更改集、对当前内容进行更改和注释的方式。
 
 
-## Fork the repo and edit locally
+## 本地分叉和编辑存储库
 
-For long term doc work Clone the repository locally and work on your machine.
+对于长期的文档任务，请在本地克隆存储库，并在计算机上处理。
 
-The following guide shows you how to emulate my (Sarah Cooley's) set up. There are many alternative setups that work equally well.
+以下指南向你展示如何模拟我的（Sarah Cooley 的）设置。 有许多同等有效的替代设置。
 
-> **Note:** All of these doc tools work equally well on Linux/OSX. If you want other guides, ask.
+> **注意：**所有这些文档工具在 Linux/OSX 上同等有效。 如果需要其他指南，请提出。
 
-This is broken into three sections:
-* [Set up git](contribute_to_docs.md#set-up-git)
-  * git installation
-  * initial set up
-  * forking the documentation repo
-  * cloning your copy to your local machine
-* [Initial credential management](contribute_to_docs.md#validate-and-stash-credentials)
-  * information about stashing credentials and cred helper.
-* [Set up doc environment](contribute_to_docs.md#set-up-markdown-editing-environment)
-  * install VSCode
-  * VSCode for Git walk through some handy features
-  * Make first commit.
+这分为三个部分：
+* [设置 git](contribute_to_docs.md#set-up-git)
+  * git 安装
+  * 初始设置
+  * 分叉文档存储库
+  * 将副本克隆到本地计算机
+* [初始凭据管理](contribute_to_docs.md#validate-and-stash-credentials)
+  * 有关存储凭据和凭据帮助器的信息。
+* [设置文档环境](contribute_to_docs.md#set-up-markdown-editing-environment)
+  * 安装 VSCode
+  * 用于 Git 的 VSCode 介绍一些方便的功能
+  * 进行首个提交。
 
-### Set up Git
+### 设置 Git
 
-1. Install git (on Windows) from [here](https://git-for-windows.github.io/)
+1. 从[此处](https://git-for-windows.github.io/)安装 git（在 Windows 上）
 
-  There is only one value in the installation you need to change:
+  在安装中只有一个值你需要更改：
 
-  **Adjusting your PATH environment**
-  Use Git from the Windows Command Prompt
+  **调整你的 PATH 环境**
+  从 Windows 命令提示使用 Git
 
   ![](media/GitFromWinCMD.png)
 
-  This lets you use git commands in the PowerShell console/in any Windows console.
+  这样就可以在 PowerShell 控制台/任何 Windows 控制台中使用 git 命令。
 
-2. Configure your git identity
+2. 配置 git 标识
 
-  Open a PowerShell Window and run:
+  打开 PowerShell 窗口并运行：
 
   ``` PowerShell
   git config --global user.name "User Name"
   git config --global user.email username@microsoft.com
   ```
 
-  Git uses these values to label your commits.
+  Git 使用这些值来标记你的提交。
 
-> If recieved the following error git probably isn't installed properly or you need to relaunch PowerShell.
+> 如果收到以下错误，则可能未正确安装 git，或者你需要重新启动 PowerShell。
 >    ``` PowerShell
->    git : The term 'git' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+>    git：术语“git”无法识别为 cmdlet、函数、脚本文件或可运行程序的名称。 请检查名称的拼写，或者如果包括路径，请验证路径是否正确并重试。
 >    ```
 
-3. Configure your git environment
+3. 配置你的 git 环境
 
-   Set up a credential helper so you only need to enter username and password once (at least on this machine).
-   I use this basic [Windows cred helper](https://github.com/Microsoft/Git-Credential-Manager-for-Windows#download-and-install)
+   设置凭据帮助器，以便只需输入用户名和密码一次（至少在此计算机上）。
+   我使用此基本 [Windows 凭据帮助器](https://github.com/Microsoft/Git-Credential-Manager-for-Windows#download-and-install)
 
-   Once that is installed, run the following to enable the credential helper and set your push behavior:
+   安装后运行以下命令，启用凭据帮助器，并设置你的推送行为：
    ```
    git config --global credential.helper manager
    git config --global push.default simple
    ```
 
-   The first time you need to authenticate against GitHub - you will be prompted for your username, and the two-factor authcode if you have it enabled.
-   Example:
+   第一次时需要对 GitHub 进行身份验证，将会提示你输入用户名和双重身份验证代码（如启用）。
+   例如：
    ```
    C:\Users\plang\Source\Repos\Virtualization-Documentation [master]> git pull
    Please enter your GitHub credentials for https://github.com/
@@ -118,37 +131,37 @@ This is broken into three sections:
    password:
    authcode (app): 562689
    ```
-   This will automatically a [Personal Access Token](https://github.com/settings/tokens) with the right permissions on GitHub,
-   then store that token securely on the local machine. You shouldn't be prompted again in the future.
+   这将在 GitHub 上自动生成具有适当权限的[个人访问令牌](https://github.com/settings/tokens)，
+   然后将该令牌安全地存储在本地计算机上。 未来将不会再次提示你输入。
 
-4. Fork the repository
+4. 分叉存储库
 
-5. Clone the repository
+5. 克隆存储库
 
-  Git clone makes a local copy of the git repository with the right hooks to sync with other clones of the same repository.
+  Git 克隆将生成具有正确挂钩的 git 存储库的本地副本，可用于同步同一存储库中的其他克隆。
 
-  By default, clone will create a folder with the same name as the repository in the current directory. I keep all of my git repos in my user directory. Read more about git clone [here](http://git-scm.com/docs/git-clone).
+  默认情况下，克隆将使用当前目录中的存储库名称创建文件夹。 我将我的所有 git 存储库保留在我的用户目录中。 在[此处](http://git-scm.com/docs/git-clone)阅读有关 git 克隆的详细信息。
 
   ``` PowerShell
   cd ~
   git clone https://github.com/Microsoft/Virtualization-Documentation.git
   ```
 
-  If successful, you now have a `Virtualization-Documentation` folder.
+  如果成功，你现在将有`虚拟化文档`文件夹。
 
   ``` PowerShell
   cd Virtualization-Documentation
   ```
 
-5. [Optional] Set up Posh-Git
+5. [可选] 设置 Posh-Git
 
-  Posh-Git is a community created PowerShell module that makes using Git in PowerShell a little friendlier. It adds tab completion for Git in PowerShell, and can also make your prompt display useful about branching and file state. Read more about it [here](https://github.com/dahlbyk/posh-git). You can install Posh-Git by running the following in an Administrator PowerShell console.
+  Posh-Git 是社区创建的 PowerShell 模块，使得在 PowerShell 中使用 Git 变得更加友好。 它在 PowerShell 中为 Git 添加 Tab 自动补全，还可使提示显示有关分支和文件状态的有用信息。 你可在[此处](https://github.com/dahlbyk/posh-git)阅读有关它的详细信息。 可以通过在管理员 PowerShell 控制台中运行以下命令来安装 Posh-Git。
 
   ``` PowerShell
   Install-Module -Name posh-git
   ```
 
-  To make Posh-Git work automatically each time you start PowerShell, add the following code to your PowerShell Profile (e.g. `%UserProfile%\My Documents\WindowsPowerShell\profile.ps1 `)
+  若要使 Posh-Git 在每次启动 PowerShell 时都会自动工作，请将以下代码添加到 PowerShell 配置文件（例如 `%UserProfile%\My Documents\WindowsPowerShell\profile.ps1`）
 
   ``` PowerShell
   Import-Module posh-git
@@ -165,25 +178,29 @@ This is broken into three sections:
   }
   ```
 
-### Validate and stash credentials
+### 验证并存储凭据
 
-  To validate that the repository is set up correctly, try pulling new content.
+  若要验证已正确设置的存储库，请尝试拉取新内容。
 
   ``` PowerShell
   git pull
   ```
 
 
-### Set up markdown editing environment
+### 设置 markdown 编辑环境
 
-1. Download VSCode
+1. 下载 VSCode
 
-6. Make a test commit. If your credentials are stashed correctly, it should all work perfectly.
-
-
+6. 进行测试提交。 如果凭据正确存储，都应顺畅工作。
 
 
 
 
 
-<!--HONumber=Feb16_HO1-->
+
+
+
+
+<!--HONumber=May16_HO1-->
+
+

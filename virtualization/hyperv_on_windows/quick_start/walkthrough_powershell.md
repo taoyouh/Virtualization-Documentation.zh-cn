@@ -1,4 +1,17 @@
-# 步骤 8：使用 Hyper-V 和 Windows PowerShell
+---
+title: &1992901527 使用 Hyper-V 和 Windows PowerShell
+description: 使用 Hyper-V 和 Windows PowerShell
+keywords: windows 10, hyper-v
+author: neilpeterson
+manager: timlt
+ms.date: 05/02/2016
+ms.topic: article
+ms.prod: &608094888 windows-10-hyperv
+ms.service: windows-10-hyperv
+ms.assetid: 6d1ae036-0841-4ba5-b7e0-733aad31e9a7
+---
+
+# 使用 Hyper-V 和 Windows PowerShell
 
 现在你已基本了解如何部署 Hyper-V、创建虚拟机和管理这些虚拟机，让我们研究一下如何使用 PowerShell 来自动执行其中大部分活动。
 
@@ -107,6 +120,6 @@ get-vm
 
 
 
-<!--HONumber=Feb16_HO4-->
+<!--HONumber=May16_HO1-->
 
 
