@@ -1,3 +1,16 @@
+---
+title: 创建你自己的集成服务
+description: Windows 10 集成服务。
+keywords: windows 10, hyper-v
+author: scooley
+manager: timlt
+ms.date: 05/02/2016
+ms.topic: article
+ms.prod: &1992141540 windows-10-hyperv
+ms.service: windows-10-hyperv
+ms.assetid: 1ef8f18c-3d76-4c06-87e4-11d8d4e31aea
+---
+
 # 创建你自己的集成服务
 
 从 Windows 10 开始，任何人都可以创建非常类似于内置 Hyper-V 集成服务的服务，该服务在 Hyper-V 主机和在其上运行虚拟机之间使用新的基于套接字的通信通道。 使用这些 Hyper-V 套接字，服务可以独立于网络堆栈运行，并且所有数据都保留在相同的物理内存中。
@@ -30,7 +43,7 @@
 现在，本机代码 (C/C++) 中提供了 Hyper-V 套接字。
 
 若要编写简单的应用程序，你将需要：
-* C 编译器。 如果没有该功能，请查看 [Visual Studio 代码](https://aka.ms/vs)
+* C 编译器。 如果不具有该组件，请查看 [Visual Studio 社区](https://aka.ms/vs)
 * 一台运行 Hyper-V 和虚拟机的计算机。
   * 主机和来宾 (VM) 操作系统必须是 Windows 10 、Windows Server Technical Preview 3 或更高版本。
 * 在 HYPER-V 主机上安装的 [Windows 10 SDK](http://aka.ms/flightingSDK)
@@ -210,6 +223,6 @@ Accept()
 
 
 
-<!--HONumber=Mar16_HO4-->
+<!--HONumber=May16_HO1-->
 
 

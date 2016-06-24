@@ -1,3 +1,16 @@
+---
+title: &1082197795 管理 Hyper-V 集成服务
+description: 管理 Hyper-V 集成服务
+keywords: windows 10, hyper-v
+author: scooley
+manager: timlt
+ms.date: 05/02/2016
+ms.topic: article
+ms.prod: &369287785 windows-10-hyperv
+ms.service: windows-10-hyperv
+ms.assetid: 9cafd6cb-dbbe-4b91-b26c-dee1c18fd8c2
+---
+
 # 管理 Hyper-V 集成服务
 
 集成服务（通常称为集成组件）是允许虚拟机与 Hyper-V 主机通信的服务。 其中许多服务都很便利（例如来宾文件副本），但其他服务对来宾操作系统能够正常工作（时间同步）却至关重要。
@@ -89,6 +102,8 @@ Running  vmicvss            Hyper-V Volume Shadow Copy Requestor
 
 使用 [`Start-Service`](https://technet.microsoft.com/zh-cn/library/hh849825.aspx) 或 [`Stop-Service`](https://technet.microsoft.com/zh-cn/library/hh849790.aspx) 启动或停止服务。
 
+例如，若要禁用 PowerShell Direct，可以运行 `Stop-Service -Name vmicvmsession`。
+
 默认情况下，所有集成服务在来宾操作系统中均已启用。
 
 ## 在来宾操作系统 (Linux) 中管理集成服务
@@ -178,6 +193,8 @@ sudo hv_kvp_daemon
 
 **对于在 Windows 10 主机上运行的虚拟机：**
 
+> **注意：**更新集成组件不再需要 ISO 映像文件 vmguest.iso。 它未包含在 Windows 10 上的 Hyper-V 中。
+
 | 来宾操作系统| 更新机制| 注释|
 |:---------|:---------|:---------|
 | Windows 10| Windows 更新| |
@@ -250,4 +267,8 @@ sudo hv_kvp_daemon
 
 
 
-<!--HONumber=Jan16_HO3-->
+
+
+<!--HONumber=May16_HO1-->
+
+

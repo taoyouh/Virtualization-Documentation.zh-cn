@@ -1,3 +1,16 @@
+---
+title: 受支持的 Windows 来宾
+description: 受支持的 Windows 来宾。
+keywords: windows 10, hyper-v
+author: scooley
+manager: timlt
+ms.date: 05/02/2016
+ms.topic: article
+ms.prod: &874258250 windows-10-hyperv
+ms.service: windows-10-hyperv
+ms.assetid: ae4a18ed-996b-4104-90c5-539c90798e4c
+---
+
 # 受支持的 Windows 来宾
 
 本文列出了在 Windows 上的 Hyper-V 中受支持的操作系统组合。 它还介绍了集成服务和支持的其他因素。
@@ -33,7 +46,7 @@ Microsoft 按如下方式为来宾操作系统提供支持：
 | Windows Home Server 2011| 4| |
 | Windows Small Business Server 2011| Essentials 版本 - 2，Standard 版本 - 4| |
 
->Windows 10 可以作为来宾操作系统在 Windows 8.1 和 Windows Server 2012 R2 Hyper-V 主机上运行。
+> Windows 10 可以作为来宾操作系统在 Windows 8.1 和 Windows Server 2012 R2 Hyper-V 主机上运行。
 
 ## 受支持的 Linux 和 FreeBSD
 
@@ -51,4 +64,8 @@ Microsoft 按如下方式为来宾操作系统提供支持：
 
 
 
-<!--HONumber=Dec15_HO1-->
+
+
+<!--HONumber=May16_HO1-->
+
+

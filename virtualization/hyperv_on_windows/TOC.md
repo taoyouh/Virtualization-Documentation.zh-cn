@@ -1,16 +1,14 @@
-# 关于 Windows 上的 Hyper-V
+# 关于 Hyper V
 
 ## [Windows 上的 Hyper-V](./windows_welcome.md)
 
 ## [Hyper-V 简介](./about/hyperv_on_windows.md)
 
-## [Windows 10 中的新增功能](./about/whats_new.md)
-
 ## [受支持的来宾操作系统](about/supported_guest_os.md)
 
 ## [Hyper-V 上的 Linux 和 FreeBSD](https://technet.microsoft.com/library/dn531030.aspx)
 
-# Windows 快速入门上的 Hyper-V
+# Hyper-V 快速入门
 
 ## [系统要求](quick_start/walkthrough_compatibility.md)
 
@@ -22,23 +20,29 @@
 
 ## [Hyper-V 和 PowerShell](quick_start/walkthrough_powershell.md)
 
-# 管理 Windows 上的 Hyper-V
+# 使用 Hyper-V 管理虚拟机
 
-## [迁移和升级虚拟机](user_guide/migrating_vms.md)
+## [迁移和升级虚拟机](http://aka.ms/upgradevmconfig)
 
 ## [管理集成服务](user_guide/managing_ics.md)
 
 ## [使用检查点](user_guide/checkpoints.md)
 
-## [导出和导入](user_guide/export_import.md)
+## [导出和导入虚拟机](user_guide/export_import.md)
 
-## [PowerShell Direct](user_guide/vmsession.md)
+## [使用 PowerShell Direct 进行连接](user_guide/vmsession.md)
 
-## [远程管理](user_guide/remote_host_management.md)
+## [创建预发行版虚拟机](user_guide/create_pre-release_vm.md)
 
-## [嵌套虚拟化](user_guide/nesting.md)
+# 管理 Hyper-V 主机
 
-## [疑难解答](user_guide/troubleshooting.md)
+## [管理远程 Hyper-V 主机](user_guide/remote_host_management.md)
+
+## [启用嵌套虚拟化](user_guide/nesting.md)
+
+## [设置 NAT 网络](user_guide/setup_nat_network.md)
+
+## [生成集成服务](develop/make_mgmt_service.md)
 
 # 社区和支持
 
@@ -47,10 +51,6 @@
 # 引用
 
 ## [Hyper-V PowerShell](https://technet.microsoft.com/library/hh848559.aspx)
-
-## [PowerShell 示例](develop/powershell_snippets.md)
-
-## [生成集成服务](develop/make_mgmt_service.md)
 
 ## [Hyper-V WMI 提供程序 (V2)](https://msdn.microsoft.com/library/hh850319.aspx)
 
@@ -61,6 +61,6 @@
 
 
 
-<!--HONumber=Mar16_HO2-->
+<!--HONumber=May16_HO1-->
 
 

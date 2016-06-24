@@ -1,9 +1,12 @@
-# 在 Windows 10 上的 Hyper-V 中使用检查点
+---
+redirect_url: ../user_guide/checkpoints
+---
 
-**本文档已弃用。**
-
-若要了解检查点，请查看[此用户指南](../user_guide/checkpoints.md)。
+# 已重定向 – 无标题
 
 
 
-<!--HONumber=Dec15_HO3-->
+
+<!--HONumber=May16_HO1-->
+
+
