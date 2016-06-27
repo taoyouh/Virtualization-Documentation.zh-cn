@@ -99,9 +99,6 @@
   "d2fbf3b714ac70e096ba80aadd9533c62cf0c34e": [
     "virtualization\\hyperv_on_windows\\user_guide\\managing_ics.md"
   ],
-  "9bdf1c6cc52982df0a5d6f59057bf07492d5c53b": [
-    "virtualization\\hyperv_on_windows\\user_guide\\managing_ics.md"
-  ],
   "cfd2050910aa411e608428c9f4ae570de2924123": [
     "virtualization\\hyperv_on_windows\\user_guide\\media\\HyperVManager-OpenVMSettings.png"
   ],
@@ -318,9 +315,6 @@
     "virtualization\\hyperv_on_windows\\user_guide\\create_pre-release_vm.md"
   ],
   "71e0fb430498f8a5ae4ac5b297cf5e4a2c904098": [
-    "virtualization\\windowscontainers\\docker\\manage_windows_dockerfile.md"
-  ],
-  "9e12a0a1ff4e77ddcd4933dea1828bea87b5f3b6": [
     "virtualization\\windowscontainers\\docker\\manage_windows_dockerfile.md"
   ],
   "4822ff2f0248b2d7752299ea55b08e3499e2e2f7": [
