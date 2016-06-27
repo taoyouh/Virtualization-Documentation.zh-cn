@@ -1,6 +1,6 @@
 ---
-title: Dockerfile 和 Windows 容器
-description: 创建用于 Windows 容器的 Dockerfile。
+title: "Dockerfile 和 Windows 容器"
+description: "创建用于 Windows 容器的 Dockerfile。"
 keywords: docker, containers
 author: neilpeterson
 manager: timlt
@@ -9,6 +9,9 @@ ms.topic: article
 ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: 75fed138-9239-4da9-bce4-4f2e2ad469a1
+ms.sourcegitcommit: 960b40e8c1eda9c19ebff0972df2c87e70c7e8f6
+ms.openlocfilehash: 71e0fb430498f8a5ae4ac5b297cf5e4a2c904098
+
 ---
 
 # Windows 上的 Dockerfile
@@ -327,6 +330,40 @@ CMD c:\Apache24\bin\httpd.exe -w
 
 有关 `CMD` 指令的详细信息，请参阅 [Docker.com 上的 CMD 参考]( https://docs.docker.com/engine/reference/builder/#cmd)。 
 
+## 转义字符
+
+在许多情况下，Dockerfile 指令需要跨多个行；这可通过转义字符完成。 默认 Dockerfile 转义字符是反斜杠 `\`。 由于反斜杠在 Windows 中也是一个文件路径分隔符，这可能导致出现问题。 要更改默认转义字符，可使用一个分析程序指令。 有关分析程序指令的详细信息，请参阅 [Parser Directives on Docker.com]( https://docs.docker.com/engine/reference/builder/#parser-directives)（Docker.com 上的分析程序指令）。
+
+以下示例显示使用默认转义字符跨多个行的单个 RUN 指令。
+
+```none
+FROM windowsservercore
+
+RUN powershell.exe -Command \
+    $ErrorActionPreference = 'Stop'; \
+    wget https://www.python.org/ftp/python/3.5.1/python-3.5.1.exe -OutFile c:\python-3.5.1.exe ; \
+    Start-Process c:\python-3.5.1.exe -ArgumentList '/quiet InstallAllUsers=1 PrependPath=1' -Wait ; \
+    Remove-Item c:\python-3.5.1.exe -Force
+```
+
+要修改转义字符，请在 Dockerfile 最开始的行上放置一个转义分析程序指令。 如以下示例所示。
+
+> 请注意，只有两个值可用作转义字符：`\` 和 `` ` ``。
+
+```none
+# escape=`
+
+FROM windowsservercore
+
+RUN powershell.exe -Command `
+    $ErrorActionPreference = 'Stop'; `
+    wget https://www.python.org/ftp/python/3.5.1/python-3.5.1.exe -OutFile c:\python-3.5.1.exe ; `
+    Start-Process c:\python-3.5.1.exe -ArgumentList '/quiet InstallAllUsers=1 PrependPath=1' -Wait ; `
+    Remove-Item c:\python-3.5.1.exe -Force
+```
+
+有关转义分析程序指令的详细信息，请参阅 [Escape Parser Directive on Docker.com]( https://docs.docker.com/engine/reference/builder/#escape)（Docker.com 上的转义分析程序指令）。
+
 ## Dockerfile 中的 PowerShell
 
 ### PowerShell 命令
@@ -442,6 +479,7 @@ windowsservercore   latest              6801d964fda5        4 months ago        
 [Docker.com 上的 Dockerfile 参考](https://docs.docker.com/engine/reference/builder/)
 
 
-<!--HONumber=Jun16_HO3-->
+
+<!--HONumber=Jun16_HO4-->
 
 
