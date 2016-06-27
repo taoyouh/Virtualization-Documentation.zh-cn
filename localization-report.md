@@ -241,11 +241,11 @@
  [prospective-docs\media\HVBackupArchitecture2016.png](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/7113f1dc1e9a0a18d4eb25e6d604e89f96f826c4/prospective-docs/media/HVBackupArchitecture2016.png) | Ignored | [Details](#4ce62d40e62035a7f298cbc7ac6285db40cb483e66)
  [prospective-docs\README.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/7113f1dc1e9a0a18d4eb25e6d604e89f96f826c4/prospective-docs/README.md) | Ignored | [Details](#e9d72821c16d486e11577f37858c17efa950539d67)
  [README.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/7113f1dc1e9a0a18d4eb25e6d604e89f96f826c4/README.md) | Ignored | [Details](#d9a2dbc8774709b9e88196c7c66aa09d5efa86be68)
- [tlfs\Hypervisor Top Level Functional Specification v2.0.pdf](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/7113f1dc1e9a0a18d4eb25e6d604e89f96f826c4/tlfs/Hypervisor Top Level Functional Specification v2.0.pdf) | Ignored | [Details](#f47b5c2e931f05e3797e9f0d623616f067cef25769)
- [tlfs\Hypervisor Top Level Functional Specification v3.0.pdf](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/7113f1dc1e9a0a18d4eb25e6d604e89f96f826c4/tlfs/Hypervisor Top Level Functional Specification v3.0.pdf) | Ignored | [Details](#406ccd50e1e71bd2439176773d007d0a6122dbfb70)
- [tlfs\Hypervisor Top Level Functional Specification v4.0.pdf](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/7113f1dc1e9a0a18d4eb25e6d604e89f96f826c4/tlfs/Hypervisor Top Level Functional Specification v4.0.pdf) | Ignored | [Details](#27a49f09b8e6ce10663c395059c28967f73254d671)
- [tlfs\Hypervisor Top Level Functional Specification v4.0b.pdf](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/7113f1dc1e9a0a18d4eb25e6d604e89f96f826c4/tlfs/Hypervisor Top Level Functional Specification v4.0b.pdf) | Ignored | [Details](#9870a070384263b18023fa93fefd4f66f9a4e5b172)
- [tlfs\Requirements for Implementing the Microsoft Hypervisor Interface.pdf](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/7113f1dc1e9a0a18d4eb25e6d604e89f96f826c4/tlfs/Requirements for Implementing the Microsoft Hypervisor Interface.pdf) | Ignored | [Details](#570459aa45ad191058bf06dca056059b8ceda47373)
+ [tlfs\Hypervisor Top Level Functional Specification v2.0.pdf](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/7113f1dc1e9a0a18d4eb25e6d604e89f96f826c4/tlfs/Hypervisor%20Top%20Level%20Functional%20Specification%20v2.0.pdf) | Ignored | [Details](#f47b5c2e931f05e3797e9f0d623616f067cef25769)
+ [tlfs\Hypervisor Top Level Functional Specification v3.0.pdf](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/7113f1dc1e9a0a18d4eb25e6d604e89f96f826c4/tlfs/Hypervisor%20Top%20Level%20Functional%20Specification%20v3.0.pdf) | Ignored | [Details](#406ccd50e1e71bd2439176773d007d0a6122dbfb70)
+ [tlfs\Hypervisor Top Level Functional Specification v4.0.pdf](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/7113f1dc1e9a0a18d4eb25e6d604e89f96f826c4/tlfs/Hypervisor%20Top%20Level%20Functional%20Specification%20v4.0.pdf) | Ignored | [Details](#27a49f09b8e6ce10663c395059c28967f73254d671)
+ [tlfs\Hypervisor Top Level Functional Specification v4.0b.pdf](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/7113f1dc1e9a0a18d4eb25e6d604e89f96f826c4/tlfs/Hypervisor%20Top%20Level%20Functional%20Specification%20v4.0b.pdf) | Ignored | [Details](#9870a070384263b18023fa93fefd4f66f9a4e5b172)
+ [tlfs\Requirements for Implementing the Microsoft Hypervisor Interface.pdf](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/7113f1dc1e9a0a18d4eb25e6d604e89f96f826c4/tlfs/Requirements%20for%20Implementing%20the%20Microsoft%20Hypervisor%20Interface.pdf) | Ignored | [Details](#570459aa45ad191058bf06dca056059b8ceda47373)
  [TODO.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/7113f1dc1e9a0a18d4eb25e6d604e89f96f826c4/TODO.md) | Ignored | [Details](#5ea94825845d248743af1d792b3ae91660ff096674)
  [virtualization\community\community_overview.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/7113f1dc1e9a0a18d4eb25e6d604e89f96f826c4/virtualization/community/community_overview.md) | Ignored | [Details](#96235ad0ef900d6d4c45e459d9eaaf1690f759fc75)
  [virtualization\community\docfx.json](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/7113f1dc1e9a0a18d4eb25e6d604e89f96f826c4/virtualization/community/docfx.json) | Ignored | [Details](#63821ccd19e5a21742458bf42a0a1eea46969adf77)
@@ -413,7 +413,7 @@
  [windows-container-samples\windowsservercore\sqlite\Dockerfile](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/7113f1dc1e9a0a18d4eb25e6d604e89f96f826c4/windows-container-samples/windowsservercore/sqlite/Dockerfile) | Ignored | [Details](#61345562be6d21282b266d842d091eb3af27ae62374)
  [windows-container-samples\windowsservercore\sqlite\README.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/7113f1dc1e9a0a18d4eb25e6d604e89f96f826c4/windows-container-samples/windowsservercore/sqlite/README.md) | Ignored | [Details](#3dea53f3a491698e35ccc44553261f4bffe09342375)
  [windows-container-samples\windowsservercore\sqlserver-express\readme.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/7113f1dc1e9a0a18d4eb25e6d604e89f96f826c4/windows-container-samples/windowsservercore/sqlserver-express/readme.md) | Ignored | [Details](#a05fe297253f46fb96eb404d5fd4eac4575d0722376)
- [windows-server-container-tools\container_glyphs\Container Glyfs Release 3.pptx](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/7113f1dc1e9a0a18d4eb25e6d604e89f96f826c4/windows-server-container-tools/container_glyphs/Container Glyfs Release 3.pptx) | Ignored | [Details](#22ed0b2b479f91eecc1775eba7f4ac062cdfe3a6377)
+ [windows-server-container-tools\container_glyphs\Container Glyfs Release 3.pptx](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/7113f1dc1e9a0a18d4eb25e6d604e89f96f826c4/windows-server-container-tools/container_glyphs/Container%20Glyfs%20Release%203.pptx) | Ignored | [Details](#22ed0b2b479f91eecc1775eba7f4ac062cdfe3a6377)
  [windows-server-container-tools\container_glyphs\GreenGlyphs\App-Green.png](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/7113f1dc1e9a0a18d4eb25e6d604e89f96f826c4/windows-server-container-tools/container_glyphs/GreenGlyphs/App-Green.png) | Ignored | [Details](#7be375f835f591cfe4de1d36a948c8a4bb980fb3378)
  [windows-server-container-tools\container_glyphs\GreenGlyphs\App-in-Container-Green.png](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/7113f1dc1e9a0a18d4eb25e6d604e89f96f826c4/windows-server-container-tools/container_glyphs/GreenGlyphs/App-in-Container-Green.png) | Ignored | [Details](#f354cf8b5770e4d533080a6d659f27300bb358ca379)
  [windows-server-container-tools\container_glyphs\GreenGlyphs\App-in-Container-Green_328.png](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/7113f1dc1e9a0a18d4eb25e6d604e89f96f826c4/windows-server-container-tools/container_glyphs/GreenGlyphs/App-in-Container-Green_328.png) | Ignored | [Details](#6b3e120d7be24ddf383490ad83625e48dcd718cd380)
@@ -435,8 +435,8 @@
  [windows-server-container-tools\container_glyphs\GreenGlyphs\Sample-App-2-in-Container-Green.png](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/7113f1dc1e9a0a18d4eb25e6d604e89f96f826c4/windows-server-container-tools/container_glyphs/GreenGlyphs/Sample-App-2-in-Container-Green.png) | Ignored | [Details](#296bb219f9a8ce5465280a1626fda002f9cf64e2396)
  [windows-server-container-tools\container_glyphs\GreenGlyphs\Server-with-Container-Green.png](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/7113f1dc1e9a0a18d4eb25e6d604e89f96f826c4/windows-server-container-tools/container_glyphs/GreenGlyphs/Server-with-Container-Green.png) | Ignored | [Details](#6a8385f23eba178c24aff2beb56381799d8b5c49397)
  [windows-server-container-tools\container_glyphs\GreenGlyphs\Users-Developers-Green.png](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/7113f1dc1e9a0a18d4eb25e6d604e89f96f826c4/windows-server-container-tools/container_glyphs/GreenGlyphs/Users-Developers-Green.png) | Ignored | [Details](#6e52c3ae8b901e255eb03b42401ae3b2250e6d8c398)
- [windows-server-container-tools\container_glyphs\GreenGlyphs\VM Type 3 with Container.png](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/7113f1dc1e9a0a18d4eb25e6d604e89f96f826c4/windows-server-container-tools/container_glyphs/GreenGlyphs/VM Type 3 with Container.png) | Ignored | [Details](#53ba6b9aefbade19d2ccbd43d210422be81ef636399)
- [windows-server-container-tools\container_glyphs\GreenGlyphs\VM Type 3.png](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/7113f1dc1e9a0a18d4eb25e6d604e89f96f826c4/windows-server-container-tools/container_glyphs/GreenGlyphs/VM Type 3.png) | Ignored | [Details](#4077e5f0c8ddf0e6cebcf92e3ac5b6cc8da4b744400)
+ [windows-server-container-tools\container_glyphs\GreenGlyphs\VM Type 3 with Container.png](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/7113f1dc1e9a0a18d4eb25e6d604e89f96f826c4/windows-server-container-tools/container_glyphs/GreenGlyphs/VM%20Type%203%20with%20Container.png) | Ignored | [Details](#53ba6b9aefbade19d2ccbd43d210422be81ef636399)
+ [windows-server-container-tools\container_glyphs\GreenGlyphs\VM Type 3.png](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/7113f1dc1e9a0a18d4eb25e6d604e89f96f826c4/windows-server-container-tools/container_glyphs/GreenGlyphs/VM%20Type%203.png) | Ignored | [Details](#4077e5f0c8ddf0e6cebcf92e3ac5b6cc8da4b744400)
  [windows-server-container-tools\container_glyphs\GreenGlyphs\VM-Type-1-Green.png](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/7113f1dc1e9a0a18d4eb25e6d604e89f96f826c4/windows-server-container-tools/container_glyphs/GreenGlyphs/VM-Type-1-Green.png) | Ignored | [Details](#8f89be6f3320437ae24a8fe3623309fde72dfcf9401)
  [windows-server-container-tools\container_glyphs\GreenGlyphs\VM-Type-2-Green.png](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/7113f1dc1e9a0a18d4eb25e6d604e89f96f826c4/windows-server-container-tools/container_glyphs/GreenGlyphs/VM-Type-2-Green.png) | Ignored | [Details](#ebf8dfa07b35caf7eafc232743ab7e7f197c3ae7402)
  [windows-server-container-tools\container_glyphs\GreenGlyphs\VM-with-App-Green.png](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/7113f1dc1e9a0a18d4eb25e6d604e89f96f826c4/windows-server-container-tools/container_glyphs/GreenGlyphs/VM-with-App-Green.png) | Ignored | [Details](#61e927b5b333a7062cbb88aa6b88b74957734a86403)
@@ -462,8 +462,8 @@
  [windows-server-container-tools\container_glyphs\OrangeGlyphs\Sample-App-2-in-Container-Orange.png](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/7113f1dc1e9a0a18d4eb25e6d604e89f96f826c4/windows-server-container-tools/container_glyphs/OrangeGlyphs/Sample-App-2-in-Container-Orange.png) | Ignored | [Details](#23f0c162e55f0d86bb1fb63d6da7336fd4c89988423)
  [windows-server-container-tools\container_glyphs\OrangeGlyphs\Server-with-Container-Orange.png](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/7113f1dc1e9a0a18d4eb25e6d604e89f96f826c4/windows-server-container-tools/container_glyphs/OrangeGlyphs/Server-with-Container-Orange.png) | Ignored | [Details](#bc64819d35f0928c59fd0439670191e3be862cdb424)
  [windows-server-container-tools\container_glyphs\OrangeGlyphs\Users-Developers-Orange.png](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/7113f1dc1e9a0a18d4eb25e6d604e89f96f826c4/windows-server-container-tools/container_glyphs/OrangeGlyphs/Users-Developers-Orange.png) | Ignored | [Details](#8bbd6a1d3bff0c0ca590c754f643bd4d15043edf425)
- [windows-server-container-tools\container_glyphs\OrangeGlyphs\VM Type 3 with Container.png](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/7113f1dc1e9a0a18d4eb25e6d604e89f96f826c4/windows-server-container-tools/container_glyphs/OrangeGlyphs/VM Type 3 with Container.png) | Ignored | [Details](#ee0f8bef950c6e6a3b2b2b6071b9b0af5fdd40b9426)
- [windows-server-container-tools\container_glyphs\OrangeGlyphs\VM Type 3.png](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/7113f1dc1e9a0a18d4eb25e6d604e89f96f826c4/windows-server-container-tools/container_glyphs/OrangeGlyphs/VM Type 3.png) | Ignored | [Details](#6362eff1e8df8edf156c1b0f20ac581407c37546427)
+ [windows-server-container-tools\container_glyphs\OrangeGlyphs\VM Type 3 with Container.png](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/7113f1dc1e9a0a18d4eb25e6d604e89f96f826c4/windows-server-container-tools/container_glyphs/OrangeGlyphs/VM%20Type%203%20with%20Container.png) | Ignored | [Details](#ee0f8bef950c6e6a3b2b2b6071b9b0af5fdd40b9426)
+ [windows-server-container-tools\container_glyphs\OrangeGlyphs\VM Type 3.png](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/7113f1dc1e9a0a18d4eb25e6d604e89f96f826c4/windows-server-container-tools/container_glyphs/OrangeGlyphs/VM%20Type%203.png) | Ignored | [Details](#6362eff1e8df8edf156c1b0f20ac581407c37546427)
  [windows-server-container-tools\container_glyphs\OrangeGlyphs\VM-Type-1-Orange.png](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/7113f1dc1e9a0a18d4eb25e6d604e89f96f826c4/windows-server-container-tools/container_glyphs/OrangeGlyphs/VM-Type-1-Orange.png) | Ignored | [Details](#b35c8fe22b2b1a63bc3a80e07ec26dc6a58e7dfc428)
  [windows-server-container-tools\container_glyphs\OrangeGlyphs\VM-Type-2-Orange.png](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/7113f1dc1e9a0a18d4eb25e6d604e89f96f826c4/windows-server-container-tools/container_glyphs/OrangeGlyphs/VM-Type-2-Orange.png) | Ignored | [Details](#e77d84db78c4becdba5a1c7fdf3190ee046fe175429)
  [windows-server-container-tools\container_glyphs\OrangeGlyphs\VM-with-App-Orange.png](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/7113f1dc1e9a0a18d4eb25e6d604e89f96f826c4/windows-server-container-tools/container_glyphs/OrangeGlyphs/VM-with-App-Orange.png) | Ignored | [Details](#c447458ecb7dd7bad0dce07e009a0e7f6bf50a0e430)
@@ -496,9 +496,9 @@
  [windows-server-container-tools\New-ContainerHost\New-ContainerHost.ps1](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/7113f1dc1e9a0a18d4eb25e6d604e89f96f826c4/windows-server-container-tools/New-ContainerHost/New-ContainerHost.ps1) | Ignored | [Details](#e6d28ec11740608031387aa9ff1b2ebed8e5c143457)
  [windows-server-container-tools\README.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/7113f1dc1e9a0a18d4eb25e6d604e89f96f826c4/windows-server-container-tools/README.md) | Ignored | [Details](#6315ce9797c9eb6e6245deded1be01c2330ac6f8458)
  [windows-server-container-tools\Update-ContainerHost\Update-ContainerHost.ps1](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/7113f1dc1e9a0a18d4eb25e6d604e89f96f826c4/windows-server-container-tools/Update-ContainerHost/Update-ContainerHost.ps1) | Ignored | [Details](#b911f145648fbb1213a226f17936f95c48af36ab459)
- [windows-server-container-tools\VMM  - VM Template\AdminAutoLogon.xml](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/7113f1dc1e9a0a18d4eb25e6d604e89f96f826c4/windows-server-container-tools/VMM  - VM Template/AdminAutoLogon.xml) | Ignored | [Details](#2c58a9f2bd75bd35758f04fcc10e07f6be3ffbe9460)
- [windows-server-container-tools\VMM  - VM Template\ContainerHostTemplate.xml](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/7113f1dc1e9a0a18d4eb25e6d604e89f96f826c4/windows-server-container-tools/VMM  - VM Template/ContainerHostTemplate.xml) | Ignored | [Details](#4920cf5ece4635e27ef32f85e881b7ee5ebcd67a461)
- [windows-server-container-tools\VMM  - VM Template\readme.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/7113f1dc1e9a0a18d4eb25e6d604e89f96f826c4/windows-server-container-tools/VMM  - VM Template/readme.md) | Ignored | [Details](#b7c1529c06670306130367ea596f3b807f0f05da462)
+ [windows-server-container-tools\VMM  - VM Template\AdminAutoLogon.xml](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/7113f1dc1e9a0a18d4eb25e6d604e89f96f826c4/windows-server-container-tools/VMM%20%20-%20VM%20Template/AdminAutoLogon.xml) | Ignored | [Details](#2c58a9f2bd75bd35758f04fcc10e07f6be3ffbe9460)
+ [windows-server-container-tools\VMM  - VM Template\ContainerHostTemplate.xml](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/7113f1dc1e9a0a18d4eb25e6d604e89f96f826c4/windows-server-container-tools/VMM%20%20-%20VM%20Template/ContainerHostTemplate.xml) | Ignored | [Details](#4920cf5ece4635e27ef32f85e881b7ee5ebcd67a461)
+ [windows-server-container-tools\VMM  - VM Template\readme.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/7113f1dc1e9a0a18d4eb25e6d604e89f96f826c4/windows-server-container-tools/VMM%20%20-%20VM%20Template/readme.md) | Ignored | [Details](#b7c1529c06670306130367ea596f3b807f0f05da462)
 
 ## Item Details
 ##### <a name='add3bd122b0062bf95e7120598c48e5583a4547f0'></a> Source: [.gitignore](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/7113f1dc1e9a0a18d4eb25e6d604e89f96f826c4/.gitignore)
@@ -1329,7 +1329,7 @@
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='f47b5c2e931f05e3797e9f0d623616f067cef25769'></a> Source: [tlfs\Hypervisor Top Level Functional Specification v2.0.pdf](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/7113f1dc1e9a0a18d4eb25e6d604e89f96f826c4/tlfs/Hypervisor Top Level Functional Specification v2.0.pdf)
+##### <a name='f47b5c2e931f05e3797e9f0d623616f067cef25769'></a> Source: [tlfs\Hypervisor Top Level Functional Specification v2.0.pdf](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/7113f1dc1e9a0a18d4eb25e6d604e89f96f826c4/tlfs/Hypervisor%20Top%20Level%20Functional%20Specification%20v2.0.pdf)
 * Status: Ignored
 * Target File: 
 * Handoff File: 
@@ -1341,7 +1341,7 @@
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='406ccd50e1e71bd2439176773d007d0a6122dbfb70'></a> Source: [tlfs\Hypervisor Top Level Functional Specification v3.0.pdf](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/7113f1dc1e9a0a18d4eb25e6d604e89f96f826c4/tlfs/Hypervisor Top Level Functional Specification v3.0.pdf)
+##### <a name='406ccd50e1e71bd2439176773d007d0a6122dbfb70'></a> Source: [tlfs\Hypervisor Top Level Functional Specification v3.0.pdf](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/7113f1dc1e9a0a18d4eb25e6d604e89f96f826c4/tlfs/Hypervisor%20Top%20Level%20Functional%20Specification%20v3.0.pdf)
 * Status: Ignored
 * Target File: 
 * Handoff File: 
@@ -1353,7 +1353,7 @@
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='27a49f09b8e6ce10663c395059c28967f73254d671'></a> Source: [tlfs\Hypervisor Top Level Functional Specification v4.0.pdf](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/7113f1dc1e9a0a18d4eb25e6d604e89f96f826c4/tlfs/Hypervisor Top Level Functional Specification v4.0.pdf)
+##### <a name='27a49f09b8e6ce10663c395059c28967f73254d671'></a> Source: [tlfs\Hypervisor Top Level Functional Specification v4.0.pdf](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/7113f1dc1e9a0a18d4eb25e6d604e89f96f826c4/tlfs/Hypervisor%20Top%20Level%20Functional%20Specification%20v4.0.pdf)
 * Status: Ignored
 * Target File: 
 * Handoff File: 
@@ -1365,7 +1365,7 @@
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='9870a070384263b18023fa93fefd4f66f9a4e5b172'></a> Source: [tlfs\Hypervisor Top Level Functional Specification v4.0b.pdf](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/7113f1dc1e9a0a18d4eb25e6d604e89f96f826c4/tlfs/Hypervisor Top Level Functional Specification v4.0b.pdf)
+##### <a name='9870a070384263b18023fa93fefd4f66f9a4e5b172'></a> Source: [tlfs\Hypervisor Top Level Functional Specification v4.0b.pdf](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/7113f1dc1e9a0a18d4eb25e6d604e89f96f826c4/tlfs/Hypervisor%20Top%20Level%20Functional%20Specification%20v4.0b.pdf)
 * Status: Ignored
 * Target File: 
 * Handoff File: 
@@ -1377,7 +1377,7 @@
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='570459aa45ad191058bf06dca056059b8ceda47373'></a> Source: [tlfs\Requirements for Implementing the Microsoft Hypervisor Interface.pdf](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/7113f1dc1e9a0a18d4eb25e6d604e89f96f826c4/tlfs/Requirements for Implementing the Microsoft Hypervisor Interface.pdf)
+##### <a name='570459aa45ad191058bf06dca056059b8ceda47373'></a> Source: [tlfs\Requirements for Implementing the Microsoft Hypervisor Interface.pdf](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/7113f1dc1e9a0a18d4eb25e6d604e89f96f826c4/tlfs/Requirements%20for%20Implementing%20the%20Microsoft%20Hypervisor%20Interface.pdf)
 * Status: Ignored
 * Target File: 
 * Handoff File: 
@@ -5263,7 +5263,7 @@
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='22ed0b2b479f91eecc1775eba7f4ac062cdfe3a6377'></a> Source: [windows-server-container-tools\container_glyphs\Container Glyfs Release 3.pptx](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/7113f1dc1e9a0a18d4eb25e6d604e89f96f826c4/windows-server-container-tools/container_glyphs/Container Glyfs Release 3.pptx)
+##### <a name='22ed0b2b479f91eecc1775eba7f4ac062cdfe3a6377'></a> Source: [windows-server-container-tools\container_glyphs\Container Glyfs Release 3.pptx](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/7113f1dc1e9a0a18d4eb25e6d604e89f96f826c4/windows-server-container-tools/container_glyphs/Container%20Glyfs%20Release%203.pptx)
 * Status: Ignored
 * Target File: 
 * Handoff File: 
@@ -5527,7 +5527,7 @@
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='53ba6b9aefbade19d2ccbd43d210422be81ef636399'></a> Source: [windows-server-container-tools\container_glyphs\GreenGlyphs\VM Type 3 with Container.png](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/7113f1dc1e9a0a18d4eb25e6d604e89f96f826c4/windows-server-container-tools/container_glyphs/GreenGlyphs/VM Type 3 with Container.png)
+##### <a name='53ba6b9aefbade19d2ccbd43d210422be81ef636399'></a> Source: [windows-server-container-tools\container_glyphs\GreenGlyphs\VM Type 3 with Container.png](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/7113f1dc1e9a0a18d4eb25e6d604e89f96f826c4/windows-server-container-tools/container_glyphs/GreenGlyphs/VM%20Type%203%20with%20Container.png)
 * Status: Ignored
 * Target File: 
 * Handoff File: 
@@ -5539,7 +5539,7 @@
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='4077e5f0c8ddf0e6cebcf92e3ac5b6cc8da4b744400'></a> Source: [windows-server-container-tools\container_glyphs\GreenGlyphs\VM Type 3.png](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/7113f1dc1e9a0a18d4eb25e6d604e89f96f826c4/windows-server-container-tools/container_glyphs/GreenGlyphs/VM Type 3.png)
+##### <a name='4077e5f0c8ddf0e6cebcf92e3ac5b6cc8da4b744400'></a> Source: [windows-server-container-tools\container_glyphs\GreenGlyphs\VM Type 3.png](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/7113f1dc1e9a0a18d4eb25e6d604e89f96f826c4/windows-server-container-tools/container_glyphs/GreenGlyphs/VM%20Type%203.png)
 * Status: Ignored
 * Target File: 
 * Handoff File: 
@@ -5851,7 +5851,7 @@
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='ee0f8bef950c6e6a3b2b2b6071b9b0af5fdd40b9426'></a> Source: [windows-server-container-tools\container_glyphs\OrangeGlyphs\VM Type 3 with Container.png](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/7113f1dc1e9a0a18d4eb25e6d604e89f96f826c4/windows-server-container-tools/container_glyphs/OrangeGlyphs/VM Type 3 with Container.png)
+##### <a name='ee0f8bef950c6e6a3b2b2b6071b9b0af5fdd40b9426'></a> Source: [windows-server-container-tools\container_glyphs\OrangeGlyphs\VM Type 3 with Container.png](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/7113f1dc1e9a0a18d4eb25e6d604e89f96f826c4/windows-server-container-tools/container_glyphs/OrangeGlyphs/VM%20Type%203%20with%20Container.png)
 * Status: Ignored
 * Target File: 
 * Handoff File: 
@@ -5863,7 +5863,7 @@
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='6362eff1e8df8edf156c1b0f20ac581407c37546427'></a> Source: [windows-server-container-tools\container_glyphs\OrangeGlyphs\VM Type 3.png](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/7113f1dc1e9a0a18d4eb25e6d604e89f96f826c4/windows-server-container-tools/container_glyphs/OrangeGlyphs/VM Type 3.png)
+##### <a name='6362eff1e8df8edf156c1b0f20ac581407c37546427'></a> Source: [windows-server-container-tools\container_glyphs\OrangeGlyphs\VM Type 3.png](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/7113f1dc1e9a0a18d4eb25e6d604e89f96f826c4/windows-server-container-tools/container_glyphs/OrangeGlyphs/VM%20Type%203.png)
 * Status: Ignored
 * Target File: 
 * Handoff File: 
@@ -6259,7 +6259,7 @@
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='2c58a9f2bd75bd35758f04fcc10e07f6be3ffbe9460'></a> Source: [windows-server-container-tools\VMM  - VM Template\AdminAutoLogon.xml](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/7113f1dc1e9a0a18d4eb25e6d604e89f96f826c4/windows-server-container-tools/VMM  - VM Template/AdminAutoLogon.xml)
+##### <a name='2c58a9f2bd75bd35758f04fcc10e07f6be3ffbe9460'></a> Source: [windows-server-container-tools\VMM  - VM Template\AdminAutoLogon.xml](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/7113f1dc1e9a0a18d4eb25e6d604e89f96f826c4/windows-server-container-tools/VMM%20%20-%20VM%20Template/AdminAutoLogon.xml)
 * Status: Ignored
 * Target File: 
 * Handoff File: 
@@ -6271,7 +6271,7 @@
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='4920cf5ece4635e27ef32f85e881b7ee5ebcd67a461'></a> Source: [windows-server-container-tools\VMM  - VM Template\ContainerHostTemplate.xml](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/7113f1dc1e9a0a18d4eb25e6d604e89f96f826c4/windows-server-container-tools/VMM  - VM Template/ContainerHostTemplate.xml)
+##### <a name='4920cf5ece4635e27ef32f85e881b7ee5ebcd67a461'></a> Source: [windows-server-container-tools\VMM  - VM Template\ContainerHostTemplate.xml](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/7113f1dc1e9a0a18d4eb25e6d604e89f96f826c4/windows-server-container-tools/VMM%20%20-%20VM%20Template/ContainerHostTemplate.xml)
 * Status: Ignored
 * Target File: 
 * Handoff File: 
@@ -6283,7 +6283,7 @@
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='b7c1529c06670306130367ea596f3b807f0f05da462'></a> Source: [windows-server-container-tools\VMM  - VM Template\readme.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/7113f1dc1e9a0a18d4eb25e6d604e89f96f826c4/windows-server-container-tools/VMM  - VM Template/readme.md)
+##### <a name='b7c1529c06670306130367ea596f3b807f0f05da462'></a> Source: [windows-server-container-tools\VMM  - VM Template\readme.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/7113f1dc1e9a0a18d4eb25e6d604e89f96f826c4/windows-server-container-tools/VMM%20%20-%20VM%20Template/readme.md)
 * Status: Ignored
 * Target File: 
 * Handoff File: 
