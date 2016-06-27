@@ -1,6 +1,6 @@
 ---
-title: Windows 容器映像
-description: 使用 Windows 容器创建和管理容器映像。
+title: "Windows 容器映像"
+description: "使用 Windows 容器创建和管理容器映像。"
 keywords: docker, containers
 author: neilpeterson
 manager: timlt
@@ -9,6 +9,9 @@ ms.topic: article
 ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: d8163185-9860-4ee4-9e96-17b40fb508bc
+ms.sourcegitcommit: 3db43b433e7b1a9484d530cf209ea80ef269a307
+ms.openlocfilehash: 505cc64fa19fb9fc8c2d5c109830f460f09332dd
+
 ---
 
 # Windows 容器映像
@@ -197,7 +200,6 @@ Docker Hub 注册表包含预生成的映像，可将这些映像下载到容器
 
 其中大多数映像拥有 Windows Server Core 和 Nano Server 版本。 若要获取特定版本，只需添加标记“:windowsservercore”或“:nanoserver”。 默认情况下，“最新”标记将返回 Windows Server Core 版本，除非仅有 Nano Server 版本可用。
 
-> 以“nano-”开头的映像依赖于 Nano Server 基础操作系统映像。
 
 ```none
 docker search *
@@ -219,7 +221,9 @@ microsoft/sample-ruby    Ruby installed in a Windows Server Core ba...   1      
 microsoft/sample-sqlite  SQLite installed in a Windows Server Core ...   1                    [OK]
 ```
 
-若要从 Docker Hub 下载映像，请使用 `docker pull`。
+### Docker 请求
+
+若要从 Docker Hub 下载映像，请使用 `docker pull`。 有关详细信息，请参阅 [Docker Pull on Docker.com](https://docs.docker.com/engine/reference/commandline/pull/)（Docker.com 上的 Docker 请求）。
 
 ```none
 docker pull microsoft/aspnet
@@ -242,8 +246,50 @@ windowsservercore   10.0.14300.1000     6801d964fda5        2 weeks ago         
 windowsservercore   latest              6801d964fda5        2 weeks ago         0 B
 ```
 
+> 如果 Docker 请求失败，请确保最新累积更新已应用到容器主机。 TP5 更新可以在 [KB3157663]( https://support.microsoft.com/en-us/kb/3157663) 中找到。
+
+### Docker 推送
+
+此外，还可以将容器映像上载到 Docker Hub 或 Docker 受信任注册表。 上载这些映像后，可以下载这些映像并在不同的 Windows 容器环境中重新使用。
+
+若要将容器映像上载到 Docker Hub，请先登录到注册表。 有关详细信息，请参阅 [Docker Login on Docker.com]( https://docs.docker.com/engine/reference/commandline/login/)（Docker.com 上的 Docker 登录）。
+
+```none
+docker login
+
+Login with your Docker ID to push and pull images from Docker Hub. If you don't have a Docker ID, head over to https://hub.docker.com to create one.
+Username: username
+Password:
+
+Login Succeeded
+```
+
+登录到 Docker hub 或 Docker 受信任注册表后，请使用 `docker push` 上载容器映像。 可以按名称或 ID 引用容器映像。 有关详细信息，请参阅 [Docker Push on Docker.com]( https://docs.docker.com/engine/reference/commandline/push/)（Docker.com 上的 Docker 推送）。
+
+```none
+docker push username/containername
+
+The push refers to a repository [docker.io/username/containername]
+b567cea5d325: Pushed
+00f57025c723: Pushed
+2e05e94480e9: Pushed
+63f3aa135163: Pushed
+469f4bf35316: Pushed
+2946c9dcfc7d: Pushed
+7bfd967a5e43: Pushed
+f64ea92aaebc: Pushed
+4341be770beb: Pushed
+fed398573696: Pushed
+latest: digest: sha256:ae3a2971628c04d5df32c3bbbfc87c477bb814d5e73e2787900da13228676c4f size: 2410
+```
+
+此时容器映像便已存在，可通过 `docker pull` 进行访问。
 
 
-<!--HONumber=May16_HO4-->
+
+
+
+
+<!--HONumber=Jun16_HO3-->
 
 
