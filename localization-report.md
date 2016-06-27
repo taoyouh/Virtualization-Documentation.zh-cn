@@ -9,8 +9,8 @@
 [ Archive Failed Files ](#archive-failed-list)| 0
 [ Archive Success Files ](#archive-success-list)| 0
 [ Handback Failed Files ](#handback-failed-list)| 0
-[ Out Of Sync Handback Files ](#outofsync-handback-success-list)| 11
-[ In Sync Handback Files ](#insync-handback-success-list)| 124
+[ Out Of Sync Handback Files ](#outofsync-handback-success-list)| 9
+[ In Sync Handback Files ](#insync-handback-success-list)| 126
 [ Ignored Files ](#ignored-list)| 327
 
 ## <a name='handoff-failed-list'></a> Handoff Failed File List
@@ -33,11 +33,9 @@
  [virtualization\hyperv_on_windows\user_guide\nesting.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/26a8adb426a7cf859e1a9813da2033e145ead965/virtualization/hyperv_on_windows/user_guide/nesting.md) | OutofSyncHandedBackSuccess | [Details](#d17413fc572e59ec21ff513ef5de994c6716aa08203)
  [virtualization\hyperv_on_windows\user_guide\setup_nat_network.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/b22150198f199f9b2be38a9c08e0e08972781f6e/virtualization/hyperv_on_windows/user_guide/setup_nat_network.md) | OutofSyncHandedBackSuccess | [Details](#d98445932ccbe77b6a4e798c3c2edb9c63bd351b205)
  [virtualization\windowscontainers\about\work_in_progress.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/e3f5535594123f6b4f8931e41a91d92f3b837814/virtualization/windowscontainers/about/work_in_progress.md) | OutofSyncHandedBackSuccess | [Details](#085bb8c0158aedf4270cf2423114ec1901af1ebd222)
- [virtualization\windowscontainers\deployment\deployment_nano.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/1ba6af300d0a3eba3fc6d27598044f983a4c9168/virtualization/windowscontainers/deployment/deployment_nano.md) | OutofSyncHandedBackSuccess | [Details](#f2790186aa641378b1981a1f946665ca46fdbd73226)
  [virtualization\windowscontainers\docker\configure_docker_daemon.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/7113f1dc1e9a0a18d4eb25e6d604e89f96f826c4/virtualization/windowscontainers/docker/configure_docker_daemon.md) | OutofSyncHandedBackSuccess | [Details](#1fddaff6fc260c0cf91c8626a60d768a06995e53245)
  [virtualization\windowscontainers\docker\manage_windows_dockerfile.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/960b40e8c1eda9c19ebff0972df2c87e70c7e8f6/virtualization/windowscontainers/docker/manage_windows_dockerfile.md) | OutofSyncHandedBackSuccess | [Details](#71e0fb430498f8a5ae4ac5b297cf5e4a2c904098246)
  [virtualization\windowscontainers\management\container_networking.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/cd344ef02f03149129171b99bfdd92338ffdf24f/virtualization/windowscontainers/management/container_networking.md) | OutofSyncHandedBackSuccess | [Details](#161aaeed6c625d92b45be59dde4357836934956b249)
- [virtualization\windowscontainers\management\manage_images.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/3db43b433e7b1a9484d530cf209ea80ef269a307/virtualization/windowscontainers/management/manage_images.md) | OutofSyncHandedBackSuccess | [Details](#505cc64fa19fb9fc8c2d5c109830f460f09332dd255)
  [virtualization\windowscontainers\quick_start\quick_start_windows_server.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/da3b84ad6f691390e042e617447100e035aaa8e4/virtualization/windowscontainers/quick_start/quick_start_windows_server.md) | OutofSyncHandedBackSuccess | [Details](#4f2a18f8307fd96274cc09ec0ff9815cc5e72948316)
  [virtualization\windowscontainers\TOC.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/e3f5535594123f6b4f8931e41a91d92f3b837814/virtualization/windowscontainers/TOC.md) | OutofSyncHandedBackSuccess | [Details](#1ee103af6a29395fb07bef855c487d8344167b64322)
 
@@ -118,6 +116,7 @@
  [virtualization\windowscontainers\containers_welcome.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/9070126c8cc944f9db0f8bacee8dbf135a3a23db/virtualization/windowscontainers/containers_welcome.md) | InSyncHandedBackSuccess | [Details](#b50c27e723fb8db13adec37d6b969e93d607243e223)
  [virtualization\windowscontainers\deployment\deployment.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/59b8dd80f680af7d1356ddaca526ced7622db69b/virtualization/windowscontainers/deployment/deployment.md) | InSyncHandedBackSuccess | [Details](#a8adba1a2c68e0553a13db6642865aa3b966e6bb224)
  [virtualization\windowscontainers\deployment\deployment_azure.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/96c7d1b9e72f574ad66577a09ca1cd382e75f290/virtualization/windowscontainers/deployment/deployment_azure.md) | InSyncHandedBackSuccess | [Details](#207ab784e2c64a6075c427509e7269820ed22d47225)
+ [virtualization\windowscontainers\deployment\deployment_nano.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/1ba6af300d0a3eba3fc6d27598044f983a4c9168/virtualization/windowscontainers/deployment/deployment_nano.md) | InSyncHandedBackSuccess | [Details](#f2790186aa641378b1981a1f946665ca46fdbd73226)
  [virtualization\windowscontainers\deployment\docker_windows.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/cb689563fac8479fe9012cf41b183c1d1ef76657/virtualization/windowscontainers/deployment/docker_windows.md) | InSyncHandedBackSuccess | [Details](#387789ee9169d2affb9b9ed8e4e0e607071ac29b227)
  [virtualization\windowscontainers\deployment\media\newazure1.png](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/af065ec180f1b5de9e40ef269e7278a16b0c3b7f/virtualization/windowscontainers/deployment/media/newazure1.png) | InSyncHandedBackSuccess | [Details](#7eaf82d3cdd0a4881f239ce4071eb262b3104dfd228)
  [virtualization\windowscontainers\deployment\media\newazure2.png](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/af065ec180f1b5de9e40ef269e7278a16b0c3b7f/virtualization/windowscontainers/deployment/media/newazure2.png) | InSyncHandedBackSuccess | [Details](#36eaa0e483cac9b07a024964cd5fb4f36ac84853229)
@@ -136,6 +135,7 @@
  [virtualization\windowscontainers\management\hyperv_container.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/18571fc02ecbb37c5db596a610124727f6d5bb90/virtualization/windowscontainers/management/hyperv_container.md) | InSyncHandedBackSuccess | [Details](#2677b9228371b4a4ba72c249509cd9ccacc89473252)
  [virtualization\windowscontainers\management\manage_containers.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/2b85875eae1dcf1e50162e69c53dbf1ac7463450/virtualization/windowscontainers/management/manage_containers.md) | InSyncHandedBackSuccess | [Details](#8921cbd910bf657ddc4998e4214c1e9f9c3a01e9253)
  [virtualization\windowscontainers\management\manage_data.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/111a4ca9f5d693cd1159f7597110409d670f0f5c/virtualization/windowscontainers/management/manage_data.md) | InSyncHandedBackSuccess | [Details](#b8eca51e347f17e787095b7e4349337cc3ae69a7254)
+ [virtualization\windowscontainers\management\manage_images.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/3db43b433e7b1a9484d530cf209ea80ef269a307/virtualization/windowscontainers/management/manage_images.md) | InSyncHandedBackSuccess | [Details](#505cc64fa19fb9fc8c2d5c109830f460f09332dd255)
  [virtualization\windowscontainers\management\manage_resources.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/cfa3c14e932f8b86edf6667200ac028ea0a16b67/virtualization/windowscontainers/management/manage_resources.md) | InSyncHandedBackSuccess | [Details](#82cc37e4bcf001e938dcff7308be16978fa955e2256)
  [virtualization\windowscontainers\management\media\nat1.png](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/5f58ef2766a4580fbe6dca31a0242335e6b7c085/virtualization/windowscontainers/management/media/nat1.png) | InSyncHandedBackSuccess | [Details](#4d662bf6e123797b4670dfdf6a6aee32e4e95e54259)
  [virtualization\windowscontainers\management\media\PortMapping.png](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/abddb07247f520c8824620135302711c10714fa6/virtualization/windowscontainers/management/media/PortMapping.png) | InSyncHandedBackSuccess | [Details](#1d21dac1815f54f70a991c693ab882575f601e8d261)
@@ -3037,9 +3037,9 @@
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [virtualization\hyperv_on_windows\user_guide\nesting.md](https://github.com/Microsoft/Virtualization-Documentation-Private.zh-cn/blob/036a2308016ef3127bd7320bbfd3c69a6ce4f6c4/virtualization/hyperv_on_windows/user_guide/nesting.md)
-* Current Handback File: [nesting.ece03f90d41cea4ab592ff16c6288e2349863da7.zh-cn.xlf](https://github.com/Microsoft/Virtualization-Documentation-Private.handback/blob/94bbe19ebc548e59f351aba45efe52d31c9e6341/ol-handback/Microsoft/Virtualization-Documentation-Private.zh-cn/live/nesting.ece03f90d41cea4ab592ff16c6288e2349863da7.zh-cn.xlf)
-* Current Handback Datetime: 2016-06-14 13:16:38
+* Current Target File: [virtualization\hyperv_on_windows\user_guide\nesting.md](https://github.com/Microsoft/Virtualization-Documentation-Private.zh-cn/blob/ecbbe4dd5f612950a1e91ed11c244870081b09d1/virtualization/hyperv_on_windows/user_guide/nesting.md)
+* Current Handback File: [nesting.ece03f90d41cea4ab592ff16c6288e2349863da7.zh-cn.xlf](https://github.com/Microsoft/Virtualization-Documentation-Private.handback/blob/323bc19783ae81cd26232c7ce06499f65b313d7e/ol-handback/Microsoft/Virtualization-Documentation-Private.zh-cn/live/nesting.ece03f90d41cea4ab592ff16c6288e2349863da7.zh-cn.xlf)
+* Current Handback Datetime: 2016-06-27 10:05:41
 * Bilingual File: [nesting.ece03f90d41cea4ab592ff16c6288e2349863da7.zh-cn.xlf](https://github.com/Microsoft/Virtualization-Documentation-Private.handback/blob/94bbe19ebc548e59f351aba45efe52d31c9e6341/ol-handback/Microsoft/Virtualization-Documentation-Private.zh-cn/live/nesting.ece03f90d41cea4ab592ff16c6288e2349863da7.zh-cn.xlf)
 * Bilingual Datetime: 2016-06-16 07:48:55
 * [Back to Top](#report-top)
@@ -3341,18 +3341,15 @@
 * [Back to Top](#report-top)
 
 ##### <a name='f2790186aa641378b1981a1f946665ca46fdbd73226'></a> Source: [virtualization\windowscontainers\deployment\deployment_nano.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/1ba6af300d0a3eba3fc6d27598044f983a4c9168/virtualization/windowscontainers/deployment/deployment_nano.md)
-* Status: OutofSyncHandedBackSuccess
-* Target File: 
+* Status: InSyncHandedBackSuccess
+* Target File: [virtualization\windowscontainers\deployment\deployment_nano.md](https://github.com/Microsoft/Virtualization-Documentation-Private.zh-cn/blob/ecbbe4dd5f612950a1e91ed11c244870081b09d1/virtualization/windowscontainers/deployment/deployment_nano.md)
 * Handoff File: [deployment_nano.b4ad903b48200665d4d0c8e4d0956bddc0d52f79.zh-cn.xlf](https://github.com/Microsoft/Virtualization-Documentation-Private.handoff/blob/77dbe6b6ad718732a33f26c4a754c0cdcca07bad/ol-handoff/Microsoft/Virtualization-Documentation-Private.zh-cn/live/deployment_nano.b4ad903b48200665d4d0c8e4d0956bddc0d52f79.zh-cn.xlf)
 * Handoff Datetime: 2016-06-17 19:45:16
 * Handoff Reason: Include
 * Archive File: [deployment_nano.b4ad903b48200665d4d0c8e4d0956bddc0d52f79.zh-cn.xlf](https://github.com/Microsoft/Virtualization-Documentation-Private.handoff/blob/9d41946a1858fc88d10e413865ed8afdacff0d8c/ol-handoff/Microsoft/Virtualization-Documentation-Private.zh-cn/live/archive/deployment_nano.b4ad903b48200665d4d0c8e4d0956bddc0d52f79.zh-cn.xlf)
 * Archive Datetime: 2016-06-23 19:29:06
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [virtualization\windowscontainers\deployment\deployment_nano.md](https://github.com/Microsoft/Virtualization-Documentation-Private.zh-cn/blob/d589be6ed15423ce586de7bba4a3201426236276/virtualization/windowscontainers/deployment/deployment_nano.md)
-* Current Handback File: [deployment_nano.b4ad903b48200665d4d0c8e4d0956bddc0d52f79.zh-cn.xlf](https://github.com/Microsoft/Virtualization-Documentation-Private.handback/blob/cff1eb5a7167126e9e6badd9141390cad224192e/ol-handback/Microsoft/Virtualization-Documentation-Private.zh-cn/live/deployment_nano.b4ad903b48200665d4d0c8e4d0956bddc0d52f79.zh-cn.xlf)
-* Current Handback Datetime: 2016-06-23 13:32:14
+* Handback File: [deployment_nano.b4ad903b48200665d4d0c8e4d0956bddc0d52f79.zh-cn.xlf](https://github.com/Microsoft/Virtualization-Documentation-Private.handback/blob/323bc19783ae81cd26232c7ce06499f65b313d7e/ol-handback/Microsoft/Virtualization-Documentation-Private.zh-cn/live/deployment_nano.b4ad903b48200665d4d0c8e4d0956bddc0d52f79.zh-cn.xlf)
+* Handback Datetime: 2016-06-27 10:05:41
 * Bilingual File: [deployment_nano.b4ad903b48200665d4d0c8e4d0956bddc0d52f79.zh-cn.xlf](https://github.com/Microsoft/Virtualization-Documentation-Private.handback/blob/cff1eb5a7167126e9e6badd9141390cad224192e/ol-handback/Microsoft/Virtualization-Documentation-Private.zh-cn/live/deployment_nano.b4ad903b48200665d4d0c8e4d0956bddc0d52f79.zh-cn.xlf)
 * Bilingual Datetime: 2016-06-23 13:32:51
 * [Back to Top](#report-top)
@@ -3736,18 +3733,15 @@
 * [Back to Top](#report-top)
 
 ##### <a name='505cc64fa19fb9fc8c2d5c109830f460f09332dd255'></a> Source: [virtualization\windowscontainers\management\manage_images.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/3db43b433e7b1a9484d530cf209ea80ef269a307/virtualization/windowscontainers/management/manage_images.md)
-* Status: OutofSyncHandedBackSuccess
-* Target File: 
+* Status: InSyncHandedBackSuccess
+* Target File: [virtualization\windowscontainers\management\manage_images.md](https://github.com/Microsoft/Virtualization-Documentation-Private.zh-cn/blob/ecbbe4dd5f612950a1e91ed11c244870081b09d1/virtualization/windowscontainers/management/manage_images.md)
 * Handoff File: [manage_images.6d8d709cbc19bb63cc7d4553991616c57920cdfd.zh-cn.xlf](https://github.com/Microsoft/Virtualization-Documentation-Private.handoff/blob/09699ec4b467e1f77aa68c5988059d19265b4dac/ol-handoff/Microsoft/Virtualization-Documentation-Private.zh-cn/live/manage_images.6d8d709cbc19bb63cc7d4553991616c57920cdfd.zh-cn.xlf)
 * Handoff Datetime: 2016-06-21 21:44:34
 * Handoff Reason: Include
 * Archive File: [manage_images.6d8d709cbc19bb63cc7d4553991616c57920cdfd.zh-cn.xlf](https://github.com/Microsoft/Virtualization-Documentation-Private.handoff/blob/9d41946a1858fc88d10e413865ed8afdacff0d8c/ol-handoff/Microsoft/Virtualization-Documentation-Private.zh-cn/live/archive/manage_images.6d8d709cbc19bb63cc7d4553991616c57920cdfd.zh-cn.xlf)
 * Archive Datetime: 2016-06-23 19:29:06
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [virtualization\windowscontainers\management\manage_images.md](https://github.com/Microsoft/Virtualization-Documentation-Private.zh-cn/blob/d589be6ed15423ce586de7bba4a3201426236276/virtualization/windowscontainers/management/manage_images.md)
-* Current Handback File: [manage_images.6d8d709cbc19bb63cc7d4553991616c57920cdfd.zh-cn.xlf](https://github.com/Microsoft/Virtualization-Documentation-Private.handback/blob/cff1eb5a7167126e9e6badd9141390cad224192e/ol-handback/Microsoft/Virtualization-Documentation-Private.zh-cn/live/manage_images.6d8d709cbc19bb63cc7d4553991616c57920cdfd.zh-cn.xlf)
-* Current Handback Datetime: 2016-06-23 13:32:14
+* Handback File: [manage_images.6d8d709cbc19bb63cc7d4553991616c57920cdfd.zh-cn.xlf](https://github.com/Microsoft/Virtualization-Documentation-Private.handback/blob/323bc19783ae81cd26232c7ce06499f65b313d7e/ol-handback/Microsoft/Virtualization-Documentation-Private.zh-cn/live/manage_images.6d8d709cbc19bb63cc7d4553991616c57920cdfd.zh-cn.xlf)
+* Handback Datetime: 2016-06-27 10:05:41
 * Bilingual File: [manage_images.6d8d709cbc19bb63cc7d4553991616c57920cdfd.zh-cn.xlf](https://github.com/Microsoft/Virtualization-Documentation-Private.handback/blob/cff1eb5a7167126e9e6badd9141390cad224192e/ol-handback/Microsoft/Virtualization-Documentation-Private.zh-cn/live/manage_images.6d8d709cbc19bb63cc7d4553991616c57920cdfd.zh-cn.xlf)
 * Bilingual Datetime: 2016-06-23 13:32:51
 * [Back to Top](#report-top)

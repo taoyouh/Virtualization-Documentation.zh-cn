@@ -120,12 +120,6 @@
   "2d1679ffe4876ddd4eefe1b457098e8797899492": [
     "virtualization\\hyperv_on_windows\\user_guide\\nesting.md"
   ],
-  "7270493b8c42935434f72b01524530079d5fb539": [
-    "virtualization\\hyperv_on_windows\\user_guide\\nesting.md"
-  ],
-  "b76ef12cd63c3abdcbef6e587232eb33e6c42d78": [
-    "virtualization\\hyperv_on_windows\\user_guide\\nesting.md"
-  ],
   "060c57fb79f3009dc486d1bd500361ec7b22e735": [
     "virtualization\\hyperv_on_windows\\user_guide\\remote_host_management.md"
   ],
@@ -221,12 +215,6 @@
   "505cc64fa19fb9fc8c2d5c109830f460f09332dd": [
     "virtualization\\windowscontainers\\management\\manage_images.md"
   ],
-  "b84b4b501ce18409561abfc5aae3ca0fa1c7c541": [
-    "virtualization\\windowscontainers\\management\\manage_images.md"
-  ],
-  "617a8a951d11850c899d8013a9d602a695ee9a68": [
-    "virtualization\\windowscontainers\\management\\manage_images.md"
-  ],
   "82cc37e4bcf001e938dcff7308be16978fa955e2": [
     "virtualization\\windowscontainers\\management\\manage_resources.md"
   ],
@@ -303,9 +291,6 @@
     "virtualization\\windowscontainers\\Nano_EULA.md"
   ],
   "f2790186aa641378b1981a1f946665ca46fdbd73": [
-    "virtualization\\windowscontainers\\deployment\\deployment_nano.md"
-  ],
-  "f3b742c80f4eceaaabfbed12d37cc4b2dd8441e9": [
     "virtualization\\windowscontainers\\deployment\\deployment_nano.md"
   ],
   "54974198eb9f9f9ea840b99e83eab5952f3f6b9a": [
