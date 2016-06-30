@@ -1715,8 +1715,8 @@
 * Archive Datetime: 2016-06-30 07:22:17
 * Handback File: [index.ed20041a86dfe858d5ca1a68bb48f4bd5b024074.zh-cn.xlf](https://github.com/Microsoft/Virtualization-Documentation-Private.handback/blob/ed41aba2ed101f071081cbdcbe69fb57335b744e/ol-handback/Microsoft/Virtualization-Documentation-Private.zh-cn/live/index.ed20041a86dfe858d5ca1a68bb48f4bd5b024074.zh-cn.xlf)
 * Handback Datetime: 2016-06-30 12:20:15
-* Bilingual File: [index.ed20041a86dfe858d5ca1a68bb48f4bd5b024074.zh-cn.xlf](https://github.com/Microsoft/Virtualization-Documentation-Private.handback/blob/d283be1fbcbd0e04c9ae61d61fdb48bf8cd32b2e/ol-handback/Microsoft/Virtualization-Documentation-Private.zh-cn/live/index.ed20041a86dfe858d5ca1a68bb48f4bd5b024074.zh-cn.xlf)
-* Bilingual Datetime: 2016-06-23 16:29:57
+* Bilingual File: [index.ed20041a86dfe858d5ca1a68bb48f4bd5b024074.zh-cn.xlf](https://github.com/Microsoft/Virtualization-Documentation-Private.handback/blob/ed41aba2ed101f071081cbdcbe69fb57335b744e/ol-handback/Microsoft/Virtualization-Documentation-Private.zh-cn/live/index.ed20041a86dfe858d5ca1a68bb48f4bd5b024074.zh-cn.xlf)
+* Bilingual Datetime: 2016-06-30 12:20:52
 * [Back to Top](#report-top)
 
 ##### <a name='8489e1cb35de12a7cc54a8c1b29f40672eaac85199'></a> Source: [virtualization\hyperv_on_windows\media\All_ContentTypeIcons_VisualWalkthrough_65.png](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/240aa916b6122cd564fdee62f723cd199db8dfe5/virtualization/hyperv_on_windows/media/All_ContentTypeIcons_VisualWalkthrough_65.png)
@@ -4568,8 +4568,8 @@
 * Archive Datetime: 2016-06-30 07:22:17
 * Handback File: [dotnet35.e0e52c990dda50171889f398084c105aa1085401.zh-cn.xlf](https://github.com/Microsoft/Virtualization-Documentation-Private.handback/blob/ed41aba2ed101f071081cbdcbe69fb57335b744e/ol-handback/Microsoft/Virtualization-Documentation-Private.zh-cn/live/dotnet35.e0e52c990dda50171889f398084c105aa1085401.zh-cn.xlf)
 * Handback Datetime: 2016-06-30 12:20:15
-* Bilingual File: [dotnet35.e0e52c990dda50171889f398084c105aa1085401.zh-cn.xlf](https://github.com/Microsoft/Virtualization-Documentation-Private.handback/blob/cff1eb5a7167126e9e6badd9141390cad224192e/ol-handback/Microsoft/Virtualization-Documentation-Private.zh-cn/live/dotnet35.e0e52c990dda50171889f398084c105aa1085401.zh-cn.xlf)
-* Bilingual Datetime: 2016-06-23 13:32:51
+* Bilingual File: [dotnet35.e0e52c990dda50171889f398084c105aa1085401.zh-cn.xlf](https://github.com/Microsoft/Virtualization-Documentation-Private.handback/blob/ed41aba2ed101f071081cbdcbe69fb57335b744e/ol-handback/Microsoft/Virtualization-Documentation-Private.zh-cn/live/dotnet35.e0e52c990dda50171889f398084c105aa1085401.zh-cn.xlf)
+* Bilingual Datetime: 2016-06-30 12:20:52
 * [Back to Top](#report-top)
 
 ##### <a name='5463412d44bd7c657401c55558bb817df4cc1eb2320'></a> Source: [virtualization\windowscontainers\removed\powershell_overview.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/af065ec180f1b5de9e40ef269e7278a16b0c3b7f/virtualization/windowscontainers/removed/powershell_overview.md)

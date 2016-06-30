@@ -18334,8 +18334,8 @@
       "ArchiveFileDateTime": "2016-06-30T07:22:17.9409956Z",
       "ArchiveException": null,
       "BilingualFilePath": "ol-handback\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\dotnet35.e0e52c990dda50171889f398084c105aa1085401.zh-cn.xlf",
-      "BilingualFileCommit": "cff1eb5a7167126e9e6badd9141390cad224192e",
-      "BilingualDateTime": "2016-06-23T13:32:51.0068981Z",
+      "BilingualFileCommit": "ed41aba2ed101f071081cbdcbe69fb57335b744e",
+      "BilingualDateTime": "2016-06-30T12:20:52.7596717Z",
       "BilingualException": null
     },
     "f2886fc89f3e2eb5bc5fa89f4d7285e91469d677": {
@@ -20122,8 +20122,8 @@
       "ArchiveFileDateTime": "2016-06-30T07:22:17.9409956Z",
       "ArchiveException": null,
       "BilingualFilePath": "ol-handback\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\index.ed20041a86dfe858d5ca1a68bb48f4bd5b024074.zh-cn.xlf",
-      "BilingualFileCommit": "d283be1fbcbd0e04c9ae61d61fdb48bf8cd32b2e",
-      "BilingualDateTime": "2016-06-23T16:29:57.7563166Z",
+      "BilingualFileCommit": "ed41aba2ed101f071081cbdcbe69fb57335b744e",
+      "BilingualDateTime": "2016-06-30T12:20:52.7596717Z",
       "BilingualException": null
     },
     "e652014190e5c9849c7f05c18c429dac8d8701b0": {
