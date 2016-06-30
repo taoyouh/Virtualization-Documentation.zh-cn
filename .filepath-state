@@ -90,6 +90,9 @@
   "dc04e26b6b30d2de9b6d25fc96eb5ff248a877e0": [
     "virtualization\\hyperv_on_windows\\quick_start\\media\\pen_changes_upd.png"
   ],
+  "a3636af921f92ae1cd415fd292f6650e31990bb9": [
+    "virtualization\\hyperv_on_windows\\TOC.md"
+  ],
   "1bd6dec14101d8ab485c4bdc1d18b82437401583": [
     "virtualization\\hyperv_on_windows\\TOC.md"
   ],
@@ -305,6 +308,9 @@
   "3ae897bd58e90c4c7c21ef5f940d4234cccec78f": [
     "virtualization\\windowscontainers\\Media\\video.png"
   ],
+  "0cffd7bb8a394563d311b951739aa2292518d466": [
+    "virtualization\\hyperv_on_windows\\develop\\tlfs.md"
+  ],
   "82b5055c390ce6754403b4de571b4c75298ff462": [
     "virtualization\\hyperv_on_windows\\develop\\tlfs.md"
   ],
@@ -373,5 +379,11 @@
   ],
   "1fddaff6fc260c0cf91c8626a60d768a06995e53": [
     "virtualization\\windowscontainers\\docker\\configure_docker_daemon.md"
+  ],
+  "d89e956dbe96a27ef39f333e13a8bfbb575d403b": [
+    "virtualization\\hyperv_on_windows\\reference\\ic_info.md"
+  ],
+  "49fd4f7f5a035c68975e3c38b2daabeed8e7dd5f": [
+    "virtualization\\hyperv_on_windows\\reference\\tlfs.md"
   ]
 }
