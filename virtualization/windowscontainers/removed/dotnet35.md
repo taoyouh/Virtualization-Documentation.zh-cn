@@ -1,6 +1,10 @@
 ---
 author: enderb-ms
 redirect_url: https://github.com/Microsoft/Virtualization-Documentation/tree/master/windows-container-samples
+translationtype: Human Translation
+ms.sourcegitcommit: 2bc48278e48915577149ae6c1ae1f4cb9c52cc8c
+ms.openlocfilehash: dde80a4599bd099b5361b016b8547169589d4c8e
+
 ---
 
 
@@ -113,6 +117,7 @@ docker images
 ```
 
 
-<!--HONumber=May16_HO3-->
+
+<!--HONumber=Jun16_HO4-->
 
 
