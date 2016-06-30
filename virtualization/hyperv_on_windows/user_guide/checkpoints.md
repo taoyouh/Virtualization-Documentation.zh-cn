@@ -1,6 +1,6 @@
 ---
-title: 使用检查点
-description: 使用检查点
+title: "使用检查点"
+description: "使用检查点"
 keywords: windows 10, hyper-v
 author: scooley
 manager: timlt
@@ -9,6 +9,10 @@ ms.topic: article
 ms.prod: windows-10-hyperv
 ms.service: windows-10-hyperv
 ms.assetid: d9c398c4-ee72-45c6-9ce8-4f06569dae6c
+translationtype: Human Translation
+ms.sourcegitcommit: 4cdf81cace246c5de041d378391dca9b9d318dd5
+ms.openlocfilehash: bd0ee06f4e5eab4f33bb7e7c6dd71119dddde5c9
+
 ---
 
 # 使用检查点将虚拟机恢复到以前的状态
@@ -245,6 +249,7 @@ This folder will contain the .VMRS file with the runtime and saved state data an
 2. 请注意，该文本文件已还原。 但不同于标准检查点，“记事本”未处于打开状态。   
 
 
-<!--HONumber=Jun16_HO3-->
+
+<!--HONumber=Jun16_HO4-->
 
 

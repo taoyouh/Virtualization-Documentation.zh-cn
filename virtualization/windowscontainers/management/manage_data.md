@@ -1,6 +1,6 @@
 ---
-title: 容器数据卷
-description: 使用 Windows 容器创建和管理数据卷。
+title: "容器数据卷"
+description: "使用 Windows 容器创建和管理数据卷。"
 keywords: docker, containers
 author: neilpeterson
 manager: timlt
@@ -9,6 +9,10 @@ ms.topic: article
 ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: f5998534-917b-453c-b873-2953e58535b1
+translationtype: Human Translation
+ms.sourcegitcommit: 111a4ca9f5d693cd1159f7597110409d670f0f5c
+ms.openlocfilehash: b8eca51e347f17e787095b7e4349337cc3ae69a7
+
 ---
 
 # 容器数据卷
@@ -106,6 +110,7 @@ docker inspect backstabbing_kowalevski
 
 
 
-<!--HONumber=May16_HO4-->
+
+<!--HONumber=Jun16_HO4-->
 
 

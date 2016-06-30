@@ -1,6 +1,6 @@
 ---
-title: 在 Windows 中配置 Docker
-description: 在 Windows 中配置 Docker
+title: "在 Windows 中配置 Docker"
+description: "在 Windows 中配置 Docker"
 keywords: docker, containers
 author: neilpeterson
 manager: timlt
@@ -9,7 +9,12 @@ ms.topic: article
 ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: 6885400c-5623-4cde-8012-f6a00019fafa
+ms.sourcegitcommit: 7113f1dc1e9a0a18d4eb25e6d604e89f96f826c4
+ms.openlocfilehash: 1fddaff6fc260c0cf91c8626a60d768a06995e53
+
 ---
+
+# Windows 上的 Docker 守护程序
 
 Windows 中不含 Docker 引擎，需要单独进行安装和配置。 此外，Docker 守护程序可以接受多种自定义配置。 例如，可以配置守护程序接受传入请求的方式、默认网络选项及调试/日志设置。 在 Windows 上，这些配置可以在配置文件中指定，或者通过使用 Windows 服务控制管理器指定。 此文档将详细阐述如何安装和配置 docker 守护程序，还会提供一些通用配置的示例。
 
@@ -35,13 +40,13 @@ Invoke-WebRequest https://aka.ms/tp5/b/dockerd -OutFile $env:ProgramFiles\docker
 Invoke-WebRequest https://aka.ms/tp5/b/docker -OutFile $env:ProgramFiles\docker\docker.exe
 ```
 
-将 Docker 目录添加到系统路径。 添加完成后，重新启动 PowerShell 会话以识别已修改的路径。
+将 Docker 目录添加到系统路径。 添加完成后，重启 PowerShell 会话以识别已修改的路径。
 
 ```none
 [Environment]::SetEnvironmentVariable("Path", $env:Path + ";C:\Program Files\Docker", [EnvironmentVariableTarget]::Machine)
 ```
 
-若要将 Docker 安装为 Windows 的一个服务，请运行以下操作。
+若要将 Docker 安装为一个 Windows 服务，请运行以下命令。
 
 ```none
 dockerd --register-service
@@ -151,6 +156,7 @@ sc config docker binpath= "\"C:\Program Files\docker\dockerd.exe\" --run-service
 ```
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

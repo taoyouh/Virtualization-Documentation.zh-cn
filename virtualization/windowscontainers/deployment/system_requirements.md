@@ -1,6 +1,6 @@
 ---
-title: Windows 容器要求
-description: Windows 容器要求。
+title: "Windows 容器要求"
+description: "Windows 容器要求。"
 keywords: metadata, containers
 author: neilpeterson
 manager: timlt
@@ -9,6 +9,10 @@ ms.topic: deployment-article
 ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: 3c3d4c69-503d-40e8-973b-ecc4e1f523ed
+translationtype: Human Translation
+ms.sourcegitcommit: cc216f56acd5e547d05a48beea57450ba5fcb28b
+ms.openlocfilehash: 12ae565f012dc87a2cab883c0486322db42b1dcc
+
 ---
 
 # Windows 容器要求
@@ -69,6 +73,7 @@ ms.assetid: 3c3d4c69-503d-40e8-973b-ecc4e1f523ed
 </table>
 
 
-<!--HONumber=May16_HO4-->
+
+<!--HONumber=Jun16_HO4-->
 
 
