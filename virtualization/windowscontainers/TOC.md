@@ -1,6 +1,5 @@
 # 关于 Windows 容器
 ## [Windows 容器概述](about/about_overview.md)
-## [正在进行的工作](about/work_in_progress.md)
 ## [常见问题](about/faq.md)
 
 # 容器快速入门
@@ -42,6 +41,6 @@
 
 
 
-<!--HONumber=Jun16_HO2-->
+<!--HONumber=Jun16_HO4-->
 
 

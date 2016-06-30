@@ -9,6 +9,7 @@ ms.topic: article
 ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: b82acdf9-042d-4b5c-8b67-1a8013fa1435
+translationtype: Human Translation
 ms.sourcegitcommit: 1ba6af300d0a3eba3fc6d27598044f983a4c9168
 ms.openlocfilehash: f2790186aa641378b1981a1f946665ca46fdbd73
 
@@ -218,6 +219,6 @@ Restart-Computer
 
 
 
-<!--HONumber=Jun16_HO3-->
+<!--HONumber=Jun16_HO4-->
 
 

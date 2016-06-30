@@ -1,6 +1,6 @@
 ---
 title: HCS PowerSWhell
-description: 使用 HCS PowerShell 和 Windows 容器。
+description: "使用 HCS PowerShell 和 Windows 容器。"
 keywords: docker, containers
 author: neilpeterson
 manager: timlt
@@ -9,6 +9,10 @@ ms.topic: article
 ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: 45144ec5-f76a-4460-abd1-9b60e47506d6
+translationtype: Human Translation
+ms.sourcegitcommit: cfa3c14e932f8b86edf6667200ac028ea0a16b67
+ms.openlocfilehash: 413b9de08d182635908bc11ce3efc7623bb440e4
+
 ---
 
 # 管理互操作性
@@ -41,6 +45,7 @@ PS C:\> Stop-ComputeProcess -Id 2088E0FA-1F7C-44DE-A4BC-1E29445D082B -Force
 ```
 
 
-<!--HONumber=May16_HO3-->
+
+<!--HONumber=Jun16_HO4-->
 
 

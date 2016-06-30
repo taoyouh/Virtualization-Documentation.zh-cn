@@ -1,6 +1,6 @@
 ---
-title: Hyper-V 容器
-description: 部署 Hyper-V 容器。
+title: "Hyper-V 容器"
+description: "部署 Hyper-V 容器。"
 keywords: docker, containers
 author: neilpeterson
 manager: timlt
@@ -9,6 +9,10 @@ ms.topic: article
 ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: 42154683-163b-47a1-add4-c7e7317f1c04
+translationtype: Human Translation
+ms.sourcegitcommit: 18571fc02ecbb37c5db596a610124727f6d5bb90
+ms.openlocfilehash: 2677b9228371b4a4ba72c249509cd9ccacc89473
+
 ---
 
 # Hyper-V 容器
@@ -97,6 +101,7 @@ Handles  NPM(K)    PM(K)      WS(K) VM(M)   CPU(s)     Id  SI ProcessName
 ```
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

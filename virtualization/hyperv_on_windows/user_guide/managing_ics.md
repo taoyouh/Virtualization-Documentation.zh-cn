@@ -9,6 +9,7 @@ ms.topic: article
 ms.prod: windows-10-hyperv
 ms.service: windows-10-hyperv
 ms.assetid: 9cafd6cb-dbbe-4b91-b26c-dee1c18fd8c2
+translationtype: Human Translation
 ms.sourcegitcommit: ef9ce04b2532fd314a21920b9cc5c28459c9a438
 ms.openlocfilehash: d2fbf3b714ac70e096ba80aadd9533c62cf0c34e
 
@@ -270,6 +271,6 @@ sudo hv_kvp_daemon
 
 
 
-<!--HONumber=Jun16_HO3-->
+<!--HONumber=Jun16_HO4-->
 
 

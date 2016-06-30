@@ -9,6 +9,7 @@ ms.topic: article
 ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: 75fed138-9239-4da9-bce4-4f2e2ad469a1
+translationtype: Human Translation
 ms.sourcegitcommit: 960b40e8c1eda9c19ebff0972df2c87e70c7e8f6
 ms.openlocfilehash: 71e0fb430498f8a5ae4ac5b297cf5e4a2c904098
 
