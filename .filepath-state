@@ -364,8 +364,5 @@
   ],
   "1fddaff6fc260c0cf91c8626a60d768a06995e53": [
     "virtualization\\windowscontainers\\docker\\configure_docker_daemon.md"
-  ],
-  "1b8c917e76e30a3a2a3fe908efab3c61e62a804e": [
-    "virtualization\\windowscontainers\\docker\\configure_docker_daemon.md"
   ]
 }
