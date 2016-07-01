@@ -1,24 +1,42 @@
 # <a name='report-top'></a> Localization Handoff Report
 
 ## Summary
- Total Files | 1
+ Total Files | 2
 
 ## File List
  Source File | Status | Details 
  ----------- | ------ | ------- 
- [virtualization\hyperv_on_windows\reference\ic_info.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/8543953c8970be4b400f2102af23bac1a1f43bf5/virtualization/hyperv_on_windows/reference/ic_info.md) | HandedOffSuccess | [Details](#3be0ee6599c4af18da68ac39f4c0050988075f65179)
+ [virtualization\hyperv_on_windows\reference\ic_info.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/9339480bc30c0fc1ee0a1d9f34a6a2b4d9df5202/virtualization/hyperv_on_windows/reference/ic_info.md) | HandedOffSuccess | [Details](#5c3acc45ae88d394f46f4bb816d33d846832d3de179)
+ [virtualization\hyperv_on_windows\user_guide\vmsession.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/9339480bc30c0fc1ee0a1d9f34a6a2b4d9df5202/virtualization/hyperv_on_windows/user_guide/vmsession.md) | OutofSyncHandedBackSuccess | [Details](#10fc49930d4746ca9e42ed35f545e09a456529ed209)
 
 ## Item Details
-##### <a name='3be0ee6599c4af18da68ac39f4c0050988075f65179'></a> Source: [virtualization\hyperv_on_windows\reference\ic_info.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/8543953c8970be4b400f2102af23bac1a1f43bf5/virtualization/hyperv_on_windows/reference/ic_info.md)
+##### <a name='5c3acc45ae88d394f46f4bb816d33d846832d3de179'></a> Source: [virtualization\hyperv_on_windows\reference\ic_info.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/9339480bc30c0fc1ee0a1d9f34a6a2b4d9df5202/virtualization/hyperv_on_windows/reference/ic_info.md)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [ic_info.98dd018260e2c766210a8b9aa82efa377f584781.zh-cn.xlf](https://github.com/Microsoft/Virtualization-Documentation-Private.handoff/blob/5a65784062bbb82ad6416c17f8018c16d6f05420/ol-handoff/Microsoft/Virtualization-Documentation-Private.zh-cn/live/ic_info.98dd018260e2c766210a8b9aa82efa377f584781.zh-cn.xlf)
-* Handoff Datetime: 2016-07-01 20:39:32
+* Handoff File: [ic_info.98dd018260e2c766210a8b9aa82efa377f584781.zh-cn.xlf](https://github.com/Microsoft/Virtualization-Documentation-Private.handoff/blob/554512e3f9757ca99df9a805d1be7d7e724a904a/ol-handoff/Microsoft/Virtualization-Documentation-Private.zh-cn/live/ic_info.98dd018260e2c766210a8b9aa82efa377f584781.zh-cn.xlf)
+* Handoff Datetime: 2016-07-01 22:09:41
 * Handoff Reason: Include
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
+* [Back to Top](#report-top)
+
+##### <a name='10fc49930d4746ca9e42ed35f545e09a456529ed209'></a> Source: [virtualization\hyperv_on_windows\user_guide\vmsession.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/9339480bc30c0fc1ee0a1d9f34a6a2b4d9df5202/virtualization/hyperv_on_windows/user_guide/vmsession.md)
+* Status: OutofSyncHandedBackSuccess
+* Target File: 
+* Handoff File: [vmsession.5b8e9c3583d826412e0ae8e2f58f1deca9901582.zh-cn.xlf](https://github.com/Microsoft/Virtualization-Documentation-Private.handoff/blob/554512e3f9757ca99df9a805d1be7d7e724a904a/ol-handoff/Microsoft/Virtualization-Documentation-Private.zh-cn/live/vmsession.5b8e9c3583d826412e0ae8e2f58f1deca9901582.zh-cn.xlf)
+* Handoff Datetime: 2016-07-01 22:09:41
+* Handoff Reason: Include
+* Archive File: 
+* Archive Datetime: 0001-01-01 00:00:00
+* Handback File: 
+* Handback Datetime: 0001-01-01 00:00:00
+* Current Target File: [virtualization\hyperv_on_windows\user_guide\vmsession.md](https://github.com/Microsoft/Virtualization-Documentation-Private.zh-cn/blob/b851600579f969bb5b76f76609b4250488f93c62/virtualization/hyperv_on_windows/user_guide/vmsession.md)
+* Current Handback File: [vmsession.5b8e9c3583d826412e0ae8e2f58f1deca9901582.zh-cn.xlf](https://github.com/Microsoft/Virtualization-Documentation-Private.handback/blob/194b2704a67767d6e1bbfa81ddc524b6dbc35ff4/ol-handback/Microsoft/Virtualization-Documentation-Private.zh-cn/live/vmsession.5b8e9c3583d826412e0ae8e2f58f1deca9901582.zh-cn.xlf)
+* Current Handback Datetime: 2016-06-30 14:18:52
+* Bilingual File: [vmsession.5b8e9c3583d826412e0ae8e2f58f1deca9901582.zh-cn.xlf](https://github.com/Microsoft/Virtualization-Documentation-Private.handback/blob/194b2704a67767d6e1bbfa81ddc524b6dbc35ff4/ol-handback/Microsoft/Virtualization-Documentation-Private.zh-cn/live/vmsession.5b8e9c3583d826412e0ae8e2f58f1deca9901582.zh-cn.xlf)
+* Bilingual Datetime: 2016-06-30 14:19:51
 * [Back to Top](#report-top)
 
 
