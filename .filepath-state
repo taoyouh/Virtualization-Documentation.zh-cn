@@ -102,6 +102,9 @@
   "e11c8d1a8fabc6e8282c9396a8efcbc448b9a6d4": [
     "virtualization\\hyperv_on_windows\\user_guide\\export_import.md"
   ],
+  "e7abf05c899e2acca07312813b7808a5db00a9f7": [
+    "virtualization\\hyperv_on_windows\\user_guide\\managing_ics.md"
+  ],
   "4b3ecc5da8237b832edc549c3bd0bf276ae027cf": [
     "virtualization\\hyperv_on_windows\\user_guide\\managing_ics.md"
   ],
@@ -382,6 +385,9 @@
   ],
   "1fddaff6fc260c0cf91c8626a60d768a06995e53": [
     "virtualization\\windowscontainers\\docker\\configure_docker_daemon.md"
+  ],
+  "40173da6cc3bce1a335035369f5457bdae595d56": [
+    "virtualization\\hyperv_on_windows\\reference\\ic_info.md"
   ],
   "d89e956dbe96a27ef39f333e13a8bfbb575d403b": [
     "virtualization\\hyperv_on_windows\\reference\\ic_info.md"
