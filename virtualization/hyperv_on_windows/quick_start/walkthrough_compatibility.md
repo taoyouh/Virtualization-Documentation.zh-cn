@@ -1,14 +1,18 @@
 ---
-title: &1992901527 Windows 10 Hyper-V 系统要求
-description: Windows 10 Hyper-V 系统要求
+title: "Windows 10 Hyper-V 系统要求"
+description: "Windows 10 Hyper-V 系统要求"
 keywords: windows 10, hyper-v
 author: scooley
 manager: timlt
 ms.date: 05/02/2016
 ms.topic: article
-ms.prod: &1917266461 windows-10-hyperv
+ms.prod: windows-10-hyperv
 ms.service: windows-10-hyperv
 ms.assetid: 6e5e6b01-7a9d-4123-8cc7-f986e10cd372
+translationtype: Human Translation
+ms.sourcegitcommit: e14ede0a2b13de08cea0a955b37a21a150fb88cf
+ms.openlocfilehash: 6364ecd2df13f5abc96fc22da03c9bca65d353b2
+
 ---
 
 # Windows 10 Hyper-V 系统要求
@@ -29,12 +33,12 @@ Windows 10 上的 Hyper-V 仅适用于一组特定的操作系统和硬件配置
 - Windows 10 移动版
 - Windows 10 移动企业版
 
->Windows 10 家庭版可以升级到 Windows 10 专业版。 若要执行此操作，请依次打开“设置”>“更新和安全”>“激活”。 可以在此处访问应用商店并购买升级。
+>Windows 10 家庭版可以升级到 Windows 10 专业版。 若要执行此操作，请依次打开“**设置**” > “**更新和安全**” > “**激活**”。 可以在此处访问应用商店并购买升级。
 
 ## 硬件要求
 
 虽然本文档未提供兼容 Hyper-V 的硬件完整列表，但需要具备以下各项：
-
+    
 - 具有二级地址转换 (SLAT) 的 64 位处理器。
 - CPU 支持 VM 监视器模式扩展（Intel CPU 上的 VT-c）。
 - 最少 4 GB 内存。 由于虚拟机与 Hyper-V 主机共享内存，因此将需要提供足够的内存来处理预期虚拟工作负荷。
@@ -45,7 +49,7 @@ Windows 10 上的 Hyper-V 仅适用于一组特定的操作系统和硬件配置
 
 ## 验证硬件兼容性
 
-若要验证兼容性，请打开 PowerShell 或命令提示符 (cmd.exe)，然后键入 **systeminfo.exe**。 如果列出的所有 Hyper-V 要求都具有值 **Yes**，则你的系统可以运行 Hyper-V 角色。 如果任一项返回 **No**，请查看本文档中列出的要求并进行调整（如果可能）。
+若要验证兼容性，请打开 PowerShell 或命令提示符 (cmd.exe)，然后键入 **systeminfo.exe**。 如果列出的所有 Hyper-V 要求都具有值 **Yes**，则你的系统可以运行 Hyper-V 角色。 如果任一项返回“**否**”，请查看本文档中列出的要求并进行调整（如果可能）。
 
 ![](media/SystemInfo_upd.png)
 
@@ -56,14 +60,10 @@ Hyper-V Requirements: A hypervisor has been detected. Features required for Hype
 ```
 
 ## 下一步 - 安装 Hyper-V
-
 [安装 Hyper-V](walkthrough_install.md)
 
 
 
-
-
-
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO4-->
 
 

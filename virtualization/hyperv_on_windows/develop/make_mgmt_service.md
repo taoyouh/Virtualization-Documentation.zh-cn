@@ -1,19 +1,23 @@
 ---
-title: 创建你自己的集成服务
-description: Windows 10 集成服务。
+title: "创建你自己的集成服务"
+description: "Windows 10 集成服务。"
 keywords: windows 10, hyper-v
 author: scooley
 manager: timlt
 ms.date: 05/02/2016
 ms.topic: article
-ms.prod: &1992141540 windows-10-hyperv
+ms.prod: windows-10-hyperv
 ms.service: windows-10-hyperv
 ms.assetid: 1ef8f18c-3d76-4c06-87e4-11d8d4e31aea
+translationtype: Human Translation
+ms.sourcegitcommit: e14ede0a2b13de08cea0a955b37a21a150fb88cf
+ms.openlocfilehash: e7d6e4f44756f84fc324f2d4cb55f8762dcbba6b
+
 ---
 
 # 创建你自己的集成服务
 
-从 Windows 10 开始，任何人都可以创建非常类似于内置 Hyper-V 集成服务的服务，该服务在 Hyper-V 主机和在其上运行虚拟机之间使用新的基于套接字的通信通道。 使用这些 Hyper-V 套接字，服务可以独立于网络堆栈运行，并且所有数据都保留在相同的物理内存中。
+从 Windows 10 开始，任何人都可以创建非常类似于内置 Hyper-V 集成服务的服务，该服务在 Hyper-V 主机和在其上运行虚拟机之间使用新的基于套接字的通信通道。  使用这些 Hyper-V 套接字，服务可以独立于网络堆栈运行，并且所有数据都保留在相同的物理内存中。
 
 本文档演练了如何创建一个在 Hyper-V 套接字上生成的简单应用程序以及如何开始使用它们。
 
@@ -28,50 +32,47 @@ ms.assetid: 1ef8f18c-3d76-4c06-87e4-11d8d4e31aea
 * Windows 10
 * Windows Server Technical Preview 4 及更高版本
 * 未来版本 (Server 2016 +)
-* 使用 Linux Integration Services 的 Linux 来宾（请参阅 [Windows 上的 HYPER-V 支持的 Linux 和 FreeBSD 虚拟机](https://technet.microsoft.com/library/dn531030(ws.12).aspx))）
+* 使用 Linux Integration Services 的 Linux 来宾（请参阅 [Windows 上的 HYPER-V 支持的 Linux 和 FreeBSD 虚拟机](https://technet.microsoft.com/library/dn531030(ws.12).aspx)）
 
-**功能和限制**
-* 支持内核模式或用户模式操作
-* 仅限数据流
-* 无块内存（并非最适用于备份/视频）
+**功能和限制**  
+* 支持内核模式或用户模式操作  
+* 仅限数据流      
+* 无块内存（并非最适用于备份/视频）   
 
 --------------
 
-
 ## 开始使用
-
-现在，本机代码 (C/C++) 中提供了 Hyper-V 套接字。
+现在，本机代码 (C/C++) 中提供了 Hyper-V 套接字。  
 
 若要编写简单的应用程序，你将需要：
-* C 编译器。 如果不具有该组件，请查看 [Visual Studio 社区](https://aka.ms/vs)
-* 一台运行 Hyper-V 和虚拟机的计算机。
+* C 编译器。  如果没有该组件，请查看 [Visual Studio Community](https://aka.ms/vs)
+* 一台运行 Hyper-V 和虚拟机的计算机。  
   * 主机和来宾 (VM) 操作系统必须是 Windows 10 、Windows Server Technical Preview 3 或更高版本。
 * 在 HYPER-V 主机上安装的 [Windows 10 SDK](http://aka.ms/flightingSDK)
 
 **Windows SDK 详细信息**
 
 指向 Windows SDK 的链接：
-* [Windows 10 SDK 内部版预览](http://aka.ms/flightingSDK)
+* [预览体验成员预览的 Windows 10 SDK](http://aka.ms/flightingSDK)
 * [Windows 10 SDK](https://dev.windows.com/en-us/downloads/windows-10-sdk)
 
 Windows 10 14290 版中开始提供 HYPER-V 套接字的 API，外部测试下载与最新内部快速跟踪外部测试版本相匹配。  
-如果出现异常行为，请通过 [TechNet 论坛](https://social.technet.microsoft.com/Forums/windowsserver/en-US/home "TechNet 论坛")告知我们。 在你的帖子中，请包括：
-* 意外的行为
-* 主机、来宾和 SDK 的操作系统和版本号。
-
+如果出现异常行为，请通过 [TechNet 论坛](https://social.technet.microsoft.com/Forums/windowsserver/en-US/home "TechNet Forums")告知我们。  在你的帖子中，请包括：
+* 意外的行为 
+* 主机、来宾和 SDK 的操作系统和版本号。  
+  
   SDK 版本号在 SDK 安装程序的标题中可见：  
   ![](./media/flightingSDK.png)
 
 
 ## 注册新应用程序
-
 若要使用 Hyper-V 套接字，必须向 Hyper-V 主机的注册表注册应用程序。
 
 通过在注册表中注册该服务，你将获得：
 *  用于启用、禁用和列出可用服务的 WMI 管理
 *  直接与虚拟机进行通信的权限
 
-以下 PowerShell 将注册一个名为“HV Socket Demo”的新应用程序。 必须以管理员身份运行此应用程序。 手册说明如下。
+以下 PowerShell 将注册一个名为“HV Socket Demo”的新应用程序。  必须以管理员身份运行此应用程序。  手册说明如下。
 
 ``` PowerShell
 $friendlyName = "HV Socket Demo"
@@ -86,20 +87,20 @@ $service.SetValue("ElementName", $friendlyName)
 $service.PSChildName | clip.exe
 ```
 
-** 注册表位置和信息 **
+** 注册表位置和信息 **  
 
 ``` 
 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Virtualization\GuestCommunicationServices\
-```
-在此注册表位置中，你将看到多个 GUID。 这些都是我们的内置服务。
+```  
+在此注册表位置中，你将看到多个 GUID。  这些都是我们的内置服务。
 
 每个服务的注册表中的信息：
-* `服务 GUID`
-    * `ElementName (REG_SZ)` - 这是服务的友好名称
+* `Service GUID`   
+    * `ElementName (REG_SZ)` -- 这是服务的友好名称
 
 若要注册你自己的服务，请使用你自己的 GUID 和友好名称来创建新的注册表项。
 
-友好名称将与新的应用程序相关联。 它将出现在性能计数器和其他 GUID 不适合的位置中。
+友好名称将与新的应用程序相关联。  它将出现在性能计数器和其他 GUID 不适合的位置中。
 
 注册表条目将如下所示：
 ```
@@ -110,7 +111,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Virtualization\G
         ElementName REG_SZ  Your Service Friendly Name
 ```
 
-> ** 提示：**若要在 PowerShell 中生成 GUID，并将其复制到剪贴板，请运行：
+> ** 提示：**若要在 PowerShell 中生成 GUID，并将其复制到剪贴板，请运行：  
 ``` PowerShell
 (New-Guid).Guid | clip.exe
 ```
@@ -119,8 +120,8 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Virtualization\G
 
 在最基本的情况下，定义套接字需要地址系列、连接类型和协议。
 
-下面是一个简单的 [套接字定义](
-https://msdn.microsoft.com/zh-cn/library/windows/desktop/ms740506 (v=vs.85).aspx
+下面是一个简单的[套接字定义](
+https://msdn.microsoft.com/en-us/library/windows/desktop/ms740506(v=vs.85).aspx
 )
 
 ``` C
@@ -129,7 +130,7 @@ SOCKET WSAAPI socket(
   _In_ int type,
   _In_ int protocol
 );
-```
+``` 
 
 对于 Hyper-V 套接字：
 * 地址系列 - `AF_HYPERV`
@@ -137,7 +138,7 @@ SOCKET WSAAPI socket(
 * 协议 - `HV_PROTOCOL_RAW`
 
 
-下面是一个示例声明/实例化：
+下面是一个示例声明/实例化：  
 ``` C
 SOCKET sock = socket(AF_HYPERV, SOCK_STREAM, HV_PROTOCOL_RAW);
 ```
@@ -157,7 +158,7 @@ int bind(
 );
 ```
 
-与用于标准 Internet 协议地址系列 (`AF_INET`)（由该主机上的主机 IP 地址和端口号组成）的套接字地址 (sockaddr) 相比，用于 `AF_HYPERV` 的套接字地址使用上面定义的虚拟机 ID 和应用程序 ID 来建立连接。
+与用于标准 Internet 协议地址系列 (`AF_INET`)（由该主机上的主机 IP 地址和端口号组成）的套接字地址 (sockaddr) 相比，用于 `AF_HYPERV` 的套接字地址使用上面定义的虚拟机 ID 和应用程序 ID 来建立连接。 
 
 由于 Hyper-V 套接字不依赖于网络堆栈、TCP/IP、DNS 等，因此套接字终结点需要的是非 IP，而不是仍可明确描述连接的主机名和格式。
 
@@ -173,29 +174,29 @@ struct SOCKADDR_HV
 };
 ```
 
-作为 IP 或主机名的替代，AF_HYPERV 终结点非常依赖于以下两个 GUID：
-* VM ID - 这是每个 VM 分配的唯一 ID。 使用以下 PowerShell 代码段可以找到 VM 的 ID。
+作为 IP 或主机名的替代，AF_HYPERV 终结点非常依赖于以下两个 GUID：  
+* VM ID - 这是每个 VM 分配的唯一 ID。  使用以下 PowerShell 代码段可以找到 VM 的 ID。  
   ```PowerShell
   (Get-VM -Name $VMName).Id
   ```
 * 服务 ID - [如上所述](#RegisterANewApplication)，在 Hyper-V 主机注册表中用于注册应用程序的 GUID。
 
 还有一组 VMID 通配符可在未连接到特定虚拟机时使用。
-
+ 
 ### VMID 通配符
 
-| 名称| GUID| 说明|
+| 名称 | GUID | 说明 |
 |:-----|:-----|:-----|
-| HV_GUID_ZERO| 00000000-0000-0000-0000-000000000000| 侦听器应绑定到此 VMID 以接受所有分区中的连接。|
-| HV_GUID_WILDCARD| 00000000-0000-0000-0000-000000000000| 侦听器应绑定到此 VMID 以接受所有分区中的连接。|
-| HV_GUID_BROADCAST| FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF| |
-| HV_GUID_CHILDREN| 90db8b89-0d35-4f79-8ce9-49ea0ac8b7cd| 子级的通配符地址。侦听器应绑定到此 VMID 以接受其子级中的连接。|
-| HV_GUID_LOOPBACK| e0e16197-dd56-4a10-9195-5ee7a155a838| 环回地址。使用此 VMID 连接到与该连接器相同的分区。|
-| HV_GUID_PARENT| a42e7cda-d03f-480c-9cc2-a4de20abb878| 父地址。使用此 VMID 连接到该连接器的父分区。*|
+| HV_GUID_ZERO | 00000000-0000-0000-0000-000000000000 | 侦听器应绑定到此 VMID 以接受所有分区中的连接。 |
+| HV_GUID_WILDCARD | 00000000-0000-0000-0000-000000000000 | 侦听器应绑定到此 VMID 以接受所有分区中的连接。 |
+| HV_GUID_BROADCAST | FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF | |  
+| HV_GUID_CHILDREN | 90db8b89-0d35-4f79-8ce9-49ea0ac8b7cd | 子级的通配符地址。 侦听器应绑定到此 VMID 以接受其子级中的连接。 |
+| HV_GUID_LOOPBACK | e0e16197-dd56-4a10-9195-5ee7a155a838 | 环回地址。 使用此 VMID 连接到与该连接器相同的分区。 |
+| HV_GUID_PARENT | a42e7cda-d03f-480c-9cc2-a4de20abb878 | 父地址。 使用此 VMID 连接到该连接器的父分区。* |
 
 
 ***HV_GUID_PARENT**  
-虚拟机的父级是其主机。 容器的父级是容器的主机。  
+虚拟机的父级是其主机。  容器的父级是容器的主机。  
 从在虚拟机中运行的容器进行连接将连接到托管该容器的 VM。  
 侦听此 VMID 可接受以下来源的连接：  
 （内部容器）：容器主机。  
@@ -204,25 +205,15 @@ struct SOCKADDR_HV
 
 ## 受支持的套接字命令
 
-Socket()
-Bind()
-Connect()
-Send()
-Listen()
-Accept()
+Socket() Bind() Connect() Send() Listen() Accept()
 
 [完整 WinSock API](https://msdn.microsoft.com/en-us/library/windows/desktop/ms741394.aspx)
 
 ## 正在进行的工作
-
-正常断开连接
-选择
+正常断开选择
 
 
 
-
-
-
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO4-->
 
 

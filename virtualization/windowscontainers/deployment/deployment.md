@@ -1,6 +1,6 @@
 ---
-title: 在 Windows Server 上部署 Windows 容器
-description: 在 Windows Server 上部署 Windows 容器
+title: "在 Windows Server 上部署 Windows 容器"
+description: "在 Windows Server 上部署 Windows 容器"
 keywords: docker, containers
 author: neilpeterson
 manager: timlt
@@ -9,6 +9,10 @@ ms.topic: article
 ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: ba4eb594-0cdb-4148-81ac-a83b4bc337bc
+translationtype: Human Translation
+ms.sourcegitcommit: eae45c2c81c7edc94d963da69dcdee2b6f08f37d
+ms.openlocfilehash: cbbff2bf4a68ee348bcc33979ef4469daf54a8a7
+
 ---
 
 # 容器主机部署 - Windows Server
@@ -16,6 +20,14 @@ ms.assetid: ba4eb594-0cdb-4148-81ac-a83b4bc337bc
 **这是初步内容，可能还会更改。**
 
 部署 Windows 容器主机的步骤会有所不同，具体取决于操作系统和主机系统类型（物理或虚拟）。 本文档中详细介绍将 Windows 容器主机部署到物理或虚拟系统上的 Windows Server 2016 或 Windows Server Core 2016 的相关内容。
+
+## Azure 映像 
+
+Azure 中提供了完全配置的 Windows Server 映像。 若要使用此映像，请通过单击下面的按钮来部署虚拟机。 如果使用此模板将 Windows 容器系统部署到 Azure 中，则可以跳过此文档的其余部分。
+
+<a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FMicrosoft%2FVirtualization-Documentation%2Fmaster%2Fwindows-server-container-tools%2Fcontainers-azure-template%2Fazuredeploy.json" target="_blank">
+    <img src="http://azuredeploy.net/deploybutton.png"/>
+</a>
 
 ## 安装容器功能
 
@@ -132,6 +144,7 @@ Install-WindowsFeature hyper-v
 ```
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO5-->
 
 

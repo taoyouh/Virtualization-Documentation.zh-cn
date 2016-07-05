@@ -1,14 +1,18 @@
 ---
-title: &1992901527 使用 Hyper-V 和 Windows PowerShell
-description: 使用 Hyper-V 和 Windows PowerShell
+title: "使用 Hyper-V 和 Windows PowerShell"
+description: "使用 Hyper-V 和 Windows PowerShell"
 keywords: windows 10, hyper-v
 author: neilpeterson
 manager: timlt
 ms.date: 05/02/2016
 ms.topic: article
-ms.prod: &608094888 windows-10-hyperv
+ms.prod: windows-10-hyperv
 ms.service: windows-10-hyperv
 ms.assetid: 6d1ae036-0841-4ba5-b7e0-733aad31e9a7
+translationtype: Human Translation
+ms.sourcegitcommit: e14ede0a2b13de08cea0a955b37a21a150fb88cf
+ms.openlocfilehash: a8e567b6447aa73f14825b7054d977d2b003a726
+
 ---
 
 # 使用 Hyper-V 和 Windows PowerShell
@@ -17,12 +21,12 @@ ms.assetid: 6d1ae036-0841-4ba5-b7e0-733aad31e9a7
 
 ### 返回 Hyper-V 命令列表
 
-1.  单击 Windows“开始”按钮，键入“PowerShell”。
+1.  单击 Windows“开始”按钮，键入“**PowerShell**”。
 2.  运行以下命令以显示适用于 Hyper-V PowerShell 模块的 PowerShell 命令的可搜索列表。
 
  ```powershell
 get-command -module hyper-v | out-gridview
- ```
+```
   获取的内容如下所示：
 
   ![](media\command_grid.png)
@@ -31,7 +35,7 @@ get-command -module hyper-v | out-gridview
 
   ```powershell
 get-help get-vm
-  ```
+```
  该输出向你显示构建命令的方法、必需和可选参数定义以及可以使用的别名。
 
  ![](media\get_help.png)
@@ -42,15 +46,15 @@ get-help get-vm
 使用 `get-vm` 命令返回虚拟机列表。
 
 1. 在 PowerShell 中，运行以下命令：
-
+ 
  ```powershell
 get-vm
- ```
+```
  显示内容如下所示：
 
  ![](media\get_vm.png)
 
-2. 若要仅返回已启动的虚拟机列表，请将筛选器添加到 `get-vm` 命令。 可通过使用 where-object 命令添加筛选器。 有关筛选的详细信息，请参阅[使用 Where-Object](https://technet.microsoft.com/en-us/library/ee177028.aspx) 文档。
+2. 若要仅返回已启动的虚拟机列表，请将筛选器添加到 `get-vm` 命令。 可通过使用 where-object 命令添加筛选器。 有关筛选的详细信息，请参阅[使用 Where-Object](https://technet.microsoft.com/en-us/library/ee177028.aspx) 文档。   
 
  ```powershell
  get-vm | where {$_.State -eq ‘Running’}
@@ -73,12 +77,12 @@ get-vm
 
   ```powershell
  get-vm | where {$_.State -eq ‘Off’} | start-vm
-  ```
+ ```
 3. 若要关闭所有正在运行的虚拟机，请运行以下命令：
-
+ 
   ```powershell
  get-vm | where {$_.State -eq ‘Running’} | stop-vm
-  ```
+ ```
 
 ### 创建 VM 检查点
 
@@ -113,13 +117,10 @@ get-vm
 
 ## 总结和参考
 
-本文档介绍了一些研究 Hyper-V PowerShell 模块的简单步骤以及一些示例方案。 有关 Hyper-V PowerShell 模块的详细信息，请参阅 [Windows PowerShell 中的 Hyper-V Cmdlet 参考](https://technet.microsoft.com/%5Clibrary/Hh848559.aspx)。
+本文档介绍了一些研究 Hyper-V PowerShell 模块的简单步骤以及一些示例方案。 有关 Hyper-V PowerShell 模块的详细信息，请参阅 [Windows PowerShell 中的 Hyper-V Cmdlet 参考](https://technet.microsoft.com/%5Clibrary/Hh848559.aspx)。  
+ 
 
 
-
-
-
-
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO4-->
 
 

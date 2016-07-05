@@ -9,14 +9,14 @@ ms.topic: article
 ms.prod: windows-10-hyperv
 ms.service: windows-10-hyperv
 ms.assetid: 68c65445-ce13-40c9-b516-57ded76c1b15
-ms.sourcegitcommit: ef18b63c454b3c12a7067d3604ba142d55403226
-ms.openlocfilehash: 2d1679ffe4876ddd4eefe1b457098e8797899492
+ms.sourcegitcommit: 26a8adb426a7cf859e1a9813da2033e145ead965
+ms.openlocfilehash: d17413fc572e59ec21ff513ef5de994c6716aa08
 
 ---
 
 # 借助嵌套虚拟化在虚拟机中运行 Hyper-V
 
-嵌套虚拟化是一项功能，使你可以在 Hyper-V 虚拟机内运行 Hyper-V。 换而言之，借助嵌套虚拟化，Hyper-V 主机本身可进行虚拟化。 嵌套虚拟化的一些用例包括在虚拟化容器主机中运行 Hyper-V 容器、在虚拟化环境中设置 Hyper-V 实验室或者无需单个硬件测试多台计算机方案。 本文档将详细介绍软件和硬件先决条件、配置步骤，并提供故障排除的详细信息。
+嵌套虚拟化是一项功能，使你可以在 Hyper-V 虚拟机内运行 Hyper-V。 换而言之，借助嵌套虚拟化，Hyper-V 主机本身可进行虚拟化。 嵌套虚拟化的一些用例包括在虚拟化容器主机中运行 Hyper-V 容器、在虚拟化环境中设置 Hyper-V 实验室或者无需单个硬件测试多台计算机方案。 本文档将详细介绍软件和硬件先决条件、配置步骤，并提供故障排除的详细信息。 如果在 Windows 预览体验成员预览版本 14361 或更高版本上运行 Hyper-V，请参阅 [Nested Virtualization Preview for Windows Insiders: Builds 14361+](https://msdn.microsoft.com/en-us/virtualization/hyperv_on_windows/user_guide/nesting#nested-virtualization-preview-for-windows-insiders-builds-14361-)（Windows 预览体验成员的嵌套虚拟化预览版本：版本 14361 以上）。
 
 ## 先决条件
 
@@ -89,8 +89,51 @@ Netsh interface ip add dnsserver “Ethernet” address=<my DNS server>
 
 通过 Windows 反馈应用、[虚拟化论坛](https://social.technet.microsoft.com/Forums/windowsserver/En-us/home?forum=winserverhyperv)，或通过 [GitHub](https://github.com/Microsoft/Virtualization-Documentation) 报告其他问题。
 
+##Windows 预览体验成员的嵌套虚拟化预览版本：版本 14361 以上
+几个月前，我们宣布了 Hyper-V 嵌套虚拟化的早期预览版本：版本 10565。 我们都很高兴看到这项功能已生成，并且非常荣幸与 Windows 预览体验成员共享更新。
+
+###嵌套虚拟化需要新虚拟机版本
+从版本 14361 开始，启用嵌套虚拟化的虚拟机均需要版本 8.0。 对于较旧主机上创建的启用嵌套的虚拟机，将需要版本更新。 
+
+####更新虚拟机版本
+若要继续使用嵌套虚拟化技术，需要将虚拟机版本更新为 8.0。 即必须删除已保存的状态且需要关闭虚拟机。 以下 PowerShell cmdlet 将更新虚拟机版本：
+```none
+Update-VMVersion -Name <VMName>
+```
+####禁用嵌套虚拟化
+如果不希望更新虚拟机，则可以禁用嵌套虚拟化，以便可以启动虚拟机：
+```none
+Set-VMProcessor -VMName <VMName> -ExposeVirtualizationExtensions $false
+```
+
+###虚拟机 8.0 版的新行为 
+在预览版中对已启用的虚拟机的工作进行了几处更改：
+-   创建和应用检查点现在适用于启用了嵌套虚拟化的虚拟机。
+-   现在可以保存并启动已启用嵌套的虚拟机。
+-   现在，已启用嵌套虚拟化的虚拟机可以在启用了基于虚拟化的安全的主机上运行（包括设备保护和凭据保护）。
+-   我们改进了现有限制的错误消息。
+
+###功能限制
+-   嵌套虚拟化旨在 Hyper-V 虚拟机中运行 Hyper-V。 第三方虚拟化应用程序均不受支持，且可能在 Hyper-V 虚拟机中出现故障。
+-   动态内存与嵌套虚拟化不兼容。 一旦 Hyper-V 在虚拟机内部运行，虚拟机不能在运行时更改它的内存。 
+-   运行时内存调整大小与嵌套虚拟化不兼容。 在内部运行 Hyper-V 的同时调整虚拟机的内存大小将会失败。 
+-   仅 Intel 系统支持嵌套虚拟化。
+
+###已知问题
+版本 14361 中存在一个已知问题，其中第 2 代虚拟机无法启动并出现以下错误：
+```none
+“Cannot modify property without enabling VirtualizationBasedSecurityOptOut”
+```
+此问题可通过禁用嵌套虚拟化得以暂时解决，或选择不使用基于虚拟化的安全：
+```none
+Set-VMSecurity -VMName <vmname> -VirtualizationBasedSecurityOptOut $true
+```
+
+###我们正在倾听
+与往常一样，请继续使用 Windows 反馈应用发送反馈。 如果有任何疑问，请在我们的文档 [GitHub](https://github.com/Microsoft/Virtualization-Documentation) 页上记录相应的问题。 
 
 
-<!--HONumber=Jun16_HO3-->
+
+<!--HONumber=Jun16_HO4-->
 
 

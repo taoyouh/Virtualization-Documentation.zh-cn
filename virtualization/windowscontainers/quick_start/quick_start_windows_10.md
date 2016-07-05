@@ -1,14 +1,18 @@
 ---
-title: Windows 10 上的 Windows 容器
-description: 容器部署快速入门
+title: "Windows 10 上的 Windows 容器"
+description: "容器部署快速入门"
 keywords: docker, containers
 author: neilpeterson
 manager: timlt
-ms.date: 05/26/2016
+ms.date: 06/28/2016
 ms.topic: article
 ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: bb9bfbe0-5bdc-4984-912f-9c93ea67105f
+translationtype: Human Translation
+ms.sourcegitcommit: 3fc388632dee4d714ab5a7869fa852c079c11910
+ms.openlocfilehash: e2d86c6f1aba07c7c40d1f932b3884c99bfd8f0a
+
 ---
 
 # Windows 10 上的 Windows 容器
@@ -160,7 +164,13 @@ nanoserver               latest              3f5112ddd185        3 weeks ago    
 docker run --isolation=hyperv --rm microsoft/sample-dotnet
 ```
 
-此命令的结果是，从 sample-dotnet 映像创建 Hyper-V 容器，然后执行一个示例应用程序（输出回显到 shell），然后停止并删除容器。 Windows 10 和容器快速入门的后续部分将深入探讨在 Windows 10 上的容器中创建和部署应用程序。
+**注意** - 如果发生错误并指示超时事件，请运行以下 PowerShell 脚本，并重试该操作。
+
+```none
+Set-ItemProperty -Path 'HKLM:SOFTWARE\Microsoft\Windows NT\CurrentVersion\Virtualization\Containers' -Name VSmbDisableOplocks -Type DWord -Value 1 -Force
+```
+
+`docker run` 命令的结果是，从 sample-dotnet 映像创建 Hyper-V 容器，然后执行一个示例应用程序（输出回显到 shell），然后停止并删除容器。 Windows 10 和容器快速入门的后续部分将深入探讨在 Windows 10 上的容器中创建和部署应用程序。
 
 ## 后续步骤
 
@@ -169,6 +179,7 @@ docker run --isolation=hyperv --rm microsoft/sample-dotnet
 
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

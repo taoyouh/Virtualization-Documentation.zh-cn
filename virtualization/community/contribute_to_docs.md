@@ -1,14 +1,18 @@
 ---
-title: &1573745490 社区资源
-description: 社区资源
+title: "社区资源"
+description: "社区资源"
 keywords: windows 10, hyper-v, container, docker
 author: scooley
 manager: timlt
 ms.date: 05/02/2016
 ms.topic: article
-ms.prod: &1647860582 virtualization
+ms.prod: virtualization
 ms.service: virtualization
 ms.assetid: 731ed95a-ce13-4c6e-a450-49563bdc498c
+translationtype: Human Translation
+ms.sourcegitcommit: e14ede0a2b13de08cea0a955b37a21a150fb88cf
+ms.openlocfilehash: 5d41a694d4b6cac6b6381379bda4a8f959ec4854
+
 ---
 
 # 参与编辑文档
@@ -17,60 +21,60 @@ ms.assetid: 731ed95a-ce13-4c6e-a450-49563bdc498c
 
 ## 编辑现有的文档
 
-1. 查找你想要编辑的文档。
+1. 查找你想要编辑的文档。  
 
-2. 选择“参与本主题”  
+2. 选择“**参与本主题**”  
   ![](media/editDoc.png)
-
+  
   这会自动将你重定向到 GitHub 中与此文件相关联的标记文件。
-
-  请确保已登录到 GitHub。 如果未登录，请登录或创建 GitHub 帐户。
-
+  
+  请确保已登录到 GitHub。  如果未登录，请登录或创建 GitHub 帐户。
+  
   ![](media/GitHubView.png)
-
+  
 3. 选择要使用浏览器编辑器进行编辑的编辑图标。
-
+  
   ![](media/GitHubEdit.png)
 
 4. 使更改内联。
-
+  
   可能的操作：
   1. 编辑文件
   2. 预览更改
   3. 重命名文件（你不太可能需要执行此操作）
-
+  
   ![](media/GitHubEditor.png)
-
+  
 5. 提出你的更改作为拉取请求
-
+  
   ![](media/GitHubProposeChange.png)
 
 6. 查看你的更改
-
-  **要在拉取请求中查找的内容**
+  
+  **要在拉取请求中查找的内容**  
   * 更改正确 - 它准确地体现了此技术
   * 拼写/语法正确无误
   * 文档中的逻辑位置
-
+    
   ![](media/GitHubCreatePR.png)
 
-7. 创建[拉取请求](contribute_to_docs.md#pull-requests)
+7. 创建[拉取请求](contribute_to_docs.md#pull-requests)  
 
 ## 拉取请求
 
-大多数更改将通过拉取请求提交 拉取请求是一种通过多个查看器查看更改集、对当前内容进行更改和注释的方式。
+大多数更改将通过拉取请求提交  拉取请求是一种通过多个查看器查看更改集、对当前内容进行更改和注释的方式。
 
 
 ## 本地分叉和编辑存储库
 
 对于长期的文档任务，请在本地克隆存储库，并在计算机上处理。
 
-以下指南向你展示如何模拟我的（Sarah Cooley 的）设置。 有许多同等有效的替代设置。
+以下指南向你展示如何模拟我的（Sarah Cooley 的）设置。  有许多同等有效的替代设置。
 
-> **注意：**所有这些文档工具在 Linux/OSX 上同等有效。 如果需要其他指南，请提出。
+> **注意：**所有这些文档工具在 Linux/OSX 上同等有效。  如果需要其他指南，请提出。
 
 这分为三个部分：
-* [设置 git](contribute_to_docs.md#set-up-git)
+* [设置 Git](contribute_to_docs.md#set-up-git)
   * git 安装
   * 初始设置
   * 分叉文档存储库
@@ -88,8 +92,7 @@ ms.assetid: 731ed95a-ce13-4c6e-a450-49563bdc498c
 
   在安装中只有一个值你需要更改：
 
-  **调整你的 PATH 环境**
-  从 Windows 命令提示使用 Git
+  **调整你的 PATH 环境** 从 Windows 命令提示符处使用 Git
 
   ![](media/GitFromWinCMD.png)
 
@@ -106,10 +109,10 @@ ms.assetid: 731ed95a-ce13-4c6e-a450-49563bdc498c
 
   Git 使用这些值来标记你的提交。
 
-> 如果收到以下错误，则可能未正确安装 git，或者你需要重新启动 PowerShell。
->    ``` PowerShell
->    git：术语“git”无法识别为 cmdlet、函数、脚本文件或可运行程序的名称。 请检查名称的拼写，或者如果包括路径，请验证路径是否正确并重试。
->    ```
+  > 如果收到以下错误，则可能未正确安装 git，或者你需要重新启动 PowerShell。
+    ``` PowerShell
+    git : The term 'git' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+    ```
 
 3. 配置你的 git 环境
 
@@ -131,8 +134,7 @@ ms.assetid: 731ed95a-ce13-4c6e-a450-49563bdc498c
    password:
    authcode (app): 562689
    ```
-   这将在 GitHub 上自动生成具有适当权限的[个人访问令牌](https://github.com/settings/tokens)，
-   然后将该令牌安全地存储在本地计算机上。 未来将不会再次提示你输入。
+   这将在 GitHub 上自动生成具有适当权限的[个人访问令牌](https://github.com/settings/tokens)，然后将该令牌安全地存储在本地计算机上。 未来将不会再次提示你输入。
 
 4. 分叉存储库
 
@@ -140,14 +142,14 @@ ms.assetid: 731ed95a-ce13-4c6e-a450-49563bdc498c
 
   Git 克隆将生成具有正确挂钩的 git 存储库的本地副本，可用于同步同一存储库中的其他克隆。
 
-  默认情况下，克隆将使用当前目录中的存储库名称创建文件夹。 我将我的所有 git 存储库保留在我的用户目录中。 在[此处](http://git-scm.com/docs/git-clone)阅读有关 git 克隆的详细信息。
+  默认情况下，克隆将使用当前目录中的存储库名称创建文件夹。  我将我的所有 git 存储库保留在我的用户目录中。  在[此处](http://git-scm.com/docs/git-clone)阅读有关 git 克隆的详细信息。
 
   ``` PowerShell
   cd ~
   git clone https://github.com/Microsoft/Virtualization-Documentation.git
   ```
 
-  如果成功，你现在将有`虚拟化文档`文件夹。
+  如果成功，现在将具有 `Virtualization-Documentation` 文件夹。
 
   ``` PowerShell
   cd Virtualization-Documentation
@@ -155,13 +157,13 @@ ms.assetid: 731ed95a-ce13-4c6e-a450-49563bdc498c
 
 5. [可选] 设置 Posh-Git
 
-  Posh-Git 是社区创建的 PowerShell 模块，使得在 PowerShell 中使用 Git 变得更加友好。 它在 PowerShell 中为 Git 添加 Tab 自动补全，还可使提示显示有关分支和文件状态的有用信息。 你可在[此处](https://github.com/dahlbyk/posh-git)阅读有关它的详细信息。 可以通过在管理员 PowerShell 控制台中运行以下命令来安装 Posh-Git。
+  Posh-Git 是社区创建的 PowerShell 模块，使得在 PowerShell 中使用 Git 变得更加友好。  它在 PowerShell 中为 Git 添加 Tab 自动补全，还可使提示显示有关分支和文件状态的有用信息。  你可在[此处](https://github.com/dahlbyk/posh-git)阅读有关它的详细信息。  可以通过在管理员 PowerShell 控制台中运行以下命令来安装 Posh-Git。
 
   ``` PowerShell
   Install-Module -Name posh-git
   ```
 
-  若要使 Posh-Git 在每次启动 PowerShell 时都会自动工作，请将以下代码添加到 PowerShell 配置文件（例如 `%UserProfile%\My Documents\WindowsPowerShell\profile.ps1`）
+  若要使 Posh-Git 在每次启动 PowerShell 时都会自动工作，请将以下代码添加到 PowerShell 配置文件（例如 `%UserProfile%\My Documents\WindowsPowerShell\profile.ps1 `）
 
   ``` PowerShell
   Import-Module posh-git
@@ -191,16 +193,13 @@ ms.assetid: 731ed95a-ce13-4c6e-a450-49563bdc498c
 
 1. 下载 VSCode
 
-6. 进行测试提交。 如果凭据正确存储，都应顺畅工作。
+6. 进行测试提交。  如果凭据正确存储，都应顺畅工作。
 
 
 
 
 
 
-
-
-
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO4-->
 
 
