@@ -1,6 +1,10 @@
+---
+author: scooley
+translationtype: Human Translation
+ms.sourcegitcommit: af065ec180f1b5de9e40ef269e7278a16b0c3b7f
+ms.openlocfilehash: 5463412d44bd7c657401c55558bb817df4cc1eb2
 
-
-
+---
 
 # 适用于容器的 PowerShell
 
@@ -9,11 +13,11 @@
 **名称**      
 Install-ContainerOSImage
 
-**摘要**  
+**简述**  
 安装给定 WIM 作为容器操作系统映像，以供与 Windows Server 或 Hyper-V 容器一起使用。
 
 
-**语法**
+**SYNTAX**  
 ``` PowerShell  
 Install-ContainerOSImage [-WimPath] <String> [-Force] [< CommonParameters >]
 ```
@@ -21,7 +25,7 @@ Install-ContainerOSImage [-WimPath] <String> [-Force] [< CommonParameters >]
 **说明**  
 将 WIM 文件的基础映像安装到 Windows Server 和 Hyper-V 容器功能的共享中央映像存储区中。
 
-**参数**
+**PARAMETERS**
 ``` PowerShell
     -WimPath <String>
         A path to the WIM file that will be installed.
@@ -67,17 +71,17 @@ PS C:\>Install-ContainerOSImage c:\baseimage.wim
 **名称**  
 Uninstall-ContainerOSImage
 
-**摘要**  
+**简述**  
 删除以前安装的容器操作系统映像
 
-**语法**
+**SYNTAX**   
 ```PowerShell
 Uninstall-ContainerOSImage [-ImageName] <string> [-Force]  [< CommonParameters >]
 
 Uninstall-ContainerOSImage [-ContainerImage] <Object> [-Force]  [< CommonParameters >]
 ```
 
-**参数**
+**PARAMETERS**  
 ``` PowerShell
     -ContainerImage <Object>
 
@@ -123,15 +127,15 @@ System.Object
 **别名**  
 无
 
-## Add-ContainerNetworkAdapter
+## Add-ContainerNetworkAdapter ##
 
 **名称**  
 Add-ContainerNetworkAdapter
 
-**摘要**  
+**简述**  
 将新网络适配器添加到现有容器
 
-**语法**
+**SYNTAX** 
 ``` PowerShell  
 Add-ContainerNetworkAdapter [-ContainerName] <string[]> [-CimSession <CimSession[]>] [-ComputerName <string[]>]
     [-Credential <pscredential[]>] [-SwitchName <string>] [-Name <string>] [-DynamicMacAddress] [-StaticMacAddress
@@ -141,7 +145,7 @@ Add-ContainerNetworkAdapter [-ContainerName] <string[]> [-CimSession <CimSession
     [-DynamicMacAddress] [-StaticMacAddress <string>] [-Passthru] [-WhatIf] [-Confirm]  [<CommonParameters>]
 ```
 
-**参数**
+**PARAMETERS**  
 ``` PowerShell
     -CimSession <CimSession[]>
 
@@ -276,10 +280,10 @@ Microsoft.Containers.PowerShell.Objects.ContainerNetworkAdapter
 **名称**  
 Connect-ContainerNetworkAdapter
 
-**摘要**  
+**简述**  
 将容器网络适配器连接到虚拟交换机
 
-**语法**
+**SYNTAX**  
 ``` PowerShell
     Connect-ContainerNetworkAdapter [-ContainerName] <string[]> [[-Name] <string[]>] [-SwitchName] <string>
     [-Passthru] [-CimSession <CimSession[]>] [-ComputerName <string[]>] [-Credential <pscredential[]>] [-WhatIf]
@@ -289,7 +293,7 @@ Connect-ContainerNetworkAdapter
     [-WhatIf] [-Confirm]  [<CommonParameters>]
 ```
 
-**参数**
+**PARAMETERS**  
 ``` PowerShell
     -CimSession <CimSession[]>
 
@@ -404,10 +408,10 @@ Microsoft.Containers.PowerShell.Objects.ContainerNetworkAdapter
 **名称**  
 Disconnect-ContainerNetworkAdapter
 
-**摘要**  
+**简述**  
 从虚拟交换机断开容器网络适配器连接
 
-**语法**
+**SYNTAX**  
 ``` PowerShell
     Disconnect-ContainerNetworkAdapter [-ContainerName] <string[]> [[-Name] <string[]>] [-CimSession <CimSession[]>]
     [-ComputerName <string[]>] [-Credential <pscredential[]>] [-Passthru] [-WhatIf] [-Confirm]  [<CommonParameters>]
@@ -416,7 +420,7 @@ Disconnect-ContainerNetworkAdapter
     [<CommonParameters>]
 ```
 
-**参数**
+**PARAMETERS**  
 ``` PowerShell
     -CimSession <CimSession[]>
 
@@ -522,10 +526,10 @@ Microsoft.Containers.PowerShell.Objects.ContainerNetworkAdapter
 **名称**  
 Export-ContainerImage
 
-**摘要**  
+**简述**  
 从本地存储中复制容器映像
 
-**语法**
+**SYNTAX**  
 ``` PowerShell
     Export-ContainerImage [[-Name] <string>] [-Path] <string> [[-Version] <version>] [-CimSession <CimSession[]>]
     [-ComputerName <string[]>] [-Credential <pscredential[]>] [-AsJob] [-Passthru] [-WhatIf] [-Confirm]
@@ -535,7 +539,7 @@ Export-ContainerImage
     [<CommonParameters>]
 ```
 
-**参数**
+**PARAMETERS**
 ``` PowerShell
     -AsJob
 
@@ -668,10 +672,10 @@ Microsoft.Containers.PowerShell.Objects.ContainerImage
 **名称**  
 Get-Container
 
-**摘要**  
+**简述**  
 枚举当前系统上的容器
 
-**语法**
+**SYNTAX**  
 ``` PowerShell
     Get-Container [[-Name] <string[]>] [-CimSession <CimSession[]>] [-ComputerName <string[]>] [-Credential
     <pscredential[]>]  [<CommonParameters>]
@@ -680,7 +684,7 @@ Get-Container
     <pscredential[]>]  [<CommonParameters>]
 ```
 
-**参数**
+**PARAMETERS**  
 ``` PowerShell
     -CimSession <CimSession[]>
 
@@ -751,17 +755,17 @@ Microsoft.Containers.PowerShell.Objects.Container
 **名称**  
 Get-ContainerHost
 
-**摘要**  
+**简述**  
 获取容器主机的主机对象
 
-**语法**
+**SYNTAX**  
 ``` PowerShell
     Get-ContainerHost [[-ComputerName] <string[]>] [[-Credential] <pscredential[]>]  [<CommonParameters>]
 
     Get-ContainerHost [-CimSession] <CimSession[]>  [<CommonParameters>]
 ```
 
-**参数**
+**PARAMETERS**  
 ``` PowerShell
     -CimSession <CimSession[]>
 
@@ -815,16 +819,16 @@ Microsoft.Containers.PowerShell.Objects.ContainerHost
 **名称**  
 Get-ContainerImage
 
-**摘要**  
+**简述**  
 列出容器主机上的容器映像
 
-**语法**
+**SYNTAX**  
 ``` PowerShell
 Get-ContainerImage [[-Name] <string>] [[-Publisher] <string>] [[-Version] <version>] [-ChildOf <ContainerImage>]
 [-CimSession <CimSession[]>] [-ComputerName <string[]>] [-Credential <pscredential[]>]  [<CommonParameters>]
 ```
 
-**参数**
+**PARAMETERS**  
 ``` PowerShell
     -ChildOf <ContainerImage>
 
@@ -912,10 +916,10 @@ Microsoft.Containers.PowerShell.Objects.ContainerImage
 **名称**  
 获取 ContainerNetworkAdapter
 
-**摘要**  
+**简述**  
 列出与容器相关联的网络适配器
 
-**语法**
+**SYNTAX**  
 ``` PowerShell
     Get-ContainerNetworkAdapter [-ContainerName] <string[]> [[-Name] <string>] [-CimSession <CimSession[]>]
     [-ComputerName <string[]>] [-Credential <pscredential[]>]  [<CommonParameters>]
@@ -923,7 +927,7 @@ Microsoft.Containers.PowerShell.Objects.ContainerImage
     Get-ContainerNetworkAdapter [-Container] <Container[]> [[-Name] <string>]  [<CommonParameters>]
 ```
 
-**参数**
+**PARAMETERS**  
 ``` PowerShell
     -CimSession <CimSession[]>
 
@@ -988,31 +992,31 @@ Microsoft.Containers.PowerShell.Objects.ContainerImage
 
 **输入**  
 Microsoft.Containers.PowerShell.Objects.Container\[\]  
-System.String\[\]
+System.String\[\]  
 
 
 **输出**  
-Microsoft.Containers.PowerShell.Objects.ContainerNetworkAdapter
+Microsoft.Containers.PowerShell.Objects.ContainerNetworkAdapter  
 
 
 **别名**  
-无
+无  
 
 ## Import-ContainerImage
 
 **名称**  
 Import-ContainerImage
 
-**摘要**  
+**简述**  
 导入已从其他计算机导出的容器映像
 
-**语法**
+**SYNTAX**  
 ``` PowerShell
     Import-ContainerImage [-Path] <string> [-AsJob] [-CimSession <CimSession[]>] [-ComputerName <string[]>]
     [-Credential <pscredential[]>] [-WhatIf] [-Confirm]  [<CommonParameters>]
 ```
 
-**参数**
+**PARAMETERS**  
 ``` PowerShell
     -AsJob
 
@@ -1100,16 +1104,16 @@ Microsoft.Containers.PowerShell.Objects.ContainerImage
 **名称**  
 Move-ContainerImageRepository
 
-**摘要**  
-更改容器映像的存储位置。 必须是本地磁盘上的位置。 只能在系统上没有显示任何映像的情况下更改。
+**简述**  
+更改容器映像的存储位置。  必须是本地磁盘上的位置。  只能在系统上没有显示任何映像的情况下更改。
 
-**语法**
+**SYNTAX**  
 ``` PowerShell
     Move-ContainerImageRepository [-Path] <string> [-AsJob] [-Passthru] [-CimSession <CimSession[]>] [-ComputerName
     <string[]>] [-Credential <pscredential[]>] [-WhatIf] [-Confirm]  [<CommonParameters>]
 ```
 
-**参数**
+**PARAMETERS**  
 ``` PowerShell
     -AsJob
 
@@ -1198,18 +1202,17 @@ Move-ContainerImageRepository
 Microsoft.HyperV.PowerShell.VMHost
 
 
-**别名**
-无
+**别名**无
 
 ## New-Container
 
 **名称**  
 New-Container
 
-**摘要**  
+**简述**  
 创建新容器
 
-**语法**
+**SYNTAX**  
 ``` PowerShell
     New-Container [[-Name] <string>] -ContainerImageName <string> [-ContainerImagePublisher <string>]
     [-ContainerImageVersion <version>] [-CimSession <CimSession[]>] [-ComputerName <string[]>] [-Credential
@@ -1220,7 +1223,7 @@ New-Container
     <string>] [-Path <string>] [-AsJob] [-WhatIf] [-Confirm]  [<CommonParameters>]
 ```
 
-**参数**
+**PARAMETERS**  
 ``` PowerShell
     -AsJob
 
@@ -1371,10 +1374,10 @@ Microsoft.Containers.PowerShell.Objects.Container
 **名称**  
 New-ContainerImage
 
-**摘要**  
+**简述**  
 从现有容器创建新容器映像
 
-**语法**
+**SYNTAX**  
 ``` PowerShell
     New-ContainerImage [-ContainerName] <string> [-Name] <string> [-Publisher] <string> [-Version] <version>
     [-CimSession <CimSession[]>] [-ComputerName <string[]>] [-Credential <pscredential[]>] [-WhatIf] [-Confirm]
@@ -1388,7 +1391,7 @@ New-ContainerImage
     [<CommonParameters>]
 ```
 
-**参数**
+**PARAMETERS**  
 ``` PowerShell
     -CimSession <CimSession[]>
 
@@ -1512,10 +1515,10 @@ Microsoft.Containers.PowerShell.Objects.ContainerImage
 **名称**  
 Remove-Container
 
-**摘要**  
+**简述**  
 从系统中删除现有容器
 
-**语法**
+**SYNTAX**  
 ``` PowerShell
     Remove-Container [-Name] <string[]> [-CimSession <CimSession[]>] [-ComputerName <string[]>] [-Credential
     <pscredential[]>] [-Force] [-AsJob] [-Passthru] [-WhatIf] [-Confirm]  [<CommonParameters>]
@@ -1524,7 +1527,7 @@ Remove-Container
     [<CommonParameters>]
 ```
 
-**参数**
+**PARAMETERS**  
 ``` PowerShell
     -AsJob
 
@@ -1640,10 +1643,10 @@ Microsoft.Containers.PowerShell.Objects.Container
 **名称**  
 Remove-ContainerImage
 
-**摘要**  
+**简述**  
 从容器主机中删除容器映像
 
-**语法**
+**SYNTAX**  
 ``` PowerShell
     Remove-ContainerImage [[-Name] <string>] [[-Publisher] <string>] [[-Version] <version>] [-CimSession
     <CimSession[]>] [-ComputerName <string[]>] [-Credential <pscredential[]>] [-Force] [-WhatIf] [-Confirm]
@@ -1652,7 +1655,7 @@ Remove-ContainerImage
     Remove-ContainerImage [-Image] <ContainerImage> [-Force] [-WhatIf] [-Confirm]  [<CommonParameters>]
 ```
 
-**参数**
+**PARAMETERS**  
 ``` PowerShell
     -CimSession <CimSession[]>
 
@@ -1766,10 +1769,10 @@ System.Object
 **名称**  
 Remove-ContainerNetworkAdapter
 
-**摘要**  
+**简述**  
 从容器中删除网络适配器
 
-**语法**
+**SYNTAX**  
 ``` PowerShell
     Remove-ContainerNetworkAdapter [-ContainerName] <string[]> [-CimSession <CimSession[]>] [-ComputerName <string[]>]
     [-Credential <pscredential[]>] [-Name <string>] [-Passthru] [-WhatIf] [-Confirm]  [<CommonParameters>]
@@ -1781,7 +1784,7 @@ Remove-ContainerNetworkAdapter
     [<CommonParameters>]
 ```
 
-**参数**
+**PARAMETERS**  
 ``` PowerShell
     -CimSession <CimSession[]>
 
@@ -1898,10 +1901,10 @@ Microsoft.Containers.PowerShell.Objects.ContainerNetworkAdapter
 **名称**  
 Set-ContainerNetworkAdapter
 
-**摘要**  
+**简述**  
 在容器中的网络适配器上设置 MAC 地址
 
-**语法**
+**SYNTAX**  
 ``` PowerShell
     Set-ContainerNetworkAdapter [-ContainerName] <string> [-CimSession <CimSession[]>] [-ComputerName <string[]>]
     [-Credential <pscredential[]>] [-Name <string>] [-DynamicMacAddress] [-StaticMacAddress <string>] [-Passthru]
@@ -1914,7 +1917,7 @@ Set-ContainerNetworkAdapter
     <string>] [-Passthru] [-WhatIf] [-Confirm]  [<CommonParameters>]
 ```
 
-**参数**
+**PARAMETERS**  
 ``` PowerShell
     -CimSession <CimSession[]>
 
@@ -2049,10 +2052,10 @@ Microsoft.Containers.PowerShell.Objects.ContainerNetworkAdapter
 **名称**  
 Start-Container
 
-**摘要**  
+**简述**  
 启动容器
 
-**语法**
+**SYNTAX**  
 ``` PowerShell
     Start-Container [-Name] <string[]> [-CimSession <CimSession[]>] [-ComputerName <string[]>] [-Credential
     <pscredential[]>] [-AsJob] [-Passthru] [-WhatIf] [-Confirm]  [<CommonParameters>]
@@ -2060,7 +2063,7 @@ Start-Container
     Start-Container [-Container] <Container[]> [-AsJob] [-Passthru] [-WhatIf] [-Confirm]  [<CommonParameters>]
 ```
 
-**参数**
+**PARAMETERS**  
 ``` PowerShell
     -AsJob
 
@@ -2167,10 +2170,10 @@ Microsoft.Containers.PowerShell.Objects.Container
 **名称**  
 Stop-Container
 
-**摘要**  
+**简述**  
 停止容器
 
-**语法**
+**SYNTAX**  
 ``` PowerShell
     Stop-Container [-Name] <string[]> [-CimSession <CimSession[]>] [-ComputerName <string[]>] [-Credential
     <pscredential[]>] [-TurnOff] [-AsJob] [-Passthru] [-WhatIf] [-Confirm]  [<CommonParameters>]
@@ -2179,7 +2182,7 @@ Stop-Container
     [<CommonParameters>]
 ```
 
-**参数**
+**PARAMETERS**  
 ``` PowerShell
     -AsJob
 
@@ -2295,10 +2298,10 @@ Microsoft.Containers.PowerShell.Objects.Container
 **名称**  
 Test-ContainerImage
 
-**摘要**  
+**简述**  
 验证容器主机系统上的容器映像
 
-**语法**
+**SYNTAX**  
 ``` PowerShell
     Test-ContainerImage [[-Name] <string>] [[-Publisher] <string>] [[-Version] <version>] [-CimSession <CimSession[]>]
     [-ComputerName <string[]>] [-Credential <pscredential[]>] [-AsJob] [-WhatIf] [-Confirm]  [<CommonParameters>]
@@ -2306,7 +2309,7 @@ Test-ContainerImage
     Test-ContainerImage [-Image] <ContainerImage> [-AsJob] [-WhatIf] [-Confirm]  [<CommonParameters>]
 ```
 
-**参数**
+**PARAMETERS**  
 ``` PowerShell
     -AsJob
 
@@ -2417,9 +2420,6 @@ Microsoft.Containers.PowerShell.Objects.ContainerImageReport
 无
 
 
-
-
-
-<!--HONumber=Feb16_HO3-->
+<!--HONumber=Jun16_HO4-->
 
 

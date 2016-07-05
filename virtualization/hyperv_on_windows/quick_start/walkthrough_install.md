@@ -1,14 +1,18 @@
 ---
-title: &2110268976 在 Windows 10 上安装 Hyper-V
-description: 在 Windows 10 上安装 Hyper-V
+title: "在 Windows 10 上安装 Hyper-V"
+description: "在 Windows 10 上安装 Hyper-V"
 keywords: windows 10, hyper-v
 author: neilpeterson
 manager: timlt
 ms.date: 05/02/2016
 ms.topic: article
-ms.prod: &376210605 windows-10-hyperv
+ms.prod: windows-10-hyperv
 ms.service: windows-10-hyperv
 ms.assetid: 752dc760-a33c-41bb-902c-3bb2ecd9ac86
+translationtype: Human Translation
+ms.sourcegitcommit: e14ede0a2b13de08cea0a955b37a21a150fb88cf
+ms.openlocfilehash: 9e2b16f3e6c9882246a5a4c21683112eaa089ce8
+
 ---
 
 # 在 Windows 10 上安装 Hyper-V
@@ -21,9 +25,9 @@ ms.assetid: 752dc760-a33c-41bb-902c-3bb2ecd9ac86
 
 1. 右键单击 Windows 按钮并选择“程序和功能”。
 
-2. 选择“打开或关闭 Windows 功能”。
+2. 选择“**打开或关闭 Windows 功能**”。
 
-3. 选择“Hyper-V”，然后单击“确定”。
+3. 选择“**Hyper-V**”，然后单击“**确定**”。  
 
 ![](media/enable_role_upd.png)
 
@@ -59,14 +63,10 @@ DISM /Online /Enable-Feature /All /FeatureName:Microsoft-Hyper-V
 
 
 ## 下一步 - 创建虚拟交换机
-
 [创建虚拟交换机](walkthrough_virtual_switch.md)
 
 
 
-
-
-
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO4-->
 
 

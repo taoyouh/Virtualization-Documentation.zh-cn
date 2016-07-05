@@ -1,21 +1,25 @@
 ---
-title: &733313257 Windows 10 上的 Hyper-V
-description: Windows 10 上的 Hyper-V
+title: "Windows 10 上的 Hyper-V"
+description: "Windows 10 上的 Hyper-V"
 keywords: windows 10, hyper-v
 author: neilpeterson
 manager: timlt
 ms.date: 05/02/2016
 ms.topic: article
-ms.prod: &1603416166 windows-10-hyperv
+ms.prod: windows-10-hyperv
 ms.service: windows-10-hyperv
 ms.assetid: 05269ce0-a54f-4ad8-af75-2ecf5142b866
+translationtype: Human Translation
+ms.sourcegitcommit: e14ede0a2b13de08cea0a955b37a21a150fb88cf
+ms.openlocfilehash: 4d5c2ad7515b8b536da30ad2dd3b4ffc2cee5832
+
 ---
 
-# Windows 10 上的 Hyper-V
+# Windows 10 上的 Hyper-V 
 
 多个版本的 Windows 10 包含 Hyper-V 虚拟化技术。 Hyper-V 支持在物理主机上运行虚拟化的计算机系统。 可以像在物理计算机系统上一样使用和管理这些虚拟化的系统，但它们存在于虚拟化和隔离的环境中。 称为虚拟机监控程序的特殊软件可管理虚拟系统和物理硬件资源之间的访问权限。 虚拟化支持快速部署计算机系统、快速将系统还原为先前已知的良好状态的方法和在物理主机之间迁移系统的能力。
 
-以下文档详细介绍 Windows 10 中的 Hyper-V 功能、提供快速入门指南，并且还包含将来资源和社区论坛的链接。
+以下文档详细介绍 Windows 10 中的 Hyper-V 功能、提供快速入门指南，并且还包含将来资源和社区论坛的链接。 
 
 <table border="1" style="background-color:FFFFCC;border-collapse:collapse;border:1px solid FFCC00;color:000000;width:100%" cellpadding="15" cellspacing="3">
     <tr valign="top">
@@ -58,9 +62,6 @@ ms.assetid: 05269ce0-a54f-4ad8-af75-2ecf5142b866
 
 
 
-
-
-
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO4-->
 
 

@@ -1,6 +1,6 @@
 ---
-title: 容器部署快速入门 - 映像
-description: 容器部署快速入门
+title: "容器部署快速入门 - 映像"
+description: "容器部署快速入门"
 keywords: docker, containers
 author: neilpeterson
 manager: timlt
@@ -9,13 +9,17 @@ ms.topic: article
 ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: 479e05b1-2642-47c7-9db4-d2a23592d29f
+translationtype: Human Translation
+ms.sourcegitcommit: eae45c2c81c7edc94d963da69dcdee2b6f08f37d
+ms.openlocfilehash: ac9596d210e72b9fd576f728e8e6bbdc293597d7
+
 ---
 
 # Windows Server 上的容器映像
 
 **这是初步内容，可能还会更改。** 
 
-在之前的 Windows Server 快速入门中，已从预先存在的容器映像创建了 Windows 容器。 本练习中将详细介绍手动创建你自己的容器映像以及使用 Dockerfile 创建映像。
+在之前的 Windows Server 快速入门中，已从预先存在的容器映像创建了 Windows 容器。 本练习中将详细介绍手动创建自定义容器映像以及如何使用 Dockerfile。
 
 本快速入门特定于 Windows Server 2016 上的 Windows Server 容器。 此页面左侧的目录中提供其他快速入门文档。 
 
@@ -161,6 +165,7 @@ docker rm -f cranky_brown
 
 [Windows 10 上的 Windows 容器](./quick_start_windows_10.md)
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO5-->
 
 
