@@ -299,6 +299,9 @@
   "640cdeabb1f10e4e69f909c33d3c4e483dad00aa": [
     "virtualization\\windowscontainers\\Nano_EULA.md"
   ],
+  "876ffb4f4da32495fb77b735391203c33c78cff3": [
+    "virtualization\\windowscontainers\\deployment\\deployment_nano.md"
+  ],
   "6e0bd1b864b202463e7a7e4e5561f650914e51d6": [
     "virtualization\\windowscontainers\\deployment\\deployment_nano.md"
   ],
@@ -334,6 +337,9 @@
   ],
   "7dee9e53f0e95b0c3b0ec0afc5b9d510c1962dbc": [
     "virtualization\\hyperv_on_windows\\user_guide\\create_pre-release_vm.md"
+  ],
+  "ace5fd12856cdcff3a380eb35e4982c4c1ce4c5a": [
+    "virtualization\\windowscontainers\\docker\\manage_windows_dockerfile.md"
   ],
   "71e0fb430498f8a5ae4ac5b297cf5e4a2c904098": [
     "virtualization\\windowscontainers\\docker\\manage_windows_dockerfile.md"
@@ -373,6 +379,9 @@
   ],
   "40b55028820472aadc5d70d338de417616c653d3": [
     "virtualization\\windowscontainers\\quick_start\\quick_start_windows_server.md"
+  ],
+  "533f3a3277e3d9654f0d425c9c0f442c93e2d24a": [
+    "virtualization\\windowscontainers\\docker\\configure_docker_daemon.md"
   ],
   "1fddaff6fc260c0cf91c8626a60d768a06995e53": [
     "virtualization\\windowscontainers\\docker\\configure_docker_daemon.md"
