@@ -362,6 +362,9 @@
   "ac9596d210e72b9fd576f728e8e6bbdc293597d7": [
     "virtualization\\windowscontainers\\quick_start\\quick_start_images.md"
   ],
+  "926c79a41f44072c9b0a24526c69aa656229327c": [
+    "virtualization\\windowscontainers\\quick_start\\quick_start_windows_10.md"
+  ],
   "188c85a9e6f5d1c334e51853efd8fa3ca461837c": [
     "virtualization\\windowscontainers\\quick_start\\quick_start_windows_10.md"
   ],
