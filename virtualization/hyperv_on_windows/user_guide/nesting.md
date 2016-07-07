@@ -9,6 +9,7 @@ ms.topic: article
 ms.prod: windows-10-hyperv
 ms.service: windows-10-hyperv
 ms.assetid: 68c65445-ce13-40c9-b516-57ded76c1b15
+translationtype: Human Translation
 ms.sourcegitcommit: 26a8adb426a7cf859e1a9813da2033e145ead965
 ms.openlocfilehash: d17413fc572e59ec21ff513ef5de994c6716aa08
 
@@ -134,6 +135,6 @@ Set-VMSecurity -VMName <vmname> -VirtualizationBasedSecurityOptOut $true
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO1-->
 
 

@@ -1,45 +1,14 @@
 ---
-title: "虚拟机监控程序规范"
-description: "虚拟机监控程序规范"
-keywords: windows 10, hyper-v
-author: scooley
-manager: timlt
-ms.date: 05/02/2016
-ms.topic: article
-ms.prod: windows-10-hyperv
-ms.service: windows-10-hyperv
-ms.assetid: aee64ad0-752f-4075-a115-2d6b983b4f49
+redirect_url: ../reference/tlfs
 translationtype: Human Translation
-ms.sourcegitcommit: e14ede0a2b13de08cea0a955b37a21a150fb88cf
-ms.openlocfilehash: 82b5055c390ce6754403b4de571b4c75298ff462
+ms.sourcegitcommit: 6c1a2e31a979d5f29a36f2de1e6eb20026a40dc1
+ms.openlocfilehash: 7e30371f4a62c3c807b452689fd2d14177a5b822
 
 ---
 
-# 虚拟机监控程序规范
-
-## 虚拟机监控程序顶层功能规范
-
-Hyper-V 虚拟机监控程序顶层功能规范 (TLFS) 描述了虚拟机监控程序对其他操作系统组件的外部可见的行为。 此规范对来宾操作系统开发人员很有用。
-  
-> 此规范根据 Microsoft 开放规范承诺书而提供。  阅读以下内容，进一步了解有关 [Microsoft 开放规范承诺书](https://msdn.microsoft.com/en-us/openspecifications)的详细信息。  
-
-#### 下载
-版本 | 文档
---- | ---
-Windows Server 2012 R2（修订版 B） | [Hypervisor Top Level Functional Specification v4.0b.pdf](https://github.com/Microsoft/Virtualization-Documentation/raw/master/tlfs/Hypervisor%20Top%20Level%20Functional%20Specification%20v4.0b.pdf)
-Windows Server 2012 R2 | [Hypervisor Top Level Functional Specification v4.0.pdf](https://github.com/Microsoft/Virtualization-Documentation/raw/master/tlfs/Hypervisor%20Top%20Level%20Functional%20Specification%20v4.0.pdf)
-Windows Server 2012 | [Hypervisor Top Level Functional Specification v3.0.pdf](https://github.com/Microsoft/Virtualization-Documentation/raw/master/tlfs/Hypervisor%20Top%20Level%20Functional%20Specification%20v3.0.pdf)
-Windows Server 2008 R2 | [Hypervisor Top Level Functional Specification v2.0.pdf](https://github.com/Microsoft/Virtualization-Documentation/raw/master/tlfs/Hypervisor%20Top%20Level%20Functional%20Specification%20v2.0.pdf)
-
-## 实现 Microsoft 虚拟机管理程序接口的要求
-
-Windows 操作系统需要一组受限制的虚拟机管理程序接口在来宾虚拟机（也称为“HV #1”接口）中运行。 此外，可以通过 Microsoft 兼容的虚拟机监控程序来实现一些可选功能。 这些选项将更改虚拟机中的 Windows 行为。 “实现 Microsoft 虚拟机管理程序接口的要求”描述了由 Microsoft 兼容的虚拟机监控程序实现的必需和可选功能。
-
-#### 下载
-
-[Requirements for Implementing the Microsoft Hypervisor Interface.pdf](https://github.com/Microsoft/Virtualization-Documentation/raw/master/tlfs/Requirements%20for%20Implementing%20the%20Microsoft%20Hypervisor%20Interface.pdf)
+# 已重定向 – 无标题
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jun16_HO5-->
 
 

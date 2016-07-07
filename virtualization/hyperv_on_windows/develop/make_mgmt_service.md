@@ -10,8 +10,8 @@ ms.prod: windows-10-hyperv
 ms.service: windows-10-hyperv
 ms.assetid: 1ef8f18c-3d76-4c06-87e4-11d8d4e31aea
 translationtype: Human Translation
-ms.sourcegitcommit: e14ede0a2b13de08cea0a955b37a21a150fb88cf
-ms.openlocfilehash: e7d6e4f44756f84fc324f2d4cb55f8762dcbba6b
+ms.sourcegitcommit: 766f40019719ce71e6d5052ec48c6c41571f482b
+ms.openlocfilehash: 21149a48525445384d54da2cd54a9fb654006d99
 
 ---
 
@@ -205,7 +205,12 @@ struct SOCKADDR_HV
 
 ## 受支持的套接字命令
 
-Socket() Bind() Connect() Send() Listen() Accept()
+Socket()  
+Bind()  
+Connect()  
+Send()  
+Listen()  
+Accept()  
 
 [完整 WinSock API](https://msdn.microsoft.com/en-us/library/windows/desktop/ms741394.aspx)
 
@@ -214,6 +219,6 @@ Socket() Bind() Connect() Send() Listen() Accept()
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jun16_HO5-->
 
 
