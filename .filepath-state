@@ -1,4 +1,7 @@
 {
+  "ad84961d0a79853e2aadcf9ed0e37e340103835a": [
+    "virtualization\\hyperv_on_windows\\about\\hyperv_on_windows.md"
+  ],
   "25295b8a2888e25090439a3490c9ff7c3214f23a": [
     "virtualization\\hyperv_on_windows\\about\\hyperv_on_windows.md"
   ],
@@ -385,6 +388,9 @@
   ],
   "1fddaff6fc260c0cf91c8626a60d768a06995e53": [
     "virtualization\\windowscontainers\\docker\\configure_docker_daemon.md"
+  ],
+  "a2fc8845bdc3e5f977d50b99ca9687b3dafd0cb6": [
+    "virtualization\\hyperv_on_windows\\reference\\ic_info.md"
   ],
   "e1c0404ee45ad8e775dc2319359cd16c6487ef12": [
     "virtualization\\hyperv_on_windows\\reference\\ic_info.md"
