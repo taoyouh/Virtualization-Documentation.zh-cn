@@ -1,7 +1,7 @@
 ---
 title: "使用 PowerShell Direct 管理 Windows 虚拟机"
 description: "使用 PowerShell Direct 管理 Windows 虚拟机"
-keywords: windows 10, hyper-v
+keywords: windows 10, hyper-v, powershell, integration services, integration components, automation, powershell direct
 author: scooley
 manager: timlt
 ms.date: 05/02/2016
@@ -10,19 +10,19 @@ ms.prod: windows-10-hyperv
 ms.service: windows-10-hyperv
 ms.assetid: fb228e06-e284-45c0-b6e6-e7b0217c3a49
 translationtype: Human Translation
-ms.sourcegitcommit: 6eb26eda92217917a3abe7d9dd4c77c48283c8dc
-ms.openlocfilehash: 91927b751021efa9ba2cf696516ba50af28c6e05
+ms.sourcegitcommit: 87f8fb2ae8958c9c6177f6eda90678708054fce7
+ms.openlocfilehash: 75186d48346efbaaac264b00f0f92fe82fcfe424
 
 ---
 
-# 使用 PowerShell Direct 管理 Windows 虚拟机
+# 使用 PowerShell 实现虚拟机自动化和管理虚拟机
  
-可以从 Windows 10 或 Windows Server Technical Preview Hyper-V 主机中使用 PowerShell Direct 远程管理 Windows 10 或 Windows Server Technical Preview 虚拟机。 不管 Hyper-V 主机或虚拟机上的网络配置或远程管理设置如何，PowerShell Direct 都允许在虚拟机中管理 PowerShell。 这使得 Hyper-V 管理员能够更简单地自动化管理和配置任务，并为其编写脚本。
+可以在 Hyper-V 主机上的 Windows 10 或 Windows Server 技术预览版虚拟机中使用 PowerShell Direct 运行任意 PowerShell，而无论网络配置或远程管理设置如何。
 
 **运行 PowerShell Direct 的方法：**  
 * 作为交互式会话 - 请[单击此处](vmsession.md#create-and-exit-an-interactive-powershell-session)以使用 Enter-PSSession 创建和退出交互式 PowerShell 会话。
 * 作为用以执行单个命令或脚本的单用途会话 - 请[单击此处](vmsession.md#run-a-script-or-command-with-invoke-command)以使用 Invoke-Command 运行脚本或命令。
-* 作为持久性会话（版本 14280 及更高版本）- 请[单击此处](vmsession.md#copy-files-with-New-PSSession-and-Copy-Item)以使用 New-PSSession 创建一个持久性会话。  
+* 作为持久性会话（版本 14280 及更高版本）-- 请[单击此处](vmsession.md#copy-files-with-New-PSSession-and-Copy-Item)以使用 New-PSSession 创建持久性会话。  
 通过使用 Copy-Item 将文件复制到虚拟机或从其复制文件，然后使用 Remove-PSSession 断开连接来继续进行操作。
 
 ## 要求
@@ -281,6 +281,6 @@ PowerShell Direct 支持 JEA（只需提供足够的管理）。  查看此用�
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO1-->
 
 

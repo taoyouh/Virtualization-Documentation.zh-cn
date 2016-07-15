@@ -26,10 +26,11 @@
 # 引用
 ## [Hyper-V PowerShell](https://technet.microsoft.com/library/hh848559.aspx)
 ## [Hyper-V WMI 提供程序 (V2)](https://msdn.microsoft.com/library/hh850319.aspx)
+## [Hyper-V 集成服务](reference/ic_info.md)
 ## [Hyper-V 体系结构](https://msdn.microsoft.com/en-us/library/cc768520(v=bts.10).aspx)
-## [虚拟机监控程序规范](develop/tlfs.md)
+## [虚拟机监控程序规范](reference/tlfs.md)
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jun16_HO5-->
 
 

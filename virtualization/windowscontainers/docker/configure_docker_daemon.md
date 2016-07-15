@@ -9,8 +9,9 @@ ms.topic: article
 ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: 6885400c-5623-4cde-8012-f6a00019fafa
-ms.sourcegitcommit: 7113f1dc1e9a0a18d4eb25e6d604e89f96f826c4
-ms.openlocfilehash: 1fddaff6fc260c0cf91c8626a60d768a06995e53
+translationtype: Human Translation
+ms.sourcegitcommit: 2d6f2c24624883457302c925c2bb47e6c867b730
+ms.openlocfilehash: 533f3a3277e3d9654f0d425c9c0f442c93e2d24a
 
 ---
 
@@ -156,7 +157,20 @@ sc config docker binpath= "\"C:\Program Files\docker\dockerd.exe\" --run-service
 ```
 
 
+## 收集日志
+Docker 守护程序会将事件记录到 Windows“应用程序”事件日志中，而不是某个文件中。 使用 Windows PowerShell 可以轻松读取、排序和筛选这些日志
 
-<!--HONumber=Jun16_HO4-->
+例如，这将显示过去 5 分钟的 Docker 守护程序日志（从最早的开始）。
+```
+Get-EventLog -LogName Application -Source Docker -After (Get-Date).AddMinutes(-5) | Sort-Object Time 
+```
+
+也可以很容易通过管道将其转换为 CSV 文件，以便其他工具或电子表格进行读取。
+```
+Get-EventLog -LogName Application -Source Docker -After (Get-Date).AddMinutes(-30)  | Sort-Object Time | Export-CSV ~/last30minutes.csv ```
+
+
+
+<!--HONumber=Jul16_HO1-->
 
 

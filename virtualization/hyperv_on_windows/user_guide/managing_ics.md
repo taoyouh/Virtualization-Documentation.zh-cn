@@ -1,7 +1,7 @@
 ---
 title: "管理 Hyper-V 集成服务"
 description: "管理 Hyper-V 集成服务"
-keywords: windows 10, hyper-v
+keywords: windows 10, hyper-v, integration services, integration components
 author: scooley
 manager: timlt
 ms.date: 05/02/2016
@@ -10,16 +10,18 @@ ms.prod: windows-10-hyperv
 ms.service: windows-10-hyperv
 ms.assetid: 9cafd6cb-dbbe-4b91-b26c-dee1c18fd8c2
 translationtype: Human Translation
-ms.sourcegitcommit: ef9ce04b2532fd314a21920b9cc5c28459c9a438
-ms.openlocfilehash: d2fbf3b714ac70e096ba80aadd9533c62cf0c34e
+ms.sourcegitcommit: 852f7fafe7192d85b0e9840ea3767a1206a1c285
+ms.openlocfilehash: e7abf05c899e2acca07312813b7808a5db00a9f7
 
 ---
 
 # 管理 Hyper-V 集成服务
 
-集成服务（通常称为集成组件）是允许虚拟机与 Hyper-V 主机通信的服务。 其中许多服务都很便利（例如来宾文件副本），但其他服务对来宾操作系统能够正常工作（时间同步）却至关重要。
+集成服务（通常称为集成组件）是允许虚拟机与 Hyper-V 主机通信的服务。 其中许多服务都很便利（例如来宾文件副本），但其他服务对虚拟机能够正常工作（时间同步）却至关重要。
 
-本文将详细介绍如何在 Windows 10 中使用 Hyper-V 管理器和 PowerShell 管理集成服务。 有关各单独集成服务的详细信息，请参阅[Integration Services]( https://technet.microsoft.com/en-us/library/dn798297.aspx)（集成服务）。
+本文将详细介绍如何在 Windows 10 中使用 Hyper-V 管理器和 PowerShell 管理集成服务。  
+
+有关各个集成服务的详细信息，请参阅[集成服务](../reference/ic_info.md)。
 
 ## 使用 Hyper-V 管理器启用或禁用集成服务
 
@@ -41,33 +43,33 @@ ms.openlocfilehash: d2fbf3b714ac70e096ba80aadd9533c62cf0c34e
 1. 查看正在运行的集成服务
   
   ``` PowerShell
-  Get-VMIntegrationService -VMName "demovm"
+  Get-VMIntegrationService -VMName "DemoVM"
   ```
 
   输出将如下所示：  
   ``` PowerShell
   VMName      Name                    Enabled PrimaryStatusDescription SecondaryStatusDescription
   ------      ----                    ------- ------------------------ --------------------------
-  demovm      Guest Service Interface False   OK
-  demovm      Heartbeat               True    OK                       OK
-  demovm      Key-Value Pair Exchange True    OK
-  demovm      Shutdown                True    OK
-  demovm      Time Synchronization    True    OK
-  demovm      VSS                     True    OK
+  DemoVM      Guest Service Interface False   OK
+  DemoVM      Heartbeat               True    OK                       OK
+  DemoVM      Key-Value Pair Exchange True    OK
+  DemoVM      Shutdown                True    OK
+  DemoVM      Time Synchronization    True    OK
+  DemoVM      VSS                     True    OK
   ```
 
 2. 启用 `Guest Service Interface` 集成服务
 
    ``` PowerShell
-   Enable-VMIntegrationService -VMName "demovm" -Name "Guest Service Interface"
+   Enable-VMIntegrationService -VMName "DemoVM" -Name "Guest Service Interface"
    ```
    
-   如果运行 `Get-VMIntegrationService -VMName "demovm"`，你将看到“来宾服务接口”集成服务已启用。
+   如果运行 `Get-VMIntegrationService -VMName "DemoVM"`，你将看到“来宾服务接口”集成服务已启用。
  
 3. 禁用`Guest Service Interface`集成服务
 
    ``` PowerShell
-   Disable-VMIntegrationService -VMName "demovm" -Name "Guest Service Interface"
+   Disable-VMIntegrationService -VMName "DemoVM" -Name "Guest Service Interface"
    ```
    
 集成服务已经过设计，以便需要在主机和来宾中同时启用才能正常运行。  虽然 Windows 来宾操作系统上的所有集成服务默认处于启用状态，但也可以禁用它们。  请参阅下一节中的操作方式。
@@ -193,7 +195,9 @@ sudo hv_kvp_daemon
 
 ## 集成服务维护
 
-若要接收可能的最佳虚拟机性能和功能，请将集成服务保持最新状态。
+如果你的虚拟机可以从 Windows 更新接收重要更新，将默认运行 Windows 10 集成服务维护。  
+
+将集成服务保持最新状态可以提供最佳的虚拟机性能和功能。
 
 **对于在 Windows 10 主机上运行的虚拟机：**
 
@@ -226,19 +230,19 @@ sudo hv_kvp_daemon
 |:---------|:---------|:---------|
 | Windows 10 | Windows 更新 | |
 | Windows 8.1 | Windows 更新 | |
-| Windows 8 | 集成服务磁盘 | |
-| Windows 7 | 集成服务磁盘 | |
-| Windows Vista (SP 2) | 集成服务磁盘 | |
-| Windows XP（SP 2、SP 3） | 集成服务磁盘 | |
+| Windows 8 | 集成服务磁盘 | [此处](https://technet.microsoft.com/en-us/library/hh846766.aspx#BKMK_step4)提供说明。 |
+| Windows 7 | 集成服务磁盘 | [此处](https://technet.microsoft.com/en-us/library/hh846766.aspx#BKMK_step4)提供说明。 |
+| Windows Vista (SP 2) | 集成服务磁盘 | [此处](https://technet.microsoft.com/en-us/library/hh846766.aspx#BKMK_step4)提供说明。 |
+| Windows XP（SP 2、SP 3） | 集成服务磁盘 | [此处](https://technet.microsoft.com/en-us/library/hh846766.aspx#BKMK_step4)提供说明。 |
 | - | | |
 | Windows Server 2012 R2 | Windows 更新 | |
-| Windows Server 2012 | 集成服务磁盘 | |
-| Windows Server 2008 R2 | 集成服务磁盘 | |
-| Windows Server 2008 (SP 2) | 集成服务磁盘 | |
-| Windows Home Server 2011 | 集成服务磁盘 | |
-| Windows Small Business Server 2011 | 集成服务磁盘 | |
-| Windows Server 2003 R2 (SP 2) | 集成服务磁盘 | |
-| Windows Server 2003 (SP 2) | 集成服务磁盘 | |
+| Windows Server 2012 | 集成服务磁盘 | [此处](https://technet.microsoft.com/en-us/library/hh846766.aspx#BKMK_step4)提供说明。 |
+| Windows Server 2008 R2 | 集成服务磁盘 | [此处](https://technet.microsoft.com/en-us/library/hh846766.aspx#BKMK_step4)提供说明。 |
+| Windows Server 2008 (SP 2) | 集成服务磁盘 | [此处](https://technet.microsoft.com/en-us/library/hh846766.aspx#BKMK_step4)提供说明。 |
+| Windows Home Server 2011 | 集成服务磁盘 | [此处](https://technet.microsoft.com/en-us/library/hh846766.aspx#BKMK_step4)提供说明。 |
+| Windows Small Business Server 2011 | 集成服务磁盘 | [此处](https://technet.microsoft.com/en-us/library/hh846766.aspx#BKMK_step4)提供说明。 |
+| Windows Server 2003 R2 (SP 2) | 集成服务磁盘 | [此处](https://technet.microsoft.com/en-us/library/hh846766.aspx#BKMK_step4)提供说明。 |
+| Windows Server 2003 (SP 2) | 集成服务磁盘 | [此处](https://technet.microsoft.com/en-us/library/hh846766.aspx#BKMK_step4)提供说明。 |
 | - | | |
 | Linux 来宾 | 程序包管理器 | 适用于 Linux 的集成组件内置于发行版中，但可能有可选的更新可用。 ** |
 
@@ -248,29 +252,26 @@ sudo hv_kvp_daemon
 | 来宾操作系统 | 更新机制 | 注释 |
 |:---------|:---------|:---------|
 | Windows 8.1 | Windows 更新 | |
-| Windows 8 | 集成服务磁盘 | |
-| Windows 7 | 集成服务磁盘 | |
-| Windows Vista (SP 2) | 集成服务磁盘 | |
-| Windows XP（SP 2、SP 3） | 集成服务磁盘 | |
+| Windows 8 | 集成服务磁盘 | [此处](https://technet.microsoft.com/en-us/library/hh846766.aspx#BKMK_step4)提供说明。 |
+| Windows 7 | 集成服务磁盘 | [此处](https://technet.microsoft.com/en-us/library/hh846766.aspx#BKMK_step4)提供说明。 |
+| Windows Vista (SP 2) | 集成服务磁盘 | [此处](https://technet.microsoft.com/en-us/library/hh846766.aspx#BKMK_step4)提供说明。 |
+| Windows XP（SP 2、SP 3） | 集成服务磁盘 | [此处](https://technet.microsoft.com/en-us/library/hh846766.aspx#BKMK_step4)提供说明。 |
 | - | | |
 | Windows Server 2012 R2 | Windows 更新 | |
-| Windows Server 2012 | 集成服务磁盘 | |
-| Windows Server 2008 R2 | 集成服务磁盘 | |
-| Windows Server 2008 (SP 2) | 集成服务磁盘 | |
-| Windows Home Server 2011 | 集成服务磁盘 | |
-| Windows Small Business Server 2011 | 集成服务磁盘 | |
-| Windows Server 2003 R2 (SP 2) | 集成服务磁盘 | |
-| Windows Server 2003 (SP 2) | 集成服务磁盘 | |
+| Windows Server 2012 | 集成服务磁盘 | [此处](https://technet.microsoft.com/en-us/library/hh846766.aspx#BKMK_step4)提供说明。 |
+| Windows Server 2008 R2 | 集成服务磁盘 | [此处](https://technet.microsoft.com/en-us/library/hh846766.aspx#BKMK_step4)提供说明。|
+| Windows Server 2008 (SP 2) | 集成服务磁盘 | [此处](https://technet.microsoft.com/en-us/library/hh846766.aspx#BKMK_step4)提供说明。 |
+| Windows Home Server 2011 | 集成服务磁盘 | [此处](https://technet.microsoft.com/en-us/library/hh846766.aspx#BKMK_step4)提供说明。 |
+| Windows Small Business Server 2011 | 集成服务磁盘 | [此处](https://technet.microsoft.com/en-us/library/hh846766.aspx#BKMK_step4)提供说明。 |
+| Windows Server 2003 R2 (SP 2) | 集成服务磁盘 | [此处](https://technet.microsoft.com/en-us/library/hh846766.aspx#BKMK_step4)提供说明。 |
+| Windows Server 2003 (SP 2) | 集成服务磁盘 | [此处](https://technet.microsoft.com/en-us/library/hh846766.aspx#BKMK_step4)提供说明。 |
 | - | | |
 | Linux 来宾 | 程序包管理器 | 适用于 Linux 的集成组件内置于发行版中，但可能有可选的更新可用。 ** |
-
-
-[此处](https://technet.microsoft.com/en-us/library/hh846766.aspx#BKMK_step4)提供通过 Windows 8 和 Windows 8.1 的集成服务磁盘进行更新的说明。
 
  > ** 在[此处](https://technet.microsoft.com/en-us/library/dn531030.aspx)查找有关 Linux 来宾的详细信息。 
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO1-->
 
 
