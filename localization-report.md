@@ -9,9 +9,9 @@
 [ Archive Failed Files ](#archive-failed-list)| 0
 [ Archive Success Files ](#archive-success-list)| 0
 [ Handback Failed Files ](#handback-failed-list)| 1
-[ Out Of Sync Handback Files ](#outofsync-handback-success-list)| 43
+[ Out Of Sync Handback Files ](#outofsync-handback-success-list)| 42
 [ In Sync Handback Files ](#insync-handback-success-list)| 94
-[ Ignored Files ](#ignored-list)| 331
+[ Ignored Files ](#ignored-list)| 332
 
 ## <a name='handoff-failed-list'></a> Handoff Failed File List
 
@@ -65,7 +65,6 @@
  [virtualization\windowscontainers\deployment\media\nssm1.png](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/668e326dc9280cc467a8c20ff0318b3c8ca7719f/virtualization/windowscontainers/deployment/media/nssm1.png) | OutofSyncHandedBackSuccess | [Details](#22320b32fb8af15c2e7125ec4f50c2b19643b9bf239)
  [virtualization\windowscontainers\deployment\media\nssm2.png](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/76b070fd7dea610d055c6368c3fafd57f119d29b/virtualization/windowscontainers/deployment/media/nssm2.png) | OutofSyncHandedBackSuccess | [Details](#6c179de0c9cfec25e8fa46d3c4e35062789a9c35240)
  [virtualization\windowscontainers\deployment\media\nssm3.png](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/76b070fd7dea610d055c6368c3fafd57f119d29b/virtualization/windowscontainers/deployment/media/nssm3.png) | OutofSyncHandedBackSuccess | [Details](#a653bcff2897c8e5d5ba6475acb1187625f34a1a241)
- [virtualization\windowscontainers\docker\configure_docker_daemon.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/dedc6194cf32827c04a635ee1683284d44266a3d/virtualization/windowscontainers/docker/configure_docker_daemon.md) | OutofSyncHandedBackSuccess | [Details](#6f6157eb7fea876539e3288e30aaf4f354f21967247)
  [virtualization\windowscontainers\management\container_networking.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/cd344ef02f03149129171b99bfdd92338ffdf24f/virtualization/windowscontainers/management/container_networking.md) | OutofSyncHandedBackSuccess | [Details](#161aaeed6c625d92b45be59dde4357836934956b251)
  [virtualization\windowscontainers\management\media\nat1.png](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/5f58ef2766a4580fbe6dca31a0242335e6b7c085/virtualization/windowscontainers/management/media/nat1.png) | OutofSyncHandedBackSuccess | [Details](#4d662bf6e123797b4670dfdf6a6aee32e4e95e54261)
  [virtualization\windowscontainers\management\media\PortMapping.png](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/abddb07247f520c8824620135302711c10714fa6/virtualization/windowscontainers/management/media/PortMapping.png) | OutofSyncHandedBackSuccess | [Details](#1d21dac1815f54f70a991c693ab882575f601e8d263)
@@ -329,6 +328,7 @@
  [virtualization\windowscontainers\deployment\media\win101.png](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/dedc6194cf32827c04a635ee1683284d44266a3d/virtualization/windowscontainers/deployment/media/win101.png) | Ignored | [Details](#a00c9169abb5c45ebb3a7aa6ce399f359e41792c243)
  [virtualization\windowscontainers\deployment\media\win102.png](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/dedc6194cf32827c04a635ee1683284d44266a3d/virtualization/windowscontainers/deployment/media/win102.png) | Ignored | [Details](#7b0ac5450c7fa91f3de679f24e7242c0a6e92e0e244)
  [virtualization\windowscontainers\docfx.json](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/dedc6194cf32827c04a635ee1683284d44266a3d/virtualization/windowscontainers/docfx.json) | Ignored | [Details](#d03873cb289bc97d547e1edcf34861ce8a48ff9e246)
+ [virtualization\windowscontainers\docker\configure_docker_daemon.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/dedc6194cf32827c04a635ee1683284d44266a3d/virtualization/windowscontainers/docker/configure_docker_daemon.md) | Ignored | [Details](#5b86442643fb5937b62a67d144ae0d1c98373b41247)
  [virtualization\windowscontainers\management\media\imagecommit.png](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/dedc6194cf32827c04a635ee1683284d44266a3d/virtualization/windowscontainers/management/media/imagecommit.png) | Ignored | [Details](#70d9d123171e564192e70631951058b0639e0f67259)
  [virtualization\windowscontainers\management\media\imagelayer.png](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/dedc6194cf32827c04a635ee1683284d44266a3d/virtualization/windowscontainers/management/media/imagelayer.png) | Ignored | [Details](#79ca6518022758718f4adb9f5af0b408051b4180260)
  [virtualization\windowscontainers\management\media\nwconfig.png](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/dedc6194cf32827c04a635ee1683284d44266a3d/virtualization/windowscontainers/management/media/nwconfig.png) | Ignored | [Details](#f38c2cd178b4cd8c1dd2e187ef4fa05546755d43262)
@@ -3617,21 +3617,16 @@
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='6f6157eb7fea876539e3288e30aaf4f354f21967247'></a> Source: [virtualization\windowscontainers\docker\configure_docker_daemon.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/dedc6194cf32827c04a635ee1683284d44266a3d/virtualization/windowscontainers/docker/configure_docker_daemon.md)
-* Status: OutofSyncHandedBackSuccess
+##### <a name='5b86442643fb5937b62a67d144ae0d1c98373b41247'></a> Source: [virtualization\windowscontainers\docker\configure_docker_daemon.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/dedc6194cf32827c04a635ee1683284d44266a3d/virtualization/windowscontainers/docker/configure_docker_daemon.md)
+* Status: Ignored
 * Target File: 
-* Handoff File: [configure_docker_daemon.593d065aaeaa40359a3e774b03d152311eb6570c.zh-cn.xlf](https://github.com/Microsoft/Virtualization-Documentation-Private.handoff/blob/39bb31933c3c829426655c866fb7a5e8cc61ecb1/ol-handoff/Microsoft/Virtualization-Documentation-Private.zh-cn/live/configure_docker_daemon.593d065aaeaa40359a3e774b03d152311eb6570c.zh-cn.xlf)
-* Handoff Datetime: 2016-07-15 19:19:20
-* Handoff Reason: Include
+* Handoff File: 
+* Handoff Datetime: 0001-01-01 00:00:00
+* Handoff Reason: Ignored
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [virtualization\windowscontainers\docker\configure_docker_daemon.md](https://github.com/Microsoft/Virtualization-Documentation-Private.zh-cn/blob/3b260c36ad0488220f1083fa3227df50f69c67fe/virtualization/windowscontainers/docker/configure_docker_daemon.md)
-* Current Handback File: [configure_docker_daemon.593d065aaeaa40359a3e774b03d152311eb6570c.zh-cn.xlf](https://github.com/Microsoft/Virtualization-Documentation-Private.handback/blob/b864195c283ffa1f207a4a3729afafa3ff5d159b/ol-handback/Microsoft/Virtualization-Documentation-Private.zh-cn/live/configure_docker_daemon.593d065aaeaa40359a3e774b03d152311eb6570c.zh-cn.xlf)
-* Current Handback Datetime: 2016-07-15 04:02:50
-* Bilingual File: [configure_docker_daemon.593d065aaeaa40359a3e774b03d152311eb6570c.zh-cn.xlf](https://github.com/Microsoft/Virtualization-Documentation-Private.handback/blob/b864195c283ffa1f207a4a3729afafa3ff5d159b/ol-handback/Microsoft/Virtualization-Documentation-Private.zh-cn/live/configure_docker_daemon.593d065aaeaa40359a3e774b03d152311eb6570c.zh-cn.xlf)
-* Bilingual Datetime: 2016-07-15 04:03:25
 * [Back to Top](#report-top)
 
 ##### <a name='ace5fd12856cdcff3a380eb35e4982c4c1ce4c5a248'></a> Source: [virtualization\windowscontainers\docker\manage_windows_dockerfile.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/daf82c943f9e19ec68e37207bba69fb0bf46f46f/virtualization/windowscontainers/docker/manage_windows_dockerfile.md)
