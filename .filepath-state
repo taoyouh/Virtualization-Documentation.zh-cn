@@ -314,6 +314,9 @@
   "7dee9e53f0e95b0c3b0ec0afc5b9d510c1962dbc": [
     "virtualization\\hyperv_on_windows\\user_guide\\create_pre-release_vm.md"
   ],
+  "84baad10511eb070e654f1ee7d71eb547d3f2ee7": [
+    "virtualization\\windowscontainers\\docker\\manage_windows_dockerfile.md"
+  ],
   "ace5fd12856cdcff3a380eb35e4982c4c1ce4c5a": [
     "virtualization\\windowscontainers\\docker\\manage_windows_dockerfile.md"
   ],
@@ -361,6 +364,9 @@
   ],
   "40b55028820472aadc5d70d338de417616c653d3": [
     "virtualization\\windowscontainers\\quick_start\\quick_start_windows_server.md"
+  ],
+  "5b86442643fb5937b62a67d144ae0d1c98373b41": [
+    "virtualization\\windowscontainers\\docker\\configure_docker_daemon.md"
   ],
   "6f6157eb7fea876539e3288e30aaf4f354f21967": [
     "virtualization\\windowscontainers\\docker\\configure_docker_daemon.md"
