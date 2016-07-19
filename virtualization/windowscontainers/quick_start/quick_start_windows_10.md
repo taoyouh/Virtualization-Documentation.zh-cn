@@ -4,14 +4,14 @@ description: "容器部署快速入门"
 keywords: docker, containers
 author: neilpeterson
 manager: timlt
-ms.date: 06/28/2016
+ms.date: 07/07/2016
 ms.topic: article
 ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: bb9bfbe0-5bdc-4984-912f-9c93ea67105f
 translationtype: Human Translation
-ms.sourcegitcommit: 5980babe886024de93f6d6c5f04eaed47407209d
-ms.openlocfilehash: 188c85a9e6f5d1c334e51853efd8fa3ca461837c
+ms.sourcegitcommit: 5f42cae373b1f8f0484ffac82f5ebc761c37d050
+ms.openlocfilehash: 9ef41ff031e8b7bc463e71f39ee6a3b8e4fd846e
 
 ---
 
@@ -19,7 +19,7 @@ ms.openlocfilehash: 188c85a9e6f5d1c334e51853efd8fa3ca461837c
 
 **这是初步内容，可能还会更改。** 
 
-本练习将演练 Windows 10（预览体验成员版本 14352 及更高版本）上 Windows 容器功能的基本部署和使用。 完成操作后，你将已安装容器角色，并部署简单的 Hyper-V 容器。 在开始本快速入门之前，请先熟悉基本容器概念和术语。 可以在 [Quick Start Introduction](./quick_start.md)（快速入门简介）上找到此信息。 
+本练习将演练 Windows 10（预览体验成员版本 14372 及更高版本）上 Windows 容器功能的基本部署和使用。 完成操作后，你将已安装容器角色，并部署简单的 Hyper-V 容器。 在开始本快速入门之前，请先熟悉基本容器概念和术语。 可以在 [Quick Start Introduction](./quick_start.md)（快速入门简介）上找到此信息。 
 
 本快速入门特定于 Windows 10 上的 Hyper-V 容器。 此页面左侧的目录中提供其他快速入门文档。
 
@@ -61,19 +61,19 @@ New-Item -Type Directory -Path $env:ProgramFiles\docker\
 下载 Docker 守护程序。
 
 ```none
-Invoke-WebRequest https://aka.ms/tp5/b/dockerd -OutFile $env:ProgramFiles\docker\dockerd.exe
+Invoke-WebRequest https://master.dockerproject.org/windows/amd64/dockerd.exe -OutFile $env:ProgramFiles\docker\dockerd.exe
 ```
 
 下载 Docker 客户端。
 
 ```none
-Invoke-WebRequest https://aka.ms/tp5/b/docker -OutFile $env:ProgramFiles\docker\docker.exe
+Invoke-WebRequest https://master.dockerproject.org/windows/amd64/docker.exe -OutFile $env:ProgramFiles\docker\docker.exe
 ```
 
 将 Docker 目录添加到系统路径。
 
 ```none
-[Environment]::SetEnvironmentVariable("Path", $env:Path + ";$env:ProgramFiles\docker\\Docker", [EnvironmentVariableTarget]::Machine)
+[Environment]::SetEnvironmentVariable("Path", $env:Path + ";$env:ProgramFiles\docker\", [EnvironmentVariableTarget]::Machine)
 ```
 
 重启 PowerShell 会话以识别已修改的路径。
@@ -94,28 +94,18 @@ Start-Service Docker
 
 Windows 容器是从模板或映像部署的。 需要先下载容器基本操作系统映像，才能部署容器。 以下命令将下载 Nano Server 基本映像。
     
-为当前 PowerShell 进程设置 PowerShell 执行策略。 这仅将影响当前 PowerShell 会话中执行的脚本，但在更改执行策略时，应非常审慎。
+> 此过程适用于高于 14372 的 Windows 预览体验成员版本并且在“docker pull”起作用之前临时使用。
+
+下载 Nano Server 基本映像。 
 
 ```none
-Set-ExecutionPolicy Bypass -scope Process
+Start-BitsTransfer https://aka.ms/tp5/6b/docker/nanoserver -Destination nanoserver.tar.gz
 ```
 
-安装容器映像包提供程序。
+安装基本映像。
 
 ```none  
-Install-PackageProvider ContainerImage -Force
-```
-
-然后，选择 Nano Server 映像。
-
-```none
-Install-ContainerImage -Name NanoServer
-```
-
-安装基本映像之后，需要重启 Docker 服务。
-
-```none
-Restart-Service docker
+docker load -i nanoserver.tar.gz
 ```
 
 在此阶段，运行 `docker images` 将返回一个已安装映像列表，此例中为 Nano Server 映像。
@@ -124,13 +114,13 @@ Restart-Service docker
 docker images
 
 REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
-nanoserver          10.0.14300.1016     3f5112ddd185        3 weeks ago         810.2 MB
+nanoserver          10.0.14300.1030     3f5112ddd185        3 weeks ago         810.2 MB
 ```
 
 若要继续，需要使用“最新”版本来标记此映像。 为此，请运行以下命令。
 
 ```none
-docker tag nanoserver:10.0.14300.1016 nanoserver:latest
+docker tag microsoft/nanoserver:10.0.14300.1030 nanoserver:latest
 ```
 
 有关 Windows 容器映像的深入信息，请参阅[管理容器映像](../management/manage_images.md)。
@@ -148,11 +138,11 @@ docker pull microsoft/sample-dotnet
 可以通过运行 `docker images` 命令进行相应验证。
 
 ```none
-docker images
+docker 
 
 REPOSITORY               TAG                 IMAGE ID            CREATED             SIZE
 microsoft/sample-dotnet  latest              28da49c3bff4        41 hours ago        918.3 MB
-nanoserver               10.0.14300.1016     3f5112ddd185        3 weeks ago         810.2 MB
+nanoserver               10.0.14300.1030     3f5112ddd185        3 weeks ago         810.2 MB
 nanoserver               latest              3f5112ddd185        3 weeks ago         810.2 MB
 ```
 
@@ -180,6 +170,6 @@ Set-ItemProperty -Path 'HKLM:SOFTWARE\Microsoft\Windows NT\CurrentVersion\Virtua
 
 
 
-<!--HONumber=Jul16_HO1-->
+<!--HONumber=Jul16_HO2-->
 
 

@@ -10,8 +10,8 @@ ms.prod: windows-10-hyperv
 ms.service: windows-10-hyperv
 ms.assetid: 6e5e6b01-7a9d-4123-8cc7-f986e10cd372
 translationtype: Human Translation
-ms.sourcegitcommit: e14ede0a2b13de08cea0a955b37a21a150fb88cf
-ms.openlocfilehash: 6364ecd2df13f5abc96fc22da03c9bca65d353b2
+ms.sourcegitcommit: 532f7459a939a6858d28cca59992c9e6531bc272
+ms.openlocfilehash: 8edc64d2e3851d81d2d844ebf3465e76579f82c7
 
 ---
 
@@ -64,6 +64,6 @@ Hyper-V Requirements: A hypervisor has been detected. Features required for Hype
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO2-->
 
 

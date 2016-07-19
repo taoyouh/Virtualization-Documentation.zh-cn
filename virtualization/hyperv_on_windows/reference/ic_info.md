@@ -10,8 +10,8 @@ ms.prod: windows-10-hyperv
 ms.service: windows-10-hyperv
 ms.assetid: 18930864-476a-40db-aa21-b03dfb4fda98
 translationtype: Human Translation
-ms.sourcegitcommit: eae8f504039a1b3732ecfb31b8068667aab104f9
-ms.openlocfilehash: 633a6b2f3fe737a6e7515fd3f923335e39cf9d17
+ms.sourcegitcommit: 94e00095a41163c5f635685af01c215f4b4efce5
+ms.openlocfilehash: e1c0404ee45ad8e775dc2319359cd16c6487ef12
 
 ---
 
@@ -20,6 +20,13 @@ ms.openlocfilehash: 633a6b2f3fe737a6e7515fd3f923335e39cf9d17
 集成服务（通常称为集成组件）是允许虚拟机与 Hyper-V 主机通信的服务。 其中许多服务都很便利，但其他服务对虚拟机能够正常工作却至关重要。
 
 本文是 Windows 中提供的每个集成服务的参考。  它也将作为特定集成服务或其历史记录的相关信息的起点。
+
+**用户指南：**  
+* [启用/禁用 Hyper-V 主机上的集成服务](../user_guide/managing_ics.md#enable-or-disable-integration-services-using-powershell)
+* 启用/禁用虚拟机内的集成服务。
+  * [Windows](../user_guide/managing_ics.md#manage-integration-services-from-guest-os-windows)
+  * [Linux](../user_guide/managing_ics.md#manage-integration-services-from-guest-os-linux)
+* [集成服务的更新与维护](../user_guide/managing_ics.md#integration-service-maintenance)
 
 
 ## 快速参考
@@ -149,16 +156,7 @@ PowerShell Direct 还在继续开发中，仅在 Windows 10/Windows Server 技�
 * [将文件复制到虚拟机和从虚拟机复制文件](../user_guide/vmsession.md#copy-files-with-new-pssession-and-copy-item)
 
 
-## 其他资源
 
-**用户指南：**  
-* [启用/禁用 Hyper-V 主机上的集成服务](../user_guide/managing_ics.md#enable-or-disable-integration-services-using-powershell)
-* 启用/禁用虚拟机上的集成服务。
-** [Windows](../user_guide/managing_ics.md#manage-integration-services-from-guest-os-windows)
-** [Linux](../user_guide/managing_ics.md#manage-integration-services-from-guest-os-linux)
-* [集成服务的更新与维护](../user_guide/managing_ics.md#integration-service-maintenance)
-
-
-<!--HONumber=Jul16_HO1-->
+<!--HONumber=Jul16_HO2-->
 
 
