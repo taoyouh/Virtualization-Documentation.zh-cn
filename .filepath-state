@@ -5,9 +5,6 @@
   "25295b8a2888e25090439a3490c9ff7c3214f23a": [
     "virtualization\\hyperv_on_windows\\about\\hyperv_on_windows.md"
   ],
-  "ea19b576219755e09a4064d0fa6bfde5367967e1": [
-    "virtualization\\hyperv_on_windows\\about\\hyperv_on_windows.md"
-  ],
   "19ecce49df066c5816741f375c4610b79d7ad802": [
     "virtualization\\hyperv_on_windows\\about\\supported_guest_os.md"
   ],
@@ -40,9 +37,6 @@
     "virtualization\\hyperv_on_windows\\user_guide\\media\\production_Checkpoin_upd.png"
   ],
   "8edc64d2e3851d81d2d844ebf3465e76579f82c7": [
-    "virtualization\\hyperv_on_windows\\quick_start\\walkthrough_compatibility.md"
-  ],
-  "6364ecd2df13f5abc96fc22da03c9bca65d353b2": [
     "virtualization\\hyperv_on_windows\\quick_start\\walkthrough_compatibility.md"
   ],
   "c830f164a513bd6125dc1a30f7cf1990e1c9470a": [
@@ -359,12 +353,6 @@
   "9ef41ff031e8b7bc463e71f39ee6a3b8e4fd846e": [
     "virtualization\\windowscontainers\\quick_start\\quick_start_windows_10.md"
   ],
-  "926c79a41f44072c9b0a24526c69aa656229327c": [
-    "virtualization\\windowscontainers\\quick_start\\quick_start_windows_10.md"
-  ],
-  "188c85a9e6f5d1c334e51853efd8fa3ca461837c": [
-    "virtualization\\windowscontainers\\quick_start\\quick_start_windows_10.md"
-  ],
   "40b55028820472aadc5d70d338de417616c653d3": [
     "virtualization\\windowscontainers\\quick_start\\quick_start_windows_server.md"
   ],
@@ -381,12 +369,6 @@
     "virtualization\\hyperv_on_windows\\reference\\ic_info.md"
   ],
   "e1c0404ee45ad8e775dc2319359cd16c6487ef12": [
-    "virtualization\\hyperv_on_windows\\reference\\ic_info.md"
-  ],
-  "3afd8c4948927a72dbbbf57f1373900249a766e4": [
-    "virtualization\\hyperv_on_windows\\reference\\ic_info.md"
-  ],
-  "633a6b2f3fe737a6e7515fd3f923335e39cf9d17": [
     "virtualization\\hyperv_on_windows\\reference\\ic_info.md"
   ],
   "49fd4f7f5a035c68975e3c38b2daabeed8e7dd5f": [
