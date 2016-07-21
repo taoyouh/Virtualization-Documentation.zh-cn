@@ -10,8 +10,8 @@ ms.prod: windows-10-hyperv
 ms.service: windows-10-hyperv
 ms.assetid: 18930864-476a-40db-aa21-b03dfb4fda98
 translationtype: Human Translation
-ms.sourcegitcommit: 94e00095a41163c5f635685af01c215f4b4efce5
-ms.openlocfilehash: e1c0404ee45ad8e775dc2319359cd16c6487ef12
+ms.sourcegitcommit: 03c3ede85ff8b2fe4783581c717c1c97810b3bdd
+ms.openlocfilehash: a2fc8845bdc3e5f977d50b99ca9687b3dafd0cb6
 
 ---
 
@@ -76,9 +76,9 @@ DemoVM  Running  Operating normally
 
 **Windows 服务名称：**vmicshutdown  
 **Linux 守护程序名称：**hv_utils  
-**说明：**允许 Hyper-V 主机请求关闭虚拟机。  主机始终可以强制关闭虚拟机，但这样做类似于切换电源开关而不是选择关闭。
+**说明：**允许 Hyper-V 主机请求关闭虚拟机。  主机始终可以强制关闭虚拟机，但这样做类似于切换电源开关而不是选择关闭。  
 **添加：**Windows Server 2012、Windows 8  
-**影响：****重大影响** 禁用后，主机无法触发虚拟机中的友好关闭。  所有关闭都将为硬关机，可能导致数据丢失或数据损坏。
+**影响：****重大影响** 禁用后，主机无法触发虚拟机中的友好关闭。  所有关闭都将为硬关机，可能导致数据丢失或数据损坏。  
 
 
 ## Hyper-V 时间同步服务
@@ -96,7 +96,7 @@ DemoVM  Running  Operating normally
 **Linux 守护程序名称：**hv_kvp_daemon  
 **说明：**提供交换虚拟机和主机之间的基本元数据的机制。  
 **添加：**Windows Server 2012、Windows 8  
-**影响：**禁用后，运行 Windows 8 或 Windows Server 2012 或更早版本的虚拟机将不会收到 Hyper-V 集成服务的更新。  禁用数据交换可能还会影响某些类型的监视和主机端诊断。
+**影响：**禁用后，运行 Windows 8 或 Windows Server 2012 或更早版本的虚拟机将不会收到 Hyper-V 集成服务的更新。  禁用数据交换可能还会影响某些类型的监视和主机端诊断。  
 
 数据交换服务（有时称为 KVP）使用 Windows 注册表中的键值对 (KVP)，在虚拟机和 Hyper-V 主机之间共享少量计算机信息。  相同的机制还可用于在虚拟机和主机之间共享自定义数据。
 
@@ -106,7 +106,7 @@ DemoVM  Running  Operating normally
 
 
 **用户指南：**  
-* [Using key-value pairs to share information between the host and guest on Hyper-V](https://technet.microsoft.com/en-us/library/dn798287.aspx)（使用键值对在 Hyper-V 上的主机和来宾之间共享信息）。
+* [Using key-value pairs to share information between the host and guest on Hyper-V](https://technet.microsoft.com/en-us/library/dn798287.aspx)（使用键值对在 Hyper-V 上的主机和来宾之间共享信息）。  
 
 
 ## Hyper-V 卷影复制请求程序
