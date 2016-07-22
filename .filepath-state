@@ -2,9 +2,6 @@
   "ad84961d0a79853e2aadcf9ed0e37e340103835a": [
     "virtualization\\hyperv_on_windows\\about\\hyperv_on_windows.md"
   ],
-  "25295b8a2888e25090439a3490c9ff7c3214f23a": [
-    "virtualization\\hyperv_on_windows\\about\\hyperv_on_windows.md"
-  ],
   "19ecce49df066c5816741f375c4610b79d7ad802": [
     "virtualization\\hyperv_on_windows\\about\\supported_guest_os.md"
   ],
@@ -191,9 +188,6 @@
   "9d015a570a0b1a9d7304e601daa7ace73df4e827": [
     "virtualization\\windowscontainers\\deployment\\system_requirements.md"
   ],
-  "12ae565f012dc87a2cab883c0486322db42b1dcc": [
-    "virtualization\\windowscontainers\\deployment\\system_requirements.md"
-  ],
   "f2cb1cdc1a98bf328a24610af6f7313a1071b079": [
     "virtualization\\windowscontainers\\EULA.md"
   ],
@@ -207,9 +201,6 @@
     "virtualization\\windowscontainers\\management\\manage_containers.md"
   ],
   "26c010e79a4913b2e138f6d1d78f9406dbacbc6b": [
-    "virtualization\\windowscontainers\\management\\manage_data.md"
-  ],
-  "b8eca51e347f17e787095b7e4349337cc3ae69a7": [
     "virtualization\\windowscontainers\\management\\manage_data.md"
   ],
   "505cc64fa19fb9fc8c2d5c109830f460f09332dd": [
@@ -317,9 +308,6 @@
   "84baad10511eb070e654f1ee7d71eb547d3f2ee7": [
     "virtualization\\windowscontainers\\docker\\manage_windows_dockerfile.md"
   ],
-  "ace5fd12856cdcff3a380eb35e4982c4c1ce4c5a": [
-    "virtualization\\windowscontainers\\docker\\manage_windows_dockerfile.md"
-  ],
   "4822ff2f0248b2d7752299ea55b08e3499e2e2f7": [
     "virtualization\\windowscontainers\\docker\\optimize_windows_dockerfile.md"
   ],
@@ -350,22 +338,10 @@
   "b37d402f2e6c950db061f5de0c86f0e9aace62b4": [
     "virtualization\\windowscontainers\\quick_start\\quick_start_windows_10.md"
   ],
-  "0fafad917ad48da40fee1f6164383cd45bf97dfd": [
-    "virtualization\\windowscontainers\\quick_start\\quick_start_windows_10.md"
-  ],
-  "9ef41ff031e8b7bc463e71f39ee6a3b8e4fd846e": [
-    "virtualization\\windowscontainers\\quick_start\\quick_start_windows_10.md"
-  ],
   "40b55028820472aadc5d70d338de417616c653d3": [
     "virtualization\\windowscontainers\\quick_start\\quick_start_windows_server.md"
   ],
   "5b86442643fb5937b62a67d144ae0d1c98373b41": [
-    "virtualization\\windowscontainers\\docker\\configure_docker_daemon.md"
-  ],
-  "6f6157eb7fea876539e3288e30aaf4f354f21967": [
-    "virtualization\\windowscontainers\\docker\\configure_docker_daemon.md"
-  ],
-  "533f3a3277e3d9654f0d425c9c0f442c93e2d24a": [
     "virtualization\\windowscontainers\\docker\\configure_docker_daemon.md"
   ],
   "a2fc8845bdc3e5f977d50b99ca9687b3dafd0cb6": [
