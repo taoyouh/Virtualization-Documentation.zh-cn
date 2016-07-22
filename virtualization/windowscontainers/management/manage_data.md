@@ -10,8 +10,8 @@ ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: f5998534-917b-453c-b873-2953e58535b1
 translationtype: Human Translation
-ms.sourcegitcommit: 111a4ca9f5d693cd1159f7597110409d670f0f5c
-ms.openlocfilehash: b8eca51e347f17e787095b7e4349337cc3ae69a7
+ms.sourcegitcommit: 493b669bc47fc589486a82cfea73a0bb1e88cf79
+ms.openlocfilehash: 26c010e79a4913b2e138f6d1d78f9406dbacbc6b
 
 ---
 
@@ -73,6 +73,20 @@ c:\container-share>dir
 
 有关装载单个文件的详细信息，请参阅 [Manage data in containers on docker.com](https://docs.docker.com/engine/userguide/containers/dockervolumes/#mount-a-host-directory-as-a-data-volume)（在 docker.com 上管理容器中的数据）。
 
+### 安装完整的驱动器
+
+可以使用类似于此的命令安装完整的驱动器。 注意，请勿包括反斜杠。
+
+```none
+docker run -it -v d: windowsservercore cmd
+```
+
+此时将无法安装第二个驱动器部分。 例如，无法使用以下项。
+
+```none
+docker run -it -v d:\source:d:\destination windowsservercore cmd
+```
+
 ### 数据卷容器
 
 可以使用 `docker run` 命令的 `--volumes-from` 参数，从其他正在运行的容器中继承数据卷。 使用此继承，可以创建明确用于为容器化应用程序承载数据卷的容器。 
@@ -111,6 +125,6 @@ docker inspect backstabbing_kowalevski
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

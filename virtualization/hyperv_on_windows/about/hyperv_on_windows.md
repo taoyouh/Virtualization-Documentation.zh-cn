@@ -10,8 +10,8 @@ ms.prod: windows-10-hyperv
 ms.service: windows-10-hyperv
 ms.assetid: eb2b827c-4a6c-4327-9354-50d14fee7ed8
 translationtype: Human Translation
-ms.sourcegitcommit: 53539a0325b3f07e542ca1dd0a4352239e8a65b3
-ms.openlocfilehash: 25295b8a2888e25090439a3490c9ff7c3214f23a
+ms.sourcegitcommit: c3e7cc07ac7e7d4e1c5f1827deb5951daa1e3749
+ms.openlocfilehash: ad84961d0a79853e2aadcf9ed0e37e340103835a
 
 ---
 
@@ -44,7 +44,7 @@ Hyper-V 仅可用于 Windows 8 及更高版本的 Windows 专业版、企业版�
 
 你可以在具有 4GB RAM 的主机上运行 3 或 4 台基本虚拟机，但如果要运行更多的虚拟机则需要更多的资源。 另外，你可能还需要创建有 32 个处理器和 512GB RAM 的较大虚拟机，具体取决于你的物理硬件。
 
-有关 Hyper-V 的操作系统要求以及如何验证 Hyper-V 在计算机上运行的详细信息，请参阅[演练：Windows 10 Hyper-V 系统要求](..\quick_start\walkthrough_install.md)
+有关 Hyper-V 的操作系统要求以及如何验证 Hyper-V 在计算机上运行的详细信息，请参阅[演练：Windows 10 Hyper-V 系统要求](..\quick_start\walkthrough_install.md)。
 
 
 ## 可以在虚拟机中运行的操作系统

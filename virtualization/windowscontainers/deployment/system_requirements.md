@@ -1,7 +1,7 @@
 ---
 title: "Windows 容器要求"
 description: "Windows 容器要求。"
-keywords: metadata, containers
+keywords: "元数据, 容器"
 author: neilpeterson
 manager: timlt
 ms.date: 05/26/2016
@@ -10,8 +10,8 @@ ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: 3c3d4c69-503d-40e8-973b-ecc4e1f523ed
 translationtype: Human Translation
-ms.sourcegitcommit: cc216f56acd5e547d05a48beea57450ba5fcb28b
-ms.openlocfilehash: 12ae565f012dc87a2cab883c0486322db42b1dcc
+ms.sourcegitcommit: 6f1d9c09774adde047508835caf9dcf54deab9d2
+ms.openlocfilehash: 9d015a570a0b1a9d7304e601daa7ace73df4e827
 
 ---
 
@@ -23,7 +23,7 @@ ms.openlocfilehash: 12ae565f012dc87a2cab883c0486322db42b1dcc
 
 ## 操作系统要求
 
-- Windows 容器角色仅在 Windows Server 2016 TP5（Full 和 Core 版本）、Nano Server 和 Windows 10（预览体验成员版本 14352 及更高版本）上可用。
+- Windows 容器功能仅适用于 Windows Server 2016（核心和桌面体验）、Nano Server 和 Windows 10 专业版和企业版（测试版 14352 及更高版本）。
 - 如果将运行 Hyper-V 容器，则需要安装 Hyper-V 角色。
 - Windows Server 容器主机必须将 Windows 安装到 c:\\。 如果将仅部署 Hyper-V 容器，则不会应用此限制。
 
@@ -74,6 +74,6 @@ ms.openlocfilehash: 12ae565f012dc87a2cab883c0486322db42b1dcc
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 
