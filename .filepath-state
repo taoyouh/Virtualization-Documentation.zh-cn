@@ -170,6 +170,9 @@
   "b50c27e723fb8db13adec37d6b969e93d607243e": [
     "virtualization\\windowscontainers\\containers_welcome.md"
   ],
+  "ce387b29f1bd311c70c17f3e7a98ae4f625bd3c2": [
+    "virtualization\\windowscontainers\\deployment\\deployment.md"
+  ],
   "cbbff2bf4a68ee348bcc33979ef4469daf54a8a7": [
     "virtualization\\windowscontainers\\deployment\\deployment.md"
   ],
@@ -338,8 +341,14 @@
   "ac9596d210e72b9fd576f728e8e6bbdc293597d7": [
     "virtualization\\windowscontainers\\quick_start\\quick_start_images.md"
   ],
+  "bd93f5a73268b552710304d7da568e1497239679": [
+    "virtualization\\windowscontainers\\quick_start\\quick_start_windows_10.md"
+  ],
   "b37d402f2e6c950db061f5de0c86f0e9aace62b4": [
     "virtualization\\windowscontainers\\quick_start\\quick_start_windows_10.md"
+  ],
+  "4e7123dcff2564bd264c91f228941e86a0723674": [
+    "virtualization\\windowscontainers\\quick_start\\quick_start_windows_server.md"
   ],
   "40b55028820472aadc5d70d338de417616c653d3": [
     "virtualization\\windowscontainers\\quick_start\\quick_start_windows_server.md"
