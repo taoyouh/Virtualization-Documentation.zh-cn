@@ -1,7 +1,7 @@
 ---
 title: "Windows 10 上的 Windows 容器"
 description: "容器部署快速入门"
-keywords: docker, containers
+keywords: "docker, 容器"
 author: neilpeterson
 manager: timlt
 ms.date: 07/13/2016
@@ -10,8 +10,8 @@ ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: bb9bfbe0-5bdc-4984-912f-9c93ea67105f
 translationtype: Human Translation
-ms.sourcegitcommit: edf2c2597e57909a553eb5e6fcc75cdb820fce68
-ms.openlocfilehash: b37d402f2e6c950db061f5de0c86f0e9aace62b4
+ms.sourcegitcommit: 6c7ce9f1767c6c6391cc6d33a553216bd815ff72
+ms.openlocfilehash: bd93f5a73268b552710304d7da568e1497239679
 
 ---
 
@@ -58,22 +58,16 @@ Set-ItemProperty -Path 'HKLM:SOFTWARE\Microsoft\Windows NT\CurrentVersion\Virtua
 
 若要使用 Window 容器，则需要安装 Docker。 Docker 由 Docker 引擎和 Docker 客户端组成。 此示例中将会安装这两者。 为此，请运行以下命令： 
 
-为 Docker 可执行文件创建文件夹。
+以 zip 存档形式下载 Docker 引擎和客户端。
 
 ```none
-New-Item -Type Directory -Path $env:ProgramFiles\docker\
+Invoke-WebRequest "https://get.docker.com/builds/Windows/x86_64/docker-1.12.0.zip" -OutFile "$env:TEMP\docker-1.12.0.zip" -UseBasicParsing
 ```
 
-下载 Docker 守护程序。
+将 zip 存档展开到 Program Files，存档内容已经位于 Docker 目录中。
 
 ```none
-Invoke-WebRequest https://master.dockerproject.org/windows/amd64/dockerd.exe -OutFile $env:ProgramFiles\docker\dockerd.exe
-```
-
-下载 Docker 客户端。
-
-```none
-Invoke-WebRequest https://master.dockerproject.org/windows/amd64/docker.exe -OutFile $env:ProgramFiles\docker\docker.exe
+Expand-Archive -Path "$env:TEMP\docker-1.12.0.zip" -DestinationPath $env:ProgramFiles
 ```
 
 将 Docker 目录添加到系统路径。
@@ -87,7 +81,7 @@ Invoke-WebRequest https://master.dockerproject.org/windows/amd64/docker.exe -Out
 若要将 Docker 安装为一个 Windows 服务，请运行以下命令。
 
 ```none
-dockerd --register-service
+& $env:ProgramFiles\docker\dockerd.exe --register-service
 ```
 
 安装完成后，可以启动该服务。
@@ -187,6 +181,6 @@ docker run --rm helloworld powershell c:\helloworld.ps1
 
 
 
-<!--HONumber=Jul16_HO2-->
+<!--HONumber=Aug16_HO1-->
 
 
