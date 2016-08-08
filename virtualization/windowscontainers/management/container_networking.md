@@ -1,7 +1,7 @@
 ---
-title: Windows 容器网络
-description: 为 Windows 容器配置网络。
-keywords: docker, containers
+title: "Windows 容器网络"
+description: "为 Windows 容器配置网络。"
+keywords: "docker, 容器"
 author: jmesser81
 manager: timlt
 ms.date: 05/02/2016
@@ -9,6 +9,10 @@ ms.topic: article
 ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: 538871ba-d02e-47d3-a3bf-25cda4a40965
+translationtype: Human Translation
+ms.sourcegitcommit: 5cb7dca9469a687add1348753d89d04dc4a633b7
+ms.openlocfilehash: 406966a2bc80cdfc6fbe7461bf478fab317ed7e5
+
 ---
 
 # 容器网络
@@ -52,7 +56,7 @@ Stop-Service docker
 可在 `c:\programdata\docker\runDockerDaemon.cmd` 找到配置文件。 添加以下行，并添加 `-b "none"`
 
 ```none
-dockerd -b "none"
+dockerd <options> -b “none”
 ```
 
 重新启动服务。
@@ -102,24 +106,47 @@ IsDeleted          : False
 
 ### NAT 网络
 
-**网络地址转换** - 此网络模式对快速将专用 IP 地址分配到容器很有用。 通过在外部 IP 地址和端口（容器主机）间、内部 IP 地址和容器端口间映射端口来提供对容器的外部访问。 外部 IP 地址/端口组合上接收的所有网络流量可比作 WinNAT 端口映射表，并转发到正确的容器 IP 地址和端口。 此外，NAT 允许多个容器托管可能需要相同（内部）通信端口的应用程序，方法是将它们映射到唯一的外部端口。 在 TP5 中，只有一个 NAT 网络可以存在。
+**网络地址转换** - 此网络模式对快速将专用 IP 地址分配到容器很有用。 通过在外部 IP 地址和端口（容器主机）间、内部 IP 地址和容器端口间映射端口来提供对容器的外部访问。 外部 IP 地址/端口组合上接收的所有网络流量可比作 WinNAT 端口映射表，并转发到正确的容器 IP 地址和端口。 此外，NAT 允许多个容器托管可能需要相同（内部）通信端口的应用程序，方法是将它们映射到唯一的外部端口。 Windows 仅支持每个主机存在一个 NAT 网络内部前缀。 有关详细信息，请阅读博客文章 [WinNAT capabilities and limitations](https://blogs.technet.microsoft.com/virtualization/2016/05/25/windows-nat-winnat-capabilities-and-limitations/)（WinNAT 功能和限制） 
 
-> 在 TP5 中，防火墙规则将为所有 NAT 静态端口映射自动创建。 此防火墙规则将适用于容器主机，而非特定于特定容器终结点或网络适配器。
+> 从 TP5 开始，将为所有 NAT 静态端口映射自动创建防火墙规则。 此防火墙规则将适用于容器主机，而非特定于特定容器终结点或网络适配器。
 
 #### 主机配置 <!--1-->
 
-若要使用 NAT 网络模式，使用驱动程序名称“nat”创建容器网络。
+若要使用 NAT 网络模式，使用驱动程序名称“nat”创建容器网络。 
+
+> 由于每个主机只能创建一个 _nat_ 默认网络，因此，请确保你在已删除所有其他 NAT 网络并使用“-b"none"”选项运行了 docker 守护程序后，仅创建一个新 NAT 网络。 或者，如果你只是想要控制由 NAT 使用的内部 IP 网络，可以在 C:\ProgramData\docker\runDockerDaemon.cmd 中将 _--fixed-cidr=<NAT internal prefix / mask>_ 选项添加到 Docker 命令。
 
 ```none
-docker network create -d nat MyNatNetwork
+docker network create -d nat MyNatNetwork [--subnet=<string[]>] [--gateway=<string[]>]
 ```
-
-网关 IP 地址 (--gateway=<string[]>) 和子网前缀 (--subnet=<string[]>) 等其他参数可添加到 Docker 网络创建命令。 参阅下面内容了解其他详细信息。
 
 若要使用 PowerShell 创建 NAT 网络，可以使用以下语法。 请注意，可以使用 PowerShell 指定其他参数（包括 DNSServers 和 DNSSuffix）。 如未指定，将从容器主机继承这些设置。
 
 ```none
 New-ContainerNetwork -Name MyNatNetwork -Mode NAT -SubnetPrefix "172.16.0.0/12" [-GatewayAddress <address>] [-DNSServers <address>] [-DNSSuffix <string>]
+```
+
+> 在 Windows Server 2016 Technical Preview 5 和最新的 Windows Insider Preview (WIP)“外部测试版”版本中存在一个已知的 bug，即升级到新版本会导致生成一个重复（即“泄漏”）的容器网络和 vSwitch。 为解决此问题，请运行以下脚本。
+```none
+PS> $KeyPath = "HKLM:\SYSTEM\CurrentControlSet\Services\vmsmp\parameters\SwitchList"
+PS> $keys = get-childitem $KeyPath
+PS> foreach($key in $keys)
+PS> {
+PS>    if ($key.GetValue("FriendlyName") -eq 'nat')
+PS>    {
+PS>       $newKeyPath = $KeyPath+"\"+$key.PSChildName
+PS>       Remove-Item -Path $newKeyPath -Recurse
+PS>    }
+PS> }
+PS> remove-netnat -Confirm:$false
+PS> Get-ContainerNetwork | Remove-ContainerNetwork
+PS> Get-VmSwitch -Name nat | Remove-VmSwitch (_failure is expected_)
+PS> Stop-Service docker
+PS> Set-Service docker -StartupType Disabled
+Reboot Host
+PS> Get-NetNat | Remove-NetNat
+PS> Set-Service docker -StartupType automatic
+PS> Start-Service docker 
 ```
 
 ### 透明网络
@@ -140,18 +167,14 @@ docker network create -d transparent MyTransparentNetwork
 docker network create -d transparent --gateway=10.50.34.1 "MyTransparentNet"
 ```
 
-PowerShell 命令将类似如下：
-
-```none
-New-ContainerNetwork -Name MyTransparentNet -Mode Transparent -NetworkAdapterName "Ethernet"
-```
-
 如果容器主机被虚拟化，而你想要使用 DHCP 进行 IP 分配，则必须在虚拟机网络适配器上启用 MACAddressSpoofing。
 
 ```none
 Get-VMNetworkAdapter -VMName ContainerHostVM | Set-VMNetworkAdapter -MacAddressSpoofing On
 ```
 
+> 如果你希望创建多个透明（或 L2 桥接）网络，必须指定（自动创建的）外部 Hyper-V 虚拟开关应绑定到哪个（虚拟）网络适配器。
+ 
 ### L2 桥接网络
 
 **L2 桥接网络** - 在此配置中，容器主机中的虚拟筛选平台 (VFP) vSwitch 扩展将充当网桥并根据需要执行第 2 层地址转换（重新编写 MAC 地址）。 第 3 层 IP 地址和第 4 层端口将保持不变。 可以静态方式分配 IP 地址从而与物理网络的 IP 子网前缀对应，或者如果使用 Microsoft 私有云部署，则与虚拟网络子网前缀的 IP 对应。
@@ -164,12 +187,6 @@ Get-VMNetworkAdapter -VMName ContainerHostVM | Set-VMNetworkAdapter -MacAddressS
 docker network create -d l2bridge --subnet=192.168.1.0/24 --gateway=192.168.1.1 MyBridgeNetwork
 ```
 
-PowerShell 命令将类似如下：
-
-```none
-New-ContainerNetwork -Name MyBridgeNetwork -Mode L2Bridge -NetworkAdapterName "Ethernet"
-```
-
 ## 删除网络
 
 使用 `docker network rm` 删除容器网络。
@@ -179,16 +196,11 @@ docker network rm "<network name>"
 ```
 或者通过 PowerShell 使用 `Remove-ContainerNetwork`：
 
-通过 PowerShell
-```
-Remove-ContainerNetwork -Name <network name>
-```
-
 这将清除容器网络所用的所有 Hyper-V 虚拟交换机，以及为 nat 容器网络创建的所有网络地址转换对象。
 
 ## 网络选项
 
-创建容器网络或容器本身时，可以指定不同的 Docker 网络选项。 此外，使用 -d (--driver=<network mode>) 选项来指定网络模式，创建容器网络时还可支持 --gateway、--subnet 和 -o 选项。
+创建容器网络或容器本身时，可以指定不同的 Docker 网络选项。 在创建容器网络时，除了可以指定网络模式的 -d (--driver=<network mode>) 选项外，还支持使用 --gateway、--subnet 和 -o 选项。
 
 ### 其他选项
 
@@ -210,6 +222,11 @@ docker network create -d nat --subnet=192.168.0.0/24 "MyCustomNatNetwork"
 docker network create -d transparent -o com.docker.network.windowsshim.interface="Ethernet 2" "TransparentNetTwo"
 ```
 
+com.docker.network.windowsshim.interface 的值为适配器的名称，来自： 
+```none
+Get-NetAdapter
+```
+
 > 通过 PowerShell 创建的容器网络在 Docker 中将不可用，直到重新启动 Docker 后台程序。 通过 PowerShell 对容器网络做的任何其他更改也要求重新启动 Docker 后台程序。
 
 ### 多个容器网络
@@ -217,7 +234,6 @@ docker network create -d transparent -o com.docker.network.windowsshim.interface
 多个容器网络可在单个容器主机上进行创建，但注意以下内容：
 * 每个容器主机只可创建一个 NAT 网络。
 * 每个使用外部 vSwitch 进行连接的多个网络（例如透明、L2 桥接、L2 透明）必须使用其自身的网络适配器。
-* 不同的网络必须使用不同的 vSwitch。
 
 ### 网络选择
 
@@ -231,7 +247,7 @@ docker run -it --net=MyTransparentNet windowsservercore cmd
 
 ### 静态 IP 地址
 
-静态 IP 地址在容器网络适配器上设置，并且仅支持 NAT、透明和 L2Bridge 网络模式。 此外，静态 IP 分配不支持通过 Docker 的默认“nat”网络。
+静态 IP 地址在容器网络适配器上设置，并且仅支持 NAT、透明（进行中 [PR](https://github.com/docker/docker/pull/22208)）和 L2 桥接网络模式。 此外，静态 IP 分配不支持通过 Docker 的默认“nat”网络。
 
 ```none
 docker run -it --net=MyTransparentNet --ip=10.80.123.32 windowsservercore cmd
@@ -303,7 +319,6 @@ bbf72109b1fc        windowsservercore   "cmd"               6 seconds ago       
 
 ![](./media/PortMapping.png)
 
-
 ## 注意事项和陷阱
 
 ### 防火墙
@@ -327,6 +342,7 @@ bbf72109b1fc        windowsservercore   "cmd"               6 seconds ago       
  * --internal
  * --ip-range
 
-<!--HONumber=May16_HO3-->
+
+<!--HONumber=Jul16_HO5-->
 
 
