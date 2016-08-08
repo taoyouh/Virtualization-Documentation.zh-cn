@@ -257,6 +257,9 @@
   "c368db13f720190f3fb4a8fbdb2301c6a8148cc8": [
     "virtualization\\community\\media\\GitHubCreatePR.png"
   ],
+  "e680dac160c5da92a2329babefb397faa8654c91": [
+    "virtualization\\windowscontainers\\management\\container_networking.md"
+  ],
   "406966a2bc80cdfc6fbe7461bf478fab317ed7e5": [
     "virtualization\\windowscontainers\\management\\container_networking.md"
   ],
