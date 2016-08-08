@@ -3674,8 +3674,8 @@
 * Archive Datetime: 2016-08-04 07:20:35
 * Handback File: [container_networking.7cf72391b3aa727681997232feeeb0a32d363edc.zh-cn.xlf](https://github.com/Microsoft/Virtualization-Documentation-Private.handback/blob/b32cc09ae0dcaa4fe3bc1448e7f4b63df7c149c6/ol-handback/Microsoft/Virtualization-Documentation-Private.zh-cn/live/container_networking.7cf72391b3aa727681997232feeeb0a32d363edc.zh-cn.xlf)
 * Handback Datetime: 2016-08-08 13:46:38
-* Bilingual File: [container_networking.7cf72391b3aa727681997232feeeb0a32d363edc.zh-cn.xlf](https://github.com/Microsoft/Virtualization-Documentation-Private.handback/blob/cff1eb5a7167126e9e6badd9141390cad224192e/ol-handback/Microsoft/Virtualization-Documentation-Private.zh-cn/live/container_networking.7cf72391b3aa727681997232feeeb0a32d363edc.zh-cn.xlf)
-* Bilingual Datetime: 2016-06-23 13:32:51
+* Bilingual File: [container_networking.7cf72391b3aa727681997232feeeb0a32d363edc.zh-cn.xlf](https://github.com/Microsoft/Virtualization-Documentation-Private.handback/blob/b32cc09ae0dcaa4fe3bc1448e7f4b63df7c149c6/ol-handback/Microsoft/Virtualization-Documentation-Private.zh-cn/live/container_networking.7cf72391b3aa727681997232feeeb0a32d363edc.zh-cn.xlf)
+* Bilingual Datetime: 2016-08-08 13:47:14
 * [Back to Top](#report-top)
 
 ##### <a name='03ceaa83723db0870623cbc579d81b8d4ee6e813252'></a> Source: [virtualization\windowscontainers\management\docker-powershell.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/9d9bd347e20cdd57bf107b9d859ac0fe096e359e/virtualization/windowscontainers/management/docker-powershell.md)
