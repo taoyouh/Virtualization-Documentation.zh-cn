@@ -22668,9 +22668,9 @@
       "ArchiveFileCommit": "6f69ab657f8709fa0abff4c41861a6dd18c69503",
       "ArchiveFileDateTime": "2016-08-04T07:20:35.1827108Z",
       "ArchiveException": null,
-      "BilingualFilePath": null,
-      "BilingualFileCommit": null,
-      "BilingualDateTime": "0001-01-01T00:00:00",
+      "BilingualFilePath": "ol-handback\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\deployment.4ddcd8318b2db72f246478d26d82fb4a73b6da65.zh-cn.xlf",
+      "BilingualFileCommit": "de6e902d39fa1a6fd29c7d572bac30b7dc4bd047",
+      "BilingualDateTime": "2016-08-08T05:29:48.3489618Z",
       "BilingualException": null
     },
     "bd93f5a73268b552710304d7da568e1497239679": {
@@ -22703,9 +22703,9 @@
       "ArchiveFileCommit": "6f69ab657f8709fa0abff4c41861a6dd18c69503",
       "ArchiveFileDateTime": "2016-08-04T07:20:35.1827108Z",
       "ArchiveException": null,
-      "BilingualFilePath": null,
-      "BilingualFileCommit": null,
-      "BilingualDateTime": "0001-01-01T00:00:00",
+      "BilingualFilePath": "ol-handback\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\quick_start_windows_10.5f887ea7d45d865c81fe971abab095fb8e272cc8.zh-cn.xlf",
+      "BilingualFileCommit": "de6e902d39fa1a6fd29c7d572bac30b7dc4bd047",
+      "BilingualDateTime": "2016-08-08T05:29:48.3489618Z",
       "BilingualException": null
     },
     "4e7123dcff2564bd264c91f228941e86a0723674": {
@@ -22738,9 +22738,9 @@
       "ArchiveFileCommit": "6f69ab657f8709fa0abff4c41861a6dd18c69503",
       "ArchiveFileDateTime": "2016-08-04T07:20:35.1827108Z",
       "ArchiveException": null,
-      "BilingualFilePath": null,
-      "BilingualFileCommit": null,
-      "BilingualDateTime": "0001-01-01T00:00:00",
+      "BilingualFilePath": "ol-handback\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\quick_start_windows_server.08fee0ad7baa994cf3e7a42d3d35aeda89c5e556.zh-cn.xlf",
+      "BilingualFileCommit": "de6e902d39fa1a6fd29c7d572bac30b7dc4bd047",
+      "BilingualDateTime": "2016-08-08T05:29:48.3489618Z",
       "BilingualException": null
     },
     "14047db25cada5fcb0c2feb76a966353582e5187": {
