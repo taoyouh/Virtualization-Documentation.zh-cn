@@ -326,6 +326,9 @@
   "3b788e7e393323d8f010b5c1a75a5cc20524c162": [
     "virtualization\\windowscontainers\\quick_start\\manage_docker_hyperv.md"
   ],
+  "5a1cb0964034db491481e2d6db84221730264fa0": [
+    "virtualization\\hyperv_on_windows\\user_guide\\setup_nat_network.md"
+  ],
   "d98445932ccbe77b6a4e798c3c2edb9c63bd351b": [
     "virtualization\\hyperv_on_windows\\user_guide\\setup_nat_network.md"
   ],
