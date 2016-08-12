@@ -10,8 +10,8 @@ ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: bb9bfbe0-5bdc-4984-912f-9c93ea67105f
 translationtype: Human Translation
-ms.sourcegitcommit: 6c7ce9f1767c6c6391cc6d33a553216bd815ff72
-ms.openlocfilehash: bd93f5a73268b552710304d7da568e1497239679
+ms.sourcegitcommit: 9aa443b24e5c8a004b08203f67e578dd2d104746
+ms.openlocfilehash: 0ee1231b923e25975a4dfddb70c16366a86c9565
 
 ---
 
@@ -54,6 +54,8 @@ Restart-Computer -Force
 Set-ItemProperty -Path 'HKLM:SOFTWARE\Microsoft\Windows NT\CurrentVersion\Virtualization\Containers' -Name VSmbDisableOplocks -Type DWord -Value 1 -Force
 ```
 
+> 在当前版本中，需要禁用 OpLock 才能可靠地使用 Hyper-V 容器。 若要重新启用 OpLock，请使用以下命令：  `Set-ItemProperty -Path 'HKLM:SOFTWARE\Microsoft\Windows NT\CurrentVersion\Virtualization\Containers' -Name VSmbDisableOplocks -Type DWord -Value 0 -Force`
+
 ## 2.安装 Docker
 
 若要使用 Window 容器，则需要安装 Docker。 Docker 由 Docker 引擎和 Docker 客户端组成。 此示例中将会安装这两者。 为此，请运行以下命令： 
@@ -93,34 +95,20 @@ Start-Service Docker
 ## 3.安装基本容器映像
 
 Windows 容器是从模板或映像部署的。 需要先下载容器基本操作系统映像，才能部署容器。 以下命令将下载 Nano Server 基本映像。
-    
-> 此过程适用于高于 14372 的 Windows 预览体验成员版本并且在“docker pull”起作用之前临时使用。
 
-下载 Nano Server 基本映像。 
+拉取 Nano Server 基本映像。 
 
 ```none
-Start-BitsTransfer https://aka.ms/tp5/6b/docker/nanoserver -Destination nanoserver.tar.gz
+docker pull microsoft/nanoserver
 ```
 
-安装基本映像。
-
-```none  
-docker load -i nanoserver.tar.gz
-```
-
-在此阶段，运行 `docker images` 将返回一个已安装映像列表，此例中为 Nano Server 映像。
+拉取映像后，运行 `docker images` 将返回已安装的映像的列表，此例中为 Nano Server 映像。
 
 ```none
 docker images
 
-REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
-nanoserver          10.0.14300.1030     3f5112ddd185        3 weeks ago         810.2 MB
-```
-
-若要继续，需要使用“最新”版本来标记此映像。 为此，请运行以下命令。
-
-```none
-docker tag microsoft/nanoserver:10.0.14300.1030 nanoserver:latest
+REPOSITORY             TAG                 IMAGE ID            CREATED             SIZE
+microsoft/nanoserver   latest              3a703c6e97a2        7 weeks ago         969.8 MB
 ```
 
 有关 Windows 容器映像的深入信息，请参阅[管理容器映像](../management/manage_images.md)。

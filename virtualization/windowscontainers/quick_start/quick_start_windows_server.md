@@ -10,8 +10,8 @@ ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: e3b2a4dc-9082-4de3-9c95-5d516c03482b
 translationtype: Human Translation
-ms.sourcegitcommit: 6c7ce9f1767c6c6391cc6d33a553216bd815ff72
-ms.openlocfilehash: 4e7123dcff2564bd264c91f228941e86a0723674
+ms.sourcegitcommit: b3f273d230344cff28d4eab7cebf96bac14f68c2
+ms.openlocfilehash: 808436ba179daa09fbc45ee7f7708a505bd1b4c8
 
 ---
 
@@ -85,37 +85,19 @@ Start-Service docker
 
 Windows 容器是从模板或映像部署的。 需要先下载基本操作系统映像，才能部署容器。 以下命令将下载 Windows Server Core 基本映像。
 
-首先，安装容器映像包提供程序。
-
 ```none
-Install-PackageProvider ContainerImage -Force
+docker pull microsoft/windowsservercore
 ```
 
-接着，安装 Windows Server Core 映像。 此过程可能需要花费一些时间，因此稍作休息，待下载完成后返回继续。
+此过程可能需要花费一些时间，因此稍作休息，待拉取完成后返回继续。
 
-```none
-Install-ContainerImage -Name WindowsServerCore    
-```
-
-安装基本映像之后，需要重启 Docker 服务。
-
-```none
-Restart-Service docker
-```
-
-在此阶段，运行 `docker images` 将返回一个已安装映像列表，此例中为 Windows Server Core 映像。
+拉取映像后，运行 `docker images` 将返回已安装的映像的列表，此例中为 Windows Server Core 映像。
 
 ```none
 docker images
 
-REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
-windowsservercore   10.0.14300.1000     dbfee88ee9fd        7 weeks ago         9.344 GB
-```
-
-若要继续，需要使用“最新”版本来标记此映像。 为此，请运行以下命令。
-
-```none
-docker tag windowsservercore:10.0.14300.1000 windowsservercore:latest
+REPOSITORY                    TAG                 IMAGE ID            CREATED             SIZE
+microsoft/windowsservercore   latest              02cb7f65d61b        7 weeks ago         7.764 GB
 ```
 
 有关 Windows 容器映像的深入信息，请参阅[管理容器映像](../management/manage_images.md)。
