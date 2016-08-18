@@ -335,8 +335,14 @@
   "f5b069dc5918a91c7d8918889f44118e0b49a5e3": [
     "virtualization\\hyperv_on_windows\\user_guide\\setup_nat_network.md"
   ],
+  "a9bc0b1511e161ef9b648bfafd4d0456966d8f9f": [
+    "virtualization\\windowscontainers\\quick_start\\quick_start_images.md"
+  ],
   "ac9596d210e72b9fd576f728e8e6bbdc293597d7": [
     "virtualization\\windowscontainers\\quick_start\\quick_start_images.md"
+  ],
+  "aa3117d05870c832e373a8d2a2333a9a288c5b07": [
+    "virtualization\\windowscontainers\\quick_start\\quick_start_windows_10.md"
   ],
   "9e7a5846887b297632d55438a7e12641e751626b": [
     "virtualization\\windowscontainers\\quick_start\\quick_start_windows_10.md"
@@ -346,6 +352,9 @@
   ],
   "0ee1231b923e25975a4dfddb70c16366a86c9565": [
     "virtualization\\windowscontainers\\quick_start\\quick_start_windows_10.md"
+  ],
+  "6257e09cf503db2b891658f6bb12e68f1e837218": [
+    "virtualization\\windowscontainers\\quick_start\\quick_start_windows_server.md"
   ],
   "808436ba179daa09fbc45ee7f7708a505bd1b4c8": [
     "virtualization\\windowscontainers\\quick_start\\quick_start_windows_server.md"
