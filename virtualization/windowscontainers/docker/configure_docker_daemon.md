@@ -1,23 +1,23 @@
 ---
 title: "在 Windows 中配置 Docker"
 description: "在 Windows 中配置 Docker"
-keywords: docker, containers
+keywords: "docker, 容器"
 author: neilpeterson
 manager: timlt
-ms.date: 07/15/2016
+ms.date: 08/17/2016
 ms.topic: article
 ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: 6885400c-5623-4cde-8012-f6a00019fafa
 translationtype: Human Translation
-ms.sourcegitcommit: 475240afdf97af117519cfaa287f1e4fec8837a5
-ms.openlocfilehash: 5b86442643fb5937b62a67d144ae0d1c98373b41
+ms.sourcegitcommit: fac57150de3ffd6c7d957dd628b937d5c41c1b35
+ms.openlocfilehash: 7ba03dbcedbe42d54c955ff321e9f3f180a5a674
 
 ---
 
-# Windows 上的 Docker 守护程序
+# Windows 上的 Docker 引擎
 
-Windows 中不含 Docker 引擎，需要单独进行安装和配置。 此外，Docker 守护程序可以接受多种自定义配置。 例如，可以配置守护程序接受传入请求的方式、默认网络选项及调试/日志设置。 在 Windows 上，这些配置可以在配置文件中指定，或者通过使用 Windows 服务控制管理器指定。 此文档将详细阐述如何安装和配置 docker 守护程序，还会提供一些通用配置的示例。
+Windows 中不含 Docker 引擎和客户端，需要单独进行安装和配置。 此外，Docker 引擎可以接受多种自定义配置。 例如，可以配置守护程序接受传入请求的方式、默认网络选项及调试/日志设置。 在 Windows 上，这些配置可以在配置文件中指定，或者通过使用 Windows 服务控制管理器指定。 此文档将详细阐述如何安装和配置 Docker 引擎，还会提供一些通用配置的示例。
 
 ## 安装 Docker
 
@@ -29,7 +29,7 @@ Windows 中不含 Docker 引擎，需要单独进行安装和配置。 此外，
 New-Item -Type Directory -Path 'C:\Program Files\docker\'
 ```
 
-下载 Docker 守护程序。
+下载 Docker 引擎。
 
 ```none
 Invoke-WebRequest https://aka.ms/tp5/b/dockerd -OutFile $env:ProgramFiles\docker\dockerd.exe
@@ -63,9 +63,9 @@ Start-Service Docker
 
 ## Docker 配置文件
 
-在 Windows 上配置 Docker 守护程序的首选方法是使用配置文件。 可在“c:\ProgramData\docker\config\daemon.json”中找到配置文件。 如果此文件还不存在，可以创建此文件。
+在 Windows 上配置 Docker 引擎的首选方法是使用配置文件。 可在“c:\ProgramData\docker\config\daemon.json”中找到配置文件。 如果此文件还不存在，可以创建此文件。
 
-注意：并非所有可用的 Docker 配置选项在 Windows 上的 Docker 中都适用。 以下示例列出了可用的选项。 若要查看有关 Docker 守护程序配置的完整文档（包括适用于 Linux 的相应文档），请参阅 [Docker 守护程序]( https://docs.docker.com/v1.10/engine/reference/commandline/daemon/)。
+注意：并非所有可用的 Docker 配置选项在 Windows 上的 Docker 中都适用。 以下示例列出了可用的选项。 若要查看有关 Docker 引擎配置的完整文档（包括适用于 Linux 的相应文档），请参阅 [Docker 守护程序]( https://docs.docker.com/v1.10/engine/reference/commandline/daemon/)。
 
 ```none
 {
@@ -101,7 +101,7 @@ Start-Service Docker
 }
 ```
 
-只需将想要进行的配置更改添加到配置文件即可。 例如，此示例中将 Docker 守护程序配置为接受端口 2375 传入的连接。 其他所有配置选项将使用默认值。
+只需将想要进行的配置更改添加到配置文件即可。 例如，此示例中将 Docker 引擎配置为接受端口 2375 传入的连接。 其他所有配置选项将使用默认值。
 
 ```none
 {
@@ -123,7 +123,7 @@ Start-Service Docker
 
 ## 服务控制管理器
 
-还可以通过使用 `sc config` 修改 Docker 服务来配置 Docker 守护程序。 使用此方法时将直接在 Docker 服务上设置 Docker 守护程序的标记。
+还可以通过使用 `sc config` 修改 Docker 服务来配置 Docker 引擎。 使用此方法时将直接在 Docker 服务上设置 Docker 引擎的标记。
 
 
 ```none
@@ -136,7 +136,7 @@ sc config docker binpath= "\"C:\Program Files\docker\dockerd.exe\" --run-service
 
 ### 创建默认网络 
 
-若要将 Docker 守护程序配置为不创建默认 NAT 网络，请运行以下操作。 有关详细信息，请参阅[管理 Docker 网络](../management/container_networking.md)。
+若要将 Docker 引擎配置为不创建默认 NAT 网络，请运行以下操作。 有关详细信息，请参阅[管理 Docker 网络](../management/container_networking.md)。
 
 ```none
 {
@@ -146,7 +146,7 @@ sc config docker binpath= "\"C:\Program Files\docker\dockerd.exe\" --run-service
 
 ### 设置 Docker 安全组
 
-登录到 Docker 主机并在本地运行 Docker 命令后，这些命令将通过命名管道运行。 默认情况下，只有管理员组的成员可以通过此命名管道访问 Docker 守护程序。 若要指定具有此访问权限的安全组，请使用 `group` 标记。
+登录到 Docker 主机并在本地运行 Docker 命令后，这些命令将通过命名管道运行。 默认情况下，只有管理员组的成员才可以通过此命名管道访问 Docker 引擎。 若要指定具有此访问权限的安全组，请使用 `group` 标记。
 
 ```none
 {
@@ -171,9 +171,9 @@ restart-service docker
 有关详细信息，请参阅 [Docker.com 上的守护程序套接字选项](https://docs.docker.com/v1.10/engine/reference/commandline/daemon/#daemon-socket-option)。
 
 ## 收集日志
-Docker 守护程序会将事件记录到 Windows“应用程序”事件日志中，而不是某个文件中。 使用 Windows PowerShell 可以轻松读取、排序和筛选这些日志
+Docker 引擎会将事件记录到 Windows“应用程序”事件日志中，而不是某个文件中。 使用 Windows PowerShell 可以轻松读取、排序和筛选这些日志
 
-例如，这将显示过去 5 分钟的 Docker 守护程序日志（从最早的开始）。
+例如，这将显示过去 5 分钟的 Docker 引擎日志（从最早的开始）。
 ```
 Get-EventLog -LogName Application -Source Docker -After (Get-Date).AddMinutes(-5) | Sort-Object Time 
 ```
@@ -184,6 +184,6 @@ Get-EventLog -LogName Application -Source Docker -After (Get-Date).AddMinutes(-3
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO3-->
 
 

@@ -1,7 +1,7 @@
 ---
 title: "在 Nano Server 上部署 Windows 容器"
 description: "在 Nano Server 上部署 Windows 容器"
-keywords: docker, containers
+keywords: "docker, 容器"
 author: neilpeterson
 manager: timlt
 ms.date: 07/06/2016
@@ -10,8 +10,8 @@ ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: b82acdf9-042d-4b5c-8b67-1a8013fa1435
 translationtype: Human Translation
-ms.sourcegitcommit: e035a45e22eee04263861d935b338089d8009e92
-ms.openlocfilehash: 876ffb4f4da32495fb77b735391203c33c78cff3
+ms.sourcegitcommit: fac57150de3ffd6c7d957dd628b937d5c41c1b35
+ms.openlocfilehash: d2f19e96f06ba18ab7e23e62652f569265c6f43f
 
 ---
 
@@ -74,7 +74,7 @@ Restart-Computer
 
 ## 安装 Docker
 
-若要使用 Window 容器，则需要安装 Docker。 Docker 由 Docker 引擎和 Docker 客户端组成。 使用这些步骤安装 Docker 守护程序和客户端。
+若要使用 Window 容器，则需要安装 Docker。 Docker 由 Docker 引擎和 Docker 客户端组成。 使用这些步骤安装 Docker 引擎和客户端。
 
 在 Nano Server 主机上为 Docker 可执行文件创建一个文件夹。
 
@@ -82,7 +82,7 @@ Restart-Computer
 New-Item -Type Directory -Path $env:ProgramFiles'\docker\'
 ```
 
-下载 Docker 守护程序和客户端并将其复制到容器主机的 'C:\Program Files\docker\'。 
+下载 Docker 引擎和客户端并将其复制到容器主机的 C:\Program Files\docker\'。 
 
 **注意** - 由于 Nano Server 当前不支持 `Invoke-WebRequest`，因此需要通过远程系统完成下载，然后将其复制到 Nano Server 主机。
 
@@ -96,7 +96,7 @@ Invoke-WebRequest https://aka.ms/tp5/b/dockerd -OutFile .\dockerd.exe
 Invoke-WebRequest https://aka.ms/tp5/b/docker -OutFile .\docker.exe
 ```
 
-Docker 守护程序和客户端下载完成后，将它们复制到 Nano Server 容器主机中的“C:\Program Files\docker\'”文件夹中。 需要将 Nano Server 防火墙配置为允许传入的 SMB 连接。 可使用 PowerShell 或 Nano Server 恢复控制台完成该配置。 
+Docker 引擎和客户端下载完成后，将它们复制到 Nano Server 容器主机中的“C:\Program Files\docker\'”文件夹中。 需要将 Nano Server 防火墙配置为允许传入的 SMB 连接。 可使用 PowerShell 或 Nano Server 恢复控制台完成该配置。 
 
 ```none
 Set-NetFirewallRule -Name FPS-SMB-In-TCP -Enabled True
@@ -158,7 +158,7 @@ Restart-Service Docker
 netsh advfirewall firewall add rule name="Docker daemon " dir=in action=allow protocol=TCP localport=2376
 ```
 
-配置 Docker 守护程序以接受通过 TCP 传入的连接。
+配置 Docker 引擎，使其接受通过 TCP 传入的连接。
 
 首先在 Nano Server 主机上的 `c:\ProgramData\docker\config\daemon.json` 中创建一个 `daemon.json` 文件。
 
@@ -166,7 +166,7 @@ netsh advfirewall firewall add rule name="Docker daemon " dir=in action=allow pr
 new-item -Type File c:\ProgramData\docker\config\daemon.json
 ```
 
-接下来，运行以下命令以将连接配置添加到 `daemon.json` 文件中。 这会将 Docker 守护程序配置为接受通过端口 2375 传入的连接。 这是不安全的连接，因此不建议使用，但可用于隔离的测试。 有关确保连接安全的详细信息，请参阅 [Docker.com 上的保护 Docker 守护程序](https://docs.docker.com/engine/security/https/)。
+接下来，运行以下命令以将连接配置添加到 `daemon.json` 文件中。 这会将 Docker 引擎配置为接受通过 TCP 端口 2375 传入的连接。 这是不安全的连接，因此不建议使用，但可用于隔离的测试。 有关确保连接安全的详细信息，请参阅 [Docker.com 上的保护 Docker 守护程序](https://docs.docker.com/engine/security/https/)。
 
 ```none
 Add-Content 'c:\programdata\docker\config\daemon.json' '{ "hosts": ["tcp://0.0.0.0:2375", "npipe://"] }'
@@ -238,6 +238,6 @@ Restart-Computer
 ```
 
 
-<!--HONumber=Jul16_HO1-->
+<!--HONumber=Aug16_HO3-->
 
 

@@ -1,6 +1,6 @@
 ---
-title: 设置 NAT 网络
-description: 设置 NAT 网络
+title: "设置 NAT 网络"
+description: "设置 NAT 网络"
 keywords: windows 10, hyper-v
 author: jmesser81
 manager: timlt
@@ -9,6 +9,10 @@ ms.topic: article
 ms.prod: windows-10-hyperv
 ms.service: windows-10-hyperv
 ms.assetid: 1f8a691c-ca75-42da-8ad8-a35611ad70ec
+translationtype: Human Translation
+ms.sourcegitcommit: 03a72e6608c08d6adcf32fc5665533831904a032
+ms.openlocfilehash: 5a1cb0964034db491481e2d6db84221730264fa0
+
 ---
 
 # 设置 NAT 网络
@@ -24,12 +28,12 @@ Windows 10 Hyper-V 允许虚拟网络的本机网络地址转换 (NAT)。
 * Windows 版本 14295 或更高版本
 * 已启用 Hyper-V 角色（单击[此处](../quick_start/walkthrough_create_vm.md)查看相关说明）
 
-> **注意：**当前，Hyper-V 仅允许你创建一个 NAT 网络。
+> **注意：**当前，Hyper-V 仅允许你创建一个 NAT 网络。 有关 Windows NAT (WinNAT) 实现、功能和限制的更多详细信息，请参考 [WinNAT capabilities and limitations blog](https://blogs.technet.microsoft.com/virtualization/2016/05/25/windows-nat-winnat-capabilities-and-limitations/)（WinNAT 功能和限制日志）
 
 ## NAT 概述
-NAT 使用主计算机的 IP 地址和端口向虚拟机授予对网络资源的访问权限。
+NAT 使用主计算机的 IP 地址和端口通过内部 Hyper-V 虚拟开关向虚拟机授予对网络资源的访问权限。
 
-网络地址转换 (NAT) 是一种网络模式，旨在通过将一个外部 IP 地址和端口映射到更大的内部 IP 地址集来转换 IP 地址。  基本上，NAT 开关使用 NAT 映射表将流量从一个 IP 地址和端口号路由到与网络上的设备（虚拟机、计算机和容器等）关联的正确内部 IP 地址
+网络地址转换 (NAT) 是一种网络模式，旨在通过将一个外部 IP 地址和端口映射到更大的内部 IP 地址集来转换 IP 地址。  基本上，NAT 使用流量表将流量从一个外部（主机）IP 地址和端口号路由到与网络上的终结点（虚拟机、计算机和容器等）关联的正确内部 IP 地址
 
 此外，NAT 允许多个虚拟机托管需要相同（内部）通信端口的应用程序，方法是将它们映射到唯一的外部端口。
 
@@ -121,39 +125,44 @@ NAT 使用主计算机的 IP 地址和端口向虚拟机授予对网络资源的
 
 若要将虚拟机连接到新的 NAT 网络，请使用“VM 设置”菜单将你在 [NAT 网络设置](setup_nat_network.md#create-a-nat-virtual-network)部分的第一步中创建的内部交换机连接到虚拟机。
 
+由于 WinNAT 本身不会将 IP 地址分配给某个终结点（例如，VM），因此，你将需要从 VM 内手动完成此操作，即设置 NAT 内部前缀范围内的 IP 地址、设置默认网关 IP 地址，以及设置 DNS 服务器信息。 唯一需要注意的是终结点何时连接到容器。 在这种情况下，主机网络服务 (HNS) 分配并使用主机计算服务 (HCS) 直接向容器分配 IP 地址、网关 IP 和 DNS 信息。
 
-## 疑难解答
 
-此工作流假设主机上没有其他 NAT。 但是，有时多个应用程序或服务将需要使用 NAT。 由于 Windows (WinNAT) 仅支持一个内部 NAT 子网前缀，因此尝试创建多个 NAT 将使系统处于未知状态。
+## 配置示例：将 VM 和容器连接到 NAT 网络
 
-### 疑难解答步骤
-1. 请确保你只有一个 NAT
+_如果你需要将多个 VM 和容器连接到单个 NAT，则需要确保 NAT 内部子网前缀大小足以包含由不同的应用程序或服务（例如用于 Windows 的 Docker 和 Windows 容器 – HNS）分配的 IP 范围。 这将需要应用程序级别的 IP 分配和网络配置，或者必须由管理员完成手动配置，从而保证不会在同一主机上重用现有 IP 分配。_
 
-  ``` PowerShell
-  Get-NetNat
-  ```
-2. 如果 NAT 已经存在，请将其删除
+### 用于 Windows 的 Docker（Linux VM）和 Windows 容器
+下面的解决方案将允许用于 Windows 的 Docker（运行 Linux 容器的 Linux VM）和 Windows 容器使用单独的内部 vSwitch 共享同一个 WinNAT 实例。 Linux 和 Windows 容器之间的连接将起作用。
 
-  ``` PowerShell
-  Get-NetNat | Remove-NetNat
-  ```
+用户已通过名为“VMNAT”的内部 vSwitch 将 VM 连接到 NAT 网络，现在想要使用 Docker 引擎安装 Windows 容器功能
+```none
+PS C:\> Get-NetNat “VMNAT”| Remove-NetNat (this will remove the NAT but keep the internal vSwitch).
+Install Windows Container Feature
+DO NOT START Docker Service (daemon)
+Edit the arguments passed to the docker daemon (dockerd) by adding –fixed-cidr=<container prefix> parameter. This tells docker to create a default nat network with the IP subnet <container prefix> (e.g. 192.168.1.0/24) so that HNS can allocate IPs from this prefix.
+PS C:\> Start-Service Docker; Stop-Service Docker
+PS C:\> Get-NetNat | Remove-NetNAT (again, this will remove the NAT but keep the internal vSwitch)
+PS C:\> New-NetNat -Name SharedNAT -InternalIPInterfaceAddressPrefix <shared prefix>
+PS C:\> Start-Service docker
+```
+Docker/HNS 将 IP 分配给 <container prefix> 的 Windows 容器，管理员将 IP 分配给 <shared prefix> 差异集的 VM 以及 <container prefix>
 
-3. 请确保你只有一个用于 NAT 的“内部”vmSwitch。 记录 vSwitch 的名称，以便步骤 4 使用
+用户已通过运行 docker 引擎安装了 Windows 容器功能，现在想要将 VM 连接到 NAT 网络
+```none
+PS C:\> Stop-Service docker
+PS C:\> Get-ContainerNetwork | Remove-ContainerNetwork -force
+PS C:\> Get-NetNat | Remove-NetNat (this will remove the NAT but keep the internal vSwitch)
+Edit the arguments passed to the docker daemon (dockerd) by adding -b “none” option to the end of docker daemon (dockerd) command to tell docker not to create a default NAT network.
+PS C:\> New-ContainerNetwork –name nat –Mode NAT –subnetprefix <container prefix> (create a new NAT and internal vSwitch – HNS will allocate IPs to container endpoints attached to this network from the <container prefix>)
+PS C:\> Get-Netnat | Remove-NetNAT (again, this will remove the NAT but keep the internal vSwitch)
+PS C:\> New-NetNat -Name SharedNAT -InternalIPInterfaceAddressPrefix <shared prefix>
+PS C:\> New-VirtualSwitch -Type internal (attach VMs to this new vSwitch)
+PS C:\> Start-Service docker
+```
+Docker/HNS 将 IP 分配给 <container prefix> 的 Windows 容器，管理员将 IP 分配给 <shared prefix> 差异集的 VM 以及 <container prefix>
 
-  ``` PowerShell
-  Get-VMSwitch
-  ```
-
-4. 检查是否仍存在从旧 NAT 向适配器分配的专用 IP 地址（例如 NAT 默认网关 IP 地址 - 通常为 *.1）
-
-  ``` PowerShell
-  Get-NetIPAddress -InterfaceAlias "vEthernet(<name of vSwitch>)"
-  ```
-
-5. 如果旧专用 IP 地址仍在使用中，请将其删除  
-   ``` PowerShell
-  Remove-NetIPAddress -InterfaceAlias "vEthernet(<name of vSwitch>)" -IPAddress <IPAddress>
-  ```
+最终，你应该有两个内部 VM 开关以及在这两个开关之间共享的一个 NetNat。
 
 ## 多个应用程序使用相同的 NAT
 
@@ -186,10 +195,67 @@ NAT 使用主计算机的 IP 地址和端口向虚拟机授予对网络资源的
 最终，你将具有两个内部 vSwitch – 一个名为 DockerNAT，另一个名为 nat。 你仅将拥有一个 NAT 网络 (10.0.0.0/17)，可通过运行 Get-NetNat 确认。 Windows 容器的 IP 地址将由 Windows 主机网络服务 (HNS) 从 10.0.76.0/24 子网分配。 基于现有 MobyLinux.ps1 脚本，将从 10.0.75.0/24 子网分配 Docker 4 Windows 的 IP 地址。
 
 
+## 疑难解答
+
+### 不支持多个 NAT 网络  
+本指南假设主机上没有其他 NAT。 但是，应用程序或服务将要求使用一个 NAT，并且有可能创建一个 NAT，使之作为安装的一部分。 由于 Windows (WinNAT) 仅支持一个内部 NAT 子网前缀，因此尝试创建多个 NAT 将使系统处于未知状态。
+
+若想知道这是否是个问题，请确保你只有一个 NAT：
+``` PowerShell
+Get-NetNat
+```
+
+如果已存在一个 NAT，请将其删除
+``` PowerShell
+Get-NetNat | Remove-NetNat
+```
+请确保应用程序或功能（例如 Windows 容器）仅有一个“内部”vmSwitch。 记录 vSwitch 的名称
+``` PowerShell
+Get-VMSwitch
+```
+
+检查是否仍存在从旧 NAT 向适配器分配的专用 IP 地址（例如 NAT 默认网关 IP 地址 – 通常为 *.1）
+``` PowerShell
+Get-NetIPAddress -InterfaceAlias "vEthernet(<name of vSwitch>)"
+```
+
+如果旧专用 IP 地址仍在使用中，请将其删除
+``` PowerShell
+Remove-NetIPAddress -InterfaceAlias "vEthernet(<name of vSwitch>)" -IPAddress <IPAddress>
+```
+
+**删除多个 NAT**  
+我们看到无意中创建了多个 NAT 网络的报告。 这是由于最近的版本（包括 Windows Server 2016 Technical Preview 5 和 Windows 10 Insider Preview 版本）存在一个 bug。 如果你看到多个 NAT 网络，在运行 docker network ls 或 Get-ContainerNetwork 之后，请在提升的 PowerShell 中执行以下操作：
+
+```none
+PS> $KeyPath = "HKLM:\SYSTEM\CurrentControlSet\Services\vmsmp\parameters\SwitchList"
+PS> $keys = get-childitem $KeyPath
+PS> foreach($key in $keys)
+PS> {
+PS>    if ($key.GetValue("FriendlyName") -eq 'nat')
+PS>    {
+PS>       $newKeyPath = $KeyPath+"\"+$key.PSChildName
+PS>       Remove-Item -Path $newKeyPath -Recurse
+PS>    }
+PS> }
+PS> remove-netnat -Confirm:$false
+PS> Get-ContainerNetwork | Remove-ContainerNetwork
+PS> Get-VmSwitch -Name nat | Remove-VmSwitch (_failure is expected_)
+PS> Stop-Service docker
+PS> Set-Service docker -StartupType Disabled
+Reboot Host
+PS> Get-NetNat | Remove-NetNat
+PS> Set-Service docker -StartupType automaticac
+PS> Start-Service docker 
+```
+
+如有必要，请参阅 [setup guide for multiple applications using the same NAT](setup_nat_network.md#multiple-applications-using-the-same-nat)（使用同一个 NAT 的多个应用程序的安装指南）以重新生成你的 NAT 环境。 
+
 ## 参考
 详细了解 [NAT 网络](https://en.wikipedia.org/wiki/Network_address_translation)
 
 
-<!--HONumber=May16_HO5-->
+
+<!--HONumber=Aug16_HO2-->
 
 
