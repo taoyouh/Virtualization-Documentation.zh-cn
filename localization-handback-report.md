@@ -1,28 +1,11 @@
 # <a name='report-top'></a> Localization Handback Report
 
 ## Summary
- Total Files | 1
+ Total Files | 0
 
 ## File List
- Source File | Status | Details 
- ----------- | ------ | ------- 
- [virtualization\windowscontainers\management\container_networking.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/c412171773e9c66569eab2252b5adfc187eedafd/virtualization/windowscontainers/management/container_networking.md) | InSyncHandedBackSuccess | [Details](#eb7d2c25d929cb51abfad17c26a89105f6574a48251)
 
 ## Item Details
-##### <a name='eb7d2c25d929cb51abfad17c26a89105f6574a48251'></a> Source: [virtualization\windowscontainers\management\container_networking.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/c412171773e9c66569eab2252b5adfc187eedafd/virtualization/windowscontainers/management/container_networking.md)
-* Status: InSyncHandedBackSuccess
-* Target File: [virtualization\windowscontainers\management\container_networking.md](https://github.com/Microsoft/Virtualization-Documentation-Private.zh-cn/blob/04b8626d6c88193ce90057f834d3f90670977885/virtualization/windowscontainers/management/container_networking.md)
-* Handoff File: [container_networking.7cf72391b3aa727681997232feeeb0a32d363edc.zh-cn.xlf](https://github.com/Microsoft/Virtualization-Documentation-Private.handoff/blob/645c4c7a160a270cebe83779495870b441dbc1c0/ol-handoff/Microsoft/Virtualization-Documentation-Private.zh-cn/live/container_networking.7cf72391b3aa727681997232feeeb0a32d363edc.zh-cn.xlf)
-* Handoff Datetime: 2016-08-15 19:16:54
-* Handoff Reason: Include
-* Archive File: [container_networking.7cf72391b3aa727681997232feeeb0a32d363edc.zh-cn.xlf](https://github.com/Microsoft/Virtualization-Documentation-Private.handoff/blob/8678e03fd2e8322f80c4b0ba3a291c6bfa49332f/ol-archive/Microsoft/Virtualization-Documentation-Private.zh-cn/live/container_networking.7cf72391b3aa727681997232feeeb0a32d363edc.zh-cn.xlf)
-* Archive Datetime: 2016-08-18 07:16:50
-* Handback File: [container_networking.7cf72391b3aa727681997232feeeb0a32d363edc.zh-cn.xlf](https://github.com/Microsoft/Virtualization-Documentation-Private.handback/blob/138a09374fd407c883ead87a27963a0117a8a21c/ol-handback/Microsoft/Virtualization-Documentation-Private.zh-cn/live/container_networking.7cf72391b3aa727681997232feeeb0a32d363edc.zh-cn.xlf)
-* Handback Datetime: 2016-08-22 11:26:58
-* Bilingual File: [container_networking.7cf72391b3aa727681997232feeeb0a32d363edc.zh-cn.xlf](https://github.com/Microsoft/Virtualization-Documentation-Private.handback/blob/0e3625bba1e269e12e8bfe9fadc22045cc8ffa7a/ol-handback/Microsoft/Virtualization-Documentation-Private.zh-cn/live/container_networking.7cf72391b3aa727681997232feeeb0a32d363edc.zh-cn.xlf)
-* Bilingual Datetime: 2016-08-16 13:41:24
-* [Back to Top](#report-top)
-
 
 ## Error Details
 
