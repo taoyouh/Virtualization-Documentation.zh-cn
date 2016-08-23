@@ -170,6 +170,9 @@
   "b50c27e723fb8db13adec37d6b969e93d607243e": [
     "virtualization\\windowscontainers\\containers_welcome.md"
   ],
+  "14bf0bf69c4e3a1bd1f86676916866bfa41ecb0d": [
+    "virtualization\\windowscontainers\\deployment\\deployment.md"
+  ],
   "ce387b29f1bd311c70c17f3e7a98ae4f625bd3c2": [
     "virtualization\\windowscontainers\\deployment\\deployment.md"
   ],
@@ -202,6 +205,9 @@
   ],
   "26c010e79a4913b2e138f6d1d78f9406dbacbc6b": [
     "virtualization\\windowscontainers\\management\\manage_data.md"
+  ],
+  "8b9ec6370d1f9f9187fbb6d74168e9e88391b657": [
+    "virtualization\\windowscontainers\\management\\manage_images.md"
   ],
   "61c54210e683032184503103f689938cc576ea4c": [
     "virtualization\\windowscontainers\\management\\manage_images.md"
@@ -239,6 +245,9 @@
   "f01125a9e6f8a952ae6a82fb2d1df20bb5f6c900": [
     "virtualization\\windowscontainers\\reference\\ps_docker_comparison.md"
   ],
+  "56c0bb3a4d82f0c94a32457690ae55a4b4212506": [
+    "virtualization\\windowscontainers\\TOC.md"
+  ],
   "e83bb57cc6c040106ce6de7ec867ba417aced740": [
     "virtualization\\windowscontainers\\TOC.md"
   ],
@@ -265,6 +274,9 @@
   ],
   "c368db13f720190f3fb4a8fbdb2301c6a8148cc8": [
     "virtualization\\community\\media\\GitHubCreatePR.png"
+  ],
+  "2e26177f3e653e9102dc91070b987e28ef713bed": [
+    "virtualization\\windowscontainers\\management\\container_networking.md"
   ],
   "d9353162d8357a5355335a38e026c35e8c45394f": [
     "virtualization\\windowscontainers\\management\\container_networking.md"
