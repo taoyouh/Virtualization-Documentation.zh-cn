@@ -293,6 +293,9 @@
   "640cdeabb1f10e4e69f909c33d3c4e483dad00aa": [
     "virtualization\\windowscontainers\\Nano_EULA.md"
   ],
+  "99c04cf5752371419ffa1147f41cf6f45948ad14": [
+    "virtualization\\windowscontainers\\deployment\\deployment_nano.md"
+  ],
   "d2f19e96f06ba18ab7e23e62652f569265c6f43f": [
     "virtualization\\windowscontainers\\deployment\\deployment_nano.md"
   ],
