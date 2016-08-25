@@ -242,22 +242,10 @@
   "48d455079f0668d95ac31d36c644dabb8d716eda": [
     "virtualization\\windowscontainers\\reference\\app_compat.md"
   ],
-  "2830dc81317311dd54dfcca45251b668f3d2cc29": [
-    "virtualization\\windowscontainers\\reference\\app_compat.md"
-  ],
   "f01125a9e6f8a952ae6a82fb2d1df20bb5f6c900": [
     "virtualization\\windowscontainers\\reference\\ps_docker_comparison.md"
   ],
   "d98e0e00e8435107191e62f5f5cd8b8696830ec9": [
-    "virtualization\\windowscontainers\\TOC.md"
-  ],
-  "56c0bb3a4d82f0c94a32457690ae55a4b4212506": [
-    "virtualization\\windowscontainers\\TOC.md"
-  ],
-  "e83bb57cc6c040106ce6de7ec867ba417aced740": [
-    "virtualization\\windowscontainers\\TOC.md"
-  ],
-  "34184dec1e86a3fdecb704ed04ed10a98d92f9d9": [
     "virtualization\\windowscontainers\\TOC.md"
   ],
   "5d41a694d4b6cac6b6381379bda4a8f959ec4854": [
@@ -357,9 +345,6 @@
     "virtualization\\hyperv_on_windows\\user_guide\\setup_nat_network.md"
   ],
   "a9bc0b1511e161ef9b648bfafd4d0456966d8f9f": [
-    "virtualization\\windowscontainers\\quick_start\\quick_start_images.md"
-  ],
-  "ac9596d210e72b9fd576f728e8e6bbdc293597d7": [
     "virtualization\\windowscontainers\\quick_start\\quick_start_images.md"
   ],
   "8d3c8263819688d1a47893726619458ee44be59b": [
