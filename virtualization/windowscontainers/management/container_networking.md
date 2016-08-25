@@ -4,14 +4,14 @@ description: "为 Windows 容器配置网络。"
 keywords: "docker, 容器"
 author: jmesser81
 manager: timlt
-ms.date: 05/02/2016
+ms.date: 08/22/2016
 ms.topic: article
 ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: 538871ba-d02e-47d3-a3bf-25cda4a40965
 translationtype: Human Translation
-ms.sourcegitcommit: c412171773e9c66569eab2252b5adfc187eedafd
-ms.openlocfilehash: eb7d2c25d929cb51abfad17c26a89105f6574a48
+ms.sourcegitcommit: 7b5cf299109a967b7e6aac839476d95c625479cd
+ms.openlocfilehash: 2e26177f3e653e9102dc91070b987e28ef713bed
 
 ---
 
@@ -37,7 +37,7 @@ Windows 容器支持四种不同的网络驱动程序或模式：*nat**transpare
 
 - **L2 隧道模式 ** - _这种模式应仅用于 Microsoft 云堆栈_
 
-> 若要了解如何通过 Microsoft SDN 堆栈将容器终结点连接到覆盖虚拟网络，请参阅 [Attaching Containers to a Virtual Network](location)（将容器附加到虚拟网络）主题。
+> 若要了解如何通过 Microsoft SDN 堆栈将容器终结点连接到覆盖虚拟网络，请参阅 [Attaching Containers to a Virtual Network](https://technet.microsoft.com/en-us/windows-server-docs/networking/sdn/manage/connect-container-endpoints-to-a-tenant-virtual-network)（将容器附加到虚拟网络）主题。
 
 ## 单节点
 
@@ -182,7 +182,7 @@ C:\> docker network create -d l2bridge --subnet=192.168.1.0/24 --gateway=192.168
 
 L2 桥接网络仅支持静态 IP 分配。 
 
-> 当在 SDN 结构上使用 L2 桥接网络时，仅支持动态 IP 分配。 请参阅 [Attaching Containers to a Virtual Network](location)（将容器附加到虚拟网络）主题，以了解详细信息。
+> 当在 SDN 结构上使用 L2 桥接网络时，仅支持动态 IP 分配。 请参阅 [Attaching Containers to a Virtual Network](https://technet.microsoft.com/en-us/windows-server-docs/networking/sdn/manage/connect-container-endpoints-to-a-tenant-virtual-network)（将容器附加到虚拟网络）主题，以了解详细信息。
 
 ## 其他操作和配置
 
@@ -291,6 +291,6 @@ Start-Service docker
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 
