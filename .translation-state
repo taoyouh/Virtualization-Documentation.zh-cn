@@ -23193,9 +23193,9 @@
       "ArchiveFileCommit": "06be1baf6c745db2ad6a9d1c86a94f9454eface4",
       "ArchiveFileDateTime": "2016-08-25T07:05:22.7390469Z",
       "ArchiveException": null,
-      "BilingualFilePath": null,
-      "BilingualFileCommit": null,
-      "BilingualDateTime": "0001-01-01T00:00:00",
+      "BilingualFilePath": "ol-handback\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\quick_start_images.a9795e9bf873991bac21ba0e69a669599e6dac7b.zh-cn.xlf",
+      "BilingualFileCommit": "90915859688718a3d98922770e81912b655e399a",
+      "BilingualDateTime": "2016-08-25T08:21:45.2499804Z",
       "BilingualException": null
     },
     "aa3117d05870c832e373a8d2a2333a9a288c5b07": {
@@ -23298,9 +23298,9 @@
       "ArchiveFileCommit": "06be1baf6c745db2ad6a9d1c86a94f9454eface4",
       "ArchiveFileDateTime": "2016-08-25T07:05:22.7390469Z",
       "ArchiveException": null,
-      "BilingualFilePath": null,
-      "BilingualFileCommit": null,
-      "BilingualDateTime": "0001-01-01T00:00:00",
+      "BilingualFilePath": "ol-handback\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\app_compat.85ea42fd0d23543a8fad7596dfdec7699ec15654.zh-cn.xlf",
+      "BilingualFileCommit": "90915859688718a3d98922770e81912b655e399a",
+      "BilingualDateTime": "2016-08-25T08:21:45.2499804Z",
       "BilingualException": null
     },
     "e83bb57cc6c040106ce6de7ec867ba417aced740": {
@@ -23823,9 +23823,9 @@
       "ArchiveFileCommit": "06be1baf6c745db2ad6a9d1c86a94f9454eface4",
       "ArchiveFileDateTime": "2016-08-25T07:05:22.7390469Z",
       "ArchiveException": null,
-      "BilingualFilePath": null,
-      "BilingualFileCommit": null,
-      "BilingualDateTime": "0001-01-01T00:00:00",
+      "BilingualFilePath": "ol-handback\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\TOC.13173dbdc376543cb6eb74ef16484f39c0ef0fdb.zh-cn.xlf",
+      "BilingualFileCommit": "90915859688718a3d98922770e81912b655e399a",
+      "BilingualDateTime": "2016-08-25T08:21:45.2499804Z",
       "BilingualException": null
     }
   }
