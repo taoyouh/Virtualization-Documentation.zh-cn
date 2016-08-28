@@ -170,6 +170,9 @@
   "b50c27e723fb8db13adec37d6b969e93d607243e": [
     "virtualization\\windowscontainers\\containers_welcome.md"
   ],
+  "cc662d0c688eadeef8011a2b97e212ec6399060a": [
+    "virtualization\\windowscontainers\\deployment\\deployment.md"
+  ],
   "b60329a09ea0f119446fa2aa20de68e3edc2b245": [
     "virtualization\\windowscontainers\\deployment\\deployment.md"
   ],
@@ -281,6 +284,9 @@
   "640cdeabb1f10e4e69f909c33d3c4e483dad00aa": [
     "virtualization\\windowscontainers\\Nano_EULA.md"
   ],
+  "4e71c39c98a61365b3b4f9c0ac55ace9c47cf10c": [
+    "virtualization\\windowscontainers\\deployment\\deployment_nano.md"
+  ],
   "b7394519f8275aacc995f72ff085f47484b57821": [
     "virtualization\\windowscontainers\\deployment\\deployment_nano.md"
   ],
@@ -344,6 +350,9 @@
   "a9bc0b1511e161ef9b648bfafd4d0456966d8f9f": [
     "virtualization\\windowscontainers\\quick_start\\quick_start_images.md"
   ],
+  "78c67351f3e5606b8225c71d221a871e58530e57": [
+    "virtualization\\windowscontainers\\quick_start\\quick_start_windows_10.md"
+  ],
   "8d3c8263819688d1a47893726619458ee44be59b": [
     "virtualization\\windowscontainers\\quick_start\\quick_start_windows_10.md"
   ],
@@ -355,6 +364,9 @@
   ],
   "57d35f9e871bdd3bd0798833bcbaf6a7948a65f2": [
     "virtualization\\windowscontainers\\quick_start\\quick_start_windows_10.md"
+  ],
+  "6fae5625731c936903c808e286dbb9b4abcddd06": [
+    "virtualization\\windowscontainers\\quick_start\\quick_start_windows_server.md"
   ],
   "6c92f5fea1b9344aa160feaf8444a57a1a05fa08": [
     "virtualization\\windowscontainers\\quick_start\\quick_start_windows_server.md"
