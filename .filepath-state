@@ -114,6 +114,9 @@
   "d17413fc572e59ec21ff513ef5de994c6716aa08": [
     "virtualization\\hyperv_on_windows\\user_guide\\nesting.md"
   ],
+  "8a84da80199479907c3bf4cf0c7b1cfb1b44bf9d": [
+    "virtualization\\hyperv_on_windows\\user_guide\\remote_host_management.md"
+  ],
   "fee2b24469b45efae982f4dfca4afb9f737b5bdf": [
     "virtualization\\hyperv_on_windows\\user_guide\\remote_host_management.md"
   ],
