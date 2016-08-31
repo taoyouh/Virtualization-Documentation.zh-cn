@@ -6,24 +6,24 @@
 ## File List
  Source File | Status | Details 
  ----------- | ------ | ------- 
- [virtualization\hyperv_on_windows\user_guide\remote_host_management.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/07a07c790484c05ea49229a770ef75c80fad3cfa/virtualization/hyperv_on_windows/user_guide/remote_host_management.md) | HandedOffSuccess | [Details](#8a84da80199479907c3bf4cf0c7b1cfb1b44bf9d206)
+ [virtualization\windowscontainers\docker\optimize_windows_dockerfile.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/7ebd83d5d3a098fc8760f5dfba7e350c3f167232/virtualization/windowscontainers/docker/optimize_windows_dockerfile.md) | HandedOffSuccess | [Details](#19a363aa013b51e0c80d56572de77e94f27e546f249)
 
 ## Item Details
-##### <a name='8a84da80199479907c3bf4cf0c7b1cfb1b44bf9d206'></a> Source: [virtualization\hyperv_on_windows\user_guide\remote_host_management.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/07a07c790484c05ea49229a770ef75c80fad3cfa/virtualization/hyperv_on_windows/user_guide/remote_host_management.md)
+##### <a name='19a363aa013b51e0c80d56572de77e94f27e546f249'></a> Source: [virtualization\windowscontainers\docker\optimize_windows_dockerfile.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/7ebd83d5d3a098fc8760f5dfba7e350c3f167232/virtualization/windowscontainers/docker/optimize_windows_dockerfile.md)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [remote_host_management.40d5636e508c5b95bb2917be75ca6b5aa426a915.zh-cn.xlf](https://github.com/Microsoft/Virtualization-Documentation-Private.handoff/blob/2af200e590a3e7e69ce597d184f245eca097667b/ol-handoff/Microsoft/Virtualization-Documentation-Private.zh-cn/live/remote_host_management.40d5636e508c5b95bb2917be75ca6b5aa426a915.zh-cn.xlf)
-* Handoff Datetime: 2016-08-30 18:07:10
+* Handoff File: [optimize_windows_dockerfile.8acb58c9a0cb3119d370c90c749222ed5b757368.zh-cn.xlf](https://github.com/Microsoft/Virtualization-Documentation-Private.handoff/blob/2606af990e2318f029ca77f0eda29aa5bf625c65/ol-handoff/Microsoft/Virtualization-Documentation-Private.zh-cn/live/optimize_windows_dockerfile.8acb58c9a0cb3119d370c90c749222ed5b757368.zh-cn.xlf)
+* Handoff Datetime: 2016-08-31 21:37:24
 * Handoff Reason: Include
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [virtualization\hyperv_on_windows\user_guide\remote_host_management.md](https://github.com/Microsoft/Virtualization-Documentation-Private.zh-cn/blob/df694c383e4e8fbbd39b1eba7fdfc499d0901f70/virtualization/hyperv_on_windows/user_guide/remote_host_management.md)
-* Current Handback File: [remote_host_management.40d5636e508c5b95bb2917be75ca6b5aa426a915.zh-cn.xlf](https://github.com/Microsoft/Virtualization-Documentation-Private.handback/blob/6814984f0668843ce316398ce74a899f34f33fd8/ol-handback/Microsoft/Virtualization-Documentation-Private.zh-cn/live/remote_host_management.40d5636e508c5b95bb2917be75ca6b5aa426a915.zh-cn.xlf)
-* Current Handback Datetime: 2016-07-05 11:24:19
-* Bilingual File: [remote_host_management.40d5636e508c5b95bb2917be75ca6b5aa426a915.zh-cn.xlf](https://github.com/Microsoft/Virtualization-Documentation-Private.handback/blob/6814984f0668843ce316398ce74a899f34f33fd8/ol-handback/Microsoft/Virtualization-Documentation-Private.zh-cn/live/remote_host_management.40d5636e508c5b95bb2917be75ca6b5aa426a915.zh-cn.xlf)
-* Bilingual Datetime: 2016-07-05 11:24:49
+* Current Target File: [virtualization\windowscontainers\docker\optimize_windows_dockerfile.md](https://github.com/Microsoft/Virtualization-Documentation-Private.zh-cn/blob/fe2d81bbb572213945f772202a5bc549a4f9ca23/virtualization/windowscontainers/docker/optimize_windows_dockerfile.md)
+* Current Handback File: [optimize_windows_dockerfile.8acb58c9a0cb3119d370c90c749222ed5b757368.zh-cn.xlf](https://github.com/Microsoft/Virtualization-Documentation-Private.handback/blob/50d7759ed6d9e8d8be39a5100b46ba5e1155c829/ol-handback/Microsoft/Virtualization-Documentation-Private.zh-cn/live/optimize_windows_dockerfile.8acb58c9a0cb3119d370c90c749222ed5b757368.zh-cn.xlf)
+* Current Handback Datetime: 2016-06-30 12:09:25
+* Bilingual File: [optimize_windows_dockerfile.8acb58c9a0cb3119d370c90c749222ed5b757368.zh-cn.xlf](https://github.com/Microsoft/Virtualization-Documentation-Private.handback/blob/50d7759ed6d9e8d8be39a5100b46ba5e1155c829/ol-handback/Microsoft/Virtualization-Documentation-Private.zh-cn/live/optimize_windows_dockerfile.8acb58c9a0cb3119d370c90c749222ed5b757368.zh-cn.xlf)
+* Bilingual Datetime: 2016-06-30 12:12:19
 * [Back to Top](#report-top)
 
 

@@ -329,6 +329,9 @@
   "84baad10511eb070e654f1ee7d71eb547d3f2ee7": [
     "virtualization\\windowscontainers\\docker\\manage_windows_dockerfile.md"
   ],
+  "19a363aa013b51e0c80d56572de77e94f27e546f": [
+    "virtualization\\windowscontainers\\docker\\optimize_windows_dockerfile.md"
+  ],
   "4822ff2f0248b2d7752299ea55b08e3499e2e2f7": [
     "virtualization\\windowscontainers\\docker\\optimize_windows_dockerfile.md"
   ],
