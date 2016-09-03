@@ -10,8 +10,8 @@ ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: bb9bfbe0-5bdc-4984-912f-9c93ea67105f
 translationtype: Human Translation
-ms.sourcegitcommit: fac57150de3ffd6c7d957dd628b937d5c41c1b35
-ms.openlocfilehash: 57d35f9e871bdd3bd0798833bcbaf6a7948a65f2
+ms.sourcegitcommit: 2319649d1dd39677e59a9431fbefaf82982492c6
+ms.openlocfilehash: 8d3c8263819688d1a47893726619458ee44be59b
 
 ---
 
@@ -25,7 +25,7 @@ ms.openlocfilehash: 57d35f9e871bdd3bd0798833bcbaf6a7948a65f2
 
 **先决条件：**
 
-- 一个运行 [Windows 10 预览体验成员版本](https://insider.windows.com/)的物理计算机系统。   
+- 一个运行 Windows 10 周年纪念版（专业版或企业版）的物理计算机系统。   
 - 本快速入门可以在 Windows 10 虚拟机上运行，但需要启用嵌套虚拟化。 可以在[嵌套虚拟化指南](https://msdn.microsoft.com/en-us/virtualization/hyperv_on_windows/user_guide/nesting)中找到相关详细信息。
 
 ## 1.安装容器功能
@@ -63,19 +63,23 @@ Set-ItemProperty -Path 'HKLM:SOFTWARE\Microsoft\Windows NT\CurrentVersion\Virtua
 以 zip 存档形式下载 Docker 引擎和客户端。
 
 ```none
-Invoke-WebRequest "https://get.docker.com/builds/Windows/x86_64/docker-1.12.0.zip" -OutFile "$env:TEMP\docker-1.12.0.zip" -UseBasicParsing
+Invoke-WebRequest "https://master.dockerproject.org/windows/amd64/docker-1.13.0-dev.zip" -OutFile "$env:TEMP\docker-1.13.0-dev.zip" -UseBasicParsing
 ```
 
 将 zip 存档展开到 Program Files，存档内容已经位于 Docker 目录中。
 
 ```none
-Expand-Archive -Path "$env:TEMP\docker-1.12.0.zip" -DestinationPath $env:ProgramFiles
+Expand-Archive -Path "$env:TEMP\docker-1.13.0-dev.zip" -DestinationPath $env:ProgramFiles
 ```
 
 将 Docker 目录添加到系统路径。
 
 ```none
-[Environment]::SetEnvironmentVariable("Path", $env:Path + ";$env:ProgramFiles\docker\", [EnvironmentVariableTarget]::Machine)
+# for quick use, does not require shell to be restarted
+$env:path += ";c:\program files\docker"
+
+# for persistent use, will apply even after a reboot 
+[Environment]::SetEnvironmentVariable("Path", $env:Path + ";C:\Program Files\Docker", [EnvironmentVariableTarget]::Machine)
 ```
 
 重启 PowerShell 会话以识别已修改的路径。
@@ -83,7 +87,7 @@ Expand-Archive -Path "$env:TEMP\docker-1.12.0.zip" -DestinationPath $env:Program
 若要将 Docker 安装为一个 Windows 服务，请运行以下命令。
 
 ```none
-& $env:ProgramFiles\docker\dockerd.exe --register-service
+dockerd --register-service
 ```
 
 安装完成后，可以启动该服务。
@@ -120,7 +124,7 @@ microsoft/nanoserver   latest              3a703c6e97a2        7 weeks ago      
 首先，从 `nanoserver` 映像启动一个具有交互式会话的容器。 启动容器后，容器中将显示一个命令行界面。  
 
 ```none
-docker run -it nanoserver cmd
+docker run -it microsoft/nanoserver cmd
 ```
 
 在容器中创建一个简单的“Hello World”脚本。
@@ -169,6 +173,6 @@ docker run --rm helloworld powershell c:\helloworld.ps1
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

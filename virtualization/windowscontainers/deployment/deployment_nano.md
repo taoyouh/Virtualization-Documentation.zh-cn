@@ -4,14 +4,14 @@ description: "在 Nano Server 上部署 Windows 容器"
 keywords: "docker, 容器"
 author: neilpeterson
 manager: timlt
-ms.date: 07/06/2016
+ms.date: 08/23/2016
 ms.topic: article
 ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: b82acdf9-042d-4b5c-8b67-1a8013fa1435
 translationtype: Human Translation
-ms.sourcegitcommit: fac57150de3ffd6c7d957dd628b937d5c41c1b35
-ms.openlocfilehash: d2f19e96f06ba18ab7e23e62652f569265c6f43f
+ms.sourcegitcommit: 2319649d1dd39677e59a9431fbefaf82982492c6
+ms.openlocfilehash: a79469987879656117812ff6f9563046584172c0
 
 ---
 
@@ -29,22 +29,20 @@ ms.openlocfilehash: d2f19e96f06ba18ab7e23e62652f569265c6f43f
 
 首先从[此处](https://msdn.microsoft.com/en-us/virtualization/windowscontainers/nano_eula)下载 Nano Server 评估 VHD。 在此 VHD 中创建虚拟机，启动虚拟机，并使用 Hyper-V 连接选项或基于正在使用的虚拟化平台（等效）连接到虚拟机。
 
-接下来，需要设置管理密码。 在 Nano Server 恢复控制台上按 `F11` 来设置密码。 将出现更改密码对话框。
-
 ### 创建远程 PowerShell 会话
 
-由于 Nano Server 没有交互式登录功能，所有管理将通过远程 PowerShell 会话完成。 若要创建远程会话，请使用 Nano Server 恢复控制台的网络部分获取系统 IP 地址，然后在远程主机上运行以下命令。 将 IPADDRESS 替换为 Nano Server 系统的实际 IP 地址。
+由于 Nano Server 没有交互式登录功能，所有管理都将使用 PowerShell 通过远程系统完成。
 
-将 Nano Server 系统添加到受信任的主机。
+将 Nano Server 系统添加到远程系统的受信任的主机。 请用此 Nano Server 的 IP 地址替换该 IP 地址。
 
 ```none
-set-item WSMan:\localhost\Client\TrustedHosts IPADDRESS -Force
+Set-Item WSMan:\localhost\Client\TrustedHosts 192.168.1.50 -Force
 ```
 
 创建远程 PowerShell 会话。
 
 ```none
-Enter-PSSession -ComputerName IPADDRESS -Credential ~\Administrator
+Enter-PSSession -ComputerName 192.168.1.50 -Credential ~\Administrator
 ```
 
 完成这些步骤后，你将位于 Nano Server 系统的远程 PowerShell 会话中。 除非特别指出，此文档的其余部分将通过远程会话发生。
@@ -74,7 +72,13 @@ Restart-Computer
 
 ## 安装 Docker
 
-若要使用 Window 容器，则需要安装 Docker。 Docker 由 Docker 引擎和 Docker 客户端组成。 使用这些步骤安装 Docker 引擎和客户端。
+若要使用 Window 容器，则需要安装 Docker 引擎。 使用这些步骤安装 Docker 引擎。
+
+首先，请确保 Nano Server 防火墙已针对 SMB 进行配置。 在 Nano Server 主机上运行此命令即可完成此操作。
+
+```none
+Set-NetFirewallRule -Name FPS-SMB-In-TCP -Enabled True
+```
 
 在 Nano Server 主机上为 Docker 可执行文件创建一个文件夹。
 
@@ -84,30 +88,34 @@ New-Item -Type Directory -Path $env:ProgramFiles'\docker\'
 
 下载 Docker 引擎和客户端并将其复制到容器主机的 C:\Program Files\docker\'。 
 
-**注意** - 由于 Nano Server 当前不支持 `Invoke-WebRequest`，因此需要通过远程系统完成下载，然后将其复制到 Nano Server 主机。
+> Nano Server 目前不支持 `Invoke-WebRequest`。 此下载需在远程系统上完成，且需将其文件复制到 Nano Server 主机上。
 
 ```none
-Invoke-WebRequest https://aka.ms/tp5/b/dockerd -OutFile .\dockerd.exe
+Invoke-WebRequest "https://get.docker.com/builds/Windows/x86_64/docker-1.12.0.zip" -OutFile .\docker-1.12.0.zip -UseBasicParsing
 ```
 
-下载 Docker 客户端。
+提取下载的包。 完成后，你将具备同时包含 **dockerd.exe** 和 **docker.exe** 的目录。 将这两者复制到 Nano Server 容器主机中的 **C:\Program Files\docker\** 文件夹。 
 
 ```none
-Invoke-WebRequest https://aka.ms/tp5/b/docker -OutFile .\docker.exe
+Expand-Archive .\docker-1.12.0.zip
 ```
 
-Docker 引擎和客户端下载完成后，将它们复制到 Nano Server 容器主机中的“C:\Program Files\docker\'”文件夹中。 需要将 Nano Server 防火墙配置为允许传入的 SMB 连接。 可使用 PowerShell 或 Nano Server 恢复控制台完成该配置。 
+将 Docker 目录添加到 Nano Server 上的系统路径。
+
+> 请确保重新切换到远程 Nano Server 会话。
 
 ```none
-Set-NetFirewallRule -Name FPS-SMB-In-TCP -Enabled True
+# for quick use, does not require shell to be restarted
+$env:path += “;C:\program files\docker”
+
+# for persistent use, will apply even after a reboot 
+setx PATH $env:path /M
 ```
 
-现在可使用标准 SMB 文件复制方法复制文件。
-
-将 dockerd.exe 文件复制到主机后，运行此命令以将 Docker 安装为 Windows 服务。
+将 Docker 安装为 Windows 的一个服务。
 
 ```none
-& $env:ProgramFiles'\docker\dockerd.exe' --register-service
+dockerd --register-service
 ```
 
 启动 Docker 服务。
@@ -118,33 +126,15 @@ Start-Service Docker
 
 ## 安装基本容器映像
 
-基本操作系统映像映像用作任何 Windows Server 或 Hyper-V 容器的基础。 基本操作系统映像映像随 Windows Server Core 和 Nano Server 作为基本操作系统映像提供，并且可以使用容器映像提供程序进行安装。 有关 Windows 容器映像的详细信息，请参阅[管理容器映像](../management/manage_images.md)。
-
-可以使用以下命令来安装容器映像提供程序。
-
-```none
-Install-PackageProvider ContainerImage -Force
-```
+基本操作系统映像映像用作任何 Windows Server 或 Hyper-V 容器的基础。 基本操作系统映像可通过同时将 Windows Server Core 和 Nano Server 作为基本操作系统获取，并且可以使用 `docker pull` 进行安装。 有关 Windows 容器映像的详细信息，请参阅[管理容器映像](../management/manage_images.md)。
 
 若要下载和安装 Nano Server 基本映像，请运行以下内容：
 
 ```none
-Install-ContainerImage -Name NanoServer
+docker pull microsoft/nanoserver
 ```
 
-**注意** - 此时，只有 Nano Server 基本映像与 Nano Server 容器主机兼容。
-
-重启 Docker 服务。
-
-```none
-Restart-Service Docker
-```
-
-将 Nano Server 基本映像标记为最新映像。
-
-```none
-& $env:ProgramFiles'\docker\docker.exe' tag nanoserver:10.0.14300.1016 nanoserver:latest
-```
+> 此时，只有 Nano Server 基本映像与 Nano Server 容器主机兼容。
 
 ## 在 Nano Server 上管理 Docker
 
@@ -155,7 +145,7 @@ Restart-Service Docker
 在容器主机上为 Docker 连接创建防火墙规则。 这将是用于不安全连接的端口 `2375`，或用于安全连接的端口 `2376`。
 
 ```none
-netsh advfirewall firewall add rule name="Docker daemon " dir=in action=allow protocol=TCP localport=2376
+netsh advfirewall firewall add rule name="Docker daemon " dir=in action=allow protocol=TCP localport=2375
 ```
 
 配置 Docker 引擎，使其接受通过 TCP 传入的连接。
@@ -180,25 +170,27 @@ Restart-Service docker
 
 ### 准备远程客户端
 
-在要工作的远程系统上创建一个目录来保存 Docker 客户端。
+在要工作的远程系统上下载 Docker 客户端。
 
 ```none
-New-Item -Type Directory -Path 'C:\Program Files\docker\'
+Invoke-WebRequest "https://get.docker.com/builds/Windows/x86_64/docker-1.12.0.zip" -OutFile "$env:TEMP\docker-1.12.0.zip" -UseBasicParsing
 ```
 
-将 Docker 客户端下载到此目录中。
+提取压缩包。
 
 ```none
-Invoke-WebRequest https://aka.ms/tp5/b/docker -OutFile "$env:ProgramFiles\docker\docker.exe"
+Expand-Archive -Path "$env:TEMP\docker-1.12.0.zip" -DestinationPath $env:ProgramFiles
 ```
 
-将 Docker 目录添加到系统路径。
+运行以下两个命令以将 Docker 目录添加到系统路径。
 
 ```none
-$env:Path += ";$env:ProgramFiles\Docker"
-```
+# for quick use, does not require shell to be restarted
+$env:path += ";c:\program files\docker"
 
-重启 PowerShell 或命令会话以识别已修改的路径。
+# for persistent use, will apply even after a reboot 
+[Environment]::SetEnvironmentVariable("Path", $env:Path + ";C:\Program Files\Docker", [EnvironmentVariableTarget]::Machine)
+```
 
 完成后，可使用 `docker -H` 参数访问远程 Docker 主机。
 
@@ -238,6 +230,6 @@ Restart-Computer
 ```
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

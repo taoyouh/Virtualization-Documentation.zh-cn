@@ -10,8 +10,8 @@ ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: e3b2a4dc-9082-4de3-9c95-5d516c03482b
 translationtype: Human Translation
-ms.sourcegitcommit: b3f273d230344cff28d4eab7cebf96bac14f68c2
-ms.openlocfilehash: 808436ba179daa09fbc45ee7f7708a505bd1b4c8
+ms.sourcegitcommit: 2319649d1dd39677e59a9431fbefaf82982492c6
+ms.openlocfilehash: 6c92f5fea1b9344aa160feaf8444a57a1a05fa08
 
 ---
 
@@ -57,22 +57,26 @@ Restart-Computer -Force
 Invoke-WebRequest "https://get.docker.com/builds/Windows/x86_64/docker-1.12.0.zip" -OutFile "$env:TEMP\docker-1.12.0.zip" -UseBasicParsing
 ```
 
-将 zip 存档展开到 Program Files，存档内容已经位于 Docker 目录中。
+将 Zip 存档扩展到 Program Files。
 
 ```none
 Expand-Archive -Path "$env:TEMP\docker-1.12.0.zip" -DestinationPath $env:ProgramFiles
 ```
 
-将 Docker 目录添加到系统路径。 添加完成后，重启 PowerShell 会话以识别已修改的路径。
+将 Docker 目录添加到系统路径。
 
 ```none
+# for quick use, does not require shell to be restarted
+$env:path += ";c:\program files\docker"
+
+# for persistent use, will apply even after a reboot 
 [Environment]::SetEnvironmentVariable("Path", $env:Path + ";C:\Program Files\Docker", [EnvironmentVariableTarget]::Machine)
 ```
 
 若要将 Docker 安装为一个 Windows 服务，请运行以下命令。
 
 ```none
-& $env:ProgramFiles\docker\dockerd.exe --register-service
+dockerd --register-service
 ```
 
 安装完成后，可以启动该服务。
@@ -97,7 +101,7 @@ docker pull microsoft/windowsservercore
 docker images
 
 REPOSITORY                    TAG                 IMAGE ID            CREATED             SIZE
-microsoft/windowsservercore   latest              02cb7f65d61b        7 weeks ago         7.764 GB
+microsoft/windowsservercore   latest              02cb7f65d61b        8 weeks ago         7.764 GB
 ```
 
 有关 Windows 容器映像的深入信息，请参阅[管理容器映像](../management/manage_images.md)。
@@ -111,26 +115,32 @@ microsoft/windowsservercore   latest              02cb7f65d61b        7 weeks ag
 ```none
 docker search microsoft
 
-NAME                                         DESCRIPTION                                     
-microsoft/sample-django:windowsservercore    Django installed in a Windows Server Core ...   
-microsoft/dotnet35:windowsservercore         .NET 3.5 Runtime installed in a Windows Se...   
-microsoft/sample-golang:windowsservercore    Go Programming Language installed in a Win...   
-microsoft/sample-httpd:windowsservercore     Apache httpd installed in a Windows Server...   
-microsoft/iis:windowsservercore              Internet Information Services (IIS) instal...   
-microsoft/sample-mongodb:windowsservercore   MongoDB installed in a Windows Server Core...   
-microsoft/sample-mysql:windowsservercore     MySQL installed in a Windows Server Core b...   
-microsoft/sample-nginx:windowsservercore     Nginx installed in a Windows Server Core b...  
-microsoft/sample-python:windowsservercore    Python installed in a Windows Server Core ...   
-microsoft/sample-rails:windowsservercore     Ruby on Rails installed in a Windows Serve...  
-microsoft/sample-redis:windowsservercore     Redis installed in a Windows Server Core b...   
-microsoft/sample-ruby:windowsservercore      Ruby installed in a Windows Server Core ba...   
-microsoft/sample-sqlite:windowsservercore    SQLite installed in a Windows Server Core ...  
+NAME                                         DESCRIPTION
+microsoft/aspnet                             ASP.NET is an open source server-side Web ...
+microsoft/dotnet                             Official images for working with .NET Core...
+mono                                         Mono is an open source implementation of M...
+microsoft/azure-cli                          Docker image for Microsoft Azure Command L...
+microsoft/iis                                Internet Information Services (IIS) instal...
+microsoft/mssql-server-2014-express-windows  Microsoft SQL Server 2014 Express installe...
+microsoft/nanoserver                         Nano Server base OS image for Windows cont...
+microsoft/windowsservercore                  Windows Server Core base OS image for Wind...
+microsoft/oms                                Monitor your containers using the Operatio...
+microsoft/dotnet-preview                     Preview bits for microsoft/dotnet image
+microsoft/dotnet35
+microsoft/applicationinsights                Application Insights for Docker helps you ...
+microsoft/sample-redis                       Redis installed in Windows Server Core and...
+microsoft/sample-node                        Node installed in a Nano Server based cont...
+microsoft/sample-nginx                       Nginx installed in Windows Server Core and...
+microsoft/sample-httpd                       Apache httpd installed in Windows Server C...
+microsoft/sample-dotnet                      .NET Core running in a Nano Server container
+microsoft/sqlite                             SQLite installed in a Windows Server Core ...
+...
 ```
 
 使用 `docker pull` 下载 IIS 映像。  
 
 ```none
-docker pull microsoft/iis:windowsservercore
+docker pull microsoft/iis
 ```
 
 可以通过 `docker images` 命令验证映像下载。 请注意，你将在此处看到基本映像 (windowsservercore) 和 IIS 映像。
@@ -138,16 +148,15 @@ docker pull microsoft/iis:windowsservercore
 ```none
 docker images
 
-REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
-microsoft/iis       windowsservercore   c26f4ceb81db        2 weeks ago         9.48 GB
-windowsservercore   10.0.14300.1000     dbfee88ee9fd        8 weeks ago         9.344 GB
-windowsservercore   latest              dbfee88ee9fd        8 weeks ago         9.344 GB
+REPOSITORY                    TAG                 IMAGE ID            CREATED             SIZE
+microsoft/iis                 latest              accd044753c1        11 days ago         7.907 GB
+microsoft/windowsservercore   latest              02cb7f65d61b        8 weeks ago         7.764 GB
 ```
 
 使用 `docker run` 部署 IIS 容器。
 
 ```none
-docker run -d -p 80:80 microsoft/iis:windowsservercore ping -t localhost
+docker run -d -p 80:80 microsoft/iis ping -t localhost
 ```
 
 此命令将 IIS 映像作为后台服务 (-d) 运行，并对网络进行配置，以便容器主机的端口 80 映射到容器的端口 80。
@@ -159,8 +168,8 @@ docker run -d -p 80:80 microsoft/iis:windowsservercore ping -t localhost
 ```none
 docker ps
 
-CONTAINER ID    IMAGE                             COMMAND               CREATED              STATUS   PORTS                NAMES
-9cad3ea5b7bc    microsoft/iis:windowsservercore   "ping -t localhost"   About a minute ago   Up       0.0.0.0:80->80/tcp   grave_jang
+CONTAINER ID  IMAGE          COMMAND              CREATED             STATUS             PORTS               NAME
+09c9cc6e4f83  microsoft/iis  "ping -t localhost"  About a minute ago  Up About a minute  0.0.0.0:80->80/tcp  big_jang
 ```
 
 从不同的计算机中，打开 Web 浏览器并输入容器主机的 IP 地址。 如果已正确配置所有内容，你应看到 IIS 初始屏幕。 这是从 Windows 容器中托管的 IIS 实例提供的。
@@ -172,7 +181,7 @@ CONTAINER ID    IMAGE                             COMMAND               CREATED 
 返回到容器主机上，使用 `docker rm` 命令删除容器。 注意 - 将此示例中的容器名称替换为实际容器名称。
 
 ```none
-docker rm -f grave_jang
+docker rm -f big_jang
 ```
 ## 后续步骤
 
@@ -182,6 +191,6 @@ docker rm -f grave_jang
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Aug16_HO4-->
 
 

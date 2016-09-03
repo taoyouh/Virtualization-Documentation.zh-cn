@@ -4,14 +4,14 @@ description: "在 Windows 中配置 Docker"
 keywords: "docker, 容器"
 author: neilpeterson
 manager: timlt
-ms.date: 08/17/2016
+ms.date: 08/23/2016
 ms.topic: article
 ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: 6885400c-5623-4cde-8012-f6a00019fafa
 translationtype: Human Translation
-ms.sourcegitcommit: fac57150de3ffd6c7d957dd628b937d5c41c1b35
-ms.openlocfilehash: 7ba03dbcedbe42d54c955ff321e9f3f180a5a674
+ms.sourcegitcommit: 4dded90462c5438a6836ec32a165a9cc1019d6ec
+ms.openlocfilehash: 6ae49d82a89b2f30198de05aa4915726853172f5
 
 ---
 
@@ -23,22 +23,16 @@ Windows 中不含 Docker 引擎和客户端，需要单独进行安装和配置�
 
 若要使用 Window 容器，则需要安装 Docker。 Docker 由 Docker 引擎和 Docker 客户端组成。 此示例中将会安装这两者。
 
-为 Docker 可执行文件创建文件夹。
-
-```none
-New-Item -Type Directory -Path 'C:\Program Files\docker\'
-```
-
 下载 Docker 引擎。
 
 ```none
-Invoke-WebRequest https://aka.ms/tp5/b/dockerd -OutFile $env:ProgramFiles\docker\dockerd.exe
+Invoke-WebRequest "https://get.docker.com/builds/Windows/x86_64/docker-1.12.0.zip" -OutFile "$env:TEMP\docker-1.12.0.zip" -UseBasicParsing
 ```
 
-下载 Docker 客户端。
+将 Zip 存档扩展到 Program Files。
 
-```none
-Invoke-WebRequest https://aka.ms/tp5/b/docker -OutFile $env:ProgramFiles\docker\docker.exe
+```
+Expand-Archive -Path "$env:TEMP\docker-1.12.0.zip" -DestinationPath $env:ProgramFiles
 ```
 
 将 Docker 目录添加到系统路径。 添加完成后，重启 PowerShell 会话以识别已修改的路径。
@@ -184,6 +178,6 @@ Get-EventLog -LogName Application -Source Docker -After (Get-Date).AddMinutes(-3
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 
