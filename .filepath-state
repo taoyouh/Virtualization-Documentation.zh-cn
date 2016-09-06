@@ -206,6 +206,9 @@
   "8921cbd910bf657ddc4998e4214c1e9f9c3a01e9": [
     "virtualization\\windowscontainers\\management\\manage_containers.md"
   ],
+  "a175091c943cf596b2a810245b1b73b8baddb0c6": [
+    "virtualization\\windowscontainers\\management\\manage_data.md"
+  ],
   "26c010e79a4913b2e138f6d1d78f9406dbacbc6b": [
     "virtualization\\windowscontainers\\management\\manage_data.md"
   ],
