@@ -10,8 +10,8 @@ ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: bb9bfbe0-5bdc-4984-912f-9c93ea67105f
 translationtype: Human Translation
-ms.sourcegitcommit: 2319649d1dd39677e59a9431fbefaf82982492c6
-ms.openlocfilehash: 8d3c8263819688d1a47893726619458ee44be59b
+ms.sourcegitcommit: 39e480b8bf3f90cfe9b7d4d17141b9dbec5f93e5
+ms.openlocfilehash: 78c67351f3e5606b8225c71d221a871e58530e57
 
 ---
 
@@ -75,10 +75,10 @@ Expand-Archive -Path "$env:TEMP\docker-1.13.0-dev.zip" -DestinationPath $env:Pro
 将 Docker 目录添加到系统路径。
 
 ```none
-# for quick use, does not require shell to be restarted
+# For quick use, does not require shell to be restarted.
 $env:path += ";c:\program files\docker"
 
-# for persistent use, will apply even after a reboot 
+# For persistent use, will apply even after a reboot. 
 [Environment]::SetEnvironmentVariable("Path", $env:Path + ";C:\Program Files\Docker", [EnvironmentVariableTarget]::Machine)
 ```
 
