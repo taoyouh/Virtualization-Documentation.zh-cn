@@ -117,9 +117,6 @@
   "8a84da80199479907c3bf4cf0c7b1cfb1b44bf9d": [
     "virtualization\\hyperv_on_windows\\user_guide\\remote_host_management.md"
   ],
-  "fee2b24469b45efae982f4dfca4afb9f737b5bdf": [
-    "virtualization\\hyperv_on_windows\\user_guide\\remote_host_management.md"
-  ],
   "5f21c845594a8663b7458e86c121563d3b199e4d": [
     "virtualization\\hyperv_on_windows\\user_guide\\media\\HyperVManager-ConnectToHost.png"
   ],
@@ -315,9 +312,6 @@
     "virtualization\\windowscontainers\\docker\\manage_windows_dockerfile.md"
   ],
   "19a363aa013b51e0c80d56572de77e94f27e546f": [
-    "virtualization\\windowscontainers\\docker\\optimize_windows_dockerfile.md"
-  ],
-  "4822ff2f0248b2d7752299ea55b08e3499e2e2f7": [
     "virtualization\\windowscontainers\\docker\\optimize_windows_dockerfile.md"
   ],
   "19c1070cee496d52eba1b2ce80f4f939edccdffd": [
