@@ -10,8 +10,8 @@ ms.prod: windows-10-hyperv
 ms.service: windows-10-hyperv
 ms.assetid: 2d34e98c-6134-479b-8000-3eb360b8b8a3
 translationtype: Human Translation
-ms.sourcegitcommit: eb6c8e904b9cd2c5d1ed25583ffbcdbdf0b9139c
-ms.openlocfilehash: fee2b24469b45efae982f4dfca4afb9f737b5bdf
+ms.sourcegitcommit: 07a07c790484c05ea49229a770ef75c80fad3cfa
+ms.openlocfilehash: 8a84da80199479907c3bf4cf0c7b1cfb1b44bf9d
 
 ---
 
@@ -117,12 +117,12 @@ Windows 10 极大地增加了远程连接类型的可能组合。
 2. [Enable-WSManCredSSP](https://technet.microsoft.com/en-us/library/hh849872.aspx) -Role client -DelegateComputer "fqdn-of-hyper-v-host"
   * 或者，你可以通过以下规则允许所有主机在受信任的情况下进行管理：
   * [Enable-WSManCredSSP](https://technet.microsoft.com/en-us/library/hh849872.aspx) -Role client -DelegateComputer *
-3. 此外，你需要配置以下组策略：** 计算机配置 | 管理模板 | 系统 | 凭据委派 | 允许新的凭据用于仅 NTLM 服务器身份验证**
+3. 此外，你需要配置以下组策略：** 计算机配置 | 管理模板 | 系统 | 凭据委派 | 允许分配新的凭据用于仅 NTLM 服务器身份验证**
     * 单击“**启用**”并添加 *wsman/fqdn-of-hyper-v-host*
     * 或者，你可以通过添加 _wsman/*_ 允许所有主机在受信任的情况下进行管理
 
 
 
-<!--HONumber=Jun16_HO5-->
+<!--HONumber=Aug16_HO5-->
 
 
