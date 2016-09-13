@@ -1,7 +1,7 @@
 ---
 title: "容器数据卷"
 description: "使用 Windows 容器创建和管理数据卷。"
-keywords: docker, containers
+keywords: "docker, 容器"
 author: neilpeterson
 manager: timlt
 ms.date: 05/02/2016
@@ -10,8 +10,8 @@ ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: f5998534-917b-453c-b873-2953e58535b1
 translationtype: Human Translation
-ms.sourcegitcommit: 493b669bc47fc589486a82cfea73a0bb1e88cf79
-ms.openlocfilehash: 26c010e79a4913b2e138f6d1d78f9406dbacbc6b
+ms.sourcegitcommit: 960f523b7ff72bbb1eff6db5172c20b253fc7182
+ms.openlocfilehash: bd7e6af1dabadce2b89a48b916596849371026a8
 
 ---
 
@@ -49,36 +49,24 @@ docker run -it -v c:\source:c:\destination windowsservercore cmd
 
 ### 装载单个文件
 
-通过显式指定文件名，可以将单个文件装载到容器中。 在此示例中，将要共享的目录包含许多文件，但只有“config.ini”文件在容器内部可用。 
+无法将单个文件安装到 Windows 容器中。 运行以下命令不会失败，但是生成的容器中不包含该文件。 
 
 ```none
-docker run -it -v c:\container-share\config.ini windowsservercore cmd
+docker run -it -v c:\config\config.ini microsoft/windowsservercore cmd
 ```
 
-在正在运行的容器内部，仅 config.ini 文件可见。
+解决方法是，从目录安装所有需要装载到容器的文件。
 
 ```none
-c:\container-share>dir
- Volume in drive C has no label.
- Volume Serial Number is 7CD5-AC14
-
- Directory of c:\container-share
-
-04/04/2016  12:53 PM    <DIR>          .
-04/04/2016  12:53 PM    <DIR>          ..
-04/04/2016  12:53 PM    <SYMLINKD>     config.ini
-               0 File(s)              0 bytes
-               3 Dir(s)  21,184,208,896 bytes free
+docker run -it -v c:\config:c:\config microsoft/windowsservercore cmd
 ```
-
-有关装载单个文件的详细信息，请参阅 [Manage data in containers on docker.com](https://docs.docker.com/engine/userguide/containers/dockervolumes/#mount-a-host-directory-as-a-data-volume)（在 docker.com 上管理容器中的数据）。
 
 ### 安装完整的驱动器
 
-可以使用类似于此的命令安装完整的驱动器。 注意，请勿包括反斜杠。
+可以使用类似于此的命令安装完整的驱动器。
 
 ```none
-docker run -it -v d: windowsservercore cmd
+docker run -it -v d:\:d: windowsservercore cmd
 ```
 
 此时将无法安装第二个驱动器部分。 例如，无法使用以下项。
@@ -125,6 +113,6 @@ docker inspect backstabbing_kowalevski
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Sep16_HO2-->
 
 
