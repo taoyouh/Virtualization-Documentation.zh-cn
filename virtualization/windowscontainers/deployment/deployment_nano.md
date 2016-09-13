@@ -10,8 +10,8 @@ ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: b82acdf9-042d-4b5c-8b67-1a8013fa1435
 translationtype: Human Translation
-ms.sourcegitcommit: deaed93924d4c8bff55e1f95342381bf4621076e
-ms.openlocfilehash: 4e71c39c98a61365b3b4f9c0ac55ace9c47cf10c
+ms.sourcegitcommit: 939a1b69f159504b998792adb95ccabc326db333
+ms.openlocfilehash: 538fb27d6170f0a8dab5c189b90040e40c546e14
 
 ---
 
@@ -195,7 +195,7 @@ $env:path += ";c:\program files\docker"
 完成后，可使用 `docker -H` 参数访问远程 Docker 主机。
 
 ```none
-docker -H tcp://<IPADDRESS>:2375 run -it nanoserver cmd
+docker -H tcp://<IPADDRESS>:2375 run -it microsoft/nanoserver cmd
 ```
 
 可以创建环境变量 `DOCKER_HOST`，这会使 `-H` 参数不再需要。 以下 PowerShell 命令可用于此操作。
@@ -207,7 +207,7 @@ $env:DOCKER_HOST = "tcp://<ipaddress of server>:2375"
 设置此变量后，现在命令将如下所示。
 
 ```none
-docker run -it nanoserver cmd
+docker run -it microsoft/nanoserver cmd
 ```
 
 ## Hyper-V 容器主机
@@ -230,6 +230,7 @@ Restart-Computer
 ```
 
 
-<!--HONumber=Aug16_HO4-->
+
+<!--HONumber=Sep16_HO2-->
 
 
