@@ -179,9 +179,6 @@
   "c93337ae0b42cf3a483a6e66ea0b77f3223dfbac": [
     "virtualization\\windowscontainers\\deployment\\docker_windows.md"
   ],
-  "387789ee9169d2affb9b9ed8e4e0e607071ac29b": [
-    "virtualization\\windowscontainers\\deployment\\docker_windows.md"
-  ],
   "f76dc45e6035c72fd7b07f25d4b4c55f2a95aafb": [
     "virtualization\\windowscontainers\\deployment\\system_requirements.md"
   ],
@@ -194,31 +191,16 @@
   "ca15f64ec114a5763e54f1891a4045b43a5fa286": [
     "virtualization\\windowscontainers\\management\\hyperv_container.md"
   ],
-  "2677b9228371b4a4ba72c249509cd9ccacc89473": [
-    "virtualization\\windowscontainers\\management\\hyperv_container.md"
-  ],
   "e44f3f44e9beb0b7ed3054bc51fad44a0ecda1cd": [
-    "virtualization\\windowscontainers\\management\\manage_containers.md"
-  ],
-  "8921cbd910bf657ddc4998e4214c1e9f9c3a01e9": [
     "virtualization\\windowscontainers\\management\\manage_containers.md"
   ],
   "60dc25d879b5c8de6515899d9de9e920a08b7e62": [
     "virtualization\\windowscontainers\\management\\manage_data.md"
   ],
-  "bd7e6af1dabadce2b89a48b916596849371026a8": [
-    "virtualization\\windowscontainers\\management\\manage_data.md"
-  ],
   "49e29949fc91533cf1d3ed0aef47e829276772f4": [
     "virtualization\\windowscontainers\\management\\manage_images.md"
   ],
-  "bb99d0c15d6d1dd9e126fde05207431153b4f94a": [
-    "virtualization\\windowscontainers\\management\\manage_images.md"
-  ],
   "7544e91856d969b09241df7a466d776d818a2968": [
-    "virtualization\\windowscontainers\\management\\manage_resources.md"
-  ],
-  "82cc37e4bcf001e938dcff7308be16978fa955e2": [
     "virtualization\\windowscontainers\\management\\manage_resources.md"
   ],
   "207ab784e2c64a6075c427509e7269820ed22d47": [
@@ -242,13 +224,7 @@
   "ba5c77d51e263b776557ea8021c03e76ba37bcb7": [
     "virtualization\\windowscontainers\\reference\\app_compat.md"
   ],
-  "48d455079f0668d95ac31d36c644dabb8d716eda": [
-    "virtualization\\windowscontainers\\reference\\app_compat.md"
-  ],
   "4e0abfdf7c96a78ba8e8a74a7eb273b2032d85fd": [
-    "virtualization\\windowscontainers\\reference\\ps_docker_comparison.md"
-  ],
-  "f01125a9e6f8a952ae6a82fb2d1df20bb5f6c900": [
     "virtualization\\windowscontainers\\reference\\ps_docker_comparison.md"
   ],
   "d7bdf3f8880e67873264399e3b2e6b6e768eb703": [
