@@ -9,9 +9,10 @@ ms.topic: article
 ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: d8163185-9860-4ee4-9e96-17b40fb508bc
+redirect_url: https://docs.docker.com/v1.8/userguide/dockerimages/
 translationtype: Human Translation
-ms.sourcegitcommit: eccce83d7e376be592694162f54ccb67be9d3c12
-ms.openlocfilehash: bb99d0c15d6d1dd9e126fde05207431153b4f94a
+ms.sourcegitcommit: 59626096d428072dec098c7817e2d6b39c10e9cf
+ms.openlocfilehash: 49e29949fc91533cf1d3ed0aef47e829276772f4
 
 ---
 
@@ -177,6 +178,6 @@ latest: digest: sha256:ae3a2971628c04d5df32c3bbbfc87c477bb814d5e73e2787900da1322
 
 
 
-<!--HONumber=Sep16_HO1-->
+<!--HONumber=Sep16_HO2-->
 
 

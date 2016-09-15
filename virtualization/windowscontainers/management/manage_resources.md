@@ -1,7 +1,7 @@
 ---
 title: "容器资源管理"
 description: "使用 Windows 容器管理容器资源。"
-keywords: docker, containers
+keywords: "docker, 容器"
 author: neilpeterson
 manager: timlt
 ms.date: 05/02/2016
@@ -9,9 +9,10 @@ ms.topic: article
 ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: b2192e64-9d74-474e-8af0-2d8b3ad1deee
+redirect_url: https://docs.docker.com/engine/reference/run/
 translationtype: Human Translation
-ms.sourcegitcommit: cfa3c14e932f8b86edf6667200ac028ea0a16b67
-ms.openlocfilehash: 82cc37e4bcf001e938dcff7308be16978fa955e2
+ms.sourcegitcommit: 59626096d428072dec098c7817e2d6b39c10e9cf
+ms.openlocfilehash: 7544e91856d969b09241df7a466d776d818a2968
 
 ---
 
@@ -39,6 +40,6 @@ docker run -it --cpu-shares 2 --name dockerdemo windowsservercore cmd
 - 容器数据卷当前不支持 IO 资源控制。
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Sep16_HO2-->
 
 

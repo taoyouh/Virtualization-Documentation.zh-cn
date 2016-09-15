@@ -9,9 +9,10 @@ ms.topic: article
 ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: f5998534-917b-453c-b873-2953e58535b1
+redirect_url: https://docs.docker.com/engine/tutorials/dockervolumes/
 translationtype: Human Translation
-ms.sourcegitcommit: 960f523b7ff72bbb1eff6db5172c20b253fc7182
-ms.openlocfilehash: bd7e6af1dabadce2b89a48b916596849371026a8
+ms.sourcegitcommit: 59626096d428072dec098c7817e2d6b39c10e9cf
+ms.openlocfilehash: 60dc25d879b5c8de6515899d9de9e920a08b7e62
 
 ---
 
