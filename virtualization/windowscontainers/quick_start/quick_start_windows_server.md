@@ -10,8 +10,8 @@ ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: e3b2a4dc-9082-4de3-9c95-5d516c03482b
 translationtype: Human Translation
-ms.sourcegitcommit: 39e480b8bf3f90cfe9b7d4d17141b9dbec5f93e5
-ms.openlocfilehash: 6fae5625731c936903c808e286dbb9b4abcddd06
+ms.sourcegitcommit: d4b509054aebf510b650ec21ede4df2515a87827
+ms.openlocfilehash: 6e2232c8a043d482c0d6b734a66762c2d22003fe
 
 ---
 
@@ -54,13 +54,13 @@ Restart-Computer -Force
 以 zip 存档形式下载 Docker 引擎和客户端。
 
 ```none
-Invoke-WebRequest "https://get.docker.com/builds/Windows/x86_64/docker-1.12.0.zip" -OutFile "$env:TEMP\docker-1.12.0.zip" -UseBasicParsing
+Invoke-WebRequest "https://get.docker.com/builds/Windows/x86_64/docker-1.12.1.zip" -OutFile "$env:TEMP\docker-1.12.1.zip" -UseBasicParsing
 ```
 
 将 Zip 存档扩展到 Program Files。
 
 ```none
-Expand-Archive -Path "$env:TEMP\docker-1.12.0.zip" -DestinationPath $env:ProgramFiles
+Expand-Archive -Path "$env:TEMP\docker-1.12.1.zip" -DestinationPath $env:ProgramFiles
 ```
 
 将 Docker 目录添加到系统路径。
@@ -191,6 +191,6 @@ docker rm -f big_jang
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO3-->
 
 
