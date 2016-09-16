@@ -1,6 +1,6 @@
 {
   "LastProcessedCommit": "617a59f55c5ff97cfe39b924714d6550f816a1cb",
-  "LastTranslatedCommit": "8bedd5aae7d9b99e78307fc352c9575dbcf8d303",
+  "LastTranslatedCommit": "3c41b9e256b3b141f130282b45141dcab276bcf9",
   "Items": {
     "5090f6d60b5cbdce0990242d795d9e4e3736e791": {
       "FileHash": "5090f6d60b5cbdce0990242d795d9e4e3736e791",
@@ -24616,14 +24616,14 @@
       "HandoffPriority": "",
       "HandoffException": null,
       "HandoffFailureTimes": 0,
-      "TargetFileCommit": null,
-      "TargetFilePath": null,
-      "HandbackFilePath": null,
-      "HandbackFileCommit": null,
-      "HandbackDateTime": "0001-01-01T00:00:00",
+      "TargetFileCommit": "3c41b9e256b3b141f130282b45141dcab276bcf9",
+      "TargetFilePath": "virtualization\\windowscontainers\\quick_start\\quick_start_windows_server.md",
+      "HandbackFilePath": "ol-handback\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\quick_start_windows_server.08fee0ad7baa994cf3e7a42d3d35aeda89c5e556.zh-cn.xlf",
+      "HandbackFileCommit": "7fdf5270a37afe1c5a011a0591f690d54b919e0a",
+      "HandbackDateTime": "2016-09-16T04:13:10.8684817Z",
       "HandbackException": null,
       "HandbackFailureTimes": 0,
-      "UpdatedDateTime": "0001-01-01T00:00:00",
+      "UpdatedDateTime": "2016-09-16T04:13:10.8684817Z",
       "ArchiveFilePath": "ol-archive\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\quick_start_windows_server.08fee0ad7baa994cf3e7a42d3d35aeda89c5e556.zh-cn.xlf",
       "ArchiveFileCommit": "13740cc3f5bc97b128a49794aad19163b549a508",
       "ArchiveFileDateTime": "2016-09-16T00:16:43.5997761Z",
