@@ -5,9 +5,9 @@
  -------- | ----- 
  Total Files | 471
 [ Handoff Failed Files ](#handoff-failed-list)| 0
-[ Handoff Success Files ](#handoff-success-list)| 1
+[ Handoff Success Files ](#handoff-success-list)| 0
 [ Archive Failed Files ](#archive-failed-list)| 0
-[ Archive Success Files ](#archive-success-list)| 2
+[ Archive Success Files ](#archive-success-list)| 3
 [ Handback Failed Files ](#handback-failed-list)| 0
 [ Out Of Sync Handback Files ](#outofsync-handback-success-list)| 0
 [ In Sync Handback Files ](#insync-handback-success-list)| 135
@@ -16,9 +16,6 @@
 ## <a name='handoff-failed-list'></a> Handoff Failed File List
 
 ## <a name='handoff-success-list'></a> Handoff Success File List
- Source File | Status | Details 
- ----------- | ------ | ------- 
- [virtualization\windowscontainers\quick_start\quick_start_windows_server.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/d4b509054aebf510b650ec21ede4df2515a87827/virtualization/windowscontainers/quick_start/quick_start_windows_server.md) | HandedOffSuccess | [Details](#6e2232c8a043d482c0d6b734a66762c2d22003fe318)
 
 ## <a name='archive-failed-list'></a> Archive Failed File List
 
@@ -26,6 +23,7 @@
  Source File | Status | Details 
  ----------- | ------ | ------- 
  [virtualization\windowscontainers\containers_welcome.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/59626096d428072dec098c7817e2d6b39c10e9cf/virtualization/windowscontainers/containers_welcome.md) | ArchivedSuccess | [Details](#2c9821ef7ac414640790b3cfdb7fd457710a67f4225)
+ [virtualization\windowscontainers\quick_start\quick_start_windows_server.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/d4b509054aebf510b650ec21ede4df2515a87827/virtualization/windowscontainers/quick_start/quick_start_windows_server.md) | ArchivedSuccess | [Details](#6e2232c8a043d482c0d6b734a66762c2d22003fe318)
  [virtualization\windowscontainers\TOC.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/59626096d428072dec098c7817e2d6b39c10e9cf/virtualization/windowscontainers/TOC.md) | ArchivedSuccess | [Details](#d7bdf3f8880e67873264399e3b2e6b6e768eb703324)
 
 ## <a name='handback-failed-list'></a> Handback Failed File List
@@ -4524,13 +4522,13 @@
 * [Back to Top](#report-top)
 
 ##### <a name='6e2232c8a043d482c0d6b734a66762c2d22003fe318'></a> Source: [virtualization\windowscontainers\quick_start\quick_start_windows_server.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/d4b509054aebf510b650ec21ede4df2515a87827/virtualization/windowscontainers/quick_start/quick_start_windows_server.md)
-* Status: HandedOffSuccess
+* Status: ArchivedSuccess
 * Target File: 
 * Handoff File: [quick_start_windows_server.08fee0ad7baa994cf3e7a42d3d35aeda89c5e556.zh-cn.xlf](https://github.com/Microsoft/Virtualization-Documentation-Private.handoff/blob/999988ca0f866674d31c250a563d9cd13e4f12d0/ol-handoff/Microsoft/Virtualization-Documentation-Private.zh-cn/live/quick_start_windows_server.08fee0ad7baa994cf3e7a42d3d35aeda89c5e556.zh-cn.xlf)
 * Handoff Datetime: 2016-09-15 17:05:59
 * Handoff Reason: Include
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
+* Archive File: [quick_start_windows_server.08fee0ad7baa994cf3e7a42d3d35aeda89c5e556.zh-cn.xlf](https://github.com/Microsoft/Virtualization-Documentation-Private.handoff/blob/13740cc3f5bc97b128a49794aad19163b549a508/ol-archive/Microsoft/Virtualization-Documentation-Private.zh-cn/live/quick_start_windows_server.08fee0ad7baa994cf3e7a42d3d35aeda89c5e556.zh-cn.xlf)
+* Archive Datetime: 2016-09-16 00:16:43
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
 * Current Target File: [virtualization\windowscontainers\quick_start\quick_start_windows_server.md](https://github.com/Microsoft/Virtualization-Documentation-Private.zh-cn/blob/71e2d55ae453c841a1fe60a104fd489c4491b1d7/virtualization/windowscontainers/quick_start/quick_start_windows_server.md)
