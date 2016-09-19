@@ -1,3 +1,14 @@
 {
-  "Table": {}
+  "Table": {
+    "virtualization\\hyperv_on_windows\\user_guide\\remote_host_management.md.eb2dc3a4188778f26e80d3009304e1fe2e67dfaa.HT": {
+      "SourceFilename": "virtualization\\hyperv_on_windows\\user_guide\\remote_host_management.md",
+      "XliffHash": "eb2dc3a4188778f26e80d3009304e1fe2e67dfaa",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\3fbcdb7b93941a0ccc1cdbe659e70f3881b9d0cd.178293392e6918340269e38c0645df409f9f704b.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    }
+  }
 }
