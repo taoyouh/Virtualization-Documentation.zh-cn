@@ -9,6 +9,16 @@
       "SkeletonFile": "ol-xliffcache\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\3fbcdb7b93941a0ccc1cdbe659e70f3881b9d0cd.178293392e6918340269e38c0645df409f9f704b.xml",
       "LocXliff": null,
       "LocXliffCommit": null
+    },
+    "virtualization\\hyperv_on_windows\\user_guide\\managing_ics.md.869b6d2ec16899e23af9db74da47e354c39e54c8.HT": {
+      "SourceFilename": "virtualization\\hyperv_on_windows\\user_guide\\managing_ics.md",
+      "XliffHash": "869b6d2ec16899e23af9db74da47e354c39e54c8",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\0779ef5b3f83bcf99f5681c13d445bcd33720dc6.17a242b1852fa9bb5eca94b760f3ecacd48818cf.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
     }
   }
 }
