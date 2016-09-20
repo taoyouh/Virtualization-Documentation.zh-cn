@@ -39,6 +39,16 @@
       "SkeletonFile": "ol-xliffcache\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\02b4e01e404fe5ab3a6fadbb3481c741cb4aa563.1f2692716d9baf379a1c61fd458557bca963bbde.xml",
       "LocXliff": null,
       "LocXliffCommit": null
+    },
+    "virtualization\\hyperv_on_windows\\quick_start\\walkthrough_powershell.md.5badb55e6245072f4c00fc7fc10b0d3ea8760506.HT": {
+      "SourceFilename": "virtualization\\hyperv_on_windows\\quick_start\\walkthrough_powershell.md",
+      "XliffHash": "5badb55e6245072f4c00fc7fc10b0d3ea8760506",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\8b688e666c7189888af3a7f182002f06fa2e2c0b.36d40056c06b5fa04edd5188459407f7f0788859.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
     }
   }
 }
