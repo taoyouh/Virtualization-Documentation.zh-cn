@@ -24698,9 +24698,9 @@
       "ArchiveFileCommit": "6c960320f92f11737b799e31c46c4a2c6aaa0512",
       "ArchiveFileDateTime": "2016-09-20T00:19:22.6006347Z",
       "ArchiveException": null,
-      "BilingualFilePath": null,
-      "BilingualFileCommit": null,
-      "BilingualDateTime": "0001-01-01T00:00:00",
+      "BilingualFilePath": "ol-handback\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\managing_ics.8df7555f0b61b9ddcddca7419ee655ef1d9a2119.zh-cn.xlf",
+      "BilingualFileCommit": "53667b3f3a3f382aac4304d53a9c5f1dce611651",
+      "BilingualDateTime": "2016-09-21T09:33:35.1517066Z",
       "BilingualException": null
     },
     "c94b7f2c9c90eaf2834a1d0c54fb1f9b2a8f9669": {
@@ -24733,9 +24733,9 @@
       "ArchiveFileCommit": "6c960320f92f11737b799e31c46c4a2c6aaa0512",
       "ArchiveFileDateTime": "2016-09-20T00:19:22.6006347Z",
       "ArchiveException": null,
-      "BilingualFilePath": null,
-      "BilingualFileCommit": null,
-      "BilingualDateTime": "0001-01-01T00:00:00",
+      "BilingualFilePath": "ol-handback\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\nesting.ece03f90d41cea4ab592ff16c6288e2349863da7.zh-cn.xlf",
+      "BilingualFileCommit": "53667b3f3a3f382aac4304d53a9c5f1dce611651",
+      "BilingualDateTime": "2016-09-21T09:33:35.1517066Z",
       "BilingualException": null
     },
     "02b4e01e404fe5ab3a6fadbb3481c741cb4aa563": {
@@ -24768,9 +24768,9 @@
       "ArchiveFileCommit": "6c960320f92f11737b799e31c46c4a2c6aaa0512",
       "ArchiveFileDateTime": "2016-09-20T00:19:22.6006347Z",
       "ArchiveException": null,
-      "BilingualFilePath": null,
-      "BilingualFileCommit": null,
-      "BilingualDateTime": "0001-01-01T00:00:00",
+      "BilingualFilePath": "ol-handback\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\quick_start_windows_10.5f887ea7d45d865c81fe971abab095fb8e272cc8.zh-cn.xlf",
+      "BilingualFileCommit": "53667b3f3a3f382aac4304d53a9c5f1dce611651",
+      "BilingualDateTime": "2016-09-21T09:33:35.1517066Z",
       "BilingualException": null
     },
     "8b688e666c7189888af3a7f182002f06fa2e2c0b": {
