@@ -10,8 +10,8 @@ ms.prod: windows-10-hyperv
 ms.service: windows-10-hyperv
 ms.assetid: 2d34e98c-6134-479b-8000-3eb360b8b8a3
 translationtype: Human Translation
-ms.sourcegitcommit: 07a07c790484c05ea49229a770ef75c80fad3cfa
-ms.openlocfilehash: 8a84da80199479907c3bf4cf0c7b1cfb1b44bf9d
+ms.sourcegitcommit: c73e1fa48b21a4daf2821ba3aae756d9a46e9f94
+ms.openlocfilehash: 3fbcdb7b93941a0ccc1cdbe659e70f3881b9d0cd
 
 ---
 
@@ -30,26 +30,30 @@ Windows 10 中的 Hyper-V 管理器允许你管理以下 Hyper-V 主机：
 * Windows 10
 * Windows 8.1
 * Windows 8
-* Windows Server 2016 和 Windows Server Core、Nano Server 以及 Hyper-V Server
-* Windows Server 2012 R2 和 Windows Server Core、Datacenter 以及 Hyper-V Server
-* Windows 2012 和 Windows Server Core、Datacenter 以及 Hyper-V Server
+* Windows Server 2016 - 所有版本和安装选项（包括 Nano 服务器），以及 Hyper-V 服务器的相应版本
+* Windows Server 2012 R2 - 所有版本和安装选项，以及 Hyper-V 服务器的相应版本
+* Windows Server 2012 - 所有版本和安装选项，以及 Hyper-V 服务器的相应版本
 
 Windows 8.1 和 Windows Server 2012 R2 中的 Hyper-V 管理器允许你管理：
 * Windows 8.1
 * Windows 8
-* Windows Server 2012 R2 和 Windows Server Core、Datacenter 以及 Hyper-V Server
-* Windows 2012 和 Windows Server Core、Datacenter 以及 Hyper-V Server
+* Windows Server 2012 R2 - 所有版本和安装选项，以及 Hyper-V 服务器的相应版本
+* Windows Server 2012 - 所有版本和安装选项，以及 Hyper-V 服务器的相应版本
 
 Windows 8 和 Windows Server 2012 中的 Hyper-V 管理器允许你管理：
 * Windows 8
-* Windows 2012 和 Windows Server Core、Datacenter 以及 Hyper-V Server
+* Windows Server 2012 - 所有版本和安装选项，以及 Hyper-V 服务器的相应版本
 
-Hyper-V 在 Windows 8 上的 Windows 中可用。  在 Windows 8.1/Server 2012 之前，Hyper-V 管理器仅管理匹配版本的 Hyper-V。
+Windows 7 和 Windows Server 2008 R2 中的 Hyper-V 管理器允许你管理：
+* Windows Server 2008 R2 - 所有版本和安装选项，以及 Hyper-V 服务器的相应版本
 
-> **注意：**Hyper-V 管理器功能与可用于所管理版本的功能相匹配。  换言之，如果你要从 Server 2012R2 管理远程 Server 2012 主机，2012R2 中的新 Hyper-V 管理器工具将不可用。
+Windows Vista 和 Windows Server 2008 中的 Hyper-V 管理器允许你管理：
+* Windows Server 2008 - 所有版本和安装选项，以及 Hyper-V 服务器的相应版本
 
-## 管理 localhost ##
-若要将 localhost 作为 Hyper-V 主机添加到 Hyper-V 管理器，请选择“**选择计算机**”对话框中的“**本地计算机**”。
+> **注意：**Hyper-V 管理器功能与可用于所管理版本的功能相匹配。 换言之，如果你要从 Windows Server 2012 R2 管理远程 Windows Server 2012 主机，Windows Server 2012 R2 中的新 Hyper-V 管理器功能将不可用。
+
+## 管理本地主机 ##
+若要将本地主机作为 Hyper-V 主机添加到 Hyper-V 管理器，请选择“选择计算机”对话框中的“本地计算机”。
 
 ![](media/HyperVManager-ConnectToLocalHost.png)
 
@@ -70,7 +74,7 @@ Hyper-V 在 Windows 8 上的 Windows 中可用。  在 Windows 8.1/Server 2012 �
 你可以通过 `System Properties -> Remote Management Settings` 或以管理员身份运行以下 PowerShell 命令来执行此操作：  
 
 ``` PowerShell
-winrm quickconfig
+Enable-PSRemoting
 ```
 
 如果当前用户帐户与远程主机上的 Hyper-V Administrator 帐户相匹配，请继续操作并按“**确定**”进行连接。  
@@ -83,7 +87,7 @@ Windows 10 极大地增加了远程连接类型的可能组合。
 
 
 ### 以其他用户身份连接远程主机
-> 这仅在连接 Windows 10 或 Server 2016 Technical Preview 3 或更高版本的远程主机时才可用
+> 这仅在连接到 Windows 10 或 Windows Server 2016 Technical Preview 3 或更高版本的远程主机时才可用
 
 在 Windows 10 中，如果没有使用远程主机的正确用户帐户运行，可以以拥有备用凭据的其他用户身份连接。
 
@@ -93,15 +97,15 @@ Windows 10 极大地增加了远程连接类型的可能组合。
 
 
 ### 使用 IP 地址连接远程主机
-> 这仅在连接 Windows 10 或 Server 2016 Technical Preview 3 或更高版本的远程主机时才可用
+> 这仅在连接到 Windows 10 或 Windows Server 2016 Technical Preview 3 或更高版本的远程主机时才可用
 
-有时使用 IP 地址会比使用主机名更易于连接。  Windows 10 就可以让你做到这一点。
+有时使用 IP 地址会比使用主机名更易于连接。Windows 10 就可以让你做到这一点。
 
 若要使用 IP 地址连接，请将 IP 地址输入到“**其他计算机**”文本字段中。
 
 
 ## 在域之外（或没有域的情况下）管理 Hyper-V 主机 ##
-> 这仅在连接 Windows 10 或 Server 2016 Technical Preview 3 或更高版本的远程主机时才可用
+> 这仅在连接到 Windows 10 或 Windows Server 2016 Technical Preview 3 或更高版本的远程主机时才可用
 
 在要管理的 Hyper-V 主机上，以管理员身份运行以下内容：
 
@@ -123,6 +127,6 @@ Windows 10 极大地增加了远程连接类型的可能组合。
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Sep16_HO3-->
 
 
