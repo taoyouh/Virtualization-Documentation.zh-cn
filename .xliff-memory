@@ -17,8 +17,8 @@
       "IsArchived": true,
       "ArchivedDateTime": "2016-09-20T00:19:22.6179861Z",
       "SkeletonFile": "ol-xliffcache\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\0779ef5b3f83bcf99f5681c13d445bcd33720dc6.17a242b1852fa9bb5eca94b760f3ecacd48818cf.xml",
-      "LocXliff": null,
-      "LocXliffCommit": null
+      "LocXliff": "ol-handback\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\managing_ics.8df7555f0b61b9ddcddca7419ee655ef1d9a2119.zh-cn.xlf",
+      "LocXliffCommit": "53667b3f3a3f382aac4304d53a9c5f1dce611651"
     },
     "virtualization\\hyperv_on_windows\\user_guide\\nesting.md.98301f299d2c913b6438e5535687a7c00d459164.HT": {
       "SourceFilename": "virtualization\\hyperv_on_windows\\user_guide\\nesting.md",
@@ -27,8 +27,8 @@
       "IsArchived": true,
       "ArchivedDateTime": "2016-09-20T00:19:22.6006347Z",
       "SkeletonFile": "ol-xliffcache\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\c94b7f2c9c90eaf2834a1d0c54fb1f9b2a8f9669.8b1b779af212e4e0fc15ef94603a70fe80fd3f5c.xml",
-      "LocXliff": null,
-      "LocXliffCommit": null
+      "LocXliff": "ol-handback\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\nesting.ece03f90d41cea4ab592ff16c6288e2349863da7.zh-cn.xlf",
+      "LocXliffCommit": "53667b3f3a3f382aac4304d53a9c5f1dce611651"
     },
     "virtualization\\windowscontainers\\quick_start\\quick_start_windows_10.md.ea734d1715210dc0bc312d64ea7632173b4baeae.HT": {
       "SourceFilename": "virtualization\\windowscontainers\\quick_start\\quick_start_windows_10.md",
@@ -37,8 +37,8 @@
       "IsArchived": true,
       "ArchivedDateTime": "2016-09-20T00:19:22.6179861Z",
       "SkeletonFile": "ol-xliffcache\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\02b4e01e404fe5ab3a6fadbb3481c741cb4aa563.1f2692716d9baf379a1c61fd458557bca963bbde.xml",
-      "LocXliff": null,
-      "LocXliffCommit": null
+      "LocXliff": "ol-handback\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\quick_start_windows_10.5f887ea7d45d865c81fe971abab095fb8e272cc8.zh-cn.xlf",
+      "LocXliffCommit": "53667b3f3a3f382aac4304d53a9c5f1dce611651"
     },
     "virtualization\\hyperv_on_windows\\quick_start\\walkthrough_powershell.md.5badb55e6245072f4c00fc7fc10b0d3ea8760506.HT": {
       "SourceFilename": "virtualization\\hyperv_on_windows\\quick_start\\walkthrough_powershell.md",
