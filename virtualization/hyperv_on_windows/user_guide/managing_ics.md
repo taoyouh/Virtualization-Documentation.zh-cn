@@ -1,7 +1,7 @@
 ---
 title: "管理 Hyper-V 集成服务"
 description: "管理 Hyper-V 集成服务"
-keywords: windows 10, hyper-v, integration services, integration components
+keywords: "windows 10, hyper-v, 集成服务, 集成组件"
 author: scooley
 manager: timlt
 ms.date: 05/02/2016
@@ -10,8 +10,8 @@ ms.prod: windows-10-hyperv
 ms.service: windows-10-hyperv
 ms.assetid: 9cafd6cb-dbbe-4b91-b26c-dee1c18fd8c2
 translationtype: Human Translation
-ms.sourcegitcommit: 852f7fafe7192d85b0e9840ea3767a1206a1c285
-ms.openlocfilehash: e7abf05c899e2acca07312813b7808a5db00a9f7
+ms.sourcegitcommit: 22d29dbde56319a2a9d7fbc8afd041d1dc224101
+ms.openlocfilehash: 0779ef5b3f83bcf99f5681c13d445bcd33720dc6
 
 ---
 
@@ -32,7 +32,9 @@ ms.openlocfilehash: e7abf05c899e2acca07312813b7808a5db00a9f7
   
   ![](./media/HyperVManager-IntegrationServices.png)
   
-  在此你可以看到此 Hyper-V 主机上可用的所有集成服务。  值得注意的是，来宾操作系统可能会也可能不会支持列出的所有集成服务。
+  在此你可以看到此 Hyper-V 主机上可用的所有集成服务。  值得注意的是，来宾操作系统可能会也可能不会支持列出的所有集成服务。 若要确定来宾操作系统的版本信息，请登录到来宾操作系统并从命令提示符运行以下命令。
+
+REG QUERY "HKLM\Software\Microsoft\Virtual Machine\Auto" /v IntegrationServicesVersion
 
 ## 使用 PowerShell 启用或禁用集成服务
 
@@ -203,7 +205,7 @@ sudo hv_kvp_daemon
 
 > **注意：**更新集成组件不再需要 ISO 镜像文件 vmguest.iso。 它未包含在 Windows 10 上的 Hyper-V 中。
 
-| 来宾操作系统 | 更新机制 | 注释 |
+| 来宾操作系统 | 更新机制 | 注意 |
 |:---------|:---------|:---------|
 | Windows 10 | Windows 更新 | |
 | Windows 8.1 | Windows 更新 | |
@@ -226,7 +228,7 @@ sudo hv_kvp_daemon
 
 **对于在 Windows 8.1 主机上运行的虚拟机：**
 
-| 来宾操作系统 | 更新机制 | 注释 |
+| 来宾操作系统 | 更新机制 | 注意 |
 |:---------|:---------|:---------|
 | Windows 10 | Windows 更新 | |
 | Windows 8.1 | Windows 更新 | |
@@ -272,6 +274,6 @@ sudo hv_kvp_daemon
 
 
 
-<!--HONumber=Jul16_HO1-->
+<!--HONumber=Sep16_HO3-->
 
 
