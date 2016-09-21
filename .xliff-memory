@@ -7,8 +7,8 @@
       "IsArchived": true,
       "ArchivedDateTime": "2016-09-20T00:19:22.6179861Z",
       "SkeletonFile": "ol-xliffcache\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\3fbcdb7b93941a0ccc1cdbe659e70f3881b9d0cd.178293392e6918340269e38c0645df409f9f704b.xml",
-      "LocXliff": null,
-      "LocXliffCommit": null
+      "LocXliff": "ol-handback\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\remote_host_management.40d5636e508c5b95bb2917be75ca6b5aa426a915.zh-cn.xlf",
+      "LocXliffCommit": "2ebf78e18ab3b238c96dcea9a190c437ac00342d"
     },
     "virtualization\\hyperv_on_windows\\user_guide\\managing_ics.md.869b6d2ec16899e23af9db74da47e354c39e54c8.HT": {
       "SourceFilename": "virtualization\\hyperv_on_windows\\user_guide\\managing_ics.md",
