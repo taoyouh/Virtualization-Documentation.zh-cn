@@ -10,8 +10,8 @@ ms.prod: windows-10-hyperv
 ms.service: windows-10-hyperv
 ms.assetid: 2d34e98c-6134-479b-8000-3eb360b8b8a3
 translationtype: Human Translation
-ms.sourcegitcommit: c73e1fa48b21a4daf2821ba3aae756d9a46e9f94
-ms.openlocfilehash: 3fbcdb7b93941a0ccc1cdbe659e70f3881b9d0cd
+ms.sourcegitcommit: e0d957ebb953f1e5b3e56de9764c7c3e560024c1
+ms.openlocfilehash: 852800b19fb39737f0d7104eb2d50521b6cca982
 
 ---
 
@@ -21,7 +21,7 @@ Hyper-V 管理器是内置工具，用于诊断和管理本地 Hyper-V 主机和
 
 > 像在[任何包括 Hyper-V 的 Windows 操作系统](../quick_start/walkthrough_compatibility.md#OperatingSystemRequirements)上的“**Hyper-V 管理工具**”一样，Hyper-V 管理器通过“**程序和功能**”提供。  管理远程主机无需启用 Hyper-V 平台。
 
-若要在 Hyper-V 管理器中连接 Hyper-V 主机，请确保在左侧窗格中选择“**Hyper-V 管理器**”，然后在右侧窗格中选择“**连接到服务器...**”。
+若要在 Hyper-V 管理器中连接 Hyper-V 主机，请确保在左侧窗格中选择“Hyper-V 管理器”，然后在右侧窗格中选择“连接到服务器...”。
 
 ![](media/HyperVManager-ConnectToHost.png)
 
@@ -60,7 +60,7 @@ Windows Vista 和 Windows Server 2008 中的 Hyper-V 管理器允许你管理：
 如果无法建立连接：
 *  请确保启用 Hyper-V 平台角色。  
   若要查看 Hyper-V 是否受支持，请参阅[检查兼容性的演练部分](../quick_start/walkthrough_compatibility.md)。
-*  请确认用户帐户是 Hyper-V Administrator 组的一部分。
+*  请确认用户帐户是 Hyper-V 管理员组的一部分。
 
 
 ## 在相同域中管理其他 Hyper-V 主机 ##
@@ -99,7 +99,7 @@ Windows 10 极大地增加了远程连接类型的可能组合。
 ### 使用 IP 地址连接远程主机
 > 这仅在连接到 Windows 10 或 Windows Server 2016 Technical Preview 3 或更高版本的远程主机时才可用
 
-有时使用 IP 地址会比使用主机名更易于连接。Windows 10 就可以让你做到这一点。
+有时使用 IP 地址会比使用主机名更易于连接。 Windows 10 就可以让你做到这一点。
 
 若要使用 IP 地址连接，请将 IP 地址输入到“**其他计算机**”文本字段中。
 
@@ -115,15 +115,10 @@ Windows 10 极大地增加了远程连接类型的可能组合。
 
 在管理 PC 上，以管理员身份运行以下命令：
 
-1. Set-Item WSMan:\localhost\Client\TrustedHosts -value "fqdn-of-hyper-v-host"
-  * 或者，你可以通过以下规则允许所有主机在受信任的情况下进行管理：
-  * Set-Item WSMan:\localhost\Client\TrustedHosts -value * -force
+1. Set-Item WSMan:\localhost\Client\TrustedHosts -Value "fqdn-of-hyper-v-host"
 2. [Enable-WSManCredSSP](https://technet.microsoft.com/en-us/library/hh849872.aspx) -Role client -DelegateComputer "fqdn-of-hyper-v-host"
-  * 或者，你可以通过以下规则允许所有主机在受信任的情况下进行管理：
-  * [Enable-WSManCredSSP](https://technet.microsoft.com/en-us/library/hh849872.aspx) -Role client -DelegateComputer *
 3. 此外，你需要配置以下组策略：** 计算机配置 | 管理模板 | 系统 | 凭据委派 | 允许分配新的凭据用于仅 NTLM 服务器身份验证**
     * 单击“**启用**”并添加 *wsman/fqdn-of-hyper-v-host*
-    * 或者，你可以通过添加 _wsman/*_ 允许所有主机在受信任的情况下进行管理
 
 
 
