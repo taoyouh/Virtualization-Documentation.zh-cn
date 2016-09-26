@@ -69,9 +69,6 @@
   "8b688e666c7189888af3a7f182002f06fa2e2c0b": [
     "virtualization\\hyperv_on_windows\\quick_start\\walkthrough_powershell.md"
   ],
-  "a8e567b6447aa73f14825b7054d977d2b003a726": [
-    "virtualization\\hyperv_on_windows\\quick_start\\walkthrough_powershell.md"
-  ],
   "44a0686f5ce5d1544b8a61bcad0a06eb1e1ce9d4": [
     "virtualization\\hyperv_on_windows\\quick_start\\media\\command_grid.png"
   ],
@@ -118,9 +115,6 @@
     "virtualization\\hyperv_on_windows\\user_guide\\nesting.md"
   ],
   "852800b19fb39737f0d7104eb2d50521b6cca982": [
-    "virtualization\\hyperv_on_windows\\user_guide\\remote_host_management.md"
-  ],
-  "3fbcdb7b93941a0ccc1cdbe659e70f3881b9d0cd": [
     "virtualization\\hyperv_on_windows\\user_guide\\remote_host_management.md"
   ],
   "5f21c845594a8663b7458e86c121563d3b199e4d": [
