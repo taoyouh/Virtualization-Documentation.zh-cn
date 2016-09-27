@@ -111,6 +111,9 @@
   "54db04f9096dc1ef9572594b321f400fbbfeada0": [
     "virtualization\\hyperv_on_windows\\user_guide\\migrating_vms.md"
   ],
+  "46c43a38dc3a3ee56ac3136cda60c41019cc733d": [
+    "virtualization\\hyperv_on_windows\\user_guide\\nesting.md"
+  ],
   "c94b7f2c9c90eaf2834a1d0c54fb1f9b2a8f9669": [
     "virtualization\\hyperv_on_windows\\user_guide\\nesting.md"
   ],
@@ -307,6 +310,9 @@
   ],
   "a9bc0b1511e161ef9b648bfafd4d0456966d8f9f": [
     "virtualization\\windowscontainers\\quick_start\\quick_start_images.md"
+  ],
+  "6d242d2706280e70ae2c09939ee5b0c8e13aa418": [
+    "virtualization\\windowscontainers\\quick_start\\quick_start_windows_10.md"
   ],
   "1bc3d9c5094eb5b30f2845c83b9842079edc22c4": [
     "virtualization\\windowscontainers\\quick_start\\quick_start_windows_10.md"
