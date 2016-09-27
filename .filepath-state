@@ -164,13 +164,7 @@
   "68f563d62090097b6fe2dd335c7841ae5ba4a9f5": [
     "virtualization\\windowscontainers\\about\\faq.md"
   ],
-  "c3a7decaf087741c82419a8a541867ae01f0f4da": [
-    "virtualization\\windowscontainers\\about\\faq.md"
-  ],
   "3017c03c1ce5d5ff46deda0cd147cc10de77f249": [
-    "virtualization\\windowscontainers\\about\\work_in_progress.md"
-  ],
-  "085bb8c0158aedf4270cf2423114ec1901af1ebd": [
     "virtualization\\windowscontainers\\about\\work_in_progress.md"
   ],
   "1ee40d330234f8800ba73d0c4abe36859cfa2989": [
@@ -203,19 +197,10 @@
   "65600c93a5b3523b22ccd77ce207349f6f0a503d": [
     "virtualization\\windowscontainers\\management\\manage_data.md"
   ],
-  "60dc25d879b5c8de6515899d9de9e920a08b7e62": [
-    "virtualization\\windowscontainers\\management\\manage_data.md"
-  ],
   "6040123edf75ef289d1ac8abb914ce8d8a2769b0": [
     "virtualization\\windowscontainers\\management\\manage_images.md"
   ],
-  "49e29949fc91533cf1d3ed0aef47e829276772f4": [
-    "virtualization\\windowscontainers\\management\\manage_images.md"
-  ],
   "6f96bd9663d8ffae5f83a62cc3f48e001663ad74": [
-    "virtualization\\windowscontainers\\management\\manage_resources.md"
-  ],
-  "7544e91856d969b09241df7a466d776d818a2968": [
     "virtualization\\windowscontainers\\management\\manage_resources.md"
   ],
   "24a79a8377a34797a7b590421167fc4e5f843e60": [
@@ -299,22 +284,13 @@
   "ea84ac6c688fa258c9b72f50565ec6e21e8051db": [
     "virtualization\\windowscontainers\\docker\\manage_windows_dockerfile.md"
   ],
-  "84baad10511eb070e654f1ee7d71eb547d3f2ee7": [
-    "virtualization\\windowscontainers\\docker\\manage_windows_dockerfile.md"
-  ],
   "59f096ce914e0f1cbee5678b7db980297ca89364": [
-    "virtualization\\windowscontainers\\docker\\optimize_windows_dockerfile.md"
-  ],
-  "19a363aa013b51e0c80d56572de77e94f27e546f": [
     "virtualization\\windowscontainers\\docker\\optimize_windows_dockerfile.md"
   ],
   "19c1070cee496d52eba1b2ce80f4f939edccdffd": [
     "virtualization\\windowscontainers\\quick_start\\media\\hello.png"
   ],
   "f795cfde1174a62b85aefd58c6bd07e81e196718": [
-    "virtualization\\windowscontainers\\quick_start\\quick_start.md"
-  ],
-  "c0176d4f5445263a5fd522a80ce2a9dca7ac90e6": [
     "virtualization\\windowscontainers\\quick_start\\quick_start.md"
   ],
   "5a1cb0964034db491481e2d6db84221730264fa0": [
