@@ -1,7 +1,7 @@
 ---
 title: "Windows 容器常见问题解答"
 description: "Windows 容器常见问题解答"
-keywords: docker, containers
+keywords: "docker, 容器"
 author: scooley
 manager: timlt
 ms.date: 05/02/2016
@@ -10,8 +10,8 @@ ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: 25de368c-5a10-40a4-b4aa-ac8c9a9ca022
 translationtype: Human Translation
-ms.sourcegitcommit: cfa3c14e932f8b86edf6667200ac028ea0a16b67
-ms.openlocfilehash: c3a7decaf087741c82419a8a541867ae01f0f4da
+ms.sourcegitcommit: f721639b1b10ad97cc469df413d457dbf8d13bbe
+ms.openlocfilehash: 68f563d62090097b6fe2dd335c7841ae5ba4a9f5
 
 ---
 
@@ -63,10 +63,6 @@ Window Server 容器和 Hyper-V 容器都需要 Windows Server 2016。 这些技
 Docker 平台还将大大简化和增强跨容器选项工作的体验。 使用 Windows Server 容器开发的应用程序无需更改即可部署为 Hyper-V 容器。
 
 
-**我是否可以在 ESXi 或其他非 Hyper-V 虚拟机监控程序上运行 Windows 容器？**
-
-是，Windows 容器在任何 TP3 服务器核心安装上运行。  按照有关[就地启用容器功能](../quick_start/inplace_setup.md)的说明进行操作。
-
 ## Microsoft 的开放生态系统
 
 **Microsoft 是否正在参与开放容器计划 (OCI)？**
@@ -84,6 +80,6 @@ Docker 包含两方面，即项目的开源组和 Docker 公司。 我们考虑�
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Sep16_HO4-->
 
 
