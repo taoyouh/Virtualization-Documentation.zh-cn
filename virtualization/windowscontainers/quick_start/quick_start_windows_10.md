@@ -10,8 +10,8 @@ ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: bb9bfbe0-5bdc-4984-912f-9c93ea67105f
 translationtype: Human Translation
-ms.sourcegitcommit: f721639b1b10ad97cc469df413d457dbf8d13bbe
-ms.openlocfilehash: 1bc3d9c5094eb5b30f2845c83b9842079edc22c4
+ms.sourcegitcommit: e77f17158f75a335201b82d467c8b59e669bd165
+ms.openlocfilehash: 6d242d2706280e70ae2c09939ee5b0c8e13aa418
 
 ---
 
