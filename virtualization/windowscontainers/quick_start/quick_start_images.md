@@ -4,29 +4,28 @@ description: "容器部署快速入门"
 keywords: "docker, 容器"
 author: neilpeterson
 manager: timlt
-ms.date: 05/26/2016
+ms.date: 09/26/2016
 ms.topic: article
 ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: 479e05b1-2642-47c7-9db4-d2a23592d29f
 translationtype: Human Translation
-ms.sourcegitcommit: f2a3eec656acf5a3cd48a2be71169b76ce25400b
-ms.openlocfilehash: a9bc0b1511e161ef9b648bfafd4d0456966d8f9f
+ms.sourcegitcommit: eaac6eff4496421e1a6866c164ee032ae0e153d3
+ms.openlocfilehash: 616b9cc09a70e927dce151f7ff5de44206da929f
 
 ---
 
 # Windows Server 上的容器映像
 
-**这是初步内容，可能还会更改。** 
+在之前的 Windows Server 快速入门中，已从预先创建的 .Net Core 示例创建了 Windows 容器。 本练习中将详细介绍手动创建自定义容器映像、使用 Dockerfile 自动创建容器映像以及将容器映像存储在 Docker Hub 公共注册表中。
 
-在之前的 Windows Server 快速入门中，已从预先存在的容器映像创建了 Windows 容器。 本练习中将详细介绍手动创建自定义容器映像以及如何使用 Dockerfile。
-
-本快速入门特定于 Windows Server 2016 上的 Windows Server 容器。 此页面左侧的目录中提供其他快速入门文档。 
+本快速入门仅适用于 Windows Server 2016 上的 Windows Server 容器且会使用 Windows Server Core 容器基本映像。 此页面左侧的目录中提供其他快速入门文档。
 
 **先决条件：**
 
-- 一个运行 [Windows Server 2016 Technical Preview 5](https://www.microsoft.com/en-us/evalcenter/evaluate-windows-server-technical-preview) 的计算机系统（物理或虚拟）。
+- 一个运行 Windows Server 2016 的计算机系统（物理或虚拟）。
 - 使用 Windows 容器功能和 Docker 配置此系统。 有关这些步骤的演练，请参阅 [Windows Server 上的 Windows 容器](./quick_start_windows_server.md)。
+- 一个用于将容器映像推送到 Docker Hub 的 Docker ID。 如果还没有 Docker ID，请在 [Docker 云]( https://cloud.docker.com/)中进行注册。
 
 ## 1.容器映像 - 手动
 
@@ -34,9 +33,13 @@ ms.openlocfilehash: a9bc0b1511e161ef9b648bfafd4d0456966d8f9f
 
 手动创建容器映像的第一步是部署容器。 对于此示例，请从预创建的 IIS 映像部署 IIS 容器。 部署容器后，你将从该容器内部进入 shell 会话。 使用 `-it` 标识初始交互式会话。 有关 Docker Run 命令的详细信息，请参阅 [Docker.com 上的 Docker Run 参考]( https://docs.docker.com/engine/reference/run/)。 
 
+> 由于 Windows Server Core 基本映像的大小，此步骤可能需要一些时间。
+
 ```none
 docker run -it -p 80:80 microsoft/iis cmd
 ```
+
+下载后，容器将启动，shell 会话也将启动。
 
 接下来，将对容器进行修改。 运行以下命令来删除 IIS 初始屏幕。
 
@@ -93,7 +96,7 @@ windowsservercore   latest              dbfee88ee9fd        8 weeks ago         
 
 ## 2.容器映像 - Dockerfile
 
-通过上一练习，已手动创建和修改容器，并已将其捕获到新容器映像中。 Docker 包含用于自动执行此过程的方法，即使用所谓的 Dockerfile。 本练习将产生与上一练习几乎相同的结果，但是这次该过程将自动执行。
+通过上一练习，已手动创建和修改容器，并已将其捕获到新容器映像中。 Docker 包含使用 Dockerfile 自动执行此过程的方法。 本练习将产生与上一练习几乎相同的结果，但是这次该过程将自动执行。 此练习需要 Docker ID。 如果还没有 Docker ID，请在 [Docker 云]( https://cloud.docker.com/)中进行注册。
 
 在容器主机上，创建目录 `c:\build`，并在此目录中创建一个名为 `Dockerfile` 的文件。 注意 - 该文件不应具有文件扩展名。
 
@@ -116,10 +119,10 @@ FROM microsoft/iis
 RUN echo "Hello World - Dockerfile" > c:\inetpub\wwwroot\index.html
 ```
 
-`docker build` 命令将启动映像生成过程。 `-t` 参数会指示此生成过程将新映像命名为 `iis-dockerfile`。
+`docker build` 命令将启动映像生成过程。 `-t` 参数会指示此生成过程将新映像命名为 `iis-dockerfile`。 **使用 Docker 帐户的用户名替换“用户”**。 如果还没有 Docker 帐户，请在 [Docker 云]( https://cloud.docker.com/)中进行注册。
 
 ```none
-docker build -t iis-dockerfile c:\Build
+docker build -t <user>/iis-dockerfile c:\Build
 ```
 
 完成后，你可以验证是否已使用 `docker images` 命令创建了映像。
@@ -134,10 +137,10 @@ windowsservercore   10.0.14300.1000     dbfee88ee9fd        8 weeks ago         
 windowsservercore   latest              dbfee88ee9fd        8 weeks ago         9.344 GB
 ```
 
-现在，请使用以下命令部署容器。 
+现在，使用以下命令部署容器，并再次使用 Docker ID 替换“用户”。
 
 ```none
-docker run -d -p 80:80 iis-dockerfile ping -t localhost
+docker run -d -p 80:80 <user>/iis-dockerfile ping -t localhost
 ```
 
 创建容器后，浏览到容器主机的 IP 地址。 你应该可以看到 Hello World 应用程序。
@@ -158,7 +161,54 @@ c1dc6c1387b9   iis-dockerfile   "ping -t localhost"   About a minute ago   Up Ab
 删除容器。
 
 ```none
-docker rm -f cranky_brown
+docker rm -f <container name>
+```
+
+## 3.Docker 推送
+
+Docker 容器映像可以存储在容器注册表中。 图像存储在注册表中后，可以跨多个不同的容器主机检索以供将来使用。 Docker 在 [Docker Hub](https://hub.docker.com/) 中提供公共注册表来存储容器映像。
+
+在此练习中，会将自定义 hello world 映像推送到你在 Docker Hub 上的帐户中。
+
+首先，使用 `docker login command` 登录到 docker 帐户。
+
+```none
+docker login
+
+Login with your Docker ID to push and pull images from Docker Hub. If you don't have a Docker ID, head over to https://hub.docker.com to create one.
+
+Username: user
+Password: Password
+
+Login Succeeded
+```
+
+登录后，可将容器映像推送到 Docker Hub。 为此，请使用 `docker push` 命令。 **将“用户”替换为 Docker ID**。 
+
+```none
+docker push <user>/iis-dockerfile
+```
+
+现在可以使用 `docker pull` 将容器映像从 Docker Hub 下载到任意 Windows 容器主机。 在本教程中，我们将删除现有映像，并将它从 Docker Hub 向下拉取。 
+
+```none
+docker rmi <user>/iis-dockerfile
+```
+
+运行 `docker images` 将显示映像已删除。
+
+```none
+docker images
+
+REPOSITORY                TAG                 IMAGE ID            CREATED             SIZE
+modified-iis              latest              51f1fe8470b3        5 minutes ago       7.69 GB
+microsoft/iis             latest              e4525dda8206        3 hours ago         7.61 GB
+```
+
+最后，docker 拉取可用于将映像拉回容器主机。 使用 Docker 帐户的用户名替换“用户”。 
+
+```none
+docker pull <user>/iis-dockerfile
 ```
 
 ## 后续步骤
@@ -167,6 +217,6 @@ docker rm -f cranky_brown
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Sep16_HO4-->
 
 

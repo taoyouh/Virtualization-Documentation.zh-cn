@@ -4,20 +4,18 @@ description: "容器部署快速入门"
 keywords: "docker, 容器"
 author: neilpeterson
 manager: timlt
-ms.date: 08/17/2016
+ms.date: 09/26/2016
 ms.topic: article
 ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: bb9bfbe0-5bdc-4984-912f-9c93ea67105f
 translationtype: Human Translation
-ms.sourcegitcommit: 16630b534367791114a4844c3c1f582f13d09d6d
-ms.openlocfilehash: 02b4e01e404fe5ab3a6fadbb3481c741cb4aa563
+ms.sourcegitcommit: f721639b1b10ad97cc469df413d457dbf8d13bbe
+ms.openlocfilehash: 1bc3d9c5094eb5b30f2845c83b9842079edc22c4
 
 ---
 
 # Windows 10 上的 Windows 容器
-
-**这是初步内容，可能还会更改。**
 
 本练习将演练 Windows 10 专业版或企业版（周年纪念版）上 Windows 容器功能的基本部署和用法。 完成操作后，你将已安装容器角色，并部署简单的 Hyper-V 容器。 在开始本快速入门之前，请先熟悉基本容器概念和术语。 可以在 [Quick Start Introduction](./quick_start.md)（快速入门简介）上找到此信息。
 
@@ -48,13 +46,7 @@ Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Hyper-V -All
 Restart-Computer -Force
 ```
 
-完成备份后，运行以下命令以修复 Windows 10 中 Windows 容器的已知问题。  
-
- ```none
-Set-ItemProperty -Path 'HKLM:SOFTWARE\Microsoft\Windows NT\CurrentVersion\Virtualization\Containers' -Name VSmbDisableOplocks -Type DWord -Value 1 -Force
-```
-
-> 在当前版本中，需要禁用 OpLock 才能可靠地使用 Hyper-V 容器。 若要重新启用 OpLock，请使用以下命令：  `Set-ItemProperty -Path 'HKLM:SOFTWARE\Microsoft\Windows NT\CurrentVersion\Virtualization\Containers' -Name VSmbDisableOplocks -Type DWord -Value 0 -Force`
+> 如果以前使用的是Windows 10 上的 Hyper-V 容器和 Technical Preview 5 容器基本映像，请务必重新启用 Oplocks。 请运行以下命令：  `Set-ItemProperty -Path 'HKLM:SOFTWARE\Microsoft\Windows NT\CurrentVersion\Virtualization\Containers' -Name VSmbDisableOplocks -Type DWord -Value 0 -Force`
 
 ## 2.安装 Docker
 
@@ -81,8 +73,6 @@ $env:path += ";c:\program files\docker"
 # For persistent use, will apply even after a reboot.
 [Environment]::SetEnvironmentVariable("Path", $env:Path + ";C:\Program Files\Docker", [EnvironmentVariableTarget]::Machine)
 ```
-
-重启 PowerShell 会话以识别已修改的路径。
 
 若要将 Docker 安装为一个 Windows 服务，请运行以下命令。
 
@@ -112,10 +102,12 @@ docker pull microsoft/nanoserver
 docker images
 
 REPOSITORY             TAG                 IMAGE ID            CREATED             SIZE
-microsoft/nanoserver   latest              3a703c6e97a2        7 weeks ago         969.8 MB
+microsoft/nanoserver   latest              105d76d0f40e        4 days ago          652 MB
 ```
 
 有关 Windows 容器映像的深入信息，请参阅[管理容器映像](../management/manage_images.md)。
+
+> 可在此处 ([EULA](../Images_EULA.md)) 阅读 Windows 容器操作系统映像 EULA。
 
 ## 4.部署第一个容器
 
@@ -172,6 +164,6 @@ Windows 10 和容器快速入门的后续部分将深入探讨在 Windows 10 上
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Sep16_HO4-->
 
 

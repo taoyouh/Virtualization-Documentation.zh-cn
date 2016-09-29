@@ -4,30 +4,20 @@ description: "在 Windows Server 上部署 Windows 容器"
 keywords: "docker, 容器"
 author: neilpeterson
 manager: timlt
-ms.date: 08/22/2016
+ms.date: 09/26/2016
 ms.topic: article
 ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: ba4eb594-0cdb-4148-81ac-a83b4bc337bc
 translationtype: Human Translation
-ms.sourcegitcommit: 39e480b8bf3f90cfe9b7d4d17141b9dbec5f93e5
-ms.openlocfilehash: cc662d0c688eadeef8011a2b97e212ec6399060a
+ms.sourcegitcommit: f721639b1b10ad97cc469df413d457dbf8d13bbe
+ms.openlocfilehash: 4d7e8fb1fcbb7e9680b7d5bd143ef6d59e45035e
 
 ---
 
 # 容器主机部署 - Windows Server
 
-**这是初步内容，可能还会更改。**
-
 部署 Windows 容器主机的步骤会有所不同，具体取决于操作系统和主机系统类型（物理或虚拟）。 本文档中详细介绍将 Windows 容器主机部署到物理或虚拟系统上的 Windows Server 2016 或 Windows Server Core 2016 的相关内容。
-
-## Azure 映像 
-
-Azure 中提供了完全配置的 Windows Server 映像。 若要使用此映像，请通过单击下面的按钮来部署虚拟机。 如果使用此模板将 Windows 容器系统部署到 Azure 中，则可以跳过此文档的其余部分。
-
-<a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FMicrosoft%2FVirtualization-Documentation%2Fmaster%2Fwindows-server-container-tools%2Fcontainers-azure-template%2Fazuredeploy.json" target="_blank">
-    <img src="http://azuredeploy.net/deploybutton.png"/>
-</a>
 
 ## 安装容器功能
 
@@ -50,13 +40,13 @@ Restart-Computer -Force
 以 zip 存档形式下载 Docker 引擎和客户端。
 
 ```none
-Invoke-WebRequest "https://get.docker.com/builds/Windows/x86_64/docker-1.12.0.zip" -OutFile "$env:TEMP\docker-1.12.0.zip" -UseBasicParsing
+Invoke-WebRequest "https://download.docker.com/components/engine/windows-server/cs-1.12/docker.zip" -OutFile "$env:TEMP\docker.zip" -UseBasicParsing
 ```
 
 将 zip 存档展开到 Program Files，存档内容已经位于 Docker 目录中。
 
 ```none
-Expand-Archive -Path "$env:TEMP\docker-1.12.0.zip" -DestinationPath $env:ProgramFiles
+Expand-Archive -Path "$env:TEMP\docker.zip" -DestinationPath $env:ProgramFiles
 ```
 
 运行以下两个命令以将 Docker 目录添加到系统路径。
@@ -68,8 +58,6 @@ $env:path += ";c:\program files\docker"
 # For persistent use, will apply even after a reboot. 
 [Environment]::SetEnvironmentVariable("Path", $env:Path + ";C:\Program Files\Docker", [EnvironmentVariableTarget]::Machine)
 ```
-
-重启 PowerShell 会话以识别已修改的路径。
 
 若要将 Docker 安装为一个 Windows 服务，请运行以下命令。
 
@@ -85,7 +73,7 @@ Start-Service Docker
 
 ## 安装基本容器映像
 
-使用 Windows 容器前，需安装基本映像。 可通过将 Windows Server Core 或 Nano Server 作为基础操作系统获取基本映像。 有关 Windows 容器映像的详细信息，请参阅[管理容器映像](../management/manage_images.md)。
+使用 Windows 容器前，需安装基本映像。 可通过将 Windows Server Core 或 Nano Server 作为基础操作系统获取基本映像。 有关 Docker 容器映像的详细信息，请参阅[在 docker.com 上生成自己的映像](https://docs.docker.com/engine/tutorials/dockerimages/)。
 
 若要安装 Windows Server Core 基本映像，请运行以下内容：
 
@@ -98,6 +86,8 @@ docker pull microsoft/windowsservercore
 ```none
 docker pull microsoft/nanoserver
 ```
+
+> 可在此处 ([EULA](../Images_EULA.md)) 阅读 Windows 容器操作系统映像 EULA。
 
 ## Hyper-V 容器主机
 
@@ -131,6 +121,6 @@ Install-WindowsFeature hyper-v
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO4-->
 
 

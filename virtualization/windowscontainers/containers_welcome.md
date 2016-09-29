@@ -10,8 +10,8 @@ ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: 74c9d604-0915-4d89-bc69-0263b76bc66b
 translationtype: Human Translation
-ms.sourcegitcommit: 59626096d428072dec098c7817e2d6b39c10e9cf
-ms.openlocfilehash: 2c9821ef7ac414640790b3cfdb7fd457710a67f4
+ms.sourcegitcommit: f721639b1b10ad97cc469df413d457dbf8d13bbe
+ms.openlocfilehash: 1ee40d330234f8800ba73d0c4abe36859cfa2989
 
 ---
 
@@ -23,12 +23,16 @@ Windows 容器提供操作系统级别的虚拟化，允许多个独立的应用
 <tr>
 <td ><center>![](media/try.png)</center></td>
 <td>**快速启动**<br /><br />
-通过使用以下快速入门指南，试用 Windows Server 和 Hyper-V 容器。<br /><br />
+Windows Server 快速入门<br /><br />
 <ul>
-<li>[1 – 概念和术语](quick_start/quick_start.md)<br /><br /></li>
-<li>[2 - Windows Server 上的容器](quick_start/quick_start_windows_server.md)<br /><br /></li>
-<li>[3 - Windows Server 上的容器映像](quick_start/quick_start_images.md)<br /><br /></li>
-<li>[4 - Windows 10 上的容器](quick_start/quick_start_windows_10.md)<br /><br /></li>
+<li>[步骤1 – 概念和术语](quick_start/quick_start.md)<br /><br /></li>
+<li>[步骤 2 – 配置 Windows Server 和第一个容器](quick_start/quick_start_windows_server.md)<br /><br /></li>
+<li>[步骤 3 – 创建并推送容器映像](quick_start/quick_start_images.md)<br /><br /></li>
+</ul>
+Windows 10 快速入门<br /><br />
+<ul>
+<li>[步骤1 – 概念和术语](quick_start/quick_start.md)<br /><br /></li>
+<li>[步骤 2 – 配置 Windows 10 和第一个容器](quick_start/quick_start_windows_10.md)<br /><br /></li>
 </ul>
 </td>
 </tr>
@@ -84,6 +88,6 @@ Windows 容器提供操作系统级别的虚拟化，允许多个独立的应用
 
 
 
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Sep16_HO4-->
 
 

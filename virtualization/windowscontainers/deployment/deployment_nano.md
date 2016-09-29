@@ -4,14 +4,14 @@ description: "在 Nano Server 上部署 Windows 容器"
 keywords: "docker, 容器"
 author: neilpeterson
 manager: timlt
-ms.date: 08/23/2016
+ms.date: 09/26/2016
 ms.topic: article
 ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: b82acdf9-042d-4b5c-8b67-1a8013fa1435
 translationtype: Human Translation
-ms.sourcegitcommit: 939a1b69f159504b998792adb95ccabc326db333
-ms.openlocfilehash: 538fb27d6170f0a8dab5c189b90040e40c546e14
+ms.sourcegitcommit: 185c83b69972765a72af2dbbf5d0c7d2551212ce
+ms.openlocfilehash: 6ada7de02bbdfab8986fdfeeda60b6373a6e2d96
 
 ---
 
@@ -91,13 +91,13 @@ New-Item -Type Directory -Path $env:ProgramFiles'\docker\'
 > Nano Server 目前不支持 `Invoke-WebRequest`。 此下载需在远程系统上完成，且需将其文件复制到 Nano Server 主机上。
 
 ```none
-Invoke-WebRequest "https://get.docker.com/builds/Windows/x86_64/docker-1.12.0.zip" -OutFile .\docker-1.12.0.zip -UseBasicParsing
+Invoke-WebRequest "https://download.docker.com/components/engine/windows-server/cs-1.12/docker.zip" -OutFile .\docker.zip -UseBasicParsing
 ```
 
 提取下载的包。 完成后，你将具备同时包含 **dockerd.exe** 和 **docker.exe** 的目录。 将这两者复制到 Nano Server 容器主机中的 **C:\Program Files\docker\** 文件夹。 
 
 ```none
-Expand-Archive .\docker-1.12.0.zip
+Expand-Archive .\docker.zip
 ```
 
 将 Docker 目录添加到 Nano Server 上的系统路径。
@@ -126,15 +126,19 @@ Start-Service Docker
 
 ## 安装基本容器映像
 
-基本操作系统映像映像用作任何 Windows Server 或 Hyper-V 容器的基础。 基本操作系统映像可通过同时将 Windows Server Core 和 Nano Server 作为基本操作系统获取，并且可以使用 `docker pull` 进行安装。 有关 Windows 容器映像的详细信息，请参阅[管理容器映像](../management/manage_images.md)。
+基本操作系统映像映像用作任何 Windows Server 或 Hyper-V 容器的基础。 基本操作系统映像可通过同时将 Windows Server Core 和 Nano Server 作为基本操作系统获取，并且可以使用 `docker pull` 进行安装。 有关 Docker 容器映像的详细信息，请参阅[在 docker.com 上生成自己的映像](https://docs.docker.com/engine/tutorials/dockerimages/)。
 
-若要下载和安装 Nano Server 基本映像，请运行以下内容：
+若要下载和安装 Windows Server 和 Nano Server 基本映像，请运行以下命令。
 
 ```none
 docker pull microsoft/nanoserver
 ```
 
-> 此时，只有 Nano Server 基本映像与 Nano Server 容器主机兼容。
+```none
+docker pull microsoft/windowsservercore
+```
+
+> 可在此处 ([EULA](../Images_EULA.md)) 阅读 Windows 容器操作系统映像 EULA。
 
 ## 在 Nano Server 上管理 Docker
 
@@ -173,13 +177,13 @@ Restart-Service docker
 在要工作的远程系统上下载 Docker 客户端。
 
 ```none
-Invoke-WebRequest "https://get.docker.com/builds/Windows/x86_64/docker-1.12.0.zip" -OutFile "$env:TEMP\docker-1.12.0.zip" -UseBasicParsing
+Invoke-WebRequest "https://download.docker.com/components/engine/windows-server/cs-1.12/docker.zip" -OutFile "$env:TEMP\docker.zip" -UseBasicParsing
 ```
 
 提取压缩包。
 
 ```none
-Expand-Archive -Path "$env:TEMP\docker-1.12.0.zip" -DestinationPath $env:ProgramFiles
+Expand-Archive -Path "$env:TEMP\docker.zip" -DestinationPath $env:ProgramFiles
 ```
 
 运行以下两个命令以将 Docker 目录添加到系统路径。
@@ -231,6 +235,6 @@ Restart-Computer
 
 
 
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Sep16_HO4-->
 
 

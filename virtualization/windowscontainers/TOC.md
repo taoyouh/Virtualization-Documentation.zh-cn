@@ -1,12 +1,14 @@
 # 关于 Windows 容器
 ## [Windows 容器概述](about/about_overview.md)
-## [常见问题](about/faq.md)
 
-# 容器快速入门
-## [1 – 概念和术语](quick_start/quick_start.md)
-## [2 - Windows Server 快速入门](quick_start/quick_start_windows_server.md)
-## [3 – Windows Server 映像](quick_start/quick_start_images.md)
-## [4 – Windows 10 快速入门](quick_start/quick_start_windows_10.md)
+# Windows Server 快速入门
+## [步骤 1 – 概念](quick_start/quick_start.md)
+## [步骤 2 – 第一个容器](quick_start/quick_start_windows_server.md)
+## [步骤 3 – 容器映像](quick_start/quick_start_images.md)
+
+# Windows 10 快速入门
+## [步骤 1 – 概念](quick_start/quick_start.md)
+## [步骤 2 – 第一个容器](quick_start/quick_start_windows_10.md)
 
 # 部署 Windows 容器
 ## [系统要求](deployment/system_requirements.md)
@@ -27,11 +29,9 @@
 # 社区和支持
 ## [容器论坛](https://social.msdn.microsoft.com/Forums/en-US/home?forum=windowscontainers)
 
-# [Windows Server EULA](EULA.md)
-# [Nano Server EULA](Nano_EULA.md)
+# [容器操作系统映像 EULA](Images_EULA.md)
 
 
-
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Sep16_HO4-->
 
 

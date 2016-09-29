@@ -10,8 +10,8 @@ ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: 6885400c-5623-4cde-8012-f6a00019fafa
 translationtype: Human Translation
-ms.sourcegitcommit: 4dded90462c5438a6836ec32a165a9cc1019d6ec
-ms.openlocfilehash: 6ae49d82a89b2f30198de05aa4915726853172f5
+ms.sourcegitcommit: f721639b1b10ad97cc469df413d457dbf8d13bbe
+ms.openlocfilehash: f3eceaa84de7dfb4e6783835939a498a3e798e91
 
 ---
 
@@ -26,13 +26,13 @@ Windows 中不含 Docker 引擎和客户端，需要单独进行安装和配置�
 下载 Docker 引擎。
 
 ```none
-Invoke-WebRequest "https://get.docker.com/builds/Windows/x86_64/docker-1.12.0.zip" -OutFile "$env:TEMP\docker-1.12.0.zip" -UseBasicParsing
+Invoke-WebRequest "https://download.docker.com/components/engine/windows-server/cs-1.12/docker.zip" -OutFile "$env:TEMP\docker.zip" -UseBasicParsing
 ```
 
 将 Zip 存档扩展到 Program Files。
 
 ```
-Expand-Archive -Path "$env:TEMP\docker-1.12.0.zip" -DestinationPath $env:ProgramFiles
+Expand-Archive -Path "$env:TEMP\docker.zip" -DestinationPath $env:ProgramFiles
 ```
 
 将 Docker 目录添加到系统路径。 添加完成后，重启 PowerShell 会话以识别已修改的路径。
@@ -55,7 +55,7 @@ Start-Service Docker
 
 安装容器映像后 Docker 才可以使用。 有关详细信息，请参阅[管理容器映像](../management/manage_images.md)。
 
-## Docker 配置文件
+## 使用配置文件配置 Docker
 
 在 Windows 上配置 Docker 引擎的首选方法是使用配置文件。 可在“c:\ProgramData\docker\config\daemon.json”中找到配置文件。 如果此文件还不存在，可以创建此文件。
 
@@ -115,7 +115,7 @@ Start-Service Docker
 }
 ```
 
-## 服务控制管理器
+## 在 Docker 服务上配置 Docker
 
 还可以通过使用 `sc config` 修改 Docker 服务来配置 Docker 引擎。 使用此方法时将直接在 Docker 服务上设置 Docker 引擎的标记。
 
@@ -165,19 +165,22 @@ restart-service docker
 有关详细信息，请参阅 [Docker.com 上的守护程序套接字选项](https://docs.docker.com/v1.10/engine/reference/commandline/daemon/#daemon-socket-option)。
 
 ## 收集日志
+
 Docker 引擎会将事件记录到 Windows“应用程序”事件日志中，而不是某个文件中。 使用 Windows PowerShell 可以轻松读取、排序和筛选这些日志
 
 例如，这将显示过去 5 分钟的 Docker 引擎日志（从最早的开始）。
+
 ```
 Get-EventLog -LogName Application -Source Docker -After (Get-Date).AddMinutes(-5) | Sort-Object Time 
 ```
 
 也可以很容易通过管道将其转换为 CSV 文件，以便其他工具或电子表格进行读取。
+
 ```
 Get-EventLog -LogName Application -Source Docker -After (Get-Date).AddMinutes(-30)  | Sort-Object Time | Export-CSV ~/last30minutes.csv ```
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO4-->
 
 
