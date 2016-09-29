@@ -10,8 +10,8 @@ ms.prod: windows-10-hyperv
 ms.service: windows-10-hyperv
 ms.assetid: 68c65445-ce13-40c9-b516-57ded76c1b15
 translationtype: Human Translation
-ms.sourcegitcommit: 4eb3e733990ca86f28620e23bf408ff71b879173
-ms.openlocfilehash: c94b7f2c9c90eaf2834a1d0c54fb1f9b2a8f9669
+ms.sourcegitcommit: 6f003c6e78fb6a0977f30611b7da135a30268f51
+ms.openlocfilehash: 46c43a38dc3a3ee56ac3136cda60c41019cc733d
 
 ---
 
@@ -30,8 +30,9 @@ ms.openlocfilehash: c94b7f2c9c90eaf2834a1d0c54fb1f9b2a8f9669
 
 1. 创建虚拟机。 请参阅以上针对必需 OS 和 VM 版本的先决条件。
 2. 虚拟机处于关闭状态时，请在物理 Hyper-V 主机上运行以下命令。 这样可以实现虚拟机的嵌套虚拟化。
+
 ```none
-    Set-VMProcessor -VMName <VMName> -ExposeVirtualizationExtensions $true
+Set-VMProcessor -VMName <VMName> -ExposeVirtualizationExtensions $true
 ```
 3. 启动虚拟机。
 4. 在虚拟机中安装 Hyper-V，就像针对物理服务器一样。 有关安装 Hyper-V 的详细信息，请参阅[安装 Hyper-V]( https://msdn.microsoft.com/en-us/virtualization/hyperv_on_windows/quick_start/walkthrough_install)。
@@ -79,6 +80,6 @@ Netsh interface ip add dnsserver “Ethernet” address=<my DNS server>
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Sep16_HO4-->
 
 
