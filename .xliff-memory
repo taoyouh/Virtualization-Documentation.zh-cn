@@ -269,6 +269,26 @@
       "SkeletonFile": "ol-xliffcache\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\9af33e6bce21aa339109f060100b2c7ab3c1eb91.f7605f22ccb85a61d19176226e0e382777761453.xml",
       "LocXliff": null,
       "LocXliffCommit": null
+    },
+    "virtualization\\windowscontainers\\quick_start\\quick_start_windows_server.md.ede01ef3473c397ed2e00c7396faf8385f1826ad.HT": {
+      "SourceFilename": "virtualization\\windowscontainers\\quick_start\\quick_start_windows_server.md",
+      "XliffHash": "ede01ef3473c397ed2e00c7396faf8385f1826ad",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\4d02d6423cc910c2bd2fe0691cbb62bddcabb117.59cf238475db136ffc75ab214e01bcc24c311765.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "virtualization\\windowscontainers\\quick_start\\quick_start_windows_10.md.5b0384429591307b4a0a9f8160c99c11095bf77e.HT": {
+      "SourceFilename": "virtualization\\windowscontainers\\quick_start\\quick_start_windows_10.md",
+      "XliffHash": "5b0384429591307b4a0a9f8160c99c11095bf77e",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\74686f222e8eec1daacd45a9e388d94abf6381f4.9133bd041792c1d014a579e4b40a92b5bab8af03.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
     }
   }
 }

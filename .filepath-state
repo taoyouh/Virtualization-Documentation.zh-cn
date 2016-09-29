@@ -278,8 +278,14 @@
   "616b9cc09a70e927dce151f7ff5de44206da929f": [
     "virtualization\\windowscontainers\\quick_start\\quick_start_images.md"
   ],
+  "74686f222e8eec1daacd45a9e388d94abf6381f4": [
+    "virtualization\\windowscontainers\\quick_start\\quick_start_windows_10.md"
+  ],
   "6d242d2706280e70ae2c09939ee5b0c8e13aa418": [
     "virtualization\\windowscontainers\\quick_start\\quick_start_windows_10.md"
+  ],
+  "4d02d6423cc910c2bd2fe0691cbb62bddcabb117": [
+    "virtualization\\windowscontainers\\quick_start\\quick_start_windows_server.md"
   ],
   "77dca1499abf406b1d599c28afdb19dd823b8401": [
     "virtualization\\windowscontainers\\quick_start\\quick_start_windows_server.md"
