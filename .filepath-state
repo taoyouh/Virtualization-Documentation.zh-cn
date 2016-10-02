@@ -269,6 +269,9 @@
   "19c1070cee496d52eba1b2ce80f4f939edccdffd": [
     "virtualization\\windowscontainers\\quick_start\\media\\hello.png"
   ],
+  "b11167ae429d4529a6bec679a4cd6b0ad6538e39": [
+    "virtualization\\windowscontainers\\quick_start\\quick_start.md"
+  ],
   "f795cfde1174a62b85aefd58c6bd07e81e196718": [
     "virtualization\\windowscontainers\\quick_start\\quick_start.md"
   ],
@@ -289,6 +292,9 @@
   ],
   "77dca1499abf406b1d599c28afdb19dd823b8401": [
     "virtualization\\windowscontainers\\quick_start\\quick_start_windows_server.md"
+  ],
+  "3ee39f57890248951b69887edc87c9fedb13c285": [
+    "virtualization\\windowscontainers\\docker\\configure_docker_daemon.md"
   ],
   "f3eceaa84de7dfb4e6783835939a498a3e798e91": [
     "virtualization\\windowscontainers\\docker\\configure_docker_daemon.md"
