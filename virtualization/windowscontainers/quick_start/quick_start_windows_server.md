@@ -10,8 +10,8 @@ ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: e3b2a4dc-9082-4de3-9c95-5d516c03482b
 translationtype: Human Translation
-ms.sourcegitcommit: 891c9e9805bf2089fd11f86420de5ed251916c3f
-ms.openlocfilehash: 77dca1499abf406b1d599c28afdb19dd823b8401
+ms.sourcegitcommit: 0fae34a5a85678a25c47b0312650e67aa6cd7efd
+ms.openlocfilehash: 4d02d6423cc910c2bd2fe0691cbb62bddcabb117
 
 ---
 
@@ -24,6 +24,8 @@ ms.openlocfilehash: 77dca1499abf406b1d599c28afdb19dd823b8401
 **先决条件：**
 
 一个运行 Windows Server 2016 的计算机系统（物理或虚拟）。 如果使用的是 Windows Server 2016 TP5，请更新为 [Window Server 2016 Evaluation](https://www.microsoft.com/en-us/evalcenter/evaluate-windows-server-2016 )。 
+
+> 需要安装关键更新，才能让 Windows 容器功能正常运作。 请在进行本教程所述操作前安装所有更新。
 
 ## 1.安装容器功能
 
@@ -139,6 +141,6 @@ docker run microsoft/sample-dotnet
 [Windows 10 上的 Windows 容器](./quick_start_windows_10.md)
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Sep16_HO5-->
 
 
