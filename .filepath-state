@@ -269,9 +269,6 @@
   "b11167ae429d4529a6bec679a4cd6b0ad6538e39": [
     "virtualization\\windowscontainers\\quick_start\\quick_start.md"
   ],
-  "f795cfde1174a62b85aefd58c6bd07e81e196718": [
-    "virtualization\\windowscontainers\\quick_start\\quick_start.md"
-  ],
   "5a1cb0964034db491481e2d6db84221730264fa0": [
     "virtualization\\hyperv_on_windows\\user_guide\\setup_nat_network.md"
   ],
@@ -281,19 +278,10 @@
   "74686f222e8eec1daacd45a9e388d94abf6381f4": [
     "virtualization\\windowscontainers\\quick_start\\quick_start_windows_10.md"
   ],
-  "6d242d2706280e70ae2c09939ee5b0c8e13aa418": [
-    "virtualization\\windowscontainers\\quick_start\\quick_start_windows_10.md"
-  ],
   "4d02d6423cc910c2bd2fe0691cbb62bddcabb117": [
     "virtualization\\windowscontainers\\quick_start\\quick_start_windows_server.md"
   ],
-  "77dca1499abf406b1d599c28afdb19dd823b8401": [
-    "virtualization\\windowscontainers\\quick_start\\quick_start_windows_server.md"
-  ],
   "3ee39f57890248951b69887edc87c9fedb13c285": [
-    "virtualization\\windowscontainers\\docker\\configure_docker_daemon.md"
-  ],
-  "f3eceaa84de7dfb4e6783835939a498a3e798e91": [
     "virtualization\\windowscontainers\\docker\\configure_docker_daemon.md"
   ],
   "a2fc8845bdc3e5f977d50b99ca9687b3dafd0cb6": [
