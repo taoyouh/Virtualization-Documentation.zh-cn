@@ -131,7 +131,7 @@ DemoVM  Running  Operating normally
 **影响：**禁用后，主机无法使用 `Copy-VMFile` 将文件复制到来宾和从来宾复制文件。  阅读更多有关 [Copy-VMFile cmdlet](https://technet.microsoft.com/library/dn464282.aspx) 的内容。  
 
 **注意：**  
-Д¬ИПЗйїцПВЅыУГ。  请参阅 [PowerShell Direct - 使用 Copy-Item](../user_guide/vmsession.md#copy-files-with-new-pssession-and-copy-item)。 
+默认情况下禁用。  请参阅 [PowerShell Direct - 使用 Copy-Item](../user_guide/vmsession.md#copy-files-with-new-pssession-and-copy-item)。 
 
 
 ## Hyper-V PowerShell Direct 服务
