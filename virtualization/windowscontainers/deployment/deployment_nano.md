@@ -4,20 +4,18 @@ description: "在 Nano Server 上部署 Windows 容器"
 keywords: "docker, 容器"
 author: neilpeterson
 manager: timlt
-ms.date: 09/26/2016
+ms.date: 09/28/2016
 ms.topic: article
 ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: b82acdf9-042d-4b5c-8b67-1a8013fa1435
 translationtype: Human Translation
-ms.sourcegitcommit: 185c83b69972765a72af2dbbf5d0c7d2551212ce
-ms.openlocfilehash: 6ada7de02bbdfab8986fdfeeda60b6373a6e2d96
+ms.sourcegitcommit: df9723e3a9d9ada778d01d43dcb36c99813dea8f
+ms.openlocfilehash: 9af33e6bce21aa339109f060100b2c7ab3c1eb91
 
 ---
 
 # 容器主机部署 - Nano Server
-
-**这是初步内容，可能还会更改。** 
 
 本文档将详细介绍如何使用 Windows 容器功能进行基本的 Nano Server 部署。 此主题为高级主题，假定读者大致了解 Windows 和 Windows 容器。 有关 Windows 容器的介绍，请参阅 [Windows 容器快速入门](../quick_start/quick_start.md)。
 
@@ -27,7 +25,7 @@ ms.openlocfilehash: 6ada7de02bbdfab8986fdfeeda60b6373a6e2d96
 
 ### 创建 Nano Server VM
 
-首先从[此处](https://msdn.microsoft.com/en-us/virtualization/windowscontainers/nano_eula)下载 Nano Server 评估 VHD。 在此 VHD 中创建虚拟机，启动虚拟机，并使用 Hyper-V 连接选项或基于正在使用的虚拟化平台（等效）连接到虚拟机。
+首先从[此处](https://www.microsoft.com/en-us/evalcenter/evaluate-windows-server-2016)下载 Nano Server 评估 VHD。 在此 VHD 中创建虚拟机，启动虚拟机，并使用 Hyper-V 连接选项或基于正在使用的虚拟化平台（等效）连接到虚拟机。
 
 ### 创建远程 PowerShell 会话
 
@@ -47,6 +45,22 @@ Enter-PSSession -ComputerName 192.168.1.50 -Credential ~\Administrator
 
 完成这些步骤后，你将位于 Nano Server 系统的远程 PowerShell 会话中。 除非特别指出，此文档的其余部分将通过远程会话发生。
 
+### 安装 Windows 更新
+
+需要安装关键更新，才能让 Windows 容器功能正常运作。 可通过运行以下命令安装这些更新。
+
+```none
+$sess = New-CimInstance -Namespace root/Microsoft/Windows/WindowsUpdate -ClassName MSFT_WUOperationsSession
+Invoke-CimMethod -InputObject $sess -MethodName ApplyApplicableUpdates
+```
+
+应用更新后，请重新启动系统。
+
+```none
+Restart-Computer
+```
+
+备份后，重新建立远程 PowerShell 连接。
 
 ## 安装容器功能
 
@@ -74,35 +88,19 @@ Restart-Computer
 
 若要使用 Window 容器，则需要安装 Docker 引擎。 使用这些步骤安装 Docker 引擎。
 
-首先，请确保 Nano Server 防火墙已针对 SMB 进行配置。 在 Nano Server 主机上运行此命令即可完成此操作。
+以 zip 存档形式下载 Docker 引擎和客户端。
 
 ```none
-Set-NetFirewallRule -Name FPS-SMB-In-TCP -Enabled True
+Invoke-WebRequest "https://download.docker.com/components/engine/windows-server/cs-1.12/docker.zip" -OutFile "$env:TEMP\docker.zip" -UseBasicParsing
 ```
 
-在 Nano Server 主机上为 Docker 可执行文件创建一个文件夹。
+将 zip 存档展开到 Program Files，存档内容已经位于 Docker 目录中。
 
 ```none
-New-Item -Type Directory -Path $env:ProgramFiles'\docker\'
-```
-
-下载 Docker 引擎和客户端并将其复制到容器主机的 C:\Program Files\docker\'。 
-
-> Nano Server 目前不支持 `Invoke-WebRequest`。 此下载需在远程系统上完成，且需将其文件复制到 Nano Server 主机上。
-
-```none
-Invoke-WebRequest "https://download.docker.com/components/engine/windows-server/cs-1.12/docker.zip" -OutFile .\docker.zip -UseBasicParsing
-```
-
-提取下载的包。 完成后，你将具备同时包含 **dockerd.exe** 和 **docker.exe** 的目录。 将这两者复制到 Nano Server 容器主机中的 **C:\Program Files\docker\** 文件夹。 
-
-```none
-Expand-Archive .\docker.zip
+Expand-Archive -Path "$env:TEMP\docker.zip" -DestinationPath $env:ProgramFiles
 ```
 
 将 Docker 目录添加到 Nano Server 上的系统路径。
-
-> 请确保重新切换到远程 Nano Server 会话。
 
 ```none
 # For quick use, does not require shell to be restarted.
@@ -235,6 +233,6 @@ Restart-Computer
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Sep16_HO5-->
 
 
