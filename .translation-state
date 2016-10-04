@@ -1,5 +1,5 @@
 {
-  "LastProcessedCommit": "22898cd13f38772b42b8f58d8ea9d4b7243f56ba",
+  "LastProcessedCommit": "055f90709bd814684bbbdcecb98444f025e8a9bf",
   "LastTranslatedCommit": "4a1056e1e830554f4348f94df68d459d01f9aaf5",
   "Items": {
     "5090f6d60b5cbdce0990242d795d9e4e3736e791": {
@@ -25961,6 +25961,41 @@
       "BilingualFilePath": "ol-handback\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\quick_start.95cf1adf4b4529454f2de8a25554a6b86638acc7.zh-cn.xlf",
       "BilingualFileCommit": "ad7a52eb8f44745e228a82043b559ba6d5bd9c64",
       "BilingualDateTime": "2016-10-04T08:57:06.9890312Z",
+      "BilingualException": null
+    },
+    "6337f860aaad43a9bc5e9939442a447033ecce2b": {
+      "FileHash": "6337f860aaad43a9bc5e9939442a447033ecce2b",
+      "SourceFileCommit": "055f90709bd814684bbbdcecb98444f025e8a9bf",
+      "SourceFilePath": "virtualization\\windowscontainers\\TOC.md",
+      "HandoffReason": 1,
+      "DependencyFrom": null,
+      "TokenReference": null,
+      "FilePathList": [
+        "virtualization\\windowscontainers\\TOC.md"
+      ],
+      "HasMetadata": false,
+      "TranslationType": 1,
+      "HandoffFilePath": "ol-handoff\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\TOC.13173dbdc376543cb6eb74ef16484f39c0ef0fdb.zh-cn.xlf",
+      "HandoffFileCommit": "6ffda5fd2132d77cad3acc3c3b1b8d67fd2c0a46",
+      "HandoffDateTime": "2016-10-04T17:44:32.5405133Z",
+      "HandoffPriority": "",
+      "HandoffException": null,
+      "HandoffFailureTimes": 0,
+      "TargetFileCommit": null,
+      "TargetFilePath": null,
+      "HandbackFilePath": null,
+      "HandbackFileCommit": null,
+      "HandbackDateTime": "0001-01-01T00:00:00",
+      "HandbackException": null,
+      "HandbackFailureTimes": 0,
+      "UpdatedDateTime": "0001-01-01T00:00:00",
+      "ArchiveFilePath": null,
+      "ArchiveFileCommit": null,
+      "ArchiveFileDateTime": "0001-01-01T00:00:00",
+      "ArchiveException": null,
+      "BilingualFilePath": null,
+      "BilingualFileCommit": null,
+      "BilingualDateTime": "0001-01-01T00:00:00",
       "BilingualException": null
     }
   }
