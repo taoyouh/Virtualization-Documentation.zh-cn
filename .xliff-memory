@@ -314,8 +314,8 @@
       "SourceFilename": "virtualization\\windowscontainers\\TOC.md",
       "XliffHash": "9b54ccff72a83ca96ca1dbd584b2c884d4498e92",
       "TranslationType": 1,
-      "IsArchived": false,
-      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "IsArchived": true,
+      "ArchivedDateTime": "2016-10-05T00:21:16.5863338Z",
       "SkeletonFile": "ol-xliffcache\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\6337f860aaad43a9bc5e9939442a447033ecce2b.2d241415f39aa8c5d66338ad7c5bd5bf2ab523e5.xml",
       "LocXliff": null,
       "LocXliffCommit": null
