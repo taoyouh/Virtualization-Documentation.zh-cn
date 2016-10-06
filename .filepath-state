@@ -197,6 +197,9 @@
   "24a79a8377a34797a7b590421167fc4e5f843e60": [
     "virtualization\\windowscontainers\\quick_start\\media\\dockerfile2.png"
   ],
+  "e5807f86034da2a6e63a20cc6ee40f0c07b4a3d0": [
+    "virtualization\\windowscontainers\\TOC.md"
+  ],
   "6337f860aaad43a9bc5e9939442a447033ecce2b": [
     "virtualization\\windowscontainers\\TOC.md"
   ],
@@ -292,5 +295,8 @@
   ],
   "3f83e598cf5328c31851fdd97d1bb1d03f56c24c": [
     "virtualization\\windowscontainers\\Images_EULA.md"
+  ],
+  "5a407d00cd11df6c65c979ee283c94a9cc5bf746": [
+    "virtualization\\windowscontainers\\samples.md"
   ]
 }

@@ -1,5 +1,5 @@
 {
-  "LastProcessedCommit": "055f90709bd814684bbbdcecb98444f025e8a9bf",
+  "LastProcessedCommit": "b6e7dc31bae55b88db7536b6ead54a042145b43a",
   "LastTranslatedCommit": "e60e15c0a4929b714773cc1eac173d27e4b6f92e",
   "Items": {
     "5090f6d60b5cbdce0990242d795d9e4e3736e791": {
@@ -25996,6 +25996,76 @@
       "BilingualFilePath": "ol-handback\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\TOC.13173dbdc376543cb6eb74ef16484f39c0ef0fdb.zh-cn.xlf",
       "BilingualFileCommit": "cced5857e9e326aba3df81fa37939ca5e72043cf",
       "BilingualDateTime": "2016-10-06T11:17:59.5367744Z",
+      "BilingualException": null
+    },
+    "5a407d00cd11df6c65c979ee283c94a9cc5bf746": {
+      "FileHash": "5a407d00cd11df6c65c979ee283c94a9cc5bf746",
+      "SourceFileCommit": "c483c7722355093e50d1c8a9856f04ef4aabf0a1",
+      "SourceFilePath": "virtualization\\windowscontainers\\samples.md",
+      "HandoffReason": 1,
+      "DependencyFrom": null,
+      "TokenReference": null,
+      "FilePathList": [
+        "virtualization\\windowscontainers\\samples.md"
+      ],
+      "HasMetadata": false,
+      "TranslationType": 1,
+      "HandoffFilePath": "ol-handoff\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\samples.31014494d9f148c358b40bd77949cf0f75f2ea75.zh-cn.xlf",
+      "HandoffFileCommit": "172ec1523cae15831f9ad44beaccc389af488181",
+      "HandoffDateTime": "2016-10-06T18:44:53.5160415Z",
+      "HandoffPriority": "",
+      "HandoffException": null,
+      "HandoffFailureTimes": 0,
+      "TargetFileCommit": null,
+      "TargetFilePath": null,
+      "HandbackFilePath": null,
+      "HandbackFileCommit": null,
+      "HandbackDateTime": "0001-01-01T00:00:00",
+      "HandbackException": null,
+      "HandbackFailureTimes": 0,
+      "UpdatedDateTime": "0001-01-01T00:00:00",
+      "ArchiveFilePath": null,
+      "ArchiveFileCommit": null,
+      "ArchiveFileDateTime": "0001-01-01T00:00:00",
+      "ArchiveException": null,
+      "BilingualFilePath": null,
+      "BilingualFileCommit": null,
+      "BilingualDateTime": "0001-01-01T00:00:00",
+      "BilingualException": null
+    },
+    "e5807f86034da2a6e63a20cc6ee40f0c07b4a3d0": {
+      "FileHash": "e5807f86034da2a6e63a20cc6ee40f0c07b4a3d0",
+      "SourceFileCommit": "7039bb010c58f364d774dfb1d50a8df4e99f63b3",
+      "SourceFilePath": "virtualization\\windowscontainers\\TOC.md",
+      "HandoffReason": 1,
+      "DependencyFrom": null,
+      "TokenReference": null,
+      "FilePathList": [
+        "virtualization\\windowscontainers\\TOC.md"
+      ],
+      "HasMetadata": false,
+      "TranslationType": 1,
+      "HandoffFilePath": "ol-handoff\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\TOC.13173dbdc376543cb6eb74ef16484f39c0ef0fdb.zh-cn.xlf",
+      "HandoffFileCommit": "172ec1523cae15831f9ad44beaccc389af488181",
+      "HandoffDateTime": "2016-10-06T18:44:53.5160415Z",
+      "HandoffPriority": "",
+      "HandoffException": null,
+      "HandoffFailureTimes": 0,
+      "TargetFileCommit": null,
+      "TargetFilePath": null,
+      "HandbackFilePath": null,
+      "HandbackFileCommit": null,
+      "HandbackDateTime": "0001-01-01T00:00:00",
+      "HandbackException": null,
+      "HandbackFailureTimes": 0,
+      "UpdatedDateTime": "0001-01-01T00:00:00",
+      "ArchiveFilePath": null,
+      "ArchiveFileCommit": null,
+      "ArchiveFileDateTime": "0001-01-01T00:00:00",
+      "ArchiveException": null,
+      "BilingualFilePath": null,
+      "BilingualFileCommit": null,
+      "BilingualDateTime": "0001-01-01T00:00:00",
       "BilingualException": null
     }
   }
