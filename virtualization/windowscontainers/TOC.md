@@ -21,6 +21,7 @@
 ## [Windows 上的 Dockerfile](docker/manage_windows_dockerfile.md)
 ## [优化 Dockerfile](docker/optimize_windows_dockerfile.md)
 ## [容器网络](management/container_networking.md)
+## [通过 PowerShell 管理 Docker](https://github.com/Microsoft/Docker-PowerShell)
 
 # 容器示例
 ## [Dockerfile – Windows Server Core](https://github.com/Microsoft/Virtualization-Documentation/tree/master/windows-container-samples/windowsservercore)
@@ -32,6 +33,6 @@
 # [容器操作系统映像 EULA](Images_EULA.md)
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO1-->
 
 
