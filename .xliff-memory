@@ -324,8 +324,8 @@
       "SourceFilename": "virtualization\\windowscontainers\\TOC.md",
       "XliffHash": "7ce84f2fd3cb3de66193d583d56f1fd27063e7b6",
       "TranslationType": 1,
-      "IsArchived": false,
-      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "IsArchived": true,
+      "ArchivedDateTime": "2016-10-07T00:15:44.9768421Z",
       "SkeletonFile": "ol-xliffcache\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\e5807f86034da2a6e63a20cc6ee40f0c07b4a3d0.3bba4914bcc98b2683a7ef86ce29b64b2744b3fd.xml",
       "LocXliff": null,
       "LocXliffCommit": null
@@ -334,8 +334,8 @@
       "SourceFilename": "virtualization\\windowscontainers\\samples.md",
       "XliffHash": "fb5dc731ad44744c8caf9576cb62a95e52ac66fc",
       "TranslationType": 1,
-      "IsArchived": false,
-      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "IsArchived": true,
+      "ArchivedDateTime": "2016-10-07T00:15:44.9768421Z",
       "SkeletonFile": "ol-xliffcache\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\5a407d00cd11df6c65c979ee283c94a9cc5bf746.414ebf590986d771c8232701bbca9e533ed649a1.xml",
       "LocXliff": null,
       "LocXliffCommit": null
