@@ -24,8 +24,13 @@
 ## [通过 PowerShell 管理 Docker](https://github.com/Microsoft/Docker-PowerShell)
 
 # 容器示例
-## [Dockerfile – Windows Server Core](https://github.com/Microsoft/Virtualization-Documentation/tree/master/windows-container-samples/windowsservercore)
-## [Dockerfile – Nano Server](https://github.com/Microsoft/Virtualization-Documentation/tree/master/windows-container-samples/nanoserver)
+## [应用程序框架](samples.md#Application-Frameworks)
+## [编程语言](samples.md#Programing-Languages)
+## [数据库](samples.md#Databases)
+## [基础结构和 CI 工具](samples.md#Infrastructure-and-CI-Tools)
+## [仅供娱乐](samples.md#Just-for-Fun)
+## [其他](samples.md#Other)
+
 
 # 社区和支持
 ## [容器论坛](https://social.msdn.microsoft.com/Forums/en-US/home?forum=windowscontainers)
