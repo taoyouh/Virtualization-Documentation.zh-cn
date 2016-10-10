@@ -90,6 +90,9 @@
   "a3636af921f92ae1cd415fd292f6650e31990bb9": [
     "virtualization\\hyperv_on_windows\\TOC.md"
   ],
+  "d3340019629a3ad92f856372345e4c2ceef85b6c": [
+    "virtualization\\hyperv_on_windows\\user_guide\\checkpoints.md"
+  ],
   "bd0ee06f4e5eab4f33bb7e7c6dd71119dddde5c9": [
     "virtualization\\hyperv_on_windows\\user_guide\\checkpoints.md"
   ],
@@ -274,6 +277,9 @@
   ],
   "616b9cc09a70e927dce151f7ff5de44206da929f": [
     "virtualization\\windowscontainers\\quick_start\\quick_start_images.md"
+  ],
+  "4322b650b511a8b2a8e926c1fca69971528dc07c": [
+    "virtualization\\windowscontainers\\quick_start\\quick_start_windows_10.md"
   ],
   "74686f222e8eec1daacd45a9e388d94abf6381f4": [
     "virtualization\\windowscontainers\\quick_start\\quick_start_windows_10.md"
