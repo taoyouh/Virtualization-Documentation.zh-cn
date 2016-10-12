@@ -354,8 +354,8 @@
       "SourceFilename": "virtualization\\hyperv_on_windows\\user_guide\\checkpoints.md",
       "XliffHash": "c34f31ea38513d8b4863aa465ac26ab972c07033",
       "TranslationType": 1,
-      "IsArchived": false,
-      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "IsArchived": true,
+      "ArchivedDateTime": "2016-10-12T12:07:32.2210805Z",
       "SkeletonFile": "ol-xliffcache\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\d3340019629a3ad92f856372345e4c2ceef85b6c.662f360e22ab760bb6ae85c23ec71a648ff1468d.xml",
       "LocXliff": null,
       "LocXliffCommit": null
@@ -364,8 +364,8 @@
       "SourceFilename": "virtualization\\windowscontainers\\quick_start\\quick_start_windows_10.md",
       "XliffHash": "0ae9d25c4097cbd814750b7840f9c670f1a3fab2",
       "TranslationType": 1,
-      "IsArchived": false,
-      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "IsArchived": true,
+      "ArchivedDateTime": "2016-10-12T12:07:32.2210805Z",
       "SkeletonFile": "ol-xliffcache\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\4322b650b511a8b2a8e926c1fca69971528dc07c.f8e89840a4ba4fbfa95aa4fa75d544446ab08380.xml",
       "LocXliff": null,
       "LocXliffCommit": null
