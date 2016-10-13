@@ -287,9 +287,6 @@
   "334f19fa645ad50eb59ad61890842f0b6a43dce2": [
     "virtualization\\windowscontainers\\quick_start\\quick_start_windows_server.md"
   ],
-  "4d02d6423cc910c2bd2fe0691cbb62bddcabb117": [
-    "virtualization\\windowscontainers\\quick_start\\quick_start_windows_server.md"
-  ],
   "11bc16813153beb5b819c80284a30f9f188709d0": [
     "virtualization\\windowscontainers\\docker\\configure_docker_daemon.md"
   ],
