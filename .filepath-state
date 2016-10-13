@@ -176,6 +176,9 @@
   "4d7e8fb1fcbb7e9680b7d5bd143ef6d59e45035e": [
     "virtualization\\windowscontainers\\deployment\\deployment.md"
   ],
+  "ac48bc7ee7b70483d8a368749aea0862c52f049c": [
+    "virtualization\\windowscontainers\\deployment\\system_requirements.md"
+  ],
   "a17a0e4eca2596c8cebbef93ea91c854f09d0b76": [
     "virtualization\\windowscontainers\\deployment\\system_requirements.md"
   ],
@@ -259,6 +262,9 @@
   ],
   "7dee9e53f0e95b0c3b0ec0afc5b9d510c1962dbc": [
     "virtualization\\hyperv_on_windows\\user_guide\\create_pre-release_vm.md"
+  ],
+  "4fdd93badef908d694c5fbcd335645f565454091": [
+    "virtualization\\windowscontainers\\docker\\manage_windows_dockerfile.md"
   ],
   "ea84ac6c688fa258c9b72f50565ec6e21e8051db": [
     "virtualization\\windowscontainers\\docker\\manage_windows_dockerfile.md"
