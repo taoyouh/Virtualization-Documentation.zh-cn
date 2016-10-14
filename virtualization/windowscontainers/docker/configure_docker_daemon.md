@@ -10,8 +10,8 @@ ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: 6885400c-5623-4cde-8012-f6a00019fafa
 translationtype: Human Translation
-ms.sourcegitcommit: d30136e66bf15dc015629e359422c9b8346b8426
-ms.openlocfilehash: 3ee39f57890248951b69887edc87c9fedb13c285
+ms.sourcegitcommit: ac962391cd3b82be2dd18b145ee5e6d7a483a91a
+ms.openlocfilehash: 11bc16813153beb5b819c80284a30f9f188709d0
 
 ---
 
@@ -19,11 +19,22 @@ ms.openlocfilehash: 3ee39f57890248951b69887edc87c9fedb13c285
 
 Windows 中不含 Docker 引擎和客户端，需要单独进行安装和配置。 此外，Docker 引擎可以接受多种自定义配置。 例如，可以配置守护程序接受传入请求的方式、默认网络选项及调试/日志设置。 在 Windows 上，这些配置可以在配置文件中指定，或者通过使用 Windows 服务控制管理器指定。 此文档将详细阐述如何安装和配置 Docker 引擎，还会提供一些通用配置的示例。
 
+
 ## 安装 Docker
+若要使用 Window 容器，则需要安装 Docker。 Docker 由 Docker 引擎 (dockerd.exe) 和 Docker 客户端 (docker.exe) 组成。 快速入门指南中提供了安装所有内容的最简方法。 指南将帮助设置所有项目并运行首个容器。 
 
-若要使用 Window 容器，则需要安装 Docker。 Docker 由 Docker 引擎和 Docker 客户端组成。 此示例中将会安装这两者。
+* [Windows Server 2016 上的 Windows 容器](https://msdn.microsoft.com/en-us/virtualization/windowscontainers/quick_start/quick_start_windows_server)
+* [Windows 10 上的 Windows 容器](https://msdn.microsoft.com/en-us/virtualization/windowscontainers/quick_start/quick_start_windows_10)
 
-下载 Docker 引擎。
+
+### 手动安装
+若要改用 Docker 引擎和客户端的开发中版本，可遵循后续步骤。 这将安装 Docker 引擎和客户端。 否则，请跳到下一节。
+
+> 如果已安装 Docker for Windows，请务必在执行以下手动安装步骤之前将其删除。 
+
+下载 Docker 引擎
+
+Https://master.dockerproject.org 始终提供最新版本。 此示例使用 v1.13 开发分支提供的最新内容。 
 
 ```none
 Invoke-WebRequest "https://download.docker.com/components/engine/windows-server/cs-1.12/docker.zip" -OutFile "$env:TEMP\docker.zip" -UseBasicParsing
@@ -183,6 +194,6 @@ Get-EventLog -LogName Application -Source Docker -After (Get-Date).AddMinutes(-3
 
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Oct16_HO2-->
 
 
