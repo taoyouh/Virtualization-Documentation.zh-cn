@@ -357,8 +357,8 @@
       "IsArchived": true,
       "ArchivedDateTime": "2016-10-12T12:07:32.2210805Z",
       "SkeletonFile": "ol-xliffcache\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\d3340019629a3ad92f856372345e4c2ceef85b6c.662f360e22ab760bb6ae85c23ec71a648ff1468d.xml",
-      "LocXliff": null,
-      "LocXliffCommit": null
+      "LocXliff": "ol-handback\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\checkpoints.fb864e32f956b43d9a6ce0ccc72ba67b60ea8362.zh-cn.xlf",
+      "LocXliffCommit": "349b9a5bda70800ac42b3cdae4279ee882e0cf1b"
     },
     "virtualization\\windowscontainers\\quick_start\\quick_start_windows_10.md.0ae9d25c4097cbd814750b7840f9c670f1a3fab2.HT": {
       "SourceFilename": "virtualization\\windowscontainers\\quick_start\\quick_start_windows_10.md",
@@ -367,8 +367,8 @@
       "IsArchived": true,
       "ArchivedDateTime": "2016-10-12T12:07:32.2210805Z",
       "SkeletonFile": "ol-xliffcache\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\4322b650b511a8b2a8e926c1fca69971528dc07c.f8e89840a4ba4fbfa95aa4fa75d544446ab08380.xml",
-      "LocXliff": null,
-      "LocXliffCommit": null
+      "LocXliff": "ol-handback\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\quick_start_windows_10.5f887ea7d45d865c81fe971abab095fb8e272cc8.zh-cn.xlf",
+      "LocXliffCommit": "349b9a5bda70800ac42b3cdae4279ee882e0cf1b"
     },
     "virtualization\\windowscontainers\\docker\\configure_docker_daemon.md.74ea9d0b6da39d7b6724d53246037449608db970.HT": {
       "SourceFilename": "virtualization\\windowscontainers\\docker\\configure_docker_daemon.md",
