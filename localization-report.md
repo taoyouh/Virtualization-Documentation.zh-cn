@@ -5,9 +5,9 @@
  -------- | ----- 
  Total Files | 465
 [ Handoff Failed Files ](#handoff-failed-list)| 0
-[ Handoff Success Files ](#handoff-success-list)| 3
+[ Handoff Success Files ](#handoff-success-list)| 0
 [ Archive Failed Files ](#archive-failed-list)| 0
-[ Archive Success Files ](#archive-success-list)| 2
+[ Archive Success Files ](#archive-success-list)| 5
 [ Handback Failed Files ](#handback-failed-list)| 0
 [ Out Of Sync Handback Files ](#outofsync-handback-success-list)| 0
 [ In Sync Handback Files ](#insync-handback-success-list)| 121
@@ -16,11 +16,6 @@
 ## <a name='handoff-failed-list'></a> Handoff Failed File List
 
 ## <a name='handoff-success-list'></a> Handoff Success File List
- Source File | Status | Details 
- ----------- | ------ | ------- 
- [virtualization\windowscontainers\deployment\system_requirements.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/08355d7a7da50d0f244bd750508fd42084818d7f/virtualization/windowscontainers/deployment/system_requirements.md) | HandedOffSuccess | [Details](#ac48bc7ee7b70483d8a368749aea0862c52f049c243)
- [virtualization\windowscontainers\docker\configure_docker_daemon.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/1c1ca88aaf383973a4cfb879580db5325f49a868/virtualization/windowscontainers/docker/configure_docker_daemon.md) | HandedOffSuccess | [Details](#7b4276dd8e961bf278bee2baea2449e04eef7a2f245)
- [virtualization\windowscontainers\docker\manage_windows_dockerfile.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/a21a9ad1cd94a62f8fcd87e7c221cacd0b9d0782/virtualization/windowscontainers/docker/manage_windows_dockerfile.md) | HandedOffSuccess | [Details](#4fdd93badef908d694c5fbcd335645f565454091246)
 
 ## <a name='archive-failed-list'></a> Archive Failed File List
 
@@ -28,6 +23,9 @@
  Source File | Status | Details 
  ----------- | ------ | ------- 
  [virtualization\hyperv_on_windows\user_guide\checkpoints.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/54f3855efd820d77b17c171b5b4c2a0c66957bc3/virtualization/hyperv_on_windows/user_guide/checkpoints.md) | ArchivedSuccess | [Details](#d3340019629a3ad92f856372345e4c2ceef85b6c182)
+ [virtualization\windowscontainers\deployment\system_requirements.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/08355d7a7da50d0f244bd750508fd42084818d7f/virtualization/windowscontainers/deployment/system_requirements.md) | ArchivedSuccess | [Details](#ac48bc7ee7b70483d8a368749aea0862c52f049c243)
+ [virtualization\windowscontainers\docker\configure_docker_daemon.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/1c1ca88aaf383973a4cfb879580db5325f49a868/virtualization/windowscontainers/docker/configure_docker_daemon.md) | ArchivedSuccess | [Details](#7b4276dd8e961bf278bee2baea2449e04eef7a2f245)
+ [virtualization\windowscontainers\docker\manage_windows_dockerfile.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/a21a9ad1cd94a62f8fcd87e7c221cacd0b9d0782/virtualization/windowscontainers/docker/manage_windows_dockerfile.md) | ArchivedSuccess | [Details](#4fdd93badef908d694c5fbcd335645f565454091246)
  [virtualization\windowscontainers\quick_start\quick_start_windows_10.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/c1c16d94bade83e8623ad89aae0abb356a829e1e/virtualization/windowscontainers/quick_start/quick_start_windows_10.md) | ArchivedSuccess | [Details](#4322b650b511a8b2a8e926c1fca69971528dc07c313)
 
 ## <a name='handback-failed-list'></a> Handback Failed File List
@@ -3551,13 +3549,13 @@
 * [Back to Top](#report-top)
 
 ##### <a name='ac48bc7ee7b70483d8a368749aea0862c52f049c243'></a> Source: [virtualization\windowscontainers\deployment\system_requirements.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/08355d7a7da50d0f244bd750508fd42084818d7f/virtualization/windowscontainers/deployment/system_requirements.md)
-* Status: HandedOffSuccess
+* Status: ArchivedSuccess
 * Target File: 
 * Handoff File: [system_requirements.579a5475e3bd1d3d3fd9d5b53488ab4ae55a4423.zh-cn.xlf](https://github.com/Microsoft/Virtualization-Documentation-Private.handoff/blob/a4824c43d9d5137d0f18581a9e61a79e36933545/ol-handoff/Microsoft/Virtualization-Documentation-Private.zh-cn/live/system_requirements.579a5475e3bd1d3d3fd9d5b53488ab4ae55a4423.zh-cn.xlf)
 * Handoff Datetime: 2016-10-13 17:40:40
 * Handoff Reason: Include
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
+* Archive File: [system_requirements.579a5475e3bd1d3d3fd9d5b53488ab4ae55a4423.zh-cn.xlf](https://github.com/Microsoft/Virtualization-Documentation-Private.handoff/blob/9166112e5733aa506bb73aeb0c8415a7c26e84b9/ol-archive/Microsoft/Virtualization-Documentation-Private.zh-cn/live/system_requirements.579a5475e3bd1d3d3fd9d5b53488ab4ae55a4423.zh-cn.xlf)
+* Archive Datetime: 2016-10-14 00:08:05
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
 * Current Target File: [virtualization\windowscontainers\deployment\system_requirements.md](https://github.com/Microsoft/Virtualization-Documentation-Private.zh-cn/blob/a31a03d5535bf06f45dcdbcf2e486fe3714d4029/virtualization/windowscontainers/deployment/system_requirements.md)
@@ -3580,13 +3578,13 @@
 * [Back to Top](#report-top)
 
 ##### <a name='7b4276dd8e961bf278bee2baea2449e04eef7a2f245'></a> Source: [virtualization\windowscontainers\docker\configure_docker_daemon.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/1c1ca88aaf383973a4cfb879580db5325f49a868/virtualization/windowscontainers/docker/configure_docker_daemon.md)
-* Status: HandedOffSuccess
+* Status: ArchivedSuccess
 * Target File: 
 * Handoff File: [configure_docker_daemon.593d065aaeaa40359a3e774b03d152311eb6570c.zh-cn.xlf](https://github.com/Microsoft/Virtualization-Documentation-Private.handoff/blob/08336acb480f45874883b352c710de536b764040/ol-handoff/Microsoft/Virtualization-Documentation-Private.zh-cn/live/configure_docker_daemon.593d065aaeaa40359a3e774b03d152311eb6570c.zh-cn.xlf)
 * Handoff Datetime: 2016-10-13 20:10:25
 * Handoff Reason: Include
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
+* Archive File: [configure_docker_daemon.593d065aaeaa40359a3e774b03d152311eb6570c.zh-cn.xlf](https://github.com/Microsoft/Virtualization-Documentation-Private.handoff/blob/9166112e5733aa506bb73aeb0c8415a7c26e84b9/ol-archive/Microsoft/Virtualization-Documentation-Private.zh-cn/live/configure_docker_daemon.593d065aaeaa40359a3e774b03d152311eb6570c.zh-cn.xlf)
+* Archive Datetime: 2016-10-14 00:08:05
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
 * Current Target File: [virtualization\windowscontainers\docker\configure_docker_daemon.md](https://github.com/Microsoft/Virtualization-Documentation-Private.zh-cn/blob/15d9576633b833b18f24f76c9c2f9abab56c5aaf/virtualization/windowscontainers/docker/configure_docker_daemon.md)
@@ -3597,13 +3595,13 @@
 * [Back to Top](#report-top)
 
 ##### <a name='4fdd93badef908d694c5fbcd335645f565454091246'></a> Source: [virtualization\windowscontainers\docker\manage_windows_dockerfile.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/a21a9ad1cd94a62f8fcd87e7c221cacd0b9d0782/virtualization/windowscontainers/docker/manage_windows_dockerfile.md)
-* Status: HandedOffSuccess
+* Status: ArchivedSuccess
 * Target File: 
 * Handoff File: [manage_windows_dockerfile.cf56579c9136245b4cbef41fabc5df7a6ab9832a.zh-cn.xlf](https://github.com/Microsoft/Virtualization-Documentation-Private.handoff/blob/a4824c43d9d5137d0f18581a9e61a79e36933545/ol-handoff/Microsoft/Virtualization-Documentation-Private.zh-cn/live/manage_windows_dockerfile.cf56579c9136245b4cbef41fabc5df7a6ab9832a.zh-cn.xlf)
 * Handoff Datetime: 2016-10-13 17:40:40
 * Handoff Reason: Include
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
+* Archive File: [manage_windows_dockerfile.cf56579c9136245b4cbef41fabc5df7a6ab9832a.zh-cn.xlf](https://github.com/Microsoft/Virtualization-Documentation-Private.handoff/blob/9166112e5733aa506bb73aeb0c8415a7c26e84b9/ol-archive/Microsoft/Virtualization-Documentation-Private.zh-cn/live/manage_windows_dockerfile.cf56579c9136245b4cbef41fabc5df7a6ab9832a.zh-cn.xlf)
+* Archive Datetime: 2016-10-14 00:08:05
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
 * Current Target File: [virtualization\windowscontainers\docker\manage_windows_dockerfile.md](https://github.com/Microsoft/Virtualization-Documentation-Private.zh-cn/blob/2564777f513e6e21d69a840ac309c5de693e5a7e/virtualization/windowscontainers/docker/manage_windows_dockerfile.md)
