@@ -10,8 +10,8 @@ ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: bb9bfbe0-5bdc-4984-912f-9c93ea67105f
 translationtype: Human Translation
-ms.sourcegitcommit: 0fae34a5a85678a25c47b0312650e67aa6cd7efd
-ms.openlocfilehash: 74686f222e8eec1daacd45a9e388d94abf6381f4
+ms.sourcegitcommit: c1c16d94bade83e8623ad89aae0abb356a829e1e
+ms.openlocfilehash: 4322b650b511a8b2a8e926c1fca69971528dc07c
 
 ---
 
@@ -26,7 +26,9 @@ ms.openlocfilehash: 74686f222e8eec1daacd45a9e388d94abf6381f4
 - 一个运行 Windows 10 周年纪念版（专业版或企业版）的物理计算机系统。   
 - 本快速入门可以在 Windows 10 虚拟机上运行，但需要启用嵌套虚拟化。 可以在[嵌套虚拟化指南](https://msdn.microsoft.com/en-us/virtualization/hyperv_on_windows/user_guide/nesting)中找到相关详细信息。
 
-> 需要安装关键更新，才能让 Windows 容器功能正常运作。 请在进行本教程所述操作前安装所有更新。
+> 必须安装关键更新，Windows 容器才会工作。 
+> 若要检查 OS 版本，请运行 `winver.exe`，并将显示的版本与 [Windows 10 更新历史记录](https://support.microsoft.com/en-us/help/12387/windows-10-update-history)进行比较。 
+> 请确保拥有 14393.222 或更高版本再继续操作。
 
 ## 1.安装容器功能
 
@@ -166,6 +168,6 @@ Windows 10 和容器快速入门的后续部分将深入探讨在 Windows 10 上
 
 
 
-<!--HONumber=Sep16_HO5-->
+<!--HONumber=Oct16_HO2-->
 
 

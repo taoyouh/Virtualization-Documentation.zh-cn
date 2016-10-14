@@ -10,8 +10,8 @@ ms.prod: windows-10-hyperv
 ms.service: windows-10-hyperv
 ms.assetid: d9c398c4-ee72-45c6-9ce8-4f06569dae6c
 translationtype: Human Translation
-ms.sourcegitcommit: 4cdf81cace246c5de041d378391dca9b9d318dd5
-ms.openlocfilehash: bd0ee06f4e5eab4f33bb7e7c6dd71119dddde5c9
+ms.sourcegitcommit: 54f3855efd820d77b17c171b5b4c2a0c66957bc3
+ms.openlocfilehash: d3340019629a3ad92f856372345e4c2ceef85b6c
 
 ---
 
@@ -250,6 +250,6 @@ This folder will contain the .VMRS file with the runtime and saved state data an
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Oct16_HO2-->
 
 
