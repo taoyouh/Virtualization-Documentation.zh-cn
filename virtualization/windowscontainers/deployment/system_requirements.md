@@ -10,8 +10,8 @@ ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: 3c3d4c69-503d-40e8-973b-ecc4e1f523ed
 translationtype: Human Translation
-ms.sourcegitcommit: f721639b1b10ad97cc469df413d457dbf8d13bbe
-ms.openlocfilehash: a17a0e4eca2596c8cebbef93ea91c854f09d0b76
+ms.sourcegitcommit: 08355d7a7da50d0f244bd750508fd42084818d7f
+ms.openlocfilehash: ac48bc7ee7b70483d8a368749aea0862c52f049c
 
 ---
 
@@ -71,7 +71,6 @@ Windows 容器提供两种容器基本映像，Windows Server Core 和 Nano Serv
 </table>
 
 
-
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO2-->
 
 
