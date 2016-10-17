@@ -203,6 +203,9 @@
   "24a79a8377a34797a7b590421167fc4e5f843e60": [
     "virtualization\\windowscontainers\\quick_start\\media\\dockerfile2.png"
   ],
+  "bfa0c5b7bc57aea14d8cce658b6bdf9901e30cbb": [
+    "virtualization\\windowscontainers\\TOC.md"
+  ],
   "e5807f86034da2a6e63a20cc6ee40f0c07b4a3d0": [
     "virtualization\\windowscontainers\\TOC.md"
   ],
@@ -296,6 +299,9 @@
   "334f19fa645ad50eb59ad61890842f0b6a43dce2": [
     "virtualization\\windowscontainers\\quick_start\\quick_start_windows_server.md"
   ],
+  "185831094b63a1b7fb1931db7fb82a6c59c2b060": [
+    "virtualization\\windowscontainers\\docker\\configure_docker_daemon.md"
+  ],
   "7b4276dd8e961bf278bee2baea2449e04eef7a2f": [
     "virtualization\\windowscontainers\\docker\\configure_docker_daemon.md"
   ],
@@ -310,5 +316,8 @@
   ],
   "4d0fb2ee5ce2be3fe1b616ff38f14269192f3fc9": [
     "virtualization\\windowscontainers\\samples.md"
+  ],
+  "b13bdde63b55be50771d63bb0baa146cf4661e66": [
+    "virtualization\\windowscontainers\\troubleshooting.md"
   ]
 }
