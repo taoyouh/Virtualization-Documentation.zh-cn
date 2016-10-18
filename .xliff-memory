@@ -444,8 +444,8 @@
       "SourceFilename": "virtualization\\windowscontainers\\TOC.md",
       "XliffHash": "6cae79283e18e6c00341a39065269f41d19ffa96",
       "TranslationType": 1,
-      "IsArchived": false,
-      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "IsArchived": true,
+      "ArchivedDateTime": "2016-10-18T00:12:04.0515077Z",
       "SkeletonFile": "ol-xliffcache\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\bfa0c5b7bc57aea14d8cce658b6bdf9901e30cbb.db7e2722ad8cf752b8d539f6fccc225a1b5b9b40.xml",
       "LocXliff": null,
       "LocXliffCommit": null
@@ -454,8 +454,8 @@
       "SourceFilename": "virtualization\\windowscontainers\\troubleshooting.md",
       "XliffHash": "66f86e9bf3baf29899efd877a642d3ed21375a1e",
       "TranslationType": 1,
-      "IsArchived": false,
-      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "IsArchived": true,
+      "ArchivedDateTime": "2016-10-18T00:12:04.0515077Z",
       "SkeletonFile": "ol-xliffcache\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\b13bdde63b55be50771d63bb0baa146cf4661e66.f11c66914aaa7c311949298457853aa6c50cafd3.xml",
       "LocXliff": null,
       "LocXliffCommit": null
@@ -464,8 +464,8 @@
       "SourceFilename": "virtualization\\windowscontainers\\docker\\configure_docker_daemon.md",
       "XliffHash": "a4f27b8ee00aa8249f747f31e80b2546ded00d1a",
       "TranslationType": 1,
-      "IsArchived": false,
-      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "IsArchived": true,
+      "ArchivedDateTime": "2016-10-18T00:12:04.0515077Z",
       "SkeletonFile": "ol-xliffcache\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\185831094b63a1b7fb1931db7fb82a6c59c2b060.50ecfca71dd5ecaa6d58dff77cbeb07c71dd7069.xml",
       "LocXliff": null,
       "LocXliffCommit": null
