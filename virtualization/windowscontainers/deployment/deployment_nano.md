@@ -10,8 +10,8 @@ ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: b82acdf9-042d-4b5c-8b67-1a8013fa1435
 translationtype: Human Translation
-ms.sourcegitcommit: df9723e3a9d9ada778d01d43dcb36c99813dea8f
-ms.openlocfilehash: 9af33e6bce21aa339109f060100b2c7ab3c1eb91
+ms.sourcegitcommit: a2c78d3945f1d5b0ebe2a4af480802f8c0c656c2
+ms.openlocfilehash: a9d398de94cb0d6c54c2e82f4a024bb65de9806d
 
 ---
 
@@ -62,64 +62,28 @@ Restart-Computer
 
 备份后，重新建立远程 PowerShell 连接。
 
-## 安装容器功能
-
-Nano Server 程序包管理提供程序允许在 Nano Server 上安装角色和功能。 使用此命令安装提供程序。
-
-```none
-Install-PackageProvider NanoServerPackage
-```
-
-在包提供程序安装完毕后，请安装容器功能。
-
-```none
-Install-NanoServerPackage -Name Microsoft-NanoServer-Containers-Package
-```
-
-容器功能安装完毕后，需要重启 Nano Server 主机。 
-
-```none
-Restart-Computer
-```
-
-备份后，重新建立远程 PowerShell 连接。
-
 ## 安装 Docker
 
-若要使用 Window 容器，则需要安装 Docker 引擎。 使用这些步骤安装 Docker 引擎。
+若要使用 Window 容器，则需要安装 Docker。 安装 Docker 将用到 [OneGet 提供程序 PowerShell 模块](https://github.com/oneget/oneget)。 提供程序将启用计算机上的容器功能，并安装 Docker - 此操作需要重启计算机。 
 
-以 zip 存档形式下载 Docker 引擎和客户端。
+在远程 PowerShell 会话中运行以下命令。
+
+首先，安装 OneGet PowerShell 模块。
 
 ```none
-Invoke-WebRequest "https://download.docker.com/components/engine/windows-server/cs-1.12/docker.zip" -OutFile "$env:TEMP\docker.zip" -UseBasicParsing
+Install-Module -Name DockerMsftProvider -Repository PSGallery -Force
 ```
 
-将 zip 存档展开到 Program Files，存档内容已经位于 Docker 目录中。
+接下来使用 OneGet 安装最新版的 Docker。
 
 ```none
-Expand-Archive -Path "$env:TEMP\docker.zip" -DestinationPath $env:ProgramFiles
+Install-Package -Name docker -ProviderName DockerMsftProvider
 ```
 
-将 Docker 目录添加到 Nano Server 上的系统路径。
+完成安装后，重启计算机。
 
 ```none
-# For quick use, does not require shell to be restarted.
-$env:path += “;C:\program files\docker”
-
-# For persistent use, will apply even after a reboot.
-setx PATH $env:path /M
-```
-
-将 Docker 安装为 Windows 的一个服务。
-
-```none
-dockerd --register-service
-```
-
-启动 Docker 服务。
-
-```none
-Start-Service Docker
+Restart-Computer -Force
 ```
 
 ## 安装基本容器映像
@@ -233,6 +197,6 @@ Restart-Computer
 
 
 
-<!--HONumber=Sep16_HO5-->
+<!--HONumber=Oct16_HO2-->
 
 
