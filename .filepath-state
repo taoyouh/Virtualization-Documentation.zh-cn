@@ -173,13 +173,7 @@
   "091007ea301226ca98c93855d8c36b09f3e4d0be": [
     "virtualization\\windowscontainers\\deployment\\deployment.md"
   ],
-  "4d7e8fb1fcbb7e9680b7d5bd143ef6d59e45035e": [
-    "virtualization\\windowscontainers\\deployment\\deployment.md"
-  ],
   "008eff4731a8835b0b3f664edc9955f85c12a629": [
-    "virtualization\\windowscontainers\\deployment\\system_requirements.md"
-  ],
-  "ac48bc7ee7b70483d8a368749aea0862c52f049c": [
     "virtualization\\windowscontainers\\deployment\\system_requirements.md"
   ],
   "f2cb1cdc1a98bf328a24610af6f7313a1071b079": [
@@ -245,9 +239,6 @@
   "a9d398de94cb0d6c54c2e82f4a024bb65de9806d": [
     "virtualization\\windowscontainers\\deployment\\deployment_nano.md"
   ],
-  "9af33e6bce21aa339109f060100b2c7ab3c1eb91": [
-    "virtualization\\windowscontainers\\deployment\\deployment_nano.md"
-  ],
   "54974198eb9f9f9ea840b99e83eab5952f3f6b9a": [
     "virtualization\\community\\media\\GitFromWinCMD.png"
   ],
@@ -291,12 +282,6 @@
     "virtualization\\windowscontainers\\quick_start\\quick_start_windows_10.md"
   ],
   "791de65ac6e4222c4cae77fe9dd24f4e07e5a936": [
-    "virtualization\\windowscontainers\\quick_start\\quick_start_windows_server.md"
-  ],
-  "f02daf18858df760b4c01e919957ac50da256b9d": [
-    "virtualization\\windowscontainers\\quick_start\\quick_start_windows_server.md"
-  ],
-  "334f19fa645ad50eb59ad61890842f0b6a43dce2": [
     "virtualization\\windowscontainers\\quick_start\\quick_start_windows_server.md"
   ],
   "185831094b63a1b7fb1931db7fb82a6c59c2b060": [
