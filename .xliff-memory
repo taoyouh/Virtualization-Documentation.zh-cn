@@ -474,8 +474,8 @@
       "SourceFilename": "virtualization\\windowscontainers\\docker\\configure_docker_daemon.md",
       "XliffHash": "0a86e86c33a5bd2ff7f8e06aa24ed92fa3cfe96d",
       "TranslationType": 1,
-      "IsArchived": false,
-      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "IsArchived": true,
+      "ArchivedDateTime": "2016-10-20T00:12:46.9805857Z",
       "SkeletonFile": "ol-xliffcache\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\d2fe856b9d00c5f7ac33d683f1c2204dc06d4a11.4ab521297d50f2f47fb78a76ce022f2a25e43b07.xml",
       "LocXliff": null,
       "LocXliffCommit": null
