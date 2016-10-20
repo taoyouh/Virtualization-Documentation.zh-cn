@@ -10,8 +10,8 @@ ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: 6885400c-5623-4cde-8012-f6a00019fafa
 translationtype: Human Translation
-ms.sourcegitcommit: 1c1ca88aaf383973a4cfb879580db5325f49a868
-ms.openlocfilehash: 7b4276dd8e961bf278bee2baea2449e04eef7a2f
+ms.sourcegitcommit: 38d9f06af87cf1d69529d28e30cab60f16e0982b
+ms.openlocfilehash: 185831094b63a1b7fb1931db7fb82a6c59c2b060
 
 ---
 
@@ -70,7 +70,7 @@ Start-Service Docker
 
 在 Windows 上配置 Docker 引擎的首选方法是使用配置文件。 可在“c:\ProgramData\docker\config\daemon.json”中找到配置文件。 如果此文件还不存在，可以创建此文件。
 
-注意：并非所有可用的 Docker 配置选项在 Windows 上的 Docker 中都适用。 以下示例列出了可用的选项。 若要查看有关 Docker 引擎配置的完整文档（包括适用于 Linux 的相应文档），请参阅 [Docker 守护程序]( https://docs.docker.com/v1.10/engine/reference/commandline/daemon/)。
+注意：并非所有可用的 Docker 配置选项在 Windows 上的 Docker 中都适用。 以下示例列出了可用的选项。 有关 Docker 引擎配置的完整文档，请参阅 [Docker 守护程序配置文件](https://docs.docker.com/engine/reference/commandline/dockerd/#/windows-configuration-file)。
 
 ```none
 {
@@ -177,23 +177,8 @@ restart-service docker
 
 有关详细信息，请参阅 [Docker.com 上的守护程序套接字选项](https://docs.docker.com/v1.10/engine/reference/commandline/daemon/#daemon-socket-option)。
 
-## 收集日志
-
-Docker 引擎会将事件记录到 Windows“应用程序”事件日志中，而不是某个文件中。 使用 Windows PowerShell 可以轻松读取、排序和筛选这些日志
-
-例如，这将显示过去 5 分钟的 Docker 引擎日志（从最早的开始）。
-
-```
-Get-EventLog -LogName Application -Source Docker -After (Get-Date).AddMinutes(-5) | Sort-Object Time 
-```
-
-也可以很容易通过管道将其转换为 CSV 文件，以便其他工具或电子表格进行读取。
-
-```
-Get-EventLog -LogName Application -Source Docker -After (Get-Date).AddMinutes(-30)  | Sort-Object Time | Export-CSV ~/last30minutes.csv ```
 
 
-
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Oct16_HO3-->
 
 
