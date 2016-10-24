@@ -1,6 +1,6 @@
 {
   "LastProcessedCommit": "cdf4eb0a7ddaad1c522b3448e51412df2543365b",
-  "LastTranslatedCommit": "81e8b5bb78c69f41b1185448e6d002403cd66247",
+  "LastTranslatedCommit": "0c99e5eb8aeacbf8ffae3de5141a0e523d15be92",
   "Items": {
     "5090f6d60b5cbdce0990242d795d9e4e3736e791": {
       "FileHash": "5090f6d60b5cbdce0990242d795d9e4e3736e791",
@@ -26646,14 +26646,14 @@
       "HandoffPriority": "",
       "HandoffException": null,
       "HandoffFailureTimes": 0,
-      "TargetFileCommit": null,
-      "TargetFilePath": null,
-      "HandbackFilePath": null,
-      "HandbackFileCommit": null,
-      "HandbackDateTime": "0001-01-01T00:00:00",
+      "TargetFileCommit": "0c99e5eb8aeacbf8ffae3de5141a0e523d15be92",
+      "TargetFilePath": "virtualization\\windowscontainers\\docker\\configure_docker_daemon.md",
+      "HandbackFilePath": "ol-handback\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\configure_docker_daemon.593d065aaeaa40359a3e774b03d152311eb6570c.zh-cn.xlf",
+      "HandbackFileCommit": "bca1a276e31ae753e74e58e2b530a4ef2534d3ac",
+      "HandbackDateTime": "2016-10-24T15:33:50.8278997Z",
       "HandbackException": null,
       "HandbackFailureTimes": 0,
-      "UpdatedDateTime": "0001-01-01T00:00:00",
+      "UpdatedDateTime": "2016-10-24T15:33:50.8278997Z",
       "ArchiveFilePath": "ol-archive\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\configure_docker_daemon.593d065aaeaa40359a3e774b03d152311eb6570c.zh-cn.xlf",
       "ArchiveFileCommit": "3437ccaf0498749e969b7970a560c29e89e2a6bb",
       "ArchiveFileDateTime": "2016-10-20T00:12:46.9805857Z",
