@@ -10,8 +10,8 @@ ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: 6885400c-5623-4cde-8012-f6a00019fafa
 translationtype: Human Translation
-ms.sourcegitcommit: 38d9f06af87cf1d69529d28e30cab60f16e0982b
-ms.openlocfilehash: 185831094b63a1b7fb1931db7fb82a6c59c2b060
+ms.sourcegitcommit: ea86e2dd88413569e4329ab27a8b6a4d3a7afca9
+ms.openlocfilehash: d2fe856b9d00c5f7ac33d683f1c2204dc06d4a11
 
 ---
 
@@ -166,7 +166,7 @@ sc config docker binpath= "\"C:\Program Files\docker\dockerd.exe\" --run-service
 若要设置 `docker search` 和 `docker pull` 的代理信息，请使用 `HTTP_PROXY` 或 `HTTPS_PROXY` 名称以及代理信息的一个值创建 Windows 环境变量。 可使用类似于以下的命令通过 PowerShell 完成此操作：
 
 ```none
-[Environment]::SetEnvironmentVariable("HTTP_PROXY”, “http://username:password@proxy:port/”, [EnvironmentVariableTarget]::Machine)
+[Environment]::SetEnvironmentVariable("HTTP_PROXY", "http://username:password@proxy:port/", [EnvironmentVariableTarget]::Machine)
 ```
 
 设置变量后，重启 Docker 服务。
@@ -175,7 +175,8 @@ sc config docker binpath= "\"C:\Program Files\docker\dockerd.exe\" --run-service
 restart-service docker
 ```
 
-有关详细信息，请参阅 [Docker.com 上的守护程序套接字选项](https://docs.docker.com/v1.10/engine/reference/commandline/daemon/#daemon-socket-option)。
+有关详细信息，请参阅 [Docker.com 上的 Windows 配置文件](https://docs.docker.com/engine/reference/commandline/dockerd/#/windows-configuration-file)。
+
 
 
 
