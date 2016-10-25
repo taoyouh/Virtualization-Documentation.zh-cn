@@ -114,6 +114,9 @@
   "46c43a38dc3a3ee56ac3136cda60c41019cc733d": [
     "virtualization\\hyperv_on_windows\\user_guide\\nesting.md"
   ],
+  "9ae09f49af4a0d7a3dd91b739ec30d4989615799": [
+    "virtualization\\hyperv_on_windows\\user_guide\\remote_host_management.md"
+  ],
   "852800b19fb39737f0d7104eb2d50521b6cca982": [
     "virtualization\\hyperv_on_windows\\user_guide\\remote_host_management.md"
   ],
@@ -280,6 +283,9 @@
   ],
   "4322b650b511a8b2a8e926c1fca69971528dc07c": [
     "virtualization\\windowscontainers\\quick_start\\quick_start_windows_10.md"
+  ],
+  "d06f38ddc9abf40a2842089203462c26765be672": [
+    "virtualization\\windowscontainers\\quick_start\\quick_start_windows_server.md"
   ],
   "791de65ac6e4222c4cae77fe9dd24f4e07e5a936": [
     "virtualization\\windowscontainers\\quick_start\\quick_start_windows_server.md"
