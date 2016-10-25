@@ -479,6 +479,16 @@
       "SkeletonFile": "ol-xliffcache\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\d2fe856b9d00c5f7ac33d683f1c2204dc06d4a11.4ab521297d50f2f47fb78a76ce022f2a25e43b07.xml",
       "LocXliff": "ol-handback\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\configure_docker_daemon.593d065aaeaa40359a3e774b03d152311eb6570c.zh-cn.xlf",
       "LocXliffCommit": "bca1a276e31ae753e74e58e2b530a4ef2534d3ac"
+    },
+    "virtualization\\windowscontainers\\deployment\\deployment_nano.md.a2e62cf1c5023a12f0cc5298ec886ae3922a5af5.HT": {
+      "SourceFilename": "virtualization\\windowscontainers\\deployment\\deployment_nano.md",
+      "XliffHash": "a2e62cf1c5023a12f0cc5298ec886ae3922a5af5",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\ef5b189a56502ce8b76c094ecbd0c6174bb1bc4f.9b782f369884fd0d05f6e585f3139a89ec1daba7.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
     }
   }
 }
