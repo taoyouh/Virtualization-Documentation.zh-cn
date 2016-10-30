@@ -3,15 +3,14 @@ title: "通过 Hyper-V 管理器管理远程 Hyper-V 主机"
 description: "通过 Hyper-V 管理器管理远程 Hyper-V 主机"
 keywords: windows 10, hyper-v
 author: scooley
-manager: timlt
 ms.date: 05/02/2016
 ms.topic: article
 ms.prod: windows-10-hyperv
 ms.service: windows-10-hyperv
 ms.assetid: 2d34e98c-6134-479b-8000-3eb360b8b8a3
 translationtype: Human Translation
-ms.sourcegitcommit: e0d957ebb953f1e5b3e56de9764c7c3e560024c1
-ms.openlocfilehash: 852800b19fb39737f0d7104eb2d50521b6cca982
+ms.sourcegitcommit: 906eba05c921757b9655505c3f419fcf003d5160
+ms.openlocfilehash: 9ae09f49af4a0d7a3dd91b739ec30d4989615799
 
 ---
 
@@ -71,7 +70,7 @@ Windows Vista 和 Windows Server 2008 中的 Hyper-V 管理器允许你管理：
 
 若要管理远程 Hyper-V 主机，必须在本地计算机和远程主机上启用远程管理。
 
-你可以通过 `System Properties -> Remote Management Settings` 或以管理员身份运行以下 PowerShell 命令来执行此操作：  
+你可以通过 `Server Manager -> Remote management` 或以管理员身份运行以下 PowerShell 命令来执行此操作： 
 
 ``` PowerShell
 Enable-PSRemoting
@@ -122,6 +121,6 @@ Windows 10 极大地增加了远程连接类型的可能组合。
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Oct16_HO4-->
 
 
