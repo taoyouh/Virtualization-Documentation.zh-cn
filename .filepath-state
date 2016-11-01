@@ -332,9 +332,6 @@
   "ef5b189a56502ce8b76c094ecbd0c6174bb1bc4f": [
     "virtualization\\windowscontainers\\deployment\\deployment_nano.md"
   ],
-  "a9d398de94cb0d6c54c2e82f4a024bb65de9806d": [
-    "virtualization\\windowscontainers\\deployment\\deployment_nano.md"
-  ],
   "54974198eb9f9f9ea840b99e83eab5952f3f6b9a": [
     "virtualization\\community\\media\\GitFromWinCMD.png"
   ],
@@ -402,9 +399,6 @@
     "virtualization\\windowscontainers\\quick_start\\quick_start_windows_server.md"
   ],
   "d06f38ddc9abf40a2842089203462c26765be672": [
-    "virtualization\\windowscontainers\\quick_start\\quick_start_windows_server.md"
-  ],
-  "791de65ac6e4222c4cae77fe9dd24f4e07e5a936": [
     "virtualization\\windowscontainers\\quick_start\\quick_start_windows_server.md"
   ],
   "569b8861ca01ee8a0b794e01b0acb1a1c501fa55": [
