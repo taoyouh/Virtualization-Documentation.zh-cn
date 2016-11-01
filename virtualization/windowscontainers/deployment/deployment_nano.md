@@ -2,16 +2,15 @@
 title: "在 Nano Server 上部署 Windows 容器"
 description: "在 Nano Server 上部署 Windows 容器"
 keywords: "docker, 容器"
-author: neilpeterson
-manager: timlt
+author: enderb-ms
 ms.date: 09/28/2016
 ms.topic: article
 ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: b82acdf9-042d-4b5c-8b67-1a8013fa1435
 translationtype: Human Translation
-ms.sourcegitcommit: a2c78d3945f1d5b0ebe2a4af480802f8c0c656c2
-ms.openlocfilehash: a9d398de94cb0d6c54c2e82f4a024bb65de9806d
+ms.sourcegitcommit: fa073b0347ee6c580f0a658b3cbdb471f0bbf909
+ms.openlocfilehash: ef5b189a56502ce8b76c094ecbd0c6174bb1bc4f
 
 ---
 
@@ -90,11 +89,13 @@ Restart-Computer -Force
 
 基本操作系统映像映像用作任何 Windows Server 或 Hyper-V 容器的基础。 基本操作系统映像可通过同时将 Windows Server Core 和 Nano Server 作为基本操作系统获取，并且可以使用 `docker pull` 进行安装。 有关 Docker 容器映像的详细信息，请参阅[在 docker.com 上生成自己的映像](https://docs.docker.com/engine/tutorials/dockerimages/)。
 
-若要下载和安装 Windows Server 和 Nano Server 基本映像，请运行以下命令。
+若要下载并安装 Windows Nano Server 基本映像，请运行以下命令。
 
 ```none
 docker pull microsoft/nanoserver
 ```
+
+如果打算使用 Hyper-V 容器并在 Nano Server 主机上安装 Hyper-V 虚拟机监视程序，还可拉取服务器核心映像。 如果打算运行 Azure 库服务器 2016 Nano，请勿安装 Hyper-V。
 
 ```none
 docker pull microsoft/windowsservercore
@@ -197,6 +198,6 @@ Restart-Computer
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Oct16_HO4-->
 
 
