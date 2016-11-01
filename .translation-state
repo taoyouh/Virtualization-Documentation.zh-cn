@@ -27452,8 +27452,16 @@
       "ArchiveException": null,
       "BilingualFilePath": null,
       "BilingualFileCommit": null,
-      "BilingualDateTime": "0001-01-01T00:00:00",
-      "BilingualException": null
+      "BilingualDateTime": "2016-11-01T01:26:47.4392908Z",
+      "BilingualException": {
+        "internal_error_code": "bilingual_uploading_failed",
+        "internal_error_message": "Bilingual file: ol-handback\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\deployment_nano.b4ad903b48200665d4d0c8e4d0956bddc0d52f79.zh-cn.xlf with commit: 2577522896865fdf4cea676f57bd582560069759 failed.",
+        "internal_error_retriable": false,
+        "exception_message": "HTTP POST http://oltm.azurewebsites.net//trainxliff?sourceLocale=en-US&targetLocale=zh-cn&correlation=ef5b189a56502ce8b76c094ecbd0c6174bb1bc4f&tenant=ol timed out after 10000 milliseconds.",
+        "exception_type": "System.Net.WebException",
+        "stack_trace": "   at Microsoft.OpenLocalization.RestClientCore.<ExecuteAsync>d__18.MoveNext() in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization.Common\\RestClient.cs:line 169\r\n--- End of stack trace from previous location where exception was thrown ---\r\n   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)\r\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\r\n   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()\r\n   at Microsoft.OpenLocalization.Common.Bilingual.BilingualTrainer.<TrainXliffInternal>d__6.MoveNext() in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization.Common\\Bilingual\\BilingualTrainer.cs:line 57\r\n--- End of stack trace from previous location where exception was thrown ---\r\n   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)\r\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\r\n   at Microsoft.OpenLocalization.Common.Bilingual.BilingualTrainer.<TrainXliff>d__7.MoveNext() in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization.Common\\Bilingual\\BilingualTrainer.cs:line 85",
+        "extended_information": null
+      }
     },
     "9ae09f49af4a0d7a3dd91b739ec30d4989615799": {
       "FileHash": "9ae09f49af4a0d7a3dd91b739ec30d4989615799",
@@ -27524,8 +27532,16 @@
       "ArchiveException": null,
       "BilingualFilePath": null,
       "BilingualFileCommit": null,
-      "BilingualDateTime": "0001-01-01T00:00:00",
-      "BilingualException": null
+      "BilingualDateTime": "2016-11-01T01:26:47.4392908Z",
+      "BilingualException": {
+        "internal_error_code": "bilingual_uploading_failed",
+        "internal_error_message": "Bilingual file: ol-handback\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\quick_start_windows_server.08fee0ad7baa994cf3e7a42d3d35aeda89c5e556.zh-cn.xlf with commit: 2577522896865fdf4cea676f57bd582560069759 failed.",
+        "internal_error_retriable": false,
+        "exception_message": "HTTP POST http://oltm.azurewebsites.net//trainxliff?sourceLocale=en-US&targetLocale=zh-cn&correlation=d06f38ddc9abf40a2842089203462c26765be672&tenant=ol timed out after 10000 milliseconds.",
+        "exception_type": "System.Net.WebException",
+        "stack_trace": "   at Microsoft.OpenLocalization.RestClientCore.<ExecuteAsync>d__18.MoveNext() in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization.Common\\RestClient.cs:line 169\r\n--- End of stack trace from previous location where exception was thrown ---\r\n   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)\r\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\r\n   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()\r\n   at Microsoft.OpenLocalization.Common.Bilingual.BilingualTrainer.<TrainXliffInternal>d__6.MoveNext() in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization.Common\\Bilingual\\BilingualTrainer.cs:line 57\r\n--- End of stack trace from previous location where exception was thrown ---\r\n   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)\r\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\r\n   at Microsoft.OpenLocalization.Common.Bilingual.BilingualTrainer.<TrainXliff>d__7.MoveNext() in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization.Common\\Bilingual\\BilingualTrainer.cs:line 85",
+        "extended_information": null
+      }
     },
     "79924db17adefceb1a19617768d31e5c66403c83": {
       "FileHash": "79924db17adefceb1a19617768d31e5c66403c83",
