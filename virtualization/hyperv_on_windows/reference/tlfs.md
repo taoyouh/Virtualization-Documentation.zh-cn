@@ -3,15 +3,14 @@ title: "虚拟机监控程序规范"
 description: "虚拟机监控程序规范"
 keywords: windows 10, hyper-v
 author: theodthompson
-manager: timlt
 ms.date: 05/02/2016
 ms.topic: article
 ms.prod: windows-10-hyperv
 ms.service: windows-10-hyperv
 ms.assetid: aee64ad0-752f-4075-a115-2d6b983b4f49
 translationtype: Human Translation
-ms.sourcegitcommit: e62373c30c6e233ab1db94720c5b2a1512dfb936
-ms.openlocfilehash: 49fd4f7f5a035c68975e3c38b2daabeed8e7dd5f
+ms.sourcegitcommit: ffdf89b0ae346197b9ae631ee5260e0565261c55
+ms.openlocfilehash: a92ba96f26ae2881d2c6013e8b8dcf7bafe69a47
 
 ---
 
@@ -40,6 +39,6 @@ Windows 操作系统需要一组受限制的虚拟机管理程序接口在来宾
 [Requirements for Implementing the Microsoft Hypervisor Interface.pdf](https://github.com/Microsoft/Virtualization-Documentation/raw/master/tlfs/Requirements%20for%20Implementing%20the%20Microsoft%20Hypervisor%20Interface.pdf)
 
 
-<!--HONumber=Jun16_HO5-->
+<!--HONumber=Oct16_HO4-->
 
 

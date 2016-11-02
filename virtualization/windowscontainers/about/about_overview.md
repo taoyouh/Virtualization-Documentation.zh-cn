@@ -1,17 +1,16 @@
 ---
 title: "关于 Windows 容器"
 description: "了解 Windows 容器。"
-keywords: docker, containers
-author: neilpeterson
-manager: timlt
+keywords: "docker, 容器"
+author: taylorb-microsoft
 ms.date: 05/02/2016
 ms.topic: article
 ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: 8e273856-3620-4e58-9d1a-d1e06550448
 translationtype: Human Translation
-ms.sourcegitcommit: cfa3c14e932f8b86edf6667200ac028ea0a16b67
-ms.openlocfilehash: 180ebc929e4203973ac5e0b4e108777b6c90b0fc
+ms.sourcegitcommit: ffdf89b0ae346197b9ae631ee5260e0565261c55
+ms.openlocfilehash: f4e1102cc7338739e396dadba17150e41716ed93
 
 ---
 
@@ -91,6 +90,6 @@ src="https://channel9.msdn.com/Blogs/containers/Containers-101-with-Microsoft-an
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Oct16_HO4-->
 
 

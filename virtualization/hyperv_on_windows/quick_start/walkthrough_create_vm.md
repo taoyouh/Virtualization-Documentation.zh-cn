@@ -2,16 +2,15 @@
 title: "在 Windows 10 上的 Hyper-V 中部署 Windows 虚拟机"
 description: "在 Windows 10 上的 Hyper-V 中部署 Windows 虚拟机"
 keywords: windows 10, hyper-v
-author: neilpeterson
-manager: timlt
+author: scooley
 ms.date: 05/02/2016
 ms.topic: article
 ms.prod: windows-10-hyperv
 ms.service: windows-10-hyperv
 ms.assetid: 66723f33-b12c-49d1-82cf-71ba9d6087e9
 translationtype: Human Translation
-ms.sourcegitcommit: 4885ad982804d17c8b3643f8a855fb3f3f834505
-ms.openlocfilehash: 206521ae366d5e0f5f7ca2ca510736cc178557fe
+ms.sourcegitcommit: ffdf89b0ae346197b9ae631ee5260e0565261c55
+ms.openlocfilehash: 2b644f56829d6f92822875e77ba53e5b68d2f1ef
 
 ---
 
@@ -110,6 +109,6 @@ ms.openlocfilehash: 206521ae366d5e0f5f7ca2ca510736cc178557fe
 [Hyper-V 和 Windows PowerShell](walkthrough_powershell.md)
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Oct16_HO4-->
 
 

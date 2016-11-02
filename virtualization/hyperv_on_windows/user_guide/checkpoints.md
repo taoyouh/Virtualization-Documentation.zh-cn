@@ -3,15 +3,14 @@ title: "使用检查点"
 description: "使用检查点"
 keywords: windows 10, hyper-v
 author: scooley
-manager: timlt
 ms.date: 05/02/2016
 ms.topic: article
 ms.prod: windows-10-hyperv
 ms.service: windows-10-hyperv
 ms.assetid: d9c398c4-ee72-45c6-9ce8-4f06569dae6c
 translationtype: Human Translation
-ms.sourcegitcommit: 54f3855efd820d77b17c171b5b4c2a0c66957bc3
-ms.openlocfilehash: d3340019629a3ad92f856372345e4c2ceef85b6c
+ms.sourcegitcommit: ffdf89b0ae346197b9ae631ee5260e0565261c55
+ms.openlocfilehash: ed4a2cb6fb3cd4006a5085e4ce8e058a3f201e41
 
 ---
 
@@ -250,6 +249,6 @@ This folder will contain the .VMRS file with the runtime and saved state data an
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Oct16_HO4-->
 
 

@@ -2,16 +2,15 @@
 title: "Windows 容器快速入门"
 description: "Windows 容器快速入门。"
 keywords: "docker, 容器"
-author: neilpeterson
-manager: timlt
+author: enderb-ms
 ms.date: 05/26/2016
 ms.topic: article
 ms.prod: windows-contianers
 ms.service: windows-containers
 ms.assetid: 4878f5d2-014f-4f3c-9933-97f03348a147
 translationtype: Human Translation
-ms.sourcegitcommit: b5e52d567bcfafbdd412d4fcf24a14481f51c080
-ms.openlocfilehash: b11167ae429d4529a6bec679a4cd6b0ad6538e39
+ms.sourcegitcommit: ffdf89b0ae346197b9ae631ee5260e0565261c55
+ms.openlocfilehash: 16bd0cb8a39c160703e30cf645709c70f6c91093
 
 ---
 
@@ -58,6 +57,6 @@ Windows 容器包括两个不同的容器类型或运行时。
 
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Oct16_HO4-->
 
 

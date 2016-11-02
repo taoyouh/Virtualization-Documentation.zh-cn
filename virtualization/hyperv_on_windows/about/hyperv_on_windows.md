@@ -3,15 +3,14 @@ title: "Windows 10 上的 Hyper-V 简介"
 description: "Windows 10 上的 Hyper-V 简介。"
 keywords: windows 10, hyper-v
 author: scooley
-manager: timlt
 ms.date: 05/02/2016
 ms.topic: article
 ms.prod: windows-10-hyperv
 ms.service: windows-10-hyperv
 ms.assetid: eb2b827c-4a6c-4327-9354-50d14fee7ed8
 translationtype: Human Translation
-ms.sourcegitcommit: c3e7cc07ac7e7d4e1c5f1827deb5951daa1e3749
-ms.openlocfilehash: ad84961d0a79853e2aadcf9ed0e37e340103835a
+ms.sourcegitcommit: ffdf89b0ae346197b9ae631ee5260e0565261c55
+ms.openlocfilehash: 702894a9f1d89d1f6a5846048f9dd794d9d1a59c
 
 ---
 
@@ -83,6 +82,6 @@ Windows Server 上的 Hyper-V 中包含的某些功能未包含在 Windows 上�
 
 
 
-<!--HONumber=Jul16_HO2-->
+<!--HONumber=Oct16_HO4-->
 
 

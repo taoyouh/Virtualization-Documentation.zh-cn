@@ -2,16 +2,15 @@
 title: "容器部署快速入门 - 映像"
 description: "容器部署快速入门"
 keywords: "docker, 容器"
-author: neilpeterson
-manager: timlt
+author: enderb-ms
 ms.date: 09/26/2016
 ms.topic: article
 ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: 479e05b1-2642-47c7-9db4-d2a23592d29f
 translationtype: Human Translation
-ms.sourcegitcommit: eaac6eff4496421e1a6866c164ee032ae0e153d3
-ms.openlocfilehash: 616b9cc09a70e927dce151f7ff5de44206da929f
+ms.sourcegitcommit: ffdf89b0ae346197b9ae631ee5260e0565261c55
+ms.openlocfilehash: f856499eea09efd4aa26cba6c7e437d61eb8b80b
 
 ---
 
@@ -217,6 +216,6 @@ docker pull <user>/iis-dockerfile
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO4-->
 
 

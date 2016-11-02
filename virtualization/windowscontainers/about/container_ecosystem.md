@@ -1,17 +1,16 @@
 ---
 title: "容器生态系统"
 description: "生成容器生态系统。"
-keywords: metadata, containers
-author: scooley
-manager: timlt
+keywords: "元数据, 容器"
+author: PatrickLang
 ms.date: 04/20/2016
 ms.topic: about-article
 ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: 29fbe13a-228a-4eaa-9d4d-90ae60da5965
 translationtype: Human Translation
-ms.sourcegitcommit: cfa3c14e932f8b86edf6667200ac028ea0a16b67
-ms.openlocfilehash: 1aad093c2c4e1c64200fcc1c10cbdee6c93b80c5
+ms.sourcegitcommit: ffdf89b0ae346197b9ae631ee5260e0565261c55
+ms.openlocfilehash: 02e6869b2f242df29aed13fcc8a69ed641958727
 
 ---
 
@@ -48,6 +47,6 @@ Microsoft 致力于以友好方式实现开放和生态系统。  我们积极�
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Oct16_HO4-->
 
 

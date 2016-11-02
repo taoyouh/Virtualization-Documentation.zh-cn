@@ -2,16 +2,15 @@
 title: "在 Windows 10 上安装 Hyper-V"
 description: "在 Windows 10 上安装 Hyper-V"
 keywords: windows 10, hyper-v
-author: neilpeterson
-manager: timlt
+author: scooley
 ms.date: 05/02/2016
 ms.topic: article
 ms.prod: windows-10-hyperv
 ms.service: windows-10-hyperv
 ms.assetid: 752dc760-a33c-41bb-902c-3bb2ecd9ac86
 translationtype: Human Translation
-ms.sourcegitcommit: e14ede0a2b13de08cea0a955b37a21a150fb88cf
-ms.openlocfilehash: 9e2b16f3e6c9882246a5a4c21683112eaa089ce8
+ms.sourcegitcommit: ffdf89b0ae346197b9ae631ee5260e0565261c55
+ms.openlocfilehash: 7bf27630a2d429116b694b5c9bc93cf0505b735b
 
 ---
 
@@ -67,6 +66,6 @@ DISM /Online /Enable-Feature /All /FeatureName:Microsoft-Hyper-V
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Oct16_HO4-->
 
 

@@ -2,16 +2,15 @@
 title: "创建虚拟交换机"
 description: "创建虚拟交换机"
 keywords: windows 10, hyper-v
-author: neilpeterson
-manager: timlt
+author: scooley
 ms.date: 05/02/2016
 ms.topic: article
 ms.prod: windows-10-hyperv
 ms.service: windows-10-hyperv
 ms.assetid: 532195c6-564b-4954-97c2-5a5795368c09
 translationtype: Human Translation
-ms.sourcegitcommit: 4885ad982804d17c8b3643f8a855fb3f3f834505
-ms.openlocfilehash: 44470901a9149666c15982a728037a95fc28aaa5
+ms.sourcegitcommit: ffdf89b0ae346197b9ae631ee5260e0565261c55
+ms.openlocfilehash: 5747543dde2a24c52178adbdec5b4d7f0b71037f
 
 ---
 
@@ -89,6 +88,6 @@ ms.openlocfilehash: 44470901a9149666c15982a728037a95fc28aaa5
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Oct16_HO4-->
 
 

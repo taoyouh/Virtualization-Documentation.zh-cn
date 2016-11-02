@@ -2,16 +2,15 @@
 title: "在 Windows Server 上部署 Windows 容器"
 description: "在 Windows Server 上部署 Windows 容器"
 keywords: "docker, 容器"
-author: neilpeterson
-manager: timlt
+author: enderb-ms
 ms.date: 09/26/2016
 ms.topic: article
 ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: ba4eb594-0cdb-4148-81ac-a83b4bc337bc
 translationtype: Human Translation
-ms.sourcegitcommit: 41561cacc8c2531f1351154d85861f1712182c9a
-ms.openlocfilehash: 091007ea301226ca98c93855d8c36b09f3e4d0be
+ms.sourcegitcommit: ffdf89b0ae346197b9ae631ee5260e0565261c55
+ms.openlocfilehash: 1392cb13798c96f91b7daa036e529c97e560edbb
 
 ---
 
@@ -95,6 +94,6 @@ Install-WindowsFeature hyper-v
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Oct16_HO4-->
 
 

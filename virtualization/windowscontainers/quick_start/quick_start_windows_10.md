@@ -2,16 +2,15 @@
 title: "Windows 10 上的 Windows 容器"
 description: "容器部署快速入门"
 keywords: "docker, 容器"
-author: neilpeterson
-manager: timlt
+author: enderb-ms
 ms.date: 09/26/2016
 ms.topic: article
 ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: bb9bfbe0-5bdc-4984-912f-9c93ea67105f
 translationtype: Human Translation
-ms.sourcegitcommit: c1c16d94bade83e8623ad89aae0abb356a829e1e
-ms.openlocfilehash: 4322b650b511a8b2a8e926c1fca69971528dc07c
+ms.sourcegitcommit: ffdf89b0ae346197b9ae631ee5260e0565261c55
+ms.openlocfilehash: 34ab361ea415ab2d8d5133927beafc7911f1aaf1
 
 ---
 
@@ -168,6 +167,6 @@ Windows 10 和容器快速入门的后续部分将深入探讨在 Windows 10 上
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Oct16_HO4-->
 
 

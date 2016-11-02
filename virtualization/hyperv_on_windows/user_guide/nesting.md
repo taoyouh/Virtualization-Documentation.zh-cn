@@ -3,15 +3,14 @@ title: "嵌套虚拟化"
 description: "嵌套虚拟化"
 keywords: windows 10, hyper-v
 author: theodthompson
-manager: timlt
 ms.date: 06/20/2016
 ms.topic: article
 ms.prod: windows-10-hyperv
 ms.service: windows-10-hyperv
 ms.assetid: 68c65445-ce13-40c9-b516-57ded76c1b15
 translationtype: Human Translation
-ms.sourcegitcommit: 6f003c6e78fb6a0977f30611b7da135a30268f51
-ms.openlocfilehash: 46c43a38dc3a3ee56ac3136cda60c41019cc733d
+ms.sourcegitcommit: ffdf89b0ae346197b9ae631ee5260e0565261c55
+ms.openlocfilehash: b0903a3e00b92bc60e26282dde072b66030ada09
 
 ---
 
@@ -80,6 +79,6 @@ Netsh interface ip add dnsserver “Ethernet” address=<my DNS server>
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO4-->
 
 

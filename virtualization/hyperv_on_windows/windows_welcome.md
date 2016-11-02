@@ -2,16 +2,15 @@
 title: "Windows 10 上的 Hyper-V"
 description: "Windows 10 上的 Hyper-V"
 keywords: windows 10, hyper-v
-author: neilpeterson
-manager: timlt
+author: scooley
 ms.date: 05/02/2016
 ms.topic: article
 ms.prod: windows-10-hyperv
 ms.service: windows-10-hyperv
 ms.assetid: 05269ce0-a54f-4ad8-af75-2ecf5142b866
 translationtype: Human Translation
-ms.sourcegitcommit: e14ede0a2b13de08cea0a955b37a21a150fb88cf
-ms.openlocfilehash: 4d5c2ad7515b8b536da30ad2dd3b4ffc2cee5832
+ms.sourcegitcommit: ffdf89b0ae346197b9ae631ee5260e0565261c55
+ms.openlocfilehash: d9d43bb2b3e7f8955d374905cc3050a37a585fe1
 
 ---
 
@@ -62,6 +61,6 @@ ms.openlocfilehash: 4d5c2ad7515b8b536da30ad2dd3b4ffc2cee5832
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Oct16_HO4-->
 
 

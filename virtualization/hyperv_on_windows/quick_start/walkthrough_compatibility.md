@@ -3,15 +3,14 @@ title: "Windows 10 Hyper-V 系统要求"
 description: "Windows 10 Hyper-V 系统要求"
 keywords: windows 10, hyper-v
 author: scooley
-manager: timlt
 ms.date: 05/02/2016
 ms.topic: article
 ms.prod: windows-10-hyperv
 ms.service: windows-10-hyperv
 ms.assetid: 6e5e6b01-7a9d-4123-8cc7-f986e10cd372
 translationtype: Human Translation
-ms.sourcegitcommit: 532f7459a939a6858d28cca59992c9e6531bc272
-ms.openlocfilehash: 8edc64d2e3851d81d2d844ebf3465e76579f82c7
+ms.sourcegitcommit: ffdf89b0ae346197b9ae631ee5260e0565261c55
+ms.openlocfilehash: a4cc2907c88894d1eb02fdbf3a1d39459269925c
 
 ---
 
@@ -64,6 +63,6 @@ Hyper-V Requirements: A hypervisor has been detected. Features required for Hype
 
 
 
-<!--HONumber=Jul16_HO2-->
+<!--HONumber=Oct16_HO4-->
 
 

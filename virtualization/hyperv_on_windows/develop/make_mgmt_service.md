@@ -3,15 +3,14 @@ title: "创建你自己的集成服务"
 description: "Windows 10 集成服务。"
 keywords: windows 10, hyper-v
 author: scooley
-manager: timlt
 ms.date: 05/02/2016
 ms.topic: article
 ms.prod: windows-10-hyperv
 ms.service: windows-10-hyperv
 ms.assetid: 1ef8f18c-3d76-4c06-87e4-11d8d4e31aea
 translationtype: Human Translation
-ms.sourcegitcommit: 766f40019719ce71e6d5052ec48c6c41571f482b
-ms.openlocfilehash: 21149a48525445384d54da2cd54a9fb654006d99
+ms.sourcegitcommit: ffdf89b0ae346197b9ae631ee5260e0565261c55
+ms.openlocfilehash: 3c51b5fb06e47be78fb6b81ad288331aee6e8296
 
 ---
 
@@ -219,6 +218,6 @@ Accept()
 
 
 
-<!--HONumber=Jun16_HO5-->
+<!--HONumber=Oct16_HO4-->
 
 

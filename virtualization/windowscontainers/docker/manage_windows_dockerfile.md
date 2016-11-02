@@ -2,16 +2,15 @@
 title: "Dockerfile 和 Windows 容器"
 description: "创建用于 Windows 容器的 Dockerfile。"
 keywords: "docker, 容器"
-author: neilpeterson
-manager: timlt
+author: PatrickLang
 ms.date: 05/26/2016
 ms.topic: article
 ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: 75fed138-9239-4da9-bce4-4f2e2ad469a1
 translationtype: Human Translation
-ms.sourcegitcommit: a21a9ad1cd94a62f8fcd87e7c221cacd0b9d0782
-ms.openlocfilehash: 4fdd93badef908d694c5fbcd335645f565454091
+ms.sourcegitcommit: ffdf89b0ae346197b9ae631ee5260e0565261c55
+ms.openlocfilehash: 6603289599e7ca51558d54f35ab809528f53bcd7
 
 ---
 
@@ -482,6 +481,6 @@ windowsservercore   latest              6801d964fda5        4 months ago        
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Oct16_HO4-->
 
 

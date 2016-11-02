@@ -2,16 +2,15 @@
 title: "Windows 容器要求"
 description: "Windows 容器要求。"
 keywords: "元数据, 容器"
-author: neilpeterson
-manager: timlt
+author: enderb-ms
 ms.date: 09/26/2016
 ms.topic: deployment-article
 ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: 3c3d4c69-503d-40e8-973b-ecc4e1f523ed
 translationtype: Human Translation
-ms.sourcegitcommit: d4c453e800d4057b3ad0be06c28e7f23b81443f0
-ms.openlocfilehash: 008eff4731a8835b0b3f664edc9955f85c12a629
+ms.sourcegitcommit: ffdf89b0ae346197b9ae631ee5260e0565261c55
+ms.openlocfilehash: af8d8a05fc953dcc93672a0f936caca5e37f0de3
 
 ---
 
@@ -89,6 +88,6 @@ PS C:\Users\Administrator> (Get-ItemProperty 'HKLM:\SOFTWARE\Microsoft\Windows N
 Hyper-V 容器与 Windows Server 容器不同，后者共享容器和主机之间的内核，而 Hyper-V 容器则是各自使用自己的 Windows 内核实例。  因此，会出现容器主机与容器映像版本匹配出错的情况。  当前，只要配置受支持，无论修订版本号是多少，内部版本号为 Windows Server 2016 GA (10.0.14393.206) 或更高的内部版本都可以运行 Windows Server Core 或 Nano Server 的 Windows Server 2016 GA 映像。  以后，我们将根据客户反馈对内置版本号可能出现的差距提供具体的指导。  为了获得由 Windows 更新提供的全部功能、可靠性和安全保障，需要保证所有系统为最新版本，这一点至关重要。  
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Oct16_HO4-->
 
 

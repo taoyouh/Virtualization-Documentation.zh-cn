@@ -2,16 +2,15 @@
 title: "Windows 容器常见问题解答"
 description: "Windows 容器常见问题解答"
 keywords: "docker, 容器"
-author: scooley
-manager: timlt
+author: PatrickLang
 ms.date: 05/02/2016
 ms.topic: article
 ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: 25de368c-5a10-40a4-b4aa-ac8c9a9ca022
 translationtype: Human Translation
-ms.sourcegitcommit: f721639b1b10ad97cc469df413d457dbf8d13bbe
-ms.openlocfilehash: 68f563d62090097b6fe2dd335c7841ae5ba4a9f5
+ms.sourcegitcommit: ffdf89b0ae346197b9ae631ee5260e0565261c55
+ms.openlocfilehash: 90e32caabde1afafbd8170db77c6e84696395870
 
 ---
 
@@ -80,6 +79,6 @@ Docker 包含两方面，即项目的开源组和 Docker 公司。 我们考虑�
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO4-->
 
 

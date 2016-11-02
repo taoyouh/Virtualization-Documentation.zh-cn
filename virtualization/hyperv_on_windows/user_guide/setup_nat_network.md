@@ -3,15 +3,14 @@ title: "设置 NAT 网络"
 description: "设置 NAT 网络"
 keywords: windows 10, hyper-v
 author: jmesser81
-manager: timlt
 ms.date: 05/02/2016
 ms.topic: article
 ms.prod: windows-10-hyperv
 ms.service: windows-10-hyperv
 ms.assetid: 1f8a691c-ca75-42da-8ad8-a35611ad70ec
 translationtype: Human Translation
-ms.sourcegitcommit: 03a72e6608c08d6adcf32fc5665533831904a032
-ms.openlocfilehash: 5a1cb0964034db491481e2d6db84221730264fa0
+ms.sourcegitcommit: ffdf89b0ae346197b9ae631ee5260e0565261c55
+ms.openlocfilehash: 9b2fa15937440b7c9ec8f17a06082708399b487c
 
 ---
 
@@ -256,6 +255,6 @@ PS> Start-Service docker
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Oct16_HO4-->
 
 
