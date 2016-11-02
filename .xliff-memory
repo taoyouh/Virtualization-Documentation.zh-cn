@@ -749,6 +749,36 @@
       "SkeletonFile": "ol-xliffcache\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\2b644f56829d6f92822875e77ba53e5b68d2f1ef.77c87d79a2501f88ff7a70ca3b56d1d30d9b2c17.xml",
       "LocXliff": "ol-handback\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\walkthrough_create_vm.698a46fb78fa92b3f275f4115d4b77072fff0ed6.zh-cn.xlf",
       "LocXliffCommit": "243c35be1d2682d9481e99cee303c783f347cae6"
+    },
+    "virtualization\\windowscontainers\\containers_welcome.md.da027cc71649cc4bccfde1c1870b446248c1bacc.HT": {
+      "SourceFilename": "virtualization\\windowscontainers\\containers_welcome.md",
+      "XliffHash": "da027cc71649cc4bccfde1c1870b446248c1bacc",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\a1b876d01b8076ee9feb275bd09247775bfcef69.5b2229a5f34743ec4d6a4c2a33ab81b7c5f76f9f.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "virtualization\\windowscontainers\\TOC.md.cfd0f352dfb3e337da98ce43e7308b01af8c7cff.HT": {
+      "SourceFilename": "virtualization\\windowscontainers\\TOC.md",
+      "XliffHash": "cfd0f352dfb3e337da98ce43e7308b01af8c7cff",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\e280dc10558e1b69327a253170acd27056cb0e07.4b8166386ce5a3b59cc71baf751c694723a77fb0.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "virtualization\\windowscontainers\\communitylinks.md.f67fc91addeaee4448759490cde8530bfa11cb26.HT": {
+      "SourceFilename": "virtualization\\windowscontainers\\communitylinks.md",
+      "XliffHash": "f67fc91addeaee4448759490cde8530bfa11cb26",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\0c841b3134550b4b11d720dd91e43c1088211092.9752ef8ca649e0d7c05b0323b7ab8042afb8ceef.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
     }
   }
 }
