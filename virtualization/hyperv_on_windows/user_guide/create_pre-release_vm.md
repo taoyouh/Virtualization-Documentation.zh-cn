@@ -3,15 +3,14 @@ title: "尝试 Hyper-V 的预发行功能"
 description: "尝试 Hyper-V 的预发行功能"
 keywords: windows 10, hyper-v
 author: scooley
-manager: timlt
 ms.date: 05/02/2016
 ms.topic: article
 ms.prod: windows-10-hyperv
 ms.service: windows-10-hyperv
 ms.assetid: 426c87cc-fa50-4b8d-934e-0b653d7dea7d
 translationtype: Human Translation
-ms.sourcegitcommit: 7d97a2177a14f455ed5b54b0773e3003969303e2
-ms.openlocfilehash: 7dee9e53f0e95b0c3b0ec0afc5b9d510c1962dbc
+ms.sourcegitcommit: ffdf89b0ae346197b9ae631ee5260e0565261c55
+ms.openlocfilehash: ea91ea0ffca5479cb0593ef9961625f7b7ab1f42
 
 ---
 
@@ -53,6 +52,6 @@ New-VM -Name <VM Name> -Prerelease
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Oct16_HO4-->
 
 

@@ -9,8 +9,8 @@ ms.prod: windows-10-hyperv
 ms.service: windows-10-hyperv
 ms.assetid: 2d34e98c-6134-479b-8000-3eb360b8b8a3
 translationtype: Human Translation
-ms.sourcegitcommit: 906eba05c921757b9655505c3f419fcf003d5160
-ms.openlocfilehash: 9ae09f49af4a0d7a3dd91b739ec30d4989615799
+ms.sourcegitcommit: ffdf89b0ae346197b9ae631ee5260e0565261c55
+ms.openlocfilehash: 7d7aee3d87237b93887ac7303c70cf6c9a02285d
 
 ---
 

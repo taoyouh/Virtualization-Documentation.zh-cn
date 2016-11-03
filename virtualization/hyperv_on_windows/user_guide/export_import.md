@@ -2,16 +2,15 @@
 title: "导出和导入虚拟机"
 description: "导出和导入虚拟机"
 keywords: windows 10, hyper-v
-author: neilpeterson
-manager: timlt
+author: scooley
 ms.date: 05/02/2016
 ms.topic: article
 ms.prod: windows-10-hyperv
 ms.service: windows-10-hyperv
 ms.assetid: 7fd996f5-1ea9-4b16-9776-85fb39a3aa34
 translationtype: Human Translation
-ms.sourcegitcommit: 8006ec4d71159113efce497d70ba591da2b84de9
-ms.openlocfilehash: e11c8d1a8fabc6e8282c9396a8efcbc448b9a6d4
+ms.sourcegitcommit: ffdf89b0ae346197b9ae631ee5260e0565261c55
+ms.openlocfilehash: 620a2c38514488100bae4eb71d0683e3994801b4
 
 ---
 
@@ -116,6 +115,6 @@ Import-VM -Path 'C:\<vm export path>\2B91FEB3-F1E0-4FFF-B8BE-29CED892A95A.vmcx' 
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Oct16_HO4-->
 
 
