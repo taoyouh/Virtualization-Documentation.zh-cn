@@ -90,6 +90,9 @@
   "a3636af921f92ae1cd415fd292f6650e31990bb9": [
     "virtualization\\hyperv_on_windows\\TOC.md"
   ],
+  "4e887dc8c284dd189dc59a71aa9d22d6c8a231ea": [
+    "virtualization\\hyperv_on_windows\\user_guide\\checkpoints.md"
+  ],
   "ed4a2cb6fb3cd4006a5085e4ce8e058a3f201e41": [
     "virtualization\\hyperv_on_windows\\user_guide\\checkpoints.md"
   ],
@@ -114,6 +117,9 @@
   "b0903a3e00b92bc60e26282dde072b66030ada09": [
     "virtualization\\hyperv_on_windows\\user_guide\\nesting.md"
   ],
+  "c562e1a1370e9286680afa1b498d625195edebb2": [
+    "virtualization\\hyperv_on_windows\\user_guide\\remote_host_management.md"
+  ],
   "7d7aee3d87237b93887ac7303c70cf6c9a02285d": [
     "virtualization\\hyperv_on_windows\\user_guide\\remote_host_management.md"
   ],
@@ -131,6 +137,9 @@
   ],
   "eff2016da5c76489c7e0607d92509a63ff6153b1": [
     "virtualization\\hyperv_on_windows\\user_guide\\troubleshooting.md"
+  ],
+  "807043a744c4735158720371ec3afb22ebe7fc24": [
+    "virtualization\\hyperv_on_windows\\user_guide\\vmsession.md"
   ],
   "16624e181bec81d90c960df30e89f25eab23f7ea": [
     "virtualization\\hyperv_on_windows\\user_guide\\vmsession.md"
@@ -313,6 +322,9 @@
   ],
   "4d0fb2ee5ce2be3fe1b616ff38f14269192f3fc9": [
     "virtualization\\windowscontainers\\samples.md"
+  ],
+  "71ce38a8d6cd75079558827c806fdbbc5a2bcfd2": [
+    "virtualization\\windowscontainers\\troubleshooting.md"
   ],
   "b13bdde63b55be50771d63bb0baa146cf4661e66": [
     "virtualization\\windowscontainers\\troubleshooting.md"
