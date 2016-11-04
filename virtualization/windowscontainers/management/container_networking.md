@@ -10,22 +10,20 @@ ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: 538871ba-d02e-47d3-a3bf-25cda4a40965
 translationtype: Human Translation
-ms.sourcegitcommit: 7b5cf299109a967b7e6aac839476d95c625479cd
-ms.openlocfilehash: 2e26177f3e653e9102dc91070b987e28ef713bed
+ms.sourcegitcommit: f489d3e6f98fd77739a2016813506be6962b34d1
+ms.openlocfilehash: 499788666f306494c894b2e82f65ab68c9fc295a
 
 ---
 
 # 容器网络
 
-关于网络，Windows 容器的作用类似于虚拟机。 每个容器都有一个连接到虚拟交换机的虚拟网络适配器，通过该适配器可转发入站和出站流量。 为了强制隔离同一主机上的各容器，将为每个 Windows Server 和 Hyper-V 容器创建网络隔离舱，将该容器的网络适配器安装在其中。 Windows Server 容器使用主机 vNIC 连接到虚拟交换机。 Hyper-V 容器使用合成 VM NIC（不公开到实用工具 VM）连接到虚拟交换机。
+关于网络，Windows 容器的作用类似于虚拟机。 每个容器都有一个连接到虚拟交换机 (vSwitch) 的虚拟网络适配器 (vNIC)，通过该适配器可转发入站和出站流量。 为了强制隔离同一主机上的各容器，将为每个 Windows Server 和 Hyper-V 容器创建网络隔离舱，将该容器的网络适配器安装在其中。 Windows Server 容器使用主机 vNIC 连接到虚拟交换机。 Hyper-V 容器使用合成 VM NIC（不公开到实用工具 VM）连接到虚拟交换机。
 
 Windows 容器支持四种不同的网络驱动程序或模式：*nat**transparent**l2bridge*和 *l2tunnel*。 根据物理网络基础结构和单 VS 多主机网络要求，应该选择最符合你需要的网络模式。 
 
-首次运行 dockerd 服务时，Docker 引擎将在默认情况下创建一个 nat 网络。 创建的默认内部 IP 前缀为 172.16.0.0/12。 
+首次运行 dockerd 服务时，Docker 引擎将在默认情况下创建一个 NAT 网络。 创建的默认内部 IP 前缀为 172.16.0.0/12。 容器终结点会自动附加到此默认网络，并获得由内部前缀分配的 IP 地址。
 
-> 注意：如果容器主机 IP 也具有此相同的前缀，则需要按如下所述更改 NAT 内部 IP 前缀
-
-容器终结点将附加到此默认网络，并将获得一个由内部前缀分配的 IP 地址。 Windows 当前仅支持一个 NAT 网络（尽管挂起的[拉取请求](https://github.com/docker/docker/pull/25097)有助于解决此限制）。 
+> 注意：如果容器主机 IP 具有此相同前缀，则需要按如下所述更改 NAT 内部 IP 前缀。
 
 可以在同一容器主机上创建使用不同驱动程序（例如 transparent、l2bridge）的其他网络。 下表显示了如何为每种模式的内部连接（容器间连接）和外部连接提供网络连接。
 
@@ -62,11 +60,11 @@ Windows 容器支持四种不同的网络驱动程序或模式：*nat**transpare
 
 ### （默认）NAT 网络
 
-Windows Docker 引擎使用 IP 前缀 172.16.0.0/12 创建默认“nat”网络。 当前 Windows 容器主机上仅允许存在一个 nat 网络。 如果用户想要创建一个具有特定 IP 前缀的 nat 网络，则可通过更改 docker 的配置文件 daemon.json（位于 C:\ProgramData\Docker\config\daemon.json（如果不存在，创建一个））中的选项，执行两个操作中的任意一个。
- 1. 使用 _"fixed-cidr": "< IP Prefix > / Mask"_ 选项将创建默认 nat 网络，其中已指定 IP 前缀和匹配项
+Windows Docker 引擎使用 IP 前缀 172.16.0.0/12 创建默认的 NAT 网络（Docker 中称为“nat”）。 如果用户想要创建一个具有特定 IP 前缀的 NAT 网络，则可通过更改 Docker 的配置文件 daemon.json（位于 C:\ProgramData\Docker\config\daemon.json（如果不存在，创建一个））中的选项，执行两个操作中的任意一个。
+ 1. 使用 _"fixed-cidr": "< IP Prefix > / Mask"_ 选项将创建默认 NAT 网络，其中已指定 IP 前缀和匹配项
  2. 使用 _"bridge": "none"_ 将不会创建默认网络；用户可以通过 *docker network create -d <driver>* 命令使用任意驱动程序来创建一个用户定义网络
 
-在执行这些配置选项中的任意一个选项之前，必须首先停止 Docker 服务，并删除任何预先存在的 nat 网络。
+在执行这些配置选项中的任一选项之前，必须首先停止 Docker 服务，并删除任何预先存在的 NAT 网络。
 
 ```none
 PS C:\> Stop-Service docker
@@ -77,14 +75,14 @@ PS C:\> Get-ContainerNetwork | Remove-ContainerNetwork
 PS C:\> Start-Service docker
 ```
 
-如果用户已将 "fixed-cidr" 选项添加到了 daemon.json 文件，docker 引擎将在此时创建一个用户定义 nat 网络，并指定自定义 IP 前缀和掩码。 如果用户添加了 "bridge:none" 选项，则需要手动创建一个网络。
+如果已将 "fixed-cidr" 选项添加到 daemon.json 文件，Docker 引擎将创建用户定义的 NAT 网络，并指定自定义 IP 前缀和掩码。 相反，如果已添加 "bridge:none" 选项，则需要手动创建网络。
 
 ```none
-# Create a user-defined nat network
+# Create a user-defined NAT network
 C:\> docker network create -d nat --subnet=192.168.1.0/24 --gateway=192.168.1.1 MyNatNetwork
 ```
 
-默认情况下，容器终结点将连接到默认 nat 网络。 如果未创建默认 nat 网络（因为已在 daemon.json 中指定 "bridge:none"），或如果要求对不同的、用户定义的网络具有访问权限，则用户可指定具有 docker 运行命令的 *--network*参数。
+默认情况下，容器终结点将连接到默认“nat”网络。 如果未创建“nat”网络（因为已在 daemon.json 中指定 "bridge:none"），或如果要求对不同的、用户定义的网络具有访问权限，用户可指定具有 docker 运行命令的 *--network* 参数。
 
 ```none
 # Connect new container to the MyNatNetwork
@@ -99,11 +97,11 @@ C:\> docker run -it --network=MyNatNetwork <image> <cmd>
 # Creates a static mapping between port TCP:80 of the container host and TCP:80 of the container
 C:\> docker run -it -p 80:80 <image> <cmd>
 
-# Create a static mapping between port 8082 of the container host and port 80 of the container.
+# Creates a static mapping between port 8082 of the container host and port 80 of the container.
 C:\> docker run -it -p 8082:80 windowsservercore cmd
 ```
 
-此外，通过使用 -p 参数或在具有 -p 参数的 Dockerfile 中使用 EXPOSE 命令，还支持动态端口映射。 将在容器主机上选择一个随机选择的临时端口，并在运行 Docker ps 时进行检查。
+此外，通过使用 -p 参数或在具有 -p 参数的 Dockerfile 中使用 EXPOSE 命令，还支持动态端口映射。 如果未指定，将在容器主机上选择一个随机选择的临时端口，并通过运行“docker ps”进行检查。
 
 ```none
 C:\> docker run -itd -p 80 windowsservercore cmd
@@ -119,8 +117,8 @@ C:\> docker network
 > 从 WS2016 TP5 和高于 14300 版的 Windows 会员版本起，将为所有 NAT 端口映射自动创建防火墙规则。 此防火墙规则将适用于容器主机，而非特定于特定容器终结点或网络适配器。
 
 Windows NAT (WinNAT) 实现具有一些功能限制，具体请参阅此博客文章 [WinNAT capabilities and limitations](https://blogs.technet.microsoft.com/virtualization/2016/05/25/windows-nat-winnat-capabilities-and-limitations/)（WinNAT 的功能和限制） 
- 1. 每个容器主机仅支持一个 NAT 网络（一个内部 IP 前缀）
- 2. 容器终结点仅可从使用内部 IP 和端口的容器主机处访问
+ 1. 每个容器主机仅支持一个 NAT 内部 IP 前缀，因此必须通过分割前缀来定义“多个” NAT 网络（请参阅本文档的“多个 NAT 网络”部分）。
+ 2. 仅可以使用容器内部 IP 和端口（使用“docker 网络检查<CONTAINER ID>”查找此信息）从容器主机访问容器终结点。
 
 可以使用不同的驱动程序创建其他网络。 
 
@@ -133,6 +131,7 @@ Windows NAT (WinNAT) 实现具有一些功能限制，具体请参阅此博客�
 ```none
 C:\> docker network create -d transparent MyTransparentNetwork
 ```
+> 注意：如果创建透明网络出错，可能是未经 Docker 自动发现的系统上存在外部 vSwitch，因而使得透明网络无法绑定到容器主机的外部网络适配器。 有关详细信息，请参考下方“注意事项和陷阱”下的“阻止透明网络创建的现有 vSwitch”部分。
 
 如果容器主机被虚拟化，而你想要使用 DHCP 进行 IP 分配，则必须在虚拟机网络适配器上启用 MACAddressSpoofing。 否则，Hyper-V 主机将会阻止来自容器（位于具有多个 MAC 地址的 VM 中）的网络流量。
 
@@ -216,10 +215,34 @@ C:\> docker network inspect <network name>
 ```
 
 ### 多个容器网络
+ Windows 当前仅支持一个 NAT 网络（尽管挂起的[拉取请求](https://github.com/docker/docker/pull/25097)有助于解决此限制）。 
 
 多个容器网络可在单个容器主机上进行创建，但注意以下内容：
-* 每个容器主机只可创建一个 NAT 网络。
+
 * 每个使用外部 vSwitch 进行连接的多个网络（例如透明、L2 桥接、L2 透明）必须使用其自身的网络适配器。
+* 目前，在单个容器主机上创建多个 NAT 网络的解决方案是对现有 NAT 网络的内部前缀进行分区。 有关此方面的进一步指导，请参考下方“多个 NAT 网络”部分。
+
+### 多个 NAT 网络
+通过对主机的 NAT 网络内部前缀进行分区可以在单个容器主机上定义多个 NAT 网络。 
+
+必须在较大的内部 NAT 网络前缀下创建任何新 NAT 网络的分区。 通过在 PowerShell 中运行以下命令并引用“InternalIPInterfaceAddressPrefix”字段可以找到该前缀。
+
+```none
+PS C:\> get-netnat
+```
+
+例如，主机的 NAT 网络内部前缀可能是 172.16.0.0/12。 在此情况下，可以使用 Docker 来创建其他 NAT 网络，只要它们属于 172.16.0.0/12 前缀。 例如，可以使用 IP 前缀 172.16.0.0/16 创建两个 NAT 网络（网关，172.16.0.1）和 172.17.0.0/16（网关，172.17.0.1）。 
+
+```none
+C:\> docker network create -d nat --subnet=172.16.0.0/16 --gateway=172.16.0.1 CustomNat1
+C:\> docker network create -d nat --subnet=172.17.0.0/16 --gateway=172.17.0.1 CustomNat2
+```
+
+使用以下选项可以列出新建的网络：
+```none
+C:\> docker network ls
+```
+
 
 ### 网络选择
 
@@ -239,6 +262,39 @@ C:\> docker run -it --network=MyTransparentNet --ip=10.80.123.32 windowsserverco
 
 静态 IP 分配直接在容器的网络适配器上执行，并且必须仅当容器处于已停止状态时执行。 容器运行时，不支持“热添加”容器网络适配器或更改网络堆栈。
 
+## Docker Compose 和服务发现
+
+> 有关如何使用 Docker Compose 和服务发现定义多服务、横向扩展应用程序的实例，请访问 [Virtualization Blog](https://blogs.technet.microsoft.com/virtualization/)（虚拟化博客）上的[此文章](https://blogs.technet.microsoft.com/virtualization/2016/10/18/use-docker-compose-and-service-discovery-on-windows-to-scale-out-your-multi-service-container-application/)。
+
+### Docker Compose
+
+[Docker Compose](https://docs.docker.com/compose/overview/) 可用于同时定义和配置容器网络以及将使用这些网络的容器/服务。 定义容器将连接的网络的过程中，Compose“网络”键可用作顶级键。 例如，以下语法将 Docker 创建的预先存在的 NAT 网络定义为在给定 Compose 文件中定义的所有容器/服务的“默认”网络。
+
+```none
+networks:
+ default:
+  external:
+   name: "nat"
+```
+
+同样，以下语法可用于定义自定义 NAT 网络。
+
+> 注意：下例中定义的“自定义 NAT 网络”是指容器主机预先存在的 NAT 内部前缀的分区。 有关更多上下文，请参阅上方“多个 NAT 网络”部分。
+
+```none
+networks:
+  default:
+    driver: nat
+    ipam:
+      driver: default
+      config:
+      - subnet: 172.17.0.0/16
+```
+
+有关使用 Docker Compose 定义/配置容器网络的详细信息，请参阅 [Compose File reference](https://docs.docker.com/compose/compose-file/)（Compose 文件引用）。
+
+### 服务发现
+内置于 Docker 的服务发现可为容器和服务处理服务注册和 IP (DNS) 映射的名称；通过服务发现，所有容器终结点都可以根据名称（容器名或服务名）发现对方。 这在使用多个容器终结点来定义单个服务的横向扩展方案中尤为有用。 在这种情况下，无论服务后台运行了多少个容器，都可以通过服务发现将服务视作单个实体。 对于多容器服务，采用循环法管理传入网络流量，通过该方法，可使用 DNS 负载平衡将流量统一分配到实现给定服务的所有容器实例。
 
 ## 注意事项和陷阱
 
@@ -246,12 +302,27 @@ C:\> docker run -it --network=MyTransparentNet --ip=10.80.123.32 windowsserverco
 
 容器主机需要创建特定防火墙规则用于启用 ICMP (Ping) 和 DHCP。 Windows Server 容器需要 ICMP 和 DHCP 以在同一主机上两个容器之间进行 ping 操作，以及接收通过 DHCP 动态分配的 IP 地址。 在 TP5 中，这些规则将通过 Install-ContainerHost.ps1 脚本进行创建。 TP5 之后，这些规则将自动创建。 NAT 端口转发规则所对应的所有防火墙规则将自动创建，并在容器停止后清除。
 
+### 阻止透明网络创建的现有 vSwitch
+
+创建透明网络时，Docker 首先创建网络的外部 vSwitch，然后尝试将交换机绑定到（外部）网络适配器 - 该适配器可以是 VM 网络适配器或物理网络适配器。 如果已在容器主机上创建 vSwitch，且对 Docker 可见，Windows Docker 引擎将使用该交换机，而不是重新创建一个。 但是，如果该 vSwitch 创建于带外（即在容器主机上使用 HYper-V 管理器或 PowerShell 创建）并且对 Docker 不可见，Windows Docker 引擎将尝试创建一个新的 vSwitch，从而无法将新交换机连接到容器主机外部网络适配器（因为网络适配器已经连接到创建于带外的交换机）。
+
+例如，如果在 Docker 服务运行期间首先在主机上创建新的 vSwitch，然后尝试创建透明网络，则会出现此问题。 在此情况下，Docker 无法识别创建的交换机，并会为透明网络创建新的 vSwitch。
+
+解决此问题的方法有三种：
+
+* 当然，可以删除带外创建的 vSwitch，这将允许 Docker 创建新的 vSwitch 并将其顺利连接到主机网络适配器。 选择此方法前，请确保其他服务（如 Hyper-V）未使用带外 vSwitch。
+* 或者，如果决定使用创建于带外的外部 vSwitch，请重启 Docker 和 HNS 服务以使交换机对 Docker 可见。
+```none
+PS C:\> restart-service hns
+PS C:\> restart-service docker
+```
+* 另一种方法是使用“-o com.docker.network.windowsshim.interface”选项以将透明网络的外部 vSwitch 绑定到未在容器主机上使用的特定网络适配器（即，除带外创建的 vSwitch 使用的其他网络适配器）。 有关“-o”选项的详细信息，请参阅本文档上方的[透明网络](https://msdn.microsoft.com/en-us/virtualization/windowscontainers/management/container_networking#transparent-network)部分。
+
 ### 不支持的功能
 
 以下网络功能现无法通过 Docker CLI 受到支持
- * 容器链接（例如 --link）
- * 容器的基于名称/服务的 IP 解析。 _服务更新很快就会提供此支持_
  * 默认覆盖网络驱动程序
+ * 容器链接（例如 --link）
 
 以下网络选项在 Windows Docker 上现不受支持：
  * --add-host
@@ -264,33 +335,8 @@ C:\> docker run -it --network=MyTransparentNet --ip=10.80.123.32 windowsserverco
  * --internal
  * --ip-range
 
- > 在 Windows Server 2016 Technical Preview 5 和最新的 Windows Insider Preview (WIP)“外部测试版”版本中存在一个已知的 bug，即升级到新版本会导致生成一个重复（即“泄漏”）的容器网络和 vSwitch。 为解决此问题，请运行以下脚本。
-```none
-$KeyPath = "HKLM:\SYSTEM\CurrentControlSet\Services\vmsmp\parameters\SwitchList"
-$keys = get-childitem $KeyPath
-foreach($key in $keys)
-{
-   if ($key.GetValue("FriendlyName") -eq 'nat')
-   {
-      $newKeyPath = $KeyPath+"\"+$key.PSChildName
-      Remove-Item -Path $newKeyPath -Recurse
-   }
-}
-remove-netnat -Confirm:$false
-Get-ContainerNetwork | Remove-ContainerNetwork
-Get-VmSwitch -Name nat | Remove-VmSwitch # Note: failure is expected
-Stop-Service docker
-Set-Service docker -StartupType Disabled
-```
-> 重启主机，然后运行剩余的步骤：
-```none
-Get-NetNat | Remove-NetNat -Confirm $false
-Set-Service docker -StartupType automatic
-Start-Service docker 
-```
 
 
-
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Oct16_HO4-->
 
 
