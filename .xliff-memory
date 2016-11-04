@@ -527,8 +527,8 @@
       "IsArchived": true,
       "ArchivedDateTime": "2016-10-29T00:07:32.7298531Z",
       "SkeletonFile": "ol-xliffcache\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\499788666f306494c894b2e82f65ab68c9fc295a.457d61629a2a537298441f95bad7d7953557241e.xml",
-      "LocXliff": null,
-      "LocXliffCommit": null
+      "LocXliff": "ol-handback\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\container_networking.7cf72391b3aa727681997232feeeb0a32d363edc.zh-cn.xlf",
+      "LocXliffCommit": "a08ea69367865f97f39731afee11a5f798ac7eb1"
     },
     "virtualization\\windowscontainers\\management\\hyperv_container.md.77709367f4d8e27bd0e6a14f25041bc901424d62.HT": {
       "SourceFilename": "virtualization\\windowscontainers\\management\\hyperv_container.md",
