@@ -1,17 +1,16 @@
 ---
 title: "社区资源"
 description: "社区资源"
-keywords: windows 10, hyper-v, container, docker
+keywords: "windows 10, hyper-v, 容器, docker"
 author: scooley
-manager: timlt
 ms.date: 05/02/2016
 ms.topic: article
 ms.prod: virtualization
 ms.service: virtualization
 ms.assetid: 731ed95a-ce13-4c6e-a450-49563bdc498c
 translationtype: Human Translation
-ms.sourcegitcommit: e14ede0a2b13de08cea0a955b37a21a150fb88cf
-ms.openlocfilehash: 5d41a694d4b6cac6b6381379bda4a8f959ec4854
+ms.sourcegitcommit: ffdf89b0ae346197b9ae631ee5260e0565261c55
+ms.openlocfilehash: e5dc449ef7ecebffc060bab10c0341d84d4d3291
 
 ---
 
@@ -200,6 +199,6 @@ ms.openlocfilehash: 5d41a694d4b6cac6b6381379bda4a8f959ec4854
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Oct16_HO4-->
 
 
