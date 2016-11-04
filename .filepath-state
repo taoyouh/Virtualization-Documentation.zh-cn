@@ -299,6 +299,9 @@
   "34ab361ea415ab2d8d5133927beafc7911f1aaf1": [
     "virtualization\\windowscontainers\\quick_start\\quick_start_windows_10.md"
   ],
+  "a5537a4cb56127e51e0a550220995cd5f6b93722": [
+    "virtualization\\windowscontainers\\quick_start\\quick_start_windows_server.md"
+  ],
   "80a2efcb9fff58d357dc1630a335665fc91147cb": [
     "virtualization\\windowscontainers\\quick_start\\quick_start_windows_server.md"
   ],

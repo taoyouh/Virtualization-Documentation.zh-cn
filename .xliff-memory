@@ -809,6 +809,16 @@
       "SkeletonFile": "ol-xliffcache\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\4e887dc8c284dd189dc59a71aa9d22d6c8a231ea.27b49e3c00f4de8a2ea0bd3ca64b8c091f964da2.xml",
       "LocXliff": null,
       "LocXliffCommit": null
+    },
+    "virtualization\\windowscontainers\\quick_start\\quick_start_windows_server.md.674b38cfa2876545e9b61834f2c82fddea4714eb.HT": {
+      "SourceFilename": "virtualization\\windowscontainers\\quick_start\\quick_start_windows_server.md",
+      "XliffHash": "674b38cfa2876545e9b61834f2c82fddea4714eb",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\a5537a4cb56127e51e0a550220995cd5f6b93722.cc25f367779ccb290d95c8b6cbb37349bcfcd1dc.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
     }
   }
 }
