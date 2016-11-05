@@ -209,6 +209,9 @@
   "24a79a8377a34797a7b590421167fc4e5f843e60": [
     "virtualization\\windowscontainers\\quick_start\\media\\dockerfile2.png"
   ],
+  "2324054dcaf04999c572e04c30a373d2f5a98e9d": [
+    "virtualization\\windowscontainers\\TOC.md"
+  ],
   "e280dc10558e1b69327a253170acd27056cb0e07": [
     "virtualization\\windowscontainers\\TOC.md"
   ],
@@ -319,5 +322,11 @@
   ],
   "0c841b3134550b4b11d720dd91e43c1088211092": [
     "virtualization\\windowscontainers\\communitylinks.md"
+  ],
+  "00a43f8d4d27327c61e318f3a915047106ad2aca": [
+    "virtualization\\windowscontainers\\management\\manage_serviceaccounts.md"
+  ],
+  "80a945647722718ba676f98512c9ad7875e7a414": [
+    "virtualization\\windowscontainers\\management\\media\\serviceaccount_diagram.png"
   ]
 }
