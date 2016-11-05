@@ -4652,8 +4652,8 @@
 * Archive Datetime: 2016-11-05 00:08:22
 * Handback File: [troubleshooting.fa8e0bf8c3816ab8e7080b2e3807e89993373b17.zh-cn.xlf](https://github.com/Microsoft/Virtualization-Documentation-Private.handback/blob/fad9323249aff566f1e1909cb6105f00a16e1938/ol-handback/Microsoft/Virtualization-Documentation-Private.zh-cn/live/troubleshooting.fa8e0bf8c3816ab8e7080b2e3807e89993373b17.zh-cn.xlf)
 * Handback Datetime: 2016-11-05 16:28:57
-* Bilingual File: [troubleshooting.fa8e0bf8c3816ab8e7080b2e3807e89993373b17.zh-cn.xlf](https://github.com/Microsoft/Virtualization-Documentation-Private.handback/blob/59ed3c5e364ad39752528142923599336937e7a6/ol-handback/Microsoft/Virtualization-Documentation-Private.zh-cn/live/troubleshooting.fa8e0bf8c3816ab8e7080b2e3807e89993373b17.zh-cn.xlf)
-* Bilingual Datetime: 2016-10-20 08:54:07
+* Bilingual File: [troubleshooting.fa8e0bf8c3816ab8e7080b2e3807e89993373b17.zh-cn.xlf](https://github.com/Microsoft/Virtualization-Documentation-Private.handback/blob/fad9323249aff566f1e1909cb6105f00a16e1938/ol-handback/Microsoft/Virtualization-Documentation-Private.zh-cn/live/troubleshooting.fa8e0bf8c3816ab8e7080b2e3807e89993373b17.zh-cn.xlf)
+* Bilingual Datetime: 2016-11-05 16:30:14
 * [Back to Top](#report-top)
 
 ##### <a name='7eb651e50372593ddd2096e49b5d37a429be7e34331'></a> Source: [windows-container-samples\apache-http\Dockerfile](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/804008c172b80a4f354a92cd4d12a4e23e1d4328/windows-container-samples/apache-http/Dockerfile)
