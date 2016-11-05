@@ -3,7 +3,7 @@
 设置计算机或运行容器时遇到问题？ 我们创建了一个 PowerShell 脚本来检查常见问题。 请先试一试，查看它所找到的内容并分享结果。
 
 ```PowerShell
-Invoke-WebRequest https://raw.githubusercontent.com/Microsoft/Virtualization-Documentation/master/windows-server-container-tools/Debug-ContainerHost/Debug-ContainerHost.ps1 | Invoke-Expression
+Invoke-WebRequest https://raw.githubusercontent.com/Microsoft/Virtualization-Documentation/master/windows-server-container-tools/Debug-ContainerHost/Debug-ContainerHost.ps1 -UseBasicParsing | Invoke-Expression
 ```
 其运行的所有测试以及常见解决方案的列表位于脚本的[自述文件](https://github.com/Microsoft/Virtualization-Documentation/blob/master/windows-server-container-tools/Debug-ContainerHost/README.md)中。
 
@@ -84,6 +84,6 @@ Get-WinEvent -LogName Microsoft-Windows-Hyper-V-Compute-Operational
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO1-->
 
 
