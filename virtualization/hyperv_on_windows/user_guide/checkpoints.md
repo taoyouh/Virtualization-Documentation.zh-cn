@@ -9,8 +9,8 @@ ms.prod: windows-10-hyperv
 ms.service: windows-10-hyperv
 ms.assetid: d9c398c4-ee72-45c6-9ce8-4f06569dae6c
 translationtype: Human Translation
-ms.sourcegitcommit: ffdf89b0ae346197b9ae631ee5260e0565261c55
-ms.openlocfilehash: ed4a2cb6fb3cd4006a5085e4ce8e058a3f201e41
+ms.sourcegitcommit: 8f08c85921b9d41f10f3b8cff5e4bafe945bd4af
+ms.openlocfilehash: 4e887dc8c284dd189dc59a71aa9d22d6c8a231ea
 
 ---
 
@@ -62,7 +62,7 @@ Set-VM -Name <vmname> -CheckpointType ProductionOnly
 
 ## 创建检查点
 
-创建为虚拟机配置的类型的检查点。 有关如何更改此类型的说明，请参阅本文档前面的[配置检查点类型](checkpoints.md#changing-the-checkpoint-type-for-a-VM)部分。
+创建为虚拟机配置的类型的检查点。 有关如何更改此类型的说明，请参阅本文档前面的[配置检查点类型](checkpoints.md#changing-the-checkpoint-type)部分。
 
 **使用 Hyper-V 管理器**
 
@@ -201,7 +201,7 @@ This folder will contain the .VMRS file with the runtime and saved state data an
 
 1. 登录到虚拟机并在桌面上创建文本文件。
 2. 用“记事本”打开该文件，然后输入文本“这是标准检查点”。 **不要保存文件或者关闭记事本**。  
-3. 将检查点更改为标准 - [此处](checkpoints.md#changing-the-checkpoint-type-using-hyper-V-manager)提供相关说明。
+3. 将检查点更改为标准 - [此处](checkpoints.md#changing-the-checkpoint-type)提供相关说明。
 4. 创建新检查点。
 
 <br />
@@ -249,6 +249,6 @@ This folder will contain the .VMRS file with the runtime and saved state data an
 
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO1-->
 
 

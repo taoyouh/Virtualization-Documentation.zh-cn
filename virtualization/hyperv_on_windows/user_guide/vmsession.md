@@ -9,8 +9,8 @@ ms.prod: windows-10-hyperv
 ms.service: windows-10-hyperv
 ms.assetid: fb228e06-e284-45c0-b6e6-e7b0217c3a49
 translationtype: Human Translation
-ms.sourcegitcommit: ffdf89b0ae346197b9ae631ee5260e0565261c55
-ms.openlocfilehash: 16624e181bec81d90c960df30e89f25eab23f7ea
+ms.sourcegitcommit: 8f08c85921b9d41f10f3b8cff5e4bafe945bd4af
+ms.openlocfilehash: 807043a744c4735158720371ec3afb22ebe7fc24
 
 ---
 
@@ -21,7 +21,7 @@ ms.openlocfilehash: 16624e181bec81d90c960df30e89f25eab23f7ea
 **运行 PowerShell Direct 的方法：**  
 * 作为交互式会话 - 请[单击此处](vmsession.md#create-and-exit-an-interactive-powershell-session)以使用 Enter-PSSession 创建和退出交互式 PowerShell 会话。
 * 作为用以执行单个命令或脚本的单用途会话 - 请[单击此处](vmsession.md#run-a-script-or-command-with-invoke-command)以使用 Invoke-Command 运行脚本或命令。
-* 作为持久性会话（版本 14280 及更高版本）-- 请[单击此处](vmsession.md#copy-files-with-New-PSSession-and-Copy-Item)以使用 New-PSSession 创建持久性会话。  
+* 作为持久性会话（版本 14280 及更高版本）-- 请[单击此处](vmsession.md#copy-files-with-new-pssession-and-copy-item)以使用 New-PSSession 创建持久性会话。  
 通过使用 Copy-Item 将文件复制到虚拟机或从其复制文件，然后使用 Remove-PSSession 断开连接来继续进行操作。
 
 ## 惠?
@@ -280,6 +280,6 @@ PowerShell Direct 支持 JEA（只需提供足够的管理）。  查看此用�
 
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO1-->
 
 
