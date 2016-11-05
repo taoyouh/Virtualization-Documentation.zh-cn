@@ -93,9 +93,6 @@
   "4e887dc8c284dd189dc59a71aa9d22d6c8a231ea": [
     "virtualization\\hyperv_on_windows\\user_guide\\checkpoints.md"
   ],
-  "ed4a2cb6fb3cd4006a5085e4ce8e058a3f201e41": [
-    "virtualization\\hyperv_on_windows\\user_guide\\checkpoints.md"
-  ],
   "620a2c38514488100bae4eb71d0683e3994801b4": [
     "virtualization\\hyperv_on_windows\\user_guide\\export_import.md"
   ],
@@ -139,9 +136,6 @@
     "virtualization\\hyperv_on_windows\\user_guide\\troubleshooting.md"
   ],
   "807043a744c4735158720371ec3afb22ebe7fc24": [
-    "virtualization\\hyperv_on_windows\\user_guide\\vmsession.md"
-  ],
-  "16624e181bec81d90c960df30e89f25eab23f7ea": [
     "virtualization\\hyperv_on_windows\\user_guide\\vmsession.md"
   ],
   "d9d43bb2b3e7f8955d374905cc3050a37a585fe1": [

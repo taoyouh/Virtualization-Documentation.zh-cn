@@ -787,8 +787,8 @@
       "IsArchived": true,
       "ArchivedDateTime": "2016-11-05T00:08:22.8456485Z",
       "SkeletonFile": "ol-xliffcache\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\807043a744c4735158720371ec3afb22ebe7fc24.7e2456671096de438ce9470cf754c6d444c850f4.xml",
-      "LocXliff": null,
-      "LocXliffCommit": null
+      "LocXliff": "ol-handback\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\vmsession.5b8e9c3583d826412e0ae8e2f58f1deca9901582.zh-cn.xlf",
+      "LocXliffCommit": "b197f310dc5fcec44b197754dc51cfb9b5cc277c"
     },
     "virtualization\\hyperv_on_windows\\user_guide\\remote_host_management.md.c2a155a89ed5e03c3be510726d27ca886f8a7281.HT": {
       "SourceFilename": "virtualization\\hyperv_on_windows\\user_guide\\remote_host_management.md",
@@ -807,8 +807,8 @@
       "IsArchived": true,
       "ArchivedDateTime": "2016-11-05T00:08:22.8456485Z",
       "SkeletonFile": "ol-xliffcache\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\4e887dc8c284dd189dc59a71aa9d22d6c8a231ea.27b49e3c00f4de8a2ea0bd3ca64b8c091f964da2.xml",
-      "LocXliff": null,
-      "LocXliffCommit": null
+      "LocXliff": "ol-handback\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\checkpoints.fb864e32f956b43d9a6ce0ccc72ba67b60ea8362.zh-cn.xlf",
+      "LocXliffCommit": "b197f310dc5fcec44b197754dc51cfb9b5cc277c"
     },
     "virtualization\\windowscontainers\\quick_start\\quick_start_windows_server.md.674b38cfa2876545e9b61834f2c82fddea4714eb.HT": {
       "SourceFilename": "virtualization\\windowscontainers\\quick_start\\quick_start_windows_server.md",
