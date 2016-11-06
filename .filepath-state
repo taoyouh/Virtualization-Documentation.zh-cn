@@ -266,6 +266,9 @@
   "ea91ea0ffca5479cb0593ef9961625f7b7ab1f42": [
     "virtualization\\hyperv_on_windows\\user_guide\\create_pre-release_vm.md"
   ],
+  "fc39e4ee3d3e5857237b36c96df212a13984c850": [
+    "virtualization\\windowscontainers\\docker\\manage_windows_dockerfile.md"
+  ],
   "6603289599e7ca51558d54f35ab809528f53bcd7": [
     "virtualization\\windowscontainers\\docker\\manage_windows_dockerfile.md"
   ],
