@@ -164,6 +164,9 @@
   "93ee375f9efb3462c5d1e4ba45248fe9dde58566": [
     "virtualization\\windowscontainers\\about\\media\\containerEcosystem.png"
   ],
+  "b084bf179d9360e4a72e8e88b4fec80eafb2906c": [
+    "virtualization\\windowscontainers\\about\\faq.md"
+  ],
   "90e32caabde1afafbd8170db77c6e84696395870": [
     "virtualization\\windowscontainers\\about\\faq.md"
   ],
@@ -265,6 +268,9 @@
   ],
   "ea91ea0ffca5479cb0593ef9961625f7b7ab1f42": [
     "virtualization\\hyperv_on_windows\\user_guide\\create_pre-release_vm.md"
+  ],
+  "20dcc6d263488673bf0a025058c3dee8d30168a2": [
+    "virtualization\\windowscontainers\\docker\\manage_windows_dockerfile.md"
   ],
   "fc39e4ee3d3e5857237b36c96df212a13984c850": [
     "virtualization\\windowscontainers\\docker\\manage_windows_dockerfile.md"
