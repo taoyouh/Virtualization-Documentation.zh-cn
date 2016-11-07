@@ -34,11 +34,13 @@
 
 # 社区和支持
 ## [容器论坛](https://social.msdn.microsoft.com/Forums/en-US/home?forum=windowscontainers)
+## [社区视频和博客](communitylinks.md)
 ## [疑难解答](troubleshooting.md)
+
 
 # [容器操作系统映像 EULA](Images_EULA.md)
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO1-->
 
 
