@@ -1,28 +1,11 @@
 # <a name='report-top'></a> Localization Bilingual Report
 
 ## Summary
- Total Files | 1
+ Total Files | 0
 
 ## File List
- Source File | Status | Details 
- ----------- | ------ | ------- 
- [virtualization\windowscontainers\troubleshooting.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/601acadfe25a13aaf28548d0b368b4b6fd461b03/virtualization/windowscontainers/troubleshooting.md) | InSyncHandedBackSuccess | [Details](#71ce38a8d6cd75079558827c806fdbbc5a2bcfd2327)
 
 ## Item Details
-##### <a name='71ce38a8d6cd75079558827c806fdbbc5a2bcfd2327'></a> Source: [virtualization\windowscontainers\troubleshooting.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/601acadfe25a13aaf28548d0b368b4b6fd461b03/virtualization/windowscontainers/troubleshooting.md)
-* Status: InSyncHandedBackSuccess
-* Target File: [virtualization\windowscontainers\troubleshooting.md](https://github.com/Microsoft/Virtualization-Documentation-Private.zh-cn/blob/5a7f3c63d88439c8b96c7665c98c02f4426eed10/virtualization/windowscontainers/troubleshooting.md)
-* Handoff File: [troubleshooting.fa8e0bf8c3816ab8e7080b2e3807e89993373b17.zh-cn.xlf](https://github.com/Microsoft/Virtualization-Documentation-Private.handoff/blob/a85e8c9bdf8c58b70c7abd93e2d4dbf67b7fe7ad/ol-handoff/Microsoft/Virtualization-Documentation-Private.zh-cn/live/troubleshooting.fa8e0bf8c3816ab8e7080b2e3807e89993373b17.zh-cn.xlf)
-* Handoff Datetime: 2016-11-03 23:00:34
-* Handoff Reason: Include
-* Archive File: [troubleshooting.fa8e0bf8c3816ab8e7080b2e3807e89993373b17.zh-cn.xlf](https://github.com/Microsoft/Virtualization-Documentation-Private.handoff/blob/d9e6017a4b1521a05f8d9086490c46d31f45918d/ol-archive/Microsoft/Virtualization-Documentation-Private.zh-cn/live/troubleshooting.fa8e0bf8c3816ab8e7080b2e3807e89993373b17.zh-cn.xlf)
-* Archive Datetime: 2016-11-05 00:08:22
-* Handback File: [troubleshooting.fa8e0bf8c3816ab8e7080b2e3807e89993373b17.zh-cn.xlf](https://github.com/Microsoft/Virtualization-Documentation-Private.handback/blob/fad9323249aff566f1e1909cb6105f00a16e1938/ol-handback/Microsoft/Virtualization-Documentation-Private.zh-cn/live/troubleshooting.fa8e0bf8c3816ab8e7080b2e3807e89993373b17.zh-cn.xlf)
-* Handback Datetime: 2016-11-05 16:28:57
-* Bilingual File: [troubleshooting.fa8e0bf8c3816ab8e7080b2e3807e89993373b17.zh-cn.xlf](https://github.com/Microsoft/Virtualization-Documentation-Private.handback/blob/fad9323249aff566f1e1909cb6105f00a16e1938/ol-handback/Microsoft/Virtualization-Documentation-Private.zh-cn/live/troubleshooting.fa8e0bf8c3816ab8e7080b2e3807e89993373b17.zh-cn.xlf)
-* Bilingual Datetime: 2016-11-05 16:30:14
-* [Back to Top](#report-top)
-
 
 ## Error Details
 
