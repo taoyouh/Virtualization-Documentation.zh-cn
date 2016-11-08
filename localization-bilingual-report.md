@@ -1,11 +1,28 @@
 # <a name='report-top'></a> Localization Bilingual Report
 
 ## Summary
- Total Files | 0
+ Total Files | 1
 
 ## File List
+ Source File | Status | Details 
+ ----------- | ------ | ------- 
+ [virtualization\windowscontainers\quick_start\quick_start_windows_server.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/13a33a6003cfa77d81a6e8e2afdf1da8d017ee30/virtualization/windowscontainers/quick_start/quick_start_windows_server.md) | InSyncHandedBackSuccess | [Details](#a5537a4cb56127e51e0a550220995cd5f6b93722326)
 
 ## Item Details
+##### <a name='a5537a4cb56127e51e0a550220995cd5f6b93722326'></a> Source: [virtualization\windowscontainers\quick_start\quick_start_windows_server.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/13a33a6003cfa77d81a6e8e2afdf1da8d017ee30/virtualization/windowscontainers/quick_start/quick_start_windows_server.md)
+* Status: InSyncHandedBackSuccess
+* Target File: [virtualization\windowscontainers\quick_start\quick_start_windows_server.md](https://github.com/Microsoft/Virtualization-Documentation-Private.zh-cn/blob/666f3ce1bb510a30ac831496fbc93abbce76336c/virtualization/windowscontainers/quick_start/quick_start_windows_server.md)
+* Handoff File: [quick_start_windows_server.08fee0ad7baa994cf3e7a42d3d35aeda89c5e556.zh-cn.xlf](https://github.com/Microsoft/Virtualization-Documentation-Private.handoff/blob/8c85642562a47dfd7bfad4d15ca45f7b03256792/ol-handoff/Microsoft/Virtualization-Documentation-Private.zh-cn/live/quick_start_windows_server.08fee0ad7baa994cf3e7a42d3d35aeda89c5e556.zh-cn.xlf)
+* Handoff Datetime: 2016-11-04 16:09:02
+* Handoff Reason: Include
+* Archive File: [quick_start_windows_server.08fee0ad7baa994cf3e7a42d3d35aeda89c5e556.zh-cn.xlf](https://github.com/Microsoft/Virtualization-Documentation-Private.handoff/blob/d9e6017a4b1521a05f8d9086490c46d31f45918d/ol-archive/Microsoft/Virtualization-Documentation-Private.zh-cn/live/quick_start_windows_server.08fee0ad7baa994cf3e7a42d3d35aeda89c5e556.zh-cn.xlf)
+* Archive Datetime: 2016-11-05 00:08:22
+* Handback File: [quick_start_windows_server.08fee0ad7baa994cf3e7a42d3d35aeda89c5e556.zh-cn.xlf](https://github.com/Microsoft/Virtualization-Documentation-Private.handback/blob/334ee02eb26f58059d5632911a54840b568bd2d9/ol-handback/Microsoft/Virtualization-Documentation-Private.zh-cn/live/quick_start_windows_server.08fee0ad7baa994cf3e7a42d3d35aeda89c5e556.zh-cn.xlf)
+* Handback Datetime: 2016-11-08 01:59:25
+* Bilingual File: [quick_start_windows_server.08fee0ad7baa994cf3e7a42d3d35aeda89c5e556.zh-cn.xlf](https://github.com/Microsoft/Virtualization-Documentation-Private.handback/blob/334ee02eb26f58059d5632911a54840b568bd2d9/ol-handback/Microsoft/Virtualization-Documentation-Private.zh-cn/live/quick_start_windows_server.08fee0ad7baa994cf3e7a42d3d35aeda89c5e556.zh-cn.xlf)
+* Bilingual Datetime: 2016-11-08 01:59:51
+* [Back to Top](#report-top)
+
 
 ## Error Details
 
