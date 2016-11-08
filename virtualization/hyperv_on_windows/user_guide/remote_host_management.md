@@ -9,8 +9,8 @@ ms.prod: windows-10-hyperv
 ms.service: windows-10-hyperv
 ms.assetid: 2d34e98c-6134-479b-8000-3eb360b8b8a3
 translationtype: Human Translation
-ms.sourcegitcommit: ffdf89b0ae346197b9ae631ee5260e0565261c55
-ms.openlocfilehash: 7d7aee3d87237b93887ac7303c70cf6c9a02285d
+ms.sourcegitcommit: 8f08c85921b9d41f10f3b8cff5e4bafe945bd4af
+ms.openlocfilehash: c562e1a1370e9286680afa1b498d625195edebb2
 
 ---
 
@@ -18,7 +18,7 @@ ms.openlocfilehash: 7d7aee3d87237b93887ac7303c70cf6c9a02285d
 
 Hyper-V 管理器是内置工具，用于诊断和管理本地 Hyper-V 主机和小部分远程主机。  本文记录了在所有受支持的配置中使用 Hyper-V 管理器连接 Hyper-V 主机的配置步骤。
 
-> 像在[任何包括 Hyper-V 的 Windows 操作系统](../quick_start/walkthrough_compatibility.md#OperatingSystemRequirements)上的“**Hyper-V 管理工具**”一样，Hyper-V 管理器通过“**程序和功能**”提供。  管理远程主机无需启用 Hyper-V 平台。
+> 像在[任何包括 Hyper-V 的 Windows 操作系统](../quick_start/walkthrough_compatibility.md#operating-system-requirements)上的“**Hyper-V 管理工具**”一样，Hyper-V 管理器通过“**程序和功能**”提供。  管理远程主机无需启用 Hyper-V 平台。
 
 若要在 Hyper-V 管理器中连接 Hyper-V 主机，请确保在左侧窗格中选择“Hyper-V 管理器”，然后在右侧窗格中选择“连接到服务器...”。
 
@@ -121,6 +121,6 @@ Windows 10 极大地增加了远程连接类型的可能组合。
 
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO1-->
 
 
