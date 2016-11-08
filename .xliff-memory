@@ -797,8 +797,8 @@
       "IsArchived": true,
       "ArchivedDateTime": "2016-11-05T00:08:22.8456485Z",
       "SkeletonFile": "ol-xliffcache\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\c562e1a1370e9286680afa1b498d625195edebb2.e8a400d8a859bfac4c57ea29e26a76fdb16e9489.xml",
-      "LocXliff": null,
-      "LocXliffCommit": null
+      "LocXliff": "ol-handback\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\remote_host_management.40d5636e508c5b95bb2917be75ca6b5aa426a915.zh-cn.xlf",
+      "LocXliffCommit": "95c7b955f718f4252e3283b8106509e37bd20e90"
     },
     "virtualization\\hyperv_on_windows\\user_guide\\checkpoints.md.8d51291597c6bb814ef47edc4b3c35c1a9dd9a05.HT": {
       "SourceFilename": "virtualization\\hyperv_on_windows\\user_guide\\checkpoints.md",
