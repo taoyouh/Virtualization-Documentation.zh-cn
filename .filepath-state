@@ -164,9 +164,6 @@
   "b084bf179d9360e4a72e8e88b4fec80eafb2906c": [
     "virtualization\\windowscontainers\\about\\faq.md"
   ],
-  "90e32caabde1afafbd8170db77c6e84696395870": [
-    "virtualization\\windowscontainers\\about\\faq.md"
-  ],
   "38dc2f5257196adfdf3be04e77f0ea74a77bfcff": [
     "virtualization\\windowscontainers\\about\\work_in_progress.md"
   ],
@@ -201,9 +198,6 @@
     "virtualization\\windowscontainers\\quick_start\\media\\dockerfile2.png"
   ],
   "2324054dcaf04999c572e04c30a373d2f5a98e9d": [
-    "virtualization\\windowscontainers\\TOC.md"
-  ],
-  "e280dc10558e1b69327a253170acd27056cb0e07": [
     "virtualization\\windowscontainers\\TOC.md"
   ],
   "e5dc449ef7ecebffc060bab10c0341d84d4d3291": [
@@ -261,12 +255,6 @@
     "virtualization\\hyperv_on_windows\\user_guide\\create_pre-release_vm.md"
   ],
   "20dcc6d263488673bf0a025058c3dee8d30168a2": [
-    "virtualization\\windowscontainers\\docker\\manage_windows_dockerfile.md"
-  ],
-  "fc39e4ee3d3e5857237b36c96df212a13984c850": [
-    "virtualization\\windowscontainers\\docker\\manage_windows_dockerfile.md"
-  ],
-  "6603289599e7ca51558d54f35ab809528f53bcd7": [
     "virtualization\\windowscontainers\\docker\\manage_windows_dockerfile.md"
   ],
   "73c445a896e76d54e002184ae1235c4c5c38ad9d": [
