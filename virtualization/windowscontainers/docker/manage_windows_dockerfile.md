@@ -9,8 +9,8 @@ ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: 75fed138-9239-4da9-bce4-4f2e2ad469a1
 translationtype: Human Translation
-ms.sourcegitcommit: ffdf89b0ae346197b9ae631ee5260e0565261c55
-ms.openlocfilehash: 6603289599e7ca51558d54f35ab809528f53bcd7
+ms.sourcegitcommit: 31515396358c124212b53540af8a0dcdad3580e4
+ms.openlocfilehash: 20dcc6d263488673bf0a025058c3dee8d30168a2
 
 ---
 
@@ -24,7 +24,7 @@ Docker 引擎包含用于自动创建容器映像的工具。 尽管可以使用
 
 驱动实现这一自动化过程的 Docker 组件是 Dockerfile，以及 `docker build` 命令。
 
-- **Dockerfile** – 包含创建新容器映像所需指令的文本文件。 这些指令包括对将用作基础的现有映像的标识、将在映像创建过程中运行的命令以及部署容器映像的新实例时将要运行的命令。
+- **Dockerfile** - 一个文本文件，包含创建新容器映像所需的指令。 这些指令包括对将用作基础的现有映像的标识、将在映像创建过程中运行的命令以及部署容器映像的新实例时将要运行的命令。
 - **Docker build** - 使用 Dockerfile 并触发映像创建过程的 Docker 引擎命令。
 
 本文档将介绍将 Dockerfile 用于 Windows 容器的相关内容、讨论语法并详细介绍常用的 Dockerfile 指令。 
@@ -43,7 +43,7 @@ Dockerfile 的最基本形式十分简单。 下面的示例创建了一个新�
 # Sample Dockerfile
 
 # Indicates that the windowsservercore image will be used as the base image.
-FROM windowsservercore
+FROM microsoft/windowsservercore
 
 # Metadata indicating an image maintainer.
 MAINTAINER jshelton@contoso.com
@@ -51,7 +51,7 @@ MAINTAINER jshelton@contoso.com
 # Uses dism.exe to install the IIS role.
 RUN dism.exe /online /enable-feature /all /featurename:iis-webserver /NoRestart
 
-# Creates an html file and adds content to this file.
+# Creates an HTML file and adds content to this file.
 RUN echo "Hello World - Dockerfile" > c:\inetpub\wwwroot\index.html
 
 # Sets a command or process that will run each time a container is run from the new image.
@@ -66,7 +66,7 @@ Dockerfile 指令为 Docker 引擎提供创建容器映像所需的步骤。 这
 
 ### FROM
 
-`FROM` 指令设置将在新映像创建过程期间使用的容器映像。 例如，使用指令 `FROM windowsservercore` 时，所得到的映像派生自 Windows Server Core 基本操作系统映像映像并具有对其的依赖关系。 如果正在进行 Docker 生成过程的系统上不存在指定的映像，Docker 引擎将尝试从公有或私有映像注册表下载该映像。
+`FROM` 指令用于设置在新映像创建过程期间将使用的容器映像。 例如，使用指令 `FROM windowsservercore` 时，所得到的映像派生自 Windows Server Core 基本操作系统映像映像并具有对其的依赖关系。 如果正在进行 Docker 生成过程的系统上不存在指定的映像，Docker 引擎将尝试从公有或私有映像注册表下载该映像。
 
 **格式**
 
@@ -112,7 +112,7 @@ FROM windowsservercore
 RUN ["powershell", "New-Item", "c:/test"]
 ```
 
-检查生成的映像，所运行的命令是 `powershell new-item c:/test`。
+检查生成的映像，所运行的命令是 `powershell New-Item c:/test`。
 
 ```none
 docker history doc-exe-method
@@ -126,16 +126,16 @@ b3452b13e472        2 minutes ago       powershell New-Item c:/test   30.76 MB
 ```none
 FROM windowsservercore
 
-RUN powershell new-item c:\test
+RUN powershell New-Item c:\test
 ```
 
-这将导致运行指令 `cmd /S /C powershell new-item c:\test`。 
+这将导致运行指令 `cmd /S /C powershell New-Item c:\test`。 
 
 ```none
 docker history doc-shell-method
 
 IMAGE               CREATED             CREATED BY                              SIZE                COMMENT
-062a543374fc        19 seconds ago      cmd /S /C powershell new-item c:\test   30.76 MB
+062a543374fc        19 seconds ago      cmd /S /C powershell New-Item c:\test   30.76 MB
 ```
 
 **Windows 注意事项**
@@ -155,10 +155,10 @@ RUN ["powershell", "New-Item", "c:\\test"]
 RUN dism.exe /online /enable-feature /all /featurename:iis-webserver /NoRestart
 ```
 
-此示例安装 Visual Studio 可再发行组件包。 请注意，`start-process` 和 `-wait` 参数用于运行安装程序。 以确保在完成安装后再移动到 Dockerfile 中的第二步。
+此示例安装 Visual Studio 可再发行组件包。 请注意，`Start-Process` 和 `-Wait` 参数用于运行安装程序。 以确保在完成安装后再移动到 Dockerfile 中的第二步。
 
 ```none
-RUN start-Process c:\vcredist_x86.exe -ArgumentList '/quiet' -Wait
+RUN Start-Process c:\vcredist_x86.exe -ArgumentList '/quiet' -Wait
 ``` 
 
 有关 RUN 指令的详细信息，请参阅 [Docker.com 上的 RUN 参考]( https://docs.docker.com/engine/reference/builder/#run)。 
@@ -266,7 +266,7 @@ ADD https://www.python.org/ftp/python/3.5.1/python-3.5.1.exe /temp/python-3.5.1.
 
 ### WORKDIR
 
-`WORKDIR` 指令为其他 Dockerfile 指令（如 `RUN`、`CMD`）设置一个工作目录，并且还设置用于运行容器映像实例的工作目录。
+`WORKDIR` 指令用于为其他 Dockerfile 指令（如 `RUN`、`CMD`）设置一个工作目录，并且还设置用于运行容器映像实例的工作目录。
 
 **格式**
 
@@ -294,7 +294,7 @@ WORKDIR c:\\Apache24\\bin
 
 ### CMD
 
-`CMD` 指令设置部署容器映像的实例时要运行的默认命令。 例如，如果该容器将承载 NGINX Web 服务器，则 `CMD` 可能包括用于启动 Web 服务器的指令，如 `nginx.exe`。 如果 Dockerfile 中指定了多个 `CMD` 指令，只会计算最后一个指令。
+`CMD` 指令用于设置部署容器映像的实例时要运行的默认命令。 例如，如果该容器将承载 NGINX Web 服务器，则 `CMD` 可能包括用于启动 Web 服务器的指令，如 `nginx.exe`。 如果 Dockerfile 中指定了多个 `CMD` 指令，只会计算最后一个指令。
 
 **格式**
 
@@ -369,7 +369,7 @@ RUN powershell.exe -Command `
 
 ### PowerShell 命令
 
-可使用 `RUN` 操作在 Dockerfile 中运行 Powershell 命令。 
+可使用 `RUN` 操作在 Dockerfile 中运行 PowerShell 命令。 
 
 ```none
 FROM windowsservercore
@@ -393,7 +393,7 @@ RUN powershell.exe -Command \
 
 > Nano Server 中当前不支持 Invoke-WebRequest
 
-有关在映像创建过程期间使用 PowerShell 下载文件的另一个选择是使用 .Net WebClient 库。 这可以增加下载性能。 下面的示例使用 WebClient 库下载 Python 软件。
+有关在映像创建过程期间使用 PowerShell 下载文件的另一个选择是使用 .NET WebClient 库。 这可以增加下载性能。 下面的示例使用 WebClient 库下载 Python 软件。
 
 ```none
 FROM windowsservercore
@@ -481,6 +481,6 @@ windowsservercore   latest              6801d964fda5        4 months ago        
 
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO1-->
 
 

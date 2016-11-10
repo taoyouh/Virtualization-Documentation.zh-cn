@@ -15,6 +15,7 @@
 ## [容器主机 - Windows Server](deployment/deployment.md)
 ## [容器主机 - Nano Server](deployment/deployment_nano.md)
 ## [防病毒优化](https://msdn.microsoft.com/en-us/windows/hardware/drivers/ifs/anti-virus-optimization-for-windows-containers)
+## [Active Directory 服务组件](management/manage_serviceaccounts.md)
 
 # 在 Windows 上管理 Docker
 ## [Windows 上的 Docker 引擎](docker/configure_docker_daemon.md)

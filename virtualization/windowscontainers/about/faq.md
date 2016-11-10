@@ -9,8 +9,8 @@ ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: 25de368c-5a10-40a4-b4aa-ac8c9a9ca022
 translationtype: Human Translation
-ms.sourcegitcommit: ffdf89b0ae346197b9ae631ee5260e0565261c55
-ms.openlocfilehash: 90e32caabde1afafbd8170db77c6e84696395870
+ms.sourcegitcommit: 2ab9a4b09a2db72e5e2be71ced5d5400761a5ad8
+ms.openlocfilehash: b084bf179d9360e4a72e8e88b4fec80eafb2906c
 
 ---
 
@@ -26,16 +26,16 @@ Windows Server 容器是一种轻型的操作系统虚拟化方法，用于将�
 
 可以将 Hyper-V 容器视为在 Hyper-V 分区内运行的 Windows Server 容器。
 
-Hyper-V 容器在高效、高密度的 Windows Server 容器和高度隔离的硬件虚拟化 Hyper-V 虚拟器之间提供了额外的部署选项。 对于来自不同信任边界的应用程序在同一个主机上的环境，可能需要其他隔离。 Hyper-V 容器将使用经优化的虚拟化和 Windows Server 操作系统提供更高的隔离，可将容器互相隔离和与主机操作系统隔离。 这两种容器部署选项利用相同的管理 API、工具和映像格式，在部署时，客户可以轻松地选择哪个部署模式最符合他们的要求。
+Hyper-V 容器在高效、高密度的 Windows Server 容器和高度隔离的硬件虚拟化 Hyper-V 虚拟器之间提供了额外的部署选项。 对于来自不同信任边界的应用程序运行在同一个主机上的环境，可能需要其他隔离。 Hyper-V 容器将使用经优化的虚拟化和 Windows Server 操作系统提供更高的隔离，可将容器互相隔离和与主机操作系统隔离。 两个容器部署选项都使用相同的管理 API、工具和映像格式。 部署时，客户只需选择最符合他们要求的部署模式。
 
 **Linux 和 Windows Server 容器之间的区别是什么？**
 
 Linux 和 Windows Server 容器很相似，两者都在其内核和核心操作系统内实现类似的技术。 区别在于在容器内运行的平台和工作负荷。  
-如果客户使用的是 Windows Server 容器，他们可以与 .NET、ASP.NET、PowerShell 等现有 Windows 技术集成。
+如果客户使用的是 Windows Server 容器，则可以与 .NET、ASP.NET、PowerShell 等现有 Windows 技术集成。
 
 **作为开发人员，我是否必须为每种类型的容器重新编写我的应用？**
 
-否，Windows 容器映像在 Windows Server 容器和 Hyper-V 容器上通用。 在你启动容器时选择容器类型。 从开发人员的角度看，Windows Server 容器和 Hyper-V 容器是同一事物的两种风格。  它们提供相同的开发、编程和管理体验，它们是开放的且可扩展，并且将通过 Docker 包含相同级别的集成和支持。
+否，Windows 容器映像在 Windows Server 容器和 Hyper-V 容器上通用。 在你启动容器时选择容器类型。 从开发人员的角度看，Windows Server 容器和 Hyper-V 容器是同一事物的两种风格。 它们提供相同的开发、编程和管理体验，它们是开放的且可扩展，并且将通过 Docker 包含相同级别的集成和支持。
 
 开发人员可以使用 Windows Server 容器创建容器映像并将其部署为 Hyper-V 容器，反之亦然，而无需除指定相应的运行时标志之外的任何更改。
 
@@ -43,7 +43,7 @@ Linux 和 Windows Server 容器很相似，两者都在其内核和核心操作�
 
 **Hyper-V/Windows Server 容器是否是附加设备，或它们是否将集成在 Windows Server 内？**
 
-容器功能将集成到 Windows Server 2016 中。 请继续关注与公开发行更相关的详细信息。  
+容器功能将集成到 Windows Server 2016 中。  
 
 **Windows Server 容器和 Drawbridge 之间的关系是什么？**
 
@@ -79,6 +79,6 @@ Docker 包含两方面，即项目的开源组和 Docker 公司。 我们考虑�
 
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO1-->
 
 
