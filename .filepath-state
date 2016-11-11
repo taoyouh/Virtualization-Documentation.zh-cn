@@ -230,6 +230,9 @@
   "367d56d6ba500771f4a03e2296eca6bb079d891e": [
     "virtualization\\windowscontainers\\Media\\explore.png"
   ],
+  "b90120bb085f0f44fde2eadd13cfa1b93011c5a7": [
+    "virtualization\\windowscontainers\\deployment\\deployment_nano.md"
+  ],
   "ccd1e0fc96b96349a04e6f3f33b97e5dc28582cd": [
     "virtualization\\windowscontainers\\deployment\\deployment_nano.md"
   ],
@@ -272,6 +275,9 @@
   "f856499eea09efd4aa26cba6c7e437d61eb8b80b": [
     "virtualization\\windowscontainers\\quick_start\\quick_start_images.md"
   ],
+  "c9f3a7669ae82e0b3a91956336d67225687c715b": [
+    "virtualization\\windowscontainers\\quick_start\\quick_start_windows_10.md"
+  ],
   "1b57ad289368fb7d5f628e605cfc320748854c30": [
     "virtualization\\windowscontainers\\quick_start\\quick_start_windows_10.md"
   ],
@@ -286,6 +292,9 @@
   ],
   "a5537a4cb56127e51e0a550220995cd5f6b93722": [
     "virtualization\\windowscontainers\\quick_start\\quick_start_windows_server.md"
+  ],
+  "dee119983c9dca1cd9ce5caff1c4f87d4accab2a": [
+    "virtualization\\windowscontainers\\docker\\configure_docker_daemon.md"
   ],
   "569b8861ca01ee8a0b794e01b0acb1a1c501fa55": [
     "virtualization\\windowscontainers\\docker\\configure_docker_daemon.md"
