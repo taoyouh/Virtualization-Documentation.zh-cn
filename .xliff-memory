@@ -919,6 +919,16 @@
       "SkeletonFile": "ol-xliffcache\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\dee119983c9dca1cd9ce5caff1c4f87d4accab2a.6e7a220ad339da047cbf41a29e47c7680849d166.xml",
       "LocXliff": null,
       "LocXliffCommit": null
+    },
+    "virtualization\\windowscontainers\\docker\\manage_windows_dockerfile.md.563328e07b3edf42bac9288e46aacee9b61839ce.HT": {
+      "SourceFilename": "virtualization\\windowscontainers\\docker\\manage_windows_dockerfile.md",
+      "XliffHash": "563328e07b3edf42bac9288e46aacee9b61839ce",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\d73c2501ccc304ee5d6ad8096f755cbc728570db.baea4e24e92f66e6d9dac290156e4a915f26d842.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
     }
   }
 }
