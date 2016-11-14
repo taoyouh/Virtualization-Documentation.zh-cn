@@ -9,8 +9,8 @@ ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: 6885400c-5623-4cde-8012-f6a00019fafa
 translationtype: Human Translation
-ms.sourcegitcommit: ffdf89b0ae346197b9ae631ee5260e0565261c55
-ms.openlocfilehash: 569b8861ca01ee8a0b794e01b0acb1a1c501fa55
+ms.sourcegitcommit: 16220e5afd42ecbbef648c469822c68570f8577c
+ms.openlocfilehash: dee119983c9dca1cd9ce5caff1c4f87d4accab2a
 
 ---
 
@@ -35,19 +35,19 @@ Windows 中不含 Docker 引擎和客户端，需要单独进行安装和配置�
 
 Https://master.dockerproject.org 始终提供最新版本。 此示例使用 v1.13 开发分支提供的最新内容。 
 
-```none
+```powershell
 Invoke-WebRequest "https://download.docker.com/components/engine/windows-server/cs-1.12/docker.zip" -OutFile "$env:TEMP\docker.zip" -UseBasicParsing
 ```
 
 将 Zip 存档扩展到 Program Files。
 
-```
+```powershell
 Expand-Archive -Path "$env:TEMP\docker.zip" -DestinationPath $env:ProgramFiles
 ```
 
 将 Docker 目录添加到系统路径。 添加完成后，重启 PowerShell 会话以识别已修改的路径。
 
-```none
+```powershell
 [Environment]::SetEnvironmentVariable("Path", $env:Path + ";C:\Program Files\Docker", [EnvironmentVariableTarget]::Machine)
 ```
 
@@ -59,7 +59,7 @@ dockerd --register-service
 
 安装完成后，可以启动该服务。
 
-```none
+```powershell
 Start-Service Docker
 ```
 
@@ -172,14 +172,14 @@ sc config docker binpath= "\"C:\Program Files\docker\dockerd.exe\" --run-service
 
 若要设置 `docker search` 和 `docker pull` 的代理信息，请使用 `HTTP_PROXY` 或 `HTTPS_PROXY` 名称以及代理信息的一个值创建 Windows 环境变量。 可使用类似于以下的命令通过 PowerShell 完成此操作：
 
-```none
+```powershell
 [Environment]::SetEnvironmentVariable("HTTP_PROXY", "http://username:password@proxy:port/", [EnvironmentVariableTarget]::Machine)
 ```
 
 设置变量后，重启 Docker 服务。
 
-```none
-restart-service docker
+```powershell
+Restart-Service docker
 ```
 
 有关详细信息，请参阅 [Docker.com 上的 Windows 配置文件](https://docs.docker.com/engine/reference/commandline/dockerd/#/windows-configuration-file)。
@@ -187,6 +187,6 @@ restart-service docker
 
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 
