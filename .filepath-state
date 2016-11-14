@@ -299,9 +299,6 @@
   "dee119983c9dca1cd9ce5caff1c4f87d4accab2a": [
     "virtualization\\windowscontainers\\docker\\configure_docker_daemon.md"
   ],
-  "569b8861ca01ee8a0b794e01b0acb1a1c501fa55": [
-    "virtualization\\windowscontainers\\docker\\configure_docker_daemon.md"
-  ],
   "71ec8f80e721a0c66dc8709473a427792df1cf24": [
     "virtualization\\hyperv_on_windows\\reference\\ic_info.md"
   ],
