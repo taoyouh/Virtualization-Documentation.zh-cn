@@ -9,8 +9,8 @@ ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: b82acdf9-042d-4b5c-8b67-1a8013fa1435
 translationtype: Human Translation
-ms.sourcegitcommit: ffdf89b0ae346197b9ae631ee5260e0565261c55
-ms.openlocfilehash: ccd1e0fc96b96349a04e6f3f33b97e5dc28582cd
+ms.sourcegitcommit: 9b99982abfbbda12758bb1c922ed1bd431ecca20
+ms.openlocfilehash: b90120bb085f0f44fde2eadd13cfa1b93011c5a7
 
 ---
 
@@ -105,7 +105,9 @@ docker pull microsoft/windowsservercore
 
 ## 在 Nano Server 上管理 Docker
 
-为了获得最佳体验，最佳做法是通过远程系统在 Nano Server 上管理 Docker。 为此，需要完成下列各项。
+为了获得最佳体验，最佳做法是通过远程系统在 Nano Server 上管理 Docker。 这是因为 PowerShell 远程处理当前不能将交互式容器外壳的 TTY 终端输出重定向到初始客户端的提示。 分离的容器可以启动，并且可使用 `docker run -dt` 使其在后台中运行，但使用 `docker run -it` 的交互式容器不会按预期方式工作。 出于类似原因，PowerShell ISE 还存在交互式输出的问题。
+
+若要管理远程 Docker 服务器，需要完成下列各项。
 
 ### 准备容器主机
 
@@ -198,6 +200,6 @@ Restart-Computer
 
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 
