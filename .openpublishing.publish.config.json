@@ -42,5 +42,13 @@
     "live-oldev",
     "master"
   ],
-  "skip_source_output_uploading": false
+  "skip_source_output_uploading": false,
+  "dependent_repositories": [
+    {
+      "path_to_root": "_repo.en-us",
+      "url": "https://github.com/Microsoft/Virtualization-Documentation-Private",
+      "branch": "live"
+    }
+  ],
+  "need_generate_pdf_url_template": false
 }
