@@ -135,6 +135,9 @@
   "eff2016da5c76489c7e0607d92509a63ff6153b1": [
     "virtualization\\hyperv_on_windows\\user_guide\\troubleshooting.md"
   ],
+  "38555b20b3ba87840d42be6f0136f307a61294dc": [
+    "virtualization\\hyperv_on_windows\\user_guide\\vmsession.md"
+  ],
   "807043a744c4735158720371ec3afb22ebe7fc24": [
     "virtualization\\hyperv_on_windows\\user_guide\\vmsession.md"
   ],
@@ -290,6 +293,9 @@
   ],
   "f856499eea09efd4aa26cba6c7e437d61eb8b80b": [
     "virtualization\\windowscontainers\\quick_start\\quick_start_images.md"
+  ],
+  "ff9be6bf5d067dbba9adb43e88dfda57db238bf1": [
+    "virtualization\\windowscontainers\\quick_start\\quick_start_windows_10.md"
   ],
   "c9f3a7669ae82e0b3a91956336d67225687c715b": [
     "virtualization\\windowscontainers\\quick_start\\quick_start_windows_10.md"
