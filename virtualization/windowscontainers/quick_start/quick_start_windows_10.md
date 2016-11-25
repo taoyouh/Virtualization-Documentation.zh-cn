@@ -9,8 +9,8 @@ ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: bb9bfbe0-5bdc-4984-912f-9c93ea67105f
 translationtype: Human Translation
-ms.sourcegitcommit: b7cd9b43f001fe8625b0c4ea8cc507c8f11de7ef
-ms.openlocfilehash: 1b57ad289368fb7d5f628e605cfc320748854c30
+ms.sourcegitcommit: 9b99982abfbbda12758bb1c922ed1bd431ecca20
+ms.openlocfilehash: c9f3a7669ae82e0b3a91956336d67225687c715b
 
 ---
 
@@ -116,7 +116,9 @@ microsoft/nanoserver   latest              105d76d0f40e        4 days ago       
 
 ## 4.部署第一个容器
 
-对于此简单示例，将创建和部署一个“Hello World”容器映像。 为获得最佳体验，请在升级后的 Windows 命令行界面运行这些命令。
+对于此简单示例，将创建和部署一个“Hello World”容器映像。 为获得最佳体验，请在升级后的Windows CMD shell 或 PowerShell中运行这些命令。
+
+> Windows PowerShell ISE 不适用于与容器的交互式会话。 即使容器正在运行，也会显示为挂起。
 
 首先，从 `nanoserver` 映像启动一个具有交互式会话的容器。 启动容器后，容器中将显示一个命令行界面。  
 
