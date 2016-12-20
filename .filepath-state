@@ -261,8 +261,14 @@
   "224b91fc286f31a5c23fe3d7c9d36b178f6b04c3": [
     "virtualization\\hyperv_on_windows\\develop\\media\\flightingSDK.png"
   ],
+  "71d91e12ae843bf96e1b4001915ffb55bb352ffd": [
+    "virtualization\\windowscontainers\\management\\docker-powershell.md"
+  ],
   "03ceaa83723db0870623cbc579d81b8d4ee6e813": [
     "virtualization\\windowscontainers\\management\\docker-powershell.md"
+  ],
+  "ad7be1b6fe29fbfa7ee74aa97f5f0c220adb636e": [
+    "virtualization\\hyperv_on_windows\\index.md"
   ],
   "f325a6d32c20d65c920a79de90947ba2e832d601": [
     "virtualization\\hyperv_on_windows\\index.md"
@@ -333,11 +339,20 @@
   "3f83e598cf5328c31851fdd97d1bb1d03f56c24c": [
     "virtualization\\windowscontainers\\Images_EULA.md"
   ],
+  "b6e8ede46e842b45cc3e65bfdc3f4fd008b3c936": [
+    "virtualization\\windowscontainers\\samples.md"
+  ],
   "4d0fb2ee5ce2be3fe1b616ff38f14269192f3fc9": [
     "virtualization\\windowscontainers\\samples.md"
   ],
+  "c0e1641119c05b3a61b721605918b63e3eaacc85": [
+    "virtualization\\windowscontainers\\troubleshooting.md"
+  ],
   "71ce38a8d6cd75079558827c806fdbbc5a2bcfd2": [
     "virtualization\\windowscontainers\\troubleshooting.md"
+  ],
+  "81f84901bdbd9764db8d73b8e01527f49beeb774": [
+    "virtualization\\windowscontainers\\communitylinks.md"
   ],
   "1161353ef72476806329c594672815bd1e040bd4": [
     "virtualization\\windowscontainers\\communitylinks.md"
