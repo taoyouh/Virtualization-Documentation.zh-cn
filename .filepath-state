@@ -142,7 +142,8 @@
     "virtualization\\hyperv_on_windows\\user_guide\\vmsession.md"
   ],
   "41ec8d50af4b7ab2ec7e94b30397f4301502d372": [
-    "virtualization\\hyperv_on_windows\\windows_welcome.md"
+    "virtualization\\hyperv_on_windows\\windows_welcome.md",
+    "virtualization\\windowscontainers\\containers_welcome.md"
   ],
   "d9d43bb2b3e7f8955d374905cc3050a37a585fe1": [
     "virtualization\\hyperv_on_windows\\windows_welcome.md"
@@ -181,7 +182,8 @@
     "virtualization\\windowscontainers\\about\\work_in_progress.md"
   ],
   "a1b876d01b8076ee9feb275bd09247775bfcef69": [
-    "virtualization\\windowscontainers\\containers_welcome.md"
+    "virtualization\\windowscontainers\\containers_welcome.md",
+    "virtualization\\windowscontainers\\index.md"
   ],
   "1392cb13798c96f91b7daa036e529c97e560edbb": [
     "virtualization\\windowscontainers\\deployment\\deployment.md"
@@ -347,6 +349,9 @@
   ],
   "3f83e598cf5328c31851fdd97d1bb1d03f56c24c": [
     "virtualization\\windowscontainers\\Images_EULA.md"
+  ],
+  "eac2026cff552315a4cb256b595f1bd3317ee11c": [
+    "virtualization\\windowscontainers\\samples.md"
   ],
   "b6e8ede46e842b45cc3e65bfdc3f4fd008b3c936": [
     "virtualization\\windowscontainers\\samples.md"

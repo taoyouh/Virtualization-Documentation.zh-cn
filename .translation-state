@@ -1,5 +1,5 @@
 {
-  "LastProcessedCommit": "553a96946811c6799493229b37987f417d3e5d1e",
+  "LastProcessedCommit": "b2950dca4b29e97eb951379645c118468a1fb403",
   "LastTranslatedCommit": "123775bcd5419373b6ddccd4417e71420a9b5e71",
   "LastTansformerVersion": null,
   "LastConfigHash": "ff00901640a5e48935f8532f99fd8794e9c53512",
@@ -1944,7 +1944,8 @@
       "DependencyFrom": [
         "virtualization\\hyperv_on_windows\\windows_welcome.md",
         "virtualization\\windowscontainers\\containers_welcome.md",
-        "virtualization\\hyperv_on_windows\\index.md"
+        "virtualization\\hyperv_on_windows\\index.md",
+        "virtualization\\windowscontainers\\index.md"
       ],
       "TokenReference": null,
       "FilePathList": [
@@ -2025,7 +2026,8 @@
       "DependencyFrom": [
         "virtualization\\hyperv_on_windows\\windows_welcome.md",
         "virtualization\\windowscontainers\\containers_welcome.md",
-        "virtualization\\hyperv_on_windows\\index.md"
+        "virtualization\\hyperv_on_windows\\index.md",
+        "virtualization\\windowscontainers\\index.md"
       ],
       "TokenReference": null,
       "FilePathList": [
@@ -5518,7 +5520,8 @@
       "SourceFilePath": "virtualization\\windowscontainers\\Media\\try.png",
       "HandoffReason": 2,
       "DependencyFrom": [
-        "virtualization\\windowscontainers\\containers_welcome.md"
+        "virtualization\\windowscontainers\\containers_welcome.md",
+        "virtualization\\windowscontainers\\index.md"
       ],
       "TokenReference": null,
       "FilePathList": [
@@ -5557,7 +5560,8 @@
       "SourceFilePath": "virtualization\\windowscontainers\\Media\\explore.png",
       "HandoffReason": 2,
       "DependencyFrom": [
-        "virtualization\\windowscontainers\\containers_welcome.md"
+        "virtualization\\windowscontainers\\containers_welcome.md",
+        "virtualization\\windowscontainers\\index.md"
       ],
       "TokenReference": null,
       "FilePathList": [
@@ -7522,7 +7526,8 @@
       "SourceFilePath": "virtualization\\windowscontainers\\Media\\video.png",
       "HandoffReason": 2,
       "DependencyFrom": [
-        "virtualization\\windowscontainers\\containers_welcome.md"
+        "virtualization\\windowscontainers\\containers_welcome.md",
+        "virtualization\\windowscontainers\\index.md"
       ],
       "TokenReference": null,
       "FilePathList": [
@@ -29155,13 +29160,14 @@
     },
     "a1b876d01b8076ee9feb275bd09247775bfcef69": {
       "FileHash": "a1b876d01b8076ee9feb275bd09247775bfcef69",
-      "SourceFileCommit": "1787637fdd2c3bf8ef453a7425dc965e65e5ce12",
-      "SourceFilePath": "virtualization\\windowscontainers\\containers_welcome.md",
+      "SourceFileCommit": "c7ef541ea54eb5c60215ac8eec3000502aa3a523",
+      "SourceFilePath": "virtualization\\windowscontainers\\index.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
       "TokenReference": null,
       "FilePathList": [
-        "virtualization\\windowscontainers\\containers_welcome.md"
+        "virtualization\\windowscontainers\\containers_welcome.md",
+        "virtualization\\windowscontainers\\index.md"
       ],
       "HasMetadata": true,
       "TranslationType": 1,
@@ -29955,7 +29961,8 @@
       "DependencyFrom": null,
       "TokenReference": null,
       "FilePathList": [
-        "virtualization\\hyperv_on_windows\\windows_welcome.md"
+        "virtualization\\hyperv_on_windows\\windows_welcome.md",
+        "virtualization\\windowscontainers\\containers_welcome.md"
       ],
       "HasMetadata": true,
       "TranslationType": 1,
@@ -30647,6 +30654,42 @@
       "HandoffFileCommit": "4a1ec478d49199022165e0c057a47f9060cbd936",
       "HandoffDateTime": "2016-12-21T00:57:22.9547945Z",
       "HandoffXliffHash": "ce2e60181dffb1448c16e6b4f747e27923ebb50c",
+      "HandoffPriority": "",
+      "HandoffException": null,
+      "HandoffFailureTimes": 0,
+      "TargetFileCommit": null,
+      "TargetFilePath": null,
+      "HandbackFilePath": null,
+      "HandbackFileCommit": null,
+      "HandbackDateTime": "0001-01-01T00:00:00",
+      "HandbackException": null,
+      "HandbackFailureTimes": 0,
+      "UpdatedDateTime": "0001-01-01T00:00:00",
+      "ArchiveFilePath": null,
+      "ArchiveFileCommit": null,
+      "ArchiveFileDateTime": "0001-01-01T00:00:00",
+      "ArchiveException": null,
+      "BilingualFilePath": null,
+      "BilingualFileCommit": null,
+      "BilingualDateTime": "0001-01-01T00:00:00",
+      "BilingualException": null
+    },
+    "eac2026cff552315a4cb256b595f1bd3317ee11c": {
+      "FileHash": "eac2026cff552315a4cb256b595f1bd3317ee11c",
+      "SourceFileCommit": "b2950dca4b29e97eb951379645c118468a1fb403",
+      "SourceFilePath": "virtualization\\windowscontainers\\samples.md",
+      "HandoffReason": 1,
+      "DependencyFrom": null,
+      "TokenReference": null,
+      "FilePathList": [
+        "virtualization\\windowscontainers\\samples.md"
+      ],
+      "HasMetadata": true,
+      "TranslationType": 1,
+      "HandoffFilePath": "ol-handoff\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\samples.31014494d9f148c358b40bd77949cf0f75f2ea75.zh-cn.xlf",
+      "HandoffFileCommit": "499ce516b66ca7551e7958496b9de5244d7d2c1c",
+      "HandoffDateTime": "2016-12-21T02:59:07.5637794Z",
+      "HandoffXliffHash": "3ced5113c3bb50b4f51f1c5e29027f3260d179eb",
       "HandoffPriority": "",
       "HandoffException": null,
       "HandoffFailureTimes": 0,
