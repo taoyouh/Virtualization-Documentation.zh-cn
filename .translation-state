@@ -1,8 +1,8 @@
 {
-  "LastProcessedCommit": "ca86c860a5631f1cb767e79de1c4fc176ed5e34c",
+  "LastProcessedCommit": "01242c6274a25f3972c97c6ddd548ddf92e51fc5",
   "LastTranslatedCommit": "123775bcd5419373b6ddccd4417e71420a9b5e71",
   "LastTansformerVersion": null,
-  "LastConfigHash": "ff00901640a5e48935f8532f99fd8794e9c53512",
+  "LastConfigHash": "29134466d580c96f565f628e6890343c7438d343",
   "Items": {
     "5090f6d60b5cbdce0990242d795d9e4e3736e791": {
       "FileHash": "5090f6d60b5cbdce0990242d795d9e4e3736e791",
@@ -3845,7 +3845,8 @@
       "SourceFilePath": "virtualization\\community\\media\\editDoc.png",
       "HandoffReason": 2,
       "DependencyFrom": [
-        "virtualization\\community\\contribute_to_docs.md"
+        "virtualization\\community\\contribute_to_docs.md",
+        "virtualization\\community\\contribute-to-docs.md"
       ],
       "TokenReference": null,
       "FilePathList": [
@@ -3883,7 +3884,8 @@
       "SourceFilePath": "virtualization\\community\\media\\GitHubView.png",
       "HandoffReason": 2,
       "DependencyFrom": [
-        "virtualization\\community\\contribute_to_docs.md"
+        "virtualization\\community\\contribute_to_docs.md",
+        "virtualization\\community\\contribute-to-docs.md"
       ],
       "TokenReference": null,
       "FilePathList": [
@@ -3921,7 +3923,8 @@
       "SourceFilePath": "virtualization\\community\\media\\GitHubEdit.png",
       "HandoffReason": 2,
       "DependencyFrom": [
-        "virtualization\\community\\contribute_to_docs.md"
+        "virtualization\\community\\contribute_to_docs.md",
+        "virtualization\\community\\contribute-to-docs.md"
       ],
       "TokenReference": null,
       "FilePathList": [
@@ -4247,7 +4250,8 @@
       "SourceFilePath": "virtualization\\community\\media\\GitHubEditor.png",
       "HandoffReason": 2,
       "DependencyFrom": [
-        "virtualization\\community\\contribute_to_docs.md"
+        "virtualization\\community\\contribute_to_docs.md",
+        "virtualization\\community\\contribute-to-docs.md"
       ],
       "TokenReference": null,
       "FilePathList": [
@@ -4359,7 +4363,8 @@
       "SourceFilePath": "virtualization\\community\\media\\GitHubCreatePR.png",
       "HandoffReason": 2,
       "DependencyFrom": [
-        "virtualization\\community\\contribute_to_docs.md"
+        "virtualization\\community\\contribute_to_docs.md",
+        "virtualization\\community\\contribute-to-docs.md"
       ],
       "TokenReference": null,
       "FilePathList": [
@@ -4469,7 +4474,8 @@
       "SourceFilePath": "virtualization\\community\\media\\GitHubProposeChange.png",
       "HandoffReason": 2,
       "DependencyFrom": [
-        "virtualization\\community\\contribute_to_docs.md"
+        "virtualization\\community\\contribute_to_docs.md",
+        "virtualization\\community\\contribute-to-docs.md"
       ],
       "TokenReference": null,
       "FilePathList": [
@@ -7344,7 +7350,8 @@
       "SourceFilePath": "virtualization\\community\\media\\GitFromWinCMD.png",
       "HandoffReason": 2,
       "DependencyFrom": [
-        "virtualization\\community\\contribute_to_docs.md"
+        "virtualization\\community\\contribute_to_docs.md",
+        "virtualization\\community\\contribute-to-docs.md"
       ],
       "TokenReference": null,
       "FilePathList": [
@@ -30690,6 +30697,42 @@
       "HandoffFileCommit": "499ce516b66ca7551e7958496b9de5244d7d2c1c",
       "HandoffDateTime": "2016-12-21T02:59:07.5637794Z",
       "HandoffXliffHash": "3ced5113c3bb50b4f51f1c5e29027f3260d179eb",
+      "HandoffPriority": "",
+      "HandoffException": null,
+      "HandoffFailureTimes": 0,
+      "TargetFileCommit": null,
+      "TargetFilePath": null,
+      "HandbackFilePath": null,
+      "HandbackFileCommit": null,
+      "HandbackDateTime": "0001-01-01T00:00:00",
+      "HandbackException": null,
+      "HandbackFailureTimes": 0,
+      "UpdatedDateTime": "0001-01-01T00:00:00",
+      "ArchiveFilePath": null,
+      "ArchiveFileCommit": null,
+      "ArchiveFileDateTime": "0001-01-01T00:00:00",
+      "ArchiveException": null,
+      "BilingualFilePath": null,
+      "BilingualFileCommit": null,
+      "BilingualDateTime": "0001-01-01T00:00:00",
+      "BilingualException": null
+    },
+    "d4fd2dbaf362ac3ad52667743177a203174b397d": {
+      "FileHash": "d4fd2dbaf362ac3ad52667743177a203174b397d",
+      "SourceFileCommit": "54eff4bb74ac9f4dc870d6046654bf918eac9bb5",
+      "SourceFilePath": "virtualization\\community\\contribute-to-docs.md",
+      "HandoffReason": 1,
+      "DependencyFrom": null,
+      "TokenReference": null,
+      "FilePathList": [
+        "virtualization\\community\\contribute-to-docs.md"
+      ],
+      "HasMetadata": true,
+      "TranslationType": 1,
+      "HandoffFilePath": "ol-handoff\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\contribute-to-docs.642bd41476b28823a34d3acbe43d8704678f72cd.zh-cn.xlf",
+      "HandoffFileCommit": "d279f0beed56eed49c88bb2e69c114ea00da133e",
+      "HandoffDateTime": "2016-12-21T20:58:29.6866258Z",
+      "HandoffXliffHash": "545e65364d161c0726ef74b9184794ddd65dbc12",
       "HandoffPriority": "",
       "HandoffException": null,
       "HandoffFailureTimes": 0,
