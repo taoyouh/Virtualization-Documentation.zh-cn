@@ -4,38 +4,62 @@
   "need_generate_intellisense": false,
   "docsets_to_publish": [
     {
+      "docset_name": "Microsoft_Windows-Container-Documentation-Private_api",
+      "build_source_folder": "virtualization/api",
+      "build_output_subfolder": "virtualization/api",
+      "locale": "zh-cn",
+      "version": 0,
+      "open_to_public_contributors": true,
+      "type_mapping": {
+        "Conceptual": "Content",
+        "ManagedReference": "Content",
+        "RestApi": "Content"
+      },
+      "build_entry_point": "docs",
+      "template_folder": "_themes"
+    },
+    {
       "docset_name": "Microsoft_Windows-Container-Documentation-Private_community",
+      "build_source_folder": "virtualization/community",
       "build_output_subfolder": "virtualization/community",
       "locale": "zh-cn",
       "version": 0,
       "open_to_public_contributors": true,
       "type_mapping": {
         "Conceptual": "Content"
-      }
+      },
+      "build_entry_point": "docs",
+      "template_folder": "_themes"
     },
     {
       "docset_name": "Microsoft_Windows-Container-Documentation-Private_hyperv_on_windows",
+      "build_source_folder": "virtualization/hyper_v_on_windows",
       "build_output_subfolder": "virtualization/hyperv_on_windows",
       "locale": "zh-cn",
       "version": 0,
       "open_to_public_contributors": true,
       "type_mapping": {
         "Conceptual": "Content"
-      }
+      },
+      "build_entry_point": "docs",
+      "template_folder": "_themes"
     },
     {
       "docset_name": "Microsoft_Windows-Container-Documentation-Private_windowscontainers",
+      "build_source_folder": "virtualization/windowscontainers",
       "build_output_subfolder": "virtualization/windowscontainers",
       "locale": "zh-cn",
       "version": 0,
       "open_to_public_contributors": true,
       "type_mapping": {
         "Conceptual": "Content"
-      }
+      },
+      "build_entry_point": "docs",
+      "template_folder": "_themes"
     }
   ],
   "notification_subscribers": [
-    "mayast@microsoft.com"
+    "scooley@microsoft.com"
   ],
   "branches_to_filter": [
     "master-oldev",
@@ -45,9 +69,19 @@
   "skip_source_output_uploading": false,
   "dependent_repositories": [
     {
+      "path_to_root": "_themes",
+      "url": "https://github.com/Microsoft/templates.docs.msft.zh-cn",
+      "branch": "master",
+      "branch_mapping": {}
+    },
+    {
       "path_to_root": "_repo.en-us",
       "url": "https://github.com/Microsoft/Virtualization-Documentation-Private",
-      "branch": "live"
+      "branch": "live",
+      "branch_mapping": {
+        "live": "live",
+        "master": "master"
+      }
     }
   ],
   "need_generate_pdf_url_template": false
