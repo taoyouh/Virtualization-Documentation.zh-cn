@@ -996,7 +996,7 @@
       "TranslationType": 1,
       "IsArchived": false,
       "ArchivedDateTime": "0001-01-01T00:00:00",
-      "SkeletonFile": "ol-xliffcache\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\10c8a1bd33aaeb48d1e35870dfeebd3b4c9e9fec.3ca3d043d46011dd20a01bbf2a8bdb908bfbc6b2.xml",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\511ab57969bfce02048c2a0cf7986524910457fc.301d693a667a29cadca01661bb6170a2df1c05d0.xml",
       "LocXliff": null,
       "LocXliffCommit": null
     },
@@ -1016,7 +1016,7 @@
       "TranslationType": 1,
       "IsArchived": false,
       "ArchivedDateTime": "0001-01-01T00:00:00",
-      "SkeletonFile": "ol-xliffcache\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\aef11acd0207f715127fa94f7d12cfca4802a21c.994f535df23f6dd740e7b62045ec89000648d6b3.xml",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\1a02d68ea299732f14066794b7c240773a7fae97.9f0ea5d5b09751ea654098db5c4e38986455aa74.xml",
       "LocXliff": null,
       "LocXliffCommit": null
     },
@@ -1087,6 +1087,16 @@
       "IsArchived": false,
       "ArchivedDateTime": "0001-01-01T00:00:00",
       "SkeletonFile": "ol-xliffcache\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\ad7be1b6fe29fbfa7ee74aa97f5f0c220adb636e.856ac9e81e737258731f617d17c7567f0c8d3621.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "virtualization\\windowscontainers\\management\\hyperv_container.md.4f65fb345fc4a7b9501e25197d6c530af0151fae.HT": {
+      "SourceFilename": "virtualization\\windowscontainers\\management\\hyperv_container.md",
+      "XliffHash": "4f65fb345fc4a7b9501e25197d6c530af0151fae",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\3b043f0c8c50c0b92e7e3453bbaf9127bb5d41c7.520c1ac3aa3d5349af22d3b7f4cfe655952e86c9.xml",
       "LocXliff": null,
       "LocXliffCommit": null
     }
