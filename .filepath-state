@@ -1,4 +1,61 @@
 {
+  "7746c4675bfca7f94a2145e6b08059a99ea6b2c5": [
+    "virtualization\\hyper-v-on-windows\\user-guide\\media\\checkpoint_upd.png"
+  ],
+  "3436e8146018e5a07a847a00dc72d134d19506a1": [
+    "virtualization\\hyper-v-on-windows\\user-guide\\media\\std_checkpoint_upd.png"
+  ],
+  "1808dbf613804162cbe255a058de2d5cc4f9f794": [
+    "virtualization\\hyper-v-on-windows\\user-guide\\media\\apply_standard_upd.png"
+  ],
+  "5dbb953b1b4dbaf1291bfa0a590c49b539c54cb7": [
+    "virtualization\\hyper-v-on-windows\\user-guide\\media\\production_Checkpoin_upd.png"
+  ],
+  "c830f164a513bd6125dc1a30f7cf1990e1c9470a": [
+    "virtualization\\hyper-v-on-windows\\reference\\media\\SystemInfo-upd.png"
+  ],
+  "b638099bf81d9a6f9d3c31f83364d60032084c48": [
+    "virtualization\\hyper-v-on-windows\\quick-start\\media\\new_vm_upd.png"
+  ],
+  "686bd084704a7ab40ec034df3ae822a114b24b21": [
+    "virtualization\\hyper-v-on-windows\\quick-start\\media\\new_vhd_upd.png"
+  ],
+  "d386c086a47d50518b256b7f1967d65d2004887e": [
+    "virtualization\\hyper-v-on-windows\\quick-start\\media\\OSDeploy_upd.png"
+  ],
+  "1323985a77d40a39f3191207c703e3b426a55795": [
+    "virtualization\\hyper-v-on-windows\\quick-start\\media\\enable_role_upd.png"
+  ],
+  "14f7db98c0da674b247f404a300b05fdff35f12d": [
+    "virtualization\\hyper-v-on-windows\\quick-start\\media\\restart_upd.png"
+  ],
+  "a303041e7915293e2affe84599cab647d43119a8": [
+    "virtualization\\hyper-v-on-windows\\quick-start\\media\\dism_upd.png"
+  ],
+  "44a0686f5ce5d1544b8a61bcad0a06eb1e1ce9d4": [
+    "virtualization\\hyper-v-on-windows\\quick-start\\media\\command_grid.png"
+  ],
+  "9d753332489389765c1ea1cfa1737126a201644c": [
+    "virtualization\\hyper-v-on-windows\\quick-start\\media\\get_help.png"
+  ],
+  "579a5b151617e20cfb4e116a6f365a96dbaa9c4a": [
+    "virtualization\\hyper-v-on-windows\\quick-start\\media\\get_vm.png"
+  ],
+  "d71d2800e3c9442a264de165813142157420b5f6": [
+    "virtualization\\hyper-v-on-windows\\quick-start\\media\\newSwitch_upd.png"
+  ],
+  "dc04e26b6b30d2de9b6d25fc96eb5ff248a877e0": [
+    "virtualization\\hyper-v-on-windows\\quick-start\\media\\pen_changes_upd.png"
+  ],
+  "215adae041390b1edb10b314dc7ce21f6b39592e": [
+    "virtualization\\hyper-v-on-windows\\media\\MeetsRequirements_65.png"
+  ],
+  "8489e1cb35de12a7cc54a8c1b29f40672eaac851": [
+    "virtualization\\hyper-v-on-windows\\media\\All_ContentTypeIcons_VisualWalkthrough_65.png"
+  ],
+  "7de8389ab2b14e0926c142bf61be560037fc2658": [
+    "virtualization\\hyper-v-on-windows\\media\\Chat_65.png"
+  ],
   "462549855f0dc3ac092960bf1709fb01c3a02b3a": [
     "virtualization\\community\\media\\editDoc.png"
   ],
@@ -20,7 +77,134 @@
   "54974198eb9f9f9ea840b99e83eab5952f3f6b9a": [
     "virtualization\\community\\media\\GitFromWinCMD.png"
   ],
+  "224b91fc286f31a5c23fe3d7c9d36b178f6b04c3": [
+    "virtualization\\hyper-v-on-windows\\user-guide\\media\\flightingSDK.png"
+  ],
+  "f772a26f2ad52c8ed28d40ca35c91ed6f3eab872": [
+    "virtualization\\hyper-v-on-windows\\about\\supported-guest-os.md"
+  ],
+  "520ef410eddad61c40d31655e6bf7ede7846d4b2": [
+    "virtualization\\hyper-v-on-windows\\quick-start\\try-hyper-v-powershell.md"
+  ],
+  "a92ba96f26ae2881d2c6013e8b8dcf7bafe69a47": [
+    "virtualization\\hyper-v-on-windows\\reference\\tlfs.md"
+  ],
+  "ea91ea0ffca5479cb0593ef9961625f7b7ab1f42": [
+    "virtualization\\hyper-v-on-windows\\user-guide\\create-pre-release-vm.md"
+  ],
+  "b0903a3e00b92bc60e26282dde072b66030ada09": [
+    "virtualization\\hyper-v-on-windows\\user-guide\\nested-virtualization.md"
+  ],
+  "4e887dc8c284dd189dc59a71aa9d22d6c8a231ea": [
+    "virtualization\\hyper-v-on-windows\\user-guide\\checkpoints.md"
+  ],
+  "41ec8d50af4b7ab2ec7e94b30397f4301502d372": [
+    "virtualization\\hyper-v-on-windows\\about\\hyperv_on_windows.md",
+    "virtualization\\hyper-v-on-windows\\about\\whats_new.md",
+    "virtualization\\hyper-v-on-windows\\windows_welcome.md"
+  ],
   "d4fd2dbaf362ac3ad52667743177a203174b397d": [
     "virtualization\\community\\contribute-to-docs.md"
+  ],
+  "0c80c2ddbecfe2ef8d35fbd66c5fa338c0f04a9c": [
+    "virtualization\\hyper-v-on-windows\\about\\index.md"
+  ],
+  "735633612e69be0b3a79f904306d6e834b4cead1": [
+    "virtualization\\hyper-v-on-windows\\develop\\make_mgmt_service.md"
+  ],
+  "20dc389371bc8510ef7df81898fb9c7b5997dda1": [
+    "virtualization\\hyper-v-on-windows\\develop\\powershell_snippets.md"
+  ],
+  "9047d1dd97936d904ad63cef6fa77fabe993d6af": [
+    "virtualization\\hyper-v-on-windows\\develop\\tlfs.md"
+  ],
+  "a070164812b7dca39070d5f78411a017457f8573": [
+    "virtualization\\hyper-v-on-windows\\index.md"
+  ],
+  "ddf03e4ecb72cafec72aac5ab78d009cefb68773": [
+    "virtualization\\hyper-v-on-windows\\quick_start\\index.md",
+    "virtualization\\hyper-v-on-windows\\quick_start\\walkthrough.md"
+  ],
+  "9519f9770b0bcb30bd60714c76ac75ae555afeb5": [
+    "virtualization\\hyper-v-on-windows\\quick_start\\walkthrough_checkpoints.md",
+    "virtualization\\hyper-v-on-windows\\user_guide\\checkpoints.md"
+  ],
+  "577861d3b1240a3ce9ae4362b4a4b44088907882": [
+    "virtualization\\hyper-v-on-windows\\quick_start\\walkthrough_compatibility.md"
+  ],
+  "a7d219b11f4593f77970196c192d99579d4e23d9": [
+    "virtualization\\hyper-v-on-windows\\quick_start\\walkthrough_create_vm.md"
+  ],
+  "adf2f2c0ab1023f7efa696ba16478211d3647f28": [
+    "virtualization\\hyper-v-on-windows\\quick_start\\walkthrough_export_import.md"
+  ],
+  "5c60012a35d7e8f35f27d3fb03c36765786261c3": [
+    "virtualization\\hyper-v-on-windows\\quick_start\\walkthrough_install.md"
+  ],
+  "a45863878196a545162b8859d3fa7681cdbedeed": [
+    "virtualization\\hyper-v-on-windows\\quick_start\\walkthrough_powershell.md"
+  ],
+  "cba03be09dc045f10a61b401788fc6b78396c04d": [
+    "virtualization\\hyper-v-on-windows\\quick_start\\walkthrough_virtual_switch.md"
+  ],
+  "8cba7f02a0633b50d239a414d408cef81bea9c6b": [
+    "virtualization\\hyper-v-on-windows\\quick-start\\connect-to-network.md"
+  ],
+  "19889805c3e4d6d650306de1028e117bcb42ec71": [
+    "virtualization\\hyper-v-on-windows\\quick-start\\create-virtual-machine.md"
+  ],
+  "c87e964aac32183eddf000d84d96ffa1122075f7": [
+    "virtualization\\hyper-v-on-windows\\quick-start\\enable-hyper-v.md"
+  ],
+  "d03fec3bf9de363974cefc60c72363e872a22634": [
+    "virtualization\\hyper-v-on-windows\\quick-start\\index.md"
+  ],
+  "2d8b0d14d4c57a2a224fdbf4ac58c457c8c080e7": [
+    "virtualization\\hyper-v-on-windows\\reference\\hyper-v-requirements.md"
+  ],
+  "46019a10c55cc11c2f25b8c4b23edc6f5d140e36": [
+    "virtualization\\hyper-v-on-windows\\reference\\integration-services.md"
+  ],
+  "e89b44692e99454cba0044958422e85693df4e3f": [
+    "virtualization\\hyper-v-on-windows\\TOC.md"
+  ],
+  "910ab0b9686d18fbaba738b8d0bd99b5f0825787": [
+    "virtualization\\hyper-v-on-windows\\user_guide\\create_pre-release_vm.md"
+  ],
+  "f4d11b8f464bcfc6929ce18ee72c01d5a9eb7eba": [
+    "virtualization\\hyper-v-on-windows\\user_guide\\export_import.md"
+  ],
+  "c27a51e9a12de9cec2720eadf6e09b8a582bae77": [
+    "virtualization\\hyper-v-on-windows\\user_guide\\managing_ics.md"
+  ],
+  "5daad47a3a928850444aaf4616463d55941d2f54": [
+    "virtualization\\hyper-v-on-windows\\user_guide\\migrating_vms.md"
+  ],
+  "5a09ed89dc8dbc447132fd1a69dd5e7aa232dc21": [
+    "virtualization\\hyper-v-on-windows\\user_guide\\nesting.md"
+  ],
+  "c5752aee969adbcaa9935ec95cbc3ca8cd128a65": [
+    "virtualization\\hyper-v-on-windows\\user_guide\\remote_host_management.md"
+  ],
+  "75604382e7ab6af5c653836160051baf17a2ca96": [
+    "virtualization\\hyper-v-on-windows\\user_guide\\setup_nat_network.md"
+  ],
+  "2b82971e8cfbb4f520c779696939d8c429f03649": [
+    "virtualization\\hyper-v-on-windows\\user_guide\\troubleshooting.md"
+  ],
+  "7659dc7b0bbae513796c8f910306091180194f8e": [
+    "virtualization\\hyper-v-on-windows\\user_guide\\vmsession.md"
+  ],
+  "9e4be610f02e12f48fb88464eb8075b97996d5b2": [
+    "virtualization\\hyper-v-on-windows\\user-guide\\make-integration-service.md"
+  ],
+  "1eea533459b565ffceca23ca7454e9678abc52e9": [
+    "virtualization\\hyper-v-on-windows\\user-guide\\powershell-direct.md"
+  ],
+  "4e758b9ca6b318930e397685097a7769a9600099": [
+    "virtualization\\hyper-v-on-windows\\user-guide\\setup-nat-network.md"
+  ],
+  "4d1b7b310d0df7c198d5446b339a9c38279c72db": [
+    "virtualization\\hyper-v-on-windows\\user-guide\\troubleshooting.md"
   ]
 }
