@@ -125,5 +125,8 @@
   ],
   "4d1b7b310d0df7c198d5446b339a9c38279c72db": [
     "virtualization\\hyper-v-on-windows\\user-guide\\troubleshooting.md"
+  ],
+  "dfb94dfcc92ae6ae5efcbd924695ffe9bd099e34": [
+    "virtualization\\hyper-v-on-windows\\about\\supported_guest_os.md"
   ]
 }

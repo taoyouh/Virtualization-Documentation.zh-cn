@@ -1459,6 +1459,16 @@
       "SkeletonFile": "ol-xliffcache\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\19889805c3e4d6d650306de1028e117bcb42ec71.ac3a2780fce831783a4cac130ff760b6c7ded1bf.xml",
       "LocXliff": null,
       "LocXliffCommit": null
+    },
+    "virtualization\\hyper-v-on-windows\\about\\supported_guest_os.md.da39a3ee5e6b4b0d3255bfef95601890afd80709.HT": {
+      "SourceFilename": "virtualization\\hyper-v-on-windows\\about\\supported_guest_os.md",
+      "XliffHash": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\dfb94dfcc92ae6ae5efcbd924695ffe9bd099e34.3792f805aeb327d632260141bc8eb9b8335db837.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
     }
   }
 }
