@@ -1596,7 +1596,7 @@
       "TranslationType": 1,
       "IsArchived": false,
       "ArchivedDateTime": "0001-01-01T00:00:00",
-      "SkeletonFile": "ol-xliffcache\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\46019a10c55cc11c2f25b8c4b23edc6f5d140e36.b5f55b678ef786212b93753f815a19041e0b238d.xml",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\647c47998334600dc4f143d2471c0104e5d4e9a9.4c6866bd66935de017f4876cc111b0ee65de2775.xml",
       "LocXliff": null,
       "LocXliffCommit": null
     },
@@ -1607,6 +1607,326 @@
       "IsArchived": false,
       "ArchivedDateTime": "0001-01-01T00:00:00",
       "SkeletonFile": "ol-xliffcache\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\19889805c3e4d6d650306de1028e117bcb42ec71.ac3a2780fce831783a4cac130ff760b6c7ded1bf.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "virtualization\\windowscontainers\\docker\\configure_docker_daemon.md.da39a3ee5e6b4b0d3255bfef95601890afd80709.HT": {
+      "SourceFilename": "virtualization\\windowscontainers\\docker\\configure_docker_daemon.md",
+      "XliffHash": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\f5835e3ebf95f9588b99885050d9247005bc4bf0.366edc268fd6d3d02310f50b43df98209050f255.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "virtualization\\windowscontainers\\management\\manage_resources.md.da39a3ee5e6b4b0d3255bfef95601890afd80709.HT": {
+      "SourceFilename": "virtualization\\windowscontainers\\management\\manage_resources.md",
+      "XliffHash": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\f651172a7d958866f3370c9c0cb8b870298eb76d.1a47e81bff920c53ce5166d66c7334b1f5acd46c.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "virtualization\\windowscontainers\\quick-start\\quick-start-images.md.06cd1ca1b264f7a351ebed54c98cbf7944c1df47.HT": {
+      "SourceFilename": "virtualization\\windowscontainers\\quick-start\\quick-start-images.md",
+      "XliffHash": "06cd1ca1b264f7a351ebed54c98cbf7944c1df47",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\6add396bea629d5438cde5892458f6c8405bf644.78d8ee2700975f7dc5126e40aceea038b9afedcf.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "virtualization\\windowscontainers\\quick-start\\quick-start-windows-10.md.3f6a12554d794143fbfd5d4cb4d8903e99e1d213.HT": {
+      "SourceFilename": "virtualization\\windowscontainers\\quick-start\\quick-start-windows-10.md",
+      "XliffHash": "3f6a12554d794143fbfd5d4cb4d8903e99e1d213",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\8aba9f2ef619b79e7459d7fd55bd27cf107621b3.2fd557f0c8761f908581ba7efef57e3668ed37af.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "virtualization\\windowscontainers\\about\\container_ecosystem.md.da39a3ee5e6b4b0d3255bfef95601890afd80709.HT": {
+      "SourceFilename": "virtualization\\windowscontainers\\about\\container_ecosystem.md",
+      "XliffHash": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\4bc50c399c5fc5a5d3a7109744714c34a814319e.0437f12a63f9c56f7c5601a3c68ffc4a502db9b8.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "virtualization\\windowscontainers\\management\\hyperv_container.md.da39a3ee5e6b4b0d3255bfef95601890afd80709.HT": {
+      "SourceFilename": "virtualization\\windowscontainers\\management\\hyperv_container.md",
+      "XliffHash": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\349f9202173c6b79a8b91ffdce836e640fa290bd.bb8bd811893fe28f1d9f04d7b7af81c7f025dbfb.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "virtualization\\windowscontainers\\quick-start\\quick-start-windows-server.md.adf386781dec49598848e219ab6871d41d86b381.HT": {
+      "SourceFilename": "virtualization\\windowscontainers\\quick-start\\quick-start-windows-server.md",
+      "XliffHash": "adf386781dec49598848e219ab6871d41d86b381",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\31a55ead81e05f7dee1d1f4f8a2101114d1ca017.b007c144b0c3dc40f02b43c435e9b8da42e0c6cc.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "virtualization\\windowscontainers\\troubleshooting.md.37b7bab72341f385422209297a2c1a034ae4a706.HT": {
+      "SourceFilename": "virtualization\\windowscontainers\\troubleshooting.md",
+      "XliffHash": "37b7bab72341f385422209297a2c1a034ae4a706",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\9f28c35c6eaddd8bcf3883863b63251378f845a7.c62c4a2b20152490c96ecee63efdb69898948ec4.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "virtualization\\windowscontainers\\manage-docker\\configure-docker-daemon.md.a602ff1a294165333b14a7cd236d77f80597a8f4.HT": {
+      "SourceFilename": "virtualization\\windowscontainers\\manage-docker\\configure-docker-daemon.md",
+      "XliffHash": "a602ff1a294165333b14a7cd236d77f80597a8f4",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\ee249bafe3c86ba7a7fb6f0335664e9ce485a74e.a07d621b65d6939003f0f86d8e49849265dc04da.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "virtualization\\windowscontainers\\manage-containers\\container-networking.md.35b6ea8f901136506b6a7cb4863ece5aa9b67992.HT": {
+      "SourceFilename": "virtualization\\windowscontainers\\manage-containers\\container-networking.md",
+      "XliffHash": "35b6ea8f901136506b6a7cb4863ece5aa9b67992",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\aff515917e195008899382c491ab0af2ebdb3c13.bd4e101bb7ba5120c26286a331cb0cd0c094d86a.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "virtualization\\windowscontainers\\index.md.5d4d104c667700c9fd933124c26f07a81b5131b4.HT": {
+      "SourceFilename": "virtualization\\windowscontainers\\index.md",
+      "XliffHash": "5d4d104c667700c9fd933124c26f07a81b5131b4",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\9b630e372b575ef1721c0d0926ec2caec3e5ec34.7a80b81dab0a92243c6d5e60c112241435e749b3.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "virtualization\\windowscontainers\\manage-docker\\manage-windows-dockerfile.md.e694e7857b0dc31f6d84199d934e1fd9f8e14eeb.HT": {
+      "SourceFilename": "virtualization\\windowscontainers\\manage-docker\\manage-windows-dockerfile.md",
+      "XliffHash": "e694e7857b0dc31f6d84199d934e1fd9f8e14eeb",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\9dcac129e7c95fa416437061c426fee850db11b4.fe8ebb0b1f25f329a7fcdd8e68d4afc2f1a716ee.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "virtualization\\windowscontainers\\management\\docker-powershell.md.da39a3ee5e6b4b0d3255bfef95601890afd80709.HT": {
+      "SourceFilename": "virtualization\\windowscontainers\\management\\docker-powershell.md",
+      "XliffHash": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\1b4b36def403bbaf75c9828bf36d72e83f6114b5.431427e8c6b1a498996919a2d1e2d8728a0e2d44.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "virtualization\\windowscontainers\\deployment\\system_requirements.md.da39a3ee5e6b4b0d3255bfef95601890afd80709.HT": {
+      "SourceFilename": "virtualization\\windowscontainers\\deployment\\system_requirements.md",
+      "XliffHash": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\441815bed7d4bffa5e19e7294abae2dc31947fa2.b63656abdb44b0c9992d0823f3d00e8430e868bd.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "virtualization\\windowscontainers\\deploy-containers\\deploy-containers-on-server.md.e6e06624fd675a698a4e9909e77f8afec18871b4.HT": {
+      "SourceFilename": "virtualization\\windowscontainers\\deploy-containers\\deploy-containers-on-server.md",
+      "XliffHash": "e6e06624fd675a698a4e9909e77f8afec18871b4",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\6e113b5ddc74b5a4e6ee23b06ef635a7ba0d4693.c99053557931fe375080912ef4e0d3d351cd08f4.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "virtualization\\windowscontainers\\quick_start\\quick_start_windows_server.md.da39a3ee5e6b4b0d3255bfef95601890afd80709.HT": {
+      "SourceFilename": "virtualization\\windowscontainers\\quick_start\\quick_start_windows_server.md",
+      "XliffHash": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\9cea692083f9e50d3f482e7c9333652f5f9bf443.d873b84249fa3233227fb20b032288b1652d1d48.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "virtualization\\windowscontainers\\manage-containers\\container-base-images.md.2cc94c2ff788745a2b7068d700581bff3126964e.HT": {
+      "SourceFilename": "virtualization\\windowscontainers\\manage-containers\\container-base-images.md",
+      "XliffHash": "2cc94c2ff788745a2b7068d700581bff3126964e",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\622c8f638a815e19a54aa75b6b5ea0688d966ae3.1f23a4b27840d0ec96f41542364578a7403de5ee.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "virtualization\\windowscontainers\\management\\manage_data.md.da39a3ee5e6b4b0d3255bfef95601890afd80709.HT": {
+      "SourceFilename": "virtualization\\windowscontainers\\management\\manage_data.md",
+      "XliffHash": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\94467b4dbebcc25009320d42460bf542fe3cab45.b8b6d928426113cb28f190faaa4b11b241b675de.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "virtualization\\windowscontainers\\deployment\\deployment.md.da39a3ee5e6b4b0d3255bfef95601890afd80709.HT": {
+      "SourceFilename": "virtualization\\windowscontainers\\deployment\\deployment.md",
+      "XliffHash": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\60d7b6cf3fdce3c988da7c16c0367013be2cafec.17cab7ec11c36566d6918924eabc18a13d33f4b1.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "virtualization\\windowscontainers\\management\\manage_serviceaccounts.md.da39a3ee5e6b4b0d3255bfef95601890afd80709.HT": {
+      "SourceFilename": "virtualization\\windowscontainers\\management\\manage_serviceaccounts.md",
+      "XliffHash": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\b06e92c6398ceba7a1ba597765625212170cbd13.cbfb0b7fc36db135a4e714d00cdf155541eb9ea6.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "virtualization\\windowscontainers\\deploy-containers\\deploy-containers-on-nano.md.308a2937ce30c9e6a926f65e5d8a0cfcc4160c42.HT": {
+      "SourceFilename": "virtualization\\windowscontainers\\deploy-containers\\deploy-containers-on-nano.md",
+      "XliffHash": "308a2937ce30c9e6a926f65e5d8a0cfcc4160c42",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\b9a02184a98f392d5ee323dc3e939d137ce7e4e6.46ee151fe07387db03198a2bc72e91f7e0d09db2.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "virtualization\\windowscontainers\\deployment\\deployment_nano.md.da39a3ee5e6b4b0d3255bfef95601890afd80709.HT": {
+      "SourceFilename": "virtualization\\windowscontainers\\deployment\\deployment_nano.md",
+      "XliffHash": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\1988e55cfb9f3e76473e9398538e6b97344bedac.322111f9ce8323e40c060ee85b87eac80de9d891.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "virtualization\\windowscontainers\\management\\container_networking.md.da39a3ee5e6b4b0d3255bfef95601890afd80709.HT": {
+      "SourceFilename": "virtualization\\windowscontainers\\management\\container_networking.md",
+      "XliffHash": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\02c8e82cb7d2a2dce902133f09a16f37fe6cde21.b9d1e2dc518acb7efbf7fba664299b76eb32c004.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "virtualization\\windowscontainers\\Images_EULA.md.da39a3ee5e6b4b0d3255bfef95601890afd80709.HT": {
+      "SourceFilename": "virtualization\\windowscontainers\\Images_EULA.md",
+      "XliffHash": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\8824e9e6864f5cf7ed5e3a5a574a060d5b7b65b7.d56d10f65ca3de124efe683cf70630ef68f6ec12.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "virtualization\\windowscontainers\\manage-docker\\optimize-windows-dockerfile.md.983f81d7495e50f9bfb70dd0543668aa4fc0cc86.HT": {
+      "SourceFilename": "virtualization\\windowscontainers\\manage-docker\\optimize-windows-dockerfile.md",
+      "XliffHash": "983f81d7495e50f9bfb70dd0543668aa4fc0cc86",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\2077f7cf0428e08ce915470ac4cc3b0ccc9c6369.39bb7cbab196837ebceed8864a78701c8dc77b41.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "virtualization\\windowscontainers\\quick_start\\quick_start_images.md.da39a3ee5e6b4b0d3255bfef95601890afd80709.HT": {
+      "SourceFilename": "virtualization\\windowscontainers\\quick_start\\quick_start_images.md",
+      "XliffHash": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\feb8a70877b5c92e25425acc5246a3f6e6d9093c.0bc1908d6ebfec229fd41e930b6128ae869d51fc.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "virtualization\\windowscontainers\\quick-start\\index.md.ca19ac8fe1f7b99224ed567883432928467274b0.HT": {
+      "SourceFilename": "virtualization\\windowscontainers\\quick-start\\index.md",
+      "XliffHash": "ca19ac8fe1f7b99224ed567883432928467274b0",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\d91f53908610ca245b6c8b4c017baed7f044667e.e24d86f6467b3747a3010c24a9076781623ff0f7.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "virtualization\\windowscontainers\\docker\\optimize_windows_dockerfile.md.da39a3ee5e6b4b0d3255bfef95601890afd80709.HT": {
+      "SourceFilename": "virtualization\\windowscontainers\\docker\\optimize_windows_dockerfile.md",
+      "XliffHash": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\00e5deb2ec974c59b27675c56309c33a3f1ed4c4.c4c93bd6d361c0fe150c89f15fc3bd7d9083bb01.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "virtualization\\windowscontainers\\management\\manage_images.md.da39a3ee5e6b4b0d3255bfef95601890afd80709.HT": {
+      "SourceFilename": "virtualization\\windowscontainers\\management\\manage_images.md",
+      "XliffHash": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\baea1ae8195737eafeade6c2e42a328bf4b12532.e071e1b28418762e64c0a7a6946c991ff7e6227d.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "virtualization\\windowscontainers\\docker\\manage_windows_dockerfile.md.da39a3ee5e6b4b0d3255bfef95601890afd80709.HT": {
+      "SourceFilename": "virtualization\\windowscontainers\\docker\\manage_windows_dockerfile.md",
+      "XliffHash": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\fc0620cd9bdd27c2bcd863cee22c73dc95560f1a.0c54c35a37d41093df4dcd07ed044b20b6942a59.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "virtualization\\windowscontainers\\management\\manage_containers.md.da39a3ee5e6b4b0d3255bfef95601890afd80709.HT": {
+      "SourceFilename": "virtualization\\windowscontainers\\management\\manage_containers.md",
+      "XliffHash": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\b6725f24beabb5331eff7d5243c2fe1c3c491001.490cf01b25b78c905ec60804f6cc64fa2ec4ec03.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "virtualization\\windowscontainers\\quick_start\\quick_start_windows_10.md.da39a3ee5e6b4b0d3255bfef95601890afd80709.HT": {
+      "SourceFilename": "virtualization\\windowscontainers\\quick_start\\quick_start_windows_10.md",
+      "XliffHash": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\b8ec3b5d9a22efa13cf5c14f8f2cc1712bb02c52.4014fa548a194c231c3b7b3b737e262ed74f533c.xml",
       "LocXliff": null,
       "LocXliffCommit": null
     }
