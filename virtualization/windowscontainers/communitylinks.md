@@ -1,5 +1,21 @@
+---
+title: "社区视频和博客"
+description: "指向由 Windows 容器社区贡献的精彩视频和博客的链接"
+keywords: "docker, 容器, windows, 示例"
+author: taylorb-microsoft
+ms.date: 12/19/2016
+ms.topic: article
+ms.prod: windows-containers
+ms.service: windows-containers
+ms.assetid: cfbb2542-fead-48e7-8318-4da92a7b5b6f
+translationtype: Human Translation
+ms.sourcegitcommit: b721971f1ba0ab5369dc8b0917f57dfe187a618c
+ms.openlocfilehash: 81f84901bdbd9764db8d73b8e01527f49beeb774
+
+---
+
 # 社区视频和博客
-此页面含有成员或容器社区所创建的视频和博客的链接。  如果你知道大量资源或自行创建了资源，请提交 PR 以将其添加到此列表。
+此页面含有成员或容器社区所创建的视频和博客的链接。  如果你知道有精彩资源或自行创建了资源，请提交 PR 以将其添加到此列表。
 
 ## 入门
 [在 Windows 10 上运行 Linux 和 Windows 容器](https://stefanscherer.github.io/run-linux-and-windows-containers-on-windows-10/) - Stefan Scherer
@@ -24,11 +40,13 @@
 
 [在 Windows 上结合使用 Docker Compose 和服务发现来扩展多服务容器应用程序](https://blogs.technet.microsoft.com/virtualization/2016/10/18/use-docker-compose-and-service-discovery-on-windows-to-scale-out-your-multi-service-container-application/) - Kallie Bracken 和 Jason Messer
 
+[在 Windows 容器中运行 Neo4j](http://glennsarti.github.io/blog/neo4j-nano-containers) - Glenn Sarti
 
 ## 配置和管理
 [如何使用 TLS 保护 Windows 2016 Docker 引擎](https://stefanscherer.github.io/protecting-a-windows-2016-docker-engine-with-tls/) - Stefan Scherer
 
 
-<!--HONumber=Nov16_HO1-->
+
+<!--HONumber=Dec16_HO3-->
 
 

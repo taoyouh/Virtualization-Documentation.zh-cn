@@ -1,4 +1,20 @@
-# Windows 容器样本
+---
+title: "Windows 容器示例"
+description: "查找指向使用 Windows 容器的热门项目和代码示例的链接。"
+keywords: "docker, 容器, windows, 示例"
+author: enderb-ms
+ms.date: 12/19/2016
+ms.topic: article
+ms.prod: windows-containers
+ms.service: windows-containers
+ms.assetid: 5c6f6350-f8d6-4426-b53d-9fb09c2bf267
+translationtype: Human Translation
+ms.sourcegitcommit: b2950dca4b29e97eb951379645c118468a1fb403
+ms.openlocfilehash: eac2026cff552315a4cb256b595f1bd3317ee11c
+
+---
+
+# Windows 容器示例
 
 这是由 Windows 团队和社区成员提交的样本和示例的集合。  这些样本按原样提供，不具有任何保证或保障。  请随时提供更多样本或改进当前集。
 
@@ -64,6 +80,7 @@
 ## 其他
 
 
-<!--HONumber=Oct16_HO1-->
+
+<!--HONumber=Dec16_HO3-->
 
 

@@ -1,16 +1,12 @@
 ---
-author: neilpeterson
-redirect_url: ../quick_start/manage_docker
+redirect_url: ../quick-start
 translationtype: Human Translation
-ms.sourcegitcommit: 59626096d428072dec098c7817e2d6b39c10e9cf
-ms.openlocfilehash: e44f3f44e9beb0b7ed3054bc51fad44a0ecda1cd
+ms.sourcegitcommit: 54eff4bb74ac9f4dc870d6046654bf918eac9bb5
+ms.openlocfilehash: b6725f24beabb5331eff7d5243c2fe1c3c491001
 
 ---
 
-# 文档已弃用。
 
-
-
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 

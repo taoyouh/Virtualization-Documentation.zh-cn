@@ -1,11 +1,27 @@
+---
+title: "Windows 容器疑难解答"
+description: "Windows 容器和 Docker 的疑难解答提示、自动化脚本和日志信息"
+keywords: "docker, 容器, 疑难解答, 日志"
+author: PatrickLang
+ms.date: 12/19/2016
+ms.topic: article
+ms.prod: windows-containers
+ms.service: windows-containers
+ms.assetid: ebd79cd3-5fdd-458d-8dc8-fc96408958b5
+translationtype: Human Translation
+ms.sourcegitcommit: c65353d0b6dff233819dcc8f4f92eb186bf3b8fc
+ms.openlocfilehash: 9f28c35c6eaddd8bcf3883863b63251378f845a7
+
+---
+
 # 疑难解答
 
 设置计算机或运行容器时遇到问题？ 我们创建了一个 PowerShell 脚本来检查常见问题。 请先试一试，查看它所找到的内容并分享结果。
 
 ```PowerShell
-Invoke-WebRequest https://raw.githubusercontent.com/Microsoft/Virtualization-Documentation/master/windows-server-container-tools/Debug-ContainerHost/Debug-ContainerHost.ps1 -UseBasicParsing | Invoke-Expression
+Invoke-WebRequest https://aka.ms/Debug-ContainerHost.ps1 -UseBasicParsing | Invoke-Expression
 ```
-其运行的所有测试以及常见解决方案的列表位于脚本的[自述文件](https://github.com/Microsoft/Virtualization-Documentation/blob/master/windows-server-container-tools/Debug-ContainerHost/README.md)中。
+其运行的所有测试以及常见解决方案的列表位于脚本的[自述文件](https://github.com/Microsoft/Virtualization-Documentation/blob/live/windows-server-container-tools/Debug-ContainerHost/README.md)中。
 
 如果这对找到问题的根源没有帮助，请继续在[容器论坛](https://social.msdn.microsoft.com/Forums/en-US/home?forum=windowscontainers)上发布脚本的输出。 这是从社区（包含 Windows 预览体验成员和开发人员）获得帮助的最佳位置。
 
@@ -84,6 +100,7 @@ Get-WinEvent -LogName Microsoft-Windows-Hyper-V-Compute-Operational
 
 
 
-<!--HONumber=Nov16_HO1-->
+
+<!--HONumber=Jan17_HO4-->
 
 

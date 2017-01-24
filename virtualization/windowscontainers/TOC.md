@@ -1,5 +1,4 @@
-# 关于 Windows 容器
-## [Windows 容器概述](about/about_overview.md)
+# [关于 Windows 容器](about/index.md)
 
 # Windows Server 快速入门
 ## [步骤 1 – 概念](quick_start/quick_start.md)
@@ -42,6 +41,6 @@
 # [容器操作系统映像 EULA](Images_EULA.md)
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO3-->
 
 

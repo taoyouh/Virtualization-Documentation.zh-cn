@@ -1,14 +1,12 @@
-### 适用于 Docker 的 PowerShell
+---
+redirect_url: ../manage-docker/docker-powershell
+translationtype: Human Translation
+ms.sourcegitcommit: 54eff4bb74ac9f4dc870d6046654bf918eac9bb5
+ms.openlocfilehash: 1b4b36def403bbaf75c9828bf36d72e83f6114b5
 
-通过我们与你、与我们来自论坛、Twitter、GitHub 的用户的交流，甚至当面交流中，我们发现有一个问题出现的频率远远大于其他的任何问题 - 即为什么我无法从 PowerShell 中看见 Docker 容器？ 
-
-在我们与你们讨论其利、弊以及各种选择时，我们得出了一个结论，即容器 PowerShell 模块需要更新... 因此我们将弃用已在 Windows Server 2016 的预览版本中发行的容器 PowerShell 模块，并且已经开始着手将它替换为新的适用于 Docker 的模块。  此新模块的开发正在进行中，但我们采用了与过去不同的方式 - 我们将以开放的形式进行此工作。  我们对此模块的目标是将其打造成为一款社区协作产品，通过 Docker 引擎带来绝佳的 PowerShell 容器体验。  此新模块会直接构建于 Docker 引擎的 REST 接口顶层，使用户能够在 Docker CLI 和 PowerShell 之间进行选择，或同时选择两者。
-
-构建出色的 PowerShell 模块绝非易事，要确保正确编码，还要保持对象、参数集和 cmdlet 名称之间的正确平衡，这些都非常重要。  因此，当我们着手开发此新模块时，我们希望你们 - 我们的最终用户和广大的 PowerShell 和 Docker 社区可以帮助塑造此模块。  哪些参数集对你来说很重要？  我们是否应采用等效于“docker run”的方法还是你应通过管道将 new-container 传递到 start-container - 你想要使用哪种...  若要了解有关此模块的详细信息并且参与到开发过程中，请转移到我们的 GitHub 页面 (https://github.com/Microsoft/Docker-PowerShell/)，然后加入我们。
-
-随着开发的进行，若我们取得了稳定的 alpha 质量模块，我们会将其发布在 PowerShell 库上，并且会在此页面上更新有关其使用方法的说明。
+---
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jan17_HO4-->
 
 

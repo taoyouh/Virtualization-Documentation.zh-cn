@@ -9,8 +9,8 @@ ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: 74c9d604-0915-4d89-bc69-0263b76bc66b
 translationtype: Human Translation
-ms.sourcegitcommit: 1787637fdd2c3bf8ef453a7425dc965e65e5ce12
-ms.openlocfilehash: a1b876d01b8076ee9feb275bd09247775bfcef69
+ms.sourcegitcommit: 54eff4bb74ac9f4dc870d6046654bf918eac9bb5
+ms.openlocfilehash: 9b630e372b575ef1721c0d0926ec2caec3e5ec34
 
 ---
 
@@ -24,14 +24,14 @@ Windows 容器提供操作系统级别的虚拟化，允许多个独立的应用
 <td>**快速启动**<br /><br />
 Windows Server 快速入门<br /><br />
 <ul>
-<li>[步骤1 – 概念和术语](quick_start/quick_start.md)<br /><br /></li>
-<li>[步骤 2 – 配置 Windows Server 和第一个容器](quick_start/quick_start_windows_server.md)<br /><br /></li>
-<li>[步骤 3 – 创建并推送容器映像](quick_start/quick_start_images.md)<br /><br /></li>
+<li>[步骤1 – 概念和术语](quick-start/index.md)<br /><br /></li>
+<li>[步骤 2 – 配置 Windows Server 和第一个容器](quick-start/quick-start-windows-server.md)<br /><br /></li>
+<li>[步骤 3 – 创建并推送容器映像](quick-start/quick-start-images.md)<br /><br /></li>
 </ul>
 Windows 10 快速入门<br /><br />
 <ul>
-<li>[步骤1 – 概念和术语](quick_start/quick_start.md)<br /><br /></li>
-<li>[步骤 2 – 配置 Windows 10 和第一个容器](quick_start/quick_start_windows_10.md)<br /><br /></li>
+<li>[步骤1 – 概念和术语](quick-start/index.md)<br /><br /></li>
+<li>[步骤 2 – 配置 Windows 10 和第一个容器](quick-start/quick-start-windows-10.md)<br /><br /></li>
 </ul>
 </td>
 </tr>
@@ -40,9 +40,9 @@ Windows 10 快速入门<br /><br />
 <td>**部署**<br /><br />
 了解如何在 Windows Server 2016 和 Nano Server 上部署 Windows 容器。<br /><br />
 <ul>
-<li>[系统要求](deployment/system_requirements.md)<br /><br /></li>
-<li>[部署容器主机 - Windows Server](deployment/deployment.md)<br /><br /></li>
-<li>[部署容器主机 - Nano Server](deployment/deployment_nano.md)<br /><br /></li>
+<li>[系统要求](deploy-containers/system-requirements.md)<br /><br /></li>
+<li>[部署容器主机 - Windows Server](deploy-containers/deploy-containers-on-server.md)<br /><br /></li>
+<li>[部署容器主机 - Nano Server](deploy-containers/deploy-containers-on-nano.md)<br /><br /></li>
 <li>[防病毒优化](https://msdn.microsoft.com/en-us/windows/hardware/drivers/ifs/anti-virus-optimization-for-windows-containers)<br /><br /></li>
 </ul>
 </td>
@@ -53,11 +53,10 @@ Windows 10 快速入门<br /><br />
 <td>**Windows 上的 Docker**<br /><br />
 了解如何在 Windows 上管理 Docker。<br /><br />
 <ul>
-<li>[Windows 上的 Docker 引擎](docker/configure_docker_daemon.md)<br /><br /></li>
-<li>[Windows 上的 Dockerfile](docker/manage_windows_dockerfile.md)<br /><br /></li>
-<li>[管理容器数据](management/manage_data.md)<br /><br /></li>
-<li>[优化 Dockerfile](docker/optimize_windows_dockerfile.md)<br /><br /></li>
-<li>[容器网络](management/container_networking.md)<br /><br /></li>
+<li>[Windows 上的 Docker 引擎](manage-docker/configure-docker-daemon.md)<br /><br /></li>
+<li>[Windows 上的 Dockerfile](manage-docker/manage-windows-dockerfile.md)<br /><br /></li>
+<li>[优化 Dockerfile](manage-docker/optimize-windows-dockerfile.md)<br /><br /></li>
+<li>[容器网络](manage-containers/container-networking.md)<br /><br /></li>
 </ul>
 </td>
 </tr>
@@ -88,6 +87,6 @@ Windows 10 快速入门<br /><br />
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Jan17_HO4-->
 
 

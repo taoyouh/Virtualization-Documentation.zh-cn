@@ -1,93 +1,13 @@
 ---
-title: "Windows 容器要求"
-description: "Windows 容器要求。"
-keywords: "元数据, 容器"
-author: enderb-ms
-ms.date: 09/26/2016
-ms.topic: deployment-article
-ms.prod: windows-containers
-ms.service: windows-containers
-ms.assetid: 3c3d4c69-503d-40e8-973b-ecc4e1f523ed
+redirect_url: ../deploy-containers/system-requirements
 translationtype: Human Translation
-ms.sourcegitcommit: ffdf89b0ae346197b9ae631ee5260e0565261c55
-ms.openlocfilehash: af8d8a05fc953dcc93672a0f936caca5e37f0de3
+ms.sourcegitcommit: 54eff4bb74ac9f4dc870d6046654bf918eac9bb5
+ms.openlocfilehash: 441815bed7d4bffa5e19e7294abae2dc31947fa2
 
 ---
 
-# Windows 容器要求
-
-本指南列出 Windows 容器主机的要求。
-
-## 操作系统要求
-
-- Windows 容器功能仅适用于 Windows Server 2016（核心和桌面体验）、Nano Server 和 Windows 10 专业版和企业版（周年纪念版）。
-- 运行 Hyper-V 容器之前必须安装 Hyper-V 角色
-- Windows Server 容器主机必须将 Windows 安装到 c:\. 如果仅部署 Hyper-V 容器，则不会应用此限制。
-
-## 虚拟化的容器主机
-
-如果 Windows 容器主机将从 Hyper-V 虚拟机运行，并且还将承载 Hyper-V 容器，则需要启用嵌套虚拟化。 嵌套的虚拟化具有以下要求：
-
-- 至少 4 GB RAM 可用于虚拟化的 Hyper-V 主机。
-- Windows Server 2016 或主机系统上的 Windows 10 以及 Windows Server（Full、Core）或虚拟机中的 Nano Server。
-- 带有 Intel VT-x 处理器（此功能目前只适用于 Intel 处理器）。
-- 容器主机虚拟机还需要至少 2 个虚拟处理器。
-
-## 支持的基本映像
-
-Windows 容器提供两种容器基本映像，Windows Server Core 和 Nano Server。 并非所有配置都支持这两个操作系统映像。 下表详细介绍所支持的配置。
-
-<table border="1" style="background-color:FFFFCC;border-collapse:collapse;border:1px solid FFCC00;color:000000;width:75%" cellpadding="5" cellspacing="5">
-<thead>
-<tr valign="top">
-<th><center>主机操作系统</center></th>
-<th><center>Windows Server 容器</center></th>
-<th><center>Hyper-V 容器</center></th>
-</tr>
-</thead>
-<tbody>
-<tr valign="top">
-<td><center>Windows Server 2016（桌面）</center></td>
-<td><center>Server Core/Nano Server</center></td>
-<td><center>Server Core/Nano Server</center></td>
-</tr>
-<tr valign="top">
-<td><center>Windows Server 2016 Core</center></td>
-<td><center>Server Core/Nano Server</center></td>
-<td><center>Server Core/Nano Server</center></td>
-</tr>
-<tr valign="top">
-<td><center>Nano Server</center></td>
-<td><center> Nano Server</center></td>
-<td><center>Server Core/Nano Server</center></td>
-</tr>
-<tr valign="top">
-<td><center>Windows 10 专业版/企业版</center></td>
-<td><center>不可用</center></td>
-<td><center>Server Core/Nano Server</center></td>
-</tr>
-</tbody>
-</table>
-
-## 将容器主机版本与容器映像版本相匹配
-### Windows Server 容器
-由于 Windows Server 容器和基础主机共享一个内核，因此容器基本映像必须与主机基本映像相匹配。  如果版本不同，容器虽然可以启动，但其功能完整性得不到保证。 因此不支持不匹配的版本。  Windows 操作系统具有 4 个级别的版本，主要版本、次要版本、内部版本和修订版本 – 例如 10.0.14393.0。 只有在发布新版本的操作系统后，内部版本号才会改变。 应用 Windows 更新后，会相应更新修订版本号。 如果内部版本号不同（例如 10.0.14300.1030 (Technical Preview 5) 和 10.0.14393 (Windows Server 2016 RTM)），则会阻止 Windows Server 容器启动。 如果内部版本号相同但修订版本号不同（例如 10.0.14393 (Windows Server 2016 RTM) 和 10.0.14393.206 (Windows Server 2016 GA)），则不会阻止 Windows Server 容器启动。 即使技术上没有阻止容器启动，但此配置可能无法在所有环境下正常运行，因此不支持配置到产品环境。 
-
-若要查看 Windows 主机已安装的版本类型，可以查询 HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion。  若要查看基础映像使用的版本类型，可以查看 Docker 中心上的标记或查看映像说明提供的映像哈希表。  [Windows 10 更新历史记录](https://support.microsoft.com/en-us/help/12387/windows-10-update-history)页面列出了每个内部版本和修订版本发布的时间。
-
-在此示例中，14393 是主要内部版本号，321 是修订版本号。
-```none
-Windows PowerShell
-Copyright (C) 2016 Microsoft Corporation. All rights reserved.
-
-PS C:\Users\Administrator> (Get-ItemProperty 'HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\').BuildLabEx
-14393.321.amd64fre.rs1_release_inmarket.161004-2338
-```
-
-### Hyper-V 容器
-Hyper-V 容器与 Windows Server 容器不同，后者共享容器和主机之间的内核，而 Hyper-V 容器则是各自使用自己的 Windows 内核实例。  因此，会出现容器主机与容器映像版本匹配出错的情况。  当前，只要配置受支持，无论修订版本号是多少，内部版本号为 Windows Server 2016 GA (10.0.14393.206) 或更高的内部版本都可以运行 Windows Server Core 或 Nano Server 的 Windows Server 2016 GA 映像。  以后，我们将根据客户反馈对内置版本号可能出现的差距提供具体的指导。  为了获得由 Windows 更新提供的全部功能、可靠性和安全保障，需要保证所有系统为最新版本，这一点至关重要。  
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Jan17_HO4-->
 
 
