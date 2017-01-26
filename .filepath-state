@@ -120,6 +120,9 @@
   "b06e92c6398ceba7a1ba597765625212170cbd13": [
     "virtualization\\windowscontainers\\management\\manage_serviceaccounts.md"
   ],
+  "0e692f7521e4a15e3e56d4b98f7ca15fe94ee167": [
+    "virtualization\\windowscontainers\\manage-containers\\manage-serviceaccounts.md"
+  ],
   "00a43f8d4d27327c61e318f3a915047106ad2aca": [
     "virtualization\\windowscontainers\\manage-containers\\manage-serviceaccounts.md"
   ],
