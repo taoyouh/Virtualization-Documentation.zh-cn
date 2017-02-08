@@ -99,6 +99,9 @@
   "b0903a3e00b92bc60e26282dde072b66030ada09": [
     "virtualization\\hyper-v-on-windows\\user-guide\\nested-virtualization.md"
   ],
+  "d68be61b1d462b70986df5cfd6df052b388cec1d": [
+    "virtualization\\windowscontainers\\about\\index.md"
+  ],
   "f4e1102cc7338739e396dadba17150e41716ed93": [
     "virtualization\\windowscontainers\\about\\index.md"
   ],
@@ -241,6 +244,9 @@
   ],
   "b9a02184a98f392d5ee323dc3e939d137ce7e4e6": [
     "virtualization\\windowscontainers\\deploy-containers\\deploy-containers-on-nano.md"
+  ],
+  "12c7c713468618a9fedc82ec5a1c488f57edcfd7": [
+    "virtualization\\windowscontainers\\deploy-containers\\deploy-containers-on-server.md"
   ],
   "6e113b5ddc74b5a4e6ee23b06ef635a7ba0d4693": [
     "virtualization\\windowscontainers\\deploy-containers\\deploy-containers-on-server.md"
