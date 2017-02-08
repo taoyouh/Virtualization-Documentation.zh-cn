@@ -1969,6 +1969,16 @@
       "SkeletonFile": "ol-xliffcache\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\12c7c713468618a9fedc82ec5a1c488f57edcfd7.8472a424500f80ed4cd111e735bbac37d8fc6584.xml",
       "LocXliff": null,
       "LocXliffCommit": null
+    },
+    "virtualization\\windowscontainers\\communitylinks.md.846092bd40fbf2155196ee603af93c567e165a48.HT": {
+      "SourceFilename": "virtualization\\windowscontainers\\communitylinks.md",
+      "XliffHash": "846092bd40fbf2155196ee603af93c567e165a48",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\c3ae5589d389887921ec6ef37dec13549e0eab9a.5b80b41704d30b7127373c3a997c6558393a454b.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
     }
   }
 }
