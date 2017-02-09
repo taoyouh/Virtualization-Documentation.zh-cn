@@ -1989,6 +1989,16 @@
       "SkeletonFile": "ol-xliffcache\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\b2b8bbd6a125b71dd281cee5d46a8606bb14116c.e886623f693c181e1c15e231881e836608bb36ed.xml",
       "LocXliff": null,
       "LocXliffCommit": null
+    },
+    "virtualization\\hyper-v-on-windows\\user-guide\\make-integration-service.md.e857e7023e435b3207b1fe4ffceed148c3b26951.HT": {
+      "SourceFilename": "virtualization\\hyper-v-on-windows\\user-guide\\make-integration-service.md",
+      "XliffHash": "e857e7023e435b3207b1fe4ffceed148c3b26951",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\20c5581e82cf8f190a5d71c1e6bc9417ca16d004.e60c0294c71f432023519a1f94b5eb38c34c9e7e.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
     }
   }
 }
