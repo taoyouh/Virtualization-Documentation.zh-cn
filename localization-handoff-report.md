@@ -1,21 +1,19 @@
 # <a name='report-top'></a> Localization Handoff Report
 
 ## Summary
- Total Files | 3
+ Total Files | 1
 
 ## File List
  Source File | Status | Details 
  ----------- | ------ | ------- 
- [virtualization\windowscontainers\manage-containers\container-networking.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/23d4b665da627f35cf5fce49c3c9974d0ef287dd/virtualization/windowscontainers/manage-containers/container-networking.md) | HandedOffSuccess | [Details](#e56a5b984cc1c42e27628d00a5cd532788aef11c287)
- [virtualization\windowscontainers\manage-containers\swarm-mode.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/1af721f399cd258d52ca3bd4da7b9a05013c857d/virtualization/windowscontainers/manage-containers/swarm-mode.md) | HandedOffSuccess | [Details](#ae07f4cde07aafc6c34f6d3132b348c21cb2dfb5299)
- [virtualization\windowscontainers\TOC.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/33cc8a142810e24f95135dd9509df149a67d9588/virtualization/windowscontainers/TOC.md) | HandedOffSuccess | [Details](#a565c6b6117e4c885c05a7c70323e9d1a12c3e58368)
+ [virtualization\windowscontainers\manage-containers\swarm-mode.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/d08c7dd678d009e69fd0f25bf6a54c920071ea79/virtualization/windowscontainers/manage-containers/swarm-mode.md) | HandedOffSuccess | [Details](#63ff96f69964a8689332e9da78c048d04870e569299)
 
 ## Item Details
-##### <a name='e56a5b984cc1c42e27628d00a5cd532788aef11c287'></a> Source: [virtualization\windowscontainers\manage-containers\container-networking.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/23d4b665da627f35cf5fce49c3c9974d0ef287dd/virtualization/windowscontainers/manage-containers/container-networking.md)
+##### <a name='63ff96f69964a8689332e9da78c048d04870e569299'></a> Source: [virtualization\windowscontainers\manage-containers\swarm-mode.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/d08c7dd678d009e69fd0f25bf6a54c920071ea79/virtualization/windowscontainers/manage-containers/swarm-mode.md)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [container-networking.925e90f386932bf7a0a7f6b1b149c3456acbb560.zh-cn.xlf](https://github.com/Microsoft/Virtualization-Documentation-Private.handoff/blob/249f7e7aa9b8bba58c58152e62dca81705ba26ae/ol-handoff/Microsoft/Virtualization-Documentation-Private.zh-cn/live/container-networking.925e90f386932bf7a0a7f6b1b149c3456acbb560.zh-cn.xlf)
-* Handoff Datetime: 2017-02-10 00:32:48
+* Handoff File: [swarm-mode.c9f6182916115e0571bb233ed668a7a7b9ff8d55.zh-cn.xlf](https://github.com/Microsoft/Virtualization-Documentation-Private.handoff/blob/9a82b9f5001183f2e3de135b7e377b0104a9bec5/ol-handoff/Microsoft/Virtualization-Documentation-Private.zh-cn/live/swarm-mode.c9f6182916115e0571bb233ed668a7a7b9ff8d55.zh-cn.xlf)
+* Handoff Datetime: 2017-02-10 02:34:23
 * Handoff Reason: Include
 * Handoff Name: 
 * Archive File: 
@@ -23,39 +21,6 @@
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
 * Handback Name: 
-* [Back to Top](#report-top)
-
-##### <a name='ae07f4cde07aafc6c34f6d3132b348c21cb2dfb5299'></a> Source: [virtualization\windowscontainers\manage-containers\swarm-mode.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/1af721f399cd258d52ca3bd4da7b9a05013c857d/virtualization/windowscontainers/manage-containers/swarm-mode.md)
-* Status: HandedOffSuccess
-* Target File: 
-* Handoff File: [swarm-mode.c9f6182916115e0571bb233ed668a7a7b9ff8d55.zh-cn.xlf](https://github.com/Microsoft/Virtualization-Documentation-Private.handoff/blob/249f7e7aa9b8bba58c58152e62dca81705ba26ae/ol-handoff/Microsoft/Virtualization-Documentation-Private.zh-cn/live/swarm-mode.c9f6182916115e0571bb233ed668a7a7b9ff8d55.zh-cn.xlf)
-* Handoff Datetime: 2017-02-10 00:32:48
-* Handoff Reason: Include
-* Handoff Name: 
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* Handback Name: 
-* [Back to Top](#report-top)
-
-##### <a name='a565c6b6117e4c885c05a7c70323e9d1a12c3e58368'></a> Source: [virtualization\windowscontainers\TOC.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/33cc8a142810e24f95135dd9509df149a67d9588/virtualization/windowscontainers/TOC.md)
-* Status: HandedOffSuccess
-* Target File: 
-* Handoff File: [TOC.13173dbdc376543cb6eb74ef16484f39c0ef0fdb.zh-cn.xlf](https://github.com/Microsoft/Virtualization-Documentation-Private.handoff/blob/249f7e7aa9b8bba58c58152e62dca81705ba26ae/ol-handoff/Microsoft/Virtualization-Documentation-Private.zh-cn/live/TOC.13173dbdc376543cb6eb74ef16484f39c0ef0fdb.zh-cn.xlf)
-* Handoff Datetime: 2017-02-10 00:32:48
-* Handoff Reason: Include
-* Handoff Name: 
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* Handback Name: 
-* Current Target File: [virtualization\windowscontainers\TOC.md](https://github.com/Microsoft/Virtualization-Documentation-Private.zh-cn/blob/b3d8214de1995d394e58510c034858cb82ba9b71/virtualization/windowscontainers/TOC.md)
-* Current Handback File: [TOC.13173dbdc376543cb6eb74ef16484f39c0ef0fdb.zh-cn.xlf](https://github.com/Microsoft/Virtualization-Documentation-Private.handback/blob/053db64a8e1a8e5f0229358d1b0050047ef06ae5/ol-handback/Microsoft/Virtualization-Documentation-Private.zh-cn/live/TOC.13173dbdc376543cb6eb74ef16484f39c0ef0fdb.zh-cn.xlf)
-* Current Handback Datetime: 2017-01-24 13:19:20
-* Bilingual File: [TOC.13173dbdc376543cb6eb74ef16484f39c0ef0fdb.zh-cn.xlf](https://github.com/Microsoft/Virtualization-Documentation-Private.handback/blob/053db64a8e1a8e5f0229358d1b0050047ef06ae5/ol-handback/Microsoft/Virtualization-Documentation-Private.zh-cn/live/TOC.13173dbdc376543cb6eb74ef16484f39c0ef0fdb.zh-cn.xlf)
-* Bilingual Datetime: 2017-01-24 13:21:49
 * [Back to Top](#report-top)
 
 
