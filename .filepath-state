@@ -42,6 +42,9 @@
   "f651172a7d958866f3370c9c0cb8b870298eb76d": [
     "virtualization\\windowscontainers\\management\\manage_resources.md"
   ],
+  "a565c6b6117e4c885c05a7c70323e9d1a12c3e58": [
+    "virtualization\\windowscontainers\\TOC.md"
+  ],
   "b71a831b46a65e7d2c8305aa15d145085dae368e": [
     "virtualization\\windowscontainers\\TOC.md"
   ],
@@ -263,6 +266,9 @@
   "622c8f638a815e19a54aa75b6b5ea0688d966ae3": [
     "virtualization\\windowscontainers\\manage-containers\\container-base-images.md"
   ],
+  "e56a5b984cc1c42e27628d00a5cd532788aef11c": [
+    "virtualization\\windowscontainers\\manage-containers\\container-networking.md"
+  ],
   "7205dce0aef50e9e907092f722232e866083b9a0": [
     "virtualization\\windowscontainers\\manage-containers\\container-networking.md"
   ],
@@ -292,5 +298,8 @@
   ],
   "31a55ead81e05f7dee1d1f4f8a2101114d1ca017": [
     "virtualization\\windowscontainers\\quick-start\\quick-start-windows-server.md"
+  ],
+  "ae07f4cde07aafc6c34f6d3132b348c21cb2dfb5": [
+    "virtualization\\windowscontainers\\manage-containers\\swarm-mode.md"
   ]
 }

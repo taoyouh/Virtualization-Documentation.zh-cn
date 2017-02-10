@@ -1999,6 +1999,36 @@
       "SkeletonFile": "ol-xliffcache\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\20c5581e82cf8f190a5d71c1e6bc9417ca16d004.e60c0294c71f432023519a1f94b5eb38c34c9e7e.xml",
       "LocXliff": null,
       "LocXliffCommit": null
+    },
+    "virtualization\\windowscontainers\\manage-containers\\container-networking.md.4b0534d7e67ef0fccf885850ebce814e51d7471d.HT": {
+      "SourceFilename": "virtualization\\windowscontainers\\manage-containers\\container-networking.md",
+      "XliffHash": "4b0534d7e67ef0fccf885850ebce814e51d7471d",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\e56a5b984cc1c42e27628d00a5cd532788aef11c.12e67a1e31598ad019f2ea71eb0dfbafaba79c51.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "virtualization\\windowscontainers\\manage-containers\\swarm-mode.md.aad16afbd76dc8421840194522014c73720fb518.HT": {
+      "SourceFilename": "virtualization\\windowscontainers\\manage-containers\\swarm-mode.md",
+      "XliffHash": "aad16afbd76dc8421840194522014c73720fb518",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\ae07f4cde07aafc6c34f6d3132b348c21cb2dfb5.c9d2c4209986d9f9d001447fdb59e146194c5725.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "virtualization\\windowscontainers\\TOC.md.b8e67f73ad77581482b2f1c0eb8179a0cd1328ba.HT": {
+      "SourceFilename": "virtualization\\windowscontainers\\TOC.md",
+      "XliffHash": "b8e67f73ad77581482b2f1c0eb8179a0cd1328ba",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\a565c6b6117e4c885c05a7c70323e9d1a12c3e58.de8a194e51b4bc78d2aa230ff4dae95e02b88b98.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
     }
   }
 }
