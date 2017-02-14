@@ -42,6 +42,9 @@
   "f651172a7d958866f3370c9c0cb8b870298eb76d": [
     "virtualization\\windowscontainers\\management\\manage_resources.md"
   ],
+  "27115e67da72dfe8d18a7ff292a8b72f971085cd": [
+    "virtualization\\windowscontainers\\TOC.md"
+  ],
   "a565c6b6117e4c885c05a7c70323e9d1a12c3e58": [
     "virtualization\\windowscontainers\\TOC.md"
   ],
@@ -98,6 +101,9 @@
   ],
   "ea91ea0ffca5479cb0593ef9961625f7b7ab1f42": [
     "virtualization\\hyper-v-on-windows\\user-guide\\create-pre-release-vm.md"
+  ],
+  "7d16fcf22187ae3ace25fe1bedbc02f3c6b63eb8": [
+    "virtualization\\hyper-v-on-windows\\user-guide\\nested-virtualization.md"
   ],
   "b0903a3e00b92bc60e26282dde072b66030ada09": [
     "virtualization\\hyper-v-on-windows\\user-guide\\nested-virtualization.md"
@@ -307,5 +313,8 @@
   ],
   "ae07f4cde07aafc6c34f6d3132b348c21cb2dfb5": [
     "virtualization\\windowscontainers\\manage-containers\\swarm-mode.md"
+  ],
+  "f837ef05dec3bd610409389cbf1bfbf9804d9d49": [
+    "virtualization\\windowscontainers\\management\\manage_remotehost.md"
   ]
 }

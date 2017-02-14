@@ -2049,6 +2049,36 @@
       "SkeletonFile": "ol-xliffcache\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\9ed584e09fc94c183675809abd18703ae28a16d2.b5b5eaf68c2bc41c536efd656afcfd9eccef6623.xml",
       "LocXliff": null,
       "LocXliffCommit": null
+    },
+    "virtualization\\hyper-v-on-windows\\user-guide\\nested-virtualization.md.7ce49af999f999b74e57a266d4e6d7d144ccf98e.HT": {
+      "SourceFilename": "virtualization\\hyper-v-on-windows\\user-guide\\nested-virtualization.md",
+      "XliffHash": "7ce49af999f999b74e57a266d4e6d7d144ccf98e",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\7d16fcf22187ae3ace25fe1bedbc02f3c6b63eb8.ae444f7301bfe5508c530f7318af9c08ec38380f.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "virtualization\\windowscontainers\\TOC.md.3a1384ca3fe5b72c0fc034eef267f2baedc5e390.HT": {
+      "SourceFilename": "virtualization\\windowscontainers\\TOC.md",
+      "XliffHash": "3a1384ca3fe5b72c0fc034eef267f2baedc5e390",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\27115e67da72dfe8d18a7ff292a8b72f971085cd.00913dc207ca7484aa72479cd788b653737d2951.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "virtualization\\windowscontainers\\management\\manage_remotehost.md.79912359102715512a6358f520c02b1406be756d.HT": {
+      "SourceFilename": "virtualization\\windowscontainers\\management\\manage_remotehost.md",
+      "XliffHash": "79912359102715512a6358f520c02b1406be756d",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\f837ef05dec3bd610409389cbf1bfbf9804d9d49.64dcfd60da40f386c15f507958bf7dcb3e7d5a76.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
     }
   }
 }
