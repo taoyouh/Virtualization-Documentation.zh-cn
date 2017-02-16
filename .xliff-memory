@@ -2089,6 +2089,16 @@
       "SkeletonFile": "ol-xliffcache\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\19e8cf269b0bef127fb06d2c99391107cd8683b1.46d6502748295adf9252e5eca78541ba7e881ed1.xml",
       "LocXliff": null,
       "LocXliffCommit": null
+    },
+    "virtualization\\hyper-v-on-windows\\user-guide\\setup-nat-network.md.7355addb0ad3d61dc701a165d2874606da97f680.HT": {
+      "SourceFilename": "virtualization\\hyper-v-on-windows\\user-guide\\setup-nat-network.md",
+      "XliffHash": "7355addb0ad3d61dc701a165d2874606da97f680",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\235d804310cac38a4628bc2d931371d390e2d991.b5f81587bff7e693176b3e16870ffd99f52efc50.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
     }
   }
 }
