@@ -209,11 +209,17 @@
   "cba03be09dc045f10a61b401788fc6b78396c04d": [
     "virtualization\\hyper-v-on-windows\\quick_start\\walkthrough_virtual_switch.md"
   ],
+  "67513f6ee7d990f4d9086dfd63fb719374377b1f": [
+    "virtualization\\hyper-v-on-windows\\quick-start\\connect-to-network.md"
+  ],
   "8cba7f02a0633b50d239a414d408cef81bea9c6b": [
     "virtualization\\hyper-v-on-windows\\quick-start\\connect-to-network.md"
   ],
   "19889805c3e4d6d650306de1028e117bcb42ec71": [
     "virtualization\\hyper-v-on-windows\\quick-start\\create-virtual-machine.md"
+  ],
+  "8b2f4103ad0048a99e9befeb47d370a9b5cd092f": [
+    "virtualization\\hyper-v-on-windows\\quick-start\\enable-hyper-v.md"
   ],
   "c87e964aac32183eddf000d84d96ffa1122075f7": [
     "virtualization\\hyper-v-on-windows\\quick-start\\enable-hyper-v.md"
@@ -328,6 +334,9 @@
   ],
   "8aba9f2ef619b79e7459d7fd55bd27cf107621b3": [
     "virtualization\\windowscontainers\\quick-start\\quick-start-windows-10.md"
+  ],
+  "766a99a74738fa41ef77410c70aefa7e664f014e": [
+    "virtualization\\windowscontainers\\quick-start\\quick-start-windows-server.md"
   ],
   "50a255c170b72954028bcf947d025828201e30cf": [
     "virtualization\\windowscontainers\\quick-start\\quick-start-windows-server.md"

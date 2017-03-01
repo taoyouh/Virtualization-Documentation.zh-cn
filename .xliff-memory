@@ -2169,6 +2169,36 @@
       "SkeletonFile": "ol-xliffcache\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\a92ba96f26ae2881d2c6013e8b8dcf7bafe69a47.e57dff04c3b2caefecc0dbb2b1d499cd94b800be.xml",
       "LocXliff": null,
       "LocXliffCommit": null
+    },
+    "virtualization\\hyper-v-on-windows\\quick-start\\connect-to-network.md.edd7581c97fd9204b5f8bd11856825d3370bbba2.HT": {
+      "SourceFilename": "virtualization\\hyper-v-on-windows\\quick-start\\connect-to-network.md",
+      "XliffHash": "edd7581c97fd9204b5f8bd11856825d3370bbba2",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\67513f6ee7d990f4d9086dfd63fb719374377b1f.1260224c5bd1a4c87032cf9982d3f22132b26bbc.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "virtualization\\windowscontainers\\quick-start\\quick-start-windows-server.md.6e66249338e8917af25583feb44ceaa9f3ad10c4.HT": {
+      "SourceFilename": "virtualization\\windowscontainers\\quick-start\\quick-start-windows-server.md",
+      "XliffHash": "6e66249338e8917af25583feb44ceaa9f3ad10c4",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\766a99a74738fa41ef77410c70aefa7e664f014e.63ac538de86ad6272be3c554f699b0118d05110f.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "virtualization\\hyper-v-on-windows\\quick-start\\enable-hyper-v.md.c5ef0156ce70d79e7333a85e587752eeddbb4e1f.HT": {
+      "SourceFilename": "virtualization\\hyper-v-on-windows\\quick-start\\enable-hyper-v.md",
+      "XliffHash": "c5ef0156ce70d79e7333a85e587752eeddbb4e1f",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\8b2f4103ad0048a99e9befeb47d370a9b5cd092f.7f9f0fd16723ba3b7e7c7061e42266c1f39bd518.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
     }
   }
 }
