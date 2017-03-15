@@ -2209,6 +2209,16 @@
       "SkeletonFile": "ol-xliffcache\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\aa581fbac757b09ded7c7766e065cf5350bc095c.6020972f32d30becf76689a232edeb28a5f4e479.xml",
       "LocXliff": null,
       "LocXliffCommit": null
+    },
+    "virtualization\\windowscontainers\\quick-start\\quick-start-windows-10.md.8af4f8ebe7262e5cd895fcd412f0697b3e3c5c9c.HT": {
+      "SourceFilename": "virtualization\\windowscontainers\\quick-start\\quick-start-windows-10.md",
+      "XliffHash": "8af4f8ebe7262e5cd895fcd412f0697b3e3c5c9c",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\ca3045512770a197623ad73735c755699880c94a.c1034e1d294b9fc961b55b596eccfbdd71219554.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
     }
   }
 }
