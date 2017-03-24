@@ -51,12 +51,6 @@
   "27115e67da72dfe8d18a7ff292a8b72f971085cd": [
     "virtualization\\windowscontainers\\TOC.md"
   ],
-  "a565c6b6117e4c885c05a7c70323e9d1a12c3e58": [
-    "virtualization\\windowscontainers\\TOC.md"
-  ],
-  "b71a831b46a65e7d2c8305aa15d145085dae368e": [
-    "virtualization\\windowscontainers\\TOC.md"
-  ],
   "02c8e82cb7d2a2dce902133f09a16f37fe6cde21": [
     "virtualization\\windowscontainers\\management\\container_networking.md"
   ],
@@ -90,9 +84,6 @@
   "a1553a32f6e2e7ae25473352671a666e20232638": [
     "virtualization\\windowscontainers\\images-eula.md"
   ],
-  "3f83e598cf5328c31851fdd97d1bb1d03f56c24c": [
-    "virtualization\\windowscontainers\\images-eula.md"
-  ],
   "eac2026cff552315a4cb256b595f1bd3317ee11c": [
     "virtualization\\windowscontainers\\samples.md"
   ],
@@ -108,22 +99,13 @@
   "495bd9228e93a1981a646f13e2e583a741eec217": [
     "virtualization\\hyper-v-on-windows\\reference\\tlfs.md"
   ],
-  "a92ba96f26ae2881d2c6013e8b8dcf7bafe69a47": [
-    "virtualization\\hyper-v-on-windows\\reference\\tlfs.md"
-  ],
   "ea91ea0ffca5479cb0593ef9961625f7b7ab1f42": [
     "virtualization\\hyper-v-on-windows\\user-guide\\create-pre-release-vm.md"
   ],
   "7d16fcf22187ae3ace25fe1bedbc02f3c6b63eb8": [
     "virtualization\\hyper-v-on-windows\\user-guide\\nested-virtualization.md"
   ],
-  "b0903a3e00b92bc60e26282dde072b66030ada09": [
-    "virtualization\\hyper-v-on-windows\\user-guide\\nested-virtualization.md"
-  ],
   "d68be61b1d462b70986df5cfd6df052b388cec1d": [
-    "virtualization\\windowscontainers\\about\\index.md"
-  ],
-  "f4e1102cc7338739e396dadba17150e41716ed93": [
     "virtualization\\windowscontainers\\about\\index.md"
   ],
   "02e6869b2f242df29aed13fcc8a69ed641958727": [
@@ -133,15 +115,6 @@
     "virtualization\\windowscontainers\\deploy-containers\\system-requirements.md"
   ],
   "b6c25285c3cee3a863bef40c34a1cf13b66b42fb": [
-    "virtualization\\windowscontainers\\communitylinks.md"
-  ],
-  "b2b8bbd6a125b71dd281cee5d46a8606bb14116c": [
-    "virtualization\\windowscontainers\\communitylinks.md"
-  ],
-  "c3ae5589d389887921ec6ef37dec13549e0eab9a": [
-    "virtualization\\windowscontainers\\communitylinks.md"
-  ],
-  "81f84901bdbd9764db8d73b8e01527f49beeb774": [
     "virtualization\\windowscontainers\\communitylinks.md"
   ],
   "9b630e372b575ef1721c0d0926ec2caec3e5ec34": [
@@ -154,9 +127,6 @@
     "virtualization\\windowscontainers\\management\\manage_serviceaccounts.md"
   ],
   "0e692f7521e4a15e3e56d4b98f7ca15fe94ee167": [
-    "virtualization\\windowscontainers\\manage-containers\\manage-serviceaccounts.md"
-  ],
-  "00a43f8d4d27327c61e318f3a915047106ad2aca": [
     "virtualization\\windowscontainers\\manage-containers\\manage-serviceaccounts.md"
   ],
   "71d91e12ae843bf96e1b4001915ffb55bb352ffd": [
@@ -212,9 +182,6 @@
   "67513f6ee7d990f4d9086dfd63fb719374377b1f": [
     "virtualization\\hyper-v-on-windows\\quick-start\\connect-to-network.md"
   ],
-  "8cba7f02a0633b50d239a414d408cef81bea9c6b": [
-    "virtualization\\hyper-v-on-windows\\quick-start\\connect-to-network.md"
-  ],
   "19889805c3e4d6d650306de1028e117bcb42ec71": [
     "virtualization\\hyper-v-on-windows\\quick-start\\create-virtual-machine.md"
   ],
@@ -222,9 +189,6 @@
     "virtualization\\hyper-v-on-windows\\quick-start\\enable-hyper-v.md"
   ],
   "8b2f4103ad0048a99e9befeb47d370a9b5cd092f": [
-    "virtualization\\hyper-v-on-windows\\quick-start\\enable-hyper-v.md"
-  ],
-  "c87e964aac32183eddf000d84d96ffa1122075f7": [
     "virtualization\\hyper-v-on-windows\\quick-start\\enable-hyper-v.md"
   ],
   "d03fec3bf9de363974cefc60c72363e872a22634": [
@@ -272,19 +236,10 @@
   "19e8cf269b0bef127fb06d2c99391107cd8683b1": [
     "virtualization\\hyper-v-on-windows\\user-guide\\make-integration-service.md"
   ],
-  "20c5581e82cf8f190a5d71c1e6bc9417ca16d004": [
-    "virtualization\\hyper-v-on-windows\\user-guide\\make-integration-service.md"
-  ],
-  "9e4be610f02e12f48fb88464eb8075b97996d5b2": [
-    "virtualization\\hyper-v-on-windows\\user-guide\\make-integration-service.md"
-  ],
   "1eea533459b565ffceca23ca7454e9678abc52e9": [
     "virtualization\\hyper-v-on-windows\\user-guide\\powershell-direct.md"
   ],
   "235d804310cac38a4628bc2d931371d390e2d991": [
-    "virtualization\\hyper-v-on-windows\\user-guide\\setup-nat-network.md"
-  ],
-  "4e758b9ca6b318930e397685097a7769a9600099": [
     "virtualization\\hyper-v-on-windows\\user-guide\\setup-nat-network.md"
   ],
   "4d1b7b310d0df7c198d5446b339a9c38279c72db": [
@@ -299,19 +254,10 @@
   "12c7c713468618a9fedc82ec5a1c488f57edcfd7": [
     "virtualization\\windowscontainers\\deploy-containers\\deploy-containers-on-server.md"
   ],
-  "6e113b5ddc74b5a4e6ee23b06ef635a7ba0d4693": [
-    "virtualization\\windowscontainers\\deploy-containers\\deploy-containers-on-server.md"
-  ],
   "622c8f638a815e19a54aa75b6b5ea0688d966ae3": [
     "virtualization\\windowscontainers\\manage-containers\\container-base-images.md"
   ],
   "e56a5b984cc1c42e27628d00a5cd532788aef11c": [
-    "virtualization\\windowscontainers\\manage-containers\\container-networking.md"
-  ],
-  "7205dce0aef50e9e907092f722232e866083b9a0": [
-    "virtualization\\windowscontainers\\manage-containers\\container-networking.md"
-  ],
-  "aff515917e195008899382c491ab0af2ebdb3c13": [
     "virtualization\\windowscontainers\\manage-containers\\container-networking.md"
   ],
   "ee249bafe3c86ba7a7fb6f0335664e9ce485a74e": [
@@ -350,31 +296,10 @@
   "766a99a74738fa41ef77410c70aefa7e664f014e": [
     "virtualization\\windowscontainers\\quick-start\\quick-start-windows-server.md"
   ],
-  "50a255c170b72954028bcf947d025828201e30cf": [
-    "virtualization\\windowscontainers\\quick-start\\quick-start-windows-server.md"
-  ],
-  "31a55ead81e05f7dee1d1f4f8a2101114d1ca017": [
-    "virtualization\\windowscontainers\\quick-start\\quick-start-windows-server.md"
-  ],
   "ee6053003b31f226d2cfba8566f274ccc19d97ec": [
     "virtualization\\windowscontainers\\manage-containers\\swarm-mode.md"
   ],
   "0e5e131ec9c2c9c57bf6c7c7a9cabf02cbfe352f": [
-    "virtualization\\windowscontainers\\manage-containers\\swarm-mode.md"
-  ],
-  "ce4847ecb94702786699a06c1ed8d400c958f28c": [
-    "virtualization\\windowscontainers\\manage-containers\\swarm-mode.md"
-  ],
-  "f7d87c296a2695b8b44479e01e957f63b2f8b5c7": [
-    "virtualization\\windowscontainers\\manage-containers\\swarm-mode.md"
-  ],
-  "9ed584e09fc94c183675809abd18703ae28a16d2": [
-    "virtualization\\windowscontainers\\manage-containers\\swarm-mode.md"
-  ],
-  "63ff96f69964a8689332e9da78c048d04870e569": [
-    "virtualization\\windowscontainers\\manage-containers\\swarm-mode.md"
-  ],
-  "ae07f4cde07aafc6c34f6d3132b348c21cb2dfb5": [
     "virtualization\\windowscontainers\\manage-containers\\swarm-mode.md"
   ],
   "f837ef05dec3bd610409389cbf1bfbf9804d9d49": [
