@@ -9,8 +9,9 @@ ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: 8e273856-3620-4e58-9d1a-d1e06550448
 translationtype: Human Translation
-ms.sourcegitcommit: ffdf89b0ae346197b9ae631ee5260e0565261c55
-ms.openlocfilehash: f4e1102cc7338739e396dadba17150e41716ed93
+ms.sourcegitcommit: 59621ca2db190d5c13034752a08c291e3dc19daa
+ms.openlocfilehash: d68be61b1d462b70986df5cfd6df052b388cec1d
+ms.lasthandoff: 02/08/2017
 
 ---
 
@@ -18,17 +19,15 @@ ms.openlocfilehash: f4e1102cc7338739e396dadba17150e41716ed93
 
 **这是初步内容，可能还会更改。** 
 
-应用程序激发云和移动时代的创新。 容器以及围绕它们开发的生态系统将支持软件开发人员创建下一代的应用程序体验。
+## 什么是容器
 
 观看简短概述：[基于 Windows 的容器：使用企业级控制的现代应用开发](https://youtu.be/Ryx3o0rD5lY)。
 
-## 什么是容器
-
 它们是隔离、资源控制且可移植的操作环境。
 
-基本上，容器是一个隔离的位置，应用程序可在其中运行，而不会影响系统的其他部分，并且系统也不会影响该应用程序。 容器是虚拟化的下一个演化。
+基本上，容器是一个隔离的位置，应用程序可在其中运行，而不会接触其他容器或主机的资源（内存、磁盘、网络等）。
 
-如果你在容器内，看起来会很像你在一个新安装的物理计算机或虚拟机内。 并且，对 [Docker](https://www.docker.com/) 来说，可以使用与管理任何其他容器相同的方式来管理 Windows Server 容器。
+容器的外观和运行方式类似于新安装的物理计算机或虚拟机。 Windows Server 容器同任何其他容器一样，可以通过 [Docker](https://www.docker.com/) 进行管理。
 
 ## Windows 容器类型
 
@@ -86,10 +85,5 @@ src="https://channel9.msdn.com/Blogs/containers/Containers-101-with-Microsoft-an
 ## 试用 Windows Server 容器
 
 [容器快速入门简介](../quick_start/quick_start.md)
-
-
-
-
-<!--HONumber=Oct16_HO4-->
 
 

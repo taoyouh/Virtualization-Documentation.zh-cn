@@ -9,8 +9,9 @@ ms.prod: windows-10-hyperv
 ms.service: windows-10-hyperv
 ms.assetid: 1f8a691c-ca75-42da-8ad8-a35611ad70ec
 translationtype: Human Translation
-ms.sourcegitcommit: 2cf6d04c4a8de0148a2f981d21bec72cff23f6e8
-ms.openlocfilehash: 4e758b9ca6b318930e397685097a7769a9600099
+ms.sourcegitcommit: 57c69e8d19a9b87e230b760eb86b7b6b701ff983
+ms.openlocfilehash: 235d804310cac38a4628bc2d931371d390e2d991
+ms.lasthandoff: 02/16/2017
 
 ---
 
@@ -24,10 +25,10 @@ Windows 10 Hyper-V 允许虚拟网络的本机网络地址转换 (NAT)。
 * 确认虚拟机正确连接
 
 要求：
-* Windows 版本 14295 或更高版本
-* 已启用 Hyper-V 角色（单击[此处](../quick-start/enable-hyper-v.md)查看相关说明）
+* Windows 10 周年更新或更高版本
+* 已启用 Hyper-V（单击[此处](../quick-start/enable-hyper-v.md) 查看相关说明）
 
-> **注意：**当前，Hyper-V 仅允许你创建一个 NAT 网络。 有关 Windows NAT (WinNAT) 实现、功能和限制的更多详细信息，请参考 [WinNAT capabilities and limitations blog](https://blogs.technet.microsoft.com/virtualization/2016/05/25/windows-nat-winnat-capabilities-and-limitations/)（WinNAT 功能和限制日志）
+> **注意：**目前，每台主机可以创建一个 NAT 网络。 有关 Windows NAT (WinNAT) 实现、功能和限制的更多详细信息，请参考 [WinNAT 功能和限制博客](https://blogs.technet.microsoft.com/virtualization/2016/05/25/windows-nat-winnat-capabilities-and-limitations/)
 
 ## NAT 概述
 NAT 使用主计算机的 IP 地址和端口通过内部 Hyper-V 虚拟开关向虚拟机授予对网络资源的访问权限。
@@ -239,8 +240,8 @@ PS>    }
 PS> }
 PS> remove-netnat -Confirm:$false
 PS> Get-ContainerNetwork | Remove-ContainerNetwork
-PS> Get-VmSwitch -Name nat | Remove-VmSwitch (_failure is expected_)
-PS> Stop-Service docker
+PS>    Get-VmSwitch -Name nat | Remove-VmSwitch (_failure is expected_)
+PS>    Stop-Service docker
 PS> Set-Service docker -StartupType Disabled
 Reboot Host
 PS> Get-NetNat | Remove-NetNat
@@ -252,9 +253,4 @@ PS> Start-Service docker
 
 ## 参考
 详细了解 [NAT 网络](https://en.wikipedia.org/wiki/Network_address_translation)
-
-
-
-<!--HONumber=Jan17_HO2-->
-
 

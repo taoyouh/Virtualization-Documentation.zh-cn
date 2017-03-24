@@ -1,7 +1,7 @@
 ---
 title: "创建你自己的集成服务"
 description: "Windows 10 集成服务。"
-keywords: windows 10, hyper-v
+keywords: windows 10, hyper-v, HVSocket, AF_HYPERV
 author: scooley
 ms.date: 05/02/2016
 ms.topic: article
@@ -9,85 +9,69 @@ ms.prod: windows-10-hyperv
 ms.service: windows-10-hyperv
 ms.assetid: 1ef8f18c-3d76-4c06-87e4-11d8d4e31aea
 translationtype: Human Translation
-ms.sourcegitcommit: 54eff4bb74ac9f4dc870d6046654bf918eac9bb5
-ms.openlocfilehash: 9e4be610f02e12f48fb88464eb8075b97996d5b2
+ms.sourcegitcommit: b6b63318ed71931c2b49039e57685414f869a945
+ms.openlocfilehash: 19e8cf269b0bef127fb06d2c99391107cd8683b1
+ms.lasthandoff: 02/16/2017
 
 ---
 
 # 创建你自己的集成服务
 
-从 Windows 10 开始，任何人都可以创建非常类似于内置 Hyper-V 集成服务的服务，该服务在 Hyper-V 主机和在其上运行虚拟机之间使用新的基于套接字的通信通道。  使用这些 Hyper-V 套接字，服务可以独立于网络堆栈运行，并且所有数据都保留在相同的物理内存中。
+从 Windows 10 周年更新开始，任何人都可以创建通过 Hyper-V 套接字在 Hyper-V 主机与其虚拟机之间进行通信的应用程序。Hyper-V 套接字是一种 Windows 套接字，使用面向虚拟器的新地址系列和专用终结点。  所有通信在 Hyper-V 套接字上运行时均无需使用网络，并且所有数据都保留在相同的物理内存中。   使用 Hyper-V 套接字的应用程序类似于 Hyper-V 集成服务。
 
-本文档演练了如何创建一个在 Hyper-V 套接字上生成的简单应用程序以及如何开始使用它们。
-
-[PowerShell Direct](../user-guide/powershell-direct.md) 是使用 Hyper-V 套接字进行通信的应用程序（在这种情况下是内置 Windows 服务）的一个示例。
+本文档演示了如何创建在 Hyper-V 套接字上构建的简单程序。
 
 **受支持的主机操作系统**
-* Windows 10 14290 版及更高版本
-* Windows Server Technical Preview 4 及更高版本
+* 在 Windows 10 上受支持
+* Windows Server 2016
 * 未来版本 (Server 2016 +)
 
 **受支持的来宾操作系统**
-* Windows 10
+* Windows 10
 * Windows Server Technical Preview 4 及更高版本
 * 未来版本 (Server 2016 +)
-* 使用 Linux Integration Services 的 Linux 来宾（请参阅 [Windows 上的 HYPER-V 支持的 Linux 和 FreeBSD 虚拟机](https://technet.microsoft.com/library/dn531030(ws.12).aspx)）
+* 使用 Linux Integration Services 的 Linux 来宾（请参阅 [Windows 上的 Hyper-V 支持的 Linux 和 FreeBSD 虚拟机](https://technet.microsoft.com/library/dn531030(ws.12).aspx)）
 
 **功能和限制**  
 * 支持内核模式或用户模式操作  
 * 仅限数据流      
-* 无块内存（并非最适用于备份/视频）   
+* 无块内存（并非最适用于备份/视频） 
 
 --------------
 
-## 开始使用
-现在，本机代码 (C/C++) 中提供了 Hyper-V 套接字。  
+## 入门
 
-若要编写简单的应用程序，你将需要：
-* C 编译器。  如果没有该组件，请查看 [Visual Studio Community](https://aka.ms/vs)
-* 一台运行 Hyper-V 和虚拟机的计算机。  
-  * 主机和来宾 (VM) 操作系统必须是 Windows 10 、Windows Server Technical Preview 3 或更高版本。
-* 在 HYPER-V 主机上安装的 [Windows 10 SDK](http://aka.ms/flightingSDK)
+要求：
+* C/C++ 编译器。  如果没有该组件，请查看 [Visual Studio Community](https://aka.ms/vs)
+* [Windows 10 SDK](https://developer.microsoft.com/windows/downloads/windows-10-sdk) - 已在 Visual Studio 2015 Update 3 以及更高版本上预安装。
+* 使用至少一个虚拟机运行以上其中一个主机操作系统的计算机。 - 这用于测试应用程序。
 
-**Windows SDK 详细信息**
-
-指向 Windows SDK 的链接：
-* [预览体验成员预览的 Windows 10 SDK](http://aka.ms/flightingSDK)
-* [Windows 10 SDK](https://dev.windows.com/en-us/downloads/windows-10-sdk)
-
-Windows 10 14290 版中开始提供 HYPER-V 套接字的 API，外部测试下载与最新内部快速跟踪外部测试版本相匹配。  
-如果出现异常行为，请通过 [TechNet 论坛](https://social.technet.microsoft.com/Forums/windowsserver/en-US/home "TechNet Forums")告知我们。  在你的帖子中，请包括：
-* 意外的行为 
-* 主机、来宾和 SDK 的操作系统和版本号。  
-  
-  SDK 版本号在 SDK 安装程序的标题中可见：  
-  ![](./media/flightingSDK.png)
-
+> **注意：**用于 Hyper-V 套接字的 API 不久后将在 Windows 10 中公开发布。  使用 HVSocket 的应用程序将在任何 Widnows 10 主机和来宾上运行，但仅可使用高于 14290 版本的 Windows SDK 进行开发。  
 
 ## 注册新应用程序
-若要使用 Hyper-V 套接字，必须向 Hyper-V 主机的注册表注册应用程序。
+要使用 Hyper-V 套接字，必须向 Hyper-V 主机的注册表注册应用程序。
 
 通过在注册表中注册该服务，你将获得：
 *  用于启用、禁用和列出可用服务的 WMI 管理
 *  直接与虚拟机进行通信的权限
 
-以下 PowerShell 将注册一个名为“HV Socket Demo”的新应用程序。  必须以管理员身份运行此应用程序。  手册说明如下。
+以下 PowerShell 将注册一个名为“HV Socket Demo”的新应用程序。  必须以管理员身份运行此应用程序。  手册注册说明如下。
 
 ``` PowerShell
 $friendlyName = "HV Socket Demo"
 
-# Create a new random GUID and add it to the services list then add the name as a value
-
+# Create a new random GUID.  Add it to the services list
 $service = New-Item -Path "HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Virtualization\GuestCommunicationServices" -Name ((New-Guid).Guid)
 
+# Set a friendly name 
 $service.SetValue("ElementName", $friendlyName)
 
 # Copy GUID to clipboard for later use
 $service.PSChildName | clip.exe
 ```
 
-** 注册表位置和信息 **  
 
+**注册表位置和信息：**  
 ``` 
 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Virtualization\GuestCommunicationServices\
 ```  
@@ -105,12 +89,12 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Virtualization\G
 ```
 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Virtualization\GuestCommunicationServices\
     999E53D4-3D5C-4C3E-8779-BED06EC056E1\
-        ElementName REG_SZ  VM Session Service
+        ElementName    REG_SZ    VM Session Service
     YourGUID\
-        ElementName REG_SZ  Your Service Friendly Name
+        ElementName    REG_SZ    Your Service Friendly Name
 ```
 
-> ** 提示：**若要在 PowerShell 中生成 GUID，并将其复制到剪贴板，请运行：  
+> **提示：**若要在 PowerShell 中生成 GUID，并将其复制到剪贴板，请运行：  
 ``` PowerShell
 (New-Guid).Guid | clip.exe
 ```
@@ -143,7 +127,7 @@ SOCKET sock = socket(AF_HYPERV, SOCK_STREAM, HV_PROTOCOL_RAW);
 ```
 
 
-## 绑定到 Hyper-V 的套接字
+## 绑定到 Hyper-V 套接字
 
 绑定将套接字与连接信息相关联。
 
@@ -194,7 +178,7 @@ struct SOCKADDR_HV
 | HV_GUID_PARENT | a42e7cda-d03f-480c-9cc2-a4de20abb878 | 父地址。 使用此 VMID 连接到该连接器的父分区。* |
 
 
-***HV_GUID_PARENT**  
+\* `HV_GUID_PARENT`  
 虚拟机的父级是其主机。  容器的父级是容器的主机。  
 从在虚拟机中运行的容器进行连接将连接到托管该容器的 VM。  
 侦听此 VMID 可接受以下来源的连接：  
@@ -211,10 +195,7 @@ Send()
 Listen()  
 Accept()  
 
+## 有用链接
 [完整 WinSock API](https://msdn.microsoft.com/en-us/library/windows/desktop/ms741394.aspx)
 
-
-
-<!--HONumber=Jan17_HO2-->
-
-
+[Hyper-V 集成服务参考](../reference/integration-services.md)

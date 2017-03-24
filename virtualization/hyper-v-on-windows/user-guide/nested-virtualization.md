@@ -9,8 +9,9 @@ ms.prod: windows-10-hyperv
 ms.service: windows-10-hyperv
 ms.assetid: 68c65445-ce13-40c9-b516-57ded76c1b15
 translationtype: Human Translation
-ms.sourcegitcommit: ffdf89b0ae346197b9ae631ee5260e0565261c55
-ms.openlocfilehash: b0903a3e00b92bc60e26282dde072b66030ada09
+ms.sourcegitcommit: e714d4dc22c0049d3365d4a4f3c11d072f46a161
+ms.openlocfilehash: 7d16fcf22187ae3ace25fe1bedbc02f3c6b63eb8
+ms.lasthandoff: 02/14/2017
 
 ---
 
@@ -34,7 +35,7 @@ ms.openlocfilehash: b0903a3e00b92bc60e26282dde072b66030ada09
 Set-VMProcessor -VMName <VMName> -ExposeVirtualizationExtensions $true
 ```
 3. 启动虚拟机。
-4. 在虚拟机中安装 Hyper-V，就像针对物理服务器一样。 有关安装 Hyper-V 的详细信息，请参阅[安装 Hyper-V]( https://msdn.microsoft.com/en-us/virtualization/hyperv_on_windows/quick_start/walkthrough_install)。
+4. 在虚拟机中安装 Hyper-V，就像针对物理服务器一样。 有关安装 Hyper-V 的详细信息，请参阅[安装 Hyper-V](../quick-start/enable-hyper-v.md)。
 
 ## 禁用嵌套虚拟化
 可使用以下 PowerShell 命令禁用已停止虚拟机的嵌套虚拟化：
@@ -68,7 +69,7 @@ New-NetNat –Name LocalNAT –InternalIPInterfaceAddressPrefix “192.168.100.0
 ```none
 get-netadapter "vEthernet (VmNat)" | New-NetIPAddress -IPAddress 192.168.100.1 -AddressFamily IPv4 -PrefixLength 24
 ```
-每个嵌套的虚拟机必须分配有一个 IP 地址和网关。 请注意，网关 IP 必须指向上一步中的 NAT 适配器。 您可能想要分配 DNS 服务器：
+每个嵌套的虚拟机必须分配有一个 IP 地址和网关。 请注意，网关 IP 必须指向上一步中的 NAT 适配器。 你可能想要分配 DNS 服务器：
 ```none
 get-netadapter "Ethernet" | New-NetIPAddress -IPAddress 192.168.100.2 -DefaultGateway 192.168.100.1 -AddressFamily IPv4 -PrefixLength 24
 Netsh interface ip add dnsserver “Ethernet” address=<my DNS server>
@@ -76,9 +77,4 @@ Netsh interface ip add dnsserver “Ethernet” address=<my DNS server>
 
 ## 第三方虚拟化应用
 除 Hyper-V 外的虚拟化应用程序在 Hyper-V 虚拟机中不受支持，可能会失败。 这包括需要硬件虚拟化扩展的任何软件。
-
-
-
-<!--HONumber=Oct16_HO4-->
-
 

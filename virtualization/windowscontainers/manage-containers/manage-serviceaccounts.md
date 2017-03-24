@@ -9,8 +9,9 @@ ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: 9e06ad3a-0783-476b-b85c-faff7234809c
 translationtype: Human Translation
-ms.sourcegitcommit: 804008c172b80a4f354a92cd4d12a4e23e1d4328
-ms.openlocfilehash: 00a43f8d4d27327c61e318f3a915047106ad2aca
+ms.sourcegitcommit: 1a327806514f1e1b5d2d234b0aa4ce300e26456f
+ms.openlocfilehash: 0e692f7521e4a15e3e56d4b98f7ca15fe94ee167
+ms.lasthandoff: 01/26/2017
 
 ---
 
@@ -24,7 +25,7 @@ ms.openlocfilehash: 00a43f8d4d27327c61e318f3a915047106ad2aca
 # 术语和参考
 - [Active Directory](http://social.technet.microsoft.com/wiki/contents/articles/1026.active-directory-services-overview.aspx) 是一项服务，用于在 Windows 上发现、搜索和复制用户、计算机和服务帐户信息。 
   - [Active Directory 域服务](https://technet.microsoft.com/en-us/library/dd448614.aspx)提供用于验证计算机和用户的 Windows Active Directory 域。 
-  - 设备是 Active Directory 域的成员时，设备就属于“已加入域”。 “已加入域”是一种设备状态，它不仅为设备提供域计算机标识，而且还方便了各种加入域的服务。
+  - 设备是 Active Directory 域的成员时，设备就属于_已加入域_。 “已加入域”是一种设备状态，它不仅为设备提供域计算机标识，而且还方便了各种加入域的服务。
   - [组托管服务帐户](https://technet.microsoft.com/en-us/library/jj128431(v=ws.11).aspx)，通常缩写为 gMSA，是一种 Active Directory 帐户，可轻松使用 Active Directory 保护服务，而无需共享密码。 多个计算机或容器可根据需要共享同一个 gMSA，以验证服务间的连接。
 - _CredentialSpec_ PowerShell 模块 - 此模块用于配置要与容器一起使用的组托管服务帐户。 脚本模块和示例步骤位于 [windows-server-container-tools](https://github.com/Microsoft/Virtualization-Documentation/tree/live/windows-server-container-tools)，请参阅 ServiceAccount
 
@@ -38,7 +39,6 @@ ms.openlocfilehash: 00a43f8d4d27327c61e318f3a915047106ad2aca
 4. 允许访问其他服务（如数据库或文件共享）上的 gMSA
 
 启动服务时，已加入域的主机会自动从 Active Directory 获取 gMSA密钥，并使用该帐户运行服务。 由于该服务作为 gMSA 运行，它可以访问 gMSA 所允许的任何资源。
-
 
 Windows 容器遵循类似的过程：
 
@@ -84,8 +84,5 @@ EXEC sp_addrolemember 'db_datareader', 'WebApplication1'
 EXEC sp_addrolemember 'db_datawriter', 'WebApplication1'
 ```
 
-
-
-<!--HONumber=Nov16_HO1-->
-
+若要查看它的实际操作，请查看 Microsoft Ignite 2016 会话“通往容器化—将工作负载转移到容器中”中提供的[录制演示](https://youtu.be/cZHPz80I-3s?t=2672)。
 

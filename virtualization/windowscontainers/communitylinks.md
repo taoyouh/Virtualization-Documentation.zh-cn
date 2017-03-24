@@ -9,8 +9,9 @@ ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: cfbb2542-fead-48e7-8318-4da92a7b5b6f
 translationtype: Human Translation
-ms.sourcegitcommit: b721971f1ba0ab5369dc8b0917f57dfe187a618c
-ms.openlocfilehash: 81f84901bdbd9764db8d73b8e01527f49beeb774
+ms.sourcegitcommit: ff1ef85258a31a5c5a2a065b65019e39cab93125
+ms.openlocfilehash: b6c25285c3cee3a863bef40c34a1cf13b66b42fb
+ms.lasthandoff: 02/22/2017
 
 ---
 
@@ -36,17 +37,16 @@ ms.openlocfilehash: 81f84901bdbd9764db8d73b8e01527f49beeb774
 
 [结合使用 MSBuild 和 Docker 的 3 个步骤](http://blog.alexellis.io/3-steps-to-msbuild-with-docker/) - Alex Ellis
 
-[使用 Image2Docker 将 Windows 工作负荷纳入容器](https://blog.docker.com/2016/10/containerize-windows-workloads-image2docker/) - Mano Marks
+[使用 Image2Docker 将 Windows 工作负载纳入容器](https://blog.docker.com/2016/10/containerize-windows-workloads-image2docker/) - Mano Marks
 
 [在 Windows 上结合使用 Docker Compose 和服务发现来扩展多服务容器应用程序](https://blogs.technet.microsoft.com/virtualization/2016/10/18/use-docker-compose-and-service-discovery-on-windows-to-scale-out-your-multi-service-container-application/) - Kallie Bracken 和 Jason Messer
+
+[在 Windows 容器中使用 Docker 执行 PowerShell 所需状态配置](http://dille.name/blog/2016/06/17/powershell-desired-state-configuration-psdsc-in-windows-containers-using-docker/) - Nicholas Dille
 
 [在 Windows 容器中运行 Neo4j](http://glennsarti.github.io/blog/neo4j-nano-containers) - Glenn Sarti
 
 ## 配置和管理
 [如何使用 TLS 保护 Windows 2016 Docker 引擎](https://stefanscherer.github.io/protecting-a-windows-2016-docker-engine-with-tls/) - Stefan Scherer
 
-
-
-<!--HONumber=Dec16_HO3-->
-
+[Windows 容器编号层的性能](http://dille.name/blog/2017/01/13/windows-container-performance-of-layers/) - Nicholas Dille
 
