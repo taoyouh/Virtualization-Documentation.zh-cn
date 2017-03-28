@@ -290,11 +290,17 @@
   "8aba9f2ef619b79e7459d7fd55bd27cf107621b3": [
     "virtualization\\windowscontainers\\quick-start\\quick-start-windows-10.md"
   ],
+  "569ba8619e60a9c34c2939ff2106076e66040aa8": [
+    "virtualization\\windowscontainers\\quick-start\\quick-start-windows-server.md"
+  ],
   "aa581fbac757b09ded7c7766e065cf5350bc095c": [
     "virtualization\\windowscontainers\\quick-start\\quick-start-windows-server.md"
   ],
   "766a99a74738fa41ef77410c70aefa7e664f014e": [
     "virtualization\\windowscontainers\\quick-start\\quick-start-windows-server.md"
+  ],
+  "3df505fe13657459abd151b4a6ce9d72da7e1463": [
+    "virtualization\\windowscontainers\\manage-containers\\swarm-mode.md"
   ],
   "d773bc7d6fdebd4f003678a3889e50df6eb2621e": [
     "virtualization\\windowscontainers\\manage-containers\\swarm-mode.md"
