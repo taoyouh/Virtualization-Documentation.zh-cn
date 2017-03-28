@@ -296,6 +296,9 @@
   "766a99a74738fa41ef77410c70aefa7e664f014e": [
     "virtualization\\windowscontainers\\quick-start\\quick-start-windows-server.md"
   ],
+  "d773bc7d6fdebd4f003678a3889e50df6eb2621e": [
+    "virtualization\\windowscontainers\\manage-containers\\swarm-mode.md"
+  ],
   "e11b819c18484d1e90550b7562a9652e9aee8aea": [
     "virtualization\\windowscontainers\\manage-containers\\swarm-mode.md"
   ],
