@@ -203,6 +203,9 @@
   "46019a10c55cc11c2f25b8c4b23edc6f5d140e36": [
     "virtualization\\hyper-v-on-windows\\reference\\integration-services.md"
   ],
+  "3b904d73a3acbfdbf519c9fb3ef3b5d237975dd9": [
+    "virtualization\\hyper-v-on-windows\\TOC.md"
+  ],
   "e89b44692e99454cba0044958422e85693df4e3f": [
     "virtualization\\hyper-v-on-windows\\TOC.md"
   ],
@@ -316,5 +319,8 @@
   ],
   "f837ef05dec3bd610409389cbf1bfbf9804d9d49": [
     "virtualization\\windowscontainers\\management\\manage_remotehost.md"
+  ],
+  "a986af5c3a448265540671bd2d6678dbcd4d0833": [
+    "virtualization\\hyper-v-on-windows\\reference\\hyper-v-architecture.md"
   ]
 }
