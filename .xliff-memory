@@ -2279,6 +2279,26 @@
       "SkeletonFile": "ol-xliffcache\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\a986af5c3a448265540671bd2d6678dbcd4d0833.68eb62791d2de835a60fd7e1fb0b31ed60b7a3c6.xml",
       "LocXliff": null,
       "LocXliffCommit": null
+    },
+    "virtualization\\windowscontainers\\manage-containers\\container-networking.md.27c4cacae2e4f735569ad81330b1b337be1944cd.HT": {
+      "SourceFilename": "virtualization\\windowscontainers\\manage-containers\\container-networking.md",
+      "XliffHash": "27c4cacae2e4f735569ad81330b1b337be1944cd",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\18086b5dd3b9251e6e4475a79b77dac9b4acede7.1d5499405099a41d1fdf9853270fd77cdb16fb11.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "virtualization\\windowscontainers\\manage-containers\\swarm-mode.md.263283be9166a3391f80674b6430aae2e2647c2e.HT": {
+      "SourceFilename": "virtualization\\windowscontainers\\manage-containers\\swarm-mode.md",
+      "XliffHash": "263283be9166a3391f80674b6430aae2e2647c2e",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\3aad1822f78e9cb7c2bfdb95a8dab060586a8dab.a618c468ca7dc65238e1ff049fee5547169072aa.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
     }
   }
 }
