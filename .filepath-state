@@ -269,6 +269,9 @@
   "ee249bafe3c86ba7a7fb6f0335664e9ce485a74e": [
     "virtualization\\windowscontainers\\manage-docker\\configure-docker-daemon.md"
   ],
+  "8c5e89cd3afcb109fd3eda2da7bcd1b2c7f48b88": [
+    "virtualization\\windowscontainers\\manage-docker\\manage-windows-dockerfile.md"
+  ],
   "9dcac129e7c95fa416437061c426fee850db11b4": [
     "virtualization\\windowscontainers\\manage-docker\\manage-windows-dockerfile.md"
   ],
