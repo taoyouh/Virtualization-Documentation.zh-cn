@@ -138,6 +138,9 @@
   "71d91e12ae843bf96e1b4001915ffb55bb352ffd": [
     "virtualization\\windowscontainers\\manage-docker\\docker-powershell.md"
   ],
+  "06f8f2e77ab0c89fe0efb2f4d859720d6c0d9d4c": [
+    "virtualization\\windowscontainers\\manage-containers\\hyperv-container.md"
+  ],
   "3b043f0c8c50c0b92e7e3453bbaf9127bb5d41c7": [
     "virtualization\\windowscontainers\\manage-containers\\hyperv-container.md"
   ],
