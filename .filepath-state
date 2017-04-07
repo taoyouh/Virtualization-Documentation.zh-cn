@@ -206,6 +206,9 @@
   "2d8b0d14d4c57a2a224fdbf4ac58c457c8c080e7": [
     "virtualization\\hyper-v-on-windows\\reference\\hyper-v-requirements.md"
   ],
+  "c98ab9c32dfcd6e9b3a0258d0282b28d78726f6a": [
+    "virtualization\\hyper-v-on-windows\\reference\\integration-services.md"
+  ],
   "647c47998334600dc4f143d2471c0104e5d4e9a9": [
     "virtualization\\hyper-v-on-windows\\reference\\integration-services.md"
   ],
@@ -223,6 +226,9 @@
   ],
   "f4d11b8f464bcfc6929ce18ee72c01d5a9eb7eba": [
     "virtualization\\hyper-v-on-windows\\user_guide\\export_import.md"
+  ],
+  "09768936bfc3f15e30a27019187b0e0e6440b428": [
+    "virtualization\\hyper-v-on-windows\\user_guide\\managing_ics.md"
   ],
   "c27a51e9a12de9cec2720eadf6e09b8a582bae77": [
     "virtualization\\hyper-v-on-windows\\user_guide\\managing_ics.md"
@@ -334,6 +340,9 @@
   ],
   "0e5e131ec9c2c9c57bf6c7c7a9cabf02cbfe352f": [
     "virtualization\\windowscontainers\\manage-containers\\swarm-mode.md"
+  ],
+  "692cf167131dd7654e0cb0801811a9cafd7973bf": [
+    "virtualization\\windowscontainers\\management\\manage_remotehost.md"
   ],
   "f837ef05dec3bd610409389cbf1bfbf9804d9d49": [
     "virtualization\\windowscontainers\\management\\manage_remotehost.md"

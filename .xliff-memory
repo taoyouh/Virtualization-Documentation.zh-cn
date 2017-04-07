@@ -1496,7 +1496,7 @@
       "TranslationType": 1,
       "IsArchived": false,
       "ArchivedDateTime": "0001-01-01T00:00:00",
-      "SkeletonFile": "ol-xliffcache\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\c27a51e9a12de9cec2720eadf6e09b8a582bae77.bdc22a9d114d6359a6bfa4199c408578e3a05b15.xml",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\09768936bfc3f15e30a27019187b0e0e6440b428.073d991682db6baa0d26f26d566d3bfbd97bf818.xml",
       "LocXliff": "ol-handback\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\managing_ics.41f717ff23da81357752448cb01b08d482be74d5.zh-cn.xlf",
       "LocXliffCommit": "053db64a8e1a8e5f0229358d1b0050047ef06ae5"
     },
@@ -2327,6 +2327,26 @@
       "IsArchived": false,
       "ArchivedDateTime": "0001-01-01T00:00:00",
       "SkeletonFile": "ol-xliffcache\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\06f8f2e77ab0c89fe0efb2f4d859720d6c0d9d4c.fe1ae759cc072bbd270f380bfc0d1c8ab61524c5.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "virtualization\\windowscontainers\\management\\manage_remotehost.md.f3c3ee6a6562f4b2495fe9f3d758e236c37cf36f.HT": {
+      "SourceFilename": "virtualization\\windowscontainers\\management\\manage_remotehost.md",
+      "XliffHash": "f3c3ee6a6562f4b2495fe9f3d758e236c37cf36f",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\692cf167131dd7654e0cb0801811a9cafd7973bf.9e2d5ffc05e97351fd4aafdb95e1f67a1a1a62eb.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "virtualization\\hyper-v-on-windows\\reference\\integration-services.md.3f5816f42a9b4d01f65773830be00f7b556c1cab.HT": {
+      "SourceFilename": "virtualization\\hyper-v-on-windows\\reference\\integration-services.md",
+      "XliffHash": "3f5816f42a9b4d01f65773830be00f7b556c1cab",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\c98ab9c32dfcd6e9b3a0258d0282b28d78726f6a.d158126d8974177c344891ec778d4f6e72142c6c.xml",
       "LocXliff": null,
       "LocXliffCommit": null
     }
