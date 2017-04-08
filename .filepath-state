@@ -93,6 +93,9 @@
   "9f28c35c6eaddd8bcf3883863b63251378f845a7": [
     "virtualization\\windowscontainers\\troubleshooting.md"
   ],
+  "7ef4d5aa084d199abfb39d1c44e4dd1305e07904": [
+    "virtualization\\hyper-v-on-windows\\about\\supported-guest-os.md"
+  ],
   "f772a26f2ad52c8ed28d40ca35c91ed6f3eab872": [
     "virtualization\\hyper-v-on-windows\\about\\supported-guest-os.md"
   ],
@@ -147,6 +150,9 @@
   "d4fd2dbaf362ac3ad52667743177a203174b397d": [
     "virtualization\\community\\contribute-to-docs.md"
   ],
+  "307cd592a9deda41fd2a892d49eadbc5ae436d84": [
+    "virtualization\\hyper-v-on-windows\\about\\index.md"
+  ],
   "0c80c2ddbecfe2ef8d35fbd66c5fa338c0f04a9c": [
     "virtualization\\hyper-v-on-windows\\about\\index.md"
   ],
@@ -191,8 +197,14 @@
   "67513f6ee7d990f4d9086dfd63fb719374377b1f": [
     "virtualization\\hyper-v-on-windows\\quick-start\\connect-to-network.md"
   ],
+  "e68c4a87a31f1932d87bf2ecd6b7d2af8b4cafe2": [
+    "virtualization\\hyper-v-on-windows\\quick-start\\create-virtual-machine.md"
+  ],
   "19889805c3e4d6d650306de1028e117bcb42ec71": [
     "virtualization\\hyper-v-on-windows\\quick-start\\create-virtual-machine.md"
+  ],
+  "6dabc50394b3bfab37faaa6e0dae8cc81409ed5f": [
+    "virtualization\\hyper-v-on-windows\\quick-start\\enable-hyper-v.md"
   ],
   "10ebeb40c75ac4764c8b548a4221af16f43d5de0": [
     "virtualization\\hyper-v-on-windows\\quick-start\\enable-hyper-v.md"
@@ -202,6 +214,9 @@
   ],
   "d03fec3bf9de363974cefc60c72363e872a22634": [
     "virtualization\\hyper-v-on-windows\\quick-start\\index.md"
+  ],
+  "8f7e609e1e7c23181bed64e45c9c6160e425d4b6": [
+    "virtualization\\hyper-v-on-windows\\reference\\hyper-v-requirements.md"
   ],
   "2d8b0d14d4c57a2a224fdbf4ac58c457c8c080e7": [
     "virtualization\\hyper-v-on-windows\\reference\\hyper-v-requirements.md"
@@ -214,6 +229,9 @@
   ],
   "46019a10c55cc11c2f25b8c4b23edc6f5d140e36": [
     "virtualization\\hyper-v-on-windows\\reference\\integration-services.md"
+  ],
+  "9d36321528977a278cd2f0ac52636c686295b958": [
+    "virtualization\\hyper-v-on-windows\\TOC.md"
   ],
   "3b904d73a3acbfdbf519c9fb3ef3b5d237975dd9": [
     "virtualization\\hyper-v-on-windows\\TOC.md"
@@ -253,6 +271,9 @@
   ],
   "7659dc7b0bbae513796c8f910306091180194f8e": [
     "virtualization\\hyper-v-on-windows\\user_guide\\vmsession.md"
+  ],
+  "971593b762b51bd24f43c40d4697fdd3cef82400": [
+    "virtualization\\hyper-v-on-windows\\user-guide\\make-integration-service.md"
   ],
   "19e8cf269b0bef127fb06d2c99391107cd8683b1": [
     "virtualization\\hyper-v-on-windows\\user-guide\\make-integration-service.md"
