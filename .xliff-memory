@@ -2409,6 +2409,16 @@
       "SkeletonFile": "ol-xliffcache\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\8f7e609e1e7c23181bed64e45c9c6160e425d4b6.dc5d3e06522fe0385c396ac688ccab384c37c9d0.xml",
       "LocXliff": null,
       "LocXliffCommit": null
+    },
+    "virtualization\\windowscontainers\\manage-containers\\swarm-mode.md.5af71fc486ea030cf26b1a9f66ab6a8a61c48c2d.HT": {
+      "SourceFilename": "virtualization\\windowscontainers\\manage-containers\\swarm-mode.md",
+      "XliffHash": "5af71fc486ea030cf26b1a9f66ab6a8a61c48c2d",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\cee26228fed98b38fd0334083d480b0815bf1a36.f5f81620d73badb1329637ba060c8b1e21111625.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
     }
   }
 }
