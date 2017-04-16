@@ -102,6 +102,9 @@
   "520ef410eddad61c40d31655e6bf7ede7846d4b2": [
     "virtualization\\hyper-v-on-windows\\quick-start\\try-hyper-v-powershell.md"
   ],
+  "738957cc1fcf80d46f9b2ed5a66374a0250a309a": [
+    "virtualization\\hyper-v-on-windows\\reference\\tlfs.md"
+  ],
   "495bd9228e93a1981a646f13e2e583a741eec217": [
     "virtualization\\hyper-v-on-windows\\reference\\tlfs.md"
   ],
@@ -206,6 +209,9 @@
   "19889805c3e4d6d650306de1028e117bcb42ec71": [
     "virtualization\\hyper-v-on-windows\\quick-start\\create-virtual-machine.md"
   ],
+  "468b2047bbca94126e56be71c2d546a8c78820cb": [
+    "virtualization\\hyper-v-on-windows\\quick-start\\enable-hyper-v.md"
+  ],
   "9e18e205fc0ca95902473e620d60337923287040": [
     "virtualization\\hyper-v-on-windows\\quick-start\\enable-hyper-v.md"
   ],
@@ -235,6 +241,9 @@
   ],
   "46019a10c55cc11c2f25b8c4b23edc6f5d140e36": [
     "virtualization\\hyper-v-on-windows\\reference\\integration-services.md"
+  ],
+  "720d15a919760233d90476fa522584b336eb4519": [
+    "virtualization\\hyper-v-on-windows\\TOC.md"
   ],
   "61371588ef26153796df755dc0f40dd6856a488c": [
     "virtualization\\hyper-v-on-windows\\TOC.md"
@@ -389,7 +398,13 @@
   "a986af5c3a448265540671bd2d6678dbcd4d0833": [
     "virtualization\\hyper-v-on-windows\\reference\\hyper-v-architecture.md"
   ],
+  "ba212628d6783022ae17e38383c61ada4428ad68": [
+    "virtualization\\hyper-v-on-windows\\quick-start\\quick-create-virtual-machine.md"
+  ],
   "8cfdc401fae56d20c7aae8fbda5b82cb6a96a993": [
     "virtualization\\hyper-v-on-windows\\quick-start\\quick-create-virtual-machine.md"
+  ],
+  "0d46eb633757537dc611ace226c19dd06442e9d0": [
+    "virtualization\\hyper-v-on-windows\\user-guide\\refactor-wmiv1-to-wmiv2.md"
   ]
 }
