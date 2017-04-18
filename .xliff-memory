@@ -2499,6 +2499,46 @@
       "SkeletonFile": "ol-xliffcache\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\720d15a919760233d90476fa522584b336eb4519.17d964a32d48c69ad77109779fd590de6ac78215.xml",
       "LocXliff": null,
       "LocXliffCommit": null
+    },
+    "virtualization\\windowscontainers\\about\\index.md.e3ff84a1a8b17c2ac37d4fb8f909e2111355e202.HT": {
+      "SourceFilename": "virtualization\\windowscontainers\\about\\index.md",
+      "XliffHash": "e3ff84a1a8b17c2ac37d4fb8f909e2111355e202",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\773eb1b1ac0021167375ee93a604451ec54122b5.c646cb34d0b68b5ac259e7e462c130dba38564b0.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "virtualization\\hyper-v-on-windows\\quick-start\\quick-create-virtual-machine.md.c6862908071901b359c97fdd2316e6a72ce24f6c.HT": {
+      "SourceFilename": "virtualization\\hyper-v-on-windows\\quick-start\\quick-create-virtual-machine.md",
+      "XliffHash": "c6862908071901b359c97fdd2316e6a72ce24f6c",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\1b2b778e882b413d29f52adf3e46e12e8aceede1.f67c803850892ae5d181a1d3157273d16397fcfc.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "virtualization\\windowscontainers\\manage-containers\\container-networking.md.d2b66e21f86f76a63b81cb0c286dfa97f3883455.HT": {
+      "SourceFilename": "virtualization\\windowscontainers\\manage-containers\\container-networking.md",
+      "XliffHash": "d2b66e21f86f76a63b81cb0c286dfa97f3883455",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\38ae7f72ec6ef23e80bf6a6667bfaaad433cd7b1.b35c9fa17ed520cf2cec06ae68fc80c67204eea2.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "virtualization\\hyper-v-on-windows\\user-guide\\refactor-wmiv1-to-wmiv2.md.d15bac4cbf2dc355a7026158925fcd7ffd013126.HT": {
+      "SourceFilename": "virtualization\\hyper-v-on-windows\\user-guide\\refactor-wmiv1-to-wmiv2.md",
+      "XliffHash": "d15bac4cbf2dc355a7026158925fcd7ffd013126",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\6b28e6f2adfcfd91ee38436984d8aa5870c0f040.42e93f96eeccd89db695609a52a8188e53b54af6.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
     }
   }
 }

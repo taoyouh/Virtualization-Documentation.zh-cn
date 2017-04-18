@@ -114,6 +114,9 @@
   "7d16fcf22187ae3ace25fe1bedbc02f3c6b63eb8": [
     "virtualization\\hyper-v-on-windows\\user-guide\\nested-virtualization.md"
   ],
+  "773eb1b1ac0021167375ee93a604451ec54122b5": [
+    "virtualization\\windowscontainers\\about\\index.md"
+  ],
   "d68be61b1d462b70986df5cfd6df052b388cec1d": [
     "virtualization\\windowscontainers\\about\\index.md"
   ],
@@ -317,6 +320,9 @@
   "622c8f638a815e19a54aa75b6b5ea0688d966ae3": [
     "virtualization\\windowscontainers\\manage-containers\\container-base-images.md"
   ],
+  "38ae7f72ec6ef23e80bf6a6667bfaaad433cd7b1": [
+    "virtualization\\windowscontainers\\manage-containers\\container-networking.md"
+  ],
   "18086b5dd3b9251e6e4475a79b77dac9b4acede7": [
     "virtualization\\windowscontainers\\manage-containers\\container-networking.md"
   ],
@@ -398,11 +404,17 @@
   "a986af5c3a448265540671bd2d6678dbcd4d0833": [
     "virtualization\\hyper-v-on-windows\\reference\\hyper-v-architecture.md"
   ],
+  "1b2b778e882b413d29f52adf3e46e12e8aceede1": [
+    "virtualization\\hyper-v-on-windows\\quick-start\\quick-create-virtual-machine.md"
+  ],
   "ba212628d6783022ae17e38383c61ada4428ad68": [
     "virtualization\\hyper-v-on-windows\\quick-start\\quick-create-virtual-machine.md"
   ],
   "8cfdc401fae56d20c7aae8fbda5b82cb6a96a993": [
     "virtualization\\hyper-v-on-windows\\quick-start\\quick-create-virtual-machine.md"
+  ],
+  "6b28e6f2adfcfd91ee38436984d8aa5870c0f040": [
+    "virtualization\\hyper-v-on-windows\\user-guide\\refactor-wmiv1-to-wmiv2.md"
   ],
   "0d46eb633757537dc611ace226c19dd06442e9d0": [
     "virtualization\\hyper-v-on-windows\\user-guide\\refactor-wmiv1-to-wmiv2.md"
