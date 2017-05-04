@@ -114,6 +114,9 @@
   "7d16fcf22187ae3ace25fe1bedbc02f3c6b63eb8": [
     "virtualization\\hyper-v-on-windows\\user-guide\\nested-virtualization.md"
   ],
+  "1699bec6515608c722c28babd26719b27baa53c6": [
+    "virtualization\\windowscontainers\\about\\index.md"
+  ],
   "773eb1b1ac0021167375ee93a604451ec54122b5": [
     "virtualization\\windowscontainers\\about\\index.md"
   ],
@@ -323,6 +326,9 @@
   "622c8f638a815e19a54aa75b6b5ea0688d966ae3": [
     "virtualization\\windowscontainers\\manage-containers\\container-base-images.md"
   ],
+  "27bf1a3ae02d3b8fc8b4fc929162ec613919a58c": [
+    "virtualization\\windowscontainers\\manage-containers\\container-networking.md"
+  ],
   "38ae7f72ec6ef23e80bf6a6667bfaaad433cd7b1": [
     "virtualization\\windowscontainers\\manage-containers\\container-networking.md"
   ],
@@ -373,6 +379,9 @@
   ],
   "766a99a74738fa41ef77410c70aefa7e664f014e": [
     "virtualization\\windowscontainers\\quick-start\\quick-start-windows-server.md"
+  ],
+  "ccdc5c59a1b21a1da2d159601daff7873531aef0": [
+    "virtualization\\windowscontainers\\manage-containers\\swarm-mode.md"
   ],
   "cee26228fed98b38fd0334083d480b0815bf1a36": [
     "virtualization\\windowscontainers\\manage-containers\\swarm-mode.md"

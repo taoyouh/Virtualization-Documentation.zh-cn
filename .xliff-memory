@@ -2539,6 +2539,36 @@
       "SkeletonFile": "ol-xliffcache\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\6b28e6f2adfcfd91ee38436984d8aa5870c0f040.42e93f96eeccd89db695609a52a8188e53b54af6.xml",
       "LocXliff": null,
       "LocXliffCommit": null
+    },
+    "virtualization\\windowscontainers\\manage-containers\\container-networking.md.3ae1c5b2fed43adc521adcc8d64ea3604908bfa9.HT": {
+      "SourceFilename": "virtualization\\windowscontainers\\manage-containers\\container-networking.md",
+      "XliffHash": "3ae1c5b2fed43adc521adcc8d64ea3604908bfa9",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\27bf1a3ae02d3b8fc8b4fc929162ec613919a58c.76bd67190578c4b5506cfdd905f0dbf41abdc4ff.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "virtualization\\windowscontainers\\manage-containers\\swarm-mode.md.1dd1b94c3b78ef5ac13fa9d13d8688f3194d55ea.HT": {
+      "SourceFilename": "virtualization\\windowscontainers\\manage-containers\\swarm-mode.md",
+      "XliffHash": "1dd1b94c3b78ef5ac13fa9d13d8688f3194d55ea",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\ccdc5c59a1b21a1da2d159601daff7873531aef0.cec99bad9fb5e64cffec330ee1beb2d03de9440c.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "virtualization\\windowscontainers\\about\\index.md.cccc145d558e2752b4d2191b726859f2583fdc69.HT": {
+      "SourceFilename": "virtualization\\windowscontainers\\about\\index.md",
+      "XliffHash": "cccc145d558e2752b4d2191b726859f2583fdc69",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\1699bec6515608c722c28babd26719b27baa53c6.9fb3f76861086e9195ed32fb8b387014e4a7877f.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
     }
   }
 }
