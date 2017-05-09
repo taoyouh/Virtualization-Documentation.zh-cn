@@ -87,6 +87,9 @@
   "eac2026cff552315a4cb256b595f1bd3317ee11c": [
     "virtualization\\windowscontainers\\samples.md"
   ],
+  "5230080386081bda8b54656d15f33b4986cfa6e3": [
+    "virtualization\\windowscontainers\\troubleshooting.md"
+  ],
   "4b0b56404a92f8dfe4bbc81e5215ef483afad58c": [
     "virtualization\\windowscontainers\\troubleshooting.md"
   ],
@@ -325,6 +328,9 @@
   ],
   "622c8f638a815e19a54aa75b6b5ea0688d966ae3": [
     "virtualization\\windowscontainers\\manage-containers\\container-base-images.md"
+  ],
+  "822557b49bb56f09880e0153b6e4d3f1c5daf436": [
+    "virtualization\\windowscontainers\\manage-containers\\container-networking.md"
   ],
   "27bf1a3ae02d3b8fc8b4fc929162ec613919a58c": [
     "virtualization\\windowscontainers\\manage-containers\\container-networking.md"
