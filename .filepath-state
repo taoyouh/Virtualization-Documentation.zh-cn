@@ -431,6 +431,9 @@
   "8cfdc401fae56d20c7aae8fbda5b82cb6a96a993": [
     "virtualization\\hyper-v-on-windows\\quick-start\\quick-create-virtual-machine.md"
   ],
+  "e2d6faabe77346199a5d292fcfd92cdfd63909b8": [
+    "virtualization\\hyper-v-on-windows\\user-guide\\refactor-wmiv1-to-wmiv2.md"
+  ],
   "6b28e6f2adfcfd91ee38436984d8aa5870c0f040": [
     "virtualization\\hyper-v-on-windows\\user-guide\\refactor-wmiv1-to-wmiv2.md"
   ],

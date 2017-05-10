@@ -2589,6 +2589,16 @@
       "SkeletonFile": "ol-xliffcache\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\822557b49bb56f09880e0153b6e4d3f1c5daf436.15dcc10ccc752d6290c9ff07ee73e2ac12722d99.xml",
       "LocXliff": null,
       "LocXliffCommit": null
+    },
+    "virtualization\\hyper-v-on-windows\\user-guide\\refactor-wmiv1-to-wmiv2.md.ae5e440a8e40061af71664782773bbb810945664.HT": {
+      "SourceFilename": "virtualization\\hyper-v-on-windows\\user-guide\\refactor-wmiv1-to-wmiv2.md",
+      "XliffHash": "ae5e440a8e40061af71664782773bbb810945664",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\e2d6faabe77346199a5d292fcfd92cdfd63909b8.dd884a8899da15ffb25b9d246b4037b8f91e49ce.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
     }
   }
 }
