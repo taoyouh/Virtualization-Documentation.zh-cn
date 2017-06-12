@@ -117,6 +117,9 @@
   "7d16fcf22187ae3ace25fe1bedbc02f3c6b63eb8": [
     "virtualization\\hyper-v-on-windows\\user-guide\\nested-virtualization.md"
   ],
+  "a70564f565a69f15ef4d668ccab0aa3b18c758ae": [
+    "virtualization\\windowscontainers\\about\\index.md"
+  ],
   "1699bec6515608c722c28babd26719b27baa53c6": [
     "virtualization\\windowscontainers\\about\\index.md"
   ],
@@ -358,6 +361,9 @@
   ],
   "2077f7cf0428e08ce915470ac4cc3b0ccc9c6369": [
     "virtualization\\windowscontainers\\manage-docker\\optimize-windows-dockerfile.md"
+  ],
+  "fb97f1d0f533b28acfb711e52bd021b29212f66e": [
+    "virtualization\\windowscontainers\\quick-start\\index.md"
   ],
   "d91f53908610ca245b6c8b4c017baed7f044667e": [
     "virtualization\\windowscontainers\\quick-start\\index.md"
