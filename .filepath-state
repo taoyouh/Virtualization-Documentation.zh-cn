@@ -317,6 +317,9 @@
   "1eea533459b565ffceca23ca7454e9678abc52e9": [
     "virtualization\\hyper-v-on-windows\\user-guide\\powershell-direct.md"
   ],
+  "a9d9f1b8cb0c76e57def1a92d993970ed40dbe7a": [
+    "virtualization\\hyper-v-on-windows\\user-guide\\setup-nat-network.md"
+  ],
   "235d804310cac38a4628bc2d931371d390e2d991": [
     "virtualization\\hyper-v-on-windows\\user-guide\\setup-nat-network.md"
   ],
