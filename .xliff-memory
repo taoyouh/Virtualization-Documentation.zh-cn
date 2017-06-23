@@ -2125,6 +2125,12 @@
       "XliffHash": "3813d3714b94c0599b29e40a5b5d3263c587fde2",
       "TranslationType": 1,
       "SkeletonFile": "ol-xliffcache\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\a9d9f1b8cb0c76e57def1a92d993970ed40dbe7a.d7dfb1bc78ba618337310e06e959d19cfac11b5a.xml"
+    },
+    "virtualization\\windowscontainers\\TOC.md.1d6799d997399bf7036bd702b844f8c5a76afecd.HT": {
+      "SourceFilename": "virtualization\\windowscontainers\\TOC.md",
+      "XliffHash": "1d6799d997399bf7036bd702b844f8c5a76afecd",
+      "TranslationType": 1,
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\9bc5f5ed52c50dfa6a8310d8c65cc9a918fba8fb.85309ad217f8dd5d658f5353e1cd8d2bc337d95c.xml"
     }
   }
 }
