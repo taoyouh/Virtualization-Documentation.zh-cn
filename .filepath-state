@@ -463,5 +463,8 @@
   ],
   "0d46eb633757537dc611ace226c19dd06442e9d0": [
     "virtualization\\hyper-v-on-windows\\user-guide\\refactor-wmiv1-to-wmiv2.md"
+  ],
+  "dba7da05a372018e2b5c2bac8f887b53dfb6cf91": [
+    "virtualization\\hyper-v-on-windows\\reference\\server-only-features.md"
   ]
 }
