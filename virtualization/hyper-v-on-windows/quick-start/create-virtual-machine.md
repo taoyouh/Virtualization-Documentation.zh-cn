@@ -1,29 +1,26 @@
 ---
-title: "在 Windows 10 上的 Hyper-V 中部署 Windows 虚拟机"
-description: "在 Windows 10 上的 Hyper-V 中部署 Windows 虚拟机"
+title: "使用 Hyper-V 创建虚拟机"
+description: "在 Windows 10 上使用 Hyper-V 创建虚拟机"
 keywords: windows 10, hyper-v
 author: scooley
 ms.date: 05/02/2016
 ms.topic: article
 ms.prod: windows-10-hyperv
-ms.service: windows-10-hyperv
 ms.assetid: 66723f33-b12c-49d1-82cf-71ba9d6087e9
-translationtype: Human Translation
-ms.sourcegitcommit: 54eff4bb74ac9f4dc870d6046654bf918eac9bb5
-ms.openlocfilehash: 19889805c3e4d6d650306de1028e117bcb42ec71
-
+ms.openlocfilehash: 200ec68011628262950362620ae5b438f1b6b86c
+ms.sourcegitcommit: c8e6bf83ee873fe19b522ba9e416ecf5d29f4c95
+ms.translationtype: HT
+ms.contentlocale: zh-CN
 ---
+# <a name="create-virtual-machine-with-hyper-v-on-windows-10"></a>在 Windows 10 上使用 Hyper-V 创建虚拟机
 
-# 在 Windows 10 上的 Hyper-V 中部署 Windows 虚拟机
+了解如何创建虚拟机以及如何在新虚拟机上安装操作系统。  你需要使用要运行的操作系统的 .iso 文件。 如果需要，请从 [TechNet 评估中心](http://www.microsoft.com/en-us/evalcenter/)获取 Windows 10 的评估副本。
 
-可以创建虚拟机并以多种不同方式将操作系统部署到其中，例如使用 Windows 部署服务、附加已准备就绪的虚拟硬盘驱动器或手动使用安装媒体。 本文介绍如何创建虚拟机并使用操作系统安装媒体将操作系统部署到该虚拟机的过程。
+## <a name="create-a-virtual-machine-with-hyper-v-manager"></a>使用 Hyper-V 管理器创建虚拟机
 
-开始此练习之前，需要准备想要部署的操作系统的 .iso 文件。 如果需要，请从 [TechNet 评估中心](http://www.microsoft.com/en-us/evalcenter/)获取 Windows 8.1 或 Windows 10 的评估副本。
+1. 通过按 Windows 键并键入“Hyper-V 管理器”，或者通过在你的应用程序中查找 **Hyper-V 管理器**，来打开 Hyper-V 管理器。
 
-## 使用 Hyper-V 管理器创建虚拟机
-以下步骤演练如何手动创建虚拟机并将操作系统部署到此虚拟机。
-
-1. 在 Hyper-V 管理器中，依次单击“**操作**” > “**新建**” > “**虚拟机**”以显示“新建虚拟机向导”。
+2. 在 Hyper-V 管理器中，依次单击**操作** > **新建** > **虚拟机**以显示“新建虚拟机向导”。
 
 2. 查看“开始之前”内容，然后单击“**下一步**”。 
 
@@ -64,7 +61,7 @@ ms.openlocfilehash: 19889805c3e4d6d650306de1028e117bcb42ec71
   
 10. 查看虚拟机详细信息，然后单击“**完成**”以完成虚拟机创建。
 
-## 使用 PowerShell 创建虚拟机
+## <a name="create-a-virtual-machine-with-powershell"></a>使用 PowerShell 创建虚拟机
 
 1. 以管理员身份打开 PowerShell ISE。
 
@@ -90,7 +87,7 @@ ms.openlocfilehash: 19889805c3e4d6d650306de1028e117bcb42ec71
   Set-VMFirmware -VMName $VMName -FirstBootDevice $DVDDrive
   ```
   
-## 完成操作系统部署
+## <a name="complete-the-operating-system-deployment"></a>完成操作系统部署
 
 为了完成生成虚拟机操作，需要启动该虚拟机并演练操作系统安装过程。
 
@@ -104,11 +101,3 @@ ms.openlocfilehash: 19889805c3e4d6d650306de1028e117bcb42ec71
   ![](media/OSDeploy_upd.png) 
 
 > **注意：**除非你运行的是批量许可版本的 Windows，否则需要为虚拟机内运行的 Windows 提供单独的许可证。 虚拟机的操作系统独立于主机操作系统。
-
-## 下一步 - 使用 PowerShell 和 Hyper V
-[Hyper-V 和 Windows PowerShell](try-hyper-v-powershell.md)
-
-
-<!--HONumber=Jan17_HO2-->
-
-

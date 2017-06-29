@@ -8,13 +8,12 @@ ms.topic: article
 ms.prod: windows-10-hyperv
 ms.service: windows-10-hyperv
 ms.assetid: 426c87cc-fa50-4b8d-934e-0b653d7dea7d
-translationtype: Human Translation
-ms.sourcegitcommit: ffdf89b0ae346197b9ae631ee5260e0565261c55
-ms.openlocfilehash: ea91ea0ffca5479cb0593ef9961625f7b7ab1f42
-
+ms.openlocfilehash: 8df30a00eaa2c98feeb4c80c302937c9dfc6d758
+ms.sourcegitcommit: bb171f4a858fefe33dd0748b500a018fd0382ea6
+ms.translationtype: HT
+ms.contentlocale: zh-CN
 ---
-
-# 尝试 Hyper-V 的预发行功能
+# <a name="try-pre-release-features-for-hyper-v"></a>尝试 Hyper-V 的预发行功能
 
 > 这是初步内容，可能还会更改。  
   预发行版虚拟机用于开发或测试环境，仅因为它不受 Microsoft 支持。
@@ -29,12 +28,12 @@ ms.openlocfilehash: ea91ea0ffca5479cb0593ef9961625f7b7ab1f42
 * 预发行版虚拟机的内部版本间的定义不一致。 如果更新主机操作系统，则现有的预发行版虚拟机可能与主机不兼容。 这些虚拟机可能无法启动，或可能最初看起来工作正常，但后来会遇到重大的兼容性问题。
 * 如果将预发行版虚拟机导入到具有其他内部版本的主机，则结果不可预知。 可以将预发行版虚拟机移动到另一台主机。 但只有两台主机运行相同的内部版本，这种情况才应该会正常工作。
 
-## 创建预发行版虚拟机
+## <a name="create-a-pre-release-virtual-machine"></a>创建预发行版虚拟机
 
 可以在运行 Windows Server 2016 Technical Preview 的 Hyper-V 主机上创建预发行版虚拟机。
 
 1. 在 Windows 桌面上，单击“开始”按钮并键入名称 **Windows PowerShell** 的任一部分。
-2. 右键单击“Windows PowerShell”，然后选择“以管理员身份运行”。
+2. 右键单击**Windows PowerShell**，然后选择**以管理员身份运行**。
 3. 将 [NEW-VM](https://technet.microsoft.com/library/hh848537.aspx) cmdlet 与 -Prerelease 标志配合使用，以创建预发行版虚拟机。 例如，运行以下命令，其中 VM 名称是你想要创建的虚拟机的名称。
 
 ``` PowerShell
@@ -46,12 +45,6 @@ New-VM -Name <VM Name> -Prerelease
 
  这些文章中介绍的示例适用于运行 Windows 10 或 Windows Server 2016 Technical Preview 的 Hyper-V 主机。 但现在，你只能使用 -Prerelease 标志在运行 Windows Server 2016 Technical Preview 的 Hyper-V 主机上创建预发行版虚拟机。
 
-## 另请参阅
+## <a name="see-also"></a>另请参阅
 -  [虚拟化博客](https://blogs.technet.microsoft.com/virtualization/) - 了解可用的预发行版功能以及如何进行尝试。
 - [Supported virtual machine configuration versions](https://technet.microsoft.com/library/mt695898.aspx#BKMK_SupportedConfigVersions)（受支持的虚拟机配置版本）-了解如何检查虚拟机配置版本以及 Microsoft 支持哪些版本。
-
-
-
-<!--HONumber=Oct16_HO4-->
-
-

@@ -8,13 +8,12 @@ ms.topic: article
 ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: 479e05b1-2642-47c7-9db4-d2a23592d29f
-translationtype: Human Translation
-ms.sourcegitcommit: 5d746be15856aad683bf684d2eef573d732ab457
-ms.openlocfilehash: 6add396bea629d5438cde5892458f6c8405bf644
-
+ms.openlocfilehash: 355daae1b673f0b05f08d0706664967a825de6f7
+ms.sourcegitcommit: bb171f4a858fefe33dd0748b500a018fd0382ea6
+ms.translationtype: HT
+ms.contentlocale: zh-CN
 ---
-
-# Windows Server 上的容器映像
+# <a name="container-images-on-windows-server"></a>Windows Server 上的容器映像
 
 在之前的 Windows Server 快速入门中，已从预先创建的 .Net Core 示例创建了 Windows 容器。 本练习中将详细介绍手动创建自定义容器映像、使用 Dockerfile 自动创建容器映像以及将容器映像存储在 Docker Hub 公共注册表中。
 
@@ -26,7 +25,7 @@ ms.openlocfilehash: 6add396bea629d5438cde5892458f6c8405bf644
 - 使用 Windows 容器功能和 Docker 配置此系统。 有关这些步骤的演练，请参阅 [Windows Server 上的 Windows 容器](./quick-start-windows-server.md)。
 - 一个用于将容器映像推送到 Docker Hub 的 Docker ID。 如果还没有 Docker ID，请在 [Docker 云](https://cloud.docker.com/)中进行注册。
 
-## 1.容器映像 - 手动
+## <a name="1-container-image---manual"></a>1.容器映像 - 手动
 
 为获得最佳体验，请从 Windows 命令行界面 (cmd.exe) 演练此练习。
 
@@ -99,7 +98,7 @@ windowsservercore   latest              dbfee88ee9fd        8 weeks ago         
 
 现在可以部署此映像了。 生成的容器中将包括所有捕获的修改。
 
-## 2.容器映像 - Dockerfile
+## <a name="2-container-image---dockerfile"></a>2.容器映像 - Dockerfile
 
 通过上一练习，已手动创建和修改容器，并已将其捕获到新容器映像中。 Docker 包含使用 Dockerfile 自动执行此过程的方法。 本练习将产生与上一练习几乎相同的结果，但是这次该过程将自动执行。 此练习需要 Docker ID。 如果还没有 Docker ID，请在 [Docker 云]( https://cloud.docker.com/)中进行注册。
 
@@ -169,7 +168,7 @@ c1dc6c1387b9   iis-dockerfile   "ping -t localhost"   About a minute ago   Up Ab
 docker rm -f <container name>
 ```
 
-## 3.Docker 推送
+## <a name="3-docker-push"></a>3.Docker 推送
 
 Docker 容器映像可以存储在容器注册表中。 图像存储在注册表中后，可以跨多个不同的容器主机检索以供将来使用。 Docker 在 [Docker Hub](https://hub.docker.com/) 中提供公共注册表来存储容器映像。
 
@@ -216,12 +215,6 @@ microsoft/iis             latest              e4525dda8206        3 hours ago   
 docker pull <user>/iis-dockerfile
 ```
 
-## 后续步骤
+## <a name="next-steps"></a>后续步骤
 
 [Windows 10 上的 Windows 容器](./quick-start-windows-10.md)
-
-
-
-<!--HONumber=Jan17_HO4-->
-
-

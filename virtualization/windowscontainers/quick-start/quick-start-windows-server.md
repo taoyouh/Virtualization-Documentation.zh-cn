@@ -8,14 +8,12 @@ ms.topic: article
 ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: e3b2a4dc-9082-4de3-9c95-5d516c03482b
-translationtype: Human Translation
-ms.sourcegitcommit: 76e041aac426604280208f616f7994181112215a
-ms.openlocfilehash: 766a99a74738fa41ef77410c70aefa7e664f014e
-ms.lasthandoff: 03/01/2017
-
+ms.openlocfilehash: be51a89292f339c40b05bb48e0921777fd4a9801
+ms.sourcegitcommit: bb171f4a858fefe33dd0748b500a018fd0382ea6
+ms.translationtype: HT
+ms.contentlocale: zh-CN
 ---
-
-# Windows Server 上的 Windows 容器
+# <a name="windows-containers-on-windows-server"></a>Windows Server 上的 Windows 容器
 
 本练习将演练 Windows Server 2016 上 Windows 容器功能的基本部署和使用。 在本练习中，你将安装容器角色并部署简单的 Windows Server 容器。 在开始本快速入门之前，请先熟悉基本容器概念和术语。 可以在[快速入门简介](./index.md)上找到此信息。
 
@@ -33,13 +31,13 @@ ms.lasthandoff: 03/01/2017
 </a>
 
 
-## 1.安装 Docker
+## <a name="1-install-docker"></a>1.安装 Docker
 
-安装 Docker 将用到 [OneGet 提供程序 PowerShell 模块](https://github.com/oneget/oneget)。 该提供程序将在计算机上启用容器功能。 还将安装 Docker，它要求重新启动。 若要使用 Window 容器，则需要安装 Docker。 其中包括 Docker 引擎和 Docker 客户端。
+为了安装 Docker，我们将使用能够使用提供程序执行安装的 [OneGet 提供程序 PowerShell 模块](https://github.com/oneget/oneget)，在本例中为 [MicrosoftDockerProvider](https://github.com/OneGet/MicrosoftDockerProvider)。 该提供程序将在计算机上启用容器功能。 还将安装 Docker，它要求重新启动。 若要使用 Window 容器，则需要安装 Docker。 其中包括 Docker 引擎和 Docker 客户端。
 
 打开提升的 PowerShell 会话并运行下列命令。
 
-首先，从 PowerShell 库安装 Docker-Microsoft PackageManagement 提供程序。
+首先，从 [PowerShell 库](https://www.powershellgallery.com/packages/DockerMsftProvider)安装 Docker-Microsoft PackageManagement 提供程序。
 
 ```none
 Install-Module -Name DockerMsftProvider -Repository PSGallery -Force
@@ -56,7 +54,12 @@ PowerShell 询问是否信任包源“DockerDefault”时，键入 `A` 以继续
 Restart-Computer -Force
 ```
 
-## 2.安装 Windows 更新
+> 提示：如果你希望稍后更新 Docker：
+>  - 查看已安装的版本，查看时使用 `Get-Package -Name Docker -ProviderName DockerMsftProvider`
+>  - 查找当前版本，查找时使用 `Find-Package -Name Docker -ProviderName DockerMsftProvider`
+>  - 当你准备就绪后，进行升级，升级时使用 `Install-Package -Name Docker -ProviderName DockerMsftProvider -Update -Force`，后跟 `Start-Service Docker`
+
+## <a name="2-install-windows-updates"></a>2. 安装 Windows 更新
 
 运行以下命令，确保 Windows Server 系统保持最新状态：
 
@@ -84,7 +87,7 @@ sconfig
 
 出现提示时，选择选项 A 下载所有更新。
 
-## 3.部署第一个容器
+## <a name="3-deploy-your-first-container"></a>3.部署第一个容器
 
 对于此练习，你将从 Docker Hub 注册表下载预先创建的 .NET 示例映像，并部署运行 .Net Hello World 应用程序的简单容器。  
 
@@ -144,9 +147,8 @@ OS: Microsoft Windows 10.0.14393
 
 有关 Docker Run 命令的深入信息，请参阅 [Docker.com 上的 Docker Run 参考]( https://docs.docker.com/engine/reference/run/)。
 
-## 后续步骤
+## <a name="next-steps"></a>后续步骤
 
 [Windows Server 上的容器映像](./quick-start-images.md)
 
 [Windows 10 上的 Windows 容器](./quick-start-windows-10.md)
-

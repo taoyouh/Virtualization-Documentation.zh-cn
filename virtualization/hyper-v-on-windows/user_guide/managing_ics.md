@@ -9,13 +9,12 @@ ms.prod: windows-10-hyperv
 ms.service: windows-10-hyperv
 ms.assetid: 9cafd6cb-dbbe-4b91-b26c-dee1c18fd8c2
 redirect_url: https://technet.microsoft.com/windows-server-docs/compute/hyper-v/manage/manage-Hyper-V-integration-services
-translationtype: Human Translation
-ms.sourcegitcommit: 687a3b35c1ee41b9620b1ae296255d681c672646
-ms.openlocfilehash: c27a51e9a12de9cec2720eadf6e09b8a582bae77
-
+ms.openlocfilehash: 83bcc4c2f47e2a3921be257f45a3a0e22dcba89a
+ms.sourcegitcommit: fd6c5ec419aae425af7ce6c6a44d59c98f62502a
+ms.translationtype: HT
+ms.contentlocale: zh-CN
 ---
-
-# 管理 Hyper-V 集成服务
+# <a name="managing-hyper-v-integration-services"></a>管理 Hyper-V 集成服务
 
 集成服务（通常称为集成组件）是允许虚拟机与 Hyper-V 主机通信的服务。 其中许多服务都很便利（例如来宾文件副本），但其他服务对虚拟机能够正常工作（时间同步）却至关重要。
 
@@ -23,20 +22,17 @@ ms.openlocfilehash: c27a51e9a12de9cec2720eadf6e09b8a582bae77
 
 有关各个集成服务的详细信息，请参阅[集成服务](../reference/integration-services.md)。
 
-## 使用 Hyper-V 管理器启用或禁用集成服务
+## <a name="enable-or-disable-integration-services-using-hyper-v-manager"></a>使用 Hyper-V 管理器启用或禁用集成服务
 
 1. 选择虚拟机并打开设置。
-  ![](./media/HyperVManager-OpenVMSettings.png)
   
 2. 从虚拟机设置窗口中，转到“管理”下的“集成服务”选项卡。
-  
-  ![](./media/HyperVManager-IntegrationServices.png)
   
   在此你可以看到此 Hyper-V 主机上可用的所有集成服务。  值得注意的是，来宾操作系统可能会也可能不会支持列出的所有集成服务。 若要确定来宾操作系统的版本信息，请登录到来宾操作系统并从命令提示符运行以下命令。
 
 REG QUERY "HKLM\Software\Microsoft\Virtual Machine\Auto" /v IntegrationServicesVersion
 
-## 使用 PowerShell 启用或禁用集成服务
+## <a name="enable-or-disable-integration-services-using-powershell"></a>使用 PowerShell 启用或禁用集成服务
 
 集成服务也可运行 [`Enable-VMIntegrationService`](https://technet.microsoft.com/en-us/library/hh848500.aspx) 和 [`Disable-VMIntegrationService`](https://technet.microsoft.com/en-us/library/hh848488.aspx) 来通过 PowerShell 进行启用和禁用。
 
@@ -77,13 +73,13 @@ REG QUERY "HKLM\Software\Microsoft\Virtual Machine\Auto" /v IntegrationServicesV
 集成服务已经过设计，以便需要在主机和来宾中同时启用才能正常运行。  虽然 Windows 来宾操作系统上的所有集成服务默认处于启用状态，但也可以禁用它们。  请参阅下一节中的操作方式。
 
 
-## 在来宾操作系统 (Windows) 中管理集成服务
+## <a name="manage-integration-services-from-guest-os-windows"></a>在来宾操作系统 (Windows) 中管理集成服务
 
 > **注意：**禁用集成服务可能严重影响主机管理你的虚拟机的功能。  必须在主机和来宾上启用集成服务才能操作。
 
 集成服务在 Windows 中显示为服务。 若要在虚拟机中启用或禁用集成服务，请打开 Windows 服务管理器。
 
-![](media/HVServices.png) 
+![](../user-guide/media/HVServices.png) 
 
 查找名称中包含 Hyper-V 的服务。 右键单击要启用或禁用的服务，并启动或停止服务。
 
@@ -114,7 +110,7 @@ Running  vmicvss            Hyper-V Volume Shadow Copy Requestor
 
 默认情况下，所有集成服务在来宾操作系统中均已启用。
 
-## 在来宾操作系统 (Linux) 中管理集成服务
+## <a name="manage-integration-services-from-guest-os-linux"></a>在来宾操作系统 (Linux) 中管理集成服务
 
 Linux 集成服务通常通过 Linux 内核提供。
 
@@ -195,7 +191,7 @@ sudo hv_kvp_daemon
 现在，如果你再次运行 `ps -ef | hv`，将发现所有 `hv_kvp_daemon` 进程有一个新的进程 ID。
 
 
-## 集成服务维护
+## <a name="integration-service-maintenance"></a>集成服务维护
 
 如果你的虚拟机可以从 Windows 更新接收重要更新，将默认运行 Windows 10 集成服务维护。  
 
@@ -205,7 +201,7 @@ sudo hv_kvp_daemon
 
 > **注意：**更新集成组件不再需要 ISO 镜像文件 vmguest.iso。 它未包含在 Windows 10 上的 Hyper-V 中。
 
-| 来宾操作系统 | 更新机制 | 注释 |
+| 来宾操作系统 | 更新机制 | 注意 |
 |:---------|:---------|:---------|
 | Windows 10 | Windows 更新 | |
 | Windows 8.1 | Windows 更新 | |
@@ -222,13 +218,13 @@ sudo hv_kvp_daemon
 | - | | |
 | Linux 来宾 | 程序包管理器 | 适用于 Linux 的集成组件内置于发行版中，但可能有可选的更新可用。 ******** |
 
->  \* 如果“数据交换”集成服务无法启用，在下载中心上，[此处](https://support.microsoft.com/en-us/kb/3071740)这些来宾的集成组件提供为Cabinet (cab) 文件。  
+>  \* 如果“数据交换”集成服务无法启用，在下载中心上，[此处](https://support.microsoft.com/en-us/kb/3071740)以 Cabinet (cab) 文件形式提供了这些来宾的集成组件。  
   [此处](http://blogs.technet.com/b/virtualization/archive/2015/07/24/integration-components-available-for-virtual-machines-not-connected-to-windows-update.aspx)提供应用 Cab 的说明。
 
 
 **对于在 Windows 8.1 主机上运行的虚拟机：**
 
-| 来宾操作系统 | 更新机制 | 注释 |
+| 来宾操作系统 | 更新机制 | 注意 |
 |:---------|:---------|:---------|
 | Windows 10 | Windows 更新 | |
 | Windows 8.1 | Windows 更新 | |
@@ -271,9 +267,3 @@ sudo hv_kvp_daemon
 | Linux 来宾 | 程序包管理器 | 适用于 Linux 的集成组件内置于发行版中，但可能有可选的更新可用。 ** |
 
  > ** 在[此处](https://technet.microsoft.com/en-us/library/dn531030.aspx)查找有关 Linux 来宾的详细信息。 
-
-
-
-<!--HONumber=Jan17_HO2-->
-
-

@@ -8,13 +8,12 @@ ms.topic: article
 ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: 75fed138-9239-4da9-bce4-4f2e2ad469a1
-translationtype: Human Translation
-ms.sourcegitcommit: 54eff4bb74ac9f4dc870d6046654bf918eac9bb5
-ms.openlocfilehash: 9dcac129e7c95fa416437061c426fee850db11b4
-
+ms.openlocfilehash: 0df4ef6a5116edd5b47283180ba6ba1d745cd06b
+ms.sourcegitcommit: e8d6b78103e8b0b086d4b6a1be40a1f8dcd8c225
+ms.translationtype: HT
+ms.contentlocale: zh-CN
 ---
-
-# Windows 上的 Dockerfile
+# <a name="dockerfile-on-windows"></a>Windows 上的 Dockerfile
 
 Docker 引擎包含用于自动创建容器映像的工具。 尽管可以使用 `docker commit` 命令手动创建容器映像，然而采用自动映像创建过程可获得许多好处，其中包括：
 
@@ -33,9 +32,9 @@ Docker 引擎包含用于自动创建容器映像的工具。 尽管可以使用
 
 有关 Dockerfile 的完整详细信息，请参阅 [docker.com 上的 Dockerfile 参考]( https://docs.docker.com/engine/reference/builder/)。
 
-## Dockerfile 指令
+## <a name="dockerfile-introduction"></a>Dockerfile 指令
 
-### 基本语法
+### <a name="basic-syntax"></a>基本语法
 
 Dockerfile 的最基本形式十分简单。 下面的示例创建了一个新映像，其中包括 IIS 和一个“hello world”站点。 此示例包含了用于解释每个步骤的注释（通过 `#` 指示）。 本文的后续部分将对 Dockerfile 语法规则和 Dockerfile 指令进行更详细的讲解。
 
@@ -62,11 +61,11 @@ CMD [ "cmd" ]
 
 有关用于 Windows 的 Dockerfile 的其他示例，请参阅[用于 Windows 的 Dockerfile 存储库] (https://github.com/Microsoft/Virtualization-Documentation/tree/master/windows-container-samples)。
 
-## 说明
+## <a name="instructions"></a>说明
 
 Dockerfile 指令为 Docker 引擎提供创建容器映像所需的步骤。 这些指令按顺序逐一执行。 以下是有关一些基本 Dockerfile 指令的详细信息。 有关 Dockerfile 指令的完整列表，请参阅 [Docker.com 上的 Dockerfile 参考] (https://docs.docker.com/engine/reference/builder/)。
 
-### FROM
+### <a name="from"></a>FROM
 
 `FROM` 指令用于设置在新映像创建过程期间将使用的容器映像。 例如，使用指令 `FROM microsoft/windowsservercore` 时，所得到的映像派生自 Windows Server Core 基本操作系统映像映像并具有对其的依赖关系。 如果正在进行 Docker 生成过程的系统上不存在指定的映像，Docker 引擎将尝试从公有或私有映像注册表下载该映像。
 
@@ -86,7 +85,7 @@ FROM microsoft/windowsservercore
 
 有关 FROM 指令的详细信息，请参阅 [Docker.com 上的 FROM 参考]( https://docs.docker.com/engine/reference/builder/#from)。
 
-### RUN
+### <a name="run"></a>RUN
 
 `RUN` 指令指定将要运行并捕获到新容器映像中的命令。 这些命令包括安装软件、创建文件和目录，以及创建环境配置等。
 
@@ -160,12 +159,12 @@ RUN dism.exe /online /enable-feature /all /featurename:iis-webserver /NoRestart
 此示例安装 Visual Studio 可再发行组件包。 请注意，`Start-Process` 和 `-Wait` 参数用于运行安装程序。 以确保在完成安装后再移动到 Dockerfile 中的第二步。
 
 ```none
-RUN Start-Process c:\vcredist_x86.exe -ArgumentList '/quiet' -Wait
+RUN powershell.exe -Command Start-Process c:\vcredist_x86.exe -ArgumentList '/quiet' -Wait
 ```
 
 有关 RUN 指令的详细信息，请参阅 [Docker.com 上的 RUN 参考]( https://docs.docker.com/engine/reference/builder/#run)。
 
-### 复制
+### <a name="copy"></a>复制
 
 `COPY` 指令将文件和目录复制到容器的文件系统。 文件和目录需位于相对于 Dockerfile 的路径中。
 
@@ -185,7 +184,7 @@ COPY ["<source>", "<destination>"]
 
 **Windows 注意事项**
 
-在 Windows 上，目标格式必须使用正斜杠。 例如，以下是有效的 `COPY` 指令。
+在 Windows 上，目标格式必须使用正斜杠。 例如，这些是有效的 `COPY` 指令。
 
 ```none
 COPY test1.txt /temp/
@@ -212,7 +211,7 @@ COPY config* c:/temp/
 
 有关 `COPY` 指令的详细信息，请参阅 [COPY Reference on Docker.com]( https://docs.docker.com/engine/reference/builder/#copy)（Docker.com上的 COPY 参考）。
 
-### 添加
+### <a name="add"></a>添加
 
 ADD 指令与 COPY 指令非常类似；但它包含更多功能。 除了将文件从主机复制到容器映像，`ADD` 指令还可以使用 URL 规范从远程位置复制文件。
 
@@ -266,7 +265,7 @@ ADD https://www.python.org/ftp/python/3.5.1/python-3.5.1.exe /temp/python-3.5.1.
 
 有关 `ADD` 指令的详细信息，请参阅 [Docker.com 上的 ADD 参考]( https://docs.docker.com/engine/reference/builder/#add)。
 
-### WORKDIR
+### <a name="workdir"></a>WORKDIR
 
 `WORKDIR` 指令用于为其他 Dockerfile 指令（如 `RUN`、`CMD`）设置一个工作目录，并且还设置用于运行容器映像实例的工作目录。
 
@@ -294,7 +293,7 @@ WORKDIR c:\\Apache24\\bin
 
 有关 `WORKDIR` 指令的详细信息，请参阅 [Docker.com 上的 WORKDIR 参考]( https://docs.docker.com/engine/reference/builder/#workdir)。
 
-### CMD
+### <a name="cmd"></a>CMD
 
 `CMD` 指令用于设置部署容器映像的实例时要运行的默认命令。 例如，如果该容器将承载 NGINX Web 服务器，则 `CMD` 可能包括用于启动 Web 服务器的指令，如 `nginx.exe`。 如果 Dockerfile 中指定了多个 `CMD` 指令，只会计算最后一个指令。
 
@@ -333,7 +332,7 @@ CMD c:\Apache24\bin\httpd.exe -w
 
 有关 `CMD` 指令的详细信息，请参阅 [Docker.com 上的 CMD 参考](https://docs.docker.com/engine/reference/builder/#cmd)。
 
-## 转义字符
+## <a name="escape-character"></a>转义字符
 
 在许多情况下，Dockerfile 指令需要跨多个行；这可通过转义字符完成。 默认 Dockerfile 转义字符是反斜杠 `\`。 由于反斜杠在 Windows 中也是一个文件路径分隔符，这可能导致出现问题。 要更改默认转义字符，可使用一个分析程序指令。 有关分析程序指令的详细信息，请参阅 [Parser Directives on Docker.com](https://docs.docker.com/engine/reference/builder/#parser-directives)（Docker.com 上的分析程序指令）。
 
@@ -367,9 +366,9 @@ RUN powershell.exe -Command `
 
 有关转义分析程序指令的详细信息，请参阅 [Escape Parser Directive on Docker.com](https://docs.docker.com/engine/reference/builder/#escape)（Docker.com 上的转义分析程序指令）。
 
-## Dockerfile 中的 PowerShell
+## <a name="powershell-in-dockerfile"></a>Dockerfile 中的 PowerShell
 
-### PowerShell 命令
+### <a name="powershell-commands"></a>PowerShell 命令
 
 可使用 `RUN` 操作在 Dockerfile 中运行 PowerShell 命令。
 
@@ -379,7 +378,7 @@ FROM microsoft/windowsservercore
 RUN powershell -command Expand-Archive -Path c:\apache.zip -DestinationPath c:\
 ```
 
-### REST 调用
+### <a name="rest-calls"></a>REST 调用
 
 当从 Web 服务收集信息或文件时，PowerShell 与 `Invoke-WebRequest` 命令会很有用。 例如，如果要构建包括 Python 的映像，可以使用下面的示例。 请考虑将 `$ProgressPreference` 设置为 `SilentlyContinue`，从而实现更快的下载速度。
 
@@ -410,7 +409,7 @@ RUN powershell.exe -Command \
 
 > Nano Server 中当前不支持 WebClient
 
-### PowerShell 脚本
+### <a name="powershell-scripts"></a>PowerShell 脚本
 
 在某些情况下，执行这样的操作可能会有所帮助：将脚本复制到映像创建过程期间使用的容器中，然后从该容器内运行脚本。 请注意 - 这会限制任何映像层缓存，并降低 Dockerfile 的可读性。
 
@@ -422,7 +421,7 @@ ADD script.ps1 /windows/temp/script.ps1
 RUN powershell.exe -executionpolicy bypass c:\windows\temp\script.ps1
 ```
 
-## Docker Build
+## <a name="docker-build"></a>Docker Build
 
 创建 Dockerfile 并将其保存到磁盘后，即可运行 `docker build` 以创建新映像。 `docker build` 命令采用几个可选参数和指向 Dockerfile 的路径。 有关 Docker Build 的完整文档，包括所有生成选项的列表，请参阅 [build Reference on Docker.com](https://docs.docker.com/engine/reference/commandline/build/#build)（Docker.com 上的 Build 参考）。
 
@@ -476,14 +475,8 @@ iis                 latest              e2aafdfbe392        About a minute ago  
 windowsservercore   latest              6801d964fda5        4 months ago         0 B
 ```
 
-## 进一步阅读和参考
+## <a name="further-reading--references"></a>进一步阅读和参考
 
 [优化适用于 Windows 的 Dockerfile 和 Docker 版本] (optimize-windows-dockerfile.md)
 
 [Docker.com 上的 Dockerfile 参考](https://docs.docker.com/engine/reference/builder/)
-
-
-
-<!--HONumber=Jan17_HO4-->
-
-

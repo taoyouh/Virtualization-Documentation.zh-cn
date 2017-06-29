@@ -8,96 +8,39 @@ ms.topic: article
 ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: bb9bfbe0-5bdc-4984-912f-9c93ea67105f
-translationtype: Human Translation
-ms.sourcegitcommit: 996d3b1a8f7c8325ac66d331e1d62208c0cf6b53
-ms.openlocfilehash: 091a3570291624a3be40e3aabb9f99a482cb6470
-ms.lasthandoff: 02/27/2017
-
+ms.openlocfilehash: a6ed0cccb984d303990973a1e2009cc2922f9443
+ms.sourcegitcommit: bb171f4a858fefe33dd0748b500a018fd0382ea6
+ms.translationtype: HT
+ms.contentlocale: zh-CN
 ---
+# <a name="windows-containers-on-windows-10"></a>Windows 10 上的 Windows 容器
 
-# Windows 10 上的 Windows 容器
+本练习将演练 Windows 10 专业版或企业版（周年纪念版）上 Windows 容器功能的基本部署和用法。 完成后，你就安装了适用于 Windows 的 Docker 并运行了简单的容器。 在开始本快速入门之前，请先熟悉基本容器概念和术语。 可以在 [Quick Start Introduction](./index.md)（快速入门简介）上找到此信息。
 
-本练习将演练 Windows 10 专业版或企业版（周年纪念版）上 Windows 容器功能的基本部署和用法。 完成操作后，你将已安装容器角色，并部署简单的 Hyper-V 容器。 在开始本快速入门之前，请先熟悉基本容器概念和术语。 可以在 [Quick Start Introduction](./index.md)（快速入门简介）上找到此信息。
-
-本快速入门特定于 Windows 10 上的 Hyper-V 容器。 此页面左侧的目录中提供其他快速入门文档。
+此快速入门特定于 Windows 10。 此页面左侧的目录中提供其他快速入门文档。
 
 **先决条件：**
 
-- 一个运行 Windows 10 周年纪念版（专业版或企业版）的物理计算机系统。   
+- 一个运行 Windows 10 周年纪念版或创意者更新（专业版或企业版）的物理计算机系统。   
 - 本快速入门可以在 Windows 10 虚拟机上运行，但需要启用嵌套虚拟化。 可以在[嵌套虚拟化指南](https://msdn.microsoft.com/en-us/virtualization/hyperv_on_windows/user_guide/nesting)中找到相关详细信息。
 
-> 必须安装关键更新，Windows 容器才会工作。 
-> 若要检查 OS 版本，请运行 `winver.exe`，并将显示的版本与 [Windows 10 更新历史记录](https://support.microsoft.com/en-us/help/12387/windows-10-update-history)进行比较。 
+> 必须安装关键更新，Windows 容器才会工作。
+> 若要检查 OS 版本，请运行 `winver.exe`，并将显示的版本与 [Windows 10 更新历史记录](https://support.microsoft.com/en-us/help/12387/windows-10-update-history)进行比较。
 > 请确保拥有 14393.222 或更高版本再继续操作。
 
-## 1.安装容器功能
+## <a name="1-install-docker-for-windows"></a>1. 安装适用于 Windows 的 Docker
 
-需要在使用 Windows 容器之前启用容器功能。 要执行此操作，在**提升的** PowerShell 会话中运行以下命令。
+[下载适用于 Windows 的 Docker](https://download.docker.com/win/stable/InstallDocker.msi) 并运行安装程序。 Docker 文档中提供了[详细的安装说明](https://docs.docker.com/docker-for-windows/install)。
 
-如果收到一条错误，显示 `Enable-WindowsOptionalFeature` 不存在，请仔细检查是否以管理员身份运行 PowerShell。
+## <a name="2-switch-to-windows-containers"></a>2. 切换到 Windows 容器
 
-```none
-Enable-WindowsOptionalFeature -Online -FeatureName containers -All
-```
+安装后，适用于 Windows 的 Docker 默认为运行 Linux 容器。 通过使用 Docker 任务栏菜单或通过在 PowerShell 提示符下运行以下命令来切换到 Windows 容器：`& $Env:ProgramFiles\Docker\Docker\DockerCli.exe -SwitchDaemon`。
 
-由于 Windows 10 仅支持 Hyper-V 容器，因此还必须启用 Hyper-V 功能。 若要使用 PowerShell 启用 Hyper-V 功能，请在提升的 PowerShell 会话中运行以下命令。
+![](./media/docker-for-win-switch.png)
 
-```none
-Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Hyper-V -All
-```
+## <a name="3-install-base-container-images"></a>3. 安装基本容器映像
 
-安装完成后，请重启计算机。
-
-```none
-Restart-Computer -Force
-```
-
-> 如果以前使用的是Windows 10 上的 Hyper-V 容器和 Technical Preview 5 容器基本映像，请务必重新启用 Oplocks。 请运行以下命令：  `Set-ItemProperty -Path 'HKLM:SOFTWARE\Microsoft\Windows NT\CurrentVersion\Virtualization\Containers' -Name VSmbDisableOplocks -Type DWord -Value 0 -Force`
-
-## 2.安装 Docker
-
-若要使用 Window 容器，则需要安装 Docker。 Docker 由 Docker 引擎和 Docker 客户端组成。 此示例中将会安装这两者。 为此，请运行以下命令：
-
-以 zip 存档形式下载 Docker 引擎和客户端。
-
-```none
-Invoke-WebRequest "https://get.docker.com/builds/Windows/x86_64/docker-17.03.0-ce.zip" -OutFile "$env:TEMP\docker.zip" -UseBasicParsing
-```
-
-将 zip 存档展开到 Program Files，存档内容已经位于 Docker 目录中。
-
-```none
-Expand-Archive -Path "$env:TEMP\docker.zip" -DestinationPath $env:ProgramFiles
-```
-
-将 Docker 目录添加到系统路径。
-
-```none
-# Add path to this PowerShell session immediately
-$env:path += ";$env:ProgramFiles\Docker"
-
-# For persistent use after a reboot
-$existingMachinePath = [Environment]::GetEnvironmentVariable("Path",[System.EnvironmentVariableTarget]::Machine)
-[Environment]::SetEnvironmentVariable("Path", $existingMachinePath + ";$env:ProgramFiles\Docker", [EnvironmentVariableTarget]::Machine)
-```
-
-若要将 Docker 安装为一个 Windows 服务，请运行以下命令。
-
-```none
-dockerd --register-service
-```
-
-安装完成后，可以启动该服务。
-
-```none
-Start-Service Docker
-```
-
-## 3.安装基本容器映像
-
-Windows 容器是从模板或映像部署的。 需要先下载容器基本操作系统映像，才能部署容器。 以下命令将下载 Nano Server 基本映像。
-
-拉取 Nano Server 基本映像。
+Windows 容器是从基本映像中构建的。 以下命令将拉取 Nano Server 基本映像。
 
 ```none
 docker pull microsoft/nanoserver
@@ -114,7 +57,7 @@ microsoft/nanoserver   latest              105d76d0f40e        4 days ago       
 
 > 可在此处 ([EULA](../images-eula.md)) 阅读 Windows 容器操作系统映像 EULA。
 
-## 4.部署第一个容器
+## <a name="4-run-your-first-container"></a>4. 运行你的第一个容器
 
 对于此简单示例，将创建和部署一个“Hello World”容器映像。 为获得最佳体验，请在升级后的Windows CMD shell 或 PowerShell中运行这些命令。
 
@@ -165,7 +108,6 @@ docker run --rm helloworld powershell c:\helloworld.ps1
 `docker run` 命令的结果是，从 HelloWorld 映像创建 Hyper-V 容器，然后执行一个“Hello World”脚本（输出回显到该界面），然后停止并删除容器。
 Windows 10 和容器快速入门的后续部分将深入探讨在 Windows 10 上的容器中创建和部署应用程序。
 
-## 后续步骤
+## <a name="next-steps"></a>后续步骤
 
 [Windows Server 上的 Windows 容器](./quick-start-windows-server.md)
-

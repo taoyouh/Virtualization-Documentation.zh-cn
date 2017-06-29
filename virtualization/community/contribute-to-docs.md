@@ -8,17 +8,16 @@ ms.topic: article
 ms.prod: virtualization
 ms.service: virtualization
 ms.assetid: 731ed95a-ce13-4c6e-a450-49563bdc498c
-translationtype: Human Translation
-ms.sourcegitcommit: 54eff4bb74ac9f4dc870d6046654bf918eac9bb5
-ms.openlocfilehash: d4fd2dbaf362ac3ad52667743177a203174b397d
-
+ms.openlocfilehash: b5fe1a2e4c59007fbbb679c9050e28a5e076b08f
+ms.sourcegitcommit: bb171f4a858fefe33dd0748b500a018fd0382ea6
+ms.translationtype: HT
+ms.contentlocale: zh-CN
 ---
-
-# 参与编辑文档
+# <a name="contribute-to-the-docs"></a>参与编辑文档
 
 > **注意：**若要参与，必须具有 [GitHub](https://www.github.com) 帐户。
 
-## 编辑现有的文档
+## <a name="edit-an-existing-doc"></a>编辑现有的文档
 
 1. 查找你想要编辑的文档。  
 
@@ -59,12 +58,12 @@ ms.openlocfilehash: d4fd2dbaf362ac3ad52667743177a203174b397d
 
 7. 创建[拉取请求](contribute-to-docs.md#pull-requests)  
 
-## 拉取请求
+## <a name="pull-requests"></a>拉取请求
 
 大多数更改将通过拉取请求提交  拉取请求是一种通过多个查看器查看更改集、对当前内容进行更改和注释的方式。
 
 
-## 本地分叉和编辑存储库
+## <a name="fork-the-repo-and-edit-locally"></a>本地分叉和编辑存储库
 
 对于长期的文档任务，请在本地克隆存储库，并在计算机上处理。
 
@@ -85,7 +84,7 @@ ms.openlocfilehash: d4fd2dbaf362ac3ad52667743177a203174b397d
   * 用于 Git 的 VSCode 介绍一些方便的功能
   * 进行首个提交。
 
-### 设置 Git
+### <a name="set-up-git"></a>设置 Git
 
 1. 从[此处](https://git-for-windows.github.io/)安装 git（在 Windows 上）
 
@@ -179,7 +178,7 @@ ms.openlocfilehash: d4fd2dbaf362ac3ad52667743177a203174b397d
   }
   ```
 
-### 验证并存储凭据
+### <a name="validate-and-stash-credentials"></a>验证并存储凭据
 
   若要验证已正确设置的存储库，请尝试拉取新内容。
 
@@ -188,17 +187,11 @@ ms.openlocfilehash: d4fd2dbaf362ac3ad52667743177a203174b397d
   ```
 
 
-### 设置 markdown 编辑环境
+### <a name="set-up-markdown-editing-environment"></a>设置 markdown 编辑环境
 
 1. 下载 VSCode
 
 6. 进行测试提交。  如果凭据正确存储，都应顺畅工作。
 
-
-
-
-
-
-<!--HONumber=Jan17_HO2-->
 
 

@@ -8,13 +8,12 @@ ms.topic: article
 ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: 74c9d604-0915-4d89-bc69-0263b76bc66b
-translationtype: Human Translation
-ms.sourcegitcommit: 54eff4bb74ac9f4dc870d6046654bf918eac9bb5
-ms.openlocfilehash: 9b630e372b575ef1721c0d0926ec2caec3e5ec34
-
+ms.openlocfilehash: ac6e99800fcabef31464a81799fc9e329438b0ae
+ms.sourcegitcommit: bb171f4a858fefe33dd0748b500a018fd0382ea6
+ms.translationtype: HT
+ms.contentlocale: zh-CN
 ---
-
-# Windows 容器文档
+# <a name="windows-containers-documentation"></a>Windows 容器文档
 
 Windows 容器提供操作系统级别的虚拟化，允许多个独立的应用程序在单个系统上运行。 该功能附带两种不同类型的容器运行时，每个都有不同程度的应用程序隔离。 Windows Server 容器通过命名空间实现隔离并处理隔离。 Hyper-V 容器在轻型虚拟机中封装每个容器。 此文档集提供了有关管理操作的快速入门指南、部署指南和技术详细信息。
 
@@ -84,9 +83,3 @@ Windows 10 快速入门<br /><br />
 </td>
 </tr>
 </table>
-
-
-
-<!--HONumber=Jan17_HO4-->
-
-
