@@ -1,12 +1,7 @@
 ---
 redirect_url: ../quick-start/create-virtual-machine
-translationtype: Human Translation
-ms.sourcegitcommit: 54eff4bb74ac9f4dc870d6046654bf918eac9bb5
-ms.openlocfilehash: a7d219b11f4593f77970196c192d99579d4e23d9
-
+ms.openlocfilehash: edbb662a7bf110dbcf23c2840ee47ed367ea635b
+ms.sourcegitcommit: bb171f4a858fefe33dd0748b500a018fd0382ea6
+ms.translationtype: HT
+ms.contentlocale: zh-CN
 ---
-
-
-<!--HONumber=Jan17_HO2-->
-
-

@@ -1,12 +1,7 @@
 ---
 redirect_url: ../quick-start
-translationtype: Human Translation
-ms.sourcegitcommit: 54eff4bb74ac9f4dc870d6046654bf918eac9bb5
-ms.openlocfilehash: b6725f24beabb5331eff7d5243c2fe1c3c491001
-
+ms.openlocfilehash: 573fa93b8c803437d0ae70e6eafa4e57c89fc515
+ms.sourcegitcommit: bb171f4a858fefe33dd0748b500a018fd0382ea6
+ms.translationtype: HT
+ms.contentlocale: zh-CN
 ---
-
-
-<!--HONumber=Jan17_HO4-->
-
-
