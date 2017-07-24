@@ -63,6 +63,10 @@
   "1988e55cfb9f3e76473e9398538e6b97344bedac": [
     "virtualization\\windowscontainers\\deployment\\deployment_nano.md"
   ],
+  "71d91e12ae843bf96e1b4001915ffb55bb352ffd": [
+    "virtualization\\windowscontainers\\management\\docker-powershell.md",
+    "virtualization\\windowscontainers\\manage-docker\\docker-powershell.md"
+  ],
   "1b4b36def403bbaf75c9828bf36d72e83f6114b5": [
     "virtualization\\windowscontainers\\management\\docker-powershell.md"
   ],
@@ -123,6 +127,9 @@
   "7d16fcf22187ae3ace25fe1bedbc02f3c6b63eb8": [
     "virtualization\\hyper-v-on-windows\\user-guide\\nested-virtualization.md"
   ],
+  "a374a95b0a8e9188fb3ad69aa070acd8996df5c4": [
+    "virtualization\\windowscontainers\\about\\index.md"
+  ],
   "a70564f565a69f15ef4d668ccab0aa3b18c758ae": [
     "virtualization\\windowscontainers\\about\\index.md"
   ],
@@ -153,6 +160,9 @@
   "b6c25285c3cee3a863bef40c34a1cf13b66b42fb": [
     "virtualization\\windowscontainers\\communitylinks.md"
   ],
+  "3c4c13507f94fb56ee9ccebdf702a7ddfd790b9c": [
+    "virtualization\\windowscontainers\\index.md"
+  ],
   "9b630e372b575ef1721c0d0926ec2caec3e5ec34": [
     "virtualization\\windowscontainers\\index.md"
   ],
@@ -164,9 +174,6 @@
   ],
   "0e692f7521e4a15e3e56d4b98f7ca15fe94ee167": [
     "virtualization\\windowscontainers\\manage-containers\\manage-serviceaccounts.md"
-  ],
-  "71d91e12ae843bf96e1b4001915ffb55bb352ffd": [
-    "virtualization\\windowscontainers\\manage-docker\\docker-powershell.md"
   ],
   "06f8f2e77ab0c89fe0efb2f4d859720d6c0d9d4c": [
     "virtualization\\windowscontainers\\manage-containers\\hyperv-container.md"
@@ -380,6 +387,9 @@
   "2077f7cf0428e08ce915470ac4cc3b0ccc9c6369": [
     "virtualization\\windowscontainers\\manage-docker\\optimize-windows-dockerfile.md"
   ],
+  "140b306c1b81797474b38fa66a71e92f44ab3ba0": [
+    "virtualization\\windowscontainers\\quick-start\\index.md"
+  ],
   "fb97f1d0f533b28acfb711e52bd021b29212f66e": [
     "virtualization\\windowscontainers\\quick-start\\index.md"
   ],
@@ -388,6 +398,9 @@
   ],
   "6add396bea629d5438cde5892458f6c8405bf644": [
     "virtualization\\windowscontainers\\quick-start\\quick-start-images.md"
+  ],
+  "e8091eedc1a1956a84c3f2ecbd9652db6e460c5b": [
+    "virtualization\\windowscontainers\\quick-start\\quick-start-windows-10.md"
   ],
   "66bb1ba56fde13d76392ddb4a1f8e6855201e7a3": [
     "virtualization\\windowscontainers\\quick-start\\quick-start-windows-10.md"
@@ -406,6 +419,9 @@
   ],
   "8aba9f2ef619b79e7459d7fd55bd27cf107621b3": [
     "virtualization\\windowscontainers\\quick-start\\quick-start-windows-10.md"
+  ],
+  "e2289a77e4ee8ff07b6a503c9afdbf8ef1e8e22e": [
+    "virtualization\\windowscontainers\\quick-start\\quick-start-windows-server.md"
   ],
   "569ba8619e60a9c34c2939ff2106076e66040aa8": [
     "virtualization\\windowscontainers\\quick-start\\quick-start-windows-server.md"
@@ -484,6 +500,9 @@
   ],
   "be60f149be26dc6f9213006a0acec567f7dd9055": [
     "virtualization\\windowscontainers\\quick-start\\Nano-RS3-.NET-Core-and-PS.md"
+  ],
+  "4c6d272445be2b3d37814894e9ab654ecf4683cb": [
+    "virtualization\\windowscontainers\\quick-start\\Using-Insider-Container-Images.md"
   ],
   "95f9187484988f7b7d74617424e218955e1eec80": [
     "virtualization\\windowscontainers\\quick-start\\Using-Insider-Container-Images.md"
