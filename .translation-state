@@ -1,5 +1,5 @@
 {
-  "LastProcessedCommit": "46496e7ecf66e3956dc99552166d98f2905bbbc1",
+  "LastProcessedCommit": "015f8c438cd1e1331e5388280facce4b9ec939ac",
   "LastTranslatedCommit": "21f4320cb76270b953a1d22d857047a2fcf5d4b8",
   "LastConfigHash": "c2c732afb7c3f4c37d58d495724fd755011bf7a0",
   "Items": {
@@ -20843,6 +20843,117 @@
       "HandoffFileCommit": "a13eb9446aeefcf521efa35ef8aa860fcf93b31c",
       "HandoffDateTime": "2017-07-24T18:49:33.3957744Z",
       "HandoffXliffHash": "38b61236f0b9096f5da4f3ca1c621da95ce4978d",
+      "HandoffPriority": ""
+    },
+    "3d1146f6e86ce65115fe0112bec6e2702930c4be": {
+      "FileHash": "3d1146f6e86ce65115fe0112bec6e2702930c4be",
+      "SourceFileCommit": "015f8c438cd1e1331e5388280facce4b9ec939ac",
+      "SourceFilePath": "virtualization\\windowscontainers\\about\\index.md",
+      "HandoffReason": 1,
+      "FilePathList": [
+        "virtualization\\windowscontainers\\about\\index.md"
+      ],
+      "HasMetadata": true,
+      "TranslationType": 1,
+      "HandoffFilePath": "ol-handoff\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\index.01108708edf157e95b96d0e38c23011bed66c123.zh-cn.xlf",
+      "HandoffFileCommit": "4e1aef6de1b45ffde66ea8c749dba83a77fd6873",
+      "HandoffDateTime": "2017-07-26T00:48:10.7497692Z",
+      "HandoffXliffHash": "f84da859724ebcf1b2d68f2a4e8f1e810d3a6e25",
+      "HandoffPriority": ""
+    },
+    "2a38e8cac3c05530a301eeccff3eb4264ec1d702": {
+      "FileHash": "2a38e8cac3c05530a301eeccff3eb4264ec1d702",
+      "SourceFileCommit": "015f8c438cd1e1331e5388280facce4b9ec939ac",
+      "SourceFilePath": "virtualization\\windowscontainers\\index.md",
+      "HandoffReason": 1,
+      "FilePathList": [
+        "virtualization\\windowscontainers\\index.md"
+      ],
+      "HasMetadata": true,
+      "TranslationType": 1,
+      "HandoffFilePath": "ol-handoff\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\index.54df784a655ef654249a5e240db1281432a1f37b.zh-cn.xlf",
+      "HandoffFileCommit": "4e1aef6de1b45ffde66ea8c749dba83a77fd6873",
+      "HandoffDateTime": "2017-07-26T00:48:10.7497692Z",
+      "HandoffXliffHash": "b1f297d130a3cc22068a2d64d7ecbafc5cbf5170",
+      "HandoffPriority": ""
+    },
+    "27b00cf53240390ddebd2317f50ff9d27408107d": {
+      "FileHash": "27b00cf53240390ddebd2317f50ff9d27408107d",
+      "SourceFileCommit": "015f8c438cd1e1331e5388280facce4b9ec939ac",
+      "SourceFilePath": "virtualization\\windowscontainers\\quick-start\\building-sample-app.md",
+      "HandoffReason": 1,
+      "FilePathList": [
+        "virtualization\\windowscontainers\\quick-start\\building-sample-app.md"
+      ],
+      "HasMetadata": true,
+      "TranslationType": 1,
+      "HandoffFilePath": "ol-handoff\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\building-sample-app.957afdd492b872efb91595b513db655c559f8646.zh-cn.xlf",
+      "HandoffFileCommit": "4e1aef6de1b45ffde66ea8c749dba83a77fd6873",
+      "HandoffDateTime": "2017-07-26T00:48:10.7497692Z",
+      "HandoffXliffHash": "336abbd014910fea1be3776da84eaab0c0a809e0",
+      "HandoffPriority": ""
+    },
+    "a2526650a760f984720638bafffdabb6c2cb3e00": {
+      "FileHash": "a2526650a760f984720638bafffdabb6c2cb3e00",
+      "SourceFileCommit": "015f8c438cd1e1331e5388280facce4b9ec939ac",
+      "SourceFilePath": "virtualization\\windowscontainers\\quick-start\\quick-start-images.md",
+      "HandoffReason": 1,
+      "FilePathList": [
+        "virtualization\\windowscontainers\\quick-start\\quick-start-images.md"
+      ],
+      "HasMetadata": true,
+      "TranslationType": 1,
+      "HandoffFilePath": "ol-handoff\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\quick-start-images.e5904b6fd8770efb91af0e77142fe3e655c268ad.zh-cn.xlf",
+      "HandoffFileCommit": "4e1aef6de1b45ffde66ea8c749dba83a77fd6873",
+      "HandoffDateTime": "2017-07-26T00:48:10.7497692Z",
+      "HandoffXliffHash": "cab50818b4098053c268a5f8a163399f02ebc9d2",
+      "HandoffPriority": ""
+    },
+    "2c5742ba11f830762a337f31ebcd1ae700cb3905": {
+      "FileHash": "2c5742ba11f830762a337f31ebcd1ae700cb3905",
+      "SourceFileCommit": "015f8c438cd1e1331e5388280facce4b9ec939ac",
+      "SourceFilePath": "virtualization\\windowscontainers\\quick-start\\quick-start-windows-10.md",
+      "HandoffReason": 1,
+      "FilePathList": [
+        "virtualization\\windowscontainers\\quick-start\\quick-start-windows-10.md"
+      ],
+      "HasMetadata": true,
+      "TranslationType": 1,
+      "HandoffFilePath": "ol-handoff\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\quick-start-windows-10.a292cb64dd3dd6e10f23632c8ce9edbe9faf6738.zh-cn.xlf",
+      "HandoffFileCommit": "4e1aef6de1b45ffde66ea8c749dba83a77fd6873",
+      "HandoffDateTime": "2017-07-26T00:48:10.7497692Z",
+      "HandoffXliffHash": "ec39b852a0bbd18836516ea76d9c7bd2a3619cb1",
+      "HandoffPriority": ""
+    },
+    "832e65fde23ce3195eb8bbb79b7fa4afa01d13f3": {
+      "FileHash": "832e65fde23ce3195eb8bbb79b7fa4afa01d13f3",
+      "SourceFileCommit": "015f8c438cd1e1331e5388280facce4b9ec939ac",
+      "SourceFilePath": "virtualization\\windowscontainers\\quick-start\\quick-start-windows-server.md",
+      "HandoffReason": 1,
+      "FilePathList": [
+        "virtualization\\windowscontainers\\quick-start\\quick-start-windows-server.md"
+      ],
+      "HasMetadata": true,
+      "TranslationType": 1,
+      "HandoffFilePath": "ol-handoff\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\quick-start-windows-server.142e18f0e231012ecd93f04d63cab7edf56d4155.zh-cn.xlf",
+      "HandoffFileCommit": "4e1aef6de1b45ffde66ea8c749dba83a77fd6873",
+      "HandoffDateTime": "2017-07-26T00:48:10.7497692Z",
+      "HandoffXliffHash": "e78ce5a227b595890dceed43df9072fd60e9fb0a",
+      "HandoffPriority": ""
+    },
+    "03680574b0768722f41f88b54180078a3799f374": {
+      "FileHash": "03680574b0768722f41f88b54180078a3799f374",
+      "SourceFileCommit": "015f8c438cd1e1331e5388280facce4b9ec939ac",
+      "SourceFilePath": "virtualization\\windowscontainers\\TOC.md",
+      "HandoffReason": 1,
+      "FilePathList": [
+        "virtualization\\windowscontainers\\TOC.md"
+      ],
+      "TranslationType": 1,
+      "HandoffFilePath": "ol-handoff\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\TOC.13173dbdc376543cb6eb74ef16484f39c0ef0fdb.zh-cn.xlf",
+      "HandoffFileCommit": "4e1aef6de1b45ffde66ea8c749dba83a77fd6873",
+      "HandoffDateTime": "2017-07-26T00:48:10.7497692Z",
+      "HandoffXliffHash": "e24224f4a532ba234ae0c7611515eeb0a3f653d5",
       "HandoffPriority": ""
     }
   }

@@ -2239,6 +2239,48 @@
       "XliffHash": "b9652b74951f26117ffc517d42ee11e001536a55",
       "TranslationType": 1,
       "SkeletonFile": "ol-xliffcache\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\71d91e12ae843bf96e1b4001915ffb55bb352ffd.b4a5476ea1c727c3968354fc5007c5fbd462eab1.xml"
+    },
+    "virtualization\\windowscontainers\\about\\index.md.f84da859724ebcf1b2d68f2a4e8f1e810d3a6e25.HT": {
+      "SourceFilename": "virtualization\\windowscontainers\\about\\index.md",
+      "XliffHash": "f84da859724ebcf1b2d68f2a4e8f1e810d3a6e25",
+      "TranslationType": 1,
+      "SkeletonFile": "ol-xliffcache\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\3d1146f6e86ce65115fe0112bec6e2702930c4be.fbba26521ddfae6cba6d9846da19e10b98a943f4.xml"
+    },
+    "virtualization\\windowscontainers\\quick-start\\quick-start-windows-server.md.e78ce5a227b595890dceed43df9072fd60e9fb0a.HT": {
+      "SourceFilename": "virtualization\\windowscontainers\\quick-start\\quick-start-windows-server.md",
+      "XliffHash": "e78ce5a227b595890dceed43df9072fd60e9fb0a",
+      "TranslationType": 1,
+      "SkeletonFile": "ol-xliffcache\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\832e65fde23ce3195eb8bbb79b7fa4afa01d13f3.553af7aa4ea2317adb07a7999c8e45f15b31b996.xml"
+    },
+    "virtualization\\windowscontainers\\index.md.b1f297d130a3cc22068a2d64d7ecbafc5cbf5170.HT": {
+      "SourceFilename": "virtualization\\windowscontainers\\index.md",
+      "XliffHash": "b1f297d130a3cc22068a2d64d7ecbafc5cbf5170",
+      "TranslationType": 1,
+      "SkeletonFile": "ol-xliffcache\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\2a38e8cac3c05530a301eeccff3eb4264ec1d702.ee0825b69373767f428d85d3e7e324a2ee61c8c9.xml"
+    },
+    "virtualization\\windowscontainers\\TOC.md.e24224f4a532ba234ae0c7611515eeb0a3f653d5.HT": {
+      "SourceFilename": "virtualization\\windowscontainers\\TOC.md",
+      "XliffHash": "e24224f4a532ba234ae0c7611515eeb0a3f653d5",
+      "TranslationType": 1,
+      "SkeletonFile": "ol-xliffcache\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\03680574b0768722f41f88b54180078a3799f374.491897f156f862723c38477341f5654f319f1189.xml"
+    },
+    "virtualization\\windowscontainers\\quick-start\\quick-start-images.md.cab50818b4098053c268a5f8a163399f02ebc9d2.HT": {
+      "SourceFilename": "virtualization\\windowscontainers\\quick-start\\quick-start-images.md",
+      "XliffHash": "cab50818b4098053c268a5f8a163399f02ebc9d2",
+      "TranslationType": 1,
+      "SkeletonFile": "ol-xliffcache\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\a2526650a760f984720638bafffdabb6c2cb3e00.2042949490eb1b7d1e3c913b0132e3678def26dc.xml"
+    },
+    "virtualization\\windowscontainers\\quick-start\\building-sample-app.md.336abbd014910fea1be3776da84eaab0c0a809e0.HT": {
+      "SourceFilename": "virtualization\\windowscontainers\\quick-start\\building-sample-app.md",
+      "XliffHash": "336abbd014910fea1be3776da84eaab0c0a809e0",
+      "TranslationType": 1,
+      "SkeletonFile": "ol-xliffcache\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\27b00cf53240390ddebd2317f50ff9d27408107d.1ea736b57287e6b4ad247f634049798f288e6c5f.xml"
+    },
+    "virtualization\\windowscontainers\\quick-start\\quick-start-windows-10.md.ec39b852a0bbd18836516ea76d9c7bd2a3619cb1.HT": {
+      "SourceFilename": "virtualization\\windowscontainers\\quick-start\\quick-start-windows-10.md",
+      "XliffHash": "ec39b852a0bbd18836516ea76d9c7bd2a3619cb1",
+      "TranslationType": 1,
+      "SkeletonFile": "ol-xliffcache\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\2c5742ba11f830762a337f31ebcd1ae700cb3905.5502677a25d5f7d8c94ec2cdb2cfa14d0ed00da4.xml"
     }
   }
 }
