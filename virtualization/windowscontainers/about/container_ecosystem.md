@@ -1,12 +1,8 @@
 ---
 redirect_url: container-ecosystem
-translationtype: Human Translation
-ms.sourcegitcommit: 54eff4bb74ac9f4dc870d6046654bf918eac9bb5
-ms.openlocfilehash: 4bc50c399c5fc5a5d3a7109744714c34a814319e
-
+ms.openlocfilehash: 87f7ca6943f6a9afa2d6ccc5f8f758042866ae39
+ms.sourcegitcommit: 65de5708bec89f01ef7b7d2df2a87656b53c3145
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/21/2017
 ---
-
-
-<!--HONumber=Jan17_HO4-->
-
-

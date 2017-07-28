@@ -9,12 +9,13 @@ ms.prod: windows-10-hyperv
 ms.service: windows-10-hyperv
 ms.assetid: 9cafd6cb-dbbe-4b91-b26c-dee1c18fd8c2
 redirect_url: https://technet.microsoft.com/windows-server-docs/compute/hyper-v/manage/manage-Hyper-V-integration-services
-ms.openlocfilehash: 83bcc4c2f47e2a3921be257f45a3a0e22dcba89a
-ms.sourcegitcommit: fd6c5ec419aae425af7ce6c6a44d59c98f62502a
+ms.openlocfilehash: 374ce6f8c4aede7190916675698551eb667458f9
+ms.sourcegitcommit: 65de5708bec89f01ef7b7d2df2a87656b53c3145
 ms.translationtype: HT
 ms.contentlocale: zh-CN
+ms.lasthandoff: 07/21/2017
 ---
-# <a name="managing-hyper-v-integration-services"></a>管理 Hyper-V 集成服务
+# 管理 Hyper-V 集成服务
 
 集成服务（通常称为集成组件）是允许虚拟机与 Hyper-V 主机通信的服务。 其中许多服务都很便利（例如来宾文件副本），但其他服务对虚拟机能够正常工作（时间同步）却至关重要。
 
@@ -22,7 +23,7 @@ ms.contentlocale: zh-CN
 
 有关各个集成服务的详细信息，请参阅[集成服务](../reference/integration-services.md)。
 
-## <a name="enable-or-disable-integration-services-using-hyper-v-manager"></a>使用 Hyper-V 管理器启用或禁用集成服务
+## 使用 Hyper-V 管理器启用或禁用集成服务
 
 1. 选择虚拟机并打开设置。
   
@@ -32,7 +33,7 @@ ms.contentlocale: zh-CN
 
 REG QUERY "HKLM\Software\Microsoft\Virtual Machine\Auto" /v IntegrationServicesVersion
 
-## <a name="enable-or-disable-integration-services-using-powershell"></a>使用 PowerShell 启用或禁用集成服务
+## 使用 PowerShell 启用或禁用集成服务
 
 集成服务也可运行 [`Enable-VMIntegrationService`](https://technet.microsoft.com/en-us/library/hh848500.aspx) 和 [`Disable-VMIntegrationService`](https://technet.microsoft.com/en-us/library/hh848488.aspx) 来通过 PowerShell 进行启用和禁用。
 
@@ -73,7 +74,7 @@ REG QUERY "HKLM\Software\Microsoft\Virtual Machine\Auto" /v IntegrationServicesV
 集成服务已经过设计，以便需要在主机和来宾中同时启用才能正常运行。  虽然 Windows 来宾操作系统上的所有集成服务默认处于启用状态，但也可以禁用它们。  请参阅下一节中的操作方式。
 
 
-## <a name="manage-integration-services-from-guest-os-windows"></a>在来宾操作系统 (Windows) 中管理集成服务
+## 在来宾操作系统 (Windows) 中管理集成服务
 
 > **注意：**禁用集成服务可能严重影响主机管理你的虚拟机的功能。  必须在主机和来宾上启用集成服务才能操作。
 
@@ -110,7 +111,7 @@ Running  vmicvss            Hyper-V Volume Shadow Copy Requestor
 
 默认情况下，所有集成服务在来宾操作系统中均已启用。
 
-## <a name="manage-integration-services-from-guest-os-linux"></a>在来宾操作系统 (Linux) 中管理集成服务
+## 在来宾操作系统 (Linux) 中管理集成服务
 
 Linux 集成服务通常通过 Linux 内核提供。
 
@@ -191,7 +192,7 @@ sudo hv_kvp_daemon
 现在，如果你再次运行 `ps -ef | hv`，将发现所有 `hv_kvp_daemon` 进程有一个新的进程 ID。
 
 
-## <a name="integration-service-maintenance"></a>集成服务维护
+## 集成服务维护
 
 如果你的虚拟机可以从 Windows 更新接收重要更新，将默认运行 Windows 10 集成服务维护。  
 

@@ -8,12 +8,13 @@ ms.topic: article
 ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: 42154683-163b-47a1-add4-c7e7317f1c04
-ms.openlocfilehash: 88c452117299d855073668d33e4323243d93e9d1
-ms.sourcegitcommit: fa56cb152977de952ec1e493005dfc0e62538b4f
+ms.openlocfilehash: 7957e48291ab2d29f3687c595c760d838dab60b8
+ms.sourcegitcommit: 65de5708bec89f01ef7b7d2df2a87656b53c3145
 ms.translationtype: HT
 ms.contentlocale: zh-CN
+ms.lasthandoff: 07/21/2017
 ---
-# <a name="hyper-v-containers"></a>Hyper-V 容器
+# Hyper-V 容器
 
 **这是初步内容，可能还会更改。** 
 
@@ -23,9 +24,9 @@ Windows 容器技术包括两种不同类型的容器，即 Windows Server 容�
 
 **Hyper-V 容器** - 多个容器实例可同时在主机上运行；但是，每个容器都在特定虚拟机的内部运行。 这将在每一个 Hyper-V 容器和容器主机之间提供内核级别隔离。
 
-## <a name="hyper-v-container"></a>Hyper-V 容器
+## Hyper-V 容器
 
-### <a name="create-container"></a>创建容器
+### 创建容器
 
 使用 Docker 管理 Hyper-V 容器与管理 Windows Server 容器几乎相同。 当使用 Docker 创建 Hyper-V 容器时，将使用 `--isolation=hyperv` 参数。
 
@@ -33,7 +34,7 @@ Windows 容器技术包括两种不同类型的容器，即 Windows Server 容�
 docker run -it --isolation=hyperv microsoft/nanoserver cmd
 ```
 
-### <a name="isolation-explanation"></a>隔离说明
+### 隔离说明
 
 此示例将区分 Windows Server 和 Hyper-V 容器之间的隔离功能。 
 

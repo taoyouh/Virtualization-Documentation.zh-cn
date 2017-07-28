@@ -7,12 +7,13 @@ ms.date: 04/07/2017
 ms.topic: article
 ms.prod: windows-10-hyperv
 ms.assetid: f1e75efa-8745-4389-b8dc-91ca931fe5ae
-ms.openlocfilehash: fefef30c3ebbda965f9b1077082a05c8e3ffc6c1
-ms.sourcegitcommit: 075985b1e0ee62dc1c16573c40cd1f62427ded3c
+ms.openlocfilehash: 1b2b778e882b413d29f52adf3e46e12e8aceede1
+ms.sourcegitcommit: 65de5708bec89f01ef7b7d2df2a87656b53c3145
 ms.translationtype: HT
 ms.contentlocale: zh-CN
+ms.lasthandoff: 07/21/2017
 ---
-# <a name="create-a-virtual-machine-with-hyper-v"></a>使用 Hyper-V 创建虚拟机
+# 使用 Hyper-V 创建虚拟机
 
 创建虚拟机并为其安装操作系统。  
 

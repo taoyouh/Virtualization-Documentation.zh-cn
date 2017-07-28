@@ -7,16 +7,17 @@ ms.date: 05/02/2016
 ms.topic: article
 ms.prod: windows-10-hyperv
 ms.assetid: 66723f33-b12c-49d1-82cf-71ba9d6087e9
-ms.openlocfilehash: 200ec68011628262950362620ae5b438f1b6b86c
-ms.sourcegitcommit: c8e6bf83ee873fe19b522ba9e416ecf5d29f4c95
+ms.openlocfilehash: fc6228253c2ad5fe8a01db283f578abbfbee716c
+ms.sourcegitcommit: 65de5708bec89f01ef7b7d2df2a87656b53c3145
 ms.translationtype: HT
 ms.contentlocale: zh-CN
+ms.lasthandoff: 07/21/2017
 ---
-# <a name="create-virtual-machine-with-hyper-v-on-windows-10"></a>在 Windows 10 上使用 Hyper-V 创建虚拟机
+# 在 Windows 10 上使用 Hyper-V 创建虚拟机
 
 了解如何创建虚拟机以及如何在新虚拟机上安装操作系统。  你需要使用要运行的操作系统的 .iso 文件。 如果需要，请从 [TechNet 评估中心](http://www.microsoft.com/en-us/evalcenter/)获取 Windows 10 的评估副本。
 
-## <a name="create-a-virtual-machine-with-hyper-v-manager"></a>使用 Hyper-V 管理器创建虚拟机
+## 使用 Hyper-V 管理器创建虚拟机
 
 1. 通过按 Windows 键并键入“Hyper-V 管理器”，或者通过在你的应用程序中查找 **Hyper-V 管理器**，来打开 Hyper-V 管理器。
 
@@ -61,7 +62,7 @@ ms.contentlocale: zh-CN
   
 10. 查看虚拟机详细信息，然后单击“**完成**”以完成虚拟机创建。
 
-## <a name="create-a-virtual-machine-with-powershell"></a>使用 PowerShell 创建虚拟机
+## 使用 PowerShell 创建虚拟机
 
 1. 以管理员身份打开 PowerShell ISE。
 
@@ -87,7 +88,7 @@ ms.contentlocale: zh-CN
   Set-VMFirmware -VMName $VMName -FirstBootDevice $DVDDrive
   ```
   
-## <a name="complete-the-operating-system-deployment"></a>完成操作系统部署
+## 完成操作系统部署
 
 为了完成生成虚拟机操作，需要启动该虚拟机并演练操作系统安装过程。
 

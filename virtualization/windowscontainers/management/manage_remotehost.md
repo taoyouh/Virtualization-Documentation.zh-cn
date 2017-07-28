@@ -8,12 +8,13 @@ ms.topic: article
 ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: 0cc1b621-1a92-4512-8716-956d7a8fe495
-ms.openlocfilehash: 75d19646dd41a4f73dfb9cdd09808b61fba8e4ab
-ms.sourcegitcommit: 1c7e94089646f3db31e033f0909a10ce5077d05e
+ms.openlocfilehash: 1ab2a9b823c5c903bd08b476f5caef65ec6e3207
+ms.sourcegitcommit: 65de5708bec89f01ef7b7d2df2a87656b53c3145
 ms.translationtype: HT
 ms.contentlocale: zh-CN
+ms.lasthandoff: 07/21/2017
 ---
-# <a name="remote-management-of-a-windows-docker-host"></a>Windows Docker 主机远程管理
+# Windows Docker 主机远程管理
 
 即使没有 `docker-machine`，也仍然可以在 Windows Server 2016 VM 上创建可远程访问的 Docker 主机。
 
@@ -39,8 +40,8 @@ ker\client\key.pem ps
 ```
 
 
-## <a name="troubleshooting"></a>疑难解答
-### <a name="try-connecting-without-tls-to-determine-your-nsg-firewall-settings-are-correct"></a>请尝试不使用 TLS 进行连接，以确定你的 NSG 防火墙设置是否正确
+## 疑难解答
+### 请尝试不使用 TLS 进行连接，以确定你的 NSG 防火墙设置是否正确
 连接错误通常表明其自身出现错误，如：
 ```
 error during connect: Get https://wsdockerhost.southcentralus.cloudapp.azure.com:2376/v1.25/version: dial tcp 13.85.27.177:2376: connectex: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
@@ -59,14 +60,14 @@ error during connect: Get https://wsdockerhost.southcentralus.cloudapp.azure.com
 docker -H tcp://wsdockerhost.southcentralus.cloudapp.azure.com:2376 --tlsverify=0 version
 ```
 
-### <a name="cert-problems"></a>证书问题
+### 证书问题
 如果使用非针对 IP 地址或 DNS 名称创建的证书访问 Docker 主机，将出现错误：
 ```
 error during connect: Get https://w.x.y.c.z:2376/v1.25/containers/json: x509: certificate is valid for 127.0.0.1, a.b.c.d, not w.x.y.z
 ```
 确保 w.x.y.z 是主机公共 IP 的 DNS 名称，且 DNS 名称匹配证书的[公用名](https://www.ssl.com/faqs/common-name/)（`SERVER_NAME` 环境变量）或提供给 dockertls 的 `IP_ADDRESSES` 变量中的其中一个 IP 地址
 
-### <a name="cryptox509-warning"></a>加密/x509 警告
+### 加密/x509 警告
 你可能会收到一条警告 
 ```
 level=warning msg="Unable to use system certificate pool: crypto/x509: system root pool is not available on Windows"

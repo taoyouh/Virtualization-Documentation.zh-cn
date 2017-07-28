@@ -8,14 +8,15 @@ ms.topic: article
 ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: 25de368c-5a10-40a4-b4aa-ac8c9a9ca022
-ms.openlocfilehash: c4afd536fda9d741adc00eaeb5595f05833cef11
-ms.sourcegitcommit: bb171f4a858fefe33dd0748b500a018fd0382ea6
+ms.openlocfilehash: b084bf179d9360e4a72e8e88b4fec80eafb2906c
+ms.sourcegitcommit: 65de5708bec89f01ef7b7d2df2a87656b53c3145
 ms.translationtype: HT
 ms.contentlocale: zh-CN
+ms.lasthandoff: 07/21/2017
 ---
-# <a name="frequently-asked-questions"></a>常见问题
+# 常见问题
 
-## <a name="about-windows-containers"></a>关于 Windows 容器
+## 关于 Windows 容器
 
 **什么是 Windows Server 容器？**
 
@@ -53,7 +54,7 @@ Drawbridge 是帮助我们获得对容器的有价值见解的众多研究项目
 Window Server 容器和 Hyper-V 容器都需要 Windows Server 2016。 这些技术将不适用以前版本的 Windows。
 
 
-## <a name="windows-container-management"></a>Windows 容器管理
+## Windows 容器管理
 
 **Hyper-V 容器是否还可用于 Docker 生态系统？**
 
@@ -61,7 +62,7 @@ Window Server 容器和 Hyper-V 容器都需要 Windows Server 2016。 这些技
 Docker 平台还将大大简化和增强跨容器选项工作的体验。 使用 Windows Server 容器开发的应用程序无需更改即可部署为 Hyper-V 容器。
 
 
-## <a name="microsofts-open-ecosystem"></a>Microsoft 的开放生态系统
+## Microsoft 的开放生态系统
 
 **Microsoft 是否正在参与开放容器计划 (OCI)？**
 

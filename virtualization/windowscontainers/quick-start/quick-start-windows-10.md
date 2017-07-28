@@ -8,16 +8,19 @@ ms.topic: article
 ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: bb9bfbe0-5bdc-4984-912f-9c93ea67105f
-ms.openlocfilehash: a6ed0cccb984d303990973a1e2009cc2922f9443
-ms.sourcegitcommit: bb171f4a858fefe33dd0748b500a018fd0382ea6
+ms.openlocfilehash: 66bb1ba56fde13d76392ddb4a1f8e6855201e7a3
+ms.sourcegitcommit: 65de5708bec89f01ef7b7d2df2a87656b53c3145
 ms.translationtype: HT
 ms.contentlocale: zh-CN
+ms.lasthandoff: 07/21/2017
 ---
-# <a name="windows-containers-on-windows-10"></a>Windows 10 上的 Windows 容器
+# Windows 10 上的 Windows 容器
 
 本练习将演练 Windows 10 专业版或企业版（周年纪念版）上 Windows 容器功能的基本部署和用法。 完成后，你就安装了适用于 Windows 的 Docker 并运行了简单的容器。 在开始本快速入门之前，请先熟悉基本容器概念和术语。 可以在 [Quick Start Introduction](./index.md)（快速入门简介）上找到此信息。
 
 此快速入门特定于 Windows 10。 此页面左侧的目录中提供其他快速入门文档。
+
+***Hyper-V 隔离：***Windows Server 容器要求对 Windows 10 使用 Hyper-V 隔离才能为开发人员提供在生产中使用的相同内核版本和配置，相关详细信息可在[有关 Windows 容器](../about/index.md)页面上找到。
 
 **先决条件：**
 
@@ -28,17 +31,17 @@ ms.contentlocale: zh-CN
 > 若要检查 OS 版本，请运行 `winver.exe`，并将显示的版本与 [Windows 10 更新历史记录](https://support.microsoft.com/en-us/help/12387/windows-10-update-history)进行比较。
 > 请确保拥有 14393.222 或更高版本再继续操作。
 
-## <a name="1-install-docker-for-windows"></a>1. 安装适用于 Windows 的 Docker
+## 1. 安装适用于 Windows 的 Docker
 
 [下载适用于 Windows 的 Docker](https://download.docker.com/win/stable/InstallDocker.msi) 并运行安装程序。 Docker 文档中提供了[详细的安装说明](https://docs.docker.com/docker-for-windows/install)。
 
-## <a name="2-switch-to-windows-containers"></a>2. 切换到 Windows 容器
+## 2. 切换到 Windows 容器
 
 安装后，适用于 Windows 的 Docker 默认为运行 Linux 容器。 通过使用 Docker 任务栏菜单或通过在 PowerShell 提示符下运行以下命令来切换到 Windows 容器：`& $Env:ProgramFiles\Docker\Docker\DockerCli.exe -SwitchDaemon`。
 
 ![](./media/docker-for-win-switch.png)
 
-## <a name="3-install-base-container-images"></a>3. 安装基本容器映像
+## 3. 安装基本容器映像
 
 Windows 容器是从基本映像中构建的。 以下命令将拉取 Nano Server 基本映像。
 
@@ -57,7 +60,7 @@ microsoft/nanoserver   latest              105d76d0f40e        4 days ago       
 
 > 可在此处 ([EULA](../images-eula.md)) 阅读 Windows 容器操作系统映像 EULA。
 
-## <a name="4-run-your-first-container"></a>4. 运行你的第一个容器
+## 4. 运行你的第一个容器
 
 对于此简单示例，将创建和部署一个“Hello World”容器映像。 为获得最佳体验，请在升级后的Windows CMD shell 或 PowerShell中运行这些命令。
 
@@ -108,6 +111,6 @@ docker run --rm helloworld powershell c:\helloworld.ps1
 `docker run` 命令的结果是，从 HelloWorld 映像创建 Hyper-V 容器，然后执行一个“Hello World”脚本（输出回显到该界面），然后停止并删除容器。
 Windows 10 和容器快速入门的后续部分将深入探讨在 Windows 10 上的容器中创建和部署应用程序。
 
-## <a name="next-steps"></a>后续步骤
+## 后续步骤
 
 [Windows Server 上的 Windows 容器](./quick-start-windows-server.md)

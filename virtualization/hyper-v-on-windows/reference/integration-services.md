@@ -8,12 +8,13 @@ ms.topic: article
 ms.prod: windows-10-hyperv
 ms.service: windows-10-hyperv
 ms.assetid: 18930864-476a-40db-aa21-b03dfb4fda98
-ms.openlocfilehash: 2e2289bbb7801824c13e5ba4cb17d51beb26fbfa
-ms.sourcegitcommit: b55d4d31a5706e2f65f4c4a029c2f55a76711253
+ms.openlocfilehash: c98ab9c32dfcd6e9b3a0258d0282b28d78726f6a
+ms.sourcegitcommit: 65de5708bec89f01ef7b7d2df2a87656b53c3145
 ms.translationtype: HT
 ms.contentlocale: zh-CN
+ms.lasthandoff: 07/21/2017
 ---
-# <a name="hyper-v-integration-services"></a>Hyper-V 集成服务
+# Hyper-V 集成服务
 
 集成服务（通常称为集成组件）是允许虚拟机与 Hyper-V 主机通信的服务。 其中许多服务都很便利，但其他服务对虚拟机能够正常工作却至关重要。
 
@@ -23,7 +24,7 @@ ms.contentlocale: zh-CN
 * [管理集成服务](https://technet.microsoft.com/windows-server-docs/compute/hyper-v/manage/manage-Hyper-V-integration-services)
 
 
-## <a name="quick-reference"></a>快速参考
+## 快速参考
 
 | Name | Windows 服务名称 | Linux 守护程序名称 |  描述 | 禁用后对 VM 的影响 |
 |:---------|:---------|:---------|:---------|:---------|
@@ -36,7 +37,7 @@ ms.contentlocale: zh-CN
 | [Hyper-V PowerShell Direct 服务](#hyper-v-powershell-direct-service) | vmicvmsession | 不可用 | 提供在没有网络连接的情况下，使用 PowerShell 管理虚拟机的方法。 | 低 |  
 
 
-## <a name="hyper-v-heartbeat-service"></a>Hyper-V 检测信号服务
+## Hyper-V 检测信号服务
 
 **Windows 服务名称：**vmicheartbeat  
 **Linux 守护程序名称：**hv_utils  
@@ -48,7 +49,7 @@ ms.contentlocale: zh-CN
 
 当 Hyper-V 报告虚拟机状态为“正在运行”（请参阅以下示例）时，表示 Hyper-V 在为虚拟机预留资源，而不是已安装或正在运行操作系统。  这是检测信号十分有用的地方。  检测信号服务告知 Hyper-V，虚拟机内的操作系统已启动。  
 
-### <a name="check-heartbeat-with-powershell"></a>使用 PowerShell 检查检测信号
+### 使用 PowerShell 检查检测信号
 
 以管理员身份运行 [Get-VM](https://technet.microsoft.com/en-us/library/hh848479.aspx) 以查看虚拟机的检测信号：
 ``` PowerShell
@@ -66,7 +67,7 @@ DemoVM  Running  Operating normally
 
 
 
-## <a name="hyper-v-guest-shutdown-service"></a>Hyper-V 来宾关闭服务
+## Hyper-V 来宾关闭服务
 
 **Windows 服务名称：**vmicshutdown  
 **Linux 守护程序名称：**hv_utils  
@@ -75,7 +76,7 @@ DemoVM  Running  Operating normally
 **影响：****重大影响** 禁用后，主机无法触发虚拟机中的友好关闭。  所有关闭都将为硬关机，可能导致数据丢失或数据损坏。  
 
 
-## <a name="hyper-v-time-synchronization-service"></a>Hyper-V 时间同步服务
+## Hyper-V 时间同步服务
 
 **Windows 服务名称：**vmictimesync  
 **Linux 守护程序名称：**hv_utils  
@@ -84,7 +85,7 @@ DemoVM  Running  Operating normally
 **影响：****重大影响** 禁用后，虚拟机的时钟将出现不确定的偏移。  
 
 
-## <a name="hyper-v-data-exchange-service-kvp"></a>Hyper-V 数据交换服务 (KVP)
+## Hyper-V 数据交换服务 (KVP)
 
 **Windows 服务名称：**vmickvpexchange  
 **Linux 守护程序名称：**hv_kvp_daemon  
@@ -103,7 +104,7 @@ DemoVM  Running  Operating normally
 * [Using key-value pairs to share information between the host and guest on Hyper-V](https://technet.microsoft.com/en-us/library/dn798287.aspx)（使用键值对在 Hyper-V 上的主机和来宾之间共享信息）。  
 
 
-## <a name="hyper-v-volume-shadow-copy-requestor"></a>Hyper-V 卷影复制请求程序
+## Hyper-V 卷影复制请求程序
 
 **Windows 服务名称：**vmicvss  
 **Linux 守护程序名称：**hv_vss_daemon  
@@ -116,7 +117,7 @@ DemoVM  Running  Operating normally
 有关卷影复制的详细信息，请阅读[此处](https://msdn.microsoft.com/en-us/library/dd405549.aspx)的内容。
 
 
-## <a name="hyper-v-guest-service-interface"></a>Hyper-V 来宾服务接口
+## Hyper-V 来宾服务接口
 
 **Windows 服务名称：**vmicguestinterface  
 **Linux 守护程序名称：**hv_fcopy_daemon  
@@ -128,7 +129,7 @@ DemoVM  Running  Operating normally
 Д¬ИПЗйїцПВЅыУГ。  请参阅 [PowerShell Direct - 使用 Copy-Item](../user-guide/powershell-direct.md#copy-files-with-new-pssession-and-copy-item)。 
 
 
-## <a name="hyper-v-powershell-direct-service"></a>Hyper-V PowerShell Direct 服务
+## Hyper-V PowerShell Direct 服务
 
 **Windows 服务名称：**vmicvmsession  
 **Linux 守护程序名称：**n/a  

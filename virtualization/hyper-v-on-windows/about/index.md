@@ -7,12 +7,13 @@ ms.date: 04/07/2017
 ms.topic: article
 ms.prod: windows-10-hyperv
 ms.assetid: eb2b827c-4a6c-4327-9354-50d14fee7ed8
-ms.openlocfilehash: 918fe27f7aee74e3c1de3b7381e7ccea76f49c73
-ms.sourcegitcommit: d5f30aa1bdfb34dd9e1909d73b5bd9f4153d6b46
+ms.openlocfilehash: 307cd592a9deda41fd2a892d49eadbc5ae436d84
+ms.sourcegitcommit: 65de5708bec89f01ef7b7d2df2a87656b53c3145
 ms.translationtype: HT
 ms.contentlocale: zh-CN
+ms.lasthandoff: 07/21/2017
 ---
-# <a name="introduction-to-hyper-v-on-windows-10"></a>Windows 10 上的 Hyper-V 简介
+# Windows 10 上的 Hyper-V 简介
 
 > Hyper-V 替换了 Microsoft Virtual PC。 
 
@@ -22,7 +23,7 @@ ms.contentlocale: zh-CN
 
 具体来说，Hyper-V 提供硬件虚拟化。  这意味着每个虚拟机都在虚拟硬件上运行。  Hyper-V 允许你创建虚拟硬盘驱动器、虚拟交换机以及许多其他虚拟设备，所有这些都可以添加到虚拟机中。
 
-## <a name="reasons-to-use-virtualization"></a>使用虚拟化的原因
+## 使用虚拟化的原因
 
 虚拟化允许你：  
 * 运行需要早期版本的 Windows 操作系统或非 Windows 操作系统的软件。 
@@ -35,7 +36,7 @@ ms.contentlocale: zh-CN
 
 * 使用虚拟网络，你可以创建一个多计算机环境以进行测试/开发/演示，并且同时确保该环境免受生产网络的影响。
 
-## <a name="system-requirements"></a>系统要求
+## 系统要求
 Hyper-V 可用于 Windows 8 及更高版本的 64 位 Windows 专业版、企业版和教育版。  它无法用于 Windows 家庭版。  
 
 >  打开**设置** > **更新和安全** > **激活**，从 Windows 10 家庭版升级到 Windows 10 专业版。 可以在此处访问应用商店并购买升级。
@@ -46,7 +47,7 @@ Hyper-V 可用于 Windows 8 及更高版本的 64 位 Windows 专业版、企业
 
 有关 Hyper-V 的系统要求以及如何验证 Hyper-V 在计算机上运行的详细信息，请参阅 [Hyper-V 要求参考](..\reference\hyper-v-requirements.md)。
 
-## <a name="operating-systems-you-can-run-in-a-virtual-machine"></a>可以在虚拟机中运行的操作系统
+## 可以在虚拟机中运行的操作系统
 术语“来宾”是指虚拟机，而“主机”是指运行虚拟机的计算机。 Windows 上的 Hyper-V 支持许多不同的来宾操作系统，其中包括各种版本的 Linux、FreeBSD 和 Windows。 
 
 提醒一下，对于你在 VM 中使用的任何操作系统，都需要具有有效的许可证。 
@@ -54,7 +55,7 @@ Hyper-V 可用于 Windows 8 及更高版本的 64 位 Windows 专业版、企业
 有关 Windows 上的 Hyper-V 中作为来宾支持的操作系统的信息，请参阅[受支持的 Windows 来宾操作系统](supported-guest-os.md)和 [受支持的 Linux 来宾操作系统](https://technet.microsoft.com/library/dn531030.aspx)。 
 
 
-## <a name="differences-between-hyper-v-on-windows-and-hyper-v-on-windows-server"></a>Windows 上的 Hyper-V 和 Windows Server 上的 Hyper-V 之间的差异
+## Windows 上的 Hyper-V 和 Windows Server 上的 Hyper-V 之间的差异
 对于某些功能来说，其工作方式在 Windows 上的 Hyper-V 中和在运行于 Windows Server 上的 Hyper-V 中不同。 
 
 对于 Windows 上的 Hyper-V，内存管理模块不同。 在服务器上，通过假设只有虚拟机在该服务器上运行来管理 Hyper-V 内存。 在 Windows 上的 Hyper-V 中，通过大多数客户端计算机都在运行主机上的软件以及运行虚拟机的预期来管理内存。 例如，开发人员可能在同一台计算机上运行 Visual Studio 以及多个虚拟机。
@@ -68,10 +69,10 @@ Windows Server 上的 Hyper-V 中包含的某些功能未包含在 Windows 上�
 * SR-IOV 网络
 * 共享的 .VHDX
 
-## <a name="limitations"></a>限制
+## 限制
 使用虚拟化也存在一些限制。 依赖于特定硬件的功能或应用程序不能在虚拟机中良好运行。 例如，需要使用 GPU 进行处理的游戏或应用程序可能无法良好运行。 依赖于子 10 毫秒计时器的应用程序（如实时音乐混合应用程序或高精度时间）在虚拟机中运行时也可能会出问题。
 
 此外，如果已启用了 Hyper-V，这些易受延迟影响的高精度应用程序在主机中运行时可能也会出问题。  这是因为在启用了虚拟化后，主机操作系统也会在 Hyper-V 虚拟化层的顶部运行，就如来宾操作系统那样。 但是，与来宾操作系统不同，主机操作系统在这点上很特殊，它是直接访问所有硬件，这意味着具有特殊硬件要求的应用程序仍然可以在主机操作系统中运行，而不会出问题。
 
-## <a name="next-step"></a>下一步
+## 下一步
 [在 Windows 10 上安装 Hyper-V](..\quick-start\enable-hyper-v.md) 

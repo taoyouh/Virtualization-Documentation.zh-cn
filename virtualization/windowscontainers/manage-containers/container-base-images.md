@@ -8,12 +8,13 @@ ms.topic: article
 ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: 88e6e080-cf8f-41d8-a301-035959dc5ce0
-ms.openlocfilehash: af819955c06b2db405f230cf3b7fee4c13e7c87c
-ms.sourcegitcommit: bb171f4a858fefe33dd0748b500a018fd0382ea6
+ms.openlocfilehash: 622c8f638a815e19a54aa75b6b5ea0688d966ae3
+ms.sourcegitcommit: 65de5708bec89f01ef7b7d2df2a87656b53c3145
 ms.translationtype: HT
 ms.contentlocale: zh-CN
+ms.lasthandoff: 07/21/2017
 ---
-# <a name="windows-container-base-image-history"></a>Windows 容器基本映像历史记录
+# Windows 容器基本映像历史记录
 
 每个 Windows 容器均是在 Microsoft 所提供的基本操作系统的基础上生成。 如果你不确定是为哪个版本的 Windows 生成容器，你可以运行 `docker inspect <tag>`，将前 1 行或前两行与下表进行匹配。
 

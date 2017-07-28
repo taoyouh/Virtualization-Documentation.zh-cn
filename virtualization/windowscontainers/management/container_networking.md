@@ -1,12 +1,8 @@
 ---
 redirect_url: ../manage-containers/container-networking
-translationtype: Human Translation
-ms.sourcegitcommit: 54eff4bb74ac9f4dc870d6046654bf918eac9bb5
-ms.openlocfilehash: 02c8e82cb7d2a2dce902133f09a16f37fe6cde21
-
+ms.openlocfilehash: 3f1a5124e9aeaf57486e24dfd721690c5c21fa26
+ms.sourcegitcommit: 65de5708bec89f01ef7b7d2df2a87656b53c3145
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/21/2017
 ---
-
-
-<!--HONumber=Jan17_HO4-->
-
-

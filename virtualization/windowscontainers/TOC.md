@@ -7,12 +7,19 @@
 
 # Windows 10 快速入门
 ## [步骤 1 – 概念](quick_start/quick_start.md)
-## [步骤 2 – 第一个容器](quick_start/quick_start_windows_10.md)
+## [步骤 2 - 第一个容器](quick_start/quick_start_windows_10.md)
+
+# Windows 预览体验成员快速入门
+## [步骤 1 - 使用预览体验成员映像](quick-start/Using-Insider-Container-Images.md)
+## [步骤 2 - 生成并运行应用程序](quick-start/Nano-RS3-.NET-Core-and-PS.md)
+## [步骤 3 - 已知问题](quick-start/Insider-Known-Issues.md)
 
 # 部署 Windows 容器
 ## [系统要求](deployment/system_requirements.md)
+## [Hyper-V 隔离](https://docs.microsoft.com/en-us/virtualization/windowscontainers/manage-containers/hyperv-container)
 ## [容器主机 - Windows Server](deployment/deployment.md)
 ## [容器主机 - Nano Server](deployment/deployment_nano.md)
+## [Hyper-V 隔离](manage-containers/hyperv-container.md)
 ## [防病毒优化](https://msdn.microsoft.com/en-us/windows/hardware/drivers/ifs/anti-virus-optimization-for-windows-containers)
 ## [Active Directory 服务组件](management/manage_serviceaccounts.md)
 

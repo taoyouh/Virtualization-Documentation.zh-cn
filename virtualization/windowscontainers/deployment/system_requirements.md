@@ -1,13 +1,8 @@
 ---
 redirect_url: ../deploy-containers/system-requirements
-translationtype: Human Translation
-ms.sourcegitcommit: 54eff4bb74ac9f4dc870d6046654bf918eac9bb5
 ms.openlocfilehash: 441815bed7d4bffa5e19e7294abae2dc31947fa2
-
+ms.sourcegitcommit: 65de5708bec89f01ef7b7d2df2a87656b53c3145
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/21/2017
 ---
-
-
-
-<!--HONumber=Jan17_HO4-->
-
-

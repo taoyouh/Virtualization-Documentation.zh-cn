@@ -8,15 +8,16 @@ ms.topic: article
 ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: cfbb2542-fead-48e7-8318-4da92a7b5b6f
-ms.openlocfilehash: b074692369719f32acf04714f539f03fb521e85d
-ms.sourcegitcommit: bb171f4a858fefe33dd0748b500a018fd0382ea6
+ms.openlocfilehash: b6c25285c3cee3a863bef40c34a1cf13b66b42fb
+ms.sourcegitcommit: 65de5708bec89f01ef7b7d2df2a87656b53c3145
 ms.translationtype: HT
 ms.contentlocale: zh-CN
+ms.lasthandoff: 07/21/2017
 ---
-# <a name="community-videos-and-blogs"></a>社区视频和博客
+# 社区视频和博客
 此页面含有成员或容器社区所创建的视频和博客的链接。  如果你知道有精彩资源或自行创建了资源，请提交 PR 以将其添加到此列表。
 
-## <a name="getting-started"></a>入门
+## 入门
 [在 Windows 10 上运行 Linux 和 Windows 容器](https://stefanscherer.github.io/run-linux-and-windows-containers-on-windows-10/) - Stefan Scherer
 
 [生成并运行你的第一个 Docker Windows Server 容器](https://blog.docker.com/2016/09/build-your-first-docker-windows-server-container/) - Michael Friis
@@ -24,7 +25,7 @@ ms.contentlocale: zh-CN
 [使用 Docker 在 Windows 10 上运行 IIS 和 ASP.NET](http://blog.alexellis.io/run-iis-asp-net-on-windows-10-with-docker/) - Alex Ellis
 
 
-## <a name="building-and-examples"></a>构建和示例
+## 构建和示例
 [.NET 和容器概述](http://blog.alexellis.io/docker-dotnet-containers/) - Alex Ellis
 
 [Docker 和 Microsoft SQL 2016 与 ASP.NET](http://blog.alexellis.io/docker-does-sql2016-aspnet/) - Alex Ellis
@@ -43,7 +44,7 @@ ms.contentlocale: zh-CN
 
 [在 Windows 容器中运行 Neo4j](http://glennsarti.github.io/blog/neo4j-nano-containers) - Glenn Sarti
 
-## <a name="configuration-and-managment"></a>配置和管理
+## 配置和管理
 [如何使用 TLS 保护 Windows 2016 Docker 引擎](https://stefanscherer.github.io/protecting-a-windows-2016-docker-engine-with-tls/) - Stefan Scherer
 
 [Windows 容器编号层的性能](http://dille.name/blog/2017/01/13/windows-container-performance-of-layers/) - Nicholas Dille

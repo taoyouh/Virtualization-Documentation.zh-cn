@@ -8,16 +8,17 @@ ms.topic: article
 ms.prod: windows-contianers
 ms.service: windows-containers
 ms.assetid: 4878f5d2-014f-4f3c-9933-97f03348a147
-ms.openlocfilehash: 577618112339e274b3d25908afc5428bd1c36173
-ms.sourcegitcommit: bb171f4a858fefe33dd0748b500a018fd0382ea6
+ms.openlocfilehash: fb97f1d0f533b28acfb711e52bd021b29212f66e
+ms.sourcegitcommit: 65de5708bec89f01ef7b7d2df2a87656b53c3145
 ms.translationtype: HT
 ms.contentlocale: zh-CN
+ms.lasthandoff: 07/21/2017
 ---
-# <a name="windows-containers-quick-start"></a>Windows 容器快速入门
+# Windows 容器快速入门
 
 Windows 容器快速入门介绍了产品和容器技术、分步骤介绍了简单的容器部署示例，并且还提供了更高级主题的参考。 如果你是第一次使用容器或 Windows 容器，完成本快速入门中的每个步骤会为你带来技术上的实际动手体验。
 
-## <a name="1-what-are-containers"></a>1.什么是容器
+## 1.什么是容器
 
 它们是隔离、资源控制且可移植的操作环境。
 
@@ -25,15 +26,15 @@ Windows 容器快速入门介绍了产品和容器技术、分步骤介绍了简
 
 如果你在容器内，看起来会很像你在一个新安装的物理计算机或虚拟机内。 并且，对 [Docker](https://www.docker.com/) 来说，可以使用与管理任何其他容器相同的方式来管理 Windows 容器。
 
-## <a name="2-windows-container-types"></a>2.Windows 容器类型
+## 2.Windows 容器类型
 
 Windows 容器包括两个不同的容器类型或运行时。
 
-**Windows Server 容器** - 通过进程和命名空间隔离技术提供应用程序隔离。 Windows Server 容器与容器主机和该主机上运行的所有容器共享内核。
+**Windows Server 容器** - 通过进程和命名空间隔离技术提供应用程序隔离。 Windows Server 容器与容器主机和该主机上运行的所有容器共享内核。  这些容器不提供敌对安全边界，不应该用于隔离不受信任的代码。  这些容器与主机和同一台主机上的其他容器共享内核空间，因此内核需保持一致，这意味着需要采用相同的版本和配置。
 
-**Hyper-V 容器** - 通过在高度优化的虚拟机中运行每个容器，在由 Windows Server 容器提供的隔离上扩展。 在此配置中，容器主机的内核不与其他 Hyper-V 容器共享。
+**Hyper-V 隔离** - 通过在高度优化的虚拟机中运行每个容器，在由 Windows Server 容器提供的隔离上扩展。 在此配置中，容器主机的内核不与相同主机上的其他容器共享。  这些容器旨在托管敌对多租户，并且具有与虚拟机相同的安全保证。 由于这些容器与主机或主机上的其他容器不共享内核，它们可运行（与受支持的版本）采用不同版本和配置的内核 - 例如 Windows 10 上的所有 Windows 容器都使用 Hyper-V 隔离以充分利用 Windows Server 内核版本和配置。
 
-## <a name="3-container-fundamentals"></a>3.容器基础知识
+## 3. 容器基础知识
 
 当你开始使用容器时，你会注意到容器和虚拟机之间的许多相似之处。 容器在操作系统上运行、具有文件系统，并且可以通过网络访问，就像它是物理或虚拟计算机系统一样。 话虽如此，但容器背后的技术和概念与虚拟机有很大不同。 在你开始创建和使用 Windows 容器时，以下关键概念将会很有用。 
 
@@ -47,7 +48,7 @@ Windows 容器包括两个不同的容器类型或运行时。
 
 **Dockerfile：** -Dockerfile 用于自动创建容器映像。
 
-## <a name="next-step"></a>下一步：
+## 下一步：
 
 [Windows Server 容器快速入门](quick-start-windows-server.md)  
 
