@@ -438,6 +438,9 @@
   "8aba9f2ef619b79e7459d7fd55bd27cf107621b3": [
     "virtualization\\windowscontainers\\quick-start\\quick-start-windows-10.md"
   ],
+  "8eccd365c9d740d9e71ba9f8472d378f2f4e29c1": [
+    "virtualization\\windowscontainers\\quick-start\\quick-start-windows-server.md"
+  ],
   "832e65fde23ce3195eb8bbb79b7fa4afa01d13f3": [
     "virtualization\\windowscontainers\\quick-start\\quick-start-windows-server.md"
   ],
@@ -527,6 +530,9 @@
   ],
   "95f9187484988f7b7d74617424e218955e1eec80": [
     "virtualization\\windowscontainers\\quick-start\\Using-Insider-Container-Images.md"
+  ],
+  "e8602f81b547dec6cb25dd2ca219aab49a4c3005": [
+    "virtualization\\windowscontainers\\quick-start\\building-sample-app.md"
   ],
   "27b00cf53240390ddebd2317f50ff9d27408107d": [
     "virtualization\\windowscontainers\\quick-start\\building-sample-app.md"
