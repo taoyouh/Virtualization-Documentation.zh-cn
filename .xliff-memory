@@ -2305,6 +2305,18 @@
       "XliffHash": "bbd0e23b13fd48e038bb9c49dae7148a8a1d2d83",
       "TranslationType": 1,
       "SkeletonFile": "ol-xliffcache\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\2f0d0d9f7e7cfc97427deeab9b42c0e684028c28.feb44e65c9e81e281a5fd14696138d2ff8f5a428.xml"
+    },
+    "virtualization\\windowscontainers\\quick-start\\building-sample-app.md.0cf21bc7051258808d7bab6b3d165c037d6e3882.HT": {
+      "SourceFilename": "virtualization\\windowscontainers\\quick-start\\building-sample-app.md",
+      "XliffHash": "0cf21bc7051258808d7bab6b3d165c037d6e3882",
+      "TranslationType": 1,
+      "SkeletonFile": "ol-xliffcache\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\2ba3e6409fc60022a55d21c187bfcaefd962908b.36d0839b49aeb8a3f893f1060944161472407d76.xml"
+    },
+    "virtualization\\windowscontainers\\quick-start\\quick-start-images.md.798f60b50e33971bdb9bb9d409e226ea79fc37e9.HT": {
+      "SourceFilename": "virtualization\\windowscontainers\\quick-start\\quick-start-images.md",
+      "XliffHash": "798f60b50e33971bdb9bb9d409e226ea79fc37e9",
+      "TranslationType": 1,
+      "SkeletonFile": "ol-xliffcache\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\0d247989294de59ed599aba3ab982cac772efcf6.a83c5ac1403ea24da3bac89d556b269040cb8774.xml"
     }
   }
 }

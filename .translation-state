@@ -1,5 +1,5 @@
 {
-  "LastProcessedCommit": "1cbc3a15428d7912596fdb3489f4529aaa9af3dd",
+  "LastProcessedCommit": "4f5b9f70804bf6282af8bef603cc343c524c3102",
   "LastTranslatedCommit": "21f4320cb76270b953a1d22d857047a2fcf5d4b8",
   "LastConfigHash": "c2c732afb7c3f4c37d58d495724fd755011bf7a0",
   "Items": {
@@ -21018,6 +21018,38 @@
       "HandoffFileCommit": "36ee73ae7991cf2dc75ec575d5fd8e522c4e9870",
       "HandoffDateTime": "2017-08-04T00:08:38.2616305Z",
       "HandoffXliffHash": "bbd0e23b13fd48e038bb9c49dae7148a8a1d2d83",
+      "HandoffPriority": ""
+    },
+    "2ba3e6409fc60022a55d21c187bfcaefd962908b": {
+      "FileHash": "2ba3e6409fc60022a55d21c187bfcaefd962908b",
+      "SourceFileCommit": "4f5b9f70804bf6282af8bef603cc343c524c3102",
+      "SourceFilePath": "virtualization\\windowscontainers\\quick-start\\building-sample-app.md",
+      "HandoffReason": 1,
+      "FilePathList": [
+        "virtualization\\windowscontainers\\quick-start\\building-sample-app.md"
+      ],
+      "HasMetadata": true,
+      "TranslationType": 1,
+      "HandoffFilePath": "ol-handoff\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\building-sample-app.957afdd492b872efb91595b513db655c559f8646.zh-cn.xlf",
+      "HandoffFileCommit": "db45c69ce28487dc484945a5305be88f49d76fff",
+      "HandoffDateTime": "2017-08-04T17:45:57.9634616Z",
+      "HandoffXliffHash": "0cf21bc7051258808d7bab6b3d165c037d6e3882",
+      "HandoffPriority": ""
+    },
+    "0d247989294de59ed599aba3ab982cac772efcf6": {
+      "FileHash": "0d247989294de59ed599aba3ab982cac772efcf6",
+      "SourceFileCommit": "4f5b9f70804bf6282af8bef603cc343c524c3102",
+      "SourceFilePath": "virtualization\\windowscontainers\\quick-start\\quick-start-images.md",
+      "HandoffReason": 1,
+      "FilePathList": [
+        "virtualization\\windowscontainers\\quick-start\\quick-start-images.md"
+      ],
+      "HasMetadata": true,
+      "TranslationType": 1,
+      "HandoffFilePath": "ol-handoff\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\quick-start-images.e5904b6fd8770efb91af0e77142fe3e655c268ad.zh-cn.xlf",
+      "HandoffFileCommit": "db45c69ce28487dc484945a5305be88f49d76fff",
+      "HandoffDateTime": "2017-08-04T17:45:57.9634616Z",
+      "HandoffXliffHash": "798f60b50e33971bdb9bb9d409e226ea79fc37e9",
       "HandoffPriority": ""
     }
   }
