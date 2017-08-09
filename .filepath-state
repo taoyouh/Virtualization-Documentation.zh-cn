@@ -405,6 +405,9 @@
   "2077f7cf0428e08ce915470ac4cc3b0ccc9c6369": [
     "virtualization\\windowscontainers\\manage-docker\\optimize-windows-dockerfile.md"
   ],
+  "ac974db72707ec9b7889335d75d57d14e953e6c8": [
+    "virtualization\\windowscontainers\\quick-start\\index.md"
+  ],
   "140b306c1b81797474b38fa66a71e92f44ab3ba0": [
     "virtualization\\windowscontainers\\quick-start\\index.md"
   ],
