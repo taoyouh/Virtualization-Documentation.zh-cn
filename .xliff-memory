@@ -2329,6 +2329,12 @@
       "XliffHash": "6877b1f96ebf96d017941ff06d3b63836c93220b",
       "TranslationType": 1,
       "SkeletonFile": "ol-xliffcache\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\35b05dcb5a82764b2c0b6fe4e39aa35772840ca4.4e1dba0a2c10aac19f3657b40f5aa47859d73abe.xml"
+    },
+    "virtualization\\windowscontainers\\deploy-containers\\system-requirements.md.66651beaf46001671a3dc29f515e428f53ebc3b7.HT": {
+      "SourceFilename": "virtualization\\windowscontainers\\deploy-containers\\system-requirements.md",
+      "XliffHash": "66651beaf46001671a3dc29f515e428f53ebc3b7",
+      "TranslationType": 1,
+      "SkeletonFile": "ol-xliffcache\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\982d5cc5c070d5403834b7c63c68b736c79ce04d.3dacd9bc9a20332659d7da26f6c22407e72abd82.xml"
     }
   }
 }

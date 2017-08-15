@@ -157,6 +157,9 @@
   "02e6869b2f242df29aed13fcc8a69ed641958727": [
     "virtualization\\windowscontainers\\about\\container-ecosystem.md"
   ],
+  "982d5cc5c070d5403834b7c63c68b736c79ce04d": [
+    "virtualization\\windowscontainers\\deploy-containers\\system-requirements.md"
+  ],
   "35b05dcb5a82764b2c0b6fe4e39aa35772840ca4": [
     "virtualization\\windowscontainers\\deploy-containers\\system-requirements.md"
   ],
