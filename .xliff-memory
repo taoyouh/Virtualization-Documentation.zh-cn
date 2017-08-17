@@ -2335,6 +2335,12 @@
       "XliffHash": "66651beaf46001671a3dc29f515e428f53ebc3b7",
       "TranslationType": 1,
       "SkeletonFile": "ol-xliffcache\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\982d5cc5c070d5403834b7c63c68b736c79ce04d.3dacd9bc9a20332659d7da26f6c22407e72abd82.xml"
+    },
+    "virtualization\\hyper-v-on-windows\\about\\supported-guest-os.md.ebfc65804d9f0687e1de9b47a5f13147ba78e4de.HT": {
+      "SourceFilename": "virtualization\\hyper-v-on-windows\\about\\supported-guest-os.md",
+      "XliffHash": "ebfc65804d9f0687e1de9b47a5f13147ba78e4de",
+      "TranslationType": 1,
+      "SkeletonFile": "ol-xliffcache\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\ac1ec3740cfa75acd8c005df3f67531c693cd914.4f3eebfe0bac68bce78037802b77f290e20769ee.xml"
     }
   }
 }

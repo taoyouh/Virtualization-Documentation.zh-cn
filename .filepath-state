@@ -112,6 +112,9 @@
   "9f28c35c6eaddd8bcf3883863b63251378f845a7": [
     "virtualization\\windowscontainers\\troubleshooting.md"
   ],
+  "ac1ec3740cfa75acd8c005df3f67531c693cd914": [
+    "virtualization\\hyper-v-on-windows\\about\\supported-guest-os.md"
+  ],
   "7ef4d5aa084d199abfb39d1c44e4dd1305e07904": [
     "virtualization\\hyper-v-on-windows\\about\\supported-guest-os.md"
   ],
