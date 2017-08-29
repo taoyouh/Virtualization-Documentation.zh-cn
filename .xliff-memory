@@ -1734,7 +1734,7 @@
       "SourceFilename": "virtualization\\hyper-v-on-windows\\user-guide\\nested-virtualization.md",
       "XliffHash": "7ce49af999f999b74e57a266d4e6d7d144ccf98e",
       "TranslationType": 1,
-      "SkeletonFile": "ol-xliffcache\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\7d16fcf22187ae3ace25fe1bedbc02f3c6b63eb8.ae444f7301bfe5508c530f7318af9c08ec38380f.xml",
+      "SkeletonFile": "ol-xliffcache\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\fb790611ea994c68f3e3a3b0404a297c595f0646.68f804ab70df651e9f8044ab552ca55c066ac816.xml",
       "LocXliff": "ol-handback\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\nested-virtualization.b6c03a13724acb15bc74c70fdf9c4b440a2b28d4.zh-cn.xlf",
       "LocXliffCommit": "12b9210bd767a837cc8b1dc43a1db28933ca017d"
     },

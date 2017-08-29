@@ -133,6 +133,9 @@
   "ea91ea0ffca5479cb0593ef9961625f7b7ab1f42": [
     "virtualization\\hyper-v-on-windows\\user-guide\\create-pre-release-vm.md"
   ],
+  "fb790611ea994c68f3e3a3b0404a297c595f0646": [
+    "virtualization\\hyper-v-on-windows\\user-guide\\nested-virtualization.md"
+  ],
   "7d16fcf22187ae3ace25fe1bedbc02f3c6b63eb8": [
     "virtualization\\hyper-v-on-windows\\user-guide\\nested-virtualization.md"
   ],
