@@ -2347,6 +2347,12 @@
       "XliffHash": "84ce4438dc1dd3f086472dd3283658bdc0b69ded",
       "TranslationType": 1,
       "SkeletonFile": "ol-xliffcache\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\89d66c7c5515532ab9bc7ebfcf0c79e59ebd7d28.032d9cbb841cf547abe4860fdf509dbfd7731287.xml"
+    },
+    "virtualization\\hyper-v-on-windows\\user-guide\\setup-nat-network.md.88c7740e9d64583b1d61b46ce2268560ef04cb36.HT": {
+      "SourceFilename": "virtualization\\hyper-v-on-windows\\user-guide\\setup-nat-network.md",
+      "XliffHash": "88c7740e9d64583b1d61b46ce2268560ef04cb36",
+      "TranslationType": 1,
+      "SkeletonFile": "ol-xliffcache\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\d1ddd25973a24c5915842580bb734db78236fb0e.041282306243c0c1892af8bf3ae56169599c1f0d.xml"
     }
   }
 }
