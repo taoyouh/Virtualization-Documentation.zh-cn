@@ -2353,6 +2353,12 @@
       "XliffHash": "88c7740e9d64583b1d61b46ce2268560ef04cb36",
       "TranslationType": 1,
       "SkeletonFile": "ol-xliffcache\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\d1ddd25973a24c5915842580bb734db78236fb0e.041282306243c0c1892af8bf3ae56169599c1f0d.xml"
+    },
+    "virtualization\\windowscontainers\\quick-start\\Nano-RS3-.NET-Core-and-PS.md.918aeb2a9a0677b893210ec8a80dbaa5b1ba3f66.HT": {
+      "SourceFilename": "virtualization\\windowscontainers\\quick-start\\Nano-RS3-.NET-Core-and-PS.md",
+      "XliffHash": "918aeb2a9a0677b893210ec8a80dbaa5b1ba3f66",
+      "TranslationType": 1,
+      "SkeletonFile": "ol-xliffcache\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\3aca2300ce0a53b6bb038fa37605ffe62bf2326d.4cd9303eb16ea36ac02b37fd20ebbb140324f6d0.xml"
     }
   }
 }

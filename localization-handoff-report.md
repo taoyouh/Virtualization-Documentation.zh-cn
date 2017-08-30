@@ -6,14 +6,14 @@
 ## File List
  Source File | Status | Details 
  ----------- | ------ | ------- 
- [virtualization\hyper-v-on-windows\user-guide\setup-nat-network.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/842ca978202612dc14b0b074fe21fef0458f401a/virtualization/hyper-v-on-windows/user-guide/setup-nat-network.md) | HandedOffSuccess | [Details](#d1ddd25973a24c5915842580bb734db78236fb0e238)
+ [virtualization\windowscontainers\quick-start\Nano-RS3-.NET-Core-and-PS.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/2bf156c38833ff31a3f377c1eca85e4928e94d80/virtualization/windowscontainers/quick-start/Nano-RS3-.NET-Core-and-PS.md) | HandedOffSuccess | [Details](#3aca2300ce0a53b6bb038fa37605ffe62bf2326d393)
 
 ## Item Details
-##### <a name='d1ddd25973a24c5915842580bb734db78236fb0e238'></a> Source: [virtualization\hyper-v-on-windows\user-guide\setup-nat-network.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/842ca978202612dc14b0b074fe21fef0458f401a/virtualization/hyper-v-on-windows/user-guide/setup-nat-network.md)
+##### <a name='3aca2300ce0a53b6bb038fa37605ffe62bf2326d393'></a> Source: [virtualization\windowscontainers\quick-start\Nano-RS3-.NET-Core-and-PS.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/2bf156c38833ff31a3f377c1eca85e4928e94d80/virtualization/windowscontainers/quick-start/Nano-RS3-.NET-Core-and-PS.md)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [setup-nat-network.569fba8d30bc800503603312f9faf0554f426411.zh-cn.xlf](https://github.com/MicrosoftDocs/Virtualization-Documentation-Private.handoff/blob/fc904ec00dfdd509e97b0e1aa8a95b3409dce2d3/ol-handoff/MicrosoftDocs/Virtualization-Documentation-Private.zh-cn/live/setup-nat-network.569fba8d30bc800503603312f9faf0554f426411.zh-cn.xlf)
-* Handoff Datetime: 2017-08-29 18:15:50
+* Handoff File: [Nano-RS3-.NET-Core-and-PS.e5ea4a76ace3f6471b80af88b95435b052b8d445.zh-cn.xlf](https://github.com/MicrosoftDocs/Virtualization-Documentation-Private.handoff/blob/a1a8084de80b8ffdfcfc941d24e67f3efe881051/ol-handoff/MicrosoftDocs/Virtualization-Documentation-Private.zh-cn/live/Nano-RS3-.NET-Core-and-PS.e5ea4a76ace3f6471b80af88b95435b052b8d445.zh-cn.xlf)
+* Handoff Datetime: 2017-08-30 01:16:26
 * Handoff Reason: Include
 * Handoff Name: 
 * Archive File: 
@@ -21,11 +21,6 @@
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
 * Handback Name: 
-* Current Target File: [virtualization\hyper-v-on-windows\user-guide\setup-nat-network.md](https://github.com/MicrosoftDocs/Virtualization-Documentation-Private.zh-cn/blob/21f4320cb76270b953a1d22d857047a2fcf5d4b8/virtualization/hyper-v-on-windows/user-guide/setup-nat-network.md)
-* Current Handback File: [setup-nat-network.569fba8d30bc800503603312f9faf0554f426411.zh-cn.xlf](https://github.com/MicrosoftDocs/Virtualization-Documentation-Private.handback/blob/12b9210bd767a837cc8b1dc43a1db28933ca017d/ol-handback/Microsoft/Virtualization-Documentation-Private.zh-cn/live/setup-nat-network.569fba8d30bc800503603312f9faf0554f426411.zh-cn.xlf)
-* Current Handback Datetime: 2017-03-24 13:50:12
-* Bilingual File: [setup-nat-network.569fba8d30bc800503603312f9faf0554f426411.zh-cn.xlf](https://github.com/MicrosoftDocs/Virtualization-Documentation-Private.handback/blob/12b9210bd767a837cc8b1dc43a1db28933ca017d/ol-handback/Microsoft/Virtualization-Documentation-Private.zh-cn/live/setup-nat-network.569fba8d30bc800503603312f9faf0554f426411.zh-cn.xlf)
-* Bilingual Datetime: 2017-03-24 13:53:10
 * [Back to Top](#report-top)
 
 
