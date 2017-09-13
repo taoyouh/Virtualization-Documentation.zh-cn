@@ -1,87 +1,104 @@
 ---
-title: "关于 Windows 容器"
-description: "了解 Windows 容器。"
-keywords: "docker, 容器"
+title: About Windows Containers
+description: Learn about Windows containers.
+keywords: docker, containers
 author: taylorb-microsoft
 ms.date: 05/02/2016
 ms.topic: article
 ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: 8e273856-3620-4e58-9d1a-d1e06550448
-ms.openlocfilehash: a70564f565a69f15ef4d668ccab0aa3b18c758ae
-ms.sourcegitcommit: 65de5708bec89f01ef7b7d2df2a87656b53c3145
+ms.openlocfilehash: 2be7a06c7b7b154e392c30981cdf954d2d1b796e
+ms.sourcegitcommit: 8e193d8c274a549aef497f16dcdb00d7855e9fa7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/21/2017
+ms.lasthandoff: 08/02/2017
 ---
 # Windows 容器
 
-**这是初步内容，可能还会更改。** 
-
 ## 什么是容器
 
-观看简短概述：[基于 Windows 的容器：使用企业级控制的现代应用开发](https://youtu.be/Ryx3o0rD5lY)。
+容器是一种将应用程序包装到其自身隔离空间内的方法。 位于容器中的应用不了解该容器外存在的所有其他应用程序或进程。 应用程序成功运行所需的所有依赖项也存在于此容器内。  无论容器移动到何处，应用程序都将始终得到满足，因为应用程序与其运行所需的一切都已绑定在一起。
 
-容器是隔离、资源控制且可移植的操作环境。
+这就好像是一个厨房。 我们打包所有的电器和家具、锅碗瓢盆、洗洁精和毛巾。 这便是我们的容器
 
-基本上，容器是一个隔离的位置，应用程序可在其中运行，而不会接触其他容器或主机的资源（内存、磁盘、网络等）。
+<center style="margin: 25px">![](media/box1.png)</center>
 
-容器的外观和运行方式类似于新安装的物理计算机或虚拟机。 Windows Server 容器同任何其他容器一样，可以通过 [Docker](https://www.docker.com/) 进行管理。
+我们现在可以带着这个容器，将它放在任何喜欢的入住公寓中，厨房还会是这个厨房。 我们所需做的全部工作就是为它接通水电，然后我们便可以立即开始烹饪（因为我们拥有所有需要的器具！）
 
-## Windows 容器类型
+<center style="margin: 25px">![](media/apartment.png)</center>
 
-Windows 容器包括两个不同的容器类型或运行时。
+容器在很大程度上就像是这个厨房。 可以有不同类型的房间以及许多相同类型的房间。 重要的一点是容器与其所需的一切内容打包在一起。
 
-**Windows Server 容器** - 通过进程和命名空间隔离技术提供应用程序隔离。 Windows Server 容器与容器主机和该主机上运行的所有容器共享内核。  这些容器不提供敌对安全边界，不应该用于隔离不受信任的代码。  这些容器与主机和同一台主机上的其他容器共享内核空间，因此内核需保持一致，这意味着需要采用相同的版本和配置。
-
-**Hyper-V 隔离** - 通过在高度优化的虚拟机中运行每个容器，在由 Windows Server 容器提供的隔离上扩展。 在此配置中，容器主机的内核不与相同主机上的其他容器共享。  这些容器旨在托管敌对多租户，并且具有与虚拟机相同的安全保证。 由于这些容器与主机或主机上的其他容器不共享内核，它们可运行（与受支持的版本）采用不同版本和配置的内核 - 例如 Windows 10 上的所有 Windows 容器都使用 Hyper-V 隔离以充分利用 Windows Server 内核版本和配置。
-
+在此处观看简短概述：[基于 Windows 的容器：使用企业级控制的现代应用开发](https://youtu.be/Ryx3o0rD5lY)。
 
 ## 容器基础知识
 
-当你开始使用容器时，你会注意到容器和虚拟机之间的许多相似之处。 容器在操作系统上运行、具有文件系统，并且可以通过网络访问，就像它是物理或虚拟计算机系统一样。 话虽如此，但容器背后的技术和概念与虚拟机有很大不同。  
+容器是独立的、资源受控制的和可移植的运行时环境，在主机或虚拟机上运行。 在容器中运行的应用程序或进程与所有需要的依赖项和配置文件打包在一起；在它看来，容器之外似乎没有任何其他进程在运行。
 
-Mark Russinovich 所著的[此博客文章](http://azure.microsoft.com/blog/2015/08/17/containers-docker-windows-and-trends/)很好地解释了容器。
+容器的主机为容器预配一组资源，且容器只会使用这些资源。 在容器看来，除了已经为其提供的资源之外，不存在其他资源，因此它不能接触到可能已为相邻容器预配的资源。
 
-在你开始创建和使用 Windows 容器时，以下关键概念将会很有用。 
+在你开始创建和使用 Windows 容器时，以下关键概念将会很有用。
 
-**容器主机：**使用 Windows 容器功能配置的物理或虚拟计算机系统。 容器主机将运行一个或多个 Windows 容器。
+**Container Host:** Physical or Virtual computer system configured with the Windows Container feature. 容器主机将运行一个或多个 Windows 容器。
 
-**容器映像：**在对容器文件系统或注册表进行修改时（如软件安装），将在沙盒中捕获它们。  在许多情况下，你可能希望捕获此状态，以便可以创建继承这些更改的新容器。 这就是映像的本质：一旦容器停止，你便可以放弃该沙盒，或者可以将其转换为新的容器映像。 例如，让我们想象你已从 Windows Server Core 操作系统映像部署一个容器。 然后你将 MySQL 安装到此容器中。 从此容器创建新映像将充当该容器的可部署版本。 此映像将只包含所做的更改 (MySQL)，但是将充当容器操作系统映像之上的一个层。
+**容器映像：**在对容器文件系统或注册表进行修改时（如软件安装），将在沙盒中捕获这些修改。 在许多情况下，你可能希望捕获此状态，以便可以创建继承这些更改的新容器。 That’s what an image is – once the container has stopped you can either discard that sandbox or you can convert it into a new container image. For example, let’s imagine that you have deployed a container from the Windows Server Core OS image. You then install MySQL into this container. Creating a new image from this container would act as a deployable version of the container. This image would only contain the changes made (MySQL), however would work as a layer on top of the Container OS Image.
 
-**沙盒：**容器启动后，将在此“沙盒”层中捕获所有的写入操作，如文件系统修改、注册表修改或软件安装。  
- 
-**容器操作系统映像：**从映像部署容器。 容器操作系统映像是可能组成容器的许多映像层中的第一层。 此映像提供操作系统环境。 容器操作系统映像不可变，并且无法修改。
+**Sandbox:** Once a container has been started, all write actions such as file system modifications, registry modifications or software installations are captured in this ‘sandbox’ layer.
 
-**容器存储库：**每次创建容器映像时，容器映像及其依赖关系都会存储在本地存储库中。 这些映像可以在容器主机上重复使用多次。 容器映像还可以存储在公共或私有注册表（如 DockerHub）中，以便可以在许多不同的容器主机上使用它们。
+**Container OS Image:** Containers are deployed from images. The container OS image is the first layer in potentially many image layers that make up a container. 此映像提供操作系统环境。 容器操作系统映像是不可变的。 也就是说，不能对其进行修改。
+
+**容器存储库：**每次创建容器映像时，容器映像及其依赖项都会存储在本地存储库中。 这些映像可以在容器主机上重复使用多次。 容器映像还可以存储在公共或私有注册表（如 DockerHub）中，以便可以在许多不同的容器主机上使用它们。
 
 <center>![](media/containerfund.png)</center>
 
-## 面向开发人员的容器
+对于熟悉虚拟机的人员而言，容器可能具有令人难以置信的相似性。 A container runs an operating system, has a file system and can be accessed over a network just as if it was a physical or virtual computer system. 话虽如此，但容器背后的技术和概念与虚拟机有很大不同。
 
-从开发人员的桌面到测试计算机再到一组生产计算机，可以创建以相同方式在几秒内在任何环境中部署的 Docker 映像。 由此创造出了封装在 Docker 容器中的巨大且持续增长的应用程序生态系统，其中 DockerHub 是 Docker 所维护的公共容器化应用程序注册表，当前已在公共社区存储库中发布超过 180,000 个应用程序。  
+Microsoft Azure 专家 Mark Russinovich 有[一篇精彩的博客文章](https://azure.microsoft.com/en-us/blog/containers-docker-windows-and-trends/)详述了这些差异。
 
-当你容器化某个应用时，仅该应用以及运行该运用所需的组件将组合到“映像”中。 然后根据你的需要从此映像创建容器。 你还可以使用映像作为创建其他映像的基线，从而使映像创建速度更快。  多个容器可以共享同一个映像，这意味着容器将非常快速地启动，并使用更少的资源。 例如，你可以使用容器为已分配的应用起转轻型和可移植的应用组件（或“微服务”），并快速单独缩放每个服务。
+## Windows 容器类型
 
-由于容器具有运行应用程序所需的一切，因此它们非常易于移植，并且可在运行 Windows Server 2016 的任何计算机上运行。 你可以本地创建和测试容器，然后将该相同的容器映像部署到你的公司的私有云、公有云或服务提供商。 容器的自然灵活性支持大规模、虚拟化和云环境中的现代应用开发模式。
+Windows Containers include two different container types, or runtimes.
 
-借助容器，开发人员可以采用任何语言生成应用。 这些应用完全可移植，并且可在任何位置（笔记本电脑、台式机、服务器、私有云、公有云或服务提供商）运行，而无需任何代码更改。  
+**Windows Server Containers** – provide application isolation through process and namespace isolation technology. A Windows Server Container shares a kernel with the container host and all containers running on the host. 这些容器不提供敌对安全边界，不应该用于隔离不受信任的代码。 由于共享内核空间，这些容器要求具有相同的内核版本和配置。
 
-容器有助于开发人员更快地生成和交付更高质量的应用程序。
+**Hyper-V 隔离** - 通过在高度优化的虚拟机中运行每个容器，在由 Windows Server 容器提供的隔离上扩展。 In this configuration, the kernel of the container host is not shared with other containers on the same host. 这些容器旨在托管敌对多租户，并且具有与虚拟机相同的安全保证。 由于这些容器与主机或主机上的其他容器不共享内核，它们可运行（与受支持的版本）采用不同版本和配置的内核 - 例如 Windows 10 上的所有 Windows 容器都使用 Hyper-V 隔离以充分利用 Windows Server 内核版本和配置。
 
-## 面向 IT 专业人员的容器 ##
+在 Windows 上运行容器时是否使用 Hyper-V 隔离将在运行时决定。 你可以在最初选择创建具有 Hyper-V 隔离的容器，而稍后在运行时选择将其作为 Windows Server 容器运行。
 
-IT 专业人员可以使用容器来为其开发、QA 和生产团队提供标准化环境。 他们不再需要担心复杂的安装和配置步骤。 通过使用容器，系统管理员抽象出操作系统安装和底层基础结构中的差异。
+## 什么是 Docker？
 
-容器有助于管理员创建更易于更新和维护的基础结构。
+阅读有关容器的资料时，你将不可避免地看到有关 Docker 的信息。 Docker 是对容器映像进行打包和传送的容器。 此自动化过程会生成稍后可能在任何地方（在本地、在云中或在个人计算机上）作为容器运行的映像（相当于模板）。
 
-## 视频概述
+<center>![](media/docker.png)</center>
 
-<iframe 
-src="https://channel9.msdn.com/Blogs/containers/Containers-101-with-Microsoft-and-Docker/player" width="800" height="450" allowFullScreen="true" frameBorder="0" scrolling="no"></iframe>
+同任何其他容器一样，可以通过 [Docker](https://www.docker.com) 管理 Windows Server 容器。
 
+## 面向开发人员的容器 ##
+
+From a developer’s desktop to a testing machine to a set of production machines, a Docker image can be created that will deploy identically across any environment in seconds. This story has created a massive and growing ecosystem of applications packaged in Docker containers, with DockerHub, the public containerized-application registry that Docker maintains, currently publishing more than 180,000 applications in the public community repository.
+
+When you containerize an app, only the app and the components needed to run the app are combined into an "image". Containers are then created from this image as you need them. You can also use an image as a baseline to create another image, making image creation even faster. Multiple containers can share the same image, which means containers start very quickly and use fewer resources. For example, you can use containers to spin up light-weight and portable app components – or ‘micro-services’ – for distributed apps and quickly scale each service separately.
+
+Because the container has everything it needs to run your application, they are very portable and can run on any machine that is running Windows Server 2016. You can create and test containers locally, then deploy that same container image to your company's private cloud, public cloud or service provider. The natural agility of Containers supports modern app development patterns in large scale, virtualized and cloud environments.
+
+With containers, developers can build an app in any language. These apps are completely portable and can run anywhere - laptop, desktop, server, private cloud, public cloud or service provider - without any code changes.  
+
+Containers helps developers build and ship higher-quality applications, faster.
+
+## Containers for IT Professionals ##
+
+IT Professionals can use containers to provide standardized environments for their development, QA, and production teams. They no longer have to worry about complex installation and configuration steps. By using containers, systems administrators abstract away differences in OS installations and underlying infrastructure.
+
+Containers help admins create an infrastructure that is simpler to update and maintain.
+
+## Video Overview
+
+<iframe src="https://channel9.msdn.com/Blogs/containers/Containers-101-with-Microsoft-and-Docker/player" width="800" height="450" allowFullScreen="true" frameBorder="0" scrolling="no"></iframe>
 
 ## 试用 Windows Server 容器
 
-[容器快速入门简介](../quick_start/quick_start.md)
+已准备好开始利用容器的强大功能？ 请点击下方的链接亲自开始部署你的第一个容器： <br/>
+对于 Windows Server 上的用户，请转到此处 - [Windows Server 快速入门简介](../quick-start/quick-start-windows-server.md) <br/>
+对于 Windows 10 上的用户，请转到此处 - [Windows 10 快速入门简介](../quick-start/quick-start-windows-10.md)
 

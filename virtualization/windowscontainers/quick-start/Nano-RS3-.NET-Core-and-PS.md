@@ -1,55 +1,55 @@
-# 使用或不使用 .NET Core 2.0 或 PowerShell Core 6 生成和运行应用程序
+# Build and run an application with or without .NET Core 2.0 or PowerShell Core 6
 
-此版本中的 Nano Server 基本操作系统容器映像删除了 .NET Core 和 PowerShell，但支持 .NET Core 和 PowerShell 作为基础 Nano Server 容器上的附加分层容器。  
+The Nano Server base OS Container image in this release has removed .NET Core and PowerShell, though both .NET Core and PowerShell are supported as an add-on layered container on top of the base Nano Server container.  
 
-如果你的容器计划运行本机代码或开放框架，如 Node.js、Python、Ruby 等，则基本 Nano Server 容器足已。  此版本与 Windows Server 2016 版本的一个细微差别，此版本可能因为[占用空间节省](https://docs.microsoft.com/en-us/windows-server/get-started/nano-in-semi-annual-channel)而无法运行某些本机代码。 如果你注意到任何回归问题，请在[论坛](https://social.msdn.microsoft.com/Forums/en-US/home?forum=windowscontainers)中告知我们。 
+If your container is to run native code or open frameworks such as Node.js, Python, Ruby, etc, the base Nano Server container is sufficient.  One nuance is that certain native code may not run as a result of [footprint savings](https://docs.microsoft.com/en-us/windows-server/get-started/nano-in-semi-annual-channel) in this release compared to Windows Server 2016 release. If there are any regression issues you notice, let us know in the [forums](https://social.msdn.microsoft.com/Forums/en-US/home?forum=windowscontainers). 
 
-若要从 Dockerfile 生成容器，请使用 docker 版本，若要运行它，请使用 docker 运行。  以下命令将下载 Nano Server 容器基本操作系统映像（这可能需要几分钟）并打印在主机控制台打印“Hello World!” 消息。
+To build your container from a Dockerfile, use  docker build and to run it, docker run.  The following command will download the Nano Server Container base OS image, which may take a few minutes, and print a “Hello World!” message at the host console.
 
 ```none
 docker run microsoft/nanoserver-insider cmd /c echo Hello World!
 ```
 
-你可以使用 [Windows 上的 Dockerfile](https://docs.microsoft.com/en-us/virtualization/windowscontainers/manage-docker/manage-windows-dockerfile)，通过 Dockerfile 语法（如 FROM、RUN、COPY、ADD、CMD 等）生成更复杂的应用程序。尽管你将无法通过该基本映像立即运行特定命令，你现在能够创建仅包含让你的应用程序工作所需的内容的容器映像。
+You can build more complicated applications using [Dockerfiles on Windows](https://docs.microsoft.com/en-us/virtualization/windowscontainers/manage-docker/manage-windows-dockerfile), with Dockerfile syntax such as FROM, RUN, COPY, ADD, CMD, etc.  While you won’t be able to run certain commands right away from this base image, you will now be able to create container images that only contain the things you need for your application to work.
 
-由于 .NET Core 和 PowerShell 在基本 Nano Server 容器操作系统映像中不可用，使用压缩 zip 格式的内容生成容器会比较难。 使用在 Docker 17.05 中提供的[多阶段版本](https://docs.docker.com/engine/userguide/eng-image/multistage-build/)功能，你可以充分利用另一个容器中的 PowerShell 解压缩内容并复制到 Nano 容器。 这种方法可用于创建 .NET Core 容器和 PowerShell 容器。 
+As a result of both .NET Core and PowerShell not being available in the base Nano Server container OS image, one challenge is on how to build a container with content in compressed zip format. With the [multi-stage build](https://docs.docker.com/engine/userguide/eng-image/multistage-build/) feature available in Docker 17.05, you can leverage PowerShell in another container to unzip the content and copy into the Nano container. This approach can be used to create a .NET Core container and a PowerShell container. 
 
-可以通过使用此命令拉取 PowerShell 容器：
+You can pull the PowerShell container image by using this command:
 
 ```none
 docker pull microsoft/nanoserver-insider-powershell
 ```
 
-可以通过使用此命令拉取 .NET Core 容器：
+You can pull the .NET Core container image by using this command:
 
 ```none
 docker pull microsoft/nanoserver-insider-dotnet
 ```
 
-下面是一些有关我们如何利用多阶段版本创建这些容器映像的示例。
+Below are some examples of how we used multi-stage builds to create these container images.
 
-## 基于 .NET Core 2.0 部署应用
-在其他位置生成 .NET Core 应用程序且你想要在容器中运行它时，可以利用预览体验成员版本中的 .NET Core 2.0 容器映像运行你的 .NET Core 应用。  你可以在 [.NET Core GitHub](https://github.com/dotnet/dotnet-docker-nightly) 找到有关如何使用 .NET Core 容器映像运行 .NET Core 应用程序的详细信息。  如果你在容器内部开发应用程序，应改为使用 .NET Core SDK。  对于高级用户，你可以使用 .NET Core 2.0 版本、Dockerfile 和在 [dotnet-docker-nightly](https://github.com/dotnet/dotnet-docker-nightly/tree/master/2.0) 中指定的 URL 生成你自己的 .NET Core 2.0 容器。 若要执行该操作，可以使用 Windows Server Core 容器完成下载和解压缩功能。  Dockerfile 示例与 [.NET Core 运行时 Dockerfile](https://github.com/dotnet/dotnet-docker-nightly/blob/master/2.0/runtime/nanoserver-insider/Dockerfile) 相同。
+## Deploy apps based on .NET Core 2.0
+You can leverage the .NET Core 2.0 container image in the Insider release to run your .NET Core apps, where your .NET Core application is built elsewhere and you want to run it in the container.  You can find more information on how to run a .NET Core application with the .NET Core container images at [.NET Core GitHub](https://github.com/dotnet/dotnet-docker-nightly).  If you are developing an application inside the container, the .NET Core SDK should be used instead.  For advanced users, you can build your own .NET Core 2.0 container with the .NET Core 2.0 version, Dockerfile, and URL specified in the [dotnet-docker-nightly](https://github.com/dotnet/dotnet-docker-nightly/tree/master/2.0). To do that, a Windows Server Core container can be used to accomplish the download and unzip function.  The Dockerfile sample is as the [.NET Core Runtime Dockerfile](https://github.com/dotnet/dotnet-docker-nightly/blob/master/2.0/runtime/nanoserver-insider/amd64/Dockerfile).
 
 
-使用此 Dockerfile，可以使用以下命令生成 .NET Core 2.0 容器。
+With this Dockerfile, a .NET Core 2.0 container can be built using the following command.
 
 ```none
 docker build -t nanoserverdnc -f Dockerfile-dotnetRuntime .
 ```
 
-## 在容器中运行 PowerShell Core 6
-使用相同的[多阶段版本](https://docs.docker.com/engine/userguide/eng-image/multistage-build/)方法，可以使用[此 PowerShell Dockerfile](https://github.com/PowerShell/PowerShell/blob/master/docker/release/nanoserver-insider/Dockerfile) 生成 PowerShell Core 6 容器。
+## Run PowerShell Core 6 in a container
+Using the same [multi-stage build](https://docs.docker.com/engine/userguide/eng-image/multistage-build/) method, a PowerShell Core 6 container can be built with [this PowerShell Dockerfile](https://github.com/PowerShell/PowerShell/blob/master/docker/release/nanoserver-insider/Dockerfile).
 
 
-然后发出 docker 版本以创建 PowerShell 容器映像。
+Then issue docker build to create the PowerShell container image.
 
 ```none 
 docker build -t nanoserverPowerShell6 -f Dockerfile-PowerShell6 .
 ```
 
-你可以在 [PowerShell GitHub](https://github.com/PowerShell/PowerShell/tree/master/docker/release) 找到详细信息。  值得一提的是，PowerShell zip 包含生成 PowerShell Core 6 所需的 .NET Core 2.0 的子集。  如果你的 PowerShell 模块依赖于 .NET Core 2.0，可以安全地在 Nano .NET Core 容器上生成 PowerShell 容器，而不是在基本 Nano 容器上，即 使用 Dockerfile 中的 FROM microsoft/nanoserver-insider-dotnet。 
+You can find more information at [PowerShell GitHub](https://github.com/PowerShell/PowerShell/tree/master/docker/release).  It is worth mentioning that the PowerShell zip contains a subset of .NET Core 2.0 that is required to build PowerShell Core 6.  如果你的 PowerShell 模块依赖于 .NET Core 2.0，可以安全地在 Nano .NET Core 容器上生成 PowerShell 容器，而不是在基本 Nano 容器上，即：使用 Dockerfile 中的 FROM microsoft/nanoserver-insider-dotnet。 
 
 ## 后续步骤
-- 使用在 Docker 中心可用的其中一个基于 Nano Server 的新容器映像，即基本 Nano Server 映像、具有 .NET Core 2.0 的 Nano 和具有 PowerShell Core 6 的 Nano
-- 使用本指南中的 Dockerfile 示例内容，基于新的 Nano Server 容器基本操作系统映像生成你自己的容器映像。 
+- Use one of the new container images based on Nano Server, available in Docker Hub, i.e. base Nano Server image, Nano with .NET Core 2.0, and Nano with PowerShell Core 6
+- Build your own container image based on the new Nano Server Container base OS image, using the Dockerfile sample content in this guide 
