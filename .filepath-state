@@ -273,6 +273,9 @@
   "19889805c3e4d6d650306de1028e117bcb42ec71": [
     "virtualization\\hyper-v-on-windows\\quick-start\\create-virtual-machine.md"
   ],
+  "85f6b30544fc433c9d768c2167024d097a9cef25": [
+    "virtualization\\hyper-v-on-windows\\quick-start\\enable-hyper-v.md"
+  ],
   "468b2047bbca94126e56be71c2d546a8c78820cb": [
     "virtualization\\hyper-v-on-windows\\quick-start\\enable-hyper-v.md"
   ],

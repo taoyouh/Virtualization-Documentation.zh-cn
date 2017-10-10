@@ -2365,6 +2365,12 @@
       "XliffHash": "d53f37c48ae0148afca849e587c6e58fa042bbd2",
       "TranslationType": 1,
       "SkeletonFile": "ol-xliffcache\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\f4ee9346db77e29f9d3366634b8b6ad07d0fec08.cb21f08bafd131456d02439cb4a0e7211f712301.xml"
+    },
+    "virtualization\\hyper-v-on-windows\\quick-start\\enable-hyper-v.md.d56c95a3975dad6f6e7d5e223e5b4f1ff4a63675.HT": {
+      "SourceFilename": "virtualization\\hyper-v-on-windows\\quick-start\\enable-hyper-v.md",
+      "XliffHash": "d56c95a3975dad6f6e7d5e223e5b4f1ff4a63675",
+      "TranslationType": 1,
+      "SkeletonFile": "ol-xliffcache\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\85f6b30544fc433c9d768c2167024d097a9cef25.671f8af4cdcbdef9f99170448cabe35b27c87981.xml"
     }
   }
 }
