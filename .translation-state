@@ -1,5 +1,5 @@
 {
-  "LastProcessedCommit": "a3c9101a05d730d4173720d224bd8df8e9a56739",
+  "LastProcessedCommit": "fa9ec91b14c612df03c5b7bb094eb1fabf421715",
   "LastTranslatedCommit": "21f4320cb76270b953a1d22d857047a2fcf5d4b8",
   "LastConfigHash": "8a1020b7136b784cdc0f8c9eca877ab77b2a9c5f",
   "Items": {
@@ -21225,6 +21225,22 @@
       "HandoffFileCommit": "384abe47ee5da735de549f82f180d550c98f3b87",
       "HandoffDateTime": "2017-10-10T22:35:43.5860845Z",
       "HandoffXliffHash": "d56c95a3975dad6f6e7d5e223e5b4f1ff4a63675",
+      "HandoffPriority": ""
+    },
+    "b9f20e6b3f071b9c71a387fce9640b244e9a95b5": {
+      "FileHash": "b9f20e6b3f071b9c71a387fce9640b244e9a95b5",
+      "SourceFileCommit": "fa9ec91b14c612df03c5b7bb094eb1fabf421715",
+      "SourceFilePath": "virtualization\\windowscontainers\\quick-start\\building-sample-app.md",
+      "HandoffReason": 1,
+      "FilePathList": [
+        "virtualization\\windowscontainers\\quick-start\\building-sample-app.md"
+      ],
+      "HasMetadata": true,
+      "TranslationType": 1,
+      "HandoffFilePath": "ol-handoff\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\building-sample-app.957afdd492b872efb91595b513db655c559f8646.zh-cn.xlf",
+      "HandoffFileCommit": "4b11eaea8d57d93be1d834a9f0cc83d450ca49f4",
+      "HandoffDateTime": "2017-10-11T18:36:39.8758Z",
+      "HandoffXliffHash": "834334bbb5f9d0238bed5fcab70c6ef2cfec5d3d",
       "HandoffPriority": ""
     }
   }
