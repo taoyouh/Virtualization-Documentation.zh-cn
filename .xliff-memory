@@ -1566,7 +1566,7 @@
       "SourceFilename": "virtualization\\windowscontainers\\deployment\\deployment_nano.md",
       "XliffHash": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
       "TranslationType": 1,
-      "SkeletonFile": "ol-xliffcache\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\1988e55cfb9f3e76473e9398538e6b97344bedac.322111f9ce8323e40c060ee85b87eac80de9d891.xml",
+      "SkeletonFile": "ol-xliffcache\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\695b99e631803aa9d5315ba149cda9a68f5a76bf.fbc23ac22fd990e5087b07347d11fcd91ecaa7fc.xml",
       "LocXliff": "ol-handback\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\deployment_nano.b4ad903b48200665d4d0c8e4d0956bddc0d52f79.zh-cn.xlf",
       "LocXliffCommit": "053db64a8e1a8e5f0229358d1b0050047ef06ae5"
     },

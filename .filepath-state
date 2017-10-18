@@ -69,6 +69,9 @@
   "02c8e82cb7d2a2dce902133f09a16f37fe6cde21": [
     "virtualization\\windowscontainers\\management\\container_networking.md"
   ],
+  "695b99e631803aa9d5315ba149cda9a68f5a76bf": [
+    "virtualization\\windowscontainers\\deployment\\deployment_nano.md"
+  ],
   "1988e55cfb9f3e76473e9398538e6b97344bedac": [
     "virtualization\\windowscontainers\\deployment\\deployment_nano.md"
   ],
@@ -389,9 +392,6 @@
   ],
   "dfb94dfcc92ae6ae5efcbd924695ffe9bd099e34": [
     "virtualization\\hyper-v-on-windows\\about\\supported_guest_os.md"
-  ],
-  "b9a02184a98f392d5ee323dc3e939d137ce7e4e6": [
-    "virtualization\\windowscontainers\\deploy-containers\\deploy-containers-on-nano.md"
   ],
   "12c7c713468618a9fedc82ec5a1c488f57edcfd7": [
     "virtualization\\windowscontainers\\deploy-containers\\deploy-containers-on-server.md"
