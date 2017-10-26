@@ -324,6 +324,9 @@
   "46019a10c55cc11c2f25b8c4b23edc6f5d140e36": [
     "virtualization\\hyper-v-on-windows\\reference\\integration-services.md"
   ],
+  "d836d9d0bd7cc6ce714b1b586e49915a8ce7e616": [
+    "virtualization\\hyper-v-on-windows\\TOC.md"
+  ],
   "720d15a919760233d90476fa522584b336eb4519": [
     "virtualization\\hyper-v-on-windows\\TOC.md"
   ],
@@ -605,5 +608,8 @@
   ],
   "30bbdae5c3e86e2c9c582a71871bee7f9cc4e895": [
     "virtualization\\windowscontainers\\deploy-containers\\version-compatibility.md"
+  ],
+  "f713534ccab2a8422934936fe1f6e0286f887586": [
+    "virtualization\\hyper-v-on-windows\\user-guide\\enhanced-session-mode.md"
   ]
 }
