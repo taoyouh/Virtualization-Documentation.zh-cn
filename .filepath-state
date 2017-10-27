@@ -609,6 +609,9 @@
   "30bbdae5c3e86e2c9c582a71871bee7f9cc4e895": [
     "virtualization\\windowscontainers\\deploy-containers\\version-compatibility.md"
   ],
+  "52d51fca03f454a311a123f20e5aeda9376fdc3d": [
+    "virtualization\\hyper-v-on-windows\\user-guide\\enhanced-session-mode.md"
+  ],
   "a473190abf73674a37c814137656f9325412c122": [
     "virtualization\\hyper-v-on-windows\\user-guide\\enhanced-session-mode.md"
   ],
