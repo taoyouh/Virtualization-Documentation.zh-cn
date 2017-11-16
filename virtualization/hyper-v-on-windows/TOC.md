@@ -3,6 +3,7 @@
 # [创建虚拟机](quick-start/quick-create-virtual-machine.md)
 # 使用 Hyper-V 管理虚拟机
 ## [Hyper-V 和 PowerShell](quick-start/try-hyper-v-powershell.md)
+## [与虚拟机共享设备](user-guide/enhanced-session-mode.md)
 ## [使用检查点](user-guide/checkpoints.md)
 ## [使用 PowerShell Direct 进行连接](user-guide/powershell-direct.md)
 ## [创建预发行版虚拟机](user-guide/create-pre-release-vm.md) 

@@ -7,13 +7,13 @@ ms.date: 07/25/2017
 ms.topic: article
 ms.prod: windows-containers
 ms.service: windows-containers
-ms.openlocfilehash: 2ba3e6409fc60022a55d21c187bfcaefd962908b
-ms.sourcegitcommit: 4f5b9f70804bf6282af8bef603cc343c524c3102
+ms.openlocfilehash: b9f20e6b3f071b9c71a387fce9640b244e9a95b5
+ms.sourcegitcommit: fa9ec91b14c612df03c5b7bb094eb1fabf421715
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/04/2017
+ms.lasthandoff: 10/11/2017
 ---
-# 生成示例应用
+# <a name="build-a-sample-app"></a>生成示例应用
 
 此练习将演练如何获取示例 ASP.net 应用并将其转换为在容器中运行。 如果需要了解如何在 Windows 10 中使用容器进行启动和运行，请访问 [Windows 10 快速入门](./quick-start-windows-10.md)。
 
@@ -21,7 +21,7 @@ ms.lasthandoff: 08/04/2017
 
 如果未在计算机上安装 Git 源代码控制，则可从此处获取它：[Git](https://git-scm.com/download)
 
-## 入门
+## <a name="getting-started"></a>入门
 
 此示例项目是使用 [VSCode](https://code.visualstudio.com/) 设置的。 我们还将使用 Powershell。 请从 github 获取演示代码。 你可使用 git 来克隆存储库或直接从 [SampleASPContainerApp](https://github.com/cwilhit/SampleASPContainerApp) 下载该项目。
 
@@ -36,7 +36,7 @@ git clone https://github.com/cwilhit/SampleASPContainerApp.git
 New-Item C:/Your/Proj/Location/Dockerfile -type file
 ```
 
-## 编写 Dockerfile
+## <a name="writing-our-dockerfile"></a>编写 Dockerfile
 
 现在让我们打开先前在项目根文件夹中创建的该 Dockerfile（使用你喜欢的任一文本编辑器），并向其中添加一些逻辑。 然后，我们将对其逐行细分并说明正在发生的情况。
 
@@ -94,7 +94,7 @@ ENTRYPOINT ["dotnet", "MvcMovie.dll"]
 
 我们现在已成功执行所谓的_多阶段生成_。 我们使用了临时容器生成映像，然后将已发布的 dll 移到了另一个容器，以便最大限度减小最终结果占用的空间。 我们希望该容器具有正常运行所需的绝对最少的依赖项；如果先前一直使用的是第一个映像，那么它将与其他层打包在一起（用于生成 ASP.NET 应用），但这些层并不重要，因此会增加映像的大小。
 
-## 运行该应用
+## <a name="running-the-app"></a>运行该应用
 
 编写好 dockerfile 后，剩下的所有工作就是告诉 Docker 生成我们的应用，然后运行容器。 我们指定要发布到的端口，然后为容器指定一个标记“myapp”。 在 PowerShell 中，执行以下命令：
 
@@ -106,7 +106,7 @@ docker run -d -p 5000:80 --name myapp myasp
 若要查看应用运行情况，我们需要访问运行该应用的地址。 通过运行以下命令即可获取 IP 地址。
 
 ```Powershell
- docker inspect -f "{{ .NetworkSettings.Networks.nat.IPAddress }}" myapp
+ docker inspect -f "{{ .NetworkSettings.Networks.nat.IPAddress }}" myasp
 ```
 
 运行以下命令即可获得正在运行的容器的 IP 地址。 输出应该会如以下示例所示。
@@ -121,7 +121,7 @@ docker run -d -p 5000:80 --name myapp myasp
 
 单击导航栏中的“MvcMovie”将会打开一个网页，你可以在其中输入、编辑和删除电影条目。
 
-## 后续步骤
+## <a name="next-steps"></a>后续步骤
 
 我们已成功获取 ASP.NET Web 应用，使用 Docker 配置并生成了该应用，并已成功将其部署到正在运行的容器中。 但还有可以进一步执行的步骤！ 你可以进一步将该 Web 应用拆分为如下组件：运行 Web API 的容器、运行前端的容器以及运行 SQL Server 的容器。
 

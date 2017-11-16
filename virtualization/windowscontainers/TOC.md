@@ -9,39 +9,41 @@
 ## [自动进行容器生成](quick-start/quick-start-images.md)
 
 # Windows 预览体验成员快速入门
-## [Step 1 - Using the Insider images](quick-start/Using-Insider-Container-Images.md)
-## [Step 2 - Build and Run an Application](quick-start/Nano-RS3-.NET-Core-and-PS.md)
-## [Step 3 - Known Issues](quick-start/Insider-Known-Issues.md)
+## [步骤 1 - 使用预览体验成员映像](quick-start/Using-Insider-Container-Images.md)
+## [步骤 2 - 生成并运行应用程序](quick-start/Nano-RS3-.NET-Core-and-PS.md)
+## [步骤 3 - 已知问题](quick-start/Insider-Known-Issues.md)
+## [Linux 容器预览](deploy-containers/linux-containers.md)
 
-# Deploy Windows Container
+# 部署 Windows 容器
 ## [系统要求](deploy-containers/system-requirements.md)
+## [版本兼容性](deploy-containers/version-compatibility.md)
 ## [部署](deploy-containers/deploy-containers-on-server.md)
 ## [Hyper-V 隔离](manage-containers/hyperv-container.md)
 ## [Active Directory 服务帐户](manage-containers/manage-serviceaccounts.md)
 ## [防病毒优化](https://msdn.microsoft.com/en-us/windows/hardware/drivers/ifs/anti-virus-optimization-for-windows-containers)
 
 # 在 Windows 上管理 Docker
-## [Docker Engine on Windows](docker/configure_docker_daemon.md)
-## [Dockerfiles on Windows](docker/manage_windows_dockerfile.md)
-## [Optimize Dockerfiles](docker/optimize_windows_dockerfile.md)
-## [Container Networking](management/container_networking.md)
-## [Getting Started with Swarm Mode](manage-containers/swarm-mode.md)
-## [Manage Docker with PowerShell](https://github.com/Microsoft/Docker-PowerShell)
-## [Remote Management of a Windows Docker Host](management/manage_remotehost.md)
+## [Windows 上的 Docker 引擎](docker/configure_docker_daemon.md)
+## [Windows 上的 Dockerfile](manage-docker/manage-windows-dockerfile.md)
+## [优化 Dockerfile](manage-docker/optimize-windows-dockerfile.md)
+## [容器网络](manage-containers/container-networking.md)
+## [群模式入门](manage-containers/swarm-mode.md)
+## [通过 PowerShell 管理 Docker](https://github.com/Microsoft/Docker-PowerShell)
+## [Windows Docker 主机远程管理](management/manage_remotehost.md)
 
-# Container Samples
-## [Application Frameworks](samples.md#Application-Frameworks)
-## [Programing Languages](samples.md#Programing-Languages)
-## [Databases](samples.md#Databases)
-## [Infrastructure and CI Tools](samples.md#Infrastructure-and-CI-Tools)
-## [Just for Fun](samples.md#Just-for-Fun)
-## [Other](samples.md#Other)
-
-
-# Community and Support
-## [Container Forum](https://social.msdn.microsoft.com/Forums/en-US/home?forum=windowscontainers)
-## [Community Videos and Blogs](communitylinks.md)
-## [Troubleshooting](troubleshooting.md)
+# 容器示例
+## [应用程序框架](samples.md#Application-Frameworks)
+## [编程语言](samples.md#Programing-Languages)
+## [数据库](samples.md#Databases)
+## [基础结构和 CI 工具](samples.md#Infrastructure-and-CI-Tools)
+## [仅供娱乐](samples.md#Just-for-Fun)
+## [其他](samples.md#Other)
 
 
-# [Container OS Image EULA](Images_EULA.md)
+# 社区和支持
+## [容器论坛](https://social.msdn.microsoft.com/Forums/en-US/home?forum=windowscontainers)
+## [社区视频和博客](communitylinks.md)
+## [疑难解答](troubleshooting.md)
+
+
+# [容器操作系统映像 EULA](Images_EULA.md)

@@ -7,20 +7,20 @@ ms.date: 05/02/2016
 ms.topic: article
 ms.prod: windows-10-hyperv
 ms.assetid: 752dc760-a33c-41bb-902c-3bb2ecd9ac86
-ms.openlocfilehash: 468b2047bbca94126e56be71c2d546a8c78820cb
-ms.sourcegitcommit: 65de5708bec89f01ef7b7d2df2a87656b53c3145
+ms.openlocfilehash: 85f6b30544fc433c9d768c2167024d097a9cef25
+ms.sourcegitcommit: a3c9101a05d730d4173720d224bd8df8e9a56739
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/21/2017
+ms.lasthandoff: 10/10/2017
 ---
-# 在 Windows 10 上安装 Hyper-V
+# <a name="install-hyper-v-on-windows-10"></a>在 Windows 10 上安装 Hyper-V
 
 启用 Hyper-V 以在 Windows 10 上创建虚拟机。  
 可以通过多种方式启用 Hyper-V，包括使用 Windows 10 控制面板、PowerShell（我的最爱）或使用部署映像服务和管理工具 (DISM)。 本文档将逐一介绍每个选项。
 
 > **注意**：Hyper-V 作为可选功能内置于 Windows -- 无 Hyper-V 下载或可安装的组件。 
 
-## 检查要求
+## <a name="check-requirements"></a>检查要求
 
 * Windows 10 企业版、专业版或教育版
 * 具有二级地址转换 (SLAT) 的 64 位处理器。
@@ -33,10 +33,10 @@ ms.lasthandoff: 07/21/2017
 有关详细信息和疑难解答，请参阅 [Windows 10 Hyper-V 系统要求](../reference/hyper-v-requirements.md)。
 
 
-## 安装 Hyper-V 
+## <a name="install-hyper-v"></a>安装 Hyper-V 
 Hyper-V 作为可选功能内置于 Windows -- 无 Hyper-V 下载或可安装的组件。  有多种方法可以启用内置的 Hyper-V 角色。
 
-### 使用 PowerShell 启用 Hyper-V
+### <a name="enable-hyper-v-using-powershell"></a>使用 PowerShell 启用 Hyper-V
 
 1. 以管理员身份打开 PowerShell 控制台。
 
@@ -49,7 +49,7 @@ Hyper-V 作为可选功能内置于 Windows -- 无 Hyper-V 下载或可安装的
 
 安装完成后，需要重新启动计算机。  
 
-### 使用 CMD 和 DISM 启用 Hyper-V
+### <a name="enable-hyper-v-with-cmd-and-dism"></a>使用 CMD 和 DISM 启用 Hyper-V
 
 部署映像服务和管理工具 (DISM) 可帮助配置 Windows 和 Windows 映像。  在众多应用程序中，DISM 可以在操作系统运行时启用 Windows 功能。  
 
@@ -64,9 +64,9 @@ Hyper-V 作为可选功能内置于 Windows -- 无 Hyper-V 下载或可安装的
 
 有关 DISM 的详细信息，请参阅 [DISM 技术参考](https://technet.microsoft.com/en-us/library/hh824821.aspx)。
 
-### 手动启用 Hyper-V 角色
+### <a name="manually-enable-the-hyper-v-role"></a>手动启用 Hyper-V 角色
 
-1. 右键单击 Windows 按钮并选择“程序和功能”。
+1. 右键单击 Windows 按钮并选择“应用和功能”。
 
 2. 选择“**打开或关闭 Windows 功能**”。
 
@@ -79,5 +79,5 @@ Hyper-V 作为可选功能内置于 Windows -- 无 Hyper-V 下载或可安装的
 ![](media/restart_upd.png)
 
 
-## 创建虚拟机
+## <a name="make-virtual-machines"></a>创建虚拟机
 [创建你的第一个虚拟机](quick-create-virtual-machine.md)
