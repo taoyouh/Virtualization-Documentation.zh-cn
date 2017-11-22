@@ -1,5 +1,5 @@
 {
-  "LastProcessedCommit": "4083a8b43296d687e21106af08f6ba17f0690bf8",
+  "LastProcessedCommit": "64f5f8d838f72ea8e0e66a72eeb4ab78d982b715",
   "LastTranslatedCommit": "21f4320cb76270b953a1d22d857047a2fcf5d4b8",
   "LastConfigHash": "8a1020b7136b784cdc0f8c9eca877ab77b2a9c5f",
   "Items": {
@@ -21820,6 +21820,38 @@
       "HandoffFileCommit": "08a09fc9e512b64c3a361e08135e068f51cf5a43",
       "HandoffDateTime": "2017-11-22T03:08:05.7642174Z",
       "HandoffXliffHash": "c8215b309b3924067cd9f0f60f4a7a89b24a8f27",
+      "HandoffPriority": ""
+    },
+    "6ae690ff6592198bc16cbaf60489d3ed5aceeeb0": {
+      "FileHash": "6ae690ff6592198bc16cbaf60489d3ed5aceeeb0",
+      "SourceFileCommit": "64f5f8d838f72ea8e0e66a72eeb4ab78d982b715",
+      "SourceFilePath": "virtualization\\windowscontainers\\deploy-containers\\system-requirements.md",
+      "HandoffReason": 1,
+      "FilePathList": [
+        "virtualization\\windowscontainers\\deploy-containers\\system-requirements.md"
+      ],
+      "HasMetadata": true,
+      "TranslationType": 1,
+      "HandoffFilePath": "ol-handoff\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\system-requirements.7dbcfcd7846f5274542c2b3889e0b8cfd203b0b7.zh-cn.xlf",
+      "HandoffFileCommit": "540c502ab531a0e1001b7c63115072c6dd8cd3d0",
+      "HandoffDateTime": "2017-11-22T21:08:09.7039703Z",
+      "HandoffXliffHash": "fb9a5a1d3baa30ef34e7e755ef2dc9235dec4ca7",
+      "HandoffPriority": ""
+    },
+    "bc36f1f59ed339b2cc3dd3372a5cd5119f470c7c": {
+      "FileHash": "bc36f1f59ed339b2cc3dd3372a5cd5119f470c7c",
+      "SourceFileCommit": "64f5f8d838f72ea8e0e66a72eeb4ab78d982b715",
+      "SourceFilePath": "virtualization\\windowscontainers\\manage-containers\\resource-controls.md",
+      "HandoffReason": 1,
+      "FilePathList": [
+        "virtualization\\windowscontainers\\manage-containers\\resource-controls.md"
+      ],
+      "HasMetadata": true,
+      "TranslationType": 1,
+      "HandoffFilePath": "ol-handoff\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\resource-controls.ebd6b460c2758fdccb19707a1a6b398c39920ef6.zh-cn.xlf",
+      "HandoffFileCommit": "540c502ab531a0e1001b7c63115072c6dd8cd3d0",
+      "HandoffDateTime": "2017-11-22T21:08:09.7039703Z",
+      "HandoffXliffHash": "ccf47642993af6bc20cbe11420d487e4e66acbd9",
       "HandoffPriority": ""
     }
   }

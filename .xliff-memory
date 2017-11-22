@@ -2479,6 +2479,18 @@
       "XliffHash": "c8215b309b3924067cd9f0f60f4a7a89b24a8f27",
       "TranslationType": 1,
       "SkeletonFile": "ol-xliffcache\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\a5c1c908a5ea73b221e7cdd5f94c0df70139df42.3c0a493fde6b8fff225a041b5eb89a92c1899c57.xml"
+    },
+    "virtualization\\windowscontainers\\deploy-containers\\system-requirements.md.fb9a5a1d3baa30ef34e7e755ef2dc9235dec4ca7.HT": {
+      "SourceFilename": "virtualization\\windowscontainers\\deploy-containers\\system-requirements.md",
+      "XliffHash": "fb9a5a1d3baa30ef34e7e755ef2dc9235dec4ca7",
+      "TranslationType": 1,
+      "SkeletonFile": "ol-xliffcache\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\6ae690ff6592198bc16cbaf60489d3ed5aceeeb0.3a58593d76c3857a9e922dc269687b5b8cbd3a41.xml"
+    },
+    "virtualization\\windowscontainers\\manage-containers\\resource-controls.md.ccf47642993af6bc20cbe11420d487e4e66acbd9.HT": {
+      "SourceFilename": "virtualization\\windowscontainers\\manage-containers\\resource-controls.md",
+      "XliffHash": "ccf47642993af6bc20cbe11420d487e4e66acbd9",
+      "TranslationType": 1,
+      "SkeletonFile": "ol-xliffcache\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\bc36f1f59ed339b2cc3dd3372a5cd5119f470c7c.8e31e62d092664a32c49e407f372897017ddc2ac.xml"
     }
   }
 }
