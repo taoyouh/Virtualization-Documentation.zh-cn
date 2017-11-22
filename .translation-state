@@ -1,5 +1,5 @@
 {
-  "LastProcessedCommit": "f8dc88d253c9e1a6a47b148d2c122a326a800633",
+  "LastProcessedCommit": "4083a8b43296d687e21106af08f6ba17f0690bf8",
   "LastTranslatedCommit": "21f4320cb76270b953a1d22d857047a2fcf5d4b8",
   "LastConfigHash": "8a1020b7136b784cdc0f8c9eca877ab77b2a9c5f",
   "Items": {
@@ -15517,7 +15517,6 @@
       "SourceFilePath": "virtualization\\hyper-v-on-windows\\quick-start\\try-hyper-v-powershell.md",
       "HandoffReason": 1,
       "FilePathList": [
-        "virtualization\\hyperv_on_windows\\quick_start\\walkthrough_powershell.md",
         "virtualization\\hyper-v-on-windows\\quick-start\\try-hyper-v-powershell.md"
       ],
       "HasMetadata": true,
@@ -15642,7 +15641,6 @@
       "SourceFilePath": "virtualization\\hyper-v-on-windows\\user-guide\\create-pre-release-vm.md",
       "HandoffReason": 1,
       "FilePathList": [
-        "virtualization\\hyperv_on_windows\\user_guide\\create_pre-release_vm.md",
         "virtualization\\hyper-v-on-windows\\user-guide\\create-pre-release-vm.md"
       ],
       "HasMetadata": true,
@@ -15915,7 +15913,6 @@
       "SourceFilePath": "virtualization\\windowscontainers\\about\\container-ecosystem.md",
       "HandoffReason": 1,
       "FilePathList": [
-        "virtualization\\windowscontainers\\about\\container_ecosystem.md",
         "virtualization\\windowscontainers\\about\\container-ecosystem.md"
       ],
       "HasMetadata": true,
@@ -16486,7 +16483,6 @@
       "SourceFilePath": "virtualization\\hyper-v-on-windows\\user-guide\\checkpoints.md",
       "HandoffReason": 1,
       "FilePathList": [
-        "virtualization\\hyperv_on_windows\\user_guide\\checkpoints.md",
         "virtualization\\hyper-v-on-windows\\user-guide\\checkpoints.md"
       ],
       "HasMetadata": true,
@@ -16995,11 +16991,10 @@
       "SourceFilePath": "virtualization\\hyper-v-on-windows\\about\\hyperv_on_windows.md",
       "HandoffReason": 1,
       "FilePathList": [
-        "virtualization\\hyperv_on_windows\\windows_welcome.md",
-        "virtualization\\windowscontainers\\containers_welcome.md",
         "virtualization\\hyper-v-on-windows\\about\\hyperv_on_windows.md",
         "virtualization\\hyper-v-on-windows\\about\\whats_new.md",
-        "virtualization\\hyper-v-on-windows\\windows_welcome.md"
+        "virtualization\\hyper-v-on-windows\\windows_welcome.md",
+        "virtualization\\windowscontainers\\containers_welcome.md"
       ],
       "HasMetadata": true,
       "TranslationType": 1,
@@ -17257,7 +17252,6 @@
       "SourceFilePath": "virtualization\\windowscontainers\\manage-docker\\docker-powershell.md",
       "HandoffReason": 1,
       "FilePathList": [
-        "virtualization\\windowscontainers\\management\\docker-powershell.md",
         "virtualization\\windowscontainers\\manage-docker\\docker-powershell.md"
       ],
       "HasMetadata": true,
@@ -21795,6 +21789,37 @@
       "HandoffFileCommit": "1c26140baf154dd801db399b7e81416a422ed31a",
       "HandoffDateTime": "2017-11-15T21:09:21.9399001Z",
       "HandoffXliffHash": "221d62ae51ffba04c7b6e094f32edfed3dc96746",
+      "HandoffPriority": ""
+    },
+    "7916b1b2216c78a7a1e39c7b7392637003ffcddf": {
+      "FileHash": "7916b1b2216c78a7a1e39c7b7392637003ffcddf",
+      "SourceFileCommit": "4083a8b43296d687e21106af08f6ba17f0690bf8",
+      "SourceFilePath": "virtualization\\windowscontainers\\manage-containers\\resource-controls.md",
+      "HandoffReason": 1,
+      "FilePathList": [
+        "virtualization\\windowscontainers\\manage-containers\\resource-controls.md"
+      ],
+      "HasMetadata": true,
+      "TranslationType": 1,
+      "HandoffFilePath": "ol-handoff\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\resource-controls.ebd6b460c2758fdccb19707a1a6b398c39920ef6.zh-cn.xlf",
+      "HandoffFileCommit": "08a09fc9e512b64c3a361e08135e068f51cf5a43",
+      "HandoffDateTime": "2017-11-22T03:08:05.7642174Z",
+      "HandoffXliffHash": "7a2e83a4236cf774f685cff42a34fd2abffa6bf1",
+      "HandoffPriority": ""
+    },
+    "a5c1c908a5ea73b221e7cdd5f94c0df70139df42": {
+      "FileHash": "a5c1c908a5ea73b221e7cdd5f94c0df70139df42",
+      "SourceFileCommit": "4083a8b43296d687e21106af08f6ba17f0690bf8",
+      "SourceFilePath": "virtualization\\windowscontainers\\TOC.md",
+      "HandoffReason": 1,
+      "FilePathList": [
+        "virtualization\\windowscontainers\\TOC.md"
+      ],
+      "TranslationType": 1,
+      "HandoffFilePath": "ol-handoff\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\TOC.13173dbdc376543cb6eb74ef16484f39c0ef0fdb.zh-cn.xlf",
+      "HandoffFileCommit": "08a09fc9e512b64c3a361e08135e068f51cf5a43",
+      "HandoffDateTime": "2017-11-22T03:08:05.7642174Z",
+      "HandoffXliffHash": "c8215b309b3924067cd9f0f60f4a7a89b24a8f27",
       "HandoffPriority": ""
     }
   }

@@ -48,6 +48,9 @@
   "f651172a7d958866f3370c9c0cb8b870298eb76d": [
     "virtualization\\windowscontainers\\management\\manage_resources.md"
   ],
+  "a5c1c908a5ea73b221e7cdd5f94c0df70139df42": [
+    "virtualization\\windowscontainers\\TOC.md"
+  ],
   "1969ad71b90a113d41e2f6ee66c0c00c379df379": [
     "virtualization\\windowscontainers\\TOC.md"
   ],
@@ -74,10 +77,6 @@
   ],
   "1988e55cfb9f3e76473e9398538e6b97344bedac": [
     "virtualization\\windowscontainers\\deployment\\deployment_nano.md"
-  ],
-  "71d91e12ae843bf96e1b4001915ffb55bb352ffd": [
-    "virtualization\\windowscontainers\\management\\docker-powershell.md",
-    "virtualization\\windowscontainers\\manage-docker\\docker-powershell.md"
   ],
   "1b4b36def403bbaf75c9828bf36d72e83f6114b5": [
     "virtualization\\windowscontainers\\management\\docker-powershell.md"
@@ -240,6 +239,9 @@
   ],
   "0e692f7521e4a15e3e56d4b98f7ca15fe94ee167": [
     "virtualization\\windowscontainers\\manage-containers\\manage-serviceaccounts.md"
+  ],
+  "71d91e12ae843bf96e1b4001915ffb55bb352ffd": [
+    "virtualization\\windowscontainers\\manage-docker\\docker-powershell.md"
   ],
   "7119f2f3ca76e0efaf2ad15123fb92ba1a24bf71": [
     "virtualization\\windowscontainers\\manage-containers\\hyperv-container.md"
@@ -683,5 +685,8 @@
   ],
   "f713534ccab2a8422934936fe1f6e0286f887586": [
     "virtualization\\hyper-v-on-windows\\user-guide\\enhanced-session-mode.md"
+  ],
+  "7916b1b2216c78a7a1e39c7b7392637003ffcddf": [
+    "virtualization\\windowscontainers\\manage-containers\\resource-controls.md"
   ]
 }
