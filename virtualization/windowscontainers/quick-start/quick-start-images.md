@@ -1,93 +1,93 @@
 ---
-title: Container Deployment Quick Start - Images
-description: Container deployment quick start
-keywords: docker, containers
+title: "容器部署快速入门 - 映像"
+description: "容器部署快速入门"
+keywords: "docker, 容器"
 author: enderb-ms
 ms.date: 09/26/2016
 ms.topic: article
 ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: 479e05b1-2642-47c7-9db4-d2a23592d29f
-ms.openlocfilehash: 0d247989294de59ed599aba3ab982cac772efcf6
-ms.sourcegitcommit: 4f5b9f70804bf6282af8bef603cc343c524c3102
+ms.openlocfilehash: 58bd491ccae7cd9d91088d9f180367623320345e
+ms.sourcegitcommit: 456485f36ed2d412cd708aed671d5a917b934bbe
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/04/2017
+ms.lasthandoff: 11/08/2017
 ---
-# 自动生成和保存映像
+# <a name="automating-builds-and-saving-images"></a>自动生成和保存映像
 
-In the previous Windows Server quick start, a Windows container was created from a pre-created .Net Core sample. This exercise will detail creating custom container images manually, automating container image creation using a Dockerfile, and storing container images in the Docker Hub public registry.
+在之前的 Windows Server 快速入门中，已从预先创建的 .Net Core 示例创建了 Windows 容器。 本练习中将详细介绍手动创建自定义容器映像、使用 Dockerfile 自动创建容器映像以及将容器映像存储在 Docker Hub 公共注册表中。
 
-This quick start is specific to Windows Server containers on Windows Server 2016 and will use the Windows Server Core container base image. Additional quick start documentation can be found in the table of contents on the left hand side of this page.
+本快速入门仅适用于 Windows Server 2016 上的 Windows Server 容器且会使用 Windows Server Core 容器基本映像。 此页面左侧的目录中提供其他快速入门文档。
 
-**Prerequisites:**
+**先决条件：**
 
-- One computer system (physical or virtual) running Windows Server 2016.
-- Configure this system with the Windows Container feature and Docker. For a walkthrough on these steps, see [Windows Containers on Windows Server](./quick-start-windows-server.md).
-- A Docker ID, this will be used to push a container image to Docker Hub. If you do not have a Docker ID, sign up for one at [Docker Cloud](https://cloud.docker.com/).
+- 一个运行 Windows Server 2016 的计算机系统（物理或虚拟）。
+- 使用 Windows 容器功能和 Docker 配置此系统。 有关这些步骤的演练，请参阅 [Windows Server 上的 Windows 容器](./quick-start-windows-server.md)。
+- 一个用于将容器映像推送到 Docker Hub 的 Docker ID。 如果还没有 Docker ID，请在 [Docker 云](https://cloud.docker.com/)中进行注册。
 
-## 1. Container Image - Manual
+## <a name="1-container-image---manual"></a>1.容器映像 - 手动
 
-For the best experience, walk through this exercise from a Windows command shell (cmd.exe).
+为获得最佳体验，请从 Windows 命令行界面 (cmd.exe) 演练此练习。
 
-The first step in manually creating a container image is to deploy a container. For this example, deploy an IIS container from the pre-created IIS image. Once the container has been deployed, you will be working in a shell session from within the container. The interactive session is initiated with the `-it` flag. For in depth details on Docker Run commands, see [Docker Run Reference on Docker.com](https://docs.docker.com/engine/reference/run/). 
+手动创建容器映像的第一步是部署容器。 对于此示例，请从预创建的 IIS 映像部署 IIS 容器。 部署容器后，你将从该容器内部进入 shell 会话。 使用 `-it` 标识初始交互式会话。 有关 Docker Run 命令的详细信息，请参阅 [Docker.com 上的 Docker Run 参考](https://docs.docker.com/engine/reference/run/)。 
 
-> This step may take some time due to the size of the Windows Server Core base image.
+> 取决于 Windows Server Core 基本映像的大小，此步骤可能需要一些时间。
 
-```none
+```
 docker run -d --name myIIS -p 80:80 microsoft/iis
 ```
 
-Now, the container will be running in the background. The default command included in the container, `ServiceMonitor.exe`, which monitor IIS progress and automatically stop the container if IIS stops. To learn more on how this image was created, see [Microsoft/docker-iis](https://github.com/Microsoft/iis-docker) on GitHub.
+现在，容器将在后台运行。 该容器包含的默认命令 `ServiceMonitor.exe` 会监视 IIS 进度，并在 IIS 停止时自动停止容器。 若要了解如何创建该映像的详细信息，请参阅 GitHub 上的 [Microsoft docker-iis](https://github.com/Microsoft/iis-docker)。
 
-Next, start an interactive cmd in the container. This will allow you to run commands in running container without stopping IIS or ServiceMonitor.
+接下来，在容器中启动交互式 cmd。 这将允许你在运行的容器中运行命令，而无需停止 IIS 或 ServiceMonitor。
 
-```none
+```
 docker exec -i myIIS cmd 
 ```
 
-Next, you can make a change to the running container. Run the following command to remove the IIS splash screen.
+接下来，你可以对运行中的容器进行更改。 运行以下命令来删除 IIS 初始屏幕。
 
-```none
+```
 del C:\inetpub\wwwroot\iisstart.htm
 ```
 
-And the following to replace the default IIS site with a new static site.
+以下内容用来将默认 IIS 站点替换为新的静态站点。
 
-```none
+```
 echo "Hello World From a Windows Server Container" > C:\inetpub\wwwroot\index.html
 ```
 
-From a different system, browse to the IP address of the container host. You should now see the ‘Hello World’ application.
+从不同的系统，浏览到容器主机的 IP 地址。 你应该可以看到“Hello World”应用程序。
 
-**Note:** if you are working in Azure, a network security group rule will need to exist allowing traffic over port 80. For more information see, [Create Rule in a Network Security Group](https://azure.microsoft.com/en-us/documentation/articles/virtual-networks-create-nsg-arm-pportal/#create-rules-in-an-existing-nsg).
+**注意：**如果你使用的是 Azure，将需要一个网络安全组规则来允许通过端口 80 通信。 有关详细信息，请参阅 [Create Rule in a Network Security Group](https://azure.microsoft.com/en-us/documentation/articles/virtual-networks-create-nsg-arm-pportal/#create-rules-in-an-existing-nsg)（在网络安全组中创建规则）。
 
 ![](media/hello.png)
 
-Back in the container, exit the interactive container session.
+返回到容器中，退出交互式容器会话。
 
-```none
+```
 exit
 ```
 
-The modified container can now be captured into a new container image. To do so, you will need the container name. This can be found using the `docker ps -a` command.
+现在可以将此修改的容器捕获到新的容器映像中。 为此，你将需要容器名称。 使用 `docker ps -a` 命令可查找到该名称。
 
-```none
+```
 docker ps -a
 
 CONTAINER ID     IMAGE                             COMMAND   CREATED             STATUS   PORTS   NAMES
 489b0b447949     microsoft/iis   "cmd"     About an hour ago   Exited           pedantic_lichterman
 ```
 
-To create a the new container image, use the `docker commit` command. Docker commit takes a form of “docker commit container-name new-image-name”. Note – replace the name of the container in this example with the actual container name.
+若要创建新的容器映像，请使用 `docker commit` 命令。 Docker commit 采用“docker commit container-name new-image-name”的形式。 注意 - 将此示例中的容器名称替换为实际容器名称。
 
-```none
+```
 docker commit pedantic_lichterman modified-iis
 ```
 
-To verify that new image has been created, use the `docker images` command.  
+若要验证是否已创建了新的映像，请使用 `docker images` 命令。  
 
-```none
+```
 docker images
 
 REPOSITORY          TAG                 IMAGE ID            CREATED              SIZE
@@ -97,42 +97,42 @@ windowsservercore   10.0.14300.1000     dbfee88ee9fd        8 weeks ago         
 windowsservercore   latest              dbfee88ee9fd        8 weeks ago          9.344 GB
 ```
 
-This image can now be deployed. The resulting container will include all captured modifications.
+现在可以部署此映像了。 生成的容器中将包括所有捕获的修改。
 
-## 2. Container Image - Dockerfile
+## <a name="2-container-image---dockerfile"></a>2.容器映像 - Dockerfile
 
-Through the last exercise, a container was manually created, modified, and then captured into a new container image. Docker includes a method for automating this process using a Dockerfile. This exercise will have almost identical results as the last, however this time the process will be automated. For this exercise, a Docker ID is required. If you do not have a Docker ID, sign up for one at [Docker Cloud]( https://cloud.docker.com/).
+通过上一练习，已手动创建和修改容器，并已将其捕获到新容器映像中。 Docker 包含使用 Dockerfile 自动执行此过程的方法。 本练习将产生与上一练习几乎相同的结果，但是这次该过程将自动执行。 此练习需要 Docker ID。 如果还没有 Docker ID，请在 [Docker 云]( https://cloud.docker.com/)中进行注册。
 
-On the container host, create a directory `c:\build`, and in this directory create a file named `Dockerfile`. Note – the file should not have a file extension.
+在容器主机上，创建目录 `c:\build`，并在此目录中创建一个名为 `Dockerfile` 的文件。 注意 - 该文件不应具有文件扩展名。
 
-```none
+```
 powershell new-item c:\build\Dockerfile -Force
 ```
 
-Open the Dockerfile in notepad.
+使用记事本打开 Dockerfile。
 
-```none
+```
 notepad c:\build\Dockerfile
 ```
 
-Copy the following text into the Dockerfile, and save the file. These commands instruct Docker to create a new image, using `microsoft/iis` as the base. The dockerfile then runs the commands specified in the `RUN` instruction, in this case the index.html file is updated with new content. 
+将以下文本复制到 Dockerfile 并保存该文件。 这些命令指示 Docker 使用 `microsoft/iis` 为基本，创建新的映像。 然后 dockerfile 会运行在 `RUN` 指示中指定的命令，在本例中，已使用新内容更新了 index.html 文件。 
 
-For more information on Dockerfiles, see the [Dockerfiles on Windows](../manage-docker/manage-windows-dockerfile.md).
+有关 Dockerfile 的详细信息，请参阅 [Windows 上的 Dockerfile](../manage-docker/manage-windows-dockerfile.md)。
 
-```none
+```
 FROM microsoft/iis
 RUN echo "Hello World - Dockerfile" > c:\inetpub\wwwroot\index.html
 ```
 
-The `docker build` command will start the image build process. The `-t` parameter instructs the build process to name the new image `iis-dockerfile`. **Replace 'user' with the user name of your Docker account**. If you do not have an account with Docker, sign up for one at [Docker Cloud](https://cloud.docker.com/).
+`docker build` 命令将启动映像生成过程。 `-t` 参数会指示此生成过程将新映像命名为 `iis-dockerfile`。 **使用 Docker 帐户的用户名替换“用户”**。 如果还没有 Docker 帐户，请在 [Docker 云](https://cloud.docker.com/)中进行注册。
 
-```none
+```
 docker build -t <user>/iis-dockerfile c:\Build
 ```
 
-When completed, you can verify that the image has been created using the `docker images` command.
+完成后，你可以验证是否已使用 `docker images` 命令创建了映像。
 
-```none
+```
 docker images
 
 REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
@@ -142,42 +142,42 @@ windowsservercore   10.0.14300.1000     dbfee88ee9fd        8 weeks ago         
 windowsservercore   latest              dbfee88ee9fd        8 weeks ago         9.344 GB
 ```
 
-Now, deploy a container with the following command, again replacing user with your Docker ID.
+现在，使用以下命令部署容器，并再次使用 Docker ID 替换“用户”。
 
-```none
+```
 docker run -d -p 80:80 <user>/iis-dockerfile ping -t localhost
 ```
 
-Once the container has been created, browse to the IP address of the container host. You should see the hello world application.
+创建容器后，浏览到容器主机的 IP 地址。 你应该可以看到 Hello World 应用程序。
 
 ![](media/dockerfile2.png)
 
-Back on the container host, use `docker ps` to get the name of the container, and `docker rm` to remove the container. Note – replace the name of the container in this example with the actual container name.
+返回到容器主机上，使用 `docker ps` 来获取容器的名称，然后使用 `docker rm` 来删除容器。 注意 - 将此示例中的容器名称替换为实际容器名称。
 
-Get container name.
+获取容器名称。
 
-```none
+```
 docker ps
 
 CONTAINER ID   IMAGE            COMMAND               CREATED              STATUS              PORTS                NAMES
 c1dc6c1387b9   iis-dockerfile   "ping -t localhost"   About a minute ago   Up About a minute   0.0.0.0:80->80/tcp   cranky_brown
 ```
 
-Remove container.
+删除容器。
 
-```none
+```
 docker rm -f <container name>
 ```
 
-## 3. Docker Push
+## <a name="3-docker-push"></a>3.Docker 推送
 
-Docker container images can be stored in a container registry. Once an image is stored in a registry, it can be retrieved for later use across many different container hosts. Docker provides a public registry for storing container images at [Docker Hub](https://hub.docker.com/).
+Docker 容器映像可以存储在容器注册表中。 图像存储在注册表中后，可以跨多个不同的容器主机检索以供将来使用。 Docker 在 [Docker Hub](https://hub.docker.com/) 中提供公共注册表来存储容器映像。
 
-For this exercise, the custom hello world image will be pushed to your own account on Docker Hub.
+在此练习中，会将自定义 hello world 映像推送到你在 Docker Hub 上的帐户中。
 
-First, login to your docker account using the `docker login command`.
+首先，使用 `docker login command` 登录到 docker 帐户。
 
-```none
+```
 docker login
 
 Login with your Docker ID to push and pull images from Docker Hub. If you don't have a Docker ID, head over to https://hub.docker.com to create one.
@@ -188,21 +188,21 @@ Password: Password
 Login Succeeded
 ```
 
-Once logged in, the container image can be pushed to Docker Hub. To do so, use the `docker push` command. **Replace 'user' with your Docker ID**. 
+登录后，可将容器映像推送到 Docker Hub。 为此，请使用 `docker push` 命令。 **将“用户”替换为 Docker ID**。 
 
-```none
+```
 docker push <user>/iis-dockerfile
 ```
 
-The container image can now be downloaded from Docker Hub onto any Windows container host using `docker pull`. For this tutorial, we will delete the existing image, and then pull it down from Docker Hub. 
+现在可以使用 `docker pull` 将容器映像从 Docker Hub 下载到任意 Windows 容器主机。 在本教程中，我们将删除现有映像，并将它从 Docker Hub 向下拉取。 
 
-```none
+```
 docker rmi <user>/iis-dockerfile
 ```
 
-Running `docker images` will show that the image has been removed.
+运行 `docker images` 将显示映像已删除。
 
-```none
+```
 docker images
 
 REPOSITORY                TAG                 IMAGE ID            CREATED             SIZE
@@ -210,13 +210,13 @@ modified-iis              latest              51f1fe8470b3        5 minutes ago 
 microsoft/iis             latest              e4525dda8206        3 hours ago         7.61 GB
 ```
 
-Finally, docker pull can be used to pull the image back onto the container host. Replace user with the user name of your Docker account. 
+最后，docker 拉取可用于将映像拉回容器主机。 使用 Docker 帐户的用户名替换“用户”。 
 
-```none
+```
 docker pull <user>/iis-dockerfile
 ```
 
-## Next Steps
+## <a name="next-steps"></a>后续步骤
 
 如果要了解如何打包示例 ASP.NET 应用程序，请访问下方链接中的 Windows 10 教程。
 

@@ -8,11 +8,11 @@ ms.topic: article
 ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: 88e6e080-cf8f-41d8-a301-035959dc5ce0
-ms.openlocfilehash: 1c506016175a8be2608e10063a788d55aa792ce4
-ms.sourcegitcommit: 8ce23ca36f3dbae96a09f73d8c2f235943f8cd47
+ms.openlocfilehash: eb2df861021f889e335d49a337b379ecbf17a47d
+ms.sourcegitcommit: 456485f36ed2d412cd708aed671d5a917b934bbe
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/17/2017
+ms.lasthandoff: 11/08/2017
 ---
 # <a name="windows-container-base-image-history"></a>Windows 容器基本映像历史记录
 
@@ -20,7 +20,7 @@ ms.lasthandoff: 10/17/2017
 
 例如，将显示 `docker inspect microsoft/windowsservercore:10.0.14393.447`
 
-```none
+```
 ...
 "RootFS": {
     "Type": "layers",

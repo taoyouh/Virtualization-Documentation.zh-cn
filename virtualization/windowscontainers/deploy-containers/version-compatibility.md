@@ -3,11 +3,11 @@ title: "Windows 容器版本兼容性"
 description: "Windows 如何跨多个版本运行内部版本和容器"
 keywords: "元数据, 容器, 版本"
 author: patricklang
-ms.openlocfilehash: dce6004b66ac085354d906bc09f57f037c5dd138
-ms.sourcegitcommit: eb111c328266fe72a780cfd53c5e0e55de1ec084
+ms.openlocfilehash: ed9d88e1e861651426e560a4531fd4added2134a
+ms.sourcegitcommit: 456485f36ed2d412cd708aed671d5a917b934bbe
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/17/2017
+ms.lasthandoff: 11/08/2017
 ---
 # <a name="windows-container-version-compatibility"></a>Windows 容器版本兼容性
 
@@ -44,7 +44,7 @@ Windows Server 2016 和 Windows 10 周年更新（两者均为版本 14393）是
 
 如果试图运行不支持的组合，将出现错误：
 
-```none
+```
 docker: Error response from daemon: container b81ed896222eb87906ccab1c3dd2fc49324eafa798438f7979b87b210906f839 encountered an error during CreateContainer: failure in a Windows system call: The operating system of the container does not match the operating system of the host. (0xc0370101) extra info: {"SystemType":"Container","Name":"b81ed896222eb87906ccab1c3dd2fc49324eafa798438f7979b87b210906f839","Owner":"docker","IsDummy":false,"VolumePath":"\\\\?\\Volume{2443d38a-1379-4bcf-a4b7-fc6ad4cd7b65}","IgnoreFlushesDuringBoot":true,"LayerFolderPath":"C:\\ProgramData\\docker\\windowsfilter\\b81ed896222eb87906ccab1c3dd2fc49324eafa798438f7979b87b210906f839","Layers":[{"ID":"1532b584-8431-5b5a-8735-5e1b4fe9c2a9","Path":"C:\\ProgramData\\docker\\windowsfilter\\b2b88bc2a47abcc682e422507abbba9c9b6d826d34e67b9e4e3144cc125a1f80"},{"ID":"a64b8da5-cd6e-5540-bc73-d81acae6da54","Path":"C:\\ProgramData\\docker\\windowsfilter\\5caaedbced1f546bccd01c9d31ea6eea4d30701ebba7b95ee8faa8c098a6845a"}],"HostName":"b81ed896222e","MappedDirectories":[],"HvPartition":false,"EndpointList":["002a0d9e-13b7-42c0-89b2-c1e80d9af243"],"Servicing":false,"AllowUnqualifiedDNSQuery":true}.
 ```
 
@@ -97,14 +97,14 @@ FROM microsoft/nanoserver:10.0.14393.1770
 
  `docker service ls` - 查找服务名称
 
-```none
+```
 ID                  NAME                MODE                REPLICAS            IMAGE                                             PORTS
 xh6mwbdq2uil        angry_liskov        replicated          0/1                 microsoft/iis:windowsservercore-10.0.14393.1715
 ```
 
 `docker service ps <name>` - 获取状态和最近尝试。
 
-```none
+```
 C:\Program Files\Docker>docker service ps angry_liskov
 ID                  NAME                 IMAGE                                             NODE                DESIRED STATE       CURRENT STATE               ERROR                              PORTS
 klkbhn742lv0        angry_liskov.1       microsoft/iis:windowsservercore-10.0.14393.1715   WIN-BSTMQDRQC2E     Ready               Ready 3 seconds ago
@@ -118,7 +118,7 @@ xeqkxbsao57w         \_ angry_liskov.1   microsoft/iis:windowsservercore-10.0.14
 如果出现“启动容器失败: ...”，你将看到以下方面出现完整错误 `docker service ps --no-trunc <container name>`
 
 
-```none
+```
 C:\Program Files\Docker>docker service ps --no-trunc angry_liskov
 ID                          NAME                 IMAGE                                                                                                                     NODE                DESIRED STATE       CURRENT STATE                     ERROR                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          PORTS
 dwsd6sjlwsgic5vrglhtxu178   angry_liskov.1       microsoft/iis:windowsservercore-10.0.14393.1715@sha256:868bca7e89e1743792e15f78edb5a73070ef44eae6807dc3f05f9b94c23943d5   WIN-BSTMQDRQC2E     Running             Starting less than a second ago                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
@@ -196,7 +196,7 @@ docker node update --label-add OsVersion="$((Get-ComputerInfo).OsVersion)" $ENV:
 
 接下来，可借助 `docker node inspect` 检查标签，它可显示所添加的新标签
 
-```none
+```
         "Spec": {
             "Labels": {
                 "OS": "windows",
@@ -211,7 +211,7 @@ docker node update --label-add OsVersion="$((Get-ComputerInfo).OsVersion)" $ENV:
 
 每个节点均已添加标签后，我们即可更新用于确定服务放置的限制。 在下面的示例中，将“contoso_service”替换为实际服务的名称：
 
-```none
+```
 docker service update \
     --constraint-add "node.labels.OS == windows" \
     --constraint-add "node.labels.OsVersion == $((Get-ComputerInfo).OsVersion)" \
@@ -236,7 +236,7 @@ docker service update \
 
 这种情况是因为，部署所包含的 Pod 计划位于采用不匹配的操作系统版本且未启用 Hyper-V 隔离的节点。 相同的错误也出现在标有 `kubectl describe pod <podname>` 的事件中。 在几次尝试过后，Pod 状态将可能是 `CrashLoopBackOff`
 
-```none
+```
 $ kubectl -n plang describe po fabrikamfiber.web-789699744-rqv6p
 
 Name:           fabrikamfiber.web-789699744-rqv6p
@@ -303,7 +303,7 @@ Events:
 
 这种情况是由于存在两个运行不同 Windows 版本的节点：
 
-```none
+```
 $ kubectl get node
 
 NAME                        STATUS    AGE       VERSION
@@ -381,7 +381,7 @@ System Info:
 
 从上述示例得到的启示：
 
-```none
+```
 $ kubectl label node 38519acs9010 beta.kubernetes.io/osbuild=14393.1715
 
 
@@ -394,7 +394,7 @@ node "38519acs9011" labeled
 
 3. 检查以下几项中是否存在标签 `kubectl get nodes --show-labels`
 
-```none
+```
 $ kubectl get nodes --show-labels
 
 NAME                        STATUS                     AGE       VERSION                    LABELS
@@ -445,7 +445,7 @@ status: {}
 
 现在可以使用更新后的部署来启动 Pod。 节点选择器也会出现在 `kubectl describe pod <podname>`，这样你可确认它们已经添加。
 
-```none
+```
 $ kubectl -n plang describe po fa
 
 Name:           fabrikamfiber.web-1780117715-5c8vw
