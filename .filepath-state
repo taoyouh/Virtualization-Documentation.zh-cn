@@ -703,5 +703,20 @@
   ],
   "7916b1b2216c78a7a1e39c7b7392637003ffcddf": [
     "virtualization\\windowscontainers\\manage-containers\\resource-controls.md"
+  ],
+  "40db3ad9c551e200a86ed3a6107b1d6bf281ef10": [
+    "virtualization\\windowscontainers\\kubernetes\\common-problems.md"
+  ],
+  "34205df8156fe68fe1b12e24564e2db40b5d7543": [
+    "virtualization\\windowscontainers\\kubernetes\\compiling-kubernetes-binaries.md"
+  ],
+  "d4d2bb9c51585159adbf9edd7d709c4655acd0e1": [
+    "virtualization\\windowscontainers\\kubernetes\\configuring-host-gateway-mode.md"
+  ],
+  "073df4bfd95f344fa31b95462636ad060e994562": [
+    "virtualization\\windowscontainers\\kubernetes\\creating-a-linux-master.md"
+  ],
+  "044ec9426fa5582de61ad78a4dcafc41198a371a": [
+    "virtualization\\windowscontainers\\kubernetes\\getting-started-kubernetes-windows.md"
   ]
 }
