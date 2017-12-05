@@ -2533,6 +2533,42 @@
       "XliffHash": "59e8c58432b85d872c277fac106bf864ba743e76",
       "TranslationType": 1,
       "SkeletonFile": "ol-xliffcache\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\34205df8156fe68fe1b12e24564e2db40b5d7543.2da850e401479a088fb46612119a874859f00d65.xml"
+    },
+    "virtualization\\hyper-v-on-windows\\user-guide\\setup-nat-network.md.61ab95f11ea6d281522c80fda59e166b76e893cf.HT": {
+      "SourceFilename": "virtualization\\hyper-v-on-windows\\user-guide\\setup-nat-network.md",
+      "XliffHash": "61ab95f11ea6d281522c80fda59e166b76e893cf",
+      "TranslationType": 1,
+      "SkeletonFile": "ol-xliffcache\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\6f5872a4f16bcce504af3e6e81ef3e820013d121.67b9f1629e0fe0fc7b693da84dca83b706e948b2.xml"
+    },
+    "virtualization\\windowscontainers\\kubernetes\\compiling-kubernetes-binaries.md.db8083e2c97b551002eef949cb572775b51b4531.HT": {
+      "SourceFilename": "virtualization\\windowscontainers\\kubernetes\\compiling-kubernetes-binaries.md",
+      "XliffHash": "db8083e2c97b551002eef949cb572775b51b4531",
+      "TranslationType": 1,
+      "SkeletonFile": "ol-xliffcache\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\53d55eed155254f809bc3f45b8e3891dab54f209.7da9766a28ca9e69bf7f7cf835f0b5e79f2308fb.xml"
+    },
+    "virtualization\\windowscontainers\\kubernetes\\getting-started-kubernetes-windows.md.aea1a7e4e50a710a8c87609104b3f87cbc2d36a7.HT": {
+      "SourceFilename": "virtualization\\windowscontainers\\kubernetes\\getting-started-kubernetes-windows.md",
+      "XliffHash": "aea1a7e4e50a710a8c87609104b3f87cbc2d36a7",
+      "TranslationType": 1,
+      "SkeletonFile": "ol-xliffcache\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\d88ab46dc0046256ebed9c6696a99104a7197fad.ae6a2315c727403b9e5dba596846feef70ec53b3.xml"
+    },
+    "virtualization\\windowscontainers\\kubernetes\\common-problems.md.30a65261ea85789978104eae6f288a650679b6ef.HT": {
+      "SourceFilename": "virtualization\\windowscontainers\\kubernetes\\common-problems.md",
+      "XliffHash": "30a65261ea85789978104eae6f288a650679b6ef",
+      "TranslationType": 1,
+      "SkeletonFile": "ol-xliffcache\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\73b44ffd12fba58ac4ef38352c012061a6817945.3c96b82f0c405755d0ecb3b04c53cdc10cc4619d.xml"
+    },
+    "virtualization\\windowscontainers\\kubernetes\\creating-a-linux-master.md.3f8ae9cd7e0909233b229ade8a1df79493655f0d.HT": {
+      "SourceFilename": "virtualization\\windowscontainers\\kubernetes\\creating-a-linux-master.md",
+      "XliffHash": "3f8ae9cd7e0909233b229ade8a1df79493655f0d",
+      "TranslationType": 1,
+      "SkeletonFile": "ol-xliffcache\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\8fa8b0a6b97d9909d0b1e670b37a0a541901a08d.238543162dd6a8f30a73f012307e56acebda7674.xml"
+    },
+    "virtualization\\windowscontainers\\TOC.md.3627407da47d923d9ecc8be7ce6baef32ad8d326.HT": {
+      "SourceFilename": "virtualization\\windowscontainers\\TOC.md",
+      "XliffHash": "3627407da47d923d9ecc8be7ce6baef32ad8d326",
+      "TranslationType": 1,
+      "SkeletonFile": "ol-xliffcache\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\3f9d42ad3c55341f698950b317a249adc9ab6855.4d5b4322eb3b44211b88c404d2f9067634fff83e.xml"
     }
   }
 }

@@ -48,6 +48,9 @@
   "f651172a7d958866f3370c9c0cb8b870298eb76d": [
     "virtualization\\windowscontainers\\management\\manage_resources.md"
   ],
+  "3f9d42ad3c55341f698950b317a249adc9ab6855": [
+    "virtualization\\windowscontainers\\TOC.md"
+  ],
   "a5c1c908a5ea73b221e7cdd5f94c0df70139df42": [
     "virtualization\\windowscontainers\\TOC.md"
   ],
@@ -416,6 +419,9 @@
   "1eea533459b565ffceca23ca7454e9678abc52e9": [
     "virtualization\\hyper-v-on-windows\\user-guide\\powershell-direct.md"
   ],
+  "6f5872a4f16bcce504af3e6e81ef3e820013d121": [
+    "virtualization\\hyper-v-on-windows\\user-guide\\setup-nat-network.md"
+  ],
   "dd11b3a78307d4c39a3c383120a04e91c8d0f70f": [
     "virtualization\\hyper-v-on-windows\\user-guide\\setup-nat-network.md"
   ],
@@ -704,8 +710,14 @@
   "7916b1b2216c78a7a1e39c7b7392637003ffcddf": [
     "virtualization\\windowscontainers\\manage-containers\\resource-controls.md"
   ],
+  "73b44ffd12fba58ac4ef38352c012061a6817945": [
+    "virtualization\\windowscontainers\\kubernetes\\common-problems.md"
+  ],
   "40db3ad9c551e200a86ed3a6107b1d6bf281ef10": [
     "virtualization\\windowscontainers\\kubernetes\\common-problems.md"
+  ],
+  "53d55eed155254f809bc3f45b8e3891dab54f209": [
+    "virtualization\\windowscontainers\\kubernetes\\compiling-kubernetes-binaries.md"
   ],
   "34205df8156fe68fe1b12e24564e2db40b5d7543": [
     "virtualization\\windowscontainers\\kubernetes\\compiling-kubernetes-binaries.md"
@@ -713,8 +725,14 @@
   "d4d2bb9c51585159adbf9edd7d709c4655acd0e1": [
     "virtualization\\windowscontainers\\kubernetes\\configuring-host-gateway-mode.md"
   ],
+  "8fa8b0a6b97d9909d0b1e670b37a0a541901a08d": [
+    "virtualization\\windowscontainers\\kubernetes\\creating-a-linux-master.md"
+  ],
   "073df4bfd95f344fa31b95462636ad060e994562": [
     "virtualization\\windowscontainers\\kubernetes\\creating-a-linux-master.md"
+  ],
+  "d88ab46dc0046256ebed9c6696a99104a7197fad": [
+    "virtualization\\windowscontainers\\kubernetes\\getting-started-kubernetes-windows.md"
   ],
   "044ec9426fa5582de61ad78a4dcafc41198a371a": [
     "virtualization\\windowscontainers\\kubernetes\\getting-started-kubernetes-windows.md"
