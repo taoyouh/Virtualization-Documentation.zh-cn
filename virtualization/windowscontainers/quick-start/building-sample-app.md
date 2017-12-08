@@ -7,11 +7,11 @@ ms.date: 07/25/2017
 ms.topic: article
 ms.prod: windows-containers
 ms.service: windows-containers
-ms.openlocfilehash: b9f20e6b3f071b9c71a387fce9640b244e9a95b5
-ms.sourcegitcommit: fa9ec91b14c612df03c5b7bb094eb1fabf421715
+ms.openlocfilehash: b1d0c4bcf35cd40e9ca058d4e2a51fa028cade2c
+ms.sourcegitcommit: 04c78918c77d2ad6053e6a95dc57bc488efbbf8b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/11/2017
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="build-a-sample-app"></a>生成示例应用
 
@@ -96,7 +96,9 @@ ENTRYPOINT ["dotnet", "MvcMovie.dll"]
 
 ## <a name="running-the-app"></a>运行该应用
 
-编写好 dockerfile 后，剩下的所有工作就是告诉 Docker 生成我们的应用，然后运行容器。 我们指定要发布到的端口，然后为容器指定一个标记“myapp”。 在 PowerShell 中，执行以下命令：
+编写好 dockerfile 后，剩下的所有工作就是告诉 Docker 生成我们的应用，然后运行容器。 我们指定要发布到的端口，然后为容器指定一个标记“myapp”。 在 PowerShell 中，执行以下命令。
+
+_注意_：PowerShell 控制台的当前工作目录必须是上面创建的 dockerfile 所在的目录。
 
 ```Powershell
 docker build -t myasp .
@@ -106,7 +108,7 @@ docker run -d -p 5000:80 --name myapp myasp
 若要查看应用运行情况，我们需要访问运行该应用的地址。 通过运行以下命令即可获取 IP 地址。
 
 ```Powershell
- docker inspect -f "{{ .NetworkSettings.Networks.nat.IPAddress }}" myasp
+ docker inspect -f "{{ .NetworkSettings.Networks.nat.IPAddress }}" myapp
 ```
 
 运行以下命令即可获得正在运行的容器的 IP 地址。 输出应该会如以下示例所示。

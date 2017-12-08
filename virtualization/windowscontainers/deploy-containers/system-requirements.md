@@ -7,11 +7,11 @@ ms.date: 09/26/2016
 ms.topic: deployment-article
 ms.prod: windows-containers
 ms.assetid: 3c3d4c69-503d-40e8-973b-ecc4e1f523ed
-ms.openlocfilehash: f4ee9346db77e29f9d3366634b8b6ad07d0fec08
-ms.sourcegitcommit: 380dd8e78780995b96def2e2ec6e22e3387e82e0
+ms.openlocfilehash: 6ae690ff6592198bc16cbaf60489d3ed5aceeeb0
+ms.sourcegitcommit: 64f5f8d838f72ea8e0e66a72eeb4ab78d982b715
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2017
+ms.lasthandoff: 11/22/2017
 ---
 # <a name="windows-container-requirements"></a>Windows 容器要求
 
@@ -51,7 +51,7 @@ Windows 容器提供两种容器基本映像，Windows Server Core 和 Nano Serv
 <td><center>Server Core/Nano Server</center></td>
 </tr>
 <tr valign="top">
-<td><center>Nano Server</center></td>
+<td><center>Nano Server*</center></td>
 <td><center> Nano Server</center></td>
 <td><center>Server Core/Nano Server</center></td>
 </tr>
@@ -62,8 +62,25 @@ Windows 容器提供两种容器基本映像，Windows Server Core 和 Nano Serv
 </tr>
 </tbody>
 </table>
+* 从 Windows Server 版本 1709 开始，Nano Server 不再作为容器主机提供。
 
-### <a name="nano-server-vs-windows-server-core"></a>Nano Server 与 Windows Server Core
+### <a name="memory-requirments"></a>内存需求
+可以通过[资源控制](https://docs.microsoft.com/en-us/virtualization/windowscontainers/manage-containers/resource-controls)或重载容器主机来配置容器可用内存限值。  下面列出了启动容器和运行基本命令（ipconfig、dir 等）所需的最小内存量。  请注意，这些值未考虑容器之间的资源共享或来自在容器中运行的应用程序的要求。
+
+#### <a name="windows-server-2016"></a>Windows Server 2016
+| 基本映像  | Windows Server 容器 | Hyper-V 隔离    |
+| ----------- | ------------------------ | -------------------- |
+| Nano Server | 40MB                     | 130MB + 1GB 页面文件 |
+| 服务器核心 | 50MB                     | 325MB + 1GB 页面文件 |
+
+#### <a name="windows-server-version-1709"></a>Windows Server 版本 1709
+| 基本映像  | Windows Server 容器 | Hyper-V 隔离    |
+| ----------- | ------------------------ | -------------------- |
+| Nano Server | 30MB                     | 110MB + 1GB 页面文件 |
+| 服务器核心 | 45MB                     | 360MB + 1GB 页面文件 |
+
+
+### <a name="nano-server-vs-windows-server-core"></a>Nano Server 与 Windows Server 核心
 
 如何在 Windows Server Core 和 Nano Server 之间进行选择？ 虽然可以随意使用它们之中的任何一个进行生成，但如果你发现应用程序需要与 .NET Framework 完全兼容，则应使用 [Windows Server Core](https://hub.docker.com/r/microsoft/windowsservercore/)。 另一方面，如果你的应用程序是针对云生成的并且使用 .NET Core，则应使用 [Nano Server](https://hub.docker.com/r/microsoft/nanoserver/)。 这是因为 Nano Server 的设计目标是尽可能减小占用空间，因此删除了几个不重要的库。 考虑在 Nano Server 上生成时，应注意以下几点：
 
@@ -81,7 +98,7 @@ Windows 容器提供两种容器基本映像，Windows Server Core 和 Nano Serv
 若要查看 Windows 主机已安装的版本类型，可以查询 HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion。  若要查看基础映像使用的版本类型，可以查看 Docker 中心上的标记或查看映像说明提供的映像哈希表。  [Windows 10 更新历史记录](https://support.microsoft.com/en-us/help/12387/windows-10-update-history)页面列出了每个内部版本和修订版本发布的时间。
 
 在此示例中，14393 是主要内部版本号，321 是修订版本号。
-```none
+```
 Windows PowerShell
 Copyright (C) 2016 Microsoft Corporation. All rights reserved.
 
