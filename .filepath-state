@@ -356,6 +356,9 @@
   "46019a10c55cc11c2f25b8c4b23edc6f5d140e36": [
     "virtualization\\hyper-v-on-windows\\reference\\integration-services.md"
   ],
+  "1cb8c785a9c7aea94a6fdff28cd6ea0207c58f43": [
+    "virtualization\\hyper-v-on-windows\\TOC.md"
+  ],
   "d836d9d0bd7cc6ce714b1b586e49915a8ce7e616": [
     "virtualization\\hyper-v-on-windows\\TOC.md"
   ],
@@ -623,6 +626,9 @@
   "f837ef05dec3bd610409389cbf1bfbf9804d9d49": [
     "virtualization\\windowscontainers\\management\\manage_remotehost.md"
   ],
+  "96c1df0515e27dd63381d806738ca59107f9996a": [
+    "virtualization\\hyper-v-on-windows\\reference\\hyper-v-architecture.md"
+  ],
   "a986af5c3a448265540671bd2d6678dbcd4d0833": [
     "virtualization\\hyper-v-on-windows\\reference\\hyper-v-architecture.md"
   ],
@@ -745,5 +751,140 @@
   ],
   "044ec9426fa5582de61ad78a4dcafc41198a371a": [
     "virtualization\\windowscontainers\\kubernetes\\getting-started-kubernetes-windows.md"
+  ],
+  "7d59a9ec46af0185be76e383fe57655edab58057": [
+    "virtualization\\hyper-v-on-windows\\reference\\hyper-v-emulator.md"
+  ],
+  "1c597523e75e6e0695b805aa9287853d4fcd78e0": [
+    "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform.md"
+  ],
+  "75b0e219849d6675cf60f3a65e3ebdd9ac25e98b": [
+    "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\CPUIDAccess.md"
+  ],
+  "2444392dbf3cbfecaa4851fcc660172e10c0a0c0": [
+    "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\ExecutionCancelled.md"
+  ],
+  "10a5d2a55be69570fefcccb693388ce9f0a7517d": [
+    "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\IOPortAccess.md"
+  ],
+  "de1f370ab7b7be46f18a2496ae2d1f78299992d9": [
+    "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\IOPortAccessQEMU.md"
+  ],
+  "e90438de618588c55648019702c0bf631833b4ee": [
+    "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\MemoryAccess.md"
+  ],
+  "2d98746a8b81b2caef3dc14c6d7dd00fd4042701": [
+    "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\MMIOAccessQEMU.md"
+  ],
+  "6f7855b08230939d3146e184f94b9bdcd62dba7b": [
+    "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\MSRAccess.md"
+  ],
+  "24d18be6ce9f4465cbb7d8b9b36e62492066e4b2": [
+    "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\UnrecoverableException.md"
+  ],
+  "a9c90099a7d259ecf982a82f4bb082ad811d7502": [
+    "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\UnsupportableFeature.md"
+  ],
+  "7ffb4ae2d63f023e3f593fbb8df876850c1b30d3": [
+    "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\VirtualProcessorException.md"
+  ],
+  "08b642c350545a18917b5d6b91a31190644a8690": [
+    "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\VirtualProcessorExecution.md"
+  ],
+  "586cd248360c7def1ae76130c4b16c2d6ad5ad55": [
+    "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\WHvCancelRunVirtualProcessor.md"
+  ],
+  "af3d007097e5aab9b71ecd9f60e9e8199ee263d5": [
+    "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\WHvCreatePartition.md"
+  ],
+  "6cf4515057f0a33fcbb732b101fac67395bd5a78": [
+    "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\WHvCreateVirtualProcessor.md"
+  ],
+  "7c6519cc7af4eaacb5070119c62dbac2081e3feb": [
+    "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\WHvDeletePartition.md"
+  ],
+  "5dc179454e76b2f7c063631fd47eb34b032928ff": [
+    "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\WHvDeleteVirtualProcessor.md"
+  ],
+  "f9a7228254d94f36ed000a35af9efd978b312584": [
+    "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\WhvEmulatorCallbacks.md"
+  ],
+  "0eb47c607c828bc9d9b592eee6a58e3dcb62e4e6": [
+    "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\WHvEmulatorCreateEmulator.md"
+  ],
+  "ae2e69b7124402f8fdbdec2d5ec8c42161db9d54": [
+    "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\WHvEmulatorDestoryEmulator.md"
+  ],
+  "abb77abce1044a605affb3eb8ea03e575a9e26c3": [
+    "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\WhvEmulatorGetVirtualProcessorRegistersCallback.md"
+  ],
+  "2d5091ded63469417d23fde6e14398e298707aca": [
+    "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\WhvEmulatorIOAccessInfo.md"
+  ],
+  "b2758218268e9715ad4613f1d800299f100f2964": [
+    "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\WhvEmulatorIOPortCallback.md"
+  ],
+  "cd7db076fdfeb7bcf42ec4bb4cdef18425734959": [
+    "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\WhvEmulatorMemoryAccessInfo.md"
+  ],
+  "924796d8b376673d185931265eda2c9c0755f592": [
+    "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\WhvEmulatorMemoryCallback.md"
+  ],
+  "6936d2b4e8b5bd800c8e0a94a90655425d0fd8a3": [
+    "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\WhvEmulatorSetVirtualProcessorRegistersCallback.md"
+  ],
+  "f5f10e4c1e147d695c48046f130b1b2ff39660ce": [
+    "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\WhvEmulatorStatus.md"
+  ],
+  "6be85a2eb5a6d1a0356f509a49d3e6e68b7122ac": [
+    "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\WHvEmulatorTranslateGVAPageCallback.md"
+  ],
+  "ce33a386f42989bc851ef84e2ba16c19175de910": [
+    "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\WHvEmulatorTryEmulation.md"
+  ],
+  "9ea1b4e66527c01bc981639e9039cffb8c145e48": [
+    "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\WHvExitContextDataTypes.md"
+  ],
+  "ae6ec5fc5e724af72cfa190037d62935360f3f51": [
+    "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\WHvGetCapability.md"
+  ],
+  "1097ac65e08c0194ccbe92e28f7decd48d5ed645": [
+    "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\WHvGetPartitionProperty.md"
+  ],
+  "498563cb92d9a6f78e686af41214312efa3decbc": [
+    "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\WHvGetRunExitContextSize.md"
+  ],
+  "3316d3112bfd7601ba8cbf0f2962a262b76304f7": [
+    "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\WHvGetVirtualProcessorRegisters.md"
+  ],
+  "927c1173cfaf151e64ecd740aed9b74c1f802f5a": [
+    "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\WHvMapGpaRange.md"
+  ],
+  "1d299ace8e1afa54fff5e2eb1a3e5e303bbee894": [
+    "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\WHvMemoryAccessContext.md"
+  ],
+  "d1be1bfe0885eaa61768b948c9568922220b036e": [
+    "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\WHvPartitionPropertyDataTypes.md"
+  ],
+  "3f0db5531fd19338823c9093fade7fe0685abbeb": [
+    "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\WHvRunVirtualProcessor.md"
+  ],
+  "f19026509060d66e52c9235d889a13237be3e295": [
+    "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\WHvSetPartitionProperty.md"
+  ],
+  "d347b26a9410a72001e423710578c9441759db4c": [
+    "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\WHvSetupPartition.md"
+  ],
+  "622af5f7e59b7f113226cba665091915f53d2210": [
+    "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\WHvSetVirtualProcessorRegisters.md"
+  ],
+  "0751acf443237432a2e711833e55c395d0836a17": [
+    "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\WHvTranslateGva.md"
+  ],
+  "3d31e2d8ae4b2f4689367c41252ba3e7a02a3b14": [
+    "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\WHvUnmapGpaRange.md"
+  ],
+  "347b31ec29d84e993e92509173d5da1632899311": [
+    "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\WHvVirtualProcessorDataTypes.md"
   ]
 }
