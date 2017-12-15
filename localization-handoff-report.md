@@ -1,21 +1,19 @@
 # <a name='report-top'></a> Localization Handoff Report
 
 ## Summary
- Total Files | 3
+ Total Files | 1
 
 ## File List
  Source File | Status | Details 
  ----------- | ------ | ------- 
- [virtualization\hyper-v-on-windows\reference\hyper-v-emulator.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/db14de3933d37684c6c030df4fdeefa1665feafe/virtualization/hyper-v-on-windows/reference/hyper-v-emulator.md) | HandedOffSuccess | [Details](#3b86cb7e1ab254c681db63abbee9d7149d64b783203)
- [virtualization\hyper-v-on-windows\reference\hypervisor-platform-funcs\IOPortAccessIE.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/e621f9c56b18c674571ead4bc35394582bbdcf2f/virtualization/hyper-v-on-windows/reference/hypervisor-platform-funcs/IOPortAccessIE.md) | HandedOffSuccess | [Details](#de1f370ab7b7be46f18a2496ae2d1f78299992d9208)
- [virtualization\hyper-v-on-windows\reference\hypervisor-platform-funcs\MMIOAccessIE.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/e621f9c56b18c674571ead4bc35394582bbdcf2f/virtualization/hyper-v-on-windows/reference/hypervisor-platform-funcs/MMIOAccessIE.md) | HandedOffSuccess | [Details](#2d98746a8b81b2caef3dc14c6d7dd00fd4042701210)
+ [virtualization\windowscontainers\manage-docker\optimize-windows-dockerfile.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/21c83d29c2cfc6b14231000e70d70c35b96c3698/virtualization/windowscontainers/manage-docker/optimize-windows-dockerfile.md) | HandedOffSuccess | [Details](#608a08c2e7e1afbb4e2eb2583384f042baa78b1f393)
 
 ## Item Details
-##### <a name='3b86cb7e1ab254c681db63abbee9d7149d64b783203'></a> Source: [virtualization\hyper-v-on-windows\reference\hyper-v-emulator.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/db14de3933d37684c6c030df4fdeefa1665feafe/virtualization/hyper-v-on-windows/reference/hyper-v-emulator.md)
+##### <a name='608a08c2e7e1afbb4e2eb2583384f042baa78b1f393'></a> Source: [virtualization\windowscontainers\manage-docker\optimize-windows-dockerfile.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/21c83d29c2cfc6b14231000e70d70c35b96c3698/virtualization/windowscontainers/manage-docker/optimize-windows-dockerfile.md)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [hyper-v-emulator.760cb3a346345ba19609ff0d77ff3fb54b626349.zh-cn.xlf](https://github.com/MicrosoftDocs/Virtualization-Documentation-Private.handoff/blob/11c6df19d3e77193b49b12f57176abfd2bb5227b/ol-handoff/MicrosoftDocs/Virtualization-Documentation-Private.zh-cn/live/hyper-v-emulator.760cb3a346345ba19609ff0d77ff3fb54b626349.zh-cn.xlf)
-* Handoff Datetime: 2017-12-15 02:04:10
+* Handoff File: [optimize-windows-dockerfile.d1e84ff888241bdefbb9c9503a660b5ffd457b21.zh-cn.xlf](https://github.com/MicrosoftDocs/Virtualization-Documentation-Private.handoff/blob/35e99f0dfa07e0b8f89a11a9f4aa281904115e50/ol-handoff/MicrosoftDocs/Virtualization-Documentation-Private.zh-cn/live/optimize-windows-dockerfile.d1e84ff888241bdefbb9c9503a660b5ffd457b21.zh-cn.xlf)
+* Handoff Datetime: 2017-12-15 23:27:24
 * Handoff Reason: Include
 * Handoff Name: 
 * Archive File: 
@@ -23,34 +21,11 @@
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
 * Handback Name: 
-* [Back to Top](#report-top)
-
-##### <a name='de1f370ab7b7be46f18a2496ae2d1f78299992d9208'></a> Source: [virtualization\hyper-v-on-windows\reference\hypervisor-platform-funcs\IOPortAccessIE.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/e621f9c56b18c674571ead4bc35394582bbdcf2f/virtualization/hyper-v-on-windows/reference/hypervisor-platform-funcs/IOPortAccessIE.md)
-* Status: HandedOffSuccess
-* Target File: 
-* Handoff File: [IOPortAccessIE.12e2c2462af2f7959cd9e347f9d28e44a8c18fd2.zh-cn.xlf](https://github.com/MicrosoftDocs/Virtualization-Documentation-Private.handoff/blob/11c6df19d3e77193b49b12f57176abfd2bb5227b/ol-handoff/MicrosoftDocs/Virtualization-Documentation-Private.zh-cn/live/IOPortAccessIE.12e2c2462af2f7959cd9e347f9d28e44a8c18fd2.zh-cn.xlf)
-* Handoff Datetime: 2017-12-15 02:04:10
-* Handoff Reason: Include
-* Handoff Name: 
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* Handback Name: 
-* [Back to Top](#report-top)
-
-##### <a name='2d98746a8b81b2caef3dc14c6d7dd00fd4042701210'></a> Source: [virtualization\hyper-v-on-windows\reference\hypervisor-platform-funcs\MMIOAccessIE.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/e621f9c56b18c674571ead4bc35394582bbdcf2f/virtualization/hyper-v-on-windows/reference/hypervisor-platform-funcs/MMIOAccessIE.md)
-* Status: HandedOffSuccess
-* Target File: 
-* Handoff File: [MMIOAccessIE.e8db15a233f74ef545e41788ed7efd67ff5c73a8.zh-cn.xlf](https://github.com/MicrosoftDocs/Virtualization-Documentation-Private.handoff/blob/11c6df19d3e77193b49b12f57176abfd2bb5227b/ol-handoff/MicrosoftDocs/Virtualization-Documentation-Private.zh-cn/live/MMIOAccessIE.e8db15a233f74ef545e41788ed7efd67ff5c73a8.zh-cn.xlf)
-* Handoff Datetime: 2017-12-15 02:04:10
-* Handoff Reason: Include
-* Handoff Name: 
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* Handback Name: 
+* Current Target File: [virtualization\windowscontainers\manage-docker\optimize-windows-dockerfile.md](https://github.com/MicrosoftDocs/Virtualization-Documentation-Private.zh-cn/blob/b3d8214de1995d394e58510c034858cb82ba9b71/virtualization/windowscontainers/manage-docker/optimize-windows-dockerfile.md)
+* Current Handback File: [optimize-windows-dockerfile.d1e84ff888241bdefbb9c9503a660b5ffd457b21.zh-cn.xlf](https://github.com/MicrosoftDocs/Virtualization-Documentation-Private.handback/blob/053db64a8e1a8e5f0229358d1b0050047ef06ae5/ol-handback/Microsoft/Virtualization-Documentation-Private.zh-cn/live/optimize-windows-dockerfile.d1e84ff888241bdefbb9c9503a660b5ffd457b21.zh-cn.xlf)
+* Current Handback Datetime: 2017-01-24 13:19:20
+* Bilingual File: [optimize-windows-dockerfile.d1e84ff888241bdefbb9c9503a660b5ffd457b21.zh-cn.xlf](https://github.com/MicrosoftDocs/Virtualization-Documentation-Private.handback/blob/053db64a8e1a8e5f0229358d1b0050047ef06ae5/ol-handback/Microsoft/Virtualization-Documentation-Private.zh-cn/live/optimize-windows-dockerfile.d1e84ff888241bdefbb9c9503a660b5ffd457b21.zh-cn.xlf)
+* Bilingual Datetime: 2017-01-24 13:21:49
 * [Back to Top](#report-top)
 
 

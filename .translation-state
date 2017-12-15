@@ -1,5 +1,5 @@
 {
-  "LastProcessedCommit": "db14de3933d37684c6c030df4fdeefa1665feafe",
+  "LastProcessedCommit": "21c83d29c2cfc6b14231000e70d70c35b96c3698",
   "LastTranslatedCommit": "21f4320cb76270b953a1d22d857047a2fcf5d4b8",
   "LastConfigHash": "8a1020b7136b784cdc0f8c9eca877ab77b2a9c5f",
   "Items": {
@@ -22841,6 +22841,22 @@
       "HandoffFileCommit": "11c6df19d3e77193b49b12f57176abfd2bb5227b",
       "HandoffDateTime": "2017-12-15T02:04:10.3141919Z",
       "HandoffXliffHash": "df19e985bb3546d2e99b0a0d46f1d80ae7ebbd23",
+      "HandoffPriority": ""
+    },
+    "608a08c2e7e1afbb4e2eb2583384f042baa78b1f": {
+      "FileHash": "608a08c2e7e1afbb4e2eb2583384f042baa78b1f",
+      "SourceFileCommit": "21c83d29c2cfc6b14231000e70d70c35b96c3698",
+      "SourceFilePath": "virtualization\\windowscontainers\\manage-docker\\optimize-windows-dockerfile.md",
+      "HandoffReason": 1,
+      "FilePathList": [
+        "virtualization\\windowscontainers\\manage-docker\\optimize-windows-dockerfile.md"
+      ],
+      "HasMetadata": true,
+      "TranslationType": 1,
+      "HandoffFilePath": "ol-handoff\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\optimize-windows-dockerfile.d1e84ff888241bdefbb9c9503a660b5ffd457b21.zh-cn.xlf",
+      "HandoffFileCommit": "35e99f0dfa07e0b8f89a11a9f4aa281904115e50",
+      "HandoffDateTime": "2017-12-15T23:27:24.2265223Z",
+      "HandoffXliffHash": "c7580113f6c52f8acf5dac71ba8572c72ed4609c",
       "HandoffPriority": ""
     }
   }

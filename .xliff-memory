@@ -2881,6 +2881,12 @@
       "XliffHash": "df19e985bb3546d2e99b0a0d46f1d80ae7ebbd23",
       "TranslationType": 1,
       "SkeletonFile": "ol-xliffcache\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\3b86cb7e1ab254c681db63abbee9d7149d64b783.77f49d0defe688ed70c2a58b81ef01217e4617f4.xml"
+    },
+    "virtualization\\windowscontainers\\manage-docker\\optimize-windows-dockerfile.md.c7580113f6c52f8acf5dac71ba8572c72ed4609c.HT": {
+      "SourceFilename": "virtualization\\windowscontainers\\manage-docker\\optimize-windows-dockerfile.md",
+      "XliffHash": "c7580113f6c52f8acf5dac71ba8572c72ed4609c",
+      "TranslationType": 1,
+      "SkeletonFile": "ol-xliffcache\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\608a08c2e7e1afbb4e2eb2583384f042baa78b1f.61ba364abbda09185b0b030e6335c545a3b3038c.xml"
     }
   }
 }
