@@ -2863,6 +2863,24 @@
       "XliffHash": "9673ecab65a7fb2f7b644c56f341f0ad79e00d6e",
       "TranslationType": 1,
       "SkeletonFile": "ol-xliffcache\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\3f0db5531fd19338823c9093fade7fe0685abbeb.6c8d4e38bb5d4afb9a442f4f16244840f4e22798.xml"
+    },
+    "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\MMIOAccessIE.md.762f1c714459ee59b393e135227ad2b0a3f6dc0f.HT": {
+      "SourceFilename": "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\MMIOAccessIE.md",
+      "XliffHash": "762f1c714459ee59b393e135227ad2b0a3f6dc0f",
+      "TranslationType": 1,
+      "SkeletonFile": "ol-xliffcache\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\2d98746a8b81b2caef3dc14c6d7dd00fd4042701.118868868895e6124d7705a3b2c63802c83fb49e.xml"
+    },
+    "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\IOPortAccessIE.md.3538828df1e377794bf5520c5d7e5d077665e0a7.HT": {
+      "SourceFilename": "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\IOPortAccessIE.md",
+      "XliffHash": "3538828df1e377794bf5520c5d7e5d077665e0a7",
+      "TranslationType": 1,
+      "SkeletonFile": "ol-xliffcache\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\de1f370ab7b7be46f18a2496ae2d1f78299992d9.e707f1ef8e14634eb3376a0ac87ce53b2905cace.xml"
+    },
+    "virtualization\\hyper-v-on-windows\\reference\\hyper-v-emulator.md.df19e985bb3546d2e99b0a0d46f1d80ae7ebbd23.HT": {
+      "SourceFilename": "virtualization\\hyper-v-on-windows\\reference\\hyper-v-emulator.md",
+      "XliffHash": "df19e985bb3546d2e99b0a0d46f1d80ae7ebbd23",
+      "TranslationType": 1,
+      "SkeletonFile": "ol-xliffcache\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\3b86cb7e1ab254c681db63abbee9d7149d64b783.77f49d0defe688ed70c2a58b81ef01217e4617f4.xml"
     }
   }
 }

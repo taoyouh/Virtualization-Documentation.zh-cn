@@ -752,6 +752,9 @@
   "044ec9426fa5582de61ad78a4dcafc41198a371a": [
     "virtualization\\windowscontainers\\kubernetes\\getting-started-kubernetes-windows.md"
   ],
+  "3b86cb7e1ab254c681db63abbee9d7149d64b783": [
+    "virtualization\\hyper-v-on-windows\\reference\\hyper-v-emulator.md"
+  ],
   "7d59a9ec46af0185be76e383fe57655edab58057": [
     "virtualization\\hyper-v-on-windows\\reference\\hyper-v-emulator.md"
   ],
@@ -768,13 +771,13 @@
     "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\IOPortAccess.md"
   ],
   "de1f370ab7b7be46f18a2496ae2d1f78299992d9": [
-    "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\IOPortAccessQEMU.md"
+    "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\IOPortAccessIE.md"
   ],
   "e90438de618588c55648019702c0bf631833b4ee": [
     "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\MemoryAccess.md"
   ],
   "2d98746a8b81b2caef3dc14c6d7dd00fd4042701": [
-    "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\MMIOAccessQEMU.md"
+    "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\MMIOAccessIE.md"
   ],
   "6f7855b08230939d3146e184f94b9bdcd62dba7b": [
     "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\MSRAccess.md"
