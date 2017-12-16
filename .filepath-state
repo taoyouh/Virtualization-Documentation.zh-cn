@@ -48,6 +48,9 @@
   "f651172a7d958866f3370c9c0cb8b870298eb76d": [
     "virtualization\\windowscontainers\\management\\manage_resources.md"
   ],
+  "f9e328c51890868801f3c1120a256e38f616cfd2": [
+    "virtualization\\windowscontainers\\TOC.md"
+  ],
   "3f9d42ad3c55341f698950b317a249adc9ab6855": [
     "virtualization\\windowscontainers\\TOC.md"
   ],
@@ -355,6 +358,9 @@
   ],
   "46019a10c55cc11c2f25b8c4b23edc6f5d140e36": [
     "virtualization\\hyper-v-on-windows\\reference\\integration-services.md"
+  ],
+  "8b04f75a838925120700f3af889cbbf2642c2ab6": [
+    "virtualization\\hyper-v-on-windows\\TOC.md"
   ],
   "1cb8c785a9c7aea94a6fdff28cd6ea0207c58f43": [
     "virtualization\\hyper-v-on-windows\\TOC.md"
@@ -872,6 +878,9 @@
   "d1be1bfe0885eaa61768b948c9568922220b036e": [
     "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\WHvPartitionPropertyDataTypes.md"
   ],
+  "fd28998535791530cb4fc128b0d7b9d9001d4596": [
+    "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\WHvRunVirtualProcessor.md"
+  ],
   "3f0db5531fd19338823c9093fade7fe0685abbeb": [
     "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\WHvRunVirtualProcessor.md"
   ],
@@ -892,5 +901,8 @@
   ],
   "347b31ec29d84e993e92509173d5da1632899311": [
     "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\WHvVirtualProcessorDataTypes.md"
+  ],
+  "1c095418979f148dc6c1d97d16de27863413277d": [
+    "virtualization\\windowscontainers\\manage-containers\\container-storage.md"
   ]
 }
