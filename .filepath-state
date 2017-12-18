@@ -20,8 +20,7 @@
   "41ec8d50af4b7ab2ec7e94b30397f4301502d372": [
     "virtualization\\windowscontainers\\containers_welcome.md",
     "virtualization\\hyper-v-on-windows\\about\\hyperv_on_windows.md",
-    "virtualization\\hyper-v-on-windows\\about\\whats_new.md",
-    "virtualization\\hyper-v-on-windows\\windows_welcome.md"
+    "virtualization\\hyper-v-on-windows\\about\\whats_new.md"
   ],
   "60d7b6cf3fdce3c988da7c16c0367013be2cafec": [
     "virtualization\\windowscontainers\\deployment\\deployment.md"
@@ -165,6 +164,9 @@
   "7d16fcf22187ae3ace25fe1bedbc02f3c6b63eb8": [
     "virtualization\\hyper-v-on-windows\\user-guide\\nested-virtualization.md"
   ],
+  "37782c4d2491b9b1963a326204e30a6f484b5ec9": [
+    "virtualization\\windowscontainers\\about\\index.md"
+  ],
   "b916b8bb2e09dfc78414785ad0d0252b5abec619": [
     "virtualization\\windowscontainers\\about\\index.md"
   ],
@@ -288,32 +290,6 @@
   "a070164812b7dca39070d5f78411a017457f8573": [
     "virtualization\\hyper-v-on-windows\\index.md"
   ],
-  "ddf03e4ecb72cafec72aac5ab78d009cefb68773": [
-    "virtualization\\hyper-v-on-windows\\quick_start\\index.md",
-    "virtualization\\hyper-v-on-windows\\quick_start\\walkthrough.md"
-  ],
-  "9519f9770b0bcb30bd60714c76ac75ae555afeb5": [
-    "virtualization\\hyper-v-on-windows\\quick_start\\walkthrough_checkpoints.md",
-    "virtualization\\hyper-v-on-windows\\user_guide\\checkpoints.md"
-  ],
-  "577861d3b1240a3ce9ae4362b4a4b44088907882": [
-    "virtualization\\hyper-v-on-windows\\quick_start\\walkthrough_compatibility.md"
-  ],
-  "a7d219b11f4593f77970196c192d99579d4e23d9": [
-    "virtualization\\hyper-v-on-windows\\quick_start\\walkthrough_create_vm.md"
-  ],
-  "adf2f2c0ab1023f7efa696ba16478211d3647f28": [
-    "virtualization\\hyper-v-on-windows\\quick_start\\walkthrough_export_import.md"
-  ],
-  "5c60012a35d7e8f35f27d3fb03c36765786261c3": [
-    "virtualization\\hyper-v-on-windows\\quick_start\\walkthrough_install.md"
-  ],
-  "a45863878196a545162b8859d3fa7681cdbedeed": [
-    "virtualization\\hyper-v-on-windows\\quick_start\\walkthrough_powershell.md"
-  ],
-  "cba03be09dc045f10a61b401788fc6b78396c04d": [
-    "virtualization\\hyper-v-on-windows\\quick_start\\walkthrough_virtual_switch.md"
-  ],
   "67513f6ee7d990f4d9086dfd63fb719374377b1f": [
     "virtualization\\hyper-v-on-windows\\quick-start\\connect-to-network.md"
   ],
@@ -386,42 +362,6 @@
   "e89b44692e99454cba0044958422e85693df4e3f": [
     "virtualization\\hyper-v-on-windows\\TOC.md"
   ],
-  "910ab0b9686d18fbaba738b8d0bd99b5f0825787": [
-    "virtualization\\hyper-v-on-windows\\user_guide\\create_pre-release_vm.md"
-  ],
-  "f4d11b8f464bcfc6929ce18ee72c01d5a9eb7eba": [
-    "virtualization\\hyper-v-on-windows\\user_guide\\export_import.md"
-  ],
-  "374ce6f8c4aede7190916675698551eb667458f9": [
-    "virtualization\\hyper-v-on-windows\\user_guide\\managing_ics.md"
-  ],
-  "f2813027570ffa8d2222587c69c343dbab3a81d3": [
-    "virtualization\\hyper-v-on-windows\\user_guide\\managing_ics.md"
-  ],
-  "09768936bfc3f15e30a27019187b0e0e6440b428": [
-    "virtualization\\hyper-v-on-windows\\user_guide\\managing_ics.md"
-  ],
-  "c27a51e9a12de9cec2720eadf6e09b8a582bae77": [
-    "virtualization\\hyper-v-on-windows\\user_guide\\managing_ics.md"
-  ],
-  "5daad47a3a928850444aaf4616463d55941d2f54": [
-    "virtualization\\hyper-v-on-windows\\user_guide\\migrating_vms.md"
-  ],
-  "5a09ed89dc8dbc447132fd1a69dd5e7aa232dc21": [
-    "virtualization\\hyper-v-on-windows\\user_guide\\nesting.md"
-  ],
-  "c5752aee969adbcaa9935ec95cbc3ca8cd128a65": [
-    "virtualization\\hyper-v-on-windows\\user_guide\\remote_host_management.md"
-  ],
-  "75604382e7ab6af5c653836160051baf17a2ca96": [
-    "virtualization\\hyper-v-on-windows\\user_guide\\setup_nat_network.md"
-  ],
-  "2b82971e8cfbb4f520c779696939d8c429f03649": [
-    "virtualization\\hyper-v-on-windows\\user_guide\\troubleshooting.md"
-  ],
-  "7659dc7b0bbae513796c8f910306091180194f8e": [
-    "virtualization\\hyper-v-on-windows\\user_guide\\vmsession.md"
-  ],
   "971593b762b51bd24f43c40d4697fdd3cef82400": [
     "virtualization\\hyper-v-on-windows\\user-guide\\make-integration-service.md"
   ],
@@ -466,6 +406,9 @@
   ],
   "622c8f638a815e19a54aa75b6b5ea0688d966ae3": [
     "virtualization\\windowscontainers\\manage-containers\\container-base-images.md"
+  ],
+  "6c3498c53588e5f923d4029424b309dad2ad10cb": [
+    "virtualization\\windowscontainers\\manage-containers\\container-networking.md"
   ],
   "19750b9205a2dabd72384ccc1f28da693333e522": [
     "virtualization\\windowscontainers\\manage-containers\\container-networking.md"
