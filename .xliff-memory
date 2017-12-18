@@ -2905,6 +2905,12 @@
       "XliffHash": "4b9cf674ea62396d662541a17da3c7407c9ff1a9",
       "TranslationType": 1,
       "SkeletonFile": "ol-xliffcache\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\1c095418979f148dc6c1d97d16de27863413277d.700e36f1839923307ee129ed0334efb910153f57.xml"
+    },
+    "virtualization\\hyper-v-on-windows\\user-guide\\nested-virtualization.md.d35035765c6edeea21e4fdd40dbb405be3f6fe0f.HT": {
+      "SourceFilename": "virtualization\\hyper-v-on-windows\\user-guide\\nested-virtualization.md",
+      "XliffHash": "d35035765c6edeea21e4fdd40dbb405be3f6fe0f",
+      "TranslationType": 1,
+      "SkeletonFile": "ol-xliffcache\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\d5b8e888b62495c98c0691dc0d62deecf7c1eb6e.f7af4bcc58dcd2809cd8bc557b4b1f22c499eb48.xml"
     }
   }
 }
