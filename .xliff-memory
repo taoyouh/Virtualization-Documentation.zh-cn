@@ -2923,6 +2923,12 @@
       "XliffHash": "dfba604a67eecc0f0b8afd129fc9324e705f31bf",
       "TranslationType": 1,
       "SkeletonFile": "ol-xliffcache\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\37782c4d2491b9b1963a326204e30a6f484b5ec9.aca21a895f1e32e7f6f12d7c361eca45972c2ce9.xml"
+    },
+    "virtualization\\windowscontainers\\manage-docker\\configure-docker-daemon.md.4c361e0ec73bd14d81752a481126ee6182b72b85.HT": {
+      "SourceFilename": "virtualization\\windowscontainers\\manage-docker\\configure-docker-daemon.md",
+      "XliffHash": "4c361e0ec73bd14d81752a481126ee6182b72b85",
+      "TranslationType": 1,
+      "SkeletonFile": "ol-xliffcache\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\5b187853be0ebb28bcede43bfca7e4042a23dfce.0603176b7af2ac82c06e3b9063f21bb822d9f3cb.xml"
     }
   }
 }

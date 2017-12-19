@@ -431,6 +431,9 @@
   "e56a5b984cc1c42e27628d00a5cd532788aef11c": [
     "virtualization\\windowscontainers\\manage-containers\\container-networking.md"
   ],
+  "5b187853be0ebb28bcede43bfca7e4042a23dfce": [
+    "virtualization\\windowscontainers\\manage-docker\\configure-docker-daemon.md"
+  ],
   "16ab26b6f4c66b56051759dea65080dd411b15ab": [
     "virtualization\\windowscontainers\\manage-docker\\configure-docker-daemon.md"
   ],
