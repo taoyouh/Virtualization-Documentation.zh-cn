@@ -2941,6 +2941,282 @@
       "XliffHash": "11e8bb49076ab467469b05304ccac9e2b56a2274",
       "TranslationType": 1,
       "SkeletonFile": "ol-xliffcache\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\ecc11468bbd5aad2638da3c4f733e4d5068f0056.50ff711581d11fe1881f7c5ca162106424dad400.xml"
+    },
+    "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\WHvGetRunExitContextSize.md.ef79351f9ee4114c12c1ea42d2e07c91169932cd.HT": {
+      "SourceFilename": "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\WHvGetRunExitContextSize.md",
+      "XliffHash": "ef79351f9ee4114c12c1ea42d2e07c91169932cd",
+      "TranslationType": 1,
+      "SkeletonFile": "ol-xliffcache\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\9b7f161845352372d5b807c97a6d3eb745911ad9.7e2c74998f2329b6bf40d6589c914ad6cd4cae88.xml"
+    },
+    "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\WHvVirtualProcessorDataTypes.md.bf99b2c95684f4022dfb29392616b589124fc5ca.HT": {
+      "SourceFilename": "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\WHvVirtualProcessorDataTypes.md",
+      "XliffHash": "bf99b2c95684f4022dfb29392616b589124fc5ca",
+      "TranslationType": 1,
+      "SkeletonFile": "ol-xliffcache\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\873eaaf95c1c23944566d0b7c509df9780246feb.fa05dcf39a7ba1fad913021c7515292b3be86ed6.xml"
+    },
+    "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\WHvEmulatorTryEmulation.md.f4aa4fdb1505c64d0472244bff25773a2680ebae.HT": {
+      "SourceFilename": "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\WHvEmulatorTryEmulation.md",
+      "XliffHash": "f4aa4fdb1505c64d0472244bff25773a2680ebae",
+      "TranslationType": 1,
+      "SkeletonFile": "ol-xliffcache\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\07f39df56b29e2830a7b396ef262a807d910028a.3cb4f50d8264e797be0cfbce676f17b8aeebbf5f.xml"
+    },
+    "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\UnrecoverableException.md.ecdbd156004174680aa377e41ba1c8b69ef6b580.HT": {
+      "SourceFilename": "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\UnrecoverableException.md",
+      "XliffHash": "ecdbd156004174680aa377e41ba1c8b69ef6b580",
+      "TranslationType": 1,
+      "SkeletonFile": "ol-xliffcache\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\90f168b9d08bf4ba1b97ab00903ff5e2ffee8505.2d32968280906c99874d835d31fb3e5e1f04c8d1.xml"
+    },
+    "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\WHvRunVirtualProcessor.md.a0f90e05175a79a68e0ea40d65dc5e27be93f09f.HT": {
+      "SourceFilename": "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\WHvRunVirtualProcessor.md",
+      "XliffHash": "a0f90e05175a79a68e0ea40d65dc5e27be93f09f",
+      "TranslationType": 1,
+      "SkeletonFile": "ol-xliffcache\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\93a76e56d40f32479b25ffbb8a31ceac348e5063.34d6726da2fcd46104491c91fc2ac1057e516e1c.xml"
+    },
+    "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\WhvEmulatorMemoryAccessInfo.md.7ee3805304b540751ad625e357765045df15fc2f.HT": {
+      "SourceFilename": "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\WhvEmulatorMemoryAccessInfo.md",
+      "XliffHash": "7ee3805304b540751ad625e357765045df15fc2f",
+      "TranslationType": 1,
+      "SkeletonFile": "ol-xliffcache\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\f146198128f5183a6346f86ea510367d9630d98a.7acf8f69f38df4cd5bebcd5d7750cd42bfc089d0.xml"
+    },
+    "virtualization\\hyper-v-on-windows\\TOC.md.78556f662678305139bc04c17db4fc14d8f8283e.HT": {
+      "SourceFilename": "virtualization\\hyper-v-on-windows\\TOC.md",
+      "XliffHash": "78556f662678305139bc04c17db4fc14d8f8283e",
+      "TranslationType": 1,
+      "SkeletonFile": "ol-xliffcache\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\5cb35bba8638fa288a9367c5364bffdd70290244.5a24020668f711472769a2ae07662d1365be4039.xml"
+    },
+    "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\WHvMapGpaRange.md.06d0c711071a0e36db202fd4d9e7f1cc0db3d9bc.HT": {
+      "SourceFilename": "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\WHvMapGpaRange.md",
+      "XliffHash": "06d0c711071a0e36db202fd4d9e7f1cc0db3d9bc",
+      "TranslationType": 1,
+      "SkeletonFile": "ol-xliffcache\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\1242eaffc5f59a8fd2a7ea24a9efda55f5741826.3081ee1caef3f49bd74aebec73e9cfcda3c714de.xml"
+    },
+    "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\WHvSetPartitionProperty.md.c054849e4e412fb861f065222fdb0e7574564339.HT": {
+      "SourceFilename": "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\WHvSetPartitionProperty.md",
+      "XliffHash": "c054849e4e412fb861f065222fdb0e7574564339",
+      "TranslationType": 1,
+      "SkeletonFile": "ol-xliffcache\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\76dc1c125a72b4b491a00084dc338ded95be9eb9.599682f017a13e2734b3f46a528e4f20f2c8d7b7.xml"
+    },
+    "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\WhvEmulatorGetVirtualProcessorRegistersCallback.md.22d5c37a24af70762f9dcfaabb9e0b6da6194035.HT": {
+      "SourceFilename": "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\WhvEmulatorGetVirtualProcessorRegistersCallback.md",
+      "XliffHash": "22d5c37a24af70762f9dcfaabb9e0b6da6194035",
+      "TranslationType": 1,
+      "SkeletonFile": "ol-xliffcache\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\c35f1b458e3732f4f014097de04fed32794f2bd1.8856b949b717344de8429cb4fee9d28156c2f336.xml"
+    },
+    "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\WHvGetCapability.md.6b91e97ee8767c69f4a858d065d52bf43d063358.HT": {
+      "SourceFilename": "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\WHvGetCapability.md",
+      "XliffHash": "6b91e97ee8767c69f4a858d065d52bf43d063358",
+      "TranslationType": 1,
+      "SkeletonFile": "ol-xliffcache\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\2e2357961999aefcf2a9d3075662e027c4b6681f.51274038a47f42c62140e3eb33d38accc86742d9.xml"
+    },
+    "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\WHvEmulatorCreateEmulator.md.84f8d80b230d4f76c1ebd13261b5f25435808c54.HT": {
+      "SourceFilename": "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\WHvEmulatorCreateEmulator.md",
+      "XliffHash": "84f8d80b230d4f76c1ebd13261b5f25435808c54",
+      "TranslationType": 1,
+      "SkeletonFile": "ol-xliffcache\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\1841711b6cc018cb6649f7ffaf3a40e37eb6d127.7b6b93d91e7cac2a22567b3aac980a4ce51940f3.xml"
+    },
+    "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\VirtualProcessorException.md.4479f1c848f0502eb78c93e70c7440b682f3d9f3.HT": {
+      "SourceFilename": "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\VirtualProcessorException.md",
+      "XliffHash": "4479f1c848f0502eb78c93e70c7440b682f3d9f3",
+      "TranslationType": 1,
+      "SkeletonFile": "ol-xliffcache\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\3aed63d78d15aa25130319c92ba6306bdce44a2d.da075fed0f7dc8405781f723687727123a99ef6d.xml"
+    },
+    "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\WHvGetPartitionProperty.md.2a5e9187b1b7b8fb26da6150f7c3df984b768ef8.HT": {
+      "SourceFilename": "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\WHvGetPartitionProperty.md",
+      "XliffHash": "2a5e9187b1b7b8fb26da6150f7c3df984b768ef8",
+      "TranslationType": 1,
+      "SkeletonFile": "ol-xliffcache\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\b6bc516f8fe03d735ad5836fd02456eb89b4369c.a3d8be8817884d0aeaedc46ebcb0a2d65ece4868.xml"
+    },
+    "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\WHvSetupPartition.md.34a48c87ebc0902eb13e29958508c526e1a8ac14.HT": {
+      "SourceFilename": "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\WHvSetupPartition.md",
+      "XliffHash": "34a48c87ebc0902eb13e29958508c526e1a8ac14",
+      "TranslationType": 1,
+      "SkeletonFile": "ol-xliffcache\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\31969971f15c1d18f6abcc6d8746864faec5e287.9bccfbcc50c28b91cd781478372ebdd897b41301.xml"
+    },
+    "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\WHvCancelRunVirtualProcessor.md.320885a3ddd3e2863e17316d84bbaeb58fcba7af.HT": {
+      "SourceFilename": "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\WHvCancelRunVirtualProcessor.md",
+      "XliffHash": "320885a3ddd3e2863e17316d84bbaeb58fcba7af",
+      "TranslationType": 1,
+      "SkeletonFile": "ol-xliffcache\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\57ef55338e8a2f04746d82a07c62501b6d8d3d61.ebc48dbdb031620eebdaa40f7b069a00ce1a8770.xml"
+    },
+    "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\WHvDeletePartition.md.6d6ad6633194d5e03eb713fcb98a29dc88d5439f.HT": {
+      "SourceFilename": "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\WHvDeletePartition.md",
+      "XliffHash": "6d6ad6633194d5e03eb713fcb98a29dc88d5439f",
+      "TranslationType": 1,
+      "SkeletonFile": "ol-xliffcache\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\20442b724924070ece616e820c5997f19a7b1fc0.07f18e88103683e2692f218971a666d20f2a6343.xml"
+    },
+    "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\IOPortAccess.md.cf2676c4f01bf831e8dd32be6958efaca8ff4fd2.HT": {
+      "SourceFilename": "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\IOPortAccess.md",
+      "XliffHash": "cf2676c4f01bf831e8dd32be6958efaca8ff4fd2",
+      "TranslationType": 1,
+      "SkeletonFile": "ol-xliffcache\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\de29e5c4a90ac3d6d9d7e7f3e6d95f4fdbf56327.d342dd11d698cce02271c65de9822e3d937953d6.xml"
+    },
+    "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\IOPortAccessIE.md.7a8f4b3d0000c3f0a4e3b3a309a1594e25f3c20b.HT": {
+      "SourceFilename": "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\IOPortAccessIE.md",
+      "XliffHash": "7a8f4b3d0000c3f0a4e3b3a309a1594e25f3c20b",
+      "TranslationType": 1,
+      "SkeletonFile": "ol-xliffcache\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\72a3c42391256f74aa12ff16fc1da08d6dc9d90b.418ad050977714e22c62d824cd3ab2fc8b1a2cfa.xml"
+    },
+    "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\WhvEmulatorIOPortCallback.md.1008443d29db01f660482207ff71c58f9ee9fe2e.HT": {
+      "SourceFilename": "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\WhvEmulatorIOPortCallback.md",
+      "XliffHash": "1008443d29db01f660482207ff71c58f9ee9fe2e",
+      "TranslationType": 1,
+      "SkeletonFile": "ol-xliffcache\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\031645705b9815006787278da5a19d87a43a20c0.f5c44d4c771363b387b0eef9d6ae2d0ca67e7f1d.xml"
+    },
+    "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\WHvEmulatorTranslateGVAPageCallback.md.2c6a4ae1628071db4792c9f8f65efa26f606b0e6.HT": {
+      "SourceFilename": "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\WHvEmulatorTranslateGVAPageCallback.md",
+      "XliffHash": "2c6a4ae1628071db4792c9f8f65efa26f606b0e6",
+      "TranslationType": 1,
+      "SkeletonFile": "ol-xliffcache\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\6d8e8fe870878d058c7506aa815a1be562e9c425.612643c019a79b4aa308e87435db2fa09af06b18.xml"
+    },
+    "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform.md.ffc3ef39b9ea7cbffa5af290d78124bfb0008ae7.HT": {
+      "SourceFilename": "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform.md",
+      "XliffHash": "ffc3ef39b9ea7cbffa5af290d78124bfb0008ae7",
+      "TranslationType": 1,
+      "SkeletonFile": "ol-xliffcache\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\a03b6edae911d4407dcf7904bfae548dd402e710.75afdabda5dac1f0b77cb04b58f3386d083e865d.xml"
+    },
+    "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\WHvTranslateGva.md.2008f6795c6a73391dccfaf997822fb36a056d42.HT": {
+      "SourceFilename": "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\WHvTranslateGva.md",
+      "XliffHash": "2008f6795c6a73391dccfaf997822fb36a056d42",
+      "TranslationType": 1,
+      "SkeletonFile": "ol-xliffcache\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\979528e44d342d6e811288cbe2efb1bd769e0646.1a66543bc08b8f47d7a2495a8b5f482a1f86bec3.xml"
+    },
+    "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\WhvEmulatorStatus.md.9ee64fc36f290749585ab253454bea138a8ce8d5.HT": {
+      "SourceFilename": "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\WhvEmulatorStatus.md",
+      "XliffHash": "9ee64fc36f290749585ab253454bea138a8ce8d5",
+      "TranslationType": 1,
+      "SkeletonFile": "ol-xliffcache\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\f1bf98d8a41338dec9aeb33eeb24357cebb142ee.01ded613018b8ce21d31c4a85bb8de39a69d7c42.xml"
+    },
+    "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\WHvDeleteVirtualProcessor.md.18ccc0c82be4994175943660a90faf779f2b5bc8.HT": {
+      "SourceFilename": "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\WHvDeleteVirtualProcessor.md",
+      "XliffHash": "18ccc0c82be4994175943660a90faf779f2b5bc8",
+      "TranslationType": 1,
+      "SkeletonFile": "ol-xliffcache\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\ee7b0592943737a8e2ca5c17ac7daea85d84b0bd.45854c7b3e5e5eee9550e9dcea2a8574da434b4e.xml"
+    },
+    "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\WHvPartitionPropertyDataTypes.md.54beaf10b3899530969a3eff937dfd176722a2cd.HT": {
+      "SourceFilename": "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\WHvPartitionPropertyDataTypes.md",
+      "XliffHash": "54beaf10b3899530969a3eff937dfd176722a2cd",
+      "TranslationType": 1,
+      "SkeletonFile": "ol-xliffcache\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\3570ff197d3b8e3db0455484a536abd5ee3e5c42.3af173527925d6873f77c71d019634dac4a0f629.xml"
+    },
+    "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\WhvEmulatorMemoryCallback.md.cc78cd6210e97f67d064e9c8275dfd5dbe07719d.HT": {
+      "SourceFilename": "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\WhvEmulatorMemoryCallback.md",
+      "XliffHash": "cc78cd6210e97f67d064e9c8275dfd5dbe07719d",
+      "TranslationType": 1,
+      "SkeletonFile": "ol-xliffcache\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\256dcd69a59409f2c63f0116c02e542401b6f5e3.f27a3f0db2c7c061422787d370b62b12f5916601.xml"
+    },
+    "virtualization\\hyper-v-on-windows\\reference\\hyper-v-architecture.md.5b67dcf77652ae79e0382d964ccf6cdddaa5a4b5.HT": {
+      "SourceFilename": "virtualization\\hyper-v-on-windows\\reference\\hyper-v-architecture.md",
+      "XliffHash": "5b67dcf77652ae79e0382d964ccf6cdddaa5a4b5",
+      "TranslationType": 1,
+      "SkeletonFile": "ol-xliffcache\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\efaa9afa4281740a0b2fd38830a23c997f0dfc7e.d5060509805df10a380a525f0da89ad1bfa61c78.xml"
+    },
+    "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\WhvEmulatorSetVirtualProcessorRegistersCallback.md.ec0803ab148fd993e1f3fa879016af0a5fa05cb9.HT": {
+      "SourceFilename": "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\WhvEmulatorSetVirtualProcessorRegistersCallback.md",
+      "XliffHash": "ec0803ab148fd993e1f3fa879016af0a5fa05cb9",
+      "TranslationType": 1,
+      "SkeletonFile": "ol-xliffcache\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\7c06af1767b17e62310dcdacbd7ea033c54adad6.75b439aa6b036d6e07d1f70afb5f125c14c7c42e.xml"
+    },
+    "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\WHvUnmapGpaRange.md.deeb79bb6070996165d78a9eca4dc6997976679e.HT": {
+      "SourceFilename": "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\WHvUnmapGpaRange.md",
+      "XliffHash": "deeb79bb6070996165d78a9eca4dc6997976679e",
+      "TranslationType": 1,
+      "SkeletonFile": "ol-xliffcache\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\014881459cd29ef92e0e4593413cc165378c8816.6b3403ac75e068675063aed05c3c281aa589c993.xml"
+    },
+    "virtualization\\hyper-v-on-windows\\user-guide\\make-integration-service.md.ca6094b0caf859374d5a966a231afc51dc2cd76e.HT": {
+      "SourceFilename": "virtualization\\hyper-v-on-windows\\user-guide\\make-integration-service.md",
+      "XliffHash": "ca6094b0caf859374d5a966a231afc51dc2cd76e",
+      "TranslationType": 1,
+      "SkeletonFile": "ol-xliffcache\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\01b9c2febb9f098c7981599894e488b946857900.7b55ca0b6db4fc34a62a7d92ea5d73ce50acf3e6.xml"
+    },
+    "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\WHvExitContextDataTypes.md.b92c76712a146ddca253cfc32a3d812572af1d70.HT": {
+      "SourceFilename": "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\WHvExitContextDataTypes.md",
+      "XliffHash": "b92c76712a146ddca253cfc32a3d812572af1d70",
+      "TranslationType": 1,
+      "SkeletonFile": "ol-xliffcache\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\9c1a3d111d5fadc75553c4488514e7930fabc7e9.26942f030c7d04949cd1e62580d4bbb73cec26c3.xml"
+    },
+    "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\WHvCreatePartition.md.c098b8ef8ca390526cf4d63dc77db5cb689bfb2d.HT": {
+      "SourceFilename": "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\WHvCreatePartition.md",
+      "XliffHash": "c098b8ef8ca390526cf4d63dc77db5cb689bfb2d",
+      "TranslationType": 1,
+      "SkeletonFile": "ol-xliffcache\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\734137dc901c2df978a1e898f14112182c542176.c230da08573a60d2c114940e30456e16dd3aee3b.xml"
+    },
+    "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\MSRAccess.md.c9af488acffae4557350c7c8c6ae1cdac6f3e688.HT": {
+      "SourceFilename": "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\MSRAccess.md",
+      "XliffHash": "c9af488acffae4557350c7c8c6ae1cdac6f3e688",
+      "TranslationType": 1,
+      "SkeletonFile": "ol-xliffcache\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\c9fb77a06da775df83fcb7ff66cf2dd0d78de903.c8bb965226f5727de8b62a726f472bfe35c2cee8.xml"
+    },
+    "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\WHvGetVirtualProcessorRegisters.md.2aeb5b91c3bf1a581b277b384e8979743d31e37b.HT": {
+      "SourceFilename": "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\WHvGetVirtualProcessorRegisters.md",
+      "XliffHash": "2aeb5b91c3bf1a581b277b384e8979743d31e37b",
+      "TranslationType": 1,
+      "SkeletonFile": "ol-xliffcache\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\e38c165581ca7160f84869d83a3d6d3bedb23861.69f1b7d87ff07b14a2448dbb87c4be997edc3ed5.xml"
+    },
+    "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\UnsupportableFeature.md.0668e2830640e87d8d29d91f91e894f9261557d3.HT": {
+      "SourceFilename": "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\UnsupportableFeature.md",
+      "XliffHash": "0668e2830640e87d8d29d91f91e894f9261557d3",
+      "TranslationType": 1,
+      "SkeletonFile": "ol-xliffcache\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\1ac4797faa4bae1a51a118b49b9a969d4680e02f.3ca31e3d5d506bef075280ffb144ab9145784166.xml"
+    },
+    "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\WhvEmulatorIOAccessInfo.md.d5142e1be17abf37e06515e15f6556b352ed49c0.HT": {
+      "SourceFilename": "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\WhvEmulatorIOAccessInfo.md",
+      "XliffHash": "d5142e1be17abf37e06515e15f6556b352ed49c0",
+      "TranslationType": 1,
+      "SkeletonFile": "ol-xliffcache\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\4c1bb8d8f20fc047a5e5ec0e93366c224730a1c1.7a4b7b75f799c5bc1987821f939286407aeeaa3a.xml"
+    },
+    "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\WhvEmulatorCallbacks.md.485a7f078556af4581521ebcee7b14079adf95ad.HT": {
+      "SourceFilename": "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\WhvEmulatorCallbacks.md",
+      "XliffHash": "485a7f078556af4581521ebcee7b14079adf95ad",
+      "TranslationType": 1,
+      "SkeletonFile": "ol-xliffcache\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\6ac0e9bd7a0ff1ae87bbb4ef8417c9951a3ce962.7d2cf57fa0dcca16ab95fca4f202ddf3fa012535.xml"
+    },
+    "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\MMIOAccessIE.md.16c049a27d421db43aebc37e7ca48bb13fcec943.HT": {
+      "SourceFilename": "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\MMIOAccessIE.md",
+      "XliffHash": "16c049a27d421db43aebc37e7ca48bb13fcec943",
+      "TranslationType": 1,
+      "SkeletonFile": "ol-xliffcache\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\d47292efdd8d5f879ca678f8b2cf5cf0b578cd5c.c7a0668573eaad42de59f4689b2424e3d1fac6b0.xml"
+    },
+    "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\WHvEmulatorDestoryEmulator.md.9b3e6a9ed8f99ebd8c4fafb2c6221edadc501886.HT": {
+      "SourceFilename": "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\WHvEmulatorDestoryEmulator.md",
+      "XliffHash": "9b3e6a9ed8f99ebd8c4fafb2c6221edadc501886",
+      "TranslationType": 1,
+      "SkeletonFile": "ol-xliffcache\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\392374b884916f84275647e8fea3de831ba9e431.889c2e0fdb2ac605464d8077043d31da799c49d7.xml"
+    },
+    "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\MemoryAccess.md.aeb2d835b6a3ebe4ccf972e30d776b5bdc3f8462.HT": {
+      "SourceFilename": "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\MemoryAccess.md",
+      "XliffHash": "aeb2d835b6a3ebe4ccf972e30d776b5bdc3f8462",
+      "TranslationType": 1,
+      "SkeletonFile": "ol-xliffcache\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\570eb911c0f0337f66e2a65cc89f493b49b55810.2a1642be61ac7a41477848407e114260e99aa3f7.xml"
+    },
+    "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\WHvCreateVirtualProcessor.md.f848d9032e572e6d7ff55ac2a5ca707b66497b3d.HT": {
+      "SourceFilename": "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\WHvCreateVirtualProcessor.md",
+      "XliffHash": "f848d9032e572e6d7ff55ac2a5ca707b66497b3d",
+      "TranslationType": 1,
+      "SkeletonFile": "ol-xliffcache\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\d84ddf856579bc782f104d4188b06078719c09e4.640ff41e9abcf52886538fd9e68640b48526d04f.xml"
+    },
+    "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\ExecutionCancelled.md.82ad5f2dcd88de2219fe304cfaabceb4476c638c.HT": {
+      "SourceFilename": "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\ExecutionCancelled.md",
+      "XliffHash": "82ad5f2dcd88de2219fe304cfaabceb4476c638c",
+      "TranslationType": 1,
+      "SkeletonFile": "ol-xliffcache\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\c67c64a979a58133543f717781cb787c635acc32.9c3629c61ed2addc37ce9a523bbb14cdef107442.xml"
+    },
+    "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\CPUIDAccess.md.3bbf578b9a0bcea2199b2b80010171d42d2378c9.HT": {
+      "SourceFilename": "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\CPUIDAccess.md",
+      "XliffHash": "3bbf578b9a0bcea2199b2b80010171d42d2378c9",
+      "TranslationType": 1,
+      "SkeletonFile": "ol-xliffcache\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\0ccdcfa7b6b5a788d4f94dcc5422fbe06255be47.68cfea1dcc1f40b7847a315bacef9bd42a122f70.xml"
+    },
+    "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\WHvSetVirtualProcessorRegisters.md.133bee723303772ba732135a22022ca65a570362.HT": {
+      "SourceFilename": "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\WHvSetVirtualProcessorRegisters.md",
+      "XliffHash": "133bee723303772ba732135a22022ca65a570362",
+      "TranslationType": 1,
+      "SkeletonFile": "ol-xliffcache\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\444cc44c41e170cf4bad6a115ae0568f7eb64d38.35fc39088f1d07ec1dbad27d418f47f7ff61ca65.xml"
+    },
+    "virtualization\\hyper-v-on-windows\\reference\\hypervisor-instruction-emulator.md.e9c64e36235d5fd7d729be2983be31844ead1a00.HT": {
+      "SourceFilename": "virtualization\\hyper-v-on-windows\\reference\\hypervisor-instruction-emulator.md",
+      "XliffHash": "e9c64e36235d5fd7d729be2983be31844ead1a00",
+      "TranslationType": 1,
+      "SkeletonFile": "ol-xliffcache\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\ab4464e593e6ac3c6ab291fcb5e1097f04d344f1.d1735046f5d861333a35cdd05c6964be7c323efd.xml"
     }
   }
 }

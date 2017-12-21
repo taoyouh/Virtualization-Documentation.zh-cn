@@ -1,5 +1,5 @@
 {
-  "LastProcessedCommit": "77a6195318732fa16e7d5be727bdb88f52f6db46",
+  "LastProcessedCommit": "5fe5c30acfc4d5edb28633d30669f616fcc5d59a",
   "LastTranslatedCommit": "21f4320cb76270b953a1d22d857047a2fcf5d4b8",
   "LastConfigHash": "8a1020b7136b784cdc0f8c9eca877ab77b2a9c5f",
   "Items": {
@@ -23012,6 +23012,697 @@
       "HandoffFileCommit": "fc03c445a88dfb05d7566f22fe25c5903e0fb011",
       "HandoffDateTime": "2017-12-20T19:27:38.9890731Z",
       "HandoffXliffHash": "11e8bb49076ab467469b05304ccac9e2b56a2274",
+      "HandoffPriority": ""
+    },
+    "efaa9afa4281740a0b2fd38830a23c997f0dfc7e": {
+      "FileHash": "efaa9afa4281740a0b2fd38830a23c997f0dfc7e",
+      "SourceFileCommit": "5fe5c30acfc4d5edb28633d30669f616fcc5d59a",
+      "SourceFilePath": "virtualization\\hyper-v-on-windows\\reference\\hyper-v-architecture.md",
+      "HandoffReason": 1,
+      "FilePathList": [
+        "virtualization\\hyper-v-on-windows\\reference\\hyper-v-architecture.md"
+      ],
+      "TranslationType": 1,
+      "HandoffFilePath": "ol-handoff\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\hyper-v-architecture.c803b56d1e6abb9bb3965d40510d97387a57067e.zh-cn.xlf",
+      "HandoffFileCommit": "2227eb4f80139d6eadb63c00d8c9206092b23730",
+      "HandoffDateTime": "2017-12-21T00:29:46.8779504Z",
+      "HandoffXliffHash": "5b67dcf77652ae79e0382d964ccf6cdddaa5a4b5",
+      "HandoffPriority": ""
+    },
+    "ab4464e593e6ac3c6ab291fcb5e1097f04d344f1": {
+      "FileHash": "ab4464e593e6ac3c6ab291fcb5e1097f04d344f1",
+      "SourceFileCommit": "5fe5c30acfc4d5edb28633d30669f616fcc5d59a",
+      "SourceFilePath": "virtualization\\hyper-v-on-windows\\reference\\hypervisor-instruction-emulator.md",
+      "HandoffReason": 1,
+      "FilePathList": [
+        "virtualization\\hyper-v-on-windows\\reference\\hypervisor-instruction-emulator.md"
+      ],
+      "TranslationType": 1,
+      "HandoffFilePath": "ol-handoff\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\hypervisor-instruction-emulator.5df49506d152410511b7da70e9f84da4691fb956.zh-cn.xlf",
+      "HandoffFileCommit": "2227eb4f80139d6eadb63c00d8c9206092b23730",
+      "HandoffDateTime": "2017-12-21T00:29:46.8779504Z",
+      "HandoffXliffHash": "e9c64e36235d5fd7d729be2983be31844ead1a00",
+      "HandoffPriority": ""
+    },
+    "a03b6edae911d4407dcf7904bfae548dd402e710": {
+      "FileHash": "a03b6edae911d4407dcf7904bfae548dd402e710",
+      "SourceFileCommit": "5fe5c30acfc4d5edb28633d30669f616fcc5d59a",
+      "SourceFilePath": "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform.md",
+      "HandoffReason": 1,
+      "FilePathList": [
+        "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform.md"
+      ],
+      "TranslationType": 1,
+      "HandoffFilePath": "ol-handoff\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\hypervisor-platform.5484dc7f67ae883286de11f7c3ef73e588564a26.zh-cn.xlf",
+      "HandoffFileCommit": "2227eb4f80139d6eadb63c00d8c9206092b23730",
+      "HandoffDateTime": "2017-12-21T00:29:46.8779504Z",
+      "HandoffXliffHash": "ffc3ef39b9ea7cbffa5af290d78124bfb0008ae7",
+      "HandoffPriority": ""
+    },
+    "0ccdcfa7b6b5a788d4f94dcc5422fbe06255be47": {
+      "FileHash": "0ccdcfa7b6b5a788d4f94dcc5422fbe06255be47",
+      "SourceFileCommit": "5fe5c30acfc4d5edb28633d30669f616fcc5d59a",
+      "SourceFilePath": "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\CPUIDAccess.md",
+      "HandoffReason": 1,
+      "FilePathList": [
+        "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\CPUIDAccess.md"
+      ],
+      "TranslationType": 1,
+      "HandoffFilePath": "ol-handoff\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\CPUIDAccess.b9d564bc7361b6457e77031343e59aff90a3ac62.zh-cn.xlf",
+      "HandoffFileCommit": "2227eb4f80139d6eadb63c00d8c9206092b23730",
+      "HandoffDateTime": "2017-12-21T00:29:46.8779504Z",
+      "HandoffXliffHash": "3bbf578b9a0bcea2199b2b80010171d42d2378c9",
+      "HandoffPriority": ""
+    },
+    "c67c64a979a58133543f717781cb787c635acc32": {
+      "FileHash": "c67c64a979a58133543f717781cb787c635acc32",
+      "SourceFileCommit": "5fe5c30acfc4d5edb28633d30669f616fcc5d59a",
+      "SourceFilePath": "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\ExecutionCancelled.md",
+      "HandoffReason": 1,
+      "FilePathList": [
+        "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\ExecutionCancelled.md"
+      ],
+      "TranslationType": 1,
+      "HandoffFilePath": "ol-handoff\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\ExecutionCancelled.35da1fa3593fb7528a7f8479325f8d86ec2bb19e.zh-cn.xlf",
+      "HandoffFileCommit": "2227eb4f80139d6eadb63c00d8c9206092b23730",
+      "HandoffDateTime": "2017-12-21T00:29:46.8779504Z",
+      "HandoffXliffHash": "82ad5f2dcd88de2219fe304cfaabceb4476c638c",
+      "HandoffPriority": ""
+    },
+    "de29e5c4a90ac3d6d9d7e7f3e6d95f4fdbf56327": {
+      "FileHash": "de29e5c4a90ac3d6d9d7e7f3e6d95f4fdbf56327",
+      "SourceFileCommit": "5fe5c30acfc4d5edb28633d30669f616fcc5d59a",
+      "SourceFilePath": "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\IOPortAccess.md",
+      "HandoffReason": 1,
+      "FilePathList": [
+        "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\IOPortAccess.md"
+      ],
+      "TranslationType": 1,
+      "HandoffFilePath": "ol-handoff\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\IOPortAccess.adbfc746ac582d4c0e7660a1788f7739de4674b2.zh-cn.xlf",
+      "HandoffFileCommit": "2227eb4f80139d6eadb63c00d8c9206092b23730",
+      "HandoffDateTime": "2017-12-21T00:29:46.8779504Z",
+      "HandoffXliffHash": "cf2676c4f01bf831e8dd32be6958efaca8ff4fd2",
+      "HandoffPriority": ""
+    },
+    "72a3c42391256f74aa12ff16fc1da08d6dc9d90b": {
+      "FileHash": "72a3c42391256f74aa12ff16fc1da08d6dc9d90b",
+      "SourceFileCommit": "5fe5c30acfc4d5edb28633d30669f616fcc5d59a",
+      "SourceFilePath": "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\IOPortAccessIE.md",
+      "HandoffReason": 1,
+      "FilePathList": [
+        "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\IOPortAccessIE.md"
+      ],
+      "TranslationType": 1,
+      "HandoffFilePath": "ol-handoff\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\IOPortAccessIE.12e2c2462af2f7959cd9e347f9d28e44a8c18fd2.zh-cn.xlf",
+      "HandoffFileCommit": "2227eb4f80139d6eadb63c00d8c9206092b23730",
+      "HandoffDateTime": "2017-12-21T00:29:46.8779504Z",
+      "HandoffXliffHash": "7a8f4b3d0000c3f0a4e3b3a309a1594e25f3c20b",
+      "HandoffPriority": ""
+    },
+    "570eb911c0f0337f66e2a65cc89f493b49b55810": {
+      "FileHash": "570eb911c0f0337f66e2a65cc89f493b49b55810",
+      "SourceFileCommit": "5fe5c30acfc4d5edb28633d30669f616fcc5d59a",
+      "SourceFilePath": "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\MemoryAccess.md",
+      "HandoffReason": 1,
+      "FilePathList": [
+        "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\MemoryAccess.md"
+      ],
+      "TranslationType": 1,
+      "HandoffFilePath": "ol-handoff\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\MemoryAccess.b2c88ee4ebadea9572d8de3046bf32f90f1969aa.zh-cn.xlf",
+      "HandoffFileCommit": "2227eb4f80139d6eadb63c00d8c9206092b23730",
+      "HandoffDateTime": "2017-12-21T00:29:46.8779504Z",
+      "HandoffXliffHash": "aeb2d835b6a3ebe4ccf972e30d776b5bdc3f8462",
+      "HandoffPriority": ""
+    },
+    "d47292efdd8d5f879ca678f8b2cf5cf0b578cd5c": {
+      "FileHash": "d47292efdd8d5f879ca678f8b2cf5cf0b578cd5c",
+      "SourceFileCommit": "5fe5c30acfc4d5edb28633d30669f616fcc5d59a",
+      "SourceFilePath": "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\MMIOAccessIE.md",
+      "HandoffReason": 1,
+      "FilePathList": [
+        "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\MMIOAccessIE.md"
+      ],
+      "TranslationType": 1,
+      "HandoffFilePath": "ol-handoff\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\MMIOAccessIE.e8db15a233f74ef545e41788ed7efd67ff5c73a8.zh-cn.xlf",
+      "HandoffFileCommit": "2227eb4f80139d6eadb63c00d8c9206092b23730",
+      "HandoffDateTime": "2017-12-21T00:29:46.8779504Z",
+      "HandoffXliffHash": "16c049a27d421db43aebc37e7ca48bb13fcec943",
+      "HandoffPriority": ""
+    },
+    "c9fb77a06da775df83fcb7ff66cf2dd0d78de903": {
+      "FileHash": "c9fb77a06da775df83fcb7ff66cf2dd0d78de903",
+      "SourceFileCommit": "5fe5c30acfc4d5edb28633d30669f616fcc5d59a",
+      "SourceFilePath": "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\MSRAccess.md",
+      "HandoffReason": 1,
+      "FilePathList": [
+        "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\MSRAccess.md"
+      ],
+      "TranslationType": 1,
+      "HandoffFilePath": "ol-handoff\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\MSRAccess.79dc91f015ce762d71e9e5f212afae712c8df330.zh-cn.xlf",
+      "HandoffFileCommit": "2227eb4f80139d6eadb63c00d8c9206092b23730",
+      "HandoffDateTime": "2017-12-21T00:29:46.8779504Z",
+      "HandoffXliffHash": "c9af488acffae4557350c7c8c6ae1cdac6f3e688",
+      "HandoffPriority": ""
+    },
+    "90f168b9d08bf4ba1b97ab00903ff5e2ffee8505": {
+      "FileHash": "90f168b9d08bf4ba1b97ab00903ff5e2ffee8505",
+      "SourceFileCommit": "5fe5c30acfc4d5edb28633d30669f616fcc5d59a",
+      "SourceFilePath": "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\UnrecoverableException.md",
+      "HandoffReason": 1,
+      "FilePathList": [
+        "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\UnrecoverableException.md"
+      ],
+      "TranslationType": 1,
+      "HandoffFilePath": "ol-handoff\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\UnrecoverableException.efa94f734c9f56a1ab289ee850ff3d28ee2132dc.zh-cn.xlf",
+      "HandoffFileCommit": "2227eb4f80139d6eadb63c00d8c9206092b23730",
+      "HandoffDateTime": "2017-12-21T00:29:46.8779504Z",
+      "HandoffXliffHash": "ecdbd156004174680aa377e41ba1c8b69ef6b580",
+      "HandoffPriority": ""
+    },
+    "1ac4797faa4bae1a51a118b49b9a969d4680e02f": {
+      "FileHash": "1ac4797faa4bae1a51a118b49b9a969d4680e02f",
+      "SourceFileCommit": "5fe5c30acfc4d5edb28633d30669f616fcc5d59a",
+      "SourceFilePath": "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\UnsupportableFeature.md",
+      "HandoffReason": 1,
+      "FilePathList": [
+        "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\UnsupportableFeature.md"
+      ],
+      "TranslationType": 1,
+      "HandoffFilePath": "ol-handoff\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\UnsupportableFeature.e2cf2ec1a06c38238816b81cb94ace0efa7aaacd.zh-cn.xlf",
+      "HandoffFileCommit": "2227eb4f80139d6eadb63c00d8c9206092b23730",
+      "HandoffDateTime": "2017-12-21T00:29:46.8779504Z",
+      "HandoffXliffHash": "0668e2830640e87d8d29d91f91e894f9261557d3",
+      "HandoffPriority": ""
+    },
+    "3aed63d78d15aa25130319c92ba6306bdce44a2d": {
+      "FileHash": "3aed63d78d15aa25130319c92ba6306bdce44a2d",
+      "SourceFileCommit": "5fe5c30acfc4d5edb28633d30669f616fcc5d59a",
+      "SourceFilePath": "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\VirtualProcessorException.md",
+      "HandoffReason": 1,
+      "FilePathList": [
+        "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\VirtualProcessorException.md"
+      ],
+      "TranslationType": 1,
+      "HandoffFilePath": "ol-handoff\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\VirtualProcessorException.508af329fb7dd1ff6c300988c9474e44400546a8.zh-cn.xlf",
+      "HandoffFileCommit": "2227eb4f80139d6eadb63c00d8c9206092b23730",
+      "HandoffDateTime": "2017-12-21T00:29:46.8779504Z",
+      "HandoffXliffHash": "4479f1c848f0502eb78c93e70c7440b682f3d9f3",
+      "HandoffPriority": ""
+    },
+    "57ef55338e8a2f04746d82a07c62501b6d8d3d61": {
+      "FileHash": "57ef55338e8a2f04746d82a07c62501b6d8d3d61",
+      "SourceFileCommit": "5fe5c30acfc4d5edb28633d30669f616fcc5d59a",
+      "SourceFilePath": "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\WHvCancelRunVirtualProcessor.md",
+      "HandoffReason": 1,
+      "FilePathList": [
+        "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\WHvCancelRunVirtualProcessor.md"
+      ],
+      "TranslationType": 1,
+      "HandoffFilePath": "ol-handoff\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\WHvCancelRunVirtualProcessor.3ea77ea25b80dbfbc8e00218f7cc7b730b40ab7d.zh-cn.xlf",
+      "HandoffFileCommit": "2227eb4f80139d6eadb63c00d8c9206092b23730",
+      "HandoffDateTime": "2017-12-21T00:29:46.8779504Z",
+      "HandoffXliffHash": "320885a3ddd3e2863e17316d84bbaeb58fcba7af",
+      "HandoffPriority": ""
+    },
+    "734137dc901c2df978a1e898f14112182c542176": {
+      "FileHash": "734137dc901c2df978a1e898f14112182c542176",
+      "SourceFileCommit": "5fe5c30acfc4d5edb28633d30669f616fcc5d59a",
+      "SourceFilePath": "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\WHvCreatePartition.md",
+      "HandoffReason": 1,
+      "FilePathList": [
+        "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\WHvCreatePartition.md"
+      ],
+      "TranslationType": 1,
+      "HandoffFilePath": "ol-handoff\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\WHvCreatePartition.b69a36f7d5295c2a47ac0847f7eddc2ccc2d9d27.zh-cn.xlf",
+      "HandoffFileCommit": "2227eb4f80139d6eadb63c00d8c9206092b23730",
+      "HandoffDateTime": "2017-12-21T00:29:46.8779504Z",
+      "HandoffXliffHash": "c098b8ef8ca390526cf4d63dc77db5cb689bfb2d",
+      "HandoffPriority": ""
+    },
+    "d84ddf856579bc782f104d4188b06078719c09e4": {
+      "FileHash": "d84ddf856579bc782f104d4188b06078719c09e4",
+      "SourceFileCommit": "5fe5c30acfc4d5edb28633d30669f616fcc5d59a",
+      "SourceFilePath": "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\WHvCreateVirtualProcessor.md",
+      "HandoffReason": 1,
+      "FilePathList": [
+        "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\WHvCreateVirtualProcessor.md"
+      ],
+      "TranslationType": 1,
+      "HandoffFilePath": "ol-handoff\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\WHvCreateVirtualProcessor.08a80873680f2187086c5f78cb7a633563d6c2a6.zh-cn.xlf",
+      "HandoffFileCommit": "2227eb4f80139d6eadb63c00d8c9206092b23730",
+      "HandoffDateTime": "2017-12-21T00:29:46.8779504Z",
+      "HandoffXliffHash": "f848d9032e572e6d7ff55ac2a5ca707b66497b3d",
+      "HandoffPriority": ""
+    },
+    "20442b724924070ece616e820c5997f19a7b1fc0": {
+      "FileHash": "20442b724924070ece616e820c5997f19a7b1fc0",
+      "SourceFileCommit": "5fe5c30acfc4d5edb28633d30669f616fcc5d59a",
+      "SourceFilePath": "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\WHvDeletePartition.md",
+      "HandoffReason": 1,
+      "FilePathList": [
+        "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\WHvDeletePartition.md"
+      ],
+      "TranslationType": 1,
+      "HandoffFilePath": "ol-handoff\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\WHvDeletePartition.88cf813090d30ffff3c88b798309a208ea4e0b90.zh-cn.xlf",
+      "HandoffFileCommit": "2227eb4f80139d6eadb63c00d8c9206092b23730",
+      "HandoffDateTime": "2017-12-21T00:29:46.8779504Z",
+      "HandoffXliffHash": "6d6ad6633194d5e03eb713fcb98a29dc88d5439f",
+      "HandoffPriority": ""
+    },
+    "ee7b0592943737a8e2ca5c17ac7daea85d84b0bd": {
+      "FileHash": "ee7b0592943737a8e2ca5c17ac7daea85d84b0bd",
+      "SourceFileCommit": "5fe5c30acfc4d5edb28633d30669f616fcc5d59a",
+      "SourceFilePath": "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\WHvDeleteVirtualProcessor.md",
+      "HandoffReason": 1,
+      "FilePathList": [
+        "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\WHvDeleteVirtualProcessor.md"
+      ],
+      "TranslationType": 1,
+      "HandoffFilePath": "ol-handoff\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\WHvDeleteVirtualProcessor.c4e8638c3bddb9263762fcffe5c54c190387afbc.zh-cn.xlf",
+      "HandoffFileCommit": "2227eb4f80139d6eadb63c00d8c9206092b23730",
+      "HandoffDateTime": "2017-12-21T00:29:46.8779504Z",
+      "HandoffXliffHash": "18ccc0c82be4994175943660a90faf779f2b5bc8",
+      "HandoffPriority": ""
+    },
+    "6ac0e9bd7a0ff1ae87bbb4ef8417c9951a3ce962": {
+      "FileHash": "6ac0e9bd7a0ff1ae87bbb4ef8417c9951a3ce962",
+      "SourceFileCommit": "5fe5c30acfc4d5edb28633d30669f616fcc5d59a",
+      "SourceFilePath": "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\WhvEmulatorCallbacks.md",
+      "HandoffReason": 1,
+      "FilePathList": [
+        "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\WhvEmulatorCallbacks.md"
+      ],
+      "TranslationType": 1,
+      "HandoffFilePath": "ol-handoff\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\WhvEmulatorCallbacks.2d7a52428492f32687df08350bc48744cb9ab4df.zh-cn.xlf",
+      "HandoffFileCommit": "2227eb4f80139d6eadb63c00d8c9206092b23730",
+      "HandoffDateTime": "2017-12-21T00:29:46.8779504Z",
+      "HandoffXliffHash": "485a7f078556af4581521ebcee7b14079adf95ad",
+      "HandoffPriority": ""
+    },
+    "1841711b6cc018cb6649f7ffaf3a40e37eb6d127": {
+      "FileHash": "1841711b6cc018cb6649f7ffaf3a40e37eb6d127",
+      "SourceFileCommit": "5fe5c30acfc4d5edb28633d30669f616fcc5d59a",
+      "SourceFilePath": "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\WHvEmulatorCreateEmulator.md",
+      "HandoffReason": 1,
+      "FilePathList": [
+        "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\WHvEmulatorCreateEmulator.md"
+      ],
+      "TranslationType": 1,
+      "HandoffFilePath": "ol-handoff\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\WHvEmulatorCreateEmulator.4f7d246869137064dce7b0608704c232378f1f2e.zh-cn.xlf",
+      "HandoffFileCommit": "2227eb4f80139d6eadb63c00d8c9206092b23730",
+      "HandoffDateTime": "2017-12-21T00:29:46.8779504Z",
+      "HandoffXliffHash": "84f8d80b230d4f76c1ebd13261b5f25435808c54",
+      "HandoffPriority": ""
+    },
+    "392374b884916f84275647e8fea3de831ba9e431": {
+      "FileHash": "392374b884916f84275647e8fea3de831ba9e431",
+      "SourceFileCommit": "5fe5c30acfc4d5edb28633d30669f616fcc5d59a",
+      "SourceFilePath": "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\WHvEmulatorDestoryEmulator.md",
+      "HandoffReason": 1,
+      "FilePathList": [
+        "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\WHvEmulatorDestoryEmulator.md"
+      ],
+      "TranslationType": 1,
+      "HandoffFilePath": "ol-handoff\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\WHvEmulatorDestoryEmulator.4ea58801033661fa1e15c92064a43c157efd61f0.zh-cn.xlf",
+      "HandoffFileCommit": "2227eb4f80139d6eadb63c00d8c9206092b23730",
+      "HandoffDateTime": "2017-12-21T00:29:46.8779504Z",
+      "HandoffXliffHash": "9b3e6a9ed8f99ebd8c4fafb2c6221edadc501886",
+      "HandoffPriority": ""
+    },
+    "c35f1b458e3732f4f014097de04fed32794f2bd1": {
+      "FileHash": "c35f1b458e3732f4f014097de04fed32794f2bd1",
+      "SourceFileCommit": "5fe5c30acfc4d5edb28633d30669f616fcc5d59a",
+      "SourceFilePath": "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\WhvEmulatorGetVirtualProcessorRegistersCallback.md",
+      "HandoffReason": 1,
+      "FilePathList": [
+        "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\WhvEmulatorGetVirtualProcessorRegistersCallback.md"
+      ],
+      "TranslationType": 1,
+      "HandoffFilePath": "ol-handoff\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\WhvEmulatorGetVirtualProcessorRegistersCallback.3d39dbb97ece77151fa4a39288b9723124fb0444.zh-cn.xlf",
+      "HandoffFileCommit": "2227eb4f80139d6eadb63c00d8c9206092b23730",
+      "HandoffDateTime": "2017-12-21T00:29:46.8779504Z",
+      "HandoffXliffHash": "22d5c37a24af70762f9dcfaabb9e0b6da6194035",
+      "HandoffPriority": ""
+    },
+    "4c1bb8d8f20fc047a5e5ec0e93366c224730a1c1": {
+      "FileHash": "4c1bb8d8f20fc047a5e5ec0e93366c224730a1c1",
+      "SourceFileCommit": "5fe5c30acfc4d5edb28633d30669f616fcc5d59a",
+      "SourceFilePath": "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\WhvEmulatorIOAccessInfo.md",
+      "HandoffReason": 1,
+      "FilePathList": [
+        "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\WhvEmulatorIOAccessInfo.md"
+      ],
+      "TranslationType": 1,
+      "HandoffFilePath": "ol-handoff\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\WhvEmulatorIOAccessInfo.bc1b94a306f33b52e29e4156a75eddd72f19719b.zh-cn.xlf",
+      "HandoffFileCommit": "2227eb4f80139d6eadb63c00d8c9206092b23730",
+      "HandoffDateTime": "2017-12-21T00:29:46.8779504Z",
+      "HandoffXliffHash": "d5142e1be17abf37e06515e15f6556b352ed49c0",
+      "HandoffPriority": ""
+    },
+    "031645705b9815006787278da5a19d87a43a20c0": {
+      "FileHash": "031645705b9815006787278da5a19d87a43a20c0",
+      "SourceFileCommit": "5fe5c30acfc4d5edb28633d30669f616fcc5d59a",
+      "SourceFilePath": "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\WhvEmulatorIOPortCallback.md",
+      "HandoffReason": 1,
+      "FilePathList": [
+        "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\WhvEmulatorIOPortCallback.md"
+      ],
+      "TranslationType": 1,
+      "HandoffFilePath": "ol-handoff\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\WhvEmulatorIOPortCallback.04e923cfde7948cde60718a88edfb9168f9bb619.zh-cn.xlf",
+      "HandoffFileCommit": "2227eb4f80139d6eadb63c00d8c9206092b23730",
+      "HandoffDateTime": "2017-12-21T00:29:46.8779504Z",
+      "HandoffXliffHash": "1008443d29db01f660482207ff71c58f9ee9fe2e",
+      "HandoffPriority": ""
+    },
+    "f146198128f5183a6346f86ea510367d9630d98a": {
+      "FileHash": "f146198128f5183a6346f86ea510367d9630d98a",
+      "SourceFileCommit": "5fe5c30acfc4d5edb28633d30669f616fcc5d59a",
+      "SourceFilePath": "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\WhvEmulatorMemoryAccessInfo.md",
+      "HandoffReason": 1,
+      "FilePathList": [
+        "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\WhvEmulatorMemoryAccessInfo.md"
+      ],
+      "TranslationType": 1,
+      "HandoffFilePath": "ol-handoff\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\WhvEmulatorMemoryAccessInfo.170a67b85717cac965b0c865d5dfbb168e5edcde.zh-cn.xlf",
+      "HandoffFileCommit": "2227eb4f80139d6eadb63c00d8c9206092b23730",
+      "HandoffDateTime": "2017-12-21T00:29:46.8779504Z",
+      "HandoffXliffHash": "7ee3805304b540751ad625e357765045df15fc2f",
+      "HandoffPriority": ""
+    },
+    "256dcd69a59409f2c63f0116c02e542401b6f5e3": {
+      "FileHash": "256dcd69a59409f2c63f0116c02e542401b6f5e3",
+      "SourceFileCommit": "5fe5c30acfc4d5edb28633d30669f616fcc5d59a",
+      "SourceFilePath": "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\WhvEmulatorMemoryCallback.md",
+      "HandoffReason": 1,
+      "FilePathList": [
+        "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\WhvEmulatorMemoryCallback.md"
+      ],
+      "TranslationType": 1,
+      "HandoffFilePath": "ol-handoff\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\WhvEmulatorMemoryCallback.ea283787b6278dafdca9702d612e69dc2e30e7aa.zh-cn.xlf",
+      "HandoffFileCommit": "2227eb4f80139d6eadb63c00d8c9206092b23730",
+      "HandoffDateTime": "2017-12-21T00:29:46.8779504Z",
+      "HandoffXliffHash": "cc78cd6210e97f67d064e9c8275dfd5dbe07719d",
+      "HandoffPriority": ""
+    },
+    "7c06af1767b17e62310dcdacbd7ea033c54adad6": {
+      "FileHash": "7c06af1767b17e62310dcdacbd7ea033c54adad6",
+      "SourceFileCommit": "5fe5c30acfc4d5edb28633d30669f616fcc5d59a",
+      "SourceFilePath": "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\WhvEmulatorSetVirtualProcessorRegistersCallback.md",
+      "HandoffReason": 1,
+      "FilePathList": [
+        "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\WhvEmulatorSetVirtualProcessorRegistersCallback.md"
+      ],
+      "TranslationType": 1,
+      "HandoffFilePath": "ol-handoff\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\WhvEmulatorSetVirtualProcessorRegistersCallback.635572593df0e6daf2e40a3e5bca3874019a8d2a.zh-cn.xlf",
+      "HandoffFileCommit": "2227eb4f80139d6eadb63c00d8c9206092b23730",
+      "HandoffDateTime": "2017-12-21T00:29:46.8779504Z",
+      "HandoffXliffHash": "ec0803ab148fd993e1f3fa879016af0a5fa05cb9",
+      "HandoffPriority": ""
+    },
+    "f1bf98d8a41338dec9aeb33eeb24357cebb142ee": {
+      "FileHash": "f1bf98d8a41338dec9aeb33eeb24357cebb142ee",
+      "SourceFileCommit": "5fe5c30acfc4d5edb28633d30669f616fcc5d59a",
+      "SourceFilePath": "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\WhvEmulatorStatus.md",
+      "HandoffReason": 1,
+      "FilePathList": [
+        "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\WhvEmulatorStatus.md"
+      ],
+      "TranslationType": 1,
+      "HandoffFilePath": "ol-handoff\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\WhvEmulatorStatus.78f3686f2d5bbc4e5e6096b2aec622c27af55e36.zh-cn.xlf",
+      "HandoffFileCommit": "2227eb4f80139d6eadb63c00d8c9206092b23730",
+      "HandoffDateTime": "2017-12-21T00:29:46.8779504Z",
+      "HandoffXliffHash": "9ee64fc36f290749585ab253454bea138a8ce8d5",
+      "HandoffPriority": ""
+    },
+    "6d8e8fe870878d058c7506aa815a1be562e9c425": {
+      "FileHash": "6d8e8fe870878d058c7506aa815a1be562e9c425",
+      "SourceFileCommit": "5fe5c30acfc4d5edb28633d30669f616fcc5d59a",
+      "SourceFilePath": "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\WHvEmulatorTranslateGVAPageCallback.md",
+      "HandoffReason": 1,
+      "FilePathList": [
+        "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\WHvEmulatorTranslateGVAPageCallback.md"
+      ],
+      "TranslationType": 1,
+      "HandoffFilePath": "ol-handoff\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\WHvEmulatorTranslateGVAPageCallback.9726cacb975d0405be2995128328f081fcb329ca.zh-cn.xlf",
+      "HandoffFileCommit": "2227eb4f80139d6eadb63c00d8c9206092b23730",
+      "HandoffDateTime": "2017-12-21T00:29:46.8779504Z",
+      "HandoffXliffHash": "2c6a4ae1628071db4792c9f8f65efa26f606b0e6",
+      "HandoffPriority": ""
+    },
+    "07f39df56b29e2830a7b396ef262a807d910028a": {
+      "FileHash": "07f39df56b29e2830a7b396ef262a807d910028a",
+      "SourceFileCommit": "5fe5c30acfc4d5edb28633d30669f616fcc5d59a",
+      "SourceFilePath": "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\WHvEmulatorTryEmulation.md",
+      "HandoffReason": 1,
+      "FilePathList": [
+        "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\WHvEmulatorTryEmulation.md"
+      ],
+      "TranslationType": 1,
+      "HandoffFilePath": "ol-handoff\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\WHvEmulatorTryEmulation.4990a630df067a664981c7b011866b807aa76696.zh-cn.xlf",
+      "HandoffFileCommit": "2227eb4f80139d6eadb63c00d8c9206092b23730",
+      "HandoffDateTime": "2017-12-21T00:29:46.8779504Z",
+      "HandoffXliffHash": "f4aa4fdb1505c64d0472244bff25773a2680ebae",
+      "HandoffPriority": ""
+    },
+    "9c1a3d111d5fadc75553c4488514e7930fabc7e9": {
+      "FileHash": "9c1a3d111d5fadc75553c4488514e7930fabc7e9",
+      "SourceFileCommit": "5fe5c30acfc4d5edb28633d30669f616fcc5d59a",
+      "SourceFilePath": "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\WHvExitContextDataTypes.md",
+      "HandoffReason": 1,
+      "FilePathList": [
+        "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\WHvExitContextDataTypes.md"
+      ],
+      "TranslationType": 1,
+      "HandoffFilePath": "ol-handoff\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\WHvExitContextDataTypes.c5880223be20b70b312787234251e9d6c9787d96.zh-cn.xlf",
+      "HandoffFileCommit": "2227eb4f80139d6eadb63c00d8c9206092b23730",
+      "HandoffDateTime": "2017-12-21T00:29:46.8779504Z",
+      "HandoffXliffHash": "b92c76712a146ddca253cfc32a3d812572af1d70",
+      "HandoffPriority": ""
+    },
+    "2e2357961999aefcf2a9d3075662e027c4b6681f": {
+      "FileHash": "2e2357961999aefcf2a9d3075662e027c4b6681f",
+      "SourceFileCommit": "5fe5c30acfc4d5edb28633d30669f616fcc5d59a",
+      "SourceFilePath": "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\WHvGetCapability.md",
+      "HandoffReason": 1,
+      "FilePathList": [
+        "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\WHvGetCapability.md"
+      ],
+      "TranslationType": 1,
+      "HandoffFilePath": "ol-handoff\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\WHvGetCapability.9df32bfa99f6a1b83eb0a788f18be61b9c1778a5.zh-cn.xlf",
+      "HandoffFileCommit": "2227eb4f80139d6eadb63c00d8c9206092b23730",
+      "HandoffDateTime": "2017-12-21T00:29:46.8779504Z",
+      "HandoffXliffHash": "6b91e97ee8767c69f4a858d065d52bf43d063358",
+      "HandoffPriority": ""
+    },
+    "b6bc516f8fe03d735ad5836fd02456eb89b4369c": {
+      "FileHash": "b6bc516f8fe03d735ad5836fd02456eb89b4369c",
+      "SourceFileCommit": "5fe5c30acfc4d5edb28633d30669f616fcc5d59a",
+      "SourceFilePath": "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\WHvGetPartitionProperty.md",
+      "HandoffReason": 1,
+      "FilePathList": [
+        "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\WHvGetPartitionProperty.md"
+      ],
+      "TranslationType": 1,
+      "HandoffFilePath": "ol-handoff\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\WHvGetPartitionProperty.a1ebf72986e768a6e6887832176cdfb462c7768f.zh-cn.xlf",
+      "HandoffFileCommit": "2227eb4f80139d6eadb63c00d8c9206092b23730",
+      "HandoffDateTime": "2017-12-21T00:29:46.8779504Z",
+      "HandoffXliffHash": "2a5e9187b1b7b8fb26da6150f7c3df984b768ef8",
+      "HandoffPriority": ""
+    },
+    "9b7f161845352372d5b807c97a6d3eb745911ad9": {
+      "FileHash": "9b7f161845352372d5b807c97a6d3eb745911ad9",
+      "SourceFileCommit": "5fe5c30acfc4d5edb28633d30669f616fcc5d59a",
+      "SourceFilePath": "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\WHvGetRunExitContextSize.md",
+      "HandoffReason": 1,
+      "FilePathList": [
+        "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\WHvGetRunExitContextSize.md"
+      ],
+      "TranslationType": 1,
+      "HandoffFilePath": "ol-handoff\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\WHvGetRunExitContextSize.60eb2da5ea888dc003568bf5d35e115d6979bd1a.zh-cn.xlf",
+      "HandoffFileCommit": "2227eb4f80139d6eadb63c00d8c9206092b23730",
+      "HandoffDateTime": "2017-12-21T00:29:46.8623243Z",
+      "HandoffXliffHash": "ef79351f9ee4114c12c1ea42d2e07c91169932cd",
+      "HandoffPriority": ""
+    },
+    "e38c165581ca7160f84869d83a3d6d3bedb23861": {
+      "FileHash": "e38c165581ca7160f84869d83a3d6d3bedb23861",
+      "SourceFileCommit": "5fe5c30acfc4d5edb28633d30669f616fcc5d59a",
+      "SourceFilePath": "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\WHvGetVirtualProcessorRegisters.md",
+      "HandoffReason": 1,
+      "FilePathList": [
+        "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\WHvGetVirtualProcessorRegisters.md"
+      ],
+      "TranslationType": 1,
+      "HandoffFilePath": "ol-handoff\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\WHvGetVirtualProcessorRegisters.ff8da3b6fee7572da57e3d0a710f4ebc923206e0.zh-cn.xlf",
+      "HandoffFileCommit": "2227eb4f80139d6eadb63c00d8c9206092b23730",
+      "HandoffDateTime": "2017-12-21T00:29:46.8779504Z",
+      "HandoffXliffHash": "2aeb5b91c3bf1a581b277b384e8979743d31e37b",
+      "HandoffPriority": ""
+    },
+    "1242eaffc5f59a8fd2a7ea24a9efda55f5741826": {
+      "FileHash": "1242eaffc5f59a8fd2a7ea24a9efda55f5741826",
+      "SourceFileCommit": "5fe5c30acfc4d5edb28633d30669f616fcc5d59a",
+      "SourceFilePath": "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\WHvMapGpaRange.md",
+      "HandoffReason": 1,
+      "FilePathList": [
+        "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\WHvMapGpaRange.md"
+      ],
+      "TranslationType": 1,
+      "HandoffFilePath": "ol-handoff\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\WHvMapGpaRange.cd53e00704f8874714090421ca7566c7caa7dcb0.zh-cn.xlf",
+      "HandoffFileCommit": "2227eb4f80139d6eadb63c00d8c9206092b23730",
+      "HandoffDateTime": "2017-12-21T00:29:46.8779504Z",
+      "HandoffXliffHash": "06d0c711071a0e36db202fd4d9e7f1cc0db3d9bc",
+      "HandoffPriority": ""
+    },
+    "3570ff197d3b8e3db0455484a536abd5ee3e5c42": {
+      "FileHash": "3570ff197d3b8e3db0455484a536abd5ee3e5c42",
+      "SourceFileCommit": "5fe5c30acfc4d5edb28633d30669f616fcc5d59a",
+      "SourceFilePath": "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\WHvPartitionPropertyDataTypes.md",
+      "HandoffReason": 1,
+      "FilePathList": [
+        "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\WHvPartitionPropertyDataTypes.md"
+      ],
+      "TranslationType": 1,
+      "HandoffFilePath": "ol-handoff\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\WHvPartitionPropertyDataTypes.673d4d487d5f06b44d02bfc9acf9b8c02cf132a5.zh-cn.xlf",
+      "HandoffFileCommit": "2227eb4f80139d6eadb63c00d8c9206092b23730",
+      "HandoffDateTime": "2017-12-21T00:29:46.8779504Z",
+      "HandoffXliffHash": "54beaf10b3899530969a3eff937dfd176722a2cd",
+      "HandoffPriority": ""
+    },
+    "93a76e56d40f32479b25ffbb8a31ceac348e5063": {
+      "FileHash": "93a76e56d40f32479b25ffbb8a31ceac348e5063",
+      "SourceFileCommit": "5fe5c30acfc4d5edb28633d30669f616fcc5d59a",
+      "SourceFilePath": "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\WHvRunVirtualProcessor.md",
+      "HandoffReason": 1,
+      "FilePathList": [
+        "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\WHvRunVirtualProcessor.md"
+      ],
+      "TranslationType": 1,
+      "HandoffFilePath": "ol-handoff\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\WHvRunVirtualProcessor.b3408f7fda7b840cbf718def16c5e07dab484d9f.zh-cn.xlf",
+      "HandoffFileCommit": "2227eb4f80139d6eadb63c00d8c9206092b23730",
+      "HandoffDateTime": "2017-12-21T00:29:46.8779504Z",
+      "HandoffXliffHash": "a0f90e05175a79a68e0ea40d65dc5e27be93f09f",
+      "HandoffPriority": ""
+    },
+    "76dc1c125a72b4b491a00084dc338ded95be9eb9": {
+      "FileHash": "76dc1c125a72b4b491a00084dc338ded95be9eb9",
+      "SourceFileCommit": "5fe5c30acfc4d5edb28633d30669f616fcc5d59a",
+      "SourceFilePath": "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\WHvSetPartitionProperty.md",
+      "HandoffReason": 1,
+      "FilePathList": [
+        "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\WHvSetPartitionProperty.md"
+      ],
+      "TranslationType": 1,
+      "HandoffFilePath": "ol-handoff\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\WHvSetPartitionProperty.88a30191f54011ad64744e12b290ff6f9e25730f.zh-cn.xlf",
+      "HandoffFileCommit": "2227eb4f80139d6eadb63c00d8c9206092b23730",
+      "HandoffDateTime": "2017-12-21T00:29:46.8779504Z",
+      "HandoffXliffHash": "c054849e4e412fb861f065222fdb0e7574564339",
+      "HandoffPriority": ""
+    },
+    "31969971f15c1d18f6abcc6d8746864faec5e287": {
+      "FileHash": "31969971f15c1d18f6abcc6d8746864faec5e287",
+      "SourceFileCommit": "5fe5c30acfc4d5edb28633d30669f616fcc5d59a",
+      "SourceFilePath": "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\WHvSetupPartition.md",
+      "HandoffReason": 1,
+      "FilePathList": [
+        "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\WHvSetupPartition.md"
+      ],
+      "TranslationType": 1,
+      "HandoffFilePath": "ol-handoff\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\WHvSetupPartition.7eee879b88783cdd1239ec7457d585060c737b5b.zh-cn.xlf",
+      "HandoffFileCommit": "2227eb4f80139d6eadb63c00d8c9206092b23730",
+      "HandoffDateTime": "2017-12-21T00:29:46.8779504Z",
+      "HandoffXliffHash": "34a48c87ebc0902eb13e29958508c526e1a8ac14",
+      "HandoffPriority": ""
+    },
+    "444cc44c41e170cf4bad6a115ae0568f7eb64d38": {
+      "FileHash": "444cc44c41e170cf4bad6a115ae0568f7eb64d38",
+      "SourceFileCommit": "5fe5c30acfc4d5edb28633d30669f616fcc5d59a",
+      "SourceFilePath": "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\WHvSetVirtualProcessorRegisters.md",
+      "HandoffReason": 1,
+      "FilePathList": [
+        "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\WHvSetVirtualProcessorRegisters.md"
+      ],
+      "TranslationType": 1,
+      "HandoffFilePath": "ol-handoff\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\WHvSetVirtualProcessorRegisters.75c37f025ca214b63398f7aa1c5773a78ead46d0.zh-cn.xlf",
+      "HandoffFileCommit": "2227eb4f80139d6eadb63c00d8c9206092b23730",
+      "HandoffDateTime": "2017-12-21T00:29:46.8779504Z",
+      "HandoffXliffHash": "133bee723303772ba732135a22022ca65a570362",
+      "HandoffPriority": ""
+    },
+    "979528e44d342d6e811288cbe2efb1bd769e0646": {
+      "FileHash": "979528e44d342d6e811288cbe2efb1bd769e0646",
+      "SourceFileCommit": "5fe5c30acfc4d5edb28633d30669f616fcc5d59a",
+      "SourceFilePath": "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\WHvTranslateGva.md",
+      "HandoffReason": 1,
+      "FilePathList": [
+        "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\WHvTranslateGva.md"
+      ],
+      "TranslationType": 1,
+      "HandoffFilePath": "ol-handoff\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\WHvTranslateGva.fbef79d771b078155f86904651e41735e1e4a3e9.zh-cn.xlf",
+      "HandoffFileCommit": "2227eb4f80139d6eadb63c00d8c9206092b23730",
+      "HandoffDateTime": "2017-12-21T00:29:46.8779504Z",
+      "HandoffXliffHash": "2008f6795c6a73391dccfaf997822fb36a056d42",
+      "HandoffPriority": ""
+    },
+    "014881459cd29ef92e0e4593413cc165378c8816": {
+      "FileHash": "014881459cd29ef92e0e4593413cc165378c8816",
+      "SourceFileCommit": "5fe5c30acfc4d5edb28633d30669f616fcc5d59a",
+      "SourceFilePath": "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\WHvUnmapGpaRange.md",
+      "HandoffReason": 1,
+      "FilePathList": [
+        "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\WHvUnmapGpaRange.md"
+      ],
+      "TranslationType": 1,
+      "HandoffFilePath": "ol-handoff\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\WHvUnmapGpaRange.389308aa8b853647292d82921168165ea331aadd.zh-cn.xlf",
+      "HandoffFileCommit": "2227eb4f80139d6eadb63c00d8c9206092b23730",
+      "HandoffDateTime": "2017-12-21T00:29:46.8779504Z",
+      "HandoffXliffHash": "deeb79bb6070996165d78a9eca4dc6997976679e",
+      "HandoffPriority": ""
+    },
+    "873eaaf95c1c23944566d0b7c509df9780246feb": {
+      "FileHash": "873eaaf95c1c23944566d0b7c509df9780246feb",
+      "SourceFileCommit": "5fe5c30acfc4d5edb28633d30669f616fcc5d59a",
+      "SourceFilePath": "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\WHvVirtualProcessorDataTypes.md",
+      "HandoffReason": 1,
+      "FilePathList": [
+        "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\WHvVirtualProcessorDataTypes.md"
+      ],
+      "TranslationType": 1,
+      "HandoffFilePath": "ol-handoff\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\WHvVirtualProcessorDataTypes.a40d24716a60064af2f77e468d321d9e7ea734cd.zh-cn.xlf",
+      "HandoffFileCommit": "2227eb4f80139d6eadb63c00d8c9206092b23730",
+      "HandoffDateTime": "2017-12-21T00:29:46.8623243Z",
+      "HandoffXliffHash": "bf99b2c95684f4022dfb29392616b589124fc5ca",
+      "HandoffPriority": ""
+    },
+    "5cb35bba8638fa288a9367c5364bffdd70290244": {
+      "FileHash": "5cb35bba8638fa288a9367c5364bffdd70290244",
+      "SourceFileCommit": "5fe5c30acfc4d5edb28633d30669f616fcc5d59a",
+      "SourceFilePath": "virtualization\\hyper-v-on-windows\\TOC.md",
+      "HandoffReason": 1,
+      "FilePathList": [
+        "virtualization\\hyper-v-on-windows\\TOC.md"
+      ],
+      "TranslationType": 1,
+      "HandoffFilePath": "ol-handoff\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\TOC.31a2913ccfd49bd5aec82fa8274f4b81c18f1fd7.zh-cn.xlf",
+      "HandoffFileCommit": "2227eb4f80139d6eadb63c00d8c9206092b23730",
+      "HandoffDateTime": "2017-12-21T00:29:46.8779504Z",
+      "HandoffXliffHash": "78556f662678305139bc04c17db4fc14d8f8283e",
+      "HandoffPriority": ""
+    },
+    "01b9c2febb9f098c7981599894e488b946857900": {
+      "FileHash": "01b9c2febb9f098c7981599894e488b946857900",
+      "SourceFileCommit": "5fe5c30acfc4d5edb28633d30669f616fcc5d59a",
+      "SourceFilePath": "virtualization\\hyper-v-on-windows\\user-guide\\make-integration-service.md",
+      "HandoffReason": 1,
+      "FilePathList": [
+        "virtualization\\hyper-v-on-windows\\user-guide\\make-integration-service.md"
+      ],
+      "HasMetadata": true,
+      "TranslationType": 1,
+      "HandoffFilePath": "ol-handoff\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\make-integration-service.c3268239155e1fcb3f21c78fc57128dead3831c3.zh-cn.xlf",
+      "HandoffFileCommit": "2227eb4f80139d6eadb63c00d8c9206092b23730",
+      "HandoffDateTime": "2017-12-21T00:29:46.8779504Z",
+      "HandoffXliffHash": "ca6094b0caf859374d5a966a231afc51dc2cd76e",
       "HandoffPriority": ""
     }
   }
