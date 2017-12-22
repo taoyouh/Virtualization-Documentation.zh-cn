@@ -980,6 +980,9 @@
   "347b31ec29d84e993e92509173d5da1632899311": [
     "virtualization\\hyper-v-on-windows\\reference\\hypervisor-platform-funcs\\WHvVirtualProcessorDataTypes.md"
   ],
+  "a06b2f3ac2249f0f315e027ec43661419a76a5e9": [
+    "virtualization\\windowscontainers\\manage-containers\\container-storage.md"
+  ],
   "1c095418979f148dc6c1d97d16de27863413277d": [
     "virtualization\\windowscontainers\\manage-containers\\container-storage.md"
   ],

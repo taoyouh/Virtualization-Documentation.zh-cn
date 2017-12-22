@@ -1,5 +1,5 @@
 {
-  "LastProcessedCommit": "fe61c9b0b243b6770021a3018393c933ccdab1f3",
+  "LastProcessedCommit": "0ed73bc969eddf41126212d88b894327b26aa420",
   "LastTranslatedCommit": "21f4320cb76270b953a1d22d857047a2fcf5d4b8",
   "LastConfigHash": "8a1020b7136b784cdc0f8c9eca877ab77b2a9c5f",
   "Items": {
@@ -23703,6 +23703,22 @@
       "HandoffFileCommit": "2227eb4f80139d6eadb63c00d8c9206092b23730",
       "HandoffDateTime": "2017-12-21T00:29:46.8779504Z",
       "HandoffXliffHash": "ca6094b0caf859374d5a966a231afc51dc2cd76e",
+      "HandoffPriority": ""
+    },
+    "a06b2f3ac2249f0f315e027ec43661419a76a5e9": {
+      "FileHash": "a06b2f3ac2249f0f315e027ec43661419a76a5e9",
+      "SourceFileCommit": "0ed73bc969eddf41126212d88b894327b26aa420",
+      "SourceFilePath": "virtualization\\windowscontainers\\manage-containers\\container-storage.md",
+      "HandoffReason": 1,
+      "FilePathList": [
+        "virtualization\\windowscontainers\\manage-containers\\container-storage.md"
+      ],
+      "HasMetadata": true,
+      "TranslationType": 1,
+      "HandoffFilePath": "ol-handoff\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\container-storage.5678359c1406031e217318e9577ce57cff74daf7.zh-cn.xlf",
+      "HandoffFileCommit": "625fa646a292d1c2fb6479bdc05b45bf80231abc",
+      "HandoffDateTime": "2017-12-22T23:28:07.8415431Z",
+      "HandoffXliffHash": "8166956288ba03db6455042f4d08ee50a66c791f",
       "HandoffPriority": ""
     }
   }
