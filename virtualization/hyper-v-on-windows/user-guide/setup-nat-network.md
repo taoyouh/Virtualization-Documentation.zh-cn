@@ -8,11 +8,11 @@ ms.topic: article
 ms.prod: windows-10-hyperv
 ms.service: windows-10-hyperv
 ms.assetid: 1f8a691c-ca75-42da-8ad8-a35611ad70ec
-ms.openlocfilehash: dd11b3a78307d4c39a3c383120a04e91c8d0f70f
-ms.sourcegitcommit: 456485f36ed2d412cd708aed671d5a917b934bbe
+ms.openlocfilehash: 6f5872a4f16bcce504af3e6e81ef3e820013d121
+ms.sourcegitcommit: ad5f6344230c7c4977adf3769fb7b01a5eca7bb9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/08/2017
+ms.lasthandoff: 12/05/2017
 ---
 # <a name="set-up-a-nat-network"></a>设置 NAT 网络
 
@@ -69,7 +69,7 @@ NAT 使用主计算机的 IP 地址和端口通过内部 Hyper-V 虚拟开关向
 
     内部交换机的名称将类似于 `vEthernet (SwitchName)`，接口描述将为 `Hyper-V Virtual Ethernet Adapter`。 请记下其 `ifIndex` 以便在下一步中使用。
 
-4. 使用 [New-NetIPAddress](https://technet.microsoft.com/en-us/library/hh826150.aspx) 配置 NAT 网关。  
+4. 使用 [New-NetIPAddress](https://docs.microsoft.com/powershell/module/nettcpip/New-NetIPAddress) 配置 NAT 网关。  
 
   下面是常规命令：
   ``` PowerShell
@@ -97,7 +97,7 @@ NAT 使用主计算机的 IP 地址和端口通过内部 Hyper-V 虚拟开关向
   New-NetIPAddress -IPAddress 192.168.0.1 -PrefixLength 24 -InterfaceIndex 24
   ```
 
-5. 使用 [New-NetNat](https://technet.microsoft.com/en-us/library/dn283361(v=wps.630).aspx) 配置 NAT 网络。  
+5. 使用 [New-NetNat](https://docs.microsoft.com/powershell/module/netnat/New-NetNat) 配置 NAT 网络。  
 
   下面是常规命令：
 

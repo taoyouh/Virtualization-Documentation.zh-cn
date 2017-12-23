@@ -26,7 +26,7 @@ Install-Module -Name DockerMsftProviderInsider -Repository PSGallery -Force
 ```
 使用 OneGet 安装最新版的 Docker。
 ```powershell
-Install-Package -Name docker -ProviderName DockerMsftProviderInsider -RequiredVersion 17.06.0-ce
+Install-Package -Name docker -ProviderName DockerMsftProviderInsider
 ```
 完成安装后，重启计算机。
 ```
