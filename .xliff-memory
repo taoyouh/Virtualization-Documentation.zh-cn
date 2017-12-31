@@ -1786,7 +1786,7 @@
       "SourceFilename": "virtualization\\windowscontainers\\images-eula.md",
       "XliffHash": "4d6c7419a628bc3bd04d1fda31910633afcd6659",
       "TranslationType": 1,
-      "SkeletonFile": "ol-xliffcache\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\a1553a32f6e2e7ae25473352671a666e20232638.9d6d2784108adb61e7f1cbc9f0cee2b7da7d559b.xml",
+      "SkeletonFile": "ol-xliffcache\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\7cadc6e8ee2db9afecf6c1de81a535933a21358f.8f7a68e5580483c7b26410de41fca0031c7a09af.xml",
       "LocXliff": "ol-handback\\Microsoft\\Virtualization-Documentation-Private.zh-cn\\live\\images-eula.fff511a62eeca8d3e2fcf559a34f9c106073c65a.zh-cn.xlf",
       "LocXliffCommit": "12b9210bd767a837cc8b1dc43a1db28933ca017d"
     },
@@ -3223,6 +3223,12 @@
       "XliffHash": "8166956288ba03db6455042f4d08ee50a66c791f",
       "TranslationType": 1,
       "SkeletonFile": "ol-xliffcache\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\a06b2f3ac2249f0f315e027ec43661419a76a5e9.4550e48e23feb295dd631bfe32dd0bea5b09aa2f.xml"
+    },
+    "virtualization\\hyper-v-on-windows\\about\\supported-guest-os.md.f0f448d36f5a386f907920070549f63259864bb5.HT": {
+      "SourceFilename": "virtualization\\hyper-v-on-windows\\about\\supported-guest-os.md",
+      "XliffHash": "f0f448d36f5a386f907920070549f63259864bb5",
+      "TranslationType": 1,
+      "SkeletonFile": "ol-xliffcache\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\0370af1bd17c61f5f968cb931e95e3ba705f0c9e.2ed2d02619acdcc3197ee270088223e0e705541e.xml"
     }
   }
 }

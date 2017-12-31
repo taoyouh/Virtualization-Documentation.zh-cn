@@ -107,6 +107,9 @@
   "8824e9e6864f5cf7ed5e3a5a574a060d5b7b65b7": [
     "virtualization\\windowscontainers\\Images_EULA.md"
   ],
+  "7cadc6e8ee2db9afecf6c1de81a535933a21358f": [
+    "virtualization\\windowscontainers\\images-eula.md"
+  ],
   "a1553a32f6e2e7ae25473352671a666e20232638": [
     "virtualization\\windowscontainers\\images-eula.md"
   ],
@@ -130,6 +133,9 @@
   ],
   "9f28c35c6eaddd8bcf3883863b63251378f845a7": [
     "virtualization\\windowscontainers\\troubleshooting.md"
+  ],
+  "0370af1bd17c61f5f968cb931e95e3ba705f0c9e": [
+    "virtualization\\hyper-v-on-windows\\about\\supported-guest-os.md"
   ],
   "ac1ec3740cfa75acd8c005df3f67531c693cd914": [
     "virtualization\\hyper-v-on-windows\\about\\supported-guest-os.md"
