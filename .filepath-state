@@ -698,6 +698,9 @@
   "f713534ccab2a8422934936fe1f6e0286f887586": [
     "virtualization\\hyper-v-on-windows\\user-guide\\enhanced-session-mode.md"
   ],
+  "d3eb7e2b751468953a152e8c723551fb3e1d12dd": [
+    "virtualization\\windowscontainers\\manage-containers\\resource-controls.md"
+  ],
   "bc36f1f59ed339b2cc3dd3372a5cd5119f470c7c": [
     "virtualization\\windowscontainers\\manage-containers\\resource-controls.md"
   ],
