@@ -3235,6 +3235,12 @@
       "XliffHash": "e252e2d197c32072487c6c8bcc7ea56d9ee759ee",
       "TranslationType": 1,
       "SkeletonFile": "ol-xliffcache\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\d3eb7e2b751468953a152e8c723551fb3e1d12dd.bdb8c2f82e4c33e4c9956971b4e16732d15de3ff.xml"
+    },
+    "virtualization\\hyper-v-on-windows\\meltdown-mitigation-configuration-for-hyper-v-vms.md.87a0a21282a743417dc4566cdbf302f111eef5a2.HT": {
+      "SourceFilename": "virtualization\\hyper-v-on-windows\\meltdown-mitigation-configuration-for-hyper-v-vms.md",
+      "XliffHash": "87a0a21282a743417dc4566cdbf302f111eef5a2",
+      "TranslationType": 1,
+      "SkeletonFile": "ol-xliffcache\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\038ce193c53e6f3b5bf05168c869eba53f5db8ea.c4b6306b54255ad34e4c2b288453b6f2ef218a96.xml"
     }
   }
 }

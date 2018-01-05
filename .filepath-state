@@ -1000,5 +1000,8 @@
   ],
   "ab4464e593e6ac3c6ab291fcb5e1097f04d344f1": [
     "virtualization\\hyper-v-on-windows\\reference\\hypervisor-instruction-emulator.md"
+  ],
+  "038ce193c53e6f3b5bf05168c869eba53f5db8ea": [
+    "virtualization\\hyper-v-on-windows\\meltdown-mitigation-configuration-for-hyper-v-vms.md"
   ]
 }
