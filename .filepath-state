@@ -137,6 +137,9 @@
   "9f28c35c6eaddd8bcf3883863b63251378f845a7": [
     "virtualization\\windowscontainers\\troubleshooting.md"
   ],
+  "361b76e18125bb14f5e88b1892eed882a3ae5508": [
+    "virtualization\\hyper-v-on-windows\\about\\supported-guest-os.md"
+  ],
   "0370af1bd17c61f5f968cb931e95e3ba705f0c9e": [
     "virtualization\\hyper-v-on-windows\\about\\supported-guest-os.md"
   ],
@@ -160,6 +163,9 @@
   ],
   "ea91ea0ffca5479cb0593ef9961625f7b7ab1f42": [
     "virtualization\\hyper-v-on-windows\\user-guide\\create-pre-release-vm.md"
+  ],
+  "82c8ba6b09b6d1bfde7217eeaf16cfb7967d4f62": [
+    "virtualization\\hyper-v-on-windows\\user-guide\\nested-virtualization.md"
   ],
   "d5b8e888b62495c98c0691dc0d62deecf7c1eb6e": [
     "virtualization\\hyper-v-on-windows\\user-guide\\nested-virtualization.md"
@@ -1000,6 +1006,9 @@
   ],
   "ab4464e593e6ac3c6ab291fcb5e1097f04d344f1": [
     "virtualization\\hyper-v-on-windows\\reference\\hypervisor-instruction-emulator.md"
+  ],
+  "0a1aab53dcc7543539d221b7a4acceeb07a65155": [
+    "virtualization\\hyper-v-on-windows\\CVE-2017-5715-and-hyper-v-vms.md"
   ],
   "3819614f3b4446a483814de8f9d3fe052064fdaf": [
     "virtualization\\hyper-v-on-windows\\CVE-2017-5715-and-hyper-v-vms.md"
