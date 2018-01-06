@@ -939,6 +939,9 @@
   "ab4464e593e6ac3c6ab291fcb5e1097f04d344f1": [
     "virtualization\\hyper-v-on-windows\\reference\\hypervisor-instruction-emulator.md"
   ],
+  "b70f19cbf617803f6bb7eec85c719b8a0d63bec1": [
+    "virtualization\\hyper-v-on-windows\\CVE-2017-5715-and-hyper-v-vms.md"
+  ],
   "0a1aab53dcc7543539d221b7a4acceeb07a65155": [
     "virtualization\\hyper-v-on-windows\\CVE-2017-5715-and-hyper-v-vms.md"
   ],

@@ -3271,6 +3271,12 @@
       "XliffHash": "3f3c460b07221274f894a91ad884183ae1c744fa",
       "TranslationType": 1,
       "SkeletonFile": "ol-xliffcache\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\54f60d3ef286521488bd4d3ab6d18d9b36806615.cdd2fa4b3d948c15abdc47479b283f7cb842155e.xml"
+    },
+    "virtualization\\hyper-v-on-windows\\CVE-2017-5715-and-hyper-v-vms.md.8a50850353379484851d4a2f7ea53cbf9f4a6646.HT": {
+      "SourceFilename": "virtualization\\hyper-v-on-windows\\CVE-2017-5715-and-hyper-v-vms.md",
+      "XliffHash": "8a50850353379484851d4a2f7ea53cbf9f4a6646",
+      "TranslationType": 1,
+      "SkeletonFile": "ol-xliffcache\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\b70f19cbf617803f6bb7eec85c719b8a0d63bec1.e02b4cbaa7c5f1ea19d9e726e34c1eda2cdb031e.xml"
     }
   }
 }
