@@ -1,51 +1,9 @@
 {
-  "2f4400bf6a05d0d429166b83c9e3dfc45cc173e0": [
-    "virtualization\\windowscontainers\\about\\about_overview.md"
-  ],
-  "4bc50c399c5fc5a5d3a7109744714c34a814319e": [
-    "virtualization\\windowscontainers\\about\\container_ecosystem.md"
-  ],
   "b084bf179d9360e4a72e8e88b4fec80eafb2906c": [
     "virtualization\\windowscontainers\\about\\faq.md"
   ],
-  "38dc2f5257196adfdf3be04e77f0ea74a77bfcff": [
-    "virtualization\\windowscontainers\\about\\work_in_progress.md"
-  ],
-  "3017c03c1ce5d5ff46deda0cd147cc10de77f249": [
-    "virtualization\\windowscontainers\\about\\work_in_progress.md"
-  ],
-  "085bb8c0158aedf4270cf2423114ec1901af1ebd": [
-    "virtualization\\windowscontainers\\about\\work_in_progress.md"
-  ],
-  "41ec8d50af4b7ab2ec7e94b30397f4301502d372": [
-    "virtualization\\windowscontainers\\containers_welcome.md",
-    "virtualization\\hyper-v-on-windows\\about\\hyperv_on_windows.md",
-    "virtualization\\hyper-v-on-windows\\about\\whats_new.md"
-  ],
-  "60d7b6cf3fdce3c988da7c16c0367013be2cafec": [
-    "virtualization\\windowscontainers\\deployment\\deployment.md"
-  ],
-  "441815bed7d4bffa5e19e7294abae2dc31947fa2": [
-    "virtualization\\windowscontainers\\deployment\\system_requirements.md"
-  ],
   "f2cb1cdc1a98bf328a24610af6f7313a1071b079": [
     "virtualization\\windowscontainers\\EULA.md"
-  ],
-  "349f9202173c6b79a8b91ffdce836e640fa290bd": [
-    "virtualization\\windowscontainers\\management\\hyperv_container.md"
-  ],
-  "b6725f24beabb5331eff7d5243c2fe1c3c491001": [
-    "virtualization\\windowscontainers\\management\\manage_containers.md",
-    "virtualization\\windowscontainers\\quick_start\\quick_start.md"
-  ],
-  "94467b4dbebcc25009320d42460bf542fe3cab45": [
-    "virtualization\\windowscontainers\\management\\manage_data.md"
-  ],
-  "baea1ae8195737eafeade6c2e42a328bf4b12532": [
-    "virtualization\\windowscontainers\\management\\manage_images.md"
-  ],
-  "f651172a7d958866f3370c9c0cb8b870298eb76d": [
-    "virtualization\\windowscontainers\\management\\manage_resources.md"
   ],
   "f9e328c51890868801f3c1120a256e38f616cfd2": [
     "virtualization\\windowscontainers\\TOC.md"
@@ -73,39 +31,6 @@
   ],
   "27115e67da72dfe8d18a7ff292a8b72f971085cd": [
     "virtualization\\windowscontainers\\TOC.md"
-  ],
-  "02c8e82cb7d2a2dce902133f09a16f37fe6cde21": [
-    "virtualization\\windowscontainers\\management\\container_networking.md"
-  ],
-  "695b99e631803aa9d5315ba149cda9a68f5a76bf": [
-    "virtualization\\windowscontainers\\deployment\\deployment_nano.md"
-  ],
-  "1988e55cfb9f3e76473e9398538e6b97344bedac": [
-    "virtualization\\windowscontainers\\deployment\\deployment_nano.md"
-  ],
-  "1b4b36def403bbaf75c9828bf36d72e83f6114b5": [
-    "virtualization\\windowscontainers\\management\\docker-powershell.md"
-  ],
-  "fc0620cd9bdd27c2bcd863cee22c73dc95560f1a": [
-    "virtualization\\windowscontainers\\docker\\manage_windows_dockerfile.md"
-  ],
-  "00e5deb2ec974c59b27675c56309c33a3f1ed4c4": [
-    "virtualization\\windowscontainers\\docker\\optimize_windows_dockerfile.md"
-  ],
-  "feb8a70877b5c92e25425acc5246a3f6e6d9093c": [
-    "virtualization\\windowscontainers\\quick_start\\quick_start_images.md"
-  ],
-  "b8ec3b5d9a22efa13cf5c14f8f2cc1712bb02c52": [
-    "virtualization\\windowscontainers\\quick_start\\quick_start_windows_10.md"
-  ],
-  "9cea692083f9e50d3f482e7c9333652f5f9bf443": [
-    "virtualization\\windowscontainers\\quick_start\\quick_start_windows_server.md"
-  ],
-  "f5835e3ebf95f9588b99885050d9247005bc4bf0": [
-    "virtualization\\windowscontainers\\docker\\configure_docker_daemon.md"
-  ],
-  "8824e9e6864f5cf7ed5e3a5a574a060d5b7b65b7": [
-    "virtualization\\windowscontainers\\Images_EULA.md"
   ],
   "7cadc6e8ee2db9afecf6c1de81a535933a21358f": [
     "virtualization\\windowscontainers\\images-eula.md"
@@ -272,14 +197,15 @@
   "4e887dc8c284dd189dc59a71aa9d22d6c8a231ea": [
     "virtualization\\hyper-v-on-windows\\user-guide\\checkpoints.md"
   ],
-  "b06e92c6398ceba7a1ba597765625212170cbd13": [
-    "virtualization\\windowscontainers\\management\\manage_serviceaccounts.md"
-  ],
   "86d0b2f3ae86f99680e03e2bb8ad2712c6c70c16": [
     "virtualization\\windowscontainers\\manage-containers\\manage-serviceaccounts.md"
   ],
   "0e692f7521e4a15e3e56d4b98f7ca15fe94ee167": [
     "virtualization\\windowscontainers\\manage-containers\\manage-serviceaccounts.md"
+  ],
+  "41ec8d50af4b7ab2ec7e94b30397f4301502d372": [
+    "virtualization\\hyper-v-on-windows\\about\\hyperv_on_windows.md",
+    "virtualization\\hyper-v-on-windows\\about\\whats_new.md"
   ],
   "71d91e12ae843bf96e1b4001915ffb55bb352ffd": [
     "virtualization\\windowscontainers\\manage-docker\\docker-powershell.md"
@@ -604,6 +530,9 @@
   ],
   "0e5e131ec9c2c9c57bf6c7c7a9cabf02cbfe352f": [
     "virtualization\\windowscontainers\\manage-containers\\swarm-mode.md"
+  ],
+  "b975c593bd5c736ec3e7e1e21b76b2f6a2c8f8a4": [
+    "virtualization\\windowscontainers\\management\\manage_remotehost.md"
   ],
   "1ab2a9b823c5c903bd08b476f5caef65ec6e3207": [
     "virtualization\\windowscontainers\\management\\manage_remotehost.md"

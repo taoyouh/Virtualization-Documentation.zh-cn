@@ -1,5 +1,5 @@
 {
-  "LastProcessedCommit": "59541f11d481d8df341597bd73ce7fac14f442ee",
+  "LastProcessedCommit": "451f291e0df3fc26637cce0fbf1855c56cc6e0d4",
   "LastTranslatedCommit": "21f4320cb76270b953a1d22d857047a2fcf5d4b8",
   "LastConfigHash": "8a1020b7136b784cdc0f8c9eca877ab77b2a9c5f",
   "Items": {
@@ -16992,8 +16992,7 @@
       "HandoffReason": 1,
       "FilePathList": [
         "virtualization\\hyper-v-on-windows\\about\\hyperv_on_windows.md",
-        "virtualization\\hyper-v-on-windows\\about\\whats_new.md",
-        "virtualization\\windowscontainers\\containers_welcome.md"
+        "virtualization\\hyper-v-on-windows\\about\\whats_new.md"
       ],
       "HasMetadata": true,
       "TranslationType": 1,
@@ -23890,6 +23889,22 @@
       "HandoffFileCommit": "af7509c02c45ce9d0d678dfb81e9bbf757ec7c4e",
       "HandoffDateTime": "2018-01-05T22:06:29.085094Z",
       "HandoffXliffHash": "3f3c460b07221274f894a91ad884183ae1c744fa",
+      "HandoffPriority": ""
+    },
+    "b975c593bd5c736ec3e7e1e21b76b2f6a2c8f8a4": {
+      "FileHash": "b975c593bd5c736ec3e7e1e21b76b2f6a2c8f8a4",
+      "SourceFileCommit": "451f291e0df3fc26637cce0fbf1855c56cc6e0d4",
+      "SourceFilePath": "virtualization\\windowscontainers\\management\\manage_remotehost.md",
+      "HandoffReason": 1,
+      "FilePathList": [
+        "virtualization\\windowscontainers\\management\\manage_remotehost.md"
+      ],
+      "HasMetadata": true,
+      "TranslationType": 1,
+      "HandoffFilePath": "ol-handoff\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\manage_remotehost.3c5d9a53df27ee4618f3cd087b9e3ce0d6e647fe.zh-cn.xlf",
+      "HandoffFileCommit": "52681f9c9b3c1ce6f86474ab1908c5f9cfa16b7a",
+      "HandoffDateTime": "2018-01-06T01:07:33.0171654Z",
+      "HandoffXliffHash": "f3c3ee6a6562f4b2495fe9f3d758e236c37cf36f",
       "HandoffPriority": ""
     }
   }
