@@ -1,5 +1,5 @@
 {
-  "LastProcessedCommit": "cb1ad96b4dcfe51aad7da364f5254988869551c8",
+  "LastProcessedCommit": "5b8454636dbf5eac72448f98a22217b235c33442",
   "LastTranslatedCommit": "21f4320cb76270b953a1d22d857047a2fcf5d4b8",
   "LastConfigHash": "8a1020b7136b784cdc0f8c9eca877ab77b2a9c5f",
   "Items": {
@@ -23920,6 +23920,36 @@
       "HandoffFileCommit": "400b6fb61acf87e9d46ce9b894d759b8af5b08f1",
       "HandoffDateTime": "2018-01-06T02:06:57.501314Z",
       "HandoffXliffHash": "8a50850353379484851d4a2f7ea53cbf9f4a6646",
+      "HandoffPriority": ""
+    },
+    "ab87a1ad06c705def2201e445d21ecc94908bd25": {
+      "FileHash": "ab87a1ad06c705def2201e445d21ecc94908bd25",
+      "SourceFileCommit": "5b8454636dbf5eac72448f98a22217b235c33442",
+      "SourceFilePath": "virtualization\\hyper-v-on-windows\\CVE-2017-5715-and-hyper-v-hosts.md",
+      "HandoffReason": 1,
+      "FilePathList": [
+        "virtualization\\hyper-v-on-windows\\CVE-2017-5715-and-hyper-v-hosts.md"
+      ],
+      "TranslationType": 1,
+      "HandoffFilePath": "ol-handoff\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\CVE-2017-5715-and-hyper-v-hosts.56cdb082848b663e4ae5cf5e3b91519bbb5b61f2.zh-cn.xlf",
+      "HandoffFileCommit": "7189d091f36bb0319aafc1ab124e9929f2e8af53",
+      "HandoffDateTime": "2018-01-10T00:07:04.7477714Z",
+      "HandoffXliffHash": "640c1c232135b63f20bf231e3da26d3d86fa5d25",
+      "HandoffPriority": ""
+    },
+    "a0de6554d434aa9bf51dc274b052986011cbf405": {
+      "FileHash": "a0de6554d434aa9bf51dc274b052986011cbf405",
+      "SourceFileCommit": "5b8454636dbf5eac72448f98a22217b235c33442",
+      "SourceFilePath": "virtualization\\hyper-v-on-windows\\CVE-2017-5715-and-hyper-v-vms.md",
+      "HandoffReason": 1,
+      "FilePathList": [
+        "virtualization\\hyper-v-on-windows\\CVE-2017-5715-and-hyper-v-vms.md"
+      ],
+      "TranslationType": 1,
+      "HandoffFilePath": "ol-handoff\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\CVE-2017-5715-and-hyper-v-vms.26f9ffce97eab599de9ec9ad1a7b1ac4e7a273bf.zh-cn.xlf",
+      "HandoffFileCommit": "7189d091f36bb0319aafc1ab124e9929f2e8af53",
+      "HandoffDateTime": "2018-01-10T00:07:04.7477714Z",
+      "HandoffXliffHash": "2d02df8b3fa23ff030784fd0bb86b7157587f520",
       "HandoffPriority": ""
     }
   }
