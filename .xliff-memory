@@ -3301,6 +3301,18 @@
       "XliffHash": "70153fc05d72ef93f27396d80b5d5869013404d0",
       "TranslationType": 1,
       "SkeletonFile": "ol-xliffcache\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\ac3b6bb3ba0ad560609406985ce9b64cb39cfa86.3e73fe057e594a728a68cca7b13b552be4617285.xml"
+    },
+    "virtualization\\hyper-v-on-windows\\CVE-2017-5715-and-hyper-v-hosts.md.b9b6b18c20a9039500404d458a3b7569553ed649.HT": {
+      "SourceFilename": "virtualization\\hyper-v-on-windows\\CVE-2017-5715-and-hyper-v-hosts.md",
+      "XliffHash": "b9b6b18c20a9039500404d458a3b7569553ed649",
+      "TranslationType": 1,
+      "SkeletonFile": "ol-xliffcache\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\0c718128473a2f83ef0764faff6c8264ef6eeff4.aa114686b76bf3285903b18189b301967dfe5819.xml"
+    },
+    "virtualization\\windowscontainers\\deploy-containers\\system-requirements.md.418f78cd3bcb296e406700c765ae0be341535919.HT": {
+      "SourceFilename": "virtualization\\windowscontainers\\deploy-containers\\system-requirements.md",
+      "XliffHash": "418f78cd3bcb296e406700c765ae0be341535919",
+      "TranslationType": 1,
+      "SkeletonFile": "ol-xliffcache\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\72829adcd147d684155af4991efe0573a804938e.10b7576475dc53175d2507b0e02ef695dc0604a2.xml"
     }
   }
 }

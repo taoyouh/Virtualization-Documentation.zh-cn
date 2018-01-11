@@ -1,5 +1,5 @@
 {
-  "LastProcessedCommit": "d13a0040f236879176393d80d668678c1151e4c4",
+  "LastProcessedCommit": "1070545d5f8a891a3c102513df27406c1033fe57",
   "LastTranslatedCommit": "21f4320cb76270b953a1d22d857047a2fcf5d4b8",
   "LastConfigHash": "8a1020b7136b784cdc0f8c9eca877ab77b2a9c5f",
   "Items": {
@@ -24010,6 +24010,37 @@
       "HandoffFileCommit": "2dad5fac487a83522ee37e1c2d2f6f1194ac90dd",
       "HandoffDateTime": "2018-01-11T00:07:17.8410548Z",
       "HandoffXliffHash": "9e54627e0cdec5ad95a4680dfafe7f067ad2da5c",
+      "HandoffPriority": ""
+    },
+    "0c718128473a2f83ef0764faff6c8264ef6eeff4": {
+      "FileHash": "0c718128473a2f83ef0764faff6c8264ef6eeff4",
+      "SourceFileCommit": "1070545d5f8a891a3c102513df27406c1033fe57",
+      "SourceFilePath": "virtualization\\hyper-v-on-windows\\CVE-2017-5715-and-hyper-v-hosts.md",
+      "HandoffReason": 1,
+      "FilePathList": [
+        "virtualization\\hyper-v-on-windows\\CVE-2017-5715-and-hyper-v-hosts.md"
+      ],
+      "TranslationType": 1,
+      "HandoffFilePath": "ol-handoff\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\CVE-2017-5715-and-hyper-v-hosts.56cdb082848b663e4ae5cf5e3b91519bbb5b61f2.zh-cn.xlf",
+      "HandoffFileCommit": "940343a79f88429272a81315771cb1572adc887f",
+      "HandoffDateTime": "2018-01-11T02:07:01.1048459Z",
+      "HandoffXliffHash": "b9b6b18c20a9039500404d458a3b7569553ed649",
+      "HandoffPriority": ""
+    },
+    "72829adcd147d684155af4991efe0573a804938e": {
+      "FileHash": "72829adcd147d684155af4991efe0573a804938e",
+      "SourceFileCommit": "1070545d5f8a891a3c102513df27406c1033fe57",
+      "SourceFilePath": "virtualization\\windowscontainers\\deploy-containers\\system-requirements.md",
+      "HandoffReason": 1,
+      "FilePathList": [
+        "virtualization\\windowscontainers\\deploy-containers\\system-requirements.md"
+      ],
+      "HasMetadata": true,
+      "TranslationType": 1,
+      "HandoffFilePath": "ol-handoff\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\system-requirements.7dbcfcd7846f5274542c2b3889e0b8cfd203b0b7.zh-cn.xlf",
+      "HandoffFileCommit": "940343a79f88429272a81315771cb1572adc887f",
+      "HandoffDateTime": "2018-01-11T02:07:01.1048459Z",
+      "HandoffXliffHash": "418f78cd3bcb296e406700c765ae0be341535919",
       "HandoffPriority": ""
     }
   }

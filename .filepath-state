@@ -137,6 +137,9 @@
   "02e6869b2f242df29aed13fcc8a69ed641958727": [
     "virtualization\\windowscontainers\\about\\container-ecosystem.md"
   ],
+  "72829adcd147d684155af4991efe0573a804938e": [
+    "virtualization\\windowscontainers\\deploy-containers\\system-requirements.md"
+  ],
   "54f60d3ef286521488bd4d3ab6d18d9b36806615": [
     "virtualization\\windowscontainers\\deploy-containers\\system-requirements.md"
   ],
@@ -704,6 +707,9 @@
   ],
   "3819614f3b4446a483814de8f9d3fe052064fdaf": [
     "virtualization\\hyper-v-on-windows\\CVE-2017-5715-and-hyper-v-vms.md"
+  ],
+  "0c718128473a2f83ef0764faff6c8264ef6eeff4": [
+    "virtualization\\hyper-v-on-windows\\CVE-2017-5715-and-hyper-v-hosts.md"
   ],
   "ab87a1ad06c705def2201e445d21ecc94908bd25": [
     "virtualization\\hyper-v-on-windows\\CVE-2017-5715-and-hyper-v-hosts.md"
