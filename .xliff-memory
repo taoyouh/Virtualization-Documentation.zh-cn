@@ -1890,7 +1890,7 @@
       "SourceFilename": "virtualization\\hyper-v-on-windows\\reference\\hyper-v-architecture.md",
       "XliffHash": "b9b87038ac4d1a77de3aa9015757c2db1ee0b12d",
       "TranslationType": 1,
-      "SkeletonFile": "ol-xliffcache\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\a986af5c3a448265540671bd2d6678dbcd4d0833.408163e3259039835837baca71c6848363989e78.xml"
+      "SkeletonFile": "ol-xliffcache\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\62788ce4f67d881a3fc494ad099877902a8a45b6.551855aef58cac4eab1a0dee0676ca8a9a682b51.xml"
     },
     "virtualization\\windowscontainers\\manage-containers\\container-networking.md.27c4cacae2e4f735569ad81330b1b337be1944cd.HT": {
       "SourceFilename": "virtualization\\windowscontainers\\manage-containers\\container-networking.md",
@@ -2430,7 +2430,7 @@
       "SourceFilename": "virtualization\\hyper-v-on-windows\\TOC.md",
       "XliffHash": "9e54627e0cdec5ad95a4680dfafe7f067ad2da5c",
       "TranslationType": 1,
-      "SkeletonFile": "ol-xliffcache\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\d836d9d0bd7cc6ce714b1b586e49915a8ce7e616.3f2513d9292711ee467d44e1e1ab5df0750ab4cf.xml"
+      "SkeletonFile": "ol-xliffcache\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\573cc5b1327c49f2abc6bf877cf1c53191c5569f.29f5b92ddd86099e5a93d744399ca74c2c6a4e3a.xml"
     },
     "virtualization\\hyper-v-on-windows\\user-guide\\enhanced-session-mode.md.4c9b2ec4a092398df5476475b8ae5279f04ca25a.HT": {
       "SourceFilename": "virtualization\\hyper-v-on-windows\\user-guide\\enhanced-session-mode.md",
@@ -3295,6 +3295,12 @@
       "XliffHash": "63479a4f470a81fea5478e335751ef493f1c723f",
       "TranslationType": 1,
       "SkeletonFile": "ol-xliffcache\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\5418c073da4eb08ab564a6cf4f2632d45cf53e75.cb6597d20ffd4ff53b174816d9b60637ddc92eaf.xml"
+    },
+    "virtualization\\hyper-v-on-windows\\CVE-2017-5715-and-hyper-v-vms.md.70153fc05d72ef93f27396d80b5d5869013404d0.HT": {
+      "SourceFilename": "virtualization\\hyper-v-on-windows\\CVE-2017-5715-and-hyper-v-vms.md",
+      "XliffHash": "70153fc05d72ef93f27396d80b5d5869013404d0",
+      "TranslationType": 1,
+      "SkeletonFile": "ol-xliffcache\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\ac3b6bb3ba0ad560609406985ce9b64cb39cfa86.3e73fe057e594a728a68cca7b13b552be4617285.xml"
     }
   }
 }
