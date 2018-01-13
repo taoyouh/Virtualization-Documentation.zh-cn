@@ -1,5 +1,5 @@
 {
-  "LastProcessedCommit": "961ed4873104d4e897ea3d9b8eab72d27ccd4ed5",
+  "LastProcessedCommit": "7fc79235cbee052e07366b8a6aa7e035a5e3434f",
   "LastTranslatedCommit": "21f4320cb76270b953a1d22d857047a2fcf5d4b8",
   "LastConfigHash": "8a1020b7136b784cdc0f8c9eca877ab77b2a9c5f",
   "Items": {
@@ -24041,6 +24041,38 @@
       "HandoffFileCommit": "940343a79f88429272a81315771cb1572adc887f",
       "HandoffDateTime": "2018-01-11T02:07:01.1048459Z",
       "HandoffXliffHash": "418f78cd3bcb296e406700c765ae0be341535919",
+      "HandoffPriority": ""
+    },
+    "88d094202c49cf725e9d608a0810e7d9f8a1e271": {
+      "FileHash": "88d094202c49cf725e9d608a0810e7d9f8a1e271",
+      "SourceFileCommit": "7fc79235cbee052e07366b8a6aa7e035a5e3434f",
+      "SourceFilePath": "virtualization\\windowscontainers\\deploy-containers\\system-requirements.md",
+      "HandoffReason": 1,
+      "FilePathList": [
+        "virtualization\\windowscontainers\\deploy-containers\\system-requirements.md"
+      ],
+      "HasMetadata": true,
+      "TranslationType": 1,
+      "HandoffFilePath": "ol-handoff\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\system-requirements.7dbcfcd7846f5274542c2b3889e0b8cfd203b0b7.zh-cn.xlf",
+      "HandoffFileCommit": "a3c14779a5efb60188f514932ecb002ce7da4a3a",
+      "HandoffDateTime": "2018-01-13T01:34:58.6447708Z",
+      "HandoffXliffHash": "3f295ffe4a2809d99afe9c44d3aa7d195b81c3e0",
+      "HandoffPriority": ""
+    },
+    "5c82c715bca6260e776946d538b942b74b7f1bc1": {
+      "FileHash": "5c82c715bca6260e776946d538b942b74b7f1bc1",
+      "SourceFileCommit": "7fc79235cbee052e07366b8a6aa7e035a5e3434f",
+      "SourceFilePath": "virtualization\\windowscontainers\\deploy-containers\\version-compatibility.md",
+      "HandoffReason": 1,
+      "FilePathList": [
+        "virtualization\\windowscontainers\\deploy-containers\\version-compatibility.md"
+      ],
+      "HasMetadata": true,
+      "TranslationType": 1,
+      "HandoffFilePath": "ol-handoff\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\version-compatibility.83af55c933bbdc2ff700d51b89b918de7276cc54.zh-cn.xlf",
+      "HandoffFileCommit": "a3c14779a5efb60188f514932ecb002ce7da4a3a",
+      "HandoffDateTime": "2018-01-13T01:34:58.6447708Z",
+      "HandoffXliffHash": "86043b12cc92a4ba422ce7705a0a4867d3728042",
       "HandoffPriority": ""
     }
   }
