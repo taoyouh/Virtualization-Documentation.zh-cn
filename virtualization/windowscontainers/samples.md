@@ -8,19 +8,19 @@ ms.topic: article
 ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: 5c6f6350-f8d6-4426-b53d-9fb09c2bf267
-ms.openlocfilehash: eac2026cff552315a4cb256b595f1bd3317ee11c
-ms.sourcegitcommit: 65de5708bec89f01ef7b7d2df2a87656b53c3145
+ms.openlocfilehash: 45ee10cb8353c1b293b75628f1d023008b2bf150
+ms.sourcegitcommit: c2def00b88a411d25d2d4e97ff020db8dc228581
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/21/2017
+ms.lasthandoff: 12/04/2017
 ---
-# Windows 容器示例
+# <a name="windows-container-samples"></a>Windows 容器示例
 
 这是由 Windows 团队和社区成员提交的样本和示例的集合。  这些样本按原样提供，不具有任何保证或保障。  请随时提供更多样本或改进当前集。
 
-# Categories
+# <a name="categories"></a>Categories
 
-## 应用程序框架
+## <a name="application-frameworks"></a>应用程序框架
 [aspnet](https://github.com/Microsoft/Virtualization-Documentation/tree/master/windows-container-samples/aspnet)
 
 [iis](https://github.com/Microsoft/Virtualization-Documentation/tree/master/windows-container-samples/iis) 
@@ -39,7 +39,7 @@ ms.lasthandoff: 07/21/2017
 
 [nginx](https://github.com/Microsoft/Virtualization-Documentation/tree/master/windows-container-samples/nginx)
 
-## 编程语言
+## <a name="programing-languages"></a>编程语言
 [dotnet35](https://github.com/Microsoft/Virtualization-Documentation/tree/master/windows-container-samples/dotnet35)
 
 [golang](https://github.com/Microsoft/Virtualization-Documentation/tree/master/windows-container-samples/golang)
@@ -57,7 +57,7 @@ ms.lasthandoff: 07/21/2017
 [server-jre-8u51-windows-x64](https://github.com/Microsoft/Virtualization-Documentation/tree/master/windows-container-samples/server-jre-8u51-windows-x64)
 
 
-## 数据库
+## <a name="databases"></a>数据库
 [mongodb](https://github.com/Microsoft/Virtualization-Documentation/tree/master/windows-container-samples/mongodb)
 
 [mysql](https://github.com/Microsoft/Virtualization-Documentation/tree/master/windows-container-samples/mysql)
@@ -66,15 +66,15 @@ ms.lasthandoff: 07/21/2017
 
 [sqlite](https://github.com/Microsoft/Virtualization-Documentation/tree/master/windows-container-samples/sqlite)
 
-[sqlserver-express](https://github.com/Microsoft/Virtualization-Documentation/tree/master/windows-container-samples/sqlserver-express)
+sqlserver-express - [Docker Hub 映像](https://hub.docker.com/r/microsoft/mssql-server-windows-express/) 或 [dockerfile](https://github.com/Microsoft/mssql-docker/blob/master/windows/mssql-server-windows-express/dockerfile)
 
 
-## 基础结构和 CI 工具
+## <a name="infrastructure-and-ci-tools"></a>基础结构和 CI 工具
 [PowerShellDSC_iis-10.0](https://github.com/Microsoft/Virtualization-Documentation/tree/master/windows-container-samples/PowerShellDSC_iis-10.0)
 
 
-## 仅供娱乐
+## <a name="just-for-fun"></a>仅供娱乐
 [MineCraft](https://github.com/Microsoft/Virtualization-Documentation/tree/master/windows-container-samples/MineCraft) 
 
 
-## 其他
+## <a name="other"></a>其他

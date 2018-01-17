@@ -7,11 +7,11 @@ ms.date: 09/26/2016
 ms.topic: deployment-article
 ms.prod: windows-containers
 ms.assetid: 3c3d4c69-503d-40e8-973b-ecc4e1f523ed
-ms.openlocfilehash: 6ae690ff6592198bc16cbaf60489d3ed5aceeeb0
-ms.sourcegitcommit: 64f5f8d838f72ea8e0e66a72eeb4ab78d982b715
+ms.openlocfilehash: ecc11468bbd5aad2638da3c4f733e4d5068f0056
+ms.sourcegitcommit: 77a6195318732fa16e7d5be727bdb88f52f6db46
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/20/2017
 ---
 # <a name="windows-container-requirements"></a>Windows 容器要求
 
@@ -93,11 +93,30 @@ Windows 容器提供两种容器基本映像，Windows Server Core 和 Nano Serv
 
 ## <a name="matching-container-host-version-with-container-image-versions"></a>将容器主机版本与容器映像版本相匹配
 ### <a name="windows-server-containers"></a>Windows Server 容器
-由于 Windows Server 容器和基础主机共享一个内核，因此容器基本映像必须与主机基本映像相匹配。  如果版本不同，容器虽然可以启动，但其功能完整性得不到保证。 因此不支持不匹配的版本。  Windows 操作系统具有 4 个级别的版本，主要版本、次要版本、内部版本和修订版本 – 例如 10.0.14393.0。 只有在发布新版本的操作系统后，内部版本号才会改变。 应用 Windows 更新后，会相应更新修订版本号。 如果内部版本号不同（例如 10.0.14300.1030 (Technical Preview 5) 和 10.0.14393 (Windows Server 2016 RTM)），则会阻止 Windows Server 容器启动。 如果内部版本号相同但修订版本号不同（例如 10.0.14393 (Windows Server 2016 RTM) 和 10.0.14393.206 (Windows Server 2016 GA)），则不会阻止 Windows Server 容器启动。 即使技术上没有阻止容器启动，但此配置可能无法在所有环境下正常运行，因此不支持配置到产品环境。 
+由于 Windows Server 容器和基础主机共享一个内核，因此容器基本映像必须与主机基本映像相匹配。  如果版本不同，容器虽然可以启动，但其功能完整性得不到保证。 Windows 操作系统具有 4 个级别的版本，主要版本、次要版本、内部版本和修订版本 – 例如 10.0.14393.103。 内部版本号（即 14393）仅在发布诸如版本 1709、1803、Fall Creators Update 等新版本操作系统时才会改变。应用 Windows 更新时，会更新修订号（即 103）。
+#### <a name="build-number-new-release-of-windows"></a>内部版本号（新版本的 Windows）
+当容器主机和容器映像的内部版本号不同时，例如一个为 10.0.14393.* (Windows Server 2016)，另一个为 10.0.16299.*（Windows Server 版本 1709），会阻止启动 Windows Server 容器。  
+#### <a name="revision-number-patching"></a>修订号（修补）
+当容器主机和容器映像的修订号不同时，例如一个为 10.0.14393.1914（应用了 KB4051033 的 Windows Server 2016），另一个为 10.0.14393.1944（应用了 KB4053579 的 Windows Server 2016），则_不_会阻止启动 Windows Server 容器。  
+对于基于 Windows Server 2016 的主机/映像 – 容器映像的修订版必须与要处于支持配置中的主机匹配。  从 Windows Server 版本 1709 开始，这不再适用，并且主机和容器映像不需要具有匹配的修订版。  像往常一样建议使用最新的补丁程序和更新使你的系统保持最新。
+#### <a name="practical-application"></a>实际应用程序
+示例 1：容器主机正在运行应用了 KB4041691 的 Windows Server 2016。  部署到此主机的任何 Windows Server 容器都必须基于 10.0.14393.1770 容器基本映像。  如果对主机应用了 KB4053579，则必须同时更新容器映像以保持受支持。
+示例 2：容器主机正在运行应用了 KB4043961 的 Windows Server 版本 1709。  部署到此主机的任何 Windows Server 容器都必须基于 Windows Server 版本 1709 (10.0.16299) 容器基本映像，但不需要与主机 KB 匹配。  如果对主机应用了 KB4054517，则不需要更新容器映像，但是为了完全解决任何安全问题，还是应该进行更新。
+#### <a name="querying-version"></a>查询版本
+方法 1：在版本 1709 中引入的 cmd 提示符和 ver 命令现在会返回修订版详细信息。
+```
+Microsoft Windows [Version 10.0.16299.125]
+(c) 2017 Microsoft Corporation. All rights reserved.
 
-若要查看 Windows 主机已安装的版本类型，可以查询 HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion。  若要查看基础映像使用的版本类型，可以查看 Docker 中心上的标记或查看映像说明提供的映像哈希表。  [Windows 10 更新历史记录](https://support.microsoft.com/en-us/help/12387/windows-10-update-history)页面列出了每个内部版本和修订版本发布的时间。
+C:\>ver
 
-在此示例中，14393 是主要内部版本号，321 是修订版本号。
+Microsoft Windows [Version 10.0.16299.125] 
+```
+方法 2：查询以下注册表项：HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion。例如：
+```
+C:\>reg query "HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion" /v BuildLabEx
+```
+或
 ```
 Windows PowerShell
 Copyright (C) 2016 Microsoft Corporation. All rights reserved.
@@ -106,12 +125,15 @@ PS C:\Users\Administrator> (Get-ItemProperty 'HKLM:\SOFTWARE\Microsoft\Windows N
 14393.321.amd64fre.rs1_release_inmarket.161004-2338
 ```
 
+若要查看基础映像使用的版本类型，可以查看 Docker 中心上的标记或查看映像说明提供的映像哈希表。  [Windows 10 更新历史记录](https://support.microsoft.com/en-us/help/12387/windows-10-update-history)页面列出了每个内部版本和修订版本发布的时间。
+
 ### <a name="hyper-v-isolation-for-containers"></a>容器 Hyper-V 隔离
-无论带有还是不带有 Hyper-V 隔离，Windows 容器都可运行。  Hyper-V 隔离使用优化的虚拟机在容器周围创造安全边界。  Hyper-V 隔离容器与标准 Windows 容器不同，后者在容器和主机之间共享内核，而 Hyper-V 隔离容器则是各自使用自己的 Windows 内核实例。  出于此原因，容器主机和映像中可以有不同的操作系统版本（请参阅下面的兼容性矩阵）。  
+无论带有还是不带有 Hyper-V 隔离，Windows 容器都可运行。  Hyper-V 隔离使用优化的 VM 在容器周围创造安全边界。  Hyper-V 隔离容器与标准 Windows 容器不同，后者在容器和主机之间共享内核，而 Hyper-V 隔离容器则是各自使用自己的 Windows 内核实例。  出于此原因，容器主机和映像中可以有不同的操作系统版本（请参阅下面的兼容性矩阵）。  
 
 若要运行带有 Hyper-V 隔离的容器，只需在你的 Docker 运行命令中添加标记“--isolation=hyper-v”。
 
 ### <a name="compatibility-matrix"></a>兼容性矩阵
-只要配置受支持，无论修订版本号是多少，2016 GA (10.0.14393.206) 之后的 Windows Server 版本都可以运行 Windows Server Core 或 Nano Server 的 Windows Server 2016 GA 映像。    
+只要配置受支持，无论修订版本号是多少，2016 GA (10.0.14393.206) 之后的 Windows Server 版本都可以运行 Windows Server Core 或 Nano Server 的 Windows Server 2016 GA 映像。
+Windows Server 版本 1709 主机也可以运行基于 Windows Server 2016 的容器，但是不支持后者运行前者。
 
 为了获得由 Windows 更新提供的全部功能、可靠性和安全保障，需要保证所有系统为最新版本，这一点至关重要。  

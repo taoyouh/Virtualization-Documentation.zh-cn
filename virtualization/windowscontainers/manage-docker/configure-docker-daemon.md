@@ -8,11 +8,11 @@ ms.topic: article
 ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: 6885400c-5623-4cde-8012-f6a00019fafa
-ms.openlocfilehash: ccc45d47fc9f17c10b149bc647463824e1ecbc9e
-ms.sourcegitcommit: 456485f36ed2d412cd708aed671d5a917b934bbe
+ms.openlocfilehash: 5b187853be0ebb28bcede43bfca7e4042a23dfce
+ms.sourcegitcommit: a3479a4d8372a637fb641cd7d5003f1d8a37b741
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/08/2017
+ms.lasthandoff: 12/19/2017
 ---
 # <a name="docker-engine-on-windows"></a>Windows 上的 Docker 引擎
 
@@ -25,7 +25,6 @@ Windows 中不含 Docker 引擎和客户端，需要单独进行安装和配置�
 * [Windows Server 2016 上的 Windows 容器](../quick-start/quick-start-windows-server.md)
 * [Windows 10 上的 Windows 容器](../quick-start/quick-start-windows-10.md)
 
-
 ### <a name="manual-installation"></a>手动安装
 若要改用 Docker 引擎和客户端的开发中版本，可遵循后续步骤。 这将安装 Docker 引擎和客户端。 如果你是一名测试新功能或使用 Windows 预览体验成员版本的开发人员，你可能需要使用 Docker 开发中版本。 否则，请按照上述安装 Docker 部分中的步骤获取最新发布的版本。
 
@@ -36,8 +35,7 @@ Windows 中不含 Docker 引擎和客户端，需要单独进行安装和配置�
 https://master.dockerproject.org 始终提供最新版本。 此示例使用来自主分支的最新版本。 
 
 ```powershell
-$version = (Invoke-WebRequest -UseBasicParsing https://raw.githubusercontent.com/docker/docker/master/VERSION).Content.Trim()
-Invoke-WebRequest "https://master.dockerproject.org/windows/x86_64/docker-$($version).zip" -OutFile "$env:TEMP\docker.zip" -UseBasicParsing
+Invoke-WebRequest "https://master.dockerproject.org/windows/x86_64/docker.zip" -OutFile "$env:TEMP\docker.zip" -UseBasicParsing
 ```
 
 将 Zip 存档扩展到“Program Files”。
@@ -90,7 +88,7 @@ Start-Service Docker
     "log-driver": "", 
     "mtu": 0,
     "pidfile": "",
-    "graph": "",
+    "data-root": "",
     "cluster-store": "",
     "cluster-advertise": "",
     "debug": true,
@@ -123,7 +121,7 @@ Start-Service Docker
 
 ```
 {    
-    "graph": "d:\\docker"
+    "data-root": "d:\\docker"
 }
 ```
 
@@ -190,3 +188,72 @@ Restart-Service docker
 
 有关详细信息，请参阅 [Docker.com 上的 Windows 配置文件](https://docs.docker.com/engine/reference/commandline/dockerd/#/windows-configuration-file)。
 
+## <a name="uninstall-docker"></a>卸载 Docker
+*使用本部分中的步骤卸载 Docker，并全面清理 Windows 10 或 Windows Server 2016 系统中的 Docker 系统组件。*
+
+> 注意：以下步骤中的所有命令都必须从**提升的** PowerShell 会话中运行。
+
+### <a name="step-1-prepare-your-system-for-dockers-removal"></a>步骤 1：准备你的系统以删除 Docker 
+最好在删除 Docker 之前确保系统上未运行容器。 下面是用于执行此操作的一些有效命令：
+```
+# Leave swarm mode (this will automatically stop and remove services and overlay networks)
+docker swarm leave --force
+
+# Stop all running containers
+docker ps --quiet | ForEach-Object {docker stop $_}
+```
+最好在删除 Docker 之前也从系统中删除所有容器、容器映像、网络和卷：
+```
+docker system prune --volumes --all
+```
+
+### <a name="step-2-uninstall-docker"></a>步骤 2：卸载 Docker 
+
+#### ***<a name="steps-to-uninstall-docker-on-windows-10"></a>在 Windows 10 上卸载 Docker 的步骤：10:***
+- 在 Windows 10 计算机上转到**“设置”>“应用”**
+- 在**“应用和功能”**下面，查找**“适用于 Windows 的 Docker”**
+- 单击**“适用于 Windows 的 Docker”>“卸载”**
+
+#### ***<a name="steps-to-uninstall-docker-on-windows-server-2016"></a>在 Windows Server 2016 上卸载 Docker 的步骤：16:***
+从提升的 PowerShell 会话中，使用 `Uninstall-Package` 和 `Uninstall-Module` cmdlet 从系统中删除 Docker 模块及其相应的程序包管理提供程序。 
+> 提示：你可以查找曾用于安装 Docker 的程序包提供程序 `PS C:\> Get-PackageProvider -Name *Docker*`
+
+*例如*：
+```
+Uninstall-Package -Name docker -ProviderName DockerMsftProvider
+Uninstall-Module -Name DockerMsftProvider
+```
+
+### <a name="step-3-cleanup-docker-data-and-system-components"></a>步骤 3：清理 Docker 数据和系统组件
+删除 Docker 的*默认网络*，以便在卸载 Docker 的同时在你的系统上清除这些网络的配置：
+```
+Get-HNSNetwork | Remove-HNSNetwork
+```
+从系统中删除 Docker 的*程序数据*：
+```
+Remove-Item "C:\ProgramData\Docker" -Recurse
+```
+你可能还需要删除 Windows 上与 Docker/容器关联的 *Windows 可选功能*。 
+
+至少，这包括“容器”功能，安装 Docker 时会在任何 Windows 10 或 Windows Server 2016 上自动启用该功能。 这还可能包括“Hyper-V”功能，安装 Docker 时可在 Windows 10 上自动启用该功能，但必须在 Windows Server 2016 上显式启用该功能。
+
+> **关于禁用 HYPER-V 的重要说明：**[Hyper-V 功能](https://docs.microsoft.com/en-us/virtualization/hyper-v-on-windows/about/)是一种常规虚拟化功能，该功能所启用的远远不止是容器！ 禁用 Hyper-V 功能之前，请确保系统上没有其他虚拟化组件需要该功能。
+
+#### ***<a name="steps-to-remove-windows-features-on-windows-10"></a>在 Windows 10 上删除 Windows 功能的步骤：10:***
+- 在 Windows 10 计算机上，转到**“控制面板”>“程序”>“程序和功能”>“打开或关闭 Windows 功能”**
+- 查找你想要禁用的功能的名称，在本例中为**“容器”**和（可选）**“Hyper-V”**
+- **取消选中**你想要禁用的功能名称旁边的框
+- 单击**“确定”**
+
+#### ***<a name="steps-to-remove-windows-features-on-windows-server-2016"></a>在 Windows Server 2016 上删除 Windows 功能的步骤：16:***
+从提升的 PowerShell 会话中，使用以下命令禁用系统中的**“容器”**和（可选）**“Hyper-V”**功能：
+```
+Remove-WindowsFeature Containers
+Remove-WindowsFeature Hyper-V 
+```
+
+### <a name="step-4-reboot-your-system"></a>步骤 4：重新启动你的系统
+若要完成这些卸载/清理步骤，请从提升的 PowerShell 会话中运行：
+```
+Restart-Computer -Force
+```

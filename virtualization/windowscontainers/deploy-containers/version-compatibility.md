@@ -3,11 +3,11 @@ title: "Windows 容器版本兼容性"
 description: "Windows 如何跨多个版本运行内部版本和容器"
 keywords: "元数据, 容器, 版本"
 author: patricklang
-ms.openlocfilehash: ed9d88e1e861651426e560a4531fd4added2134a
-ms.sourcegitcommit: 456485f36ed2d412cd708aed671d5a917b934bbe
+ms.openlocfilehash: e3e9d0ba52f7dddfa2f40a9d243467ab474b459e
+ms.sourcegitcommit: 7b58ed1779d8475abe5b9e8e69f764972882063d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/08/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="windows-container-version-compatibility"></a>Windows 容器版本兼容性
 
@@ -19,23 +19,29 @@ Windows Server 2016 和 Windows 10 周年更新（两者均为版本 14393）是
 
 <table>
     <tr>
-    <th>容器操作系统版本</th>
-    <th span='2'>主机操作系统版本</th>
+    <th style="background-color:#BBDEFB">容器操作系统版本</th>
+    <th span='4' style="background-color:#DCEDC8">主机操作系统版本</th>
     </tr>
     <tr>
         <td/>
-        <td><b>Windows Server 2016/Windows 10 1609、1703</b><br/>内部版本：14393。*</td>
-        <td><b>Windows Server 版本 1709/Windows 10 Fall Creators Update</b><br/>内部版本：16299。*</td>
+        <td style="background-color:#F1F8E9"><b>Windows Server 2016</b><br/>内部版本：14393。*</td>
+        <td style="background-color:#F1F8E9"><b>Windows 10 1609、1703</b><br/>内部版本：14393.*、15063.*</td>
+        <td style="background-color:#F1F8E9"><b>Windows Server 版本 1709</b><br/>内部版本：16299.*</td>
+        <td style="background-color:#F1F8E9"><b>Windows 10 Fall Creators Update</b><br/>内部版本：16299.*</td>
     </tr>
     <tr>
-        <td><b>Windows Server 2016/Windows 10 1609、1703</b><br/>内部版本：14393。*</td>
-        <td>支持。 `process` 或 `hyperv` 隔离</td>
-        <td>支持。 `hyperv` 隔离</td>
+        <td style="background-color:#E3F2FD"><b>Windows Server 2016</b><br/>内部版本：14393.*</td>
+        <td>支持<br/> `process` 或 `hyperv` 隔离</td>
+        <td>支持<br/> 仅 `hyperv` 隔离</td>
+        <td>支持<br/> 仅 `hyperv` 隔离</td>
+        <td>支持<br/> 仅 `hyperv` 隔离</td>
     </tr>
     <tr>
-        <td><b>Windows Server 版本 1709/Windows 10 Fall Creators Update</b><br/>内部版本：16299。*</td>
+        <td style="background-color:#E3F2FD"><b>Windows Server 版本 1709</b><br/>内部版本：16299.*</td>
         <td>不支持</td>
-        <td>支持。 `process` 或 `hyperv` 隔离</td>
+        <td>不支持</td>
+        <td>支持<br/> `process` 或 `hyperv` 隔离</td>
+        <td>支持<br/> 仅 `hyperv` 隔离</td>
     </tr>
 </table>               
 
@@ -65,7 +71,7 @@ FROM microsoft/windowsservercore:1709
 ...
 ```
 
-但是，如果想要获得有关 Windows Server 版本 1709 的特定修补程序，你可以在标记中指定 KB 编号。 例如，如果想要从 Windows Server 版本 1709 获得编号为 KB4043961 的 Nano Server 基础操作系统容器映像，可以像这样进行指定：
+但是，如果想要获得有关 Windows Server 版本 1709 的特定修补程序，你可以在标记中指定 KB 编号。 例如，如果想要从 Windows Server 版本 1709 获得应用了 KB4043961 的 Nano Server 基础操作系统容器映像，可以像这样进行指定：
 
 ``` Dockerfile
 FROM microsoft/nanoserver:1709_KB4043961
@@ -87,7 +93,7 @@ FROM microsoft/nanoserver:10.0.14393.1770
 
 ## <a name="matching-versions-using-docker-swarm"></a>使用 Docker Swarm 对版本进行匹配
 
-目前，Docker Swarm 没有可以将容器使用的 Windows 版本与使用相同版本的主机进行匹配的内置方法。 如果服务更新至使用更高版本的容器，它将可以成功运行。
+目前，Docker Swarm 没有可以将容器使用的 Windows 版本与使用相同版本的主机进行匹配的内置方法。 如果更新服务以使用较新的容器，它将可以成功运行。
 
 如果需要在一段时间内运行多个 Windows 版本，可以使用两种方法。  将 Windows 主机配置为始终使用 Hyper-V 隔离，或使用标签限制。
 

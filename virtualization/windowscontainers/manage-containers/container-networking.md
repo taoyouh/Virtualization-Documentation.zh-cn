@@ -8,11 +8,11 @@ ms.topic: article
 ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: 538871ba-d02e-47d3-a3bf-25cda4a40965
-ms.openlocfilehash: 98feee128860885b4f62420cc6eb86d23579551b
-ms.sourcegitcommit: 456485f36ed2d412cd708aed671d5a917b934bbe
+ms.openlocfilehash: 394aa58c3421e512d005f59d5bd30667f1c26f16
+ms.sourcegitcommit: 6eefb890f090a6464119630bfbdc2794e6c3a3df
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/08/2017
+ms.lasthandoff: 12/18/2017
 ---
 # <a name="windows-container-networking"></a>Windows 容器网络
 > ***请参考 [Docker 容器网络](https://docs.docker.com/engine/userguide/networking/)，以了解一般 docker 网络命令、选项和语法。*** 除了本文档中所描述的任何情况之外，所有 Docker 网络命令在 Windows 上都受支持，并且所用语法与 Linux 上的语法相同。 但请注意，Windows 和 Linux 网络堆栈不同，因此你会发现某些 Linux 网络命令（如 ifconfig）在 Windows 上不受支持。
@@ -201,6 +201,7 @@ Windows 10 上适用于 Windows 的 Docker（Docker CE 引擎的 Windows 驱动�
 ```
 PS C:\> Get-VMNetworkAdapter -VMName ContainerHostVM | Set-VMNetworkAdapter -MacAddressSpoofing On
 ```
+如果你要将 VMware 作为虚拟机监控程序来运行，则将需要启用混杂模式以使其正常工作。 可在[此处](https://kb.vmware.com/s/article/1004099)找到详细信息
 #### <a name="creating-multiple-transparent-networks-on-a-single-container-host"></a>在单个容器主机上创建多个透明网络
 如果希望创建多个透明网络，则必须指定外部 Hyper-V 虚拟交换机应绑定到的（虚拟）网络适配器。 若要指定网络接口，请使用以下语法：
 ```

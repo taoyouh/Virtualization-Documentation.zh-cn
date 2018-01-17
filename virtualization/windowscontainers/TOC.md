@@ -27,10 +27,18 @@
 ## [Windows 上的 Dockerfile](manage-docker/manage-windows-dockerfile.md)
 ## [优化 Dockerfile](manage-docker/optimize-windows-dockerfile.md)
 ## [容器网络](manage-containers/container-networking.md)
+## [容器存储](manage-containers/container-storage.md)
 ## [群模式入门](manage-containers/swarm-mode.md)
 ## [通过 PowerShell 管理 Docker](https://github.com/Microsoft/Docker-PowerShell)
 ## [Windows Docker 主机远程管理](management/manage_remotehost.md)
 ## [资源控制](manage-containers/resource-controls.md)
+
+# Windows 上的 Kubernetes 
+## [入门](kubernetes/getting-started-kubernetes-windows.md)
+## [创建 Linux 主节点](kubernetes/creating-a-linux-master.md)
+## [配置网络拓扑](kubernetes/configuring-host-gateway-mode.md)
+## [编译 Kubernetes 二进制文件](kubernetes/compiling-kubernetes-binaries.md)
+## [疑难解答](kubernetes/common-problems.md)
 
 # 容器示例
 ## [应用程序框架](samples.md#Application-Frameworks)
