@@ -1,5 +1,5 @@
 {
-  "LastProcessedCommit": "6beac5753c9f65bb6352df8c829c2e62e24bd2e2",
+  "LastProcessedCommit": "b0e21468f880a902df63ea6bc589dfcff1530d6e",
   "LastTranslatedCommit": "21f4320cb76270b953a1d22d857047a2fcf5d4b8",
   "LastConfigHash": "8a1020b7136b784cdc0f8c9eca877ab77b2a9c5f",
   "Items": {
@@ -24089,6 +24089,70 @@
       "HandoffFileCommit": "9c6b51d7c70fb68c939fa28cc5d92b921f1aba50",
       "HandoffDateTime": "2018-01-17T01:17:11.6724662Z",
       "HandoffXliffHash": "a3e30506ee64ffa66a02eee59c152df84ae997e8",
+      "HandoffPriority": ""
+    },
+    "4fb7ac312b08c63564beb0f40889ff6a050c7166": {
+      "FileHash": "4fb7ac312b08c63564beb0f40889ff6a050c7166",
+      "SourceFileCommit": "b0e21468f880a902df63ea6bc589dfcff1530d6e",
+      "SourceFilePath": "virtualization\\windowscontainers\\kubernetes\\common-problems.md",
+      "HandoffReason": 1,
+      "FilePathList": [
+        "virtualization\\windowscontainers\\kubernetes\\common-problems.md"
+      ],
+      "HasMetadata": true,
+      "TranslationType": 1,
+      "HandoffFilePath": "ol-handoff\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\common-problems.9b17894d13d6587b589ea9b226a43c68b2fdc531.zh-cn.xlf",
+      "HandoffFileCommit": "3a861520d86c962393c82a5169c5e9fefd63994c",
+      "HandoffDateTime": "2018-01-17T20:18:01.3073665Z",
+      "HandoffXliffHash": "95fb7ec1dcfe5439842dbd0f59d8639c0571f08d",
+      "HandoffPriority": ""
+    },
+    "c9b0146202d7e9e5d857ca88faa43282bd504dfa": {
+      "FileHash": "c9b0146202d7e9e5d857ca88faa43282bd504dfa",
+      "SourceFileCommit": "b0e21468f880a902df63ea6bc589dfcff1530d6e",
+      "SourceFilePath": "virtualization\\windowscontainers\\kubernetes\\compiling-kubernetes-binaries.md",
+      "HandoffReason": 1,
+      "FilePathList": [
+        "virtualization\\windowscontainers\\kubernetes\\compiling-kubernetes-binaries.md"
+      ],
+      "HasMetadata": true,
+      "TranslationType": 1,
+      "HandoffFilePath": "ol-handoff\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\compiling-kubernetes-binaries.b5108870c61b15c6174a811cb493701187cc4d1d.zh-cn.xlf",
+      "HandoffFileCommit": "3a861520d86c962393c82a5169c5e9fefd63994c",
+      "HandoffDateTime": "2018-01-17T20:18:01.3073665Z",
+      "HandoffXliffHash": "eba5c2e3e5fb2d59e6f6b3ef34424f72d03159d1",
+      "HandoffPriority": ""
+    },
+    "d5251b1a2dc06bef396820e324fb240eed04acc8": {
+      "FileHash": "d5251b1a2dc06bef396820e324fb240eed04acc8",
+      "SourceFileCommit": "b0e21468f880a902df63ea6bc589dfcff1530d6e",
+      "SourceFilePath": "virtualization\\windowscontainers\\kubernetes\\creating-a-linux-master.md",
+      "HandoffReason": 1,
+      "FilePathList": [
+        "virtualization\\windowscontainers\\kubernetes\\creating-a-linux-master.md"
+      ],
+      "HasMetadata": true,
+      "TranslationType": 1,
+      "HandoffFilePath": "ol-handoff\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\creating-a-linux-master.e466a4116345fb573545fe56b701a66c5759d70c.zh-cn.xlf",
+      "HandoffFileCommit": "3a861520d86c962393c82a5169c5e9fefd63994c",
+      "HandoffDateTime": "2018-01-17T20:18:01.3073665Z",
+      "HandoffXliffHash": "d91f95923fac2f4376b8339f7a630ee8f8698c62",
+      "HandoffPriority": ""
+    },
+    "f1b832f8a21c034582e157342acf7826fb7b6ea3": {
+      "FileHash": "f1b832f8a21c034582e157342acf7826fb7b6ea3",
+      "SourceFileCommit": "b0e21468f880a902df63ea6bc589dfcff1530d6e",
+      "SourceFilePath": "virtualization\\windowscontainers\\kubernetes\\getting-started-kubernetes-windows.md",
+      "HandoffReason": 1,
+      "FilePathList": [
+        "virtualization\\windowscontainers\\kubernetes\\getting-started-kubernetes-windows.md"
+      ],
+      "HasMetadata": true,
+      "TranslationType": 1,
+      "HandoffFilePath": "ol-handoff\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\getting-started-kubernetes-windows.e642abab5eaaff4bddcc8a4f36abd3f7a6675efc.zh-cn.xlf",
+      "HandoffFileCommit": "3a861520d86c962393c82a5169c5e9fefd63994c",
+      "HandoffDateTime": "2018-01-17T20:18:01.3073665Z",
+      "HandoffXliffHash": "723ab534df3722ce536e4ecfad20d08527e97879",
       "HandoffPriority": ""
     }
   }
