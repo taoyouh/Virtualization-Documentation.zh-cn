@@ -8,11 +8,11 @@ ms.topic: article
 ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: ebd79cd3-5fdd-458d-8dc8-fc96408958b5
-ms.openlocfilehash: 44693b413dd8043fbec68835eafe6754615fa449
-ms.sourcegitcommit: 456485f36ed2d412cd708aed671d5a917b934bbe
+ms.openlocfilehash: 4d4b8a533aa5517c5850967f0b92c97da5190296
+ms.sourcegitcommit: 4042339cfd8a4440a5aba2b6f28968a52ab066fa
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/08/2017
+ms.lasthandoff: 01/02/2018
 ---
 # <a name="troubleshooting"></a>疑难解答
 
@@ -29,7 +29,7 @@ Invoke-WebRequest https://aka.ms/Debug-ContainerHost.ps1 -UseBasicParsing | Invo
 ## <a name="finding-logs"></a>查找日志
 存在多个用于管理 Windows 容器的服务。 下一节将介绍为每个服务获取日志的位置。
 
-### <a name="docker-engine"></a>Docker 引擎
+# <a name="docker-engine"></a>Docker 引擎
 Docker 引擎会将事件记录到 Windows“应用程序”事件日志中，而不是某个文件中。 使用 Windows PowerShell 可以轻松读取、排序和筛选这些日志
 
 例如，这将显示过去 5 分钟的 Docker 引擎日志（从最早的开始）。
@@ -44,7 +44,7 @@ Get-EventLog -LogName Application -Source Docker -After (Get-Date).AddMinutes(-5
 Get-EventLog -LogName Application -Source Docker -After (Get-Date).AddMinutes(-30)  | Sort-Object Time | Export-CSV ~/last30minutes.CSV
 ```
 
-#### <a name="enabling-debug-logging"></a>启用调试日志记录
+## <a name="enabling-debug-logging"></a>启用调试日志记录
 还可以在 Docker 引擎上启用调试级别的日志记录。 如果常规日志没有足够的详细信息，这可能有助于进行故障排除。
 
 首先，打开提升的命令提示符，然后运行 `sc.exe qc docker` 为 Docker 服务获取当前命令行。
@@ -90,7 +90,7 @@ sc.exe stop docker
 <path\to\>dockerd.exe -D > daemon.log 2>&1
 ```
 
-#### <a name="obtaining-stack-dump-and-daemon-data"></a>获取堆栈转储和守护程序数据。
+## <a name="obtaining-stack-dump-and-daemon-data"></a>获取堆栈转储和守护程序数据。
 
 通常，仅在 Microsoft 支持或 docker 开发人员明确要求时，这些内容才有用。 它们可用于帮助诊断 docker 是否被挂起。 
 
@@ -110,7 +110,7 @@ docker-signal -pid=<id>
 请注意，`daemon-data*.log` 可能包含个人信息，并且通常应该只与受信任的支持人员共享。 `goroutine-stacks*.log` 不包含个人信息。
 
 
-### <a name="host-compute-service"></a>主机计算服务
+# <a name="host-compute-service"></a>主机计算服务
 Docker 引擎依赖于 Windows 特定的主机计算服务。 它具有单独的日志: 
 - Microsoft-Windows-Hyper-V-Compute-Admin
 - Microsoft-Windows-Hyper-V-Compute-Operational
@@ -123,7 +123,7 @@ Get-WinEvent -LogName Microsoft-Windows-Hyper-V-Compute-Admin
 Get-WinEvent -LogName Microsoft-Windows-Hyper-V-Compute-Operational 
 ```
 
-#### <a name="capturing-hcs-analyticdebug-logs"></a>捕获 HCS 分析/调试日志
+## <a name="capturing-hcs-analyticdebug-logs"></a>捕获 HCS 分析/调试日志
 
 若要对“Hyper-V 计算”启用分析/调试日志，请将日志保存到 `hcslog.evtx`。
 
@@ -140,7 +140,7 @@ wevtutil.exe epl Microsoft-Windows-Hyper-V-Compute-Analytic <hcslog.evtx>
 wevtutil.exe sl Microsoft-Windows-Hyper-V-Compute-Analytic /e:false /q:true
 ```
 
-#### <a name="capturing-hcs-verbose-tracing"></a>捕获 HCS 详细跟踪信息
+## <a name="capturing-hcs-verbose-tracing"></a>捕获 HCS 详细跟踪信息
 
 通常，这些信息仅在 Microsoft 支持请求时才有用。 
 

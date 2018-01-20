@@ -14,18 +14,6 @@ Hyper-V 支持按分区隔离。 分区是虚拟机监控程序支持的逻辑�
 
 ![](./media/hv_architecture.png)
 
-## <a name="support-for-third-party-virtualization-stacks"></a>对第三方虚拟化堆栈的支持
-
-Hyper-V 另外还有一个适合第三方虚拟化堆栈和应用程序的扩展用户模式 API，用于在虚拟机监控程序级别创建和管理分区、配置分区的内存映射以及创建和控制虚拟处理器的执行操作。
-
-> 例如：诸如 QEMU 之类的客户端可以针对虚拟机监控程序而运行，同时可维护其管理、配置、来宾/主机协议以及支持来宾的驱动程序。 所有这一切都在与 Hyper-V 管理的无重叠分区一起运行时进行。
-
-下图提供了第三方体系结构的高级概述。
-
-![](./media/hv_platform_architecture_simplified.png)
-> 有关详细信息，请参阅：[Windows 虚拟机监控程序平台 API](./hypervisor-platform.md)
-**注意：这些 API 尚未公开发布，并且将包含在未来的 Windows 版本中。**
-
 ## <a name="glossary"></a>术语表
 * **APIC** – 高级可编程中断控制器 – 一个允许将优先级分配给其中断输出的设备。
 * **子分区** – 托管来宾操作系统的分区 - 子分区对物理内存和设备的所有访问权限均通过虚拟机总线 (VMBus) 或虚拟机监控程序来提供。

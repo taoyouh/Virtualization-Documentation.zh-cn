@@ -7,11 +7,11 @@ ms.topic: get-started-article
 ms.prod: containers
 description: "从头开始创建 Kubernetes 群集主机。"
 keywords: "kubernetes, 1.9, 主机, linux"
-ms.openlocfilehash: 8fa8b0a6b97d9909d0b1e670b37a0a541901a08d
-ms.sourcegitcommit: ad5f6344230c7c4977adf3769fb7b01a5eca7bb9
+ms.openlocfilehash: d5251b1a2dc06bef396820e324fb240eed04acc8
+ms.sourcegitcommit: b0e21468f880a902df63ea6bc589dfcff1530d6e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2017
+ms.lasthandoff: 01/17/2018
 ---
 # <a name="kubernetes-master--from-scratch"></a>从头开始创建 Kubernetes 主机 #
 此页面将从头到尾逐步介绍 Kubernetes 主机的手动部署。
@@ -49,10 +49,10 @@ mv * ~/kube/
 > [!Note]  
 > 若要包括修补程序或者使用非常先进的 Kubernetes 代码，而不是下载预生成的二进制文件，请参阅[本页面](./compiling-kubernetes-binaries.md)。
 
-从 [Kubernetes 主线](https://github.com/kubernetes/kubernetes/releases/tag/v1.9.0-beta.1)下载并安装官方 Linux 二进制文件，安装如下所示：
+从 [Kubernetes 主线](https://github.com/kubernetes/kubernetes/releases/tag/v1.9.1)下载并安装官方 Linux 二进制文件，安装如下所示：
 
 ```bash
-wget -O kubernetes.tar.gz https://github.com/kubernetes/kubernetes/releases/download/v1.9.0-beta.1/kubernetes.tar.gz
+wget -O kubernetes.tar.gz https://github.com/kubernetes/kubernetes/releases/download/v1.9.1/kubernetes.tar.gz
 tar -vxzf kubernetes.tar.gz 
 cd kubernetes/cluster 
 # follow the prompts from this command, the defaults are generally fine:
