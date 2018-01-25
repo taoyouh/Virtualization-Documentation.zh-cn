@@ -182,6 +182,9 @@
   "af8d8a05fc953dcc93672a0f936caca5e37f0de3": [
     "virtualization\\windowscontainers\\deploy-containers\\system-requirements.md"
   ],
+  "0280e8fbe784629fcd2e2ee9695ed5c253a5643f": [
+    "virtualization\\windowscontainers\\communitylinks.md"
+  ],
   "b6c25285c3cee3a863bef40c34a1cf13b66b42fb": [
     "virtualization\\windowscontainers\\communitylinks.md"
   ],
@@ -656,6 +659,9 @@
   ],
   "f713534ccab2a8422934936fe1f6e0286f887586": [
     "virtualization\\hyper-v-on-windows\\user-guide\\enhanced-session-mode.md"
+  ],
+  "413e28aabccdf894ebc249d8eae59e75e4b42345": [
+    "virtualization\\windowscontainers\\manage-containers\\resource-controls.md"
   ],
   "d3eb7e2b751468953a152e8c723551fb3e1d12dd": [
     "virtualization\\windowscontainers\\manage-containers\\resource-controls.md"

@@ -1,5 +1,5 @@
 {
-  "LastProcessedCommit": "b0e21468f880a902df63ea6bc589dfcff1530d6e",
+  "LastProcessedCommit": "1bd3d86bfbad8351cb19bdc84129dd5aec976c0c",
   "LastTranslatedCommit": "21f4320cb76270b953a1d22d857047a2fcf5d4b8",
   "LastConfigHash": "8a1020b7136b784cdc0f8c9eca877ab77b2a9c5f",
   "Items": {
@@ -24153,6 +24153,38 @@
       "HandoffFileCommit": "3a861520d86c962393c82a5169c5e9fefd63994c",
       "HandoffDateTime": "2018-01-17T20:18:01.3073665Z",
       "HandoffXliffHash": "723ab534df3722ce536e4ecfad20d08527e97879",
+      "HandoffPriority": ""
+    },
+    "0280e8fbe784629fcd2e2ee9695ed5c253a5643f": {
+      "FileHash": "0280e8fbe784629fcd2e2ee9695ed5c253a5643f",
+      "SourceFileCommit": "1bd3d86bfbad8351cb19bdc84129dd5aec976c0c",
+      "SourceFilePath": "virtualization\\windowscontainers\\communitylinks.md",
+      "HandoffReason": 1,
+      "FilePathList": [
+        "virtualization\\windowscontainers\\communitylinks.md"
+      ],
+      "HasMetadata": true,
+      "TranslationType": 1,
+      "HandoffFilePath": "ol-handoff\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\communitylinks.2bb7ea2ddbb713bc85f6355770d609c04778fa4e.zh-cn.xlf",
+      "HandoffFileCommit": "2e69b2120a8061961ab65b94fe850d313f2ef5e4",
+      "HandoffDateTime": "2018-01-25T17:17:09.2656765Z",
+      "HandoffXliffHash": "86e5d9a56987590b024bfc7f62e0cf80b3c8174f",
+      "HandoffPriority": ""
+    },
+    "413e28aabccdf894ebc249d8eae59e75e4b42345": {
+      "FileHash": "413e28aabccdf894ebc249d8eae59e75e4b42345",
+      "SourceFileCommit": "1bd3d86bfbad8351cb19bdc84129dd5aec976c0c",
+      "SourceFilePath": "virtualization\\windowscontainers\\manage-containers\\resource-controls.md",
+      "HandoffReason": 1,
+      "FilePathList": [
+        "virtualization\\windowscontainers\\manage-containers\\resource-controls.md"
+      ],
+      "HasMetadata": true,
+      "TranslationType": 1,
+      "HandoffFilePath": "ol-handoff\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\resource-controls.ebd6b460c2758fdccb19707a1a6b398c39920ef6.zh-cn.xlf",
+      "HandoffFileCommit": "2e69b2120a8061961ab65b94fe850d313f2ef5e4",
+      "HandoffDateTime": "2018-01-25T17:17:09.2656765Z",
+      "HandoffXliffHash": "295e56e3e3da72442ba5c5b9be1283fd22314a11",
       "HandoffPriority": ""
     }
   }
