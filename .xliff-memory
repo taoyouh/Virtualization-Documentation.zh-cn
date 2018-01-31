@@ -3397,6 +3397,12 @@
       "XliffHash": "ac93276b5b282e7a4133204928a965281e34fdb6",
       "TranslationType": 1,
       "SkeletonFile": "ol-xliffcache\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\37c8cadc4e2725e8220834d41907240c1a273e09.7a22108305ac5a58dcb740f36fb94238d0325ee7.xml"
+    },
+    "virtualization\\windowscontainers\\kubernetes\\getting-started-kubernetes-windows.md.3a455ee556bdb459c71ced1682b411332bbc2b86.HT": {
+      "SourceFilename": "virtualization\\windowscontainers\\kubernetes\\getting-started-kubernetes-windows.md",
+      "XliffHash": "3a455ee556bdb459c71ced1682b411332bbc2b86",
+      "TranslationType": 1,
+      "SkeletonFile": "ol-xliffcache\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\c3c2df4211aaf12cb8fbeb6eff1f8e95edd415ab.9bd2e7110c9373360ddd61eab1c5c4083cd68c63.xml"
     }
   }
 }

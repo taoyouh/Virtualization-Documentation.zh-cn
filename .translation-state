@@ -1,5 +1,5 @@
 {
-  "LastProcessedCommit": "d38444cf191e6c2b0ca0dbb29678e494b72c19f5",
+  "LastProcessedCommit": "f542e8c95b5bb31b05b7c88f598f00f76779b519",
   "LastTranslatedCommit": "21f4320cb76270b953a1d22d857047a2fcf5d4b8",
   "LastConfigHash": "8a1020b7136b784cdc0f8c9eca877ab77b2a9c5f",
   "Items": {
@@ -24265,6 +24265,22 @@
       "HandoffFileCommit": "8708d2535110baa48ffac7fd5522d7e511c017f1",
       "HandoffDateTime": "2018-01-31T20:16:11.1650882Z",
       "HandoffXliffHash": "c2dcde96cebcff08b22218632d19057e4e4e69a1",
+      "HandoffPriority": ""
+    },
+    "c3c2df4211aaf12cb8fbeb6eff1f8e95edd415ab": {
+      "FileHash": "c3c2df4211aaf12cb8fbeb6eff1f8e95edd415ab",
+      "SourceFileCommit": "f542e8c95b5bb31b05b7c88f598f00f76779b519",
+      "SourceFilePath": "virtualization\\windowscontainers\\kubernetes\\getting-started-kubernetes-windows.md",
+      "HandoffReason": 1,
+      "FilePathList": [
+        "virtualization\\windowscontainers\\kubernetes\\getting-started-kubernetes-windows.md"
+      ],
+      "HasMetadata": true,
+      "TranslationType": 1,
+      "HandoffFilePath": "ol-handoff\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\getting-started-kubernetes-windows.e642abab5eaaff4bddcc8a4f36abd3f7a6675efc.zh-cn.xlf",
+      "HandoffFileCommit": "ac080ed9f2c56b4e6eaa1949bc63ac70d2b7fa38",
+      "HandoffDateTime": "2018-01-31T22:17:18.7880123Z",
+      "HandoffXliffHash": "3a455ee556bdb459c71ced1682b411332bbc2b86",
       "HandoffPriority": ""
     }
   }

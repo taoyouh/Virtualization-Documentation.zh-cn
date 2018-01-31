@@ -714,6 +714,9 @@
   "073df4bfd95f344fa31b95462636ad060e994562": [
     "virtualization\\windowscontainers\\kubernetes\\creating-a-linux-master.md"
   ],
+  "c3c2df4211aaf12cb8fbeb6eff1f8e95edd415ab": [
+    "virtualization\\windowscontainers\\kubernetes\\getting-started-kubernetes-windows.md"
+  ],
   "6f8a17e6d7785ec6d99552edbe5a0c356c109a01": [
     "virtualization\\windowscontainers\\kubernetes\\getting-started-kubernetes-windows.md"
   ],
