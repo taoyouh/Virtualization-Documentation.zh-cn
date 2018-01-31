@@ -1,4 +1,7 @@
 {
+  "37c8cadc4e2725e8220834d41907240c1a273e09": [
+    "virtualization\\windowscontainers\\about\\faq.md"
+  ],
   "b084bf179d9360e4a72e8e88b4fec80eafb2906c": [
     "virtualization\\windowscontainers\\about\\faq.md"
   ],
@@ -378,6 +381,9 @@
   "622c8f638a815e19a54aa75b6b5ea0688d966ae3": [
     "virtualization\\windowscontainers\\manage-containers\\container-base-images.md"
   ],
+  "4b6a6523de71ba2f589245f48b310c16f6c9ccd7": [
+    "virtualization\\windowscontainers\\manage-containers\\container-networking.md"
+  ],
   "6c3498c53588e5f923d4029424b309dad2ad10cb": [
     "virtualization\\windowscontainers\\manage-containers\\container-networking.md"
   ],
@@ -425,6 +431,9 @@
   ],
   "9dcac129e7c95fa416437061c426fee850db11b4": [
     "virtualization\\windowscontainers\\manage-docker\\manage-windows-dockerfile.md"
+  ],
+  "ba45ee94a5d5e8a15bbbeab7b9c25f15be8be731": [
+    "virtualization\\windowscontainers\\manage-docker\\optimize-windows-dockerfile.md"
   ],
   "608a08c2e7e1afbb4e2eb2583384f042baa78b1f": [
     "virtualization\\windowscontainers\\manage-docker\\optimize-windows-dockerfile.md"
@@ -693,6 +702,9 @@
   "d4d2bb9c51585159adbf9edd7d709c4655acd0e1": [
     "virtualization\\windowscontainers\\kubernetes\\configuring-host-gateway-mode.md"
   ],
+  "3ea338f7af3dd921731fce0ec5a8b2cf8c4fef0c": [
+    "virtualization\\windowscontainers\\kubernetes\\creating-a-linux-master.md"
+  ],
   "d5251b1a2dc06bef396820e324fb240eed04acc8": [
     "virtualization\\windowscontainers\\kubernetes\\creating-a-linux-master.md"
   ],
@@ -701,6 +713,9 @@
   ],
   "073df4bfd95f344fa31b95462636ad060e994562": [
     "virtualization\\windowscontainers\\kubernetes\\creating-a-linux-master.md"
+  ],
+  "6f8a17e6d7785ec6d99552edbe5a0c356c109a01": [
+    "virtualization\\windowscontainers\\kubernetes\\getting-started-kubernetes-windows.md"
   ],
   "f1b832f8a21c034582e157342acf7826fb7b6ea3": [
     "virtualization\\windowscontainers\\kubernetes\\getting-started-kubernetes-windows.md"

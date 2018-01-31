@@ -3367,6 +3367,36 @@
       "XliffHash": "86e5d9a56987590b024bfc7f62e0cf80b3c8174f",
       "TranslationType": 1,
       "SkeletonFile": "ol-xliffcache\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\0280e8fbe784629fcd2e2ee9695ed5c253a5643f.919d9597b1062cf7c0ab4b78b0d75d7ffb0d9421.xml"
+    },
+    "virtualization\\windowscontainers\\kubernetes\\creating-a-linux-master.md.5d6c9ac89724b4f25c499f8509b59ffdf7944d31.HT": {
+      "SourceFilename": "virtualization\\windowscontainers\\kubernetes\\creating-a-linux-master.md",
+      "XliffHash": "5d6c9ac89724b4f25c499f8509b59ffdf7944d31",
+      "TranslationType": 1,
+      "SkeletonFile": "ol-xliffcache\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\3ea338f7af3dd921731fce0ec5a8b2cf8c4fef0c.3084c85b9a82eff1c9825f32e7943b1c3b5fd4ba.xml"
+    },
+    "virtualization\\windowscontainers\\manage-containers\\container-networking.md.db20e075d5e3c95516417716f2b1f37dc97e3dfa.HT": {
+      "SourceFilename": "virtualization\\windowscontainers\\manage-containers\\container-networking.md",
+      "XliffHash": "db20e075d5e3c95516417716f2b1f37dc97e3dfa",
+      "TranslationType": 1,
+      "SkeletonFile": "ol-xliffcache\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\4b6a6523de71ba2f589245f48b310c16f6c9ccd7.3266798e96000d9a6a680c0edffd0980fe8064f9.xml"
+    },
+    "virtualization\\windowscontainers\\kubernetes\\getting-started-kubernetes-windows.md.cd5406abe5ce6594eb7c355dd3f4028221e77dd1.HT": {
+      "SourceFilename": "virtualization\\windowscontainers\\kubernetes\\getting-started-kubernetes-windows.md",
+      "XliffHash": "cd5406abe5ce6594eb7c355dd3f4028221e77dd1",
+      "TranslationType": 1,
+      "SkeletonFile": "ol-xliffcache\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\6f8a17e6d7785ec6d99552edbe5a0c356c109a01.ba9c855d33f4f071a54b5f992a7b59829f63783d.xml"
+    },
+    "virtualization\\windowscontainers\\manage-docker\\optimize-windows-dockerfile.md.c2dcde96cebcff08b22218632d19057e4e4e69a1.HT": {
+      "SourceFilename": "virtualization\\windowscontainers\\manage-docker\\optimize-windows-dockerfile.md",
+      "XliffHash": "c2dcde96cebcff08b22218632d19057e4e4e69a1",
+      "TranslationType": 1,
+      "SkeletonFile": "ol-xliffcache\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\ba45ee94a5d5e8a15bbbeab7b9c25f15be8be731.03bf8efbb8a4190ee392e326fee0328d999dbf7e.xml"
+    },
+    "virtualization\\windowscontainers\\about\\faq.md.ac93276b5b282e7a4133204928a965281e34fdb6.HT": {
+      "SourceFilename": "virtualization\\windowscontainers\\about\\faq.md",
+      "XliffHash": "ac93276b5b282e7a4133204928a965281e34fdb6",
+      "TranslationType": 1,
+      "SkeletonFile": "ol-xliffcache\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\37c8cadc4e2725e8220834d41907240c1a273e09.7a22108305ac5a58dcb740f36fb94238d0325ee7.xml"
     }
   }
 }
