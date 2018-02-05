@@ -1,28 +1,11 @@
 # <a name='report-top'></a> Localization Handoff Report
 
 ## Summary
- Total Files | 1
+ Total Files | 0
 
 ## File List
- Source File | Status | Details 
- ----------- | ------ | ------- 
- [virtualization\windowscontainers\kubernetes\getting-started-kubernetes-windows.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/f542e8c95b5bb31b05b7c88f598f00f76779b519/virtualization/windowscontainers/kubernetes/getting-started-kubernetes-windows.md) | HandedOffSuccess | [Details](#c3c2df4211aaf12cb8fbeb6eff1f8e95edd415ab340)
 
 ## Item Details
-##### <a name='c3c2df4211aaf12cb8fbeb6eff1f8e95edd415ab340'></a> Source: [virtualization\windowscontainers\kubernetes\getting-started-kubernetes-windows.md](https://github.com/Microsoft/Virtualization-Documentation-Private/blob/f542e8c95b5bb31b05b7c88f598f00f76779b519/virtualization/windowscontainers/kubernetes/getting-started-kubernetes-windows.md)
-* Status: HandedOffSuccess
-* Target File: 
-* Handoff File: [getting-started-kubernetes-windows.e642abab5eaaff4bddcc8a4f36abd3f7a6675efc.zh-cn.xlf](https://github.com/MicrosoftDocs/Virtualization-Documentation-Private.handoff/blob/ac080ed9f2c56b4e6eaa1949bc63ac70d2b7fa38/ol-handoff/MicrosoftDocs/Virtualization-Documentation-Private.zh-cn/live/getting-started-kubernetes-windows.e642abab5eaaff4bddcc8a4f36abd3f7a6675efc.zh-cn.xlf)
-* Handoff Datetime: 2018-01-31 22:17:18
-* Handoff Reason: Include
-* Handoff Name: 
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* Handback Name: 
-* [Back to Top](#report-top)
-
 
 ## Error Details
 
