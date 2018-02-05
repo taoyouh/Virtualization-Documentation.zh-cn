@@ -8,11 +8,11 @@ ms.prod: containers
 description: "使用 v1.9 beta 版本将 Windows 节点加入到 Kubernetes 群集中。"
 keywords: "kubernetes, 1.9, windows, 入门"
 ms.assetid: 3b05d2c2-4b9b-42b4-a61b-702df35f5b17
-ms.openlocfilehash: d88ab46dc0046256ebed9c6696a99104a7197fad
-ms.sourcegitcommit: ad5f6344230c7c4977adf3769fb7b01a5eca7bb9
+ms.openlocfilehash: f1b832f8a21c034582e157342acf7826fb7b6ea3
+ms.sourcegitcommit: b0e21468f880a902df63ea6bc589dfcff1530d6e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2017
+ms.lasthandoff: 01/17/2018
 ---
 # <a name="kubernetes-on-windows"></a>Windows 上的 Kubernetes #
 借助 Kubernetes 1.9 和 Windows Server [版本 1709](https://docs.microsoft.com/en-us/windows-server/get-started/whats-new-in-windows-server-1709#networking) 的最新版本，用户可以充分利用 Windows 网络中的最新功能：
@@ -57,7 +57,7 @@ ms.lasthandoff: 12/05/2017
 
 ## <a name="preparing-a-windows-node"></a>准备 Windows 节点 ##
 > [!Note]  
-> Windows 部分中的所有代码段都将在提升的 PowerShell 中运行。
+> Windows 部分中的所有代码段都将在_提升的_ PowerShell 中运行。
 
 Kubernetes 使用 [Docker](https://www.docker.com/) 作为其容器 Orchestrator，因此我们需要安装它。 你可以按照[官方 MSDN 说明](virtualization/windowscontainers/manage-docker/configure-docker-daemon.md#install-docker)、[Docker 说明](https://store.docker.com/editions/enterprise/docker-ee-server-windows)进行操作，或者尝试以下步骤：
 
@@ -85,13 +85,13 @@ rm -recurse -force master,master.zip
 
 ```powershell
 docker pull microsoft/windowsservercore:1709
-docker tag $(docker images -q) microsoft/windowsservercore:latest
+docker tag microsoft/windowsservercore:1709 microsoft/windowsservercore:latest
 cd C:/k/
 docker build -t kubeletwin/pause .
 ```
 
 > [!Note]  
-> 我们会将其标记为 `:latest`，因为这是我们稍后将要部署的示例服务所需要的项。
+> 我们将其标记为 `:latest`，因为它将决定稍后将部署的示例服务，尽管实际上这可能不_会_是可用的最新 Windows Server Core 映像。 请务必小心容器映像冲突；没有预期的标记可能会导致不兼容容器映像的 `docker pull`，从而导致[部署问题](./common-problems.md#when-deploying-docker-containers-keep-restarting)。 
 
 
 ### <a name="downloading-binaries"></a>下载二进制文件 ###
@@ -101,10 +101,7 @@ docker build -t kubeletwin/pause .
   - `kubelet.exe`
   - `kube-proxy.exe`
 
-你可以通过最新 1.9 版本的 `CHANGELOG.md` 文件中的链接下载这些文件。 截至编写本文时，最新版本为 [1.9.0-beta.1](https://github.com/kubernetes/kubernetes/releases/tag/v1.9.0-beta.1)，并且 Windows 二进制文件位于[此处](https://dl.k8s.io/v1.9.0-beta.1/kubernetes-node-windows-amd64.tar.gz)。 使用 [7-Zip](http://www.7-zip.org/) 等工具解压缩存档并将二进制文件放在 `C:\k\` 中。
-
-> [!Warning]  
-> 截至编写本文时，`kube-proxy.exe` 需要一个待处理的 Kubernetes [拉取请求](https://github.com/kubernetes/kubernetes/pull/56529)以正常工作。 你可能需要[手动生成二进制文件](./compiling-kubernetes-binaries.md)来解决此问题。
+你可以通过最新 1.9 版本的 `CHANGELOG.md` 文件中的链接下载这些文件。 截至编写本文时，最新版本为 [1.9.1](https://github.com/kubernetes/kubernetes/releases/tag/v1.9.1)，并且 Windows 二进制文件位于[此处](https://storage.googleapis.com/kubernetes-release/release/v1.9.1/kubernetes-node-windows-amd64.tar.gz)。 使用 [7-Zip](http://www.7-zip.org/) 等工具解压缩存档并将二进制文件放在 `C:\k\` 中。
 
 
 ### <a name="joining-the-cluster"></a>加入群集 ###
@@ -153,4 +150,4 @@ watch kubectl get pods -o wide
   - `curl` 带 Kubernetes [默认 DNS 后缀](https://kubernetes.io/docs/concepts/services-networking/dns-pod-service/#services)的*服务名称*，并演示 DNS 功能。
 
 > [!Warning]  
-> Windows 节点将无法访问服务 IP。 这是一个[已知限制](./common-problems.md#common-windows-errors)。
+> Windows 节点将无法访问服务 IP。 这是一个[已知限制](./common-problems.md#my-windows-node-cannot-access-my-services-using-the-service-ip)。

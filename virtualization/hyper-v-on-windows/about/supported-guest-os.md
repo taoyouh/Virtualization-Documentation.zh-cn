@@ -1,64 +1,65 @@
 ---
-title: Supported Windows guests
-description: Supported Windows guests.
+title: "受支持的 Windows 来宾"
+description: "受支持的 Windows 来宾。"
 keywords: windows 10, hyper-v
 author: scooley
 ms.date: 05/02/2016
 ms.topic: article
 ms.prod: windows-10-hyperv
 ms.assetid: ae4a18ed-996b-4104-90c5-539c90798e4c
-ms.openlocfilehash: ac1ec3740cfa75acd8c005df3f67531c693cd914
-ms.sourcegitcommit: 63e890ad2caae3ce55503af81c6c5ff0d1e630f6
+ms.openlocfilehash: 361b76e18125bb14f5e88b1892eed882a3ae5508
+ms.sourcegitcommit: 59541f11d481d8df341597bd73ce7fac14f442ee
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/17/2017
+ms.lasthandoff: 01/05/2018
 ---
-# Supported Windows guests 
+# <a name="supported-windows-guests"></a>受支持的 Windows 来宾 
 
-This article lists the operating system combinations supported in Hyper-V on Windows.  It also serves as an introduction to integration services and other factors in support.
+本文列出了在 Windows 上的 Hyper-V 中受支持的操作系统组合。  它还介绍了集成服务和支持的其他因素。
 
-## What does support mean? 
-Support means Microsoft has tested these host/guest combinations.  Issues with these combinations may receive attention from Product Support Services.
+## <a name="what-does-support-mean"></a>支持的含义是什么？ 
+支持意味着 Microsoft 已测试这些主机/来宾组合。  这些组合的问题可能会受到产品支持服务的关注。
  
-Microsoft provides support for guest operating systems in the following manner:
-* Issues found in Microsoft operating systems and in integration services are supported by Microsoft support.
-* For issues found in other operating systems that have been certified by the operating system vendor to run on Hyper-V, support is provided by the vendor.
-* For issues found in other operating systems, Microsoft submits the issue to the multi-vendor support community, [TSANet](http://www.tsanet.org/).
+Microsoft 按如下方式为来宾操作系统提供支持：
+* Microsoft 为在 Microsoft 操作系统和集成服务中找到的问题提供支持。
+* 对于经操作系统供应商认证可以在 Hyper-V 上运行的其他操作系统中发现的问题，应由该供应商提供支持。
+* 对于在其他操作系统中发现的问题，Microsoft 会将问题提交到多供应商支持社区 [TSANet](http://www.tsanet.org/)。
 
-In order to be supported, both the Hyper-V host and guest must be updated with all critical updates available through Windows Update.
+若要获取支持，Hyper-V 主机和来宾必须使用通过 Windows 更新提供的所有重要更新进行更新。
 
-## Supported guest operating systems
+## <a name="supported-guest-operating-systems"></a>支持的来宾操作系统
 
-In order to receive support, both the Windows guest operating systems and the host operating system must be current with all critical updates available through Windows Update.
+若要收到支持，Windows 来宾操作系统和主机操作系统必须使用通过 Windows 更新提供的所有重要更新来保持最新状态。
 
-| Guest operating system |  Maximum number of virtual processors | Notes | 
+| 来宾操作系统 |  虚拟处理器的最大数量 | 注释 | 
 |:-----|:-----|:-----|
-| Windows 10 | 32 | |
-| Windows 8.1 | 32 | |
+| Windows 10 | 32 |增强的会话模式不适用于 Windows 10 家庭版 |
+| Windows8.1 | 32 | |
 | Windows 8 | 32 |  |
-| Windows 7 with Service Pack 1 (SP 1) | 4 | Ultimate, Enterprise, and Professional editions (32-bit and 64-bit). |
-| Windows 7 | 4 | Ultimate, Enterprise, and Professional editions (32-bit and 64-bit). |
-| Windows Vista with Service Pack 2 (SP2) | 2 | Business, Enterprise, and Ultimate, including N and KN editions. | 
+| 带有 Service Pack 1 (SP 1) 的 Windows 7 | 4 | 旗舰版、企业版和专业版版本（32 位和 64 位）。 |
+| Windows 7 | 4 | 旗舰版、企业版和专业版版本（32 位和 64 位）。 |
+| Windows Vista Service Pack 2 (SP2) | 2 | 商用版、企业版和旗舰版，包括 N 和 KN 版本。 | 
 | - | | |
-| Windows Server 2016 | 64 | |
+| [Windows Server 半年频道](https://docs.microsoft.com/en-us/windows-server/get-started/semi-annual-channel-overview) | 64 | |
+| WindowsServer 2016 | 64 | |
 | Windows Server 2012 R2 | 64 | |
 | Windows Server 2012 | 64 | |
-| Windows Server 2008 R2 with Service Pack 1 (SP 1) | 64 | Datacenter, Enterprise, Standard and Web editions. |
-| Windows Server 2008 with Service Pack 2 (SP 2) | 4 | Datacenter, Enterprise, Standard and Web editions (32-bit and 64-bit). |
+| 带有 Service Pack 1 (SP 1) 的 Windows Server 2008 R2 | 64 | Datacenter、Enterprise、Standard 和 Web 版本。 |
+| 带有 Service Pack 2 (SP 2) 的 Windows Server 2008 | 4 | Datacenter、Enterprise、Standard 和 Web 版本（32 位和 64 位）。 |
 | Windows Home Server 2011 | 4 | |
-| Windows Small Business Server 2011 | Essentials edition - 2, Standard edition - 4 | |
+| Windows Small Business Server 2011 | Essentials 版本 - 2，Standard 版本 - 4 | |
   
- > Windows 10 can run as a guest operating system on Windows 8.1 and Windows Server 2012 R2 Hyper-V hosts.
+ > Windows 10 可以作为来宾操作系统在 Windows 8.1 和 Windows Server 2012 R2 Hyper-V 主机上运行。
 
-## Supported Linux and Free BSD
+## <a name="supported-linux-and-free-bsd"></a>受支持的 Linux 和 FreeBSD
 
-| Guest operating system |  |
+| 来宾操作系统 |  |
 |:-----|:------|
-| [CentOS and Red Hat Enterprise Linux ](https://technet.microsoft.com/library/dn531026.aspx) | |
-| [Debian virtual machines on Hyper-V](https://technet.microsoft.com/library/dn614985.aspx) | |
+| [CentOS 和 Red Hat Enterprise Linux ](https://technet.microsoft.com/library/dn531026.aspx) | |
+| [Hyper-V 上的 Debian 虚拟机](https://technet.microsoft.com/library/dn614985.aspx) | |
 | [SUSE](https://technet.microsoft.com/en-us/library/dn531027.aspx) | |
 | [Oracle Linux](https://technet.microsoft.com/en-us/library/dn609828.aspx)  | |
 | [Ubuntu](https://technet.microsoft.com/en-us/library/dn531029.aspx) | |
 | [FreeBSD](https://technet.microsoft.com/library/dn848318.aspx) | |
 
-For more information, including support information on past versions of Hyper-V, see [Linux and FreeBSD Virtual Machines on Hyper-V](https://technet.microsoft.com/library/dn531030.aspx).
+有关详细信息（包括有关以前版本的 Hyper-V 的支持信息），请参阅 [Linux and FreeBSD Virtual Machines on Hyper-V](https://technet.microsoft.com/library/dn531030.aspx)（Hyper-V 上的 Linux 和 FreeBSD 虚拟机）。

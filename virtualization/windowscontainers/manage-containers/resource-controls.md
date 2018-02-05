@@ -8,11 +8,11 @@ ms.topic: article
 ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: 8ccd4192-4a58-42a5-8f74-2574d10de98e
-ms.openlocfilehash: bc36f1f59ed339b2cc3dd3372a5cd5119f470c7c
-ms.sourcegitcommit: 64f5f8d838f72ea8e0e66a72eeb4ab78d982b715
+ms.openlocfilehash: d3eb7e2b751468953a152e8c723551fb3e1d12dd
+ms.sourcegitcommit: a072513214b0dabb9dba20ce43ea52aaf7806c5f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 01/01/2018
 ---
 # <a name="implementing-resource-controls-for-windows-containers"></a>实施 Windows 容器资源控制
 某些资源控制可以按容器和按资源实施。  默认情况下，容器运行受典型 Windows 资源管理（总体上以公平分配为基础）影响，但通过实施以上控制，开发人员或管理员可以限制或影响资源使用情况。  可以控制的资源包括：CPU/处理器、内存/RAM、磁盘/存储和网络/吞吐量。
@@ -50,14 +50,14 @@ Windows 容器利用[作业对象]( https://msdn.microsoft.com/en-us/library/win
 | *存储（图像）* ||
 | Docker 界面 | [--io-maxbandwidth/--io-maxiops]( https://docs.docker.com/edge/engine/reference/commandline/run/#usage) |
 | HCS 界面 | [StorageIOPSMaximum 和 StorageBandwidthMaximum](https://github.com/Microsoft/hcsshim/blob/b144c605002d4086146ca1c15c79e56bfaadc2a7/interface.go#L67) |
-| 共享的内核 | [JobObjectIoRateControlInformation](https://msdn.microsoft.com/en-us/library/windows/desktop/hh448384(v=vs.85).aspx) |
-| Hyper-V 隔离 | [JobObjectIoRateControlInformation](https://msdn.microsoft.com/en-us/library/windows/desktop/hh448384(v=vs.85).aspx) |
+| 共享的内核 | [JOBOBJECT_IO_RATE_CONTROL_INFORMATION](https://msdn.microsoft.com/en-us/library/windows/desktop/mt280122(v=vs.85).aspx) |
+| Hyper-V 隔离 | [JOBOBJECT_IO_RATE_CONTROL_INFORMATION](https://msdn.microsoft.com/en-us/library/windows/desktop/mt280122(v=vs.85).aspx) |
 | ||
 | *存储（卷）* ||
 | Docker 界面 | [--storage-opt size=]( https://docs.docker.com/edge/engine/reference/commandline/run/#set-storage-driver-options-per-container) |
 | HCS 界面 | [StorageSandboxSize](https://github.com/Microsoft/hcsshim/blob/b144c605002d4086146ca1c15c79e56bfaadc2a7/interface.go#L67) |
-| 共享的内核 | [JobObjectIoRateControlInformation](https://msdn.microsoft.com/en-us/library/windows/desktop/hh448384(v=vs.85).aspx) |
-| Hyper-V 隔离 | [JobObjectIoRateControlInformation](https://msdn.microsoft.com/en-us/library/windows/desktop/hh448384(v=vs.85).aspx) |
+| 共享的内核 | [JOBOBJECT_IO_RATE_CONTROL_INFORMATION](https://msdn.microsoft.com/en-us/library/windows/desktop/mt280122(v=vs.85).aspx) |
+| Hyper-V 隔离 | [JOBOBJECT_IO_RATE_CONTROL_INFORMATION](https://msdn.microsoft.com/en-us/library/windows/desktop/mt280122(v=vs.85).aspx) |
 
 ## <a name="additional-notes-or-details"></a>其他说明或详细信息
 ### <a name="memory"></a>内存

@@ -7,11 +7,11 @@ ms.topic: get-started-article
 ms.prod: containers
 description: "编译和交叉编译源中的 Kubernetes 二进制文件。"
 keywords: "kubernetes，1.9，linux，编译"
-ms.openlocfilehash: 53d55eed155254f809bc3f45b8e3891dab54f209
-ms.sourcegitcommit: ad5f6344230c7c4977adf3769fb7b01a5eca7bb9
+ms.openlocfilehash: c9b0146202d7e9e5d857ca88faa43282bd504dfa
+ms.sourcegitcommit: b0e21468f880a902df63ea6bc589dfcff1530d6e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2017
+ms.lasthandoff: 01/17/2018
 ---
 # <a name="compiling-kubernetes-binaries"></a>编译 Kubernetes 二进制文件 #
 编译 Kubernetes 需要有效的 Go 环境。 此页面将逐一介绍编译 Linux 二进制文件和交叉编译 Windows 二进制文件的一些方法。
@@ -57,10 +57,10 @@ go get -d $KUBEREPO
 cd $GOPATH/src/$KUBEREPO
 ```
 
-现在，检查要从中进行生成的分支并生成 Linux `kubelet` 二进制文件。 若要避免上述 Windows 生成错误，则必须执行此步骤。 在此，我们将使用 `v1.9.0-beta.1`。 `checkout` 后，应用待处理的 PR、修补程序或对自定义二进制文件进行其他修改。
+现在，检查要从中进行生成的分支并生成 Linux `kubelet` 二进制文件。 若要避免上述 Windows 生成错误，则必须执行此步骤。 在此，我们将使用 `v1.9.1`。 在 `git checkout` 后，你可以应用待处理的 PR、修补程序或对自定义二进制文件进行其他修改。
 
 ```bash
-git checkout tags/v1.9.0-beta.1
+git checkout tags/v1.9.1
 make clean && make WHAT=cmd/kubelet
 ```
 
@@ -88,7 +88,7 @@ mkdir -p "${SRC_DIR}"
 git clone https://github.com/kubernetes/kubernetes.git ${SRC_DIR}
 
 cd ${SRC_DIR}
-git checkout tags/v1.9.0-beta.1
+git checkout tags/v1.9.1
 KUBE_BUILD_PLATFORMS=linux/amd64   build/run.sh make WHAT=cmd/kubelet
 KUBE_BUILD_PLATFORMS=windows/amd64 build/run.sh make WHAT=cmd/kubelet 
 KUBE_BUILD_PLATFORMS=windows/amd64 build/run.sh make WHAT=cmd/kube-proxy 

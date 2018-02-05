@@ -7,11 +7,11 @@ ms.topic: troubleshooting
 ms.prod: containers
 description: "关于部署 Kubernetes 和加入 Windows 节点的常见问题的解决方案。"
 keywords: "kubernetes，1.9，linux，编译"
-ms.openlocfilehash: 73b44ffd12fba58ac4ef38352c012061a6817945
-ms.sourcegitcommit: ad5f6344230c7c4977adf3769fb7b01a5eca7bb9
+ms.openlocfilehash: 4fb7ac312b08c63564beb0f40889ff6a050c7166
+ms.sourcegitcommit: b0e21468f880a902df63ea6bc589dfcff1530d6e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2017
+ms.lasthandoff: 01/17/2018
 ---
 # <a name="troubleshooting-kubernetes"></a>Kubernetes 疑难解答 #
 此页面逐一介绍 Kubernetes 设置、网络和部署的一些常见问题。
@@ -38,7 +38,7 @@ ms.lasthandoff: 12/05/2017
 chmod +x [script name]
 ```
 
-此外，某些脚本（如 `kubelet`）必须以管理员权限运行，并且应该带有前缀 `sudo`。
+此外，某些脚本（如 `kubelet`）必须以超级用户权限运行，并且应该带有前缀 `sudo`。
 
 
 ### <a name="cannot-connect-to-the-api-server-at-httpsaddressport"></a>无法在 `https://[address]:[port]` 连接到 API 服务器 ###
@@ -59,10 +59,33 @@ chmod +x [script name]
 
 ## <a name="common-windows-errors"></a>常见 Windows 错误 ##
 
+### <a name="pods-stop-resolving-dns-queries-successfully-after-some-time-alive"></a>Pod 在处于活动状态一段时间后成功停止解析 DNS 查询 ###
+这是一个网络堆栈中影响某些设置的已知问题；正在通过 Windows 维护服务对其进行快速跟踪。
 
-### <a name="my-windows-pods-cannot-access-the-linux-master-or-vice-versa"></a>我的 Windows Pod 无法访问 Linux 主机，反之亦然。 ###
+
+### <a name="my-kubernetes-pods-are-stuck-at-containercreating"></a>我的 Kubernetes Pod 会停滞在“ContainerCreating” ###
+很多原因可导致此问题，但最常见原因之一是暂停映像配置不正确。 这极有可能进一步导致其他问题。
+
+
+### <a name="when-deploying-docker-containers-keep-restarting"></a>在进行部署时，Docker 容器不断重启 ###
+检查暂停映像是否与你的操作系统版本兼容。 [说明](./getting-started-kubernetes-windows.md)假定操作系统和容器都为版本 1709。 如果你有更高版本的 Windows（如会员版本），将需要相应地调整映像。 请参阅 Microsoft 用于映像的 [Docker 存储库](https://hub.docker.com/u/microsoft/)。 无论如何，暂停映像 Dockerfile 和示例服务都会预期映像标记为 `microsoft/windowsservercore:latest`。
+
+
+### <a name="my-windows-pods-cannot-access-the-linux-master-or-vice-versa"></a>我的 Windows Pod 无法访问 Linux 主机，反之亦然 ###
 如果你使用的是 Hyper-V 虚拟机，请确保在网络适配器上启用 MAC 欺骗。
 
 
-### <a name="my-windows-node-cannot-access-my-services-using-the-service-ip"></a>我的 Windows 节点无法使用服务 IP 访问我的服务。 ###
-这是 Windows 上当前网络堆栈的已知限制。
+### <a name="my-windows-node-cannot-access-my-services-using-the-service-ip"></a>我的 Windows 节点无法使用服务 IP 访问我的服务 ###
+这是 Windows 上当前网络堆栈的已知限制。 仅 Pod 可引用服务 IP。
+
+
+### <a name="no-network-adapter-is-found-when-starting-kubelet"></a>启动 Kubelet 时未发现任何网络适配器 ###
+Windows 网络堆栈需要虚拟适配器以使 Kubernetes 网络工作。 如果以下命令未返回任何结果（在管理员 shell 中），则表示虚拟网络创建（Kubelet 工作的必要先决条件）已失败：
+
+```powershell
+Get-HnsNetwork | ? Name -Like "l2bridge"
+Get-NetAdapter | ? Name -Like "vEthernet (Ethernet*"
+```
+
+请查询 `start-kubelet.ps1` 脚本的输出以查看虚拟网络创建期间是否发生错误。
+
