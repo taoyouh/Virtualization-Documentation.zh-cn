@@ -2508,7 +2508,7 @@
       "SourceFilename": "virtualization\\windowscontainers\\kubernetes\\configuring-host-gateway-mode.md",
       "XliffHash": "d8f83b5322a35045900ff652cb6209ec385eab12",
       "TranslationType": 1,
-      "SkeletonFile": "ol-xliffcache\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\d4d2bb9c51585159adbf9edd7d709c4655acd0e1.a620da8b0526f1619c7c2d468efa303610dc02b0.xml"
+      "SkeletonFile": "ol-xliffcache\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\849a3522becec7686c605db0709733812d7ff204.5242ae30ea2fa75ed6cee990682875fae2f0de82.xml"
     },
     "virtualization\\windowscontainers\\kubernetes\\getting-started-kubernetes-windows.md.d4161b34d407a2734d6b2d4101b02326e318f480.HT": {
       "SourceFilename": "virtualization\\windowscontainers\\kubernetes\\getting-started-kubernetes-windows.md",
@@ -3427,6 +3427,18 @@
       "XliffHash": "046f8bc0c53d83786a080460bb677d6bcfb75607",
       "TranslationType": 1,
       "SkeletonFile": "ol-xliffcache\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\934a77fe852c43d93494af5525577468420f8f9b.0f9c6171a806e5a5adc6f0ab4472274c0ee54bb1.xml"
+    },
+    "virtualization\\windowscontainers\\kubernetes\\common-problems.md.9c06965f2d65ba155471ff7c4eb6d3b0459c0dff.HT": {
+      "SourceFilename": "virtualization\\windowscontainers\\kubernetes\\common-problems.md",
+      "XliffHash": "9c06965f2d65ba155471ff7c4eb6d3b0459c0dff",
+      "TranslationType": 1,
+      "SkeletonFile": "ol-xliffcache\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\b6be43f1afabdf8ef9c2ddc6f46ed5ac43a9e7a5.11941a6389b15ae8526c6e384c27ba22c57b2a1a.xml"
+    },
+    "virtualization\\windowscontainers\\kubernetes\\getting-started-kubernetes-windows.md.a82867de86f83e59cc83dbca64e180353f92470b.HT": {
+      "SourceFilename": "virtualization\\windowscontainers\\kubernetes\\getting-started-kubernetes-windows.md",
+      "XliffHash": "a82867de86f83e59cc83dbca64e180353f92470b",
+      "TranslationType": 1,
+      "SkeletonFile": "ol-xliffcache\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\0ccd7dae8da0841c98bec5cdf7345100d1b51107.1f5ae1f1bdc02d056b752f93ff0b0177c13183c8.xml"
     }
   }
 }

@@ -693,6 +693,9 @@
   "7916b1b2216c78a7a1e39c7b7392637003ffcddf": [
     "virtualization\\windowscontainers\\manage-containers\\resource-controls.md"
   ],
+  "b6be43f1afabdf8ef9c2ddc6f46ed5ac43a9e7a5": [
+    "virtualization\\windowscontainers\\kubernetes\\common-problems.md"
+  ],
   "4fb7ac312b08c63564beb0f40889ff6a050c7166": [
     "virtualization\\windowscontainers\\kubernetes\\common-problems.md"
   ],
@@ -711,6 +714,9 @@
   "34205df8156fe68fe1b12e24564e2db40b5d7543": [
     "virtualization\\windowscontainers\\kubernetes\\compiling-kubernetes-binaries.md"
   ],
+  "849a3522becec7686c605db0709733812d7ff204": [
+    "virtualization\\windowscontainers\\kubernetes\\configuring-host-gateway-mode.md"
+  ],
   "d4d2bb9c51585159adbf9edd7d709c4655acd0e1": [
     "virtualization\\windowscontainers\\kubernetes\\configuring-host-gateway-mode.md"
   ],
@@ -725,6 +731,9 @@
   ],
   "073df4bfd95f344fa31b95462636ad060e994562": [
     "virtualization\\windowscontainers\\kubernetes\\creating-a-linux-master.md"
+  ],
+  "0ccd7dae8da0841c98bec5cdf7345100d1b51107": [
+    "virtualization\\windowscontainers\\kubernetes\\getting-started-kubernetes-windows.md"
   ],
   "c3c2df4211aaf12cb8fbeb6eff1f8e95edd415ab": [
     "virtualization\\windowscontainers\\kubernetes\\getting-started-kubernetes-windows.md"
