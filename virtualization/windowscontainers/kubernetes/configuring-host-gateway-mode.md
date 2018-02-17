@@ -6,7 +6,7 @@ Kubernetes 网络的其中一个可用选项是*主机网关模式*，此模式�
 为此，我们使用 `iptables`。 将 `$CLUSTER_PREFIX` 变量替换（或设置）为所有 Pod 将使用的简短格式的子网：
 
 ```bash
-$CLUSTER_PREFIX="192.168"
+CLUSTER_PREFIX="192.168"
 sudo iptables -t nat -F
 sudo iptables -t nat -A POSTROUTING ! -d $CLUSTER_PREFIX.0.0/16 \
               -m addrtype ! --dst-type LOCAL -j MASQUERADE
@@ -22,7 +22,7 @@ sudo route add -net $CLUSTER_PREFIX.0.0 netmask 255.255.0.0 dev eth0
 最后，我们需要针对**每个节点**添加下一跃点网关。 例如，如果第一个节点是位于 `192.168.1.0/16` 上的 Windows 节点，则：
 
 ```bash
-sudo route add -net $CLUSTER.1.0 netmask 255.255.255.0 gw $CLUSTER.1.2 dev eth0
+sudo route add -net $CLUSTER_PREFIX.1.0 netmask 255.255.255.0 gw $CLUSTER_PREFIX.1.2 dev eth0
 ```
 
 必须在群集中的每个节点*上**为*群集中的每个节点添加类似的路由。
@@ -35,7 +35,6 @@ sudo route add -net $CLUSTER.1.0 netmask 255.255.255.0 gw $CLUSTER.1.2 dev eth0
 
 ## <a name="configuring-static-routes--windows"></a>配置静态路由 | Windows ##
 为此，我们使用 `New-NetRoute`。 [此存储库](https://github.com/Microsoft/SDN/blob/master/Kubernetes/windows/AddRoutes.ps1)中存在一个可用的自动脚本 `AddRoutes.ps1`。 你将需要知道 *Linux 主机*的 IP 地址，以及 Windows 节点的*外部*适配器的默认网关（不是 Pod 网关）。 然后：
-
 
 ```powershell
 $url = "https://raw.githubusercontent.com/Microsoft/SDN/master/Kubernetes/windows/AddRoutes.ps1"
