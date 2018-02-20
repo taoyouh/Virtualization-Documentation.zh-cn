@@ -348,6 +348,9 @@
   "19e8cf269b0bef127fb06d2c99391107cd8683b1": [
     "virtualization\\hyper-v-on-windows\\user-guide\\make-integration-service.md"
   ],
+  "779dcf51d4903c9467cc52dbadb865beb9929bd2": [
+    "virtualization\\hyper-v-on-windows\\user-guide\\powershell-direct.md"
+  ],
   "1eea533459b565ffceca23ca7454e9678abc52e9": [
     "virtualization\\hyper-v-on-windows\\user-guide\\powershell-direct.md"
   ],

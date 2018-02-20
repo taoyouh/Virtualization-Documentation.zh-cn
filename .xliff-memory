@@ -3439,6 +3439,12 @@
       "XliffHash": "a82867de86f83e59cc83dbca64e180353f92470b",
       "TranslationType": 1,
       "SkeletonFile": "ol-xliffcache\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\0ccd7dae8da0841c98bec5cdf7345100d1b51107.1f5ae1f1bdc02d056b752f93ff0b0177c13183c8.xml"
+    },
+    "virtualization\\hyper-v-on-windows\\user-guide\\powershell-direct.md.f9d1b28765a4d3a30b62023051284ae10eef78e8.HT": {
+      "SourceFilename": "virtualization\\hyper-v-on-windows\\user-guide\\powershell-direct.md",
+      "XliffHash": "f9d1b28765a4d3a30b62023051284ae10eef78e8",
+      "TranslationType": 1,
+      "SkeletonFile": "ol-xliffcache\\MicrosoftDocs\\Virtualization-Documentation-Private.zh-cn\\live\\779dcf51d4903c9467cc52dbadb865beb9929bd2.00d21a11173a57fbda04f3f8f379641ba85cb3a7.xml"
     }
   }
 }
