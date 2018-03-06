@@ -8,11 +8,11 @@ ms.topic: article
 ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: 8ccd4192-4a58-42a5-8f74-2574d10de98e
-ms.openlocfilehash: d3eb7e2b751468953a152e8c723551fb3e1d12dd
-ms.sourcegitcommit: a072513214b0dabb9dba20ce43ea52aaf7806c5f
+ms.openlocfilehash: 413e28aabccdf894ebc249d8eae59e75e4b42345
+ms.sourcegitcommit: 1bd3d86bfbad8351cb19bdc84129dd5aec976c0c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/01/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="implementing-resource-controls-for-windows-containers"></a>实施 Windows 容器资源控制
 某些资源控制可以按容器和按资源实施。  默认情况下，容器运行受典型 Windows 资源管理（总体上以公平分配为基础）影响，但通过实施以上控制，开发人员或管理员可以限制或影响资源使用情况。  可以控制的资源包括：CPU/处理器、内存/RAM、磁盘/存储和网络/吞吐量。
@@ -28,6 +28,7 @@ Windows 容器利用[作业对象]( https://msdn.microsoft.com/en-us/library/win
 | HCS 界面 | [MemoryMaximumInMB]( https://github.com/Microsoft/hcsshim/blob/b144c605002d4086146ca1c15c79e56bfaadc2a7/interface.go#L67) |
 | 共享的内核 | [JOB_OBJECT_LIMIT_JOB_MEMORY](https://msdn.microsoft.com/en-us/library/windows/desktop/ms684147(v=vs.85).aspx) |
 | Hyper-V 隔离 | 虚拟机内存 |
+| _有关 Windows Server 2016 中 Hyper-V 的提示：在使用内存容量时你会发现，容器一开始会分配内存量上限，随后又开始将其返回至容器主机。  在更高版本（1709 或更高版）中这种情形已经得到优化。_ |
 | ||
 | *CPU（计数）* ||
 | Docker 界面 | [--CPU](https://docs.docker.com/engine/admin/resource_constraints/#cpu) |

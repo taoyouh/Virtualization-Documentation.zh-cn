@@ -25,12 +25,12 @@
 
 这些应用程序均要求卷映射，其中一些限制条件在[绑定挂载](#Bind-mounts)下有介绍。 它们将无法正常启动或运行。
 
-- Mysql
-- Postgress
-- Wordpress
+- MySQL
+- PostgreSQL
+- WordPress
 - Jenkins
-- Mariadb
-- Rabbitmq
+- MariaDB
+- RabbitMQ
 
 
 ### <a name="bind-mounts"></a>绑定挂载

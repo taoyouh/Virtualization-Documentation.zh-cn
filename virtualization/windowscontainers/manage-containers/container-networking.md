@@ -8,11 +8,11 @@ ms.topic: article
 ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: 538871ba-d02e-47d3-a3bf-25cda4a40965
-ms.openlocfilehash: 394aa58c3421e512d005f59d5bd30667f1c26f16
-ms.sourcegitcommit: 6eefb890f090a6464119630bfbdc2794e6c3a3df
+ms.openlocfilehash: 70e662e73693d9fef9d36635289ec9affb8d0331
+ms.sourcegitcommit: f542e8c95b5bb31b05b7c88f598f00f76779b519
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2017
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="windows-container-networking"></a>Windows 容器网络
 > ***请参考 [Docker 容器网络](https://docs.docker.com/engine/userguide/networking/)，以了解一般 docker 网络命令、选项和语法。*** 除了本文档中所描述的任何情况之外，所有 Docker 网络命令在 Windows 上都受支持，并且所用语法与 Linux 上的语法相同。 但请注意，Windows 和 Linux 网络堆栈不同，因此你会发现某些 Linux 网络命令（如 ifconfig）在 Windows 上不受支持。

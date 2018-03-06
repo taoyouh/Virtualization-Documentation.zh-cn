@@ -7,11 +7,11 @@ ms.topic: troubleshooting
 ms.prod: containers
 description: "关于部署 Kubernetes 和加入 Windows 节点的常见问题的解决方案。"
 keywords: "kubernetes，1.9，linux，编译"
-ms.openlocfilehash: 4fb7ac312b08c63564beb0f40889ff6a050c7166
-ms.sourcegitcommit: b0e21468f880a902df63ea6bc589dfcff1530d6e
+ms.openlocfilehash: b6be43f1afabdf8ef9c2ddc6f46ed5ac43a9e7a5
+ms.sourcegitcommit: 2e8f1fd06d46562e56c9e6d70e50745b8b234372
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="troubleshooting-kubernetes"></a>Kubernetes 疑难解答 #
 此页面逐一介绍 Kubernetes 设置、网络和部署的一些常见问题。
@@ -50,6 +50,7 @@ chmod +x [script name]
 ## <a name="common-networking-errors"></a>常见网络错误 ##
 你的网络或主机上可能设置了其他限制，以阻止在节点之间进行某些类型的通信。 请确保：
 
+  - 你已正确配置你的网络拓扑
   - 允许可能来自 Pod 的流量
   - 允许 HTTP 流量（如果要部署 Web 服务）
   - ICMP 数据包不会被丢弃
@@ -80,10 +81,10 @@ chmod +x [script name]
 
 
 ### <a name="no-network-adapter-is-found-when-starting-kubelet"></a>启动 Kubelet 时未发现任何网络适配器 ###
-Windows 网络堆栈需要虚拟适配器以使 Kubernetes 网络工作。 如果以下命令未返回任何结果（在管理员 shell 中），则表示虚拟网络创建（Kubelet 工作的必要先决条件）已失败：
+Windows 网络堆栈需要虚拟适配器以使 Kubernetes 网络工作。 如果以下命令未返回任何结果（在管理员 shell 中），则表示虚拟网络创建 &mdash; Kubelet 工作的必要先决条件 &mdash; 已失败：
 
 ```powershell
-Get-HnsNetwork | ? Name -Like "l2bridge"
+Get-HnsNetwork | ? Name -ieq "l2bridge"
 Get-NetAdapter | ? Name -Like "vEthernet (Ethernet*"
 ```
 

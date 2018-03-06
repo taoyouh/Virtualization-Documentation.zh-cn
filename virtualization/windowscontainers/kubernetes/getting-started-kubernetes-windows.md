@@ -8,11 +8,11 @@ ms.prod: containers
 description: "使用 v1.9 beta 版本将 Windows 节点加入到 Kubernetes 群集中。"
 keywords: "kubernetes, 1.9, windows, 入门"
 ms.assetid: 3b05d2c2-4b9b-42b4-a61b-702df35f5b17
-ms.openlocfilehash: f1b832f8a21c034582e157342acf7826fb7b6ea3
-ms.sourcegitcommit: b0e21468f880a902df63ea6bc589dfcff1530d6e
+ms.openlocfilehash: 0ccd7dae8da0841c98bec5cdf7345100d1b51107
+ms.sourcegitcommit: 2e8f1fd06d46562e56c9e6d70e50745b8b234372
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="kubernetes-on-windows"></a>Windows 上的 Kubernetes #
 借助 Kubernetes 1.9 和 Windows Server [版本 1709](https://docs.microsoft.com/en-us/windows-server/get-started/whats-new-in-windows-server-1709#networking) 的最新版本，用户可以充分利用 Windows 网络中的最新功能：
@@ -36,19 +36,11 @@ ms.lasthandoff: 01/17/2018
 本指南结束时，我们将完成以下任务：
 
 > [!div class="checklist"]  
-> * [网络拓扑](#network-topology)准备就绪。  
-> * [Linux 主机](#preparing-the-linux-master)节点配置完毕。  
-> * 将 [Windows 工作者节点](#preparing-a-windows-node)连接到上述节点。  
+> * [Linux 主机](#preparing-the-linux-master) 节点配置完毕。  
+> * 将 [Windows 工作者节点](#preparing-a-windows-node) 连接到上述节点。  
+> * [网络拓扑](#network-topology) 准备就绪。  
 > * [示例 Windows 服务](#running-a-sample-service)部署完毕。  
 > * 解决[常见问题和错误](./common-problems.md)。  
-
-
-## <a name="network-topology"></a>网络拓扑 ##
-有多种方法能够使虚拟[群集子网](#cluster-subnet-def)可路由。 你可以：
-
-  - 配置[主机网关模式](./configuring-host-gateway-mode.md)，并设置节点之间的静态下一跃点路由以实现 Pod 间通信。
-  - 配置智能柜顶式 (TOR) 交换机以路由子网。
-  - 使用第三方覆盖插件，如 [Flannel](https://coreos.com/flannel/docs/latest/kubernetes.html)（Windows 对 Flannel 的支持为 beta 版本）。
 
 
 ## <a name="preparing-the-linux-master"></a>准备 Linux 主机 ##
@@ -59,7 +51,7 @@ ms.lasthandoff: 01/17/2018
 > [!Note]  
 > Windows 部分中的所有代码段都将在_提升的_ PowerShell 中运行。
 
-Kubernetes 使用 [Docker](https://www.docker.com/) 作为其容器 Orchestrator，因此我们需要安装它。 你可以按照[官方 MSDN 说明](virtualization/windowscontainers/manage-docker/configure-docker-daemon.md#install-docker)、[Docker 说明](https://store.docker.com/editions/enterprise/docker-ee-server-windows)进行操作，或者尝试以下步骤：
+Kubernetes 使用 [Docker](https://www.docker.com/) 作为其容器 Orchestrator，因此我们需要安装它。 你可以按照 [官方 MSDN 说明](../manage-docker/configure-docker-daemon.md#install-docker)、[Docker 说明](https://store.docker.com/editions/enterprise/docker-ee-server-windows) 进行操作，或者尝试以下步骤：
 
 ```powershell
 Install-Module -Name DockerMsftProvider -Repository PSGallery -Force
@@ -67,7 +59,13 @@ Install-Package -Name Docker -ProviderName DockerMsftProvider
 Restart-Computer -Force
 ```
 
-[此 Microsoft 存储库](https://github.com/Microsoft/SDN)上有一个脚本集合，这将有助于我们将此节点加入到群集中。 你可以直接在[此处](https://github.com/Microsoft/SDN/archive/master.zip)下载 ZIP 文件。 我们只需要 `Kubernetes/windows` 文件夹，其中的内容应该移到 `C:\k\` 中：
+如果你在代理的后面，则必须定义以下 PowerShell 环境变量：
+```powershell
+[Environment]::SetEnvironmentVariable("HTTP_PROXY", "http://proxy.example.com:80/", [EnvironmentVariableTarget]::Machine)
+[Environment]::SetEnvironmentVariable("HTTPS_PROXY", "http://proxy.example.com:443/", [EnvironmentVariableTarget]::Machine)
+```
+
+[此 Microsoft 存储库](https://github.com/Microsoft/SDN) 上有一个脚本集合，这将有助于我们将此节点加入到群集中。 你可以直接在[此处](https://github.com/Microsoft/SDN/archive/master.zip)下载 ZIP 文件。 我们只需要 `Kubernetes/windows` 文件夹，其中的内容应该移到 `C:\k\` 中：
 
 ```powershell
 wget https://github.com/Microsoft/SDN/archive/master.zip -o master.zip
@@ -77,7 +75,15 @@ mv master/SDN-master/Kubernetes/windows/* C:/k/
 rm -recurse -force master,master.zip
 ```
 
-将[之前已识别](#preparing-the-linux-master)的证书文件复制到此新 `C:\k` 目录中。
+将 [之前已识别](#preparing-the-linux-master) 的证书文件复制到此新 `C:\k` 目录中。
+
+
+## <a name="network-topology"></a>网络拓扑 ##
+有多种方法能够使虚拟[群集子网](#cluster-subnet-def)可路由。 你可以：
+
+  - 配置[主机网关模式](./configuring-host-gateway-mode.md)，并设置节点之间的静态下一跃点路由以实现 Pod 间通信。
+  - 配置智能柜顶式 (TOR) 交换机以路由子网。
+  - 使用第三方覆盖插件，如 [Flannel](https://coreos.com/flannel/docs/latest/kubernetes.html)（Windows 对 Flannel 的支持为 Beta 版本）。
 
 
 ### <a name="creating-the-pause-image"></a>创建“暂停”映像 ###
@@ -103,8 +109,49 @@ docker build -t kubeletwin/pause .
 
 你可以通过最新 1.9 版本的 `CHANGELOG.md` 文件中的链接下载这些文件。 截至编写本文时，最新版本为 [1.9.1](https://github.com/kubernetes/kubernetes/releases/tag/v1.9.1)，并且 Windows 二进制文件位于[此处](https://storage.googleapis.com/kubernetes-release/release/v1.9.1/kubernetes-node-windows-amd64.tar.gz)。 使用 [7-Zip](http://www.7-zip.org/) 等工具解压缩存档并将二进制文件放在 `C:\k\` 中。
 
+为了使 `C:\k\` 目录外的 `kubectl` 命令变量可用，请修改 `PATH` 环境变量：
+
+```powershell
+$env:Path += ";C:\k"
+```
+
+若要使此更改永久有效，请在计算机目标中修改变量：
+
+```powershell
+[Environment]::SetEnvironmentVariable("Path", $env:Path + ";C:\k", [EnvironmentVariableTarget]::Machine)
+```
 
 ### <a name="joining-the-cluster"></a>加入群集 ###
+使用以下方式验证群集配置是否有效：
+
+```powershell
+kubectl version
+```
+
+如果你收到连接错误，
+
+```
+Unable to connect to the server: dial tcp [::1]:8080: connectex: No connection could be made because the target machine actively refused it.
+```
+
+请检查改配置是否已被正确发现：
+
+```powershell
+kubectl config view
+```
+
+为更改 `kubectl` 寻找配置文件的位置，你可以传递 `--kubeconfig` 参数或修改 `KUBECONFIG` 环境变量。 例如，如果该配置位于 `C:\k\config`：
+
+```powershell
+$env:KUBECONFIG="C:\k\config"
+```
+
+为让此设置对于当前用户范围永久有效：
+
+```powershell
+[Environment]::SetEnvironmentVariable("KUBECONFIG", "C:\k\config", [EnvironmentVariableTarget]::User)
+```
+
 节点现在可以加入群集。 在两个*已提升*的单独 PowerShell 窗口中，（按此顺序）运行这些脚本。 第一个脚本中的 `-ClusterCidr` 参数是配置的[群集子网](#cluster-subnet-def)；这里的子网是 `192.168.0.0/16`。
 
 ```powershell
@@ -122,7 +169,7 @@ Windows 节点将即刻显示在 Linux 主机中的 `kubectl get nodes` 下！
 
   - **Pod 子网到节点的连接**：虚拟 Pod 接口与节点之间的 ping 操作。 分别在 Linux 和 Windows 上的 `route -n` 和 `ipconfig` 下面查找网关地址，并寻找 `cbr0` 接口。
 
-如果这些基本测试都不起作用，请尝试使用[疑难解答页面](./common-problems.md#network-connectivity)来解决常见问题。
+如果这些基本测试都不起作用，请尝试使用[疑难解答页面](./common-problems.md#common-networking-errors)来解决常见问题。
 
 
 ## <a name="running-a-sample-service"></a>运行示例服务 ##
@@ -140,7 +187,7 @@ watch kubectl get pods -o wide
 这将创建一项部署和一项服务，然后无限期观察 Pod 以跟踪其状态；观察完后只需按下 `Ctrl+C` 退出 `watch` 命令。
 
 
-如果一切顺利，你将能够确认：
+如果一切顺利，你将可能：
 
   - 可以在 Windows 端的 `docker ps` 命令下面看到 4 个容器
   - `curl` （针对 Linux 主机中端口 80 上的 *Pod* IP）可以获取 Web 服务器响应；这表明网络中节点到 Pod 的通信正常。
@@ -150,4 +197,4 @@ watch kubectl get pods -o wide
   - `curl` 带 Kubernetes [默认 DNS 后缀](https://kubernetes.io/docs/concepts/services-networking/dns-pod-service/#services)的*服务名称*，并演示 DNS 功能。
 
 > [!Warning]  
-> Windows 节点将无法访问服务 IP。 这是一个[已知限制](./common-problems.md#my-windows-node-cannot-access-my-services-using-the-service-ip)。
+> Windows 节点将无法访问服务 IP。 这是一项将为之提供服务的 [已知平台限制 ](./common-problems.md#my-windows-node-cannot-access-my-services-using-the-service-ip)。

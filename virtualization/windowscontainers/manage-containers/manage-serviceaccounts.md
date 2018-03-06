@@ -8,11 +8,11 @@ ms.topic: article
 ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: 9e06ad3a-0783-476b-b85c-faff7234809c
-ms.openlocfilehash: df9ca8a4bcd6bf959e221593ea69d5ed624cdae1
-ms.sourcegitcommit: 6beac5753c9f65bb6352df8c829c2e62e24bd2e2
+ms.openlocfilehash: 1ad04198c74f4566bd37b4ba884034aa5cd7c7ef
+ms.sourcegitcommit: ea6edc5bac5705a19d48ffdf1ba676c940c2eb67
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="active-directory-service-accounts-for-windows-containers"></a>用于 Windows 容器的 Active Directory 服务帐户
 
@@ -49,6 +49,15 @@ Windows 容器遵循类似的过程：
 
 [!NOTE]
 你可能需要在容器主机上进行匿名 SID /名称转换，如[此处](https://docs.microsoft.com/en-us/windows/device-security/security-policy-settings/network-access-allow-anonymous-sidname-translation) 所述，否则可能会出现帐户无法转换为 SID 的错误。
+
+在你探索是否需要允许匿名 SID/名称转换时，请确保执行下列操作：
+
+1. gMSA 帐户的名称要与服务的名称相匹配。（例如 "myapp"）。
+2. 包括 -h 参数以指定容器在启动时应使用的主机名。 
+```
+docker run --security-opt "credentialspec=file://myapp.json" -d -p 80:80 -h myapp.mydomain.local <imagename>
+```
+3. 在创建 gMSA 帐户时使用的服务主体名称 (SPN) 应与容器运行时使用的 -h 参数相匹配。 如果在创建期间你没有将 SPN 添加到 gMSA，那你可以稍后将它们添加到帐户属性。
 
 启动容器时，作为本地系统或网络服务运行的已安装服务将显示为作为 gMSA 运行。 这类似于这些帐户在已加入域的主机上的工作方式，除了使用的是 gMSA 而不是计算机帐户。 
 

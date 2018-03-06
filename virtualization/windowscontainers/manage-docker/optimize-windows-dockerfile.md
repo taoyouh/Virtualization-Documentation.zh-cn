@@ -8,11 +8,11 @@ ms.topic: article
 ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: bb2848ca-683e-4361-a750-0d1d14ec8031
-ms.openlocfilehash: 608a08c2e7e1afbb4e2eb2583384f042baa78b1f
-ms.sourcegitcommit: c625804f3df8dc7b7aae9a4077f4b3222177ed85
+ms.openlocfilehash: ba45ee94a5d5e8a15bbbeab7b9c25f15be8be731
+ms.sourcegitcommit: f542e8c95b5bb31b05b7c88f598f00f76779b519
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/16/2017
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="optimize-windows-dockerfiles"></a>优化 Windows Dockerfile
 

@@ -8,15 +8,15 @@ ms.topic: article
 ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: 25de368c-5a10-40a4-b4aa-ac8c9a9ca022
-ms.openlocfilehash: b084bf179d9360e4a72e8e88b4fec80eafb2906c
-ms.sourcegitcommit: 65de5708bec89f01ef7b7d2df2a87656b53c3145
+ms.openlocfilehash: 37c8cadc4e2725e8220834d41907240c1a273e09
+ms.sourcegitcommit: f542e8c95b5bb31b05b7c88f598f00f76779b519
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/21/2017
+ms.lasthandoff: 02/01/2018
 ---
-# 常见问题
+# <a name="frequently-asked-questions"></a>常见问题
 
-## 关于 Windows 容器
+## <a name="about-windows-containers"></a>关于 Windows 容器
 
 **什么是 Windows Server 容器？**
 
@@ -54,7 +54,7 @@ Drawbridge 是帮助我们获得对容器的有价值见解的众多研究项目
 Window Server 容器和 Hyper-V 容器都需要 Windows Server 2016。 这些技术将不适用以前版本的 Windows。
 
 
-## Windows 容器管理
+## <a name="windows-container-management"></a>Windows 容器管理
 
 **Hyper-V 容器是否还可用于 Docker 生态系统？**
 
@@ -62,15 +62,14 @@ Window Server 容器和 Hyper-V 容器都需要 Windows Server 2016。 这些技
 Docker 平台还将大大简化和增强跨容器选项工作的体验。 使用 Windows Server 容器开发的应用程序无需更改即可部署为 Hyper-V 容器。
 
 
-## Microsoft 的开放生态系统
+## <a name="microsofts-open-ecosystem"></a>Microsoft 的开放生态系统
 
 **Microsoft 是否正在参与开放容器计划 (OCI)？**
 
 为了保证封装格式保持通用，Docker 最近组织了开放容器计划 (OCI)，旨在确保容器封装保持开放和以基础为导向的格式，其中 Microsoft 是创始成员之一。
 
-**Microsoft 是否真的正在与 Docker 合作？**
+**这项与 Docker 的合作具有哪些优势？**
 
-是。  
 我们与 Docker 的合作关系使开发人员可以使用相同的 Docker 工具集创建、管理和部署 Windows Server 和 Linux 容器。 面向 Windows Server 的开发人员将不再需要在使用各种 Windows Server 技术和生成容器化的应用程序之间进行选择。  
 
 Docker 包含两方面，即项目的开源组和 Docker 公司。 我们考虑此合作关系同时包含这两者。 Docker 的成功部分是因为围绕 Docker 容器技术所生成的充满活力的生态系统。 Microsoft 正在致力于 Docker 项目，使其支持 Windows Server 容器和 Hyper-V 容器。  
