@@ -8,11 +8,11 @@ ms.topic: article
 ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: ba4eb594-0cdb-4148-81ac-a83b4bc337bc
-ms.openlocfilehash: 1db66d5dfe0f0060c56625e396ecff3bb72e3189
-ms.sourcegitcommit: 456485f36ed2d412cd708aed671d5a917b934bbe
+ms.openlocfilehash: 48063c058b38258cd06b09081cefd77c95cf67e9
+ms.sourcegitcommit: b7f37f3d385042ca8455b3e7d1fa887ac26989de
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/08/2017
+ms.lasthandoff: 03/16/2018
 ---
 # <a name="container-host-deployment---windows-server"></a>容器主机部署 - Windows Server
 
@@ -78,7 +78,7 @@ $vm = "<virtual-machine>"
 Set-VMProcessor -VMName $vm -ExposeVirtualizationExtensions $true -Count 2
 
 #disable dynamic memory
-Set-VMMemory $vm -DynamicMemoryEnabled $false
+Set-VMMemory -VMName $vm -DynamicMemoryEnabled $false
 
 #enable mac spoofing
 Get-VMNetworkAdapter -VMName $vm | Set-VMNetworkAdapter -MacAddressSpoofing On
