@@ -8,17 +8,17 @@ ms.topic: article
 ms.prod: windows-10-hyperv
 ms.service: windows-10-hyperv
 ms.assetid: 6d1ae036-0841-4ba5-b7e0-733aad31e9a7
-ms.openlocfilehash: 520ef410eddad61c40d31655e6bf7ede7846d4b2
-ms.sourcegitcommit: 65de5708bec89f01ef7b7d2df2a87656b53c3145
+ms.openlocfilehash: bd0175fe209e3311a38af29ccd0f473a2bd32dd8
+ms.sourcegitcommit: 6e3c3b2ff125f949c03a342c3709a6e57c5f736c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/21/2017
+ms.lasthandoff: 03/17/2018
 ---
-# 使用 Hyper-V 和 Windows PowerShell
+# <a name="working-with-hyper-v-and-windows-powershell"></a>使用 Hyper-V 和 Windows PowerShell
 
 现在你已基本了解如何部署 Hyper-V、创建虚拟机和管理这些虚拟机，让我们研究一下如何使用 PowerShell 来自动执行其中大部分活动。
 
-### 返回 Hyper-V 命令列表
+### <a name="return-a-list-of-hyper-v-commands"></a>返回 Hyper-V 命令列表
 
 1.  单击 Windows“开始”按钮，键入“**PowerShell**”。
 2.  运行以下命令以显示适用于 Hyper-V PowerShell 模块的 PowerShell 命令的可搜索列表。
@@ -40,7 +40,7 @@ Get-Help Get-VM
  ![](media\get_help.png)
 
 
-### 返回虚拟机列表
+### <a name="return-a-list-of-virtual-machines"></a>返回虚拟机列表
 
 使用 `Get-VM` 命令会返回虚拟机列表。
 
@@ -64,7 +64,7 @@ Get-VM
  Get-VM | where {$_.State -eq 'Off'}
  ```
 
-### 启动和关闭虚拟机
+### <a name="start-and-shut-down-virtual-machines"></a>启动和关闭虚拟机
 
 1. 若要启动特定虚拟机，请运行附带虚拟机名称的以下命令：
 
@@ -83,14 +83,14 @@ Get-VM
  Get-VM | where {$_.State -eq 'Running'} | Stop-VM
  ```
 
-### 创建 VM 检查点
+### <a name="create-a-vm-checkpoint"></a>创建 VM 检查点
 
 若要使用 PowerShell 创建检查点，请使用 `Get-VM` 命令选择虚拟机，然后通过管道将该虚拟机传递到 `Checkpoint-VM` 命令。 最后，使用 `-SnapshotName` 为该检查点命名。 完整命令如下所示：
 
  ```powershell
  Get-VM -Name <VM Name> | Checkpoint-VM -SnapshotName <name for snapshot>
  ```
-### 创建新的虚拟机
+### <a name="create-a-new-virtual-machine"></a>创建新的虚拟机
 
 以下示例演示如何在 PowerShell 集成脚本环境 (ISE) 中创建新的虚拟机。 这是一个简单示例，并可扩展为包含其他 PowerShell 功能以及更高级的 VM 部署。
 
@@ -111,10 +111,10 @@ Get-VM
      SwitchName = (Get-VMSwitch).Name[0]
  }
 
- New-VM @VM
+ New-VM $VM
   ```
 
-## 总结和参考
+## <a name="wrap-up-and-references"></a>总结和参考
 
 本文档介绍了一些研究 Hyper-V PowerShell 模块的简单步骤以及一些示例方案。 有关 Hyper-V PowerShell 模块的详细信息，请参阅 [Windows PowerShell 中的 Hyper-V Cmdlet 参考](https://technet.microsoft.com/%5Clibrary/Hh848559.aspx)。  
  
