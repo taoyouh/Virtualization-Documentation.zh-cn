@@ -1,22 +1,22 @@
 ---
-title: "使用 PowerShell Direct 管理 Windows 虚拟机"
-description: "使用 PowerShell Direct 管理 Windows 虚拟机"
-keywords: "windows 10, hyper-v, powershell, 集成服务, 集成组件, 自动化, powershell direct"
+title: 使用 PowerShell Direct 管理 Windows 虚拟机
+description: 使用 PowerShell Direct 管理 Windows 虚拟机
+keywords: windows 10, hyper-v, powershell, 集成服务, 集成组件, 自动化, powershell direct
 author: scooley
 ms.date: 05/02/2016
 ms.topic: article
 ms.prod: windows-10-hyperv
 ms.service: windows-10-hyperv
 ms.assetid: fb228e06-e284-45c0-b6e6-e7b0217c3a49
-ms.openlocfilehash: 1eea533459b565ffceca23ca7454e9678abc52e9
-ms.sourcegitcommit: 65de5708bec89f01ef7b7d2df2a87656b53c3145
+ms.openlocfilehash: 779dcf51d4903c9467cc52dbadb865beb9929bd2
+ms.sourcegitcommit: e7fa38bcb7744a34e7a58978b55af1fbf6353247
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/21/2017
+ms.lasthandoff: 02/20/2018
 ---
-# 使用 PowerShell 实现虚拟机自动化和管理虚拟机
+# <a name="virtual-machine-automation-and-management-using-powershell"></a>使用 PowerShell 实现虚拟机自动化和管理虚拟机
  
-可以在 Hyper-V 主机上的 Windows 10 或 Windows Server 技术预览版虚拟机中使用 PowerShell Direct 运行任意 PowerShell，而无论网络配置或远程管理设置如何。
+无论采用何种网络配置或远程管理设置，均可以在 Hyper-V 主机上的 Windows 10 或 Windows Server 2016 虚拟机中使用 PowerShell Direct 运行任意 PowerShell。
 
 **运行 PowerShell Direct 的方法：**  
 * 作为交互式会话 - 请[单击此处](#create-and-exit-an-interactive-powershell-session)以使用 Enter-PSSession 创建和退出交互式 PowerShell 会话。
@@ -24,10 +24,10 @@ ms.lasthandoff: 07/21/2017
 * 作为持久性会话（版本 14280 及更高版本）-- 请[单击此处](#copy-files-with-new-pssession-and-copy-item)以使用 New-PSSession 创建持久性会话。  
 通过使用 Copy-Item 将文件复制到虚拟机或从其复制文件，然后使用 Remove-PSSession 断开连接来继续进行操作。
 
-## 要求
+## <a name="requirements"></a>要求
 **操作系统要求：**
-* 主机：可运行 Hyper-V 的 Windows 10 、Windows Server Technical Preview 2 或更高版本。
-* 来宾/虚拟机：Windows 10 、Windows Server Technical Preview 2 或更高版本。
+* 主机：运行 Hyper-V 的 Windows 10、Windows Server 2016 或更高版本。
+* 来宾/虚拟机：Windows 10、Windows Server 2016 或更高版本。
 
 如果要管理较旧的虚拟机，请使用虚拟机连接 (VMConnect) 或[为虚拟机配置虚拟网络](http://technet.microsoft.com/library/cc816585.aspx)。 
 
@@ -39,7 +39,7 @@ ms.lasthandoff: 07/21/2017
 
 -------------
 
-## 创建并退出交互式 PowerShell 会话
+## <a name="create-and-exit-an-interactive-powershell-session"></a>创建并退出交互式 PowerShell 会话
 
 在虚拟机上运行 PowerShell 命令的最简单方法是启动交互会话。
 
@@ -63,10 +63,10 @@ ms.lasthandoff: 07/21/2017
   你应该会看到作为 PowerShell 提示符前缀的 VMName 显示如下：
   
   ``` 
-  [VMName]: PS C:\ >
+  [VMName]: PS C:\>
   ```
   
-  所有运行的命令将会在虚拟机上进行。  若要测试，可运行 `ipconfig` 或 `hostname` 以确保这些命令正在虚拟机中运行。
+  所有运行的命令将会在虚拟机上进行。 若要测试，可运行 `ipconfig` 或 `hostname` 以确保这些命令正在虚拟机中运行。
   
 4. 完成后，运行以下命令来关闭会话：  
   
@@ -80,7 +80,7 @@ ms.lasthandoff: 07/21/2017
 
 -------------
 
-## 使用 Invoke-Command 运行脚本或命令
+## <a name="run-a-script-or-command-with-invoke-command"></a>使用 Invoke-Command 运行脚本或命令
 
 配合使用 PowerShell Direct 和 Invoke-Command 非常适合需要在虚拟机上运行一个命令或一个脚本但在这一点之外无需继续与虚拟机进行交互的情况。
 
@@ -91,8 +91,8 @@ ms.lasthandoff: 07/21/2017
 2. 通过使用虚拟机名称或 GUID 运行以下命令之一来创建会话：  
    
    ``` PowerShell
-   Invoke-Command -VMName <VMName> -ScriptBlock { cmdlet } 
-   Invoke-Command -VMId <VMId> -ScriptBlock { cmdlet }
+   Invoke-Command -VMName <VMName> -ScriptBlock { command } 
+   Invoke-Command -VMId <VMId> -ScriptBlock { command }
    ```
    
    出现提示时，提供虚拟机的凭据。
@@ -119,7 +119,7 @@ ms.lasthandoff: 07/21/2017
 
 -------------
 
-## 使用 New-PSSession 和 Copy-Item 复制文件
+## <a name="copy-files-with-new-pssession-and-copy-item"></a>使用 New-PSSession 和 Copy-Item 复制文件
 
 > **注意：**PowerShell Direct 仅支持 Windows 版本 14280 及更高版本中的持久性会话
 
@@ -141,7 +141,7 @@ ms.lasthandoff: 07/21/2017
   出现提示时，提供虚拟机的凭据。
   
   > **警告：**  
-   14500 之前的版本中存在一个 Bug。  如果不使用 `-Credential` 标志显式指定凭据，来宾操作系统中的服务将崩溃，并且将需要重新启动。  如果点击此问题，可在[此处](#error-a-remote-session-might-have-ended)获取解决方法说明。
+   14500 之前的版本中存在一个 Bug。  如果不使用 `-Credential` 标志显式指定凭据，来宾操作系统中的服务将崩溃，并且将需要重新启动。  如果你遇到此问题，可在[此处](#error-a-remote-session-might-have-ended)获取解决方法说明。
   
 3. 将文件复制到虚拟机内。
   
@@ -167,11 +167,11 @@ ms.lasthandoff: 07/21/2017
   
 -------------
 
-## 疑难解答
+## <a name="troubleshooting"></a>疑难解答
 
 PowerShell Direct 显示了一小部分的常见错误消息。  以下是最常见的错误消息、一些原因和诊断问题的工具。
 
-### -VMName 或 -VMID 参数不存在
+### <a name="-vmname-or--vmid-parameters-dont-exist"></a>-VMName 或 -VMID 参数不存在
 **问题：**  
 `Enter-PSSession``Invoke-Command` 或 `New-PSSession` 不具有 `-VMName` 或 `-VMId` 参数。
 
@@ -193,7 +193,7 @@ $PSVersionTable.PSVersion
 ```
 
 
-### 错误：远程会话可能已结束
+### <a name="error-a-remote-session-might-have-ended"></a>错误：远程会话可能已结束
 > **注意：**  
 对于主机版本在 10240 与 12400 之间的 Enter-PSSession，下面的所有错误都报告为“一个远程会话可能已结束”。
 
@@ -227,7 +227,7 @@ New-PSSession : An error has occurred which Windows PowerShell cannot handle. A 
 Restart-Service -Name vmicvmsession
 ```
 
-### 错误：无法解析参数集
+### <a name="error-parameter-set-cannot-be-resolved"></a>错误：无法解析参数集
 **错误消息：**  
 ``` 
 Enter-PSSession : Parameter set cannot be resolved using the specified named parameters.
@@ -241,7 +241,7 @@ Enter-PSSession : Parameter set cannot be resolved using the specified named par
 使用 `-Credential` 参数或通过在系统提示时手动输入，可将管理员凭据传递给虚拟机。
 
 
-### 错误：凭据无效。
+### <a name="error-the-credential-is-invalid"></a>错误：凭据无效。
 
 **错误消息：**  
 ```
@@ -254,7 +254,7 @@ Enter-PSSession : The credential is invalid.
   * 来宾操作系统中没有任何用户帐户（操作系统以前未启动）
   * 如果以管理员身份进行连接：管理员还未设置为活动用户。  在[此处](https://technet.microsoft.com/en-us/library/hh825104.aspx)了解详细信息。
   
-### 错误：输入的 VMName 参数未解析为任何虚拟机。
+### <a name="error-the-input-vmname-parameter-does-not-resolve-to-any-virtual-machine"></a>错误：输入的 VMName 参数未解析为任何虚拟机。
 
 **错误消息：**  
 ```
@@ -270,7 +270,7 @@ Enter-PSSession : The input VMName parameter does not resolve to any virtual mac
 
 -------------
 
-## 示例和用户指南
+## <a name="samples-and-user-guides"></a>示例和用户指南
 
 PowerShell Direct 支持 JEA（只需提供足够的管理）。  查看此用户指南以试用。
 

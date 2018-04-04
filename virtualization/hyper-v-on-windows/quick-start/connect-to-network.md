@@ -1,31 +1,31 @@
 ---
-title: "创建虚拟网络"
-description: "创建虚拟交换机"
-keywords: "Windows 10, hyper-v, 网络"
+title: 创建虚拟网络
+description: 创建虚拟交换机
+keywords: Windows 10, hyper-v, 网络
 author: scooley
 ms.date: 05/02/2016
 ms.topic: article
 ms.prod: windows-10-hyperv
 ms.service: windows-10-hyperv
 ms.assetid: 532195c6-564b-4954-97c2-5a5795368c09
-ms.openlocfilehash: 67513f6ee7d990f4d9086dfd63fb719374377b1f
-ms.sourcegitcommit: 65de5708bec89f01ef7b7d2df2a87656b53c3145
+ms.openlocfilehash: b6935daf40eef3dd09acb647b512c0423cbe82d3
+ms.sourcegitcommit: b7f37f3d385042ca8455b3e7d1fa887ac26989de
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/21/2017
+ms.lasthandoff: 03/16/2018
 ---
-# 创建虚拟网络
+# <a name="create-a-virtual-network"></a>创建虚拟网络
 
 你的虚拟机需要连接虚拟网络才能与你的计算机共享网络。  创建虚拟网络是可选的 -- 如果你的虚拟机不需要连接到 Internet 或网络，则跳到[创建 Windows 虚拟机](create-virtual-machine.md)。
 
 
-## 为虚拟机连接 Internet
+## <a name="connect-virtual-machines-to-the-internet"></a>为虚拟机连接 Internet
 
 Hyper-V 有三种类型的虚拟交换机 -- 外部、内部和专用。 创建外部交换机以与在其上运行的虚拟机共享计算机网络。
 
 此练习演示了如何创建虚拟交换机。 完成后，Hyper-V 主机将拥有一个虚拟交换机，该虚拟交换机可通过为计算机连接网络来为虚拟机连接 Internet。 
 
-### 使用 Hyper-V 管理器创建虚拟交换机
+### <a name="create-a-virtual-switch-with-hyper-v-manager"></a>使用 Hyper-V 管理器创建虚拟交换机
 
 1. 打开 Hyper-V 管理器。  执行此操作快速的方法是按 Windows 按钮或密钥，然后键入“Hyper-V 管理器”。  
 如果搜索未找到 Hyper-V 管理器，那是因为未启用 Hyper-V 或 Hyper-V 管理工具。  请参阅[启用 Hyper-V](enable-hyper-v.md) 的说明。
@@ -55,7 +55,7 @@ Hyper-V 有三种类型的虚拟交换机 -- 外部、内部和专用。 创建�
 11. 选择“**确定**”以关闭虚拟交换机管理器窗口。
 
 
-### 使用 PowerShell 创建虚拟交换机
+### <a name="create-a-virtual-switch-with-powershell"></a>使用 PowerShell 创建虚拟交换机
 
 以下步骤可用于使用 PowerShell 创建具有外部连接的虚拟交换机。 
 
@@ -82,9 +82,9 @@ Hyper-V 有三种类型的虚拟交换机 -- 外部、内部和专用。 创建�
     New-VMSwitch -Name "External VM Switch" -AllowManagementOS $True -NetAdapterName $net.Name
     ```
 
-## 笔记本电脑上的虚拟网络
+## <a name="virtual-networking-on-a-laptop"></a>笔记本电脑上的虚拟网络
 
-### NAT 网络
+### <a name="nat-networking"></a>NAT 网络
 网络地址转换 (NAT) 使用内部 Hyper-V 虚拟交换机对主机的 IP 地址与端口进行组合，以使虚拟机访问计算机的网络。
 
 这会提供一些有用的属性：
@@ -94,9 +94,9 @@ Hyper-V 有三种类型的虚拟交换机 -- 外部、内部和专用。 创建�
 
 若要设置 NAT 网络并将其连接到虚拟机，请遵循 [NAT 网络用户指南](../user-guide/setup-nat-network.md)。
 
-### 双交换机方法
+### <a name="the-two-switch-approach"></a>双交换机方法
 如果你在笔记本电脑上运行 Windows 10 Hyper-V，并且经常在无线网络和有线网络之间切换，那么你可能想要为以太网和无线网卡创建一个虚拟交换机。 使用此配置，可以更改这些交换机之间的虚拟机，具体取决于该笔记本电脑连接网络的方式。 虚拟机不会在有线和无线之间自动切换。
 
 
-## 下一步 - 创建虚拟机
+## <a name="next-step---create-a-virtual-machine"></a>下一步 - 创建虚拟机
 [创建 Windows 虚拟机](create-virtual-machine.md)

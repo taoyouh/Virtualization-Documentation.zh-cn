@@ -1,18 +1,18 @@
 ---
-title: "关于 Windows 容器"
-description: "了解 Windows 容器。"
-keywords: "docker, 容器"
+title: 关于 Windows 容器
+description: 了解 Windows 容器。
+keywords: docker, 容器
 author: taylorb-microsoft
 ms.date: 05/02/2016
 ms.topic: article
 ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: 8e273856-3620-4e58-9d1a-d1e06550448
-ms.openlocfilehash: 37782c4d2491b9b1963a326204e30a6f484b5ec9
-ms.sourcegitcommit: 6eefb890f090a6464119630bfbdc2794e6c3a3df
+ms.openlocfilehash: 6dbc14ae192f40872a2d62253d1a0cf5658f4c04
+ms.sourcegitcommit: 7fdb0c5069605471bee351c4445a82e31c2930bd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2017
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="windows-containers"></a>Windows 容器
 
@@ -91,6 +91,26 @@ Windows 容器包括两个不同的容器类型或运行时。
 IT 专业人员可以使用容器来为其开发、QA 和生产团队提供标准化环境。 他们不再需要担心复杂的安装和配置步骤。 通过使用容器，系统管理员抽象出操作系统安装和底层基础结构中的差异。
 
 容器有助于管理员创建更易于更新和维护的基础结构。
+
+## <a name="container-orchestrators"></a>容器 Orchestrator
+由于规模较小且面向应用程序，容器非常适合敏捷交付环境和基于微服务的体系结构。 借助容器和微服务，你可以在环境中轻松地部署成百上千个组件。  你可能能够手动管理几十台虚拟机或物理服务器，但却无法在非自动化的情况下管理生产级容器环境。  自动化和管理大量容器及其交互方式的任务称为协调。 
+
+标准定义的协调包含以下任务：
+
+- 调度：在给定容器映像和资源请求的情况下，找到适合运行该容器的计算机。
+关联/反-关联：指定一组应该彼此靠近（以提高性能）或保持足够距离（以提高可用性）运行的容器。
+- 运行状况监控：监视容器故障并自动重新调度。
+- 故障转移：跟踪每台计算机上运行的组件，并将容器从有故障的计算机重新调度到正常运行的节点。
+- 伸缩：根据需要手动或自动添加或删除容器实例。
+- 联网：提供覆盖网络以协调容器，以便跨多台主机通信。
+- 服务发现：让容器即使在主机之间迁移且 IP 地址已改变时，也能实现相互间的自动定位。
+- 协调的应用程序升级：管理容器升级，避免应用程序关闭，并在出现错误时启用回滚。
+
+Azure 提供两种容器协调器：Azure 容器服务 (AKS) 和 Service Fabric。
+
+[Azure 容器服务 (AKS)](/azure/aks/) 有助于轻松创建、配置和管理预先配置为运行容器化应用程序的虚拟机群集。 这使你能够使用现有技能，或利用大量的社区专业知识，在 Microsoft Azure 上部署和管理基于容器的应用程序。 通过使用 AKS，你可以充分利用 Azure 的企业级功能，同时通过 Kubernetes 和 Docker 映像格式保持应用程序的可移植性。
+
+[Azure Service Fabric](/azure/service-fabric/) 是一种分布式系统平台，可用于轻松打包、部署和管理可伸缩的可靠微服务和容器。 Service Fabric 解决了开发和管理云本机应用程序的重大挑战。 开发人员和管理员不仅可以避免复杂的基础结构问题，而且可以专注于实现可伸缩、可靠、可管理的高要求任务关键型工作负荷。 Service Fabric 新一代平台的代表，用于生成和管理在容器中运行的企业级单层云级别应用程序。
 
 ## <a name="video-overview"></a>视频概述
 

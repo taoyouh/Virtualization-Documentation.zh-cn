@@ -23,7 +23,7 @@
 ## [防病毒优化](https://msdn.microsoft.com/en-us/windows/hardware/drivers/ifs/anti-virus-optimization-for-windows-containers)
 
 # 在 Windows 上管理 Docker
-## [Windows 上的 Docker 引擎](docker/configure_docker_daemon.md)
+## [Windows 上的 Docker 引擎](manage-docker/configure-docker-daemon.md)
 ## [Windows 上的 Dockerfile](manage-docker/manage-windows-dockerfile.md)
 ## [优化 Dockerfile](manage-docker/optimize-windows-dockerfile.md)
 ## [容器网络](manage-containers/container-networking.md)
@@ -39,6 +39,10 @@
 ## [配置网络拓扑](kubernetes/configuring-host-gateway-mode.md)
 ## [编译 Kubernetes 二进制文件](kubernetes/compiling-kubernetes-binaries.md)
 ## [疑难解答](kubernetes/common-problems.md)
+
+# Service Fabric 快速入门
+## [部署首个容器](/azure/service-fabric/service-fabric-quickstart-containers)
+## [在 Windows 容器中部署 .NET 应用程序](/azure/service-fabric/service-fabric-host-app-in-a-container) 
 
 # 容器示例
 ## [应用程序框架](samples.md#Application-Frameworks)
