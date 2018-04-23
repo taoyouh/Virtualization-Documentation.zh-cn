@@ -225,8 +225,7 @@
     "virtualization\\windowscontainers\\manage-containers\\manage-serviceaccounts.md"
   ],
   "41ec8d50af4b7ab2ec7e94b30397f4301502d372": [
-    "virtualization\\hyper-v-on-windows\\about\\hyperv_on_windows.md",
-    "virtualization\\hyper-v-on-windows\\about\\whats_new.md"
+    "virtualization\\hyper-v-on-windows\\about\\hyperv_on_windows.md"
   ],
   "71d91e12ae843bf96e1b4001915ffb55bb352ffd": [
     "virtualization\\windowscontainers\\manage-docker\\docker-powershell.md"
