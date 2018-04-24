@@ -34,10 +34,10 @@ sudo route add -net $CLUSTER_PREFIX.1.0 netmask 255.255.255.0 gw $CLUSTER_PREFIX
 
 
 ## <a name="configuring-static-routes--windows"></a>配置静态路由 | Windows ##
-为此，我们使用 `New-NetRoute`。 [此存储库](https://github.com/Microsoft/SDN/blob/master/Kubernetes/windows/AddRoutes.ps1)中存在一个可用的自动脚本 `AddRoutes.ps1`。 你将需要知道 *Linux 主机*的 IP 地址，以及 Windows 节点的*外部*适配器的默认网关（不是 Pod 网关）。 然后：
+为此，我们使用 `New-NetRoute`。 [此存储库](https://github.com/Microsoft/SDN/blob/master/Kubernetes/windows/AddRoutes.ps1)中存在一个可用的自动脚本 `AddRoutes.ps1`。 你需要知道 *Linux 主机*的 IP 地址：
 
 ```powershell
 $url = "https://raw.githubusercontent.com/Microsoft/SDN/master/Kubernetes/windows/AddRoutes.ps1"
-wget $url -o AddRoutes.ps1
-./AddRoutes.ps1 -MasterIp 10.1.2.3 -Gateway 10.1.3.1
+Invoke-WebRequest $url -o AddRoutes.ps1
+./AddRoutes.ps1 -MasterIp 10.1.2.3
 ```
