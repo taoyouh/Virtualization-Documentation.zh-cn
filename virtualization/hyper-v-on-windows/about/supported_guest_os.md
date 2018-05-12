@@ -1,8 +1,8 @@
 ---
 redirect_url: supported-guest-os
 ms.openlocfilehash: dfb94dfcc92ae6ae5efcbd924695ffe9bd099e34
-ms.sourcegitcommit: 65de5708bec89f01ef7b7d2df2a87656b53c3145
+ms.sourcegitcommit: 94e8ae4be1b0d3d13fca06e0775dd2aab895a12c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/21/2017
+ms.lasthandoff: 05/07/2018
 ---
