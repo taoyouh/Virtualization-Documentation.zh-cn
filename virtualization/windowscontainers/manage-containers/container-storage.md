@@ -3,12 +3,12 @@ title: Windows Server 容器存储
 description: Windows Server 容器如何使用主机和其他存储类型
 keywords: 容器, 卷, 存储, 装载, 绑定挂载
 author: patricklang
-ms.openlocfilehash: ba30c436ddd61ec71b2c98d1a8cb24f97863d872
-ms.sourcegitcommit: 6c8c70c8231943dda3c5af38e5530ea3dd91fc82
+ms.openlocfilehash: 9dde3b2d7be10a8d3d393f8426976dfc5bdacfab
+ms.sourcegitcommit: 9653a3f7451011426f8af934431bb14dbcb30a62
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "1934531"
+ms.lasthandoff: 06/21/2018
+ms.locfileid: "2082898"
 ---
 # <a name="overview"></a>概述
 
@@ -22,7 +22,7 @@ ms.locfileid: "1934531"
 
 ### <a name="where-layers-are-stored-and-how-to-change-it"></a>层的存储位置及其更改方式
 
-在默认安装中，层存储在 `C:\ProgramData\docker` 中，并且分布在“image”和“windowsfilter”目录中。 你可以使用 `docker-root` 配置来更改层的存储位置，如 [Windows 上的 Docker 引擎](../manage-docker/configure_docker_daemon.md)文档中所示。
+在默认安装中，层存储在 `C:\ProgramData\docker` 中，并且分布在“image”和“windowsfilter”目录中。 你可以使用 `docker-root` 配置来更改层的存储位置，如 [Windows 上的 Docker 引擎](../manage-docker/configure-docker-daemon.md)文档中所示。
 
 > [!NOTE]
 > 层存储仅支持 NTFS。 不支持 ReFS。
