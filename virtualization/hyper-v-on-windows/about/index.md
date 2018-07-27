@@ -3,16 +3,16 @@ title: Windows 10 上的 Hyper-V 简介
 description: Hyper-V、虚拟化和相关技术简介。
 keywords: windows 10, hyper-v
 author: scooley
-ms.date: 04/07/2018
+ms.date: 06/25/2018
 ms.topic: article
 ms.prod: windows-10-hyperv
 ms.assetid: eb2b827c-4a6c-4327-9354-50d14fee7ed8
-ms.openlocfilehash: 78991d0b6d8b27ea20365fed74f35cee64eb089f
-ms.sourcegitcommit: 64c8d5d6f068d385b94db4637259bb3852666efe
+ms.openlocfilehash: 95b7b25ffe47f22f2f00e5911195ebbea660a1c0
+ms.sourcegitcommit: d625ea23c3eea484d54fa7bec10ac545b0386379
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2018
-ms.locfileid: "1797673"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "2093674"
 ---
 # <a name="introduction-to-hyper-v-on-windows-10"></a>Windows 10 上的 Hyper-V 简介
 
@@ -58,7 +58,6 @@ Windows 上的 Hyper-V 支持虚拟机中的许多不同操作系统，其中包
 
 仅在 Windows Server 中可用的 Hyper-V 功能：
 
-* 使用 RemoteFX 的虚拟化 GPU
 * 将虚拟机从一台主机实时迁移到另一台主机
 * Hyper-V 副本
 * 虚拟光纤通道
