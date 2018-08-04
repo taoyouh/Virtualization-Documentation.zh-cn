@@ -7,12 +7,12 @@ ms.date: 09/26/2016
 ms.topic: deployment-article
 ms.prod: windows-containers
 ms.assetid: 3c3d4c69-503d-40e8-973b-ecc4e1f523ed
-ms.openlocfilehash: 4706ea24da1d5ca61b94dfd141883aa2d04ad906
-ms.sourcegitcommit: 7c3af076eb8bad98e1c3de0af63dacd842efcfa3
+ms.openlocfilehash: 71719fcbb6021bd26a464339a8caa9c4cb5698b9
+ms.sourcegitcommit: 2b5d806fc978e60fb71ce33ef491d4cfd6fc4456
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "1844046"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "2596045"
 ---
 # <a name="windows-container-requirements"></a>Windows 容器要求
 
@@ -94,5 +94,5 @@ Windows 容器提供两种容器基本映像，Windows Server Core 和 Nano Serv
 - 已删除 WMI
 - 自 Windows Server 版本 1709 起，在用户上下文环境下运行应用程序时，需要管理员权限的命令将会失败。 可以通过用户标记（即 docker run - 用户 ContainerAdministrator）指定容器管理员帐户，不过未来我们计划将管理员帐户从 NanoServer 中完全移除。
 
-以上是最显著的差异，其他差异并未一一列出。 还有一些缺失的其他组件并未在此列出。 请记住，你始终可以在自己认为合适的条件下在 Nano Server 上添加层。 有关此情况的示例，请查看 [.NET Core Nano Server Dockerfile](https://github.com/dotnet/dotnet-docker/blob/master/2.0/sdk/nanoserver/amd64/Dockerfile)。
+以上是最显著的差异，其他差异并未一一列出。 还有一些缺失的其他组件并未在此列出。 请记住，你始终可以在自己认为合适的条件下在 Nano Server 上添加层。 有关此情况的示例，请查看 [.NET Core Nano Server Dockerfile](https://github.com/dotnet/dotnet-docker/blob/master/2.1/sdk/nanoserver-1803/amd64/Dockerfile)。
 
