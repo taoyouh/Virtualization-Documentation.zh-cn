@@ -8,12 +8,12 @@ ms.topic: article
 ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: 538871ba-d02e-47d3-a3bf-25cda4a40965
-ms.openlocfilehash: 0ade6677a8cd07f21cd00d019f167685e0ba5e7e
-ms.sourcegitcommit: ec186664e76d413d3bf75f2056d5acb556f4205d
-ms.translationtype: HT
+ms.openlocfilehash: 0d43176a07b0ba23f6a893c1b3dcfa1ffddc423d
+ms.sourcegitcommit: db508decd9bf6c0dce9952e1a86bf80f00d025eb
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2018
-ms.locfileid: "1876019"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "2315650"
 ---
 # <a name="windows-container-networking"></a>Windows 容器网络
 > ***免责声明：请参考 [Docker 容器网络](https://docs.docker.com/engine/userguide/networking/)，以了解一般 docker 网络命令、选项和语法。*** 除了[下面](#unsupported-features-and-network-options)描述的任何情况之外，所有 Docker 网络命令在 Windows 上都受支持，并且所用语法与 Linux 上的语法相同。 但请注意，Windows 和 Linux 网络堆栈不同，因此你会发现某些 Linux 网络命令（如 ifconfig）在 Windows 上不受支持。
@@ -68,7 +68,11 @@ ms.locfileid: "1876019"
 
 
  ## <a name="unsupported-features-and-network-options"></a>不受支持的功能和网络选项
- Windows 当前**不**支持以下网络选项：
+ 下列网络选项将当前**不**支持 Windows 上：
+   * 通过 IPsec 加密的容器通信。
+   * HTTP 代理支持的容器。  可以跟踪此初步 PR[此处](https://github.com/Microsoft/hcsshim/pull/163)。
+   * 附加到运行 HYPER-V 容器的终结点 （热添加）。
+   * 通过透明网络驱动程序虚拟化 Azure 基础结构上的网络。
 
  | 命令        | 不受支持的选项   |
  | ---------------|:--------------------:|

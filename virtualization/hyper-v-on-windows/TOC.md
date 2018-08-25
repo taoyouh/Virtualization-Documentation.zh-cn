@@ -24,6 +24,7 @@
 ## [Hyper-V 集成服务](reference/integration-services.md)
 ## [Hyper-V 体系结构](reference/hyper-v-architecture.md)
 ## [虚拟机监控程序规范](reference/tlfs.md)
+## [HYPER-V 备份方法](reference/HyperVBackupApproaches.md)
 
 # 社区和支持
 ## [Hyper-V 论坛](https://social.technet.microsoft.com/Forums/windowsserver/en-US/home?forum=winserverhyperv)
