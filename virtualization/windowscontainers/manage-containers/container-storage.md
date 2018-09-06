@@ -3,12 +3,12 @@ title: Windows Server 容器存储
 description: Windows Server 容器如何使用主机和其他存储类型
 keywords: 容器, 卷, 存储, 装载, 绑定挂载
 author: patricklang
-ms.openlocfilehash: 9dde3b2d7be10a8d3d393f8426976dfc5bdacfab
-ms.sourcegitcommit: 9653a3f7451011426f8af934431bb14dbcb30a62
-ms.translationtype: HT
+ms.openlocfilehash: 7d22a149da21a3367b82f2920c189ae9a4b1c173
+ms.sourcegitcommit: 2c22506a7fdbbbe5ab4138281fc9256a98b51efd
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "2082898"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "3386042"
 ---
 # <a name="overview"></a>概述
 
@@ -101,13 +101,18 @@ Docker 很好地概述了如何[使用卷](https://docs.docker.com/engine/admin/
 
 ##### <a name="configuration-steps"></a>配置步骤
 
-1. 在容器主机上，全局映射远程 SMB 共享：$creds = Get-Credential New-SmbGlobalMapping -RemotePath \\contosofileserver\share1 -Credential $creds -LocalPath G:。此命令将使用凭据向远程 SMB 服务器进行身份验证。 然后，将远程共享路径映射到 G: 驱动器号（可以是任何其他可用的驱动器号）。 在此容器主机上创建的容器现在可以将其数据卷映射到 G: 驱动器上的路径。
+1. 在容器主机上，全局映射远程 SMB 共享：
+    ```
+    $creds = Get-Credential
+    New-SmbGlobalMapping -RemotePath \\contosofileserver\share1 -Credential $creds -LocalPath G:
+    ```
+    此命令将使用的凭据远程 SMB 服务器进行身份验证。 然后，将远程共享路径映射到 G: 驱动器号（可以是任何其他可用的驱动器号）。 在此容器主机上创建的容器现在可以将其数据卷映射到 G: 驱动器上的路径。
 
-> 注意：对容器使用 SMB 全局映射时，容器主机上的所有用户都可以访问远程共享。 在容器主机上运行的任何应用程序也将有权访问映射的远程共享。
+    > 注意：对容器使用 SMB 全局映射时，容器主机上的所有用户都可以访问远程共享。 在容器主机上运行的任何应用程序也将有权访问映射的远程共享。
 
 2. 创建容器，并将数据卷映射到全局装载的 SMB 共享  docker run -it --name demo -v g:\ContainerData:G:\AppData1 microsoft/windowsservercore:1709 cmd.exe
 
-在容器内部，G:\AppData1 将映射到远程共享的“ContainerData”目录。 存储在全局映射的远程共享上的任何数据都将能够供容器内的应用程序使用。 多个容器可以通过相同的命令获得对此共享数据的读/写访问权限。
+    在容器内部，G:\AppData1 将映射到远程共享的“ContainerData”目录。 存储在全局映射的远程共享上的任何数据都将能够供容器内的应用程序使用。 多个容器可以通过相同的命令获得对此共享数据的读/写访问权限。
 
 此 SMB 全局映射支持是 SMB 客户端功能，可以在任何兼容的 SMB 服务器上工作，包括：
 
