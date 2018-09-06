@@ -8,12 +8,12 @@ ms.topic: article
 ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: 75fed138-9239-4da9-bce4-4f2e2ad469a1
-ms.openlocfilehash: 4f42ee1c368638b521c33278c97f9ef1e7fdb8d0
-ms.sourcegitcommit: 2b5d806fc978e60fb71ce33ef491d4cfd6fc4456
+ms.openlocfilehash: a32d66251d8d9dddcd8abb1b64600459c903e317
+ms.sourcegitcommit: 2c22506a7fdbbbe5ab4138281fc9256a98b51efd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "2596055"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "3386052"
 ---
 # <a name="dockerfile-on-windows"></a>Windows 上的 Dockerfile
 
@@ -49,7 +49,7 @@ Dockerfile 的最基本形式十分简单。 下面的示例创建了一个新�
 FROM microsoft/windowsservercore
 
 # Metadata indicating an image maintainer.
-MAINTAINER jshelton@contoso.com
+LABEL maintainer="jshelton@contoso.com"
 
 # Uses dism.exe to install the IIS role.
 RUN dism.exe /online /enable-feature /all /featurename:iis-webserver /NoRestart
@@ -61,11 +61,11 @@ RUN echo "Hello World - Dockerfile" > c:\inetpub\wwwroot\index.html
 CMD [ "cmd" ]
 ```
 
-有关其他示例 Dockerfiles for Windows，请参阅 [Dockerfile 的 Windows 存储库] (https://github.com/Microsoft/Virtualization-Documentation/tree/master/windows-container-samples)。
+有关 Windows 的 Dockerfile 的其他示例，请参阅 [Dockerfile 用于 Windows 存储库] (https://github.com/Microsoft/Virtualization-Documentation/tree/master/windows-container-samples)。
 
 ## <a name="instructions"></a>说明
 
-Dockerfile 指令为 Docker 引擎提供创建容器映像所需的步骤。 这些指令按顺序逐一执行。 以下是有关一些基本 Dockerfile 指令的详细信息。 Dockerfile 说明的完整列表，请参阅 [上 Docker.com Dockerfile 参考] (https://docs.docker.com/engine/reference/builder/)。
+Dockerfile 指令为 Docker 引擎提供创建容器映像所需的步骤。 这些指令按顺序逐一执行。 以下是有关一些基本 Dockerfile 指令的详细信息。 有关 Dockerfile 指令的完整列表，请参阅 [Docker.com 上的 Dockerfile 参考] (https://docs.docker.com/engine/reference/builder/)。
 
 ### <a name="from"></a>FROM
 
