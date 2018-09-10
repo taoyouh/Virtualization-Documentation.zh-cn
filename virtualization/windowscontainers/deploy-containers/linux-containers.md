@@ -2,7 +2,7 @@
 
 此功能使用 [Hyper-V 隔离](../manage-containers/hyperv-container.md)运行采用正好的操作系统版本的 Linux 内核以支持容器。 用于构建此容器的 Windows 和 Hyper-V 的转变始于 _Windows 10 Fall Creators Update_ 和 _Windows Server 版本 1709_，但这一成果也离不开开源 [Moby 项目](https://www.github.com/moby/moby)的开展，Docker 技术正是依托 Moby 项目构建的，Linux 内核也是如此。 
 
-[!VIDEO https://sec.ch9.ms/ch9/1e5a/08ff93f2-987e-4f8d-8036-2570dcac1e5a/LinuxContainer.mp4]
+[Linux 容器视频](https://sec.ch9.ms/ch9/1e5a/08ff93f2-987e-4f8d-8036-2570dcac1e5a/LinuxContainer.mp4)
 
 如果要试用此功能，你将需要：
 
