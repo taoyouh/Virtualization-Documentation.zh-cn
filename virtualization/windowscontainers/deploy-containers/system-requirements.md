@@ -7,12 +7,12 @@ ms.date: 09/26/2016
 ms.topic: deployment-article
 ms.prod: windows-containers
 ms.assetid: 3c3d4c69-503d-40e8-973b-ecc4e1f523ed
-ms.openlocfilehash: 71719fcbb6021bd26a464339a8caa9c4cb5698b9
-ms.sourcegitcommit: 2b5d806fc978e60fb71ce33ef491d4cfd6fc4456
-ms.translationtype: HT
+ms.openlocfilehash: 8ff9373bd943c360079679a7e41256c24aa21aa8
+ms.sourcegitcommit: d69ed13d505e96f514f456cdae0f93dab4fd3746
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "2596045"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "4340865"
 ---
 # <a name="windows-container-requirements"></a>Windows 容器要求
 
@@ -20,7 +20,7 @@ ms.locfileid: "2596045"
 
 ## <a name="os-requirements"></a>操作系统要求
 
-- Windows 容器功能仅适用于 Windows Server 版本 1709、Windows Server 2016（Core 和附带桌面体验的版本）以及 Windows 10 专业版和企业版（周年纪念版）。
+- Windows 容器功能仅适用于 Windows Server 2016 (核心和带桌面体验)，Windows 10 专业版和企业版 （周年纪念版） 和更高版本。
 - 运行 Hyper-V 容器之前必须安装 Hyper-V 角色
 - Windows Server 容器主机必须将 Windows 安装到 c:\。 如果将仅部署 Hyper-V 容器，则不会应用此限制。
 
@@ -29,7 +29,7 @@ ms.locfileid: "2596045"
 如果 Windows 容器主机将从 Hyper-V 虚拟机运行，并且还将承载 Hyper-V 容器，则需要启用嵌套虚拟化。 嵌套的虚拟化具有以下要求：
 
 - 至少 4 GB RAM 可用于虚拟化的 Hyper-V 主机。
-- 主机系统使用 Windows Server 版本 1709、Windows Server 2016 或 Windows 10，虚拟机使用 Windows Server（Full、Core）。
+- Windows Server 2019，Windows Server 版本 1803，Windows Server 版本 1709 中，Windows Server 2016 或 Windows 10 主机系统上和 Windows Server （Full、 Core） 在虚拟机中。
 - 带有 Intel VT-x 处理器（此功能目前只适用于 Intel 处理器）。
 - 容器主机虚拟机还需要至少 2 个虚拟处理器。
 
@@ -47,7 +47,7 @@ Windows 容器提供两种容器基本映像，Windows Server Core 和 Nano Serv
 </thead>
 <tbody>
 <tr valign="top">
-<td><center>Windows Server 2016（Standard 或 Datacenter）</center></td>
+<td><center>Windows Server 2016 / 2019 （Standard 或 Datacenter）</center></td>
 <td><center>Server Core/Nano Server</center></td>
 <td><center>Server Core/Nano Server</center></td>
 </tr>
