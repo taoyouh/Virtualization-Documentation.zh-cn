@@ -8,12 +8,12 @@ ms.topic: article
 ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: 538871ba-d02e-47d3-a3bf-25cda4a40965
-ms.openlocfilehash: bb3681a83991b3d4e24348b686146616d4a88c4f
-ms.sourcegitcommit: db508decd9bf6c0dce9952e1a86bf80f00d025eb
+ms.openlocfilehash: 4f21efba8dd1079302b56e98d954b3ba574779e9
+ms.sourcegitcommit: 2779f01978b37ec4f8d895febe7037272fb2c703
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "2315660"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "4492803"
 ---
 # <a name="windows-container-network-drivers"></a>Windows 容器网络驱动程序  
 
@@ -23,19 +23,19 @@ ms.locfileid: "2315660"
   > 如果你安装了 Windows 10 创意者更新，则支持多个 NAT 网络！
 
 - **transparent** – 连接到使用“transparent”驱动程序创建的网络的容器将通过*外部* Hyper-V 交换机连接到物理网络。 可使用外部 DHCP 服务器静态（需要用户指定的 ``--subnet`` 选项）或动态分配来自物理网络的 IP。 
-  > 注意： 0: 要求下, 通过透明网络连接容器主机不支持在 Azure 虚拟机上。
+  > 注意： 导致以下要求，通过透明网络连接的容器主机上不支持 Azure 虚拟机。
   
-  > 需要： 时此模式方案中，使用虚拟化 （容器主机是 VM）_是必需的 MAC 地址欺骗_。
+  > 要求： 此模式下使用时在虚拟化方案 （容器主机是虚拟机）_必须进行 MAC 地址欺骗_。
 
 - **overlay** - 当 Docker 引擎在[群模式](../manage-containers/swarm-mode.md)下运行时，连接到覆盖网络的容器可以与跨多个容器主机连接到相同网络的其他容器通信。 在群群集上创建的每个覆盖网络都使用自己的 IP 子网创建，该子网由专用 IP 前缀定义。 覆盖网络驱动程序使用 VXLAN 封装。 **在使用合适的网络控制层面（Flannel 或 OVN）时可与 Kubernetes 配合使用。**
-  > 需要： 请确保您的环境满足这些*所需*的[必备组件](https://docs.docker.com/network/overlay/#operations-for-all-overlay-networks)创建重叠网络。
+  > 要求： 请确保你的环境满足这些*必需*的[先决条件](https://docs.docker.com/network/overlay/#operations-for-all-overlay-networks)创建覆盖网络。
 
-  > 需要： 需要与[KB4015217](https://support.microsoft.com/en-us/help/4015217/windows-10-update-kb4015217)、 Windows 10 创建者更新或更高版本的 Windows Server 2016。
+  > 要求： 需要 Windows Server 2016 与[KB4015217](https://support.microsoft.com/en-us/help/4015217/windows-10-update-kb4015217)、 Windows 10 创意者更新或更高版本。
 
 - **l2bridge** - 当容器连接到使用“l2bridge”驱动程序创建的网络时，其将与容器主机位于同一 IP 子网中，并通过*外部* Hyper-V 交换机连接到物理网络。 必须根据与容器主机相同的前缀静态分配 IP 地址。 由于对入口和出口执行了第 2 层地址转换（MAC 重写）操作，因此主机上的所有容器终结点都将具有与主机相同的 MAC 地址。
-  > 需要： 时此模式方案中，使用虚拟化 （容器主机是 VM）_是必需的 MAC 地址欺骗_。
+  > 要求： 此模式下使用时在虚拟化方案 （容器主机是虚拟机）_必须进行 MAC 地址欺骗_。
   
-  > 需要： 需要 Windows Server 2016、 Windows 10 创建者更新或更高版本。
+  > 要求： 需要 Windows Server 2016、 Windows 10 创意者更新或更高版本。
 
 - **l2tunnel** - 与 l2bridge 类似，但是_此驱动程序应仅用于 Microsoft 云堆栈_。 来自容器的数据包会发送到应用了 SDN 策略的虚拟化主机。
 
@@ -60,7 +60,7 @@ ms.locfileid: "2315660"
 
 | 网络模式/驱动程序 | IPAM |
 | -------------------------|:----:|
-| NAT | 根据内部 NAT 子网前缀由主机网络服务 (HNS) 进行动态 IP 分配和指定 |
+| NAT | 动态 IP 分配和指定由主机网络服务 (HNS) 从内部 NAT 子网前缀 |
 | Transparent | 对容器主机网络前缀内的 IP 地址进行静态或动态（使用外部 DHCP 服务器）IP 分配和指定 |
 | Overlay | 根据 Docker 引擎群模式管理的前缀进行动态 IP 分配并通过 HNS 进行指定 |
 | L2Bridge | 对容器主机网络前缀内的 IP 地址进行静态 IP 分配和指定（也可以通过 HNS 插件来分配） |
