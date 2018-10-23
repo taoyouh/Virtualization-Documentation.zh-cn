@@ -2,18 +2,18 @@
 title: Windows 10 上的 Windows 容器
 description: 容器部署快速入门
 keywords: docker, 容器
-author: enderb-ms
+author: taylorb-microsoft
 ms.date: 09/26/2016
 ms.topic: article
 ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: bb9bfbe0-5bdc-4984-912f-9c93ea67105f
-ms.openlocfilehash: 02a8013fb5e6c294aaef77ae2afd349cc6431d96
-ms.sourcegitcommit: 97698dc0ed94779ac80039288d01875fb71d6b2e
+ms.openlocfilehash: aa69739697e9e2c668aaf5026c6f5ddc69d43c4d
+ms.sourcegitcommit: f6f53fd0da65ac44d16fb793c5aa1af56c14d90e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "4349756"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "5428989"
 ---
 # <a name="windows-containers-on-windows-10"></a>Windows 10 上的 Windows 容器
 
