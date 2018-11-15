@@ -2,28 +2,28 @@
 title: Windows Server 上的 Windows 容器
 description: 容器部署快速入门
 keywords: docker, 容器
-author: enderb-ms
+author: cwilhit
 ms.date: 09/26/2016
 ms.topic: article
 ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: e3b2a4dc-9082-4de3-9c95-5d516c03482b
-ms.openlocfilehash: 7d526aa64d478516a3f66acaf62b62b45282e5af
-ms.sourcegitcommit: 3d72f15651da378908f134916cd5c9d2064f8f95
-ms.translationtype: HT
+ms.openlocfilehash: ed60470f18f644fcc4fe741d02e6f6e39af48368
+ms.sourcegitcommit: 4412583b77f3bb4b2ff834c7d3f1bdabac7aafee
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "2256930"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "6947986"
 ---
 # <a name="windows-containers-on-windows-server"></a>Windows Server 上的 Windows 容器
 
-本练习将演练 Windows Server 2016 上 Windows 容器功能的基本部署和使用。 在本练习中，你将安装容器角色并部署简单的 Windows Server 容器。 如果你需要熟悉容器，可在[关于容器](../about/index.md)中找到此信息。
+在 Windows Server 2019，本练习将演练基本部署和使用 Windows 容器功能。 在本练习中，你将安装容器角色并部署简单的 Windows Server 容器。 如果你需要熟悉容器，可在[关于容器](../about/index.md)中找到此信息。
 
-本快速入门特定于 Windows Server 2016 上的 Windows Server 容器。 此页面左侧的目录中提供其他快速入门文档，包括 Windows 10 中的容器。
+本快速入门仅适用于 Windows Server 2019 上的 Windows Server 容器。 此页面左侧的目录中提供其他快速入门文档，包括 Windows 10 中的容器。
 
 **先决条件：**
 
-一个运行 Windows Server 2016 的计算机系统（物理或虚拟）。 如果使用的是 Windows Server 2016 TP5，请更新为 [Window Server 2016 Evaluation](https://www.microsoft.com/en-us/evalcenter/evaluate-windows-server-2016 )。
+运行 Windows Server 2019 的一台计算机系统 （物理或虚拟）。 如果你使用的 Windows Server 2019 Insider Preview，请更新[Window Server 2019 Evaluation](https://www.microsoft.com/en-us/evalcenter/evaluate-windows-server-2019 )。
 
 > 需要安装关键更新，才能让 Windows 容器功能正常运作。 请在进行本教程所述操作前安装所有更新。
 
@@ -96,13 +96,13 @@ sconfig
 使用 `docker run` 部署 .Net 容器。 这也可下载容器映像，可能需要几分钟时间。
 
 ```console
-docker run microsoft/dotnet-samples:dotnetapp-nanoserver
+docker run microsoft/dotnet-samples:dotnetapp-nanoserver-1809
 ```
 
 容器启动后，请打印 hello world 消息，然后退出。
 
 ```console
-         Dotnet-bot: Welcome to using .NET Core!
+         Hello from .NET Core!
     __________________
                       \
                        \
@@ -143,8 +143,8 @@ docker run microsoft/dotnet-samples:dotnetapp-nanoserver
 
 
 **Environment**
-Platform: .NET Core 2.0
-OS: Microsoft Windows 10.0.14393
+Platform: .NET Core
+OS: Microsoft Windows 10.0.17763
 ```
 
 有关 Docker Run 命令的深入信息，请参阅 [Docker.com 上的 Docker Run 参考]( https://docs.docker.com/engine/reference/run/)。

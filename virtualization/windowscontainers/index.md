@@ -2,17 +2,18 @@
 title: Windows 容器文档
 description: Windows 容器文档
 keywords: docker, 容器
-author: enderb-ms
+author: cwilhit
 ms.date: 05/02/2016
 ms.topic: article
 ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: 74c9d604-0915-4d89-bc69-0263b76bc66b
-ms.openlocfilehash: 58ce4bbefe7497e15d1717b668dab7469bfe367f
-ms.sourcegitcommit: ec186664e76d413d3bf75f2056d5acb556f4205d
-ms.translationtype: HT
+ms.openlocfilehash: 2b887d8ae92d5134014ea71235237cc446a7816f
+ms.sourcegitcommit: 4412583b77f3bb4b2ff834c7d3f1bdabac7aafee
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "6947946"
 ---
 # <a name="windows-containers-documentation"></a>Windows 容器文档
 

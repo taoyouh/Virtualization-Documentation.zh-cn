@@ -2,18 +2,18 @@
 title: 在 Windows Server 上部署 Windows 容器
 description: 在 Windows Server 上部署 Windows 容器
 keywords: docker, 容器
-author: enderb-ms
+author: taylorb-microsoft
 ms.date: 09/26/2016
 ms.topic: article
 ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: ba4eb594-0cdb-4148-81ac-a83b4bc337bc
-ms.openlocfilehash: 701112cac9c3f6d647fe5fb70309350fd0d07161
-ms.sourcegitcommit: d69ed13d505e96f514f456cdae0f93dab4fd3746
+ms.openlocfilehash: 0d982996a1aabd434df04551f30725a21b31d500
+ms.sourcegitcommit: 4412583b77f3bb4b2ff834c7d3f1bdabac7aafee
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/03/2018
-ms.locfileid: "4340845"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "6948006"
 ---
 # <a name="container-host-deployment---windows-server"></a>容器主机部署 - Windows Server
 
@@ -58,7 +58,7 @@ Restart-Computer -Force
 Install-Package -Name docker -ProviderName DockerMsftProvider -Force -RequiredVersion 18.03
 ```
 
-安装特定 Docker EE 版本可能需要对以前安装 DockerMsftProvider 模块的更新。 若要更新：
+安装 Docker EE 的特定版本可能需要对以前安装 DockerMsftProvider 模块的更新。 若要更新：
 
 ```PowerShell
 Update-Module DockerMsftProvider
@@ -76,11 +76,11 @@ Install-Package -Name docker -ProviderName DockerMsftProvider -Update -Force -Re
 
 使用 Windows 容器前，需安装基本映像。 可通过将 Windows Server Core 或 Nano Server 作为容器操作系统获取基本映像。 有关 Docker 容器映像的详细信息，请参阅[在 docker.com 上生成自己的映像](https://docs.docker.com/engine/tutorials/dockerimages/)。
 
-随着 Windows Server 2019 的发布，Microsoft 来源容器映像移动到新的注册表称为 Microsoft 容器注册表中。 在 Microsoft 发布的容器映像应继续通过 Docker Hub 发现。 发布于 Windows Server 2019，除此以外，你的新容器图像应该从 MCR 中提取。 对于较旧的容器映像在 Windows Server 2019 之前发布，你应该继续从 Docker 的注册表中提取。
+使用 Windows Server 2019 的发布，Microsoft 来源容器映像移动到新的注册表称为 Microsoft 容器注册表。 在 Microsoft 发布的容器映像应继续通过 Docker Hub 发现。 发布于 Windows Server 2019 及更高，你的新容器图像应该从 MCR 中提取。 对于较旧的容器映像在 Windows Server 2019 之前发布，你应该继续从 Docker 的注册表中提取。
 
 ### <a name="windows-server-2019-and-newer"></a>Windows Server 2019 及更高版本
 
-若要安装的 Windows Server Core 基本映像，运行以下命令：
+若要安装的 Windows Server Core 基本映像，请运行以下命令：
 
 ```PowerShell
 docker pull mcr.microsoft.com/windows/servercore:ltsc2019

@@ -2,18 +2,18 @@
 title: 容器部署快速入门 - 映像
 description: 容器部署快速入门
 keywords: docker, 容器
-author: enderb-ms
+author: cwilhit
 ms.date: 09/26/2016
 ms.topic: article
 ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: 479e05b1-2642-47c7-9db4-d2a23592d29f
-ms.openlocfilehash: 7ab445212a400487bff182a2e73107b47ab00b1a
-ms.sourcegitcommit: 5e5644bff6dba70e384db6c80787b3bbe7adb93c
+ms.openlocfilehash: 104c8f659e2b9709c24eb0230d9f32d6dca32c71
+ms.sourcegitcommit: 4412583b77f3bb4b2ff834c7d3f1bdabac7aafee
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/03/2018
-ms.locfileid: "4303873"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "6948036"
 ---
 # <a name="automating-builds-and-saving-images"></a>自动生成和保存映像
 

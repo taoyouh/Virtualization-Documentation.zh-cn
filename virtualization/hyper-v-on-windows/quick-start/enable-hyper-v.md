@@ -7,12 +7,12 @@ ms.date: 05/02/2016
 ms.topic: article
 ms.prod: windows-10-hyperv
 ms.assetid: 752dc760-a33c-41bb-902c-3bb2ecd9ac86
-ms.openlocfilehash: dd4021c653d98a3bd7a338d9f502a572830f344d
-ms.sourcegitcommit: 5e5644bff6dba70e384db6c80787b3bbe7adb93c
+ms.openlocfilehash: cd576f72c9947cd6f79cc362709c1a4ceab9b47e
+ms.sourcegitcommit: 4412583b77f3bb4b2ff834c7d3f1bdabac7aafee
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/03/2018
-ms.locfileid: "4303923"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "6947956"
 ---
 # <a name="install-hyper-v-on-windows-10"></a>在 Windows 10 上安装 Hyper-V
 
@@ -25,7 +25,7 @@ ms.locfileid: "4303923"
 
 * Windows 10 企业版、 专业版或教育版
 * 具有二级地址转换 (SLAT) 的 64 位处理器。
-* CPU 支持 VM 监视器模式扩展（Intel CPU 上的 VT-c）。
+* CPU 支持 VM 监视器模式扩展 (Intel Cpu 上 VT c)。
 * 最小 4 GB 内存。
 
 **请勿**在 Windows 10 家庭版上安装 Hyper-V 角色。
@@ -70,9 +70,11 @@ ms.locfileid: "4303923"
 
 1. 右键单击 Windows 按钮并选择“应用和功能”。
 
-2. 选择“**打开或关闭 Windows 功能**”。
+2. 在右侧的相关设置中选择**程序和功能**。 
 
-3. 选择 **Hyper-V**，然后单击**确定**。
+3. 选择“**打开或关闭 Windows 功能**”。
+
+4. 选择 **Hyper-V**，然后单击**确定**。
 
 ![Windows 程序和功能对话框](media/enable_role_upd.png)
 

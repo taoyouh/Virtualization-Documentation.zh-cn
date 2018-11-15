@@ -12,15 +12,6 @@
 ## [步骤 1 - 使用预览体验成员映像](quick-start/Using-Insider-Container-Images.md)
 ## [步骤 2 - 生成并运行应用程序](quick-start/Nano-RS3-.NET-Core-and-PS.md)
 ## [步骤 3 - 已知问题](quick-start/Insider-Known-Issues.md)
-## [Linux 容器预览](deploy-containers/linux-containers.md)
-
-# 部署 Windows 容器
-## [系统要求](deploy-containers/system-requirements.md)
-## [版本兼容性](deploy-containers/version-compatibility.md)
-## [部署](deploy-containers/deploy-containers-on-server.md)
-## [Hyper-V 隔离](manage-containers/hyperv-container.md)
-## [Active Directory 服务帐户](manage-containers/manage-serviceaccounts.md)
-## [防病毒优化](https://msdn.microsoft.com/en-us/windows/hardware/drivers/ifs/anti-virus-optimization-for-windows-containers)
 
 # 在 Windows 上管理 Docker
 ## [Windows 上的 Docker 引擎](manage-docker/configure-docker-daemon.md)
@@ -28,7 +19,6 @@
 ## [优化 Dockerfile](manage-docker/optimize-windows-dockerfile.md)
 ## [容器存储](manage-containers/container-storage.md)
 ## [群模式入门](manage-containers/swarm-mode.md)
-## [通过 PowerShell 管理 Docker](https://github.com/Microsoft/Docker-PowerShell)
 ## [Windows Docker 主机远程管理](management/manage_remotehost.md)
 ## [资源控制](manage-containers/resource-controls.md)
 
@@ -39,11 +29,14 @@
 ## [高级网络选项](container-networking/advanced.md)
 
 # Windows 上的 Kubernetes 
-## [入门](kubernetes/getting-started-kubernetes-windows.md)
-## [创建 Linux 主节点](kubernetes/creating-a-linux-master.md)
-## [配置网络拓扑](kubernetes/configuring-host-gateway-mode.md)
-## [编译 Kubernetes 二进制文件](kubernetes/compiling-kubernetes-binaries.md)
+## [1-概述](kubernetes/getting-started-kubernetes-windows.md)
+## [2-创建 Kubernetes 主机](kubernetes/creating-a-linux-master.md)
+## [3-选择的网络解决方案](kubernetes/network-topologies.md)
+## [4-加入 Windows 工作人员](kubernetes/joining-windows-workers.md)
+## [5-加入 Linux 工作人员](kubernetes/joining-linux-workers.md)
+## [6-部署 Kubernetes 资源](kubernetes/deploying-resources.md)
 ## [疑难解答](kubernetes/common-problems.md)
+## [编译 Kubernetes 二进制文件](kubernetes/compiling-kubernetes-binaries.md)
 
 # Service Fabric 快速入门
 ## [部署首个容器](/azure/service-fabric/service-fabric-quickstart-containers)
@@ -63,5 +56,12 @@
 ## [社区视频和博客](communitylinks.md)
 ## [疑难解答](troubleshooting.md)
 
+# 参考
+## [系统要求](deploy-containers/system-requirements.md)
+## [版本兼容性](deploy-containers/version-compatibility.md)
+## [Hyper-V 隔离](manage-containers/hyperv-container.md)
+## [Windows 上的 Linux 容器](deploy-containers/linux-containers.md)
+## [Active Directory 服务帐户](manage-containers/manage-serviceaccounts.md)
+## [防病毒优化](https://msdn.microsoft.com/en-us/windows/hardware/drivers/ifs/anti-virus-optimization-for-windows-containers)
 
 # [容器操作系统映像 EULA](Images_EULA.md)
