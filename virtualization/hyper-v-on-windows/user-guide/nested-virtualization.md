@@ -8,12 +8,12 @@ ms.topic: article
 ms.prod: windows-10-hyperv
 ms.service: windows-10-hyperv
 ms.assetid: 68c65445-ce13-40c9-b516-57ded76c1b15
-ms.openlocfilehash: 0b268f796dacd3de60cb5879b1c9c5414b8bdd49
-ms.sourcegitcommit: 9653a3f7451011426f8af934431bb14dbcb30a62
-ms.translationtype: HT
+ms.openlocfilehash: 625a9b36ff782c86065ef3d9124708e5716e066f
+ms.sourcegitcommit: 941a82f463684b893488cd998f79b539c506105b
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "2082930"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "7012570"
 ---
 # <a name="run-hyper-v-in-a-virtual-machine-with-nested-virtualization"></a>借助嵌套虚拟化在虚拟机中运行 Hyper-V
 
@@ -96,7 +96,7 @@ Netsh interface ip add dnsserver “Ethernet” address=<my DNS server>
 
 下图显示了没有嵌套的 Hyper-V。  Hyper-V 虚拟机监控程序完全控制硬件虚拟化功能（橙色箭头），并且不会向来宾操作系统公开它们。
 
-![](./media/HVNoNesting.png)
+![](./media/HVNoNesting.PNG)
 
 相反，下图显示了已启用嵌套虚拟化的 Hyper-V。 在此情况下，Hyper-V 会向其虚拟机公开硬件虚拟化扩展。 启用嵌套后，来宾虚拟机可以安装其自己的虚拟机监控程序并运行其自己的来宾 VM。
 
