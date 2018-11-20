@@ -61,6 +61,7 @@
 ## [版本兼容性](deploy-containers/version-compatibility.md)
 ## [Hyper-V 隔离](manage-containers/hyperv-container.md)
 ## [Windows 上的 Linux 容器](deploy-containers/linux-containers.md)
+## [RunHCS 和 Containerd](deploy-containers/containerd.md)
 ## [Active Directory 服务帐户](manage-containers/manage-serviceaccounts.md)
 ## [防病毒优化](https://msdn.microsoft.com/en-us/windows/hardware/drivers/ifs/anti-virus-optimization-for-windows-containers)
 
