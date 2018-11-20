@@ -8,12 +8,12 @@ ms.topic: article
 ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: edfd11c8-ee99-42d8-9878-efc126fe1826
-ms.openlocfilehash: 477c6079d6e90a206386d1810bdb1449e087a4be
-ms.sourcegitcommit: 4412583b77f3bb4b2ff834c7d3f1bdabac7aafee
+ms.openlocfilehash: 7db0135e5d5079d3b8cce815d051ecd6a7cb896b
+ms.sourcegitcommit: 614e3ca3e6f4373b999a501a2829adbaa61de4c4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "6948086"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "7277531"
 ---
 # <a name="linux-containers-on-windows"></a>Windows 上的 Linux 容器
 
@@ -49,11 +49,11 @@ Docker 已能够在 Windows 上运行 Linux 容器桌面，因为它首次发布
 
 若要尝试 LCOW，请遵循[此-入门指南](../quick-start/quick-start-windows-10.md)中的 Linux 容器说明
 
-使用 HYPER-V 隔离的 Linux 容器与正好的操作系统运行容器优化的 Linux 虚拟机中运行每个 Linux 容器 (LCOW)。  与最 Moby 虚拟机的方法，每个 LCOW 具有其自己的内核，它自己的虚拟机沙盒。  它们是也受 Windows 上的 Docker 直接。
+使用 HYPER-V 隔离的 Linux 容器与正好的操作系统运行容器优化的 Linux 虚拟机中运行每个 Linux 容器 (LCOW)。  与最 Moby 虚拟机的方法，每个 LCOW 都有其自己的内核和其自己的虚拟机沙盒。  它们是也受 Windows 上的 Docker 直接。
 
 ![使用 HYPER-V 隔离 (LCOW) 的 Linux 容器](media/lcow-approach.png)
 
-采用探讨容器管理 Moby 虚拟机的方法和 LCOW 之间有何，在 LCOW 模型容器管理将停留在 Windows 上，并通过 GRPC 和 containerd 发生的每个 LCOW 管理。  Linux 发行版容器用于 LCOW 这意味着可以有很多较小的清单。  右现在，我们将使用 LinuxKit 优化发行版容器使用但 Kata 等其他项目生成类似高度优化 Linux 发行 (清除 Linux) 以及。
+采用探讨容器管理 Moby 虚拟机的方法和 LCOW 之间有何，在 LCOW 模型容器管理将停留在 Windows 上，并通过 GRPC 和 containerd 发生的每个 LCOW 管理。  Linux 发行版容器用于 LCOW 这意味着可以有很多较小的清单。  右现在，我们将使用 LinuxKit 优化发行版容器使用，但如 Kata 其他项目生成类似高度优化 Linux 发行 (清除 Linux) 以及。
 
 下面是每个 LCOW 探讨：
 
@@ -123,6 +123,6 @@ LCOW 处于活动开发状态。  在[GitHub](https://github.com/moby/moby/issue
 
 ## <a name="other-options-we-considered"></a>我们考虑其他选项
 
-当我们已看看如何在 Windows 上运行 Linux 容器时，我们认为 WSL。  最终，我们选择了基于虚拟化的方法，以便 Windows 上的 Linux 容器与 Linux 上的 Linux 容器保持一致。  使用 HYPER-V 还可使 LCOW 更安全。  我们可能会重新评估将来，但现在，LCOW 将继续使用 HYPER-V。
+当我们已看看如何在 Windows 上运行 Linux 容器时，我们认为 WSL。 最终，我们选择的基于虚拟化的方法，以便 Windows 上的 Linux 容器可以与 Linux 上的 Linux 容器保持一致。 使用 HYPER-V 还可使 LCOW 更安全。 我们可能会重新评估将来，但现在，LCOW 将继续使用 HYPER-V。
 
-如果你有想法，请发送通过 github 或 UserVoice 的反馈。  特别感谢你希望看到的特定体验有关的反馈。
+如果你有想法，请发送通过 GitHub 或 UserVoice 的反馈。  特别感谢你希望看到的特定体验有关的反馈。
