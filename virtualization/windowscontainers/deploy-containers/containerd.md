@@ -1,5 +1,5 @@
 ---
-title: 生成容器堆栈
+title: Windows 容器平台
 description: 了解有关新容器构建基块可在 Windows 中的详细信息。
 keywords: LCOW，linux 容器，docker，容器、 containerd、 cri、 runhcs，runc
 author: scooley
@@ -8,12 +8,12 @@ ms.topic: article
 ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: a0e62b32-0c4c-4dd4-9956-8056e9abd9e5
-ms.openlocfilehash: 970de62c9a0011fa09d6741b2665479efd394313
-ms.sourcegitcommit: 166aa2430ea47d7774392e65a9875501f86dd5ed
+ms.openlocfilehash: 5811ea0761567c3a7db036358b24d1a3e7c51baf
+ms.sourcegitcommit: fdaf666973fca37d8c428e0247454dd47c01f1c3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/20/2018
-ms.locfileid: "7460573"
+ms.locfileid: "7460596"
 ---
 # <a name="container-platform-tools-on-windows"></a>在 Windows 上的容器平台工具
 
@@ -106,7 +106,9 @@ Runhcs 中可用的容器命令包括：
 
 ## <a name="containerdcri"></a>containerd/cri
 
-> !注意 CRI 支持仅可用于 Server 2019/Windows 10 1809年及更高版本。
+> [!IMPORTANT]
+> CRI 支持仅可用于 Server 2019/Windows 10 1809年及更高版本。  我们还仍会主动适用于 Windows 开发 containerd。
+> 开发人员/仅用于测试。
 
 [CRI](https://github.com/kubernetes/kubernetes/blob/master/pkg/kubelet/apis/cri/runtime/v1alpha2/api.proto) （容器运行时接口） 而 OCI 规范定义单个容器，作为共享沙盒中 workload(s) 描述容器环境称为广告荚。  Pod 可以包含一个或多个容器工作负载。  Pod 让容器 orchestrator，如 Kubernetes 和服务的构造网格处理分组应在与一些共享的资源，如内存和 vNETs 在同一个主机的工作负荷。
 
