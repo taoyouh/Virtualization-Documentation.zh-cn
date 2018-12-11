@@ -2,20 +2,20 @@
 title: 配置嵌套虚拟机进行通信直接使用 Azure 的虚拟网络中的资源
 description: 嵌套虚拟化
 keywords: windows 10 的 hyper-v Azure
-author: johncslack
+author: mrajess
 ms.date: 12/10/2018
 ms.topic: article
 ms.prod: windows-10-hyperv
 ms.service: windows-10-hyperv
 ms.assetid: 1ecb85a6-d938-4c30-a29b-d18bd007ba08
-ms.openlocfilehash: f316f4c576eae6dd7c14de367e42012a3c724eac
-ms.sourcegitcommit: a9ab01b718b065124829b05868955f40e9020071
+ms.openlocfilehash: abe6f0da68ff90af0b2b5e675f70f106d42ca81c
+ms.sourcegitcommit: 8db42caaace760b7eeb1367b631b38e7904a9f26
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/11/2018
-ms.locfileid: "8917729"
+ms.locfileid: "8962305"
 ---
-# <a name="configuring-nested-vms-to-communicate-directly-with-resources-in-an-azure-virtual-network"></a>配置嵌套虚拟机进行通信直接使用 Azure 的虚拟网络中的资源
+# <a name="configure-nested-vms-to-communicate-with-resources-in-an-azure-virtual-network"></a>配置嵌套虚拟机与 Azure 虚拟网络中的资源进行通信
 
 部署和配置 Azure 内的嵌套的虚拟机上的原始指南需要显示你通过 NAT 交换机访问这些虚拟机。 这样便提供了一些限制：
 
@@ -45,7 +45,7 @@ ms.locfileid: "8917729"
 
 * 背景： 嵌套虚拟机不会收到 DHCP 从其主机连接到，即使你配置的内部或外部交换机 VNet。 
   * 这意味着在 HYPER-V 主机必须提供 DHCP。
-* 我们将使用由 HYPER-V 主机只需为分配的 Ip 的块。  在 HYPER-V 主机不知道上 VNet，当前已分配租约，因此为了避免在其中主机已分配 IP 存在的情况下我们必须为 HYPER-V 主机只需使用分配的 Ip 的块。 这将允许我们可以避免重复 IP 方案。 
+* 我们将使用由 HYPER-V 主机只需为分配的 Ip 的块。  在 HYPER-V 主机不知道上 VNet，当前已分配租约，因此为了避免在其中主机已分配 IP 存在的情况下我们必须为 HYPER-V 主机只需使用分配的 Ip 的块。 这将允许我们可以避免重复 IP 方案。
   * 我们选择的 Ip 的块将对应于 HYPER-V 主机驻留 VNet 内的子网。
   * 我们希望这对应于现有的子网的原因是以返回到 ExpressRoute 处理 BGP 广告。 如果我们只需组成要使用的 HYPER-V 主机的 IP 范围，则我们需要创建一系列静态路由以允许客户端在本地与嵌套的虚拟机进行通信。 这意味着，这不是硬性要求为你无法使嵌套的虚拟机的 IP 范围，然后创建指引客户端与该范围的 HYPER-V 主机所需的所有路由。
 * 我们将创建内部交换机内 HYPER-V，然后我们会将新创建的接口我们留出 dhcp 范围内的 IP 地址。 此 IP 地址将成为我们嵌套的虚拟机的默认网关且在用于内部交换机和主机连接到我们 VNet 的 NIC 之间的路线。
