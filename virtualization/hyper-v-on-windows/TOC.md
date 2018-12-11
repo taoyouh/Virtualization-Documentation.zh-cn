@@ -16,6 +16,7 @@
 ## [创建虚拟交换机](quick-start/connect-to-network.md)
 ## [生成集成服务](user-guide/make-integration-service.md)
 ## [移植 Hyper-V WMI](user-guide/refactor-wmiv1-to-wmiv2.md)
+## [Azure 虚拟网络中的嵌套虚拟机](user-guide/nested-virtualization-azure-virtual-network.md) 
 
 # 参考
 ## [Hyper-V 要求](reference/hyper-v-requirements.md)
