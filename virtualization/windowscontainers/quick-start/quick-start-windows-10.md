@@ -8,12 +8,12 @@ ms.topic: article
 ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: bb9bfbe0-5bdc-4984-912f-9c93ea67105f
-ms.openlocfilehash: aa69739697e9e2c668aaf5026c6f5ddc69d43c4d
-ms.sourcegitcommit: f6f53fd0da65ac44d16fb793c5aa1af56c14d90e
+ms.openlocfilehash: d831b5950d84c9f82e2a4874827b2ffb107ad50e
+ms.sourcegitcommit: 4090d158dd3573ea90799de5b014c131a206b000
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "5428989"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "6121577"
 ---
 # <a name="windows-containers-on-windows-10"></a>Windows 10 上的 Windows 容器
 
@@ -35,7 +35,7 @@ ms.locfileid: "5428989"
 
 ## <a name="1-install-docker-for-windows"></a>1. 安装适用于 Windows 的 Docker
 
-[下载适用于 Windows 的 Docker](https://download.docker.com/win/stable/InstallDocker.msi) 并运行安装程序。 Docker 文档中提供了[详细的安装说明](https://docs.docker.com/docker-for-windows/install)。
+[下载适用于 Windows 的 Docker](https://store.docker.com/editions/community/docker-ce-desktop-windows)和运行安装程序 （你将需要登录。 创建一个帐户如果你已经没有）。 Docker 文档中提供了[详细的安装说明](https://docs.docker.com/docker-for-windows/install)。
 
 ## <a name="2-switch-to-windows-containers"></a>2. 切换到 Windows 容器
 

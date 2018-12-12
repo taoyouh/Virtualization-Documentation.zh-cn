@@ -2,215 +2,72 @@
 title: Windows 上的 Kubernetes
 author: gkudra-msft
 ms.author: gekudray
-ms.date: 11/16/2017
+ms.date: 11/02/2018
 ms.topic: get-started-article
 ms.prod: containers
-description: 使用 v1.9 beta 版本将 Windows 节点加入到 Kubernetes 群集中。
-keywords: kubernetes, 1.9, windows, 入门
+description: 将 Windows 节点加入到 Kubernetes 群集与 v1.12。
+keywords: kubernetes，1.12，windows，入门
 ms.assetid: 3b05d2c2-4b9b-42b4-a61b-702df35f5b17
-ms.openlocfilehash: c6127fe8ab9de6a56816fb8187d4dec525425510
-ms.sourcegitcommit: 7c3af076eb8bad98e1c3de0af63dacd842efcfa3
-ms.translationtype: HT
+ms.openlocfilehash: 0e43b2ac5b19d16721c1ba0dd1f34e339223bdaf
+ms.sourcegitcommit: 8e9252856869135196fd054e3cb417562f851b51
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 11/08/2018
+ms.locfileid: "6178900"
 ---
 # <a name="kubernetes-on-windows"></a>Windows 上的 Kubernetes #
+此页面可用作概述，以便开始使用 Windows 上的 Kubernetes 由 Windows 节点加入到基于 Linux 的群集。 在 Windows Server[版本 1803](https://docs.microsoft.com/en-us/windows-server/get-started/whats-new-in-windows-server-1803#kubernetes) beta 版上的 Kubernetes 1.12 版本，用户可以充分利用[最新功能](https://kubernetes.io/docs/getting-started-guides/windows/#supported-features)在 Kubernetes 中在 Windows 上：
 
-借助 Kubernetes 1.9 和 Windows Server [版本 1709](https://docs.microsoft.com/en-us/windows-server/get-started/whats-new-in-windows-server-1709#networking) 的最新版本，用户可以充分利用 Windows 网络中的最新功能：
-
-  - **共享的 Pod 隔离舱**：基础结构和工作线程 Pod 现在共享网络隔离舱（类似于 Linux 命名空间）
-  - **终结点优化**：借助隔离舱共享，容器服务需要跟踪的终结点数（至少）仅为之前的二分之一
-  - **数据路径优化**：虚拟筛选平台和主机网络服务的改进实现了基于内核的负载平衡
-
-
-此页面可用作开始将全新 Windows 节点加入到现有基于 Linux 的群集的指南。 若要彻底从头开始，请参阅[此页面](./creating-a-linux-master.md) &mdash; 可用于部署 Kubernetes 群集的多种资源的其中一项 &mdash;，以我们曾用的方式从头开始设置主机。
+  - **简化了的网络管理**： Flannel 主机网关模式下使用以自动路由节点之间的管理
+  - **可扩展性改进**： 享受感谢[为 Windows Server 容器的非设备 vNICs](https://blogs.technet.microsoft.com/networking/2018/04/27/network-start-up-and-performance-improvements-in-windows-10-spring-creators-update-and-windows-server-version-1803/)更快、 更可靠的容器启动时间
+  - **hyper-v 隔离 (alpha)**: 协调[的 hyper-v 容器](https://kubernetes.io/docs/getting-started-guides/windows/#hyper-v-containers)与增强的安全 （[请参阅 Windows 容器类型](https://docs.microsoft.com/en-us/virtualization/windowscontainers/about/#windows-container-types)） 的内核模式隔离
+  - **存储插件**： [FlexVolume 存储插件](https://github.com/Microsoft/K8s-Storage-Plugins)SMB 和 iSCSI 的支持用于 Windows 容器
 
 > [!TIP] 
 > 如果要在 Azure 上部署群集，可以使用开源 ACS-Engine 工具轻松实现。 我们提供了分步[演练](https://github.com/Azure/acs-engine/blob/master/docs/kubernetes/windows.md)供你参考。
 
-<a name="definitions"></a>以下是本指南中引用的一些术语的定义：
+## <a name="prerequisites"></a>先决条件 ##
 
-  - **外部网络**是节点通信所在的网络。
-  - <a name="cluster-subnet-def"></a>**群集子网**是可路由的虚拟网络；节点分配有此网络中更小的子网，以供它们的 Pod 使用。
-  - **服务子网**是 11.0/16 上不可路由的纯虚拟子网，无论网络拓扑如何，Pod 都使用该子网统一访问服务。 它通过节点上运行的 `kube-proxy` 与可路由的地址空间进行相互转换。
+### <a name="plan-ip-addressing-for-your-cluster"></a>规划群集 IP 地址 ###
+<a name="definitions"></a>Kubernetes 群集引入了新的子网，pod 和服务，它是一定要确保其中任何一个与你的环境中的任何其他现有网络碰撞。 下面是为了成功部署 Kubernetes 释放所需的所有地址空间：
+
+| 子网地址范围 | 说明 | 默认值 |
+| --------- | ------------- | ------------- |
+| <a name="service-subnet-def"></a>**服务子网** | 不可路由的纯虚拟子网 pod 中用于无论网络拓扑如何该子网统一访问服务。 它通过节点上运行的 `kube-proxy` 与可路由的地址空间进行相互转换。 | "10.96.0.0/12" |
+| <a name="cluster-subnet-def"></a>**群集子网** |  这是由群集中的所有 pod 的全局子网。 每个节点分配较小的/24 子网从此使用其 pod。 它必须足够大，以适应在群集中使用的所有 pod。 若要计算*最小*的子网大小： `(number of nodes) + (number of nodes * maximum pods per node that you configure)` <p/>对于每个节点的 100 pod 的 5 个节点的群集的示例： `(5) + (5 *  100) = 505`。  | "10.244.0.0/16" |
+| **Kubernetes DNS 服务 IP** | "Kube dns"服务的 DNS 解析和群集服务发现将使用的 IP 地址。 | "10.96.0.10" |
+> [!NOTE]
+> 没有其他 Docker 网络 (NAT) 获取创建默认情况下，当你安装 Docker。 它不需要能够按照我们 Ip 分配群集子网改为运行 Windows 上的 Kubernetes。
+
+### <a name="disable-anti-spoofing-protection"></a>禁用反欺骗的防护 ###
+> [!Important] 
+> 请阅读本节仔细所需的任何人都可以成功使用虚拟机立即部署 Windows 上的 Kubernetes 原样。
+
+确保 MAC 地址欺骗和 Windows 容器主机虚拟机 （来宾） 启用虚拟化。 若要实现此目的，你应托管的虚拟机 （HYPER-V 给定的示例） 在计算机上以管理员身份运行以下内容：
+
+```powershell
+Set-VMProcessor -VMName "<name>" -ExposeVirtualizationExtensions $true 
+Get-VMNetworkAdapter -VMName "<name>" | Set-VMNetworkAdapter -MacAddressSpoofing On
+```
+> [!TIP]
+> 如果你使用基于 VMware 的产品以满足你的虚拟化，请考虑为启用[混杂模式](https://kb.vmware.com/s/article/1004099)MAC 欺骗要求。
+
+>[!TIP]
+> 如果你要自己部署 Kubernetes Azure IaaS 虚拟机上的，请检查支持此要求的[嵌套虚拟化](https://azure.microsoft.com/en-us/blog/nested-virtualization-in-azure/)的 Vm。
 
 ## <a name="what-you-will-accomplish"></a>你将实现的目标 ##
 
 本指南结束时，你将实现以下目标：
 
-> [!div class="checklist"]  
-> * [Linux 主机](#preparing-the-linux-master) 节点配置完毕。  
-> * 将 [Windows 工作者节点](#preparing-a-windows-node) 连接到上述节点。  
-> * [网络拓扑](#network-topology) 准备就绪。  
-> * [示例 Windows 服务](#running-a-sample-service)部署完毕。  
-> * 解决[常见问题和错误](./common-problems.md)。  
+> [!div class="checklist"]
+> * 创建了一个[开始创建 Kubernetes 主机](./creating-a-linux-master.md)节点。  
+> * 选择[网络解决方案](./network-topologies.md)。  
+> * 加入[Windows 工作者节点](./joining-windows-workers.md)或[Linux 工作者节点](./joining-linux-workers.md)到它。  
+> * 部署[示例 Kubernetes 资源](./deploying-resources.md)。  
+> * 解决[常见问题和错误](./common-problems.md)。
 
-## <a name="preparing-the-linux-master"></a>准备 Linux 主机 ##
+## <a name="next-steps"></a>后续步骤 ##
+在此部分中，我们讨论了重要的先决条件和今天成功部署 Windows 上的 Kubernetes 所需的假设。 若要了解如何设置开始创建 Kubernetes 主机的继续：
 
-无论是按照[说明](./creating-a-linux-master.md)进行操作，还是当前已经拥有群集，Linux 主机只需 Kubernetes 证书配置。 这可能在 `/etc/kubernetes/admin.conf`、`~/.kube/config` 或其他地方，具体取决于你的设置。
-
-## <a name="preparing-a-windows-node"></a>准备 Windows 节点 ##
-
-> [!NOTE]  
-> Windows 部分中的所有代码段都将在_提升的_ PowerShell 中运行。
-
-Kubernetes 使用 [Docker](https://www.docker.com/) 作为其容器 Orchestrator，因此我们需要安装它。 你可以按照[官方文档说明](../manage-docker/configure-docker-daemon.md#install-docker)、[Docker 说明](https://store.docker.com/editions/enterprise/docker-ee-server-windows)进行操作，或者尝试以下步骤：
-
-```powershell
-Install-Module -Name DockerMsftProvider -Repository PSGallery -Force
-Install-Package -Name Docker -ProviderName DockerMsftProvider
-Restart-Computer -Force
-```
-
-如果你在代理的后面，则必须定义以下 PowerShell 环境变量：
-```powershell
-[Environment]::SetEnvironmentVariable("HTTP_PROXY", "http://proxy.example.com:80/", [EnvironmentVariableTarget]::Machine)
-[Environment]::SetEnvironmentVariable("HTTPS_PROXY", "http://proxy.example.com:443/", [EnvironmentVariableTarget]::Machine)
-```
-
-[此 Microsoft 存储库](https://github.com/Microsoft/SDN)上的脚本集合可帮助你将此节点加入到群集中。 你可以直接在[此处](https://github.com/Microsoft/SDN/archive/master.zip)下载 ZIP 文件。 你只需要 `Kubernetes/windows` 文件夹，其中的内容应该移到 `C:\k\` 中：
-
-```powershell
-[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
-wget https://github.com/Microsoft/SDN/archive/master.zip -o master.zip
-Expand-Archive master.zip -DestinationPath master
-mkdir C:/k/
-mv master/SDN-master/Kubernetes/windows/* C:/k/
-rm -recurse -force master,master.zip
-```
-
-将 [之前已识别](#preparing-the-linux-master) 的证书文件复制到此新 `C:\k` 目录中。
-
-## <a name="network-topology"></a>网络拓扑 ##
-
-有多种方法能够使虚拟[群集子网](#cluster-subnet-def)可路由。 你可以：
-
-  - 配置[主机网关模式](./configuring-host-gateway-mode.md)，并设置节点之间的静态下一跃点路由以实现 Pod 间通信。
-  - 配置智能柜顶式 (TOR) 交换机以路由子网。
-  - 使用第三方覆盖插件，如 [Flannel](https://coreos.com/flannel/docs/latest/kubernetes.html)（Windows 支持 Flannel 的 Beta 版本）。
-
-### <a name="creating-the-pause-image"></a>创建“暂停”映像 ###
-
-现在，`docker` 已安装，你需要准备“暂停”映像，以供 Kubernetes 准备基础结构 Pod。
-
-```powershell
-docker pull microsoft/windowsservercore:1709
-docker tag microsoft/windowsservercore:1709 microsoft/windowsservercore:latest
-cd C:/k/
-docker build -t kubeletwin/pause .
-```
-
-> [!NOTE]
-> 我们将其标记为 `:latest`，因为它将决定稍后将部署的示例服务，尽管实际上这可能不会_是_可用的最新 Windows Server Core 映像。 请务必小心容器映像冲突；没有预期的标记可能会导致不兼容容器映像的 `docker pull`，从而导致[部署问题](./common-problems.md#when-deploying-docker-containers-keep-restarting)。 
-
-
-### <a name="downloading-binaries"></a>下载二进制文件 ###
-在 `pull` 发生的同时，下载 Kubernetes 中的以下客户端二进制文件：
-
-  - `kubectl.exe`
-  - `kubelet.exe`
-  - `kube-proxy.exe`
-
-你可以通过最新 1.9 版本的 `CHANGELOG.md` 文件中的链接下载这些文件。 截至编写本文时，最新版本为 [1.9.1](https://github.com/kubernetes/kubernetes/releases/tag/v1.9.1)，并且 Windows 二进制文件位于[此处](https://storage.googleapis.com/kubernetes-release/release/v1.9.1/kubernetes-node-windows-amd64.tar.gz)。 使用 [7-Zip](http://www.7-zip.org/) 等工具解压缩存档并将二进制文件放在 `C:\k\` 中。
-
-为了使 `C:\k\` 目录外的 `kubectl` 命令变量可用，请修改 `PATH` 环境变量：
-
-```powershell
-$env:Path += ";C:\k"
-```
-
-若要使此更改永久有效，请在计算机目标中修改变量：
-
-```powershell
-[Environment]::SetEnvironmentVariable("Path", $env:Path + ";C:\k", [EnvironmentVariableTarget]::Machine)
-```
-
-### <a name="joining-the-cluster"></a>加入群集 ###
-使用以下方式验证群集配置是否有效：
-
-```powershell
-kubectl version
-```
-
-如果你收到连接错误，
-
-```
-Unable to connect to the server: dial tcp [::1]:8080: connectex: No connection could be made because the target machine actively refused it.
-```
-
-请检查改配置是否已被正确发现：
-
-```powershell
-kubectl config view
-```
-
-为更改 `kubectl` 寻找配置文件的位置，你可以传递 `--kubeconfig` 参数或修改 `KUBECONFIG` 环境变量。 例如，如果该配置位于 `C:\k\config`：
-
-```powershell
-$env:KUBECONFIG="C:\k\config"
-```
-
-为让此设置对于当前用户范围永久有效：
-
-```powershell
-[Environment]::SetEnvironmentVariable("KUBECONFIG", "C:\k\config", [EnvironmentVariableTarget]::User)
-```
-
-节点现在可以加入群集。 在两个*已提升*的单独 PowerShell 窗口中，（按此顺序）运行这些脚本。 第一个脚本中的 `-ClusterCidr` 参数是配置的[群集子网](#cluster-subnet-def)；这里的子网是 `192.168.0.0/16`。
-
-```powershell
-./start-kubelet.ps1 -ClusterCidr 192.168.0.0/16
-./start-kubeproxy.ps1
-```
-
-Windows 节点将即刻显示在 Linux 主机中的 `kubectl get nodes` 下！
-
-
-### <a name="validating-your-network-topology"></a>验证你的网络拓扑 ###
-
-可通过几项基本测试验证网络配置的正确性：
-
-  - **节点间连接**：主节点与 Windows 工作线程节点之间的 ping 操作应该在两个方向上都成功。
-
-  - **Pod 子网到节点的连接**：虚拟 Pod 接口与节点之间的 ping 操作。 分别在 Linux 和 Windows 上的 `route -n` 和 `ipconfig` 下面查找网关地址，并寻找 `cbr0` 接口。
-
-如果这些基本测试都不起作用，请尝试使用[疑难解答页面](./common-problems.md#common-networking-errors)来解决常见问题。
-
-
-## <a name="running-a-sample-service"></a>运行示例服务 ##
-
-你将部署非常简单的[基于 PowerShell 的 Web 服务](https://github.com/Microsoft/SDN/blob/master/Kubernetes/WebServer.yaml)，以确保成功加入群集并正确配置网络。
-
-在 Linux 主机上，下载并运行该服务：
-
-```bash
-wget https://raw.githubusercontent.com/Microsoft/SDN/master/Kubernetes/WebServer.yaml -O win-webserver.yaml
-kubectl apply -f win-webserver.yaml
-watch kubectl get pods -o wide
-```
-
-这将创建一项部署和一项服务，然后无限期观察 Pod 以跟踪其状态；观察完后只需按下 `Ctrl+C` 退出 `watch` 命令。
-
-如果一切顺利，你将可能：
-
-  - 在 Windows 节点的 `docker ps` 命令下看到 4 个容器
-  - 在 Linux 主机的 `kubectl get pods` 命令下看到 2 个 Pod 容器
-  - `curl` （针对 Linux 主机中端口 80 上的 *Pod* IP）可以获取 Web 服务器响应；这表明网络中节点到 Pod 的通信正常。
-  - 可以通过 `docker exec` *在 Pod 之间*（如果拥有多个 Windows 节点，也可以跨主机）执行 ping 操作；这表明 Pod 之间的通信正常。
-  - `curl` Linux 主机和个别 Pod 中的虚拟*服务 IP*（在 `kubectl get services` 下显示）。
-  - `curl` 带 Kubernetes [默认 DNS 后缀](https://kubernetes.io/docs/concepts/services-networking/dns-pod-service/#services)的*服务名称*，并演示 DNS 功能。
-
-> [!Warning]  
-> Windows 节点将无法访问服务 IP。 这属于[已知平台限制](./common-problems.md#my-windows-node-cannot-access-my-services-using-the-service-ip)，我们会在下次 Windows Server 更新时予以改进。
-
-
-### <a name="port-mapping"></a>端口映射 ### 
-也可以通过映射节点上的端口来访问分别通过其各自节点托管于 Pod 中的服务。 另一个[可用的 YAML 示例](https://github.com/Microsoft/SDN/blob/master/Kubernetes/PortMapping.yaml)，也可以用于说明此功能，该示例涉及从节点上端口 4444 到 Pod 上端口 80 的映射。 要进行部署，请按照前述的相同步骤操作：
-
-```bash
-wget https://raw.githubusercontent.com/Microsoft/SDN/master/Kubernetes/PortMapping.yaml -O win-webserver-port-mapped.yaml
-kubectl apply -f win-webserver-port-mapped.yaml
-watch kubectl get pods -o wide
-```
-
-现在应该可以 `curl` 端口 4444 上的*节点* IP 并收到 Web 服务器响应。 请注意，由于必须执行一对一映射，按节点向单个 Pod 的扩展将受到限制。
+> [!div class="nextstepaction"]
+> [创建 Kubernetes 主机](./creating-a-linux-master.md)

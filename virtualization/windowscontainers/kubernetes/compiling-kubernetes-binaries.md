@@ -2,28 +2,33 @@
 title: 编译 Kubernetes 二进制文件
 author: gkudra-msft
 ms.author: gekudray
-ms.date: 11/16/2017
+ms.date: 11/02/2018
 ms.topic: get-started-article
 ms.prod: containers
 description: 编译和交叉编译源中的 Kubernetes 二进制文件。
-keywords: kubernetes，1.9，linux，编译
-ms.openlocfilehash: fb029b9fef073adb8ce17079b99382d186ad4326
-ms.sourcegitcommit: 5e5644bff6dba70e384db6c80787b3bbe7adb93c
+keywords: kubernetes，1.12，linux，编译
+ms.openlocfilehash: 40bf7e65a8910cdab095abb269aa0a92508189cd
+ms.sourcegitcommit: 8e9252856869135196fd054e3cb417562f851b51
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/03/2018
-ms.locfileid: "4303893"
+ms.lasthandoff: 11/08/2018
+ms.locfileid: "6178870"
 ---
 # <a name="compiling-kubernetes-binaries"></a>编译 Kubernetes 二进制文件 #
 编译 Kubernetes 需要有效的 Go 环境。 此页面将逐一介绍编译 Linux 二进制文件和交叉编译 Windows 二进制文件的一些方法。
+> [!NOTE] 
+> 此页面是完全自愿和仅包含的感兴趣的 Kubernetes 开发人员想要尝试使用最新和最大程度地源代码。
+
+> [!tip]
+> 若要接收有关你可以订阅的最新进展通知[@kubernetes-announce](https://groups.google.com/forum/#!forum/kubernetes-announce)。
 
 ## <a name="installing-go"></a>安装 Go ##
 为简单起见，Go 将安装在临时的自定义位置：
 
 ```bash
 cd ~
-wget https://redirector.gvt1.com/edgedl/go/go1.9.2.linux-amd64.tar.gz -O go1.9.2.tar.gz
-tar -vxzf go1.9.2.tar.gz
+wget https://redirector.gvt1.com/edgedl/go/go1.11.1.linux-amd64.tar.gz -O go1.11.1.tar.gz
+tar -vxzf go1.11.1.tar.gz
 mkdir gopath
 export GOROOT="$HOME/go"
 export GOPATH="$HOME/gopath"
@@ -58,10 +63,10 @@ go get -d $KUBEREPO
 cd $GOPATH/src/$KUBEREPO
 ```
 
-现在，检查要从中进行生成的分支并生成 Linux `kubelet` 二进制文件。 若要避免上述 Windows 生成错误，则必须执行此步骤。 在此，我们将使用 `v1.9.1`。 在 `git checkout` 后，你可以应用待处理的 PR、修补程序或对自定义二进制文件进行其他修改。
+现在，检查要从中进行生成的分支并生成 Linux `kubelet` 二进制文件。 若要避免上述 Windows 生成错误，则必须执行此步骤。 在此，我们将使用 `v1.12.2`。 在 `git checkout` 后，你可以应用待处理的 PR、修补程序或对自定义二进制文件进行其他修改。
 
 ```bash
-git checkout tags/v1.9.1
+git checkout tags/v1.12.2
 make clean && make WHAT=cmd/kubelet
 ```
 
@@ -89,10 +94,10 @@ mkdir -p "${SRC_DIR}"
 git clone https://github.com/kubernetes/kubernetes.git ${SRC_DIR}
 
 cd ${SRC_DIR}
-git checkout tags/v1.9.1
-build/run.sh make kubectl KUBE_BUILD_PLATFORMS=windows/amd64
-build/run.sh make kubelet KUBE_BUILD_PLATFORMS=windows/amd64
-build/run.sh make kube-proxy KUBE_BUILD_PLATFORMS=windows/amd64
+git checkout tags/v1.12.2
+KUBE_BUILD_PLATFORMS=linux/amd64   build/run.sh make WHAT=cmd/kubelet
+KUBE_BUILD_PLATFORMS=windows/amd64 build/run.sh make WHAT=cmd/kubelet 
+KUBE_BUILD_PLATFORMS=windows/amd64 build/run.sh make WHAT=cmd/kube-proxy 
 cp _output/dockerized/bin/windows/amd64/kube*.exe ${DIST_DIR}
 
 ls ${DIST_DIR}
