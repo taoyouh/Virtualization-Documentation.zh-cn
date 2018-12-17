@@ -8,12 +8,12 @@ ms.topic: article
 ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: 8e273856-3620-4e58-9d1a-d1e06550448
-ms.openlocfilehash: 5dcc2af869ba0433b1d755f6d70f5dae6e18cdc5
-ms.sourcegitcommit: 4090d158dd3573ea90799de5b014c131a206b000
+ms.openlocfilehash: ade690dbfed2fd154ee94955f3104c47dae40045
+ms.sourcegitcommit: 8ab1fccfc680911493c769157a6cfe7cbcf17bde
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "6121607"
+ms.lasthandoff: 12/17/2018
+ms.locfileid: "8972061"
 ---
 # <a name="windows-containers"></a>Windows 容器
 
@@ -21,11 +21,11 @@ ms.locfileid: "6121607"
 
 容器是一种将应用程序包装到其自身隔离空间内的方法。 位于容器中的应用不了解该容器外存在的所有其他应用程序或进程。 应用程序成功运行所需的所有依赖项也存在于此容器内。  无论容器移动到何处，应用程序都将始终得到满足，因为应用程序与其运行所需的一切都已绑定在一起。
 
-这就好像是一个厨房。 我们打包所有的电器和家具、锅碗瓢盆、洗洁精和毛巾。 这便是我们的容器
+这就好像是一个厨房。 我们打包所有的电器和家具、锅碗瓢盆、洗洁精和毛巾。 这是我们的容器。
 
 <center style="margin: 25px">![](media/box1.png)</center>
 
-我们现在可以带着这个容器，将它放在任何喜欢的入住公寓中，厨房还会是这个厨房。 我们所需做的全部工作就是为它接通水电，然后我们便可以立即开始烹饪（因为我们拥有所有需要的器具！）
+我们现在可以带着这个容器，将它放在任何喜欢的入住公寓中，厨房还会是这个厨房。 我们必须做的全部是接通水电水它，并且然后我们便可以立即开始烹饪 （因为我们拥有所有需要的器具 ！）。
 
 <center style="margin: 25px">![](media/apartment.png)</center>
 
@@ -37,7 +37,7 @@ ms.locfileid: "6121607"
 
 容器是独立的、资源受控制的和可移植的运行时环境，在主机或虚拟机上运行。 在容器中运行的应用程序或进程与所有需要的依赖项和配置文件打包在一起；在它看来，容器之外似乎没有任何其他进程在运行。
 
-容器的主机为容器预配一组资源，且容器只会使用这些资源。 尽可能容器知道，之外什么它已被授予存在任何其他资源，并因此容器不能接触可能已预配为相邻容器的资源。
+容器的主机为容器预配一组资源，且容器只会使用这些资源。 尽可能容器知道，之外什么它已被授予不存在任何其他资源，因此容器不能接触可能已预配为相邻容器的资源。
 
 在你开始创建和使用 Windows 容器时，以下关键概念将会很有用。
 
