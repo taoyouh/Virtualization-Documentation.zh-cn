@@ -8,14 +8,14 @@ ms.topic: article
 ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: 8e273856-3620-4e58-9d1a-d1e06550448
-ms.openlocfilehash: ade690dbfed2fd154ee94955f3104c47dae40045
-ms.sourcegitcommit: 8ab1fccfc680911493c769157a6cfe7cbcf17bde
+ms.openlocfilehash: 16cf281193ced00ea1b0e2d96291de7f44822284
+ms.sourcegitcommit: 95cec99aa8e817d3e3cb2163bd62a32d9e8f7181
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/17/2018
-ms.locfileid: "8972061"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "8973607"
 ---
-# <a name="windows-containers"></a>Windows 容器
+# <a name="containers-on-windows"></a>在 Windows 上的容器
 
 ## <a name="what-are-containers"></a>什么是容器
 
@@ -31,7 +31,9 @@ ms.locfileid: "8972061"
 
 容器在很大程度上就像是这个厨房。 可以有不同类型的房间以及许多相同类型的房间。 重要的一点是容器与其所需的一切内容打包在一起。
 
-在此处观看简短概述：[基于 Windows 的容器：使用企业级控制的现代应用开发](https://youtu.be/Ryx3o0rD5lY)。
+请观看下面的简短概述：
+<iframe width="800" height="450" src="https://www.youtube.com/embed/Ryx3o0rD5lY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 
 ## <a name="container-fundamentals"></a>容器基础知识
 
