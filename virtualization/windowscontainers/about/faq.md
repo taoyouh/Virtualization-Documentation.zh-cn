@@ -8,12 +8,12 @@ ms.topic: article
 ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: 25de368c-5a10-40a4-b4aa-ac8c9a9ca022
-ms.openlocfilehash: 7ac5622ad0f6767fa8d55798e0bf99b84f0d0a2c
-ms.sourcegitcommit: 95cec99aa8e817d3e3cb2163bd62a32d9e8f7181
+ms.openlocfilehash: 42e1a0bf58ada40a8f135861646d5c9429e0d5db
+ms.sourcegitcommit: a5f8f99bf8f512a9058b72f1f617f77ecf488c71
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/18/2018
-ms.locfileid: "8973697"
+ms.locfileid: "8974009"
 ---
 # <a name="frequently-asked-questions"></a>常见问题
 
