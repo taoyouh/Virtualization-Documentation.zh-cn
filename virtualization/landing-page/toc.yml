@@ -1,0 +1,20 @@
+items:
+- name: 虚拟化
+  tocHref: /virtualization/
+  topicHref: /virtualization/index
+  items:
+  - name: 基于 Windows 10 的 Hyper-V
+    tocHref: /virtualization/hyper-v-on-windows/
+    topicHref: /virtualization/hyper-v-on-windows/index
+  - name: Windows 上的容器
+    tocHref: /virtualization/windowscontainers/
+    topicHref: /virtualization/windowscontainers/index
+  - name: 社区
+    tocHref: /virtualization/community/
+    topicHref: /virtualization/community/index
+ms.openlocfilehash: 214460e6a14803af600c448f8d2c7568578ada11
+ms.sourcegitcommit: 95cec99aa8e817d3e3cb2163bd62a32d9e8f7181
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "8973757"
