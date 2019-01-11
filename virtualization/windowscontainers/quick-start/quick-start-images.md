@@ -8,12 +8,12 @@ ms.topic: article
 ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: 479e05b1-2642-47c7-9db4-d2a23592d29f
-ms.openlocfilehash: 5da18c7c1e2fc6882d5879070e91d36d0c0a475a
-ms.sourcegitcommit: 95cec99aa8e817d3e3cb2163bd62a32d9e8f7181
+ms.openlocfilehash: 0350e62deef06402991f505dd263db7fd506cba1
+ms.sourcegitcommit: 1aef193cf56dd0870139b5b8f901a8d9808ebdcd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "8973657"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "9001583"
 ---
 # <a name="automating-builds-and-saving-images"></a>自动生成和保存映像
 
@@ -129,6 +129,8 @@ Login Succeeded
 ```console
 docker push <user>/iis-dockerfile
 ```
+
+为 Docker 推送到 Docker Hub 每一层，docker 将跳过已存在于在 Docker Hub，或其他注册表 （外层） 的层。  例如，将跳过，并不推送到 Docker Hub 上托管在 Microsoft 容器注册表中或从专用的公司注册，层中的最新版本的 Windows Server Core。
 
 现在可以使用 `docker pull` 将容器映像从 Docker Hub 下载到任意 Windows 容器主机。 在本教程中，我们将删除现有映像，并将它从 Docker Hub 向下拉取。 
 
