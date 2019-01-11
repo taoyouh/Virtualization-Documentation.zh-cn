@@ -8,12 +8,12 @@ ms.topic: article
 ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: 25de368c-5a10-40a4-b4aa-ac8c9a9ca022
-ms.openlocfilehash: 42e1a0bf58ada40a8f135861646d5c9429e0d5db
-ms.sourcegitcommit: a5f8f99bf8f512a9058b72f1f617f77ecf488c71
+ms.openlocfilehash: 36ef6df0b9736d88fec627e4cb56df023f1a7708
+ms.sourcegitcommit: 4336d7617c30d26a987ad3450b048e17404c365d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "8974009"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "9001006"
 ---
 # <a name="frequently-asked-questions"></a>常见问题
 
@@ -21,7 +21,7 @@ ms.locfileid: "8974009"
 
 ### <a name="what-is-wcow-what-is-lcow"></a>什么是 WCOW？ 什么是 LCOW？
 
-WCOW 是适用于 Windows 和 LCOW 上的 Windows 容器的缩写是 Windows 上的 Linux 容器的缩写词。
+WCOW 是 Windows 和 LCOW 上的 Windows 容器的缩写词是 Windows 上的 Linux 容器的缩写词。
 
 ### <a name="what-is-the-difference-between-linux-and-windows-server-containers"></a>Linux 和 Windows Server 容器之间的区别是什么？
 
@@ -40,11 +40,11 @@ Linux 和 Windows Server 容器很相似，两者都在其内核和核心操作�
 
 容器引入到 Windows Server 2016 中启动的平台。 你必须运行 Windows Server 2016 或 Windows 10 周年更新 （版本 1607年） 或更高版本使用容器。
 
-### <a name="can-i-run-windows-containers-in-process-isolated-mode-on-windows-10-enterprise-or-professional"></a>是否可以运行 Windows 容器进程隔离模式在 Windows 10 企业版或专业版？
+### <a name="can-i-run-windows-containers-in-process-isolated-mode-on-windows-10-enterprise-or-professional"></a>可以运行 Windows 容器在进程隔离模式下在 Windows 10 企业版或专业版上？
 
-开始使用 Windows 10 2018 年 10 月更新，我们不会再禁止用户从运行进程隔离的 Windows 容器。 你必须直接请求的进程隔离通过使用`--isolation=process`标志运行通过容器时`docker run`。
+开始使用 Windows 10 2018 年 10 月更新，我们不会再不允许用户在运行的进程隔离的 Windows 容器。 你必须直接请求的进程隔离通过使用`--isolation=process`标志运行通过容器时`docker run`。
 
-如果这是你感兴趣，你需要确保你的主机运行 Windows 10 版本 17763 + 并且你有引擎 18.09 的 docker 版本或更高版本。
+如果这是一个感兴趣，你需要确保你的主机运行 Windows 10 版本 17763 +，并且具有引擎 18.09 的 docker 版本或更高版本。
 
 > [!WARNING]
 > 此功能仅适用于开发/测试。 你应该继续与主机的 Windows Server 用于生产部署。
@@ -55,12 +55,12 @@ Linux 和 Windows Server 容器很相似，两者都在其内核和核心操作�
 
 ### <a name="how-do-i-make-my-container-images-available-on-air-gapped-machines"></a>如何使我的容器映像可用孤立的计算机上？
 
-Windows 容器基本映像包含其分发许可证受限制的字体的项目。 当你生成这些图像并将其推送到私人或公共注册表时，你会注意到永远不会推送基层。 相反，我们使用指向真实基层驻留在 Azure 云存储外层的概念。
+Windows 容器基本映像包含其分发许可证受限制的字体的项目。 当你在这些映像上生成和推送到私人或公共注册表时，你会注意到永远不会推送基层。 相反，我们使用指向驻留在 Azure 云存储中的真实基本层外层的概念。
 
-当具有孤立的计算机，可以_仅_拉取映像从_专用容器注册表_的地址时，这可以将一个问题。 尝试遵循外层，以获取基本映像都将在此情况下失败。 若要替代外层行为，你可以使用`--allow-nondistributable-artifacts`Docker 守护程序中的标志。
+当具有孤立的计算机，可以_仅_拉取图像从_专用容器注册表_的地址时，这可以将一个问题。 尝试遵循外层，以获取基本映像都将在此情况下失败。 若要替代外层行为，你可以使用`--allow-nondistributable-artifacts`Docker 守护程序中的标志。
 
 > [!IMPORTANT]
-> 此标志的使用情况不应妨碍遵守的许可协议条款 Windows 容器基本映像; 你义务你必须不发布公共或第三方重新分发的 Windows 内容。 允许你自己的环境内使用。
+> 此标志的使用情况不应排除你义务遵守的 Windows 容器基本映像许可证; 条款你必须不发布公共或第三方重新分发的 Windows 内容。 允许你自己的环境内使用。
 
 ## <a name="microsofts-open-ecosystem"></a>Microsoft 的开放生态系统
 
@@ -68,4 +68,5 @@ Windows 容器基本映像包含其分发许可证受限制的字体的项目。
 
 为了保证封装格式保持通用，Docker 最近组织了开放容器计划 (OCI)，旨在确保容器封装保持开放和以基础为导向的格式，其中 Microsoft 是创始成员之一。
 
-> ![提示]已添加到常见问题解答建议？ 我们鼓励你以下新的反馈问题或与你建议打开针对这些文档 PR ！
+> [!TIP]
+> 已添加到常见问题解答建议？ 我们鼓励你以下新的反馈问题或与你建议打开针对这些文档 PR ！

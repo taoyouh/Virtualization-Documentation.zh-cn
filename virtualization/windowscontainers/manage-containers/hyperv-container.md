@@ -8,12 +8,12 @@ ms.topic: article
 ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: 42154683-163b-47a1-add4-c7e7317f1c04
-ms.openlocfilehash: e1a5b80773128af0ba0095d5201e4fa123a1741c
-ms.sourcegitcommit: 99da24a8c075e0096eabd09a29007a65e3ea35b7
+ms.openlocfilehash: caaf4186f43c69dfbc35d04dd8909876ed082906
+ms.sourcegitcommit: 4336d7617c30d26a987ad3450b048e17404c365d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2018
-ms.locfileid: "6022175"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "9000996"
 ---
 # <a name="hyper-v-containers"></a>Hyper-V 容器
 
@@ -21,7 +21,7 @@ ms.locfileid: "6022175"
 
 Windows 容器技术包括两种不同类型的容器，（进程容器） 的 Windows Server 容器和 HYPER-V 容器。 这两种类型的容器的创建、管理和功能完全相同。 它们也生成和使用相同的容器映像。 它们之间的不同之处是在容器、主机操作系统以及在该主机上运行的所有其他容器之间创建的隔离级别。
 
-**Windows Server 容器** - 使用通过命名空间、资源控制，以及进程隔离技术提供的隔离，多个容器实例可同时在主机上运行。  Windows Server 容器与主机彼此共享同一个内核。  这是大约相同的方式在 Linux 上运行的容器。
+**Windows Server 容器** - 使用通过命名空间、资源控制，以及进程隔离技术提供的隔离，多个容器实例可同时在主机上运行。  Windows Server 容器与主机彼此共享同一个内核。  这是大约相同如何在 Linux 上运行容器。
 
 **HYPER-V 容器**– 多个容器实例可同时运行在主机上，但是，每个容器都在特定虚拟机的内部运行。 这将在每一个 Hyper-V 容器和容器主机之间提供内核级别隔离。
 
@@ -32,7 +32,7 @@ Windows 容器技术包括两种不同类型的容器，（进程容器） 的 W
 管理 HYPER-V 容器与 Docker 是管理 Windows Server 容器几乎相同。 若要使用 Docker 创建 HYPER-V 容器，请使用`--isolation`参数，以设置`--isolation=hyperv`。
 
 ``` cmd
-docker run -it --isolation=hyperv microsoft/nanoserver cmd
+docker run -it --isolation=hyperv mcr.microsoft.com/windows/nanoserver:1809 cmd
 ```
 
 ### <a name="isolation-explanation"></a>隔离说明
@@ -42,7 +42,7 @@ docker run -it --isolation=hyperv microsoft/nanoserver cmd
 此处，正在部署一个 Windows Server 容器，并且该容器将承载一个长时间运行的 ping 进程。
 
 ``` cmd
-docker run -d microsoft/windowsservercore ping localhost -t
+docker run -d mcr.microsoft.com/windows/servercore:1809 ping localhost -t
 ```
 
 使用 `docker top` 命令，会返回 ping 进程，如容器中所见。 此实例中进程的 ID 为 3964。
@@ -66,7 +66,7 @@ Handles  NPM(K)    PM(K)      WS(K) VM(M)   CPU(s)     Id  SI ProcessName
 对比而言，此示例也使用 ping 进程来启动 Hyper-V 容器。 
 
 ```
-docker run -d --isolation=hyperv microsoft/nanoserver ping -t localhost
+docker run -d --isolation=hyperv mcr.microsoft.com/windows/nanoserver:1809 ping -t localhost
 ```
 
 同样，`docker top` 可用于从容器中返回正在运行的进程。
