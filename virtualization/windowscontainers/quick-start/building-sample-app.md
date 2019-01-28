@@ -7,12 +7,12 @@ ms.date: 07/25/2017
 ms.topic: article
 ms.prod: windows-containers
 ms.service: windows-containers
-ms.openlocfilehash: 20328cb47d106dad153738628fc282d63371a3ab
-ms.sourcegitcommit: 95cec99aa8e817d3e3cb2163bd62a32d9e8f7181
+ms.openlocfilehash: 970f039e97ce0628c7a7f78c417017fc95570f82
+ms.sourcegitcommit: 51da93c4548c5df7a9f01e54d46d81b338c874cf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "8973597"
+ms.lasthandoff: 01/28/2019
+ms.locfileid: "9031161"
 ---
 # <a name="build-a-sample-app"></a>生成示例应用
 
@@ -66,7 +66,7 @@ FROM microsoft/aspnetcore-build:1.1 AS build-env
 WORKDIR /app
 ```
 
-接下来，我们将 .csproj 文件复制到临时容器的“/app”目录。 这样做的原因是 .csproj 文件包含我们项目所需的一组程序包引用。
+接下来，我们将 .csproj 文件复制到临时容器的“/app”目录。 我们这么做是因为.csproj 文件包含我们项目所需的程序包引用的列表。
 
 复制该文件后，dotnet 会从其中读取数据，然后在此基础上获取我们项目所需的所有依赖项和工具。
 
@@ -128,7 +128,7 @@ docker run -d -p 5000:80 --name myapp myasp
 
 我们已成功获取 ASP.NET Web 应用，使用 Docker 配置并生成了该应用，并已成功将其部署到正在运行的容器中。 但还有可以进一步执行的步骤！ 你可以进一步将该 Web 应用拆分为如下组件：运行 Web API 的容器、运行前端的容器以及运行 SQL Server 的容器。
 
-既然你已挂起的容器，有转并生成出色的容器化的软件 ！
+既然你已挂起的容器，请有转和生成出色的容器化的软件 ！
 
 > [!div class="nextstepaction"]
 > [查看更多容器示例](../samples.md)
