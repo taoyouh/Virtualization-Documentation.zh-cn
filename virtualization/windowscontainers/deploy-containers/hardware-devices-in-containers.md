@@ -3,13 +3,15 @@ title: 在 Windows 上的容器中的设备
 description: 在 Windows 上的容器存在哪些设备支持
 keywords: docker，容器，设备硬件
 author: cwilhit
-ms.openlocfilehash: 6397a5050ee0c7cb4b62dc935af4975d9ab6b3db
-ms.sourcegitcommit: 1b6a244c3604e48c42c851e580e3b59e2384c91a
+ms.openlocfilehash: da9785b051826efa4bb2c64542a7c75a12ddd2b4
+ms.sourcegitcommit: 4490d384ade48699e7f56dc265185dac75bf9d77
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "9014514"
+ms.lasthandoff: 02/05/2019
+ms.locfileid: "9058987"
 ---
+**这是当前预览材料。 请参阅下面有关详细信息的要求部分中的第四个项。**
+
 # <a name="devices-in-containers-on-windows"></a>在 Windows 上的容器中的设备
 
 默认情况下，Windows 容器提供最少访问主机设备--就像 Linux 容器。 有某些工作负载很有用-或甚至是强制性-访问和与主机硬件设备进行通信。 本指南介绍在容器中支持哪些设备以及如何开始。
@@ -19,7 +21,7 @@ ms.locfileid: "9014514"
 - 你必须运行 Windows Server 2019 或更高版本或 Windows 10 专业版/企业版与 2018 年 10 月更新
 - 在容器映像版本必须为 1809年或更高版本。
 - 容器都必须在进程隔离模式下运行的 Windows 容器。
-- Docker 守护程序中存在的 Windows 设备功能，尽管它尚不存在 Docker 客户端中 （请参阅此[拉取请求](https://github.com/docker/cli/pull/1606)来跟踪）。 在 interrim，你必须从 moby 源[生成你自己的 docker 可执行文件](https://github.com/moby/moby/blob/master/docs/contributing/software-req-win.md)作为一个解决方法。 如果感到困惑执行此操作，我们建议你等待试用此功能，直到 pr 上面的链接将其合并。
+- Docker 守护程序中存在的 Windows 设备功能，尽管它尚不存在 Docker 客户端中 （请参阅此[拉取请求](https://github.com/docker/cli/pull/1606)来跟踪）。 你必须等待适用于 Windows 的未来版本 / Docker EE 与此代码以充分利用此功能。 状态更改时，将更新此文档。
 
 ## <a name="run-a-container-with-a-device"></a>与设备运行的容器
 
