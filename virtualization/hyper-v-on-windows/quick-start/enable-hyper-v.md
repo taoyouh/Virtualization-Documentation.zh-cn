@@ -3,16 +3,16 @@ title: 在 Windows 10 上启用 Hyper-V
 description: 在 Windows 10 上安装 Hyper-V
 keywords: windows 10, hyper-v
 author: scooley
-ms.date: 05/02/2016
+ms.date: 02/15/2019
 ms.topic: article
 ms.prod: windows-10-hyperv
 ms.assetid: 752dc760-a33c-41bb-902c-3bb2ecd9ac86
-ms.openlocfilehash: cd576f72c9947cd6f79cc362709c1a4ceab9b47e
-ms.sourcegitcommit: 4412583b77f3bb4b2ff834c7d3f1bdabac7aafee
+ms.openlocfilehash: 53152d0237a7f81858a5cb2f0fd8aabd439c4613
+ms.sourcegitcommit: 914e0dd1168daf1d2b0f22bd011035016cc08baf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "6947956"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "9099355"
 ---
 # <a name="install-hyper-v-on-windows-10"></a>在 Windows 10 上安装 Hyper-V
 
@@ -30,7 +30,7 @@ ms.locfileid: "6947956"
 
 **请勿**在 Windows 10 家庭版上安装 Hyper-V 角色。
 
-从 Windows 10 家庭版升级到 Windows 10 专业版打开**设置** > **更新和安全** > **激活**。
+从 Windows 10 家庭版升级到 Windows 10 专业版通过打开**设置** > **更新和安全** > **激活**。
 
 有关详细信息和疑难解答，请参阅 [Windows 10 Hyper-V 系统要求](../reference/hyper-v-requirements.md)。
 
