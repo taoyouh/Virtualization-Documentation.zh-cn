@@ -8,26 +8,26 @@ ms.topic: article
 ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: e3b2a4dc-9082-4de3-9c95-5d516c03482b
-ms.openlocfilehash: e27148873299543a89eaf92801b40732dd27b402
-ms.sourcegitcommit: 95cec99aa8e817d3e3cb2163bd62a32d9e8f7181
+ms.openlocfilehash: 44e415af08881d18ebb2d82f5f79098f7fb034f8
+ms.sourcegitcommit: f172d14ef1ebfb5a9df1b3529e0722d9103e0eba
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "8973663"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "9112924"
 ---
 # <a name="windows-containers-on-windows-server"></a>Windows Server 上的 Windows 容器
 
-在 Windows Server 2019 上，此练习将演练基本部署和使用 Windows 容器功能。
+此练习将演练基本部署和使用 Windows 容器功能在 Windows Server 2019 和 Windows Server 2016 上。
 
 在本快速入门中，你将完成：
 
 1. 启用 Windows Server 中的容器功能
 2. 安装 Docker
-3. 运行一个简单的 Windows 容器
+3. 运行简单的 Windows 容器
 
 如果你需要熟悉容器，可在[关于容器](../about/index.md)中找到此信息。
 
-本快速入门仅适用于 Windows Server 2019 上的 Windows Server 容器。 此页面左侧的目录中提供其他快速入门文档，包括 Windows 10 中的容器。
+本快速入门仅适用于 Windows Server 2019 和 Windows Server 2016 上的 Windows Server 容器。 此页面左侧的目录中提供其他快速入门文档，包括 Windows 10 中的容器。
 
 ## <a name="prerequisites"></a>先决条件
 
@@ -46,7 +46,7 @@ ms.locfileid: "8973663"
 
 ## <a name="install-docker"></a>安装 Docker
 
-若要安装 Docker，我们将使用适用于提供程序在此情况下执行安装- [MicrosoftDockerProvider](https://github.com/OneGet/MicrosoftDockerProvider) [OneGet 提供程序 PowerShell 模块](https://github.com/oneget/oneget)。 该提供程序将在计算机上启用容器功能。 还将安装 Docker，它要求重新启动。 若要使用 Window 容器，则需要安装 Docker。 其中包括 Docker 引擎和 Docker 客户端。
+若要安装 Docker，我们将使用的适用于提供程序，以在此情况下执行安装- [MicrosoftDockerProvider](https://github.com/OneGet/MicrosoftDockerProvider) [OneGet 提供程序 PowerShell 模块](https://github.com/oneget/oneget)。 该提供程序将在计算机上启用容器功能。 还将安装 Docker，它要求重新启动。 若要使用 Window 容器，则需要安装 Docker。 其中包括 Docker 引擎和 Docker 客户端。
 
 打开提升的 PowerShell 会话并运行下列命令。
 
@@ -105,10 +105,18 @@ sconfig
 
 对于此练习，你将从 Docker Hub 注册表下载预先创建的 .NET 示例映像，并部署运行 .Net Hello World 应用程序的简单容器。  
 
-使用 `docker run` 部署 .Net 容器。 这也可下载容器映像，可能需要几分钟时间。
+使用 `docker run` 部署 .Net 容器。 这也可下载容器映像，可能需要几分钟时间。 具体取决于你的 Windows Server，运行以下命令下面的主机版本。
+
+#### <a name="windows-server-2019"></a>Windows Server 2019
 
 ```console
 docker run microsoft/dotnet-samples:dotnetapp-nanoserver-1809
+```
+
+#### <a name="windows-server-2016"></a>Windows Server 2016
+
+```console
+docker run microsoft/dotnet-samples:dotnetapp-nanoserver-sac2016
 ```
 
 容器启动后，请打印 hello world 消息，然后退出。
