@@ -5,15 +5,15 @@ ms.author: daschott
 ms.date: 11/02/2018
 ms.topic: get-started-article
 ms.prod: containers
-description: 将 Windows 节点加入到 Kubernetes 群集与 v1.12。
-keywords: kubernetes，1.12，windows，入门
+description: 将 Windows 节点加入到 Kubernetes 群集与 v1.13。
+keywords: kubernetes，1.13，windows，入门
 ms.assetid: 3b05d2c2-4b9b-42b4-a61b-702df35f5b17
-ms.openlocfilehash: 764d440837118801226c0bf37f92ffb0d7bdb9e5
-ms.sourcegitcommit: 1aef193cf56dd0870139b5b8f901a8d9808ebdcd
+ms.openlocfilehash: ed0f13bd429e88f05469f91c3fc691bf0188b0a2
+ms.sourcegitcommit: 41318edba7459a9f9eeb182bf8519aac0996a7f1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "9001613"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "9120565"
 ---
 # <a name="joining-windows-server-nodes-to-a-cluster"></a>Windows Server 节点加入群集 #
 [设置 Kubernetes 主节点](./creating-a-linux-master.md)并[选择所需的网络解决方案](./network-topologies.md)后，你就可以加入 Windows Server 节点群集。 这在加入之前需要某些[准备 Windows 节点上](#preparing-a-windows-node)。
@@ -96,10 +96,13 @@ mkdir c:\k
 #### <a name="copy-kubernetes-certificate"></a>将 Kubernetes 证书复制 #### 
 将 Kubernetes 证书文件复制 (`$HOME/.kube/config`)[从主机](./creating-a-linux-master.md#collect-cluster-information)到此新`C:\k`目录。
 
+> [!tip]
+> 你可以使用[xcopy](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/xcopy)或[WinSCP](https://winscp.net/eng/download.php)等工具节点之间传输的配置文件。
+
 #### <a name="download-kubernetes-binaries"></a>下载 Kubernetes 二进制文件 ####
 若要能够运行 Kubernetes，首先需要下载`kubectl`， `kubelet`，并`kube-proxy`二进制文件。 你可以下载这些中的链接`CHANGELOG.md`文件的[最新版本](https://github.com/kubernetes/kubernetes/releases/)。
- - 例如，下面是[v1.12 节点二进制文件](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG-1.12.md#node-binaries)。
- - 使用[开源 7-zip](http://www.7-zip.org/)等工具解压缩存档并将放置到的二进制文件`C:\k\`。
+ - 例如，下面是[v1.13 节点二进制文件](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG-1.13.md#node-binaries)。
+ - 使用[展开存档](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.archive/expand-archive?view=powershell-6)等工具解压缩存档并将放置到的二进制文件`C:\k\`。
 
 #### <a name="optional-setup-kubectl-on-windows"></a>（可选）在 Windows 上的安装程序 kubectl ####
 你想要控制从 Windows 群集应，你可以使用完成`kubectl`命令。 首先，以使`kubectl`可用外`C:\k\`目录中，修改`PATH`环境变量：
@@ -144,25 +147,18 @@ Unable to connect to the server: dial tcp [::1]:8080: connectex: No connection c
 
 ## <a name="joining-the-windows-node"></a>加入 Windows 节点 ##
 具体取决于[所选的网络解决方案](./network-topologies.md)，你可以：
-1. [将 Windows Server 节点加入到 Flannel 群集](#joining-a-flannel-cluster)
+1. [将 Windows Server 节点加入到 Flannel （vxlan 或主机网关） 群集](#joining-a-flannel-cluster)
 2. [将 Windows Server 节点加入到具有 ToR 开关的群集](#joining-a-tor-cluster)
 
 ### <a name="joining-a-flannel-cluster"></a>加入 Flannel 群集 ###
-没有[此 Microsoft 存储库](https://github.com/Microsoft/SDN/tree/master/Kubernetes/flannel/l2bridge)，可帮助你将此节点加入到群集中的 Flannel 部署脚本的集合。
+没有[此 Microsoft 存储库](https://github.com/Microsoft/SDN/tree/master/Kubernetes/flannel/overlay)，可帮助你将此节点加入到群集中的 Flannel 部署脚本的集合。
 
-你可以直接在[此处](https://github.com/Microsoft/SDN/archive/master.zip)下载 ZIP 文件。 唯一需要的是`Kubernetes/flannel/l2bridge`目录，其中的内容应将其解压缩到`C:\k\`:
+下载[Flannel start.ps1](https://github.com/Microsoft/SDN/blob/master/Kubernetes/flannel/start.ps1)脚本，其中的内容应将其解压缩到`C:\k`:
 
 ```powershell
 [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
-wget https://github.com/Microsoft/SDN/archive/master.zip -o master.zip
-Expand-Archive master.zip -DestinationPath master
-mv master/SDN-master/Kubernetes/flannel/l2bridge/* C:/k/
-rm -recurse -force master,master.zip
+wget https://raw.githubusercontent.com/Microsoft/SDN/master/Kubernetes/flannel/start.ps1 -o c:\k\start.ps1
 ```
-
-除此之外，你应确保群集子网 (例如检查"10.244.0.0/16") 是正确中：
-- [net conf.json](https://github.com/Microsoft/SDN/blob/master/Kubernetes/flannel/l2bridge/net-conf.json)
-
 
 假设你[准备 Windows 节点](#preparing-a-windows-node)，以及`c:\k`目录的外观所示，你可以随时将节点加入。
 
@@ -172,13 +168,78 @@ rm -recurse -force master,master.zip
 若要简化加入 Windows 节点的过程，只需运行一个 Windows 脚本来启动`kubelet`， `kube-proxy`， `flanneld`，并加入节点。
 
 > [!Note]
-> [此脚本](https://github.com/Microsoft/SDN/blob/master/Kubernetes/flannel/l2bridge/start.ps1)将下载如更新的其他文件`flanneld`可执行文件和[基础结构 pod 的 Dockerfile](https://github.com/Microsoft/SDN/blob/master/Kubernetes/windows/Dockerfile) *并运行这些为你*。 可能有多个 powershell 窗口中正在以及几秒钟的网络中断而打开/关闭第一次创建新的外部 vSwitch l2 桥接 pod 网络的过程。
+> [start.ps1](https://github.com/Microsoft/SDN/blob/master/Kubernetes/flannel/start.ps1)引用[install.ps1](https://github.com/Microsoft/SDN/blob/master/Kubernetes/windows/install.ps1)，如下载其他文件的`flanneld`可执行文件和[基础结构 pod 的 Dockerfile](https://github.com/Microsoft/SDN/blob/master/Kubernetes/windows/Dockerfile) *和安装这些为你*。 对于覆盖网络模式，将为本地 UDP 端口 4789 打开[防火墙](https://github.com/Microsoft/SDN/blob/master/Kubernetes/windows/helper.psm1#L111)。 可能有多个 powershell 窗口中正在以及几秒钟的网络中断而打开/关闭第一次创建新的外部 vSwitch pod 网络的过程。
 
 ```powershell
 cd c:\k
-chcp 65001
-.\start.ps1 -ManagementIP <Windows Node IP> -ClusterCIDR <Cluster CIDR> -ServiceCIDR <Service CIDR> -KubeDnsServiceIP <Kube-dns Service IP> 
+.\start.ps1 -ManagementIP <Windows Node IP> -NetworkMode <network mode>  -ClusterCIDR <Cluster CIDR> -ServiceCIDR <Service CIDR> -KubeDnsServiceIP <Kube-dns Service IP> -LogDir <Log directory>
 ```
+# [<a name="managementip"></a>ManagementIP](#tab/ManagementIP)
+分配给 Windows 节点的 IP 地址。 你可以使用`ipconfig`查找此。
+
+|  |  | 
+|---------|---------|
+|参数     | `-ManagementIP`        |
+|默认值    | n.A. **required**        |
+
+# [<a name="networkmode"></a>NetworkMode](#tab/NetworkMode)
+网络模式`l2bridge`(flannel 主机网关) 或`overlay`(flannel vxlan) 选择作为[网络解决方案](./network-topologies.md)。
+
+> [!Important] 
+> `overlay` 网络模式 (flannel vxlan) 需要 Kubernetes v1.14 二进制文件或以上。
+
+|  |  | 
+|---------|---------|
+|参数     | `-NetworkMode`        |
+|默认值    | `l2bridge`        |
+
+
+# [<a name="clustercidr"></a>ClusterCIDR](#tab/ClusterCIDR)
+[群集子网范围](./getting-started-kubernetes-windows.md#cluster-subnet-def)。
+
+|  |  | 
+|---------|---------|
+|参数     | `-ClusterCIDR`        |
+|默认值    | `10.244.0.0/16`        |
+
+
+# [<a name="servicecidr"></a>ServiceCIDR](#tab/ServiceCIDR)
+[服务子网范围](./getting-started-kubernetes-windows.md#service-subnet-def)。
+
+|  |  | 
+|---------|---------|
+|参数     | `-ServiceCIDR`        |
+|默认值    | `10.96.0.0/12`        |
+
+
+# [<a name="kubednsserviceip"></a>KubeDnsServiceIP](#tab/KubeDnsServiceIP)
+[Kubernetes DNS 服务 IP](./getting-started-kubernetes-windows.md#kube-dns-def)。
+
+|  |  | 
+|---------|---------|
+|参数     | `-KubeDnsServiceIP`        |
+|默认值    | `10.96.0.10`        |
+
+
+# [<a name="interfacename"></a>InterfaceName](#tab/InterfaceName)
+Windows 主机的网络接口的名称。 你可以使用`ipconfig`查找此。
+
+|  |  | 
+|---------|---------|
+|参数     | `-InterfaceName`        |
+|默认值    | `Ethernet`        |
+
+
+# [<a name="logdir"></a>LogDir](#tab/LogDir)
+在其中 kubelet 和 kube 代理日志将重定向到其各自的输出文件的目录。
+
+|  |  | 
+|---------|---------|
+|参数     | `-LogDir`        |
+|默认值    | `C:\k`        |
+
+
+---
 
 > [!tip]
 > 你已注意到的下群集子网和服务子网，并在 Linux 主机 KUBE-DNS IP[更早版本](./creating-a-linux-master.md#collect-cluster-information)
@@ -188,6 +249,7 @@ chcp 65001
   * 请参阅 3 个 powershell 窗口中打开，一个用于`kubelet`、 一个用于`flanneld`，另一个用于 `kube-proxy`
   * 主机代理的过程，请参阅`flanneld`， `kubelet`，并`kube-proxy`的节点上运行
 
+如果成功，继续执行[下一步骤](#next-steps)。
 
 ## <a name="joining-a-tor-cluster"></a>加入 ToR 群集 ##
 > [!NOTE]

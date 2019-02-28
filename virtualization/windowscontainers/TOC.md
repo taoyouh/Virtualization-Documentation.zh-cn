@@ -38,6 +38,7 @@
 ### [加入 Linux 工作人员](kubernetes/joining-linux-workers.md)
 ### [部署 Kubernetes 资源](kubernetes/deploying-resources.md)
 ### [疑难解答](kubernetes/common-problems.md)
+### [在 Kubernetes 上的 Windows 服务](kubernetes/kube-windows-services.md)
 ### [编译 Kubernetes 二进制文件](kubernetes/compiling-kubernetes-binaries.md)
 ## 在 Windows 上的 Service Fabric
 ### [部署首个容器](/azure/service-fabric/service-fabric-quickstart-containers)

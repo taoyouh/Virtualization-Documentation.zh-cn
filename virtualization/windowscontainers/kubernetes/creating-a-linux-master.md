@@ -2,27 +2,27 @@
 title: 从头开始创建 Kubernetes 主机
 author: daschott
 ms.author: daschott
-ms.date: 11/02/2018
+ms.date: 02/09/2018
 ms.topic: get-started-article
 ms.prod: containers
 description: 开始创建 Kubernetes 群集主机。
-keywords: kubernetes，1.12，主机 linux
-ms.openlocfilehash: 2bbcf2d382f20d140c73d9b34cf0f13a74debdfa
-ms.sourcegitcommit: 8e9252856869135196fd054e3cb417562f851b51
+keywords: kubernetes，1.13，主机 linux
+ms.openlocfilehash: 8a3fb073616d115ab84e6cc36f0fb6cedbcf1f7d
+ms.sourcegitcommit: 41318edba7459a9f9eeb182bf8519aac0996a7f1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/08/2018
-ms.locfileid: "6178850"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "9120425"
 ---
 # <a name="creating-a-kubernetes-master"></a>开始创建 Kubernetes 主机 #
 > [!NOTE]
-> 本指南已验证 Kubernetes v1.12 上。 由于易变性的 Kubernetes 版本到版本，本部分可能会使假设未保存适用于适用于所有将来的版本。 找不到官方文档中的针对初始化 Kubernetes 主机使用 kubeadm[下面](https://kubernetes.io/docs/setup/independent/install-kubeadm/)。 只需上启用[混合操作系统计划部分](#enable-mixed-os-scheduling)。
+> 本指南已验证 Kubernetes v1.13 上。 由于易变性的 Kubernetes 版本到版本，本部分可能会使并持有适用于适用于所有的未来版本的假设。 找不到初始化使用 kubeadm Kubernetes 主机的正式文档[在此处](https://kubernetes.io/docs/setup/independent/install-kubeadm/)。 只需除此之外启用[混合操作系统计划部分](#enable-mixed-os-scheduling)。
 
 > [!NOTE]  
-> 近期已更新的 Linux 计算机所需遵循沿;Kubernetes 主像[kube dns](https://kubernetes.io/docs/concepts/services-networking/dns-pod-service/)、 [kube 调度程序](https://kubernetes.io/docs/reference/command-line-tools-reference/kube-scheduler/)，以及[kube apiserver](https://kubernetes.io/docs/reference/command-line-tools-reference/kube-apiserver/)不已移植到 Windows 尚未的资源。 
+> 近期已更新 Linux 计算机所需遵循沿;Kubernetes 主像[kube dns](https://kubernetes.io/docs/concepts/services-networking/dns-pod-service/)、 [kube 计划程序](https://kubernetes.io/docs/reference/command-line-tools-reference/kube-scheduler/)，以及[kube apiserver](https://kubernetes.io/docs/reference/command-line-tools-reference/kube-apiserver/)不已移植到 Windows 尚未的资源。 
 
 > [!tip]
-> 面向**Ubuntu 16.04**针对定制的 Linux 说明。 其他认证运行 Kubernetes 的 linux 还应提供等效命令可以替代。 它们将还互操作成功与 Windows。
+> 面向**Ubuntu 16.04**针对定制的 Linux 说明。 其他认证运行 Kubernetes 的 linux 还应提供等效命令可以替代。 它们将还兼容成功与 Windows。
 
 
 ## <a name="initialization-using-kubeadm"></a>使用 kubeadm 初始化 ##
@@ -41,7 +41,7 @@ apt-get update -y && apt-get upgrade -y
 ```
 
 ### <a name="install-docker"></a>安装 Docker ###
-若要能够使用容器，你需要一个容器引擎，如 Docker。 若要获取最新版本，你可以使用 Docker 安装[这些说明](https://docs.docker.com/install/linux/docker-ce/ubuntu/)。 你可以验证该 docker 已正确安装通过运行`hello-world`容器：
+若要能够使用容器，你需要一个容器引擎，如 Docker。 若要获取最新版本，你可以使用 Docker 安装[这些说明](https://docs.docker.com/install/linux/docker-ce/ubuntu/)。 你可以验证该 docker 是否已正确安装通过运行`hello-world`容器：
 
 ```bash
 docker run hello-world
@@ -51,7 +51,7 @@ docker run hello-world
 下载`kubeadm`为 Linux 分发的二进制文件并初始化群集。
 
 > [!Important]  
-> 具体取决于你 Linux 分发，你可能需要替换`kubernetes-xenial`下方的正确[代号](https://wiki.ubuntu.com/Releases)。
+> 具体取决于你 Linux 分发，你可能需要替换`kubernetes-xenial`下面与正确[代号](https://wiki.ubuntu.com/Releases)。
 
 ```bash
 curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | apt-key add -
@@ -62,7 +62,7 @@ apt-get update && apt-get install -y kubelet kubeadm kubectl
 ```
 
 ### <a name="prepare-the-master-node"></a>准备主节点 ###
-在 Linux 上的 Kubernetes 需要交换空间来关闭状态：
+在 Linux 上的 Kubernetes 需要交换空间将其关闭：
 
 ```bash
 nano /etc/fstab  # (remove a line referencing 'swap.img' , if it exists)
@@ -70,35 +70,40 @@ swapoff -a
 ```
 
 ### <a name="initialize-master"></a>初始化大纲 ###
-记下你群集子网 (例如 10.244.0.0/16) 和服务子网 (例如 10.96.0.0/12) 并初始化使用 kubeadm 你主机：
+记下你群集子网 (例如 10.244.0.0/16) 和服务子网 (例如 10.96.0.0/12) 并初始化使用 kubeadm 你大纲：
 
 ```bash
 kubeadm init --pod-network-cidr=10.244.0.0/16 --service-cidr=10.96.0.0/12
 ```
 
-这可能需要几分钟。 完成后，你应该看到像此确认已初始化你的主屏幕：
+这可能需要几分钟。 完成后，你应该看到像你大纲已初始化此确认屏幕：
 
 ![文本](media/kubeadm-init.png)
 
 > [!tip]
-> 记下 kubeadm 加入命令输出的上方*现在*图片中之前它获取丢失。
+> 你应注意此 kubeadm 加入命令。 应 kubeadm 令牌过期，你可以使用`kubeadm token create --print-join-command`若要创建一个新的令牌。
 
 > [!tip]
 > 如果你拥有所需的 Kubernetes 版本你想要使用，你可以传递`--kubernetes-version`kubeadm 标志。
 
-我们不尚未完成。 若要使用`kubectl`作为常规用户，运行以下__**unelevated、 非根用户 shell 中**__
+我们不尚未完成。 若要使用`kubectl`作为常规用户，运行以下__**unelevated 的非根用户 shell 中**__
 
 ```bash
 mkdir -p $HOME/.kube
 sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
 sudo chown $(id -u):$(id -g) $HOME/.kube/config
 ```
-现在可以使用 kubectl 编辑或查看有关你的群集的信息。
+现在可以使用 kubectl 编辑或查看有关群集的信息。
 
 ### <a name="enable-mixed-os-scheduling"></a>启用混合操作系统计划 ###
-默认情况下，它们将在所有节点上计划的方式编写某些 Kubernetes 资源。 但是，在 multi-OS 环境中，我们不希望 Linux 资源会影响或双调度到 Windows 节点，反之亦然。 出于此原因，我们需要将应用[NodeSelector](https://kubernetes.io/docs/concepts/configuration/assign-pod-node/#nodeselector)标签。 
+默认情况下，某些 Kubernetes 资源是写入它们正在计划的所有节点上的方式。 但是，在 multi-OS 环境中，我们不希望 Linux 资源干扰或双计划到 Windows 节点，反之亦然。 出于此原因，我们需要应用[NodeSelector](https://kubernetes.io/docs/concepts/configuration/assign-pod-node/#nodeselector)标签。 
 
 在这里，我们将修补程序 linux kube 代理[DaemonSet](https://kubernetes.io/docs/concepts/workloads/controllers/daemonset/)仅面向 Linux。
+
+首先，让我们创建一个目录来存储.yaml 清单文件：
+```bash
+mkdir -p kube/yaml && cd kube/yaml
+```
 
 确认更新策略的`kube-proxy`DaemonSet 设置为[RollingUpdate](https://kubernetes.io/docs/tasks/manage-daemon/update-daemon-set/):
 
@@ -106,9 +111,10 @@ sudo chown $(id -u):$(id -g) $HOME/.kube/config
 kubectl get ds/kube-proxy -o go-template='{{.spec.updateStrategy.type}}{{"\n"}}' --namespace=kube-system
 ```
 
-接下来，通过下载[此 nodeSelector](https://github.com/Microsoft/SDN/tree/master/Kubernetes/flannel/l2bridge/manifests/node-selector-patch.yml)修补 DaemonSet 并将其仅针对 Linux 应用：
+接下来，通过下载[此 nodeSelector](https://github.com/Microsoft/SDN/tree/master/Kubernetes/flannel/l2bridge/manifests/node-selector-patch.yml)修补 DaemonSet 并将其仅面向 Linux 应用：
 
 ```bash
+wget https://raw.githubusercontent.com/Microsoft/SDN/master/Kubernetes/flannel/l2bridge/manifests/node-selector-patch.yml
 kubectl patch ds/kube-proxy --patch "$(cat node-selector-patch.yml)" -n=kube-system
 ```
 
@@ -121,7 +127,7 @@ kubectl get ds -n kube-system
 ![文本](media/kube-proxy-ds.png)
 
 ### <a name="collect-cluster-information"></a>收集群集信息 ###
-若要成功加入大纲将来的节点，应该记下以下信息：
+若要成功加入未来节点到主服务器，你应跟踪的以下信息：
   1. `kubeadm join` 从输出 （在[此处](#initialize-master)） 的命令
     * 示例： `kubeadm join <Master_IP>:6443 --token <some_token> --discovery-token-ca-cert-hash <some_hash>`
   2. 群集子网期间定义`kubeadm init`（在[此处](#initialize-master)）
@@ -131,19 +137,22 @@ kubectl get ds -n kube-system
     * 此外可以通过使用找到 `kubectl cluster-info dump | grep -i service-cluster-ip-range`
   4. Kube dns 服务 IP 
     * 示例： `10.96.0.10`
-    * 可以使用"群集 IP"字段中找到 `kubectl get svc/kube-dns -n kube-system`
-  5. Kubernetes`config`生成后文件`kubeadm init`（在[此处](#initialize-master)）。 如果你遵循的说明，这可以在以下路径找到它们：
+    * 可以在"群集 IP"字段中使用找到 `kubectl get svc/kube-dns -n kube-system`
+  5. Kubernetes`config`生成后文件`kubeadm init`（在[此处](#initialize-master)）。 如果你遵循的说明，这可以在以下路径找到：
     * `/etc/kubernetes/admin.conf`
     * `$HOME/.kube/config`
 
 ## <a name="verifying-the-master"></a>验证主机 ##
 几分钟后，系统应处于以下状态：
 
-  - 在`kubectl get pods -n kube-system`，将为所有[Kubernetes 主组件](https://kubernetes.io/docs/concepts/overview/components/#master-components)中的 pod`Running`状态。
+  - 在`kubectl get pods -n kube-system`，将有关[Kubernetes 主组件](https://kubernetes.io/docs/concepts/overview/components/#master-components)中的 pod`Running`状态。
   - 调用`kubectl cluster-info`将显示有关 Kubernetes 主 API 服务器以及 DNS 加载项的信息。
+  
+> [!tip]
+> 由于 kubeadm 不设置网络，DNS pod 仍可以在`ContainerCreating`或`Pending`状态。 他们会切换到`Running`状态后[选择的网络解决方案](./network-topologies.md)。
 
 ## <a name="next-steps"></a>后续步骤 ## 
-在此部分中，我们将介绍如何设置使用 kubeadm 开始创建 Kubernetes 主机。 现在，你已准备好步骤 3:
+在此部分中，我们将介绍如何设置使用 kubeadm Kubernetes 主机。 现在，你可以随时步骤 3:
 
 > [!div class="nextstepaction"]
 > [选择网络解决方案](./network-topologies.md)
