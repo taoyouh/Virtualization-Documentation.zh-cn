@@ -8,12 +8,12 @@ ms.topic: article
 ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: e3b2a4dc-9082-4de3-9c95-5d516c03482b
-ms.openlocfilehash: 44e415af08881d18ebb2d82f5f79098f7fb034f8
-ms.sourcegitcommit: f172d14ef1ebfb5a9df1b3529e0722d9103e0eba
+ms.openlocfilehash: b58bdd79da1c644281ebd9e79c16587d9fc156f4
+ms.sourcegitcommit: 21d93e5febd9b1b47ae1aa59d08086e6ec1691e0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "9112924"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "9121039"
 ---
 # <a name="windows-containers-on-windows-server"></a>Windows Server 上的 Windows 容器
 
@@ -68,7 +68,8 @@ PowerShell 询问是否信任包源“DockerDefault”时，键入 `A` 以继续
 Restart-Computer -Force
 ```
 
-> ![提示]如果你希望稍后更新 Docker:
+> [!TIP]
+> 如果你希望稍后更新 Docker:
 >  - 查看已安装的版本，查看时使用 `Get-Package -Name Docker -ProviderName DockerMsftProvider`
 >  - 查找当前版本，查找时使用 `Find-Package -Name Docker -ProviderName DockerMsftProvider`
 >  - 当你准备就绪后，进行升级，升级时使用 `Install-Package -Name Docker -ProviderName DockerMsftProvider -Update -Force`，后跟 `Start-Service Docker`
