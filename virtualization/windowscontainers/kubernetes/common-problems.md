@@ -7,12 +7,12 @@ ms.topic: troubleshooting
 ms.prod: containers
 description: 关于部署 Kubernetes 和加入 Windows 节点的常见问题的解决方案。
 keywords: kubernetes，1.12，linux，编译
-ms.openlocfilehash: dfc7ab5aab9a04ef39916fb9e9b9886cad2f46a6
-ms.sourcegitcommit: 41318edba7459a9f9eeb182bf8519aac0996a7f1
+ms.openlocfilehash: 30bb0c064c96ff4bd0b6e1c078221b2d9170d4e7
+ms.sourcegitcommit: 817a629f762a4a5d4bcff58302f2bc2408bf8be1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "9120435"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "9149917"
 ---
 # <a name="troubleshooting-kubernetes"></a>Kubernetes 疑难解答 #
 此页面逐一介绍 Kubernetes 设置、网络和部署的一些常见问题。
@@ -62,6 +62,9 @@ Kubernetes 网络要求之一 （请参阅[Kubernetes 模型](https://kubernetes
                     "10.127.130.0/24" # Management (host) subnet
                 ]
 ```
+
+### <a name="my-windows-node-cannot-access-a-nodeport-service"></a>我的 Windows 节点无法访问 NodePort 服务 ###
+从节点本身的本地 NodePort 访问将失败。 这是一个已知限制。 NodePort 访问权限生效从其他节点或外部客户端。
 
 ### <a name="after-some-time-vnics-and-hns-endpoints-of-containers-are-being-deleted"></a>一段时间后 Vnic 和 HNS 终结点的容器并被删除 ###
 此问题可能导致时`hostname-override`不将参数传递给[kube 代理](https://kubernetes.io/docs/reference/command-line-tools-reference/kube-proxy/)。 若要解决它，用户需要将主机名传递到 kube 代理，如下所示：

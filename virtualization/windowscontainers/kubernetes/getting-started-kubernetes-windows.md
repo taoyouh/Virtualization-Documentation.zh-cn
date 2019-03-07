@@ -8,12 +8,12 @@ ms.prod: containers
 description: 将 Windows 节点加入到 Kubernetes 群集与 v1.13。
 keywords: kubernetes，1.13，windows，入门
 ms.assetid: 3b05d2c2-4b9b-42b4-a61b-702df35f5b17
-ms.openlocfilehash: f9348debf427c47f9326368ff02914603de06a1b
-ms.sourcegitcommit: 41318edba7459a9f9eeb182bf8519aac0996a7f1
+ms.openlocfilehash: 2edc940d4132870a6f7d6714bb50faef201136ba
+ms.sourcegitcommit: 817a629f762a4a5d4bcff58302f2bc2408bf8be1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "9120455"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "9149907"
 ---
 # <a name="kubernetes-on-windows"></a>Windows 上的 Kubernetes #
 此页面可用作概述，以便开始使用 Windows 上 Kubernetes 的 Windows 节点加入到基于 Linux 的群集。 使用 Windows Server[版本 1809](https://docs.microsoft.com/en-us/windows-server/get-started/whats-new-in-windows-server-1809#container-networking-with-kubernetes)Kubernetes 1.13 的发布，用户可以在 Kubernetes 中充分利用[最新功能](https://kubernetes.io/docs/getting-started-guides/windows/#supported-features)，在 Windows beta 版本上：
@@ -36,7 +36,7 @@ ms.locfileid: "9120455"
 ### <a name="plan-ip-addressing-for-your-cluster"></a>规划 IP 地址为群集 ###
 <a name="definitions"></a>如 Kubernetes 群集引入了新的子网，pod 和服务，务必确保其中任何一个与你的环境中的任何其他现有网络碰撞。 下面是为了成功部署 Kubernetes 释放所需要的所有地址空间：
 
-| 子网地址范围 | 说明 | 默认值 |
+| 子网地址范围 | 描述 | 默认值 |
 | --------- | ------------- | ------------- |
 | <a name="service-subnet-def"></a>**服务子网** | 不可路由的纯虚拟子网 pod 中用于无论网络拓扑如何该子网统一访问服务。 它通过节点上运行的 `kube-proxy` 与可路由的地址空间进行相互转换。 | "10.96.0.0/12" |
 | <a name="cluster-subnet-def"></a>**群集子网** |  这是由在群集中的所有 pod 的全局子网。 每个节点分配较小的/24 子网从此使用其 pod。 它必须足够大，以适应在群集中使用的所有 pod。 若要计算*最小*的子网大小： `(number of nodes) + (number of nodes * maximum pods per node that you configure)` <p/>对于每个节点的 100 pod 的 5 个节点的群集的示例： `(5) + (5 *  100) = 505`。  | "10.244.0.0/16" |
@@ -45,17 +45,6 @@ ms.locfileid: "9120455"
 > 没有另一个 Docker 网络 (NAT) 时安装 Docker 获取创建默认情况下。 它不需要能够按照我们 Ip 分配群集子网改为运行 Windows 上的 Kubernetes。
 
 
-### <a name="disable-anti-spoofing-protection-required-for-l2bridge"></a>禁用 （需要 l2bridge） 的反欺骗保护 ###
-你应想要使用 l2 桥接网络 (也称为[flannel 主机网关](./network-topologies.md#flannel-in-host-gateway-mode))，你应确保 Windows 容器主机虚拟机 （来宾） 的启用 MAC 地址欺骗。 若要实现此目的，你应托管的虚拟机 （给出的 HYPER-V 的示例） 在计算机上以管理员身份运行以下内容：
-
-```powershell
-Get-VMNetworkAdapter -VMName "<name>" | Set-VMNetworkAdapter -MacAddressSpoofing On
-```
-> [!TIP]
-> 如果你使用基于 VMware 的产品以满足虚拟化的需要，请考虑启用 MAC 欺骗要求[混杂模式](https://kb.vmware.com/s/article/1004099)。
-
->[!TIP]
-> 如果你要部署 Azure 或 IaaS 虚拟机上的 Kubernetes 从其他云提供商自己，我们建议[覆盖网络](./network-topologies.md#flannel-in-vxlan-mode)相反。
 
 ## <a name="what-you-will-accomplish"></a>你将实现的目标 ##
 
