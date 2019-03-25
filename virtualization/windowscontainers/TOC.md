@@ -55,6 +55,7 @@
 ## [系统要求](deploy-containers/system-requirements.md)
 ## [版本兼容性](deploy-containers/version-compatibility.md)
 ## [Hyper-V 隔离](manage-containers/hyperv-container.md)
+## [打印机服务](deploy-containers/print-spooler.md)
 ## [在容器中的硬件设备](deploy-containers/hardware-devices-in-containers.md)
 ## [容器平台工具](deploy-containers/containerd.md)
 ## [组托管服务帐户](manage-containers/manage-serviceaccounts.md)
