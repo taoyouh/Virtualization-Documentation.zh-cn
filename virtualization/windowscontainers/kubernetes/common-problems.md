@@ -7,12 +7,12 @@ ms.topic: troubleshooting
 ms.prod: containers
 description: 关于部署 Kubernetes 和加入 Windows 节点的常见问题的解决方案。
 keywords: kubernetes，1.12，linux，编译
-ms.openlocfilehash: 30bb0c064c96ff4bd0b6e1c078221b2d9170d4e7
-ms.sourcegitcommit: 817a629f762a4a5d4bcff58302f2bc2408bf8be1
+ms.openlocfilehash: 1c5a5ec90b828a4f2430508f02cb9b9afb1c4d53
+ms.sourcegitcommit: 1715411ac2768159cd9c9f14484a1cad5e7f2a5f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "9149917"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "9263504"
 ---
 # <a name="troubleshooting-kubernetes"></a>Kubernetes 疑难解答 #
 此页面逐一介绍 Kubernetes 设置、网络和部署的一些常见问题。
@@ -44,8 +44,29 @@ nssm set <Service Name> AppStderr C:\k\mysvc.log
 
 ## <a name="common-networking-errors"></a>常见网络错误 ##
 
-### <a name="my-windows-pods-do-not-have-network-connectivity"></a>我的 Windows pod 无法通过网络连接 ###
-如果你使用的任何虚拟机，请确保所有虚拟机网络适配器上启用 MAC 欺骗。 请参阅[反欺骗保护](./getting-started-kubernetes-windows.md#disable-anti-spoofing-protection)更多详细信息。
+### <a name="i-am-seeing-errors-such-as-hnscall-failed-in-win32-the-wrong-diskette-is-in-the-drive"></a>我如看到错误"在 Win32 中失败 hnsCall： 磁盘有错误的驱动器中。" ###
+进行到 HNS 引入更改，而无需撕裂下旧 HNS 对象的自定义修改的 HNS 对象或安装新的 Windows 更新时，会发生此错误。 它指示更新之前之前创建的 HNS 对象与当前安装的 HNS 版本不兼容。
+
+Windows Server 2019 （及其下方），用户可以通过删除 HNS.data 文件删除 HNS 对象 
+```
+Stop-Service HNS
+rm C:\ProgramData\Microsoft\Windows\HNS\HNS.data
+Start-Service HNS
+```
+
+用户应该能够直接删除任何不兼容的 HNS 终结点或网络：
+```
+hnsdiag list endpoints
+hnsdiag delete endpoints <id>
+hnsdiag list networks 
+hnsdiag delete networks <id>
+Restart-Service HNS
+```
+
+Windows Server 上的用户，版本 1903年可以转到以下注册表位置并删除任何 Nic 起的网络名称 (例如`vxlan0`或`cbr0`):
+```
+\\Computer\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\vmsmp\parameters\NicList
+```
 
 
 ### <a name="my-windows-pods-cannot-ping-external-resources"></a>我的 Windows pod 无法 ping 外部资源 ###
@@ -87,6 +108,20 @@ PS C:> C:\flannel\flanneld.exe --kubeconfig-file=c:\k\config --iface=<Windows_Wo
 ```
 
 此外，还有[PR](https://github.com/coreos/flannel/pull/1042)当前解决此问题正在审查。
+
+
+### <a name="on-flannel-host-gw-my-windows-pods-do-not-have-network-connectivity"></a>在 Flannel （主机网关），我的 Windows pod 无法通过网络连接 ###
+你应想要使用 l2 桥接网络 (也称为[flannel 主机网关](./network-topologies.md#flannel-in-host-gateway-mode))，你应确保 Windows 容器主机虚拟机 （来宾） 的启用 MAC 地址欺骗。 若要实现此目的，你应托管的虚拟机 （给出的 HYPER-V 的示例） 在计算机上以管理员身份运行以下内容：
+
+```powershell
+Get-VMNetworkAdapter -VMName "<name>" | Set-VMNetworkAdapter -MacAddressSpoofing On
+```
+
+> [!TIP]
+> 如果你使用基于 VMware 的产品以满足虚拟化的需要，请考虑启用 MAC 欺骗要求[混杂模式](https://kb.vmware.com/s/article/1004099)。
+
+>[!TIP]
+> 如果你正在部署 Azure 或 IaaS 虚拟机上的 Kubernetes 从其他云提供商自己，你还可以使用[覆盖网络](./network-topologies.md#flannel-in-vxlan-mode)相反。
 
 ### <a name="my-windows-pods-cannot-launch-because-of-missing-runflannelsubnetenv"></a>我的 Windows pod 无法启动由于缺少 /run/flannel/subnet.env ###
 这表示 Flannel 未正确启动。 你可以尝试重启 flanneld.exe 或者你可以将文件复制通过手动从`/run/flannel/subnet.env`在开始创建 Kubernetes 主机到`C:\run\flannel\subnet.env`Windows 工作者节点上和修改`FLANNEL_SUBNET`到不同数量的行。 例如，如果所需节点的子网 10.244.4.1/24:

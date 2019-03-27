@@ -8,18 +8,18 @@ ms.prod: containers
 description: 将 Windows 节点加入到 Kubernetes 群集与 v1.13。
 keywords: kubernetes，1.13，windows，入门
 ms.assetid: 3b05d2c2-4b9b-42b4-a61b-702df35f5b17
-ms.openlocfilehash: 2edc940d4132870a6f7d6714bb50faef201136ba
-ms.sourcegitcommit: 817a629f762a4a5d4bcff58302f2bc2408bf8be1
+ms.openlocfilehash: df3185db086e8e38143fe60d90db864038980603
+ms.sourcegitcommit: 1715411ac2768159cd9c9f14484a1cad5e7f2a5f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "9149907"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "9263484"
 ---
 # <a name="kubernetes-on-windows"></a>Windows 上的 Kubernetes #
-此页面可用作概述，以便开始使用 Windows 上 Kubernetes 的 Windows 节点加入到基于 Linux 的群集。 使用 Windows Server[版本 1809](https://docs.microsoft.com/en-us/windows-server/get-started/whats-new-in-windows-server-1809#container-networking-with-kubernetes)Kubernetes 1.13 的发布，用户可以在 Kubernetes 中充分利用[最新功能](https://kubernetes.io/docs/getting-started-guides/windows/#supported-features)，在 Windows beta 版本上：
+此页面可用作概述，以便开始使用 Windows 上 Kubernetes 的 Windows 节点加入到基于 Linux 的群集。 使用 Windows Server[版本 1809](https://docs.microsoft.com/en-us/windows-server/get-started/whats-new-in-windows-server-1809#container-networking-with-kubernetes)Kubernetes 1.14 的发布，用户可以利用以下功能在 Kubernetes 中在 Windows 上：
 
   - **覆盖网络**： 使用 Flannel vxlan 模式配置虚拟覆盖网络
-    - 与安装的 KB4482887 或[Windows Server vNext Insider Preview](https://blogs.windows.com/windowsexperience/tag/windows-insider-program/)版本 18317 + 需要任何一种 Windows Server 2019
+    - 使用[KB4489899](https://support.microsoft.com/en-us/help/4489899)安装或[Windows Server vNext Insider Preview](https://blogs.windows.com/windowsexperience/tag/windows-insider-program/)版本 18317 + 需要任何一种 Windows Server 2019
     - 需要 Kubernetes v1.14 （或以上） 与`WinOverlay`已启用的功能门槛
     - 需要 Flannel v0.11.0 （或以上）
   - **简化了的网络管理**： Flannel 在主机网关模式下用于节点间的自动路由管理
@@ -31,7 +31,7 @@ ms.locfileid: "9149907"
 > [!TIP] 
 > 如果你想要 Azure 上部署群集，开源 AKS 引擎工具轻松实现。 我们提供了分步[演练](https://github.com/Azure/aks-engine/blob/master/docs/topics/windows.md)供你参考。
 
-## <a name="prerequisites"></a>先决条件 ##
+## <a name="prerequisites"></a>系统必备 ##
 
 ### <a name="plan-ip-addressing-for-your-cluster"></a>规划 IP 地址为群集 ###
 <a name="definitions"></a>如 Kubernetes 群集引入了新的子网，pod 和服务，务必确保其中任何一个与你的环境中的任何其他现有网络碰撞。 下面是为了成功部署 Kubernetes 释放所需要的所有地址空间：

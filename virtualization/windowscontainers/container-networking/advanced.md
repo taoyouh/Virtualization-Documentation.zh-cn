@@ -8,12 +8,12 @@ ms.topic: article
 ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: 538871ba-d02e-47d3-a3bf-25cda4a40965
-ms.openlocfilehash: 017ff7868d10ed58f749c0ef8824dd32586afb2c
-ms.sourcegitcommit: ec186664e76d413d3bf75f2056d5acb556f4205d
-ms.translationtype: HT
+ms.openlocfilehash: cf5173a98032820e1ad72e99e9b6e874dedbed83
+ms.sourcegitcommit: 1715411ac2768159cd9c9f14484a1cad5e7f2a5f
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2018
-ms.locfileid: "1876021"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "9263514"
 ---
 # <a name="advanced-network-options-in-windows"></a>Windows 中的高级网络选项
 系统支持多个网络驱动程序选项，以便充分利用特定于 Windows 的功能和特性。 
@@ -92,13 +92,13 @@ docker: Error response from daemon: container e15d99c06e312302f4d23747f2dfda4b11
 我们正在努力更改平台以自动检测/避免此问题。 目前可使用以下解决方法来确保在你的主机上启用了 IPv6：
 
 ```
-C:\> reg delete HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip6\Parameters  /v DisabledComponents  /f
+C:\> reg delete HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip6\Parameters  /v DisabledComponents  /f
 ```
 
 
 #### <a name="linux-containers-on-windows"></a>Windows 上的 Linux 容器
 
-**新建：** 我们正在努力实现在_无 Moby Linux 虚拟机_的情况下并行运行 Linux 和 Windows 容器。 有关详细信息，请参阅此[关于 Windows 上的 Linux 容器 (LCOW) 的博客文章](https://blog.docker.com/2017/11/docker-for-windows-17-11/)。
+**新建：** 我们正在努力实现在_无 Moby Linux 虚拟机_的情况下并行运行 Linux 和 Windows 容器。 有关详细信息，请参阅此[关于 Windows 上的 Linux 容器 (LCOW) 的博客文章](https://blog.docker.com/2017/11/docker-for-windows-17-11/)。 下面是如何[开始](https://docs.microsoft.com/en-us/virtualization/windowscontainers/quick-start/quick-start-windows-10-linux)。
 > 注意：LCOW 将弃用 Moby Linux 虚拟机，并且它将使用默认的 HNS“nat”内部 vSwitch。
 
 #### <a name="moby-linux-vms-use-dockernat-switch-with-docker-for-windows-a-product-of-docker-cehttpswwwdockercomcommunity-edition"></a>Moby Linux 虚拟机将 DockerNAT 交换机与适用于 Windows 的 Docker（[Docker CE](https://www.docker.com/community-edition) 的产品）配合使用
