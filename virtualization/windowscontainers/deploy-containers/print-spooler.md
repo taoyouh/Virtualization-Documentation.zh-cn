@@ -3,19 +3,19 @@ title: Windows 容器中的打印后台处理程序
 description: 介绍了 Windows 容器中的打印后台处理程序服务的当前工作行为
 keywords: docker，容器，打印机，后台处理程序
 author: cwilhit
-ms.openlocfilehash: 45176e651ee2ef9b6daea9919004601734084083
-ms.sourcegitcommit: 04c372c87c832f73a1aa120b0ff6c2c2b9c8c1b1
+ms.openlocfilehash: 48130bc6a826a45dfa49d0a3b4600d227f34704e
+ms.sourcegitcommit: 3c81b0efd1ac2c4c93d58f16edae1044c9a5ad55
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "9257976"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "9284571"
 ---
 # <a name="print-spooler-in-windows-containers"></a>Windows 容器中的打印后台处理程序
 
-打印服务上的依赖项的应用程序可以在容器化成功与 Windows 容器。 不能容器化应用程序已安装打印机驱动程序到主机上的依赖项;从容器中的驱动程序安装是不受支持，因为它会泄漏到主机的容器状态。 有一些必须满足的成功启用打印机服务功能的特殊要求。 本指南介绍了如何正确配置你的部署。
+打印服务上的依赖项的应用程序可以在容器化成功与 Windows 容器。 有一些必须满足的成功启用打印机服务功能的特殊要求。 本指南介绍了如何正确配置你的部署。
 
 > [!IMPORTANT]
-> 获取访问的打印服务成功在容器中的工作原理，尽管形式; 有限功能一些与打印相关的操作可能不起作用。 请如果出现这种情况，打开了下面的反馈。
+> 获取访问的打印服务成功在容器中的工作原理，尽管形式; 有限功能一些与打印相关的操作可能不起作用。 例如，具有依赖到主机安装打印机驱动程序的应用不能在容器化因为**从容器中的驱动程序安装不受支持**。 请如果你发现你想要支持在容器中不受支持打印功能，打开了下面的反馈。
 
 ## <a name="setup"></a>安装
 
