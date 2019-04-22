@@ -8,12 +8,12 @@ ms.topic: article
 ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: 6885400c-5623-4cde-8012-f6a00019fafa
-ms.openlocfilehash: bbc405fc2a490cfe5082be112fde724707e24785
-ms.sourcegitcommit: 21d93e5febd9b1b47ae1aa59d08086e6ec1691e0
+ms.openlocfilehash: 24de3d332ae4634f7dca945c1df9182cc1310089
+ms.sourcegitcommit: a5ff22c205149dac4fc05325ef3232089826f1ef
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "9121049"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "9380331"
 ---
 # <a name="docker-engine-on-windows"></a>Windows 上的 Docker 引擎
 
@@ -23,7 +23,7 @@ Docker 引擎和客户端包含在 Windows 并不需要进行安装和单独配�
 ## <a name="install-docker"></a>安装 Docker
 若要使用 Window 容器，则需要安装 Docker。 Docker 由 Docker 引擎 (dockerd.exe) 和 Docker 客户端 (docker.exe) 组成。 快速入门指南中提供了安装所有内容的最简方法。 它们可以帮助你获得的所有内容设置和运行你的第一个容器。 
 
-* [Windows Server 2019 上的 Windows 容器](../quick-start/quick-start-windows-server.md)
+* [在 Windows Server 2019 上的 Windows 容器](../quick-start/quick-start-windows-server.md)
 * [Windows 10 上的 Windows 容器](../quick-start/quick-start-windows-10.md)
 
 若要进行脚本化安装，请参阅[使用脚本安装 Docker EE](https://docs.docker.com/install/windows/docker-ee/#use-a-script-to-install-docker-ee)。

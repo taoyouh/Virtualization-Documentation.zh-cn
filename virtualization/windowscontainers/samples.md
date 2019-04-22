@@ -1,6 +1,6 @@
 ---
 title: Windows 容器示例
-description: 查找指向使用 Windows 容器的热门项目和代码示例的链接。
+description: 找到的热门项目和使用 Windows 容器的代码示例的链接。
 keywords: docker, 容器, windows, 示例
 author: cwilhit
 ms.date: 12/19/2016
@@ -8,12 +8,12 @@ ms.topic: article
 ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: 5c6f6350-f8d6-4426-b53d-9fb09c2bf267
-ms.openlocfilehash: 6d0f85e46ab5f2c73fb378d4862a2fc3107e47b3
-ms.sourcegitcommit: 69228f28723f366c6b2933c7701077c8df74b32b
+ms.openlocfilehash: fb6910f535337d25b7635ffe339345a7063daa92
+ms.sourcegitcommit: a5ff22c205149dac4fc05325ef3232089826f1ef
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/19/2018
-ms.locfileid: "8976763"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "9380271"
 ---
 # <a name="windows-container-samples"></a>Windows 容器示例
 

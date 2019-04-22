@@ -8,12 +8,12 @@ ms.topic: about-article
 ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: 29fbe13a-228a-4eaa-9d4d-90ae60da5965
-ms.openlocfilehash: fec8b08d5bd86102d21ce93b726dc0b931413441
-ms.sourcegitcommit: 69228f28723f366c6b2933c7701077c8df74b32b
+ms.openlocfilehash: 19340f2ca3ca11e9b75a223bf2b58e943328a0c5
+ms.sourcegitcommit: a5ff22c205149dac4fc05325ef3232089826f1ef
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/19/2018
-ms.locfileid: "8976743"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "9380151"
 ---
 # <a name="building-a-container-ecosystem"></a>生成容器生态系统
 
@@ -21,9 +21,9 @@ ms.locfileid: "8976743"
 
 ## <a name="docker"></a>Docker
 
-容器的概念（命名空间隔离和资源管理）已存在很长时间，可以追溯到 BSD Jails、Solaris Zones 和基本的 UNIX chroot（更改根）机制。   Docker 的用途是提供通用工具集、封装模型和部署机制。  通过执行此操作，Docker 此简化和分配的应用程序。  然后可以在任何 Linux 主机上的任何位置运行这些应用程序，此功能也在 Windows 上提供。
+容器的概念（命名空间隔离和资源管理）已存在很长时间，可以追溯到 BSD Jails、Solaris Zones 和基本的 UNIX chroot（更改根）机制。   Docker 的用途是提供通用工具集、封装模型和部署机制。  通过执行此操作，Docker 简化了此和应用程序的分发。  然后可以在任何 Linux 主机上的任何位置运行这些应用程序，此功能也在 Windows 上提供。
 
-普遍封装模型和部署技术通过提供对任何主机相同的管理命令来简化管理，并创建为无缝 DevOps 独特的机会。
+普遍封装模型和部署技术通过提供对任何主机相同的管理命令来简化管理，并创建为无缝 DevOps 一个独特的机会。
 
 从开发人员的桌面到测试计算机再到一组生产计算机，可以创建以相同方式在几秒内在任何环境中部署的 Docker 映像。 由此创造出了封装在 Docker 容器中的巨大且持续增长的应用程序生态系统，其中 DockerHub 是 Docker 所维护的公共容器化应用程序注册表。
 
@@ -33,7 +33,7 @@ Docker 为开发提供了绝佳的基础。
 
 ## <a name="components-in-a-container-ecosystem"></a>容器生态系统中的组件
 
-Windows 容器是一个大型容器生态系统的关键组成部分。 我们正致力于跨行业在解决方案堆栈的每一层上为开发人员提供选项。
+Windows 容器是一个大型容器生态系统的关键组件。 我们正致力于跨行业在解决方案堆栈的每一层上为开发人员提供选项。
 
 容器生态系统提供管理容器、共享容器和开发在容器中运行的应用的方法。
 

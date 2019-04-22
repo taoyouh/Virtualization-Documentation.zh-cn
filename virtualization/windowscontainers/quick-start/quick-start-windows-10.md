@@ -8,12 +8,12 @@ ms.topic: article
 ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: bb9bfbe0-5bdc-4984-912f-9c93ea67105f
-ms.openlocfilehash: dc500a7b6c0f8f078820407e6ed80ca5868bf4f3
-ms.sourcegitcommit: 95cec99aa8e817d3e3cb2163bd62a32d9e8f7181
+ms.openlocfilehash: 07f5929505226a50a161b4ae7df5669c2ad89d83
+ms.sourcegitcommit: a5ff22c205149dac4fc05325ef3232089826f1ef
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "8973647"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "9380421"
 ---
 # <a name="windows-containers-on-windows-10"></a>Windows 10 上的 Windows 容器
 
@@ -21,16 +21,16 @@ ms.locfileid: "8973647"
 > - [Windows 上的 Linux 容器](quick-start-windows-10-linux.md)
 > - [在 Windows 上的 Windows 容器](quick-start-windows-10.md)
 
-本练习将演练创建并运行 Windows 10 上的 Windows 容器。
+本练习将演练创建和 Windows 10 上运行 Windows 容器。
 
 在本快速入门中，你将完成：
 
 1. 安装适用于 Windows 的 Docker
-2. 运行一个简单的 Windows 容器
+2. 运行简单的 Windows 容器
 
 本快速入门特定于 Windows 10。 可以在此页面左侧的目录中找到其他快速入门文档。
 
-## <a name="prerequisites"></a>先决条件
+## <a name="prerequisites"></a>系统必备
 请确保你满足以下要求：
 - 一个运行 Windows 10 专业版或企业版周年更新 （版本 1607年） 或更高版本的物理计算机系统。 
 - 请确保启用[HYPER-V](https://docs.microsoft.com/en-us/virtualization/hyper-v-on-windows/reference/hyper-v-requirements) 。
@@ -38,11 +38,11 @@ ms.locfileid: "8973647"
 ***HYPER-V 隔离：*** Windows Server 容器要求对 Windows 10 使用 HYPER-V 隔离才能为开发人员提供的相同内核版本和配置时，将在生产中使用，更多有关 HYPER-V 隔离可以找到[关于 Windows 容器](../about/index.md)页面上。
 
 > [!NOTE]
-> 在 Windows 更新 2018 年 10 月版本中，我们不会再禁止用户从用于开发人员/测试目的，Windows 10 企业版或专业版上运行 Windows 容器进程隔离模式。 请参阅[常见问题](../about/faq.md)若要了解详细信息。
+> 在 Windows 10 月更新 2018 年版本中，我们不会再禁止用户为开发人员/测试目的，在 Windows 10 企业版或专业版上运行的 Windows 容器进程隔离模式。 请参阅[常见问题](../about/faq.md)若要了解详细信息。
 
 ## <a name="install-docker-for-windows"></a>安装适用于 Windows 的 Docker
 
-[Docker for Windows](https://store.docker.com/editions/community/docker-ce-desktop-windows)下载并运行安装程序 （你将需要登录。 创建一个帐户如果你已经没有）。 Docker 文档中提供了[详细的安装说明](https://docs.docker.com/docker-for-windows/install)。
+[Docker for Windows](https://store.docker.com/editions/community/docker-ce-desktop-windows)下载并运行安装程序 （你将需要登录。 创建一个帐户如果你还没有）。 Docker 文档中提供了[详细的安装说明](https://docs.docker.com/docker-for-windows/install)。
 
 ## <a name="switch-to-windows-containers"></a>切换到 Windows 容器
 
@@ -122,7 +122,7 @@ docker images
 docker run --rm helloworld cmd.exe /s /c type Hello.txt
 ```
 
-结果的`docker run`命令是从 HelloWorld 映像创建 HYPER-V 容器、 cmd 实例已启动容器中，并执行我们文件 （输出回显到该界面），然后停止并删除容器的读数。
+结果的`docker run`命令是从 HelloWorld 映像创建 HYPER-V 隔离下运行的容器、 cmd 的实例在容器中启动并执行我们的文件 （输出回显到该界面），然后在容器的读数停止并删除。
 
 ## <a name="next-steps"></a>后续步骤
 

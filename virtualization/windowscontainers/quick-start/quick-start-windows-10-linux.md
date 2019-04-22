@@ -8,12 +8,12 @@ ms.topic: article
 ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: bb9bfbe0-5bdc-4984-912f-9c93ea67105f
-ms.openlocfilehash: 036e4f80eaa6e7ce2c151d7732e670c0492bc61f
-ms.sourcegitcommit: 95cec99aa8e817d3e3cb2163bd62a32d9e8f7181
+ms.openlocfilehash: f9b54dbc9fc7c79bdb9b9aa106d5811401c365f3
+ms.sourcegitcommit: a5ff22c205149dac4fc05325ef3232089826f1ef
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "8973808"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "9380461"
 ---
 # <a name="linux-containers-on-windows-10"></a>Windows 10 上的 Linux 容器
 
@@ -25,26 +25,26 @@ ms.locfileid: "8973808"
 
 在本快速入门中，你将完成：
 
-1. 安装适用于 Windows 的 Docker
+1. 适用于 Windows 的已安装的 Docker
 2. 运行使用 Linux 容器上 Windows (LCOW) 的简单 Linux 容器
 
 本快速入门特定于 Windows 10。 可以在此页面左侧的目录中找到其他快速入门文档。
 
-## <a name="prerequisites"></a>先决条件
+## <a name="prerequisites"></a>系统必备
 
 请确保你满足以下要求：
-- 一个运行 Windows 10 专业版或企业 Fall Creators update （版本 1709年） 或更高版本的物理计算机系统
+- 一个运行 Windows 10 专业版或企业版 Fall Creators update （版本 1709年） 或更高版本的物理计算机系统
 - 请确保启用[HYPER-V](https://docs.microsoft.com/en-us/virtualization/hyper-v-on-windows/reference/hyper-v-requirements) 。
 
-***HYPER-V 隔离：*** Windows 上的 Linux 容器要求在 Windows 10 上的 HYPER-V 隔离才能为开发人员提供相应的 Linux 内核，若要运行该容器。 更多有关 HYPER-V 隔离可以找到[关于 Windows 容器](../about/index.md)页面上。
+***HYPER-V 隔离：*** Windows 上的 Linux 容器要求在 Windows 10 上的 HYPER-V 隔离才能为开发人员提供相应的 Linux 内核，若要运行该容器。 更多有关 HYPER-V 隔离可以找到[有关 Windows 容器](../about/index.md)页面上。
 
 ## <a name="install-docker-for-windows"></a>安装适用于 Windows 的 Docker
 
-[Docker for Windows](https://store.docker.com/editions/community/docker-ce-desktop-windows)下载并运行安装程序 （你将需要登录。 创建一个帐户如果你已经没有）。 Docker 文档中提供了[详细的安装说明](https://docs.docker.com/docker-for-windows/install)。
+[Docker for Windows](https://store.docker.com/editions/community/docker-ce-desktop-windows)下载并运行安装程序 （你将需要登录。 创建一个帐户如果你还没有）。 Docker 文档中提供了[详细的安装说明](https://docs.docker.com/docker-for-windows/install)。
 
-> 如果你已经安装 Docker，请确保你有 18.02 或更高版本来支持 LCOW 版本。 检查通过运行`docker -v`或检查*有关 Docker*。
+> 如果已安装 Docker，请确保您有 18.02 或更高版本来支持 LCOW 版本。 通过运行检查`docker -v`或检查*有关 Docker*。
 
-> 在实验性功能选项*Docker 设置 > 守护程序*必须激活该服务器才能运行 LCOW 容器。
+> 若要运行 LCOW 容器，必须激活*Docker 设置 > 守护程序*中的实验性功能选项。
 
 ## <a name="run-your-first-lcow-container"></a>运行你的第一个 LCOW 容器
 
@@ -60,7 +60,7 @@ docker run --rm busybox echo hello_world
 docker run --rm --platform linux busybox echo hello_world
 ```
 
-一旦已通过图像提取与平台所示，`--platform`标志也不再必需。 运行命令而无需它以对此进行测试。
+具有与平台，已拉取映像后`--platform`标志不再需要。 运行而无需它的命令对此进行测试。
 
 ```console
 docker run --rm busybox echo hello_world

@@ -8,21 +8,22 @@ ms.topic: article
 ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: 538871ba-d02e-47d3-a3bf-25cda4a40965
-ms.openlocfilehash: cf5173a98032820e1ad72e99e9b6e874dedbed83
-ms.sourcegitcommit: 1715411ac2768159cd9c9f14484a1cad5e7f2a5f
+ms.openlocfilehash: 001f1abaeefaf34e12b0f7e3323bf32140080d05
+ms.sourcegitcommit: a5ff22c205149dac4fc05325ef3232089826f1ef
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "9263514"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "9380001"
 ---
 # <a name="advanced-network-options-in-windows"></a>Windows 中的高级网络选项
+
 系统支持多个网络驱动程序选项，以便充分利用特定于 Windows 的功能和特性。 
 
 ## <a name="switch-embedded-teaming-with-docker-networks"></a>交换机嵌入式组合与 Docker 网络
 
-> 适用于所有网络驱动程序 
+> 适用于所有网络驱动程序
 
-通过使用 `-o com.docker.network.windowsshim.interface` 选项指定多个网络适配器（用逗号分隔）来创建供 Docker 使用的容器主机网络时，你可以充分利用[交换机嵌入式组合](https://technet.microsoft.com/en-us/windows-server-docs/networking/technologies/hyper-v-virtual-switch/rdma-and-switch-embedded-teaming#a-namebkmksswitchembeddedaswitch-embedded-teaming-set)。 
+通过使用 `-o com.docker.network.windowsshim.interface` 选项指定多个网络适配器（用逗号分隔）来创建供 Docker 使用的容器主机网络时，你可以充分利用[交换机嵌入式组合](https://technet.microsoft.com/en-us/windows-server-docs/networking/technologies/hyper-v-virtual-switch/rdma-and-switch-embedded-teaming#a-namebkmksswitchembeddedaswitch-embedded-teaming-set)。
 
 ```
 C:\> docker network create -d transparent -o com.docker.network.windowsshim.interface="Ethernet 2", "Ethernet 3" TeamedNet
@@ -30,7 +31,7 @@ C:\> docker network create -d transparent -o com.docker.network.windowsshim.inte
 
 ## <a name="set-the-vlan-id-for-a-network"></a>设置网络 VLAN ID
 
-> 适用于 transparent 和 l2bridge 网络驱动程序 
+> 适用于 transparent 和 l2bridge 网络驱动程序
 
 若要设置网络 VLAN ID，请将选项 `-o com.docker.network.windowsshim.vlanid=<VLAN ID>` 用于 `docker network create` 命令。 例如，你可以使用以下命令创建 VLAN ID 为 11 的透明网络：
 

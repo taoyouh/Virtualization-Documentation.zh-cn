@@ -1,15 +1,20 @@
 ---
 title: 关于 Windows 容器
 description: 了解 Windows 容器。
-keywords: 'docker, 容器'
+keywords: docker, 容器
 author: taylorb-microsoft
 ms.date: 05/02/2016
 ms.topic: article
 ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: 8e273856-3620-4e58-9d1a-d1e06550448
+ms.openlocfilehash: 6473c323c675fc59360dd982a14895a93743098a
+ms.sourcegitcommit: a5ff22c205149dac4fc05325ef3232089826f1ef
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "9380041"
 ---
-
 # <a name="containers-on-windows"></a>Windows 上的容器
 
 ## <a name="what-are-containers"></a>什么是容器
@@ -29,16 +34,15 @@ ms.assetid: 8e273856-3620-4e58-9d1a-d1e06550448
 请观看下面的简短概述：
 <iframe width="800" height="450" src="https://www.youtube.com/embed/Ryx3o0rD5lY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-
 ## <a name="container-fundamentals"></a>容器基础知识
 
 容器是独立的、资源受控制的和可移植的运行时环境，在主机或虚拟机上运行。 应用程序或在容器中运行的进程与所有需要的依赖项和配置文件; 打包它看来没有其他运行容器之外的过程。
 
 容器的主机为容器预配一组资源，且容器只会使用这些资源。 尽可能容器都知道，之外什么它已被授予不存在任何其他资源，因此容器不能接触可能已预配为相邻容器的资源。
 
-在你开始创建和使用 Windows 容器时，以下关键概念将会很有用。
+下面的关键概念将会很有帮助，在你开始创建和使用 Windows 容器。
 
-**容器主机：** 使用 Windows 容器功能配置的物理或虚拟计算机系统。 容器主机将运行一个或多个 Windows 容器。
+**容器主机：** 物理或虚拟计算机系统使用 Windows 容器功能配置。 容器主机将运行一个或多个 Windows 容器。
 
 **容器映像：** 在对容器文件系统或注册表进行修改时（如软件安装），将在沙盒中捕获这些修改。 在许多情况下，你可能希望捕获此状态，以便可以创建继承这些更改的新容器。 这就是映像的本质：一旦容器停止，你便可以放弃该沙盒，或者可以将其转换为新的容器映像。 例如，让我们想象你已从 Windows Server Core 操作系统映像部署一个容器。 然后你将 MySQL 安装到此容器中。 从此容器创建新映像将充当该容器的可部署版本。 此映像将只包含所做的更改 (MySQL)，但是将充当容器操作系统映像之上的一个层。
 
@@ -70,9 +74,9 @@ Windows 容器包括两个不同的容器类型或运行时。
 
 ![使用 Docker 容器](media/docker.png)
 
-同任何其他容器一样，可以通过 [Docker](https://www.docker.com) 管理 Windows Server 容器。
+就像任何其他容器，可以使用[Docker](https://www.docker.com)管理 Windows Server 容器。
 
-## <a name="containers-for-developers"></a>面向开发人员的容器 ##
+## <a name="containers-for-developers"></a>面向开发人员的容器
 
 从开发人员的桌面到测试计算机再到一组生产计算机，可以创建以相同方式在几秒内在任何环境中部署的 Docker 映像。 由此创造出了封装在 Docker 容器中的巨大且持续增长的应用程序生态系统，其中 DockerHub 是 Docker 所维护的公共容器化应用程序注册表，当前已在公共社区存储库中发布超过 180,000 个应用程序。
 
@@ -84,13 +88,14 @@ Windows 容器包括两个不同的容器类型或运行时。
 
 容器有助于开发人员更快地生成和交付更高质量的应用程序。
 
-## <a name="containers-for-it-professionals"></a>面向 IT 专业人员的容器 ##
+## <a name="containers-for-it-professionals"></a>面向 IT 专业人员的容器
 
 IT 专业人员可以使用容器来为其开发、QA 和生产团队提供标准化环境。 他们不再需要担心复杂的安装和配置步骤。 通过使用容器，系统管理员抽象出操作系统安装和底层基础结构中的差异。
 
 容器有助于管理员创建更易于更新和维护的基础结构。
 
 ## <a name="container-orchestrators"></a>容器 Orchestrator
+
 由于规模较小且面向应用程序，容器非常适合敏捷交付环境和基于微服务的体系结构。 借助容器和微服务，你可以在环境中轻松地部署成百上千个组件。  你可能能够手动管理几十台虚拟机或物理服务器，但却无法在非自动化的情况下管理生产级容器环境。  自动化和管理大量容器及其交互方式的任务称为协调。 
 
 标准定义的协调包含以下任务：

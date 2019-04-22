@@ -8,12 +8,12 @@ ms.topic: article
 ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: ebd79cd3-5fdd-458d-8dc8-fc96408958b5
-ms.openlocfilehash: d67b38b04cf781ab5cba8e0142831f71b65aa974
-ms.sourcegitcommit: 8ab1fccfc680911493c769157a6cfe7cbcf17bde
+ms.openlocfilehash: 4fac4d6e091fdf25e9683adca438302ca3beebfb
+ms.sourcegitcommit: a5ff22c205149dac4fc05325ef3232089826f1ef
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/17/2018
-ms.locfileid: "8972051"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "9380341"
 ---
 # <a name="troubleshooting"></a>疑难解答
 
@@ -28,7 +28,7 @@ Invoke-WebRequest https://aka.ms/Debug-ContainerHost.ps1 -UseBasicParsing | Invo
 
 
 ## <a name="finding-logs"></a>查找日志
-存在多个用于管理 Windows 容器的服务。 下一节将介绍为每个服务获取日志的位置。
+有多个用于管理 Windows 容器的服务。 下一节将介绍为每个服务获取日志的位置。
 
 # <a name="docker-engine"></a>Docker 引擎
 Docker 引擎会将事件记录到 Windows“应用程序”事件日志中，而不是某个文件中。 使用 Windows PowerShell 可以轻松读取、排序和筛选这些日志
@@ -93,7 +93,7 @@ sc.exe stop docker
 
 ## <a name="obtaining-stack-dump"></a>获取堆栈转储。
 
-通常情况下，这是仅由 Microsoft 支持或 docker 开发人员明确要求时非常有用。 它可用于帮助诊断 docker 似乎被挂起。 
+通常情况下，这是仅由 Microsoft 支持或 docker 开发人员明确要求的情况下很有用。 它可用于帮助诊断 docker 的显示位置被挂起。 
 
 下载 [docker signal.exe](https://github.com/jhowardmsft/docker-signal)。
 
@@ -104,7 +104,7 @@ Get-Process dockerd
 docker-signal -pid=<id>
 ```
 
-输出文件将位于的数据根目录目录 docker 是否在运行。 默认目录是 `C:\ProgramData\Docker`。 可以通过运行 `docker info -f "{{.DockerRootDir}}"` 来确认实际目录。
+输出文件将位于数据根目录中目录 docker 是否在运行。 默认目录是 `C:\ProgramData\Docker`。 可以通过运行 `docker info -f "{{.DockerRootDir}}"` 来确认实际目录。
 
 该文件将`goroutine-stacks-<timestamp>.log`。
 
