@@ -7,12 +7,12 @@ ms.date: 04/07/2018
 ms.topic: article
 ms.prod: windows-10-hyperv
 ms.assetid: f1e75efa-8745-4389-b8dc-91ca931fe5ae
-ms.openlocfilehash: d9531164022b99a4be9b3c8e09736828a2da2f61
-ms.sourcegitcommit: 0deb653de8a14b32a1cfe3e1d73e5d3f31bbe83b
+ms.openlocfilehash: 970e92def02e5386d38a2e72d5ef921aa8321fdf
+ms.sourcegitcommit: 08cc38955faad26f075b912a64b8ffb6b36f190c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2019
-ms.locfileid: "9576548"
+ms.locfileid: "9578680"
 ---
 # <a name="create-a-virtual-machine-with-hyper-v"></a>使用 Hyper-V 创建虚拟机
 
@@ -22,9 +22,9 @@ ms.locfileid: "9576548"
 
 选择你的操作系统以获取合适的一组说明：
 
-* [Windows 10 Fall Creators Update (版本 1709) 及更高版本](quick-create-virtual-machine.md#windows-10-fall-creators-update)
-* [Windows 10 创意者更新 (版本 1703)](quick-create-virtual-machine.md#windows-10-creators-update)
-* [Windows 10 周年更新 (版本 1607) 及更早版本](quick-create-virtual-machine.md#before-windows-10-creators-update)
+* [Windows 10 Fall Creators Update (版本 1709) 及更高版本](quick-create-virtual-machine.md#windows-10-fall-creators-update-windows-10-version-1709)
+* [Windows 10 创意者更新 (版本 1703)](quick-create-virtual-machine.md#windows-10-creators-update-windows-10-version-1703)
+* [Windows 10 周年更新 (版本 1607) 及更早版本](quick-create-virtual-machine.md#before-windows-10-creators-update-windows-10-version-1607-and-earlier)
 
 让我们开始吧。
 
@@ -81,7 +81,7 @@ ms.locfileid: "9576548"
 
 > **注意：** 除非你运行的是批量许可版本的 Windows，否则需要为虚拟机内运行的 Windows 提供单独的许可证。 虚拟机的操作系统独立于主机操作系统。
 
-## <a name="before-windows-10-creators-update-windows-10-version-1607-and-older"></a>Windows 10 创意者更新 (Windows 10 版本 1607 和更早版本) 之前
+## <a name="before-windows-10-creators-update-windows-10-version-1607-and-earlier"></a>Windows 10 创意者更新 (Windows 10 版本 1607 及更早版本) 之前
 
 如果运行的不是 Windows 10 创意者更新或更高版本，请按照以下说明进行操作并改用新的虚拟机向导：
 
