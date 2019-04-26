@@ -9,11 +9,11 @@ ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: edfd11c8-ee99-42d8-9878-efc126fe1826
 ms.openlocfilehash: 8597a93f035f5e451df8176d1563299120c95cb8
-ms.sourcegitcommit: a5ff22c205149dac4fc05325ef3232089826f1ef
+ms.sourcegitcommit: 0deb653de8a14b32a1cfe3e1d73e5d3f31bbe83b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "9380171"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "9578418"
 ---
 # <a name="linux-containers-on-windows"></a>Windows 上的 Linux 容器
 

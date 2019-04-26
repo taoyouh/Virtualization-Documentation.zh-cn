@@ -9,11 +9,11 @@ ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: ba4eb594-0cdb-4148-81ac-a83b4bc337bc
 ms.openlocfilehash: 35f35b490ce5aa80068578d78a6427ace7352b73
-ms.sourcegitcommit: a5ff22c205149dac4fc05325ef3232089826f1ef
+ms.sourcegitcommit: 0deb653de8a14b32a1cfe3e1d73e5d3f31bbe83b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "9380161"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "9574978"
 ---
 # <a name="container-host-deployment-windows-server"></a>容器主机部署： Windows Server
 

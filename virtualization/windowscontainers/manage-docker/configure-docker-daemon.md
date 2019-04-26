@@ -9,11 +9,11 @@ ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: 6885400c-5623-4cde-8012-f6a00019fafa
 ms.openlocfilehash: 24de3d332ae4634f7dca945c1df9182cc1310089
-ms.sourcegitcommit: a5ff22c205149dac4fc05325ef3232089826f1ef
+ms.sourcegitcommit: 0deb653de8a14b32a1cfe3e1d73e5d3f31bbe83b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "9380331"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "9574738"
 ---
 # <a name="docker-engine-on-windows"></a>Windows 上的 Docker 引擎
 

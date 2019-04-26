@@ -9,11 +9,11 @@ ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: 25de368c-5a10-40a4-b4aa-ac8c9a9ca022
 ms.openlocfilehash: 69783f0fc3dcc80eb9614031dc6c9b2c35eeefd1
-ms.sourcegitcommit: a5ff22c205149dac4fc05325ef3232089826f1ef
+ms.sourcegitcommit: 0deb653de8a14b32a1cfe3e1d73e5d3f31bbe83b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "9380231"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "9577138"
 ---
 # <a name="frequently-asked-questions"></a>常见问题解答
 

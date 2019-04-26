@@ -9,18 +9,18 @@ description: 如何为 Windows 服务运行 Kubernetes 组件。
 keywords: kubernetes，1.13，windows，入门
 ms.assetid: 3b05d2c2-4b9b-42b4-a61b-702df35f5c18
 ms.openlocfilehash: 6c68edda6e2017640b0a490c3c30f063c81698b3
-ms.sourcegitcommit: 41318edba7459a9f9eeb182bf8519aac0996a7f1
+ms.sourcegitcommit: 0deb653de8a14b32a1cfe3e1d73e5d3f31bbe83b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "9120586"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "9578638"
 ---
 # <a name="kubernetes-components-as-windows-services"></a>作为 Windows 服务的 Kubernetes 组件 
 
 某些用户可能想要配置如 flanneld.exe、 kubelet.exe、 kube proxy.exe 或其他人作为 Windows 服务运行的进程。 这带来了自动重启后意外的进程或节点崩溃的流程如其他容错好处。
 
 
-## <a name="prerequisites"></a>先决条件
+## <a name="prerequisites"></a>系统必备
 1. 你已下载到[nssm.exe](https://nssm.cc/download) `c:\k`目录
 2. 已加入到群集的节点和以前在节点上运行[install.ps1](https://github.com/Microsoft/SDN/tree/master/Kubernetes/flannel/install.ps1)或[start.ps1](https://github.com/Microsoft/SDN/blob/master/Kubernetes/flannel/start.ps1)脚本
 

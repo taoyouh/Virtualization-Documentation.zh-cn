@@ -8,12 +8,12 @@ ms.topic: article
 ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: 538871ba-d02e-47d3-a3bf-25cda4a40965
-ms.openlocfilehash: 77e515e5e73d1d9e32b839c568ff3e4faf961c3c
-ms.sourcegitcommit: a5ff22c205149dac4fc05325ef3232089826f1ef
+ms.openlocfilehash: 1c0a3fd25a5572604db59e0c68d8b4a3d84b00e9
+ms.sourcegitcommit: 0deb653de8a14b32a1cfe3e1d73e5d3f31bbe83b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "9380111"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "9576308"
 ---
 # <a name="network-isolation-and-security"></a>网络隔离和安全
 

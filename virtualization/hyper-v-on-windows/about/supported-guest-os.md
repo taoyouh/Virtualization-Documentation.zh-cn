@@ -8,11 +8,11 @@ ms.topic: article
 ms.prod: windows-10-hyperv
 ms.assetid: ae4a18ed-996b-4104-90c5-539c90798e4c
 ms.openlocfilehash: c14027e6ba1b0cd475ec1543205b315240662f2c
-ms.sourcegitcommit: af70dedc4224f4b7faac65743ef6a89c64e19ffd
+ms.sourcegitcommit: 0deb653de8a14b32a1cfe3e1d73e5d3f31bbe83b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/17/2018
-ms.locfileid: "8972094"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "9575858"
 ---
 # <a name="supported-windows-guests"></a>受支持的 Windows 来宾
 

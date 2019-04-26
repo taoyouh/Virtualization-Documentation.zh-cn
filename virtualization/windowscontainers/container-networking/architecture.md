@@ -8,12 +8,12 @@ ms.topic: article
 ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: 538871ba-d02e-47d3-a3bf-25cda4a40965
-ms.openlocfilehash: a8585c387355a6742880d749c7330db07af7a1d8
-ms.sourcegitcommit: a5ff22c205149dac4fc05325ef3232089826f1ef
+ms.openlocfilehash: ac0088995dfbda73351d39a494435c431e0939e7
+ms.sourcegitcommit: 0deb653de8a14b32a1cfe3e1d73e5d3f31bbe83b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "9379991"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "9576328"
 ---
 # <a name="windows-container-networking"></a>Windows 容器网络
 

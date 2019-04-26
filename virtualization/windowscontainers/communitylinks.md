@@ -9,11 +9,11 @@ ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: cfbb2542-fead-48e7-8318-4da92a7b5b6f
 ms.openlocfilehash: 24d90b83a1a20e8243297baa6466428b5fb30303
-ms.sourcegitcommit: a5ff22c205149dac4fc05325ef3232089826f1ef
+ms.sourcegitcommit: 0deb653de8a14b32a1cfe3e1d73e5d3f31bbe83b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "9380191"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "9574998"
 ---
 # <a name="community-videos-and-blogs"></a>社区视频和博客
 

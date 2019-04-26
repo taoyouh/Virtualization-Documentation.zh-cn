@@ -9,11 +9,11 @@ ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: bb2848ca-683e-4361-a750-0d1d14ec8031
 ms.openlocfilehash: 5d9e95d2263c9603712054376bfa9e7190feb1b0
-ms.sourcegitcommit: a5ff22c205149dac4fc05325ef3232089826f1ef
+ms.sourcegitcommit: 0deb653de8a14b32a1cfe3e1d73e5d3f31bbe83b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "9380401"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "9576859"
 ---
 # <a name="optimize-windows-dockerfiles"></a>优化 Windows Dockerfile
 

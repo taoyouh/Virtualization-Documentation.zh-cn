@@ -8,12 +8,12 @@ ms.topic: article
 ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: 42154683-163b-47a1-add4-c7e7317f1c04
-ms.openlocfilehash: 4ab473c1752c377955bb23bdf6c9ef83a3336aa8
-ms.sourcegitcommit: a5ff22c205149dac4fc05325ef3232089826f1ef
+ms.openlocfilehash: 2ff2d1204e1f973d49af5e1d4441e4eacd946101
+ms.sourcegitcommit: 0deb653de8a14b32a1cfe3e1d73e5d3f31bbe83b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "9380121"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "9576898"
 ---
 # <a name="hyper-v-isolation"></a>Hyper-V 隔离
 

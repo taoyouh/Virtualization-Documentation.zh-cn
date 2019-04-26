@@ -9,11 +9,11 @@ ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: 5ceb9626-7c48-4d42-81f8-9c936595ad85
 ms.openlocfilehash: d3543d9e6f9e28278ab9f64fb1f4fa19d1507b08
-ms.sourcegitcommit: a5ff22c205149dac4fc05325ef3232089826f1ef
+ms.sourcegitcommit: 0deb653de8a14b32a1cfe3e1d73e5d3f31bbe83b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "9380441"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "9574788"
 ---
 # <a name="getting-started-with-swarm-mode"></a>群模式入门 
 

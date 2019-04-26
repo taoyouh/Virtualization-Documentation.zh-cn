@@ -4,11 +4,11 @@ description: 在 Windows 上的容器存在哪些设备支持
 keywords: docker，容器，设备硬件
 author: cwilhit
 ms.openlocfilehash: 18ae4ab229a677c63c3e17d684a3c3193df49c5e
-ms.sourcegitcommit: 3c81b0efd1ac2c4c93d58f16edae1044c9a5ad55
+ms.sourcegitcommit: 0deb653de8a14b32a1cfe3e1d73e5d3f31bbe83b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/05/2019
-ms.locfileid: "9284591"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "9576678"
 ---
 # <a name="devices-in-containers-on-windows"></a>在 Windows 上的容器中的设备
 

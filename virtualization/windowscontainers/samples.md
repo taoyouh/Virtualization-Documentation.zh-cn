@@ -9,11 +9,11 @@ ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: 5c6f6350-f8d6-4426-b53d-9fb09c2bf267
 ms.openlocfilehash: fb6910f535337d25b7635ffe339345a7063daa92
-ms.sourcegitcommit: a5ff22c205149dac4fc05325ef3232089826f1ef
+ms.sourcegitcommit: 0deb653de8a14b32a1cfe3e1d73e5d3f31bbe83b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "9380271"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "9574548"
 ---
 # <a name="windows-container-samples"></a>Windows 容器示例
 
