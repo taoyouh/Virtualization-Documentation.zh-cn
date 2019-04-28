@@ -1,20 +1,15 @@
 ---
 title: 关于 Windows 容器
 description: 了解 Windows 容器。
-keywords: docker, 容器
+keywords: 'docker, 容器'
 author: taylorb-microsoft
 ms.date: 05/02/2016
 ms.topic: article
 ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: 8e273856-3620-4e58-9d1a-d1e06550448
-ms.openlocfilehash: e3d260bd65b6f81bc4ea9c305937f2784192d28a
-ms.sourcegitcommit: 0deb653de8a14b32a1cfe3e1d73e5d3f31bbe83b
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "9576408"
 ---
+
 # <a name="containers-on-windows"></a>Windows 上的容器
 
 ## <a name="what-are-containers"></a>什么是容器
