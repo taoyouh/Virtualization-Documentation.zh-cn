@@ -11,7 +11,7 @@
 - 一个运行 Windows 预览体验计划中最新 Windows Server 版本和/或 Windows 预览体验计划中最新 Windows 10 版本的计算机系统（物理或虚拟）。
 
 > [!IMPORTANT]
-> 你必须使用 Windows Server Insider Preview 计划中的 Windows Server 版本或 Windows Insider Preview 计划使用基本映像中的 Windows 10 版本如下所述。 如果你没有使用这些版本中的其中一个，使用这些基本映像将导致启动容器失败。
+> 你必须使用 Windows Server Insider Preview 计划中的 Windows Server 版本或 Windows Insider Preview 计划使用的基本映像中的 Windows 10 版本如下所述。 如果你没有使用这些版本中的其中一个，使用这些基本映像将导致启动容器失败。
 
 ## <a name="install-docker-enterprise-edition-ee"></a>安装 Docker 企业版 (EE)
 
@@ -20,7 +20,7 @@
 安装 Docker EE 将用到 OneGet 提供程序 PowerShell 模块。 提供程序将启用计算机上的容器功能，并安装 Docker EE - 此操作需要重启计算机。 打开提升的 PowerShell 会话并运行下列命令。
 
 > [!NOTE]
-> 使用 Windows Server 会员版本安装 Docker EE 需要比于非会员版本不同的 OneGet 提供程序。 如果已安装 Docker EE 和 DockerMsftProvider OneGet 提供程序，请在继续操作前先将它们移除。
+> 与 Windows Server 会员版本安装 Docker EE 需要比于非会员版本使用不同的 OneGet 提供程序。 如果已安装 Docker EE 和 DockerMsftProvider OneGet 提供程序，请在继续操作前先将它们移除。
 
 ```powershell
 Stop-Service docker

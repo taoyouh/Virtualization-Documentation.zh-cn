@@ -8,11 +8,11 @@ ms.topic: article
 ms.prod: windows-10-hyperv
 ms.assetid: eb2b827c-4a6c-4327-9354-50d14fee7ed8
 ms.openlocfilehash: d71c5d2ae3c8ff78e36cc54686b10b1dc745e0c3
-ms.sourcegitcommit: 5e5644bff6dba70e384db6c80787b3bbe7adb93c
+ms.sourcegitcommit: 0deb653de8a14b32a1cfe3e1d73e5d3f31bbe83b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/03/2018
-ms.locfileid: "4303903"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "9576348"
 ---
 # <a name="introduction-to-hyper-v-on-windows-10"></a>Windows 10 上的 Hyper-V 简介
 

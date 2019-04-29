@@ -1,15 +1,20 @@
 ---
 title: 在 Windows 文档的容器
 description: 在 Windows 上运行容器的文档
-keywords: 'docker, 容器'
+keywords: docker, 容器
 author: cwilhit
 ms.date: 05/02/2016
 ms.topic: article
 ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: 74c9d604-0915-4d89-bc69-0263b76bc66b
+ms.openlocfilehash: cc869cfaf1c433fbfdc351e9120a0e43c02967ee
+ms.sourcegitcommit: 0deb653de8a14b32a1cfe3e1d73e5d3f31bbe83b
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "9574838"
 ---
-
 # <a name="containers-on-windows-documentation"></a>在 Windows 文档的容器
 
 Windows 容器提供操作系统级别的虚拟化，允许多个独立的应用程序在单个系统上运行。 此文档集提供了快速入门指南、部署指南和有关管理操作的技术详细信息。
@@ -35,7 +40,7 @@ Windows 容器提供操作系统级别的虚拟化，允许多个独立的应用
 * [容器网络](container-networking/architecture.md)
 
 ## <a name="watch"></a>观看
-对来自 Windows 容器团队的演示和访谈感兴趣？
+在来自 Windows 容器团队演示和访谈感兴趣？
 * [容器频道](https://channel9.msdn.com/Blogs/containers)
 
 ## <a name="community"></a>社区

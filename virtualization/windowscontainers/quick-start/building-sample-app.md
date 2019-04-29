@@ -8,11 +8,11 @@ ms.topic: article
 ms.prod: windows-containers
 ms.service: windows-containers
 ms.openlocfilehash: 970f039e97ce0628c7a7f78c417017fc95570f82
-ms.sourcegitcommit: 51da93c4548c5df7a9f01e54d46d81b338c874cf
+ms.sourcegitcommit: 0deb653de8a14b32a1cfe3e1d73e5d3f31bbe83b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/28/2019
-ms.locfileid: "9031161"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "9576878"
 ---
 # <a name="build-a-sample-app"></a>生成示例应用
 

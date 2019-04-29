@@ -8,10 +8,11 @@ ms.topic: article
 ms.prod: windows-10-hyperv
 ms.assetid: 66723f33-b12c-49d1-82cf-71ba9d6087e9
 ms.openlocfilehash: 4ded2de1447db467359b028d19482a76e2c484fc
-ms.sourcegitcommit: 94e8ae4be1b0d3d13fca06e0775dd2aab895a12c
-ms.translationtype: HT
+ms.sourcegitcommit: 0deb653de8a14b32a1cfe3e1d73e5d3f31bbe83b
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "9576378"
 ---
 # <a name="create-virtual-machine-with-hyper-v-on-windows-10"></a>在 Windows 10 上使用 Hyper-V 创建虚拟机
 
@@ -26,7 +27,7 @@ ms.lasthandoff: 04/26/2018
 1. 查看“开始之前”内容，然后单击“**下一步**”。
 
 1. 为虚拟机命名。
-  > **注意：**这是 Hyper-V 用于虚拟机的名称，而不是提供给来宾系统的将部署到虚拟机内的计算机名称。
+  > **注意：** 这是 Hyper-V 用于虚拟机的名称，而不是提供给来宾系统的将部署到虚拟机内的计算机名称。
 
 1. 选择将存储虚拟机文件的位置，例如 **c:\virtualmachine**。 还可以接受默认位置。 操作完成后，单击“**下一步**”。
     
@@ -96,10 +97,10 @@ ms.lasthandoff: 04/26/2018
 
 2. 在 VMConnect 中，单击绿色的“启动”按钮。 这类似于按物理计算机上的电源按钮。 系统可能会提示你“按任意键以从 CD 或 DVD 启动”。 按照提示继续操作。
 
-  > **注意：**可能需要在 VMConnect 窗口内单击，以确保你的击键会发送到虚拟机。
+  > **注意：** 可能需要在 VMConnect 窗口内单击，以确保你的击键会发送到虚拟机。
 
 3. 该虚拟机将启动到安装程序，并可指导你完成安装过程（如同在物理计算机上）。
 
   ![](media/OSDeploy_upd.png) 
 
-  > **注意：**除非你运行的是批量许可版本的 Windows，否则需要为虚拟机内运行的 Windows 提供单独的许可证。 虚拟机的操作系统独立于主机操作系统。
+  > **注意：** 除非你运行的是批量许可版本的 Windows，否则需要为虚拟机内运行的 Windows 提供单独的许可证。 虚拟机的操作系统独立于主机操作系统。

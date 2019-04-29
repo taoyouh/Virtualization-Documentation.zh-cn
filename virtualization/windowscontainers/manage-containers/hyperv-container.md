@@ -8,12 +8,12 @@ ms.topic: article
 ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: 42154683-163b-47a1-add4-c7e7317f1c04
-ms.openlocfilehash: db0f8c45c1cdb6617e4c347251284509e2a7d3bc
-ms.sourcegitcommit: 914e0dd1168daf1d2b0f22bd011035016cc08baf
+ms.openlocfilehash: 2ff2d1204e1f973d49af5e1d4441e4eacd946101
+ms.sourcegitcommit: 0deb653de8a14b32a1cfe3e1d73e5d3f31bbe83b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "9099335"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "9576898"
 ---
 # <a name="hyper-v-isolation"></a>Hyper-V 隔离
 
@@ -35,9 +35,9 @@ docker run -it --isolation=hyperv mcr.microsoft.com/windows/nanoserver:1809 cmd
 
 ### <a name="isolation-explanation"></a>隔离说明
 
-此示例演示了隔离功能在 Windows Server 和 HYPER-V 容器之间的差异。 
+此示例演示了隔离功能在 Windows Server 和 HYPER-V 隔离之间的差异。
 
-此处，进程隔离的容器正在部署，并将承载一个长时间运行的 ping 进程。
+此处，进程隔离的容器正在部署，并将承载一个长时间运行 ping 进程。
 
 ``` cmd
 docker run -d mcr.microsoft.com/windows/servercore:1809 ping localhost -t
@@ -61,7 +61,7 @@ Handles  NPM(K)    PM(K)      WS(K) VM(M)   CPU(s)     Id  SI ProcessName
      67       5      820       3836 ...71     0.03   3964   3 PING
 ```
 
-为了便于对比，此示例使用 ping 进程启动 HYPER-V 隔离的容器。 
+为了便于对比，此示例使用 ping 进程启动 HYPER-V 隔离的容器。
 
 ```
 docker run -d --isolation=hyperv mcr.microsoft.com/windows/nanoserver:1809 ping -t localhost

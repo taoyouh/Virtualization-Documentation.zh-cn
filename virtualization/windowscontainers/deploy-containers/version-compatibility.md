@@ -4,11 +4,11 @@ description: Windows 如何跨多个版本运行内部版本和容器
 keywords: 元数据, 容器, 版本
 author: taylorb-microsoft
 ms.openlocfilehash: c744da429ed8116363437d3117ae1432d7a94f8d
-ms.sourcegitcommit: 4412583b77f3bb4b2ff834c7d3f1bdabac7aafee
+ms.sourcegitcommit: 0deb653de8a14b32a1cfe3e1d73e5d3f31bbe83b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "6948076"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "9574948"
 ---
 # <a name="windows-container-version-compatibility"></a>Windows 容器版本兼容性
 

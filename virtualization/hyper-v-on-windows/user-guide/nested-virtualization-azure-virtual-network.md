@@ -9,11 +9,11 @@ ms.prod: windows-10-hyperv
 ms.service: windows-10-hyperv
 ms.assetid: 1ecb85a6-d938-4c30-a29b-d18bd007ba08
 ms.openlocfilehash: 18ab4d1d87c22f70fe09aae5222a7d125ac9c974
-ms.sourcegitcommit: 914e0dd1168daf1d2b0f22bd011035016cc08baf
+ms.sourcegitcommit: 0deb653de8a14b32a1cfe3e1d73e5d3f31bbe83b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "9099385"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "9578668"
 ---
 # <a name="configure-nested-vms-to-communicate-with-resources-in-an-azure-virtual-network"></a>配置嵌套虚拟机与 Azure 虚拟网络中的资源进行通信
 

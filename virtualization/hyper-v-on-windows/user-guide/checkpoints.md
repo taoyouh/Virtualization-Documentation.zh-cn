@@ -9,11 +9,11 @@ ms.prod: windows-10-hyperv
 ms.service: windows-10-hyperv
 ms.assetid: d9c398c4-ee72-45c6-9ce8-4f06569dae6c
 ms.openlocfilehash: 7ed9c5e3c3067bd8ddfa8005f4d9307c76dce4cd
-ms.sourcegitcommit: 4412583b77f3bb4b2ff834c7d3f1bdabac7aafee
+ms.sourcegitcommit: 0deb653de8a14b32a1cfe3e1d73e5d3f31bbe83b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "6948026"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "9575398"
 ---
 # <a name="using-checkpoints-to-revert-virtual-machines-to-a-previous-state"></a>使用检查点将虚拟机恢复到以前的状态
 
@@ -116,7 +116,7 @@ Get-VMCheckpoint -VMName <VMName>
 
 ## <a name="renaming-checkpoints"></a>重命名检查点
 
-在某个特定点上创建多个检查点。  通过为其提供可识别名称易于创建检查点时记住有关系统状态的详细信息。
+在某个特定点上创建多个检查点。  为其提供可识别名称易于创建检查点时记住有关系统状态的详细信息。
 
 默认情况下，检查点的名称是虚拟机的名称与采用该检查点时的日期和时间的组合。 这是标准格式： 
 
@@ -229,7 +229,7 @@ This folder will contain the .VMRS file with the runtime and saved state data an
 
 1. 登录到虚拟机并创建新的文本文件。 如果你按照上一练习中，你可以使用现有文本文件。
 2. 在该文本文件中输入“这是生产检查点”， 在文本文件中，保存该文件，但**不要关闭记事本**。
-3. 打开 HYPER-V 管理器、 右键单击虚拟机，然后选择**检查点**。
+3. 打开 HYPER-V 管理器，右键单击虚拟机，然后选择**检查点**。
 4. 在“生产检查点创建”窗口上，单击**确定**。
 
 <br />
@@ -240,7 +240,7 @@ This folder will contain the .VMRS file with the runtime and saved state data an
 现在，检查点已存在，对系统进行修改，然后应用该检查点以将该虚拟机恢复为已保存状态。 
 
 1. 关闭该文本文件，如果它是仍打开和删除从虚拟机的桌面。
-2. 打开 HYPER-V 管理器、 右键单击生产检查点，然后选择**应用**。
+2. 打开 HYPER-V 管理器，右键单击生产检查点，并选择**应用**。
 3. 在“应用检查点通知”窗口上，选择**应用**。
 
 应用生产检查点后，请注意，该虚拟机将处于关闭状态。

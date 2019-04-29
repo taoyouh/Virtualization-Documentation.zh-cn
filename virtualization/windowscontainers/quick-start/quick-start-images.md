@@ -8,12 +8,12 @@ ms.topic: article
 ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: 479e05b1-2642-47c7-9db4-d2a23592d29f
-ms.openlocfilehash: a28b9ced2c9669b65bfa02bd02c1061226dcea7e
-ms.sourcegitcommit: f172d14ef1ebfb5a9df1b3529e0722d9103e0eba
+ms.openlocfilehash: 41fa89dcaba38d43d39681240a1a108c9250ba78
+ms.sourcegitcommit: 0deb653de8a14b32a1cfe3e1d73e5d3f31bbe83b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "9112914"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "9575168"
 ---
 # <a name="automating-builds-and-saving-images"></a>自动生成和保存映像
 
@@ -21,12 +21,12 @@ ms.locfileid: "9112914"
 
 本快速入门特定于 Windows Server 2019 和 Windows Server 2016 上的 Windows Server 容器且会使用 Windows Server Core 容器基本映像。 此页面左侧的目录中提供其他快速入门文档。
 
-## <a name="prerequisites"></a>先决条件
+## <a name="prerequisites"></a>系统必备
 
 请确保你满足以下要求：
 
 - 一台计算机系统 （物理或虚拟） 运行 Windows Server 2019 或 Windows Server 2016。
-- 使用 Windows 容器功能和 Docker 配置此系统。 有关这些步骤的演练，请参阅 [Windows Server 上的 Windows 容器](./quick-start-windows-server.md)。
+- 使用 Windows 容器功能和 Docker 配置此系统。 有关这些步骤的演练，请参阅[Windows Server 上的 Windows 容器](./quick-start-windows-server.md)。
 - 一个用于将容器映像推送到 Docker Hub 的 Docker ID。 如果还没有 Docker ID，请在 [Docker 云](https://cloud.docker.com/)中进行注册。
 
 ## <a name="container-image---dockerfile"></a>容器映像-Dockerfile

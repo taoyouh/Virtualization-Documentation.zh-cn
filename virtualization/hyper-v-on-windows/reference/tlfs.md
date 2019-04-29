@@ -9,11 +9,11 @@ ms.prod: windows-10-hyperv
 ms.service: windows-10-hyperv
 ms.assetid: aee64ad0-752f-4075-a115-2d6b983b4f49
 ms.openlocfilehash: 26eaca5a583f8b2e11ca1e05e2fa9a4366fd8837
-ms.sourcegitcommit: 594cc1728347646609ae1952ecc6c97fc659d0a9
-ms.translationtype: HT
+ms.sourcegitcommit: 0deb653de8a14b32a1cfe3e1d73e5d3f31bbe83b
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "2226203"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "9577408"
 ---
 # <a name="hypervisor-specifications"></a>虚拟机监控程序规范
 

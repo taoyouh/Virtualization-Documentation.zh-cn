@@ -9,11 +9,11 @@ ms.prod: windows-10-hyperv
 ms.service: windows-10-hyperv
 ms.assetid: 532195c6-564b-4954-97c2-5a5795368c09
 ms.openlocfilehash: 2079898ee4a3bd7d15e3cbbaea40486d1682a44a
-ms.sourcegitcommit: 4090d158dd3573ea90799de5b014c131a206b000
+ms.sourcegitcommit: 0deb653de8a14b32a1cfe3e1d73e5d3f31bbe83b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "6121557"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "9578288"
 ---
 # <a name="create-a-virtual-network"></a>创建虚拟网络
 

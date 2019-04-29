@@ -1,7 +1,7 @@
 ---
-title: "社区资源"
-description: "社区资源"
-keywords: "windows 10, hyper-v, 容器, docker"
+title: 社区资源
+description: 社区资源
+keywords: windows 10, hyper-v, 容器, docker
 author: scooley
 ms.date: 05/02/2016
 ms.topic: article
@@ -9,16 +9,17 @@ ms.prod: virtualization
 ms.service: virtualization
 ms.assetid: 731ed95a-ce13-4c6e-a450-49563bdc498c
 ms.openlocfilehash: d4fd2dbaf362ac3ad52667743177a203174b397d
-ms.sourcegitcommit: 65de5708bec89f01ef7b7d2df2a87656b53c3145
-ms.translationtype: HT
+ms.sourcegitcommit: 0deb653de8a14b32a1cfe3e1d73e5d3f31bbe83b
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/21/2017
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "9578566"
 ---
-# 参与编辑文档
+# <a name="contribute-to-the-docs"></a>参与编辑文档
 
-> **注意：**若要参与，必须具有 [GitHub](https://www.github.com) 帐户。
+> **注意：** 若要参与，必须具有 [GitHub](https://www.github.com) 帐户。
 
-## 编辑现有的文档
+## <a name="edit-an-existing-doc"></a>编辑现有的文档
 
 1. 查找你想要编辑的文档。  
 
@@ -59,18 +60,18 @@ ms.lasthandoff: 07/21/2017
 
 7. 创建[拉取请求](contribute-to-docs.md#pull-requests)  
 
-## 拉取请求
+## <a name="pull-requests"></a>拉取请求
 
 大多数更改将通过拉取请求提交  拉取请求是一种通过多个查看器查看更改集、对当前内容进行更改和注释的方式。
 
 
-## 本地分叉和编辑存储库
+## <a name="fork-the-repo-and-edit-locally"></a>本地分叉和编辑存储库
 
 对于长期的文档任务，请在本地克隆存储库，并在计算机上处理。
 
 以下指南向你展示如何模拟我的（Sarah Cooley 的）设置。  有许多同等有效的替代设置。
 
-> **注意：**所有这些文档工具在 Linux/OSX 上同等有效。  如果需要其他指南，请提出。
+> **注意：** 所有这些文档工具在 Linux/OSX 上同等有效。  如果需要其他指南，请提出。
 
 这分为三个部分：
 * [设置 Git](contribute-to-docs.md#set-up-git)
@@ -85,7 +86,7 @@ ms.lasthandoff: 07/21/2017
   * 用于 Git 的 VSCode 介绍一些方便的功能
   * 进行首个提交。
 
-### 设置 Git
+### <a name="set-up-git"></a>设置 Git
 
 1. 从[此处](https://git-for-windows.github.io/)安装 git（在 Windows 上）
 
@@ -179,7 +180,7 @@ ms.lasthandoff: 07/21/2017
   }
   ```
 
-### 验证并存储凭据
+### <a name="validate-and-stash-credentials"></a>验证并存储凭据
 
   若要验证已正确设置的存储库，请尝试拉取新内容。
 
@@ -188,7 +189,7 @@ ms.lasthandoff: 07/21/2017
   ```
 
 
-### 设置 markdown 编辑环境
+### <a name="set-up-markdown-editing-environment"></a>设置 markdown 编辑环境
 
 1. 下载 VSCode
 

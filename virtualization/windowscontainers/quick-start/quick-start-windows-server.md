@@ -8,12 +8,12 @@ ms.topic: article
 ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: e3b2a4dc-9082-4de3-9c95-5d516c03482b
-ms.openlocfilehash: b58bdd79da1c644281ebd9e79c16587d9fc156f4
-ms.sourcegitcommit: 21d93e5febd9b1b47ae1aa59d08086e6ec1691e0
+ms.openlocfilehash: fd2de24a4c8c03817978a53b340e2a77285c69ad
+ms.sourcegitcommit: 0deb653de8a14b32a1cfe3e1d73e5d3f31bbe83b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "9121039"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "9576708"
 ---
 # <a name="windows-containers-on-windows-server"></a>Windows Server 上的 Windows 容器
 
@@ -29,12 +29,12 @@ ms.locfileid: "9121039"
 
 本快速入门仅适用于 Windows Server 2019 和 Windows Server 2016 上的 Windows Server 容器。 此页面左侧的目录中提供其他快速入门文档，包括 Windows 10 中的容器。
 
-## <a name="prerequisites"></a>先决条件
+## <a name="prerequisites"></a>系统必备
 
 请确保你满足以下要求：
 - 运行 Windows Server 2019 一台计算机系统 （物理或虚拟）。 如果你使用的 Windows Server 2019 Insider Preview，请更新[Window Server 2019 Evaluation](https://www.microsoft.com/en-us/evalcenter/evaluate-windows-server-2019 )。
 
-> 需要安装关键更新，才能让 Windows 容器功能正常运作。 请在进行本教程所述操作前安装所有更新。
+> 为了让 Windows 容器功能正常运作需要安装关键更新。 请在进行本教程所述操作前安装所有更新。
 
 若要在 Azure 上部署，可使用此[模板](https://github.com/Microsoft/Virtualization-Documentation/tree/master/windows-server-container-tools/containers-azure-template)轻松进行部署。
 

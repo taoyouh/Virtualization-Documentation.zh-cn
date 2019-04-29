@@ -8,16 +8,16 @@ ms.prod: containers
 description: 编译和交叉编译源中的 Kubernetes 二进制文件。
 keywords: kubernetes，1.12，linux，编译
 ms.openlocfilehash: 40bf7e65a8910cdab095abb269aa0a92508189cd
-ms.sourcegitcommit: 8e9252856869135196fd054e3cb417562f851b51
+ms.sourcegitcommit: 0deb653de8a14b32a1cfe3e1d73e5d3f31bbe83b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/08/2018
-ms.locfileid: "6178870"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "9574818"
 ---
 # <a name="compiling-kubernetes-binaries"></a>编译 Kubernetes 二进制文件 #
 编译 Kubernetes 需要有效的 Go 环境。 此页面将逐一介绍编译 Linux 二进制文件和交叉编译 Windows 二进制文件的一些方法。
 > [!NOTE] 
-> 此页面是完全自愿和仅包含的感兴趣的 Kubernetes 开发人员想要尝试使用最新和最大程度地源代码。
+> 此页面是完全自愿和仅包含的感兴趣的 Kubernetes 开发人员想要尝试的最新的 & 最大程度地源代码。
 
 > [!tip]
 > 若要接收有关你可以订阅的最新进展通知[@kubernetes-announce](https://groups.google.com/forum/#!forum/kubernetes-announce)。

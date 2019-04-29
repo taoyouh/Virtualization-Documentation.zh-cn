@@ -8,16 +8,16 @@ ms.topic: article
 ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: bb2848ca-683e-4361-a750-0d1d14ec8031
-ms.openlocfilehash: aad0c1f2fa7aea564b7348d662df46256a82abc4
-ms.sourcegitcommit: f376676c7864ae19fcb1649006ce6b60c6218634
+ms.openlocfilehash: 5d9e95d2263c9603712054376bfa9e7190feb1b0
+ms.sourcegitcommit: 0deb653de8a14b32a1cfe3e1d73e5d3f31bbe83b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "8989446"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "9576859"
 ---
 # <a name="optimize-windows-dockerfiles"></a>优化 Windows Dockerfile
 
-有几种方法可用来优化 Docker build 过程和生成的 Docker 映像。 本文档详细介绍了 Docker build 过程的操作原理，并演示了使用 Windows 容器创建最佳映像所用的几种策略。
+有几种方法可用来优化 Docker build 过程和生成的 Docker 映像。 使用 Windows 容器创建本文档详细介绍如何 Docker build 过程进行操作，并演示了一些可用于最佳映像的策略。
 
 ## <a name="docker-build"></a>Docker Build
 
@@ -54,9 +54,9 @@ f0e017e5b088        21 seconds ago       cmd /S /C echo "Hello World - Dockerfil
 
 ## <a name="optimize-image-size"></a>优化映像大小
 
-构建 Docker 容器映像时，映像大小可能是一个重要因素。 容器映像在注册表和主机之间移动、导出和导入，最终占用了空间。 在 Docker build 过程中，可采用几种策略尽可能减小映像大小。 本部分详细介绍一些特定于 Windows 容器的策略。 
+构建 Docker 容器映像时，映像大小可能是一个重要因素。 容器映像在注册表和主机之间移动、导出和导入，最终占用了空间。 在 Docker build 过程中，可采用几种策略尽可能减小映像大小。 本部分详细介绍一些特定于 Windows 容器的策略。
 
-有关 Dockerfile 最佳做法的附加信息，请参阅 [Best practices for writing Dockerfiles on Docker.com]( https://docs.docker.com/engine/userguide/eng-image/dockerfile_best-practices/)（在 Docker.com 上编写 Dockerfile 的最佳做法）。
+有关 Dockerfile 最佳做法的附加信息，请参阅 [Best practices for writing Dockerfiles on Docker.com](https://docs.docker.com/engine/userguide/eng-image/dockerfile_best-practices/)（在 Docker.com 上编写 Dockerfile 的最佳做法）。
 
 ### <a name="group-related-actions"></a>组相关的操作
 
