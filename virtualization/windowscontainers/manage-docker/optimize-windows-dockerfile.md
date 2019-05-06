@@ -3,31 +3,29 @@ title: 优化 Windows Dockerfile
 description: 优化用于 Windows 容器的 Dockerfile。
 keywords: docker, 容器
 author: cwilhit
-ms.date: 05/26/2016
+ms.date: 05/03/2019
 ms.topic: article
 ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: bb2848ca-683e-4361-a750-0d1d14ec8031
-ms.openlocfilehash: 5d9e95d2263c9603712054376bfa9e7190feb1b0
-ms.sourcegitcommit: 0deb653de8a14b32a1cfe3e1d73e5d3f31bbe83b
+ms.openlocfilehash: d897560061fae23fda6f88ebdad6dd804da9a8f1
+ms.sourcegitcommit: c48dcfe43f73b96e0ebd661164b6dd164c775bfa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "9576859"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "9610337"
 ---
 # <a name="optimize-windows-dockerfiles"></a>优化 Windows Dockerfile
 
-有几种方法可用来优化 Docker build 过程和生成的 Docker 映像。 使用 Windows 容器创建本文档详细介绍如何 Docker build 过程进行操作，并演示了一些可用于最佳映像的策略。
+有多种方法来优化 Docker build 过程和生成的 Docker 映像。 本文介绍了 Docker build 过程的工作原理以及如何以最佳方式创建 Windows 容器的图像。
 
-## <a name="docker-build"></a>Docker Build
+## <a name="image-layers-in-docker-build"></a>在 Docker 生成的映像层
 
-### <a name="image-layers"></a>映像层
+你可以优化 Docker build 之前，你将需要知道如何 Docker build 的工作原理。 在 Docker build 过程中，会占用 Dockerfile 并且在其自身临时的容器中一对一地运行每个可操作的指令。 结果是，每个可操作的指令都有一个新映像层。
 
-在检查 Docker build 优化之前，请务必了解 Docker build 的工作原理。 在 Docker build 过程中，会占用 Dockerfile 并且在其自身临时的容器中一对一地运行每个可操作的指令。 结果是，每个可操作的指令都有一个新映像层。 
+例如，下面的示例 Dockerfile 使用`windowsservercore`基本操作系统映像，安装 IIS，然后创建一个简单的网站。
 
-看一看以下 Dockerfile。 在此示例中，正在使用 `windowsservercore` 基本操作系统映像，安装 IIS，然后创建一个简单的网站。
-
-```
+```dockerfile
 # Sample Dockerfile
 
 FROM windowsservercore
@@ -36,9 +34,11 @@ RUN echo "Hello World - Dockerfile" > c:\inetpub\wwwroot\index.html
 CMD [ "cmd" ]
 ```
 
-从此 Dockerfile 来看，可预计生成的映像含有两个层：一个用于容器操作系统映像，另一个包括 IIS 和网站，但是这里不是这样的。 新映像由多个层构成，每个层依赖于前者。 若要形象地说明这一点，可以针对新映像运行 `docker history` 命令。 这样可以显示映像由四个层组成：基层和其他三个附加层。每个层在 Dockerfile 中都对应一条指令。
+你可能希望此 Dockerfile，将生成具有两个层组成，一个用于容器操作系统映像，第二个包括 IIS 和网站的图像。 但是，在实际图像具有多个层，并且每个层取决于与其前一。
 
-```
+若要使其成为更清楚，让我们运行`docker history`命令针对映像我们的示例中所做的 Dockerfile。
+
+```dockerfile
 docker history iis
 
 IMAGE               CREATED              CREATED BY                                      SIZE                COMMENT
@@ -48,25 +48,25 @@ f0e017e5b088        21 seconds ago       cmd /S /C echo "Hello World - Dockerfil
 6801d964fda5        4 months ago                                                         0 B
 ```
 
-每个层都可以映射到 Dockerfile 的一条指令。 底层（本示例中为 `6801d964fda5`）代表基本操作系统映像。 上面一层，可以看到 IIS 安装。 下一层包括新的网站，依次类推。
+输出向我们显示此图像有四个层： 基层和映射到 Dockerfile 中的每个指令的三个附加层。 底层（本示例中为 `6801d964fda5`）代表基本操作系统映像。 设置的一层是 IIS 安装。 下一层包括新的网站，依次类推。
 
-可以编写 Dockerfiles，以最小化映像层、优化生成性能，也可以优化修饰性的项目，例如可读性等。 完成相同的映像生成任务基本上有多种方式。 了解 Dockerfile 的格式如何影响生成时间和生成的映像，以及如何提升自动化体验。 
+可以编写 Dockerfiles，以最小化映像层、 优化生成性能和优化通过可读性的辅助功能。 完成相同的映像生成任务基本上有多种方式。 了解如何在 Dockerfile 的格式会影响生成时间和它创建的图像提升自动化体验。
 
 ## <a name="optimize-image-size"></a>优化映像大小
 
-构建 Docker 容器映像时，映像大小可能是一个重要因素。 容器映像在注册表和主机之间移动、导出和导入，最终占用了空间。 在 Docker build 过程中，可采用几种策略尽可能减小映像大小。 本部分详细介绍一些特定于 Windows 容器的策略。
+根据空间要求，图像大小可以是一个重要因素构建 Docker 容器映像时。 容器映像在注册表和主机之间移动、导出和导入，最终占用了空间。 本部分将告诉你如何在 Windows 容器的 Docker 生成过程期间减小映像大小。
 
-有关 Dockerfile 最佳做法的附加信息，请参阅 [Best practices for writing Dockerfiles on Docker.com](https://docs.docker.com/engine/userguide/eng-image/dockerfile_best-practices/)（在 Docker.com 上编写 Dockerfile 的最佳做法）。
+有关 Dockerfile 最佳做法的其他信息，请参阅[编写 Docker.com 上的 Dockerfile 的最佳实践](https://docs.docker.com/engine/userguide/eng-image/dockerfile_best-practices/)。
 
 ### <a name="group-related-actions"></a>组相关的操作
 
-因为每个 `RUN` 指令在容器映像中创建新的层，将操作分组为一个 `RUN` 指令可以减少层数。 而最小化层可能不太会影响映像的大小，而对相关操作进行分组则可以，这将在后面的示例中看到。
+因为每个`RUN`指令在容器映像，将操作分组为一个中创建新的层`RUN`指令可以减少层在 Dockerfile 中的数量。 而最小化层可能不太会影响映像的大小，而对相关操作进行分组则可以，这将在后面的示例中看到。
 
-下面的两个示例演示相同的操作，这将产生相同容量的容器映像，但两个 Dockerfiles 的构造却不相同。 同时也比较了生成的映像。  
+在此部分中，我们将比较两个示例执行相同操作的 Dockerfile。 但是，一个 Dockerfile 具有一个指令，每个操作，而其他拥有其相关的操作组合在一起。
 
-第一个示例下载并安装 Python for Windows，然后通过删除下载的安装程序文件进行清理。 每个操作都按其自身的 `RUN` 指令运行。
+下面的分组的示例 Dockerfile 下载 Python for Windows，安装它，并安装完成后，将删除下载的安装程序文件。 在此 Dockerfile，每个操作提供其自己`RUN`指令。
 
-```
+```dockerfile
 FROM windowsservercore
 
 RUN powershell.exe -Command Invoke-WebRequest "https://www.python.org/ftp/python/3.5.1/python-3.5.1.exe" -OutFile c:\python-3.5.1.exe
@@ -76,7 +76,7 @@ RUN powershell.exe -Command Remove-Item c:\python-3.5.1.exe -Force
 
 生成的映像由三个附加层组成，每一个对应一个 `RUN` 指令。
 
-```
+```dockerfile
 docker history doc-example-1
 
 IMAGE               CREATED             CREATED BY                                      SIZE                COMMENT
@@ -85,9 +85,9 @@ a395ca26777f        15 seconds ago      cmd /S /C powershell.exe -Command Remove
 957147160e8d        3 minutes ago       cmd /S /C powershell.exe -Command Invoke-WebR   125.7 MB
 ```
 
-为了进行比较，此处采用相同的操作，但所有步骤都采用相同的 `RUN` 指令运行。 请注意，`RUN` 指令中的每个步骤都位于 Dockerfile 的新行上，“\\”字符用于换行。 
+第二个示例是 Dockerfile 执行完全相同的操作。 但是，所有相关的操作已被分组在单个`RUN`指令。 的每个步骤`RUN`指令是 Dockerfile 的新行上时 \\ 字符用于换行。
 
-```
+```dockerfile
 FROM windowsservercore
 
 RUN powershell.exe -Command \
@@ -97,22 +97,22 @@ RUN powershell.exe -Command \
   Remove-Item c:\python-3.5.1.exe -Force
 ```
 
-此处生成的映像由 `RUN` 指令的一个附加层组成。
+生成的映像有只有一个附加层`RUN`指令。
 
-```
+```dockerfile
 docker history doc-example-2
 
 IMAGE               CREATED             CREATED BY                                      SIZE                COMMENT
-69e44f37c748        54 seconds ago      cmd /S /C powershell.exe -Command   $ErrorAct   216.3 MB                
+69e44f37c748        54 seconds ago      cmd /S /C powershell.exe -Command   $ErrorAct   216.3 MB
 ```
 
 ### <a name="remove-excess-files"></a>删除多余文件
 
-如果某个文件（例如安装程序）在用完之后不再需要，请删除该文件以减小映像大小。 将文件复制到映像层的同一个步骤也需要此操作。 这样可以防止文件留在较低级别的映像层。
+是否已使用你 Dockerfile，例如安装程序，它不需要的文件，你可以删除它以减小映像大小。 将文件复制到映像层的同一个步骤也需要此操作。 这样可以防止文件留在较低级别的映像层。
 
-在此示例中，会下载和执行 Python 包执，然后删除可执行文件。 在一个 `RUN` 操作中就可以完成以上所有步骤，从而产生单个映像层。
+在下面的示例 Dockerfile，Python 包是下载，执行，然后删除。 在一个 `RUN` 操作中就可以完成以上所有步骤，从而产生单个映像层。
 
-```
+```dockerfile
 FROM windowsservercore
 
 RUN powershell.exe -Command \
@@ -126,11 +126,11 @@ RUN powershell.exe -Command \
 
 ### <a name="multiple-lines"></a>多行
 
-在优化 Docker build 速度时，将操作拆分为多个单独指令可能会更有利。 多个 `RUN` 操作会增加缓存有效性。 因为每个 `RUN` 指令会创建单个层，如果在其他 Docker Build 操作中已运行相同的步骤，则此缓存的操作（映像层）会被重复使用。 结果，减少了 Docker Build 运行时。
+你可以拆分为多个单独指令来优化 Docker build 速度的操作。 多个`RUN`操作会增加缓存有效性，因为每个创建单个层`RUN`指令。 如果在其他 Docker Build 操作中已运行的相同指令，此缓存的操作 （映像层） 重复使用，则导致降低 Docker build 运行时。
 
-在下面的示例中，下载、安装了 Apache 和 Visual Studio 重新分发包，然后清理不需要的文件。 这些只需一个 `RUN` 指令就可全部完成。 如果下列任一操作更新时，将重新运行所有的操作。
+在以下示例中，Apache 和 Visual Studio 重新分发包下载、 安装以及然后通过删除不再需要的文件清理。 这可与单个`RUN`指令。 如果下列任一操作更新时，将重新运行所有操作。
 
-```
+```dockerfile
 FROM windowsservercore
 
 RUN powershell -Command \
@@ -154,9 +154,9 @@ RUN powershell -Command \
   Remove-Item c:\php.zip
 ```
 
-生成的映像由两个层组成，一个用于基本操作系统映像，第二个包含单个 `RUN` 指令中的所有操作。
+生成的映像有两个图层，一个用于基本操作系统映像，一个包含单个中的所有操作`RUN`指令。
 
-```
+```dockerfile
 docker history doc-sample-1
 
 IMAGE               CREATED             CREATED BY                                      SIZE                COMMENT
@@ -164,9 +164,9 @@ IMAGE               CREATED             CREATED BY                              
 6801d964fda5        5 months ago                                                        0 B
 ```
 
-为了便于对比，此处将相同的操作分解为三个 `RUN` 指令。 在这种情况下，每个 `RUN` 指令缓存在容器映像层，并且只有已经发生更改的指令需要在以后的 Dockerfile build 中重新运行。
+相比之下，下面是相同的操作拆分为三个`RUN`说明。 在此情况下，每个`RUN`指令缓存在容器映像层，并且只有那些具有更改的需要后续 Dockerfile 重新生成。
 
-```
+```dockerfile
 FROM windowsservercore
 
 RUN powershell -Command \
@@ -188,9 +188,9 @@ RUN powershell -Command \
     Remove-Item c:\php.zip -Force
 ```
 
-生成的映像由四个层组成，一个用于基本操作系统映像，然后另外三个分别针对一条 `RUN` 指令。 因为每个 `RUN` 指令已在自身的层中运行，所以该 Dockerfile 或其他 Dockerfile 中的相同指令集的任何后续运行都将使用缓存的映像层，从而减少了生成时间。 指令排序在使用映像缓存过程中十分重要，有关详细信息，请参阅本文档的下一节。
+生成的映像由四个图层;一个用于基本操作系统映像的三个层`RUN`说明。 因为每个`RUN`指令已在它自己的层中运行，此 Dockerfile 的任何后续运行或相同指令集的其他 Dockerfile 中将使用缓存的映像层，减少了生成时间。
 
-```
+```dockerfile
 docker history doc-sample-2
 
 IMAGE               CREATED             CREATED BY                                      SIZE                COMMENT
@@ -200,13 +200,15 @@ d43abb81204a        7 days ago          cmd /S /C powershell -Command  Sleep 2 ;
 6801d964fda5        5 months ago
 ```
 
+如何订购说明很重要时使用映像缓存，将在下一节中看到。
+
 ### <a name="ordering-instructions"></a>指令排序
 
 从顶到底处理 Dockerfile，针对缓存层比较每条指令。 当找到一条不含缓存层的指令后，会在新的容器映像层处理此指令和所有后续指令。 因此，指令放置的顺序非常重要。 将保持不变的指令放置在 Dockerfile 顶部。 将可能改变的指令放置在 Dockerfile 底部。 这样就降低了取消现有缓存的可能性。
 
-此示例的目的是为了演示 Dockerfile 指令排序如何影响缓存有效性。 在此简单 Dockerfile 中，将创建四个带编号的文件夹。  
+以下示例演示 Dockerfile 指令排序如何影响缓存有效性。 此简单示例 Dockerfile 有四个带编号的文件夹。  
 
-```
+```dockerfile
 FROM windowsservercore
 
 RUN mkdir test-1
@@ -214,9 +216,10 @@ RUN mkdir test-2
 RUN mkdir test-3
 RUN mkdir test-4
 ```
-生成的映像有五个层，一个用于基本操作系统映像，然后另外四个分别针对一条 `RUN` 指令。
 
-```
+生成的映像有五个层，一个用于基本操作系统映像，每个`RUN`说明。
+
+```dockerfile
 docker history doc-sample-1
 
 IMAGE               CREATED              CREATED BY               SIZE                COMMENT
@@ -224,12 +227,12 @@ afba1a3def0a        38 seconds ago       cmd /S /C mkdir test-4   42.46 MB
 86f1fe772d5c        49 seconds ago       cmd /S /C mkdir test-3   42.35 MB
 68fda53ce682        About a minute ago   cmd /S /C mkdir test-2   6.745 MB
 5e5aa8ba1bc2        About a minute ago   cmd /S /C mkdir test-1   7.12 MB
-6801d964fda5        5 months ago                                  0 B    
+6801d964fda5        5 months ago                                  0 B
 ```
 
-Docker 文件现在已经过稍许修改。 请注意，第三条 `RUN` 指令已更改。 当针对此 Dockerfile 运行 Docker build 时，与上个示例中相同的前三条指令使用缓存的映像层。 但是，因为更改的 `RUN` 指令尚未缓存，因此为自身和所有后续指令创建了一个新的层。
+此下一步 Dockerfile 具有现在已经过稍许修改，与第三个`RUN`指令更改为新文件。 当针对此 Dockerfile 运行 Docker build 时，与上个示例中相同的前三条指令使用缓存的映像层。 但是，因为更改`RUN`指令不缓存，为更改的指令和所有后续指令创建新的层。
 
-```
+```dockerfile
 FROM windowsservercore
 
 RUN mkdir test-1
@@ -238,9 +241,9 @@ RUN mkdir test-5
 RUN mkdir test-4
 ```
 
-将新映像的映像 ID 与上个示例中的相比较，你将看到共享的是前三个层（底部到顶部），但是第四个和第五个是唯一的。
+当你进行比较的此部分的第一个示例中的新图像的图像 Id 时，你会注意到共享的前三个图层从底部到顶部，但是第四个和第五个是唯一。
 
-```
+```dockerfile
 docker history doc-sample-2
 
 IMAGE               CREATED             CREATED BY               SIZE                COMMENT
@@ -255,10 +258,11 @@ c92cc95632fb        28 seconds ago      cmd /S /C mkdir test-4   5.644 MB
 
 ### <a name="instruction-case"></a>指令用例
 
-虽然约定是使用大写形式，但是 Dockerfile 指令不区分大小写。 通过在指令调用和指令操作之间引入差异，提高了可读性。 下面两个示例演示了这一概念。 
+Dockerfile 指令不区分大小写，但约定是使用大写形式。 通过在指令调用和指令操作之间引入差异，提高了可读性。 下面的两个示例比较首字母未大写和大写 Dockerfile。
 
-小写：
-```
+以下是首字母未大写的 Dockerfile:
+
+```dockerfile
 # Sample Dockerfile
 
 from windowsservercore
@@ -266,8 +270,10 @@ run dism /online /enable-feature /all /featurename:iis-webserver /NoRestart
 run echo "Hello World - Dockerfile" > c:\inetpub\wwwroot\index.html
 cmd [ "cmd" ]
 ```
-大写： 
-```
+
+下面是使用大写相同 Dockerfile:
+
+```dockerfile
 # Sample Dockerfile
 
 FROM windowsservercore
@@ -278,16 +284,17 @@ CMD [ "cmd" ]
 
 ### <a name="line-wrapping"></a>换行
 
-使用反斜杠 `\` 字符可以将长而复杂的操作分隔到多个行上。 以下 Dockerfile 安装了 Visual Studio 可再发行组件包，删除了安装程序文件，然后创建了配置文件。 这三个操作都是在一行上指定的。
+长而复杂的操作可以由反斜杠分隔到多个行上`\`字符。 以下 Dockerfile 安装了 Visual Studio 可再发行组件包，删除了安装程序文件，然后创建了配置文件。 这三个操作都是在一行上指定的。
 
-```
+```dockerfile
 FROM windowsservercore
 
 RUN powershell -Command c:\vcredist_x86.exe /quiet ; Remove-Item c:\vcredist_x86.exe -Force ; New-Item c:\config.ini
 ```
-命令可以重新编写，以便一个 `RUN` 指令的每个操作都可以在自身所在的行上指定。 
 
-```
+此命令可分解使用反斜杠因此，每个操作从一个`RUN`在自己的行上指定指令。
+
+```dockerfile
 FROM windowsservercore
 
 RUN powershell -Command \
@@ -297,8 +304,8 @@ RUN powershell -Command \
     New-Item c:\config.ini
 ```
 
-## <a name="further-reading--references"></a>进一步阅读和参考
+## <a name="further-reading-and-references"></a>进一步阅读和参考
 
-[Windows 上的 Dockerfile] (manage-windows-dockerfile.md)
+[Windows 上的 Dockerfile](manage-windows-dockerfile.md)
 
 [在 Docker.com 上编写 Dockerfile 的最佳实践](https://docs.docker.com/engine/reference/builder/)

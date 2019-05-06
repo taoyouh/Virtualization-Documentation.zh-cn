@@ -40,7 +40,7 @@
 ### [疑难解答](kubernetes/common-problems.md)
 ### [在 Kubernetes 上的 Windows 服务](kubernetes/kube-windows-services.md)
 ### [编译 Kubernetes 二进制文件](kubernetes/compiling-kubernetes-binaries.md)
-## 在 Windows 上的 Service Fabric
+## 在 Windows 上的服务结构
 ### [部署首个容器](/azure/service-fabric/service-fabric-quickstart-containers)
 ### [在 Windows 容器中部署 .NET 应用程序](/azure/service-fabric/service-fabric-host-app-in-a-container) 
 ## Docker 群

@@ -3,110 +3,94 @@ title: Windows 容器版本兼容性
 description: Windows 如何跨多个版本运行内部版本和容器
 keywords: 元数据, 容器, 版本
 author: taylorb-microsoft
-ms.openlocfilehash: c744da429ed8116363437d3117ae1432d7a94f8d
-ms.sourcegitcommit: 0deb653de8a14b32a1cfe3e1d73e5d3f31bbe83b
+ms.openlocfilehash: 76549bbfbaf374acb79f1be4280949aecf4e87f0
+ms.sourcegitcommit: c48dcfe43f73b96e0ebd661164b6dd164c775bfa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "9574948"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "9610277"
 ---
 # <a name="windows-container-version-compatibility"></a>Windows 容器版本兼容性
 
-Windows Server 2016 和 Windows 10 周年更新（两者均为版本 14393）是第一批可以生成并运行 Windows Server 容器的 Windows 版本。 使用这些版本生成的容器可以在 Windows Server 版本 1709 等更高版本上运行，但在开始前你需要了解一些事项。
+Windows Server 2016 和 Windows 10 周年更新 （这两个版本 14393） 是第一批 Windows 版本，可以生成并运行 Windows Server 容器。 使用这些版本生成的容器可以在 Windows Server 版本 1709 等更高版本上运行，但在开始前你需要了解一些事项。
 
-由于我们一直在改进 Windows 容器功能，我们不得不进行一些可能影响兼容性的变更。 早期的容器可在带有 [Hyper-V 隔离](../manage-containers/hyperv-container.md)的更高版本的主机上同样运行，并且将继续使用相同的（早期）内核版本。 但是，如果想要运行基于更高 Windows 版本的容器，只有在更高主机版本上才可以运行。
+由于我们一直在改进 Windows 容器功能，我们不得不进行一些可能影响兼容性的变更。 早期的容器相同更高版本的主机上运行带有[HYPER-V 隔离](../manage-containers/hyperv-container.md)，并将使用相同的 （早期） 内核版本。 但是，如果你想要运行基于更高版本的 Windows 版本的容器，它只能运行在更高版本的主机版本上。
 
+|容器操作系统版本|主机操作系统版本|兼容性|
+|---|---|---|
+|Windows Server 2016<br>内部版本：14393.* |Windows Server 2016<br>内部版本：14393.* |支持`process`或`hyperv`隔离|
+|Windows Server 2016<br>内部版本：14393.* |Windows Server 版本 1709<br>内部版本：16299.* |仅支持`hyperv`隔离|
+|Windows Server 2016<br>内部版本：14393.* |Windows 10 Fall Creators Update<br>内部版本：16299.* |仅支持`hyperv`隔离|
+|Windows Server 2016<br>内部版本：14393.* |Windows Server 版本 1803<br>生成 17134.* |仅支持`hyperv`隔离|
+|Windows Server 2016<br>内部版本：14393.* |Windows 10 版本 1803<br>生成 17134.* |仅支持`hyperv`隔离|
+|Windows Server 2016<br>内部版本：14393.* |Windows Server 2019<br>生成 17763.* |仅支持`hyperv`隔离|
+|Windows Server 2016<br>内部版本：14393.* |Windows 10 版本 1809<br>生成 17763.* |仅支持`hyperv`隔离|
+|Windows Server 版本 1709<br>内部版本：16299.* |Windows Server 2016<br>内部版本：14393.* |不支持|
+|Windows Server 版本 1709<br>内部版本：16299.* |Windows Server 版本 1709<br>内部版本：16299.* |支持`process`或`hyperv`隔离|
+|Windows Server 版本 1709<br>内部版本：16299.* |Windows 10 Fall Creators Update<br>内部版本：16299.* |仅支持`hyperv`隔离|
+|Windows Server 版本 1709<br>内部版本：16299.* |Windows Server 版本 1803<br>生成 17134.* |仅支持`hyperv`隔离|
+|Windows Server 版本 1709<br>内部版本：16299.* |Windows 10 版本 1803<br>生成 17134.* |仅支持`hyperv`隔离|
+|Windows Server 版本 1709<br>内部版本：16299.* |Windows Server 2019<br>生成 17763.* |仅支持`hyperv`隔离|
+|Windows Server 版本 1709<br>内部版本：16299.* |Windows 10 版本 1809<br>生成 17763.* |仅支持`hyperv`隔离|
+|Windows Server 版本 1803<br>生成 17134.* |Windows Server 2016<br>内部版本：14393.* |不支持|
+|Windows Server 版本 1803<br>生成 17134.* |Windows Server 版本 1709<br>内部版本：16299.* |不支持|
+|Windows Server 版本 1803<br>生成 17134.* |Windows 10 Fall Creators Update<br>内部版本：16299.* |不支持|
+|Windows Server 版本 1803<br>生成 17134.* |Windows Server 版本 1803<br>生成 17134.* |支持`process`或`hyperv`隔离|
+|Windows Server 版本 1803<br>生成 17134.* |Windows 10 版本 1803<br>生成 17134.* |仅支持`hyperv`隔离|
+|Windows Server 版本 1803<br>生成 17134.* |Windows Server 2019<br>生成 17763.* |仅支持`hyperv`隔离|
+|Windows Server 版本 1803<br>生成 17134.* |Windows 10 版本 1809<br>生成 17763.* |仅支持`hyperv`隔离|
+|Windows Server 2019<br>生成 17763.* |Windows Server 2016<br>内部版本：14393.* |不支持|
+|Windows Server 2019<br>生成 17763.* |Windows Server 版本 1709<br>内部版本：16299.* |不支持
+|Windows Server 2019<br>生成 17763.* |Windows 10 Fall Creators Update<br>内部版本：16299.* |不支持|
+|Windows Server 2019<br>生成 17763.* |Windows Server 版本 1803<br>生成 17134.* |不支持|
+|Windows Server 2019<br>生成 17763.* |Windows 10 版本 1803<br>生成 17134.* |不支持|
+|Windows Server 2019<br>生成 17763.* |Windows Server 2019<br>生成 17763.* |支持`process`或`hyperv`隔离|
+|Windows Server 2019<br>生成 17763.* |Windows 10 版本 1809<br>生成 17763.* |仅支持`hyperv`隔离|
 
+## <a name="matching-container-host-version-with-container-image-versions"></a>容器主机版本与容器映像版本相匹配
 
-<table>
-    <tr>
-    <th style="background-color:#BBDEFB">容器操作系统版本</th>
-    <th span='6' style="background-color:#DCEDC8">主机操作系统版本</th>
-    </tr>
-    <tr>
-        <td/>
-        <td style="background-color:#F1F8E9"><b>Windows Server 2016</b><br/>内部版本：14393。*</td>
-        <td style="background-color:#F1F8E9"><b>Windows 10 1609、1703</b><br/>内部版本：14393.*、15063.*</td>
-        <td style="background-color:#F1F8E9"><b>Windows Server 版本 1709</b><br/>内部版本：16299.*</td>
-        <td style="background-color:#F1F8E9"><b>Windows 10 Fall Creators Update</b><br/>内部版本：16299.*</td>
-        <td style="background-color:#F1F8E9"><b>Windows Server 版本 1803</b><br/>生成 17134.*</td>
-        <td style="background-color:#F1F8E9"><b>Windows 10 版本 1803</b><br/>生成 17134.*</td>
-        <td style="background-color:#F1F8E9"><b>Windows Server 2019</b><br/>生成 17763.*</td>
-        <td style="background-color:#F1F8E9"><b>Windows 10 版本 1809</b><br/>生成 17763.*</td>
-    </tr>
-    <tr>
-        <td style="background-color:#E3F2FD"><b>Windows Server 2016</b><br/>内部版本：14393.*</td>
-        <td>支持<br/> `process` 或 `hyperv` 隔离</td>
-        <td>支持<br/> 仅 `hyperv` 隔离</td>
-        <td>支持<br/> 仅 `hyperv` 隔离</td>
-        <td>支持<br/> 仅 `hyperv` 隔离</td>
-        <td>支持<br/> 仅 `hyperv` 隔离</td>
-        <td>支持<br/> 仅 `hyperv` 隔离</td>
-        <td>支持<br/> 仅 `hyperv` 隔离</td>
-        <td>支持<br/> 仅 `hyperv` 隔离</td>
-    </tr>
-    <tr>
-        <td style="background-color:#E3F2FD"><b>Windows Server 版本 1709</b><br/>内部版本：16299.*</td>
-        <td>不支持</td>
-        <td>不支持</td>
-        <td>支持<br/> `process` 或 `hyperv` 隔离</td>
-        <td>支持<br/> 仅 `hyperv` 隔离</td>
-        <td>支持<br/> 仅 `hyperv` 隔离</td>
-        <td>支持<br/> 仅 `hyperv` 隔离</td>
-        <td>支持<br/> 仅 `hyperv` 隔离</td>
-        <td>支持<br/> 仅 `hyperv` 隔离</td>
-    </tr>
-    <tr>
-        <td style="background-color:#E3F2FD"><b>Windows Server 版本 1803</b><br/>生成 17134.*</td>
-        <td>不支持</td>
-        <td>不支持</td>
-        <td>不支持</td>
-        <td>不支持</td>
-        <td>支持<br/> `process` 或 `hyperv` 隔离</td>
-        <td>支持<br/> 仅 `hyperv` 隔离</td>
-        <td>支持<br/> 仅 `hyperv` 隔离</td>
-        <td>支持<br/> 仅 `hyperv` 隔离</td>
-    </tr>
-    <tr>
-        <td style="background-color:#E3F2FD"><b>Windows Server 2019</b><br/>生成 17763.*</td>
-        <td>不支持</td>
-        <td>不支持</td>
-        <td>不支持</td>
-        <td>不支持</td>
-        <td>不支持</td>
-        <td>不支持</td>
-        <td>支持<br/> `process` 或 `hyperv` 隔离</td>
-        <td>支持<br/> 仅 `hyperv` 隔离</td>
-    </tr>
-</table>               
-
-## <a name="matching-container-host-version-with-container-image-versions"></a>将容器主机版本与容器映像版本相匹配
 ### <a name="windows-server-containers"></a>Windows Server 容器
-由于 Windows Server 容器和基础主机共享一个内核，因此容器基本映像必须与主机基本映像相匹配。  如果版本不同，容器虽然可以启动，但其功能完整性得不到保证。 Windows 操作系统具有 4 个级别的版本，主要版本、次要版本、内部版本和修订版本 – 例如 10.0.14393.103。 内部版本号（即 14393）仅在发布诸如版本 1709、1803、Fall Creators Update 等新版本操作系统时才会改变。应用 Windows 更新时，会更新修订号（即 103）。
-#### <a name="build-number-new-release-of-windows"></a>内部版本号（新版本的 Windows）
-当容器主机和容器映像的内部版本号不同时，例如一个为 10.0.14393.* (Windows Server 2016)，另一个为 10.0.16299.*（Windows Server 版本 1709），会阻止启动 Windows Server 容器。  
-#### <a name="revision-number-patching"></a>修订号（修补）
-当容器主机和容器映像的修订号不同时，例如一个为 10.0.14393.1914（应用了 KB4051033 的 Windows Server 2016），另一个为 10.0.14393.1944（应用了 KB4053579 的 Windows Server 2016），则_不_会阻止启动 Windows Server 容器。  
-对于基于 Windows Server 2016 的主机/映像 – 容器映像的修订版必须与要处于支持配置中的主机匹配。  从 Windows Server 版本 1709 开始，这不再适用，并且主机和容器映像不需要具有匹配的修订版。  像往常一样建议使用最新的补丁程序和更新使你的系统保持最新。
+
+由于 Windows Server 容器和基础主机共享一个内核，容器的基本映像必须匹配的主机。 如果版本不同，容器可以启动，但得不保证。 Windows 操作系统具有四个级别的版本： 主要、 次要版本和修订版本。 例如，版本 10.0.14393.103 必须 10 的主要版本、 次要版本为 0，14393，内部版本号和 103 修订号。 内部版本号才会改变时操作系统的新版本发布，诸如版本 1709、 1803、 Fall Creators Update 中，等等。 应用 Windows 更新后，会相应更新修订版本号。
+
+#### <a name="build-number-new-release-of-windows"></a>内部版本号 （新版本的 Windows）
+
+Windows Server 容器会阻止启动时不同，容器主机和容器映像的内部版本号。 例如，当容器主机是版本 10.0.14393.* (Windows Server 2016) 和容器映像是版本 10.0.16299.* (Windows Server 版本 1709年)，该容器将不会启动。  
+
+#### <a name="revision-number-patching"></a>修订号 （修补）
+
+Windows Server 容器不会阻止启动不同的容器主机和容器映像的修订号时。 例如，如果容器主机是版本 10.0.14393.1914 (与应用的 KB4051033 的 Windows Server 2016)，容器映像是版本 10.0.14393.1944 (与应用的 KB4053579 的 Windows Server 2016)，然后该图像将仍然开始菜单即使他们的修订版本数量是不同。
+
+对于基于 Windows Server 2016 的主机或图像，容器映像的修订版必须与要处于支持配置中的主机匹配。 但是，对于主机或使用 Windows Server 版本 1709年和更高版本的图像，不适用于此规则，并且主机和容器映像不需要具有匹配的修订版。 我们建议你保留在系统使用最新修补程序和更新保持最新状态。
+
 #### <a name="practical-application"></a>实际应用程序
-示例 1：容器主机正在运行应用了 KB4041691 的 Windows Server 2016。  部署到此主机的任何 Windows Server 容器都必须基于 10.0.14393.1770 容器基本映像。  如果对主机应用了 KB4053579，则必须同时更新容器映像以保持受支持。
-示例 2：容器主机正在运行应用了 KB4043961 的 Windows Server 版本 1709。  部署到此主机的任何 Windows Server 容器都必须基于 Windows Server 版本 1709 (10.0.16299) 容器基本映像，但不需要与主机 KB 匹配。  如果对主机应用了 KB4054517，则不需要更新容器映像，但是为了完全解决任何安全问题，还是应该进行更新。
+
+示例 1： 容器主机正在运行应用了 KB4041691 Windows Server 2016。 部署到此主机的任何 Windows Server 容器都必须基于版本 10.0.14393.1770 容器基本映像。 如果主机容器中应用了 KB4053579，还必须更新以确保主机容器支持它们的图像。
+
+示例 2： 容器主机正在运行应用了 KB4043961 Windows Server 版本 1709年。 部署到此主机的任何 Windows Server 容器必须基于 Windows Server 版本 1709 (10.0.16299) 容器基本映像，但不需要与主机 KB 匹配。 如果对主机应用 KB4054517，则仍会支持容器映像，但我们建议你更新它们以处理任何潜在的安全问题。
+
 #### <a name="querying-version"></a>查询版本
-方法 1：在版本 1709 中引入的 cmd 提示符和 `ver` 命令现在会返回修订版详细信息。
-```
+
+方法 1： 在版本 1709年中引入，cmd 提示符和**ver**命令现在会返回修订版详细信息。
+
+```batch
 Microsoft Windows [Version 10.0.16299.125]
 (c) 2017 Microsoft Corporation. All rights reserved.
 
 C:\>ver
 
-Microsoft Windows [Version 10.0.16299.125] 
+Microsoft Windows [Version 10.0.16299.125]
 ```
-方法 2：查询以下注册表项：HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion。例如：
-```
+
+方法 2： 查询以下注册表项： HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion
+
+例如：
+
+```batch
 C:\>reg query "HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion" /v BuildLabEx
 ```
-或
-```
+
+```batch
 Windows PowerShell
 Copyright (C) 2016 Microsoft Corporation. All rights reserved.
 
@@ -114,78 +98,81 @@ PS C:\Users\Administrator> (Get-ItemProperty 'HKLM:\SOFTWARE\Microsoft\Windows N
 14393.321.amd64fre.rs1_release_inmarket.161004-2338
 ```
 
-若要查看基础映像使用的版本类型，可以查看 Docker 中心上的标记或查看映像说明提供的映像哈希表。  [Windows 10 更新历史记录](https://support.microsoft.com/en-us/help/12387/windows-10-update-history)页面列出了每个内部版本和修订版本发布的时间。
+若要检查的是哪个版本你基本映像的使用，查看 Docker 中心或映像说明提供的图像哈希表上的标记。 每个版本和修订版本发布时，列出了[Windows 10 更新历史记录](https://support.microsoft.com/en-us/help/12387/windows-10-update-history)页面。
 
-### <a name="hyper-v-isolation-for-containers"></a>容器 Hyper-V 隔离
-无论带有还是不带有 Hyper-V 隔离，Windows 容器都可运行。  Hyper-V 隔离使用优化的 VM 在容器周围创造安全边界。  Hyper-V 隔离容器与标准 Windows 容器不同，后者在容器和主机之间共享内核，而 Hyper-V 隔离容器则是各自使用自己的 Windows 内核实例。  出于此原因，容器主机和映像中可以有不同的操作系统版本（请参阅下面的兼容性矩阵）。  
+### <a name="hyper-v-isolation-for-containers"></a>容器 HYPER-V 隔离
+
+你可以使用或不具备 HYPER-V 隔离运行 Windows 容器。 Hyper-V 隔离使用优化的 VM 在容器周围创造安全边界。 与标准 Windows 容器容器和主机之间共享内核，每个 HYPER-V 隔离的容器都有其自己的 Windows 内核实例。 这意味着你可以在容器主机和映像中的不同操作系统版本 （有关详细信息，请参阅下面的兼容性矩阵）。  
 
 若要运行带有 Hyper-V 隔离的容器，只需在你的 Docker 运行命令中添加标记 `--isolation=hyperv`。
 
 ## <a name="errors-from-mismatched-versions"></a>不匹配版本引发的错误
 
-如果试图运行不支持的组合，将出现错误：
+如果你尝试运行不受支持的组合，你将收到以下错误：
 
-```
+```dockerfile
 docker: Error response from daemon: container b81ed896222eb87906ccab1c3dd2fc49324eafa798438f7979b87b210906f839 encountered an error during CreateContainer: failure in a Windows system call: The operating system of the container does not match the operating system of the host. (0xc0370101) extra info: {"SystemType":"Container","Name":"b81ed896222eb87906ccab1c3dd2fc49324eafa798438f7979b87b210906f839","Owner":"docker","IsDummy":false,"VolumePath":"\\\\?\\Volume{2443d38a-1379-4bcf-a4b7-fc6ad4cd7b65}","IgnoreFlushesDuringBoot":true,"LayerFolderPath":"C:\\ProgramData\\docker\\windowsfilter\\b81ed896222eb87906ccab1c3dd2fc49324eafa798438f7979b87b210906f839","Layers":[{"ID":"1532b584-8431-5b5a-8735-5e1b4fe9c2a9","Path":"C:\\ProgramData\\docker\\windowsfilter\\b2b88bc2a47abcc682e422507abbba9c9b6d826d34e67b9e4e3144cc125a1f80"},{"ID":"a64b8da5-cd6e-5540-bc73-d81acae6da54","Path":"C:\\ProgramData\\docker\\windowsfilter\\5caaedbced1f546bccd01c9d31ea6eea4d30701ebba7b95ee8faa8c098a6845a"}],"HostName":"b81ed896222e","MappedDirectories":[],"HvPartition":false,"EndpointList":["002a0d9e-13b7-42c0-89b2-c1e80d9af243"],"Servicing":false,"AllowUnqualifiedDNSQuery":true}.
 ```
 
-可通过执行以下操作解决此问题：
+有三种方法可以解决此错误：
 
-- 基于 `microsoft/nanoserver` 版本重新生成容器，或者 `microsoft/windowsservercore`
-- 如果主机是更高版本，请使用 `docker run --isolation=hyperv ...`
-- 在另一个使用相同 Windows 版本的主机上运行容器
+- 重新生成基于的正确版本的容器`microsoft/nanoserver`或 `microsoft/windowsservercore`
+- 如果主机是更高版本，请运行**docker run-隔离 = hyperv...**
+- 请尝试使用相同的 Windows 版本的不同主机上运行容器
 
-## <a name="choosing-container-os-versions"></a>选择容器操作系统版本
+## <a name="choose-which-container-os-version-to-use"></a>选择要使用的容器操作系统版本
 
-> 请注意：“最新”标记将随 Windows Server 2016 一同更新，当前为 [LTSC 产品](https://docs.microsoft.com/en-us/windows-server/get-started/semi-annual-channel-overview)。 如果你想要获得与 Windows Server 版本 1709 相匹配的容器映像，请阅读以下内容。
+>[!NOTE]
+>在"最新"标记将随 Windows Server 2016，当前[Long-Term Servicing Channel 产品](https://docs.microsoft.com/en-us/windows-server/get-started/semi-annual-channel-overview)更新。 以下是有关说明匹配的 Windows Server 版本 1709年版本的容器映像。
 
-确保自己了解哪一容器操作系统版本符合你的需求，这非常重要。 如果正在使用 Windows Server 版本 1709 并想要获得相应的最新修补程序，你应当在指定所需的基础操作系统容器映像的版本时使用标记“1709”，比如这样：
+你必须知道你需要为你的容器使用哪个版本。 例如，如果你使用的 Windows Server 版本 1709年并想要为其具有最新修补程序，则应使用标记`1709`时指定你希望哪个版本的基础操作系统容器映像，如下所示：
 
-``` Dockerfile
+``` dockerfile
 FROM microsoft/windowsservercore:1709
 ...
 ```
 
-但是，如果想要获得有关 Windows Server 版本 1709 的特定修补程序，你可以在标记中指定 KB 编号。 例如，如果想要从 Windows Server 版本 1709 获得应用了 KB4043961 的 Nano Server 基础操作系统容器映像，可以像这样进行指定：
+但是，如果你希望 Windows Server 版本 1709年的特定的修补程序，你可以在标记中指定 KB 编号。 例如，若要获取从 Windows Server 版本 1709 kb4043961 到它的 Nano Server 基础操作系统容器映像，你应指定它如下所示：
 
-``` Dockerfile
+``` dockerfile
 FROM microsoft/nanoserver:1709_KB4043961
 ...
 ```
 
-而且，如果需要从 Windows Server 2016 获得 Nano Server 基础操作系统容器映像，仍然可以使用“最新”标记获取这些基础操作系统容器映像的最新版本：
+如果你需要 Nano Server 基础操作系统容器映像从 Windows Server 2016，你仍然可以通过使用"最新"标记获取这些基础操作系统容器映像的最新版本：
 
-``` Dockerfile
+``` dockerfile
 FROM microsoft/nanoserver
 ...
 ```
-你也可以继续借助我们此前使用的架构，通过在标记中指定操作系统版本来对所需的确切修补程序进行指定：
 
-``` Dockerfile
+你还可以与我们使用了之前，通过在标记中指定的操作系统版本的架构来指定所需的确切修补程序：
+
+``` dockerfile
 FROM microsoft/nanoserver:10.0.14393.1770
 ...
 ```
 
 ## <a name="matching-versions-using-docker-swarm"></a>使用 Docker Swarm 对版本进行匹配
 
-目前，Docker Swarm 没有可以将容器使用的 Windows 版本与使用相同版本的主机进行匹配的内置方法。 如果更新服务以使用较新的容器，它将可以成功运行。
+Docker 群当前没有匹配的容器使用到具有相同版本的主机的 Windows 版本的内置方法。 如果你更新使用较新容器的服务，它将成功运行。
 
-如果需要在一段时间内运行多个 Windows 版本，可以使用两种方法。  将 Windows 主机配置为始终使用 Hyper-V 隔离，或使用标签限制。
+如果你需要较长时间内运行多个 Windows 版本，有两种方法可以采取： 通过 Windows 主机配置为始终使用 HYPER-V 隔离，或使用标签限制。
 
 ### <a name="finding-a-service-that-wont-start"></a>查找无法启动的服务
 
-如果服务无法启动，你将看到 `MODE` 显示为 `replicated`，但是 `REPLICAS` 将停留在 0。 如果要明确是否是操作系统版本的问题，可使用以下命令：
+如果服务无法启动，你将看到`MODE`是`replicated`，但`REPLICAS`将停留在 0。 若要查看的操作系统版本是否有问题，请运行以下命令：
 
- `docker service ls` - 查找服务名称
+运行**docker 服务 ls**若要查找服务名称：
 
-```
+```dockerfile
 ID                  NAME                MODE                REPLICAS            IMAGE                                             PORTS
 xh6mwbdq2uil        angry_liskov        replicated          0/1                 microsoft/iis:windowsservercore-10.0.14393.1715
 ```
 
-`docker service ps <name>` - 获取状态和最近尝试。
+运行**docker 服务 ps （服务名称）** 若要获取状态和最近尝试：
 
-```
+```dockerfile
 C:\Program Files\Docker>docker service ps angry_liskov
 ID                  NAME                 IMAGE                                             NODE                DESIRED STATE       CURRENT STATE               ERROR                              PORTS
 klkbhn742lv0        angry_liskov.1       microsoft/iis:windowsservercore-10.0.14393.1715   WIN-BSTMQDRQC2E     Ready               Ready 3 seconds ago
@@ -196,24 +183,22 @@ ytnnv80p03xx         \_ angry_liskov.1   microsoft/iis:windowsservercore-10.0.14
 xeqkxbsao57w         \_ angry_liskov.1   microsoft/iis:windowsservercore-10.0.14393.1715   WIN-BSTMQDRQC2E     Shutdown            Failed about a minute ago   "starting container failed: co…"
 ```
 
-如果出现“启动容器失败: ...”，你将看到以下方面出现完整错误 `docker service ps --no-trunc <container name>`
+如果你看到`starting container failed: ...`，你可以看到带有**docker 服务 ps-无 trunc （容器名称）** 的完整错误：
 
-
-```
+```dockerfile
 C:\Program Files\Docker>docker service ps --no-trunc angry_liskov
 ID                          NAME                 IMAGE                                                                                                                     NODE                DESIRED STATE       CURRENT STATE                     ERROR                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          PORTS
 dwsd6sjlwsgic5vrglhtxu178   angry_liskov.1       microsoft/iis:windowsservercore-10.0.14393.1715@sha256:868bca7e89e1743792e15f78edb5a73070ef44eae6807dc3f05f9b94c23943d5   WIN-BSTMQDRQC2E     Running             Starting less than a second ago                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
 y5blbdum70zoh1f6uhx5nxsfv    \_ angry_liskov.1   microsoft/iis:windowsservercore-10.0.14393.1715@sha256:868bca7e89e1743792e15f78edb5a73070ef44eae6807dc3f05f9b94c23943d5   WIN-BSTMQDRQC2E     Shutdown            Failed 39 seconds ago             "starting container failed: container e7b5d3adba7e510569c18d8e55f7c689d7cb92be40a516c91b363e27f84604d0 encountered an error during CreateContainer: failure in a Windows system call: The operating system of the container does not match the operating system of the host. (0xc0370101) extra info: {"SystemType":"Container","Name":"e7b5d3adba7e510569c18d8e55f7c689d7cb92be40a516c91b363e27f84604d0","Owner":"docker","VolumePath":"\\\\?\\Volume{2443d38a-1379-4bcf-a4b7-fc6ad4cd7b65}","IgnoreFlushesDuringBoot":true,"LayerFolderPath":"C:\\ProgramData\\docker\\windowsfilter\\e7b5d3adba7e510569c18d8e55f7c689d7cb92be40a516c91b363e27f84604d0","Layers":[{"ID":"bcf2630f-ea95-529b-b33c-e5cdab0afdb4","Path":"C:\\ProgramData\\docker\\windowsfilter\\200235127f92416724ae1d53ed3fdc86d78767132d019bdda1e1192ee4cf3ae4"},{"ID":"e3ea10a8-4c2f-5b93-b2aa-720982f116f6","Path":"C:\\ProgramData\\docker\\windowsfilter\\0ccc9fa71a9f4c5f6f3bc8134fe3533e454e09f453de662cf99ab5d2106abbdc"},{"ID":"cff5391f-e481-593c-aff7-12e080c653ab","Path":"C:\\ProgramData\\docker\\windowsfilter\\a49576b24cd6ec4a26202871c36c0a2083d507394a3072186133131a72601a31"},{"ID":"499cb51e-b891-549a-b1f4-8a25a4665fbd","Path":"C:\\ProgramData\\docker\\windowsfilter\\fdf2f52c4323c62f7ff9b031c0bc3af42cf5fba91098d51089d039fb3e834c08"},{"ID":"1532b584-8431-5b5a-8735-5e1b4fe9c2a9","Path":"C:\\ProgramData\\docker\\windowsfilter\\b2b88bc2a47abcc682e422507abbba9c9b6d826d34e67b9e4e3144cc125a1f80"},{"ID":"a64b8da5-cd6e-5540-bc73-d81acae6da54","Path":"C:\\ProgramData\\docker\\windowsfilter\\5caaedbced1f546bccd01c9d31ea6eea4d30701ebba7b95ee8faa8c098a6845a"}],"HostName":"e7b5d3adba7e","HvPartition":false,"EndpointList":["298bb656-8800-4948-a41c-1b0500f3d94c"],"AllowUnqualifiedDNSQuery":true}"
 ```
 
-显示相同错误 `CreateContainer: failure in a Windows system call: The operating system of the container does not match the operating system of the host. (0xc0370101)`
-
+这是为相同的错误`CreateContainer: failure in a Windows system call: The operating system of the container does not match the operating system of the host. (0xc0370101)`。
 
 ### <a name="fix---update-the-service-to-use-a-matching-version"></a>修复 - 将服务更新为使用匹配版本
 
-对于 Docker Swarm，有两点注意事项。 如果你的 compose 文件具有的服务使用的不是由你创建的映像，你将需要对引用进行相应更新。 见下方：
+对于 Docker Swarm，有两点注意事项。 必须具有使用的图像未创建的服务的 compose 文件的情况下，你会想要引用进行相应更新。 例如：
 
-``` docker-compose
+``` yaml
 version: '3'
 
 services:
@@ -222,8 +207,9 @@ services:
 ...
 ```
 
-另一点注意事项是，所指向的映像是否是你自己创建的映像（比如，contoso/myimage）：
-``` docker-compose
+另一点注意事项是指向的映像是否是你自己创建 (例如，contoso/myimage):
+
+```yaml
 version: '3'
 
 services:
@@ -231,94 +217,99 @@ services:
     image: contoso/myimage
 ...
 ```
-在这种情况下，你将需要使用在上一节中介绍的方法，修改相应的 dockerfile，而不是修改 docker-compose 行。
+
+在此情况下，应使用[匹配版本引发的错误](#errors-from-mismatched-versions)中所述的方法修改该 dockerfile 而不是修改 docker-compose 行。
 
 ### <a name="mitigation---use-hyper-v-isolation-with-docker-swarm"></a>缓解 - 结合使用 Hyper-V 隔离与 Docker Swarm
 
-有一种方案支持按容器逐个使用 Hyper-V 隔离，但代码尚未完成。 你可以在 [GitHub](https://github.com/moby/moby/issues/31616) 上关注进展。 在实现之前，我们需要将主机配置为始终使用 Hyper-V 隔离运行。
+一种方案支持按容器逐个使用 HYPER-V 隔离，但代码尚未完成。 你可以在 [GitHub](https://github.com/moby/moby/issues/31616) 上关注进展。 在实现之前，我们需要将主机配置为始终使用 Hyper-V 隔离运行。
 
 这需要更改 Docker 服务配置，然后重启 Docker 引擎。
 
 1. 编辑 `C:\ProgramData\docker\config\daemon.json`
 2. 针对以下内容添加一行 `"exec-opts":["isolation=hyperv"]`
 
-注意：在默认情况下，daemon.json 文件不存在。 如果在查看目录时发现该文件不存在，你必须创建该文件。 然后你需要在下面的内容中进行复制：
+    >[!NOTE]
+    >默认情况下，daemon.json 文件不存在。 如果在查看目录时发现该文件不存在，你必须创建该文件。 然后你会想要复制以下：
 
-```JSON
-{
-    "exec-opts":["isolation=hyperv"]
-}
-```
-关闭并保存该文件。 然后重启 Docker 引擎：
+    ```JSON
+    {
+        "exec-opts":["isolation=hyperv"]
+    }
+    ```
 
-```PowerShell
-Stop-Service docker
-Start-Service docker
-```
+3. 关闭并保存该文件，然后重启 docker 引擎在 PowerShell 中运行以下 cmdlet:
 
-在该服务重启后，启动容器。 运行它们后，可通过检查容器来验证容器的隔离级别：
+    ```powershell
+    Stop-Service docker
+    Start-Service docker
+    ```
 
-```PowerShell
-docker inspect --format='{{json .HostConfig.Isolation}}' $instanceNameOrId
-```
+4. 已重新启动该服务后，启动容器。 它们运行后，可以通过检查以下 cmdlet 的容器来验证容器的隔离级别：
+
+    ```powershell
+    docker inspect --format='{{json .HostConfig.Isolation}}' $instanceNameOrId
+    ```
 
 将返回“process”或“hyperv”结果。 如果已按照上述内容对 daemon.json 文件进行修改和设置，显示的结果将是后者。
 
 ### <a name="mitigation---use-labels-and-constraints"></a>缓解 - 使用标签和限制
 
-**步骤 1 - 向每个节点添加标签**
+下面介绍了如何使用标签和约束以匹配版本：
 
-在每个节点上，添加两个标签 - `OS` 和 `OsVersion`。 这样做的假设前提是你在本地运行但可以修改为在远程主机上对标签进行设置。
+1. 将标签添加到每个节点。
 
-```powershell
-docker node update --label-add OS="windows" $ENV:COMPUTERNAME
-docker node update --label-add OsVersion="$((Get-ComputerInfo).OsVersion)" $ENV:COMPUTERNAME
-```
+    在每个节点上，添加两个标签：`OS`和`OsVersion`。 这样做的假设前提是你在本地运行但可以修改为在远程主机上对标签进行设置。
 
-接下来，可借助 `docker node inspect` 检查标签，它可显示所添加的新标签
+    ```powershell
+    docker node update --label-add OS="windows" $ENV:COMPUTERNAME
+    docker node update --label-add OsVersion="$((Get-ComputerInfo).OsVersion)" $ENV:COMPUTERNAME
+    ```
 
-```
-        "Spec": {
-            "Labels": {
-                "OS": "windows",
-                "OsVersion": "10.0.16296"
-            },
-            "Role": "manager",
-            "Availability": "active"
-        }
-```
+    之后，你可以查看这些通过运行**docker 节点检查**命令，应显示新添加的标签：
 
-**步骤 2 - 添加服务限制**
+    ```yaml
+           "Spec": {
+                "Labels": {
+                   "OS": "windows",
+                   "OsVersion": "10.0.16296"
+               },
+                "Role": "manager",
+                "Availability": "active"
+            }
+    ```
 
-每个节点均已添加标签后，我们即可更新用于确定服务放置的限制。 在下面的示例中，将“contoso_service”替换为实际服务的名称：
+2. 添加服务限制。
 
-```
-docker service update \
-    --constraint-add "node.labels.OS == windows" \
-    --constraint-add "node.labels.OsVersion == $((Get-ComputerInfo).OsVersion)" \
-    contoso_service
-```
+    既然你已标记为每个节点，你可以更新确定服务放置的约束。 在以下示例中，将"contoso_service 为"替换你实际服务的名称：
 
-这将实施并限制节点运行的位置。
+    ```powershell
+    docker service update \
+        --constraint-add "node.labels.OS == windows" \
+        --constraint-add "node.labels.OsVersion == $((Get-ComputerInfo).OsVersion)" \
+        contoso_service
+    ```
 
-如果要了解有关如何使用服务限制的更多详情，请查看服务创建[参考](https://docs.docker.com/engine/reference/commandline/service_create/#specify-service-constraints-constraint)
+    这将实施并限制节点运行的位置。
 
+若要了解有关如何使用服务限制的详细信息，请查看[服务创建引用](https://docs.docker.com/engine/reference/commandline/service_create/#specify-service-constraints-constraint)。
 
 ## <a name="matching-versions-using-kubernetes"></a>使用 Kubernetes 对版本进行匹配
 
-在 Kubernetes 中计划 Pod 时也会出现相同问题。 此问题可通过采取相似策略来避免：
+在 Kubernetes 中计划 pod 时，也会出现相同问题，[使用 Docker 群的匹配版本](#matching-versions-using-docker-swarm)中所述。 使用类似的策略，可以避免此问题：
 
-- 基于在开发和生产中使用的相同操作系统版本重新生成容器 - 请参阅上述**选择容器操作系统版本**
-- 如果 Windows Server 2016 和 Windows Server 版本 1709 的节点均位于同一群集，可使用节点标签和 nodeSelector 来确保所计划的 Pod 位于兼容节点上
+- 重新生成容器，具体取决于在开发和生产中的相同操作系统版本。 若要了解如何操作，请参阅[选择要使用的操作系统版本的容器](#choose-which-container-os-version-to-use)。
+- 使用节点标签和 Nodeselector 来确保如果 Windows Server 2016 和 Windows Server 版本 1709年的节点均在同一群集中 pod 兼容节点上计划
 - 基于操作系统版本使用单独的群集
-
 
 ### <a name="finding-pods-failed-on-os-mismatch"></a>查找 Pod 失败，因为操作系统不匹配
 
-这种情况是因为，部署所包含的 Pod 计划位于采用不匹配的操作系统版本且未启用 Hyper-V 隔离的节点。 相同的错误也出现在标有 `kubectl describe pod <podname>` 的事件中。 在几次尝试过后，Pod 状态将可能是 `CrashLoopBackOff`
+在此情况下，部署所包含的 pod 计划位于采用不匹配的操作系统版本，且未启用 HYPER-V 隔离的节点。
+
+相同的错误也出现在标有 `kubectl describe pod <podname>` 的事件中。 在多次尝试，pod 状态将可能是`CrashLoopBackOff`。
 
 ```
-$ kubectl -n plang describe po fabrikamfiber.web-789699744-rqv6p
+$ kubectl -n plang describe pod fabrikamfiber.web-789699744-rqv6p
 
 Name:           fabrikamfiber.web-789699744-rqv6p
 Namespace:      plang
@@ -377,12 +368,11 @@ Events:
   32m           11s             139     kubelet, 38519acs9011   spec.containers{fabrikamfiberweb}       Warning         BackOff                 Back-off restarting failed container
 ```
 
+### <a name="mitigation---using-node-labels-and-nodeselector"></a>缓解-使用节点标签和 nodeSelector
 
-### <a name="mitigation---using-node-labels--nodeselector"></a>缓解 - 使用节点标签和 NodeSelector
+运行**kubectl 获取节点**来获取所有节点的列表。 在此之后，你可以运行**kubectl 描述节点 （节点名称）** 以获取更多详细信息。
 
-`kubectl get node` 将得到所有节点的列表，然后可使用 `kubectl describe node <nodename>` 获取更多详情。 
-
-这种情况是由于存在两个运行不同 Windows 版本的节点：
+在以下示例中，两个 Windows 节点运行不同版本：
 
 ```
 $ kubectl get node
@@ -448,132 +438,135 @@ System Info:
 
 ```
 
+让我们使用此示例显示了如何匹配版本：
 
-1. 记录每个节点的名称以及系统信息中的 `Kernel Version`：
+1. 请记下每个节点的名称和`Kernel Version`从系统信息。
 
-名称         | 版本
--------------|--------------------------------------------------------
-38519acs9010 | 14393.1715.amd64fre.rs1_release_inmarket.170906-1810
-38519acs9011 | 16299.0.amd64fre.rs3_release.170922-1354
+    在我们的示例，信息将如下所示：
+
+    名称         | 版本
+    -------------|--------------------------------------------------------
+    38519acs9010 | 14393.1715.amd64fre.rs1_release_inmarket.170906-1810
+    38519acs9011 | 16299.0.amd64fre.rs3_release.170922-1354
+
+2. 向每个节点添加 `beta.kubernetes.io/osbuild` 标签。 Windows Server 2016 需要主要和次要版本 (在此示例中的版本 14393.1715) 必须支持无需 HYPER-V 隔离。 Windows Server 版本 1709年仅需要的主要版本 (16299 在此示例中) 以匹配。
+
+    在此示例中，添加标签的命令如下所示：
+
+    ```
+    $ kubectl label node 38519acs9010 beta.kubernetes.io/osbuild=14393.1715
 
 
+    node "38519acs9010" labeled
+    $ kubectl label node 38519acs9011 beta.kubernetes.io/osbuild=16299
 
-2. 向每个节点添加 `beta.kubernetes.io/osbuild` 标签。 Windows Server 2016 需要兼备主要和次要版本 (14393.1715) 以实现无需 Hyper-V 隔离也可获得支持。 Windows Server 版本 1709 仅需主要版本 (16299) 即可进行匹配。
+    node "38519acs9011" labeled
 
-从上述示例得到的启示：
+    ```
 
-```
-$ kubectl label node 38519acs9010 beta.kubernetes.io/osbuild=14393.1715
+3. 检查存在标签通过运行**kubectl 获取节点-显示标签**。
 
+    在此示例中，输出将如下所示：
 
-node "38519acs9010" labeled
-$ kubectl label node 38519acs9011 beta.kubernetes.io/osbuild=16299
+    ```
+    $ kubectl get nodes --show-labels
 
-node "38519acs9011" labeled
+    NAME                        STATUS                     AGE       VERSION                    LABELS
+    38519acs9010                Ready,SchedulingDisabled   3d        v1.7.7-7+e79c96c8ff2d8e    beta.kubernetes.io/arch=amd64,beta.kubernetes.io/instance-type=Standard_D2_v2,beta.kubernetes.io/os=windows,beta.kubernetes.io/osbuild=14393.1715,failure-domain.beta.kubernetes.io/region=westus2,failure-domain.beta.kubernetes.io/zone=0,kubernetes.io/hostname=38519acs9010
+    38519acs9011                Ready                      3d        v1.7.7-25+bc3094f1d650a2   beta.kubernetes.io/arch=amd64,beta.kubernetes.io/instance-type=Standard_DS1_v2,beta.kubernetes.io/os=windows,beta.kubernetes.io/osbuild=16299,failure-domain.beta.kubernetes.io/region=westus2,failure-domain.beta.kubernetes.io/zone=0,kubernetes.io/hostname=38519acs9011
+    k8s-linuxpool1-38519084-0   Ready                      3d        v1.7.7                     agentpool=linuxpool1,beta.kubernetes.io/arch=amd64,beta.kubernetes.io/instance-type=Standard_D2_v2,beta.kubernetes.io/os=linux,failure-domain.beta.kubernetes.io/region=westus2,failure-domain.beta.kubernetes.io/zone=0,kubernetes.io/hostname=k8s-linuxpool1-38519084-0,kubernetes.io/role=agent
+    k8s-master-38519084-0       Ready                      3d        v1.7.7                     beta.kubernetes.io/arch=amd64,beta.kubernetes.io/instance-type=Standard_D2_v2,beta.kubernetes.io/os=linux,failure-domain.beta.kubernetes.io/region=westus2,failure-domain.beta.kubernetes.io/zone=0,kubernetes.io/hostname=k8s-master-38519084-0,kubernetes.io/role=master
+    ```
 
-```
+4. 将节点选择器添加到部署。 在此示例的情况，我们将添加`nodeSelector`为使用的容器规范`beta.kubernetes.io/os`= windows 和`beta.kubernetes.io/osbuild`= 14393 或 16299 才可由容器基本操作系统匹配。
 
-3. 检查以下几项中是否存在标签 `kubectl get nodes --show-labels`
+    以下是运行适用于 Windows Server 2016 的容器的完整示例：
 
-```
-$ kubectl get nodes --show-labels
-
-NAME                        STATUS                     AGE       VERSION                    LABELS
-38519acs9010                Ready,SchedulingDisabled   3d        v1.7.7-7+e79c96c8ff2d8e    beta.kubernetes.io/arch=amd64,beta.kubernetes.io/instance-type=Standard_D2_v2,beta.kubernetes.io/os=windows,beta.kubernetes.io/osbuild=14393.1715,failure-domain.beta.kubernetes.io/region=westus2,failure-domain.beta.kubernetes.io/zone=0,kubernetes.io/hostname=38519acs9010
-38519acs9011                Ready                      3d        v1.7.7-25+bc3094f1d650a2   beta.kubernetes.io/arch=amd64,beta.kubernetes.io/instance-type=Standard_DS1_v2,beta.kubernetes.io/os=windows,beta.kubernetes.io/osbuild=16299,failure-domain.beta.kubernetes.io/region=westus2,failure-domain.beta.kubernetes.io/zone=0,kubernetes.io/hostname=38519acs9011
-k8s-linuxpool1-38519084-0   Ready                      3d        v1.7.7                     agentpool=linuxpool1,beta.kubernetes.io/arch=amd64,beta.kubernetes.io/instance-type=Standard_D2_v2,beta.kubernetes.io/os=linux,failure-domain.beta.kubernetes.io/region=westus2,failure-domain.beta.kubernetes.io/zone=0,kubernetes.io/hostname=k8s-linuxpool1-38519084-0,kubernetes.io/role=agent
-k8s-master-38519084-0       Ready                      3d        v1.7.7                     beta.kubernetes.io/arch=amd64,beta.kubernetes.io/instance-type=Standard_D2_v2,beta.kubernetes.io/os=linux,failure-domain.beta.kubernetes.io/region=westus2,failure-domain.beta.kubernetes.io/zone=0,kubernetes.io/hostname=k8s-master-38519084-0,kubernetes.io/role=master
-```
-
-4. 将节点选择器添加到部署中
-
-向带有“`beta.kubernetes.io/os` = windows”和“`beta.kubernetes.io/osbuild` = 14393.* 或 16299”标签的容器规范添加 `nodeSelector` 以匹配容器所使用的基础操作系统。
-
-以下是运行适用于 Windows Server 2016 的容器的完整示例：
-
-```yaml
-apiVersion: extensions/v1beta1
-kind: Deployment
-metadata:
-  annotations:
-    kompose.cmd: kompose convert -f docker-compose-combined.yml
-    kompose.version: 1.2.0 (99f88ef)
-  creationTimestamp: null
-  labels:
-    io.kompose.service: fabrikamfiber.web
-  name: fabrikamfiber.web
-spec:
-  replicas: 1
-  strategy: {}
-  template:
+    ```yaml
+    apiVersion: extensions/v1beta1
+    kind: Deployment
     metadata:
+      annotations:
+        kompose.cmd: kompose convert -f docker-compose-combined.yml
+        kompose.version: 1.2.0 (99f88ef)
       creationTimestamp: null
       labels:
         io.kompose.service: fabrikamfiber.web
+      name: fabrikamfiber.web
     spec:
-      containers:
-      - image: patricklang/fabrikamfiber.web:latest
-        name: fabrikamfiberweb
-        ports:
-        - containerPort: 80
-        resources: {}
-      restartPolicy: Always
-      nodeSelector:
-        "beta.kubernetes.io/os": windows
-        "beta.kubernetes.io/osbuild": "14393.1715"
-status: {}
-```
+      replicas: 1
+      strategy: {}
+      template:
+        metadata:
+          creationTimestamp: null
+          labels:
+            io.kompose.service: fabrikamfiber.web
+        spec:
+          containers:
+          - image: patricklang/fabrikamfiber.web:latest
+            name: fabrikamfiberweb
+            ports:
+            - containerPort: 80
+            resources: {}
+          restartPolicy: Always
+          nodeSelector:
+            "beta.kubernetes.io/os": windows
+            "beta.kubernetes.io/osbuild": "14393.1715"
+    status: {}
+    ```
 
-现在可以使用更新后的部署来启动 Pod。 节点选择器也会出现在 `kubectl describe pod <podname>`，这样你可确认它们已经添加。
+    现在可以使用更新后的部署来启动 Pod。 节点选择器还会显示在`kubectl describe pod <podname>`，因此你可以运行该命令以确认它们已经添加。
 
-```
-$ kubectl -n plang describe po fa
+    对于我们的示例输出如下所示：
 
-Name:           fabrikamfiber.web-1780117715-5c8vw
-Namespace:      plang
-Node:           38519acs9010/10.240.0.4
-Start Time:     Tue, 10 Oct 2017 01:43:28 +0000
-Labels:         io.kompose.service=fabrikamfiber.web
-                pod-template-hash=1780117715
-Annotations:    kubernetes.io/created-by={"kind":"SerializedReference","apiVersion":"v1","reference":{"kind":"ReplicaSet","namespace":"plang","name":"fabrikamfiber.web-1780117715","uid":"6a07aaf3-ad5c-11e7-b16e-000d3...
-Status:         Running
-IP:             10.244.1.84
-Created By:     ReplicaSet/fabrikamfiber.web-1780117715
-Controlled By:  ReplicaSet/fabrikamfiber.web-1780117715
-Containers:
-  fabrikamfiberweb:
-    Container ID:       docker://c94594fb53161f3821cf050d9af7546991aaafbeab41d333d9f64291327fae13
-    Image:              patricklang/fabrikamfiber.web:latest
-    Image ID:           docker-pullable://patricklang/fabrikamfiber.web@sha256:562741016ce7d9a232a389449a4fd0a0a55aab178cf324144404812887250ead
-    Port:               80/TCP
-    State:              Running
-      Started:          Tue, 10 Oct 2017 01:43:42 +0000
-    Ready:              True
-    Restart Count:      0
-    Environment:        <none>
-    Mounts:
-      /var/run/secrets/kubernetes.io/serviceaccount from default-token-rw9dn (ro)
-Conditions:
-  Type          Status
-  Initialized   True
-  Ready         True
-  PodScheduled  True
-Volumes:
-  default-token-rw9dn:
-    Type:       Secret (a volume populated by a Secret)
-    SecretName: default-token-rw9dn
-    Optional:   false
-QoS Class:      BestEffort
-Node-Selectors: beta.kubernetes.io/os=windows
-                beta.kubernetes.io/osbuild=14393.1715
-Tolerations:    <none>
-Events:
-  FirstSeen     LastSeen        Count   From                    SubObjectPath                           Type            Reason                  Message
-  ---------     --------        -----   ----                    -------------                           --------        ------                  -------
-  5m            5m              1       default-scheduler                                               Normal          Scheduled               Successfully assigned fabrikamfiber.web-1780117715-5c8vw to 38519acs9010
-  5m            5m              1       kubelet, 38519acs9010                                           Normal          SuccessfulMountVolume   MountVolume.SetUp succeeded for volume "default-token-rw9dn"
-  5m            5m              1       kubelet, 38519acs9010   spec.containers{fabrikamfiberweb}       Normal          Pulling                 pulling image "patricklang/fabrikamfiber.web:latest"
-  5m            5m              1       kubelet, 38519acs9010   spec.containers{fabrikamfiberweb}       Normal          Pulled                  Successfully pulled image "patricklang/fabrikamfiber.web:latest"
-  5m            5m              1       kubelet, 38519acs9010   spec.containers{fabrikamfiberweb}       Normal          Created                 Created container
-  5m            5m              1       kubelet, 38519acs9010   spec.containers{fabrikamfiberweb}       Normal          Started                 Started container
-```
+    ```
+    $ kubectl -n plang describe po fa
+
+    Name:           fabrikamfiber.web-1780117715-5c8vw
+    Namespace:      plang
+    Node:           38519acs9010/10.240.0.4
+    Start Time:     Tue, 10 Oct 2017 01:43:28 +0000
+    Labels:         io.kompose.service=fabrikamfiber.web
+                    pod-template-hash=1780117715
+    Annotations:    kubernetes.io/created-by={"kind":"SerializedReference","apiVersion":"v1","reference":{"kind":"ReplicaSet","namespace":"plang","name":"fabrikamfiber.web-1780117715","uid":"6a07aaf3-ad5c-11e7-b16e-000d3...
+    Status:         Running
+    IP:             10.244.1.84
+    Created By:     ReplicaSet/fabrikamfiber.web-1780117715
+    Controlled By:  ReplicaSet/fabrikamfiber.web-1780117715
+    Containers:
+      fabrikamfiberweb:
+        Container ID:       docker://c94594fb53161f3821cf050d9af7546991aaafbeab41d333d9f64291327fae13
+        Image:              patricklang/fabrikamfiber.web:latest
+        Image ID:           docker-pullable://patricklang/fabrikamfiber.web@sha256:562741016ce7d9a232a389449a4fd0a0a55aab178cf324144404812887250ead
+        Port:               80/TCP
+        State:              Running
+          Started:          Tue, 10 Oct 2017 01:43:42 +0000
+        Ready:              True
+        Restart Count:      0
+        Environment:        <none>
+        Mounts:
+          /var/run/secrets/kubernetes.io/serviceaccount from default-token-rw9dn (ro)
+    Conditions:
+      Type          Status
+      Initialized   True
+      Ready         True
+      PodScheduled  True
+    Volumes:
+      default-token-rw9dn:
+        Type:       Secret (a volume populated by a Secret)
+        SecretName: default-token-rw9dn
+        Optional:   false
+    QoS Class:      BestEffort
+    Node-Selectors: beta.kubernetes.io/os=windows
+                    beta.kubernetes.io/osbuild=14393.1715
+    Tolerations:    <none>
+    Events:
+      FirstSeen     LastSeen        Count   From                    SubObjectPath                           Type            Reason                  Message
+      ---------     --------        -----   ----                    -------------                           --------        ------                  -------
+      5m            5m              1       default-scheduler                                               Normal          Scheduled               Successfully assigned fabrikamfiber.web-1780117715-5c8vw to 38519acs9010
+      5m            5m              1       kubelet, 38519acs9010                                           Normal          SuccessfulMountVolume   MountVolume.SetUp succeeded for volume "default-token-rw9dn"
+      5m            5m              1       kubelet, 38519acs9010   spec.containers{fabrikamfiberweb}       Normal          Pulling                 pulling image "patricklang/fabrikamfiber.web:latest"
+      5m            5m              1       kubelet, 38519acs9010   spec.containers{fabrikamfiberweb}       Normal          Pulled                  Successfully pulled image "patricklang/fabrikamfiber.web:latest"
+      5m            5m              1       kubelet, 38519acs9010   spec.containers{fabrikamfiberweb}       Normal          Created                 Created container
+      5m            5m              1       kubelet, 38519acs9010   spec.containers{fabrikamfiberweb}       Normal          Started                 Started container
+    ```
