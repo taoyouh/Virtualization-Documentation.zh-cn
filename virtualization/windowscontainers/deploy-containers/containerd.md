@@ -8,12 +8,12 @@ ms.topic: article
 ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: a0e62b32-0c4c-4dd4-9956-8056e9abd9e5
-ms.openlocfilehash: f8bfd60af18731537c2ce02ca7abdb081f3c7369
-ms.sourcegitcommit: 34d8b2ca5eebcbdb6958560b1f4250763bee5b48
+ms.openlocfilehash: 74e22702aa4be30055b3f4f48c7fac926d793095
+ms.sourcegitcommit: 03e9203e9769997d8be3f66dc7935a3e5c0a83e1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 05/08/2019
-ms.locfileid: "9620755"
+ms.locfileid: "9621605"
 ---
 # <a name="container-platform-tools-on-windows"></a>在 Windows 上的容器平台工具
 

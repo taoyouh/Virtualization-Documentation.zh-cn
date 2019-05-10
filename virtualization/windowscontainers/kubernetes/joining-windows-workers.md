@@ -5,15 +5,15 @@ ms.author: daschott
 ms.date: 11/02/2018
 ms.topic: get-started-article
 ms.prod: containers
-description: 将 Windows 节点加入到 Kubernetes 群集与 v1.13。
-keywords: kubernetes，1.13，windows，入门
+description: 将 Windows 节点加入到 Kubernetes 群集与 v1.14。
+keywords: kubernetes，1.14，windows，入门
 ms.assetid: 3b05d2c2-4b9b-42b4-a61b-702df35f5b17
-ms.openlocfilehash: fec18baa58ae6aa7d637be575548a1823a551207
-ms.sourcegitcommit: 34d8b2ca5eebcbdb6958560b1f4250763bee5b48
+ms.openlocfilehash: c1781a6ce48ebaa8433f5649a34ac79b852beae6
+ms.sourcegitcommit: aaf115a9de929319cc893c29ba39654a96cf07e1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/08/2019
-ms.locfileid: "9620985"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "9622962"
 ---
 # <a name="joining-windows-server-nodes-to-a-cluster"></a>Windows Server 节点加入群集 #
 [设置 Kubernetes 主节点](./creating-a-linux-master.md)并[选择所需的网络解决方案](./network-topologies.md)后，你就可以加入 Windows Server 节点群集。 这在加入之前需要某些[准备 Windows 节点上](#preparing-a-windows-node)。
@@ -101,8 +101,8 @@ mkdir c:\k
 
 #### <a name="download-kubernetes-binaries"></a>下载 Kubernetes 二进制文件 ####
 若要能够运行 Kubernetes，首先需要下载`kubectl`， `kubelet`，并`kube-proxy`二进制文件。 你可以下载这些中的链接`CHANGELOG.md`文件的[最新版本](https://github.com/kubernetes/kubernetes/releases/)。
- - 例如，下面是[v1.13 节点二进制文件](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG-1.13.md#node-binaries)。
- - 使用[展开存档](https://docs.microsoft.com/powershell/module/microsoft.powershell.archive/expand-archive?view=powershell-6)等工具解压缩存档并将放置到的二进制文件`C:\k\`。
+ - 例如，下面是[v1.14 节点二进制文件](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG-1.14.md#node-binaries)。
+ - 使用[展开存档](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.archive/expand-archive?view=powershell-6)等工具解压缩存档并将放置到的二进制文件`C:\k\`。
 
 #### <a name="optional-setup-kubectl-on-windows"></a>（可选）在 Windows 上的安装程序 kubectl ####
 你想要控制从 Windows 群集应，你可以使用完成`kubectl`命令。 首先，以使`kubectl`可用外`C:\k\`目录中，修改`PATH`环境变量：
@@ -186,7 +186,7 @@ cd c:\k
 网络模式`l2bridge`(flannel 主机网关) 或`overlay`(flannel vxlan) 选择作为[网络解决方案](./network-topologies.md)。
 
 > [!Important] 
-> `overlay` 网络模式 (flannel vxlan) 需要 Kubernetes v1.14 二进制文件或以上。
+> `overlay` 网络模式 (flannel vxlan) 需要 Kubernetes v1.14 二进制文件 （或以上） 和[KB4489899](https://support.microsoft.com/help/4489899)。
 
 |  |  | 
 |---------|---------|

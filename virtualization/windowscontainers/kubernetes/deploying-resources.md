@@ -6,14 +6,14 @@ ms.date: 11/02/2018
 ms.topic: get-started-article
 ms.prod: containers
 description: 部署混合操作系统 Kubernetes 群集上的 Kubernetes resoureces。
-keywords: kubernetes，1.13，windows，入门
+keywords: kubernetes，1.14，windows，入门
 ms.assetid: 3b05d2c2-4b9b-42b4-a61b-702df35f5b17
-ms.openlocfilehash: 380eeb536b9642210c49bc91edf680b695d54a90
-ms.sourcegitcommit: 34d8b2ca5eebcbdb6958560b1f4250763bee5b48
+ms.openlocfilehash: 6ede914def6c5a94313164ad78eeecf61c4fab4a
+ms.sourcegitcommit: aaf115a9de929319cc893c29ba39654a96cf07e1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/08/2019
-ms.locfileid: "9621035"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "9622932"
 ---
 # <a name="deploying-kubernetes-resources"></a>部署 Kubernetes 资源 #
 假设你有 Kubernetes 群集包含至少 1 个大纲和 1 个工作线程，现在可以部署 Kubernetes 资源。
