@@ -6,17 +6,17 @@ ms.date: 02/09/2018
 ms.topic: get-started-article
 ms.prod: containers
 description: 开始创建 Kubernetes 群集主机。
-keywords: kubernetes，1.13，主机 linux
-ms.openlocfilehash: 8a3fb073616d115ab84e6cc36f0fb6cedbcf1f7d
-ms.sourcegitcommit: 0deb653de8a14b32a1cfe3e1d73e5d3f31bbe83b
+keywords: kubernetes，1.14，主机 linux
+ms.openlocfilehash: b1ec23b039ce6f5c42859452ecf3a8a5b35e006c
+ms.sourcegitcommit: aaf115a9de929319cc893c29ba39654a96cf07e1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "9578248"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "9622952"
 ---
 # <a name="creating-a-kubernetes-master"></a>开始创建 Kubernetes 主机 #
 > [!NOTE]
-> 本指南已验证 Kubernetes v1.13 上。 由于易变性的 Kubernetes 版本到版本，本部分可能会使并持有适用于适用于所有的未来版本的假设。 找不到初始化使用 kubeadm Kubernetes 主机的正式文档[在此处](https://kubernetes.io/docs/setup/independent/install-kubeadm/)。 只需除此之外启用[混合操作系统计划部分](#enable-mixed-os-scheduling)。
+> 本指南已验证 Kubernetes v1.14 上。 由于易变性的 Kubernetes 版本到版本，本部分可能会使并持有适用于适用于所有的未来版本的假设。 找不到初始化使用 kubeadm Kubernetes 主机的正式文档[在此处](https://kubernetes.io/docs/setup/independent/install-kubeadm/)。 只需除此之外启用[混合操作系统计划部分](#enable-mixed-os-scheduling)。
 
 > [!NOTE]  
 > 近期已更新 Linux 计算机所需遵循沿;Kubernetes 主像[kube dns](https://kubernetes.io/docs/concepts/services-networking/dns-pod-service/)、 [kube 计划程序](https://kubernetes.io/docs/reference/command-line-tools-reference/kube-scheduler/)，以及[kube apiserver](https://kubernetes.io/docs/reference/command-line-tools-reference/kube-apiserver/)不已移植到 Windows 尚未的资源。 

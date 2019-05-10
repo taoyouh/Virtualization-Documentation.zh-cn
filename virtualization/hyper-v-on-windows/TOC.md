@@ -21,11 +21,11 @@
 # 参考
 ## [Hyper-V 要求](reference/hyper-v-requirements.md)
 ## [支持的来宾操作系统](about/supported-guest-os.md)
-## [Hyper-V PowerShell](https://technet.microsoft.com/library/hh848559.aspx)
+## [Hyper-V PowerShell](https://docs.microsoft.com/powershell/module/hyper-v/index?view=win10-ps)
 ## [Hyper-V 集成服务](reference/integration-services.md)
 ## [Hyper-V 体系结构](reference/hyper-v-architecture.md)
 ## [虚拟机监控程序规范](reference/tlfs.md)
 ## [HYPER-V 备份方法](reference/HyperVBackupApproaches.md)
 
 # 社区和支持
-## [Hyper-V 论坛](https://social.technet.microsoft.com/Forums/windowsserver/en-US/home?forum=winserverhyperv)
+## [Hyper-V 论坛](https://social.technet.microsoft.com/Forums/windowsserver/home?forum=winserverhyperv)

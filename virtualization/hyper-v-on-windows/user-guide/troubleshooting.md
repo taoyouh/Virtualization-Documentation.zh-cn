@@ -8,19 +8,19 @@ ms.topic: article
 ms.prod: windows-10-hyperv
 ms.service: windows-10-hyperv
 ms.assetid: f0ec8eb4-ffc4-4bf1-9a19-7a8c3975b359
-ms.openlocfilehash: 4d1b7b310d0df7c198d5446b339a9c38279c72db
-ms.sourcegitcommit: 0deb653de8a14b32a1cfe3e1d73e5d3f31bbe83b
+ms.openlocfilehash: 03bbb4494bbbd790f16c4b6afef387905f7c6c83
+ms.sourcegitcommit: 34d8b2ca5eebcbdb6958560b1f4250763bee5b48
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "9575138"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "9621068"
 ---
 # <a name="troubleshoot-hyper-v-on-windows-10"></a>Windows 10 上的 Hyper-V 疑难解答
 
 ## <a name="i-updated-to-windows-10-and-now-i-cant-connect-to-my-downlevel-windows-81-or-server-2012-r2-host"></a>我已更新到 Windows 10，但现在我无法连接到下层（Windows 8.1 或 Server 2012 R2）主机。
 在 Windows 10 中，Hyper-V 管理器已移动到 WinRM 进行远程管理。  这意味着现在必须在远程主机上启用远程管理，才能使用 Hyper-V 管理器管理它。
 
-有关详细信息，请参阅[管理远程 Hyper-V 主机](https://technet.microsoft.com/windows-server-docs/compute/hyper-v/manage/Remotely-manage-Hyper-V-hosts)
+有关详细信息，请参阅[管理远程 Hyper-V 主机](https://docs.microsoft.com/windows-server/virtualization/hyper-v/manage/Remotely-manage-Hyper-V-hosts)
 
 ## <a name="i-changed-the-checkpoint-type-but-it-is-still-taking-the-wrong-type-of-checkpoint"></a>我已更改检查点类型，但它还是采用错误类型的检查点
 如果你采用 VMConnect 的检查点，并且在 Hyper-V 管理器中更改检查点类型，所采用的检查点会是打开 VMConnect 时指定的任意检查点类型。

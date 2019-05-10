@@ -8,12 +8,12 @@ ms.topic: article
 ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: 479e05b1-2642-47c7-9db4-d2a23592d29f
-ms.openlocfilehash: 41fa89dcaba38d43d39681240a1a108c9250ba78
-ms.sourcegitcommit: 0deb653de8a14b32a1cfe3e1d73e5d3f31bbe83b
+ms.openlocfilehash: db360bdd2b62667ab017549b3c179d11278abc19
+ms.sourcegitcommit: 34d8b2ca5eebcbdb6958560b1f4250763bee5b48
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "9575168"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "9620795"
 ---
 # <a name="automating-builds-and-saving-images"></a>自动生成和保存映像
 
@@ -31,7 +31,7 @@ ms.locfileid: "9575168"
 
 ## <a name="container-image---dockerfile"></a>容器映像-Dockerfile
 
-尽管可以手动创建和修改容器，然后将其捕获到新容器镜像中，但是 Docker 还包含一种使用 Dockerfile 自动执行此过程的方法。 此练习需要 Docker ID。 如果还没有 Docker ID，请在 [Docker 云]( https://cloud.docker.com/)中进行注册。
+尽管可以手动创建和修改容器，然后将其捕获到新容器镜像中，但是 Docker 还包含一种使用 Dockerfile 自动执行此过程的方法。 此练习需要 Docker ID。 如果还没有 Docker ID，请在 [Docker 云](https://cloud.docker.com/)中进行注册。
 
 在容器主机上，创建目录 `c:\build`，并在此目录中创建一个名为 `Dockerfile` 的文件。 注意 - 该文件不应具有文件扩展名。
 

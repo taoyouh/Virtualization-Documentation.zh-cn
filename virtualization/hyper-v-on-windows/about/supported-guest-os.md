@@ -7,12 +7,12 @@ ms.date: 05/02/2016
 ms.topic: article
 ms.prod: windows-10-hyperv
 ms.assetid: ae4a18ed-996b-4104-90c5-539c90798e4c
-ms.openlocfilehash: c14027e6ba1b0cd475ec1543205b315240662f2c
-ms.sourcegitcommit: 0deb653de8a14b32a1cfe3e1d73e5d3f31bbe83b
+ms.openlocfilehash: e3255d236a3fbb5ac4d908143750b84e3db82ceb
+ms.sourcegitcommit: 34d8b2ca5eebcbdb6958560b1f4250763bee5b48
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "9575858"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "9621095"
 ---
 # <a name="supported-windows-guests"></a>受支持的 Windows 来宾
 
@@ -41,7 +41,7 @@ Microsoft 通过以下方式提供支持：
 | Windows 7 | 4 | 旗舰版、企业版和专业版版本（32 位和 64 位）。 |
 | Windows Vista Service Pack 2 (SP2) | 2 | 商用版、企业版和旗舰版，包括 N 和 KN 版本。 |
 | - | | |
-| [Windows Server 半年频道](https://docs.microsoft.com/en-us/windows-server/get-started/semi-annual-channel-overview) | 64 | |
+| [Windows Server 半年频道](https://docs.microsoft.com/windows-server/get-started/semi-annual-channel-overview) | 64 | |
 | Windows Server 2019 | 64 | |
 | WindowsServer 2016 | 64 | |
 | Windows Server 2012 R2 | 64 | |
@@ -57,11 +57,11 @@ Microsoft 通过以下方式提供支持：
 
 | 来宾操作系统 |  |
 |:-----|:------|
-| [CentOS 和 Red Hat Enterprise Linux](https://technet.microsoft.com/library/dn531026.aspx) | |
-| [Hyper-V 上的 Debian 虚拟机](https://technet.microsoft.com/library/dn614985.aspx) | |
-| [SUSE](https://technet.microsoft.com/en-us/library/dn531027.aspx) | |
-| [Oracle Linux](https://technet.microsoft.com/en-us/library/dn609828.aspx)  | |
-| [Ubuntu](https://technet.microsoft.com/en-us/library/dn531029.aspx) | |
-| [FreeBSD](https://technet.microsoft.com/library/dn848318.aspx) | |
+| [CentOS 和 Red Hat Enterprise Linux](https://docs.microsoft.com/windows-server/virtualization/hyper-v/Supported-CentOS-and-Red-Hat-Enterprise-Linux-virtual-machines-on-Hyper-V) | |
+| [Hyper-V 上的 Debian 虚拟机](https://docs.microsoft.com/windows-server/virtualization/hyper-v/Supported-Debian-virtual-machines-on-Hyper-V) | |
+| [SUSE](https://docs.microsoft.com/windows-server/virtualization/hyper-v/Supported-SUSE-virtual-machines-on-Hyper-V) | |
+| [Oracle Linux](https://docs.microsoft.com/windows-server/virtualization/hyper-v/Supported-Oracle-Linux-virtual-machines-on-Hyper-V)  | |
+| [Ubuntu](https://docs.microsoft.com/windows-server/virtualization/hyper-v/Supported-Ubuntu-virtual-machines-on-Hyper-V) | |
+| [FreeBSD](https://docs.microsoft.com/windows-server/virtualization/hyper-v/Supported-FreeBSD-virtual-machines-on-Hyper-V) | |
 
-有关详细信息（包括有关以前版本的 Hyper-V 的支持信息），请参阅 [Linux and FreeBSD Virtual Machines on Hyper-V](https://technet.microsoft.com/library/dn531030.aspx)（Hyper-V 上的 Linux 和 FreeBSD 虚拟机）。
+有关详细信息（包括有关以前版本的 Hyper-V 的支持信息），请参阅 [Linux and FreeBSD Virtual Machines on Hyper-V](https://docs.microsoft.com/windows-server/virtualization/hyper-v/Supported-Linux-and-FreeBSD-virtual-machines-for-Hyper-V-on-Windows)（Hyper-V 上的 Linux 和 FreeBSD 虚拟机）。

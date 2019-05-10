@@ -8,12 +8,12 @@ ms.topic: article
 ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: 538871ba-d02e-47d3-a3bf-25cda4a40965
-ms.openlocfilehash: 001f1abaeefaf34e12b0f7e3323bf32140080d05
-ms.sourcegitcommit: 0deb653de8a14b32a1cfe3e1d73e5d3f31bbe83b
+ms.openlocfilehash: 492e3b0ba3b1abe1109de3f6091f5b60831036df
+ms.sourcegitcommit: aaf115a9de929319cc893c29ba39654a96cf07e1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "9575078"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "9622972"
 ---
 # <a name="advanced-network-options-in-windows"></a>Windows 中的高级网络选项
 
@@ -23,7 +23,7 @@ ms.locfileid: "9575078"
 
 > 适用于所有网络驱动程序
 
-通过使用 `-o com.docker.network.windowsshim.interface` 选项指定多个网络适配器（用逗号分隔）来创建供 Docker 使用的容器主机网络时，你可以充分利用[交换机嵌入式组合](https://technet.microsoft.com/en-us/windows-server-docs/networking/technologies/hyper-v-virtual-switch/rdma-and-switch-embedded-teaming#a-namebkmksswitchembeddedaswitch-embedded-teaming-set)。
+通过使用 `-o com.docker.network.windowsshim.interface` 选项指定多个网络适配器（用逗号分隔）来创建供 Docker 使用的容器主机网络时，你可以充分利用[交换机嵌入式组合](https://docs.microsoft.com/windows-server/virtualization/hyper-v-virtual-switch/RDMA-and-Switch-Embedded-Teaming#a-namebkmksswitchembeddedaswitch-embedded-teaming-set)。
 
 ```
 C:\> docker network create -d transparent -o com.docker.network.windowsshim.interface="Ethernet 2", "Ethernet 3" TeamedNet
@@ -41,6 +41,22 @@ C:\> docker network create -d transparent -o com.docker.network.windowsshim.vlan
 当你为网络设置 VLAN ID 时，就是在为连接到该网络的任何容器终结点设置 VLAN 隔离。
 
 > 确保你的主机网络适配器（物理）处于 trunk 模式，以允许处于访问模式下的 vSwitch 在正确的 VLAN 上通过 vNIC（容器终结点）端口处理所有带标记的流量。
+
+## <a name="specify-outboundnat-policy-for-a-network"></a>指定网络的 OutboundNAT 策略
+
+> 适用于 l2 桥接网络
+
+一般情况下，创建`l2bridge`容器网络使用`docker network create`，容器终结点都不具有 HNS OutboundNAT 应用策略，从而无法到达外界的容器中。 如果你要创建网络，你可以使用`-o com.docker.network.windowsshim.enable_outboundnat=<true|false>`选择应用 OutboundNAT HNS 策略来提供对外界容器访问权限：
+
+```
+C:\> docker network create -d l2bridge -o com.docker.network.windowsshim.enable_outboundnat=true MyL2BridgeNetwork
+```
+
+如果有一组的目标 （需要例如容器到容器连接） 的位置，我们不希望 NAT'ing 发生，我们还需要指定 ExceptionList:
+
+```
+C:\> docker network create -d l2bridge -o com.docker.network.windowsshim.enable_outboundnat=true -o com.docker.network.windowsshim.outboundnat_exceptions=10.244.10.0/24
+```
 
 ## <a name="specify-the-name-of-a-network-to-the-hns-service"></a>为 HNS 服务指定网络名称
 
@@ -80,13 +96,13 @@ C:\> docker network create -d transparent -o com.docker.network.windowsshim.dnss
 
 ## <a name="vfp"></a>VFP
 
-有关更多信息，请参阅[此文章](https://www.microsoft.com/en-us/research/project/azure-virtual-filtering-platform/)。
+有关更多信息，请参阅[此文章](https://www.microsoft.com/research/project/azure-virtual-filtering-platform/)。
 
 ## <a name="tips--insights"></a>提示和见解
 下面是好用的提示和见解的列表，这些内容的灵感源于我们从社区中听到的关于 Windows 容器网络的常见问题…
 
 #### <a name="hns-requires-that-ipv6-is-enabled-on-container-host-machines"></a>HNS 要求在容器主机上启用 IPv6 
-在 [KB4015217](https://support.microsoft.com/en-us/help/4015217/windows-10-update-kb4015217) 中，HNS 要求在 Windows 容器主机上启用 IPv6。 如果你遇到错误，如以下错误，则可能是在主机上禁用了 IPv6。
+在 [KB4015217](https://support.microsoft.com/help/4015217/windows-10-update-kb4015217) 中，HNS 要求在 Windows 容器主机上启用 IPv6。 如果你遇到错误，如以下错误，则可能是在主机上禁用了 IPv6。
 ```
 docker: Error response from daemon: container e15d99c06e312302f4d23747f2dfda4b11b92d488e8c5b53ab5e4331fd80636d encountered an error during CreateContainer: failure in a Windows system call: Element not found.
 ```
@@ -99,7 +115,7 @@ C:\> reg delete HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip6\Para
 
 #### <a name="linux-containers-on-windows"></a>Windows 上的 Linux 容器
 
-**新建：** 我们正在努力实现在_无 Moby Linux 虚拟机_的情况下并行运行 Linux 和 Windows 容器。 有关详细信息，请参阅此[关于 Windows 上的 Linux 容器 (LCOW) 的博客文章](https://blog.docker.com/2017/11/docker-for-windows-17-11/)。 下面是如何[开始](https://docs.microsoft.com/en-us/virtualization/windowscontainers/quick-start/quick-start-windows-10-linux)。
+**新建：** 我们正在努力实现在_无 Moby Linux 虚拟机_的情况下并行运行 Linux 和 Windows 容器。 有关详细信息，请参阅此[关于 Windows 上的 Linux 容器 (LCOW) 的博客文章](https://blog.docker.com/2017/11/docker-for-windows-17-11/)。 下面是如何[开始](https://docs.microsoft.com/virtualization/windowscontainers/quick-start/quick-start-windows-10-linux)。
 > 注意：LCOW 将弃用 Moby Linux 虚拟机，并且它将使用默认的 HNS“nat”内部 vSwitch。
 
 #### <a name="moby-linux-vms-use-dockernat-switch-with-docker-for-windows-a-product-of-docker-cehttpswwwdockercomcommunity-edition"></a>Moby Linux 虚拟机将 DockerNAT 交换机与适用于 Windows 的 Docker（[Docker CE](https://www.docker.com/community-edition) 的产品）配合使用
@@ -163,7 +179,7 @@ C:\> docker run -it --network=MyTransparentNet --ip=10.123.174.105 windowsserver
 PS C:\> restart-service hns
 PS C:\> restart-service docker
 ```
-* 另一种方法是使用“-o com.docker.network.windowsshim.interface”选项以将透明网络的外部 vSwitch 绑定到未在容器主机上使用的特定网络适配器（即，除带外创建的 vSwitch 使用的其他网络适配器）。 有关“-o”选项的详细信息，请参阅本文档上方的[透明网络](https://msdn.microsoft.com/virtualization/windowscontainers/management/container_networking#transparent-network)部分。
+* 另一种方法是使用“-o com.docker.network.windowsshim.interface”选项以将透明网络的外部 vSwitch 绑定到未在容器主机上使用的特定网络适配器（即，除带外创建的 vSwitch 使用的其他网络适配器）。 -O 选项的进一步描述本文档的[创建单个容器主机上的多个透明网络](advanced.md#creating-multiple-transparent-networks-on-a-single-container-host)部分中。
 
 
 ## <a name="windows-server-2016-work-arounds"></a>Windows Server 2016 解决方法 

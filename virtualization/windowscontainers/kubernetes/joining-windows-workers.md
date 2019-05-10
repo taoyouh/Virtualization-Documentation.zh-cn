@@ -8,12 +8,12 @@ ms.prod: containers
 description: 将 Windows 节点加入到 Kubernetes 群集与 v1.13。
 keywords: kubernetes，1.13，windows，入门
 ms.assetid: 3b05d2c2-4b9b-42b4-a61b-702df35f5b17
-ms.openlocfilehash: ed0f13bd429e88f05469f91c3fc691bf0188b0a2
-ms.sourcegitcommit: 0deb653de8a14b32a1cfe3e1d73e5d3f31bbe83b
+ms.openlocfilehash: fec18baa58ae6aa7d637be575548a1823a551207
+ms.sourcegitcommit: 34d8b2ca5eebcbdb6958560b1f4250763bee5b48
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "9578238"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "9620985"
 ---
 # <a name="joining-windows-server-nodes-to-a-cluster"></a>Windows Server 节点加入群集 #
 [设置 Kubernetes 主节点](./creating-a-linux-master.md)并[选择所需的网络解决方案](./network-topologies.md)后，你就可以加入 Windows Server 节点群集。 这在加入之前需要某些[准备 Windows 节点上](#preparing-a-windows-node)。
@@ -83,7 +83,7 @@ docker run microsoft/nanoserver:latest
 ![文本](./media/docker-run-sample.png)
 
 > [!tip]
-> 如果你不能运行该容器请请参阅：[匹配容器主机版本与容器映像](https://docs.microsoft.com/en-us/virtualization/windowscontainers/deploy-containers/version-compatibility#matching-container-host-version-with-container-image-versions)
+> 如果你不能运行该容器请请参阅：[匹配容器主机版本与容器映像](https://docs.microsoft.com/virtualization/windowscontainers/deploy-containers/version-compatibility#matching-container-host-version-with-container-image-versions)
 
 
 #### <a name="prepare-kubernetes-for-windows-directory"></a>准备 Kubernetes Windows 目录 ####
@@ -97,12 +97,12 @@ mkdir c:\k
 将 Kubernetes 证书文件复制 (`$HOME/.kube/config`)[从主机](./creating-a-linux-master.md#collect-cluster-information)到此新`C:\k`目录。
 
 > [!tip]
-> 你可以使用[xcopy](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/xcopy)或[WinSCP](https://winscp.net/eng/download.php)等工具节点之间传输的配置文件。
+> 你可以使用[xcopy](https://docs.microsoft.com/windows-server/administration/windows-commands/xcopy)或[WinSCP](https://winscp.net/eng/download.php)等工具节点之间传输的配置文件。
 
 #### <a name="download-kubernetes-binaries"></a>下载 Kubernetes 二进制文件 ####
 若要能够运行 Kubernetes，首先需要下载`kubectl`， `kubelet`，并`kube-proxy`二进制文件。 你可以下载这些中的链接`CHANGELOG.md`文件的[最新版本](https://github.com/kubernetes/kubernetes/releases/)。
  - 例如，下面是[v1.13 节点二进制文件](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG-1.13.md#node-binaries)。
- - 使用[展开存档](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.archive/expand-archive?view=powershell-6)等工具解压缩存档并将放置到的二进制文件`C:\k\`。
+ - 使用[展开存档](https://docs.microsoft.com/powershell/module/microsoft.powershell.archive/expand-archive?view=powershell-6)等工具解压缩存档并将放置到的二进制文件`C:\k\`。
 
 #### <a name="optional-setup-kubectl-on-windows"></a>（可选）在 Windows 上的安装程序 kubectl ####
 你想要控制从 Windows 群集应，你可以使用完成`kubectl`命令。 首先，以使`kubectl`可用外`C:\k\`目录中，修改`PATH`环境变量：
@@ -213,7 +213,7 @@ cd c:\k
 
 
 # [<a name="kubednsserviceip"></a>KubeDnsServiceIP](#tab/KubeDnsServiceIP)
-[Kubernetes DNS 服务 IP](./getting-started-kubernetes-windows.md#kube-dns-def)。
+[Kubernetes DNS 服务 IP](./getting-started-kubernetes-windows.md#plan-ip-addressing-for-your-cluster)。
 
 |  |  | 
 |---------|---------|

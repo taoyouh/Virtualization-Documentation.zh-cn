@@ -8,12 +8,12 @@ ms.topic: article
 ms.prod: windows-10-hyperv
 ms.service: windows-10-hyperv
 ms.assetid: 18930864-476a-40db-aa21-b03dfb4fda98
-ms.openlocfilehash: 84974f093cc80f8a216518bab051e13397e89b6e
-ms.sourcegitcommit: 0deb653de8a14b32a1cfe3e1d73e5d3f31bbe83b
+ms.openlocfilehash: 762b82f3714651ffb488f682581680c9526404a8
+ms.sourcegitcommit: 34d8b2ca5eebcbdb6958560b1f4250763bee5b48
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "9577428"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "9621205"
 ---
 # <a name="hyper-v-integration-services"></a>Hyper-V 集成服务
 
@@ -22,7 +22,7 @@ ms.locfileid: "9577428"
 本文是 Windows 中提供的每个集成服务的参考。  它也将作为特定集成服务或其历史记录的相关信息的起点。
 
 **用户指南：**  
-* [管理集成服务](https://technet.microsoft.com/windows-server-docs/compute/hyper-v/manage/manage-Hyper-V-integration-services)
+* [管理集成服务](https://docs.microsoft.com/windows-server/virtualization/hyper-v/manage/Manage-Hyper-V-integration-services)
 
 
 ## <a name="quick-reference"></a>快速参考
@@ -52,7 +52,7 @@ ms.locfileid: "9577428"
 
 ### <a name="check-heartbeat-with-powershell"></a>使用 PowerShell 检查检测信号
 
-以管理员身份运行 [Get-VM](https://technet.microsoft.com/en-us/library/hh848479.aspx) 以查看虚拟机的检测信号：
+以管理员身份运行 [Get-VM](https://docs.microsoft.com/powershell/module/hyper-v/get-vm?view=win10-ps) 以查看虚拟机的检测信号：
 ``` PowerShell
 Get-VM -VMName $VMName | select Name, State, Status
 ```
@@ -102,7 +102,7 @@ DemoVM  Running  Operating normally
 
 
 **用户指南：**  
-* [Using key-value pairs to share information between the host and guest on Hyper-V](https://technet.microsoft.com/en-us/library/dn798287.aspx)（使用键值对在 Hyper-V 上的主机和来宾之间共享信息）。  
+* [Using key-value pairs to share information between the host and guest on Hyper-V](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn798287(v=ws.11))（使用键值对在 Hyper-V 上的主机和来宾之间共享信息）。  
 
 
 ## <a name="hyper-v-volume-shadow-copy-requestor"></a>Hyper-V 卷影复制请求程序
@@ -113,9 +113,9 @@ DemoVM  Running  Operating normally
 **添加：** Windows Server 2012、Windows 8  
 **影响：** 禁用后，虚拟机无法在运行（使用 VSS）的情况下被备份。  
 
-卷影复制服务 ([VSS](https://msdn.microsoft.com/en-us/library/aa384589.aspx)) 需要卷影复制请求程序集成服务。  卷影复制服务 (VSS) 捕获并复制运行系统（特别是服务器）上的映像以进行备份，但不会过度降低其提供的服务的性能和稳定性。  此集成服务通过使用主机的备份过程，协调虚拟机的工作负荷来实现它。
+卷影复制服务 ([VSS](https://docs.microsoft.com/windows/desktop/VSS/overview-of-processing-a-backup-under-vss)) 需要卷影复制请求程序集成服务。  卷影复制服务 (VSS) 捕获并复制运行系统（特别是服务器）上的映像以进行备份，但不会过度降低其提供的服务的性能和稳定性。  此集成服务通过使用主机的备份过程，协调虚拟机的工作负荷来实现它。
 
-有关卷影复制的详细信息，请阅读[此处](https://msdn.microsoft.com/en-us/library/dd405549.aspx)的内容。
+有关卷影复制的详细信息，请阅读[此处](https://docs.microsoft.com/previous-versions/windows/desktop/virtual/backing-up-and-restoring-virtual-machines)的内容。
 
 
 ## <a name="hyper-v-guest-service-interface"></a>Hyper-V 来宾服务接口
@@ -124,7 +124,7 @@ DemoVM  Running  Operating normally
 **Linux 守护程序名称：** hv_fcopy_daemon  
 **说明：** 提供 Hyper-V 主机双向复制文件到虚拟机或从虚拟机双向复制文件的界面。  
 **添加：** Windows Server 2012 R2、Windows 8.1  
-**影响：** 禁用后，主机无法使用 `Copy-VMFile` 将文件复制到来宾和从来宾复制文件。  阅读更多有关 [Copy-VMFile cmdlet](https://technet.microsoft.com/library/dn464282.aspx) 的内容。  
+**影响：** 禁用后，主机无法使用 `Copy-VMFile` 将文件复制到来宾和从来宾复制文件。  阅读更多有关 [Copy-VMFile cmdlet](https://docs.microsoft.com/powershell/module/hyper-v/copy-vmfile?view=win10-ps) 的内容。  
 
 **注意：**  
 Д¬ИПЗйїцПВЅыУГ。  请参阅 [PowerShell Direct - 使用 Copy-Item](../user-guide/powershell-direct.md#copy-files-with-new-pssession-and-copy-item)。 

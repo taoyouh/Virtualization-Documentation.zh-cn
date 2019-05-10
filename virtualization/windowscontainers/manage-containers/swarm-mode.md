@@ -8,12 +8,12 @@ ms.topic: article
 ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: 5ceb9626-7c48-4d42-81f8-9c936595ad85
-ms.openlocfilehash: d3543d9e6f9e28278ab9f64fb1f4fa19d1507b08
-ms.sourcegitcommit: 0deb653de8a14b32a1cfe3e1d73e5d3f31bbe83b
+ms.openlocfilehash: 5ab7f684bba9cfa73c59b58ce660d3d519be0b72
+ms.sourcegitcommit: 34d8b2ca5eebcbdb6958560b1f4250763bee5b48
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "9574788"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "9621435"
 ---
 # <a name="getting-started-with-swarm-mode"></a>群模式入门 
 
@@ -30,9 +30,9 @@ ms.locfileid: "9574788"
 
 ## <a name="swarm-mode-system-requirements"></a>群模式系统要求
 
-（若要使用群的完整功能至少两个节点建议） 运行**Windows 10 创意者更新**或**Windows Server 2016** *的最新 updates\ * 所有*，设置为至少一个物理或虚拟计算机系统容器主机 （请参阅主题中， [Windows 10 上的 Windows 容器](https://docs.microsoft.com/en-us/virtualization/windowscontainers/quick-start/quick-start-windows-10)或[Windows Server 上的 Windows 容器](https://docs.microsoft.com/en-us/virtualization/windowscontainers/quick-start/quick-start-windows-server)的更多有关如何开始使用 Windows 10 上的 Docker 容器的详细信息）。
+（若要使用群的完整功能至少两个节点建议） 运行**Windows 10 创意者更新**或**Windows Server 2016** *的最新 updates\ * 所有*，设置为至少一个物理或虚拟计算机系统容器主机 （请参阅主题中， [Windows 10 上的 Windows 容器](https://docs.microsoft.com/virtualization/windowscontainers/quick-start/quick-start-windows-10)或[Windows Server 上的 Windows 容器](https://docs.microsoft.com/virtualization/windowscontainers/quick-start/quick-start-windows-server)的更多有关如何开始使用 Windows 10 上的 Docker 容器的详细信息）。
 
-\***注意**：Windows Server 2016 上的 Docker 群需要 [KB4015217](https://support.microsoft.com/en-us/help/4015217/windows-10-update-kb4015217)
+\***注意**：Windows Server 2016 上的 Docker 群需要 [KB4015217](https://support.microsoft.com/help/4015217/windows-10-update-kb4015217)
 
 **Docker 引擎 v1.13.0 或更高版本**
 

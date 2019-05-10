@@ -7,16 +7,16 @@ ms.date: 05/02/2016
 ms.topic: article
 ms.prod: windows-10-hyperv
 ms.assetid: 66723f33-b12c-49d1-82cf-71ba9d6087e9
-ms.openlocfilehash: 4ded2de1447db467359b028d19482a76e2c484fc
-ms.sourcegitcommit: 0deb653de8a14b32a1cfe3e1d73e5d3f31bbe83b
+ms.openlocfilehash: 7882e89368bb88390c2efa93c3f2a8f04bb7a37a
+ms.sourcegitcommit: 34d8b2ca5eebcbdb6958560b1f4250763bee5b48
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "9576378"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "9620775"
 ---
 # <a name="create-virtual-machine-with-hyper-v-on-windows-10"></a>在 Windows 10 上使用 Hyper-V 创建虚拟机
 
-了解如何创建虚拟机以及如何在新虚拟机上安装操作系统。  你需要使用要运行的操作系统的 .iso 文件。 如果需要，请从 [TechNet 评估中心](http://www.microsoft.com/en-us/evalcenter/)获取 Windows 10 的评估副本。
+了解如何创建虚拟机以及如何在新虚拟机上安装操作系统。  你需要使用要运行的操作系统的 .iso 文件。 如果需要，请从 [TechNet 评估中心](http://www.microsoft.com/evalcenter/)获取 Windows 10 的评估副本。
 
 ## <a name="create-a-virtual-machine-with-hyper-v-manager"></a>使用 Hyper-V 管理器创建虚拟机
 
@@ -35,17 +35,17 @@ ms.locfileid: "9576378"
 
 1. 选择虚拟机的世代，然后单击“**下一步**”。  
 
-  第 2 代虚拟机已引入 Windows Server 2012 R2，并提供简化的虚拟硬件模型和一些其他功能。 只可以在第 2 代虚拟机上安装 64 位操作系统。 有关第 2 代虚拟机的详细信息，请参阅[第 2 代虚拟机概述](https://technet.microsoft.com/en-us/library/dn282285.aspx)。
+  第 2 代虚拟机已引入 Windows Server 2012 R2，并提供简化的虚拟硬件模型和一些其他功能。 只可以在第 2 代虚拟机上安装 64 位操作系统。 有关第 2 代虚拟机的详细信息，请参阅[第 2 代虚拟机概述](<https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn282285(v=ws.11)>)。
   
-  > 如果新的虚拟机配置为第 2 代，并且将运行 Linux 分发，则将需要禁用安全启动。 有关安全启动的详细信息，请参阅[安全启动](https://technet.microsoft.com/en-us/library/dn486875.aspx)。
+  > 如果新的虚拟机配置为第 2 代，并且将运行 Linux 分发，则将需要禁用安全启动。 有关安全启动的详细信息，请参阅[安全启动](<https://docs.microsoft.com/previous-versions/windows/it-pro/windows-8.1-and-8/dn486875(v=ws.11)>)。
 
-1. 选择“**2048**”MB 作为“**启动内存**”值，并保持选择“**使用动态内存**”。 单击“**下一步**”按钮。
+2. 选择“**2048**”MB 作为“**启动内存**”值，并保持选择“**使用动态内存**”。 单击“**下一步**”按钮。
 
-  在 Hyper-V 主机和该主机上运行的虚拟机之间共享内存。 单台主机上可运行的虚拟机数量部分取决于可用内存。 还可以将虚拟机配置为使用动态内存。 启用后，动态内存从正在运行的虚拟机中回收未使用的内存。 这使得可在该主机上运行更多虚拟机。 有关动态内存的详细信息，请参阅 [Hyper-V 动态内存概述](https://technet.microsoft.com/en-us/library/hh831766.aspx)。
+  在 Hyper-V 主机和该主机上运行的虚拟机之间共享内存。 单台主机上可运行的虚拟机数量部分取决于可用内存。 还可以将虚拟机配置为使用动态内存。 启用后，动态内存从正在运行的虚拟机中回收未使用的内存。 这使得可在该主机上运行更多虚拟机。 有关动态内存的详细信息，请参阅 [Hyper-V 动态内存概述](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831766(v=ws.11))。
 
-1. 在“配置网络”向导上，选择用于虚拟机的虚拟交换机，然后单击“**下一步**”。 有关详细信息，请参阅[创建虚拟交换机](connect-to-network.md)。
+3. 在“配置网络”向导上，选择用于虚拟机的虚拟交换机，然后单击“**下一步**”。 有关详细信息，请参阅[创建虚拟交换机](connect-to-network.md)。
 
-1. 为虚拟硬盘驱动器指定一个名称、选择一个位置或保留默认值，最后指定大小。 准备就绪后，单击“**下一步**”。
+4. 为虚拟硬盘驱动器指定一个名称、选择一个位置或保留默认值，最后指定大小。 准备就绪后，单击“**下一步**”。
 
   与物理硬盘驱动器类似，虚拟硬盘驱动器为虚拟机提供存储空间。 必需提供虚拟硬盘驱动器，以便可以在虚拟机上安装操作系统。
   

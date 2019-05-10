@@ -3,12 +3,12 @@ title: 在 Windows 上的容器中的设备
 description: 在 Windows 上的容器存在哪些设备支持
 keywords: docker，容器，设备硬件
 author: cwilhit
-ms.openlocfilehash: 18ae4ab229a677c63c3e17d684a3c3193df49c5e
-ms.sourcegitcommit: 0deb653de8a14b32a1cfe3e1d73e5d3f31bbe83b
+ms.openlocfilehash: f32ba3de347bcf968088d2f3f20f22f82166d652
+ms.sourcegitcommit: 34d8b2ca5eebcbdb6958560b1f4250763bee5b48
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "9576678"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "9621555"
 ---
 # <a name="devices-in-containers-on-windows"></a>在 Windows 上的容器中的设备
 
@@ -33,7 +33,7 @@ ms.locfileid: "9576678"
 docker run --isolation=process --device="class/{interface class GUID}" mcr.microsoft.com/windows/servercore:1809
 ```
 
-你必须替换`{interface class guid}`与相应的[设备接口类 GUID](https://docs.microsoft.com/en-us/windows-hardware/drivers/install/overview-of-device-interface-classes)，可找到下面部分中。
+你必须替换`{interface class guid}`与相应的[设备接口类 GUID](https://docs.microsoft.com/windows-hardware/drivers/install/overview-of-device-interface-classes)，可找到下面部分中。
 
 若要使用多个设备启动容器，使用以下命令并组合在一起多个`--device`参数：
 

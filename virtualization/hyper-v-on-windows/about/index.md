@@ -7,12 +7,12 @@ ms.date: 06/25/2018
 ms.topic: article
 ms.prod: windows-10-hyperv
 ms.assetid: eb2b827c-4a6c-4327-9354-50d14fee7ed8
-ms.openlocfilehash: d71c5d2ae3c8ff78e36cc54686b10b1dc745e0c3
-ms.sourcegitcommit: 0deb653de8a14b32a1cfe3e1d73e5d3f31bbe83b
+ms.openlocfilehash: 14e0f57ca0c952239847e493740048e14889e6d7
+ms.sourcegitcommit: 34d8b2ca5eebcbdb6958560b1f4250763bee5b48
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "9576348"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "9620715"
 ---
 # <a name="introduction-to-hyper-v-on-windows-10"></a>Windows 10 上的 Hyper-V 简介
 
@@ -42,7 +42,7 @@ HYPER-V 在 64 位版本的 Windows 10 专业版、 企业版和教育版上可�
 
 大多数计算机将运行 Hyper-V，但每个虚拟机都是一个完全独立的操作系统。  通常，你可以在具有 4GB RAM 的计算机上运行一个或多个虚拟机，但是你需要更多的资源以供其他虚拟机使用，或安装和运行资源密集型软件，如游戏、视频编辑或工程设计软件。
 
-有关 Hyper-V 的系统要求以及如何验证 Hyper-V 在计算机上运行的详细信息，请参阅 [Hyper-V 要求参考](..\reference\hyper-v-requirements.md)。
+有关 Hyper-V 的系统要求以及如何验证 Hyper-V 在计算机上运行的详细信息，请参阅 [Hyper-V 要求参考](../reference/hyper-v-requirements.md)。
 
 ## <a name="operating-systems-you-can-run-in-a-virtual-machine"></a>可以在虚拟机中运行的操作系统
 
@@ -50,7 +50,7 @@ Windows 上的 Hyper-V 支持虚拟机中的许多不同操作系统，其中包
 
 提醒一下，对于你在 VM 中使用的任何操作系统，都需要具有有效的许可证。
 
-有关 Windows 上的 Hyper-V 中作为来宾支持的操作系统的信息，请参阅[受支持的 Windows 来宾操作系统](supported-guest-os.md)和 [受支持的 Linux 来宾操作系统](https://technet.microsoft.com/library/dn531030.aspx)。
+有关 Windows 上的 Hyper-V 中作为来宾支持的操作系统的信息，请参阅[受支持的 Windows 来宾操作系统](supported-guest-os.md)和 [受支持的 Linux 来宾操作系统](https://docs.microsoft.com/windows-server/virtualization/hyper-v/Supported-Linux-and-FreeBSD-virtual-machines-for-Hyper-V-on-Windows)。
 
 ## <a name="differences-between-hyper-v-on-windows-and-hyper-v-on-windows-server"></a>Windows 上的 Hyper-V 和 Windows Server 上的 Hyper-V 之间的差异
 
@@ -79,4 +79,4 @@ Windows 上的 Hyper-V 支持虚拟机中的许多不同操作系统，其中包
 
 ## <a name="next-step"></a>下一步
 
-[在 Windows 10 上安装 Hyper-V](..\quick-start\enable-hyper-v.md)
+[在 Windows 10 上安装 Hyper-V](../quick-start/enable-hyper-v.md)

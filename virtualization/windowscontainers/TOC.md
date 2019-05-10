@@ -47,7 +47,7 @@
 ### [群模式入门](manage-containers/swarm-mode.md)
 
 # 社区和支持
-## [容器论坛](https://social.msdn.microsoft.com/Forums/en-US/home?forum=windowscontainers)
+## [容器论坛](https://social.msdn.microsoft.com/Forums/home?forum=windowscontainers)
 ## [社区视频和博客](communitylinks.md)
 ## [疑难解答](troubleshooting.md)
 
@@ -60,7 +60,7 @@
 ## [在容器中的硬件设备](deploy-containers/hardware-devices-in-containers.md)
 ## [容器平台工具](deploy-containers/containerd.md)
 ## [组托管服务帐户](manage-containers/manage-serviceaccounts.md)
-## [防病毒优化](https://msdn.microsoft.com/en-us/windows/hardware/drivers/ifs/anti-virus-optimization-for-windows-containers)
+## [防病毒优化](https://docs.microsoft.com/windows-hardware/drivers/ifs/anti-virus-optimization-for-windows-containers)
 ## [Windows 上的 Linux 容器](deploy-containers/linux-containers.md)
 
 # [容器示例](samples.md)

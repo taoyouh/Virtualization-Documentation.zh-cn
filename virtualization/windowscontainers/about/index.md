@@ -1,15 +1,20 @@
 ---
 title: 关于 Windows 容器
 description: 了解 Windows 容器。
-keywords: 'docker, 容器'
+keywords: docker, 容器
 author: taylorb-microsoft
 ms.date: 05/02/2016
 ms.topic: article
 ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: 8e273856-3620-4e58-9d1a-d1e06550448
+ms.openlocfilehash: bf503971ee8b4c0bbe6b9812b2f4965560ff466c
+ms.sourcegitcommit: 34d8b2ca5eebcbdb6958560b1f4250763bee5b48
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "9620855"
 ---
-
 # <a name="containers-on-windows"></a>Windows 上的容器
 
 ## <a name="what-are-containers"></a>什么是容器
@@ -51,7 +56,7 @@ ms.assetid: 8e273856-3620-4e58-9d1a-d1e06550448
 
 对于熟悉虚拟机的人员而言，容器可能具有令人难以置信的相似性。 容器在操作系统上运行、具有文件系统，并且可以通过网络访问，就像它是物理或虚拟计算机系统一样。 话虽如此，但容器背后的技术和概念与虚拟机有很大不同。
 
-Microsoft Azure 专家 Mark Russinovich 有[一篇精彩的博客文章](https://azure.microsoft.com/en-us/blog/containers-docker-windows-and-trends/)详述了这些差异。
+Microsoft Azure 专家 Mark Russinovich 有[一篇精彩的博客文章](https://azure.microsoft.com/blog/containers-docker-windows-and-trends/)详述了这些差异。
 
 ## <a name="windows-container-types"></a>Windows 容器类型
 

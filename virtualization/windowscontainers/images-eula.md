@@ -19,4 +19,4 @@ Microsoft Corporation（或你所在地区的其中一家附属公司）（以�
 
 使用该补充程序即表示你接受这些条款。 如果不接受这些条款，请不要使用此补充程序。
 
-作为 Windows 容器的此容器操作系统映像补充许可条款的一部分，你将还需遵循基础 Windows Server 主机软件许可条款，它位于以下位置： https://www.microsoft.com/en-us/useterms。  
+作为 Windows 容器的此容器操作系统映像补充许可条款的一部分，你将还需遵循基础 Windows Server 主机软件许可条款，它位于以下位置： https://www.microsoft.com/useterms。  

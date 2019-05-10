@@ -8,29 +8,29 @@ ms.topic: article
 ms.prod: windows-10-hyperv
 ms.service: windows-10-hyperv
 ms.assetid: fb228e06-e284-45c0-b6e6-e7b0217c3a49
-ms.openlocfilehash: 779dcf51d4903c9467cc52dbadb865beb9929bd2
-ms.sourcegitcommit: 0deb653de8a14b32a1cfe3e1d73e5d3f31bbe83b
+ms.openlocfilehash: ea6b71200d3115ba3d156b2c133e1be2fa495261
+ms.sourcegitcommit: 34d8b2ca5eebcbdb6958560b1f4250763bee5b48
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "9577318"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "9620915"
 ---
 # <a name="virtual-machine-automation-and-management-using-powershell"></a>使用 PowerShell 实现虚拟机自动化和管理虚拟机
- 
+
 无论采用何种网络配置或远程管理设置，均可以在 Hyper-V 主机上的 Windows 10 或 Windows Server 2016 虚拟机中使用 PowerShell Direct 运行任意 PowerShell。
 
-**运行 PowerShell Direct 的方法：**  
-* 作为交互式会话 - 请[单击此处](#create-and-exit-an-interactive-powershell-session)以使用 Enter-PSSession 创建和退出交互式 PowerShell 会话。
-* 作为用以执行单个命令或脚本的单用途会话 - 请[单击此处](#run-a-script-or-command-with-invoke-command)以使用 Invoke-Command 运行脚本或命令。
-* 作为持久性会话（版本 14280 及更高版本）-- 请[单击此处](#copy-files-with-new-pssession-and-copy-item)以使用 New-PSSession 创建持久性会话。  
-通过使用 Copy-Item 将文件复制到虚拟机或从其复制文件，然后使用 Remove-PSSession 断开连接来继续进行操作。
+下面是一些你可以运行 PowerShell Direct 的方法：
+
+* [作为交互式会话使用 Enter-pssession cmdlet](#create-and-exit-an-interactive-powershell-session)
+* [作为用以执行单个命令或脚本的单用途部分使用 Invoke-command cmdlet](#run-a-script-or-command-with-invoke-command)
+* [作为持久性会话 （版本 14280 及更高版本） 使用 New-pssession，项副本，并删除 PSSession cmdlet](#copy-files-with-new-pssession-and-copy-item)
 
 ## <a name="requirements"></a>要求
 **操作系统要求：**
 * 主机：运行 Hyper-V 的 Windows 10、Windows Server 2016 或更高版本。
 * 来宾/虚拟机：Windows 10、Windows Server 2016 或更高版本。
 
-如果要管理较旧的虚拟机，请使用虚拟机连接 (VMConnect) 或[为虚拟机配置虚拟网络](http://technet.microsoft.com/library/cc816585.aspx)。 
+如果要管理较旧的虚拟机，请使用虚拟机连接 (VMConnect) 或[为虚拟机配置虚拟网络](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc816585(v=ws.10))。 
 
 **配置要求：**    
 * 虚拟机必须在主机上本地运行。
@@ -77,7 +77,7 @@ ms.locfileid: "9577318"
 
 > 请注意：如果你的会话未连接，请参阅[疑难解答](#troubleshooting)了解可能的原因。 
 
-若要了解有关这些 cmdlet 的详细信息，请参阅 [Enter-PSSession](http://technet.microsoft.com/library/hh849707.aspx) 和 [Exit-PSSession](http://technet.microsoft.com/library/hh849743.aspx)。 
+若要了解有关这些 cmdlet 的详细信息，请参阅 [Enter-PSSession](https://docs.microsoft.com/powershell/module/Microsoft.PowerShell.Core/Enter-PSSession?view=powershell-5.1) 和 [Exit-PSSession](https://docs.microsoft.com/powershell/module/Microsoft.PowerShell.Core/Exit-PSSession?view=powershell-5.1)。 
 
 -------------
 
@@ -116,7 +116,7 @@ ms.locfileid: "9577318"
    
    该脚本将在虚拟机上执行。  命令一运行将会自动关闭连接。
 
-若要了解有关此 cmdlet 的详细信息，请参阅 [Invoke-Command](http://technet.microsoft.com/library/hh849719.aspx)。 
+若要了解有关此 cmdlet 的详细信息，请参阅 [Invoke-Command](https://docs.microsoft.com/powershell/module/Microsoft.PowerShell.Core/Invoke-Command?view=powershell-5.1)。 
 
 -------------
 
@@ -126,7 +126,7 @@ ms.locfileid: "9577318"
 
 在编写用于跨一个或多个远程计算机协调操作的脚本时，持久性 PowerShell 会话会非常有用。  一经创建后，持久性会话会一直存在于后台，直到你决定将其删除。  这意味着你可以使用 `Invoke-Command` 或 `Enter-PSSession` 反复引用同一个会话而无需传递凭据。
 
-通过使用相同的令牌，会话将保持原有状态。  由于持久性会话具有持久性，在会话中创建的或传递给会话的任何变量将跨多个调用被保留。 有多种工具可用于持久性会话。  在此示例中，我们将使用 [New-PSSession](https://technet.microsoft.com/en-us/library/hh849717.aspx) 和 [Copy-Item](https://technet.microsoft.com/en-us/library/hh849793.aspx) 在主机和虚拟机之间移动数据。
+通过使用相同的令牌，会话将保持原有状态。  由于持久性会话具有持久性，在会话中创建的或传递给会话的任何变量将跨多个调用被保留。 有多种工具可用于持久性会话。  在此示例中，我们将使用 [New-PSSession](https://docs.microsoft.com/powershell/module/Microsoft.PowerShell.Core/New-PSSession?view=powershell-5.1) 和 [Copy-Item](https://docs.microsoft.com/powershell/module/Microsoft.PowerShell.Management/Copy-Item?view=powershell-5.1) 在主机和虚拟机之间移动数据。
 
 **创建会话，然后复制文件：**  
 
@@ -205,13 +205,13 @@ Enter-PSSession : An error has occurred which Windows PowerShell cannot handle. 
 
 **可能的原因：**
 * 虚拟机存在但未运行。
-* 来宾操作系统不支持 PowerShell Direct（请参阅[要求](#Requirements)）
+* 来宾操作系统不支持 PowerShell Direct（请参阅[要求](#requirements)）
 * PowerShell 尚不可用于来宾
   * 操作系统没有完成启动
   * 操作系统无法正常启动
   * 某些启动时事件需要用户输入
 
-可使用 [Get-VM](http://technet.microsoft.com/library/hh848479.aspx) cmdlet 进行检查以查看主机上正在运行哪些虚拟机。
+可使用 [Get-VM](https://docs.microsoft.com/powershell/module/hyper-v/get-vm?view=win10-ps) cmdlet 进行检查以查看主机上正在运行哪些虚拟机。
 
 **错误消息：**  
 ```
@@ -253,7 +253,7 @@ Enter-PSSession : The credential is invalid.
 * 无法验证来宾凭据
   * 提供的凭据不正确。
   * 来宾操作系统中没有任何用户帐户（操作系统以前未启动）
-  * 如果以管理员身份进行连接：管理员还未设置为活动用户。  在[此处](https://technet.microsoft.com/en-us/library/hh825104.aspx)了解详细信息。
+  * 如果以管理员身份进行连接：管理员还未设置为活动用户。  在[此处](<https://docs.microsoft.com/previous-versions/windows/it-pro/windows-8.1-and-8/hh825104(v=win.10)>)了解详细信息。
   
 ### <a name="error-the-input-vmname-parameter-does-not-resolve-to-any-virtual-machine"></a>错误：输入的 VMName 参数未解析为任何虚拟机。
 
@@ -266,7 +266,7 @@ Enter-PSSession : The input VMName parameter does not resolve to any virtual mac
 * 你不是 HYPER-V 管理员。  
 * 虚拟机不存在。
 
-你可以使用 [Get-VM](http://technet.microsoft.com/library/hh848479.aspx) cmdlet 检查使用中的凭据是否具有 Hyper-V 管理员角色并查看哪些 VM 在主机上本地运行并已启动。
+你可以使用 [Get-VM](https://docs.microsoft.com/powershell/module/hyper-v/get-vm?view=win10-ps) cmdlet 检查使用中的凭据是否具有 Hyper-V 管理员角色并查看哪些 VM 在主机上本地运行并已启动。
 
 
 -------------

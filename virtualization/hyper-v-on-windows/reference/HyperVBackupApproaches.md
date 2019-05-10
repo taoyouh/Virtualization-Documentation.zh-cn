@@ -15,10 +15,10 @@ HYPER-V 上的所有版本的 Windows Server 在支持 HYPER-V 实现 VSS 编写
 ### <a name="wmi-export"></a>WMI 导出
 开发人员可以导出通过 HYPER-V WMI 接口 （如上述示例中使用） 的备份数据。  HYPER-V 将编译到虚拟硬盘驱动器的更改，并将文件复制到请求的位置。  此方法是易于使用，适用于所有方案并且可远程处理。  但是，通常生成虚拟硬盘创建大量要通过网络传输的数据。
 ### <a name="win32-apis"></a>Win32 Api
-开发人员可以使用 SetVirtualDiskInformation，GetVirtualDiskInformation 和 QueryChangesVirtualDisk Api 虚拟硬盘 Win32 API 在此处设置如此处所述：https://docs.microsoft.com/en-us/windows/desktop/api/_vhd/请注意，若要使用这些 Api，HYPER-V WMI 仍需要在用于创建引用相关联的虚拟机上的点。  这些 Win32 Api 然后允许高效的备份虚拟机的数据访问。  Win32 Api 有一些限制：
+开发人员可以使用 SetVirtualDiskInformation，GetVirtualDiskInformation 和 QueryChangesVirtualDisk Api 虚拟硬盘 Win32 API 在此处设置如此处所述：https://docs.microsoft.com/windows/desktop/api/_vhd/请注意，若要使用这些 Api，HYPER-V WMI 仍需要在用于创建引用相关联的虚拟机上的点。  这些 Win32 Api 然后允许高效的备份虚拟机的数据访问。  Win32 Api 有一些限制：
 *   仅可以本地访问
 *   不要支持读取数据从共享虚拟硬盘文件
 *   它们将返回数据都与虚拟硬盘的内部结构的地址
 
 ### <a name="remote-shared-virtual-disk-protocol"></a>远程共享的虚拟磁盘协议
-最后，如果开发人员需要高效地从共享虚拟硬盘文件-访问备份数据信息它们需要使用远程共享虚拟磁盘协议。  此处记录了此协议：https://msdn.microsoft.com/en-us/library/dn393384.aspx
+最后，如果开发人员需要高效地从共享虚拟硬盘文件-访问备份数据信息它们需要使用远程共享虚拟磁盘协议。  记录此协议[下面](https://docs.microsoft.com/openspecs/windows_protocols/ms-rsvd/c865c326-47d6-4a91-a62d-0e8f26007d15)。

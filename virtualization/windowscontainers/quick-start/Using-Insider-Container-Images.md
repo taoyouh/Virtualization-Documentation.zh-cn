@@ -70,7 +70,7 @@ docker pull mcr.microsoft.com/windows/servercore/insider
 ```
 
 > [!IMPORTANT]
-> 请阅读 Windows 容器操作系统映像[EULA](../EULA.md )和 Windows 预览体验计划[使用条款](https://www.microsoft.com/en-us/software-download/windowsinsiderpreviewserver)。
+> 请阅读 Windows 容器操作系统映像[EULA](../EULA.md )和 Windows 预览体验计划[使用条款](https://www.microsoft.com/software-download/windowsinsiderpreviewserver)。
 
 ## <a name="next-steps"></a>后续步骤
 

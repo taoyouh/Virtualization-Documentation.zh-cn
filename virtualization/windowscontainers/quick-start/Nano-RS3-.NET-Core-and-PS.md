@@ -2,7 +2,7 @@
 
 此版本中的 Nano Server 基本操作系统容器映像删除了 .NET Core 和 PowerShell，但支持 .NET Core 和 PowerShell 作为基础 Nano Server 容器上的附加分层容器。  
 
-如果你的容器计划运行本机代码或开放框架，如 Node.js、Python、Ruby 等，则基本 Nano Server 容器足已。  此版本与 Windows Server 2016 版本的一个细微差别，此版本可能因为[占用空间节省](https://docs.microsoft.com/en-us/windows-server/get-started/nano-in-semi-annual-channel)而无法运行某些本机代码。 如果你注意到任何回归问题，请在[论坛](https://social.msdn.microsoft.com/Forums/en-US/home?forum=windowscontainers)中告知我们。 
+如果你的容器计划运行本机代码或开放框架，如 Node.js、Python、Ruby 等，则基本 Nano Server 容器足已。  此版本与 Windows Server 2016 版本的一个细微差别，此版本可能因为[占用空间节省](https://docs.microsoft.com/windows-server/get-started/nano-in-semi-annual-channel)而无法运行某些本机代码。 如果你注意到任何回归问题，请在[论坛](https://social.msdn.microsoft.com/Forums/home?forum=windowscontainers)中告知我们。 
 
 若要从 Dockerfile 生成容器，请使用 docker 版本，若要运行它，请使用 docker 运行。  以下命令将下载 Nano Server 容器基本操作系统映像（这可能需要几分钟）并打印在主机控制台打印“Hello World!” 消息。
 
@@ -10,7 +10,7 @@
 docker run microsoft/nanoserver-insider cmd /c echo Hello World!
 ```
 
-你可以使用 [Windows 上的 Dockerfile](https://docs.microsoft.com/en-us/virtualization/windowscontainers/manage-docker/manage-windows-dockerfile)，通过 Dockerfile 语法（如 FROM、RUN、COPY、ADD、CMD 等）生成更复杂的应用程序。尽管你将无法通过该基本映像立即运行特定命令，你现在能够创建仅包含让你的应用程序工作所需的内容的容器映像。
+你可以使用 [Windows 上的 Dockerfile](https://docs.microsoft.com/virtualization/windowscontainers/manage-docker/manage-windows-dockerfile)，通过 Dockerfile 语法（如 FROM、RUN、COPY、ADD、CMD 等）生成更复杂的应用程序。尽管你将无法通过该基本映像立即运行特定命令，你现在能够创建仅包含让你的应用程序工作所需的内容的容器映像。
 
 由于 .NET Core 和 PowerShell 在基本 Nano Server 容器操作系统映像中不可用，使用压缩 zip 格式的内容生成容器会比较难。 使用在 Docker 17.05 中提供的[多阶段版本](https://docs.docker.com/engine/userguide/eng-image/multistage-build/)功能，你可以充分利用另一个容器中的 PowerShell 解压缩内容并复制到 Nano 容器。 这种方法可用于创建 .NET Core 容器和 PowerShell 容器。 
 

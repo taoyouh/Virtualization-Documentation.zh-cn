@@ -8,12 +8,12 @@ ms.topic: article
 ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: 538871ba-d02e-47d3-a3bf-25cda4a40965
-ms.openlocfilehash: e2b3c05a35896d51b1fbd1bf3f276791e4e08493
-ms.sourcegitcommit: 0deb653de8a14b32a1cfe3e1d73e5d3f31bbe83b
+ms.openlocfilehash: 358b58da0fc51c03766198e4b25b8b043b2a5029
+ms.sourcegitcommit: aaf115a9de929319cc893c29ba39654a96cf07e1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "9577118"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "9622902"
 ---
 # <a name="windows-container-network-drivers"></a>Windows 容器网络驱动程序  
 
@@ -34,17 +34,18 @@ ms.locfileid: "9577118"
 - **overlay** - 当 Docker 引擎在[群模式](../manage-containers/swarm-mode.md)下运行时，连接到覆盖网络的容器可以与跨多个容器主机连接到相同网络的其他容器通信。 在群群集上创建的每个覆盖网络都使用自己的 IP 子网创建，该子网由专用 IP 前缀定义。 覆盖网络驱动程序使用 VXLAN 封装。 **在使用合适的网络控制层面（Flannel 或 OVN）时可与 Kubernetes 配合使用。**
   > 需要： 请确保你的环境满足这些必需的[先决条件](https://docs.docker.com/network/overlay/#operations-for-all-overlay-networks)创建覆盖网络。
 
-  > 需要： 需要 Windows Server 2016 与[KB4015217](https://support.microsoft.com/en-us/help/4015217/windows-10-update-kb4015217)、 Windows 10 创意者更新或更高版本。
+  > 需要： 需要 Windows Server 2016 与[KB4015217](https://support.microsoft.com/help/4015217/windows-10-update-kb4015217)、 Windows 10 创意者更新或更高版本。
 
   >[!NOTE]
   >在 Windows Server 2019 运行 Docker EE 18.03 及，由 Docker 群创建覆盖网络利用 VFP NAT 规则的出站连接。 这意味着 thata 给定容器收到 1 个 IP 地址。 这还意味着，基于 ICMP 等工具`ping`或`Test-NetConnection`应使用在调试的情况下其 TCP/UDP 选项进行配置。
 
 - **l2bridge** - 当容器连接到使用“l2bridge”驱动程序创建的网络时，其将与容器主机位于同一 IP 子网中，并通过*外部* Hyper-V 交换机连接到物理网络。 必须根据与容器主机相同的前缀静态分配 IP 地址。 由于对入口和出口执行了第 2 层地址转换（MAC 重写）操作，因此主机上的所有容器终结点都将具有与主机相同的 MAC 地址。
-  > 需要： 此模式下使用时在虚拟化方案 （容器主机是虚拟机）_是必需的 MAC 地址欺骗_。
-  
   > 需要： 需要 Windows Server 2016、 Windows 10 创意者更新或更高版本。
 
-- **l2tunnel** -与 l2bridge 类似，但是_此驱动程序应仅用于 Microsoft 云堆栈，如 Azure_。 来自容器的数据包会发送到应用了 SDN 策略的虚拟化主机。
+  > 需要： [OutboundNAT 策略](./advanced.md#specify-outboundnat-policy-for-a-network)的外部连接。
+
+- **l2tunnel** - 与 l2bridge 类似，但是_此驱动程序应仅用于 Microsoft 云堆栈_。 来自容器的数据包会发送到应用了 SDN 策略的虚拟化主机。
+
 
 ## <a name="network-topologies-and-ipam"></a>网络拓扑和 IPAM
 

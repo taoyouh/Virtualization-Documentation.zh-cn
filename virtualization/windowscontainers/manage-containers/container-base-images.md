@@ -8,12 +8,12 @@ ms.topic: article
 ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: 88e6e080-cf8f-41d8-a301-035959dc5ce0
-ms.openlocfilehash: eb2df861021f889e335d49a337b379ecbf17a47d
-ms.sourcegitcommit: 0deb653de8a14b32a1cfe3e1d73e5d3f31bbe83b
+ms.openlocfilehash: 1b8bb433781e00bb8a435f14751d180ec52dec30
+ms.sourcegitcommit: 34d8b2ca5eebcbdb6958560b1f4250763bee5b48
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "9576918"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "9621046"
 ---
 # <a name="windows-container-base-image-history"></a>Windows 容器基本映像历史记录
 
@@ -34,7 +34,7 @@ ms.locfileid: "9576918"
 
 Microsoft 提供的映像中有哪两个层。 第一层是恒定的，表示初始的 Windows Server 版本，第二层则基于所包含的最新累积更新而变化。
 
-如果想要找出每个版本的变化，请在 [Windows 10 和 Windows Server 2016 更新历史记录](https://support.microsoft.com/en-us/help/12387/windows-10-update-history)中查找相应版本的知识库
+如果想要找出每个版本的变化，请在 [Windows 10 和 Windows Server 2016 更新历史记录](https://support.microsoft.com/help/12387/windows-10-update-history)中查找相应版本的知识库
 
 
 ## <a name="tools-to-simplify-this-process"></a>可简化此过程的工具

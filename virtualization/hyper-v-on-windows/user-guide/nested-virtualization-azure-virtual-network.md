@@ -8,12 +8,12 @@ ms.topic: article
 ms.prod: windows-10-hyperv
 ms.service: windows-10-hyperv
 ms.assetid: 1ecb85a6-d938-4c30-a29b-d18bd007ba08
-ms.openlocfilehash: 18ab4d1d87c22f70fe09aae5222a7d125ac9c974
-ms.sourcegitcommit: 0deb653de8a14b32a1cfe3e1d73e5d3f31bbe83b
+ms.openlocfilehash: 2771989b7745605fb3ce4f95e162ae8b03180b0f
+ms.sourcegitcommit: 34d8b2ca5eebcbdb6958560b1f4250763bee5b48
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "9578668"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "9621575"
 ---
 # <a name="configure-nested-vms-to-communicate-with-resources-in-an-azure-virtual-network"></a>配置嵌套虚拟机与 Azure 虚拟网络中的资源进行通信
 
@@ -26,7 +26,7 @@ ms.locfileid: "9578668"
 
 在开始本指南中，请： 之前
 
-1. 读取[指南提供了](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/nested-virtualization)嵌套虚拟化。
+1. 读取[指南提供了](https://docs.microsoft.com/azure/virtual-machines/windows/nested-virtualization)嵌套虚拟化。
 2. 阅读本文整个之前实现。
 
 ## <a name="high-level-overview-of-what-were-doing-and-why"></a>我们将执行的操作的高级别概述和原因
@@ -108,7 +108,7 @@ ms.locfileid: "9578668"
 1. 安装 DHCP 角色： `Install-WindowsFeature DHCP -IncludeManagementTools`
 2. 创建 DHCP 作用域： `Add-DhcpServerV4Scope -Name "Nested VMs" -StartRange 10.0.2.2 -EndRange 10.0.2.254 -SubnetMask 255.255.255.0`
 3. 配置 DNS 和默认网关为作用域选项： `Set-DhcpServerV4OptionValue -DnsServer 168.63.129.16 -Router 10.0.2.1`
-    * 请务必输入有效的 DNS 服务器，如果你想要工作的名称解析。 在此情况下我使用[Azure 的递归 DNS](https://docs.microsoft.com/en-us/azure/virtual-network/virtual-networks-name-resolution-for-vms-and-role-instances)。
+    * 请务必输入有效的 DNS 服务器，如果你想要工作的名称解析。 在此情况下我使用[Azure 的递归 DNS](https://docs.microsoft.com/azure/virtual-network/virtual-networks-name-resolution-for-vms-and-role-instances)。
 
 ## <a name="installing-remote-access"></a>安装远程访问
 
@@ -145,7 +145,7 @@ ms.locfileid: "9578668"
 
 ## <a name="creating-a-route-table-within-azure"></a>创建 Azure 内的路由表
 
-请参阅[本文](https://docs.microsoft.com/en-us/azure/virtual-network/tutorial-create-route-table-portal)有关深入阅读有关创建和管理 Azure 内的路由。
+请参阅[本文](https://docs.microsoft.com/azure/virtual-network/tutorial-create-route-table-portal)有关深入阅读有关创建和管理 Azure 内的路由。
 
 1. 导航到https://portal.azure.com。
 2. 在左上角中选择"创建资源"。

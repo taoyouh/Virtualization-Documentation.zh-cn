@@ -8,12 +8,12 @@ ms.topic: article
 ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: a0e62b32-0c4c-4dd4-9956-8056e9abd9e5
-ms.openlocfilehash: 9f38775d56a95d96bef42b3a33c2571cc5fb2ca0
-ms.sourcegitcommit: 0deb653de8a14b32a1cfe3e1d73e5d3f31bbe83b
+ms.openlocfilehash: f8bfd60af18731537c2ce02ca7abdb081f3c7369
+ms.sourcegitcommit: 34d8b2ca5eebcbdb6958560b1f4250763bee5b48
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "9578378"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "9620755"
 ---
 # <a name="container-platform-tools-on-windows"></a>在 Windows 上的容器平台工具
 
@@ -37,7 +37,7 @@ Windows 容器平台正在展开 ！ Docker 的第一个片段的容器旅程，
 
 `containerd` 是从下载并解压缩该容器映像分发到容器执行和监督管理容器生命周期守护程序。
 
-在 Windows 上，我们所花的不同方法。  当我们开始使用 Docker 来支持 Windows 容器的工作时，我们基于直接 HCS （主机计算服务）。  [这篇博客文章](https://blogs.technet.microsoft.com/virtualization/2017/01/27/introducing-the-host-compute-service-hcs/)已满有关我们为何生成 HCS 和为什么我们采用这种方法对容器最初的信息。
+在 Windows 上，我们所花的不同方法。  当我们开始使用 Docker 来支持 Windows 容器的工作时，我们基于直接 HCS （主机计算服务）。  [这篇博客文章](https://techcommunity.microsoft.com/t5/Containers/Introducing-the-Host-Compute-Service-HCS/ba-p/382332)已满有关我们为何生成 HCS 和为什么我们采用这种方法对容器最初的信息。
 
 ![初始 Windows 上的 Docker 引擎体系结构](media/hcs.png)
 
@@ -110,6 +110,16 @@ Runhcs 中可用的容器命令包括：
 > 开发人员/仅用于测试。
 
 [CRI](https://github.com/kubernetes/kubernetes/blob/master/pkg/kubelet/apis/cri/runtime/v1alpha2/api.proto) （容器运行时接口） 而 OCI 规范定义单个容器，作为共享沙盒中 workload(s) 描述容器环境称为广告荚。  Pod 可以包含一个或多个容器工作负荷。  Pod 让容器 orchestrator，如 Kubernetes 和服务的构造网格处理分组应在与一些共享资源，如内存和 vNETs 在同一个主机的工作负荷。
+
+containerd/cri 使 pod 的以下兼容性矩阵：
+
+| 主机操作系统 | 容器操作系统 | 隔离 | 广告荚支持？ |
+|:-------------------------------------------------------------------------|:-----------------------------------------------------------------------------|:---------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------|
+| <ul><li>Windows Server 2019/1809</ul></li><ul><li>Windows 10 1809</ul></li> | Linux | `hyperv` | 是-支持 true 多容器 pod。 |
+|  | Windows Server 2019/1809 | `process`* 或 `hyperv` | 是，如果每个工作负荷容器操作系统匹配的实用程序 VM 操作系统支持多容器 pod 为 true。 |
+|  | Windows Server 2016</br>Windows Server 1709</br>Windows Server 1803 | `hyperv` | 部分-支持 pod 容器操作系统匹配的实用程序 VM 操作系统可以支持每个实用工具虚拟机的单个进程隔离容器的沙盒。 |
+
+\*Windows 10 主机仅支持 HYPER-V 隔离
 
 CRI 规范的链接：
 

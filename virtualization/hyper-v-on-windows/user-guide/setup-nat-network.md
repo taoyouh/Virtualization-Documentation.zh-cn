@@ -8,12 +8,12 @@ ms.topic: article
 ms.prod: windows-10-hyperv
 ms.service: windows-10-hyperv
 ms.assetid: 1f8a691c-ca75-42da-8ad8-a35611ad70ec
-ms.openlocfilehash: 0c365b9351ee09c946e1711f3a3a5e82eb71c785
-ms.sourcegitcommit: 0deb653de8a14b32a1cfe3e1d73e5d3f31bbe83b
+ms.openlocfilehash: ea6fb4471cf337ff17bb1f936caea192bccaf404
+ms.sourcegitcommit: 34d8b2ca5eebcbdb6958560b1f4250763bee5b48
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "9577308"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "9621154"
 ---
 # <a name="set-up-a-nat-network"></a>设置 NAT 网络
 
@@ -28,7 +28,7 @@ Windows 10 Hyper-V 允许虚拟网络的本机网络地址转换 (NAT)。
 * Windows 10 周年更新或更高版本
 * 已启用 Hyper-V（单击[此处](../quick-start/enable-hyper-v.md)查看相关说明）
 
-> **注意：** 目前，每台主机仅限一个 NAT 网络。 有关 Windows NAT (WinNAT) 实现、功能和限制的更多详细信息，请参考 [WinNAT 功能和限制博客](https://blogs.technet.microsoft.com/virtualization/2016/05/25/windows-nat-winnat-capabilities-and-limitations/)
+> **注意：** 目前，每台主机仅限一个 NAT 网络。 有关 Windows NAT (WinNAT) 实现、功能和限制的更多详细信息，请参考 [WinNAT 功能和限制博客](https://techcommunity.microsoft.com/t5/Virtualization/Windows-NAT-WinNAT-Capabilities-and-limitations/ba-p/382303)
 
 ## <a name="nat-overview"></a>NAT 概述
 NAT 使用主计算机的 IP 地址和端口通过内部 Hyper-V 虚拟开关向虚拟机授予对网络资源的访问权限。
@@ -37,7 +37,7 @@ NAT 使用主计算机的 IP 地址和端口通过内部 Hyper-V 虚拟开关向
 
 此外，NAT 允许多个虚拟机托管需要相同（内部）通信端口的应用程序，方法是将它们映射到唯一的外部端口。
 
-出于所有这些原因，NAT 网络对于容器技术是很常见的（请参阅[容器网络](https://msdn.microsoft.com/en-us/virtualization/windowscontainers/management/container_networking)）。
+出于所有这些原因，NAT 网络对于容器技术是很常见的（请参阅[容器网络](https://docs.microsoft.com/virtualization/windowscontainers/container-networking/architecture)）。
 
 
 ## <a name="create-a-nat-virtual-network"></a>创建 NAT 虚拟网络

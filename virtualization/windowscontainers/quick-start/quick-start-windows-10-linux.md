@@ -8,12 +8,12 @@ ms.topic: article
 ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: bb9bfbe0-5bdc-4984-912f-9c93ea67105f
-ms.openlocfilehash: f9b54dbc9fc7c79bdb9b9aa106d5811401c365f3
-ms.sourcegitcommit: 0deb653de8a14b32a1cfe3e1d73e5d3f31bbe83b
+ms.openlocfilehash: 357fc101b2b0e4d6ccdf53a948ab8d91d19a1522
+ms.sourcegitcommit: 34d8b2ca5eebcbdb6958560b1f4250763bee5b48
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "9578628"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "9621565"
 ---
 # <a name="linux-containers-on-windows-10"></a>Windows 10 上的 Linux 容器
 
@@ -34,7 +34,7 @@ ms.locfileid: "9578628"
 
 请确保你满足以下要求：
 - 一个运行 Windows 10 专业版或企业版 Fall Creators update （版本 1709年） 或更高版本的物理计算机系统
-- 请确保启用[HYPER-V](https://docs.microsoft.com/en-us/virtualization/hyper-v-on-windows/reference/hyper-v-requirements) 。
+- 请确保启用[HYPER-V](https://docs.microsoft.com/virtualization/hyper-v-on-windows/reference/hyper-v-requirements) 。
 
 ***HYPER-V 隔离：*** Windows 上的 Linux 容器要求在 Windows 10 上的 HYPER-V 隔离才能为开发人员提供相应的 Linux 内核，若要运行该容器。 更多有关 HYPER-V 隔离可以找到[有关 Windows 容器](../about/index.md)页面上。
 

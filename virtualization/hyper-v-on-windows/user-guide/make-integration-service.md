@@ -7,12 +7,12 @@ ms.date: 04/07/2017
 ms.topic: article
 ms.prod: windows-10-hyperv
 ms.assetid: 1ef8f18c-3d76-4c06-87e4-11d8d4e31aea
-ms.openlocfilehash: 966ca3ff267e03e8c380391281c8dde723e4b1dd
-ms.sourcegitcommit: 0deb653de8a14b32a1cfe3e1d73e5d3f31bbe83b
+ms.openlocfilehash: f33f6deb977ff96da0b70a7e14bf4896af0307eb
+ms.sourcegitcommit: 34d8b2ca5eebcbdb6958560b1f4250763bee5b48
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "9575319"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "9620645"
 ---
 # <a name="make-your-own-integration-services"></a>创建你自己的集成服务
 
@@ -27,7 +27,7 @@ ms.locfileid: "9575319"
 **受支持的来宾操作系统**
 * Windows 10 和更高版本
 * Windows Server 2016 和更高版本
-* 使用 Linux Integration Services 的 Linux 来宾（请参阅 [Windows 上的 Hyper-V 支持的 Linux 和 FreeBSD 虚拟机](https://technet.microsoft.com/library/dn531030.aspx)）
+* 使用 Linux Integration Services 的 Linux 来宾（请参阅 [Windows 上的 Hyper-V 支持的 Linux 和 FreeBSD 虚拟机](https://docs.microsoft.com/windows-server/virtualization/hyper-v/Supported-Linux-and-FreeBSD-virtual-machines-for-Hyper-V-on-Windows)）
 > **注意：** 受支持的 Linux 来宾必须具有针对以下各项的内核支持：
 > ```bash
 > CONFIG_VSOCKET=y
@@ -117,9 +117,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Virtualization\G
 
 在最基本的情况下，定义套接字需要地址系列、连接类型和协议。
 
-下面是一个简单的[套接字定义](
-https://msdn.microsoft.com/en-us/library/windows/desktop/ms740506(v=vs.85).aspx
-)
+下面是一个简单的[套接字定义](https://docs.microsoft.com/windows/desktop/api/winsock2/nf-winsock2-socket)
 
 ``` C
 // Windows
@@ -152,7 +150,7 @@ int sock = socket(AF_VSOCK, SOCK_STREAM, 0);
 
 绑定将套接字与连接信息相关联。
 
-为了方便起见，会在下面复制函数定义，请在[此处](https://msdn.microsoft.com/en-us/library/windows/desktop/ms737550.aspx)阅读有关绑定的详细信息。
+为了方便起见，会在下面复制函数定义，请在[此处](https://docs.microsoft.com/windows/desktop/api/winsock/nf-winsock-bind)阅读有关绑定的详细信息。
 
 ``` C
 // Windows
@@ -202,7 +200,7 @@ struct sockaddr_vm {
   ```PowerShell
   (Get-VM -Name $VMName).Id
   ```
-* 服务 ID - [如上所述](#RegisterANewApplication)，在 Hyper-V 主机注册表中用于注册应用程序的 GUID。
+* 服务 ID - [如上所述](#register-a-new-application)，在 Hyper-V 主机注册表中用于注册应用程序的 GUID。
 
 还有一组 VMID 通配符可在未连接到特定虚拟机时使用。
 
@@ -229,6 +227,6 @@ struct sockaddr_vm {
 Socket() Bind() Connect() Send() Listen() Accept()
 
 ## <a name="useful-links"></a>有用链接
-[完整 WinSock API](https://msdn.microsoft.com/en-us/library/windows/desktop/ms741394.aspx)
+[完整 WinSock API](https://docs.microsoft.com/windows/desktop/WinSock/winsock-functions)
 
 [Hyper-V 集成服务参考](../reference/integration-services.md)

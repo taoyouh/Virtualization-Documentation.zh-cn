@@ -8,12 +8,12 @@ ms.topic: article
 ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: 6885400c-5623-4cde-8012-f6a00019fafa
-ms.openlocfilehash: 354469199f3c7e886760e8a391edccde067986af
-ms.sourcegitcommit: c48dcfe43f73b96e0ebd661164b6dd164c775bfa
+ms.openlocfilehash: a04d356415e7bed84980747edc927cc1eaa1e7c1
+ms.sourcegitcommit: 34d8b2ca5eebcbdb6958560b1f4250763bee5b48
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "9610287"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "9621085"
 ---
 # <a name="docker-engine-on-windows"></a>Windows 上的 Docker 引擎
 
@@ -220,7 +220,7 @@ Remove-Item "C:\ProgramData\Docker" -Recurse
 这包括"容器"功能，安装 Docker 时会在任何 Windows 10 或 Windows Server 2016 上自动启用该功能。 这还可能包括“Hyper-V”功能，安装 Docker 时可在 Windows 10 上自动启用该功能，但必须在 Windows Server 2016 上显式启用该功能。
 
 >[!IMPORTANT]
->[HYPER-V 功能](https://docs.microsoft.com/en-us/virtualization/hyper-v-on-windows/about/)是一种常规虚拟化功能，使不仅仅容器。 之前禁用 HYPER-V 功能，请确保没有其他虚拟化的组件系统上需要 HYPER-V。
+>[HYPER-V 功能](https://docs.microsoft.com/virtualization/hyper-v-on-windows/about/)是一种常规虚拟化功能，使不仅仅容器。 之前禁用 HYPER-V 功能，请确保没有其他虚拟化的组件系统上需要 HYPER-V。
 
 若要删除 Windows 10 上的 Windows 功能：
 

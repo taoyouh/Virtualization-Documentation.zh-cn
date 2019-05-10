@@ -3,12 +3,12 @@ title: Windows 容器版本兼容性
 description: Windows 如何跨多个版本运行内部版本和容器
 keywords: 元数据, 容器, 版本
 author: taylorb-microsoft
-ms.openlocfilehash: 76549bbfbaf374acb79f1be4280949aecf4e87f0
-ms.sourcegitcommit: c48dcfe43f73b96e0ebd661164b6dd164c775bfa
+ms.openlocfilehash: 9e20a28f62ec4bb9456307acb7768e1123a57188
+ms.sourcegitcommit: 03e9203e9769997d8be3f66dc7935a3e5c0a83e1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "9610277"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "9621625"
 ---
 # <a name="windows-container-version-compatibility"></a>Windows 容器版本兼容性
 
@@ -98,7 +98,7 @@ PS C:\Users\Administrator> (Get-ItemProperty 'HKLM:\SOFTWARE\Microsoft\Windows N
 14393.321.amd64fre.rs1_release_inmarket.161004-2338
 ```
 
-若要检查的是哪个版本你基本映像的使用，查看 Docker 中心或映像说明提供的图像哈希表上的标记。 每个版本和修订版本发布时，列出了[Windows 10 更新历史记录](https://support.microsoft.com/en-us/help/12387/windows-10-update-history)页面。
+若要检查的是哪个版本你基本映像的使用，查看 Docker 中心或映像说明提供的图像哈希表上的标记。 每个版本和修订版本发布时，列出了[Windows 10 更新历史记录](https://support.microsoft.com/help/12387/windows-10-update-history)页面。
 
 ### <a name="hyper-v-isolation-for-containers"></a>容器 HYPER-V 隔离
 
@@ -123,33 +123,33 @@ docker: Error response from daemon: container b81ed896222eb87906ccab1c3dd2fc4932
 ## <a name="choose-which-container-os-version-to-use"></a>选择要使用的容器操作系统版本
 
 >[!NOTE]
->在"最新"标记将随 Windows Server 2016，当前[Long-Term Servicing Channel 产品](https://docs.microsoft.com/en-us/windows-server/get-started/semi-annual-channel-overview)更新。 以下是有关说明匹配的 Windows Server 版本 1709年版本的容器映像。
+>截至 2019 年 4 月 16，"最新"标记不会再发布或保留[Windows 基本操作系统容器映像](https://hub.docker.com/_/microsoft-windows-base-os-images)。 请声明某个特定标记拉取或从这些存储库引用图像时。
 
-你必须知道你需要为你的容器使用哪个版本。 例如，如果你使用的 Windows Server 版本 1709年并想要为其具有最新修补程序，则应使用标记`1709`时指定你希望哪个版本的基础操作系统容器映像，如下所示：
+你必须知道你需要为你的容器使用哪个版本。 例如，如果你希望作为容器操作系统的 Windows Server 版本 1809年，并且想要为其具有最新修补程序，则应使用标记`1809`时指定你希望哪个版本的基础操作系统容器映像，如下所示：
 
 ``` dockerfile
-FROM microsoft/windowsservercore:1709
+FROM mcr.microsoft.com/windows/nanoserver:1809
 ...
 ```
 
-但是，如果你希望 Windows Server 版本 1709年的特定的修补程序，你可以在标记中指定 KB 编号。 例如，若要获取从 Windows Server 版本 1709 kb4043961 到它的 Nano Server 基础操作系统容器映像，你应指定它如下所示：
+但是，如果你希望特定的修补程序的 Windows Server 版本 1809年，你可以在标记中指定 KB 编号。 例如，若要获取从 Windows Server 版本 1809年 KB4493509 向其应用的 Nano Server 基础操作系统容器映像，你应指定它如下所示：
 
 ``` dockerfile
-FROM microsoft/nanoserver:1709_KB4043961
-...
-```
-
-如果你需要 Nano Server 基础操作系统容器映像从 Windows Server 2016，你仍然可以通过使用"最新"标记获取这些基础操作系统容器映像的最新版本：
-
-``` dockerfile
-FROM microsoft/nanoserver
+FROM mcr.microsoft.com/windows/nanoserver:1809-KB4493509
 ...
 ```
 
 你还可以与我们使用了之前，通过在标记中指定的操作系统版本的架构来指定所需的确切修补程序：
 
 ``` dockerfile
-FROM microsoft/nanoserver:10.0.14393.1770
+FROM mcr.microsoft.com/windows/nanoserver:10.0.17763.437
+...
+```
+
+基于 Windows Server 2019 和 Windows Server 2016 的 Server Core 基本映像的[Long-Term Servicing Channel (LTSC)](https://docs.microsoft.com/en-us/windows-server/get-started-19/servicing-channels-19#long-term-servicing-channel-ltsc)版本。 如果你例如希望 Windows Server 2019 作为你的服务器核心映像容器操作系统，并且想要为其具有最新修补程序，你可以指定 LTSC 版本如下所示：
+
+``` dockerfile
+FROM mcr.microsoft.com/windows/servercore:ltsc2019
 ...
 ```
 
