@@ -8,12 +8,12 @@ ms.topic: article
 ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: 538871ba-d02e-47d3-a3bf-25cda4a40965
-ms.openlocfilehash: 358b58da0fc51c03766198e4b25b8b043b2a5029
-ms.sourcegitcommit: aaf115a9de929319cc893c29ba39654a96cf07e1
+ms.openlocfilehash: 40e877c8999574f21ecb9586c3f2bc012607177f
+ms.sourcegitcommit: 40b929dbc72aa308d8e46765ac61616a35b31791
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "9622902"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "9634386"
 ---
 # <a name="windows-container-network-drivers"></a>Windows 容器网络驱动程序  
 
@@ -22,8 +22,10 @@ ms.locfileid: "9622902"
 - **nat** – 连接到使用“nat”驱动程序创建的网络的容器将连接到*内部* Hyper-V 交换机，并从用户指定的 (``--subnet``) IP 前缀中接收 IP 地址。 支持从容器主机到容器终结点的端口转移/映射。
   
   >[!NOTE]
-  >如果你安装了 Windows 10 创意者更新，则支持多个 NAT 网络。
+  > 重启后将不会再保留对 Windows Server 2019 （或以上） 中创建 NAT 网络。
 
+  > 如果已安装了 Windows 10 创意者更新 （或更高），则支持多个 NAT 网络。
+  
 - **transparent** – 连接到使用“transparent”驱动程序创建的网络的容器将通过*外部* Hyper-V 交换机连接到物理网络。 可使用外部 DHCP 服务器静态（需要用户指定的 ``--subnet`` 选项）或动态分配来自物理网络的 IP。
   
   >[!NOTE]
