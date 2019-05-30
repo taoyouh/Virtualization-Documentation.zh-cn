@@ -7,16 +7,16 @@ ms.date: 04/07/2017
 ms.topic: article
 ms.prod: windows-10-hyperv
 ms.assetid: 1ef8f18c-3d76-4c06-87e4-11d8d4e31aea
-ms.openlocfilehash: f33f6deb977ff96da0b70a7e14bf4896af0307eb
-ms.sourcegitcommit: 34d8b2ca5eebcbdb6958560b1f4250763bee5b48
+ms.openlocfilehash: b0bbca7bcb4c8c05c50ca68965637a6162a0ab85
+ms.sourcegitcommit: a7f9ab96be359afb37783bbff873713770b93758
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/08/2019
-ms.locfileid: "9620645"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "9680997"
 ---
 # <a name="make-your-own-integration-services"></a>创建你自己的集成服务
 
-从 Windows 10 周年更新开始，任何人都可以创建通过 Hyper-V 套接字在 Hyper-V 主机与其虚拟机之间进行通信的应用程序。Hyper-V 套接字是一种 Windows 套接字，使用面向虚拟器的新地址系列和专用终结点。  所有通信在 Hyper-V 套接字上运行时均无需使用网络，并且所有数据都保留在相同的物理内存中。   使用 Hyper-V 套接字的应用程序类似于 Hyper-V 集成服务。
+从 Windows 10 周年更新开始，任何人都可以创建通过 Hyper-V 套接字在 Hyper-V 主机与其虚拟机之间进行通信的应用程序。Hyper-V 套接字是一种 Windows 套接字，使用面向虚拟器的新地址系列和专用终结点。  所有通信在 Hyper-V 套接字上运行时均无需使用网络，并且所有数据都保留在相同的物理内存中。 使用 Hyper-V 套接字的应用程序类似于 Hyper-V 集成服务。
 
 本文档演示了如何创建在 Hyper-V 套接字上构建的简单程序。
 
@@ -48,7 +48,7 @@ ms.locfileid: "9620645"
 * [Windows 10 SDK](https://developer.microsoft.com/windows/downloads/windows-10-sdk) - 已在 Visual Studio 2015 Update 3 以及更高版本上预安装。
 * 使用至少一个虚拟机运行以上其中一个主机操作系统的计算机。 - 这用于测试应用程序。
 
-> **注意：** 用于 Hyper-V 套接字的 API 不久后将在 Windows 10 中公开发布。  使用 HVSocket 的应用程序将在任何 Widnows 10 主机和来宾上运行，但仅可使用高于 14290 版本的 Windows SDK 进行开发。
+> **注意:** 在 Windows 10 周年更新中, Hyper-v 套接字的 API 已公开可用。 使用 HVSocket 的应用程序将在任何 Windows 10 主机和来宾上运行, 但只能使用 Windows SDK (版本 14290) 开发。
 
 ## <a name="register-a-new-application"></a>注册新应用程序
 若要使用 Hyper-V 套接字，必须向 Hyper-V 主机的注册表注册应用程序。
