@@ -3,12 +3,12 @@ title: Windows Server 容器存储
 description: Windows Server 容器如何使用主机和其他存储类型
 keywords: 容器, 卷, 存储, 装载, 绑定挂载
 author: patricklang
-ms.openlocfilehash: 87b9c364bfdec2b445bb06caf0e9fd4d849119d4
-ms.sourcegitcommit: 34d8b2ca5eebcbdb6958560b1f4250763bee5b48
+ms.openlocfilehash: 20179f09260b6ae5de802c2372958356f8de3aee
+ms.sourcegitcommit: a7f9ab96be359afb37783bbff873713770b93758
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/08/2019
-ms.locfileid: "9620865"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "9680937"
 ---
 # <a name="overview"></a>概述
 
@@ -101,12 +101,12 @@ Docker 很好地概述了如何[使用卷](https://docs.docker.com/engine/admin/
 
 ##### <a name="configuration-steps"></a>配置步骤
 
-1. 在容器主机上，全局映射远程 SMB 共享：
+1. 在容器主机上, 全局映射远程 SMB 共享:
     ```
     $creds = Get-Credential
     New-SmbGlobalMapping -RemotePath \\contosofileserver\share1 -Credential $creds -LocalPath G:
     ```
-    此命令将使用的凭据远程 SMB 服务器进行身份验证。 然后，将远程共享路径映射到 G: 驱动器号（可以是任何其他可用的驱动器号）。 在此容器主机上创建的容器现在可以将其数据卷映射到 G: 驱动器上的路径。
+    此命令将使用凭据对远程 SMB 服务器进行身份验证。 然后，将远程共享路径映射到 G: 驱动器号（可以是任何其他可用的驱动器号）。 在此容器主机上创建的容器现在可以将其数据卷映射到 G: 驱动器上的路径。
 
     > 注意：对容器使用 SMB 全局映射时，容器主机上的所有用户都可以访问远程共享。 在容器主机上运行的任何应用程序也将有权访问映射的远程共享。
 
@@ -135,3 +135,6 @@ Docker 很好地概述了如何[使用卷](https://docs.docker.com/engine/admin/
 3. 将某些文件写入容器中的 c:\data，然后停止容器
 4. `docker run -v unwound:c:\data microsoft/windowsservercore` - 启动新容器
 5. 在新容器中运行 `dir c:\data` - 文件仍在原位置
+
+> [!NOTE]
+> Windows Server 会将目标路径名 (容器内的路径) 转换为小写形式;在 Linux 容器中, 或在 Linux 容器中, 将导致映射 (和创建, 如果`c:\mydata`不存在`/app/mydata` ) 位于的容器或 linux 容器中的目录。 `-v unwound:c:\MyData` `-v unwound:/app/MyData`

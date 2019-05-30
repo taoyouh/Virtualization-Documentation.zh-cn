@@ -1,52 +1,52 @@
 ---
-title: Windows 和 Windows 10 上的 Linux 容器
+title: Windows 10 上的 windows 和 Linux 容器
 description: 容器部署快速入门
-keywords: docker，容器 LCOW
+keywords: docker、容器、LCOW
 author: taylorb-microsoft
 ms.date: 11/8/2018
 ms.topic: article
 ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: bb9bfbe0-5bdc-4984-912f-9c93ea67105f
-ms.openlocfilehash: be6be81e995dce8ebd757c73793f474f4b0909bf
-ms.sourcegitcommit: 34d8b2ca5eebcbdb6958560b1f4250763bee5b48
+ms.openlocfilehash: ae311ecccdfbfc30b1079330a8eb02c1ce3ac94b
+ms.sourcegitcommit: a7f9ab96be359afb37783bbff873713770b93758
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/08/2019
-ms.locfileid: "9620735"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "9680967"
 ---
 # <a name="windows-containers-on-windows-10"></a>Windows 10 上的 Windows 容器
 
 > [!div class="op_single_selector"]
 > - [Windows 上的 Linux 容器](quick-start-windows-10-linux.md)
-> - [在 Windows 上的 Windows 容器](quick-start-windows-10.md)
+> - [Windows 上的 windows 容器](quick-start-windows-10.md)
 
-本练习将演练创建和 Windows 10 上运行 Windows 容器。
+该练习将指导你在 Windows 10 上创建和运行 Windows 容器。
 
-在本快速入门中，你将完成：
+在此快速入门中, 你将完成以下操作:
 
-1. 安装适用于 Windows 的 Docker
+1. 安装 Docker 桌面
 2. 运行简单的 Windows 容器
 
-本快速入门特定于 Windows 10。 可以在此页面左侧的目录中找到其他快速入门文档。
+本快速入门特定于 Windows 10。 可在此页面左侧的目录中找到其他快速入门文档。
 
 ## <a name="prerequisites"></a>系统必备
-请确保你满足以下要求：
-- 一个运行 Windows 10 专业版或企业版周年更新 （版本 1607年） 或更高版本的物理计算机系统。 
-- 请确保启用[HYPER-V](https://docs.microsoft.com/virtualization/hyper-v-on-windows/reference/hyper-v-requirements) 。
+请确保满足以下要求:
+- 运行 Windows 10 专业版或企业版的一台物理计算机系统 (版本 1607) 或更高版本。 
+- 请确保已启用[hyper-v](https://docs.microsoft.com/virtualization/hyper-v-on-windows/reference/hyper-v-requirements) 。
 
-***HYPER-V 隔离：*** Windows Server 容器要求对 Windows 10 使用 HYPER-V 隔离才能为开发人员提供的相同内核版本和配置时，将在生产中使用，更多有关 HYPER-V 隔离可以找到[关于 Windows 容器](../about/index.md)页面上。
+***Hyper-v 隔离:*** Windows Server 容器在 Windows 10 上需要 Hyper-v 隔离, 以便为开发人员提供将在生产中使用的相同内核版本和配置, 可以在 "[关于 Windows 容器](../about/index.md)" 页面上找到有关 hyper-v 隔离的更多信息。
 
 > [!NOTE]
-> 在 Windows 10 月更新 2018 年版本中，我们不会再禁止用户为开发人员/测试目的，在 Windows 10 企业版或专业版上运行的 Windows 容器进程隔离模式。 请参阅[常见问题](../about/faq.md)若要了解详细信息。
+> 在 Windows 10 月更新2018的版本中, 我们不再允许用户在 Windows 10 企业版或专业版 (适用于开发/测试目的) 的进程隔离模式下运行 Windows 容器。 请参阅[常见问题](../about/faq.md)了解详细信息。
 
-## <a name="install-docker-for-windows"></a>安装适用于 Windows 的 Docker
+## <a name="install-docker-desktop"></a>安装 Docker 桌面
 
-[Docker for Windows](https://store.docker.com/editions/community/docker-ce-desktop-windows)下载并运行安装程序 （你将需要登录。 创建一个帐户如果你还没有）。 Docker 文档中提供了[详细的安装说明](https://docs.docker.com/docker-for-windows/install)。
+下载[Docker 桌面](https://store.docker.com/editions/community/docker-ce-desktop-windows)并运行安装程序 (您将需要登录。 如果尚未有帐户, 请创建一个帐户。 Docker 文档中提供了[详细的安装说明](https://docs.docker.com/docker-for-windows/install)。
 
 ## <a name="switch-to-windows-containers"></a>切换到 Windows 容器
 
-安装后，适用于 Windows 的 Docker 默认为运行 Linux 容器。 切换到 Windows 容器使用 Docker 任务栏菜单或通过在 PowerShell 中运行以下命令提示符下：
+安装 Docker 桌面默认为运行 Linux 容器。 使用 Docker 任务栏菜单或通过在 PowerShell 提示符中运行以下命令, 切换到 Windows 容器:
 
 ```console
 & $Env:ProgramFiles\Docker\Docker\DockerCli.exe -SwitchDaemon .
@@ -76,7 +76,7 @@ microsoft/nanoserver   latest              105d76d0f40e        4 days ago       
 
 ## <a name="run-your-first-windows-container"></a>运行你的第一个 Windows 容器
 
-对于此简单示例，将创建 Hello World 容器映像的大小和部署。 为获得最佳体验，请在升级后的Windows CMD shell 或 PowerShell中运行这些命令。
+对于此简单示例, 将创建并部署 "Hello World" 容器图像。 为获得最佳体验，请在升级后的Windows CMD shell 或 PowerShell中运行这些命令。
 
 > Windows PowerShell ISE 不适用于与容器的交互式会话。 即使容器正在运行，也会显示为挂起。
 
@@ -86,7 +86,7 @@ microsoft/nanoserver   latest              105d76d0f40e        4 days ago       
 docker run -it mcr.microsoft.com/windows/nanoserver:1809 cmd.exe
 ```
 
-在容器内，我们将创建一个简单的 Hello World 文本文件。
+在容器内, 我们将创建一个简单的 "Hello World" 文本文件。
 
 ```cmd
 echo "Hello World!" > Hello.txt
@@ -122,9 +122,9 @@ docker images
 docker run --rm helloworld cmd.exe /s /c type Hello.txt
 ```
 
-结果的`docker run`命令是从 HelloWorld 映像创建 HYPER-V 隔离下运行的容器、 cmd 的实例在容器中启动并执行我们的文件 （输出回显到该界面），然后在容器的读数停止并删除。
+`docker run`命令的结果是, 在 hyper-v 隔离下运行的容器是从 "HelloWorld" 映像创建的, 在容器中启动了 cmd 的一个实例, 并执行了文件的读取 (输出回显到 shell), 然后执行容器已停止并已删除。
 
 ## <a name="next-steps"></a>后续步骤
 
 > [!div class="nextstepaction"]
-> [了解如何生成示例应用](./building-sample-app.md)
+> [了解如何构建示例应用](./building-sample-app.md)

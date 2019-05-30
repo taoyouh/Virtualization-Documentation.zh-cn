@@ -7,12 +7,12 @@ ms.date: 06/25/2018
 ms.topic: article
 ms.prod: windows-10-hyperv
 ms.assetid: eb2b827c-4a6c-4327-9354-50d14fee7ed8
-ms.openlocfilehash: 14e0f57ca0c952239847e493740048e14889e6d7
-ms.sourcegitcommit: 34d8b2ca5eebcbdb6958560b1f4250763bee5b48
+ms.openlocfilehash: aab6a285e9c1ed9918b39cb1de88e3e2243fb3a9
+ms.sourcegitcommit: a7f9ab96be359afb37783bbff873713770b93758
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/08/2019
-ms.locfileid: "9620715"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "9680957"
 ---
 # <a name="introduction-to-hyper-v-on-windows-10"></a>Windows 10 上的 Hyper-V 简介
 
@@ -36,11 +36,11 @@ ms.locfileid: "9620715"
 
 ## <a name="system-requirements"></a>系统要求
 
-HYPER-V 在 64 位版本的 Windows 10 专业版、 企业版和教育版上可用。 不适用于家庭版。
+在64位版本的 Windows 10 专业版、企业版和教育版中提供了 hyper-v。 它在家庭版中不可用。
 
-> 从 Windows 10 家庭版升级到 Windows 10 专业版通过打开**设置** > **更新和安全** > **激活**。 可以在此处访问应用商店并购买升级。
+> 通过打开 "**设置** > **更新" 和 "安全** > **激活**", 从 windows 10 家庭版升级到 windows 10 专业版。 可以在此处访问应用商店并购买升级。
 
-大多数计算机将运行 Hyper-V，但每个虚拟机都是一个完全独立的操作系统。  通常，你可以在具有 4GB RAM 的计算机上运行一个或多个虚拟机，但是你需要更多的资源以供其他虚拟机使用，或安装和运行资源密集型软件，如游戏、视频编辑或工程设计软件。
+大多数计算机运行 Hyper-v, 但每个虚拟机运行完全独立的操作系统。  通常，你可以在具有 4GB RAM 的计算机上运行一个或多个虚拟机，但是你需要更多的资源以供其他虚拟机使用，或安装和运行资源密集型软件，如游戏、视频编辑或工程设计软件。
 
 有关 Hyper-V 的系统要求以及如何验证 Hyper-V 在计算机上运行的详细信息，请参阅 [Hyper-V 要求参考](../reference/hyper-v-requirements.md)。
 
