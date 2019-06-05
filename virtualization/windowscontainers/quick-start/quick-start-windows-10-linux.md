@@ -8,12 +8,12 @@ ms.topic: article
 ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: bb9bfbe0-5bdc-4984-912f-9c93ea67105f
-ms.openlocfilehash: 91031f9394cb3fcb1af6c4813f8805ad6f79bf8c
-ms.sourcegitcommit: a7f9ab96be359afb37783bbff873713770b93758
+ms.openlocfilehash: 926e5cd64053b5ea795bb2c75a231700aed443ca
+ms.sourcegitcommit: f6457ee0635864e8e8bb07da43a6f76388ee3cd1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "9681097"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "9734651"
 ---
 # <a name="linux-containers-on-windows-10"></a>Windows 10 上的 Linux 容器
 
@@ -32,13 +32,9 @@ ms.locfileid: "9681097"
 
 ## <a name="prerequisites"></a>系统必备
 
-请确保满足以下要求: <<<<<<< 头
-- 通过秋季式创意者更新 (版本 1709) 或更高版本运行 Windows 10 专业版或企业版的一台物理计算机系统
-- 请确保已启用[hyper-v](https://docs.microsoft.com/virtualization/hyper-v-on-windows/reference/hyper-v-requirements) 。
-=======
+请确保满足以下要求:
 - 运行 Windows 10 专业版、Windows 10 企业版或 Windows Server 2019 版本1809或更高版本的一台物理计算机系统
-- 请确保已启用[hyper-v](https://docs.microsoft.com/en-us/virtualization/hyper-v-on-windows/reference/hyper-v-requirements) 。
->>>>>>> 原创/母版
+- 请确保已启用[hyper-v](https://docs.microsoft.com/virtualization/hyper-v-on-windows/reference/hyper-v-requirements) 。
 
 ***Hyper-v 隔离:*** Windows 上的 Linux 容器需要 Windows 10 上的 Hyper-v 隔离, 以便为开发人员提供合适的 Linux 内核来运行容器。 有关 Hyper-v 隔离的详细信息可以在 "[关于 Windows 容器](../about/index.md)" 页面上找到。
 
@@ -48,7 +44,7 @@ ms.locfileid: "9681097"
 
 > 如果你已安装了 Docker, 请确保你有版本18.02 或更高版本, 以支持 LCOW。 通过运行`docker -v`或检查*Docker*来进行检查。
 
-> 必须激活*Docker 设置 _GT_ 守护*程序中的 "实验功能" 选项才能运行 LCOW 容器。
+> 必须激活 Docker 设置中的 "实验功能" 选项 *> 守护*程序才能运行 LCOW 容器。
 
 ## <a name="run-your-first-lcow-container"></a>运行第一个 LCOW 容器
 
