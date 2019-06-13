@@ -3,17 +3,17 @@ title: Windows 容器的组托管服务帐户
 description: Windows 容器的组托管服务帐户
 keywords: docker、容器、active directory、gmsa
 author: rpsqrd
-ms.date: 05/23/2019
+ms.date: 06/12/2019
 ms.topic: article
 ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: 9e06ad3a-0783-476b-b85c-faff7234809c
-ms.openlocfilehash: 8f184e58743bd41ab208b530976772c5fcffd189
-ms.sourcegitcommit: 8e7fba17c761bf8f80017ba7f9447f986a20a2a7
+ms.openlocfilehash: 77eadf9c1f842ab679b23813cbdd305c2f2de7e9
+ms.sourcegitcommit: a5ee3e35eb272c77dd61f5e5384aab26a26fab76
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "9677316"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "9770232"
 ---
 # <a name="group-managed-service-accounts-for-windows-containers"></a>Windows 容器的组托管服务帐户
 
@@ -187,7 +187,7 @@ Docker 希望在 Docker 数据目录中的**CredentialSpecs**目录下找到凭�
 如果你在容器中托管 IIS 网站, 你需要执行的所有操作都将你的应用池标识设置为**网络服务**。 你可以通过添加以下命令在 Dockerfile 中执行此操作:
 
 ```dockerfile
-RUN (Get-IISAppPool DefaultAppPool).ProcessModel.IdentityType = "NetworkService"
+RUN %windir%\system32\inetsrv\appcmd.exe set AppPool DefaultAppPool -processModel.identityType:NetworkService
 ```
 
 如果以前为 IIS 应用池使用了静态用户凭据, 请考虑 gMSA 作为这些凭据的替换项。 你可以更改开发环境、测试和生产环境之间的 gMSA, IIS 将自动获取当前标识, 而无需更改容器映像。
@@ -359,7 +359,7 @@ EXEC sp_addrolemember 'db_datawriter', 'WebApplication1'
 
 若要查看它是否在操作中, 请查看会话中的 Microsoft Ignite 2016 中提供的[录制演示](https://youtu.be/cZHPz80I-3s?t=2672), "遍历 Containerization 的路径-将工作负荷转换为容器。"
 
-## <a name="troubleshooting"></a>疑难解答
+## <a name="troubleshooting"></a>故障排除
 
 ### <a name="known-issues"></a>已知问题
 
