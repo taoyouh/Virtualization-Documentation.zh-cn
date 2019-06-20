@@ -40,7 +40,7 @@
 ### [加入 Windows 工作人员](kubernetes/joining-windows-workers.md)
 ### [加入 Linux 工作人员](kubernetes/joining-linux-workers.md)
 ### [部署 Kubernetes 资源](kubernetes/deploying-resources.md)
-### [疑难解答](kubernetes/common-problems.md)
+### [故障排除](kubernetes/common-problems.md)
 ### [Kubernetes 上的 Windows 服务](kubernetes/kube-windows-services.md)
 ### [编译 Kubernetes 二进制文件](kubernetes/compiling-kubernetes-binaries.md)
 ## Windows 上的服务结构
@@ -52,11 +52,12 @@
 # 社区和支持
 ## [容器论坛](https://social.msdn.microsoft.com/Forums/home?forum=windowscontainers)
 ## [社区视频和博客](communitylinks.md)
-## [疑难解答](troubleshooting.md)
+## [故障排除](troubleshooting.md)
 
 # 参考
 ## [系统要求](deploy-containers/system-requirements.md)
 ## [版本兼容性](deploy-containers/version-compatibility.md)
+## [基本图像服务生命周期](deploy-containers/base-image-lifecycle.md)
 ## [Hyper-V 隔离](manage-containers/hyperv-container.md)
 ## [打印机服务](deploy-containers/print-spooler.md)
 ## [GPU 加速](deploy-containers/gpu-acceleration.md)
