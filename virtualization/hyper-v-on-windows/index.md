@@ -8,12 +8,12 @@ ms.topic: article
 ms.prod: windows-10-hyperv
 ms.service: windows-10-hyperv
 ms.assetid: 05269ce0-a54f-4ad8-af75-2ecf5142b866
-ms.openlocfilehash: 18a2d6e58127aba456b279d217794ab5469b06d7
-ms.sourcegitcommit: 34d8b2ca5eebcbdb6958560b1f4250763bee5b48
+ms.openlocfilehash: daecf2701972a00f4587b409c2271a23a70684ab
+ms.sourcegitcommit: 66f6cba600432f8fac1c214f357b27eb783cb1ff
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/08/2019
-ms.locfileid: "9620685"
+ms.lasthandoff: 07/01/2019
+ms.locfileid: "9794584"
 ---
 # <a name="hyper-v-on-windows-10"></a>Windows 10 上的 Hyper-V 
 
@@ -21,40 +21,22 @@ ms.locfileid: "9620685"
 
 以下文档详细介绍 Windows 10 中的 Hyper-V 功能、提供快速入门指南，并且还包含将来资源和社区论坛的链接。 
 
-<table border="1" style="background-color:FFFFCC;border-collapse:collapse;border:1px solid FFCC00;color:000000;width:100%" cellpadding="15" cellspacing="3">
-    <tr valign="top">
-        <td><center>![](./media/MeetsRequirements_65.png)</center></td>
-        <td valign="top">
-            <p><strong>有关 Windows 上的 Hyper-V</strong></p>
-            <p>以下文章提供 Windows 上的 Hyper-V 简介和相关信息。</p>
-            <ul>
-                <li class="unordered">[Hyper-V 简介](./about/index.md)<br /><br /></li>
-                <li class="unordered">[支持的来宾操作系统](about\supported-guest-os.md)<br /><br /></li>
-            </ul>   
-        </td>
-    </tr>
-    <tr valign="top">
-        <td><center>![](./media/All_ContentTypeIcons_VisualWalkthrough_65.png)</center></td>
-        <td valign="top">
-            <p><strong>Hyper-V 入门</strong></p>
-            <p>以下文档提供 Windows 10 上的 Hyper-V 的快速入门指南。</p>
-            <ul>
-                <li class="unordered">[安装 Hyper-V](quick-start\enable-hyper-v.md)<br /><br /></li>
-                <li class="unordered">[创建虚拟机](quick-start\create-virtual-machine.md)<br /><br /></li>
-                <li class="unordered">[创建虚拟交换机](quick-start\connect-to-network.md)<br /><br /></li>
-                <li class="unordered">[Hyper-V 和 PowerShell](quick-start\try-hyper-v-powershell.md)<br /><br /></li>
-            </ul>
-        </td>
-    </tr>
-    <tr valign="top">
-        <td><center>![](./media/Chat_65.png)</center></td>
-        <td valign="top">
-            <p><strong>与社区和支持人员联系</strong></p>
-            <p>其他技术支持和社区资源。</p>
-            <ul>
-                <li class="unordered">[Hyper-V 论坛](https://social.technet.microsoft.com/Forums/windowsserver/home?forum=winserverhyperv)<br /><br /></li>
-                <li class="unordered">[Hyper-V 和 Windows 容器的社区资源](/virtualization/community/index.md)<br /><br /></li>
-            </ul>   
-        </td>
-    </tr>
-</table>
+## <a name="about-hyper-v-on-windows"></a>有关 Windows 上的 Hyper-V
+以下文章提供 Windows 上的 Hyper-V 简介和相关信息。
+
+* [Hyper-V 简介](./about/index.md)
+* [支持的来宾操作系统](about\supported-guest-os.md)
+
+## <a name="get-started-with-hyper-v"></a>Hyper-V 入门
+以下文档提供 Windows 10 上的 Hyper-V 的快速入门指南。
+
+* [安装 Hyper-V](quick-start\enable-hyper-v.md)
+* [创建虚拟机](quick-start\create-virtual-machine.md)
+* [创建虚拟交换机](quick-start\connect-to-network.md)
+* [Hyper-V 和 PowerShell](quick-start\try-hyper-v-powershell.md)
+
+## <a name="connect-with-community-and-support"></a>与社区和支持人员联系
+其他技术支持和社区资源。
+
+* [Hyper-V 论坛](https://social.technet.microsoft.com/Forums/windowsserver/home?forum=winserverhyperv)
+* [Hyper-V 和 Windows 容器的社区资源](/virtualization/community/index.md)
