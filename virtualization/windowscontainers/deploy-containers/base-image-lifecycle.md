@@ -8,12 +8,12 @@ ms.date: 06/17/2019
 ms.topic: article
 ms.prod: windows-containers
 ms.service: windows-containers
-ms.openlocfilehash: c26f4b225287fbc25566e36376eb8cd604d45a68
-ms.sourcegitcommit: 9cd1aa792a417e71192c7aa39e409ae6ca0bc710
+ms.openlocfilehash: d3a8240dbba8af3c74ce5d185620e129d103ef81
+ms.sourcegitcommit: c4a3f88d1663dd19336bfd4ede0368cb18550ac7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/20/2019
-ms.locfileid: "9788544"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "9883180"
 ---
 # <a name="base-image-servicing-lifecycles"></a>基本图像服务生命周期
 
@@ -35,4 +35,4 @@ Windows 容器基本映像基于半年度频道发布或 Windows Server 长期�
 |服务器核心                      |长期        |1607   |14393   |10/15/2016  |01/11/2022                 |2027/01/11           |
 |Nano Server                      |半年度      |1607   |14393   |10/15/2016  |10/09/2018                 |不适用                  |
 
-有关服务要求和其他其他信息, 请参阅 [Windows 生命周期常见问题解答](https://support.microsoft.com/help/18581/lifecycle-faq-windows-products)、 [windows Server 发布信息](https://docs.microsoft.com/en-us/windows-server/get-started/windows-server-release-info)和[windows 基本操作系统映像 Docker 中心存储库](https://hub.docker.com/_/microsoft-windows-base-os-images)。
+有关服务要求和其他其他信息, 请参阅 [Windows 生命周期常见问题解答](https://support.microsoft.com/help/18581/lifecycle-faq-windows-products)、 [windows Server 发布信息](https://docs.microsoft.com/windows-server/get-started/windows-server-release-info)和[windows 基本操作系统映像 Docker 中心存储库](https://hub.docker.com/_/microsoft-windows-base-os-images)。

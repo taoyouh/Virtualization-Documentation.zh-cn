@@ -3,12 +3,12 @@ title: Windows Server 容器存储
 description: Windows Server 容器如何使用主机和其他存储类型
 keywords: 容器, 卷, 存储, 装载, 绑定挂载
 author: patricklang
-ms.openlocfilehash: 20179f09260b6ae5de802c2372958356f8de3aee
-ms.sourcegitcommit: a7f9ab96be359afb37783bbff873713770b93758
+ms.openlocfilehash: bddfb3a3510a6af674be73349a7e422434c1e0f4
+ms.sourcegitcommit: c4a3f88d1663dd19336bfd4ede0368cb18550ac7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "9680937"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "9882970"
 ---
 # <a name="overview"></a>概述
 
@@ -40,7 +40,7 @@ ms.locfileid: "9680937"
 运行中的容器可以使用大多数 NTFS 操作，但事务除外。 这包括设置 ACL，所有 ACL 均在容器内进行检查。 如果你想在容器内以多个用户身份运行进程，则可以在 `Dockerfile` 中使用 `RUN net user /create ...` 创建用户，设置文件 ACL，然后使用 [Dockerfile USER 指令](https://docs.docker.com/engine/reference/builder/#user)将进程配置为以该用户身份运行。
 
 
-##  <a name="image-size"></a>映像大小
+## <a name="image-size"></a>映像大小
 Windows 应用程序的常见模式是先查询可用磁盘空间量，然后再安装或创建新文件，或者触发临时文件清理。  为了最大限度地提高应用程序兼容性，Windows 容器中的 C: 驱动器将表示 20GB 的虚拟可用大小。  某些用户可能想要覆盖此默认值并将可用空间配置为较小值或较大值，此时可以通过“storage-opt”配置中的“size”选项来达到此目的。
 
 ### <a name="examples"></a>示例

@@ -8,12 +8,12 @@ ms.topic: article
 ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: bb2848ca-683e-4361-a750-0d1d14ec8031
-ms.openlocfilehash: 871884c04b4165da4a5ab8af65bcda252672efbc
-ms.sourcegitcommit: bea2c90f31a38fc7fda356619f0dd812f79d008f
+ms.openlocfilehash: 056ab87189e8e423df5758be0f622a43b92c9056
+ms.sourcegitcommit: c4a3f88d1663dd19336bfd4ede0368cb18550ac7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "9685274"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "9882950"
 ---
 # <a name="optimize-windows-dockerfiles"></a>优化 Windows Dockerfile
 
@@ -134,13 +134,13 @@ RUN powershell.exe -Command \
 FROM windowsservercore
 
 RUN powershell -Command \
-    
+
   # Download software ; \
     
   wget https://www.apachelounge.com/download/VC11/binaries/httpd-2.4.18-win32-VC11.zip -OutFile c:\apache.zip ; \
   wget "https://download.microsoft.com/download/1/6/B/16B06F60-3B20-4FF2-B699-5E9B7962F9AE/VSU_4/vcredist_x86.exe" -OutFile c:\vcredist.exe ; \
   wget -Uri http://windows.php.net/downloads/releases/php-5.5.33-Win32-VC11-x86.zip -OutFile c:\php.zip ; \
-    
+
   # Install Software ; \
     
   Expand-Archive -Path c:\php.zip -DestinationPath c:\php ; \

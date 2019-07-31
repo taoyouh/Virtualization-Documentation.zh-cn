@@ -7,12 +7,12 @@ ms.date: 05/02/2016
 ms.topic: article
 ms.prod: windows-10-hyperv
 ms.assetid: 66723f33-b12c-49d1-82cf-71ba9d6087e9
-ms.openlocfilehash: 7882e89368bb88390c2efa93c3f2a8f04bb7a37a
-ms.sourcegitcommit: 34d8b2ca5eebcbdb6958560b1f4250763bee5b48
+ms.openlocfilehash: 94ac197f5bc660e52d215fa132eae78f521e1c30
+ms.sourcegitcommit: c4a3f88d1663dd19336bfd4ede0368cb18550ac7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/08/2019
-ms.locfileid: "9620775"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "9882890"
 ---
 # <a name="create-virtual-machine-with-hyper-v-on-windows-10"></a>在 Windows 10 上使用 Hyper-V 创建虚拟机
 
@@ -30,7 +30,7 @@ ms.locfileid: "9620775"
   > **注意：** 这是 Hyper-V 用于虚拟机的名称，而不是提供给来宾系统的将部署到虚拟机内的计算机名称。
 
 1. 选择将存储虚拟机文件的位置，例如 **c:\virtualmachine**。 还可以接受默认位置。 操作完成后，单击“**下一步**”。
-    
+
   ![](media/new_vm_upd.png)
 
 1. 选择虚拟机的世代，然后单击“**下一步**”。  

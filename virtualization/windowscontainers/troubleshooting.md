@@ -8,12 +8,12 @@ ms.topic: article
 ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: ebd79cd3-5fdd-458d-8dc8-fc96408958b5
-ms.openlocfilehash: dfa558f3b17362b6f9af429842282309430e1da3
-ms.sourcegitcommit: 34d8b2ca5eebcbdb6958560b1f4250763bee5b48
+ms.openlocfilehash: 652b1a8e0ab12ac67dd2754051e36c523e3de509
+ms.sourcegitcommit: c4a3f88d1663dd19336bfd4ede0368cb18550ac7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/08/2019
-ms.locfileid: "9620935"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "9882940"
 ---
 # <a name="troubleshooting"></a>疑难解答
 
@@ -71,7 +71,7 @@ SERVICE_NAME: docker
 - 用 \ 转义每个 "
 - 将整个命令括在 " 中
 
-然后运行 `sc.exe config docker binpath= `，后跟新字符串。 例如： 
+然后运行 `sc.exe config docker binpath=`，后跟新字符串。 例如： 
 ```
 sc.exe config docker binpath= "\"C:\Program Files\Docker\dockerd.exe\" --run-service -D"
 ```
@@ -93,7 +93,7 @@ sc.exe stop docker
 
 ## <a name="obtaining-stack-dump"></a>获取堆栈转储。
 
-通常情况下，这是仅由 Microsoft 支持或 docker 开发人员明确要求的情况下很有用。 它可用于帮助诊断 docker 的显示位置被挂起。 
+通常, 这仅在 Microsoft 支持或 docker 开发人员显式请求的情况下才有用。 它可用于帮助诊断屏幕显示已挂起的情况。 
 
 下载 [docker signal.exe](https://github.com/jhowardmsft/docker-signal)。
 
@@ -104,11 +104,11 @@ Get-Process dockerd
 docker-signal -pid=<id>
 ```
 
-输出文件将位于数据根目录中目录 docker 是否在运行。 默认目录是 `C:\ProgramData\Docker`。 可以通过运行 `docker info -f "{{.DockerRootDir}}"` 来确认实际目录。
+输出文件将位于正在运行的数据根目录 docker 中。 默认目录是 `C:\ProgramData\Docker`。 可以通过运行 `docker info -f "{{.DockerRootDir}}"` 来确认实际目录。
 
-该文件将`goroutine-stacks-<timestamp>.log`。
+文件将是`goroutine-stacks-<timestamp>.log`。
 
-请注意，`goroutine-stacks*.log`不包含个人信息。
+请注意`goroutine-stacks*.log` , 不包含个人信息。
 
 
 # <a name="host-compute-service"></a>主机计算服务
@@ -131,12 +131,12 @@ Get-WinEvent -LogName Microsoft-Windows-Hyper-V-Compute-Operational
 ```PowerShell
 # Enable the analytic logs
 wevtutil.exe sl Microsoft-Windows-Hyper-V-Compute-Analytic /e:true /q:true
-     
+
 # <reproduce your issue>
-     
+
 # Export to an evtx
 wevtutil.exe epl Microsoft-Windows-Hyper-V-Compute-Analytic <hcslog.evtx>
-     
+
 # Disable
 wevtutil.exe sl Microsoft-Windows-Hyper-V-Compute-Analytic /e:false /q:true
 ```

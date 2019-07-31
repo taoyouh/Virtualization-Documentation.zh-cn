@@ -3,12 +3,12 @@ title: Windows 容器版本兼容性
 description: Windows 如何跨多个版本运行内部版本和容器
 keywords: 元数据, 容器, 版本
 author: taylorb-microsoft
-ms.openlocfilehash: 4d01fb1d11ee9e8a5fa4271699a5a7c59c27409d
-ms.sourcegitcommit: 71e46750813a996cecc445181974a79b95affc8c
+ms.openlocfilehash: 019dafe855e0fba696db4618a862ec086d435005
+ms.sourcegitcommit: c4a3f88d1663dd19336bfd4ede0368cb18550ac7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "9685342"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "9882990"
 ---
 # <a name="windows-container-version-compatibility"></a>Windows 容器版本兼容性
 
@@ -16,53 +16,85 @@ Windows Server 2016 和 Windows 10 周年更新 (两个版本 14393) 是可以�
 
 由于我们一直在改进 Windows 容器功能，我们不得不进行一些可能影响兼容性的变更。 较旧的容器将在具有[hyper-v 隔离](../manage-containers/hyperv-container.md)的较新主机上运行相同, 并且将使用相同 (较旧) 的内核版本。 但是, 如果你希望基于较新的 Windows 版本运行容器, 则该容器只能在较新的主机内部版本上运行。
 
-|容器操作系统版本|主机操作系统版本|兼容性|
-|---|---|---|
-|Windows Server 2019, 版本1903<br>生成18362。 * |Windows Server, 版本1903<br>生成18362。 * |支持`process`或`hyperv`隔离|
-|Windows Server 2019, 版本1903<br>生成18362。 * |Windows 10 版本1903<br>生成18362。 * |仅支持`hyperv`隔离|
-|Windows Server 2019, 版本1903<br>生成18362。 * |Windows 10 版本 1809<br>生成17763。 * |不支持|
-|Windows Server 2019, 版本1903<br>生成18362。 * |Windows Server 2019<br>生成17763。 * |不支持|
-|Windows Server 2019, 版本1903<br>生成18362。 * |Windows 10 版本 1803<br>生成17134。 * |不支持|
-|Windows Server 2019, 版本1903<br>生成18362。 * |Windows Server 版本 1803<br>生成17134。 * |不支持|
-|Windows Server 2019, 版本1903<br>生成18362。 * |Windows 10 Fall Creators Update<br>内部版本：16299.* |不支持|
-|Windows Server 2019, 版本1903<br>生成18362。 * |Windows Server 版本 1709<br>内部版本：16299.* |不支持|
-|Windows Server 2019, 版本1903<br>生成18362。 * |Windows Server 2016<br>内部版本：14393.* |不支持|
-|Windows Server 2019<br>生成17763。 * |Windows Server, 版本1903<br>生成18362。 * |仅支持`hyperv`隔离|
-|Windows Server 2019<br>生成17763。 * |Windows 10 版本1903<br>生成18362。 * |仅支持`hyperv`隔离|
-|Windows Server 2019<br>生成17763。 * |Windows 10 版本 1809<br>生成17763。 * |仅支持`hyperv`隔离|
-|Windows Server 2019<br>生成17763。 * |Windows Server 2019<br>生成17763。 * |支持`process`或`hyperv`隔离|
-|Windows Server 2019<br>生成17763。 * |Windows 10 版本 1803<br>生成17134。 * |不支持|
-|Windows Server 2019<br>生成17763。 * |Windows Server 版本 1803<br>生成17134。 * |不支持|
-|Windows Server 2019<br>生成17763。 * |Windows 10 Fall Creators Update<br>内部版本：16299.* |不支持|
-|Windows Server 2019<br>生成17763。 * |Windows Server 版本 1709<br>内部版本：16299.* |不支持|
-|Windows Server 2019<br>生成17763。 * |Windows Server 2016<br>内部版本：14393.* |不支持|
-|Windows Server 版本 1803<br>生成17134。 * |Windows Server, 版本1903<br>生成18362。 * |仅支持`hyperv`隔离|
-|Windows Server 版本 1803<br>生成17134。 * |Windows 10 版本1903<br>生成18362。 * |仅支持`hyperv`隔离|
-|Windows Server 版本 1803<br>生成17134。 * |Windows 10 版本 1809<br>生成17763。 * |仅支持`hyperv`隔离|
-|Windows Server 版本 1803<br>生成17134。 * |Windows Server 2019<br>生成17763。 * |仅支持`hyperv`隔离|
-|Windows Server 版本 1803<br>生成17134。 * |Windows 10 版本 1803<br>生成17134。 * |仅支持`hyperv`隔离|
-|Windows Server 版本 1803<br>生成17134。 * |Windows Server 版本 1803<br>生成17134。 * |支持`process`或`hyperv`隔离|
-|Windows Server 版本 1803<br>生成17134。 * |Windows 10 Fall Creators Update<br>内部版本：16299.* |不支持|
-|Windows Server 版本 1803<br>生成17134。 * |Windows Server 版本 1709<br>内部版本：16299.* |不支持|
-|Windows Server 版本 1803<br>生成17134。 * |Windows Server 2016<br>内部版本：14393.* |不支持|
-|Windows Server 版本 1709<br>内部版本：16299.* |Windows Server, 版本1903<br>生成18362。 * |仅支持`hyperv`隔离|
-|Windows Server 版本 1709<br>内部版本：16299.* |Windows 10 版本1903<br>生成18362。 * |仅支持`hyperv`隔离|
-|Windows Server 版本 1709<br>内部版本：16299.* |Windows 10 版本 1809<br>生成17763。 * |仅支持`hyperv`隔离|
-|Windows Server 版本 1709<br>内部版本：16299.* |Windows Server 2019<br>生成17763。 * |仅支持`hyperv`隔离|
-|Windows Server 版本 1709<br>内部版本：16299.* |Windows 10 版本 1803<br>生成17134。 * |仅支持`hyperv`隔离|
-|Windows Server 版本 1709<br>内部版本：16299.* |Windows Server 版本 1803<br>生成17134。 * |仅支持`hyperv`隔离|
-|Windows Server 版本 1709<br>内部版本：16299.* |Windows 10 Fall Creators Update<br>内部版本：16299.* |仅支持`hyperv`隔离|
-|Windows Server 版本 1709<br>内部版本：16299.* |Windows Server 版本 1709<br>内部版本：16299.* |支持`process`或`hyperv`隔离|
-|Windows Server 版本 1709<br>内部版本：16299.* |Windows Server 2016<br>内部版本：14393.* |不支持|
-|Windows Server 2016<br>内部版本：14393.* |Windows Server, 版本1903<br>生成18362。 * |仅支持`hyperv`隔离|
-|Windows Server 2016<br>内部版本：14393.* |Windows 10 版本1903<br>生成18362。 * |仅支持`hyperv`隔离|
-|Windows Server 2016<br>内部版本：14393.* |Windows 10 版本 1809<br>生成17763。 * |仅支持`hyperv`隔离|
-|Windows Server 2016<br>内部版本：14393.* |Windows Server 2019<br>生成17763。 * |仅支持`hyperv`隔离|
-|Windows Server 2016<br>内部版本：14393.* |Windows 10 Fall Creators Update<br>内部版本：16299.* |仅支持`hyperv`隔离|
-|Windows Server 2016<br>内部版本：14393.* |Windows Server 版本1803<br>生成17134。 * |仅支持`hyperv`隔离|
-|Windows Server 2016<br>内部版本：14393.* |Windows 10 版本 1803<br>生成17134。 * |仅支持`hyperv`隔离|
-|Windows Server 2016<br>内部版本：14393.* |Windows Server 版本 1709<br>内部版本：16299.* |仅支持`hyperv`隔离|
-|Windows Server 2016<br>内部版本：14393.* |Windows Server 2016<br>内部版本：14393.* |支持`process`或`hyperv`隔离|
+## <a name="windows-server-version-1903-host-os-compatibility"></a>Windows Server、版本1903主机操作系统兼容性
+
+|容器操作系统|支持 Hyper-v 隔离|支持进程隔离|
+|---|:---:|:---:|
+|Windows Server, 版本1903|是|是|
+|Windows Server 2019|是|否|
+|Windows Server 版本 1803|是|否|
+|Windows Server 版本 1709|是|否|
+|Windows Server 2016|是|否|
+
+## <a name="windows-server-2019-host-os-compatibility"></a>Windows Server 2019 主机操作系统兼容性
+
+|容器操作系统|支持 Hyper-v 隔离|支持进程隔离|
+|---|:---:|:---:|
+|Windows Server, 版本1903|否|否|
+|Windows Server 2019|是|是|
+|Windows Server 版本 1803|是|否|
+|Windows Server 版本 1709|是|否|
+|Windows Server 2016|是|否|
+
+## <a name="windows-server-version-1803-host-os-compatibility"></a>Windows Server、版本1803主机操作系统兼容性
+
+|容器操作系统|支持 Hyper-v 隔离|支持进程隔离|
+|---|:---:|:---:|
+|Windows Server, 版本1903|否|否|
+|Windows Server 2019|否|否|
+|Windows Server 版本 1803|是|是|
+|Windows Server 版本 1709|是|否|
+|Windows Server 2016|是|否|
+
+## <a name="windows-server-version-1709-host-os-compatibility"></a>Windows Server、版本1709主机操作系统兼容性
+
+|容器操作系统|支持 Hyper-v 隔离|支持进程隔离|
+|---|:---:|:---:|
+|Windows Server, 版本1903|否|否|
+|Windows Server 2019|否|否|
+|Windows Server 版本 1803|否|否|
+|Windows Server 版本 1709|是|是|
+|Windows Server 2016|是|否|
+
+## <a name="windows-10-version-1903-host-os-compatibility"></a>Windows 10 版本1903主机操作系统兼容性
+
+|容器操作系统|支持 Hyper-v 隔离|支持进程隔离|
+|---|:---:|:---:|
+|Windows Server, 版本1903|否|否|
+|Windows Server 2019|否|否|
+|Windows Server 版本 1803|否|否|
+|Windows Server 版本 1709|否|否|
+|Windows Server 2016|是|是|
+
+## <a name="windows-10-version-1809-host-os-compatibility"></a>Windows 10 版本1809主机操作系统兼容性
+
+|容器操作系统|支持 Hyper-v 隔离|支持进程隔离|
+|---|:---:|:---:|
+|Windows Server, 版本1903|否|否|
+|Windows Server 2019|是|否|
+|Windows Server 版本 1803|是|否|
+|Windows Server 版本 1709|是|否|
+|Windows Server 2016|是|否|
+
+## <a name="windows-10-version-1803-host-os-compatibility"></a>Windows 10 版本1803主机操作系统兼容性
+
+|容器操作系统|支持 Hyper-v 隔离|支持进程隔离|
+|---|:---:|:---:|
+|Windows 服务版本1903|否|否|
+|Windows Server 2019|否|否|
+|Windows Server 版本 1803|是|否||
+|Windows Server 版本 1709|是|否|
+|Windows Server 2016|是|否|
+
+## <a name="windows-10-fall-creators-update-host-os-compatibility"></a>Windows 10 秋季创意者更新主机操作系统兼容性
+
+|容器操作系统|支持 Hyper-v 隔离|支持进程隔离|
+|---|:---:|:---:|
+|Windows Server, 版本1903|否|否|
+|Windows Server 2019|否|否|
+|Windows Server 版本 1803|否|否|
+|Windows Server 版本 1709|是|否|
+|Windows Server 2016|是|否|
 
 ## <a name="matching-container-host-version-with-container-image-versions"></a>将容器主机版本与容器映像版本匹配
 
@@ -163,7 +195,7 @@ FROM mcr.microsoft.com/windows/nanoserver:10.0.17763.437
 ...
 ```
 
-基于 Windows Server 2019 和 Windows Server 2016 的服务器核心基本映像是长期[服务通道 (LTSC)](https://docs.microsoft.com/en-us/windows-server/get-started-19/servicing-channels-19#long-term-servicing-channel-ltsc)版本。 如果你希望 Windows Server 2019 作为你的服务器核心映像的容器操作系统, 并且希望拥有最新的修补程序, 则可以指定 LTSC 版本, 如下所示:
+基于 Windows Server 2019 和 Windows Server 2016 的服务器核心基本映像是长期[服务通道 (LTSC)](https://docs.microsoft.com/windows-server/get-started-19/servicing-channels-19#long-term-servicing-channel-ltsc)版本。 如果你希望 Windows Server 2019 作为你的服务器核心映像的容器操作系统, 并且希望拥有最新的修补程序, 则可以指定 LTSC 版本, 如下所示:
 
 ``` dockerfile
 FROM mcr.microsoft.com/windows/servercore:ltsc2019

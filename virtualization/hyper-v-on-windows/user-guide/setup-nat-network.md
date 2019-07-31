@@ -8,12 +8,12 @@ ms.topic: article
 ms.prod: windows-10-hyperv
 ms.service: windows-10-hyperv
 ms.assetid: 1f8a691c-ca75-42da-8ad8-a35611ad70ec
-ms.openlocfilehash: ea6fb4471cf337ff17bb1f936caea192bccaf404
-ms.sourcegitcommit: 34d8b2ca5eebcbdb6958560b1f4250763bee5b48
+ms.openlocfilehash: e69775c15359645f3659c9bee3562733415228d5
+ms.sourcegitcommit: c4a3f88d1663dd19336bfd4ede0368cb18550ac7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/08/2019
-ms.locfileid: "9621154"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "9882880"
 ---
 # <a name="set-up-a-nat-network"></a>设置 NAT 网络
 
@@ -148,7 +148,7 @@ PS C:\> Get-NetNat | Remove-NetNAT (again, this will remove the NAT but keep the
 PS C:\> New-NetNat -Name SharedNAT -InternalIPInterfaceAddressPrefix <shared prefix>
 PS C:\> Start-Service docker
 ```
-Docker/HNS 将 Ip 分配给 Windows 容器和管理员将 Ip 分配给 Vm 差异集的两个。
+Docker/HNS 将为 Windows 容器分配 Ip, 管理员会将 Ip 从两个的差异集分配给 Vm。
 
 用户已通过运行 docker 引擎安装了 Windows 容器功能，现在想要将 VM 连接到 NAT 网络
 ```
@@ -162,7 +162,7 @@ PS C:\> New-NetNat -Name SharedNAT -InternalIPInterfaceAddressPrefix <shared pre
 PS C:\> New-VirtualSwitch -Type internal (attach VMs to this new vSwitch)
 PS C:\> Start-Service docker
 ```
-Docker/HNS 将 Ip 分配给 Windows 容器和管理员将 Ip 分配给 Vm 差异集的两个。
+Docker/HNS 将为 Windows 容器分配 Ip, 管理员会将 Ip 从两个的差异集分配给 Vm。
 
 最终，你应该有两个内部 VM 开关以及在这两个开关之间共享的一个 NetNat。
 
