@@ -7,12 +7,12 @@ ms.topic: troubleshooting
 ms.prod: containers
 description: 关于部署 Kubernetes 和加入 Windows 节点的常见问题的解决方案。
 keywords: kubernetes、1.14、linux、compile
-ms.openlocfilehash: bdf1fd78bbbebcad3562872d9e71c961be6c64eb
-ms.sourcegitcommit: c4a3f88d1663dd19336bfd4ede0368cb18550ac7
+ms.openlocfilehash: a0b24782a0e511dfc8b6cf1a0c0bc24882ff977a
+ms.sourcegitcommit: 42cb47ba4f3e22163869d094bd0c9cff415a43b0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "9883000"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "9884988"
 ---
 # <a name="troubleshooting-kubernetes"></a>Kubernetes 疑难解答 #
 此页面逐一介绍 Kubernetes 设置、网络和部署的一些常见问题。
@@ -68,6 +68,12 @@ Windows Server 上的用户 (版本 1903) 可以转到以下注册表位置并�
 \\Computer\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\vmsmp\parameters\NicList
 ```
 
+### <a name="containers-on-my-flannel-host-gw-deployment-on-azure-cannot-reach-the-internet"></a>我的 Flannel 主机上的容器-Azure 上的 gw 部署无法连接到 internet ###
+在 Azure 上的主机-gw 模式下部署 Flannel 时, 数据包必须经历 Azure 物理主机 vSwitch。 用户应针对分配给节点的每个子网为[用户定义](https://docs.microsoft.com/en-us/azure/virtual-network/virtual-networks-udr-overview#user-defined)的 "虚拟装置" 类型的路由编程。 这可以通过 Azure 门户 (请参阅[此处](https://docs.microsoft.com/en-us/azure/virtual-network/tutorial-create-route-table-portal)的示例) 或通过`az` azure CLI 执行此操作。 下面是名为 "MyRoute" 的一个示例 UDR, 其中包含 IP 10.0.0.4 和各自的 pod 子网 10.244.0.0/24 的节点的 az 命令:
+```
+az network route-table create --resource-group <my_resource_group> --name BridgeRoute 
+az network route-table route create  --resource-group <my_resource_group> --address-prefix 10.244.0.0/24 --route-table-name BridgeRoute  --name MyRoute --next-hop-type VirtualAppliance --next-hop-ip-address 10.0.0.4 
+```
 
 ### <a name="my-windows-pods-cannot-ping-external-resources"></a>我的 Windows 箱无法 ping 外部资源 ###
 Windows 盒目前没有为 ICMP 协议预先设定的出站规则。 但是, 支持 TCP/UDP。 当尝试演示与群集外的资源的连接时, 请用`ping <IP>`对应`curl <IP>`的命令替换。
