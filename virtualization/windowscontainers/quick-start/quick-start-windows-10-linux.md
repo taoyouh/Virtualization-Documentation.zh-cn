@@ -8,12 +8,12 @@ ms.topic: article
 ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: bb9bfbe0-5bdc-4984-912f-9c93ea67105f
-ms.openlocfilehash: 926e5cd64053b5ea795bb2c75a231700aed443ca
-ms.sourcegitcommit: f6457ee0635864e8e8bb07da43a6f76388ee3cd1
+ms.openlocfilehash: 11e3c9f93400af2c1bc2d84136d512ac91cf4477
+ms.sourcegitcommit: cdf127747cfcb839a8abf50a173e628dcfee02db
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "9734651"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "9999084"
 ---
 # <a name="linux-containers-on-windows-10"></a>Windows 10 上的 Linux 容器
 

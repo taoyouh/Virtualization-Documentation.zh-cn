@@ -7,12 +7,12 @@ ms.date: 04/13/2017
 ms.topic: article
 ms.prod: windows-10-hyperv
 ms.assetid: b13a3594-d168-448b-b0a1-7d77153759a8
-ms.openlocfilehash: e2d6faabe77346199a5d292fcfd92cdfd63909b8
-ms.sourcegitcommit: 0deb653de8a14b32a1cfe3e1d73e5d3f31bbe83b
+ms.openlocfilehash: 963a1cc356c34c8d051c427a069c49021e3c0d27
+ms.sourcegitcommit: cdf127747cfcb839a8abf50a173e628dcfee02db
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "9575148"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "9998904"
 ---
 # <a name="move-from-hyper-v-wmi-v1-to-wmi-v2"></a>从 Hyper-V WMI v1 移到 WMI v2
 

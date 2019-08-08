@@ -1,32 +1,32 @@
 ---
-title: Windows 容器中的打印后台处理程序
-description: 介绍了 Windows 容器中的打印后台处理程序服务的当前工作行为
-keywords: docker，容器，打印机，后台处理程序
+title: 在 Windows 容器中打印后台处理程序
+description: 介绍 Windows 容器中打印后台处理程序服务的当前工作行为
+keywords: docker、容器、打印机、后台处理程序
 author: cwilhit
-ms.openlocfilehash: 48130bc6a826a45dfa49d0a3b4600d227f34704e
-ms.sourcegitcommit: 0deb653de8a14b32a1cfe3e1d73e5d3f31bbe83b
+ms.openlocfilehash: e104a87046545b90d244783aafb62ad9d151e14b
+ms.sourcegitcommit: cdf127747cfcb839a8abf50a173e628dcfee02db
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "9576658"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "9999094"
 ---
-# <a name="print-spooler-in-windows-containers"></a>Windows 容器中的打印后台处理程序
+# <a name="print-spooler-in-windows-containers"></a>在 Windows 容器中打印后台处理程序
 
-打印服务上的依赖项的应用程序可以在容器化成功与 Windows 容器。 有一些必须满足的成功启用打印机服务功能的特殊要求。 本指南介绍了如何正确配置你的部署。
+与打印服务有依赖关系的应用程序可以使用 Windows 容器成功地进行容器。 必须满足特殊要求才能成功启用打印机服务功能。 本指南介绍如何正确配置你的部署。
 
 > [!IMPORTANT]
-> 获取访问的打印服务成功在容器中的工作原理，尽管形式; 有限功能一些与打印相关的操作可能不起作用。 例如，具有依赖到主机安装打印机驱动程序的应用不能在容器化因为**从容器中的驱动程序安装不受支持**。 请如果你发现你想要支持在容器中不受支持打印功能，打开了下面的反馈。
+> 当容器中成功访问打印服务时, 功能在表单中受限制;某些与打印相关的操作可能不起作用。 例如, 由于不**支持从容器内部安装驱动**程序, 因此无法为将打印机驱动程序安装到主机的应用进行容器。 如果您找到了不受支持的打印功能, 而您希望在容器中支持该功能, 请打开下面的反馈。
 
 ## <a name="setup"></a>安装
 
-* 在主机应为 Windows Server 2019 或 Windows 10 专业版/企业版 2018 年 10 月更新或更高版本。
-* [Mcr.microsoft.com/windows](https://hub.docker.com/_/microsoft-windowsfamily-windows)图像应定向的基本映像。 （如 Nano Server 和 Windows Server Core） 其他 Windows 容器基本映像不带有打印服务器角色。
+* 主机应为 Windows Server 2019 或 Windows 10 专业版/企业版2018更新或更高版本。
+* [Mcr.microsoft.com/windows](https://hub.docker.com/_/microsoft-windowsfamily-windows)图像应为目标的基本图像。 其他 Windows 容器基本映像 (如 Nano Server 和 Windows Server Core) 不会携带打印服务器角色。
 
 ### <a name="hyper-v-isolation"></a>Hyper-V 隔离
 
-我们建议使用 HYPER-V 隔离运行你的容器。 在此模式下运行时，你可以根据需要运行具有访问权限的打印服务的多个容器。 不需要修改在主机上的后台打印服务。
+我们建议你通过 Hyper-v 隔离运行容器。 在此模式下运行时, 你可以使用对打印服务的访问权限运行所需的多个容器。 无需修改主机上的后台处理程序服务。
 
-你可以验证与下面的 PowerShell 查询的功能：
+你可以通过以下 PowerShell 查询验证功能:
 
 ```PowerShell
 PS C:\Users\Administrator> docker run -it --isolation hyperv mcr.microsoft.com/windows:1809 powershell.exe
@@ -54,12 +54,12 @@ PS C:\>
 
 ### <a name="process-isolation"></a>进程隔离
 
-由于的进程隔离的容器共享的内核性质，当前行为会限制用户跨主机及其所有容器子级运行只有**一个实例**的打印机后台处理程序服务。 如果主机运行的后台打印机，你必须在主机上之前 attemping 用于启动，来宾操作系统中的打印机服务停止服务。
+由于进程隔离容器的共享内核本质, 当前行为限制用户只能在整个主机及其所有容器子中运行打印机后台处理程序服务的**一个实例**。 如果主机正在运行打印机后台处理程序, 则必须先停止主机上的服务, 然后才能在来宾中 attemping 启动打印机服务。
 
 > [!TIP]
-> 如果你启动容器并同时查询的容器和主机中的后台处理程序服务，同时将报告其状态为正在运行。 但不要 deceived-容器将不能查询可用的打印机的列表。 主机的后台处理程序服务必须无法运行。 
+> 如果在容器和主机中同时启动容器和同时查询后台处理程序服务, 二者都将报告其状态为 "正在运行"。 但不要 deceived-容器将无法查询可用打印机的列表。 主机的后台处理程序服务必须不运行。 
 
-若要查看主机是否正在运行的打印机服务，请在下面的 PowerShell 中使用查询：
+若要检查主机是否正在运行打印机服务, 请使用下面的 PowerShell 中的查询:
 
 ```PowerShell
 PS C:\Users\Administrator> Get-Service spooler
@@ -71,14 +71,14 @@ Running  spooler            Print Spooler
 PS C:\Users\Administrator>
 ```
 
-若要停止在主机上的后台打印服务，请在下面的 PowerShell 中使用以下命令：
+若要停止主机上的后台处理程序服务, 请在下面的 PowerShell 中使用以下命令:
 
 ```PowerShell
 Stop-Service spooler
 Set-Service spooler -StartupType Disabled
 ```
 
-启动容器并验证可以访问打印机。
+启动容器并验证对打印机的访问权限。
 
 ```PowerShell
 PS C:\Users\Administrator> docker run -it --isolation process mcr.microsoft.com/windows:1809 powershell.exe

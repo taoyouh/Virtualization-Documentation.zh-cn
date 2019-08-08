@@ -8,12 +8,12 @@ ms.topic: article
 ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: 8ccd4192-4a58-42a5-8f74-2574d10de98e
-ms.openlocfilehash: 69eb4bbd94aee203f22384b6e0db6e922b3bf474
-ms.sourcegitcommit: 34d8b2ca5eebcbdb6958560b1f4250763bee5b48
+ms.openlocfilehash: 2cc5853648a9e1bb62ae684472fa7d9512cdb978
+ms.sourcegitcommit: cdf127747cfcb839a8abf50a173e628dcfee02db
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/08/2019
-ms.locfileid: "9621105"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "9998334"
 ---
 # <a name="implementing-resource-controls-for-windows-containers"></a>实施 Windows 容器资源控制
 某些资源控制可以按容器和按资源实施。  默认情况下，容器运行受典型 Windows 资源管理（总体上以公平分配为基础）影响，但通过实施以上控制，开发人员或管理员可以限制或影响资源使用情况。  可以控制的资源包括：CPU/处理器、内存/RAM、磁盘/存储和网络/吞吐量。

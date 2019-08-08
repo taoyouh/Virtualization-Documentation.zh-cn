@@ -8,12 +8,12 @@ ms.topic: article
 ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: 25de368c-5a10-40a4-b4aa-ac8c9a9ca022
-ms.openlocfilehash: 90894278885fde54feab222bb2bf44ca3eba331b
-ms.sourcegitcommit: daf1d2b5879c382404fc4d59f1c35c88650e20f7
+ms.openlocfilehash: 0aa93b721ab1279cb789e3a18cad04bb668d2644
+ms.sourcegitcommit: cdf127747cfcb839a8abf50a173e628dcfee02db
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "9674732"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "9998514"
 ---
 # <a name="frequently-asked-questions-about-containers"></a>有关容器的常见问题
 

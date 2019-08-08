@@ -8,12 +8,12 @@ ms.topic: article
 ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: 88e6e080-cf8f-41d8-a301-035959dc5ce0
-ms.openlocfilehash: 1b8bb433781e00bb8a435f14751d180ec52dec30
-ms.sourcegitcommit: 34d8b2ca5eebcbdb6958560b1f4250763bee5b48
+ms.openlocfilehash: 0ec6eccbcf69532d583c32136f1a0c50c9811a8b
+ms.sourcegitcommit: cdf127747cfcb839a8abf50a173e628dcfee02db
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/08/2019
-ms.locfileid: "9621046"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "9998364"
 ---
 # <a name="windows-container-base-image-history"></a>Windows 容器基本映像历史记录
 

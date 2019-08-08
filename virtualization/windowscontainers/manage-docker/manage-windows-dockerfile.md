@@ -8,12 +8,12 @@ ms.topic: article
 ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: 75fed138-9239-4da9-bce4-4f2e2ad469a1
-ms.openlocfilehash: c08fa4d0a89bddeddd0f0a918345c33a6e2ab893
-ms.sourcegitcommit: a7f9ab96be359afb37783bbff873713770b93758
+ms.openlocfilehash: f23fe8c5e5ad9dc3257f8b99d239b5fc97607add
+ms.sourcegitcommit: cdf127747cfcb839a8abf50a173e628dcfee02db
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "9680987"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "9998234"
 ---
 # <a name="dockerfile-on-windows"></a>Windows 上的 Dockerfile
 

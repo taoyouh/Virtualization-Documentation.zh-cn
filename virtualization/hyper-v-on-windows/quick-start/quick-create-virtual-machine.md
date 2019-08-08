@@ -7,28 +7,28 @@ ms.date: 04/07/2018
 ms.topic: article
 ms.prod: windows-10-hyperv
 ms.assetid: f1e75efa-8745-4389-b8dc-91ca931fe5ae
-ms.openlocfilehash: 970e92def02e5386d38a2e72d5ef921aa8321fdf
-ms.sourcegitcommit: 08cc38955faad26f075b912a64b8ffb6b36f190c
+ms.openlocfilehash: 6035143bc1449bc4a8e9bb7a4484b4c5329e6d3c
+ms.sourcegitcommit: cdf127747cfcb839a8abf50a173e628dcfee02db
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "9578680"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "9998624"
 ---
 # <a name="create-a-virtual-machine-with-hyper-v"></a>使用 Hyper-V 创建虚拟机
 
 创建虚拟机并为其安装操作系统。
 
-我们一直在构建用于创建虚拟机，因此，说明已显著发生在过去的三个版本的新工具。
+我们已为创建虚拟机构建了新的工具, 以便说明在过去三个版本中显著更改。
 
 选择你的操作系统以获取合适的一组说明：
 
-* [Windows 10 Fall Creators Update (版本 1709) 及更高版本](quick-create-virtual-machine.md#windows-10-fall-creators-update-windows-10-version-1709)
-* [Windows 10 创意者更新 (版本 1703)](quick-create-virtual-machine.md#windows-10-creators-update-windows-10-version-1703)
-* [Windows 10 周年更新 (版本 1607) 及更早版本](quick-create-virtual-machine.md#before-windows-10-creators-update-windows-10-version-1607-and-earlier)
+* [Windows 10 秋季创意者更新 (v1709) 及更高版本](quick-create-virtual-machine.md#windows-10-fall-creators-update-windows-10-version-1709)
+* [Windows 10 创意者更新 (v1703)](quick-create-virtual-machine.md#windows-10-creators-update-windows-10-version-1703)
+* [Windows 10 周年更新 (v1607) 及更早版本](quick-create-virtual-machine.md#before-windows-10-creators-update-windows-10-version-1607-and-earlier)
 
 让我们开始吧。
 
-## <a name="windows-10-fall-creators-update-windows-10-version-1709"></a>Windows 10 Fall Creators Update (Windows 10 版本 1709年)
+## <a name="windows-10-fall-creators-update-windows-10-version-1709"></a>Windows 10 秋季创意者更新 (Windows 10 版本 1709)
 
 在 Fall Creators Update 中，“快速创建”进行了扩展，以包括可以独立从 Hyper-V 管理器中启动的虚拟机库。
 
@@ -53,7 +53,7 @@ ms.locfileid: "9578680"
 
 就这么简单！  “快速创建”将完成其余的工作。
 
-## <a name="windows-10-creators-update-windows-10-version-1703"></a>Windows 10 创意者更新 (Windows 10 版本 1703年)
+## <a name="windows-10-creators-update-windows-10-version-1703"></a>Windows 10 创意者更新 (Windows 10 版本 1703)
 
 ![“快速创建”UI 的屏幕截图](media/quickcreatesteps_inked.jpg)
 
@@ -81,7 +81,7 @@ ms.locfileid: "9578680"
 
 > **注意：** 除非你运行的是批量许可版本的 Windows，否则需要为虚拟机内运行的 Windows 提供单独的许可证。 虚拟机的操作系统独立于主机操作系统。
 
-## <a name="before-windows-10-creators-update-windows-10-version-1607-and-earlier"></a>Windows 10 创意者更新 (Windows 10 版本 1607 及更早版本) 之前
+## <a name="before-windows-10-creators-update-windows-10-version-1607-and-earlier"></a>在 Windows 10 创意者更新之前 (Windows 10 版本1607和更早版本)
 
 如果运行的不是 Windows 10 创意者更新或更高版本，请按照以下说明进行操作并改用新的虚拟机向导：
 

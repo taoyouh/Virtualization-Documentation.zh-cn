@@ -1,6 +1,6 @@
 ---
-title: 在 Windows 文档的容器
-description: 在 Windows 上运行容器的文档
+title: Windows 文档中的容器
+description: 有关在 Windows 上运行容器的文档
 keywords: docker, 容器
 author: cwilhit
 ms.date: 05/02/2016
@@ -8,16 +8,16 @@ ms.topic: article
 ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: 74c9d604-0915-4d89-bc69-0263b76bc66b
-ms.openlocfilehash: 9ee2a0adad762aa3cee53f3b44210976259b693f
-ms.sourcegitcommit: 34d8b2ca5eebcbdb6958560b1f4250763bee5b48
+ms.openlocfilehash: 771a4ef644525334e9135b8605da74503c16f21b
+ms.sourcegitcommit: cdf127747cfcb839a8abf50a173e628dcfee02db
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/08/2019
-ms.locfileid: "9620695"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "9998764"
 ---
-# <a name="containers-on-windows-documentation"></a>在 Windows 文档的容器
+# <a name="containers-on-windows-documentation"></a>Windows 文档中的容器
 
-Windows 容器提供操作系统级别的虚拟化，允许多个独立的应用程序在单个系统上运行。 此文档集提供了快速入门指南、部署指南和有关管理操作的技术详细信息。
+Windows 容器提供操作系统级虚拟化, 允许在单个系统上运行多个独立的应用程序。 此文档集提供了快速入门指南、部署指南和有关管理操作的技术详细信息。
 
 ## <a name="getting-started"></a>入门
 了解容器并开始使用它们。
@@ -26,7 +26,7 @@ Windows 容器提供操作系统级别的虚拟化，允许多个独立的应用
 * [在 Windows 10 中使用容器](quick-start/quick-start-windows-10.md)
 
 ## <a name="deployment"></a>部署
-了解如何部署 Windows Server 2019 上的 Windows 容器
+了解如何在 Windows Server 2019 上部署 Windows 容器
 
 * [系统要求](deploy-containers/system-requirements.md)
 * [部署容器主机](deploy-containers/deploy-containers-on-server.md)
@@ -40,7 +40,7 @@ Windows 容器提供操作系统级别的虚拟化，允许多个独立的应用
 * [容器网络](container-networking/architecture.md)
 
 ## <a name="watch"></a>观看
-在来自 Windows 容器团队演示和访谈感兴趣？
+对 Windows 容器团队的演示和访谈感兴趣？
 * [容器频道](https://channel9.msdn.com/Blogs/containers)
 
 ## <a name="community"></a>社区

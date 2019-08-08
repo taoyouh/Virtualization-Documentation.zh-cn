@@ -16,7 +16,7 @@
 ## [创建虚拟交换机](quick-start/connect-to-network.md)
 ## [生成集成服务](user-guide/make-integration-service.md)
 ## [移植 Hyper-V WMI](user-guide/refactor-wmiv1-to-wmiv2.md)
-## [Azure 虚拟网络中的嵌套虚拟机](user-guide/nested-virtualization-azure-virtual-network.md) 
+## [Azure 虚拟网络中的嵌套 Vm](user-guide/nested-virtualization-azure-virtual-network.md) 
 
 # 参考
 ## [Hyper-V 要求](reference/hyper-v-requirements.md)
@@ -25,7 +25,7 @@
 ## [Hyper-V 集成服务](reference/integration-services.md)
 ## [Hyper-V 体系结构](reference/hyper-v-architecture.md)
 ## [虚拟机监控程序规范](reference/tlfs.md)
-## [HYPER-V 备份方法](reference/HyperVBackupApproaches.md)
+## [Hyper-v 备份方法](reference/HyperVBackupApproaches.md)
 
 # 社区和支持
 ## [Hyper-V 论坛](https://social.technet.microsoft.com/Forums/windowsserver/home?forum=winserverhyperv)

@@ -8,22 +8,22 @@ ms.topic: article
 ms.prod: windows-10-hyperv
 ms.service: windows-10-hyperv
 ms.assetid: fb228e06-e284-45c0-b6e6-e7b0217c3a49
-ms.openlocfilehash: ea6b71200d3115ba3d156b2c133e1be2fa495261
-ms.sourcegitcommit: 34d8b2ca5eebcbdb6958560b1f4250763bee5b48
+ms.openlocfilehash: ed96c7ba30c83906cd3245a279ab078229400d8d
+ms.sourcegitcommit: cdf127747cfcb839a8abf50a173e628dcfee02db
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/08/2019
-ms.locfileid: "9620915"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "9998724"
 ---
 # <a name="virtual-machine-automation-and-management-using-powershell"></a>使用 PowerShell 实现虚拟机自动化和管理虚拟机
 
 无论采用何种网络配置或远程管理设置，均可以在 Hyper-V 主机上的 Windows 10 或 Windows Server 2016 虚拟机中使用 PowerShell Direct 运行任意 PowerShell。
 
-下面是一些你可以运行 PowerShell Direct 的方法：
+下面是一些可直接运行 PowerShell 的方法:
 
-* [作为交互式会话使用 Enter-pssession cmdlet](#create-and-exit-an-interactive-powershell-session)
-* [作为用以执行单个命令或脚本的单用途部分使用 Invoke-command cmdlet](#run-a-script-or-command-with-invoke-command)
-* [作为持久性会话 （版本 14280 及更高版本） 使用 New-pssession，项副本，并删除 PSSession cmdlet](#copy-files-with-new-pssession-and-copy-item)
+* [用作使用 Enter-PSSession cmdlet 的交互式会话](#create-and-exit-an-interactive-powershell-session)
+* [使用调用命令 cmdlet 执行单个命令或脚本的单用途部分](#run-a-script-or-command-with-invoke-command)
+* [使用新的 PSSession、复制项和 Remove cmdlet 作为 persistant 会话 (内部版本14280和更高版本)](#copy-files-with-new-pssession-and-copy-item)
 
 ## <a name="requirements"></a>要求
 **操作系统要求：**

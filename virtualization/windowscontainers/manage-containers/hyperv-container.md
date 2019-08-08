@@ -1,6 +1,6 @@
 ---
 title: Hyper-V 隔离
-description: 解释的 HYPER-V 隔离有何不同进程隔离容器中。
+description: Explaination Hyper-v 隔离与进程隔离的容器有何不同。
 keywords: docker, 容器
 author: scooley
 ms.date: 09/13/2018
@@ -8,26 +8,26 @@ ms.topic: article
 ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: 42154683-163b-47a1-add4-c7e7317f1c04
-ms.openlocfilehash: 2ff2d1204e1f973d49af5e1d4441e4eacd946101
-ms.sourcegitcommit: 0deb653de8a14b32a1cfe3e1d73e5d3f31bbe83b
+ms.openlocfilehash: 092312848173102bec5a791f2c48fe8166e70d5f
+ms.sourcegitcommit: cdf127747cfcb839a8abf50a173e628dcfee02db
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "9576898"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "9998324"
 ---
 # <a name="hyper-v-isolation"></a>Hyper-V 隔离
 
-Windows 容器技术包括两个不同级别的隔离容器、 进程和 HYPER-V 隔离。 这两种类型的创建、 管理和功能完全相同。 它们也生成和使用相同的容器映像。 它们之间的不同之处是在容器、主机操作系统以及在该主机上运行的所有其他容器之间创建的隔离级别。
+Windows 容器技术包括容器、进程和 Hyper-v 隔离的两个不同的隔离级别。 两种类型的创建、托管和函数均相同。 它们也生成和使用相同的容器映像。 它们之间的不同之处是在容器、主机操作系统以及在该主机上运行的所有其他容器之间创建的隔离级别。
 
-**进程隔离**– 多个容器实例可同时运行主机，隔离通过提供的命名空间、 资源控制，以及进程隔离技术。  容器与主机中，以及彼此共享同一个内核。  这是大约相同如何在 Linux 上运行容器。
+**进程隔离**-可以在主机上并发运行多个容器实例, 并通过命名空间、资源控制和进程隔离技术提供隔离。  容器与主机共享同一内核, 以及彼此共享。  这大致与在 Linux 上运行容器的方式相同。
 
-**HYPER-V 隔离**– 多个容器实例可同时运行在主机上，但是，每个容器都在特定虚拟机的内部运行。 这提供了每个容器，以及在容器主机之间的内核级别隔离。
+**Hyper-v 隔离**-可以在主机上并发运行多个容器实例, 但每个容器都在特定虚拟机内运行。 这将在每个容器和容器主机之间提供内核级别隔离。
 
-## <a name="hyper-v-isolation-examples"></a>HYPER-V 隔离示例
+## <a name="hyper-v-isolation-examples"></a>Hyper-v 隔离示例
 
 ### <a name="create-container"></a>创建容器
 
-管理 HYPER-V 隔离容器与 Docker 是管理 Windows Server 容器几乎相同。 若要创建具有 HYPER-V 隔离容器彻底 Docker，使用`--isolation`参数，以设置`--isolation=hyperv`。
+管理具有 Docker 的 Hyper-v 隔离容器与管理 Windows Server 容器几乎完全相同。 若要使用 Hyper-v 隔离完全 Docker 创建容器, 请使用`--isolation`参数进行设置。 `--isolation=hyperv`
 
 ``` cmd
 docker run -it --isolation=hyperv mcr.microsoft.com/windows/nanoserver:1809 cmd
@@ -35,9 +35,9 @@ docker run -it --isolation=hyperv mcr.microsoft.com/windows/nanoserver:1809 cmd
 
 ### <a name="isolation-explanation"></a>隔离说明
 
-此示例演示了隔离功能在 Windows Server 和 HYPER-V 隔离之间的差异。
+此示例演示了 Windows Server 和 Hyper-v 隔离之间的隔离功能的差异。
 
-此处，进程隔离的容器正在部署，并将承载一个长时间运行 ping 进程。
+此处, 将部署一个进程隔离容器, 并将托管一个长时间运行的 ping 进程。
 
 ``` cmd
 docker run -d mcr.microsoft.com/windows/servercore:1809 ping localhost -t
@@ -61,7 +61,7 @@ Handles  NPM(K)    PM(K)      WS(K) VM(M)   CPU(s)     Id  SI ProcessName
      67       5      820       3836 ...71     0.03   3964   3 PING
 ```
 
-为了便于对比，此示例使用 ping 进程启动 HYPER-V 隔离的容器。
+为对比度, 此示例还使用一个 ping 进程启动一个 Hyper-v 隔离容器。
 
 ```
 docker run -d --isolation=hyperv mcr.microsoft.com/windows/nanoserver:1809 ping -t localhost

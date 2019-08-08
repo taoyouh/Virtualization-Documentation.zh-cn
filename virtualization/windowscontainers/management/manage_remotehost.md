@@ -8,12 +8,12 @@ ms.topic: article
 ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: 0cc1b621-1a92-4512-8716-956d7a8fe495
-ms.openlocfilehash: b975c593bd5c736ec3e7e1e21b76b2f6a2c8f8a4
-ms.sourcegitcommit: 0deb653de8a14b32a1cfe3e1d73e5d3f31bbe83b
+ms.openlocfilehash: 2e1fec6aa7149c801b1c72a0f8a346ca879015c2
+ms.sourcegitcommit: cdf127747cfcb839a8abf50a173e628dcfee02db
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "9575358"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "9998194"
 ---
 # <a name="remote-management-of-a-windows-docker-host"></a>Windows Docker 主机远程管理
 

@@ -8,17 +8,17 @@ ms.topic: article
 ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: 538871ba-d02e-47d3-a3bf-25cda4a40965
-ms.openlocfilehash: ac0088995dfbda73351d39a494435c431e0939e7
-ms.sourcegitcommit: 0deb653de8a14b32a1cfe3e1d73e5d3f31bbe83b
+ms.openlocfilehash: cff56843a0eeb48ca5d19b694eb8eb4e758002aa
+ms.sourcegitcommit: cdf127747cfcb839a8abf50a173e628dcfee02db
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "9576328"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "9998454"
 ---
 # <a name="windows-container-networking"></a>Windows 容器网络
 
 >[!IMPORTANT]
->请参考了解一般 docker 网络命令、 选项和 syntax.* * *[不支持的功能和网络选项](#unsupported-features-and-network-options)，所有 Docker 网络命令中所述的任何情况除外[Docker 容器网络](https://docs.docker.com/engine/userguide/networking/)Windows 上受支持相同的语法与 Linux 上。 但是，Windows 和 Linux 网络堆栈不同，因此你将发现某些 Linux 网络命令 (如 ifconfig)，不支持在 Windows 上。
+>请为常规 Docker 网络命令、选项和语法引用[Docker 容器网络](https://docs.docker.com/engine/userguide/networking/)。 * * * 除了[不受支持的功能和网络选项](#unsupported-features-and-network-options)中所描述的任何情况, 所有 Docker 网络命令都是在 Windows 上受支持, 其语法与 Linux 上的语法相同。 但是, Windows 和 Linux 网络堆栈是不同的, 因此你将发现 Windows 上不支持某些 Linux 网络命令 (例如, ifconfig)。
 
 ## <a name="basic-networking-architecture"></a>基本网络体系结构
 
@@ -30,8 +30,8 @@ ms.locfileid: "9576328"
 
 ![文本](media/docker-network-ls.png)
 
-- **内部**vSwitch 是未直接连接到容器主机上的网络适配器。
-- **外部**vSwitch 是一种直接连接到容器主机上的网络适配器。
+- **内部**vSwitch 是未直接连接到容器主机上的网络适配器的 vSwitch。
+- **外部**vSwitch 是直接连接到容器主机上的网络适配器的项。
 
 ![文本](media/get-vmswitch.png)
 
@@ -64,13 +64,13 @@ ms.locfileid: "9576328"
 
 ## <a name="unsupported-features-and-network-options"></a>不受支持的功能和网络选项
 
-以下网络选项目前**不**在 Windows 上受支持：
+Windows 当前**不**支持以下网络选项:
 
-- Windows 容器附加到 l2 桥接、 NAT 和覆盖网络不支持通过 IPv6 堆栈进行通信。
-- 通过 IPsec 加密的容器通信。
-- HTTP 代理支持容器。
-- 附加到在 HYPER-V 隔离运行的终结点 （热添加）。
-- 通过透明网络驱动程序的虚拟化 Azure 基础结构上的网络。
+- 连接到 l2bridge、NAT 和覆盖网络的 Windows 容器不支持通过 IPv6 堆栈进行通信。
+- 通过 IPsec 进行加密的容器通信。
+- 容器的 HTTP 代理支持。
+- 将终结点附加到在 Hyper-v 隔离中运行 (热添加)。
+- 通过透明网络驱动程序在虚拟 Azure 基础结构上联网。
 
 | 命令        | 不支持的选项   |
 |---------------|:--------------------:|

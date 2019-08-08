@@ -8,12 +8,12 @@ ms.topic: article
 ms.prod: windows-10-hyperv
 ms.service: windows-10-hyperv
 ms.assetid: d9238389-7028-4015-8140-27253b156f37
-ms.openlocfilehash: c7a6462b331f469148eb4cf5a0a2740c9929fa29
-ms.sourcegitcommit: 0deb653de8a14b32a1cfe3e1d73e5d3f31bbe83b
+ms.openlocfilehash: 1348b9923d9de1314818f13414abdacee2cb9735
+ms.sourcegitcommit: cdf127747cfcb839a8abf50a173e628dcfee02db
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "9576798"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "9998604"
 ---
 # <a name="create-a-custom-virtual-machine-gallery"></a>创建自定义虚拟机库
 
@@ -103,7 +103,7 @@ ms.locfileid: "9576798"
 
 当然，还有你的虚拟机（.iso 或 .vhdx）。
 
-若要生成哈希值，你可以使用以下 powershell 命令：
+若要生成哈希, 可以使用以下 powershell 命令:
 
   ``` PowerShell
   Get-FileHash -Path .\TMLogo.jpg -Algorithm SHA256

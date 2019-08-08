@@ -8,12 +8,12 @@ ms.topic: article
 ms.prod: windows-10-hyperv
 ms.service: windows-10-hyperv
 ms.assetid: d1aeb9cb-b18f-43cb-a568-46b33346a188
-ms.openlocfilehash: 52d51fca03f454a311a123f20e5aeda9376fdc3d
-ms.sourcegitcommit: 0deb653de8a14b32a1cfe3e1d73e5d3f31bbe83b
+ms.openlocfilehash: c891a723d43a9e6e0a0a8bc7bfc2b47a960732d1
+ms.sourcegitcommit: cdf127747cfcb839a8abf50a173e628dcfee02db
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "9578518"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "9998944"
 ---
 # <a name="share-devices-with-your-virtual-machine"></a>与你的虚拟机共享设备
 

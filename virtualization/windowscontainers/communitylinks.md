@@ -8,12 +8,12 @@ ms.topic: article
 ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: cfbb2542-fead-48e7-8318-4da92a7b5b6f
-ms.openlocfilehash: 55b428894b22ded48ce9db8f24928924964ce96d
-ms.sourcegitcommit: 34d8b2ca5eebcbdb6958560b1f4250763bee5b48
+ms.openlocfilehash: 338dd0570f1a2e73295b2bacf2c4282b3fdd7956
+ms.sourcegitcommit: cdf127747cfcb839a8abf50a173e628dcfee02db
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/08/2019
-ms.locfileid: "9620885"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "9998484"
 ---
 # <a name="community-videos-and-blogs"></a>社区视频和博客
 
@@ -21,7 +21,7 @@ ms.locfileid: "9620885"
 
 ## <a name="getting-started"></a>入门
 
-[运行 Linux 和 Windows 10 上的 Windows 容器](https://stefanscherer.github.io/run-linux-and-windows-containers-on-windows-10/)-Stefan Scherer
+[在 Windows 10 上运行 Linux 和 Windows 容器](https://stefanscherer.github.io/run-linux-and-windows-containers-on-windows-10/)-斯蒂芬 Scherer
 
 [生成并运行你的第一个 Docker Windows Server 容器](https://blog.docker.com/2016/09/build-your-first-docker-windows-server-container/) - Michael Friis
 
@@ -31,15 +31,15 @@ ms.locfileid: "9620885"
 
 [.NET 和容器概述](https://blog.alexellis.io/docker-dotnet-containers/) - Alex Ellis
 
-[如何 Dockerize Windows 应用程序： 5 个步骤](https://blog.sixeyed.com/how-to-dockerize-windows-applications/)-Elton Stoneman
+[如何 Dockerize Windows 应用程序: 5 个步骤](https://blog.sixeyed.com/how-to-dockerize-windows-applications/)-Elton Stoneman
 
-[现代化与 Docker 的.NET Framework 应用](https://www.pluralsight.com/courses/modernizing-dotnet-framework-apps-docker?clickid=UVL20JTFpzK6UDSX5n1b5zmyUkgWUPWOz3Pjwg0&irgwc=1&mpid=1197078&utm_source=impactradius&utm_medium=digital_affiliate&utm_campaign=1197078&aid=7010a000001xAKZAA2)-Elton Stoneman
+[具有 Docker 的 Modernizing .Net Framework 应用](https://www.pluralsight.com/courses/modernizing-dotnet-framework-apps-docker?clickid=UVL20JTFpzK6UDSX5n1b5zmyUkgWUPWOz3Pjwg0&irgwc=1&mpid=1197078&utm_source=impactradius&utm_medium=digital_affiliate&utm_campaign=1197078&aid=7010a000001xAKZAA2)-Elton Stoneman
 
 [Docker 和 Microsoft SQL 2016 与 ASP.NET](https://blog.alexellis.io/docker-does-sql2016-aspnet/) - Alex Ellis
 
-[先睹为快： Jenkins CI 和 Windows 容器与 Docker](https://blog.alexellis.io/continuous-integration-docker-windows-containers/) -Alex Ellis
+[第一个外观: 具有 Windows 容器和 Docker 的 JENKINS CI](https://blog.alexellis.io/continuous-integration-docker-windows-containers/) Alex Ellis
 
-[Windows 为打包 Redis 容器](https://blog.alexellis.io/packaging-windows-containers/)-Alex Ellis
+[为 Windows 容器打包 Redis](https://blog.alexellis.io/packaging-windows-containers/) -Alex Ellis
 
 [结合使用 MSBuild 和 Docker 的 3 个步骤](https://blog.alexellis.io/3-steps-to-msbuild-with-docker/) - Alex Ellis
 
@@ -47,9 +47,9 @@ ms.locfileid: "9620885"
 
 [在 Windows 上结合使用 Docker Compose 和服务发现来扩展多服务容器应用程序](https://techcommunity.microsoft.com/t5/Containers/Use-Docker-Compose-and-Service-Discovery-on-Windows-to-scale-out/ba-p/382312) - Kallie Bracken 和 Jason Messer
 
-[Windows 容器中的 PowerShell Desired State Configuration 使用 Docker](https://dille.name/blog/2016/06/17/powershell-desired-state-configuration-psdsc-in-windows-containers-using-docker/) -Nicholas Dille
+[使用 Docker-Nicholas Dille 的 Windows 容器中的 PowerShell 所需状态配置](https://dille.name/blog/2016/06/17/powershell-desired-state-configuration-psdsc-in-windows-containers-using-docker/)
 
-[Windows 容器中运行 Neo4j](https://glennsarti.github.io/blog/neo4j-nano-containers) -Glenn Sarti
+[在 Windows 容器中运行 Neo4j](https://glennsarti.github.io/blog/neo4j-nano-containers) -Glenn Sarti
 
 ## <a name="configuration-and-managment"></a>配置和管理
 

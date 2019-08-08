@@ -8,12 +8,12 @@ ms.topic: article
 ms.prod: windows-10-hyperv
 ms.service: windows-10-hyperv
 ms.assetid: 18930864-476a-40db-aa21-b03dfb4fda98
-ms.openlocfilehash: 762b82f3714651ffb488f682581680c9526404a8
-ms.sourcegitcommit: 34d8b2ca5eebcbdb6958560b1f4250763bee5b48
+ms.openlocfilehash: 6568b68a77fc5506b58249caea44ec78e3e44de2
+ms.sourcegitcommit: cdf127747cfcb839a8abf50a173e628dcfee02db
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/08/2019
-ms.locfileid: "9621205"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "9998934"
 ---
 # <a name="hyper-v-integration-services"></a>Hyper-V 集成服务
 
@@ -74,7 +74,7 @@ DemoVM  Running  Operating normally
 **Linux 守护程序名称：** hv_utils  
 **说明：** 允许 Hyper-V 主机请求关闭虚拟机。  主机始终可以强制关闭虚拟机，但这样做类似于切换电源开关而不是选择关闭。  
 **添加：** Windows Server 2012、Windows 8  
-**影响：****重大影响** 禁用后，主机无法触发虚拟机中的友好关闭。  所有关闭都将为硬关机，这可能导致数据丢失或数据损坏。  
+**影响：****重大影响** 禁用后，主机无法触发虚拟机中的友好关闭。  所有关机将是一种硬关机, 这可能会导致数据丢失或数据损坏。  
 
 
 ## <a name="hyper-v-time-synchronization-service"></a>Hyper-V 时间同步服务
