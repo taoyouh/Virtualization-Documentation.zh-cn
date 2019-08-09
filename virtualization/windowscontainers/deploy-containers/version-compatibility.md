@@ -3,18 +3,21 @@ title: Windows 容器版本兼容性
 description: Windows 如何跨多个版本运行内部版本和容器
 keywords: 元数据, 容器, 版本
 author: taylorb-microsoft
-ms.openlocfilehash: 019dafe855e0fba696db4618a862ec086d435005
-ms.sourcegitcommit: c4a3f88d1663dd19336bfd4ede0368cb18550ac7
+ms.openlocfilehash: 84c78947284e18dac347bc04b1ea5fcd96e3a814
+ms.sourcegitcommit: c9062b2c75838fcac64e8cd9bcc75d2f1a324d76
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "9882990"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "10008653"
 ---
 # <a name="windows-container-version-compatibility"></a>Windows 容器版本兼容性
 
 Windows Server 2016 和 Windows 10 周年更新 (两个版本 14393) 是可以构建和运行 Windows Server 容器的第一个 Windows 版本。 使用这些版本生成的容器可以在 Windows Server 版本 1709 等更高版本上运行，但在开始前你需要了解一些事项。
 
 由于我们一直在改进 Windows 容器功能，我们不得不进行一些可能影响兼容性的变更。 较旧的容器将在具有[hyper-v 隔离](../manage-containers/hyperv-container.md)的较新主机上运行相同, 并且将使用相同 (较旧) 的内核版本。 但是, 如果你希望基于较新的 Windows 版本运行容器, 则该容器只能在较新的主机内部版本上运行。
+
+>[!NOTE]
+> \ * Windows Server 后, 版本1709不再受支持。 有关详细信息, 请参阅[基本图像服务生命周期](base-image-lifecycle.md)。
 
 ## <a name="windows-server-version-1903-host-os-compatibility"></a>Windows Server、版本1903主机操作系统兼容性
 
@@ -23,7 +26,7 @@ Windows Server 2016 和 Windows 10 周年更新 (两个版本 14393) 是可以�
 |Windows Server, 版本1903|是|是|
 |Windows Server 2019|是|否|
 |Windows Server 版本 1803|是|否|
-|Windows Server 版本 1709|是|否|
+|Windows Server, 版本 1709 *|是|否|
 |Windows Server 2016|是|否|
 
 ## <a name="windows-server-2019-host-os-compatibility"></a>Windows Server 2019 主机操作系统兼容性
@@ -33,7 +36,7 @@ Windows Server 2016 和 Windows 10 周年更新 (两个版本 14393) 是可以�
 |Windows Server, 版本1903|否|否|
 |Windows Server 2019|是|是|
 |Windows Server 版本 1803|是|否|
-|Windows Server 版本 1709|是|否|
+|Windows Server, 版本 1709 *|是|否|
 |Windows Server 2016|是|否|
 
 ## <a name="windows-server-version-1803-host-os-compatibility"></a>Windows Server、版本1803主机操作系统兼容性
@@ -43,18 +46,28 @@ Windows Server 2016 和 Windows 10 周年更新 (两个版本 14393) 是可以�
 |Windows Server, 版本1903|否|否|
 |Windows Server 2019|否|否|
 |Windows Server 版本 1803|是|是|
-|Windows Server 版本 1709|是|否|
+|Windows Server, 版本 1709 *|是|否|
 |Windows Server 2016|是|否|
 
-## <a name="windows-server-version-1709-host-os-compatibility"></a>Windows Server、版本1709主机操作系统兼容性
+## <a name="windows-server-version-1709-host-os-compatibility"></a>Windows Server、版本1709主机操作系统兼容性 *
 
 |容器操作系统|支持 Hyper-v 隔离|支持进程隔离|
 |---|:---:|:---:|
 |Windows Server, 版本1903|否|否|
 |Windows Server 2019|否|否|
 |Windows Server 版本 1803|否|否|
-|Windows Server 版本 1709|是|是|
+|Windows Server, 版本 1709 *|是|是|
 |Windows Server 2016|是|否|
+
+## <a name="windows-server-2016-host-os-compatibility"></a>Windows Server 2016 主机操作系统兼容性
+
+|容器操作系统|支持 Hyper-v 隔离|支持进程隔离|
+|---|:---:|:---:|
+|Windows Server 2019, 版本1903|否|否|
+|Windows Server 2019|否|否|
+|Windows Server 版本 1803|否|否|
+|Windows Server, 版本 1709 *|否|否|
+|Windows Server 2016|是|是|
 
 ## <a name="windows-10-version-1903-host-os-compatibility"></a>Windows 10 版本1903主机操作系统兼容性
 
@@ -63,7 +76,7 @@ Windows Server 2016 和 Windows 10 周年更新 (两个版本 14393) 是可以�
 |Windows Server, 版本1903|否|否|
 |Windows Server 2019|否|否|
 |Windows Server 版本 1803|否|否|
-|Windows Server 版本 1709|否|否|
+|Windows Server, 版本 1709 *|否|否|
 |Windows Server 2016|是|是|
 
 ## <a name="windows-10-version-1809-host-os-compatibility"></a>Windows 10 版本1809主机操作系统兼容性
@@ -73,7 +86,7 @@ Windows Server 2016 和 Windows 10 周年更新 (两个版本 14393) 是可以�
 |Windows Server, 版本1903|否|否|
 |Windows Server 2019|是|否|
 |Windows Server 版本 1803|是|否|
-|Windows Server 版本 1709|是|否|
+|Windows Server, 版本 1709 *|是|否|
 |Windows Server 2016|是|否|
 
 ## <a name="windows-10-version-1803-host-os-compatibility"></a>Windows 10 版本1803主机操作系统兼容性
@@ -83,7 +96,7 @@ Windows Server 2016 和 Windows 10 周年更新 (两个版本 14393) 是可以�
 |Windows 服务版本1903|否|否|
 |Windows Server 2019|否|否|
 |Windows Server 版本 1803|是|否||
-|Windows Server 版本 1709|是|否|
+|Windows Server, 版本 1709 *|是|否|
 |Windows Server 2016|是|否|
 
 ## <a name="windows-10-fall-creators-update-host-os-compatibility"></a>Windows 10 秋季创意者更新主机操作系统兼容性
@@ -93,7 +106,7 @@ Windows Server 2016 和 Windows 10 周年更新 (两个版本 14393) 是可以�
 |Windows Server, 版本1903|否|否|
 |Windows Server 2019|否|否|
 |Windows Server 版本 1803|否|否|
-|Windows Server 版本 1709|是|否|
+|Windows Server, 版本 1709 *|是|否|
 |Windows Server 2016|是|否|
 
 ## <a name="matching-container-host-version-with-container-image-versions"></a>将容器主机版本与容器映像版本匹配
