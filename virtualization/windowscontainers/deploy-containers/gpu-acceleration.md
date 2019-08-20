@@ -3,18 +3,21 @@ title: Windows 容器中的 GPU 加速
 description: Windows 容器中存在何种级别的 GPU 加速
 keywords: docker、容器、设备、硬件
 author: cwilhit
-ms.openlocfilehash: 6e5010efee10f9b488cbeb57b14bc86f30c1e766
-ms.sourcegitcommit: c4a3f88d1663dd19336bfd4ede0368cb18550ac7
+ms.openlocfilehash: c6746b45caece9802134831eb6cb3da885957ac5
+ms.sourcegitcommit: 2f8fd4b2e7113fbb7c323d89f3c72df5e1a4437e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "9883270"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "10045037"
 ---
 # <a name="gpu-acceleration-in-windows-containers"></a>Windows 容器中的 GPU 加速
 
 对于许多容器的工作负荷, CPU 计算资源可提供充足的性能。 但是, 对于特定的工作负荷类别, Gpu (图形处理单元) 所提供的整体并行计算能力可以按数量级的顺序加速操作, 从而降低成本并提高吞吐量。
 
 Gpu 已经是许多常用工作负载的常见工具, 从传统的呈现和模拟到机器学习培训和推断。 Windows 容器支持 DirectX 的 GPU 加速以及在其上构建的所有框架。
+
+> [!NOTE]
+> 此功能在 Docker 桌面、版本2.1 和 Docker 引擎-企业版、版本19.03 或更高版本中可用。
 
 ## <a name="requirements"></a>要求
 
@@ -42,8 +45,12 @@ docker run --isolation process --device class/5B45201D-F2F2-4F3B-85BB-30FF1F9535
 
 ## <a name="hyper-v-isolated-windows-container-support"></a>Hyper-v-隔离的 Windows 容器支持
 
-今天不支持 Hyper-v 隔离的 Windows 容器中的工作负荷的 GPU 加速。
+当前不支持 Hyper-v 中的工作负荷的 GPU 加速-隔离的 Windows 容器。
 
 ## <a name="hyper-v-isolated-linux-container-support"></a>Hyper-v-隔离的 Linux 容器支持
 
-目前不支持 Hyper-v 中的工作负荷的 GPU 加速-隔离的 Linux 容器。
+当前不支持 Hyper-v 中的工作负荷的 GPU 加速-隔离的 Linux 容器。
+
+## <a name="more-information"></a>详细信息
+
+有关利用 GPU 加速的已容器的 DirectX 应用的完整示例, 请参阅[DirectX 容器示例](https://github.com/MicrosoftDocs/Virtualization-Documentation/tree/master/windows-container-samples/directx)。

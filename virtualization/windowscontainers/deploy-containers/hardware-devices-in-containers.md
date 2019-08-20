@@ -3,12 +3,12 @@ title: Windows 上的容器中的设备
 description: Windows 上的容器存在哪些设备支持
 keywords: docker、容器、设备、硬件
 author: cwilhit
-ms.openlocfilehash: ee9c5da5ef87dceb3374977670da2ea50ea87382
-ms.sourcegitcommit: c4a3f88d1663dd19336bfd4ede0368cb18550ac7
+ms.openlocfilehash: 1ad63c158a42f116882c949b242274dde8d893fc
+ms.sourcegitcommit: 2f8fd4b2e7113fbb7c323d89f3c72df5e1a4437e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "9883160"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "10045027"
 ---
 # <a name="devices-in-containers-on-windows"></a>Windows 上的容器中的设备
 
@@ -77,13 +77,13 @@ docker run --isolation=process --device="class/{interface class GUID}" --device=
 </tbody>
 </table>
 
-> [!TIP]
-> 上面列出的设备是 Windows 容器当前支持的_唯一_设备。 尝试传递任何其他类 Guid 将导致容器无法启动。
+> [!IMPORTANT]
+> 设备支持依赖于驱动程序。 尝试传递未在上面的表中定义的类 Guid 可能会导致未定义的行为。
 
 ## <a name="hyper-v-isolated-windows-container-support"></a>Hyper-v-隔离的 Windows 容器支持
 
-今天不支持在 Hyper-v 中对工作负荷进行设备分配和设备共享。
+当前不支持在 Hyper-v 中对工作负荷进行设备分配和设备共享。
 
 ## <a name="hyper-v-isolated-linux-container-support"></a>Hyper-v-隔离的 Linux 容器支持
 
-当前不支持在 Hyper-v 中的工作负荷的设备分配和设备共享。
+目前不支持设备分配和 Hyper-v 中的工作负荷共享-隔离的 Linux 容器。
