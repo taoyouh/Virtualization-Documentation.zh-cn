@@ -3,12 +3,12 @@ title: Windows 容器版本兼容性
 description: Windows 如何跨多个版本运行内部版本和容器
 keywords: 元数据, 容器, 版本
 author: taylorb-microsoft
-ms.openlocfilehash: 84c78947284e18dac347bc04b1ea5fcd96e3a814
-ms.sourcegitcommit: c9062b2c75838fcac64e8cd9bcc75d2f1a324d76
+ms.openlocfilehash: 5fe1cca67c330cb59362e82762651d719708b526
+ms.sourcegitcommit: 27e9cd37beaf11e444767699886e5fdea5e1a2d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "10008653"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "10058502"
 ---
 # <a name="windows-container-version-compatibility"></a>Windows 容器版本兼容性
 
@@ -73,11 +73,11 @@ Windows Server 2016 和 Windows 10 周年更新 (两个版本 14393) 是可以�
 
 |容器操作系统|支持 Hyper-v 隔离|支持进程隔离|
 |---|:---:|:---:|
-|Windows Server, 版本1903|否|否|
-|Windows Server 2019|否|否|
-|Windows Server 版本 1803|否|否|
-|Windows Server, 版本 1709 *|否|否|
-|Windows Server 2016|是|是|
+|Windows Server, 版本1903|是|否|
+|Windows Server 2019|是|否|
+|Windows Server 版本 1803|是|否|
+|Windows Server, 版本 1709 *|是|否|
+|Windows Server 2016|是|否|
 
 ## <a name="windows-10-version-1809-host-os-compatibility"></a>Windows 10 版本1809主机操作系统兼容性
 

@@ -7,12 +7,12 @@ ms.date: 07/25/2017
 ms.topic: article
 ms.prod: windows-containers
 ms.service: windows-containers
-ms.openlocfilehash: 08efc1092777e5649ecce4d978b056a4df644564
-ms.sourcegitcommit: cdf127747cfcb839a8abf50a173e628dcfee02db
+ms.openlocfilehash: 7ffc16e9d5b7c4b4a935a06c012b1d28b5e70f1a
+ms.sourcegitcommit: 27e9cd37beaf11e444767699886e5fdea5e1a2d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "9998224"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "10058482"
 ---
 # <a name="build-a-sample-app"></a>生成示例应用
 
@@ -59,7 +59,8 @@ ENTRYPOINT ["dotnet", "MvcMovie.dll"]
 
 第一组行声明我们将在哪个基础映像上生成容器。 如果本地系统尚不具备此映像，则 Docker 将自动尝试并获取它。 Aspnetcore-build 与用于编译项目的依赖项打包在一起。 我们随后将容器中的工作目录更改为“/app”，这样 dockerfile 中的所有后续命令都将在此目录中执行。
 
-_注意_：由于必须生成项目，我们创建的第一个容器是临时容器，并且我们只会将该容器用于生成项目，然后在结束时将其丢弃。
+>[!NOTE]
+>由于我们必须生成项目, 因此我们创建的第一个容器是一个临时容器, 我们将使用它来执行此操作, 然后在结束时将其丢弃。
 
 ```Dockerfile
 FROM microsoft/aspnetcore-build:1.1 AS build-env
@@ -84,7 +85,8 @@ RUN dotnet publish -c Release -o out
 
 此时项目应该已经编译成功。 现在，我们需要生成最终容器。 由于我们的应用程序是 ASP.NET，我们需要指定具有这些库的映像作为源。 我们随后将所有文件从临时容器的输出目录复制到最终容器中。 我们将容器配置为以启动容器时编译的新 .dll 来运行。
 
-_注意_：此最终容器的基础映像是类似的，但不同于以上的 ```FROM``` 命令：它不具有能够_生成_ ASP.NET 应用的库，而只具有能够运行此类应用的库。
+>[!NOTE]
+>此最终容器的基本图像与上面的```FROM```命令不同, 但它不支持_生成_ASP.NET 应用的库, 只能运行。
 
 ```Dockerfile
 FROM microsoft/aspnetcore:1.1
@@ -99,7 +101,8 @@ ENTRYPOINT ["dotnet", "MvcMovie.dll"]
 
 编写好 dockerfile 后，剩下的所有工作就是告诉 Docker 生成我们的应用，然后运行容器。 我们指定要发布到的端口，然后为容器指定一个标记“myapp”。 在 PowerShell 中，执行以下命令。
 
-_注意_：PowerShell 控制台的当前工作目录必须是上面创建的 dockerfile 所在的目录。
+>[!NOTE]
+>你的 PowerShell 控制台的当前工作目录必须是上面创建的 dockerfile 所在的目录。
 
 ```Powershell
 docker build -t myasp .
@@ -120,7 +123,7 @@ docker run -d -p 5000:80 --name myapp myasp
 
 将此 IP 地址输入你选择的 Web 浏览器中，然后你将看到应用程序在容器中成功运行！
 
-<center style="margin: 25px">![](media/SampleAppScreenshot.png)</center>
+>![](media/SampleAppScreenshot.png)
 
 单击导航栏中的“MvcMovie”将会打开一个网页，你可以在其中输入、编辑和删除电影条目。
 
