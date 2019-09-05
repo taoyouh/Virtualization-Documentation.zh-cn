@@ -7,12 +7,12 @@ ms.topic: troubleshooting
 ms.prod: containers
 description: 关于部署 Kubernetes 和加入 Windows 节点的常见问题的解决方案。
 keywords: kubernetes、1.14、linux、compile
-ms.openlocfilehash: a0b24782a0e511dfc8b6cf1a0c0bc24882ff977a
-ms.sourcegitcommit: 42cb47ba4f3e22163869d094bd0c9cff415a43b0
+ms.openlocfilehash: b6e4e648ff050e13a0930f2834949867e44ce895
+ms.sourcegitcommit: d252f356a3de98f224e1550536810dfc75345303
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "9884988"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "10069931"
 ---
 # <a name="troubleshooting-kubernetes"></a>Kubernetes 疑难解答 #
 此页面逐一介绍 Kubernetes 设置、网络和部署的一些常见问题。
@@ -43,6 +43,9 @@ nssm set <Service Name> AppStderr C:\k\mysvc.log
 有关其他详细信息, 请参阅官方[nssm 使用](https://nssm.cc/usage)文档。
 
 ## <a name="common-networking-errors"></a>常见网络错误 ##
+
+### <a name="hostport-publishing-is-not-working"></a>HostPort 发布不起作用 ###
+目前不能使用 Kubernetes `containers.ports.hostPort`字段发布端口, 因为 Windows CNI 插件不会遵守此字段。 在节点上发布端口时, 请使用 NodePort 发布。
 
 ### <a name="i-am-seeing-errors-such-as-hnscall-failed-in-win32-the-wrong-diskette-is-in-the-drive"></a>我在 Win32 中看到错误, 例如 "hnsCall 失败: 驱动器中有错误的软盘"。 ###
 在对 HNS 对象进行自定义修改或安装新的 Windows 更新 (将更改引入到 HNS, 而不会断开旧的 HNS 对象) 时, 可能会发生此错误。 它指示以前在更新之前创建的 HNS 对象与当前安装的 HNS 版本不兼容。

@@ -8,12 +8,12 @@ ms.prod: containers
 description: 在混合 OS Kubernetes 群集上部署 Kubernetes resoureces。
 keywords: kubernetes、1.14、windows、入门
 ms.assetid: 3b05d2c2-4b9b-42b4-a61b-702df35f5b17
-ms.openlocfilehash: 8c21581433f672a22a247db6643a19168eedea6c
-ms.sourcegitcommit: c4a3f88d1663dd19336bfd4ede0368cb18550ac7
+ms.openlocfilehash: e6c569ae8d5bf50e24ea0fc7a6dd04734b60a863
+ms.sourcegitcommit: d252f356a3de98f224e1550536810dfc75345303
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "9883190"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "10069941"
 ---
 # <a name="deploying-kubernetes-resources"></a>部署 Kubernetes 资源 #
 假设你有一个包含至少1个主服务器和1个工作人员的 Kubernetes 群集, 则可以部署 Kubernetes 资源。
@@ -54,18 +54,6 @@ watch kubectl get pods -o wide
 
 > [!Note]  
 > Windows*容器主机*将**无法**从计划的服务访问服务 IP。 这是一个[已知的平台限制](./common-problems.md#my-windows-node-cannot-access-my-services-using-the-service-ip), 将在未来版本向 Windows Server 中改进。 但是, Windows*盒* **** 可以访问服务 IP。
-
-### <a name="port-mapping"></a>端口映射 ### 
-也可以通过映射节点上的端口来访问分别通过其各自节点托管于 Pod 中的服务。 另一个[可用的 YAML 示例](https://github.com/Microsoft/SDN/blob/master/Kubernetes/PortMapping.yaml)，也可以用于说明此功能，该示例涉及从节点上端口 4444 到 Pod 上端口 80 的映射。 要进行部署，请按照前述的相同步骤操作：
-
-```bash
-wget https://raw.githubusercontent.com/Microsoft/SDN/master/Kubernetes/PortMapping.yaml -O win-webserver-port-mapped.yaml
-kubectl apply -f win-webserver-port-mapped.yaml
-watch kubectl get pods -o wide
-```
-
-现在应该可以 `curl` 端口 4444 上的*节点* IP 并收到 Web 服务器响应。 请注意，由于必须执行一对一映射，按节点向单个 Pod 的扩展将受到限制。
-
 
 ## <a name="next-steps"></a>后续步骤 ##
 在本部分中, 我们介绍了如何在 Windows 节点上安排 Kubernetes 资源。 本指南结束。 如果遇到任何问题, 请查看疑难解答部分:
