@@ -1,48 +1,56 @@
 ---
-title: 生成示例应用
-description: 了解如何利用容器生成示例应用
+title: Containerize .NET Core 应用
+description: 了解如何使用容器构建 .NET core 应用示例
 keywords: docker, 容器
 author: cwilhit
-ms.date: 07/25/2017
+ms.date: 09/10/2019
 ms.topic: article
 ms.prod: windows-containers
 ms.service: windows-containers
-ms.openlocfilehash: 7ffc16e9d5b7c4b4a935a06c012b1d28b5e70f1a
-ms.sourcegitcommit: 27e9cd37beaf11e444767699886e5fdea5e1a2d0
+ms.openlocfilehash: f5a51fd1211868195126f06d917c0bef6e496c3d
+ms.sourcegitcommit: f3b6b470dd9cde8e8cac7b13e7e7d8bf2a39aa34
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "10058482"
+ms.lasthandoff: 09/10/2019
+ms.locfileid: "10077468"
 ---
-# <a name="build-a-sample-app"></a>生成示例应用
+# <a name="containerize-a-net-core-app"></a>Containerize .NET Core 应用
 
-此练习将演练如何获取示例 ASP.net 应用并将其转换为在容器中运行。 如果需要了解如何在 Windows 10 中使用容器进行启动和运行，请访问 [Windows 10 快速入门](./quick-start-windows-10.md)。
 
-本快速入门特定于 Windows 10。 此页面左侧的目录中提供其他快速入门文档。 由于此教程的焦点在于容器，因此我们将忽略编写代码，而只关注容器。 如果要从头开始生成此教程，则可在 [ASP.NET Core 文档](https://docs.microsoft.com/aspnet/core/tutorials/first-mvc-app-xplat/)中找到它
+在此快速入门中，你将了解如何 containerize 简单的 .NET core 应用程序。 您将：
 
-如果未在计算机上安装 Git 源代码控制，则可从此处获取它：[Git](https://git-scm.com/download)
+> [!div class="checklist"]
+> * 从 GitHub 复制示例应用源
+> * 创建 dockerfile 以使用应用源构建容器映像
+> * 在本地 Docker 环境中测试以容器为的 .NET core 应用
 
-## <a name="getting-started"></a>入门
+## <a name="before-you-begin"></a>开始之前
 
-此示例项目是使用 [VSCode](https://code.visualstudio.com/) 设置的。 我们还将使用 Powershell。 请从 github 获取演示代码。 你可使用 git 来克隆存储库或直接从 [SampleASPContainerApp](https://github.com/cwilhit/SampleASPContainerApp) 下载该项目。
+此快速入门假定你的开发环境已配置为使用容器。 如果你没有为容器配置环境，请访问[Windows 10 快速入门](./quick-start-windows-10.md)，了解如何开始使用。
+
+你将需要在计算机上安装 Git 源控制系统。 可在此处抓取： [Git](https://git-scm.com/download)
+
+## <a name="getting-started"></a>即刻体验
+
+所有容器示例源代码均保留在名`windows-container-samples`为的文件夹中的 "[虚拟化-文档](https://github.com/MicrosoftDocs/Virtualization-Documentation)git 存储库" 下。 将此 git 存储库复制到你的 curent 工作目录。
 
 ```Powershell
-git clone https://github.com/cwilhit/SampleASPContainerApp.git
+git clone https://github.com/MicrosoftDocs/Virtualization-Documentation.git
 ```
 
-现在，让我们导航到项目目录，并创建 Dockerfile。 [Dockerfile](https://docs.docker.com/engine/reference/builder/) 与 makefile 类似：其中列出了生成容器映像必须遵循的指令。
+导航到在 "" 下`<directory where clone occured>\Virtualization-Documentation\windows-container-samples\asp-net-getting-started`找到的示例目录，并创建 Dockerfile。 [Dockerfile](https://docs.docker.com/engine/reference/builder/)就像是一个 makefile，它是指示容器引擎必须如何生成容器映像的指令列表。
 
 ```Powershell
-#Create the dockerfile for our proj
-New-Item C:/Your/Proj/Location/Dockerfile -type file
+#Create the dockerfile for our project
+New-Item -name dockerfile -type file
 ```
 
-## <a name="writing-our-dockerfile"></a>编写 Dockerfile
+## <a name="write-the-dockerfile"></a>编写 dockerfile
 
-现在让我们打开先前在项目根文件夹中创建的该 Dockerfile（使用你喜欢的任一文本编辑器），并向其中添加一些逻辑。 然后，我们将对其逐行细分并说明正在发生的情况。
+打开您刚刚创建的 dockerfile （通过您的任何别致的文本编辑器），并添加以下内容。
 
 ```Dockerfile
-FROM microsoft/aspnetcore-build:1.1 AS build-env
+FROM mcr.microsoft.com/dotnet/core/sdk:2.1 AS build-env
 WORKDIR /app
 
 COPY *.csproj ./
@@ -51,87 +59,82 @@ RUN dotnet restore
 COPY . ./
 RUN dotnet publish -c Release -o out
 
-FROM microsoft/aspnetcore:1.1
+FROM mcr.microsoft.com/dotnet/core/aspnet:2.1
 WORKDIR /app
 COPY --from=build-env /app/out .
-ENTRYPOINT ["dotnet", "MvcMovie.dll"]
+ENTRYPOINT ["dotnet", "asp-net-getting-started.dll"]
 ```
 
-第一组行声明我们将在哪个基础映像上生成容器。 如果本地系统尚不具备此映像，则 Docker 将自动尝试并获取它。 Aspnetcore-build 与用于编译项目的依赖项打包在一起。 我们随后将容器中的工作目录更改为“/app”，这样 dockerfile 中的所有后续命令都将在此目录中执行。
-
->[!NOTE]
->由于我们必须生成项目, 因此我们创建的第一个容器是一个临时容器, 我们将使用它来执行此操作, 然后在结束时将其丢弃。
+让我们逐行分行，解释每条说明的功能。
 
 ```Dockerfile
-FROM microsoft/aspnetcore-build:1.1 AS build-env
+FROM mcr.microsoft.com/dotnet/core/sdk:2.1 AS build-env
 WORKDIR /app
 ```
 
-接下来，我们将 .csproj 文件复制到临时容器的“/app”目录。 这样做的原因是, .csproj 文件包含项目需要的程序包引用列表。
-
-复制该文件后，dotnet 会从其中读取数据，然后在此基础上获取我们项目所需的所有依赖项和工具。
+第一组行声明我们将在哪个基础映像上生成容器。 如果本地系统尚不具备此映像，则 Docker 将自动尝试并获取它。 该`mcr.microsoft.com/dotnet/core/sdk:2.1`版本随安装了 .net CORE 2.1 SDK 进行了打包，因此它将由构建面向版本2.1 的 ASP .net core 项目的任务组成。 下一条指令会将`/app`容器中的工作目录更改为，因此在此上下文下执行的所有命令都将执行。
 
 ```Dockerfile
 COPY *.csproj ./
 RUN dotnet restore
 ```
 
-获取所有依赖项之后，我们将其复制到临时容器。 然后，我们告知 dotnet 以某种版本配置发布我们的应用程序，并指定输出路径。
+接下来，这些说明将 .csproj 文件复制到`build-env`容器的`/app`目录中。 复制此文件后，.NET 将从该文件中读取并获取项目所需的所有依赖项和工具。
 
 ```Dockerfile
 COPY . ./
 RUN dotnet publish -c Release -o out
 ```
 
-此时项目应该已经编译成功。 现在，我们需要生成最终容器。 由于我们的应用程序是 ASP.NET，我们需要指定具有这些库的映像作为源。 我们随后将所有文件从临时容器的输出目录复制到最终容器中。 我们将容器配置为以启动容器时编译的新 .dll 来运行。
+一旦 .NET 已将所有依赖项提取到`build-env`容器中，下一个指令会将所有项目源文件复制到容器中。 然后，我们会告诉 .NET 使用 "发布" 配置发布应用程序，并在中指定输出路径。
 
->[!NOTE]
->此最终容器的基本图像与上面的```FROM```命令不同, 但它不支持_生成_ASP.NET 应用的库, 只能运行。
+编译应该成功。 现在，我们必须构建最终的映像。 
+
+> [!TIP]
+> 此快速入门基于源构建 .NET core 项目。 生成容器图像时，最好_仅_在容器映像中包含生产负载及其依赖项。 我们不希望最终图像中包含 .NET core SDK，因为我们只需要 .NET core 运行时，因此 dockerfile 将编写为使用与 SDK `build-env`一起打包的临时容器来构建应用。
 
 ```Dockerfile
-FROM microsoft/aspnetcore:1.1
+FROM mcr.microsoft.com/dotnet/core/aspnet:2.1
 WORKDIR /app
 COPY --from=build-env /app/out .
-ENTRYPOINT ["dotnet", "MvcMovie.dll"]
+ENTRYPOINT ["dotnet", "asp-net-getting-started.dll"]
 ```
 
-我们现在已成功执行所谓的_多阶段生成_。 我们使用了临时容器生成映像，然后将已发布的 dll 移到了另一个容器，以便最大限度减小最终结果占用的空间。 我们希望该容器具有正常运行所需的绝对最少的依赖项；如果先前一直使用的是第一个映像，那么它将与其他层打包在一起（用于生成 ASP.NET 应用），但这些层并不重要，因此会增加映像的大小。
+由于我们的应用程序是 ASP.NET，因此我们将指定一个包含此运行时的映像。 我们随后将所有文件从临时容器的输出目录复制到最终容器中。 我们将容器配置为在容器启动时通过我们的新应用作为其入口点运行
 
-## <a name="running-the-app"></a>运行该应用
+我们编写了 dockerfile 来执行_多阶段生成_。 在执行 dockerfile 时，它将使用临时容器`build-env`，使用 .net CORE 2.1 SDK 生成示例应用，然后将输出二进制文件复制到仅包含 .net core 2.1 运行时的另一个容器中，以便我们最大程度地减少最终容器。
 
-编写好 dockerfile 后，剩下的所有工作就是告诉 Docker 生成我们的应用，然后运行容器。 我们指定要发布到的端口，然后为容器指定一个标记“myapp”。 在 PowerShell 中，执行以下命令。
+## <a name="run-the-app"></a>运行应用
 
->[!NOTE]
->你的 PowerShell 控制台的当前工作目录必须是上面创建的 dockerfile 所在的目录。
+编写 dockerfile 后，我们可以在我们的 dockerfile 上指向 Docker，并告诉它构建图像。 
+
+>[!IMPORTANT]
+>以下执行的命令需要在 dockerfile 驻留的目录中执行。
 
 ```Powershell
-docker build -t myasp .
-docker run -d -p 5000:80 --name myapp myasp
+docker build -t my-asp-app .
 ```
 
-若要查看应用运行情况，我们需要访问运行该应用的地址。 通过运行以下命令即可获取 IP 地址。
+若要运行容器，请执行下面的命令。
 
 ```Powershell
- docker inspect -f "{{ .NetworkSettings.Networks.nat.IPAddress }}" myapp
+docker run -d -p 5000:80 --name myapp my-asp-app
 ```
 
-运行以下命令即可获得正在运行的容器的 IP 地址。 输出应该会如以下示例所示。
+让我们 dissect 此命令：
 
-```Powershell
- 172.19.172.12
-```
+* `-d` 告诉 Docker tun 运行容器 "已分离"，这意味着不会将任何控制台挂钩到容器内的控制台。 容器在后台运行。 
+* `-p 5000:80` 告诉 Docker 将主机上的端口5000映射到容器中的端口80。 每个容器都获得自己的 IP 地址。 默认情况下，ASP .NET 在端口80上侦听。 通过端口映射，我们可以在映射端口上转到主机的 IP 地址，并且 Docker 会将所有流量转发到容器内的目标端口。
+* `--name myapp` 通知 Docker 为此容器提供一个方便的名称来进行查询（而无需在运行时通过 Docker 器查找分配的 contaienr ID）。
+* `my-asp-app` 是希望 Docker 运行的图像。 这是`docker build`进程的 culmination 生成的容器图像。
 
-将此 IP 地址输入你选择的 Web 浏览器中，然后你将看到应用程序在容器中成功运行！
+打开 web 浏览器 web 浏览器，并`https://localhost:5000`导航到向的应用程序。
 
 >![](media/SampleAppScreenshot.png)
 
-单击导航栏中的“MvcMovie”将会打开一个网页，你可以在其中输入、编辑和删除电影条目。
-
 ## <a name="next-steps"></a>后续步骤
 
-我们已成功获取 ASP.NET Web 应用，使用 Docker 配置并生成了该应用，并已成功将其部署到正在运行的容器中。 但还有可以进一步执行的步骤！ 你可以进一步将该 Web 应用拆分为如下组件：运行 Web API 的容器、运行前端的容器以及运行 SQL Server 的容器。
-
-既然你已经有了容器的挂起, 请转到此处并构建出色的容器化软件!
+我们已成功将 ASP.NET web 应用进行了容器。 若要查看更多应用示例及其关联的 dockerfiles，请单击下面的按钮。
 
 > [!div class="nextstepaction"]
 > [查看更多容器示例](../samples.md)
