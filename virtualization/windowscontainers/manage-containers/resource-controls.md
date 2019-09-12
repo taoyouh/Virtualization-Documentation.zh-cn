@@ -8,19 +8,19 @@ ms.topic: article
 ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: 8ccd4192-4a58-42a5-8f74-2574d10de98e
-ms.openlocfilehash: 2cc5853648a9e1bb62ae684472fa7d9512cdb978
-ms.sourcegitcommit: cdf127747cfcb839a8abf50a173e628dcfee02db
+ms.openlocfilehash: 3e9f7e3208222cd6c0f512c5f892453ac6e6980c
+ms.sourcegitcommit: 73134bf279f3ed18235d24ae63cdc2e34a20e7b7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "9998334"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "10107871"
 ---
 # <a name="implementing-resource-controls-for-windows-containers"></a>实施 Windows 容器资源控制
 某些资源控制可以按容器和按资源实施。  默认情况下，容器运行受典型 Windows 资源管理（总体上以公平分配为基础）影响，但通过实施以上控制，开发人员或管理员可以限制或影响资源使用情况。  可以控制的资源包括：CPU/处理器、内存/RAM、磁盘/存储和网络/吞吐量。
 
 Windows 容器利用[作业对象](https://docs.microsoft.com/windows/desktop/ProcThread/job-objects)进行分组并跟踪与每个容器关联的进程。  资源控制在与容器关联的父作业对象上实施。 
 
-在 [Hyper-V 隔离](https://docs.microsoft.com/virtualization/windowscontainers/about/index#windows-container-types)的情况下，系统同时对虚拟机和在虚拟机中运行的容器的作业对象进行自动资源控制，这样即使在容器中运行的进程绕过了或逃脱了作业对象控制，虚拟机也会确保其无法越过定义的资源控制。
+在 [Hyper-V 隔离](./hyperv-container.md)的情况下，系统同时对虚拟机和在虚拟机中运行的容器的作业对象进行自动资源控制，这样即使在容器中运行的进程绕过了或逃脱了作业对象控制，虚拟机也会确保其无法越过定义的资源控制。
 
 ## <a name="resources"></a>资源
 此部分提供了每个资源与 Docker 命令行界面之间的映射，作为如何将资源控制用于（可能由 Orchestrator 或其他工具配置）相应的 Windows 主机计算服务 (HCS) API 以及 Windows 通常如何实施资源控制（请注意此描述为高级描述，基础实施可能发生变化）的示例。

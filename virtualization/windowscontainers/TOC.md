@@ -38,6 +38,11 @@
 ### [运行第一个 LCOW 容器](quick-start/quick-start-windows-10-linux.md)
 
 # 概念
+## Windows 容器概要
+### [资源控制](manage-containers/resource-controls.md)
+### [Hyper-V 隔离](manage-containers/hyperv-container.md)
+### [版本兼容性](deploy-containers/version-compatibility.md)
+### [容器基映像](manage-containers/container-base-images.md)
 ## Docker
 ### [Windows 上的 Docker 引擎](manage-docker/configure-docker-daemon.md)
 ### [Docker swarm](manage-containers/swarm-mode.md)
@@ -60,11 +65,8 @@
 ## 设备
 ### [硬件设备](deploy-containers/hardware-devices-in-containers.md)
 ### [GPU 加速](deploy-containers/gpu-acceleration.md)
-## [资源控制](manage-containers/resource-controls.md)
-## [Hyper-V 隔离](manage-containers/hyperv-container.md)
 
 # 参考
-## [版本兼容性](deploy-containers/version-compatibility.md)
 ## [基本图像服务生命周期](deploy-containers/base-image-lifecycle.md)
 ## [反病毒优化](https://docs.microsoft.com/windows-hardware/drivers/ifs/anti-virus-optimization-for-windows-containers)
 ## [容器平台工具](deploy-containers/containerd.md)

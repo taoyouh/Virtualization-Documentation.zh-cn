@@ -8,80 +8,44 @@ ms.topic: article
 ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: 88e6e080-cf8f-41d8-a301-035959dc5ce0
-ms.openlocfilehash: 0ec6eccbcf69532d583c32136f1a0c50c9811a8b
-ms.sourcegitcommit: cdf127747cfcb839a8abf50a173e628dcfee02db
+ms.openlocfilehash: b2f2d6418fdda2ad0aa0b81c05efad6b99f74375
+ms.sourcegitcommit: 73134bf279f3ed18235d24ae63cdc2e34a20e7b7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "9998364"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "10107901"
 ---
-# <a name="windows-container-base-image-history"></a>Windows 容器基本映像历史记录
+# <a name="container-base-images"></a>容器基映像
 
-每个 Windows 容器均是在 Microsoft 所提供的基本操作系统的基础上生成。 如果你不确定是为哪个版本的 Windows 生成容器，你可以运行 `docker inspect <tag>`，将前 1 行或前两行与下表进行匹配。
+## <a name="supported-base-images"></a>支持的基本图像
 
-例如，将显示 `docker inspect microsoft/windowsservercore:10.0.14393.447`
+Windows 容器提供四个容器基映像： Windows Server Core、Nano Server、Windows 和 IoT Core。 并非所有配置都支持这两个操作系统映像。 下表详细介绍所支持的配置。
 
-```
-...
-"RootFS": {
-    "Type": "layers",
-    "Layers": [
-        "sha256:3fd27ecef6a323f5ea7f3fde1f7b87a2dbfb1afa797f88fd7d20e8dbdc856f67",
-        "sha256:b9454c3094c68005f07ae8424021ff0e7906dac77a172a874cd5ec372528fc15"
-    ]
-}
-```
+|主机操作系统|Windows 容器|Hyper-V 隔离|
+|---------------------|-----------------|-----------------|
+|Windows Server 2016 或 Windows Server 2019 （标准版或数据中心）|服务器核心版、Nano Server、Windows|服务器核心版、Nano Server、Windows|
+|Nano Server|Nano Server|服务器核心版、Nano Server、Windows|
+|Windows 10 专业版或 Windows 10 企业版|不可用|服务器核心版、Nano Server、Windows|
+|IoT Core|IoT Core|不可用|
 
-Microsoft 提供的映像中有哪两个层。 第一层是恒定的，表示初始的 Windows Server 版本，第二层则基于所包含的最新累积更新而变化。
+> [!WARNING]  
+> 从 Windows Server 版本1709开始，Nano Server 将不再作为容器主机提供。
 
-如果想要找出每个版本的变化，请在 [Windows 10 和 Windows Server 2016 更新历史记录](https://support.microsoft.com/help/12387/windows-10-update-history)中查找相应版本的知识库
+## <a name="base-image-differences"></a>基本图像差异
 
+如何选择要在其上构建的正确的基本图像？ 尽管你可以随意构建任何内容，但以下是每个图像的一般指南：
 
-## <a name="tools-to-simplify-this-process"></a>可简化此过程的工具
+- [Windows Server Core](https://hub.docker.com/_/microsoft-windows-servercore)：如果你的应用程序需要完整的 .net framework，这是要使用的最佳图像。
+- [Nano server](https://hub.docker.com/_/microsoft-windows-nanoserver)：对于仅需要 .net Core 的应用程序，Nano server 将提供大量精简图像。
+- [Windows](https://hub.docker.com/_/microsoft-windowsfamily-windows)：你可能会发现你的应用程序依赖于服务器 Core 或 Nano server 映像（如 GDI 库）中缺少的某个组件或 .dll。 此映像携带 Windows 的完整依赖集。
+- [IoT 核心](https://hub.docker.com/_/microsoft-windows-iotcore)：此图像专为[IoT 应用程序](https://developer.microsoft.com/windows/iot)而构建。 在面向 IoT 核心主机时，应使用此容器图像。
 
-Stefan Scherer 已经创建了一个工具，该工具可以读取映像清单文件并且无需下载整个容器即可确定版本。 请查看他的[博客](https://stefanscherer.github.io/winspector/)和 [GitHub](https://github.com/StefanScherer/winspector) 存储库了解详细信息。
+对于大多数用户，Windows Server Core 或 Nano Server 将是最适合使用的映像。 当你考虑在 Nano Server 上生成时，请注意以下事项：
 
+- 已删除服务堆栈
+- 未包含 .NET Core（但你可以使用 [.NET Core Nano Server 映像](https://hub.docker.com/r/microsoft/dotnet/)）
+- 已删除 PowerShell
+- 已删除 WMI
+- 自 Windows Server 版本 1709 起，在用户上下文环境下运行应用程序时，需要管理员权限的命令将会失败。 你可以通过--用户标志（如 docker 运行-用户 ContainerAdministrator）指定容器管理员帐户，以后我们打算从 NanoServer 中完全删除管理员帐户。
 
-## <a name="image-versions"></a>映像版本
-
-<table>
-    <tr>
-        <th>Windows 版本</th>
-        <th>microsoft/windowsservercore</th>
-        <th>microsoft/nanoserver</th>
-    </tr>
-    <tr>
-        <td>10.0.14393.206</td>
-        <td>sha256:3fd27ecef6a323f5ea7f3fde1f7b87a2dbfb1afa797f88fd7d20e8dbdc856f67</td>
-        <td>sha256:342d4e407550c52261edd20cd901b5ce438f0b1e940336de3978210612365063</td>
-    </tr>
-    <tr>
-        <td>10.0.14393.321</td>
-        <td>sha256:3fd27ecef6a323f5ea7f3fde1f7b87a2dbfb1afa797f88fd7d20e8dbdc856f67<br/>
-        sha256:cc6b0a07c696c3679af48ab4968de1b42d35e568f3d1d72df21f0acb52592e0b</td>
-        <td>sha256:342d4e407550c52261edd20cd901b5ce438f0b1e940336de3978210612365063<br/>
-        sha256:2c195a33d84d936c7b8542a8d9890a2a550e7558e6ac73131b130e5730b9a3a5</td>
-    </tr>
-    <tr>
-        <td>10.0.14393.447</td>
-        <td>sha256:3fd27ecef6a323f5ea7f3fde1f7b87a2dbfb1afa797f88fd7d20e8dbdc856f67<br/>
-        sha256:b9454c3094c68005f07ae8424021ff0e7906dac77a172a874cd5ec372528fc15</td>
-        <td>sha256:342d4e407550c52261edd20cd901b5ce438f0b1e940336de3978210612365063<br/>
-        sha256:c8606bedb07a714a6724b8f88ce85b71eaf5a1c80b4c226e069aa3ccbbe69154</td>
-    </tr>
-    <tr>
-        <td>10.0.14393.576</td>
-        <td>sha256:f358be10862ccbc329638b9e10b3d497dd7cd28b0e8c7931b4a545c88d7f7cd6<br/>
-        sha256:de57d9086f9a337bb084b78f5f37be4c8f1796f56a1cd3ec8d8d1c9c77eb693c</td>
-        <td>sha256:6c357baed9f5177e8c8fd1fa35b39266f329535ec8801385134790eb08d8787d<br/>
-        sha256:0d812bf7a7032db75770c3d5b92c0ac9390ca4a9efa0d90ba2f55ccb16515381</td>
-    </tr>
-    <tr>
-        <td>10.0.14393.693</td>
-        <td>sha256:f358be10862ccbc329638b9e10b3d497dd7cd28b0e8c7931b4a545c88d7f7cd6<br/>
-        sha256:c28d44287ce521eac86e0296c7677f5d8ca1e86d1e45e7618ec900da08c95df3</td>
-        <td>sha256:6c357baed9f5177e8c8fd1fa35b39266f329535ec8801385134790eb08d8787d<br/>
-        sha256:dd33c5d8d8b3c230886132c328a7801547f13de1dac9a629e2739164a285b3ab</td>
-    </tr>
-</table>
-
+以上是最显著的差异，其他差异并未一一列出。 还有一些缺失的其他组件并未在此列出。 请记住，你始终可以在自己认为合适的条件下在 Nano Server 上添加层。 有关此情况的示例，请查看 [.NET Core Nano Server Dockerfile](https://github.com/dotnet/dotnet-docker/blob/master/2.1/sdk/nanoserver-1803/amd64/Dockerfile)。
