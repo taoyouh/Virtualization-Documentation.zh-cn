@@ -1,51 +1,211 @@
 ---
+layout: LandingPage
 title: Windows 文档中的容器
 description: 有关在 Windows 上运行容器的文档
 keywords: docker, 容器
 author: cwilhit
-ms.date: 05/02/2016
-ms.topic: article
+ms.date: 09/11/2019
+ms.topic: landing-page
 ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: 74c9d604-0915-4d89-bc69-0263b76bc66b
-ms.openlocfilehash: 771a4ef644525334e9135b8605da74503c16f21b
-ms.sourcegitcommit: cdf127747cfcb839a8abf50a173e628dcfee02db
+ms.openlocfilehash: 22585a9783066043aed16ccebb49770f9b6fe443
+ms.sourcegitcommit: b50270ba1f84e65dff60aef7a8d7fa66b1ebad52
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "9998764"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "10107704"
 ---
-# <a name="containers-on-windows-documentation"></a>Windows 文档中的容器
-
-Windows 容器提供操作系统级虚拟化, 允许在单个系统上运行多个独立的应用程序。 此文档集提供了快速入门指南、部署指南和有关管理操作的技术详细信息。
-
-## <a name="getting-started"></a>入门
-了解容器并开始使用它们。
-* [关于 Windows 容器](about/index.md)
-* [在 Windows Server 中使用容器](quick-start/quick-start-windows-server.md)
-* [在 Windows 10 中使用容器](quick-start/quick-start-windows-10.md)
-
-## <a name="deployment"></a>部署
-了解如何在 Windows Server 2019 上部署 Windows 容器
-
-* [系统要求](deploy-containers/system-requirements.md)
-* [部署容器主机](deploy-containers/deploy-containers-on-server.md)
-* [防病毒优化](https://docs.microsoft.com/windows-hardware/drivers/ifs/anti-virus-optimization-for-windows-containers)
-
-## <a name="docker-on-windows"></a>Windows 上的 Docker
-了解如何在 Windows 上管理 Docker。
-* [Windows 上的 Docker 引擎](manage-docker/configure-docker-daemon.md)
-* [Windows 上的 Dockerfile](manage-docker/manage-windows-dockerfile.md)
-* [优化 Dockerfile](manage-docker/optimize-windows-dockerfile.md)
-* [容器网络](container-networking/architecture.md)
-
-## <a name="watch"></a>观看
-对 Windows 容器团队的演示和访谈感兴趣？
-* [容器频道](https://channel9.msdn.com/Blogs/containers)
-
-## <a name="community"></a>社区
-与社区交互、试用示例，以及查找其他资源。
-* [容器论坛](https://social.msdn.microsoft.com/Forums/home?forum=windowscontainers)
-* [社区视频和博客](communitylinks.md)
-* [容器示例](https://docs.microsoft.com/virtualization/windowscontainers/samples)
-* [UserVoice](https://windowsserver.uservoice.com/forums/304624-containers)
+<div id="main" class="v2">
+    <ul class="cardsY panelContent featuredContent">
+        <li>
+            <a href="https://docs.microsoft.com/en-us/azure/aks/windows-container-cli" data-linktype="external">
+                <div class="cardSize">
+                    <div class="cardPadding">
+                        <div class="card">
+                            <div class="cardImageOuter">
+                                <div class="cardImage">
+                                    <img src="media/logo_kubernetes.svg" alt="" data-linktype="relative-path">
+                                </div>
+                            </div>
+                            <div class="cardText">
+                                <h3>在 AKS 中试用 Windows 容器！</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="https://hub.docker.com/_/microsoft-windows-base-os-images" data-linktype="external">
+                <div class="cardSize">
+                    <div class="cardPadding">
+                        <div class="card">
+                            <div class="cardImageOuter">
+                                <div class="cardImage">
+                                    <img src="media/logo_docker.svg" alt="" data-linktype="relative-path">
+                                </div>
+                            </div>
+                            <div class="cardText">
+                                <h3>在 Docker 集线器上查看容器图像</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="https://techcommunity.microsoft.com/t5/Containers/bg-p/Containers" data-linktype="external">
+                <div class="cardSize">
+                    <div class="cardPadding">
+                        <div class="card">
+                            <div class="cardImageOuter">
+                                <div class="cardImage">
+                                    <img src="media/i_blog.svg" alt="" data-linktype="relative-path">
+                                </div>
+                            </div>
+                            <div class="cardText">
+                                <h3>阅读容器博客。</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </li>
+    </ul>
+    <h1>Windows 文档中的容器</h1>
+    <br/>
+    <div class="abstract">Windows 容器允许用户将应用程序与它们的依赖关系打包，利用操作系统级别的虚拟化在单个系统上提供快速、完全隔离的环境。 了解如何将 Windows 容器与我们的快速入门指南、部署指南和示例配合使用。</div>
+    <ul class="cardsW panelContent featuredContent">
+        <li>
+            <div class="cardSize">
+                <div class="cardPadding">
+                    <div class="card">
+                        <div class="cardImageOuter">
+                            <div class="cardImage bgdAccent1">
+                                <img src="media/virtualization-containers-about.svg" alt="" data-linktype="relative-path">
+                            </div>
+                        </div>
+                        <div class="cardText">
+                            <h3 style="margin: 8px 0 2px 0;">概述</h3>
+                            <ul>
+                                <li><a href="/en-us/virtualization/windowscontainers/about/index" data-linktype="absolute-path">容器101</a></li>
+                                <li><a href="/en-us/virtualization/windowscontainers/deploy-containers/system-requirements" data-linktype="absolute-path">系统要求</a></li>
+                                <li><a href="/en-us/virtualization/windowscontainers/about/faq" data-linktype="absolute-path">常见问题解答</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="cardSize">
+                <div class="cardPadding">
+                    <div class="card">
+                        <div class="cardImageOuter">
+                            <div class="cardImage bgdAccent1">
+                                <img src="media/virtualization-containers-quick-start.svg" alt="" data-linktype="relative-path">
+                            </div>
+                        </div>
+                        <div class="cardText">
+                            <h3 style="margin: 8px 0 2px 0;">入门</h3>
+                            <ul>
+                                <li><a href="/en-us/virtualization/windowscontainers/quick-start/quick-start-windows-10" data-linktype="external">Windows10</a></li>
+                                <li><a href="/en-us/virtualization/windowscontainers/quick-start/quick-start-windows-server" data-linktype="external">Windows Server</a></li>
+                                <li><a href="/en-us/virtualization/windowscontainers/quick-start/using-insider-container-images" data-linktype="external">Windows 预览体验成员</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="cardSize">
+                <div class="cardPadding">
+                    <div class="card">
+                        <div class="cardImageOuter">
+                            <div class="cardImage bgdAccent1">
+                                <img src="media/container-tutorials.svg" alt="" data-linktype="relative-path">
+                            </div>
+                        </div>
+                        <div class="cardText">
+                            <h3 style="margin: 8px 0 2px 0;">教程</h3>
+                            <ul>
+                                <li><a href="/en-us/virtualization/windowscontainers/manage-docker/manage-windows-dockerfile" data-linktype="external">构建 Windows 容器</a></li>
+                                <li><a href="/en-us/virtualization/windowscontainers/kubernetes/getting-started-kubernetes-windows" data-linktype="external">Windows 上的 Kubernetes</a></li>
+                                <li><a href="/en-us/azure/service-fabric/service-fabric-quickstart-containers" data-linktype="external">Windows 上的服务结构</a></li>
+                                <li><a href="/en-us/virtualization/windowscontainers/deploy-containers/linux-containers" data-linktype="external">Windows 上的 Linux 容器</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="cardSize">
+                <div class="cardPadding">
+                    <div class="card">
+                        <div class="cardImageOuter">
+                            <div class="cardImage bgdAccent1">
+                                <img src="media/virtualization-containers-management-tools.svg" alt="" data-linktype="relative-path">
+                            </div>
+                        </div>
+                        <div class="cardText">
+                            <h3 style="margin: 8px 0 2px 0;">概念</h3>
+                            <ul>
+                                <li><a href="/en-us/virtualization/windowscontainers/manage-docker/configure-docker-daemon" data-linktype="external">Docker</a></li>
+                                <li><a href="/en-us/virtualization/windowscontainers/manage-containers/manage-serviceaccounts" data-linktype="external">工作</a></li>
+                                <li><a href="/en-us/virtualization/windowscontainers/container-networking/architecture" data-linktype="external">网络</a></li>
+                                <li><a href="/en-us/virtualization/windowscontainers/manage-containers/container-storage" data-linktype="external">存储</a></li>
+                                <li><a href="/en-us/virtualization/windowscontainers/deploy-containers/hardware-devices-in-containers" data-linktype="external">设备</a></li>
+                                <li><a href="/en-us/virtualization/windowscontainers/manage-containers/hyperv-container" data-linktype="external">Hyper-V 隔离</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="cardSize">
+                <div class="cardPadding">
+                    <div class="card">
+                        <div class="cardImageOuter">
+                            <div class="cardImage bgdAccent1">
+                                <img src="media/container-reference.svg" alt="" data-linktype="relative-path">
+                            </div>
+                        </div>
+                        <div class="cardText">
+                            <h3 style="margin: 8px 0 2px 0;">参考</h3>
+                            <ul>
+                                <li><a href="/en-us/virtualization/windowscontainers/deploy-containers/version-compatibility" data-linktype="external">版本兼容性</a></li>
+                                <li><a href="/en-us/virtualization/windowscontainers/deploy-containers/base-image-lifecycle" data-linktype="external">映像服务生命周期</a></li>
+                                <li><a href="/en-us/virtualization/windowscontainers/images-eula" data-linktype="external">容器操作系统映像 EULA</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="cardSize">
+                <div class="cardPadding">
+                    <div class="card">
+                        <div class="cardImageOuter">
+                            <div class="cardImage bgdAccent1">
+                                <img src="media/virtualization-containers-community.svg" alt="" data-linktype="relative-path">
+                            </div>
+                        </div>
+                        <div class="cardText">
+                            <h3 style="margin: 8px 0 2px 0;">资源</h3>
+                            <ul>
+                                <li><a href="/en-us/virtualization/windowscontainers/samples" data-linktype="external">示例</a></li>
+                                <li><a href="/en-us/virtualization/windowscontainers/troubleshooting" data-linktype="external">故障排除</a></li>
+                                <li><a href="/en-us/virtualization/windowscontainers/communitylinks" data-linktype="external">社区视频和博客</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>
