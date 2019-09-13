@@ -7,30 +7,20 @@ ms.date: 09/10/2019
 ms.topic: article
 ms.prod: windows-containers
 ms.service: windows-containers
-ms.openlocfilehash: f5a51fd1211868195126f06d917c0bef6e496c3d
-ms.sourcegitcommit: f3b6b470dd9cde8e8cac7b13e7e7d8bf2a39aa34
+ms.openlocfilehash: 8165d9c7ee3744fae31711e28be028208140813e
+ms.sourcegitcommit: 868a64eb97c6ff06bada8403c6179185bf96675f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/10/2019
-ms.locfileid: "10077468"
+ms.lasthandoff: 09/13/2019
+ms.locfileid: "10129267"
 ---
 # <a name="containerize-a-net-core-app"></a>Containerize .NET Core 应用
 
-
-在此快速入门中，你将了解如何 containerize 简单的 .NET core 应用程序。 您将：
-
-> [!div class="checklist"]
-> * 从 GitHub 复制示例应用源
-> * 创建 dockerfile 以使用应用源构建容器映像
-> * 在本地 Docker 环境中测试以容器为的 .NET core 应用
-
-## <a name="before-you-begin"></a>开始之前
-
-此快速入门假定你的开发环境已配置为使用容器。 如果你没有为容器配置环境，请访问[Windows 10 快速入门](./quick-start-windows-10.md)，了解如何开始使用。
+此段假定你的开发环境已配置为使用容器。 如果你没有为容器配置环境，请访问 "[设置你的环境](./set-up-environment.md)" 以了解如何开始使用。
 
 你将需要在计算机上安装 Git 源控制系统。 可在此处抓取： [Git](https://git-scm.com/download)
 
-## <a name="getting-started"></a>即刻体验
+## <a name="clone-the-sample-code"></a>克隆示例代码
 
 所有容器示例源代码均保留在名`windows-container-samples`为的文件夹中的 "[虚拟化-文档](https://github.com/MicrosoftDocs/Virtualization-Documentation)git 存储库" 下。 将此 git 存储库复制到你的 curent 工作目录。
 

@@ -9,12 +9,12 @@ ms.topic: landing-page
 ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: 74c9d604-0915-4d89-bc69-0263b76bc66b
-ms.openlocfilehash: 22585a9783066043aed16ccebb49770f9b6fe443
-ms.sourcegitcommit: b50270ba1f84e65dff60aef7a8d7fa66b1ebad52
+ms.openlocfilehash: d28f91ca5c0957a91c38d51b461449ef869f7493
+ms.sourcegitcommit: 868a64eb97c6ff06bada8403c6179185bf96675f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "10107704"
+ms.lasthandoff: 09/13/2019
+ms.locfileid: "10129277"
 ---
 <div id="main" class="v2">
     <ul class="cardsY panelContent featuredContent">
@@ -110,9 +110,9 @@ ms.locfileid: "10107704"
                         <div class="cardText">
                             <h3 style="margin: 8px 0 2px 0;">入门</h3>
                             <ul>
-                                <li><a href="/en-us/virtualization/windowscontainers/quick-start/quick-start-windows-10" data-linktype="external">Windows10</a></li>
-                                <li><a href="/en-us/virtualization/windowscontainers/quick-start/quick-start-windows-server" data-linktype="external">Windows Server</a></li>
-                                <li><a href="/en-us/virtualization/windowscontainers/quick-start/using-insider-container-images" data-linktype="external">Windows 预览体验成员</a></li>
+                                <li><a href="/en-us/virtualization/windowscontainers/quick-start/set-up-environment" data-linktype="external">设置你的环境</a></li>
+                                <li><a href="/en-us/virtualization/windowscontainers/quick-start/run-your-first-container" data-linktype="external">运行第一个容器</a></li>
+                                <li><a href="/en-us/virtualization/windowscontainers/quick-start/building-sample-app" data-linktype="external">Containerize 示例应用</a></li>
                             </ul>
                         </div>
                     </div>

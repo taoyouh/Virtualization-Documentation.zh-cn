@@ -6,15 +6,9 @@
 ## [常见问题解答](about/faq.md)
 
 # 入门
-## Windows10
-### [运行第一个 WCOW 容器](quick-start/quick-start-windows-10.md)
-### [生成示例应用](quick-start/building-sample-app.md)
-## Windows Server
-### [运行你的第一个 Windows Server 容器](quick-start/quick-start-windows-server.md)
-### [自动生成容器](quick-start/quick-start-images.md)
-## Windows 预览体验成员
-### [使用预览体验计划图像](quick-start/Using-Insider-Container-Images.md)
-### [构建和运行应用程序](quick-start/Nano-RS3-.NET-Core-and-PS.md)
+## [设置你的环境](quick-start/set-up-environment.md)
+## [运行第一个容器](quick-start/run-your-first-container.md)
+## [Containerize 示例应用](quick-start/building-sample-app.md)
 
 # 教程
 ## 构建 Windows 容器
