@@ -8,25 +8,25 @@ ms.topic: article
 ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: 479e05b1-2642-47c7-9db4-d2a23592d29f
-ms.openlocfilehash: 93c56dba88715df41cab054cda676879b275380b
-ms.sourcegitcommit: cdf127747cfcb839a8abf50a173e628dcfee02db
+ms.openlocfilehash: 01e687cfa2fd479eb87e5639581e1552ed801aef
+ms.sourcegitcommit: 9100d2218c160bbe9fbf24f3524c8ff5e3dd826c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "9999204"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "10135330"
 ---
 # <a name="automating-builds-and-saving-images"></a>自动生成和保存映像
 
 在之前的 Windows Server 快速入门中，已从预先创建的 .Net Core 示例创建了 Windows 容器。 本练习介绍如何从 Dockerfile 构建自己的容器图像并将容器映像存储在 Docker 中心公共注册表中。
 
-此快速入门特定于 windows server 2019 或 Windows Server 2016 上的 Windows Server 容器, 并且将使用 Windows Server Core 容器基础映像。 此页面左侧的目录中提供其他快速入门文档。
+此快速入门特定于 windows server 2019 或 Windows Server 2016 上的 Windows Server 容器，并且将使用 Windows Server Core 容器基础映像。 此页面左侧的目录中提供其他快速入门文档。
 
 ## <a name="prerequisites"></a>系统必备
 
-请确保满足以下要求:
+请确保满足以下要求：
 
-- 运行 Windows Server 2019 或 Windows Server 2016 的一台计算机系统 (物理或虚拟)。
-- 通过 Windows 容器功能和 Docker 配置此系统。 有关这些步骤的演练, 请参阅[Windows Server 上的 windows 容器](./quick-start-windows-server.md)。
+- 运行 Windows Server 2019 或 Windows Server 2016 的一台计算机系统（物理或虚拟）。
+- 通过 Windows 容器功能和 Docker 配置此系统。 有关这些步骤的演练，请参阅[Windows Server 上的 windows 容器](./quick-start-windows-server.md)。
 - 一个用于将容器映像推送到 Docker Hub 的 Docker ID。 如果还没有 Docker ID，请在 [Docker 云](https://cloud.docker.com/)中进行注册。
 
 ## <a name="container-image---dockerfile"></a>容器图像-Dockerfile
@@ -130,7 +130,7 @@ Login Succeeded
 docker push <user>/iis-dockerfile
 ```
 
-随着 Docker 将每个图层推送到 Docker 中心, docker 将跳过位于 Docker 集线器中或其他注册表 (外国层) 中已存在的图层。  例如, 将跳过 Microsoft 容器注册表中托管的最新版本的 Windows Server Core 或专用公司注册表中的层, 而不会将其推送到 Docker 中心。
+随着 Docker 将每个图层推送到 Docker 中心，docker 将跳过位于 Docker 集线器中或其他注册表（外国层）中已存在的图层。  例如，将跳过 Microsoft 容器注册表中托管的最新版本的 Windows Server Core 或专用公司注册表中的层，而不会将其推送到 Docker 中心。
 
 现在可以使用 `docker pull` 将容器映像从 Docker Hub 下载到任意 Windows 容器主机。 在本教程中，我们将删除现有映像，并将它从 Docker Hub 向下拉取。 
 
@@ -159,4 +159,4 @@ docker pull <user>/iis-dockerfile
 如果要了解如何打包示例 ASP.NET 应用程序，请访问下方链接中的 Windows 10 教程。
 
 > [!div class="nextstepaction"]
-> [Windows 10 上的容器](./quick-start-windows-10.md)
+> [Windows 10 上的容器](./set-up-environment.md?tabs=Windows-10-Client)
