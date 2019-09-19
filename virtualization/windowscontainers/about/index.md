@@ -8,12 +8,12 @@ ms.topic: article
 ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: 8e273856-3620-4e58-9d1a-d1e06550448
-ms.openlocfilehash: dbe0e629428bbd8ecfe3ec01bb1a69e3c9c3e231
-ms.sourcegitcommit: 9100d2218c160bbe9fbf24f3524c8ff5e3dd826c
+ms.openlocfilehash: 55fc032613b901ef1f5f9cf989891ceef99aac36
+ms.sourcegitcommit: 668d0c0a81e6d74d75a655be5a47c2bbc5e268de
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "10135340"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "10138508"
 ---
 # <a name="about-windows-containers"></a>关于 Windows 容器
 
@@ -81,8 +81,4 @@ Hyper-v 隔离通过在高度优化的虚拟机中运行每个容器来扩展 Wi
 
 ## <a name="try-windows-server-containers"></a>尝试 Windows Server 容器
 
-已准备好开始利用容器的强大功能？ 以下文章将帮助您入门：
-
-若要在 Windows Server 上设置容器，请参阅[Windows server 快速入门](../quick-start/quick-start-windows-server.md)。
-
-若要在 Windows 10 上设置容器，请参阅[入门：配置容器的环境](../quick-start/set-up-environment.md?tabs=Windows-10-Client)。
+若要开始使用 Windows Server 或 Windows 10 上的容器，请参阅[开始使用：为容器配置你的环境](../quick-start/set-up-environment.md)。

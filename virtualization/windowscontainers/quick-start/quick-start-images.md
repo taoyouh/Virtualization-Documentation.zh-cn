@@ -8,14 +8,14 @@ ms.topic: article
 ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: 479e05b1-2642-47c7-9db4-d2a23592d29f
-ms.openlocfilehash: 01e687cfa2fd479eb87e5639581e1552ed801aef
-ms.sourcegitcommit: 9100d2218c160bbe9fbf24f3524c8ff5e3dd826c
+ms.openlocfilehash: 99b324c8cae5c8c8ed887b6e39d6818d9eddba15
+ms.sourcegitcommit: 668d0c0a81e6d74d75a655be5a47c2bbc5e268de
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "10135330"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "10138498"
 ---
-# <a name="automating-builds-and-saving-images"></a>自动生成和保存映像
+# <a name="automating-builds-and-saving-images"></a>自动生成和保存图像
 
 在之前的 Windows Server 快速入门中，已从预先创建的 .Net Core 示例创建了 Windows 容器。 本练习介绍如何从 Dockerfile 构建自己的容器图像并将容器映像存储在 Docker 中心公共注册表中。
 
@@ -26,7 +26,7 @@ ms.locfileid: "10135330"
 请确保满足以下要求：
 
 - 运行 Windows Server 2019 或 Windows Server 2016 的一台计算机系统（物理或虚拟）。
-- 通过 Windows 容器功能和 Docker 配置此系统。 有关这些步骤的演练，请参阅[Windows Server 上的 windows 容器](./quick-start-windows-server.md)。
+- 通过 Windows 容器功能和 Docker 配置此系统。 有关这些步骤的演练，请参阅[入门：配置容器的环境](../quick-start/set-up-environment.md)。
 - 一个用于将容器映像推送到 Docker Hub 的 Docker ID。 如果还没有 Docker ID，请在 [Docker 云](https://cloud.docker.com/)中进行注册。
 
 ## <a name="container-image---dockerfile"></a>容器图像-Dockerfile
@@ -159,4 +159,4 @@ docker pull <user>/iis-dockerfile
 如果要了解如何打包示例 ASP.NET 应用程序，请访问下方链接中的 Windows 10 教程。
 
 > [!div class="nextstepaction"]
-> [Windows 10 上的容器](./set-up-environment.md?tabs=Windows-10-Client)
+> [Windows 10 上的容器](set-up-environment.md?tabs=Windows-10-Client)
