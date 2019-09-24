@@ -8,12 +8,12 @@ ms.topic: article
 ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: ebd79cd3-5fdd-458d-8dc8-fc96408958b5
-ms.openlocfilehash: 652b1a8e0ab12ac67dd2754051e36c523e3de509
-ms.sourcegitcommit: c4a3f88d1663dd19336bfd4ede0368cb18550ac7
+ms.openlocfilehash: 16d2794688d60757ef1321d687f6a987ccf0b581
+ms.sourcegitcommit: 62fff5436770151a28b6fea2be3a8818564f3867
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "9882940"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "10147230"
 ---
 # <a name="troubleshooting"></a>疑难解答
 
@@ -93,22 +93,20 @@ sc.exe stop docker
 
 ## <a name="obtaining-stack-dump"></a>获取堆栈转储。
 
-通常, 这仅在 Microsoft 支持或 docker 开发人员显式请求的情况下才有用。 它可用于帮助诊断屏幕显示已挂起的情况。 
+通常，这仅在 Microsoft 支持或 docker 开发人员显式请求的情况下才有用。 它可用于帮助诊断屏幕显示已挂起的情况。 
 
 下载 [docker signal.exe](https://github.com/jhowardmsft/docker-signal)。
 
 用法：
 ```PowerShell
-Get-Process dockerd
-# Note the process ID in the `Id` column
-docker-signal -pid=<id>
+docker-signal --pid=$((Get-Process dockerd).Id)
 ```
 
 输出文件将位于正在运行的数据根目录 docker 中。 默认目录是 `C:\ProgramData\Docker`。 可以通过运行 `docker info -f "{{.DockerRootDir}}"` 来确认实际目录。
 
 文件将是`goroutine-stacks-<timestamp>.log`。
 
-请注意`goroutine-stacks*.log` , 不包含个人信息。
+请注意`goroutine-stacks*.log` ，不包含个人信息。
 
 
 # <a name="host-compute-service"></a>主机计算服务

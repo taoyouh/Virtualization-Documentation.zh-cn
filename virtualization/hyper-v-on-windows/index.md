@@ -8,12 +8,12 @@ ms.topic: article
 ms.prod: windows-10-hyperv
 ms.service: windows-10-hyperv
 ms.assetid: 05269ce0-a54f-4ad8-af75-2ecf5142b866
-ms.openlocfilehash: daecf2701972a00f4587b409c2271a23a70684ab
-ms.sourcegitcommit: 66f6cba600432f8fac1c214f357b27eb783cb1ff
+ms.openlocfilehash: 0621a06832844b0350b33c763f0546afa9b596e6
+ms.sourcegitcommit: 62fff5436770151a28b6fea2be3a8818564f3867
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2019
-ms.locfileid: "9794584"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "10147300"
 ---
 # <a name="hyper-v-on-windows-10"></a>Windows 10 上的 Hyper-V 
 
@@ -25,15 +25,15 @@ ms.locfileid: "9794584"
 以下文章提供 Windows 上的 Hyper-V 简介和相关信息。
 
 * [Hyper-V 简介](./about/index.md)
-* [支持的来宾操作系统](about\supported-guest-os.md)
+* [支持的来宾操作系统](about/supported-guest-os.md)
 
 ## <a name="get-started-with-hyper-v"></a>Hyper-V 入门
 以下文档提供 Windows 10 上的 Hyper-V 的快速入门指南。
 
-* [安装 Hyper-V](quick-start\enable-hyper-v.md)
-* [创建虚拟机](quick-start\create-virtual-machine.md)
-* [创建虚拟交换机](quick-start\connect-to-network.md)
-* [Hyper-V 和 PowerShell](quick-start\try-hyper-v-powershell.md)
+* [安装 Hyper-V](quick-start/enable-hyper-v.md)
+* [创建虚拟机](quick-start/create-virtual-machine.md)
+* [创建虚拟交换机](quick-start/connect-to-network.md)
+* [Hyper-V 和 PowerShell](quick-start/try-hyper-v-powershell.md)
 
 ## <a name="connect-with-community-and-support"></a>与社区和支持人员联系
 其他技术支持和社区资源。
