@@ -2,18 +2,18 @@
 title: Windows 容器的 gMSAs 疑难解答
 description: 如何对 Windows 容器的组托管服务帐户（gMSAs）进行故障排除。
 keywords: docker、容器、active directory、gmsa、组托管服务帐户、组托管服务帐户、疑难解答、疑难解答
-author: Heidilohr
-ms.date: 09/10/2019
+author: rpsqrd
+ms.date: 10/03/2019
 ms.topic: article
 ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: 9e06ad3a-0783-476b-b85c-faff7234809c
-ms.openlocfilehash: 00a0d9b1367da55b7669fc26a3eca303272967ab
-ms.sourcegitcommit: 5d4b6823b82838cb3b574da3cd98315cdbb95ce2
+ms.openlocfilehash: 89f255e307c2a48fd743d5abd1a49bba7703aaf3
+ms.sourcegitcommit: 22dcc1400dff44fb85591adf0fc443360ea92856
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "10079710"
+ms.lasthandoff: 10/12/2019
+ms.locfileid: "10209847"
 ---
 # <a name="troubleshoot-gmsas-for-windows-containers"></a>Windows 容器的 gMSAs 疑难解答
 
@@ -142,9 +142,43 @@ ms.locfileid: "10079710"
 
     如果 gMSA 可用且网络`NERR_SUCCESS`连接允许容器与域通信，则应返回信任验证。 如果失败，请验证主机和容器的网络配置。 两者都需要能够与域控制器进行通信。
 
-4. 确保你的应用[配置为使用 gMSA](gmsa-configure-app.md)。 使用 gMSA 时，容器内的用户帐户不会更改。 相反，系统帐户在与其他网络资源交谈时使用 gMSA。 这意味着你的应用需要作为网络服务或本地系统运行，才能利用 gMSA 标识。
+4. 检查容器是否可以获取有效的 Kerberos 票证授予票证（TGT）：
+
+    ```powershell
+    klist get krbtgt
+    ```
+
+    此命令应返回 "已成功检索到 krbtgt 的票证"，并列出用于检索票证的域控制器。 如果您能够获取 TGT，但`nltest`从上一步骤失败，这可能表示 gMSA 帐户配置错误。 有关详细信息，请参阅[检查 gMSA 帐户](#check-the-gmsa-account)。
+
+    如果无法在容器内获取 TGT，这可能表示存在 DNS 或网络连接问题。 确保容器可以使用域 DNS 名称解析域控制器，并且可以从容器中路由域控制器。
+
+5. 确保你的应用[配置为使用 gMSA](gmsa-configure-app.md)。 使用 gMSA 时，容器内的用户帐户不会更改。 相反，系统帐户在与其他网络资源交谈时使用 gMSA。 这意味着你的应用需要作为网络服务或本地系统运行，才能利用 gMSA 标识。
 
     > [!TIP]
     > 如果你运行`whoami`或使用其他工具来标识容器中的当前用户上下文，则不会看到 gMSA 名称本身。 这是因为你始终以本地用户（而不是域标识）的身份登录到容器。 GMSA 在与网络资源进行交谈时由计算机帐户使用，这就是你的应用需要作为网络服务或本地系统运行的原因。
 
-5. 最后，如果你的容器似乎配置正确，但用户或其他服务无法自动对你的容器化应用进行身份验证，请检查你的 gMSA 帐户上的 Spn。 客户端将通过其访问你的应用程序的名称找到 gMSA 帐户。 这可能意味着，如果客户通过负载`host`平衡器或其他 DNS 名称连接到你的应用，你将需要 gMSA 的其他 spn。
+### <a name="check-the-gmsa-account"></a>检查 gMSA 帐户
+
+1. 如果你的容器似乎配置正确，但用户或其他服务无法自动对你的容器化应用进行身份验证，请检查你的 gMSA 帐户上的 Spn。 客户端将通过其访问你的应用程序的名称找到 gMSA 帐户。 这可能意味着，如果客户通过负载`host`平衡器或其他 DNS 名称连接到你的应用，你将需要 gMSA 的其他 spn。
+
+2. 确保 gMSA 和容器主机属于同一 Active Directory 域。 如果 gMSA 属于另一个域，则容器主机将无法检索 gMSA 密码。
+
+3. 确保你的域中只有一个帐户与你的 gMSA 具有相同的名称。 gMSA 对象将 "美元符号" （$）附加到其 SAM 帐户名，因此，在同一个域中将 gMSA 命名为 "我的帐户 $" 和一个不相关的用户帐户可能会被命名为 "我的帐户"。 如果域控制器或应用程序必须按名称查找 gMSA，这可能会导致出现问题。 你可以通过以下命令搜索具有类似命名的对象的广告：
+
+    ```powershell
+    # Replace "GMSANAMEHERE" with your gMSA account name (no trailing dollar sign)
+    Get-ADObject -Filter 'sAMAccountName -like "GMSANAMEHERE*"'
+    ```
+
+4. 如果你在 gMSA 帐户上启用了无约束委派，请确保[UserAccountControl 属性](https://support.microsoft.com/en-us/help/305144/how-to-use-useraccountcontrol-to-manipulate-user-account-properties)仍启用了`WORKSTATION_TRUST_ACCOUNT`该标记。 要与域控制器通信，容器中的 NETLOGON 需要使用此标志，就像在应用必须将名称解析为 SID 或相反的情况一样。 你可以通过以下命令检查是否正确配置了标志：
+
+    ```powershell
+    $gMSA = Get-ADServiceAccount -Identity 'yourGmsaName' -Properties UserAccountControl
+    ($gMSA.UserAccountControl -band 0x1000) -eq 0x1000
+    ```
+
+    如果上述命令返回`False`，请使用以下命令将该`WORKSTATION_TRUST_ACCOUNT`标志添加到 gMSA 帐户的 UserAccountControl 属性。 此命令还将清除 " `NORMAL_ACCOUNT`UserAccountControl `INTERDOMAIN_TRUST_ACCOUNT`" 属性`SERVER_TRUST_ACCOUNT`中的 "、" 和 "标志"。
+
+    ```powershell
+    Set-ADObject -Identity $gMSA -Replace @{ userAccountControl = ($gmsa.userAccountControl -band 0x7FFFC5FF) -bor 0x1000 }
+    ```
