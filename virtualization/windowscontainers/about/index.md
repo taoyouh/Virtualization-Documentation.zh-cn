@@ -1,84 +1,112 @@
 ---
 title: 关于 Windows 容器
-description: 了解 Windows 容器。
+description: 容器是一种用于打包和运行应用的技术，包括 Windows 应用-在本地和云中的各种环境中。 本主题讨论 Microsoft、Windows 和 Azure 如何帮助你在容器中开发和部署应用，包括使用 Docker 和 Azure Kubernetes 服务。
 keywords: docker, 容器
 author: taylorb-microsoft
-ms.date: 05/22/2019
+ms.date: 10/22/2019
 ms.topic: article
 ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: 8e273856-3620-4e58-9d1a-d1e06550448
-ms.openlocfilehash: 55fc032613b901ef1f5f9cf989891ceef99aac36
-ms.sourcegitcommit: 668d0c0a81e6d74d75a655be5a47c2bbc5e268de
+ms.openlocfilehash: acce214cc8991f20c979b6dbe636590416841cb9
+ms.sourcegitcommit: d0411b05d1ef7328a770766b84fd0743f9d9c237
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "10138508"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "10254287"
 ---
-# <a name="about-windows-containers"></a>关于 Windows 容器
+# <a name="windows-and-containers"></a>Windows 和容器
 
-这就好像是一个厨房。 在此单个房间内，你需要能够提供食物的所有功能： oven、pan、水池等。 这是我们的容器。
+容器是在本地和云中的各种环境中打包和运行 Windows 和 Linux 应用程序的技术。 容器提供一个轻型的隔离环境，使应用更易于开发、部署和管理。 容器快速启动和停止，使它们非常适合需要快速适应不断变化的需求的应用。 容器的轻量级特性还使它们成为提高基础结构的密度和利用率的有用工具。
 
-![黑色框内带有黄色墙纸的完全配备的厨房的插图。](media/box1.png)
+![图形显示容器可以在云中或内部部署中运行的方式，支持以几乎任何语言编写的单片应用或 microservices。](media/about-3-box.png)
 
-现在，请想象将此厨房放在大楼内，就像将书籍滑入 bookshelf 一样轻松。 由于厨房需要运行的所有内容都已存在，因此我们只需连接电能和管道即可。
+## <a name="the-microsoft-container-ecosystem"></a>Microsoft 容器生态系统
 
-![由两叠黑色框组成的单元建筑物。 这四个框中的四个框与厨房示例中使用的黄色框相同，并且在整个建筑物中均位于随机位置，而其余部分是彩色活房间或为空并灰显。](media/apartment.png)
+Microsoft 提供了许多工具和平台，可帮助你在容器中开发和部署应用：
 
-为什么停止？ 你可以按自己喜欢的方式自定义你的构建;使用很多种类的房间填充它，使用相同的房间填充它或组合两个房间。
+- <strong>在 windows 10 上运行基于 windows 或基于 Linux 的容器</strong>，以便使用[Docker 桌面](https://store.docker.com/editions/community/docker-ce-desktop-windows)进行开发和测试，从而使用内置于 Windows 的容器功能。 你还可以[在 Windows Server 上本机运行容器](../quick-start/set-up-environment.md?tabs=Windows-Server)。
+- 使用 Visual Studio 和[Visual Studio 代码](https://code.visualstudio.com/docs/azure/docker)[中强大的容器支持](https://docs.microsoft.com/visualstudio/containers/overview)<strong>开发、测试、发布和部署基于 Windows 的容器</strong>，其中包括对 docker、docker 撰写、Kubernetes、Helm 和其他有用的支持科技.
+- 将<strong>你的应用作为容器映像发布</strong>到公共 DockerHub 供其他人使用，或发布到专用[Azure 容器注册表](https://azure.microsoft.com/services/container-registry/)以供你组织自己的开发和部署，直接从 Visual Studio 和 visual studio 代码内推送和提取.
+- <strong>在 Azure 或其他云上以缩放方式部署容器</strong>：
 
-通过以我们在厨房中的方式运行应用来运行容器，容器的作用类似于此聊天室。 容器将应用以及应用需要运行的所有内容放入其自己的独立的框中。 因此，独立应用不知道任何其他存在于其容器之外的应用或进程。 由于容器具有应用需要运行的所有内容，因此容器可以在任何位置移动，仅使用资源的主机置备，而不触及为其他容器预配的任何资源。
+  - 从容器注册表（如 Azure 容器注册表）中提取你的应用（容器映像），然后使用 orchestrator （如[Azure Kubernetes Service （AKS）](https://docs.microsoft.com/azure/aks/intro-kubernetes) （在基于 Windows 的应用）或 Azure 服务的应用程序按比例部署和管理你的应用[结构](https://docs.microsoft.com/azure/service-fabric/)。
+  - Azure Kubernetes 服务将容器部署到 Azure 虚拟机并按比例进行管理，无论是数十个容器、上百甚至上千个容器。 Azure 虚拟机运行自定义的 Windows Server 映像（如果你部署基于 Windows 的应用）或自定义的 Ubuntu Linux 映像（如果你要部署基于 Linux 的应用）。
+- 通过[将 Azure 堆栈与 AKS 引擎](https://docs.microsoft.com/azure-stack/user/azure-stack-kubernetes-aks-engine-overview)（在具有 Linux 容器的预览版中）或使用[OpenShift 的 azure 堆栈](https://docs.microsoft.com/azure/virtual-machines/linux/openshift-azure-stack)一起使用，<strong>在本地部署容器</strong>。 你还可以在 Windows Server 上设置 Kubernetes （请参阅[windows 上的 Kubernetes](../kubernetes/getting-started-kubernetes-windows.md)），并且我们还在[RedHat OpenShift 容器平台](https://techcommunity.microsoft.com/t5/Networking-Blog/Managing-Windows-containers-with-Red-Hat-OpenShift-Container/ba-p/339821)上处理运行 Windows 容器的支持。
 
-以下视频将告诉你有关 Windows 容器可以为你执行哪些操作的详细信息，以及 Microsoft 与 Docker 的合作关系如何帮助为开放源容器开发创建 frictionless 环境：
+## <a name="how-containers-work"></a>容器的工作原理
 
-<iframe width="800" height="450" src="https://www.youtube.com/embed/Ryx3o0rD5lY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+容器是一个独立的轻型接收器，用于在主机操作系统上运行应用程序。 在主机操作系统的内核（可视为操作系统的掩蔽管道）的顶部构建容器，如下图所示。
 
-## <a name="container-fundamentals"></a>容器基础知识
+![显示如何在内核顶部运行容器的体系结构图表](media/container-diagram.svg)
 
-在开始使用 Windows 容器时，我们将了解你将发现的一些术语：
+当容器共享主机操作系统的内核时，容器不会获取对该操作系统的 unfettered 访问权限。 相反，容器将获取隔离的，在某些情况下，虚拟化-系统的视图。 例如，容器可以访问文件系统和注册表的虚拟化版本，但任何更改仅影响容器，在停止时被放弃。 为了保存数据，容器可以装入永久性存储，如[Azure 磁盘](https://azure.microsoft.com/services/storage/disks/)或文件共享（包括[azure 文件](https://azure.microsoft.com/services/storage/files/)）。
 
-- 容器主机：使用 Windows 容器功能配置的物理或虚拟计算机系统。 容器主机将运行一个或多个 Windows 容器。
-- 沙盒：捕获在运行时对容器所做的所有更改（如文件系统修改、注册表修改或软件安装）的层。
-- 基本图像：提供容器操作系统环境的容器的图像图层中的第一图层。 无法修改基本图像。
-- 容器图像：创建容器的说明的只读模板。 图像可以基于基本的、不改变的操作系统环境，但也可以从已修改的容器的沙箱创建。 这些修改后的图像在基本图像层顶部分层更改，并且可以将这些图层复制并重新应用到其他基础图像，以使用相同的更改创建新图像。
-- 容器存储库：每次创建新图像时存储容器图像及其依赖项的本地存储库。 你可以在容器主机上多次重复使用存储的图像。 你还可以将容器映像存储在公共或专用注册表（如 Docker 集线器）中，以便它们可以跨许多不同的容器主机使用。
-- 容器 orchestrator：自动化和管理大量容器以及它们如何相互交互的过程。 若要了解详细信息，请参阅[关于 Windows 容器 orchestrators](overview-container-orchestrators.md)。
-- Docker：打包和传递容器图像的自动化过程。 若要了解详细信息，请参阅[docker 概述](docker-overview.md)、 [Windows 上的 docker 引擎](../manage-docker/configure-docker-daemon.md)或访问[Docker 网站](https://www.docker.com)。
+容器在内核顶部构建，但内核不提供应用需要运行的所有 Api 和服务-大多数都由在用户模式下运行于内核的系统文件（库）提供。 由于容器独立于主机的用户模式环境，因此容器需要自己的这些用户模式系统文件的副本，这些文件打包为基本映像。 基本映像充当你的容器的基础层，它通过内核未提供的操作系统服务提供。 但稍后我们将详细讨论容器映像。
 
-![显示如何创建容器的流程图。 应用程序和基本图像用于创建沙盒和新的应用程序映像，它们在基本映像的顶部分层以构建新容器。](media/containerfund.png)
+## <a name="containers-vs-virtual-machines"></a>容器与虚拟机
 
-熟悉虚拟机的人可能会认为容器和虚拟机看起来类似。 容器运行操作系统，具有文件系统，并且可以通过网络访问，与物理或虚拟计算机系统非常相似。 话虽如此，但容器背后的技术和概念与虚拟机有很大不同。 若要了解有关这些概念的详细信息，请阅读标记 Russinovich 的[博客文章](https://azure.microsoft.com/blog/containers-docker-windows-and-trends/)，其中详细说明了差异。
+相对于容器，虚拟机（Vm）运行完整的操作系统（包括它自己的内核），如下图所示。
 
-### <a name="windows-container-types"></a>Windows 容器类型
+![展示 Vm 在主机操作系统旁边运行完整操作系统的体系结构图](media/virtual-machine-diagram.svg)
 
-你应该知道，有两个不同的容器类型（也称为运行时）。
+容器和虚拟机每个容器和虚拟机都具有各自的用途-事实上，许多容器部署将虚拟机用作主机操作系统，而不是直接在硬件上运行，尤其是在云中运行容器时。
 
-Windows Server 容器通过进程和命名空间隔离技术提供应用程序隔离，这就是这些容器也称为进程隔离的容器的原因。 Windows Server 容器与容器主机和该主机上运行的所有容器共享内核。 这些进程隔离的容器不提供敌意安全边界，不应用于隔离不受信任的代码。 由于共享内核空间，这些容器要求具有相同的内核版本和配置。
+有关这些补充技术的相似性和差异的更多详细信息，请参阅[容器与虚拟机](containers-vs-vm.md)。
 
-Hyper-v 隔离通过在高度优化的虚拟机中运行每个容器来扩展 Windows Server 容器提供的隔离。 在此配置中，容器主机不与同一主机上的其他容器共享其内核。 这些容器旨在托管敌对多租户，并且具有与虚拟机相同的安全保证。 由于这些容器不与主机上的主机或其他容器共享内核，因此它们可以运行具有不同版本和配置（受支持版本内）的内核。 例如，Windows 10 上的所有 Windows 容器都使用 Hyper-v 隔离来利用 Windows Server 内核版本和配置。
+## <a name="container-images"></a>容器图像
 
-使用或不使用 Hyper-v 隔离在 Windows 上运行容器是运行时决策。 你最初可以创建具有 Hyper-v 隔离的容器，稍后在运行时选择将其作为 Windows Server 容器运行。
+从容器图像创建所有容器。 容器图像是组织为驻留在本地计算机或远程容器注册表中的图层堆栈的文件包。 容器映像包含支持你的应用、应用、应用的任何运行时或依赖项的用户模式操作系统文件，以及你的应用需要正确运行的任何其他杂项配置文件。
+
+Microsoft 提供了多个图像（称为基本图像），可用作构建自己的容器图像的起始点：
+
+* <strong>Windows</strong> -包含完整的 windows api 和系统服务集（负服务器角色）。
+* <strong>Windows Server Core</strong> -一个较小的图像，其中包含 Windows Server api 的子集，即完整的 .net framework。 它还包括大多数服务器角色，但很遗憾，并非传真服务器。
+* <strong>Nano Server</strong> -最小的 Windows Server 映像，支持 .Net Core api 和某些服务器角色。
+* <strong>Windows 10 IoT 核心</strong>版-适用于运行 ARM 或 x86/x64 处理器的设备的小型互联网的硬件制造商使用的 windows 版本。
+
+正如前面所述，容器图像由一系列图层组成。 每个层都包含一组文件，这些文件重叠在一起，表示你的容器图像。 由于容器的分层特性，因此无需始终针对基映像来构建 Windows 容器。 相反，你可以指向已携带所需框架的另一个图像。 例如，.NET 团队发布了一个[.net core 映像](https://hub.docker.com/_/microsoft-dotnet-core)，它携带 .net core runtime。 它可使用户不必复制 .NET core 的安装过程-而是可以重复使用此容器图像的图层。 .NET core 映像本身基于 Nano Server 生成。
+
+有关更多详细信息，请参阅[容器基础图像](../manage-containers/container-base-images.md)。
 
 ## <a name="container-users"></a>容器用户
 
 ### <a name="containers-for-developers"></a>面向开发人员的容器
 
-容器可帮助开发人员更快地构建和交付更高质量的应用程序。 开发人员可以创建一个放大图像，该图像将在几秒钟内完全部署到所有环境中。 在 Docker 容器中打包的应用程序有大量且发展壮大。 DockerHub 是由 Docker 维护的公共应用程序注册表，它在其公共社区存储库中发布了超过180000的应用程序，该号码仍在增加。
+容器可帮助开发人员更快地构建和交付更高质量的应用程序。 通过容器，开发人员可以创建在数秒内（在不同环境中相同）部署的容器映像。 容器充当跨团队共享代码和引导开发环境而不影响你的主机文件系统的简便机制。
 
-当开发人员 containerizes 应用时，仅将其需要运行的应用和组件合并到一个图像中。 然后根据你的需要从此映像创建容器。 你还可以使用映像作为创建其他映像的基线，从而使映像创建速度更快。 多个容器可以共享同一个图像，这意味着容器启动速度非常快，并且使用的资源较少。 例如，开发人员可以使用容器为分布式应用程序旋转轻量级和便携应用组件（也称为 microservices），并单独对每个服务进行快速缩放。
-
-容器是可移植和通用的，可采用任何语言编写，并且与运行 Windows Server 2016 的任何计算机兼容。 开发人员可以在其笔记本或桌面本地创建和测试容器，然后将该容器映像部署到其公司的专用云、公共云或服务提供商。 容器的自然灵活性支持大规模、虚拟化云环境中的新式应用开发模式。
+容器是可移植的，可运行以任何语言编写的应用，它们与运行 Windows 10 版本1607或更高版本的任何计算机兼容，或者与运行 windows 2016 或更高版本的任何计算机兼容。 开发人员可以在其笔记本或桌面本地创建和测试容器，然后将该容器映像部署到其公司的专用云、公共云或服务提供商。 容器的自然灵活性支持大规模、虚拟化云环境中的新式应用开发模式。
 
 ### <a name="containers-for-it-professionals"></a>面向 IT 专业人员的容器
 
-容器可帮助管理员创建更易于更新和维护的基础结构。 IT 专业人员可以使用容器为其开发、QA 和生产团队提供标准化的环境。 他们不再需要担心复杂的安装和配置过程。 通过使用容器，系统管理员会在操作系统安装和底层基础结构中失去差异。
+容器可帮助管理员创建更易于更新和维护的基础结构，并可更充分地利用硬件资源。 IT 专业人员可以使用容器为其开发、QA 和生产团队提供标准化的环境。 通过使用容器，系统管理员会在操作系统安装和底层基础结构中失去差异。
 
-## <a name="containers-101-video-presentation"></a>容器101视频演示文稿
+## <a name="container-orchestration"></a>容器业务流程
 
-下面的视频演示将为你提供有关 Windows 容器的历史记录和实现的更深入概述。
+在设置基于容器的环境时，Orchestrators 是基础结构的关键部分。 虽然你可以使用 Docker 和 Windows 手动管理几个容器，但应用通常使用五个、十个甚至上百个容器，在这里 orchestrators。
 
-<iframe src="https://channel9.msdn.com/Blogs/containers/Containers-101-with-Microsoft-and-Docker/player" width="800" height="450" allowFullScreen="true" frameBorder="0" scrolling="no"></iframe>
+容器 orchestrators 的构建旨在帮助在规模和生产环境中管理容器。 Orchestrators 提供以下功能：
 
-## <a name="try-windows-server-containers"></a>尝试 Windows Server 容器
+- 按比例部署
+- 工作负荷计划
+- 运行状况监视
+- 节点出现故障时进行故障转移
+- 向上或向下缩放
+- 网络
+- 服务发现
+- 协调应用程序升级
+- 群集节点亲近性
 
-若要开始使用 Windows Server 或 Windows 10 上的容器，请参阅[开始使用：为容器配置你的环境](../quick-start/set-up-environment.md)。
+有许多不同的 orchestrators 可用于 Windows 容器;以下是 Microsoft 提供的选项：
+- [Azure Kubernetes 服务（AKS）](https://docs.microsoft.com/azure/aks/intro-kubernetes) -使用托管的 Azure Kubernetes 服务
+- [Azure 服务结构](https://docs.microsoft.com/azure/service-fabric/)-使用托管服务
+- [具有 AKS 引擎的 Azure 堆栈](https://docs.microsoft.com/azure-stack/user/azure-stack-kubernetes-aks-engine-overview)-使用 Azure Kubernetes 服务本地
+- [Windows 上的 Kubernetes](../kubernetes/getting-started-kubernetes-windows.md) -在 windows 上设置 Kubernetes
+
+## <a name="try-containers-on-windows"></a>在 Windows 上试用容器
+
+若要开始使用 Windows Server 或 Windows 10 上的容器，请参阅以下内容：
+> [!div class="nextstepaction"]
+> [入门：为容器配置你的环境](../quick-start/set-up-environment.md)
+
+有关确定哪些 Azure 服务适合你的方案的帮助，请参阅[Azure 容器服务](https://azure.microsoft.com/product-categories/containers/)和[选择用于托管你的应用程序的 azure 服务](https://docs.microsoft.com/azure/architecture/guide/technology-choices/compute-decision-tree)。

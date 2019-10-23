@@ -8,12 +8,12 @@ ms.topic: article
 ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: 88e6e080-cf8f-41d8-a301-035959dc5ce0
-ms.openlocfilehash: f5dcaf4958828b1bcf31a96e5fb70eda0508eb96
-ms.sourcegitcommit: e9dda81f1f68359ece9ef132a184a30880bcdb1b
+ms.openlocfilehash: 2a69fbace51589cce08476bd68fdb5c34a7907e6
+ms.sourcegitcommit: d0411b05d1ef7328a770766b84fd0743f9d9c237
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "10161744"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "10254267"
 ---
 # <a name="container-base-images"></a>容器基映像
 
@@ -124,9 +124,21 @@ MCR 没有自己的目录体验，它旨在支持诸如 Docker 集线器之类�
 - **是否根据 .NET Core 构建 Windows 应用？** 如果此问题的答案为 "是"，则应`Nanoserver`确定目标。
 - **您是否正在构建 IoT 应用程序？** 如果此问题的答案为 "是"，则应`IoT Core`确定目标。
 - **Windows Server Core 容器映像是否缺少你的应用所需的依赖关系？** 如果此问题的答案是 "是"，则应尝试瞄准`Windows`。 此图像比其他基本映像更大，但它将携带许多核心 Windows 库（如 GDI 库）。
+- **你是 Windows 预览体验成员吗？** 如果是，应考虑使用图像的预览体验计划版本。 请参阅下面的 "Windows 预览体验的基本图像"。
 
 > [!TIP]
 > 许多 Windows 用户希望 containerize 依赖于 .NET 的应用程序。 除了此处介绍的四个基本图像，Microsoft 还会发布多个 Windows 容器映像，这些图像预配置了常用 Microsoft 框架，例如[.net framework](https://hub.docker.com/_/microsoft-dotnet-framework)图像和[ASP .net](https://hub.docker.com/_/microsoft-dotnet-framework-aspnet/)图像。
+
+### <a name="base-images-for-windows-insiders"></a>适用于 Windows 预览体验成员的基本图像
+
+Microsoft 提供每个容器基本图像的 "预览体验计划" 版本。 这些预览体验计划容器图像将在我们的容器图像中携带最新、最强大的功能开发。 如果你运行的是 Windows 预览体验计划版本的主机（Windows 预览体验成员或 Windows Server 有问必答），则最好使用这些图像。 可在 Docker 中心上使用预览体验计划图像：
+
+- [mcr.microsoft.com/windows/servercore/insider](https://hub.docker.com/_/microsoft-windows-servercore-insider)
+- [mcr.microsoft.com/windows/nanoserver/insider](https://hub.docker.com/_/microsoft-windows-nanoserver-insider)
+- [mcr.microsoft.com/windows/iotcore/insider](https://hub.docker.com/_/microsoft-windows-iotcore-insider)
+- [mcr.microsoft.com/windows/insider](https://hub.docker.com/_/microsoft-windows-insider)
+
+[使用 Windows 预览体验计划读取 "使用容器"](../deploy-containers/insider-overview.md)了解更多信息。
 
 ### <a name="windows-server-core-vs-nanoserver"></a>Windows Server Core vs Nanoserver
 

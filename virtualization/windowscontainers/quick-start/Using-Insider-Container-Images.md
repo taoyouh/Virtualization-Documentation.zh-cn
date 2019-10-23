@@ -11,7 +11,7 @@
 - 一个运行 Windows 预览体验计划中最新 Windows Server 版本和/或 Windows 预览体验计划中最新 Windows 10 版本的计算机系统（物理或虚拟）。
 
 > [!IMPORTANT]
-> 您必须使用 windows Server 预览体验计划中的 Windows Server 内部版本或 windows 10 版本的 windows 预览体验计划预览程序, 以使用下面介绍的基本图像。 如果你没有使用这些版本中的其中一个，使用这些基本映像将导致启动容器失败。
+> Windows 需要主机操作系统版本才能匹配容器操作系统版本。 如果你希望基于较新的 Windows 版本运行容器，请确保你具有等效的主机版本。 否则，你可以使用 Hyper-v 隔离在新的主机内部版本上运行较旧的容器。 您可以在我们的容器文档中阅读有关 Windows 容器版本兼容性的详细信息。
 
 ## <a name="install-docker-enterprise-edition-ee"></a>安装 Docker 企业版 (EE)
 
@@ -48,25 +48,33 @@ Restart-Computer -Force
 
 ## <a name="install-base-container-image"></a>安装基本容器映像
 
-使用 Windows 容器前，需安装基本映像。 加入 Windows 预览体验成员计划后，你还可以测试我们的最新版本的基本映像。 预览体验成员基本映像现在有 4 个基于 Windows Server 的基本映像可用。 请参阅下表，查看各个基本映像应用于什么用途：
+使用 Windows 容器前，需安装基本映像。 加入 Windows 预览体验成员计划后，你还可以测试我们的最新版本的基本映像。 使用预览体验计划基本图像，现在有6个基于 Windows Server 的可用基础映像。 请参阅下表，查看各个基本映像应用于什么用途：
 
 | 基本操作系统映像                       | 用法                      |
 |-------------------------------------|----------------------------|
 | mcr.microsoft.com/windows/servercore         | 生产和开发 |
 | mcr.microsoft.com/windows/nanoserver              | 生产和开发 |
+| mcr.microsoft.com/windows/              | 生产和开发 |
 | mcr.microsoft.com/windows/servercore/insider | 仅开发           |
 | mcr.microsoft.com/windows/nanoserver/insider        | 仅开发           |
+| mcr.microsoft.com/windows/insider        | 仅开发           |
 
-若要拉取 Nano Server 预览体验成员基本映像，请运行以下内容：
+要提取服务器核心预览体验计划，请参阅[服务器核心预览体验中心](https://hub.docker.com/_/microsoft-windows-servercore-insider)存储库中的特色标记，以使用以下格式：
 
 ```console
-docker pull mcr.microsoft.com/nanoserver/insider
+docker pull mcr.microsoft.com/windows/servercore/insider:10.0.{build}.{revision}
 ```
 
-若要拉取 Windows Server Core 预览体验成员基本映像，请运行以下内容：
+若要提取 Nano Server 预览体验成员的基本图像，请参阅[Nano Server 预览体验成员 Docker 中心](https://store.docker.com/_/microsoft-windows-nanoserver-insider)存储库中的特色标记，以使用以下格式：
 
 ```console
-docker pull mcr.microsoft.com/windows/servercore/insider
+docker pull mcr.microsoft.com/windows/nanoserver/insider:10.0.{build}.{revision}
+```
+
+若要提取 Windows 预览体验成员基本映像，请参阅[Windows 预览体验中心中心](https://store.docker.com/_/microsoft-windows-insider)存储库上的特色标记以使用以下格式：
+
+```console
+docker pull mcr.microsoft.com/windows/insider:10.0.{build}.{revision}
 ```
 
 > [!IMPORTANT]
