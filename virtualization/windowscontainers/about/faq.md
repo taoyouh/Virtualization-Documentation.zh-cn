@@ -3,29 +3,46 @@ title: Windows 容器常见问题解答
 description: Windows Server 容器常见问题
 keywords: docker, 容器
 author: PatrickLang
-ms.date: 05/22/2019
+ms.date: 10/25/2019
 ms.topic: article
 ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: 25de368c-5a10-40a4-b4aa-ac8c9a9ca022
-ms.openlocfilehash: af12aff787cf178ff80d5db15cc926266816882f
-ms.sourcegitcommit: 579349d7bc6a7dbf68445339c468ad8d2b87d7de
+ms.openlocfilehash: 19ff54ec032d61b24aea9fec4f14e8fce301d33a
+ms.sourcegitcommit: 347d7c9d34f4c1d2473eb6c94c8ad6187318a037
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "10152728"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "10257949"
 ---
 # <a name="frequently-asked-questions-about-containers"></a>有关容器的常见问题
-
-## <a name="what-are-wcow-and-lcow"></a>什么是 WCOW 和 LCOW？
-
-WCOW 是 "Windows 上的 Windows 容器" 的简短。 LCOW 是 "Windows 上的 Linux 容器" 的简短。
 
 ## <a name="whats-the-difference-between-linux-and-windows-server-containers"></a>Linux 与 Windows Server 容器有何区别？
 
 Linux 和 Windows Server 都在其内核和核心操作系统中实现了类似的技术。 区别在于在容器内运行的平台和工作负荷。  
 
 当客户使用 Windows Server 容器时，它们可以与现有 Windows 技术（如 .NET、ASP.NET 和 PowerShell）集成。
+
+## <a name="what-are-the-prerequisites-for-running-containers-on-windows"></a>在 Windows 上运行容器有哪些先决条件？
+
+已将容器引入 Windows Server 2016 的平台。 若要使用容器，你需要 Windows Server 2016 或 Windows 10 周年更新（版本1607）或更高版本。 阅读[系统要求](../deploy-containers/system-requirements.md)以了解更多信息。
+
+## <a name="what-are-wcow-and-lcow"></a>什么是 WCOW 和 LCOW？
+
+WCOW 是 "Windows 上的 Windows 容器" 的简短。 LCOW 是 "Windows 上的 Linux 容器" 的简短。
+
+## <a name="how-are-containers-licensed-is-there-a-limit-to-the-number-of-containers-i-can-run"></a>如何获得容器许可？ 我可以运行的容器数有限制吗？
+
+Windows 容器映像[EULA](../images-eula.md)描述的用法取决于拥有有效许可证主机操作系统的用户。 允许用户运行的容器数取决于主机操作系统版本和容器运行的[隔离模式](../manage-containers/hyperv-container.md)，以及这些容器是针对开发/测试还是在生产中运行。
+
+|主机操作系统                                                         |进程-隔离的容器限制                   |Hyper-v-隔离的容器限制                   |
+|----------------------------------------------------------------|---------------------------------------------------|---------------------------------------------------|
+|Windows Server Standard                                         |无限制                                          |ppls-2                                                  |
+|Windows Server Datacenter                                       |无限制                                          |无限制                                          |
+|Windows 10 专业版和企业版                                   |无限制 *（仅限测试或开发用途）*|无限制 *（仅限测试或开发用途）*|
+|Windows 10 IoT 核心版和企业版）                             |无限制 *（仅限测试或开发用途）*|无限制 *（仅限测试或开发用途）*|
+
+Windows Server 容器映像使用情况由读取该[版本](/windows-server/get-started-19/editions-comparison-19.md)支持的虚拟来宾数量决定。 IoT 版本的 Windows 中的容器的生产使用率取决于其他许可证限制。 请阅读[容器图像 EULA](../images-eula.md) ，了解所允许的确切内容和不允许的内容。
 
 ## <a name="as-a-developer-do-i-have-to-rewrite-my-app-for-each-type-of-container"></a>作为开发人员，我是否必须为每种类型的容器重写我的应用？
 
@@ -34,10 +51,6 @@ Linux 和 Windows Server 都在其内核和核心操作系统中实现了类似�
 开发人员可以使用 Windows Server 容器创建容器图像，并在 Hyper-v 隔离中部署它，反之亦然，除了指定相应的运行时标志之外，没有任何更改。
 
 Windows Server 容器可提供更大的密度和性能，以实现速度较长的功能，例如，较低的旋转时间和更快的运行时性能与嵌套配置相比较。 Hyper-v 隔离（对于其名称为 true）提供更大隔离，确保在一个容器中运行的代码无法危害或影响在同一主机上运行的主机操作系统或其他容器。 这对于具有托管不受信任代码的要求的多租户方案（包括 SaaS 应用程序和计算托管）很有用。
-
-## <a name="what-are-the-prerequisites-for-running-containers-on-windows"></a>在 Windows 上运行容器有哪些先决条件？
-
-已将容器引入 Windows Server 2016 的平台。 若要使用容器，你需要 Windows Server 2016 或 Windows 10 周年更新（版本1607）或更高版本。
 
 ## <a name="can-i-run-windows-containers-in-process-isolated-mode-on-windows-10-enterprise-or-professional"></a>是否可以在 Windows 10 企业版或专业版的进程隔离模式下运行 Windows 容器？
 
@@ -56,10 +69,6 @@ Windows 容器基映像包含其分布受许可证限制的项目。 当你在�
 
 > [!IMPORTANT]
 > 此标志的使用不会妨碍你的义务遵守 Windows 容器基本映像许可证的条款;您不得发布用于公共或第三方再发行的 Windows 内容。 允许在您自己的环境中使用。
-
-## <a name="is-microsoft-participating-in-the-open-container-initiative-oci"></a>Microsoft 是否正在参与开放容器计划 (OCI)？
-
-为保证打包格式保持通用，Docker 最近组织了 "开放容器倡议" （OCI），它旨在确保容器封装保持开放且采用基础 led 格式，将 Microsoft 作为其公开成员之一。
 
 ## <a name="additional-feedback"></a>其他反馈
 
