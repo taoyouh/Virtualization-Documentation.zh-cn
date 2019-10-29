@@ -7,12 +7,12 @@ ms.date: 09/10/2019
 ms.topic: article
 ms.prod: windows-containers
 ms.service: windows-containers
-ms.openlocfilehash: cf8a14002e962242c34e9a10086120e6942d382b
-ms.sourcegitcommit: 6080b2c5053720490d374f6fb0daa870d5ddd4e8
+ms.openlocfilehash: db3caea3f7911ec6641930302198f976bd61240d
+ms.sourcegitcommit: da762ce138467e50dce22d5086ad407138b38e48
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "10257771"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "10261826"
 ---
 # <a name="containerize-a-net-core-app"></a>Containerize .NET Core 应用
 
@@ -121,7 +121,7 @@ docker run -d -p 5000:80 --name myapp my-asp-app
 * `--name myapp` 通知 Docker 为此容器提供一个方便的名称来进行查询（而无需在运行时通过 Docker 器查找分配的 contaienr ID）。
 * `my-asp-app` 是希望 Docker 运行的图像。 这是`docker build`进程的 culmination 生成的容器图像。
 
-打开 web 浏览器 web 浏览器，并`https://localhost:5000`导航到向的应用程序。
+打开 web 浏览器 web 浏览器，并`http://localhost:5000`导航到向的应用程序。
 
 >![](media/SampleAppScreenshot.png)
 
