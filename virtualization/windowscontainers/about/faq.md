@@ -8,12 +8,12 @@ ms.topic: article
 ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: 25de368c-5a10-40a4-b4aa-ac8c9a9ca022
-ms.openlocfilehash: 19ff54ec032d61b24aea9fec4f14e8fce301d33a
-ms.sourcegitcommit: 347d7c9d34f4c1d2473eb6c94c8ad6187318a037
+ms.openlocfilehash: aeb2b5dd0d9df95ee417b3a160d10d4991304689
+ms.sourcegitcommit: 4b37076f988608b6bf1270497c24325993ef41d3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "10257949"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "10264358"
 ---
 # <a name="frequently-asked-questions-about-containers"></a>有关容器的常见问题
 
@@ -40,9 +40,12 @@ Windows 容器映像[EULA](../images-eula.md)描述的用法取决于拥有有�
 |Windows Server Standard                                         |无限制                                          |ppls-2                                                  |
 |Windows Server Datacenter                                       |无限制                                          |无限制                                          |
 |Windows 10 专业版和企业版                                   |无限制 *（仅限测试或开发用途）*|无限制 *（仅限测试或开发用途）*|
-|Windows 10 IoT 核心版和企业版）                             |无限制 *（仅限测试或开发用途）*|无限制 *（仅限测试或开发用途）*|
+|Windows 10 IoT 核心版和企业版                             |无限                                         |无限                                          |
 
-Windows Server 容器映像使用情况由读取该[版本](/windows-server/get-started-19/editions-comparison-19.md)支持的虚拟来宾数量决定。 IoT 版本的 Windows 中的容器的生产使用率取决于其他许可证限制。 请阅读[容器图像 EULA](../images-eula.md) ，了解所允许的确切内容和不允许的内容。
+Windows Server 容器映像使用情况由读取该[版本](/windows-server/get-started-19/editions-comparison-19.md)支持的虚拟来宾数量决定。 <br/>
+
+>[!NOTE]
+>\ * 如果你已同意适用于 windows 10 Core 运行时映像的 Microsoft 商业术语或 Windows 10 IoT Enterprise Device License （"Windows IoT 商业版协议"），则 Windows 的 IoT 版本上的容器的生产使用率将取决于该版本。 Windows IoT 商业版协议中的其他条款和限制适用于您在生产环境中使用容器映像的情况。 请阅读[容器图像 EULA](../images-eula.md) ，了解所允许的确切内容和不允许的内容。
 
 ## <a name="as-a-developer-do-i-have-to-rewrite-my-app-for-each-type-of-container"></a>作为开发人员，我是否必须为每种类型的容器重写我的应用？
 
