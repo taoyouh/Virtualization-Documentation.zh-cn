@@ -8,12 +8,12 @@ ms.topic: article
 ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: 25de368c-5a10-40a4-b4aa-ac8c9a9ca022
-ms.openlocfilehash: aeb2b5dd0d9df95ee417b3a160d10d4991304689
-ms.sourcegitcommit: 4b37076f988608b6bf1270497c24325993ef41d3
+ms.openlocfilehash: 405b2abc43a4ae2c546de351679deb755e4a9317
+ms.sourcegitcommit: 64573b539438de6ec5564b2949642ef12e55fc62
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "10264358"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "10274064"
 ---
 # <a name="frequently-asked-questions-about-containers"></a>有关容器的常见问题
 
@@ -55,14 +55,14 @@ Windows Server 容器映像使用情况由读取该[版本](/windows-server/get-
 
 Windows Server 容器可提供更大的密度和性能，以实现速度较长的功能，例如，较低的旋转时间和更快的运行时性能与嵌套配置相比较。 Hyper-v 隔离（对于其名称为 true）提供更大隔离，确保在一个容器中运行的代码无法危害或影响在同一主机上运行的主机操作系统或其他容器。 这对于具有托管不受信任代码的要求的多租户方案（包括 SaaS 应用程序和计算托管）很有用。
 
-## <a name="can-i-run-windows-containers-in-process-isolated-mode-on-windows-10-enterprise-or-professional"></a>是否可以在 Windows 10 企业版或专业版的进程隔离模式下运行 Windows 容器？
+## <a name="can-i-run-windows-containers-in-process-isolated-mode-on-windows-10"></a>是否可以在 Windows 10 上以进程隔离模式运行 Windows 容器？
 
-从2018年10月的更新开始，你可以运行具有进程隔离的 Windows 容器，但必须首先通过使用运行容器时使用`--isolation=process`标志来直接请求进程隔离。 `docker run`
+从2018年10月的更新开始，你可以运行具有进程隔离的 Windows 容器，但必须首先通过使用运行容器时使用`--isolation=process`标志来直接请求进程隔离。 `docker run` 进程隔离在 Windows 10 专业版、Windows 10 企业版、Windows 10 IoT 核心版和 Windows 10 IoT 企业版上兼容。
 
 如果你希望以这种方式运行 Windows 容器，你需要确保你的主机运行的是 Windows 10 内部版本 17763 +，并且你有一个具有引擎18.09 或更高版本的 Docker 版本。
 
 > [!WARNING]
-> 此功能仅适用于开发和测试。 你应继续使用 Windows Server 作为生产部署的主机。 通过使用此功能，你还必须确保你的主机和容器版本标记匹配，否则容器可能无法启动或表现出未定义的行为。
+> 除了 IoT 核心版和 IoT Enterprise 主机（接受其他条款和限制后），此功能仅适用于开发和测试。 你应继续使用 Windows Server 作为生产部署的主机。 通过使用此功能，你还必须确保你的主机和容器版本标记匹配，否则容器可能无法启动或表现出未定义的行为。
 
 ## <a name="how-do-i-make-my-container-images-available-on-air-gapped-machines"></a>如何让我的容器图像在 air-有空隙的计算机上可用？
 
