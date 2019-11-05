@@ -8,12 +8,12 @@ ms.topic: article
 ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: 538871ba-d02e-47d3-a3bf-25cda4a40965
-ms.openlocfilehash: 6480f0657d7def8d6da69bfc52ace81d08b0add4
-ms.sourcegitcommit: cdf127747cfcb839a8abf50a173e628dcfee02db
+ms.openlocfilehash: deea1bfbcd3032f52a6912eb0c36ba467d8b9a9c
+ms.sourcegitcommit: b38f6abb399c87c57e1bb146f3dbcdaefd991245
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "9998804"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "10276490"
 ---
 # <a name="advanced-network-options-in-windows"></a>Windows 中的高级网络选项
 
@@ -46,13 +46,13 @@ C:\> docker network create -d transparent -o com.docker.network.windowsshim.vlan
 
 > 适用于 l2bridge 网络
 
-通常, 当你使用`l2bridge` `docker network create`创建容器网络时, 容器终结点没有应用的 HNS OutboundNAT 策略, 从而导致容器无法进入外部世界。 如果要创建网络, 可以使用该`-o com.docker.network.windowsshim.enable_outboundnat=<true|false>`选项应用 OutboundNAT HNS 策略, 以便为容器提供对外部世界的访问权限:
+通常，当你使用`l2bridge` `docker network create`创建容器网络时，容器终结点没有应用的 HNS OutboundNAT 策略，从而导致容器无法进入外部世界。 如果要创建网络，可以使用该`-o com.docker.network.windowsshim.enable_outboundnat=<true|false>`选项应用 OutboundNAT HNS 策略，以便为容器提供对外部世界的访问权限：
 
 ```
 C:\> docker network create -d l2bridge -o com.docker.network.windowsshim.enable_outboundnat=true MyL2BridgeNetwork
 ```
 
-如果存在一组目标 (例如需要容器到容器连接的容器), 并且我们还需要指定例外项:
+如果存在一组目标（例如需要容器到容器连接的容器），并且我们还需要指定例外项：
 
 ```
 C:\> docker network create -d l2bridge -o com.docker.network.windowsshim.enable_outboundnat=true -o com.docker.network.windowsshim.outboundnat_exceptions=10.244.10.0/24
@@ -162,7 +162,6 @@ C:\> docker run -it --network=MyTransparentNet --ip=10.123.174.105 windowsserver
 
 #### <a name="ip-assignment-on-stopped-vs-running-containers"></a>已停止与正在运行的容器上的 IP 分配
 静态 IP 分配直接在容器的网络适配器上执行，并且必须仅当容器处于已停止状态时执行。 容器运行时，（Windows Server 2016 中）不支持“热添加”容器网络适配器或更改网络堆栈。
-> 注意：此行为在 Windows 10 创意者更新上发生了变化，因为平台现在支持“热添加”。 在合并此[未完成的 Docker 拉取请求](https://github.com/docker/libnetwork/pull/1661)后，此功能将启用 E2E 功能
 
 #### <a name="existing-vswitch-not-visible-to-docker-can-block-transparent-network-creation"></a>现有 vSwitch（对 Docker 不可见）可以阻止创建透明网络
 如果创建透明网络出错，可能是未经 Docker 自动发现的系统上存在外部 vSwitch，因而使得透明网络无法绑定到容器主机的外部网络适配器。 
