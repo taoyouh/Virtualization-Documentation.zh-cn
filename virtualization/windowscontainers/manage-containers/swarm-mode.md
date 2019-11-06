@@ -8,12 +8,12 @@ ms.topic: article
 ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: 5ceb9626-7c48-4d42-81f8-9c936595ad85
-ms.openlocfilehash: 088bc844790d94d30f6b4b05c5cd189392f47e66
-ms.sourcegitcommit: cdf127747cfcb839a8abf50a173e628dcfee02db
+ms.openlocfilehash: 560e9ffc92728628268d7d557b8fa8428316c8ec
+ms.sourcegitcommit: 551b783410ba49b4d439e3da084986cceffcb7e0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "9998274"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "10278959"
 ---
 # <a name="getting-started-with-swarm-mode"></a>群模式入门 
 
@@ -24,13 +24,13 @@ ms.locfileid: "9998274"
 一个群由两种容器主机类型构成：*管理器节点*和*工作者节点*。 每一个群均通过管理器节点进行初始化，且用于控制和监视群的所有 Docker CLI 命令均必须从其中一个管理器节点执行。 管理器节点可以视为群状态的“维持者”，它们共同形成一个共识组，可以持续感知在群上运行的服务的状态；它们的任务则是确保群的实际状态始终符合开发人员或管理员定义的预期状态。 
 
 >[!NOTE]
->任何给定的 swarm 都可以具有多个管理器节点, 但它必须始终*至少有一个*。 
+>任何给定的 swarm 都可以具有多个管理器节点，但它必须始终*至少有一个*。 
 
 工作者节点由 Docker 群通过管理器节点进行编排。 若要加入群，工作者节点必须使用“加入令牌”，该令牌在初始化群时由管理器节点生成。 工作者节点仅接收和执行来自管理器节点的任务，因此不要求（和拥有）对群状态的感知。
 
 ## <a name="swarm-mode-system-requirements"></a>群模式系统要求
 
-至少一个物理或虚拟计算机系统 (若要使用 swarm 的完整功能, 建议至少两个节点) 运行**windows 10 创意者更新**或**windows Server 2016** ,*使用所有最新的更新 \ **, 设置作为容器主机 (有关如何开始使用 Windows 10 上的 Docker 容器的详细信息, 请参阅 windows 10 上的 windows[容器](https://docs.microsoft.com/virtualization/windowscontainers/quick-start/quick-start-windows-10)或[windows Server 上](https://docs.microsoft.com/virtualization/windowscontainers/quick-start/quick-start-windows-server)的 windows 容器中的主题)。
+至少一个物理或虚拟计算机系统（若要使用 swarm 的完整功能，建议至少两个节点）运行**windows 10 创意者更新**或**windows Server 2016** ，*使用所有最新的更新 \ **，设置作为容器主机（有关如何开始使用 Windows 10 上的 Docker 容器的详细信息，请参阅 windows 10 上的 windows[容器](https://docs.microsoft.com/virtualization/windowscontainers/quick-start/quick-start-windows-10)或[windows Server 上](https://docs.microsoft.com/virtualization/windowscontainers/quick-start/quick-start-windows-server)的 windows 容器中的主题）。
 
 \***注意**：Windows Server 2016 上的 Docker 群需要 [KB4015217](https://support.microsoft.com/help/4015217/windows-10-update-kb4015217)
 
@@ -112,7 +112,7 @@ C:\> docker service create --name=<SERVICENAME> --endpoint-mode dnsrr --network=
 此时，\<SERVICENAME\> 是你要提供给服务的名称，你将使用该名称通过服务发现（使用 Docker 的本机 DNS 服务器）引用服务。 \<NETWORKNAME\> 是你想要将该服务连接到的网络的名称（例如，“myOverlayNet”）。 \<CONTAINERIMAGE\> 是将对服务进行定义的容器映像的名称。
 
 >[!NOTE]
->此命令`--endpoint-mode dnsrr`的第二个参数需要指定到 Docker 引擎, DNS 循环策略将用于在服务容器终结点之间平衡网络流量。 目前，DNS 轮循是在 Windows 上受支持的唯一一个负载平衡策略。用于 Windows docker 主机的[路由网](https://docs.docker.com/engine/swarm/ingress/) 暂时还不受支持，但将很快发布。 寻找替代性负载平衡策略的用户现在可以设置一个外部负载平衡器（例如，NGINX），并使用群的[发布端口模式](https://docs.docker.com/engine/reference/commandline/service_create/#/publish-service-ports-externally-to-the-swarm--p---publish) 公开要进行负载平衡的容器主机端口。
+>此命令`--endpoint-mode dnsrr`的第二个参数需要指定到 Docker 引擎，DNS 循环策略将用于在服务容器终结点之间平衡网络流量。 目前，DNS 循环是 Windows Server 2016 上支持的唯一负载平衡策略。Windows 窗口2019（及更高版本）上支持 Windows docker 托管的[路由网格](https://docs.docker.com/engine/swarm/ingress/)，但在 windows server 2016 上不支持。 在 Windows Server 2016 上查找替代负载平衡策略的用户现在可以设置外部负载平衡器（例如 NGINX），并使用 Swarm 的[发布端口模式](https://docs.docker.com/engine/reference/commandline/service_create/#/publish-service-ports-externally-to-the-swarm--p---publish)来公开要平衡流量的容器主机端口。
 
 ## <a name="scaling-a-service"></a>缩放服务
 将服务部署到群群集后，组成该服务的容器实例会部署到整个群集中。 默认情况下，一项服务由一个容器实例（服务的“副本”或“任务”）支持。 但是，通过对 `docker service create` 命令使用 `--replicas` 选项或在创建服务后缩放服务，也可以创建具有多个任务的服务。
@@ -181,7 +181,7 @@ C:\> docker swarm init --advertise-addr=<HOSTIPADDRESS> --listen-addr <HOSTIPADD
 为了对混合操作系统群群集启动 Docker 服务，必须采用某种方法来区分哪些群节点运行的操作系统是该服务所面向的操作系统，哪些不是。 [Docker 对象标签](https://docs.docker.com/engine/userguide/labels-custom-metadata/)提供了一种有用的方法来标记节点，以便可以创建服务并将其配置为仅在与其操作系统匹配的节点上运行。 
 
 >[!NOTE]
->[Docker 对象标签](https://docs.docker.com/engine/userguide/labels-custom-metadata/)可用于将元数据应用到各种 Docker 对象 (包括容器图像、容器、卷和网络) 和各种用途 (例如, 可以使用标签分隔 "前端" 和 "后端" 部分)应用程序 (通过允许前端 microservices 仅 secheduled 标记节点和后端 mircoservices 的 "前端"), 以便仅在 "后端" 标记的节点上进行计划。 在本例中，我们使用节点上的标签以区分 Windows 操作系统节点和 Linux 操作系统节点。
+>[Docker 对象标签](https://docs.docker.com/engine/userguide/labels-custom-metadata/)可用于将元数据应用到各种 Docker 对象（包括容器图像、容器、卷和网络）和各种用途（例如，可以使用标签分隔 "前端" 和 "后端" 部分）应用程序（通过允许前端 microservices 仅 secheduled 标记节点和后端 mircoservices 的 "前端"），以便仅在 "后端" 标记的节点上进行计划。 在本例中，我们使用节点上的标签以区分 Windows 操作系统节点和 Linux 操作系统节点。
 
 若要标记现有的群节点，请使用以下语法：
 
@@ -224,10 +224,13 @@ C:\> docker service create --name=linux_s1 --endpoint-mode dnsrr --network testo
 ## <a name="limitations"></a>限制
 当前，Windows 上的群模式有以下限制：
 - 不支持数据平面加密（即，使用 `--opt encrypted` 选项的容器间通信）
-- 暂时不支持用于 Windows docker 主机的[路由网](https://docs.docker.com/engine/swarm/ingress/)，但即将发布。 寻找替代性负载平衡策略的用户现在可以设置一个外部负载平衡器（例如，NGINX），并使用群的[发布端口模式](https://docs.docker.com/engine/reference/commandline/service_create/#/publish-service-ports-externally-to-the-swarm--p---publish) 公开要进行负载平衡的容器主机端口。 下面是有关这方面的更多详细信息。
+- Windows docker 主机的[路由网格](https://docs.docker.com/engine/swarm/ingress/)在 windows server 2016 上不受支持，但只能从 windows server 2019 向前。 寻找替代性负载平衡策略的用户现在可以设置一个外部负载平衡器（例如，NGINX），并使用群的[发布端口模式](https://docs.docker.com/engine/reference/commandline/service_create/#/publish-service-ports-externally-to-the-swarm--p---publish) 公开要进行负载平衡的容器主机端口。 下面是有关这方面的更多详细信息。
+
+ >[!NOTE]
+>有关如何设置 Docker Swarm 路由网格的更多详细信息，请参阅此[博客文章](https://docs.microsoft.com/en-us/virtualization/community/team-blog/2017/20170926-docker-s-routing-mesh-available-with-windows-server-version-1709)
 
 ## <a name="publish-ports-for-service-endpoints"></a>发布服务终结点的端口
-Windows 尚不支持 Docker 群的[路由网](https://docs.docker.com/engine/swarm/ingress/)功能，但是寻求发布服务终结点端口的用户现在可以使用发布端口模式来执行此操作。 
+ 希望为其服务终结点发布端口的用户可以使用 "发布端口模式" 或 "Docker Swarm" 的[路由网格](https://docs.docker.com/engine/swarm/ingress/)功能来完成此操作。 
 
 若要为定义服务的每个任务/容器终结点发布主机端口，请对 `docker service create` 命令使用 `--publish mode=host,target=<CONTAINERPORT>` 参数：
 
