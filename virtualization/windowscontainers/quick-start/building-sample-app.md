@@ -3,44 +3,50 @@ title: Containerize .NET Core 应用
 description: 了解如何使用容器构建 .NET core 应用示例
 keywords: docker, 容器
 author: cwilhit
-ms.date: 09/10/2019
+ms.author: crwilhit
+ms.date: 11/12/2019
 ms.topic: article
 ms.prod: windows-containers
 ms.service: windows-containers
-ms.openlocfilehash: db3caea3f7911ec6641930302198f976bd61240d
-ms.sourcegitcommit: da762ce138467e50dce22d5086ad407138b38e48
+ms.openlocfilehash: fab0dc46ddcc8c82a010d408032e5f3c4cea8d69
+ms.sourcegitcommit: e61db4d98d9476a622e6cc8877650d9e7a6b4dd9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "10261826"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "10288065"
 ---
 # <a name="containerize-a-net-core-app"></a>Containerize .NET Core 应用
 
-此段假定你的开发环境已配置为使用容器。 如果你没有为容器配置环境，请访问 "[设置你的环境](./set-up-environment.md)" 以了解如何开始使用。
+本主题介绍了如何将现有的现有 .NET 应用作为 Windows 容器进行打包，如 "入门" 中所述，在设置你的环境之后[：准备用于容器的窗口](set-up-environment.md)和运行第一个容器，如[运行你的第一个 windows 容器](run-your-first-container.md)中所述。
 
-你将需要在计算机上安装 Git 源控制系统。 可在此处抓取： [Git](https://git-scm.com/download)
+你还需要在计算机上安装 Git 源控制系统。 若要安装它，请访问[Git](https://git-scm.com/download)。
 
-## <a name="clone-the-sample-code"></a>克隆示例代码
+## <a name="clone-the-sample-code-from-github"></a>克隆 GitHub 中的示例代码
 
-所有容器示例源代码均保留在名`windows-container-samples`为的文件夹中的 "[虚拟化-文档](https://github.com/MicrosoftDocs/Virtualization-Documentation)git 存储库" 下。 将此 git 存储库复制到你的 curent 工作目录。
+所有容器示例源代码均保留在名`windows-container-samples`为的文件夹中的 "[虚拟化-文档](https://github.com/MicrosoftDocs/Virtualization-Documentation)git 存储库（称为存储库）" 下。
 
-```Powershell
-git clone https://github.com/MicrosoftDocs/Virtualization-Documentation.git
-```
+1. 打开 PowerShell 会话并将目录更改为要存储该存储库的文件夹。 （其他命令提示符窗口类型同样适用，但我们的示例命令使用 PowerShell。）
+2. 将存储库复制到当前工作目录：
 
-导航到在 "" 下`Virtualization-Documentation\windows-container-samples\asp-net-getting-started`找到的示例目录，并创建 Dockerfile。 [Dockerfile](https://docs.docker.com/engine/reference/builder/)就像是一个 makefile，它是指示容器引擎必须如何生成容器映像的指令列表。
+   ```PowerShell
+   git clone https://github.com/MicrosoftDocs/Virtualization-Documentation.git
+   ```
 
-```Powershell
-# navigate into the sample directory
-Set-Location -Path Virtualization-Documentation\windows-container-samples\asp-net-getting-started
+3. 使用以下命令导航到 "创建`Virtualization-Documentation\windows-container-samples\asp-net-getting-started` Dockerfile" 下找到的示例目录。
 
-# create the Dockerfile for our project
-New-Item -Name Dockerfile -ItemType file
-```
+   [Dockerfile](https://docs.docker.com/engine/reference/builder/)类似于生成文件，它是指示容器引擎如何构建容器映像的指令列表。
 
-## <a name="write-the-dockerfile"></a>编写 dockerfile
+   ```Powershell
+   # Navigate into the sample directory
+   Set-Location -Path Virtualization-Documentation\windows-container-samples\asp-net-getting-started
 
-打开您刚刚创建的 dockerfile （通过您的任何别致的文本编辑器），并添加以下内容。
+   # Create the Dockerfile for our project
+   New-Item -Name Dockerfile -ItemType file
+   ```
+
+## <a name="write-the-dockerfile"></a>编写 Dockerfile
+
+打开您刚刚创建的 Dockerfile，用您喜欢的任何文本编辑器，然后添加以下内容：
 
 ```Dockerfile
 FROM mcr.microsoft.com/dotnet/core/sdk:2.1 AS build-env
@@ -95,39 +101,51 @@ ENTRYPOINT ["dotnet", "asp-net-getting-started.dll"]
 
 由于我们的应用程序是 ASP.NET，因此我们将指定一个包含此运行时的映像。 我们随后将所有文件从临时容器的输出目录复制到最终容器中。 我们将容器配置为在容器启动时通过我们的新应用作为其入口点运行
 
-我们编写了 dockerfile 来执行_多阶段生成_。 在执行 dockerfile 时，它将使用临时容器`build-env`，使用 .net CORE 2.1 SDK 生成示例应用，然后将输出二进制文件复制到仅包含 .net core 2.1 运行时的另一个容器中，以便我们最大程度地减少最终容器。
+我们编写了 dockerfile 来执行_多阶段生成_。 在执行 dockerfile 时，它将使用临时容器`build-env`和 .net CORE 2.1 SDK 生成示例应用，然后将输出二进制文件复制到仅包含 .net core 2.1 运行时的另一个容器中，以便我们将最终容器的大小降到最低。
 
-## <a name="run-the-app"></a>运行应用
+## <a name="build-and-run-the-app"></a>生成并运行应用
 
-编写 dockerfile 后，我们可以在我们的 dockerfile 上指向 Docker，并告诉它构建图像。 
+编写 Dockerfile 后，我们可以在我们的 Dockerfile 上指向 Docker，并告诉它构建并运行我们的图像：
 
->[!IMPORTANT]
->以下执行的命令需要在 dockerfile 驻留的目录中执行。
+1. 在命令提示符窗口中，导航到 dockerfile 驻留的目录，然后运行[docker build](https://docs.docker.com/engine/reference/commandline/build/)命令以从 dockerfile 构建容器。
 
-```Powershell
-docker build -t my-asp-app .
-```
+   ```Powershell
+   docker build -t my-asp-app .
+   ```
 
-若要运行容器，请执行下面的命令。
+2. 若要运行新生成的容器，请运行[docker "运行](https://docs.docker.com/engine/reference/commandline/run/)" 命令。
 
-```Powershell
-docker run -d -p 5000:80 --name myapp my-asp-app
-```
+   ```Powershell
+   docker run -d -p 5000:80 --name myapp my-asp-app
+   ```
 
-让我们 dissect 此命令：
+   让我们 dissect 此命令：
 
-* `-d` 告诉 Docker tun 运行容器 "已分离"，这意味着不会将任何控制台挂钩到容器内的控制台。 容器在后台运行。 
-* `-p 5000:80` 告诉 Docker 将主机上的端口5000映射到容器中的端口80。 每个容器都获得自己的 IP 地址。 默认情况下，ASP .NET 在端口80上侦听。 通过端口映射，我们可以在映射端口上转到主机的 IP 地址，并且 Docker 会将所有流量转发到容器内的目标端口。
-* `--name myapp` 通知 Docker 为此容器提供一个方便的名称来进行查询（而无需在运行时通过 Docker 器查找分配的 contaienr ID）。
-* `my-asp-app` 是希望 Docker 运行的图像。 这是`docker build`进程的 culmination 生成的容器图像。
+   * `-d` 告诉 Docker tun 运行容器 "已分离"，这意味着不会将任何控制台挂钩到容器内的控制台。 容器在后台运行。 
+   * `-p 5000:80` 告诉 Docker 将主机上的端口5000映射到容器中的端口80。 每个容器都获得自己的 IP 地址。 默认情况下，ASP .NET 在端口80上侦听。 通过端口映射，我们可以在映射端口上转到主机的 IP 地址，并且 Docker 会将所有流量转发到容器内的目标端口。
+   * `--name myapp` 通知 Docker 为此容器提供一个方便的名称来进行查询（而无需在运行时通过 Docker 器查找分配的 contaienr ID）。
+   * `my-asp-app` 是希望 Docker 运行的图像。 这是`docker build`进程的 culmination 生成的容器图像。
 
-打开 web 浏览器 web 浏览器，并`http://localhost:5000`导航到向的应用程序。
+3. 打开 web 浏览器 web 浏览器，然后`http://localhost:5000`导航到要查看容器化的应用程序，如以下屏幕截图所示：
 
->![](media/SampleAppScreenshot.png)
+   >![ASP.NET 核心网页，从容器中的本地主机运行](media/SampleAppScreenshot.png)
 
 ## <a name="next-steps"></a>后续步骤
 
-我们已成功将 ASP.NET web 应用进行了容器。 若要查看更多应用示例及其关联的 dockerfiles，请单击下面的按钮。
+1. 下一步是使用 Azure 容器注册表将已容器的 ASP.NET web 应用发布到专用注册表。 这使您可以在您的组织中部署它。
 
-> [!div class="nextstepaction"]
-> [查看更多容器示例](../samples.md)
+   > [!div class="nextstepaction"]
+   > [创建私人容器注册表](https://docs.microsoft.com/azure/container-registry/container-registry-get-started-powershell)
+
+   当你转到将[容器映像推送到注册表](https://docs.microsoft.com/azure/container-registry/container-registry-get-started-powershell#push-image-to-registry)的分区时，请指定你刚刚打包（`my-asp-app`）的 ASP.NET 应用的名称和你的容器注册表（例如： `contoso-container-registry`）：
+
+   ```PowerShell
+   docker tag my-asp-app contoso-container-registry.azurecr.io/my-asp-app:v1
+   ```
+
+   若要查看更多应用示例及其关联的 dockerfiles，请参阅[其他容器示例](../samples.md)。
+
+2. 将应用发布到容器注册表后，下一步是将应用部署到使用 Azure Kubernetes 服务创建的 Kubernetes 群集。
+
+   > [!div class="nextstepaction"]
+   > [创建 Kubernetes 群集](https://docs.microsoft.com/azure/aks/windows-container-cli)

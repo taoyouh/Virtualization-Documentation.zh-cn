@@ -1,44 +1,41 @@
 ---
 title: Windows 10 上的 windows 和 Linux 容器
-description: 容器部署快速入门
+description: 为容器设置 Windows 10 或 Windows Server，然后继续运行第一个容器图像。
 keywords: docker、容器、LCOW
 author: cwilhit
-ms.date: 09/11/2019
+ms.author: crwilhit
+ms.date: 11/12/2019
 ms.topic: article
 ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: bb9bfbe0-5bdc-4984-912f-9c93ea67105f
-ms.openlocfilehash: 5f0922a1ee2588b6e5a06091fe34e07ceadf89cb
-ms.sourcegitcommit: 868a64eb97c6ff06bada8403c6179185bf96675f
+ms.openlocfilehash: 2c52dd96b3bf2402d41ec5b178af36521d00a649
+ms.sourcegitcommit: e61db4d98d9476a622e6cc8877650d9e7a6b4dd9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2019
-ms.locfileid: "10129359"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "10288115"
 ---
-# <a name="get-started-configure-your-environment-for-containers"></a>入门：为容器配置你的环境
+# <a name="get-started-prep-windows-for-containers"></a>入门：为容器准备窗口
 
-此快速入门演示了如何：
+本教程介绍了如何：
 
-> [!div class="checklist"]
-> * 设置容器的环境
-> * 运行第一个容器图像
-> * Containerize 简单的 .NET core 应用程序
+- 设置 Windows 10 或 Windows Server for 容器
+- 运行第一个容器图像
+- Containerize 简单的 .NET core 应用程序
 
 ## <a name="prerequisites"></a>系统必备
 
 <!-- start tab view -->
 # [<a name="windows-server"></a>Windows Server](#tab/Windows-Server)
 
-请确保满足以下要求：
+若要在 Windows Server 上运行容器，需要物理服务器或运行 Windows Server （半年频道）、Windows Server 2019 或 Windows Server 2016 的虚拟机。
 
-- 运行 Windows Server 2016 或更高版本的一台计算机系统（物理或虚拟）。
+对于测试，你可以下载[Window server 2019 评估版](https://www.microsoft.com/evalcenter/evaluate-windows-server-2019 )或[Windows Server 预览体验计划预览版](https://insider.windows.com/for-business-getting-started-server/)的副本。
 
-> [!NOTE]
-> 如果你使用的是 Windows Server 2019 预览体验计划预览版，请更新到[Window server 2019 评估](https://www.microsoft.com/evalcenter/evaluate-windows-server-2019 )。
+# [<a name="windows-10"></a>Windows10](#tab/Windows-10-Client)
 
-# [<a name="windows-10-professional-and-enterprise"></a>Windows 10 专业版和企业版](#tab/Windows-10-Client)
-
-请确保满足以下要求：
+若要在 Windows 10 上运行容器，你需要以下各项：
 
 - 运行 Windows 10 专业版或企业版的一台物理计算机系统（版本1607）或更高版本。
 - 应启用[hyper-v](https://docs.microsoft.com/virtualization/hyper-v-on-windows/reference/hyper-v-requirements) 。
@@ -53,58 +50,62 @@ ms.locfileid: "10129359"
 
 ## <a name="install-docker"></a>安装 Docker
 
-Docker 是用于处理 Windows 容器的权威 native。 Docker 可为用户提供用于管理给定主机、生成容器、删除容器等的容器的 CLI。 了解有关我们的文档的[概念](../manage-containers/configure-docker-daemon.md)领域的 Docker 的详细信息。
+第一步是安装 Docker，它是使用 Windows 容器所必需的。 Docker 通过一个通用 API 和命令行界面（CLI）为容器提供标准的运行时环境。
+
+有关详细配置的详细信息，请参阅[Windows 上的 Docker 引擎](../manage-docker/configure-docker-daemon.md)。
 
 <!-- start tab view -->
 # [<a name="windows-server"></a>Windows Server](#tab/Windows-Server)
 
-在 Windows Server 上，Docker 是通过 Microsoft 发布的[OneGet 提供商 PowerShell 模块](https://github.com/oneget/oneget)安装的，该模块由 Microsoft 名为[DockerMicrosoftProvider](https://github.com/OneGet/MicrosoftDockerProvider)。 此提供商：
+若要在 Windows Server 上安装 Docker，你可以使用 Microsoft 发布的[OneGet 提供商 PowerShell 模块](https://github.com/oneget/oneget)，称为[DockerMicrosoftProvider](https://github.com/OneGet/MicrosoftDockerProvider)。 此提供程序支持 Windows 中的容器功能并安装 Docker 引擎和客户端。 操作方法如下：
 
-- 在你的计算机上启用容器功能
-- 在你的计算机上安装 Docker 引擎和客户端。
+1. 打开一个提升了权限的 PowerShell 会话，并从[PowerShell 库](https://www.powershellgallery.com/packages/DockerMsftProvider)安装 Docker-Microsoft PackageManagement 提供商。
 
-若要安装 Docker，请打开一个提升的 PowerShell 会话，然后从[PowerShell 库](https://www.powershellgallery.com/packages/DockerMsftProvider)中安装 Docker-Microsoft PackageManagement 提供商。
+   ```powershell
+   Install-Module -Name DockerMsftProvider -Repository PSGallery -Force
+   ```
 
-```powershell
-Install-Module -Name DockerMsftProvider -Repository PSGallery -Force
-```
+   如果系统提示你安装 NuGet 提供程序，请键入`Y`进行安装。
 
-接下来，使用 PackageManagement PowerShell 模块安装最新版本的 Docker。
+2. 使用 PackageManagement PowerShell 模块安装最新版本的 Docker。
 
-```powershell
-Install-Package -Name docker -ProviderName DockerMsftProvider
-```
+   ```powershell
+   Install-Package -Name docker -ProviderName DockerMsftProvider
+   ```
 
-PowerShell 询问是否信任包源“DockerDefault”时，键入 `A` 以继续进行安装。 安装完成后，必须重新启动计算机。
+   PowerShell 询问是否信任包源“DockerDefault”时，键入 `A` 以继续进行安装。
+3. 安装完成后，重新启动计算机。
 
-```powershell
-Restart-Computer -Force
-```
+   ```powershell
+   Restart-Computer -Force
+   ```
 
-> [!TIP]
-> 如果想要在以后更新 Docker：
->  - 查看已安装的版本，查看时使用 `Get-Package -Name Docker -ProviderName DockerMsftProvider`
->  - 查找当前版本，查找时使用 `Find-Package -Name Docker -ProviderName DockerMsftProvider`
->  - 当你准备就绪后，进行升级，升级时使用 `Install-Package -Name Docker -ProviderName DockerMsftProvider -Update -Force`，后跟 `Start-Service Docker`
+如果想要在以后更新 Docker：
 
-# [<a name="windows-10-professional-and-enterprise"></a>Windows 10 专业版和企业版](#tab/Windows-10-Client)
+- 查看已安装的版本，查看时使用 `Get-Package -Name Docker -ProviderName DockerMsftProvider`
+- 查找当前版本，查找时使用 `Find-Package -Name Docker -ProviderName DockerMsftProvider`
+- 当你准备就绪后，进行升级，升级时使用 `Install-Package -Name Docker -ProviderName DockerMsftProvider -Update -Force`，后跟 `Start-Service Docker`
 
-在 Windows 10 专业版和企业版上，Docker 是通过经典安装程序安装的。 下载[Docker 桌面](https://store.docker.com/editions/community/docker-ce-desktop-windows)并运行安装程序。 您将需要登录。 如果尚未有帐户，请创建一个帐户。 [Docker 文档](https://docs.docker.com/docker-for-windows/install)中提供了更详细的安装说明。
+# [<a name="windows-10"></a>Windows10](#tab/Windows-10-Client)
 
-安装后，Docker 桌面默认为运行 Linux 容器。 使用 Docker 任务栏菜单或通过在 PowerShell 提示符中运行以下命令，切换到 Windows 容器：
+你可以通过使用以下步骤在 Windows 10 专业版和企业版版上安装 Docker。 
 
-```console
-& $Env:ProgramFiles\Docker\Docker\DockerCli.exe -SwitchDaemon .
-```
+1. 下载并安装[Docker 桌面](https://store.docker.com/editions/community/docker-ce-desktop-windows)，如果尚无空闲的 docker 帐户，则创建一个。 有关更多详细信息，请参阅[Docker 文档](https://docs.docker.com/docker-for-windows/install)。
 
-![](./media/docker-for-win-switch.png)
+2. 在安装过程中，将默认容器类型设置为 Windows 容器。 若要在安装完成后进行切换，你可以使用 Windows 系统任务栏中的 Docker 项目（如下所示），或者在 PowerShell 提示符中使用以下命令：
+
+   ```console
+   & $Env:ProgramFiles\Docker\Docker\DockerCli.exe -SwitchDaemon .
+   ```
+
+![显示 "切换到 Windows 容器" 命令的 Docker 系统托盘菜单。](./media/docker-for-win-switch.png)
 
 ---
 <!-- stop tab view -->
 
 ## <a name="next-steps"></a>后续步骤
 
-现在已正确配置你的环境，请按照链接了解如何拉取和运行容器。
+现在已正确配置你的环境，请按照链接了解如何运行容器。
 
 > [!div class="nextstepaction"]
 > [运行第一个容器](./run-your-first-container.md)
