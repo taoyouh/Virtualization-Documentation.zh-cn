@@ -3,12 +3,12 @@ title: Windows 容器版本兼容性
 description: Windows 如何跨多个版本运行内部版本和容器
 keywords: 元数据, 容器, 版本
 author: taylorb-microsoft
-ms.openlocfilehash: 74e708969a33b9d98b627165a9a47b8017ce2129
-ms.sourcegitcommit: 604323c8815860679cd13e96b2f533b7a0e83c23
+ms.openlocfilehash: 1f068cd011b2172e75c240d566473ccab25d984a
+ms.sourcegitcommit: 48ede8f27e089926b5b867037f31d14500af84ce
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2019
-ms.locfileid: "10286521"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "10296027"
 ---
 # <a name="windows-container-version-compatibility"></a>Windows 容器版本兼容性
 
@@ -62,6 +62,15 @@ Windows Server 2016 和 Windows 10 周年更新（两个版本14393）是可以�
 
 <!-- start tab view -->
 
+# [<a name="windows-10-version-1909"></a>Windows 10 版本1909](#tab/windows-10-1909)
+
+|容器基映像 OS 版本|支持 Hyper-v 隔离|支持进程隔离|
+|---|:---:|:---:|
+|Windows Server，版本1909|&#10004;|&#10060;|
+|Windows Server，版本1903|&#10004;|&#10060;|
+|Windows Server 2019|&#10004;|&#10060;|
+|Windows Server 2016|&#10004;|&#10060;|
+
 # [<a name="windows-10-version-1903"></a>Windows 10 版本1903](#tab/windows-10-1903)
 
 |容器基映像 OS 版本|支持 Hyper-v 隔离|支持进程隔离|
@@ -69,7 +78,6 @@ Windows Server 2016 和 Windows 10 周年更新（两个版本14393）是可以�
 |Windows Server，版本1909|&#10060;|&#10060;|
 |Windows Server，版本1903|&#10004;|&#10060;|
 |Windows Server 2019|&#10004;|&#10060;|
-|Windows Server 版本 1803|&#10004;|&#10060;|
 |Windows Server 2016|&#10004;|&#10060;|
 
 # [<a name="windows-10-version-1809"></a>Windows 10 版本 1809](#tab/windows-10-1809)
@@ -79,15 +87,6 @@ Windows Server 2016 和 Windows 10 周年更新（两个版本14393）是可以�
 |Windows Server，版本1909|&#10060;|&#10060;|
 |Windows Server，版本1903|&#10060;|&#10060;|
 |Windows Server 2019|&#10004;|&#10060;|
-|Windows Server 2016|&#10004;|&#10060;|
-
-# [<a name="windows-10-version-1803"></a>Windows 10 版本 1803](#tab/windows-10-1803)
-
-|容器基映像 OS 版本|支持 Hyper-v 隔离|支持进程隔离|
-|---|:---:|:---:|
-|Windows Server，版本1909|&#10060;|&#10060;|
-|Windows Server，版本1903|&#10060;|&#10060;|
-|Windows Server 2019|&#10060;|&#10060;|
 |Windows Server 2016|&#10004;|&#10060;|
 
 ---
