@@ -48,8 +48,8 @@
 #### [加入 Windows 工作人员](kubernetes/joining-windows-workers.md)
 #### [加入 Linux 工作人员](kubernetes/joining-linux-workers.md)
 #### [部署 Kubernetes 资源](kubernetes/deploying-resources.md)
-#### [故障排除](kubernetes/common-problems.md)
-#### [Kubernetes 上的 Windows 服务](kubernetes/kube-windows-services.md)
+#### [疑难解答](kubernetes/common-problems.md)
+#### [Kubernetes 为 Windows 服务](kubernetes/kube-windows-services.md)
 #### [编译 Kubernetes 二进制文件](kubernetes/compiling-kubernetes-binaries.md)
 ### 服务结构
 #### [服务结构和容器](/azure/service-fabric/service-fabric-containers-overview)
@@ -84,6 +84,6 @@
 
 # 资源
 ## [容器示例](samples.md)
-## [故障排除](troubleshooting.md)
+## [疑难解答](troubleshooting.md)
 ## [容器论坛](https://social.msdn.microsoft.com/Forums/home?forum=windowscontainers)
 ## [社区视频和博客](communitylinks.md)
