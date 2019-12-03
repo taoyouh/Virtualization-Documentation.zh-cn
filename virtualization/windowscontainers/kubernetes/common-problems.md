@@ -7,12 +7,12 @@ ms.topic: troubleshooting
 ms.prod: containers
 description: 关于部署 Kubernetes 和加入 Windows 节点的常见问题的解决方案。
 keywords: kubernetes、1.14、linux、compile
-ms.openlocfilehash: 54396f4b350fa7dfe59e073601f41b0a73f06dca
-ms.sourcegitcommit: 76dce6463e820420073dda2dbad822ca4a6241ef
+ms.openlocfilehash: 471731ec50c7c03816a956bd7aae859ad218be6d
+ms.sourcegitcommit: 1ca9d7562a877c47f227f1a8e6583cb024909749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "10307260"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "10332358"
 ---
 # Kubernetes 疑难解答 #
 此页面逐一介绍 Kubernetes 设置、网络和部署的一些常见问题。
@@ -45,7 +45,7 @@ nssm set <Service Name> AppStderr C:\k\mysvc.log
 ## 常见网络错误 ##
 
 ### 负载平衡器通过群集节点进行不一致的查明 ###
-在（默认） kube-代理配置中，包含100个 + 负载平衡器的群集可能会用尽可用的暂时 TCP 端口（a.k.a。 由于每个（非 DSR）负载平衡器的每个节点上保留了大量端口，因此动态端口范围通常包括端口49152到65535）。 这可能会通过 kube-代理中的错误（如：
+在 Windows 上，kube-proxy 为群集中的每个 Kubernetes 服务创建一个 HNS 负载平衡器。 在（默认） kube-代理配置中，包含许多（通常为 100 +）负载平衡器的群集中的节点可能会用尽可用的暂时 TCP 端口（a.k.a。 动态端口范围，默认情况下包括端口49152到65535）。 这是因为每个（非 DSR）负载平衡器在每个节点上保留了大量端口。 此问题可能会通过 kube-代理中的错误（如：
 ```
 Policy creation failed: hcnCreateLoadBalancer failed in Win32: The specified port already exists.
 ```
@@ -55,9 +55,9 @@ Policy creation failed: hcnCreateLoadBalancer failed in Win32: The specified por
 还`CollectLogs.ps1`将模拟 "HNS 分配逻辑" 以测试临时 TCP 端口范围内的端口池分配可用性，并在中`reservedports.txt`报告成功/失败。 该脚本保留10个范围的 64 TCP 临时端口（用于模拟 HNS 行为），计算成功的保留成功 & 失败次数，然后释放分配的端口范围。 如果成功号小于10，则表示暂时池的可用空间不足。 还将生成一个 heuristical 摘要，显示大约有多少个64块端口保留`reservedports.txt`。
 
 若要解决此问题，可以采取以下几个步骤：
-1.  对于永久解决方案，kube-代理负载平衡应设置为[DSR 模式](https://techcommunity.microsoft.com/t5/Networking-Blog/Direct-Server-Return-DSR-in-a-nutshell/ba-p/693710)。 很遗憾，在较新的[Windows Server 预览体验计划内部版本 18945](https://blogs.windows.com/windowsexperience/2019/07/30/announcing-windows-server-vnext-insider-preview-build-18945/#o1bs7T2DGPFpf7HM.97) （或更高版本）上完全实现 DSR 模式。
+1.  对于永久解决方案，kube-代理负载平衡应设置为[DSR 模式](https://techcommunity.microsoft.com/t5/Networking-Blog/Direct-Server-Return-DSR-in-a-nutshell/ba-p/693710)。 在较新的[Windows Server 预览体验计划内部版本 18945](https://blogs.windows.com/windowsexperience/2019/07/30/announcing-windows-server-vnext-insider-preview-build-18945/#o1bs7T2DGPFpf7HM.97) （或更高版本）上，已完全实现 DSR 模式且可用。
 2. 作为解决方法，用户还可以使用诸如之类的命令增加可用的暂时端口的默认 Windows 配置`netsh int ipv4 set dynamicportrange TCP <start_port> <port_count>`。 *警告：* 覆盖默认动态端口范围可能会对主机上依赖于非暂时范围内可用的 TCP 端口的其他进程/服务产生影响，因此应仔细选择此范围。
-3. 我们还致力于使用智能端口池共享（计划在2020年第1季度累积更新中发布），使用智能端口池共享来实现对非 DSR 模式负载平衡器的可伸缩性增强。
+3. 使用智能端口池共享可伸缩性增强到非 DSR 模式负载平衡器，这计划通过第1季度2020中的累积更新发布。
 
 ### HostPort 发布不起作用 ###
 目前不能使用 Kubernetes `containers.ports.hostPort`字段发布端口，因为 Windows CNI 插件不会遵守此字段。 在节点上发布端口时，请使用 NodePort 发布。
