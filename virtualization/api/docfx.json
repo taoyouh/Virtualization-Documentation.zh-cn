@@ -2,13 +2,14 @@
   "build": {
     "content": [
       {
-        "files": [
-          "**/*.md"
-        ],
+        "files": ["**/**.md", "**/**.yml"],
         "exclude": [
           "**/obj/**",
-          "virtualization/api/**",
-          "**/includes/**"
+          "**/includes/**",
+          "README.md",
+          "LICENSE",
+          "LICENSE-CODE",
+          "ThirdPartyNotices"
         ]
       }
     ],
@@ -20,14 +21,17 @@
         ],
         "exclude": [
           "**/obj/**",
-          "virtualization/api/**",
           "**/includes/**"
         ]
       }
     ],
     "overwrite": [],
-    "externalReference": [],
-    "globalMetadata": {},
+    "externalReference": [], 
+    "globalMetadata": {
+      "disable_contribution_on_translation_quality": ["MTE95","MTE75","MT"],
+      "breadcrumb_path": "/virtualization/toc.json",
+      "extendBreadcrumb": true
+    },
     "fileMetadata": {},
     "template": [],
     "dest": "virtualization/api"
