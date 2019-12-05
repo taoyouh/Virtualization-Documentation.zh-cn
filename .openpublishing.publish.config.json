@@ -1,7 +1,5 @@
 {
   "build_entry_point": "",
-  "need_generate_pdf": false,
-  "need_generate_intellisense": false,
   "docsets_to_publish": [
     {
       "docset_name": "Microsoft_Windows-Container-Documentation-Private_api",
@@ -9,14 +7,15 @@
       "build_output_subfolder": "virtualization-api",
       "locale": "zh-cn",
       "monikers": [],
-      "open_to_public_contributors": false,
+      "open_to_public_contributors": true,
       "type_mapping": {
         "Conceptual": "Content",
         "ManagedReference": "Content",
         "RestApi": "Content"
       },
       "build_entry_point": "docs",
-      "template_folder": "_themes"
+      "template_folder": "_themes",
+      "version": 0
     },
     {
       "docset_name": "Microsoft_Windows-Container-Documentation-Private_community",
@@ -24,12 +23,13 @@
       "build_output_subfolder": "virtualization-community",
       "locale": "zh-cn",
       "monikers": [],
-      "open_to_public_contributors": false,
+      "open_to_public_contributors": true,
       "type_mapping": {
         "Conceptual": "Content"
       },
       "build_entry_point": "docs",
-      "template_folder": "_themes"
+      "template_folder": "_themes",
+      "version": 0
     },
     {
       "docset_name": "Microsoft_Windows-Container-Documentation-Private_hyperv_on_windows",
@@ -37,12 +37,13 @@
       "build_output_subfolder": "virtualization-hyperv_on_windows",
       "locale": "zh-cn",
       "monikers": [],
-      "open_to_public_contributors": false,
+      "open_to_public_contributors": true,
       "type_mapping": {
         "Conceptual": "Content"
       },
       "build_entry_point": "docs",
-      "template_folder": "_themes"
+      "template_folder": "_themes",
+      "version": 0
     },
     {
       "docset_name": "Microsoft_Windows-Container-Documentation-Private_windowscontainers",
@@ -50,12 +51,13 @@
       "build_output_subfolder": "virtualization-windowscontainers",
       "locale": "zh-cn",
       "monikers": [],
-      "open_to_public_contributors": false,
+      "open_to_public_contributors": true,
       "type_mapping": {
         "Conceptual": "Content"
       },
       "build_entry_point": "docs",
-      "template_folder": "_themes"
+      "template_folder": "_themes",
+      "version": 0
     },
     {
       "docset_name": "virtualization",
@@ -63,27 +65,34 @@
       "build_output_subfolder": "virtualization",
       "locale": "zh-cn",
       "monikers": [],
-      "open_to_public_contributors": false,
+      "open_to_public_contributors": true,
       "type_mapping": {
         "Conceptual": "Content",
         "ManagedReference": "Content",
         "RestApi": "Content"
       },
       "build_entry_point": "docs",
-      "template_folder": "_themes"
+      "template_folder": "_themes",
+      "version": 0
     }
   ],
   "notification_subscribers": [
-    "scooley@microsoft.com",
-    "enderb@microsoft.com"
+    "benarm@microsoft.com"
   ],
+  "sync_notification_subscribers": [],
   "branches_to_filter": [
-    "master-oldev",
-    "live-oldev",
+    "live-sync-work",
+    "live",
     "master",
-    "live-sxs"
+    "master-sxs"
   ],
+  "git_repository_url_open_to_public_contributors": "https://github.com/MicrosoftDocs/Virtualization-Documentation.zh-cn",
+  "git_repository_branch_open_to_public_contributors": "live",
   "skip_source_output_uploading": false,
+  "need_preview_pull_request": true,
+  "contribution_branch_mappings": {
+    "live-sxs": "live"
+  },
   "dependent_repositories": [
     {
       "path_to_root": "_themes",
@@ -92,8 +101,14 @@
       "branch_mapping": {}
     },
     {
+      "path_to_root": "_themes.pdf",
+      "url": "https://github.com/Microsoft/templates.docs.msft.pdf",
+      "branch": "master",
+      "branch_mapping": {}
+    },
+    {
       "path_to_root": "_repo.en-us",
-      "url": "https://github.com/MicrosoftDocs/Virtualization-Documentation-Private",
+      "url": "https://github.com/MicrosoftDocs/partner-rest-pr",
       "branch": "live",
       "branch_mapping": {
         "live": "live",
@@ -101,5 +116,26 @@
       }
     }
   ],
-  "need_generate_pdf_url_template": false
+  "branch_target_mapping": {
+    "live": [
+      "Publish"
+    ],
+    "live-sxs": [
+      "Publish"
+    ],
+    "master": [
+      "Publish"
+    ],
+    "master-sxs": [
+      "Publish"
+    ]
+  },
+  "need_generate_pdf_url_template": false,
+  "targets": {
+    "Pdf": {
+      "template_folder": "_themes.pdf"
+    }
+  },
+  "need_generate_pdf": false,
+  "need_generate_intellisense": false
 }
