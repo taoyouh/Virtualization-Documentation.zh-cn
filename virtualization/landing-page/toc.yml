@@ -2,7 +2,7 @@
   tocHref: /virtualization/
   topicHref: /virtualization/index
   items:
-    - name: 基于 Windows 10 的 Hyper-V
+    - name: Windows 10 上的 Hyper-V
       tocHref: /virtualization/hyper-v-on-windows/
       topicHref: /virtualization/hyper-v-on-windows/index
     - name: Windows 上的容器
