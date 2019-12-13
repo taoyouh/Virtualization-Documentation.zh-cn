@@ -9,11 +9,11 @@ ms.prod: windows-10-hyperv
 ms.service: windows-10-hyperv
 ms.assetid: aee64ad0-752f-4075-a115-2d6b983b4f49
 ms.openlocfilehash: afbbcf120961081191aaf9051866427c9ce1478e
-ms.sourcegitcommit: 34d8b2ca5eebcbdb6958560b1f4250763bee5b48
+ms.sourcegitcommit: 1ca9d7562a877c47f227f1a8e6583cb024909749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/08/2019
-ms.locfileid: "9621275"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "74911177"
 ---
 # <a name="hypervisor-specifications"></a>虚拟机监控程序规范
 
@@ -24,14 +24,14 @@ Hyper-V 虚拟机监控程序顶层功能规范 (TLFS) 描述了虚拟机监控�
 > 此规范根据 Microsoft 开放规范承诺书而提供。  阅读以下内容，进一步了解有关 [Microsoft 开放规范承诺书](https://docs.microsoft.com/openspecs/dev_center/ms-devcentlp/51a0d3ff-9f77-464c-b83f-2de08ed28134)的详细信息。  
 
 #### <a name="download"></a>下载
-版本 | 文档
+发布版本 | 文档
 --- | ---
-Windows Server 2016（修订版 C） | [Hypervisor Top Level Functional Specification v5.0c.pdf](https://github.com/MicrosoftDocs/Virtualization-Documentation/raw/live/tlfs/Hypervisor%20Top%20Level%20Functional%20Specification%20v5.0C.pdf)
+Windows Server 2016（修订版 C） | [虚拟机监控程序顶级功能规范 v 5.0 c .pdf](https://github.com/MicrosoftDocs/Virtualization-Documentation/raw/live/tlfs/Hypervisor%20Top%20Level%20Functional%20Specification%20v5.0C.pdf)
 Windows Server 2012 R2（修订版 B） | [Hypervisor Top Level Functional Specification v4.0b.pdf](https://github.com/Microsoft/Virtualization-Documentation/raw/master/tlfs/Hypervisor%20Top%20Level%20Functional%20Specification%20v4.0b.pdf)
-WindowsServer 2012 | [Hypervisor Top Level Functional Specification v3.0.pdf](https://github.com/Microsoft/Virtualization-Documentation/raw/master/tlfs/Hypervisor%20Top%20Level%20Functional%20Specification%20v3.0.pdf)
+Windows Server 2012 | [Hypervisor Top Level Functional Specification v3.0.pdf](https://github.com/Microsoft/Virtualization-Documentation/raw/master/tlfs/Hypervisor%20Top%20Level%20Functional%20Specification%20v3.0.pdf)
 Windows Server 2008 R2 | [Hypervisor Top Level Functional Specification v2.0.pdf](https://github.com/Microsoft/Virtualization-Documentation/raw/master/tlfs/Hypervisor%20Top%20Level%20Functional%20Specification%20v2.0.pdf)
 
-## <a name="requirements-for-implementing-the-microsoft-hypervisor-interface"></a>实现 Microsoft 虚拟机监控程序接口的要求
+## <a name="requirements-for-implementing-the-microsoft-hypervisor-interface"></a>实现 Microsoft 虚拟机管理程序接口的要求
 
 TLFS 全面介绍了 Microsoft 指定虚拟机监控程序体系结构，该体系结构对来宾虚拟机来说即“HV#1”接口。  然而，TLFS 中描述的部分接口不需要通过声明遵循 Microsoft HV#1 虚拟机监控程序规范的第三方虚拟机监控程序实现。 若要了解最少有多少虚拟机监控程序接口必须通过声明遵循 Microsoft HV#1 接口规范的虚拟机监控程序实现，请参阅《实现 Microsoft 虚拟机监控程序接口的要求》文档。
 

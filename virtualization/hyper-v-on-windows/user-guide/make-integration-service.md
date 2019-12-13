@@ -8,11 +8,11 @@ ms.topic: article
 ms.prod: windows-10-hyperv
 ms.assetid: 1ef8f18c-3d76-4c06-87e4-11d8d4e31aea
 ms.openlocfilehash: 89a36ee87bce1da18852f0ebff248e239165eb7d
-ms.sourcegitcommit: c4a3f88d1663dd19336bfd4ede0368cb18550ac7
+ms.sourcegitcommit: 1ca9d7562a877c47f227f1a8e6583cb024909749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "9883010"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "74911027"
 ---
 # <a name="make-your-own-integration-services"></a>创建你自己的集成服务
 
@@ -41,14 +41,14 @@ ms.locfileid: "9883010"
 
 --------------
 
-## <a name="getting-started"></a>入门
+## <a name="getting-started"></a>即刻体验
 
 要求：
 * C/C++ 编译器。  如果没有该组件，请查看 [Visual Studio Community](https://aka.ms/vs)
 * [Windows 10 SDK](https://developer.microsoft.com/windows/downloads/windows-10-sdk) - 已在 Visual Studio 2015 Update 3 以及更高版本上预安装。
-* 使用至少一个虚拟机运行以上其中一个主机操作系统的计算机。 - 这用于测试应用程序。
+* 使用至少一个虚拟机运行以上其中一个主机操作系统的计算机。 \- 这用于测试应用程序。
 
-> **注意:** 在 Windows 10 周年更新中, Hyper-v 套接字的 API 已公开可用。 使用 HVSocket 的应用程序将在任何 Windows 10 主机和来宾上运行, 但只能使用 Windows SDK (版本 14290) 开发。
+> **注意：** 适用于 Hyper-v 套接字的 API 在 Windows 10 周年更新中公开提供。 使用 Hvsocket.h 的应用程序将在任何 Windows 10 主机和来宾上运行，但只能使用晚于版本14290的 Windows SDK 进行开发。
 
 ## <a name="register-a-new-application"></a>注册新应用程序
 若要使用 Hyper-V 套接字，必须向 Hyper-V 主机的注册表注册应用程序。
@@ -81,7 +81,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Virtualization\G
 
 每个服务的注册表中的信息：
 * `Service GUID`
-    * `ElementName (REG_SZ)` -- 这是服务的友好名称
+    * `ElementName (REG_SZ)` - 这是服务的友好名称
 
 若要注册你自己的服务，请使用你自己的 GUID 和友好名称来创建新的注册表项。
 
@@ -206,7 +206,7 @@ struct sockaddr_vm {
 
 ### <a name="vmid-wildcards"></a>VMID 通配符
 
-| 名称 | GUID | 说明 |
+| 名称 | GUID | 描述 |
 |:-----|:-----|:-----|
 | HV_GUID_ZERO | 00000000-0000-0000-0000-000000000000 | 侦听器应绑定到此 VMID 以接受所有分区中的连接。 |
 | HV_GUID_WILDCARD | 00000000-0000-0000-0000-000000000000 | 侦听器应绑定到此 VMID 以接受所有分区中的连接。 |
@@ -227,6 +227,6 @@ struct sockaddr_vm {
 Socket() Bind() Connect() Send() Listen() Accept()
 
 ## <a name="useful-links"></a>有用链接
-[完整 WinSock API](https://docs.microsoft.com/windows/desktop/WinSock/winsock-functions)
+[完整的 WinSock API](https://docs.microsoft.com/windows/desktop/WinSock/winsock-functions)
 
-[Hyper-V 集成服务参考](../reference/integration-services.md)
+[Hyper-v Integration Services 引用](../reference/integration-services.md)

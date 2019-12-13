@@ -9,11 +9,11 @@ ms.prod: windows-10-hyperv
 ms.service: windows-10-hyperv
 ms.assetid: 1f8a691c-ca75-42da-8ad8-a35611ad70ec
 ms.openlocfilehash: e69775c15359645f3659c9bee3562733415228d5
-ms.sourcegitcommit: c4a3f88d1663dd19336bfd4ede0368cb18550ac7
+ms.sourcegitcommit: 1ca9d7562a877c47f227f1a8e6583cb024909749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "9882880"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "74909427"
 ---
 # <a name="set-up-a-nat-network"></a>设置 NAT 网络
 
@@ -53,7 +53,7 @@ NAT 使用主计算机的 IP 地址和端口通过内部 Hyper-V 虚拟开关向
 
 3. 查找刚创建的虚拟交换机的接口索引。
 
-    你可以通过运行以下命令查找接口索引 `Get-NetAdapter`
+    可以通过运行来查找接口索引 `Get-NetAdapter`
 
     你的输出应类似下面的形式：
 
@@ -132,7 +132,7 @@ NAT 使用主计算机的 IP 地址和端口通过内部 Hyper-V 虚拟开关向
 
 ## <a name="configuration-example-attaching-vms-and-containers-to-a-nat-network"></a>配置示例：将 VM 和容器连接到 NAT 网络
 
-_如果你需要将多个 VM 和容器连接到单个 NAT，则需要确保 NAT 内部子网前缀大小足以包含由不同的应用程序或服务（例如用于 Windows 的 Docker 和 Windows 容器 – HNS）分配的 IP 范围。 这将需要应用程序级别的 IP 分配和网络配置，或者必须由管理员完成手动配置，从而保证不会在同一主机上重用现有 IP 分配。_
+_如果需要将多个 Vm 和容器连接到单个 NAT，需要确保 NAT 内部子网前缀足够大，以包含由不同应用程序或服务（例如用于 Windows 的 Docker 和 Windows 容器）分配的 IP 范围–HNS）。这将要求对必须由管理员完成的应用程序级别的 Ip 和网络配置或手动配置进行应用级分配，并且保证不会在同一主机上重复使用现有 IP 分配。_
 
 ### <a name="docker-for-windows-linux-vm-and-windows-containers"></a>用于 Windows 的 Docker（Linux VM）和 Windows 容器
 下面的解决方案将允许用于 Windows 的 Docker（运行 Linux 容器的 Linux VM）和 Windows 容器使用单独的内部 vSwitch 共享同一个 WinNAT 实例。 Linux 和 Windows 容器之间的连接将起作用。
@@ -148,7 +148,7 @@ PS C:\> Get-NetNat | Remove-NetNAT (again, this will remove the NAT but keep the
 PS C:\> New-NetNat -Name SharedNAT -InternalIPInterfaceAddressPrefix <shared prefix>
 PS C:\> Start-Service docker
 ```
-Docker/HNS 将为 Windows 容器分配 Ip, 管理员会将 Ip 从两个的差异集分配给 Vm。
+Docker/HNS 会将 Ip 分配给 Windows 容器，管理员会将 Ip 分配给虚拟机的差异集。
 
 用户已通过运行 docker 引擎安装了 Windows 容器功能，现在想要将 VM 连接到 NAT 网络
 ```
@@ -162,7 +162,7 @@ PS C:\> New-NetNat -Name SharedNAT -InternalIPInterfaceAddressPrefix <shared pre
 PS C:\> New-VirtualSwitch -Type internal (attach VMs to this new vSwitch)
 PS C:\> Start-Service docker
 ```
-Docker/HNS 将为 Windows 容器分配 Ip, 管理员会将 Ip 从两个的差异集分配给 Vm。
+Docker/HNS 会将 Ip 分配给 Windows 容器，管理员会将 Ip 分配给虚拟机的差异集。
 
 最终，你应该有两个内部 VM 开关以及在这两个开关之间共享的一个 NetNat。
 
@@ -170,29 +170,29 @@ Docker/HNS 将为 Windows 容器分配 Ip, 管理员会将 Ip 从两个的差异
 
 某些情况下需要多个应用程序或服务使用同一个 NAT。 在这种情况下，必须遵循以下工作流，以便多个应用程序/服务可以使用更大的 NAT 内部子网前缀
 
-**_我们将以与 Windows 容器功能共存于同一主机上的 Docker 4 Windows - Docker Beta - Linux VM 作为示例，对其进行详细介绍。 此工作流可能会随时发生变化_**
+**_我们将使用同一主机上的 Windows 容器功能，详细介绍 Docker 4 Windows-Docker Beta-Linux VM 与示例。此工作流可能会发生更改_**
 
 1. C:\> net stop docker
 2. 停止 Docker4Windows MobyLinux VM
 3. PS C:\> Get-ContainerNetwork | Remove-ContainerNetwork -force
 4. PS C:\> Get-NetNat | Remove-NetNat  
-   *删除任何先前存在的容器网络（即删除 vSwitch、删除 NetNat、清理）*  
+   *删除任何先前存在的容器网络（即，删除 vSwitch，删除 New-netnat，清除）*  
 
 5. New-ContainerNetwork -Name nat -Mode NAT –subnetprefix 10.0.76.0/24（此子网将用于 Windows 容器功能）*创建名为 nat 的内部 vSwitch*  
-   *创建名为“nat”、IP 前缀为 10.0.76.0/24 的 NAT 网络*  
+   *创建名为 "nat"、IP 前缀为 10.0.76.0/24 的 NAT 网络*  
 
 6. Remove-NetNAT  
-   *删除 DockerNAT 和 nat NAT 网络（保留内部 vSwitch）*  
+   *同时删除 DockerNAT 和 nat NAT 网络（保留内部 Vswitch）*  
 
 7. New-NetNat -Name DockerNAT -InternalIPInterfaceAddressPrefix 10.0.0.0/17（这将创建较大的 NAT 网络，以供 D4W 和容器共享）  
-   *创建名为“DockerNAT”的 NAT 网络，且该网络采用较大的前缀 10.0.0.0/17*  
+   *创建名为 DockerNAT 且具有更大前缀 10.0.0.0/17 的 NAT 网络*  
 
 8. 运行 Docker4Windows (MobyLinux.ps1)  
    *创建内部 vSwitch DockerNAT*  
-   *创建名为“DockerNAT”、IP 前缀为 10.0.75.0/24 的 NAT 网络*  
+   *创建名为 "DockerNAT"、IP 前缀为 10.0.75.0/24 的 NAT 网络*  
 
 9. Net start docker  
-   *Docker 将使用用户定义的 NAT 网络作为默认网络连接到 Windows 容器*  
+   *Docker 将使用用户定义的 NAT 网络作为连接 Windows 容器的默认值*  
 
 最终，你将具有两个内部 vSwitch – 一个名为 DockerNAT，另一个名为 nat。 你仅将拥有一个 NAT 网络 (10.0.0.0/17)，可通过运行 Get-NetNat 确认。 Windows 容器的 IP 地址将由 Windows 主机网络服务 (HNS) 从 10.0.76.0/24 子网分配。 基于现有 MobyLinux.ps1 脚本，将从 10.0.75.0/24 子网分配 Docker 4 Windows 的 IP 地址。
 
@@ -226,7 +226,7 @@ Get-NetIPAddress -InterfaceAlias "vEthernet (<name of vSwitch>)"
 Remove-NetIPAddress -InterfaceAlias "vEthernet (<name of vSwitch>)" -IPAddress <IPAddress>
 ```
 
-**删除多个 NAT**  
+**删除多个 Nat**  
 我们看到无意中创建了多个 NAT 网络的报告。 这是由于最近的版本（包括 Windows Server 2016 Technical Preview 5 和 Windows 10 Insider Preview 版本）存在一个 bug。 如果你看到多个 NAT 网络，在运行 docker network ls 或 Get-ContainerNetwork 之后，请在提升的 PowerShell 中执行以下操作：
 
 ```

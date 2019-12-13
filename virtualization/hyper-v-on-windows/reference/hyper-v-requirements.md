@@ -9,15 +9,15 @@ ms.prod: windows-10-hyperv
 ms.service: windows-10-hyperv
 ms.assetid: 6e5e6b01-7a9d-4123-8cc7-f986e10cd372
 ms.openlocfilehash: d4e3f7c1e94d0162ae9ee6251d9c6d8cc51bf1d3
-ms.sourcegitcommit: c4a3f88d1663dd19336bfd4ede0368cb18550ac7
+ms.sourcegitcommit: 1ca9d7562a877c47f227f1a8e6583cb024909749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "9883070"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "74911217"
 ---
 # <a name="windows-10-hyper-v-system-requirements"></a>Windows 10 Hyper-V 系统要求
 
-在64位版本的 Windows 10 专业版、企业版和教育版中提供了 hyper-v。 Hyper-V 需要二级地址转换 (SLAT) - 存在于 Intel 和 AMD 最新一代的 64 位处理器中。
+Hyper-v 在 Windows 10 专业版、企业版和教育版的64位版本中可用。 Hyper-V 需要二级地址转换 (SLAT) - 存在于 Intel 和 AMD 最新一代的 64 位处理器中。
 
 你可以在具有 4GB RAM 的主机上运行 3 或 4 台基本虚拟机，但如果要运行更多的虚拟机则需要更多的资源。 另外，你可能还需要创建有 32 个处理器和 512GB RAM 的较大虚拟机，具体取决于你的物理硬件。
 
@@ -35,7 +35,7 @@ ms.locfileid: "9883070"
 - Windows 10 移动版
 - Windows 10 移动企业版
 
->Windows 10 家庭版可升级到 Windows 10 专业版。 若要执行此操作，请依次打开“**设置**” > “**更新和安全**” > “**激活**”。 可以在此处访问应用商店并购买升级。
+>Windows 10 家庭版可以升级到 Windows 10 专业版。 若要执行此操作，请依次打开“**设置**” > “**更新和安全**” > “**激活**”。 可以在此处访问应用商店并购买升级。
 
 ## <a name="hardware-requirements"></a>硬件要求
 

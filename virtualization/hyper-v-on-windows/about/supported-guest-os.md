@@ -7,12 +7,12 @@ ms.date: 05/02/2016
 ms.topic: article
 ms.prod: windows-10-hyperv
 ms.assetid: ae4a18ed-996b-4104-90c5-539c90798e4c
-ms.openlocfilehash: 25c72b910af15fc0b498a5b2abce72d32e6d1efd
-ms.sourcegitcommit: cdf127747cfcb839a8abf50a173e628dcfee02db
+ms.openlocfilehash: e3255d236a3fbb5ac4d908143750b84e3db82ceb
+ms.sourcegitcommit: 1ca9d7562a877c47f227f1a8e6583cb024909749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "9999034"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "74911677"
 ---
 # <a name="supported-windows-guests"></a>受支持的 Windows 来宾
 
@@ -22,7 +22,7 @@ Microsoft 已测试这些主机/来宾组合。  这些组合的问题可能会�
 
 Microsoft 通过以下方式提供支持：
 
-* Microsoft 支持人员为在 Microsoft 操作系统和集成服务中找到的问题提供支持。
+* Microsoft 为在 Microsoft 操作系统和集成服务中找到的问题提供支持。
 
 * 对于经操作系统供应商认证可以在 Hyper-V 上运行的其他操作系统中发现的问题，应由该供应商提供支持。
 
@@ -35,20 +35,20 @@ Microsoft 通过以下方式提供支持：
 | 来宾操作系统 |  虚拟处理器的最大数量 | 注释 |
 |:-----|:-----|:-----|
 | Windows 10 | 32 |增强的会话模式不适用于 Windows 10 家庭版 |
-| Windows8.1 | 32 | |
+| Windows 8.1 | 32 | |
 | Windows 8 | 32 ||
-| 带有 Service Pack 1 (SP 1) 的 Windows 7 | 第 | 旗舰版、企业版和专业版版本（32 位和 64 位）。 |
-| Windows 7 | 第 | 旗舰版、企业版和专业版版本（32 位和 64 位）。 |
-| Windows Vista Service Pack 2 (SP2) | ppls-2 | 商用版、企业版和旗舰版，包括 N 和 KN 版本。 |
+| 带有 Service Pack 1 (SP 1) 的 Windows 7 | 4 | 旗舰版、企业版和专业版版本（32 位和 64 位）。 |
+| Windows 7 | 4 | 旗舰版、企业版和专业版版本（32 位和 64 位）。 |
+| Windows Vista Service Pack 2 (SP2) | 2 | 商用版、企业版和旗舰版，包括 N 和 KN 版本。 |
 | - | | |
 | [Windows Server 半年频道](https://docs.microsoft.com/windows-server/get-started/semi-annual-channel-overview) | 64 | |
-| Windows Server 2019 | 64 | |
-| WindowsServer 2016 | 64 | |
+| Windows Server Standard 2012 R2 | 64 | |
+| Windows Server 2016 | 64 | |
 | Windows Server 2012 R2 | 64 | |
 | Windows Server 2012 | 64 | |
 | 带有 Service Pack 1 (SP 1) 的 Windows Server 2008 R2 | 64 | Datacenter、Enterprise、Standard 和 Web 版本。 |
-| 带有 Service Pack 2 (SP 2) 的 Windows Server 2008 | 第 | Datacenter、Enterprise、Standard 和 Web 版本（32 位和 64 位）。 |
-| Windows Home Server 2011 | 第 | |
+| 带有 Service Pack 2 (SP 2) 的 Windows Server 2008 | 4 | Datacenter、Enterprise、Standard 和 Web 版本（32 位和 64 位）。 |
+| Windows Home Server 2011 | 4 | |
 | Windows Small Business Server 2011 | Essentials 版本 - 2，Standard 版本 - 4 | |
 
 > Windows 10 可以作为来宾操作系统在 Windows 8.1 和 Windows Server 2012 R2 Hyper-V 主机上运行。
@@ -64,4 +64,4 @@ Microsoft 通过以下方式提供支持：
 | [Ubuntu](https://docs.microsoft.com/windows-server/virtualization/hyper-v/Supported-Ubuntu-virtual-machines-on-Hyper-V) | |
 | [FreeBSD](https://docs.microsoft.com/windows-server/virtualization/hyper-v/Supported-FreeBSD-virtual-machines-on-Hyper-V) | |
 
-有关详细信息（包括有关以前版本的 Hyper-V 的支持信息），请参阅 [Linux and FreeBSD Virtual Machines on Hyper-V](https://docs.microsoft.com/windows-server/virtualization/hyper-v/Supported-Linux-and-FreeBSD-virtual-machines-for-Hyper-V-on-Windows)（Hyper-V 上的 Linux 和 FreeBSD 虚拟机）。
+有关详细信息（包括有关以前版本的 Hyper-V 的支持信息），请参阅 [Hyper-V 上的 Linux 和 FreeBSD 虚拟机](https://docs.microsoft.com/windows-server/virtualization/hyper-v/Supported-Linux-and-FreeBSD-virtual-machines-for-Hyper-V-on-Windows)。

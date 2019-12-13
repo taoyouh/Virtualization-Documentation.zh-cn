@@ -8,12 +8,12 @@ ms.topic: article
 ms.prod: windows-10-hyperv
 ms.service: windows-10-hyperv
 ms.assetid: 68c65445-ce13-40c9-b516-57ded76c1b15
-ms.openlocfilehash: f819ac04773188525af202d370ba271a2d93e259
-ms.sourcegitcommit: cdf127747cfcb839a8abf50a173e628dcfee02db
+ms.openlocfilehash: 625a9b36ff782c86065ef3d9124708e5716e066f
+ms.sourcegitcommit: 1ca9d7562a877c47f227f1a8e6583cb024909749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "9998914"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "74910927"
 ---
 # <a name="run-hyper-v-in-a-virtual-machine-with-nested-virtualization"></a>借助嵌套虚拟化在虚拟机中运行 Hyper-V
 

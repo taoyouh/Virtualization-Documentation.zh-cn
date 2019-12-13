@@ -8,12 +8,12 @@ ms.topic: article
 ms.prod: windows-10-hyperv
 ms.service: windows-10-hyperv
 ms.assetid: 426c87cc-fa50-4b8d-934e-0b653d7dea7d
-ms.openlocfilehash: 725466f657ae8fc4f14813822e90657e12d26fa6
-ms.sourcegitcommit: cdf127747cfcb839a8abf50a173e628dcfee02db
+ms.openlocfilehash: 8f1c1b96fe88f46a24b8ebb46d4f387c9717f6ba
+ms.sourcegitcommit: 1ca9d7562a877c47f227f1a8e6583cb024909749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "9998924"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "74911157"
 ---
 # <a name="try-pre-release-features-for-hyper-v"></a>尝试 Hyper-V 的预发行功能
 

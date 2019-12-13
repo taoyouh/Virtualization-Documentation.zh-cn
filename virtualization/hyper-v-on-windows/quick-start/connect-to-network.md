@@ -9,11 +9,11 @@ ms.prod: windows-10-hyperv
 ms.service: windows-10-hyperv
 ms.assetid: 532195c6-564b-4954-97c2-5a5795368c09
 ms.openlocfilehash: 0139f51e909149dde59f4030c6571aee82fed27e
-ms.sourcegitcommit: 62fff5436770151a28b6fea2be3a8818564f3867
+ms.sourcegitcommit: 1ca9d7562a877c47f227f1a8e6583cb024909749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "10147240"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "74909477"
 ---
 # <a name="create-a-virtual-network"></a>创建虚拟网络
 
@@ -22,24 +22,24 @@ ms.locfileid: "10147240"
 
 ## <a name="connect-virtual-machines-to-the-internet"></a>为虚拟机连接 Internet
 
-Hyper-V 有三种类型的虚拟交换机 -- 外部、内部和专用。 创建外部交换机，以便与运行在其上的虚拟机共享计算机的网络。
+Hyper-V 有三种类型的虚拟交换机 -- 外部、内部和专用。 创建外部交换机，以便与在计算机上运行的虚拟机共享计算机的网络。
 
-此练习演示了如何创建虚拟交换机。 完成后，Hyper-V 主机将拥有一个虚拟交换机，该虚拟交换机可通过计算机的网络连接来为虚拟机连接 Internet。 
+此练习演示了如何创建虚拟交换机。 完成后，Hyper-V 主机将拥有一个虚拟交换机，该虚拟交换机可通过为计算机连接网络来为虚拟机连接 Internet。 
 
 ### <a name="create-a-virtual-switch-with-hyper-v-manager"></a>使用 Hyper-V 管理器创建虚拟交换机
 
-1. 打开 Hyper-V 管理器。  执行此操作的快速方法是按 Windows 按钮或密钥，然后键入“Hyper-V 管理器”。  
+1. 打开 Hyper-V 管理器。  执行此操作快速的方法是按 Windows 按钮或密钥，然后键入“Hyper-V 管理器”。  
 如果搜索未找到 Hyper-V 管理器，那是因为未启用 Hyper-V 或 Hyper-V 管理工具。  请参阅[启用 Hyper-V](enable-hyper-v.md) 的说明。
 
 2. 在左窗格中选择服务器，或在右窗格中单击“连接到服务器…”。
 
-3. 在 Hyper-V 管理器中，从右侧的“操作”菜单中选择**虚拟交换机管理器...**。 
+3. 在 Hyper-V 管理器中，从右侧的“操作”菜单中选择**虚拟交换机管理器...** 。 
 
 4. 在“虚拟交换机”部分下，选择“**新建虚拟网络交换机**”。
 
 5. 在“你要创建哪种类型的虚拟交换机?”下，选择“**外部**”。
 
-6. 选择“**创建虚拟交换机**”按钮。
+6. 选择“创建虚拟交换机”按钮。
 
 7. 在“虚拟交换机属性”下，为新交换机命名，如“**外部 VM 交换机**”。
 
@@ -49,11 +49,11 @@ Hyper-V 有三种类型的虚拟交换机 -- 外部、内部和专用。 创建�
 
     ![](media/newSwitch_upd.png)
 
-10. 选择“**应用**”来创建虚拟交换机。 此时，你很可能看到以下消息。 单击“**是**”继续。
+10. 选择“应用”来创建虚拟交换机。 此时，你很可能看到以下消息。 单击“**是**”继续。
 
     ![](media/pen_changes_upd.png)  
 
-11. 选择“**确定**”以关闭虚拟交换机管理器窗口。
+11. 选择“确定”关闭虚拟交换机管理器窗口。
 
 
 ### <a name="create-a-virtual-switch-with-powershell"></a>使用 PowerShell 创建虚拟交换机
@@ -97,10 +97,10 @@ Hyper-V 有三种类型的虚拟交换机 -- 外部、内部和专用。 创建�
 
 ### <a name="the-two-switch-approach"></a>双交换机方法
 
-如果你在便携式计算机上运行 Windows 10 Hyper-v，并且经常在无线网络和有线网络之间切换，则你可能需要为以太网卡和无线网卡创建虚拟交换机。  根据便携式计算机连接网络的方式，你可以在这些开关之间更改虚拟机。 虚拟机不会自动在有线和无线之间切换。 
+如果在笔记本电脑上运行 Windows 10 Hyper-v，并经常在无线网络和有线网络之间切换，则可能需要为以太网和无线网卡创建虚拟交换机。  根据便携式计算机连接到网络的方式，可以更改这些交换机之间的虚拟机。 虚拟机不会在有线和无线之间自动切换。 
 
 >[!IMPORTANT]
->这两种切换方法不支持无线卡上的外部 vSwitch，因此仅供测试之用。
+>这两种交换机方法不支持无线网卡上的外部 vSwitch，只应用于测试目的。
 
 ## <a name="next-step---create-a-virtual-machine"></a>下一步 - 创建虚拟机
 [创建 Windows 虚拟机](create-virtual-machine.md)

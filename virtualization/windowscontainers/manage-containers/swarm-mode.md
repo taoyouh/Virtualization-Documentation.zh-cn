@@ -9,11 +9,11 @@ ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: 5ceb9626-7c48-4d42-81f8-9c936595ad85
 ms.openlocfilehash: 560e9ffc92728628268d7d557b8fa8428316c8ec
-ms.sourcegitcommit: 551b783410ba49b4d439e3da084986cceffcb7e0
+ms.sourcegitcommit: 1ca9d7562a877c47f227f1a8e6583cb024909749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "10278959"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "74909677"
 ---
 # <a name="getting-started-with-swarm-mode"></a>群模式入门 
 
@@ -24,17 +24,17 @@ ms.locfileid: "10278959"
 一个群由两种容器主机类型构成：*管理器节点*和*工作者节点*。 每一个群均通过管理器节点进行初始化，且用于控制和监视群的所有 Docker CLI 命令均必须从其中一个管理器节点执行。 管理器节点可以视为群状态的“维持者”，它们共同形成一个共识组，可以持续感知在群上运行的服务的状态；它们的任务则是确保群的实际状态始终符合开发人员或管理员定义的预期状态。 
 
 >[!NOTE]
->任何给定的 swarm 都可以具有多个管理器节点，但它必须始终*至少有一个*。 
+>任何给定 swarm 可以有多个管理器节点，但必须始终*至少有一个*。 
 
 工作者节点由 Docker 群通过管理器节点进行编排。 若要加入群，工作者节点必须使用“加入令牌”，该令牌在初始化群时由管理器节点生成。 工作者节点仅接收和执行来自管理器节点的任务，因此不要求（和拥有）对群状态的感知。
 
 ## <a name="swarm-mode-system-requirements"></a>群模式系统要求
 
-至少一个物理或虚拟计算机系统（若要使用 swarm 的完整功能，建议至少两个节点）运行**windows 10 创意者更新**或**windows Server 2016** ，*使用所有最新的更新 \ **，设置作为容器主机（有关如何开始使用 Windows 10 上的 Docker 容器的详细信息，请参阅 windows 10 上的 windows[容器](https://docs.microsoft.com/virtualization/windowscontainers/quick-start/quick-start-windows-10)或[windows Server 上](https://docs.microsoft.com/virtualization/windowscontainers/quick-start/quick-start-windows-server)的 windows 容器中的主题）。
+至少一个物理或虚拟计算机系统（建议至少使用两个节点的 swarm 的完整功能）运行**windows 10 创意者更新**或**windows server 2016** ，*其中包含所有最新的更新\** ，安装程序作为容器主机（请参阅 windows Server 上 windows 10 上的[windows 容器](https://docs.microsoft.com/virtualization/windowscontainers/quick-start/quick-start-windows-10)或 windows [server](https://docs.microsoft.com/virtualization/windowscontainers/quick-start/quick-start-windows-server)上的 windows 容器中的更多详细信息）。
 
-\***注意**：Windows Server 2016 上的 Docker 群需要 [KB4015217](https://support.microsoft.com/help/4015217/windows-10-update-kb4015217)
+\***注意**： Windows Server 2016 上的 Docker Swarm 需要[KB4015217](https://support.microsoft.com/help/4015217/windows-10-update-kb4015217)
 
-**Docker 引擎 v1.13.0 或更高版本**
+**Docker 引擎 v 1.13.0 或更高版本**
 
 打开端口：以下端口必须在每台主机上可用。 在某些系统上，这些端口默认为打开。
 - TCP 端口 2377 用于群集管理通信
@@ -53,7 +53,7 @@ C:\> docker swarm init --advertise-addr=<HOSTIPADDRESS> --listen-addr <HOSTIPADD
 
 ## <a name="adding-nodes-to-a-swarm"></a>将节点添加到群
 
-利用 swarm 模式和覆盖网络模式功能*不*需要多个节点。 使用一个主机在群模式下运行，便可使用所有群/覆盖功能（即，一个管理器节点，使用 `docker swarm init` 命令置于群模式下）。
+使用 swarm 模式和覆盖网络模式功能*不*需要多个节点。 使用一个主机在群模式下运行，便可使用所有群/覆盖功能（即，一个管理器节点，使用 `docker swarm init` 命令置于群模式下）。
 
 ### <a name="adding-workers-to-a-swarm"></a>将工作者添加到群
 
@@ -109,10 +109,10 @@ C:\> docker network create --driver=overlay <NETWORKNAME>
 C:\> docker service create --name=<SERVICENAME> --endpoint-mode dnsrr --network=<NETWORKNAME> <CONTAINERIMAGE> [COMMAND] [ARGS…]
 ```
 
-此时，\<SERVICENAME\> 是你要提供给服务的名称，你将使用该名称通过服务发现（使用 Docker 的本机 DNS 服务器）引用服务。 \<NETWORKNAME\> 是你想要将该服务连接到的网络的名称（例如，“myOverlayNet”）。 \<CONTAINERIMAGE\> 是将对服务进行定义的容器映像的名称。
+此时，\<SERVICENAME\> 是你要提供给服务的名称，你将使用该名称通过服务发现（使用 Docker 的本机 DNS 服务器）引用服务。 \<NETWORKNAME\> 是要将此服务连接到的网络的名称（例如，"myOverlayNet"）。 \<SAVE-CONTAINERIMAGE\> 是将定义该服务的容器映像的名称。
 
 >[!NOTE]
->此命令`--endpoint-mode dnsrr`的第二个参数需要指定到 Docker 引擎，DNS 循环策略将用于在服务容器终结点之间平衡网络流量。 目前，DNS 循环是 Windows Server 2016 上支持的唯一负载平衡策略。Windows 窗口2019（及更高版本）上支持 Windows docker 托管的[路由网格](https://docs.docker.com/engine/swarm/ingress/)，但在 windows server 2016 上不支持。 在 Windows Server 2016 上查找替代负载平衡策略的用户现在可以设置外部负载平衡器（例如 NGINX），并使用 Swarm 的[发布端口模式](https://docs.docker.com/engine/reference/commandline/service_create/#/publish-service-ports-externally-to-the-swarm--p---publish)来公开要平衡流量的容器主机端口。
+>此命令的第二个参数（`--endpoint-mode dnsrr`）需要指定到 Docker 引擎，DNS 轮循机制策略将用于平衡服务容器终结点之间的网络流量。 目前，DNS 轮循机制是 Windows Server 2016 上支持的唯一负载平衡策略。Windows Server 2019 （及更高版本）上支持 Windows docker 主机的[路由网格](https://docs.docker.com/engine/swarm/ingress/)，但不支持 windows server 2016。 目前，在 Windows Server 2016 上寻找备用负载平衡策略的用户可以设置外部负载平衡器（例如 NGINX），并使用 Swarm 的[发布端口模式](https://docs.docker.com/engine/reference/commandline/service_create/#/publish-service-ports-externally-to-the-swarm--p---publish)来公开用于平衡流量的容器主机端口。
 
 ## <a name="scaling-a-service"></a>缩放服务
 将服务部署到群群集后，组成该服务的容器实例会部署到整个群集中。 默认情况下，一项服务由一个容器实例（服务的“副本”或“任务”）支持。 但是，通过对 `docker service create` 命令使用 `--replicas` 选项或在创建服务后缩放服务，也可以创建具有多个任务的服务。
@@ -162,9 +162,9 @@ C:\> docker service ps <SERVICENAME>
 ## <a name="linuxwindows-mixed-os-clusters"></a>Linux+Windows 混合操作系统群集
 
 最近，我们团队的一位成员发布了一个简短的三部分演示，介绍如何使用 Docker 群设置 Windows+Linux 混合操作系统应用程序。 如果你不熟悉 Docker 群，或者不熟悉如何使用它来运行混合操作系统应用程序，那么非常适合从这里入门。 赶快去看看：
-- [使用 Docker 群运行 Windows+Linux 容器化应用程序（第 1 部分/共 3 部分）](https://www.youtube.com/watch?v=ZfMV5JmkWCY&t=170s)
-- [使用 Docker 群运行 Windows+Linux 容器化应用程序（第 2 部分/共 3 部分）](https://www.youtube.com/watch?v=VbzwKbcC_Mg&t=406s)
-- [使用 Docker 群运行 Windows+Linux 容器化应用程序（第 3 部分/共 3 部分）](https://www.youtube.com/watch?v=I9oDD78E_1E&t=354s)
+- [使用 Docker Swarm 运行 Windows + Linux 容器化应用程序（第1/3 部分）](https://www.youtube.com/watch?v=ZfMV5JmkWCY&t=170s)
+- [使用 Docker Swarm 运行 Windows + Linux 容器化应用程序（第2/3 部分）](https://www.youtube.com/watch?v=VbzwKbcC_Mg&t=406s)
+- [使用 Docker Swarm 运行 Windows + Linux 容器化应用程序（第3/3 部分）](https://www.youtube.com/watch?v=I9oDD78E_1E&t=354s)
 
 ### <a name="initializing-a-linuxwindows-mixed-os-cluster"></a>初始化 Linux+Windows 混合操作系统群集
 初始化混合操作系统群群集非常简单 -- 只要防火墙规则配置正确，并且你的主机有权访问另一个主机，那么只需运行标准的 `docker swarm join` 命令，即可将 Linux 主机添加到群：
@@ -181,7 +181,7 @@ C:\> docker swarm init --advertise-addr=<HOSTIPADDRESS> --listen-addr <HOSTIPADD
 为了对混合操作系统群群集启动 Docker 服务，必须采用某种方法来区分哪些群节点运行的操作系统是该服务所面向的操作系统，哪些不是。 [Docker 对象标签](https://docs.docker.com/engine/userguide/labels-custom-metadata/)提供了一种有用的方法来标记节点，以便可以创建服务并将其配置为仅在与其操作系统匹配的节点上运行。 
 
 >[!NOTE]
->[Docker 对象标签](https://docs.docker.com/engine/userguide/labels-custom-metadata/)可用于将元数据应用到各种 Docker 对象（包括容器图像、容器、卷和网络）和各种用途（例如，可以使用标签分隔 "前端" 和 "后端" 部分）应用程序（通过允许前端 microservices 仅 secheduled 标记节点和后端 mircoservices 的 "前端"），以便仅在 "后端" 标记的节点上进行计划。 在本例中，我们使用节点上的标签以区分 Windows 操作系统节点和 Linux 操作系统节点。
+>[Docker 对象标签](https://docs.docker.com/engine/userguide/labels-custom-metadata/)可用于将元数据应用于各种 Docker 对象（包括容器映像、容器、卷和网络），出于各种目的（例如，可使用标签来分隔应用程序的 "前端" 和 "后端" 组件），只允许在 "前端" 标签节点和后端 mircoservices 上仅计划 "微服务" 标签节点上的 "前端" 的 secheduled。 在本例中，我们使用节点上的标签以区分 Windows 操作系统节点和 Linux 操作系统节点。
 
 若要标记现有的群节点，请使用以下语法：
 
@@ -189,7 +189,7 @@ C:\> docker swarm init --advertise-addr=<HOSTIPADDRESS> --listen-addr <HOSTIPADD
 C:\> docker node update --label-add <LABELNAME>=<LABELVALUE> <NODENAME>
 ```
 
-此时，`<LABELNAME>` 是你正在创建的标签的名称 - 例如，在本例中，我们按节点操作系统来区分节点，因此标签的逻辑名称可能是“os”。 `<LABELVALUE>` 是标签的值 - 在本例中，你可以选择使用值“windows”和“linux”。 （当然，你可以为标签和标签值选择任何名称，前提是保持一致）。 `<NODENAME>` 是你要标记的节点的名称；你可以通过运行 `docker node ls` 使自己想起节点的名称。 
+此时，`<LABELNAME>` 是你正在创建的标签的名称 - 例如，在本例中，我们按节点操作系统来区分节点，因此标签的逻辑名称可能是“os”。 `<LABELVALUE>` 是标签的值-在这种情况下，你可以选择使用值 "windows" 和 "linux"。 （当然，你可以为标签和标签值选择任何名称，前提是保持一致）。 `<NODENAME>` 是要标记的节点的名称;您可以通过运行 `docker node ls`来提醒自己的节点名称。 
 
 **例如**，如果你的群集中有四个群节点，包括两个 Windows 节点和两个 Linux 节点，那么标签更新命令可能如下所示：
 
@@ -224,13 +224,13 @@ C:\> docker service create --name=linux_s1 --endpoint-mode dnsrr --network testo
 ## <a name="limitations"></a>限制
 当前，Windows 上的群模式有以下限制：
 - 不支持数据平面加密（即，使用 `--opt encrypted` 选项的容器间通信）
-- Windows docker 主机的[路由网格](https://docs.docker.com/engine/swarm/ingress/)在 windows server 2016 上不受支持，但只能从 windows server 2019 向前。 寻找替代性负载平衡策略的用户现在可以设置一个外部负载平衡器（例如，NGINX），并使用群的[发布端口模式](https://docs.docker.com/engine/reference/commandline/service_create/#/publish-service-ports-externally-to-the-swarm--p---publish) 公开要进行负载平衡的容器主机端口。 下面是有关这方面的更多详细信息。
+- Windows Server 2016 不支持 Windows docker 主机的[路由网格](https://docs.docker.com/engine/swarm/ingress/)，只从 windows server 2019 开始。 寻找替代性负载平衡策略的用户现在可以设置一个外部负载平衡器（例如，NGINX），并使用群的[发布端口模式](https://docs.docker.com/engine/reference/commandline/service_create/#/publish-service-ports-externally-to-the-swarm--p---publish) 公开要进行负载平衡的容器主机端口。 下面是有关这方面的更多详细信息。
 
  >[!NOTE]
->有关如何设置 Docker Swarm 路由网格的更多详细信息，请参阅此[博客文章](https://docs.microsoft.com/en-us/virtualization/community/team-blog/2017/20170926-docker-s-routing-mesh-available-with-windows-server-version-1709)
+>若要详细了解如何设置 Docker Swarm 路由网格，请参阅此[博客文章](https://docs.microsoft.com/en-us/virtualization/community/team-blog/2017/20170926-docker-s-routing-mesh-available-with-windows-server-version-1709)
 
 ## <a name="publish-ports-for-service-endpoints"></a>发布服务终结点的端口
- 希望为其服务终结点发布端口的用户可以使用 "发布端口模式" 或 "Docker Swarm" 的[路由网格](https://docs.docker.com/engine/swarm/ingress/)功能来完成此操作。 
+ 如果用户想要为其服务终结点发布端口，则可以使用发布端口模式或 Docker Swarm 的[路由网格](https://docs.docker.com/engine/swarm/ingress/)功能来完成此操作。 
 
 若要为定义服务的每个任务/容器终结点发布主机端口，请对 `docker service create` 命令使用 `--publish mode=host,target=<CONTAINERPORT>` 参数：
 
@@ -250,12 +250,12 @@ C:\ > docker service create --name=s1 --publish mode=host,target=80 --endpoint-m
 ```
 C:\ > docker service ps <SERVICENAME>
 ```
-上述命令将返回有关（跨所有群主机）为服务运行的每个容器实例的详细信息。 一列输出（“端口”列）将包括 \<HOSTPORT\>->\<CONTAINERPORT\>/tcp 格式的每个主机的端口信息。 每个容器实例的 \<HOSTPORT\> 值都将不同，因为每个容器都是在其自己的主机端口上发布的。
+上述命令将返回有关（跨所有群主机）为服务运行的每个容器实例的详细信息。 "端口" 列中的一个列将包含窗体的每个主机的端口信息 \<HOSTPORT\>->\<因此 CONTAINERPORT\>/tcp。 每个容器实例 \<HOSTPORT\> 的值将有所不同，因为每个容器都发布在其自己的主机端口上。
 
 
 ## <a name="tips--insights"></a>提示和见解 
 
-#### *<a name="existing-transparent-network-can-block-swarm-initializationoverlay-network-creation"></a>现有的透明网络可以阻止群初始化/创建覆盖网络* 
+#### <a name="existing-transparent-network-can-block-swarm-initializationoverlay-network-creation"></a>*现有透明网络可以阻止 swarm 初始化/覆盖网络创建* 
 在 Windows 上，覆盖和透明网络驱动程序都需要一个要绑定到（虚拟）主机网络适配器的外部 vSwitch。 创建覆盖网络时，即会创建一个新的交换机，然后将其连接到开放的网络适配器。 透明网络模式也使用主机网络适配器。 同时，任何给定的网络适配器一次只能绑定到一个交换机 - 如果主机只有一个网络适配器，那么它一次只能连接到一个外部 vSwitch，无论该 vSwitch 是用于覆盖网络还是用于透明网络都不例外。 
 
 因此，如果容器主机只有一个网络适配器，则可能会遇到透明网络阻止创建覆盖网络（或覆盖网络阻止创建透明网络）的问题，因为透明网络当前占用了主机的唯一虚拟网络接口。

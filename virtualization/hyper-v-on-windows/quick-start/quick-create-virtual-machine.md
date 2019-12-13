@@ -7,28 +7,28 @@ ms.date: 04/07/2018
 ms.topic: article
 ms.prod: windows-10-hyperv
 ms.assetid: f1e75efa-8745-4389-b8dc-91ca931fe5ae
-ms.openlocfilehash: 6035143bc1449bc4a8e9bb7a4484b4c5329e6d3c
-ms.sourcegitcommit: cdf127747cfcb839a8abf50a173e628dcfee02db
+ms.openlocfilehash: 970e92def02e5386d38a2e72d5ef921aa8321fdf
+ms.sourcegitcommit: 1ca9d7562a877c47f227f1a8e6583cb024909749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "9998624"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "74911397"
 ---
 # <a name="create-a-virtual-machine-with-hyper-v"></a>使用 Hyper-V 创建虚拟机
 
 创建虚拟机并为其安装操作系统。
 
-我们已为创建虚拟机构建了新的工具, 以便说明在过去三个版本中显著更改。
+我们已构建了用于创建虚拟机的新工具，因此在过去三个版本中，这些说明已发生显著变化。
 
 选择你的操作系统以获取合适的一组说明：
 
-* [Windows 10 秋季创意者更新 (v1709) 及更高版本](quick-create-virtual-machine.md#windows-10-fall-creators-update-windows-10-version-1709)
-* [Windows 10 创意者更新 (v1703)](quick-create-virtual-machine.md#windows-10-creators-update-windows-10-version-1703)
-* [Windows 10 周年更新 (v1607) 及更早版本](quick-create-virtual-machine.md#before-windows-10-creators-update-windows-10-version-1607-and-earlier)
+* [Windows 10 秋季创意者更新（v1709）及更高版本](quick-create-virtual-machine.md#windows-10-fall-creators-update-windows-10-version-1709)
+* [Windows 10 创意者更新（v1703）](quick-create-virtual-machine.md#windows-10-creators-update-windows-10-version-1703)
+* [Windows 10 周年更新（v1607）及更早版本](quick-create-virtual-machine.md#before-windows-10-creators-update-windows-10-version-1607-and-earlier)
 
 让我们开始吧。
 
-## <a name="windows-10-fall-creators-update-windows-10-version-1709"></a>Windows 10 秋季创意者更新 (Windows 10 版本 1709)
+## <a name="windows-10-fall-creators-update-windows-10-version-1709"></a>Windows 10 秋季创意者更新（Windows 10 版本1709）
 
 在 Fall Creators Update 中，“快速创建”进行了扩展，以包括可以独立从 Hyper-V 管理器中启动的虚拟机库。
 
@@ -44,16 +44,16 @@ ms.locfileid: "9998624"
 
     1. 如果你想要使用自己的映像创建虚拟机，请选择 **Local Installation Source**。
     1. 选择 **Change Installation Source**。
-      ![用于使用本地安装源的按钮](media/change-source.png)
+      ![按钮以使用本地安装源](media/change-source.png)
     1. 选择要转变为新虚拟机的 .iso 或 .vhdx。
     1. 如果映像为 Linux 映像，请取消选择“安全启动”选项。
-      ![用于使用本地安装源的按钮](media/toggle-secure-boot.png)
+      ![按钮以使用本地安装源](media/toggle-secure-boot.png)
 
 1. 选择“创建虚拟机”
 
 就这么简单！  “快速创建”将完成其余的工作。
 
-## <a name="windows-10-creators-update-windows-10-version-1703"></a>Windows 10 创意者更新 (Windows 10 版本 1703)
+## <a name="windows-10-creators-update-windows-10-version-1703"></a>Windows 10 创意者更新（Windows 10 版本1703）
 
 ![“快速创建”UI 的屏幕截图](media/quickcreatesteps_inked.jpg)
 
@@ -81,7 +81,7 @@ ms.locfileid: "9998624"
 
 > **注意：** 除非你运行的是批量许可版本的 Windows，否则需要为虚拟机内运行的 Windows 提供单独的许可证。 虚拟机的操作系统独立于主机操作系统。
 
-## <a name="before-windows-10-creators-update-windows-10-version-1607-and-earlier"></a>在 Windows 10 创意者更新之前 (Windows 10 版本1607和更早版本)
+## <a name="before-windows-10-creators-update-windows-10-version-1607-and-earlier"></a>Windows 10 创意者更新之前（Windows 10 版本1607及更早版本）
 
 如果运行的不是 Windows 10 创意者更新或更高版本，请按照以下说明进行操作并改用新的虚拟机向导：
 

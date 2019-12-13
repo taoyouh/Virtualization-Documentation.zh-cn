@@ -9,11 +9,11 @@ ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: 8ccd4192-4a58-42a5-8f74-2574d10de98e
 ms.openlocfilehash: 3e9f7e3208222cd6c0f512c5f892453ac6e6980c
-ms.sourcegitcommit: 73134bf279f3ed18235d24ae63cdc2e34a20e7b7
+ms.sourcegitcommit: 1ca9d7562a877c47f227f1a8e6583cb024909749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "10107871"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "74910167"
 ---
 # <a name="implementing-resource-controls-for-windows-containers"></a>实施 Windows 容器资源控制
 某些资源控制可以按容器和按资源实施。  默认情况下，容器运行受典型 Windows 资源管理（总体上以公平分配为基础）影响，但通过实施以上控制，开发人员或管理员可以限制或影响资源使用情况。  可以控制的资源包括：CPU/处理器、内存/RAM、磁盘/存储和网络/吞吐量。
@@ -32,34 +32,34 @@ Windows 容器利用[作业对象](https://docs.microsoft.com/windows/desktop/Pr
 | HCS 界面 | [MemoryMaximumInMB](https://github.com/Microsoft/hcsshim/blob/b144c605002d4086146ca1c15c79e56bfaadc2a7/interface.go#L67) |
 | 共享的内核 | [JOB_OBJECT_LIMIT_JOB_MEMORY](https://docs.microsoft.com/windows/desktop/api/winnt/ns-winnt-_jobobject_basic_limit_information) |
 | Hyper-V 隔离 | 虚拟机内存 |
-| _有关 Windows Server 2016 中 Hyper-V 的提示：在使用内存容量时你会发现，容器一开始会分配内存量上限，随后又开始将其返回至容器主机。  在更高版本（1709 或更高版）中这种情形已经得到优化。_ |
+| _有关 Windows Server 2016 中的 Hyper-v 隔离的说明：使用内存上限时，会看到容器最初分配 cap 内存量，然后开始将其返回到容器主机。 更高版本（1709或更高版本）已对此进行了优化。_ |
 | ||
-| *CPU（计数）* ||
-| Docker 界面 | [--CPU](https://docs.docker.com/engine/admin/resource_constraints/#cpu) |
+| *CPU （计数）* ||
+| Docker 界面 | [--cpu](https://docs.docker.com/engine/admin/resource_constraints/#cpu) |
 | HCS 界面 | [ProcessorCount](https://github.com/Microsoft/hcsshim/blob/b144c605002d4086146ca1c15c79e56bfaadc2a7/interface.go#L67) |
 | 共享的内核 | 使用 [JOB_OBJECT_CPU_RATE_CONTROL_HARD_CAP](https://docs.microsoft.com/windows/desktop/api/winnt/ns-winnt-_jobobject_cpu_rate_control_information)* 模拟 |
 | Hyper-V 隔离 | 公开的虚拟处理器数量 |
 | ||
-| *CPU（百分比）* ||
-| Docker 界面 | [--CPU 百分比](https://docs.docker.com/engine/admin/resource_constraints/#cpu) |
+| *CPU （百分比）* ||
+| Docker 界面 | [--cpu 百分比](https://docs.docker.com/engine/admin/resource_constraints/#cpu) |
 | HCS 界面 | [ProcessorMaximum](https://github.com/Microsoft/hcsshim/blob/b144c605002d4086146ca1c15c79e56bfaadc2a7/interface.go#L67) |
 | 共享的内核 | [JOB_OBJECT_CPU_RATE_CONTROL_HARD_CAP](https://docs.microsoft.com/windows/desktop/api/winnt/ns-winnt-_jobobject_cpu_rate_control_information) |
 | Hyper-V 隔离 | 虚拟机监控程序对虚拟处理器的限制 |
 | ||
-| *CPU（共享）* ||
-| Docker 界面 | [--CPU 共享](https://docs.docker.com/engine/admin/resource_constraints/#cpu) |
+| *CPU （共享）* ||
+| Docker 界面 | [--cpu 共享](https://docs.docker.com/engine/admin/resource_constraints/#cpu) |
 | HCS 界面 | [ProcessorWeight](https://github.com/Microsoft/hcsshim/blob/b144c605002d4086146ca1c15c79e56bfaadc2a7/interface.go#L67) |
 | 共享的内核 | [JOB_OBJECT_CPU_RATE_CONTROL_WEIGHT_BASED](https://docs.microsoft.com/windows/desktop/api/winnt/ns-winnt-_jobobject_cpu_rate_control_information) |
 | Hyper-V 隔离 | 虚拟机监控程序虚拟处理器权重 |
 | ||
-| *存储（图像）* ||
-| Docker 界面 | [--io-maxbandwidth/--io-maxiops](https://docs.docker.com/edge/engine/reference/commandline/run/#usage) |
+| *存储（映像）* ||
+| Docker 界面 | [--maxbandwidth/--maxiops](https://docs.docker.com/edge/engine/reference/commandline/run/#usage) |
 | HCS 界面 | [StorageIOPSMaximum 和 StorageBandwidthMaximum](https://github.com/Microsoft/hcsshim/blob/b144c605002d4086146ca1c15c79e56bfaadc2a7/interface.go#L67) |
 | 共享的内核 | [JOBOBJECT_IO_RATE_CONTROL_INFORMATION](https://docs.microsoft.com/windows/desktop/api/jobapi2/ns-jobapi2-jobobject_io_rate_control_information) |
 | Hyper-V 隔离 | [JOBOBJECT_IO_RATE_CONTROL_INFORMATION](https://docs.microsoft.com/windows/desktop/api/jobapi2/ns-jobapi2-jobobject_io_rate_control_information) |
 | ||
 | *存储（卷）* ||
-| Docker 界面 | [--storage-opt size=](https://docs.docker.com/edge/engine/reference/commandline/run/#set-storage-driver-options-per-container) |
+| Docker 界面 | [--存储-opt 大小 =](https://docs.docker.com/edge/engine/reference/commandline/run/#set-storage-driver-options-per-container) |
 | HCS 界面 | [StorageSandboxSize](https://github.com/Microsoft/hcsshim/blob/b144c605002d4086146ca1c15c79e56bfaadc2a7/interface.go#L67) |
 | 共享的内核 | [JOBOBJECT_IO_RATE_CONTROL_INFORMATION](https://docs.microsoft.com/windows/desktop/api/jobapi2/ns-jobapi2-jobobject_io_rate_control_information) |
 | Hyper-V 隔离 | [JOBOBJECT_IO_RATE_CONTROL_INFORMATION](https://docs.microsoft.com/windows/desktop/api/jobapi2/ns-jobapi2-jobobject_io_rate_control_information) |

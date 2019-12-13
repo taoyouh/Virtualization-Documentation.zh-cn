@@ -7,17 +7,17 @@ ms.date: 02/15/2019
 ms.topic: article
 ms.prod: windows-10-hyperv
 ms.assetid: 752dc760-a33c-41bb-902c-3bb2ecd9ac86
-ms.openlocfilehash: bad59fcc65bf66ab3c6dc940a17111e46a9bc226
-ms.sourcegitcommit: cdf127747cfcb839a8abf50a173e628dcfee02db
+ms.openlocfilehash: e1b6b55b2e17ac4f0883078748d75f6d4b9fcafa
+ms.sourcegitcommit: 1ca9d7562a877c47f227f1a8e6583cb024909749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "9999024"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "74909457"
 ---
 # <a name="install-hyper-v-on-windows-10"></a>在 Windows 10 上安装 Hyper-V
 
 启用 Hyper-V 以在 Windows 10 上创建虚拟机。  
-可以通过多种方式启用 hyper-v, 包括使用 Windows 10 控制面板、PowerShell 或使用部署图像处理服务和管理工具 (DISM)。 本文档将逐一介绍每个选项。
+可以通过多种方式启用 hyper-v，包括使用 Windows 10 控制面板、PowerShell 或使用部署映像服务和管理工具（DISM）。 本文档将逐一介绍每个选项。
 
 > **注意**：Hyper-V 作为可选功能内置于 Windows -- 无需下载 Hyper-V。
 
@@ -25,12 +25,12 @@ ms.locfileid: "9999024"
 
 * Windows 10 企业版、专业版或教育版
 * 具有二级地址转换 (SLAT) 的 64 位处理器。
-* 虚拟机监视器模式扩展的 CPU 支持 (Intel Cpu 上的 VT-c)。
-* 最小 4 GB 内存。
+* CPU 支持 VM 监视器模式扩展（Intel CPU 的 VT-c 技术）。
+* 最少 4 GB 内存。
 
 **请勿**在 Windows 10 家庭版上安装 Hyper-V 角色。
 
-通过打开 "**设置** > **更新" 和 "安全** > **激活**", 从 windows 10 家庭版升级到 windows 10 专业版。
+通过打开 > **更新和安全** > **激活**的**设置**，从 Windows 10 家庭版升级到 windows 10 专业版。
 
 有关详细信息和疑难解答，请参阅 [Windows 10 Hyper-V 系统要求](../reference/hyper-v-requirements.md)。
 
@@ -74,7 +74,7 @@ ms.locfileid: "9999024"
 
 3. 选择“**打开或关闭 Windows 功能**”。
 
-4. 选择 **Hyper-V**，然后单击**确定**。
+4. 选择“**Hyper-V**”，然后单击“**确定**”。
 
 ![Windows 程序和功能对话框](media/enable_role_upd.png)
 
@@ -82,4 +82,4 @@ ms.locfileid: "9999024"
 
 ## <a name="make-virtual-machines"></a>创建虚拟机
 
-[创建你的第一个虚拟机](quick-create-virtual-machine.md)
+[创建第一个虚拟机](quick-create-virtual-machine.md)

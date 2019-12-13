@@ -5,34 +5,34 @@ ms.author: daschott
 ms.date: 02/09/2018
 ms.topic: get-started-article
 ms.prod: containers
-description: 将 Linux 节点加入到 Kubernetes 群集与 v1.14。
+description: 使用 v 1.14 将 Linux 节点加入 Kubernetes 群集。
 keywords: kubernetes，1.14，windows，入门
 ms.assetid: 3b05d2c2-4b9b-42b4-a61b-702df35f5b17
 ms.openlocfilehash: 88207939c82bfe8ffa0b088cfd61cf4ab22cb10a
-ms.sourcegitcommit: aaf115a9de929319cc893c29ba39654a96cf07e1
+ms.sourcegitcommit: 1ca9d7562a877c47f227f1a8e6583cb024909749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "9622942"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "74909947"
 ---
-# <a name="joining-linux-nodes-to-a-cluster"></a>Linux 节点加入群集
+# <a name="joining-linux-nodes-to-a-cluster"></a>将 Linux 节点加入群集
 
-[设置 Kubernetes 主节点](creating-a-linux-master.md)并[选择所需的网络解决方案](network-topologies.md)后，你就可以将 Linux 节点加入到群集。 这在加入之前需要某些[Linux 节点上的准备](joining-linux-workers.md#preparing-a-linux-node)。
+[设置 Kubernetes 主节点](creating-a-linux-master.md)并选择所需的[网络解决方案](network-topologies.md)后，便可以将 Linux 节点加入群集。 这需要在加入之前[在 Linux 节点上做好一些准备](joining-linux-workers.md#preparing-a-linux-node)。
 > [!tip]
-> 面向**Ubuntu 16.04**针对定制的 Linux 说明。 其他认证运行 Kubernetes 的 linux 还应提供等效命令可以替代。 它们将还兼容成功与 Windows。
+> Linux 说明专为**Ubuntu 16.04**定制。 认证为运行 Kubernetes 的其他 Linux 分发还应提供可替代的等效命令。 它们还将成功与 Windows 互操作。
 
 ## <a name="preparing-a-linux-node"></a>准备 Linux 节点
 
 > [!NOTE]
-> 除非明确指定，否则运行的任何命令在**提升权限，根用户 shell**。
+> 除非显式指定，否则在**提升的根用户 shell**中运行任何命令。
 
-首先，获取到根外壳：
+首先，转到根 shell：
 
 ```bash
 sudo –s
 ```
 
-请确保你的计算机保持最新状态：
+请确保您的计算机是最新的：
 
 ```bash
 apt-get update && apt-get upgrade
@@ -40,7 +40,7 @@ apt-get update && apt-get upgrade
 
 ## <a name="install-docker"></a>安装 Docker
 
-若要能够使用容器，你需要一个容器引擎，如 Docker。 若要获取最新版本，你可以使用 Docker 安装[这些说明](https://docs.docker.com/install/linux/docker-ce/ubuntu/)。 你可以验证该 docker 是否已正确安装通过运行`hello-world`图像：
+为了能够使用容器，需要一个容器引擎，如 Docker。 若要获取最新版本，你可以使用[这些](https://docs.docker.com/install/linux/docker-ce/ubuntu/)针对 Docker 安装的说明。 可以通过运行 `hello-world` 映像来验证是否正确安装了 docker：
 
 ```bash
 docker run hello-world
@@ -48,10 +48,10 @@ docker run hello-world
 
 ## <a name="install-kubeadm"></a>安装 kubeadm
 
-下载`kubeadm`为 Linux 分发的二进制文件并初始化群集。
+下载适用于 Linux 分发版的 `kubeadm` 二进制文件并初始化群集。
 
 > [!Important]  
-> 具体取决于你 Linux 分发，你可能需要替换`kubernetes-xenial`下面与正确[代号](https://wiki.ubuntu.com/Releases)。
+> 根据 Linux 发行版，可能需要将以下 `kubernetes-xenial` 替换为正确的[codename](https://wiki.ubuntu.com/Releases)。
 
 ``` bash
 curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | apt-key add -
@@ -63,56 +63,56 @@ apt-get update && apt-get install -y kubelet kubeadm kubectl
 
 ## <a name="disable-swap"></a>禁用交换
 
-在 Linux 上的 Kubernetes 需要交换空间将其关闭：
+Linux 上的 Kubernetes 需要关闭交换空间：
 
 ``` bash
 nano /etc/fstab  # (remove a line referencing 'swap.img' , if it exists)
 swapoff -a
 ```
 
-## <a name="flannel-only-enable-bridged-ipv4-traffic-to-iptables"></a>(仅 flannel)启用 iptables 桥接的 IPv4 流量
+## <a name="flannel-only-enable-bridged-ipv4-traffic-to-iptables"></a>（仅限 Flannel）启用到 iptables 的桥接 IPv4 流量
 
-如果你选择 Flannel 作为网络解决方案建议启用桥接 iptables 链 IPv4 流量。 你应具有[已完成此主机](network-topologies.md#flannel-in-host-gateway-mode)和现在需要重复想要加入的 Linux 节点。 它可以完成使用以下命令：
+如果选择 "Flannel" 作为网络解决方案，则建议启用到 iptables 链的桥接 IPv4 流量。 你应该[已为主节点完成此操作](network-topologies.md#flannel-in-host-gateway-mode)，现在需要为要加入的 Linux 节点重复此操作。 可以使用以下命令完成此操作：
 
 ``` bash
 sudo sysctl net.bridge.bridge-nf-call-iptables=1
 ```
 
-## <a name="copy-kubernetes-certificate"></a>将 Kubernetes 证书复制
+## <a name="copy-kubernetes-certificate"></a>复制 Kubernetes 证书
 
-**作为常规，（非根） 用户**，请执行以下 3 个步骤。
+对于**常规（非根）用户**，请执行以下3个步骤。
 
-1. 创建 Kubernetes 的 Linux 目录：
+1. 为 Linux 目录创建 Kubernetes：
 
 ```bash
 mkdir -p $HOME/.kube
 ```
 
-2. 将 Kubernetes 证书文件复制 (`$HOME/.kube/config`)[从主服务器](./creating-a-linux-master.md#collect-cluster-information)并另存为`$HOME/.kube/config`上工作。
+2. [从 master](./creating-a-linux-master.md#collect-cluster-information)复制 Kubernetes 证书文件（`$HOME/.kube/config`），并在辅助角色上另存为 `$HOME/.kube/config`。
 
 > [!tip]
-> 如[WinSCP](https://winscp.net/eng/download.php) scp 基于工具可用于节点之间传输的配置文件。
+> 可以使用基于 scp 的工具（如[WinSCP](https://winscp.net/eng/download.php) ）在节点之间传输配置文件。
 
-3. 设置复制的配置文件的文件所有权，如下所示：
+3. 按如下所示设置复制的配置文件的文件所有权：
 
 ``` bash
 sudo chown $(id -u):$(id -g) $HOME/.kube/config
 ```
 
-## <a name="joining-node"></a>加入节点
+## <a name="joining-node"></a>联接节点
 
-最后，若要加入群集，请运行`kubeadm join`[我们之前所述下](./creating-a-linux-master.md#initialize-master)**作为根**命令：
+最后，若要加入群集，请运行[前面记下](./creating-a-linux-master.md#initialize-master)的 `kubeadm join` 命令**作为根**：
 
 ```bash
 kubeadm join <Master_IP>:6443 --token <some_token> --discovery-token-ca-cert-hash <some_hash>
 ```
 
-如果成功，你应该会看到与此类似输出：
+如果成功，应看到类似于下面的输出：
 
 ![文本](./media/node-join.png)
 
 ## <a name="next-steps"></a>后续步骤
 
-在此部分中，我们将介绍如何将 Linux 工作者加入到我们 Kubernetes 群集。 现在，你可以随时步骤 6:
+在本部分中，我们介绍了如何将 Linux 辅助角色加入到 Kubernetes 群集。 现在，你已准备好执行步骤6：
 > [!div class="nextstepaction"]
 > [部署 Kubernetes 资源](./deploying-resources.md)

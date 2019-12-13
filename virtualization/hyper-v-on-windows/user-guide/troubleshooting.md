@@ -8,12 +8,12 @@ ms.topic: article
 ms.prod: windows-10-hyperv
 ms.service: windows-10-hyperv
 ms.assetid: f0ec8eb4-ffc4-4bf1-9a19-7a8c3975b359
-ms.openlocfilehash: bdb9feeb2452f2784a3b814e85dc72f3b967a9d3
-ms.sourcegitcommit: cdf127747cfcb839a8abf50a173e628dcfee02db
+ms.openlocfilehash: 03bbb4494bbbd790f16c4b6afef387905f7c6c83
+ms.sourcegitcommit: 1ca9d7562a877c47f227f1a8e6583cb024909749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "9998864"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "74910887"
 ---
 # <a name="troubleshoot-hyper-v-on-windows-10"></a>Windows 10 上的 Hyper-V 疑难解答
 
@@ -29,7 +29,7 @@ ms.locfileid: "9998864"
 
 ## <a name="when-i-try-to-create-a-virtual-hard-disk-on-a-flash-drive-an-error-message-is-displayed"></a>当我尝试在 U 盘上创建虚拟硬盘时，将显示一条错误消息。
 Hyper-V 不支持 FAT/FAT32 格式化的磁盘驱动器，因为这些文件系统不提供访问控制列表 (ACL)，并且不支持大于 4GB 的文件。 ExFAT 格式化的磁盘仅提供有限的 ACL 功能，因此出于安全原因，这些磁盘不受支持。
-在 PowerShell 中显示的错误消息为“系统无法创建‘\[VHD 路径\]’：由于文件系统限制，所请求的操作无法完成 (0x80070299)。”
+在 PowerShell 中显示的错误消息为“系统无法创建‘\[到 VHD 的路径\]’：由于文件系统限制，请求的操作无法完成 (0x80070299)。”
 
 改为使用 NTFS 格式化的驱动器。 
 

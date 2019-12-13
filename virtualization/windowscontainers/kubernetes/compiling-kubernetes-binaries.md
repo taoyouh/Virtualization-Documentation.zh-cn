@@ -8,19 +8,19 @@ ms.prod: containers
 description: 编译和交叉编译源中的 Kubernetes 二进制文件。
 keywords: kubernetes，1.12，linux，编译
 ms.openlocfilehash: 40bf7e65a8910cdab095abb269aa0a92508189cd
-ms.sourcegitcommit: 0deb653de8a14b32a1cfe3e1d73e5d3f31bbe83b
+ms.sourcegitcommit: 1ca9d7562a877c47f227f1a8e6583cb024909749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "9574818"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "74909867"
 ---
 # <a name="compiling-kubernetes-binaries"></a>编译 Kubernetes 二进制文件 #
 编译 Kubernetes 需要有效的 Go 环境。 此页面将逐一介绍编译 Linux 二进制文件和交叉编译 Windows 二进制文件的一些方法。
 > [!NOTE] 
-> 此页面是完全自愿和仅包含的感兴趣的 Kubernetes 开发人员想要尝试的最新的 & 最大程度地源代码。
+> 此页面完全是自愿的，仅包含在想要试验最新 & 最新源代码的相关 Kubernetes 开发人员。
 
 > [!tip]
-> 若要接收有关你可以订阅的最新进展通知[@kubernetes-announce](https://groups.google.com/forum/#!forum/kubernetes-announce)。
+> 若要接收有关可订阅[@kubernetes-announce](https://groups.google.com/forum/#!forum/kubernetes-announce)的最新开发的通知。
 
 ## <a name="installing-go"></a>安装 Go ##
 为简单起见，Go 将安装在临时的自定义位置：
@@ -51,7 +51,7 @@ export PATH="$GOROOT/bin:$PATH"
 > [!Tip]  
 > 如果你遇到“权限被拒绝”错误，则可以按照 [`acs-engine`](https://github.com/Azure/acs-engine/blob/master/scripts/build-windows-k8s.sh#L176) 中的注释先生成 Linux `kubelet` 来避免这些错误：
 >  
-> _由于 Kubernetes Windows 生成系统中似乎存在一个 bug，因此必须首先生成 Linux 二进制文件来生成 `_output/bin/deepcopy-gen`。 如果生成到 Windows 中而不执行此操作，则将生成一个空 `deepcopy-gen`。_
+> _由于似乎是 Kubernetes Windows 生成系统中的 bug，因此必须首先构建 Linux 二进制文件来生成 `_output/bin/deepcopy-gen`。如果生成到 Windows，则执行此操作将生成空 `deepcopy-gen`。_
 
 首先，检索 Kubernetes 存储库：
 

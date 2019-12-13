@@ -9,16 +9,16 @@ ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: 538871ba-d02e-47d3-a3bf-25cda4a40965
 ms.openlocfilehash: e9d4a9ac88c6853ce019a2469ee80688490b8fdf
-ms.sourcegitcommit: bb4ec1f05921f982c00bdb3ace6d9bc1d5355296
+ms.sourcegitcommit: 1ca9d7562a877c47f227f1a8e6583cb024909749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "10297238"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "74910697"
 ---
 # <a name="windows-container-networking"></a>Windows 容器网络
 
 >[!IMPORTANT]
->请为常规 Docker 网络命令、选项和语法引用[Docker 容器网络](https://docs.docker.com/engine/userguide/networking/)。 * * * 除了[不受支持的功能和网络选项](#unsupported-features-and-network-options)中所描述的任何情况，所有 Docker 网络命令都在 Windows 上受支持，其语法与 Linux 上的语法相同。 但是，Windows 和 Linux 网络堆栈是不同的，因此你将发现 Windows 上不支持某些 Linux 网络命令（例如，ifconfig）。
+>请参阅[Docker Container 网络](https://docs.docker.com/engine/userguide/networking/)以获取一般的 docker 网络命令、选项和语法。 * * * 除了[不受支持的功能和网络选项](#unsupported-features-and-network-options)中所述的任何情况外，在 Windows 上支持的所有 Docker 网络命令都与 Linux 上的语法相同。 但是，Windows 和 Linux 网络堆栈有所不同，因此你会发现 Windows 不支持某些 Linux 网络命令（例如，ifconfig）。
 
 ## <a name="basic-networking-architecture"></a>基本网络体系结构
 
@@ -30,8 +30,8 @@ ms.locfileid: "10297238"
 
 ![文本](media/docker-network-ls.png)
 
-- **内部**vSwitch 是未直接连接到容器主机上的网络适配器的 vSwitch。
-- **外部**vSwitch 是直接连接到容器主机上的网络适配器的项。
+- **内部**vSwitch 是指未直接连接到容器主机上的网络适配器的 vSwitch。
+- **外部**vSwitch 是直接连接到容器主机上的网络适配器的一个。
 
 ![文本](media/get-vmswitch.png)
 
@@ -58,21 +58,21 @@ ms.locfileid: "10297238"
 - 默认 NAT 网络：HNS 使用相应的 Windows 防火墙允许规则创建 WinNAT 端口转移规则/映射
 - 所有其他网络：HNS 利用虚拟筛选平台 (VFP) 来创建策略
     - 这包括：负载均衡、ACL、封装等。
-    - [在此处](https://docs.microsoft.com/en-us/windows-server/networking/technologies/hcn/hcn-top)查找我的 HNS api 和架构
+    - [在此处](https://docs.microsoft.com/en-us/windows-server/networking/technologies/hcn/hcn-top)查找你的 HNS api 和已发布的架构
 
 ![文本](media/HNS-Management-Stack.png)
 
 ## <a name="unsupported-features-and-network-options"></a>不受支持的功能和网络选项
 
-Windows 当前**不**支持以下网络选项：
+当前在 Windows 上**不**支持以下网络选项：
 
-- 连接到 l2bridge、NAT 和覆盖网络的 Windows 容器不支持通过 IPv6 堆栈进行通信。
+- 附加到 l2bridge、NAT 和覆盖网络的 Windows 容器不支持通过 IPv6 堆栈进行通信。
 - 通过 IPsec 进行加密的容器通信。
 - 容器的 HTTP 代理支持。
 - [主机模式](https://docs.docker.com/ee/ucp/interlock/config/host-mode-networking/)网络 
-- 通过透明网络驱动程序在虚拟 Azure 基础结构上联网。
+- 通过透明网络驱动程序在虚拟化的 Azure 基础结构上联网。
 
 | 命令        | 不支持的选项   |
 |---------------|:--------------------:|
-| ``docker run``|   ``--ip6``, ``--dns-option`` |
+| ``docker run``|   ``--ip6``、``--dns-option`` |
 | ``docker network create``| ``--aux-address``, ``--internal``, ``--ip-range``, ``--ipam-driver``, ``--ipam-opt``, ``--ipv6``, ``--opt encrypted`` |

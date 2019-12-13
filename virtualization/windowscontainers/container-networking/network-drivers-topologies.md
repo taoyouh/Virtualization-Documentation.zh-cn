@@ -9,50 +9,50 @@ ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: 538871ba-d02e-47d3-a3bf-25cda4a40965
 ms.openlocfilehash: 46eefb03f8f5a53333f5e7eca7074ab34e72a767
-ms.sourcegitcommit: bb4ec1f05921f982c00bdb3ace6d9bc1d5355296
+ms.sourcegitcommit: 1ca9d7562a877c47f227f1a8e6583cb024909749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "10297248"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "74910067"
 ---
 # <a name="windows-container-network-drivers"></a>Windows 容器网络驱动程序  
 
 除了利用 Docker 在 Windows 上创建的默认“nat”网络之外，用户还可以定义自定义容器网络。 可以使用 Docker CLI [`docker network create -d <NETWORK DRIVER TYPE> <NAME>`](https://docs.docker.com/engine/reference/commandline/network_create/)命令创建用户定义的网络。 在 Windows 上，有以下网络驱动程序类型可用：
 
-- **nat** – 连接到使用“nat”驱动程序创建的网络的容器将连接到*内部* Hyper-V 交换机，并从用户指定的 (``--subnet``) IP 前缀中接收 IP 地址。 支持从容器主机到容器终结点的端口转移/映射。
+- **nat** – 连接到使用“nat”驱动程序创建的网络的容器将连接到*内部* Hyper-V 交换机，并从用户指定的 (``--subnet``) IP 前缀中接收 IP 地址。 支持从容器主机到容器终结点的端口转发/映射。
   
   >[!NOTE]
-  > 重新启动后，在 Windows Server 2019 （或更高版本）上创建的 NAT 网络不再保留。
+  > 重新启动后，不再保留在 Windows Server 2019 （或更高版本）上创建的 NAT 网络。
 
-  > 如果安装了 Windows 10 创意者更新（或更高版本），则支持多个 NAT 网络。
+  > 如果已安装 Windows 10 创意者更新（或更高版本），则支持多个 NAT 网络。
   
 - **transparent** – 连接到使用“transparent”驱动程序创建的网络的容器将通过*外部* Hyper-V 交换机连接到物理网络。 可使用外部 DHCP 服务器静态（需要用户指定的 ``--subnet`` 选项）或动态分配来自物理网络的 IP。
   
   >[!NOTE]
-  >由于以下要求，在透明网络上连接容器主机在 Azure Vm 上不受支持。
+  >由于以下要求，Azure Vm 不支持通过透明网络连接容器主机。
   
-  > 需要：在虚拟化方案中使用此模式时（容器主机为 VM）_需要 MAC 地址欺骗_。
+  > 要求：在虚拟化方案（容器主机为 VM）中使用此模式时 _，需要 MAC 地址欺骗_。
 
-- **overlay** - 当 Docker 引擎在[群模式](../manage-containers/swarm-mode.md)下运行时，连接到覆盖网络的容器可以与跨多个容器主机连接到相同网络的其他容器通信。 在群群集上创建的每个覆盖网络都使用自己的 IP 子网创建，该子网由专用 IP 前缀定义。 覆盖网络驱动程序使用 VXLAN 封装。 **使用合适的网络控制平面（如 Flannel）时，可与 Kubernetes 配合使用。**
-  > 要求：确保你的环境满足创建覆盖网络所需的这些[必备条件](https://docs.docker.com/network/overlay/#operations-for-all-overlay-networks)。
+- **overlay** - 当 Docker 引擎在[群模式](../manage-containers/swarm-mode.md)下运行时，连接到覆盖网络的容器可以与跨多个容器主机连接到相同网络的其他容器通信。 在群群集上创建的每个覆盖网络都使用自己的 IP 子网创建，该子网由专用 IP 前缀定义。 覆盖网络驱动程序使用 VXLAN 封装。 **当使用合适的网络控制平面（如 Flannel）时，可与 Kubernetes 配合使用。**
+  > 要求：确保环境满足创建覆盖网络所需的[先决条件](https://docs.docker.com/network/overlay/#operations-for-all-overlay-networks)。
 
-  > 需要：在 Windows Server 2019 上，这需要[KB4489899](https://support.microsoft.com/help/4489899)。
+  > 要求：在 Windows Server 2019 上，这需要[KB4489899](https://support.microsoft.com/help/4489899)。
 
-  > 需要：在 Windows Server 2016 上，这需要[KB4015217](https://support.microsoft.com/help/4015217/windows-10-update-kb4015217)。
+  > 要求：在 Windows Server 2016 上，这需要[KB4015217](https://support.microsoft.com/help/4015217/windows-10-update-kb4015217)。
 
   >[!NOTE]
-  >在 Windows Server 2019 上，覆盖由 Docker 创建的网络 Swarm 利用 VFP NAT 规则进行出站连接。 这意味着给定的容器收到1个 IP 地址。 这还意味着基于 ICMP 的工具（如`ping`或`Test-NetConnection` ）应在调试情况下使用其 TCP/UDP 选项进行配置。
+  >在 Windows Server 2019 上，Docker Swarm 创建的覆盖网络利用 VFP NAT 规则进行出站连接。 这意味着，给定容器接收1个 IP 地址。 这还意味着，在调试情况下，应使用其 TCP/UDP 选项配置基于 ICMP 的工具（如 `ping` 或 `Test-NetConnection`）。
 
-- **l2bridge** -类似于`transparent`网络模式，连接到使用 "l2bridge" 驱动程序创建的网络的容器将通过*外部*hyper-v 交换机连接到物理网络。 L2bridge 中的区别在于，容器终结点将具有与主机相同的 MAC 地址，这是由于入口和出口的第2层地址转换（MAC 重新写入）操作所致。 在群集方案中，这有助于减少对交换机（必须了解有时短寿命的容器的 MAC 地址）的压力。 可采用两种不同的方式配置 L2bridge 网络：
-  1. L2bridge 网络已配置为与容器主机相同的 IP 子网
-  2. L2bridge 网络配置有新的自定义 IP 子网
+- **l2bridge** -类似于 `transparent` 网络模式，附加到使用 "l2bridge" 驱动程序创建的网络的容器将通过*外部*hyper-v 交换机连接到物理网络。 L2bridge 的不同之处在于，容器终结点将与主机具有相同的 MAC 地址，因为入口和出口的第2层地址转换（MAC 重新写入）操作。 在群集方案中，这有助于缓解交换机的压力，使其不必了解有时短期的临时容器的 MAC 地址。 可以通过两种不同的方式配置 L2bridge 的网络：
+  1. 已为 L2bridge 网络配置与容器主机相同的 IP 子网
+  2. 使用新的自定义 IP 子网配置 L2bridge 网络
   
-  在配置2中，用户将需要在充当网关的主机网络隔离舱上添加终结点，并为指定的前缀配置路由功能。 
-  > 需要：需要 Windows Server 2016、Windows 10 创意者更新或更高版本。
+  在配置2中，用户将需要在充当网关并为指定的前缀配置路由功能的主机网络隔离舱上添加终结点。 
+  > 要求：需要 Windows Server 2016、Windows 10 创意者更新或更高版本。
 
-  > 需要：用于外部连接的[OutboundNAT 策略](./advanced.md#specify-outboundnat-policy-for-a-network)。
+  > 要求：用于外部连接的[OutboundNAT 策略](./advanced.md#specify-outboundnat-policy-for-a-network)。
 
-- **l2tunnel** -类似于 l2bridge，但_此驱动程序仅应在 Microsoft 云堆栈（Azure）中使用_。 来自容器的数据包会发送到应用了 SDN 策略的虚拟化主机。
+- **l2tunnel** -类似于 l2bridge，但_此驱动程序只能在 Microsoft 云 Stack （Azure）中使用_。 来自容器的数据包会发送到应用了 SDN 策略的虚拟化主机。
 
 
 ## <a name="network-topologies-and-ipam"></a>网络拓扑和 IPAM
@@ -61,12 +61,12 @@ ms.locfileid: "10297248"
 
 ### <a name="networking-modesdocker-drivers"></a>网络模式/Docker 驱动程序
 
-  | Docker Windows 网络驱动程序 | 典型用法 | 容器到容器（单节点） | 容器到外部（单节点 + 多节点） | 容器到容器（多节点） |
+  | Docker Windows 网络驱动程序 | 典型用途 | 容器到容器（单节点） | 容器到外部（单节点 + 多节点） | 容器到容器（多节点） |
   |-------------------------------|:------------:|:------------------------------------:|:------------------------------------------------:|:-----------------------------------:|
-  | **NAT（默认）** | 非常适用于开发人员 | <ul><li>相同子网：通过 Hyper-V 虚拟交换机进行桥接</li><li> 交叉子网：不支持（仅一个 NAT 内部前缀）</li></ul> | 通过管理 vNIC（已绑定到 WinNAT）路由 | 不直接支持：需要通过主机公开端口 |
-  | **Transparent** | 非常适用于开发人员或小型部署 | <ul><li>相同子网：通过 Hyper-V 虚拟交换机进行桥接</li><li>跨子网：通过容器主机路由</li></ul> | 通过能够直接访问（物理）网络适配器的容器主机进行路由 | 通过能够直接访问（物理）网络适配器的容器主机进行路由 |
-  | **Overlay** | 适用于多节点;对于 Docker Swarm 是必需的，在 Kubernetes 中提供 | <ul><li>相同子网：通过 Hyper-V 虚拟交换机进行桥接</li><li>跨子网：网络流量通过管理 vNIC 进行封装和路由</li></ul> | 不直接支持-需要第二个容器终结点连接到 windows server 2016 上的 NAT 网络或 Windows Server 2019 上的 VFP NAT 规则。  | 相同/跨子网：网络流量使用 VXLAN 封装并通过管理 vNIC 进行路由 |
-  | **L2Bridge** | 用于 Kubernetes 和 Microsoft SDN | <ul><li>相同子网：通过 Hyper-V 虚拟交换机进行桥接</li><li> 跨子网：在入口和出口重新写入容器 MAC 地址并路由</li></ul> | 在入口和出口重新写入容器 MAC 地址 | <ul><li>相同子网：桥接</li><li>交叉子网：通过管理 vNIC 在 WSv1809 和更高版本上路由</li></ul> |
+  | **NAT （默认值）** | 非常适用于开发人员 | <ul><li>相同子网：通过 Hyper-V 虚拟交换机进行桥接</li><li> 跨子网：不支持（仅有一个 NAT 内部前缀）</li></ul> | 通过管理 vNIC（已绑定到 WinNAT）路由 | 不直接支持：需要通过主机公开端口 |
+  | **透过** | 非常适用于开发人员或小型部署 | <ul><li>相同子网：通过 Hyper-V 虚拟交换机进行桥接</li><li>跨子网：通过容器主机路由</li></ul> | 通过能够直接访问（物理）网络适配器的容器主机进行路由 | 通过能够直接访问（物理）网络适配器的容器主机进行路由 |
+  | **Overlay** | 适用于多节点;对于 Docker Swarm 是必需的，在 Kubernetes 中提供 | <ul><li>相同子网：通过 Hyper-V 虚拟交换机进行桥接</li><li>跨子网：网络流量通过管理 vNIC 进行封装和路由</li></ul> | 不直接支持-要求在 windows server 2016 上附加到 NAT 网络的第二个容器终结点或 Windows Server 2019 上的 VFP NAT 规则。  | 相同/跨子网：网络流量使用 VXLAN 封装并通过管理 vNIC 进行路由 |
+  | **L2Bridge** | 用于 Kubernetes 和 Microsoft SDN | <ul><li>相同子网：通过 Hyper-V 虚拟交换机进行桥接</li><li> 跨子网：在入口和出口重新写入容器 MAC 地址并路由</li></ul> | 在入口和出口重新写入容器 MAC 地址 | <ul><li>相同子网：桥接</li><li>跨子网：通过 WSv1809 和更高版本上的管理 vNIC 路由</li></ul> |
   | **L2Tunnel**| 仅限 Azure | 相同/跨子网：固定到策略所应用于的物理主机的 Hyper-V 虚拟交换机 | 流量必须经过 Azure 虚拟网络网关 | 相同/跨子网：固定到策略所应用于的物理主机的 Hyper-V 虚拟交换机 |
 
 ### <a name="ipam"></a>IPAM
@@ -75,10 +75,10 @@ ms.locfileid: "10297248"
 
 | 网络模式/驱动程序 | IPAM |
 | -------------------------|:----:|
-| NAT | 来自内部 NAT 子网前缀的主机网络服务（HNS）的动态 IP 分配和分配 |
-| Transparent | 对容器主机网络前缀内的 IP 地址进行静态或动态（使用外部 DHCP 服务器）IP 分配和指定 |
-| Overlay | 根据 Docker 引擎群模式管理的前缀进行动态 IP 分配并通过 HNS 进行指定 |
-| L2Bridge | 从容器主机的网络前缀中的 IP 地址进行静态 IP 分配和分配（也可以通过 HNS 分配） |
+| NAT | 主机网络服务（HNS）在内部 NAT 子网前缀中的动态 IP 分配和分配 |
+| 透明 | 对容器主机网络前缀内的 IP 地址进行静态或动态（使用外部 DHCP 服务器）IP 分配和指定 |
+| 覆盖 | 根据 Docker 引擎群模式管理的前缀进行动态 IP 分配并通过 HNS 进行指定 |
+| L2Bridge | 容器主机网络前缀中的 IP 地址的静态 IP 分配和分配（也可以通过 HNS 分配） |
 | L2Tunnel | 仅限 Azure - 通过插件进行动态 IP 分配和指定 |
 
 ### <a name="service-discovery"></a>服务发现
@@ -88,6 +88,6 @@ ms.locfileid: "10297248"
 |  | 本地服务发现  | 全局服务发现 |
 | :---: | :---------------     |  :---                |
 | nat | 是 | 是（通过 Docker EE） |  
-| overlay | 是 | 具有 Docker EE 或 kube-dns 的 YES |
-| transparent | NO | 否 |
-| l2bridge | 否 | 是，kube-dns |
+| overlay | 是 | 是，具有 Docker EE 或 kube |
+| transparent | 否 | 否 |
+| l2bridge | 否 | 是，包含 kube |

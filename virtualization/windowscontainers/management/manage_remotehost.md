@@ -8,12 +8,12 @@ ms.topic: article
 ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: 0cc1b621-1a92-4512-8716-956d7a8fe495
-ms.openlocfilehash: 2e1fec6aa7149c801b1c72a0f8a346ca879015c2
-ms.sourcegitcommit: cdf127747cfcb839a8abf50a173e628dcfee02db
+ms.openlocfilehash: b975c593bd5c736ec3e7e1e21b76b2f6a2c8f8a4
+ms.sourcegitcommit: 1ca9d7562a877c47f227f1a8e6583cb024909749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "9998194"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "74909647"
 ---
 # <a name="remote-management-of-a-windows-docker-host"></a>Windows Docker 主机远程管理
 
@@ -23,7 +23,7 @@ ms.locfileid: "9998194"
 
 * 使用 [dockertls](https://hub.docker.com/r/stefanscherer/dockertls-windows/) 在服务器上创建证书。 如果要使用 IP 地址创建证书，可能需要考虑使用静态 IP，以免在 IP 地址更改时需要重新创建证书。
 
-* 重启 docker 服务 `Restart-Service Docker`
+* 重新启动 docker 服务 `Restart-Service Docker`
 * 创建允许入站流量的 NSG 规则，使端口 docker 的 TLS 端口 2375 和 2376 可用。 请注意，要建立安全连接，你仅需允许 2376。  
   门户应该会显示 NSG 配置，如：  
   ![NGS](media/nsg.png)  

@@ -8,12 +8,12 @@ ms.topic: article
 ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: ebd79cd3-5fdd-458d-8dc8-fc96408958b5
-ms.openlocfilehash: 16d2794688d60757ef1321d687f6a987ccf0b581
-ms.sourcegitcommit: 62fff5436770151a28b6fea2be3a8818564f3867
+ms.openlocfilehash: 1de86a2492ca899dc3fb932e0d57927fa4000fd0
+ms.sourcegitcommit: 15b5ab92b7b8e96c180767945fdbb2963c3f6f88
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "10147230"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "74911707"
 ---
 # <a name="troubleshooting"></a>疑难解答
 
@@ -27,10 +27,51 @@ Invoke-WebRequest https://aka.ms/Debug-ContainerHost.ps1 -UseBasicParsing | Invo
 如果这对找到问题的根源没有帮助，请继续在[容器论坛](https://social.msdn.microsoft.com/Forums/home?forum=windowscontainers)上发布脚本的输出。 这是从社区（包含 Windows 预览体验成员和开发人员）获得帮助的最佳位置。
 
 
-## <a name="finding-logs"></a>查找日志
-有多个用于管理 Windows 容器的服务。 下一节将介绍为每个服务获取日志的位置。
+### <a name="finding-logs"></a>查找日志
+有多个服务用于管理 Windows 容器。 下一节将介绍为每个服务获取日志的位置。
 
-# <a name="docker-engine"></a>Docker 引擎
+## <a name="docker-container-logs"></a>Docker 容器日志 
+`docker logs` 命令从 STDOUT/STDERR 获取容器的日志，这是适用于 Linux 应用程序的标准应用程序日志存放位置。 Windows 应用程序通常不会记录到 STDOUT/STDERR;相反，它们将记录到 ETW、事件日志或日志文件等。 
+
+Github 上现在提供了一个 Microsoft 支持的开源工具的[日志监视器](https://github.com/microsoft/windows-container-tools/tree/master/LogMonitor)。 日志监视器将 Windows 应用程序日志桥接到 STDOUT/STDERR。 日志监视器是通过配置文件配置的。 
+
+### <a name="log-monitor-usage"></a>日志监视器使用情况
+
+LogMonitor 和 LogMonitorConfig 应同时包含在相同的 LogMonitor 目录中。 
+
+日志监视器可用于 SHELL 使用模式：
+
+```
+SHELL ["C:\\LogMonitor\\LogMonitor.exe", "cmd", "/S", "/C"]
+CMD c:\windows\system32\ping.exe -n 20 localhost
+```
+
+或入口点使用模式：
+
+```
+ENTRYPOINT C:\LogMonitor\LogMonitor.exe c:\windows\system32\ping.exe -n 20 localhost
+```
+
+这两个示例用法都包装了 dism.exe 应用程序。 其他应用程序（如[IIS）。ServiceMonitor]( https://github.com/microsoft/IIS.ServiceMonitor)）可以使用类似的方式与日志监视器嵌套：
+
+```
+COPY LogMonitor.exe LogMonitorConfig.json C:\LogMonitor\
+WORKDIR /LogMonitor
+SHELL ["C:\\LogMonitor\\LogMonitor.exe", "powershell.exe"]
+ 
+# Start IIS Remote Management and monitor IIS
+ENTRYPOINT      Start-Service WMSVC; `
+                    C:\ServiceMonitor.exe w3svc;
+```
+
+
+日志监视器将已包装的应用程序作为子进程启动，并监视应用程序的 STDOUT 输出。
+
+请注意，在 SHELL 使用模式下，应在 SHELL 形式而不是 exec 格式中指定 CMD/ENTRYPOINT 指令。 使用 CMD/ENTRYPOINT 指令的 exec 格式时，不会启动 SHELL，并且不会在容器中启动日志监视工具。
+
+可在[日志监视器 wiki](https://github.com/microsoft/windows-container-tools/wiki)上找到更多使用情况信息。 可在[github](https://github.com/microsoft/windows-container-tools/tree/master/LogMonitor/src/LogMonitor/sample-config-files)存储库中找到关键 Windows 容器方案（IIS 等）的配置文件示例。 可在此[博客文章](https://techcommunity.microsoft.com/t5/Containers/Windows-Containers-Log-Monitor-Opensource-Release/ba-p/973947)中找到其他上下文。
+
+## <a name="docker-engine"></a>Docker 引擎
 Docker 引擎会将事件记录到 Windows“应用程序”事件日志中，而不是某个文件中。 使用 Windows PowerShell 可以轻松读取、排序和筛选这些日志
 
 例如，这将显示过去 5 分钟的 Docker 引擎日志（从最早的开始）。
@@ -45,11 +86,11 @@ Get-EventLog -LogName Application -Source Docker -After (Get-Date).AddMinutes(-5
 Get-EventLog -LogName Application -Source Docker -After (Get-Date).AddMinutes(-30)  | Sort-Object Time | Export-CSV ~/last30minutes.CSV
 ```
 
-## <a name="enabling-debug-logging"></a>启用调试日志记录
+### <a name="enabling-debug-logging"></a>启用调试日志记录
 还可以在 Docker 引擎上启用调试级别的日志记录。 如果常规日志没有足够的详细信息，这可能有助于进行故障排除。
 
 首先，打开提升的命令提示符，然后运行 `sc.exe qc docker` 为 Docker 服务获取当前命令行。
-例如：
+示例：
 ```
 C:\> sc.exe qc docker
 [SC] QueryServiceConfig SUCCESS
@@ -91,9 +132,9 @@ sc.exe stop docker
 <path\to\>dockerd.exe -D > daemon.log 2>&1
 ```
 
-## <a name="obtaining-stack-dump"></a>获取堆栈转储。
+### <a name="obtaining-stack-dump"></a>获取堆栈转储
 
-通常，这仅在 Microsoft 支持或 docker 开发人员显式请求的情况下才有用。 它可用于帮助诊断屏幕显示已挂起的情况。 
+通常，这仅在 Microsoft 支持或 docker 开发人员明确请求时才有用。 它可用于帮助诊断 docker 似乎已挂起的情况。 
 
 下载 [docker signal.exe](https://github.com/jhowardmsft/docker-signal)。
 
@@ -102,14 +143,14 @@ sc.exe stop docker
 docker-signal --pid=$((Get-Process dockerd).Id)
 ```
 
-输出文件将位于正在运行的数据根目录 docker 中。 默认目录是 `C:\ProgramData\Docker`。 可以通过运行 `docker info -f "{{.DockerRootDir}}"` 来确认实际目录。
+输出文件将位于正在运行的数据根目录中。 默认目录是 `C:\ProgramData\Docker`。 可以通过运行 `docker info -f "{{.DockerRootDir}}"` 来确认实际目录。
 
-文件将是`goroutine-stacks-<timestamp>.log`。
+文件将被 `goroutine-stacks-<timestamp>.log`。
 
-请注意`goroutine-stacks*.log` ，不包含个人信息。
+请注意，`goroutine-stacks*.log` 不包含个人信息。
 
 
-# <a name="host-compute-service"></a>主机计算服务
+## <a name="host-compute-service"></a>主机计算服务
 Docker 引擎依赖于 Windows 特定的主机计算服务。 它具有单独的日志: 
 - Microsoft-Windows-Hyper-V-Compute-Admin
 - Microsoft-Windows-Hyper-V-Compute-Operational
@@ -122,7 +163,7 @@ Get-WinEvent -LogName Microsoft-Windows-Hyper-V-Compute-Admin
 Get-WinEvent -LogName Microsoft-Windows-Hyper-V-Compute-Operational 
 ```
 
-## <a name="capturing-hcs-analyticdebug-logs"></a>捕获 HCS 分析/调试日志
+### <a name="capturing-hcs-analyticdebug-logs"></a>捕获 HCS 分析/调试日志
 
 若要对“Hyper-V 计算”启用分析/调试日志，请将日志保存到 `hcslog.evtx`。
 
@@ -139,7 +180,7 @@ wevtutil.exe epl Microsoft-Windows-Hyper-V-Compute-Analytic <hcslog.evtx>
 wevtutil.exe sl Microsoft-Windows-Hyper-V-Compute-Analytic /e:false /q:true
 ```
 
-## <a name="capturing-hcs-verbose-tracing"></a>捕获 HCS 详细跟踪信息
+### <a name="capturing-hcs-verbose-tracing"></a>捕获 HCS 详细跟踪信息
 
 通常，这些信息仅在 Microsoft 支持请求时才有用。 
 

@@ -9,11 +9,11 @@ ms.prod: windows-10-hyperv
 ms.service: windows-10-hyperv
 ms.assetid: 6d1ae036-0841-4ba5-b7e0-733aad31e9a7
 ms.openlocfilehash: d53bdce3438c6dafe3a1e0350c7a5df30ff8210b
-ms.sourcegitcommit: c4a3f88d1663dd19336bfd4ede0368cb18550ac7
+ms.sourcegitcommit: 1ca9d7562a877c47f227f1a8e6583cb024909749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "9883120"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "74911507"
 ---
 # <a name="working-with-hyper-v-and-windows-powershell"></a>使用 Hyper-V 和 Windows PowerShell
 
@@ -21,7 +21,7 @@ ms.locfileid: "9883120"
 
 ### <a name="return-a-list-of-hyper-v-commands"></a>返回 Hyper-V 命令列表
 
-1. 单击 Windows“开始”按钮，键入“**PowerShell**”。
+1. 单击 Windows“开始”按钮，键入“PowerShell”。
 2. 运行以下命令以显示适用于 Hyper-V PowerShell 模块的 PowerShell 命令的可搜索列表。
 
  ```powershell

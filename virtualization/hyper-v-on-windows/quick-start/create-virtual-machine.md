@@ -8,11 +8,11 @@ ms.topic: article
 ms.prod: windows-10-hyperv
 ms.assetid: 66723f33-b12c-49d1-82cf-71ba9d6087e9
 ms.openlocfilehash: 94ac197f5bc660e52d215fa132eae78f521e1c30
-ms.sourcegitcommit: c4a3f88d1663dd19336bfd4ede0368cb18550ac7
+ms.sourcegitcommit: 1ca9d7562a877c47f227f1a8e6583cb024909749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "9882890"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "74911647"
 ---
 # <a name="create-virtual-machine-with-hyper-v-on-windows-10"></a>在 Windows 10 上使用 Hyper-V 创建虚拟机
 
@@ -24,12 +24,12 @@ ms.locfileid: "9882890"
 
 1. 在 Hyper-V 管理器中，依次单击**操作** > **新建** > **虚拟机**以显示“新建虚拟机向导”。
 
-1. 查看“开始之前”内容，然后单击“**下一步**”。
+1. 查看“开始之前”内容，然后单击“下一步”。
 
 1. 为虚拟机命名。
   > **注意：** 这是 Hyper-V 用于虚拟机的名称，而不是提供给来宾系统的将部署到虚拟机内的计算机名称。
 
-1. 选择将存储虚拟机文件的位置，例如 **c:\virtualmachine**。 还可以接受默认位置。 操作完成后，单击“**下一步**”。
+1. 选择将存储虚拟机文件的位置，例如 **c:\virtualmachine**。 还可以接受默认位置。 操作完成后，单击“下一步”。
 
   ![](media/new_vm_upd.png)
 
@@ -43,7 +43,7 @@ ms.locfileid: "9882890"
 
   在 Hyper-V 主机和该主机上运行的虚拟机之间共享内存。 单台主机上可运行的虚拟机数量部分取决于可用内存。 还可以将虚拟机配置为使用动态内存。 启用后，动态内存从正在运行的虚拟机中回收未使用的内存。 这使得可在该主机上运行更多虚拟机。 有关动态内存的详细信息，请参阅 [Hyper-V 动态内存概述](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831766(v=ws.11))。
 
-3. 在“配置网络”向导上，选择用于虚拟机的虚拟交换机，然后单击“**下一步**”。 有关详细信息，请参阅[创建虚拟交换机](connect-to-network.md)。
+3. 在“配置网络”向导中，选择用于虚拟机的虚拟交换机，然后单击“下一步”。 有关详细信息，请参阅[创建虚拟交换机](connect-to-network.md)。
 
 4. 为虚拟硬盘驱动器指定一个名称、选择一个位置或保留默认值，最后指定大小。 准备就绪后，单击“**下一步**”。
 
@@ -51,7 +51,7 @@ ms.locfileid: "9882890"
   
   ![](media/new_vhd_upd.png)
 
-1. 在“安装选项”向导上，选择“**从可启动的映像文件安装操作系统**”，然后选择操作系统 .iso 文件。 完成后，单击“**下一步**”。
+1. 在“安装选项”向导中，选择“从可启动映像文件安装操作系统”，然后选择操作系统 .iso 文件。 操作完成后，单击“下一步”。
 
   创建虚拟机时，可以配置一些操作系统安装选项。 可使用的三个选项如下：
 
@@ -61,7 +61,7 @@ ms.locfileid: "9882890"
 
   * **从基于网络的安装服务器安装操作系统** – 除非已将虚拟机连接到网络交换机，否则此选项不可用。 在此配置中，虚拟机尝试从网络启动。
 
-1. 查看虚拟机详细信息，然后单击“**完成**”以完成虚拟机创建。
+1. 查看虚拟机详细信息，然后单击“完成”以完成虚拟机创建。
 
 ## <a name="create-a-virtual-machine-with-powershell"></a>使用 PowerShell 创建虚拟机
 

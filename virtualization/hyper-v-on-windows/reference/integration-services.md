@@ -8,12 +8,12 @@ ms.topic: article
 ms.prod: windows-10-hyperv
 ms.service: windows-10-hyperv
 ms.assetid: 18930864-476a-40db-aa21-b03dfb4fda98
-ms.openlocfilehash: 6568b68a77fc5506b58249caea44ec78e3e44de2
-ms.sourcegitcommit: cdf127747cfcb839a8abf50a173e628dcfee02db
+ms.openlocfilehash: 762b82f3714651ffb488f682581680c9526404a8
+ms.sourcegitcommit: 1ca9d7562a877c47f227f1a8e6583cb024909749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "9998934"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "74911147"
 ---
 # <a name="hyper-v-integration-services"></a>Hyper-V 集成服务
 
@@ -22,20 +22,20 @@ ms.locfileid: "9998934"
 本文是 Windows 中提供的每个集成服务的参考。  它也将作为特定集成服务或其历史记录的相关信息的起点。
 
 **用户指南：**  
-* [管理集成服务](https://docs.microsoft.com/windows-server/virtualization/hyper-v/manage/Manage-Hyper-V-integration-services)
+* [管理 integration services](https://docs.microsoft.com/windows-server/virtualization/hyper-v/manage/Manage-Hyper-V-integration-services)
 
 
 ## <a name="quick-reference"></a>快速参考
 
-| Name | Windows 服务名称 | Linux 守护程序名称 |  描述 | 禁用后对 VM 的影响 |
+| 名称 | Windows 服务名称 | Linux 守护程序名称 |  描述 | 禁用后对 VM 的影响 |
 |:---------|:---------|:---------|:---------|:---------|
-| [Hyper-V 检测信号服务](#hyper-v-heartbeat-service) |  vmicheartbeat | hv_utils | 报告虚拟机运行正常。 | 变化不定 |
+| [Hyper V 检测信号服务](#hyper-v-heartbeat-service) |  vmicheartbeat | hv_utils | 报告虚拟机运行正常。 | 变化不定 |
 | [Hyper-V 来宾关闭服务](#hyper-v-guest-shutdown-service) | vmicshutdown | hv_utils |  允许主机触发虚拟机关闭。 | **高** |
-| [Hyper-V 时间同步服务](#hyper-v-time-synchronization-service) | vmictimesync | hv_utils | 使虚拟机的时钟与主计算机的时钟同步。 | **高** |
-| [Hyper-V 数据交换服务 (KVP)](#hyper-v-data-exchange-service-kvp) | vmickvpexchange | hv_kvp_daemon | 提供交换虚拟机和主机之间的基本元数据的方法。 | 中型 |
+| [Hyper V 时间同步服务](#hyper-v-time-synchronization-service) | vmictimesync | hv_utils | 使虚拟机的时钟与主计算机的时钟同步。 | **高** |
+| [Hyper-v 数据交换服务（KVP）](#hyper-v-data-exchange-service-kvp) | vmickvpexchange | hv_kvp_daemon | 提供交换虚拟机和主机之间的基本元数据的方法。 | 中等 |
 | [Hyper-V 卷影复制请求程序](#hyper-v-volume-shadow-copy-requestor) | vmicvss | hv_vss_daemon | 允许卷影复制服务在不关闭虚拟机的情况下对其进行备份。 | 变化不定 |
 | [Hyper-V 来宾服务接口](#hyper-v-powershell-direct-service) | vmicguestinterface | hv_fcopy_daemon | 提供 Hyper-V 主机将文件复制到虚拟机或从虚拟机复制文件的界面。 | 低 |
-| [Hyper-V PowerShell Direct 服务](#hyper-v-powershell-direct-service) | vmicvmsession | 不可用 | 提供在没有网络连接的情况下，使用 PowerShell 管理虚拟机的方法。 | 低 |  
+| [Hyper-v PowerShell 直接服务](#hyper-v-powershell-direct-service) | vmicvmsession | 不可用 | 提供在没有网络连接的情况下，使用 PowerShell 管理虚拟机的方法。 | 低 |  
 
 
 ## <a name="hyper-v-heartbeat-service"></a>Hyper-V 检测信号服务
@@ -74,7 +74,7 @@ DemoVM  Running  Operating normally
 **Linux 守护程序名称：** hv_utils  
 **说明：** 允许 Hyper-V 主机请求关闭虚拟机。  主机始终可以强制关闭虚拟机，但这样做类似于切换电源开关而不是选择关闭。  
 **添加：** Windows Server 2012、Windows 8  
-**影响：****重大影响** 禁用后，主机无法触发虚拟机中的友好关闭。  所有关机将是一种硬关机, 这可能会导致数据丢失或数据损坏。  
+**影响：** **重大影响** 禁用后，主机无法触发虚拟机中的友好关闭。  所有关闭将会关闭，这可能会导致数据丢失或数据损坏。  
 
 
 ## <a name="hyper-v-time-synchronization-service"></a>Hyper-V 时间同步服务
@@ -83,7 +83,7 @@ DemoVM  Running  Operating normally
 **Linux 守护程序名称：** hv_utils  
 **说明：** 使虚拟机的系统时钟与物理计算机的系统时钟同步。  
 **添加：** Windows Server 2012、Windows 8  
-**影响：****重大影响** 禁用后，虚拟机的时钟将出现不确定的偏移。  
+**影响：** **重大影响** 禁用后，虚拟机的时钟将出现不确定的偏移。  
 
 
 ## <a name="hyper-v-data-exchange-service-kvp"></a>Hyper-V 数据交换服务 (KVP)
@@ -127,7 +127,7 @@ DemoVM  Running  Operating normally
 **影响：** 禁用后，主机无法使用 `Copy-VMFile` 将文件复制到来宾和从来宾复制文件。  阅读更多有关 [Copy-VMFile cmdlet](https://docs.microsoft.com/powershell/module/hyper-v/copy-vmfile?view=win10-ps) 的内容。  
 
 **注意：**  
-Д¬ИПЗйїцПВЅыУГ。  请参阅 [PowerShell Direct - 使用 Copy-Item](../user-guide/powershell-direct.md#copy-files-with-new-pssession-and-copy-item)。 
+默认情况下处于禁用状态。  请参阅 [PowerShell Direct - 使用 Copy-Item](../user-guide/powershell-direct.md#copy-files-with-new-pssession-and-copy-item)。 
 
 
 ## <a name="hyper-v-powershell-direct-service"></a>Hyper-V PowerShell Direct 服务
@@ -148,4 +148,4 @@ PowerShell Direct 还在继续开发中，仅在 Windows 10/Windows Server 技�
 
 **用户指南：**  
 * [在虚拟机中运行脚本](../user-guide/powershell-direct.md#run-a-script-or-command-with-invoke-command)
-* [将文件复制到虚拟机和从虚拟机复制文件](../user-guide/powershell-direct.md#copy-files-with-new-pssession-and-copy-item)
+* [向/从虚拟机复制文件](../user-guide/powershell-direct.md#copy-files-with-new-pssession-and-copy-item)

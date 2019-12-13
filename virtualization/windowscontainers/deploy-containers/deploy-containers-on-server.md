@@ -9,11 +9,11 @@ ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: ba4eb594-0cdb-4148-81ac-a83b4bc337bc
 ms.openlocfilehash: 6e3996af36b4a710f9a12b3a1371138b053a43d8
-ms.sourcegitcommit: f3b6b470dd9cde8e8cac7b13e7e7d8bf2a39aa34
+ms.sourcegitcommit: 1ca9d7562a877c47f227f1a8e6583cb024909749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/10/2019
-ms.locfileid: "10077498"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "74909897"
 ---
 # <a name="container-host-deployment-windows-server"></a>容器主机部署： Windows Server
 
@@ -23,9 +23,9 @@ ms.locfileid: "10077498"
 
 若要使用 Window 容器，则需要安装 Docker。 Docker 由 Docker 引擎和 Docker 客户端组成。
 
-若要安装 Docker，我们将使用[OneGet 提供程序 PowerShell 模块](https://github.com/OneGet/MicrosoftDockerProvider)。 提供程序将在你的计算机上启用容器功能并安装 Docker，这将需要重新启动。
+若要安装 Docker，我们将使用[OneGet 提供程序 PowerShell 模块](https://github.com/OneGet/MicrosoftDockerProvider)。 提供程序将在你的计算机上启用容器功能，并安装 Docker，这将需要重新启动。
 
-打开提升的 PowerShell 会话并运行以下 cmdlet。
+打开提升权限的 PowerShell 会话并运行以下 cmdlet。
 
 安装 OneGet PowerShell 模块。
 
@@ -47,18 +47,18 @@ Restart-Computer -Force
 
 ## <a name="install-a-specific-version-of-docker"></a>安装特定版本的 Docker
 
-当前有两个通道可用于 Windows Server 的 Docker EE：
+目前有两个可用于 Windows Server Docker EE 的通道：
 
-* `17.06` -如果你使用的是 Docker 企业版（Docker 引擎、UCP、DTR），请使用此版本。 `17.06` 是默认值。
-* `18.03` -如果您仅运行的是 Docker EE 引擎，请使用此版本。
+* `17.06`-如果使用的是 Docker Enterprise Edition （Docker 引擎、UCP、DTR），请使用此版本。 默认为 `17.06`。
+* `18.03`-如果仅运行 Docker EE 引擎，请使用此版本。
 
-若要安装特定版本，请使用`RequiredVersion`标志：
+若要安装特定版本，请使用 `RequiredVersion` 标志：
 
 ```PowerShell
 Install-Package -Name docker -ProviderName DockerMsftProvider -Force -RequiredVersion 18.03
 ```
 
-安装特定的 Docker EE 版本可能需要更新以前安装的 DockerMsftProvider 模块。 若要更新：
+安装特定 Docker EE 版本可能需要更新到以前安装的 DockerMsftProvider 模块。 更新：
 
 ```PowerShell
 Update-Module DockerMsftProvider
@@ -66,27 +66,27 @@ Update-Module DockerMsftProvider
 
 ## <a name="update-docker"></a>更新 Docker
 
-如果你需要将 Docker EE 引擎从以前的频道更新到更高频道，请同时使用`-Update`和`-RequiredVersion`标志：
+如果需要将 Docker EE 引擎从早期通道更新到后面的通道，请同时使用 `-Update` 和 `-RequiredVersion` 标志：
 
 ```PowerShell
 Install-Package -Name docker -ProviderName DockerMsftProvider -Update -Force -RequiredVersion 18.03
 ```
 
-## <a name="install-base-container-images"></a>安装基容器图像
+## <a name="install-base-container-images"></a>安装基容器映像
 
 使用 Windows 容器前，需安装基本映像。 可通过将 Windows Server Core 或 Nano Server 作为容器操作系统获取基本映像。 有关 Docker 容器映像的详细信息，请参阅[在 docker.com 上生成自己的映像](https://docs.docker.com/engine/tutorials/dockerimages/)。
 
-使用 Windows Server 2019 的发布，Microsoft 来源的容器图像将移动到名为 Microsoft 容器注册表的新注册表中。 由 Microsoft 发布的容器图像应继续通过 Docker Hub 发现。 对于与 Windows Server 2019 和更高版本一起发布的新容器映像，应查找从 MCR 中提取它们。 对于在 Windows Server 2019 之前发布的较旧的容器图像，你应该继续从 Docker 的注册表中提取它们。
+随着 Windows Server 2019 的发布，Microsoft 来源容器映像将移到名为 Microsoft 容器注册表的新注册表中。 Microsoft 发布的容器映像应该继续通过 Docker Hub 发现。 对于在 Windows Server 2019 和更高版本中发布的新容器映像，你应该从 MCR 中提取它们。 对于在 Windows Server 2019 之前发布的较旧的容器映像，应继续从 Docker 的注册表提取它们。
 
 ### <a name="windows-server-2019-and-newer"></a>Windows Server 2019 和更高版本
 
-若要安装 "Windows Server Core" 基本映像，请运行以下操作：
+若要安装 "Windows Server Core" 基本映像，请运行以下内容：
 
 ```PowerShell
 docker pull mcr.microsoft.com/windows/servercore:ltsc2019
 ```
 
-若要安装 "Nano Server" 基本映像，请运行以下操作：
+若要安装 "Nano Server" 基本映像，请运行以下内容：
 
 ```PowerShell
 docker pull mcr.microsoft.com/windows/nanoserver:1809
@@ -106,7 +106,7 @@ docker pull mcr.microsoft.com/windows/servercore:1607
 docker pull mcr.microsoft.com/windows/nanoserver:1803
 ```
 
-> 请阅读此处可在此处找到的 Windows 容器操作系统映像 EULA- [eula](../images-eula.md)。
+> 请阅读 Windows 容器操作系统映像协议，可在此处找到- [eula](../images-eula.md)。
 
 ## <a name="hyper-v-isolation-host"></a>Hyper-v 隔离主机
 
