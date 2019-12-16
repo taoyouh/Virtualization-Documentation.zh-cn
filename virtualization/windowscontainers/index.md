@@ -1,7 +1,7 @@
 ---
 layout: LandingPage
-title: Windows 文档中的容器
-description: 有关在 Windows 上运行容器的文档
+title: Windows 容器文档
+description: 有关如何在 Windows 上运行容器的文档
 keywords: docker, 容器
 author: cwilhit
 ms.date: 09/11/2019
@@ -10,11 +10,11 @@ ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: 74c9d604-0915-4d89-bc69-0263b76bc66b
 ms.openlocfilehash: 9a5b08f87983e285418ae333e3a948af9911d73d
-ms.sourcegitcommit: 22dcc1400dff44fb85591adf0fc443360ea92856
-ms.translationtype: MT
+ms.sourcegitcommit: 1ca9d7562a877c47f227f1a8e6583cb024909749
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2019
-ms.locfileid: "10209737"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "74909157"
 ---
 <div id="main" class="v2">
     <ul class="cardsY panelContent featuredContent">
@@ -29,7 +29,7 @@ ms.locfileid: "10209737"
                                 </div>
                             </div>
                             <div class="cardText">
-                                <h3>在 AKS 中试用 Windows 容器！</h3>
+                                <h3>在 AKS 中尝试 Windows 容器！</h3>
                             </div>
                         </div>
                     </div>
@@ -47,7 +47,7 @@ ms.locfileid: "10209737"
                                 </div>
                             </div>
                             <div class="cardText">
-                                <h3>在 Docker 集线器上查看容器图像。</h3>
+                                <h3>检查我们在 Docker Hub 上的容器映像。</h3>
                             </div>
                         </div>
                     </div>
@@ -73,9 +73,9 @@ ms.locfileid: "10209737"
             </a>
         </li>
     </ul>
-    <h1>Windows 文档中的容器</h1>
+    <h1>Windows 容器文档</h1>
     <br/>
-    <div class="abstract">Windows 容器允许用户将应用程序与它们的依赖关系打包，利用操作系统级别的虚拟化在单个系统上提供快速、完全隔离的环境。 了解如何将 Windows 容器与我们的快速入门指南、部署指南和示例配合使用。</div>
+    <div class="abstract">有了 Windows 容器，用户就可以将应用程序与其依赖项打包在一起，并利用操作系统级别虚拟化，以便在单个系统上提供快速且完全隔离的环境。 了解如何使用 Windows 容器、快速入门指南、部署指南和示例。</div>
     <ul class="cardsW panelContent featuredContent">
         <li>
             <div class="cardSize">
@@ -110,9 +110,9 @@ ms.locfileid: "10209737"
                         <div class="cardText">
                             <h3 style="margin: 8px 0 2px 0;">入门</h3>
                             <ul>
-                                <li><a href="/en-us/virtualization/windowscontainers/quick-start/set-up-environment" data-linktype="external">设置你的环境</a></li>
+                                <li><a href="/en-us/virtualization/windowscontainers/quick-start/set-up-environment" data-linktype="external">设置环境</a></li>
                                 <li><a href="/en-us/virtualization/windowscontainers/quick-start/run-your-first-container" data-linktype="external">运行第一个容器</a></li>
-                                <li><a href="/en-us/virtualization/windowscontainers/quick-start/building-sample-app" data-linktype="external">Containerize 示例应用</a></li>
+                                <li><a href="/en-us/virtualization/windowscontainers/quick-start/building-sample-app" data-linktype="external">将示例应用容器化</a></li>
                             </ul>
                         </div>
                     </div>
@@ -176,7 +176,7 @@ ms.locfileid: "10209737"
                             <ul>
                                 <li><a href="/en-us/virtualization/windowscontainers/deploy-containers/version-compatibility" data-linktype="external">版本兼容性</a></li>
                                 <li><a href="/en-us/virtualization/windowscontainers/deploy-containers/base-image-lifecycle" data-linktype="external">映像服务生命周期</a></li>
-                                <li><a href="/en-us/virtualization/windowscontainers/images-eula" data-linktype="external">容器操作系统映像 EULA</a></li>
+                                <li><a href="/en-us/virtualization/windowscontainers/images-eula" data-linktype="external">容器 OS 映像 EULA</a></li>
                             </ul>
                         </div>
                     </div>
@@ -196,7 +196,7 @@ ms.locfileid: "10209737"
                             <h3 style="margin: 8px 0 2px 0;">资源</h3>
                             <ul>
                                 <li><a href="/en-us/virtualization/windowscontainers/samples" data-linktype="external">示例</a></li>
-                                <li><a href="/en-us/virtualization/windowscontainers/troubleshooting" data-linktype="external">故障排除</a></li>
+                                <li><a href="/en-us/virtualization/windowscontainers/troubleshooting" data-linktype="external">疑难解答</a></li>
                                 <li><a href="/en-us/virtualization/windowscontainers/communitylinks" data-linktype="external">社区视频和博客</a></li>
                             </ul>
                         </div>
