@@ -2,7 +2,10 @@
   "build": {
     "content": [
       {
-        "files": ["**/**.md", "**/**.yml"],
+        "files": [
+          "**/**.md",
+          "**/**.yml"
+        ],
         "exclude": [
           "**/obj/**",
           "**/includes/**",
@@ -26,9 +29,14 @@
       }
     ],
     "overwrite": [],
-    "externalReference": [], 
+    "externalReference": [],
     "globalMetadata": {
-      "disable_contribution_on_translation_quality": ["MTE95","MTE75","MT"],
+      "disable_contribution_on_translation_quality": [
+        "MT",
+        "MTE75",
+        "MTE95",
+        "Blank"
+      ],
       "breadcrumb_path": "/virtualization/toc.json",
       "extendBreadcrumb": true
     },
