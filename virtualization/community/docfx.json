@@ -37,7 +37,10 @@
         "MTE75",
         "MTE95",
         "Blank"
-      ]
+      ],
+      "feedback_system": "GitHub", 
+      "feedback_github_repo": "MicrosoftDocs/Virtualization-Documentation.zh-cn", 
+      "feedback_product_url": "https://github.com/MicrosoftDocs/Virtualization-Documentation/issues"
     },
     "extendBreadcrumb": true
   }
