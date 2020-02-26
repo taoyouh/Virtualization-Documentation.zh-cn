@@ -7,12 +7,12 @@ ms.date: 02/15/2019
 ms.topic: article
 ms.prod: windows-10-hyperv
 ms.assetid: 752dc760-a33c-41bb-902c-3bb2ecd9ac86
-ms.openlocfilehash: e1b6b55b2e17ac4f0883078748d75f6d4b9fcafa
-ms.sourcegitcommit: 1ca9d7562a877c47f227f1a8e6583cb024909749
+ms.openlocfilehash: bad59fcc65bf66ab3c6dc940a17111e46a9bc226
+ms.sourcegitcommit: 16744984ede5ec94cd265b6bff20aee2f782ca88
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "74909457"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "77439694"
 ---
 # <a name="install-hyper-v-on-windows-10"></a>在 Windows 10 上安装 Hyper-V
 
@@ -25,7 +25,7 @@ ms.locfileid: "74909457"
 
 * Windows 10 企业版、专业版或教育版
 * 具有二级地址转换 (SLAT) 的 64 位处理器。
-* CPU 支持 VM 监视器模式扩展（Intel CPU 的 VT-c 技术）。
+* 对 VM 监视器模式扩展（Intel Cpu 上的 VT）的 CPU 支持。
 * 最少 4 GB 内存。
 
 **请勿**在 Windows 10 家庭版上安装 Hyper-V 角色。
@@ -72,13 +72,13 @@ ms.locfileid: "74909457"
 
 2. 在 "相关设置" 下的右侧选择 "**程序和功能**"。 
 
-3. 选择“**打开或关闭 Windows 功能**”。
+3. 选择“打开或关闭 Windows 功能”。
 
-4. 选择“**Hyper-V**”，然后单击“**确定**”。
+4. 选择“Hyper-V”，然后单击“确定”。
 
 ![Windows 程序和功能对话框](media/enable_role_upd.png)
 
-安装完成后，系统会提示你重启计算机。
+安装完成后，系统会提示你重新启动计算机。
 
 ## <a name="make-virtual-machines"></a>创建虚拟机
 

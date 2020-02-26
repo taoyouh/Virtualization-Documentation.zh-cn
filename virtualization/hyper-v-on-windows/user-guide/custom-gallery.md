@@ -8,12 +8,12 @@ ms.topic: article
 ms.prod: windows-10-hyperv
 ms.service: windows-10-hyperv
 ms.assetid: d9238389-7028-4015-8140-27253b156f37
-ms.openlocfilehash: c7a6462b331f469148eb4cf5a0a2740c9929fa29
-ms.sourcegitcommit: 1ca9d7562a877c47f227f1a8e6583cb024909749
+ms.openlocfilehash: 1348b9923d9de1314818f13414abdacee2cb9735
+ms.sourcegitcommit: 16744984ede5ec94cd265b6bff20aee2f782ca88
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "74911057"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "77439706"
 ---
 # <a name="create-a-custom-virtual-machine-gallery"></a>创建自定义虚拟机库
 
@@ -43,7 +43,7 @@ ms.locfileid: "74911057"
 
 值名称： `GalleryLocations`
 
-键入：`REG_MULTI_SZ`
+类型： `REG_MULTI_SZ`
 
 ## <a name="create-gallery-compatible-virtual-machines"></a>创建与库兼容的虚拟机
 
@@ -99,7 +99,7 @@ ms.locfileid: "74911057"
 
 * **徽标** - 必需
 * symbol
-* thumbnail
+* 缩略图
 
 当然，还有你的虚拟机（.iso 或 .vhdx）。
 
@@ -129,7 +129,7 @@ ms.locfileid: "74911057"
 
     ![包含新项的库注册表项](media/new-gallery-uri.png)
 
-## <a name="troubleshooting"></a>疑难解答
+## <a name="troubleshooting"></a>故障排除
 
 ### <a name="check-for-errors-loading-gallery"></a>检查库加载错误
 

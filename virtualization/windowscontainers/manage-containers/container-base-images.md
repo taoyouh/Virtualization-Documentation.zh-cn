@@ -8,12 +8,12 @@ ms.topic: article
 ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: 88e6e080-cf8f-41d8-a301-035959dc5ce0
-ms.openlocfilehash: 2a69fbace51589cce08476bd68fdb5c34a7907e6
-ms.sourcegitcommit: 1ca9d7562a877c47f227f1a8e6583cb024909749
+ms.openlocfilehash: 9884cc0ae2d2f398d2dc2fb1997a70493a6de6c0
+ms.sourcegitcommit: 16744984ede5ec94cd265b6bff20aee2f782ca88
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "74909777"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76764182"
 ---
 # <a name="container-base-images"></a>容器基本映像
 
@@ -144,4 +144,4 @@ Microsoft 提供每个容器基本映像的 "内部版本" 版本。 这些有�
 
 `Windows Server Core` 和 `Nanoserver` 是目标最常见的基本映像。 这些映像之间的主要区别在于，Nanoserver 的 API 图面大大减少。 Nanoserver 映像中缺少 PowerShell、WMI 和 Windows 服务堆栈。
 
-构建 Nanoserver 是为了提供足够的 API 图面来运行依赖于 .NET core 或其他新式开源框架的应用程序。 与较小的 APi 图面相比，Nanoserver 映像的磁盘占用量明显小于 Windows 基础映像的其余部分。 请记住，你始终可以在自己认为合适的条件下在 Nano Server 上添加层。 有关此情况的示例，请查看 [.NET Core Nano Server Dockerfile](https://github.com/dotnet/dotnet-docker/blob/master/2.1/sdk/nanoserver-1803/amd64/Dockerfile)。
+构建 Nanoserver 是为了提供足够的 API 图面来运行依赖于 .NET core 或其他新式开源框架的应用程序。 与较小的 APi 图面相比，Nanoserver 映像的磁盘占用量明显小于 Windows 基础映像的其余部分。 请记住，你始终可以在自己认为合适的条件下在 Nano Server 上添加层。 有关此情况的示例，请查看 [.NET Core Nano Server Dockerfile](https://github.com/dotnet/dotnet-docker/blob/master/2.1/sdk/nanoserver-1909/amd64/Dockerfile)。

@@ -8,12 +8,12 @@ ms.prod: containers
 description: 将 Windows 节点加入到带有 v 1.14 的 Kubernetes 群集。
 keywords: kubernetes，1.14，windows，入门
 ms.assetid: 3b05d2c2-4b9b-42b4-a61b-702df35f5b17
-ms.openlocfilehash: c380f5dc10430a94959718a5ce92f311603db733
-ms.sourcegitcommit: 1ca9d7562a877c47f227f1a8e6583cb024909749
+ms.openlocfilehash: 18734f102042ec951255061dcd82229e18d29a15
+ms.sourcegitcommit: 16744984ede5ec94cd265b6bff20aee2f782ca88
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "74910357"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "77439524"
 ---
 # <a name="kubernetes-on-windows"></a>Windows 上的 Kubernetes
 
@@ -32,16 +32,16 @@ ms.locfileid: "74910357"
 >[!TIP]
 >如果你想要在 Azure 上部署群集，则开源 AKS 工具使其变得简单。 若要了解详细信息，请参阅我们的分步[演练](https://github.com/Azure/aks-engine/blob/master/docs/topics/windows.md)。
 
-## <a name="prerequisites"></a>必备条件
+## <a name="prerequisites"></a>先决条件
 
-### <a name="plan-ip-addressing-for-your-cluster"></a>规划群集的 IP 地址
+### <a name="plan-ip-addressing-for-your-cluster"></a>规划群集的 IP 寻址
 
 <a name="definitions"></a>由于 Kubernetes 群集引入了用于 pod 和服务的新子网，因此务必确保它们都不会与环境中的任何其他现有网络发生冲突。 下面是为了成功部署 Kubernetes 需要释放的所有地址空间：
 
-| 子网/地址范围 | 描述 | 默认值 |
+| 子网/地址范围 | 说明 | 默认值 |
 | --------- | ------------- | ------------- |
 | <a name="service-subnet-def"></a>**服务子网** | Pod 用于 uniformally 访问服务而无需关心网络拓扑的不可路由的纯粹虚拟子网。 它通过节点上运行的 `kube-proxy` 与可路由的地址空间进行相互转换。 | "10.96.0.0/12" |
-| <a name="cluster-subnet-def"></a>**群集子网** |  这是由群集中的所有 pod 使用的全局子网。 为每个节点分配一个较小的/24 个子网，供其盒使用。 它必须足够大，才能容纳群集中使用的所有 pod。 计算最小子网大小：`(number of nodes) + (number of nodes * maximum pods per node that you configure)` <p/>每个节点100盒的5节点群集示例： `(5) + (5 *  100) = 505`。  | "10.244.0.0/16" |
+| <a name="cluster-subnet-def"></a>**群集子网** |  这是由群集中的所有 pod 使用的全局子网。 为每个节点分配一个较小的/24 个子网，供其盒使用。 它必须足够大，才能容纳群集中使用的所有 pod。 若要计算*最小*子网大小： `(number of nodes) + (number of nodes * maximum pods per node that you configure)` <p/>每个节点100盒的5节点群集示例： `(5) + (5 *  100) = 505`。  | "10.244.0.0/16" |
 | **Kubernetes DNS 服务 IP** | 将用于 DNS 解析 & 群集服务发现的 "kube" 服务的 IP 地址。 | "10.96.0.10" |
 
 > [!NOTE]
@@ -63,4 +63,4 @@ ms.locfileid: "74910357"
 在本部分中，我们讨论了在 Windows 上成功部署 Kubernetes 所需的重要先决条件 & 假设。 继续了解如何设置 Kubernetes master：
 
 >[!div class="nextstepaction"]
->[创建 Kubernetes Master](./creating-a-linux-master.md)
+>[创建 Kubernetes 主机](./creating-a-linux-master.md)

@@ -8,11 +8,11 @@ ms.topic: article
 ms.prod: windows-10-hyperv
 ms.service: windows-10-hyperv
 ms.assetid: d75b96a9-f430-492e-95d4-b05135ec9b9e
-ms.openlocfilehash: dba7da05a372018e2b5c2bac8f887b53dfb6cf91
-ms.sourcegitcommit: 1ca9d7562a877c47f227f1a8e6583cb024909749
+ms.openlocfilehash: 5dd61a2482290cc9b41d55445c2c63816321ff0f
+ms.sourcegitcommit: 16744984ede5ec94cd265b6bff20aee2f782ca88
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "74911137"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "77439684"
 ---
 # <a name="resource-controls-missing-on-windows-10"></a>Windows 10 上缺少资源控件？

@@ -8,12 +8,12 @@ ms.topic: article
 ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: a0e62b32-0c4c-4dd4-9956-8056e9abd9e5
-ms.openlocfilehash: 74e22702aa4be30055b3f4f48c7fac926d793095
-ms.sourcegitcommit: 1ca9d7562a877c47f227f1a8e6583cb024909749
+ms.openlocfilehash: 3107eb48dc9c75224b0c9dd9b436af6f0f451871
+ms.sourcegitcommit: 16744984ede5ec94cd265b6bff20aee2f782ca88
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "74909917"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "77439274"
 ---
 # <a name="container-platform-tools-on-windows"></a>Windows 上的容器平台工具
 
@@ -55,7 +55,7 @@ Runc 和 runhcs 之间的功能差异包括：
   * Windows 和 Linux [hyper-v 隔离](../manage-containers/hyperv-container.md)
   * Windows 进程容器（容器映像必须与容器主机匹配）
 
-**用途：**
+**使用情况**
 
 ``` cmd
 runhcs run [ -b bundle ] <container-id>
@@ -113,7 +113,7 @@ GitHub 上提供了两个包装器，可与 HCS 交互。 由于 HCS 是一个 C
 
 containerd/cri 为 pod 启用以下兼容性矩阵：
 
-| 主机 OS | 容器操作系统 | 隔离 | Pod 支持？ |
+| 主机操作系统 | 容器操作系统 | 隔离 | Pod 支持？ |
 |:-------------------------------------------------------------------------|:-----------------------------------------------------------------------------|:---------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------|
 | <ul><li>Windows Server 2019/1809</ul></li><ul><li>Windows 10 1809</ul></li> | Linux | `hyperv` | 是—支持真正的多容器箱。 |
 |  | Windows Server 2019/1809 | `process`* 或 `hyperv` | 是—如果每个工作负荷容器操作系统与实用工具 VM 操作系统匹配，则支持 true 多容器。 |

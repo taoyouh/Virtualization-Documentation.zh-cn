@@ -8,12 +8,12 @@ ms.topic: article
 ms.prod: windows-10-hyperv
 ms.service: windows-10-hyperv
 ms.assetid: 6e5e6b01-7a9d-4123-8cc7-f986e10cd372
-ms.openlocfilehash: d4e3f7c1e94d0162ae9ee6251d9c6d8cc51bf1d3
-ms.sourcegitcommit: 1ca9d7562a877c47f227f1a8e6583cb024909749
+ms.openlocfilehash: d3375cd912097f85f0a350b8f329c008323cab37
+ms.sourcegitcommit: cea415924b7b6a690d0ba9ff31beed30e9c187d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "74911217"
+ms.lasthandoff: 01/25/2020
+ms.locfileid: "76750188"
 ---
 # <a name="windows-10-hyper-v-system-requirements"></a>Windows 10 Hyper-V 系统要求
 
@@ -42,7 +42,7 @@ Hyper-v 在 Windows 10 专业版、企业版和教育版的64位版本中可用�
 虽然本文档未提供兼容 Hyper-V 的硬件完整列表，但需要具备以下各项：
 
 - 具有二级地址转换 (SLAT) 的 64 位处理器。
-- CPU 支持 VM 监视器模式扩展（Intel CPU 上的 VT-c）。
+- VM 监视器模式扩展的 CPU 支持（Intel CPU 上的 VT-x）。
 - 最少 4 GB 内存。 由于虚拟机与 Hyper-V 主机共享内存，因此将需要提供足够的内存来处理预期虚拟工作负荷。
 
 需要在系统 BIOS 中启用以下各项：
@@ -51,7 +51,7 @@ Hyper-v 在 Windows 10 专业版、企业版和教育版的64位版本中可用�
 
 ## <a name="verify-hardware-compatibility"></a>验证硬件兼容性
 
-若要验证兼容性，请打开 PowerShell 或命令提示符 (cmd.exe)，然后键入 **systeminfo**。 如果列出的所有 Hyper-V 要求都具有值 **Yes**，则你的系统可以运行 Hyper-V 角色。 如果任一项返回**No**，请查看本文档中列出的要求并进行调整（如果可能）。
+若要验证兼容性，请打开 PowerShell 或命令提示符 (cmd.exe)，然后键入 **systeminfo**。 如果列出的所有 Hyper-V 要求都具有值 **Yes**，则你的系统可以运行 Hyper-V 角色。 如果任一项返回 **No**，请查看本文档中列出的要求并进行调整（如果可能）。
 
 ![](media/SystemInfo-upd.png)
 

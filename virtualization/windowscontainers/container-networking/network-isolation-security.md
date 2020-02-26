@@ -8,12 +8,12 @@ ms.topic: article
 ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: 538871ba-d02e-47d3-a3bf-25cda4a40965
-ms.openlocfilehash: b39ec17ac04995e8e1ce8795b5721df7a291e31c
-ms.sourcegitcommit: 1ca9d7562a877c47f227f1a8e6583cb024909749
+ms.openlocfilehash: d5081104f1614a91d6441a5e879a439f1df1bf77
+ms.sourcegitcommit: 16744984ede5ec94cd265b6bff20aee2f782ca88
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "74910587"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "77439284"
 ---
 # <a name="network-isolation-and-security"></a>网络隔离和安全
 
@@ -21,7 +21,7 @@ ms.locfileid: "74910587"
 
 每个容器终结点都放在其自己的__网络命名空间__中。 管理主机 vNIC 和主机网络堆栈都位于默认的网络命名空间中。 为了在同一主机上的容器之间强制实施网络隔离，将为每个 Windows Server 容器创建一个网络命名空间，并在 Hyper-v 隔离下运行容器的网络适配器。 Windows Server 容器使用主机 vNIC 连接到虚拟交换机。 Hyper-v 隔离使用合成 VM NIC （不公开给实用工具 VM）附加到虚拟交换机。
 
-![文本](media/network-compartment-visual.png)
+![text](media/network-compartment-visual.png)
 
 ```powershell
 Get-NetCompartment
@@ -48,13 +48,13 @@ Get-NetCompartment
 
 * Windows 防火墙（在实用工具虚拟机中运行）和 VFP 中的默认“全部允许”
 
-![文本](media/windows-firewall-containers.png)
+![text](media/windows-firewall-containers.png)
 
 ### <a name="kubernetes-pods"></a>Kubernetes pod
 
 在[Kubernetes pod](https://kubernetes.io/docs/concepts/workloads/pods/pod/)中，首先创建了一个终结点所附加到的基础结构容器。 属于同一 pod （包括基础结构和辅助角色容器）的容器共享公共网络命名空间（相同 IP 和端口空间）。
 
-![文本](media/pod-network-compartment.png)
+![text](media/pod-network-compartment.png)
 
 ### <a name="customizing-default-port-acls"></a>自定义默认端口 ACL
 
@@ -67,6 +67,6 @@ Get-NetCompartment
 | -------------- |-------------------------- | ------------------- |
 | 透明 | Windows 防火墙 | X |
 | NAT | Windows 防火墙 | X |
-| L2Bridge | 两者 | VFP |
-| L2Tunnel | 两者 | VFP |
-| 覆盖  | 两者 | VFP |
+| L2Bridge | 两者同时 | VFP |
+| L2Tunnel | 两者同时 | VFP |
+| 覆盖  | 两者同时 | VFP |

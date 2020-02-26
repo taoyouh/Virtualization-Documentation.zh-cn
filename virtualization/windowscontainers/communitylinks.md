@@ -8,12 +8,12 @@ ms.topic: article
 ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: cfbb2542-fead-48e7-8318-4da92a7b5b6f
-ms.openlocfilehash: 55b428894b22ded48ce9db8f24928924964ce96d
-ms.sourcegitcommit: 1ca9d7562a877c47f227f1a8e6583cb024909749
+ms.openlocfilehash: 338dd0570f1a2e73295b2bacf2c4282b3fdd7956
+ms.sourcegitcommit: 16744984ede5ec94cd265b6bff20aee2f782ca88
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "74910077"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "77439294"
 ---
 # <a name="community-videos-and-blogs"></a>社区视频和博客
 

@@ -8,12 +8,12 @@ ms.topic: about-article
 ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: 29fbe13a-228a-4eaa-9d4d-90ae60da5965
-ms.openlocfilehash: a1abc73d706458fbb8b8d3244072b025e433afd6
-ms.sourcegitcommit: 1ca9d7562a877c47f227f1a8e6583cb024909749
+ms.openlocfilehash: 67fdbd813fbd2fa2911d8f5aff6637a85b9855ec
+ms.sourcegitcommit: 16744984ede5ec94cd265b6bff20aee2f782ca88
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "74910837"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "77439314"
 ---
 # <a name="about-building-container-ecosystems"></a>关于构建容器生态系统
 

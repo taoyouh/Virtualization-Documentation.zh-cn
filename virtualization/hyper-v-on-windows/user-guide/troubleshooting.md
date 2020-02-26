@@ -8,12 +8,12 @@ ms.topic: article
 ms.prod: windows-10-hyperv
 ms.service: windows-10-hyperv
 ms.assetid: f0ec8eb4-ffc4-4bf1-9a19-7a8c3975b359
-ms.openlocfilehash: 03bbb4494bbbd790f16c4b6afef387905f7c6c83
-ms.sourcegitcommit: 1ca9d7562a877c47f227f1a8e6583cb024909749
+ms.openlocfilehash: bdb9feeb2452f2784a3b814e85dc72f3b967a9d3
+ms.sourcegitcommit: 16744984ede5ec94cd265b6bff20aee2f782ca88
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "74910887"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "77439324"
 ---
 # <a name="troubleshoot-hyper-v-on-windows-10"></a>Windows 10 上的 Hyper-V 疑难解答
 
@@ -36,4 +36,4 @@ Hyper-V 不支持 FAT/FAT32 格式化的磁盘驱动器，因为这些文件系�
 ## <a name="i-get-this-message-when-i-try-to-install-hyper-v-cannot-be-installed-the-processor-does-not-support-second-level-address-translation-slat"></a>在尝试安装时收到此消息：“无法安装 Hyper-V：处理器不支持二级地址转换 (SLAT)。”
 Hyper-V 需要使用 SLAT 才能运行虚拟机。 如果你的计算机不支持 SLAT，则它无法成为虚拟机的主机。
 
-如果仅尝试安装管理工具，请在“**程序和功能**” > “**打开或关闭 Windows 功能**”中取消选择“**Hyper-V 平台**”。
+如果仅尝试安装管理工具，请在“**程序和功能**” **“** 打开或关闭 Windows 功能 > ”中取消选择“**Hyper-V 平台**”。
