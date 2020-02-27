@@ -3,17 +3,17 @@ title: 为 Windows 容器创建 Gmsa
 description: 如何为 Windows 容器创建组托管服务帐户（Gmsa）。
 keywords: docker，容器，active directory，gmsa，组托管服务帐户，组托管服务帐户
 author: rpsqrd
-ms.date: 09/10/2019
+ms.date: 01/03/2019
 ms.topic: article
 ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: 9e06ad3a-0783-476b-b85c-faff7234809c
-ms.openlocfilehash: 9ed9029e534d56bfe1830281d0bfd3ddde0cee9e
-ms.sourcegitcommit: 1ca9d7562a877c47f227f1a8e6583cb024909749
+ms.openlocfilehash: 36061cfc491dd9dd581d1e6bce92a29e4a6f217d
+ms.sourcegitcommit: 530712469552a1ef458883001ee748bab2c65ef7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "74910247"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77628932"
 ---
 # <a name="create-gmsas-for-windows-containers"></a>为 Windows 容器创建 Gmsa
 
@@ -27,7 +27,7 @@ ms.locfileid: "74910247"
 
 本文介绍如何开始将 Active Directory 组托管服务帐户与 Windows 容器一起使用。
 
-## <a name="prerequisites"></a>必备条件
+## <a name="prerequisites"></a>先决条件
 
 若要使用组托管服务帐户运行 Windows 容器，你将需要以下各项：
 
@@ -82,7 +82,7 @@ Add-KdsRootKey -EffectiveTime (Get-Date).AddHours(-10)
 
 下表列出了创建 gMSA 所需的属性。
 
-|gMSA 属性 | 所需值 | 示例 |
+|gMSA 属性 | 必需的值 | 示例 |
 |--------------|----------------|--------|
 |名称 | 任何有效的帐户名。 | `WebApp01` |
 |DnsHostName | 追加到帐户名称的域名。 | `WebApp01.contoso.com` |
@@ -109,7 +109,7 @@ New-ADGroup -Name "WebApp01 Authorized Hosts" -SamAccountName "WebApp01Hosts" -G
 New-ADServiceAccount -Name "WebApp01" -DnsHostName "WebApp01.contoso.com" -ServicePrincipalNames "host/WebApp01", "host/WebApp01.contoso.com" -PrincipalsAllowedToRetrieveManagedPassword "WebApp01Hosts"
 
 # Add your container hosts to the security group
-Add-ADGroupMember -Identity "WebApp01Hosts" -Members "ContainerHost01", "ContainerHost02", "ContainerHost03"
+Add-ADGroupMember -Identity "WebApp01Hosts" -Members "ContainerHost01$", "ContainerHost02$", "ContainerHost03$"
 ```
 
 建议为开发环境、测试环境和生产环境创建单独的 gMSA 帐户。
@@ -164,13 +164,19 @@ Docker 需要在 Docker 数据目录中的**CredentialSpecs**目录下找到凭�
 
     默认情况下，该 cmdlet 将使用提供的 gMSA 名称作为容器的计算机帐户来创建凭据规范。 文件将使用文件名的 gMSA 域和帐户名称保存在 Docker CredentialSpecs 目录中。
 
-    如果将服务或进程作为容器中的辅助 gMSA 运行，则可以创建包含其他 gMSA 帐户的凭据规范。 为此，请使用 `-AdditionalAccounts` 参数：
+    如果要将文件保存到其他目录，请使用 `-Path` 参数：
+
+    ```powershell
+    New-CredentialSpec -AccountName WebApp01 -Path "C:\MyFolder\WebApp01_CredSpec.json"
+    ```
+
+    如果作为容器中的辅助 gMSA 运行服务或进程，还可以创建包含其他 gMSA 帐户的凭据规范。 为此，请使用 `-AdditionalAccounts` 参数：
 
     ```powershell
     New-CredentialSpec -AccountName WebApp01 -AdditionalAccounts LogAgentSvc, OtherSvc
     ```
 
-    有关受支持参数的完整列表，请运行 `Get-Help New-CredentialSpec`。
+    有关受支持参数的完整列表，请运行 `Get-Help New-CredentialSpec -Full`。
 
 4. 你可以使用以下 cmdlet 显示所有凭据规范的列表及其完整路径：
 
