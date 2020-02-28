@@ -8,12 +8,12 @@ ms.date: 06/17/2019
 ms.topic: article
 ms.prod: windows-containers
 ms.service: windows-containers
-ms.openlocfilehash: bb5e5fabadde421de9d420edd2fc921457432930
-ms.sourcegitcommit: 1ca9d7562a877c47f227f1a8e6583cb024909749
+ms.openlocfilehash: 27672f6a8e71989bfd47fe9810dfd429eedd9206
+ms.sourcegitcommit: 379eb650f6af90f5963e2fcf9de7196238fbe9fa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "74909987"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77705682"
 ---
 # <a name="base-image-servicing-lifecycles"></a>基本映像服务生命周期
 
@@ -27,13 +27,13 @@ Windows 容器基本映像基于半年频道版本或 Windows Server 的长期�
 
 |Base image                       |服务渠道|版本|操作系统内部版本|可用性|主要支持结束日期|延期支持日期|
 |---------------------------------|-----------------|-------|--------|------------|---------------------------|---------------------|
-|Server Core、Nano Server、Windows|半年      |1909   |18363   |2019/11/12  |2021/05/11                 |N/A                  |
-|Server Core、Nano Server、Windows|半年      |1903   |18362   |05/21/2019  |2020/12/08                 |N/A                  |
-|服务器核心                      |长期        |1809   |17763   |2018/11/13  |2024/01/09                 |2029/01/09           |
-|Server Core、Nano Server、Windows|半年      |1809   |17763   |2018/11/13  |05/12/2020                 |N/A                  |
-|服务器核心，Nano Server         |半年      |1803   |17134   |2018/04/30  |2019/11/12                 |N/A                  |
-|服务器核心，Nano Server         |半年      |1709   |16299   |2017/10/17  |04/09/2019                 |N/A                  |
+|Server Core、Nano Server、Windows|半年      |1909   |18363   |2019/11/12  |2021/05/11                 |不可用                  |
+|Server Core、Nano Server、Windows|半年      |1903   |18362   |05/21/2019  |2020/12/08                 |不可用                  |
+|服务器核心                      |长期        |2019   |17763   |2018/11/13  |2024/01/09                 |2029/01/09           |
+|Server Core、Nano Server、Windows|半年      |1809   |17763   |2018/11/13  |05/12/2020                 |不可用                  |
+|服务器核心，Nano Server         |半年      |1803   |17134   |2018/04/30  |2019/11/12                 |不可用                  |
+|服务器核心，Nano Server         |半年      |1709   |16299   |2017/10/17  |04/09/2019                 |不可用                  |
 |服务器核心                      |长期        |1607   |14393   |2016/10/15  |2022/01/11                 |2027/01/11           |
-|Nano Server                      |半年      |1607   |14393   |2016/10/15  |10/09/2018                 |N/A                  |
+|Nano Server                      |半年      |1607   |14393   |2016/10/15  |10/09/2018                 |不可用                  |
 
 有关服务要求和其他附加信息，请参阅 [Windows 生命周期常见问题解答](https://support.microsoft.com/help/18581/lifecycle-faq-windows-products)、 [windows Server 版本信息](https://docs.microsoft.com/windows-server/get-started/windows-server-release-info)和[windows 基本操作系统映像 Docker 中心存储库](https://hub.docker.com/_/microsoft-windows-base-os-images)。
