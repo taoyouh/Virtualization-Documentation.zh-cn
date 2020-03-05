@@ -3,12 +3,12 @@ title: 容器存储概述
 description: Windows Server 容器如何使用主机和其他存储类型
 keywords: 容器, 卷, 存储, 装载, 绑定挂载
 author: cwilhit
-ms.openlocfilehash: fba08de884d59cc1b656895ec2b7078ba3975269
-ms.sourcegitcommit: 1ca9d7562a877c47f227f1a8e6583cb024909749
+ms.openlocfilehash: f758877f1131813fe4637a01c03b49d7a18a83c4
+ms.sourcegitcommit: db085db8a54664184a2f7cfa01d00598a1c66992
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "74910267"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "78288669"
 ---
 # <a name="container-storage-overview"></a>容器存储概述
 
@@ -43,7 +43,7 @@ ms.locfileid: "74910267"
 
 运行中的容器可以使用大多数 NTFS 操作，但事务除外。 这包括设置 ACL，所有 ACL 均在容器内进行检查。 如果你想在容器内以多个用户身份运行进程，则可以在 `Dockerfile` 中使用 `RUN net user /create ...` 创建用户，设置文件 ACL，然后使用 [Dockerfile USER 指令](https://docs.docker.com/engine/reference/builder/#user)将进程配置为以该用户身份运行。
 
-## <a name="persistent-storage"></a>Persistent Storage
+## <a name="persistent-storage"></a>永久存储
 
 Windows 容器支持通过绑定装载和卷提供持久存储的机制。 若要了解详细信息，请参阅[容器中的持久存储](./persistent-storage.md)。
 
@@ -60,7 +60,7 @@ Windows 应用程序的常见模式是先查询可用磁盘空间量，然后再
 或者，你可以直接更改 docker 配置文件：
 
 ```Docker Configuration File
-"storage-opts": [
+"storage-opt": [
     "size=50GB"
   ]
 ```
