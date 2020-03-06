@@ -8,12 +8,12 @@ ms.topic: article
 ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: 538871ba-d02e-47d3-a3bf-25cda4a40965
-ms.openlocfilehash: 46eefb03f8f5a53333f5e7eca7074ab34e72a767
-ms.sourcegitcommit: 1ca9d7562a877c47f227f1a8e6583cb024909749
+ms.openlocfilehash: cd16f496b85c0977af0d40142768833acadea0f4
+ms.sourcegitcommit: 6f505becbafb1e9785c67d6b0715c4c3af074116
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "74910067"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78338041"
 ---
 # <a name="windows-container-network-drivers"></a>Windows 容器网络驱动程序  
 
@@ -48,9 +48,8 @@ ms.locfileid: "74910067"
   2. 使用新的自定义 IP 子网配置 L2bridge 网络
   
   在配置2中，用户将需要在充当网关并为指定的前缀配置路由功能的主机网络隔离舱上添加终结点。 
-  > 要求：需要 Windows Server 2016、Windows 10 创意者更新或更高版本。
-
-  > 要求：用于外部连接的[OutboundNAT 策略](./advanced.md#specify-outboundnat-policy-for-a-network)。
+  >[!TIP]
+  >可在[此处](https://techcommunity.microsoft.com/t5/networking-blog/l2bridge-container-networking/ba-p/1180923)找到有关如何配置和安装 l2bridge 的更多详细信息。
 
 - **l2tunnel** -类似于 l2bridge，但_此驱动程序只能在 Microsoft 云 Stack （Azure）中使用_。 来自容器的数据包会发送到应用了 SDN 策略的虚拟化主机。
 
@@ -89,5 +88,5 @@ ms.locfileid: "74910067"
 | :---: | :---------------     |  :---                |
 | nat | 是 | 是（通过 Docker EE） |  
 | overlay | 是 | 是，具有 Docker EE 或 kube |
-| transparent | 否 | 否 |
+| 透明 | 否 | 否 |
 | l2bridge | 否 | 是，包含 kube |
