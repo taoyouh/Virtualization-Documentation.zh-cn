@@ -8,12 +8,12 @@ ms.topic: article
 ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: 538871ba-d02e-47d3-a3bf-25cda4a40965
-ms.openlocfilehash: cd16f496b85c0977af0d40142768833acadea0f4
-ms.sourcegitcommit: 6f505becbafb1e9785c67d6b0715c4c3af074116
+ms.openlocfilehash: f54c715f474c50c4b3073912adc4e0ab1c42d662
+ms.sourcegitcommit: ac923217ee2f74f08df2b71c2a4c57b694f0d7c3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78338041"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78853921"
 ---
 # <a name="windows-container-network-drivers"></a>Windows 容器网络驱动程序  
 
@@ -42,6 +42,14 @@ ms.locfileid: "78338041"
 
   >[!NOTE]
   >在 Windows Server 2019 上，Docker Swarm 创建的覆盖网络利用 VFP NAT 规则进行出站连接。 这意味着，给定容器接收1个 IP 地址。 这还意味着，在调试情况下，应使用其 TCP/UDP 选项配置基于 ICMP 的工具（如 `ping` 或 `Test-NetConnection`）。
+
+- **l2bridge** -类似于 `transparent` 网络模式，附加到使用 "l2bridge" 驱动程序创建的网络的容器将通过*外部*hyper-v 交换机连接到物理网络。 L2bridge 的不同之处在于，容器终结点将与主机具有相同的 MAC 地址，因为入口和出口的第2层地址转换（MAC 重新写入）操作。 在群集方案中，这有助于缓解交换机的压力，使其不必了解有时短期的临时容器的 MAC 地址。 可以通过两种不同的方式配置 L2bridge 的网络：
+  1. 已为 L2bridge 网络配置与容器主机相同的 IP 子网
+  2. 使用新的自定义 IP 子网配置 L2bridge 网络
+  
+  在配置2中，用户将需要在充当网关并为指定的前缀配置路由功能的主机网络隔离舱上添加终结点。 
+  > 要求：需要 Windows Server 2016、Windows 10 创意者更新或更高版本。
+
 
 - **l2bridge** -类似于 `transparent` 网络模式，附加到使用 "l2bridge" 驱动程序创建的网络的容器将通过*外部*hyper-v 交换机连接到物理网络。 L2bridge 的不同之处在于，容器终结点将与主机具有相同的 MAC 地址，因为入口和出口的第2层地址转换（MAC 重新写入）操作。 在群集方案中，这有助于缓解交换机的压力，使其不必了解有时短期的临时容器的 MAC 地址。 可以通过两种不同的方式配置 L2bridge 的网络：
   1. 已为 L2bridge 网络配置与容器主机相同的 IP 子网

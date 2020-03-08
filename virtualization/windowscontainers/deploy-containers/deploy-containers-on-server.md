@@ -8,12 +8,12 @@ ms.topic: article
 ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: ba4eb594-0cdb-4148-81ac-a83b4bc337bc
-ms.openlocfilehash: 6e3996af36b4a710f9a12b3a1371138b053a43d8
-ms.sourcegitcommit: 1ca9d7562a877c47f227f1a8e6583cb024909749
+ms.openlocfilehash: 9899a2d76bfa1fe312e3bd983f60d09d77c272e9
+ms.sourcegitcommit: ac923217ee2f74f08df2b71c2a4c57b694f0d7c3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "74909897"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78853906"
 ---
 # <a name="container-host-deployment-windows-server"></a>容器主机部署： Windows Server
 
@@ -49,7 +49,7 @@ Restart-Computer -Force
 
 目前有两个可用于 Windows Server Docker EE 的通道：
 
-* `17.06`-如果使用的是 Docker Enterprise Edition （Docker 引擎、UCP、DTR），请使用此版本。 默认为 `17.06`。
+* `17.06`-如果使用的是 Docker Enterprise Edition （Docker 引擎、UCP、DTR），请使用此版本。 默认值为 `17.06`。
 * `18.03`-如果仅运行 Docker EE 引擎，请使用此版本。
 
 若要安装特定版本，请使用 `RequiredVersion` 标志：
@@ -76,7 +76,8 @@ Install-Package -Name docker -ProviderName DockerMsftProvider -Update -Force -Re
 
 使用 Windows 容器前，需安装基本映像。 可通过将 Windows Server Core 或 Nano Server 作为容器操作系统获取基本映像。 有关 Docker 容器映像的详细信息，请参阅[在 docker.com 上生成自己的映像](https://docs.docker.com/engine/tutorials/dockerimages/)。
 
-随着 Windows Server 2019 的发布，Microsoft 来源容器映像将移到名为 Microsoft 容器注册表的新注册表中。 Microsoft 发布的容器映像应该继续通过 Docker Hub 发现。 对于在 Windows Server 2019 和更高版本中发布的新容器映像，你应该从 MCR 中提取它们。 对于在 Windows Server 2019 之前发布的较旧的容器映像，应继续从 Docker 的注册表提取它们。
+> [!TIP]
+> 从5月2018起生效，提供一致的可信获取体验，几乎所有的 Microsoft 来源容器映像都是从 Microsoft 容器注册表_mcr.microsoft.com_中提供的，同时还通过[_Docker Hub_](https://hub.docker.com/publishers/microsoftowner)维护当前发现过程。
 
 ### <a name="windows-server-2019-and-newer"></a>Windows Server 2019 和更高版本
 

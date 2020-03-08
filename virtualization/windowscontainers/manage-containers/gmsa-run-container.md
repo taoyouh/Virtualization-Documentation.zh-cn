@@ -8,12 +8,12 @@ ms.topic: article
 ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: 9e06ad3a-0783-476b-b85c-faff7234809c
-ms.openlocfilehash: 52625517748356251aa41115caebd7801ec3cdaf
-ms.sourcegitcommit: 1ca9d7562a877c47f227f1a8e6583cb024909749
+ms.openlocfilehash: b997cf79cdf7f1782b6299198859714563c45f8c
+ms.sourcegitcommit: ac923217ee2f74f08df2b71c2a4c57b694f0d7c3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "74909757"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78853931"
 ---
 # <a name="run-a-container-with-a-gmsa"></a>使用 gMSA 运行容器
 
@@ -49,7 +49,7 @@ The command completed successfully
 你可以通过运行以下命令并检查客户端名称来验证容器中的 gMSA 标识：
 
 ```powershell
-PS C:\> klist get krbtgt
+PS C:\> klist get webapp01
 
 Current LogonId is 0:0xaa79ef8
 A ticket to krbtgt has been retrieved successfully.

@@ -1,21 +1,21 @@
 ---
-title: Windows 上的 Linux 容器
-description: 了解使用 Hyper-v 在 Windows 上运行 Linux 容器的不同方式，就像它们是本机模式一样。
-keywords: LCOW、linux 容器、docker、容器
+title: Windows 10 上的 Linux 容器
+description: 了解在 Windows 10 上使用 Hyper-v 以本机方式运行 Linux 容器的不同方法。
+keywords: LCOW、linux 容器、docker、容器、windows 10
 author: scooley
 ms.date: 09/17/2019
 ms.topic: article
 ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: edfd11c8-ee99-42d8-9878-efc126fe1826
-ms.openlocfilehash: 14445f3e9d292dbdab28986e772d0c045fca1586
-ms.sourcegitcommit: 1ca9d7562a877c47f227f1a8e6583cb024909749
+ms.openlocfilehash: 843bd0ab7ccf3a227482ba3a3d2677e36b395b29
+ms.sourcegitcommit: ac923217ee2f74f08df2b71c2a4c57b694f0d7c3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "74910567"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78854011"
 ---
-# <a name="linux-containers-on-windows"></a>Windows 上的 Linux 容器
+# <a name="linux-containers-on-windows-10"></a>Windows 10 上的 Linux 容器
 
 Linux 容器占总体容器生态系统的巨大百分比，是开发人员体验和生产环境的基础。  不过，由于容器与容器主机共享内核，因此不能选择[*](linux-containers.md#other-options-we-considered)上直接在 Windows 上运行 Linux 容器。  这就是虚拟化的图片。
 
@@ -23,6 +23,8 @@ Linux 容器占总体容器生态系统的巨大百分比，是开发人员体�
 
 - 在完整的 Linux 虚拟机中运行 Linux 容器-这是 Docker 目前的典型功能。
 - 使用[hyper-v 隔离](../manage-containers/hyperv-container.md)运行 Linux 容器（LCOW）-这是用于 Windows 的 Docker 中的新选项。
+
+> _在 Windows Server 操作系统上运行 Linux 容器当前仍处于试验阶段。需要提供 Docker EE 计划的其他许可才能尝试此方案。**本文的其余部分仅适用于 Windows 10**。_
 
 本文概述了每种方法的工作原理，并提供有关何时选择解决方案以及共享正在进行的操作的指导。
 
@@ -47,7 +49,7 @@ Docker 已能够在 Windows 桌面上运行 Linux 容器，因为它是第一次
 
 ## <a name="linux-containers-with-hyper-v-isolation"></a>具有 Hyper-v 隔离的 Linux 容器
 
-若要在 Windows （LCOW）上试用 Linux 容器，请遵循[windows 10 上 linux](../quick-start/quick-start-windows-10-linux.md)容器中的 linux 容器说明。
+若要在 Windows 10 上试用 Linux 容器（LCOW10），请按照[Windows 10 上 linux](../quick-start/quick-start-windows-10-linux.md)容器中的 linux 容器说明进行操作。 
 
 使用 Hyper-v 隔离的 linux 容器在经过优化的 Linux VM 中运行每个 Linux 容器，只有足够的操作系统才能运行容器。 与小鲸鱼 VM 方法相比，每个 Linux 容器都有自己的内核和自己的 VM 沙盒。 它们还可以由 Docker 在 Windows 上直接管理。
 

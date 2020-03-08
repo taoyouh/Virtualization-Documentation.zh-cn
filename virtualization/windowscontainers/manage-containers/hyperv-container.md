@@ -8,12 +8,12 @@ ms.topic: article
 ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: 42154683-163b-47a1-add4-c7e7317f1c04
-ms.openlocfilehash: fa95ffe1c699a2c837076fcc1b662f6b792b7dfb
-ms.sourcegitcommit: 1ca9d7562a877c47f227f1a8e6583cb024909749
+ms.openlocfilehash: 362805fa230f461414ccc53643644f6c1b3474a8
+ms.sourcegitcommit: ac923217ee2f74f08df2b71c2a4c57b694f0d7c3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "74909747"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78853951"
 ---
 # <a name="isolation-modes"></a>隔离模式
 
@@ -40,7 +40,7 @@ Windows 容器提供了两种不同的运行时隔离模式： `process` 和 `Hy
 docker run -it --isolation=hyperv mcr.microsoft.com/windows/servercore:ltsc2019 cmd
 ```
 
-若要使用进程隔离完全 Docker 创建容器，请使用 `--isolation` 参数设置 `--isolation=process`。
+若要通过 Docker 创建具有进程隔离的容器，请使用 `--isolation` 参数设置 `--isolation=process`。
 
 ```cmd
 docker run -it --isolation=process mcr.microsoft.com/windows/servercore:ltsc2019 cmd

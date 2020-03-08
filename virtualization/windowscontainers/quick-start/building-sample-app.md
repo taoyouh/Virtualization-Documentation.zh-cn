@@ -8,12 +8,12 @@ ms.date: 11/12/2019
 ms.topic: article
 ms.prod: windows-containers
 ms.service: windows-containers
-ms.openlocfilehash: fab0dc46ddcc8c82a010d408032e5f3c4cea8d69
-ms.sourcegitcommit: 1ca9d7562a877c47f227f1a8e6583cb024909749
+ms.openlocfilehash: 587e8de5f0d593f92f6301c87bf68e08a8bbd839
+ms.sourcegitcommit: ac923217ee2f74f08df2b71c2a4c57b694f0d7c3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "74910137"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78854001"
 ---
 # <a name="containerize-a-net-core-app"></a>容器化 .NET Core 应用程序
 
@@ -71,7 +71,7 @@ FROM mcr.microsoft.com/dotnet/core/sdk:2.1 AS build-env
 WORKDIR /app
 ```
 
-第一组行声明我们将在哪个基础映像上生成容器。 如果本地系统尚不具备此映像，则 Docker 将自动尝试并获取它。 `mcr.microsoft.com/dotnet/core/sdk:2.1` 随 .NET core 2.1 SDK 一起打包，因此，这是生成面向版本2.1 的 ASP .NET core 项目的任务。 下一条指令会将容器中的工作目录更改为 `/app`，因此，此操作后面的所有命令都将在此上下文中执行。
+第一组行声明我们将在哪个基础映像上生成容器。 如果本地系统尚不具备此映像，则 Docker 将自动尝试并获取它。 `mcr.microsoft.com/dotnet/core/sdk:2.1` 随安装的 .NET core 2.1 SDK 一起打包，因此需要构建面向版本2.1 的 ASP .NET core 项目。 下一条指令会将容器中的工作目录更改为 `/app`，因此，此操作后面的所有命令都将在此上下文中执行。
 
 ```Dockerfile
 COPY *.csproj ./
@@ -103,7 +103,7 @@ ENTRYPOINT ["dotnet", "asp-net-getting-started.dll"]
 
 我们编写了 dockerfile 来执行_多阶段生成_。 执行 dockerfile 时，它将使用临时容器 `build-env`，通过 .NET core 2.1 SDK 来构建示例应用，然后将输出的二进制文件复制到仅包含 .NET core 2.1 运行时的另一个容器，以便将最终容器的大小降到最低。
 
-## <a name="build-and-run-the-app"></a>生成并运行应用
+## <a name="build-and-run-the-app"></a>生成并运行应用程序
 
 编写 Dockerfile 后，我们可以在我们的 Dockerfile 上指出 Docker，并告诉它构建并运行我们的映像：
 
@@ -126,7 +126,7 @@ ENTRYPOINT ["dotnet", "asp-net-getting-started.dll"]
    * `--name myapp` 通知 Docker 为此容器指定一个便于查询的名称（而不是在运行时由 Docker 指定 contaienr ID）。
    * `my-asp-app` 是我们希望 Docker 运行的映像。 这是 `docker build` 进程的结果生成的容器映像。
 
-3. 打开 web 浏览器 web 浏览器并导航到 `http://localhost:5000` 查看容器化应用程序，如以下屏幕截图所示：
+3. 打开 web 浏览器并导航到 `http://localhost:5000` 查看容器化应用程序，如以下屏幕截图所示：
 
    >![从容器中的 localhost 运行的 ASP.NET Core 网页](media/SampleAppScreenshot.png)
 

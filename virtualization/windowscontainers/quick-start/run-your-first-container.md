@@ -9,12 +9,12 @@ ms.topic: article
 ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: bb9bfbe0-5bdc-4984-912f-9c93ea67105f
-ms.openlocfilehash: a664b5b8eb87adffdf7eba3ffca9f4194128df80
-ms.sourcegitcommit: 1ca9d7562a877c47f227f1a8e6583cb024909749
+ms.openlocfilehash: 551d405d836cfb16b587ef78bc2d5f5abbd8648f
+ms.sourcegitcommit: ac923217ee2f74f08df2b71c2a4c57b694f0d7c3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "74909567"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78853811"
 ---
 # <a name="get-started-run-your-first-windows-container"></a>入门：运行第一个 Windows 容器
 
@@ -22,7 +22,7 @@ ms.locfileid: "74909567"
 
 ## <a name="install-a-container-base-image"></a>安装容器基本映像
 
-所有容器都是从容器映像中创建的。 Microsoft 提供了几个称为基本映像的 starter 映像（有关详细信息，请参阅[容器基本映像](../manage-containers/container-base-images.md)）。 此过程会拉取（下载和安装）轻型 Nano Server 基本映像。
+所有容器都从容器映像创建。 Microsoft 提供了几个称为基本映像的 starter 映像（有关详细信息，请参阅[容器基本映像](../manage-containers/container-base-images.md)）。 此过程会拉取（下载和安装）轻型 Nano Server 基本映像。
 
 1. 打开 "命令提示符" 窗口（例如内置命令提示符、PowerShell 或[Windows 终端](https://www.microsoft.com/p/windows-terminal-preview/9n0dx20hk701?activetab=pivot:overviewtab)），然后运行以下命令下载并安装基本映像：
 
@@ -33,7 +33,7 @@ ms.locfileid: "74909567"
    > [!TIP]
    > 如果看到错误消息 "`no matching manifest for unknown in the manifest list entries`"，请确保 Docker 未配置为运行 Linux 容器。
 
-2. 下载完成后，请在等待时阅读[EULA](../images-eula.md) -通过查询本地 docker 映像存储库来验证系统中是否存在。 运行命令 `docker images` 返回已安装的映像的列表。
+2. 下载完成后，请在等待时阅读[EULA](../images-eula.md) ，并通过查询本地 docker 映像存储库来验证是否存在系统。 运行命令 `docker images` 返回已安装的映像的列表。
 
    下面是显示 Nano Server 映像的输出示例。
 

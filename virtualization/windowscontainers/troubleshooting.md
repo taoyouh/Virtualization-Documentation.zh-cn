@@ -8,14 +8,14 @@ ms.topic: article
 ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: ebd79cd3-5fdd-458d-8dc8-fc96408958b5
-ms.openlocfilehash: 1de86a2492ca899dc3fb932e0d57927fa4000fd0
-ms.sourcegitcommit: 15b5ab92b7b8e96c180767945fdbb2963c3f6f88
+ms.openlocfilehash: 549209c40c2332bdc197375ce4e501467280fa18
+ms.sourcegitcommit: ac923217ee2f74f08df2b71c2a4c57b694f0d7c3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "74911707"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78853882"
 ---
-# <a name="troubleshooting"></a>疑难解答
+# <a name="troubleshooting"></a>故障排除
 
 设置计算机或运行容器时遇到问题？ 我们创建了一个 PowerShell 脚本来检查常见问题。 请先试一试，查看它所找到的内容并分享结果。
 
@@ -136,7 +136,7 @@ sc.exe stop docker
 
 通常，这仅在 Microsoft 支持或 docker 开发人员明确请求时才有用。 它可用于帮助诊断 docker 似乎已挂起的情况。 
 
-下载 [docker signal.exe](https://github.com/jhowardmsft/docker-signal)。
+下载 [docker signal.exe](https://github.com/moby/docker-signal)。
 
 用法：
 ```PowerShell
@@ -155,7 +155,7 @@ Docker 引擎依赖于 Windows 特定的主机计算服务。 它具有单独的
 - Microsoft-Windows-Hyper-V-Compute-Admin
 - Microsoft-Windows-Hyper-V-Compute-Operational
 
-它们在事件查看器中可见，也可以使用 PowerShell 查询。
+它们在事件查看器中可见，还可以通过 PowerShell 进行查询。
 
 例如：
 ```PowerShell

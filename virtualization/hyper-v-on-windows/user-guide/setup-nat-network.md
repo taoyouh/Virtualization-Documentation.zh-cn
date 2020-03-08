@@ -8,12 +8,12 @@ ms.topic: article
 ms.prod: windows-10-hyperv
 ms.service: windows-10-hyperv
 ms.assetid: 1f8a691c-ca75-42da-8ad8-a35611ad70ec
-ms.openlocfilehash: e69775c15359645f3659c9bee3562733415228d5
-ms.sourcegitcommit: 1ca9d7562a877c47f227f1a8e6583cb024909749
+ms.openlocfilehash: 1652c3bcb32ddbc4e05e8821d0e646a76a2fd4f0
+ms.sourcegitcommit: ac923217ee2f74f08df2b71c2a4c57b694f0d7c3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "74909427"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78853961"
 ---
 # <a name="set-up-a-nat-network"></a>设置 NAT 网络
 
@@ -43,13 +43,13 @@ NAT 使用主计算机的 IP 地址和端口通过内部 Hyper-V 虚拟开关向
 ## <a name="create-a-nat-virtual-network"></a>创建 NAT 虚拟网络
 让我们演练新 NAT 网络的设置。
 
-1.  以管理员身份打开 PowerShell 控制台。  
+1. 以管理员身份打开 PowerShell 控制台。  
 
 2. 创建内部交换机。
 
-  ``` PowerShell
-  New-VMSwitch -SwitchName "SwitchName" -SwitchType Internal
-  ```
+    ```powershell
+    New-VMSwitch -SwitchName "SwitchName" -SwitchType Internal
+    ```
 
 3. 查找刚创建的虚拟交换机的接口索引。
 
@@ -57,7 +57,7 @@ NAT 使用主计算机的 IP 地址和端口通过内部 Hyper-V 虚拟开关向
 
     你的输出应类似下面的形式：
 
-    ```
+    ```console
     PS C:\> Get-NetAdapter
 
     Name                  InterfaceDescription               ifIndex Status       MacAddress           LinkSpeed
@@ -72,54 +72,54 @@ NAT 使用主计算机的 IP 地址和端口通过内部 Hyper-V 虚拟开关向
 
 4. 使用 [New-NetIPAddress](https://docs.microsoft.com/powershell/module/nettcpip/New-NetIPAddress) 配置 NAT 网关。  
 
-  下面是常规命令：
-  ``` PowerShell
-  New-NetIPAddress -IPAddress <NAT Gateway IP> -PrefixLength <NAT Subnet Prefix Length> -InterfaceIndex <ifIndex>
-  ```
+    下面是常规命令：
+    ```powershell
+    New-NetIPAddress -IPAddress <NAT Gateway IP> -PrefixLength <NAT Subnet Prefix Length> -InterfaceIndex <ifIndex>
+    ```
 
-  若要配置网关，你将需要一些有关你的网络的信息：  
-  * **IPAddress** - NAT 网关 IP 指定要用作 NAT 网关 IP 的 IPv4 或 IPv6 地址。  
-    常规形式将为 a.b.c.1（例如 172.16.0.1）。  尽管最后一个位置不一定必须是.1，但通常是（基于前缀长度）
+    若要配置网关，你将需要一些有关你的网络的信息：  
+    * **IPAddress** - NAT 网关 IP 指定要用作 NAT 网关 IP 的 IPv4 或 IPv6 地址。  
+      常规形式将为 a.b.c.1（例如 172.16.0.1）。  尽管最后一个位置不一定必须是.1，但通常是（基于前缀长度）
 
-    通用网关 IP 为 192.168.0.1  
+      通用网关 IP 为 192.168.0.1  
 
-  * **PrefixLength** - NAT 子网前缀长度定义的 NAT 本地子网大小（子网掩码）。
-    子网前缀长度将为 0 到 32 之间的整数值。
+    * **PrefixLength** -Nat 子网前缀长度定义 nat 本地子网大小（子网掩码）。
+      子网前缀长度将为 0 到 32 之间的整数值。
 
-    0 将映射整个 Internet，32 将只允许一个映射的 IP。  常用值的范围为 24 到 12，具体取决于需要附加到 NAT 的 IP 数。
+      0 将映射整个 Internet，32 将只允许一个映射的 IP。  常用值的范围为 24 到 12，具体取决于需要附加到 NAT 的 IP 数。
 
-    常用 PrefixLength 为 24 -- 这是子网掩码 255.255.255.0
+      常用 PrefixLength 为 24 -- 这是子网掩码 255.255.255.0
 
-  * **InterfaceIndex** -- ifIndex 是你在上一步中确定的虚拟交换机的接口索引。
+    * **InterfaceIndex** -- ifIndex 是你在上一步中确定的虚拟交换机的接口索引。
 
-  运行以下内容来创建 NAT 网关：
+    运行以下内容来创建 NAT 网关：
 
-  ``` PowerShell
-  New-NetIPAddress -IPAddress 192.168.0.1 -PrefixLength 24 -InterfaceIndex 24
-  ```
+    ```powershell
+    New-NetIPAddress -IPAddress 192.168.0.1 -PrefixLength 24 -InterfaceIndex 24
+    ```
 
 5. 使用 [New-NetNat](https://docs.microsoft.com/powershell/module/netnat/New-NetNat) 配置 NAT 网络。  
 
-  下面是常规命令：
+    下面是常规命令：
 
-  ``` PowerShell
-  New-NetNat -Name <NATOutsideName> -InternalIPInterfaceAddressPrefix <NAT subnet prefix>
-  ```
+    ```powershell
+    New-NetNat -Name <NATOutsideName> -InternalIPInterfaceAddressPrefix <NAT subnet prefix>
+    ```
 
-  若要配置网关，你将需要提供一些有关网络和 NAT 网关的信息：  
-  * **Name** - NATOutsideName 描述 NAT 网络的名称。  将使用此参数删除 NAT 网络。
+    若要配置网关，你将需要提供一些有关网络和 NAT 网关的信息：  
+    * **Name** - NATOutsideName 描述 NAT 网络的名称。  将使用此参数删除 NAT 网络。
 
-  * **InternalIPInterfaceAddressPrefix** - NAT 子网前缀同时描述上述 NAT 网关 IP 前缀和上述 NAT 子网前缀长度。
+    * **InternalIPInterfaceAddressPrefix** - NAT 子网前缀同时描述上述 NAT 网关 IP 前缀和上述 NAT 子网前缀长度。
 
     常规形式将为 a.b.c.0/NAT 子网前缀长度
 
     综上所述，对于本示例，我们将使用 192.168.0.0/24
 
-  对于我们的示例，运行以下命令以设置 NAT 网络：
+    对于我们的示例，运行以下命令以设置 NAT 网络：
 
-  ``` PowerShell
-  New-NetNat -Name MyNATnetwork -InternalIPInterfaceAddressPrefix 192.168.0.0/24
-  ```
+    ```powershell
+    New-NetNat -Name MyNATnetwork -InternalIPInterfaceAddressPrefix 192.168.0.0/24
+    ```
 
 祝贺你！  你现在已拥有一个虚拟 NAT 网络！  若要向 NAT 网络添加虚拟机，请按照[以下说明](#connect-a-virtual-machine)进行操作。
 
@@ -197,58 +197,61 @@ Docker/HNS 会将 Ip 分配给 Windows 容器，管理员会将 Ip 分配给虚�
 最终，你将具有两个内部 vSwitch – 一个名为 DockerNAT，另一个名为 nat。 你仅将拥有一个 NAT 网络 (10.0.0.0/17)，可通过运行 Get-NetNat 确认。 Windows 容器的 IP 地址将由 Windows 主机网络服务 (HNS) 从 10.0.76.0/24 子网分配。 基于现有 MobyLinux.ps1 脚本，将从 10.0.75.0/24 子网分配 Docker 4 Windows 的 IP 地址。
 
 
-## <a name="troubleshooting"></a>疑难解答
+## <a name="troubleshooting"></a>故障排除
 
 ### <a name="multiple-nat-networks-are-not-supported"></a>不支持多个 NAT 网络  
 本指南假设主机上没有其他 NAT。 但是，应用程序或服务将要求使用一个 NAT，并且有可能创建一个 NAT，使之作为安装的一部分。 由于 Windows (WinNAT) 仅支持一个内部 NAT 子网前缀，因此尝试创建多个 NAT 将使系统处于未知状态。
 
 若想知道这是否是个问题，请确保你只有一个 NAT：
-``` PowerShell
+```powershell
 Get-NetNat
 ```
 
 如果已存在一个 NAT，请将其删除
-``` PowerShell
+```powershell
 Get-NetNat | Remove-NetNat
 ```
 请确保应用程序或功能（例如 Windows 容器）仅有一个“内部”vmSwitch。 记录 vSwitch 的名称
-``` PowerShell
+```powershell
 Get-VMSwitch
 ```
 
-检查是否仍存在从旧 NAT 向适配器分配的专用 IP 地址（例如 NAT 默认网关 IP 地址 – 通常为 *.1）
-``` PowerShell
+查看是否存在专用 IP 地址（例如 NAT 默认网关 IP 地址–通常为_x_）。_y_。_z_.1）仍分配给适配器的旧 NAT
+```powershell
 Get-NetIPAddress -InterfaceAlias "vEthernet (<name of vSwitch>)"
 ```
 
 如果旧专用 IP 地址仍在使用中，请将其删除
-``` PowerShell
+```powershell
 Remove-NetIPAddress -InterfaceAlias "vEthernet (<name of vSwitch>)" -IPAddress <IPAddress>
 ```
 
 **删除多个 Nat**  
 我们看到无意中创建了多个 NAT 网络的报告。 这是由于最近的版本（包括 Windows Server 2016 Technical Preview 5 和 Windows 10 Insider Preview 版本）存在一个 bug。 如果你看到多个 NAT 网络，在运行 docker network ls 或 Get-ContainerNetwork 之后，请在提升的 PowerShell 中执行以下操作：
 
+```powershell
+$keys = Get-ChildItem "HKLM:\SYSTEM\CurrentControlSet\Services\vmsmp\parameters\SwitchList"
+foreach($key in $keys)
+{
+   if ($key.GetValue("FriendlyName") -eq 'nat')
+   {
+      $newKeyPath = $KeyPath+"\"+$key.PSChildName
+      Remove-Item -Path $newKeyPath -Recurse
+   }
+}
+Remove-NetNat -Confirm:$false
+Get-ContainerNetwork | Remove-ContainerNetwork
+Get-VmSwitch -Name nat | Remove-VmSwitch # failure is expected
+Stop-Service docker
+Set-Service docker -StartupType Disabled
 ```
-PS> $KeyPath = "HKLM:\SYSTEM\CurrentControlSet\Services\vmsmp\parameters\SwitchList"
-PS> $keys = get-childitem $KeyPath
-PS> foreach($key in $keys)
-PS> {
-PS>    if ($key.GetValue("FriendlyName") -eq 'nat')
-PS>    {
-PS>       $newKeyPath = $KeyPath+"\"+$key.PSChildName
-PS>       Remove-Item -Path $newKeyPath -Recurse
-PS>    }
-PS> }
-PS> remove-netnat -Confirm:$false
-PS> Get-ContainerNetwork | Remove-ContainerNetwork
-PS> Get-VmSwitch -Name nat | Remove-VmSwitch (_failure is expected_)
-PS> Stop-Service docker
-PS> Set-Service docker -StartupType Disabled
-Reboot Host
-PS> Get-NetNat | Remove-NetNat
-PS> Set-Service docker -StartupType automaticac
-PS> Start-Service docker 
+
+在执行后续命令之前重新启动操作系统（`Restart-Computer`）
+
+```powershell
+Get-NetNat | Remove-NetNat
+Set-Service docker -StartupType Automatic
+Start-Service docker 
 ```
 
 如有必要，请参阅 [setup guide for multiple applications using the same NAT](#multiple-applications-using-the-same-nat)（使用同一个 NAT 的多个应用程序的安装指南）以重新生成你的 NAT 环境。 

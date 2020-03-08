@@ -8,12 +8,12 @@ ms.topic: article
 ms.prod: windows-10-hyperv
 ms.service: windows-10-hyperv
 ms.assetid: 1ecb85a6-d938-4c30-a29b-d18bd007ba08
-ms.openlocfilehash: efd180c458457da1cea6b379e21ba3a37083d15a
-ms.sourcegitcommit: 1ca9d7562a877c47f227f1a8e6583cb024909749
+ms.openlocfilehash: b7944e34cab66df07df0ccc78947a774d775c9a7
+ms.sourcegitcommit: ac923217ee2f74f08df2b71c2a4c57b694f0d7c3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "74910957"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78853941"
 ---
 # <a name="configure-nested-vms-to-communicate-with-resources-in-an-azure-virtual-network"></a>配置嵌套 Vm 以便与 Azure 虚拟网络中的资源通信
 
@@ -58,13 +58,13 @@ ms.locfileid: "74910957"
 5. 转到 "网络" 选项卡
 6. 使用以下配置创建新的虚拟网络
     * VNet 地址空间： 10.0.0.0/22
-    * 子网 1
+    * 子网1
         * 名称： NAT
         * 地址空间： 10.0.0.0/24
-    * 子网 2
+    * 子网2
         * 名称： Hyper-v-LAN
         * 地址空间： 10.0.1.0/24
-    * 子网 3
+    * 子网3
         * 名称：幻像
         * 地址空间： 10.0.2.0/24
     * 子网4
@@ -124,7 +124,7 @@ ms.locfileid: "74910957"
 3. 在向导中，选择 "下一步"，检查 "自定义配置" 的 "放射" 按钮，然后选择 "下一步"。
 4. 选中 "NAT" 和 "LAN 路由"，然后选择 "下一步" 和 "完成"。 如果它要求您启动服务，则执行此操作。
 5. 现在，导航到 "IPv4" 节点并展开它，以便使 "NAT" 节点可用。
-6. 右键单击 "NAT"，然后选择 "新建接口 ..."然后选择 "以太网"，这应该是 IP 为 "10.0.0.4" 的第一个 NIC
+6. 右键单击 "NAT"，然后选择 "新建接口 ..."选择 "以太网"，这应该是 IP 为 "10.0.0.4" 的第一个 NIC，并选择 "公共接口" "连接到 Internet" 并在此接口上启用 NAT。 
 7. 现在，我们需要创建一些静态路由，强制 LAN 流量从第二个 NIC 传出。 要执行此操作，请转到 "IPv4" 下的 "静态路由" 节点。
 8. 接下来，我们将创建以下路由。
     * 路由1
@@ -147,20 +147,20 @@ ms.locfileid: "74910957"
 
 有关在 Azure 中创建和管理路由的详细信息，请参阅[此文](https://docs.microsoft.com/azure/virtual-network/tutorial-create-route-table-portal)。
 
-1. 导航到 https://portal.azure.com 。
+1. 导航到 https://portal.azure.com。
 2. 在左上角选择 "创建资源"。
 3. 在搜索字段中键入 "路由表"，然后按 enter。
 4. 顶部结果将是路由表，选择此表，然后选择 "创建"
 5. 命名路由表，在我的示例中，我将其命名为 "路由嵌套型 Vm"。
 6. 请确保选择 Hyper-v 主机所在的同一订阅。
 7. 创建新的资源组或选择现有的资源组，并确保在其中创建路由表的区域是 Hyper-v 主机所在的同一区域。
-8. 选择“创建”。
+8. 选择 "创建"。
 
 ## <a name="configuring-the-route-table"></a>配置路由表
 
 1. 导航到刚刚创建的路由表。 为此，可以从门户顶部中心的搜索栏中搜索路由表的名称。
 2. 选择路由表后，请从边栏选项卡中选择 "路由"。
-3. 选择“添加”。
+3. 选择 "添加"。
 4. 为路由命名，并使用 "嵌套 Vm"。
 5. 对于 "地址前缀"，请输入 "浮动" 子网的 IP 范围。 在这种情况下，它会是 10.0.2.0/24。
 6. 对于 "下一跃点类型"，请选择 "虚拟设备"，然后输入 Hyper-v 主机的 IP 地址（10.0.1.4），然后选择 "确定"。

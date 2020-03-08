@@ -3,12 +3,12 @@ title: Windows 容器版本兼容性
 description: Windows 如何跨多个版本运行内部版本和容器
 keywords: 元数据, 容器, 版本
 author: taylorb-microsoft
-ms.openlocfilehash: 32d40997ffef47e4eae2d06303f45522623a5e54
-ms.sourcegitcommit: 530712469552a1ef458883001ee748bab2c65ef7
+ms.openlocfilehash: 326a56789d07f601beceebed01fdc3d49bc7471e
+ms.sourcegitcommit: ac923217ee2f74f08df2b71c2a4c57b694f0d7c3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "77628942"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78853861"
 ---
 # <a name="windows-container-version-compatibility"></a>Windows 容器版本兼容性
 
@@ -137,7 +137,7 @@ Microsoft Windows [Version 10.0.16299.125]
 C:\>reg query "HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion" /v BuildLabEx
 ```
 
-```batch
+```powershell
 Windows PowerShell
 Copyright (C) 2016 Microsoft Corporation. All rights reserved.
 
@@ -174,28 +174,28 @@ docker: Error response from daemon: container b81ed896222eb87906ccab1c3dd2fc4932
 
 您必须知道您需要为容器使用哪个版本。 例如，如果想要将 Windows Server 版本1809用作容器操作系统，并想要为其提供最新的修补程序，则应在指定所需的基本 OS 容器映像版本时使用标记 `1809`，如下所示：
 
-``` dockerfile
+```dockerfile
 FROM mcr.microsoft.com/windows/nanoserver:1809
 ...
 ```
 
 但是，如果需要 Windows Server 版本1809的特定修补程序，则可以在标记中指定 KB 号。 例如，若要获取 Windows Server 版本1809中的 Nano Server 基本操作系统容器映像，并将 KB4493509 应用到该映像，请按如下所示进行指定：
 
-``` dockerfile
+```dockerfile
 FROM mcr.microsoft.com/windows/nanoserver:1809-KB4493509
 ...
 ```
 
 你还可以通过在标记中指定 OS 版本来指定你以前使用的架构所需的准确修补程序：
 
-``` dockerfile
+```dockerfile
 FROM mcr.microsoft.com/windows/nanoserver:10.0.17763.437
 ...
 ```
 
 基于 Windows Server 2019 和 Windows Server 2016 的 Server Core 基础映像是长期[服务通道（LTSC）](https://docs.microsoft.com/windows-server/get-started-19/servicing-channels-19#long-term-servicing-channel-ltsc)版本。 例如，如果想要将 Windows Server 2019 作为服务器核心映像的容器操作系统，并希望获得最新的修补程序，可以指定 LTSC 版本，如下所示：
 
-``` dockerfile
+```dockerfile
 FROM mcr.microsoft.com/windows/servercore:ltsc2019
 ...
 ```

@@ -8,16 +8,16 @@ ms.date: 05/22/2019
 ms.topic: article
 ms.prod: windows-containers
 ms.service: windows-containers
-ms.openlocfilehash: 99a3b47a9d80e21c246fb3b4f61d650557eb37fa
-ms.sourcegitcommit: 1ca9d7562a877c47f227f1a8e6583cb024909749
+ms.openlocfilehash: 23dd1e56ba68a679945779f5e7dbc15225412934
+ms.sourcegitcommit: ac923217ee2f74f08df2b71c2a4c57b694f0d7c3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "74910717"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78853902"
 ---
 # <a name="windows-container-orchestration-overview"></a>Windows 容器业务流程概述
 
-由于容器的大小和应用程序方向较小，因此容器非常适合敏捷交付环境和基于微服务的体系结构。 然而，使用容器和 microservers 的环境可以有几百个或数千个要跟踪的组件。 你可能能够手动管理几个虚拟机或物理服务器，但无法在没有自动化的情况下正确管理生产规模容器环境。 此任务应属于 orchestrator，这是一个自动化和管理大量容器以及它们彼此交互的方式的过程。
+由于容器的大小和应用程序方向较小，因此容器非常适合敏捷交付环境和基于微服务的体系结构。 然而，使用容器和微服务的环境可以有几百个或数千个要跟踪的组件。 你可能能够手动管理几个虚拟机或物理服务器，但无法在没有自动化的情况下正确管理生产规模容器环境。 此任务应属于 orchestrator，这是一个自动化和管理大量容器以及它们彼此交互的方式的过程。
 
 协调器执行以下任务：
 
@@ -38,7 +38,7 @@ Azure 提供两个容器协调器： Azure Kubernetes 服务（AKS）和 Service
 
 [Azure Service Fabric](/azure/service-fabric/) 是一种分布式系统平台，可用于轻松打包、部署和管理可伸缩的可靠微服务和容器。 Service Fabric 解决了开发和管理云本机应用程序的重大挑战。 开发人员和管理员不仅可以避免复杂的基础结构问题，而且可以专注于实现可伸缩、可靠、可管理的高要求任务关键型工作负荷。 Service Fabric 新一代平台的代表，用于生成和管理在容器中运行的企业级单层云级别应用程序。
 
-## <a name="getting-started"></a>即刻体验
+## <a name="getting-started"></a>入门
 
 若要开始部署 Azure Kubernetes 服务，请参阅[Kubernetes 安装指南](../kubernetes/getting-started-kubernetes-windows.md)。
 
