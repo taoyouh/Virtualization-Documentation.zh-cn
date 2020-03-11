@@ -35,6 +35,7 @@
 ### [容器基础映像](manage-containers/container-base-images.md)
 ### [隔离模式](manage-containers/hyperv-container.md)
 ### [版本兼容性](deploy-containers/version-compatibility.md)
+### [更新容器](deploy-containers/update-containers.md)
 ### [资源控制](manage-containers/resource-controls.md)
 ## Docker
 ### [Windows 上的 Docker 引擎](manage-docker/configure-docker-daemon.md)
@@ -57,7 +58,7 @@
 ### Docker Swarm
 #### [Swarm 模式](manage-containers/swarm-mode.md)
 ## 工作负载
-### 组托管服务帐户
+### Group Managed Service Accounts
 #### [创建 gMSA](manage-containers/manage-serviceaccounts.md)
 #### [将应用配置为使用 gMSA](manage-containers/gmsa-configure-app.md)
 #### [使用 gMSA 运行容器](manage-containers/gmsa-run-container.md)
@@ -76,7 +77,7 @@
 ### [硬件设备](deploy-containers/hardware-devices-in-containers.md)
 ### [GPU 加速](deploy-containers/gpu-acceleration.md)
 
-# 参考
+# 引用
 ## [基础映像服务生命周期](deploy-containers/base-image-lifecycle.md)
 ## [防病毒优化](https://docs.microsoft.com/windows-hardware/drivers/ifs/anti-virus-optimization-for-windows-containers)
 ## [容器平台工具](deploy-containers/containerd.md)
