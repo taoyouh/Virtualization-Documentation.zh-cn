@@ -7,12 +7,12 @@ ms.topic: troubleshooting
 ms.prod: containers
 description: 关于部署 Kubernetes 和加入 Windows 节点的常见问题的解决方案。
 keywords: kubernetes，1.14，linux，编译
-ms.openlocfilehash: 471731ec50c7c03816a956bd7aae859ad218be6d
-ms.sourcegitcommit: 1ca9d7562a877c47f227f1a8e6583cb024909749
+ms.openlocfilehash: 19b467b657708627dcb6ca93b64fa292d3db8de8
+ms.sourcegitcommit: 8eedfdc1fda9d0abb36e28dc2b5fb39891777364
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "74910447"
+ms.lasthandoff: 03/15/2020
+ms.locfileid: "79402918"
 ---
 # <a name="troubleshooting-kubernetes"></a>Kubernetes 疑难解答 #
 此页面逐一介绍 Kubernetes 设置、网络和部署的一些常见问题。
@@ -26,7 +26,7 @@ ms.locfileid: "74910447"
 3. [常见 Windows 错误](#common-windows-errors)
 4. [常见的 Kubernetes 主服务器错误](#common-kubernetes-master-errors)
 
-## <a name="general-questions"></a>常规问题 ##
+## <a name="general-questions"></a>一般问题 ##
 
 ### <a name="how-do-i-know-startps1-on-windows-completed-successfully"></a>如何实现知道，Windows 上的 ps1 已成功完成？ ###
 你应看到 kubelet、kube 和（如果选择 Flannel 作为网络解决方案） flanneld 你的节点上运行的主机代理进程，并且运行的日志显示在单独的 PoSh 窗口中。 除此之外，Windows 节点在 Kubernetes 群集中应作为 "Ready" 列出。
@@ -101,7 +101,7 @@ Windows pod 目前没有针对 ICMP 协议编程的出站规则。 但是，支�
 
 如果仍面临问题，则很可能是[cni](https://github.com/Microsoft/SDN/blob/master/Kubernetes/flannel/l2bridge/cni/config/cni.conf)中的网络配置需要特别注意。 您始终可以编辑此静态文件，配置将应用于所有新创建的 Kubernetes 资源。
 
-为什么？
+为什么?
 Kubernetes 网络要求（请参阅[Kubernetes 模型](https://kubernetes.io/docs/concepts/cluster-administration/networking/)）之一用于在不内部 NAT 的情况下进行群集通信。 为满足此要求，我们对所有不希望出站 NAT 发生的通信提供了[例外](https://github.com/Microsoft/SDN/blob/master/Kubernetes/flannel/l2bridge/cni/config/cni.conf#L20)。 但是，这也意味着你需要排除尝试从例外例外中查询的外部 IP。 只有这样，来自 Windows pod 的流量才会 SNAT'ed 正确地接收来自外部世界的响应。 在这方面，`cni.conf` 中的例外项应如下所示：
 ```conf
 "ExceptionList": [
@@ -112,7 +112,10 @@ Kubernetes 网络要求（请参阅[Kubernetes 模型](https://kubernetes.io/doc
 ```
 
 ### <a name="my-windows-node-cannot-access-a-nodeport-service"></a>我的 Windows 节点无法访问 NodePort 服务 ###
-从节点本身进行本地 NodePort 访问会失败。 这是一个已知限制。 NodePort access 适用于其他节点或外部客户端。
+由于 Windows Server 2019 上的设计限制，从节点本身的本地 NodePort 访问会失败。 NodePort access 适用于其他节点或外部客户端。
+
+### <a name="my-windows-node-stops-routing-thourgh-nodeports-after-i-scaled-down-my-pods"></a>我的 Windows 节点在缩放到我的箱后停止路由 thourgh NodePorts ###
+由于设计限制，在 Windows 节点上至少需要有一个 pod 才能运行 NodePort 转发。
 
 ### <a name="after-some-time-vnics-and-hns-endpoints-of-containers-are-being-deleted"></a>经过一段时间后，将删除容器的 Vnic 和 HNS 终结点 ###
 如果 `hostname-override` 参数未传递到[kube](https://kubernetes.io/docs/reference/command-line-tools-reference/kube-proxy/)，则可能会导致此问题。 若要解决此问题，用户需要将主机名传递到 kube-proxy，如下所示：
@@ -166,7 +169,7 @@ Remove-Item -Recurse c:\var
 ```
 
 ### <a name="my-windows-node-cannot-access-my-services-using-the-service-ip"></a>我的 Windows 节点无法使用服务 IP 访问我的服务 ###
-这是 Windows 上当前网络堆栈的已知限制。 但*Windows pod 可以访问*服务 IP。
+这是 Windows 上当前网络堆栈的已知限制。 但*Windows pod 可以访问* **are**服务 IP。
 
 ### <a name="no-network-adapter-is-found-when-starting-kubelet"></a>启动 Kubelet 时未发现任何网络适配器 ###
 Windows 网络堆栈需要虚拟适配器以使 Kubernetes 网络工作。 如果以下命令未返回任何结果（在管理员 shell 中），则表示虚拟网络创建 &mdash; Kubelet 工作的必要先决条件 &mdash; 已失败：
@@ -176,7 +179,7 @@ Get-HnsNetwork | ? Name -ieq "cbr0"
 Get-NetAdapter | ? Name -Like "vEthernet (Ethernet*"
 ```
 
-通常，如果主机的网络适配器不是 "以太网"，则可以修改 InterfaceName 脚本的[](https://github.com/Microsoft/SDN/blob/master/Kubernetes/flannel/l2bridge/start.ps1#L6)参数。 否则，请参考 `start-kubelet.ps1` 脚本的输出，查看虚拟网络创建过程中是否存在错误。 
+通常，如果主机的网络适配器不是 "以太网"，则可以修改 InterfaceName 脚本的[InterfaceName](https://github.com/Microsoft/SDN/blob/master/Kubernetes/flannel/l2bridge/start.ps1#L6)参数。 否则，请参考 `start-kubelet.ps1` 脚本的输出，查看虚拟网络创建过程中是否存在错误。 
 
 ### <a name="pods-stop-resolving-dns-queries-successfully-after-some-time-alive"></a>Pod 在处于活动状态一段时间后成功停止解析 DNS 查询 ###
 Windows Server、版本1803及更低版本的网络堆栈中存在一个已知的 DNS 缓存问题，有时可能会导致 DNS 请求失败。 若要解决此问题，可以使用以下注册表项将最大 TTL 缓存值设置为零：
@@ -188,7 +191,7 @@ New-ItemProperty -Path 'HKLM:\SYSTEM\CurrentControlSet\Services\Dnscache\Paramet
 New-ItemPropery -Path 'HKLM:\SYSTEM\CurrentControlSet\Services\Dnscache\Parameters' -Name MaxNegativeCacheTtl -Value 0 -Type DWord
 ```
 
-### <a name="i-am-still-seeing-problems-what-should-i-do"></a>我仍然看到问题。 我该怎样做？ ### 
+### <a name="i-am-still-seeing-problems-what-should-i-do"></a>我仍然看到问题。 我该怎么办？ ### 
 你的网络或主机上可能设置了其他限制，以阻止在节点之间进行某些类型的通信。 请确保：
   - 已正确配置所选[网络拓扑](./network-topologies.md)
   - 允许可能来自 Pod 的流量
