@@ -10,7 +10,7 @@ ms.service: windows-10-hyperv
 ms.assetid: 532195c6-564b-4954-97c2-5a5795368c09
 ms.openlocfilehash: 0139f51e909149dde59f4030c6571aee82fed27e
 ms.sourcegitcommit: 1ca9d7562a877c47f227f1a8e6583cb024909749
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/04/2019
 ms.locfileid: "74909477"
@@ -22,7 +22,7 @@ ms.locfileid: "74909477"
 
 ## <a name="connect-virtual-machines-to-the-internet"></a>为虚拟机连接 Internet
 
-Hyper-V 有三种类型的虚拟交换机 -- 外部、内部和专用。 创建外部交换机，以便与在计算机上运行的虚拟机共享计算机的网络。
+Hyper-V 有三种类型的虚拟交换机 -- 外部、内部和专用。 创建外部交换机，与在其上运行的虚拟机共享计算机网络。
 
 此练习演示了如何创建虚拟交换机。 完成后，Hyper-V 主机将拥有一个虚拟交换机，该虚拟交换机可通过为计算机连接网络来为虚拟机连接 Internet。 
 
@@ -39,7 +39,7 @@ Hyper-V 有三种类型的虚拟交换机 -- 外部、内部和专用。 创建�
 
 5. 在“你要创建哪种类型的虚拟交换机?”下，选择“**外部**”。
 
-6. 选择“创建虚拟交换机”按钮。
+6. 选择“创建虚拟交换机”  按钮。
 
 7. 在“虚拟交换机属性”下，为新交换机命名，如“**外部 VM 交换机**”。
 
@@ -49,11 +49,11 @@ Hyper-V 有三种类型的虚拟交换机 -- 外部、内部和专用。 创建�
 
     ![](media/newSwitch_upd.png)
 
-10. 选择“应用”来创建虚拟交换机。 此时，你很可能看到以下消息。 单击“**是**”继续。
+10. 选择“应用”  来创建虚拟交换机。 此时，你很可能看到以下消息。 单击“**是**”继续。
 
     ![](media/pen_changes_upd.png)  
 
-11. 选择“确定”关闭虚拟交换机管理器窗口。
+11. 选择“确定”  关闭虚拟交换机管理器窗口。
 
 
 ### <a name="create-a-virtual-switch-with-powershell"></a>使用 PowerShell 创建虚拟交换机
@@ -97,10 +97,10 @@ Hyper-V 有三种类型的虚拟交换机 -- 外部、内部和专用。 创建�
 
 ### <a name="the-two-switch-approach"></a>双交换机方法
 
-如果在笔记本电脑上运行 Windows 10 Hyper-v，并经常在无线网络和有线网络之间切换，则可能需要为以太网和无线网卡创建虚拟交换机。  根据便携式计算机连接到网络的方式，可以更改这些交换机之间的虚拟机。 虚拟机不会在有线和无线之间自动切换。 
+如果你在笔记本电脑上运行 Windows 10 Hyper-V，并且经常在无线网络和有线网络之间切换，那么你可能想要为以太网和无线网卡创建一个虚拟交换机。  可以更改这些交换机之间的虚拟机，具体取决于该笔记本电脑连接网络的方式。 虚拟机不会在有线和无线之间自动切换。 
 
 >[!IMPORTANT]
->这两种交换机方法不支持无线网卡上的外部 vSwitch，只应用于测试目的。
+>这两种交换机方法不支持基于无线网卡的外部 vSwitch，只应该用于测试目的。
 
 ## <a name="next-step---create-a-virtual-machine"></a>下一步 - 创建虚拟机
 [创建 Windows 虚拟机](create-virtual-machine.md)

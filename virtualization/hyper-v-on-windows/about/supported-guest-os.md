@@ -9,7 +9,7 @@ ms.prod: windows-10-hyperv
 ms.assetid: ae4a18ed-996b-4104-90c5-539c90798e4c
 ms.openlocfilehash: 25c72b910af15fc0b498a5b2abce72d32e6d1efd
 ms.sourcegitcommit: 16744984ede5ec94cd265b6bff20aee2f782ca88
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 02/18/2020
 ms.locfileid: "77439594"
@@ -32,17 +32,17 @@ Microsoft 通过以下方式提供支持：
 
 ## <a name="supported-guest-operating-systems"></a>支持的来宾操作系统
 
-| 来宾操作系统 |  虚拟处理器的最大数量 | 注意 |
+| 来宾操作系统 |  虚拟处理器的最大数量 | 注释 |
 |:-----|:-----|:-----|
 | Windows 10 | 32 |增强的会话模式不适用于 Windows 10 家庭版 |
 | Windows 8.1 | 32 | |
 | Windows 8 | 32 ||
 | 带有 Service Pack 1 (SP 1) 的 Windows 7 | 4 | 旗舰版、企业版和专业版版本（32 位和 64 位）。 |
 | Windows 7 | 4 | 旗舰版、企业版和专业版版本（32 位和 64 位）。 |
-| Windows Vista Service Pack 2 (SP2) | 2 | Business、Enterprise 和 Ultimate，包括 N 和 KN 版本。 |
+| Windows Vista Service Pack 2 (SP2) | 2 | 商用版、企业版和旗舰版，包括 N 和 KN 版本。 |
 | - | | |
 | [Windows Server 半年频道](https://docs.microsoft.com/windows-server/get-started/semi-annual-channel-overview) | 64 | |
-| Windows Server 2019 | 64 | |
+| Windows Server Standard 2012 R2 | 64 | |
 | Windows Server 2016 | 64 | |
 | Windows Server 2012 R2 | 64 | |
 | Windows Server 2012 | 64 | |

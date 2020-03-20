@@ -10,7 +10,7 @@ ms.service: windows-10-hyperv
 ms.assetid: 68c65445-ce13-40c9-b516-57ded76c1b15
 ms.openlocfilehash: f819ac04773188525af202d370ba271a2d93e259
 ms.sourcegitcommit: 16744984ede5ec94cd265b6bff20aee2f782ca88
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 02/18/2020
 ms.locfileid: "77439344"
@@ -21,7 +21,7 @@ ms.locfileid: "77439344"
 
 ![](./media/HyperVNesting.png)
 
-## <a name="prerequisites"></a>先决条件
+## <a name="prerequisites"></a>必备条件
 
 * Hyper-V 主机和来宾必须都是 Windows Server 2016/Windows 10 周年更新或更高版本。
 * VM 配置版本 8.0 或更高版本。

@@ -9,7 +9,7 @@ ms.prod: windows-10-hyperv
 ms.assetid: 752dc760-a33c-41bb-902c-3bb2ecd9ac86
 ms.openlocfilehash: bad59fcc65bf66ab3c6dc940a17111e46a9bc226
 ms.sourcegitcommit: 16744984ede5ec94cd265b6bff20aee2f782ca88
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 02/18/2020
 ms.locfileid: "77439694"
@@ -17,20 +17,20 @@ ms.locfileid: "77439694"
 # <a name="install-hyper-v-on-windows-10"></a>在 Windows 10 上安装 Hyper-V
 
 启用 Hyper-V 以在 Windows 10 上创建虚拟机。  
-可以通过多种方式启用 hyper-v，包括使用 Windows 10 控制面板、PowerShell 或使用部署映像服务和管理工具（DISM）。 本文档将逐一介绍每个选项。
+可以通过多种方式启用 Hyper-V，包括使用 Windows 10 控制面板、PowerShell 或使用部署映像服务和管理工具 (DISM)。 本文档将逐一介绍每个选项。
 
-> **注意**：Hyper-V 作为可选功能内置于 Windows -- 无需下载 Hyper-V。
+> **注意：** Hyper-V 作为可选功能内置于 Windows -- 无需下载 Hyper-V。
 
 ## <a name="check-requirements"></a>检查要求
 
 * Windows 10 企业版、专业版或教育版
 * 具有二级地址转换 (SLAT) 的 64 位处理器。
-* 对 VM 监视器模式扩展（Intel Cpu 上的 VT）的 CPU 支持。
+* CPU 支持 VM 监视器模式扩展（Intel CPU 上的 VT-c）。
 * 最少 4 GB 内存。
 
 **请勿**在 Windows 10 家庭版上安装 Hyper-V 角色。
 
-通过打开 > **更新和安全** > **激活**的**设置**，从 Windows 10 家庭版升级到 windows 10 专业版。
+打开“设置”   >   “更新和安全” >   “激活”，从 Windows 10 家庭版升级到 Windows 10 专业版。
 
 有关详细信息和疑难解答，请参阅 [Windows 10 Hyper-V 系统要求](../reference/hyper-v-requirements.md)。
 
@@ -70,16 +70,16 @@ ms.locfileid: "77439694"
 
 1. 右键单击 Windows 按钮并选择“应用和功能”。
 
-2. 在 "相关设置" 下的右侧选择 "**程序和功能**"。 
+2. 选择相关设置下右侧的“程序和功能”。  
 
-3. 选择“打开或关闭 Windows 功能”。
+3. 选择“**打开或关闭 Windows 功能**”。
 
-4. 选择“Hyper-V”，然后单击“确定”。
+4. 选择“**Hyper-V**”，然后单击“**确定**”。
 
 ![Windows 程序和功能对话框](media/enable_role_upd.png)
 
-安装完成后，系统会提示你重新启动计算机。
+安装完成后，系统会提示你重启计算机。
 
 ## <a name="make-virtual-machines"></a>创建虚拟机
 
-[创建第一个虚拟机](quick-create-virtual-machine.md)
+[创建你的第一个虚拟机](quick-create-virtual-machine.md)
