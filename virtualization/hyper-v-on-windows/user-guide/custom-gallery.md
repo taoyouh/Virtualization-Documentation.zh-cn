@@ -10,7 +10,7 @@ ms.service: windows-10-hyperv
 ms.assetid: d9238389-7028-4015-8140-27253b156f37
 ms.openlocfilehash: 1348b9923d9de1314818f13414abdacee2cb9735
 ms.sourcegitcommit: 16744984ede5ec94cd265b6bff20aee2f782ca88
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 02/18/2020
 ms.locfileid: "77439706"
@@ -39,11 +39,11 @@ ms.locfileid: "77439706"
 
 ![库体系结构](media/vmgallery-architecture.png)
 
-注册表项： `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Virtualization`
+注册表项：`Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Virtualization`
 
-值名称： `GalleryLocations`
+值名称：`GalleryLocations`
 
-类型： `REG_MULTI_SZ`
+类型：`REG_MULTI_SZ`
 
 ## <a name="create-gallery-compatible-virtual-machines"></a>创建与库兼容的虚拟机
 
@@ -60,14 +60,14 @@ ms.locfileid: "77439706"
 
 若要验证虚拟机映像是否将启动并运行，请执行以下操作：
 
-1. 打开虚拟机库（Hyper-V 快速创建），然后选择 **Local Installation Source**。
-  ![按钮以使用本地安装源](media/use-local-source.png)
-1. 选择 **Change Installation Source**。
-  ![按钮以使用本地安装源](media/change-source.png)
+1. 打开虚拟机库（Hyper-V 快速创建），然后选择“Local Installation Source”（本地安装源）  。
+  ![用于使用本地安装源的按钮](media/use-local-source.png)
+1. 选择“Change Installation Source”（更改安装源）  。
+  ![用于使用本地安装源的按钮](media/change-source.png)
 1. 选择将在库中使用的 .iso 或 .vhdx。
 1. 如果映像为 Linux 映像，请取消选择“安全启动”选项。
-  ![按钮以使用本地安装源](media/toggle-secure-boot.png)
-1. 创建虚拟机。  如果虚拟机正常启动，则可以入库。
+  ![用于使用本地安装源的按钮](media/toggle-secure-boot.png)
+1. 创建虚拟机  如果虚拟机正常启动，则可以入库。
 
 ## <a name="build-a-new-gallery-source"></a>构建新库源
 
@@ -103,7 +103,7 @@ ms.locfileid: "77439706"
 
 当然，还有你的虚拟机（.iso 或 .vhdx）。
 
-若要生成哈希，可以使用以下 powershell 命令：
+若要生成哈希，可以使用以下 PowerShell 命令：
 
   ``` PowerShell
   Get-FileHash -Path .\TMLogo.jpg -Algorithm SHA256
@@ -129,7 +129,7 @@ ms.locfileid: "77439706"
 
     ![包含新项的库注册表项](media/new-gallery-uri.png)
 
-## <a name="troubleshooting"></a>故障排除
+## <a name="troubleshooting"></a>疑难解答
 
 ### <a name="check-for-errors-loading-gallery"></a>检查库加载错误
 

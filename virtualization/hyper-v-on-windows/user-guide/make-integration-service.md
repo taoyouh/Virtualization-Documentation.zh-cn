@@ -9,7 +9,7 @@ ms.prod: windows-10-hyperv
 ms.assetid: 1ef8f18c-3d76-4c06-87e4-11d8d4e31aea
 ms.openlocfilehash: 89a36ee87bce1da18852f0ebff248e239165eb7d
 ms.sourcegitcommit: 1ca9d7562a877c47f227f1a8e6583cb024909749
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/04/2019
 ms.locfileid: "74911027"
@@ -41,14 +41,14 @@ ms.locfileid: "74911027"
 
 --------------
 
-## <a name="getting-started"></a>即刻体验
+## <a name="getting-started"></a>入门
 
 要求：
 * C/C++ 编译器。  如果没有该组件，请查看 [Visual Studio Community](https://aka.ms/vs)
 * [Windows 10 SDK](https://developer.microsoft.com/windows/downloads/windows-10-sdk) - 已在 Visual Studio 2015 Update 3 以及更高版本上预安装。
 * 使用至少一个虚拟机运行以上其中一个主机操作系统的计算机。 \- 这用于测试应用程序。
 
-> **注意：** 适用于 Hyper-v 套接字的 API 在 Windows 10 周年更新中公开提供。 使用 Hvsocket.h 的应用程序将在任何 Windows 10 主机和来宾上运行，但只能使用晚于版本14290的 Windows SDK 进行开发。
+> **注意：** 用于 Hyper-V 套接字的 API 已在 Windows 10 周年更新版中公开发布。 使用 HVSocket 的应用程序将在任何 Windows 10 主机和来宾上运行，但仅可使用高于 14290 版本的 Windows SDK 进行开发。
 
 ## <a name="register-a-new-application"></a>注册新应用程序
 若要使用 Hyper-V 套接字，必须向 Hyper-V 主机的注册表注册应用程序。
@@ -108,7 +108,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Virtualization\G
 > ```
 >
 
-> **提示：** 若要在 PowerShell 中生成 GUID，并将其复制到剪贴板，请运行：
+> **更改暂存文件夹路径**若要在 PowerShell 中生成 GUID，并将其复制到剪贴板，请运行：
 >``` PowerShell
 >(New-Guid).Guid | clip.exe
 >```
@@ -206,7 +206,7 @@ struct sockaddr_vm {
 
 ### <a name="vmid-wildcards"></a>VMID 通配符
 
-| 名称 | GUID | 描述 |
+| 名称 | GUID | 说明 |
 |:-----|:-----|:-----|
 | HV_GUID_ZERO | 00000000-0000-0000-0000-000000000000 | 侦听器应绑定到此 VMID 以接受所有分区中的连接。 |
 | HV_GUID_WILDCARD | 00000000-0000-0000-0000-000000000000 | 侦听器应绑定到此 VMID 以接受所有分区中的连接。 |
@@ -218,9 +218,9 @@ struct sockaddr_vm {
 
 \* `HV_GUID_PARENT` 虚拟机的父级是其主机。  容器的父级是容器的主机。
 从在虚拟机中运行的容器进行连接将连接到托管该容器的 VM。
-侦听此 VmId 可接受以下来源的连接：（内部容器）：容器主机。
-（内部 VM：容器主机/非容器）：VM 主机。
-（非内部 VM：容器主机/非容器）：不受支持。
+侦听此 VMID 可接受以下来源的连接：（在容器中）：容器主机。
+（在 VM 中：容器主机/非容器）：VM 主机。
+（不在 VM 中：容器主机/非容器）：不支持。
 
 ## <a name="supported-socket-commands"></a>受支持的套接字命令
 
@@ -229,4 +229,4 @@ Socket() Bind() Connect() Send() Listen() Accept()
 ## <a name="useful-links"></a>有用链接
 [完整的 WinSock API](https://docs.microsoft.com/windows/desktop/WinSock/winsock-functions)
 
-[Hyper-v Integration Services 引用](../reference/integration-services.md)
+[Hyper-V 集成服务参考](../reference/integration-services.md)

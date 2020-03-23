@@ -10,14 +10,14 @@ ms.service: windows-containers
 ms.assetid: 75fed138-9239-4da9-bce4-4f2e2ad469a1
 ms.openlocfilehash: 9fef74c029dc3efc220b1f9924d2695cdbaa61be
 ms.sourcegitcommit: 1ca9d7562a877c47f227f1a8e6583cb024909749
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/04/2019
 ms.locfileid: "74909657"
 ---
 # <a name="dockerfile-on-windows"></a>Windows 上的 Dockerfile
 
-Docker 引擎包括自动创建容器映像的工具。 尽管可以通过运行 `docker commit` 命令来手动创建容器映像，但采用自动映像创建过程具有许多好处，包括：
+Docker 引擎包含用于自动创建容器映像的工具。 虽然可以通过运行 `docker commit` 命令来手动创建容器映像，但采用自动映像创建过程有许多好处，其中包括：
 
 - 将容器映像存储为代码。
 - 可出于维护和升级的目的快速而精确地重新创建容器映像。
@@ -25,22 +25,22 @@ Docker 引擎包括自动创建容器映像的工具。 尽管可以通过运行
 
 驱动实现这一自动化过程的 Docker 组件是 Dockerfile，以及 `docker build` 命令。
 
-Dockerfile 是一个文本文件，其中包含创建新容器映像所需的说明。 这些指令包括对将用作基础的现有映像的标识、将在映像创建过程中运行的命令以及部署容器映像的新实例时将要运行的命令。
+Dockerfile 是一个文本文件，其中包含创建新容器映像所需的指令。 这些指令包括对将用作基础的现有映像的标识、将在映像创建过程中运行的命令以及部署容器映像的新实例时将要运行的命令。
 
 Docker build 是使用 Dockerfile 并触发映像创建过程的 Docker 引擎命令。
 
-本主题将说明如何将 Dockerfile 与 Windows 容器一起使用、了解其基本语法以及最常见的 Dockerfile 指令。
+本主题介绍如何将 Dockerfile 与 Windows 容器配合使用、如何了解其基本语法，以及最常见 Dockerfile 指令有哪些。
 
-本文档将讨论容器映像和容器映像层的概念。 如果要了解有关图像和图像分层的详细信息，请参阅[容器基本映像](../manage-containers/container-base-images.md)。
+本文档将讨论容器映像和容器映像层的概念。 若要详细了解映像和映像分层，请参阅[容器基础映像](../manage-containers/container-base-images.md)。
 
-若要完整了解 Dockerfile，请参阅[Dockerfile 参考](https://docs.docker.com/engine/reference/builder/)。
+有关 Dockerfile 的完整详细信息，请参阅 [Dockerfile reference](https://docs.docker.com/engine/reference/builder/)（Dockerfile 参考）。
 
 ## <a name="basic-syntax"></a>基本语法
 
 Dockerfile 的最基本形式十分简单。 下面的示例创建了一个新映像，其中包括 IIS 和一个“hello world”站点。 此示例包含了用于解释每个步骤的注释（通过 `#` 指示）。 本文的后续部分将对 Dockerfile 语法规则和 Dockerfile 指令进行更详细的讲解。
 
 >[!NOTE]
->必须创建不带扩展名的 Dockerfile。 若要在 Windows 中执行此操作，请在编辑器中创建所选的文件，并将其保存为 "Dockerfile" 符号（包括引号）。
+>创建的 Dockerfile 不得带扩展名。 若要在 Windows 中这样做，请使用所选编辑器创建该文件，然后将其保存为 "Dockerfile"（包括引号）。
 
 ```dockerfile
 # Sample Dockerfile
@@ -61,11 +61,11 @@ RUN echo "Hello World - Dockerfile" > c:\inetpub\wwwroot\index.html
 CMD [ "cmd" ]
 ```
 
-有关 Dockerfile for Windows 的其他示例，请参阅[Dockerfile For windows repository](https://github.com/Microsoft/Virtualization-Documentation/tree/master/windows-container-samples)。
+如需其他用于 Windows 的 Dockerfile 示例，请参阅[用于 Windows 的 Dockerfile 存储库](https://github.com/Microsoft/Virtualization-Documentation/tree/master/windows-container-samples)。
 
 ## <a name="instructions"></a>说明
 
-Dockerfile 指令为 Docker 引擎提供创建容器映像所需的说明。 这些指令逐个执行并按顺序执行。 以下示例是 Dockerfile 中最常使用的说明。 有关 Dockerfile 指令的完整列表，请参阅[Dockerfile 参考](https://docs.docker.com/engine/reference/builder/)。
+Dockerfile 指令为 Docker 引擎提供创建容器映像所需的指令。 这些指令按顺序逐一执行。 以下示例是 Dockerfile 中最常使用的指令。 有关 Dockerfile 指令的完整列表，请参阅 [Dockerfile reference](https://docs.docker.com/engine/reference/builder/)（Dockerfile 参考）。
 
 ### <a name="from"></a>FROM
 
@@ -77,20 +77,20 @@ FROM 指令的格式如下所示：
 FROM <image>
 ```
 
-下面是 FROM 命令的示例：
+以下是 FROM 命令的示例：
 
-若要从 Microsoft 容器注册表（MCR）下载 ltsc2019 版本 windows server core：
+若要从 Microsoft 容器注册表 (MCR) 下载 ltsc2019 版 Windows Server Core，请执行以下命令：
 ```
 FROM mcr.microsoft.com/windows/servercore:ltsc2019
 ```
 
-有关更多详细信息，请参阅 "[从参考](https://docs.docker.com/engine/reference/builder/#from)"。
+如需更多详细信息，请参阅 [FROM 参考](https://docs.docker.com/engine/reference/builder/#from)。
 
 ### <a name="run"></a>RUN
 
 `RUN` 指令指定将要运行并捕获到新容器映像中的命令。 这些命令包括安装软件、创建文件和目录，以及创建环境配置等。
 
-运行指令如下所示：
+RUN 指令如下所示：
 
 ```dockerfile
 # exec form
@@ -102,9 +102,9 @@ RUN ["<executable>", "<param 1>", "<param 2>"]
 RUN <command>
 ```
 
-Exec 和 shell 窗体之间的区别在于 `RUN` 指令的执行方式。 使用 exec 窗体时，指定的程序显式运行。
+exec 与 shell 窗体之间的区别在于 `RUN` 指令执行的方式。 使用 exec 窗体时，指定的程序显式运行。
 
-下面是 exec 格式的示例：
+下面是 exec 窗体的示例：
 
 ```
 FROM mcr.microsoft.com/windows/servercore:ltsc2019
@@ -121,7 +121,7 @@ IMAGE               CREATED             CREATED BY                    SIZE      
 b3452b13e472        2 minutes ago       powershell New-Item c:/test   30.76 MB
 ```
 
-相反，下面的示例在 shell 窗体中运行相同的操作：
+为了进行比较，下面的示例在 shell 窗体中运行相同的操作：
 
 ```
 FROM mcr.microsoft.com/windows/servercore:ltsc2019
@@ -138,7 +138,7 @@ IMAGE               CREATED             CREATED BY                              
 062a543374fc        19 seconds ago      cmd /S /C powershell New-Item c:\test   30.76 MB
 ```
 
-### <a name="considerations-for-using-run-with-windows"></a>使用 Windows 运行时的注意事项
+### <a name="considerations-for-using-run-with-windows"></a>在 Windows 中使用 RUN 的注意事项
 
 在 Windows 上，使用具有 exec 格式的 `RUN` 指令时，反斜杠必须进行转义。
 
@@ -146,23 +146,23 @@ IMAGE               CREATED             CREATED BY                              
 RUN ["powershell", "New-Item", "c:\\test"]
 ```
 
-如果目标程序是 Windows installer，则需要通过 `/x:<directory>` 标志提取安装程序，然后才能启动实际（无提示）安装过程。 还必须等待命令退出，然后再执行任何其他操作。 否则，该过程将提前结束，无需安装任何内容。 有关详细信息，请参阅以下示例。
+当目标程序是 Windows 安装程序时，需通过 `/x:<directory>` 标志提取安装程序，然后才能启动实际（无提示）安装过程。 还必须等待命令退出，然后再执行任何其他操作。 否则，安装过程将在未安装任何内容的情况下提前结束。 有关详细信息，请参阅以下示例。
 
-#### <a name="examples-of-using-run-with-windows"></a>使用 Windows 运行的示例
+#### <a name="examples-of-using-run-with-windows"></a>在 Windows 中使用 RUN 的示例
 
-下面的示例 Dockerfile 使用 DISM 在容器映像中安装 IIS：
+以下示例 Dockerfile 使用 DISM 在容器映像中安装 IIS：
 
 ```dockerfile
 RUN dism.exe /online /enable-feature /all /featurename:iis-webserver /NoRestart
 ```
 
-此示例安装 Visual Studio 可再发行组件包。 `Start-Process` 和 `-Wait` 参数用于运行安装程序。 这可确保在转到 Dockerfile 中的下一条指令之前安装完成。
+此示例安装 Visual Studio 可再发行组件包。 `Start-Process` 和 `-Wait` 参数用于运行安装程序。 这可以确保在完成安装后再继续 Dockerfile 中的下一指令。
 
 ```dockerfile
 RUN powershell.exe -Command Start-Process c:\vcredist_x86.exe -ArgumentList '/quiet' -Wait
 ```
 
-有关运行指令的详细信息，请参阅[运行引用](https://docs.docker.com/engine/reference/builder/#run)。
+有关 RUN 指令的详细信息，请参阅 [RUN 参考](https://docs.docker.com/engine/reference/builder/#run)。
 
 ### <a name="copy"></a>复制
 
@@ -174,46 +174,46 @@ RUN powershell.exe -Command Start-Process c:\vcredist_x86.exe -ArgumentList '/qu
 COPY <source> <destination>
 ```
 
-如果源或目标包括空格，请将路径括在方括号和双引号中，如下面的示例中所示：
+如果源或目标包含空格，请将路径括在方括号和双引号中，如以下示例所示：
 
 ```dockerfile
 COPY ["<source>", "<destination>"]
 ```
 
-#### <a name="considerations-for-using-copy-with-windows"></a>使用 Windows 副本的注意事项
+#### <a name="considerations-for-using-copy-with-windows"></a>在 Windows 中使用 COPY 的注意事项
 
-在 Windows 上，目标格式必须使用正斜杠。 例如，以下是有效 `COPY` 说明：
+在 Windows 上，目标格式必须使用正斜杠。 例如，下面是有效的 `COPY` 指令：
 
 ```dockerfile
 COPY test1.txt /temp/
 COPY test1.txt c:/temp/
 ```
 
-同时，以下格式的反斜杠无效：
+同时，带反斜杠的以下格式无效：
 
 ```dockerfile
 COPY test1.txt c:\temp\
 ```
 
-#### <a name="examples-of-using-copy-with-windows"></a>使用 Windows 副本的示例
+#### <a name="examples-of-using-copy-with-windows"></a>在 Windows 中使用 COPY 的示例
 
-下面的示例将源目录的内容添加到容器映像中名为 `sqllite` 的目录：
+以下示例将源目录的内容添加到容器映像中一个名为 `sqllite` 的目录：
 
 ```dockerfile
 COPY source /sqlite/
 ```
 
-下面的示例将以 config 开头的所有文件添加到容器映像的 `c:\temp` 目录中：
+以下示例会将以 config 开头的所有文件添加到容器映像的 `c:\temp` 目录中：
 
 ```dockerfile
 COPY config* c:/temp/
 ```
 
-有关 `COPY` 指令的详细信息，请参阅[复制参考](https://docs.docker.com/engine/reference/builder/#copy)。
+有关 `COPY` 指令的更多详细信息，请参阅 [COPY 参考](https://docs.docker.com/engine/reference/builder/#copy)。
 
-### <a name="add"></a>添加
+### <a name="add"></a>ADD
 
-ADD 指令与 COPY 指令类似，但具有更多的功能。 除了将文件从主机复制到容器映像，`ADD` 指令还可以使用 URL 规范从远程位置复制文件。
+ADD 指令与 COPY 指令类似，但包含更多功能。 除了将文件从主机复制到容器映像，`ADD` 指令还可以使用 URL 规范从远程位置复制文件。
 
 `ADD` 指令的格式如下所示：
 
@@ -221,22 +221,22 @@ ADD 指令与 COPY 指令类似，但具有更多的功能。 除了将文件从
 ADD <source> <destination>
 ```
 
-如果源或目标包括空格，请将路径用方括号括起来，用双引号引起来：
+如果源或目标包含空格，请将路径括在方括号和双引号中：
 
 ```dockerfile
 ADD ["<source>", "<destination>"]
 ```
 
-#### <a name="considerations-for-running-add-with-windows"></a>有关运行 "添加 Windows" 的注意事项
+#### <a name="considerations-for-running-add-with-windows"></a>在 Windows 中运行 ADD 的注意事项
 
-在 Windows 上，目标格式必须使用正斜杠。 例如，以下是有效 `ADD` 说明：
+在 Windows 上，目标格式必须使用正斜杠。 例如，下面是有效的 `ADD` 指令：
 
 ```dockerfile
 ADD test1.txt /temp/
 ADD test1.txt c:/temp/
 ```
 
-同时，以下格式的反斜杠无效：
+同时，带反斜杠的以下格式无效：
 
 ```dockerfile
 ADD test1.txt c:\temp\
@@ -244,27 +244,27 @@ ADD test1.txt c:\temp\
 
 此外，在 Linux 上 `ADD` 指令将在复制时展开压缩包。 此功能在 Windows 中不可用。
 
-#### <a name="examples-of-using-add-with-windows"></a>使用 ADD with Windows 的示例
+#### <a name="examples-of-using-add-with-windows"></a>在 Windows 中使用 ADD 的示例
 
-下面的示例将源目录的内容添加到容器映像中名为 `sqllite` 的目录：
+以下示例将源目录的内容添加到容器映像中一个名为 `sqllite` 的目录：
 
 ```dockerfile
 ADD source /sqlite/
 ```
 
-下面的示例将以 "config" 开头的所有文件添加到容器映像的 `c:\temp` 目录中。
+以下示例会将以“config”开头的所有文件添加到容器映像的 `c:\temp` 目录中。
 
 ```dockerfile
 ADD config* c:/temp/
 ```
 
-下面的示例将在容器映像的 `c:\temp` 目录中下载适用于 Windows 的 Python。
+以下示例会将 Python for Windows下载到容器映像的 `c:\temp` 目录中。
 
 ```dockerfile
 ADD https://www.python.org/ftp/python/3.5.1/python-3.5.1.exe /temp/python-3.5.1.exe
 ```
 
-有关 `ADD` 指令的详细信息，请参阅[添加引用](https://docs.docker.com/engine/reference/builder/#add)。
+有关 `ADD` 指令的更多详细信息，请参阅 [ADD 参考](https://docs.docker.com/engine/reference/builder/#add)。
 
 ### <a name="workdir"></a>WORKDIR
 
@@ -276,7 +276,7 @@ ADD https://www.python.org/ftp/python/3.5.1/python-3.5.1.exe /temp/python-3.5.1.
 WORKDIR <path to working directory>
 ```
 
-#### <a name="considerations-for-using-workdir-with-windows"></a>将 WORKDIR 与 Windows 配合使用时的注意事项
+#### <a name="considerations-for-using-workdir-with-windows"></a>在 Windows 中使用 WORKDIR 的注意事项
 
 在 Windows 上，如果工作目录包含一个反斜杠，则必须对其进行转义。
 
@@ -290,11 +290,11 @@ WORKDIR c:\\windows
 WORKDIR c:\\Apache24\\bin
 ```
 
-有关 `WORKDIR` 指令的详细信息，请参阅[WORKDIR 参考](https://docs.docker.com/engine/reference/builder/#workdir)。
+有关 `WORKDIR` 指令的详细信息，请参阅 [WORKDIR 参考](https://docs.docker.com/engine/reference/builder/#workdir)。
 
 ### <a name="cmd"></a>CMD
 
-`CMD` 指令用于设置部署容器映像的实例时要运行的默认命令。 例如，如果容器将托管 NGINX web 服务器，则 `CMD` 可能包括使用 `nginx.exe`之类的命令来启动 web 服务器的说明。 如果 Dockerfile 中指定了多个 `CMD` 指令，只会计算最后一个指令。
+`CMD` 指令用于设置部署容器映像的实例时要运行的默认命令。 例如，如果该容器将承载 NGINX Web 服务器，则 `CMD` 可能包括一些与 `nginx.exe` 之类的命令配合用于启动 Web 服务器的指令。 如果 Dockerfile 中指定了多个 `CMD` 指令，只会计算最后一个指令。
 
 `CMD` 指令的格式如下所示：
 
@@ -310,7 +310,7 @@ CMD <command>
 
 #### <a name="considerations-for-using-cmd-with-windows"></a>在 Windows 中使用 CMD 的注意事项
 
-在 Windows 上，在 `CMD` 指令中指定的文件路径必须使用正斜杠或已转义的反斜杠 `\\`。 下面是有效 `CMD` 说明：
+在 Windows 上，在 `CMD` 指令中指定的文件路径必须使用正斜杠或已转义的反斜杠 `\\`。 下面是有效的 `CMD` 指令：
 
 ```dockerfile
 # exec form
@@ -328,13 +328,13 @@ CMD c:\\Apache24\\bin\\httpd.exe -w
 CMD c:\Apache24\bin\httpd.exe -w
 ```
 
-有关 `CMD` 指令的详细信息，请参阅[CMD 引用](https://docs.docker.com/engine/reference/builder/#cmd)。
+有关 `CMD` 指令的更多详细信息，请参阅 [CMD 参考](https://docs.docker.com/engine/reference/builder/#cmd)。
 
-## <a name="escape-character"></a>转义符
+## <a name="escape-character"></a>转义字符
 
-在许多情况下，Dockerfile 指令需要跨多个行。 为此，可以使用转义符。 默认 Dockerfile 转义字符是反斜杠 `\`。 但是，由于反斜杠也是 Windows 中的文件路径分隔符，因此使用它来跨多行会导致问题。 若要解决此情况，可以使用分析器指令更改默认转义符。 有关分析器指令的详细信息，请参阅[分析器指令](https://docs.docker.com/engine/reference/builder/#parser-directives)。
+在许多情况下，Dockerfile 指令需要跨多个行。 这可以通过转义字符来完成。 默认 Dockerfile 转义字符是反斜杠 `\`。 但是，由于反斜杠在 Windows 中也是一个文件路径分隔符，因此使用它来跨多个行可能会导致问题。 为了解决此问题，可以使用分析器指令更改默认转义符。 有关分析器指令的详细信息，请参阅[分析器指令](https://docs.docker.com/engine/reference/builder/#parser-directives)。
 
-下面的示例显示了使用默认转义符跨多行的单个 RUN 指令：
+以下示例显示使用默认转义字符跨多个行的单个 RUN 指令：
 
 ```
 FROM mcr.microsoft.com/windows/servercore:ltsc2019
@@ -346,10 +346,10 @@ RUN powershell.exe -Command \
     Remove-Item c:\python-3.5.1.exe -Force
 ```
 
-要修改转义字符，请在 Dockerfile 最开始的行上放置一个转义分析程序指令。 下面的示例对此进行了介绍。
+要修改转义字符，请在 Dockerfile 最开始的行上放置一个转义分析程序指令。 如以下示例所示。
 
 >[!NOTE]
->只有两个值可用作转义字符： `\` 和 `` ` ``。
+>只有这两个值可用作转义字符：`\` 和 `` ` ``。
 
 ```dockerfile
 # escape=`
@@ -363,13 +363,13 @@ RUN powershell.exe -Command `
     Remove-Item c:\python-3.5.1.exe -Force
 ```
 
-有关 escape 分析器指令的详细信息，请参阅[escape parser 指令](https://docs.docker.com/engine/reference/builder/#escape)。
+有关 escape 分析器指令的详细信息，请参阅 [escape 分析器指令](https://docs.docker.com/engine/reference/builder/#escape)。
 
 ## <a name="powershell-in-dockerfile"></a>Dockerfile 中的 PowerShell
 
 ### <a name="powershell-cmdlets"></a>PowerShell cmdlet
 
-PowerShell cmdlet 可在具有 `RUN` 操作的 Dockerfile 中运行。
+可使用 `RUN` 操作在 Dockerfile 中运行 PowerShell cmdlet。
 
 ```
 FROM mcr.microsoft.com/windows/servercore:ltsc2019
@@ -379,7 +379,7 @@ RUN powershell -command Expand-Archive -Path c:\apache.zip -DestinationPath c:\
 
 ### <a name="rest-calls"></a>REST 调用
 
-在从 web 服务收集信息或文件时，PowerShell 的 `Invoke-WebRequest` cmdlet 会很有用。 例如，如果生成包含 Python 的映像，则可以将 `$ProgressPreference` 设置为 `SilentlyContinue` 以实现更快的下载，如以下示例中所示。
+从 Web 服务收集信息或文件时，可以使用 PowerShell 的 `Invoke-WebRequest` cmdlet。 例如，如果生成包含 Python 的映像，则可将 `$ProgressPreference` 设置为 `SilentlyContinue` 来加快下载速度，如以下示例所示。
 
 ```
 FROM mcr.microsoft.com/windows/servercore:ltsc2019
@@ -393,7 +393,7 @@ RUN powershell.exe -Command \
 ```
 
 >[!NOTE]
->`Invoke-WebRequest` 也适用于 Nano Server。
+>`Invoke-WebRequest` 还可以在 Nano Server 中使用。
 
 在映像创建过程期间，还可以通过 .NET WebClient 库使用 PowerShell 下载文件。 这可以增加下载性能。 下面的示例使用 WebClient 库下载 Python 软件。
 
@@ -408,14 +408,14 @@ RUN powershell.exe -Command \
 ```
 
 >[!NOTE]
->Nano Server 当前不支持 WebClient。
+>Nano Server 目前不支持 WebClient。
 
 ### <a name="powershell-scripts"></a>PowerShell 脚本
 
-在某些情况下，将脚本复制到在映像创建过程中使用的容器可能会很有帮助，然后在容器中运行脚本。
+在某些情况下，可以将脚本复制到在映像创建过程中使用的容器中，然后在该容器内运行脚本。
 
 >[!NOTE]
->这将限制任何图像层缓存并降低 Dockerfile 的可读性。
+>这会限制任何映像层缓存，降低 Dockerfile 的可读性。
 
 此示例使用 `ADD` 指令将脚本从生成计算机复制到容器中。 然后，此脚本使用 RUN 指令运行。
 
@@ -425,9 +425,9 @@ ADD script.ps1 /windows/temp/script.ps1
 RUN powershell.exe -executionpolicy bypass c:\windows\temp\script.ps1
 ```
 
-## <a name="docker-build"></a>Docker 生成
+## <a name="docker-build"></a>Docker build
 
-创建 Dockerfile 并将其保存到磁盘后，可以运行 `docker build` 来创建新映像。 `docker build` 命令采用几个可选参数和指向 Dockerfile 的路径。 有关 Docker Build 的完整文档（包括所有生成选项的列表），请参阅[生成引用](https://docs.docker.com/engine/reference/commandline/build/#build)。
+创建 Dockerfile 并将其保存到磁盘后，即可运行 `docker build` 以创建新映像。 `docker build` 命令采用几个可选参数和指向 Dockerfile 的路径。 有关 Docker Build 的完整文档，包括所有 build 选项的列表，请参阅 [build 参考](https://docs.docker.com/engine/reference/commandline/build/#build)。
 
 `docker build` 命令的格式如下所示：
 
@@ -435,13 +435,13 @@ RUN powershell.exe -executionpolicy bypass c:\windows\temp\script.ps1
 docker build [OPTIONS] PATH
 ```
 
-例如，以下命令将创建一个名为 "iis" 的映像。
+例如，以下命令将创建名为“iis”的映像。
 
 ```dockerfile
 docker build -t iis .
 ```
 
-启动生成过程后，输出将指示状态并返回任何引发的错误。
+生成过程启动后，输出会指示状态，并返回引发的任何错误。
 
 ```dockerfile
 C:\> docker build -t iis .
@@ -472,7 +472,7 @@ Removing intermediate container 9a26b8bcaa3a
 Successfully built e2aafdfbe392
 ```
 
-结果为新的容器映像，在此示例中名为 "iis"。
+其结果是一个新的容器映像，在此示例中名为“iis”。
 
 ```dockerfile
 docker images
@@ -482,7 +482,7 @@ iis                 latest              e2aafdfbe392        About a minute ago  
 windowsservercore   latest              6801d964fda5        4 months ago         0 B
 ```
 
-## <a name="further-reading-and-references"></a>进一步阅读和引用
+## <a name="further-reading-and-references"></a>更深入的阅读和参考
 
-- [优化 Windows 的 Dockerfile 和 Docker 生成](optimize-windows-dockerfile.md)
-- [Dockerfile 参考](https://docs.docker.com/engine/reference/builder/)
+- [优化用于 Windows 的 Dockerfile 和 Docker build](optimize-windows-dockerfile.md)
+- [Dockerfile reference](https://docs.docker.com/engine/reference/builder/)（Dockerfile 参考）

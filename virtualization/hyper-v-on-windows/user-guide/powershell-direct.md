@@ -10,7 +10,7 @@ ms.service: windows-10-hyperv
 ms.assetid: fb228e06-e284-45c0-b6e6-e7b0217c3a49
 ms.openlocfilehash: ed96c7ba30c83906cd3245a279ab078229400d8d
 ms.sourcegitcommit: 16744984ede5ec94cd265b6bff20aee2f782ca88
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 02/18/2020
 ms.locfileid: "77439544"
@@ -19,11 +19,11 @@ ms.locfileid: "77439544"
 
 无论采用何种网络配置或远程管理设置，均可以在 Hyper-V 主机上的 Windows 10 或 Windows Server 2016 虚拟机中使用 PowerShell Direct 运行任意 PowerShell。
 
-可以通过以下方法来运行 PowerShell Direct：
+可通过下面的一些方法运行 PowerShell Direct：
 
-* [使用 utf-8 cmdlet 作为交互式会话](#create-and-exit-an-interactive-powershell-session)
-* [使用 Invoke cmdlet 作为单用途部分来执行单个命令或脚本](#run-a-script-or-command-with-invoke-command)
-* [作为持久性会话（版本14280及更高版本），使用新的 PSSession、副本项和 Remove cmdlet](#copy-files-with-new-pssession-and-copy-item)
+* [作为一个使用 Enter-PSSession cmdlet 进行的交互式会话](#create-and-exit-an-interactive-powershell-session)
+* [作为一个可以使用 Invoke-Command cmdlet 来执行单个命令或脚本的单用途节](#run-a-script-or-command-with-invoke-command)
+* [作为一个可以使用 New-PSSession、Copy-Item 和 Remove-PSSession cmdlet 的持久性会话（版本 14280 及更高版本）](#copy-files-with-new-pssession-and-copy-item)
 
 ## <a name="requirements"></a>要求
 **操作系统要求：**
@@ -46,7 +46,7 @@ ms.locfileid: "77439544"
 
 会话启动时，所键入的命令会在虚拟机上运行，其效果就像直接在虚拟机上将其键入到 PowerShell 会话中那样。
 
-**若要启动交互式会话：**
+**启动交互会话：**
 
 1. 在 HYPER-V 主机上以管理员身份打开 PowerShell。
 
@@ -75,7 +75,7 @@ ms.locfileid: "77439544"
    Exit-PSSession 
    ``` 
 
-> 请注意：如果你的会话未连接，请参阅[疑难解答](#troubleshooting)了解可能的原因。 
+> 注意：如果你的会话未连接，请参阅[疑难解答](#troubleshooting)了解可能的原因。 
 
 若要了解有关这些 cmdlet 的详细信息，请参阅 [Enter-PSSession](https://docs.microsoft.com/powershell/module/Microsoft.PowerShell.Core/Enter-PSSession?view=powershell-5.1) 和 [Exit-PSSession](https://docs.microsoft.com/powershell/module/Microsoft.PowerShell.Core/Exit-PSSession?view=powershell-5.1)。 
 
@@ -128,7 +128,7 @@ ms.locfileid: "77439544"
 
 通过使用相同的令牌，会话将保持原有状态。  由于持久性会话具有持久性，在会话中创建的或传递给会话的任何变量将跨多个调用被保留。 有多种工具可用于持久性会话。  在此示例中，我们将使用 [New-PSSession](https://docs.microsoft.com/powershell/module/Microsoft.PowerShell.Core/New-PSSession?view=powershell-5.1) 和 [Copy-Item](https://docs.microsoft.com/powershell/module/Microsoft.PowerShell.Management/Copy-Item?view=powershell-5.1) 在主机和虚拟机之间移动数据。
 
-**若要创建会话，请复制文件：**  
+**创建会话，然后复制文件：**  
 
 1. 在 HYPER-V 主机上以管理员身份打开 PowerShell。
 
@@ -168,13 +168,13 @@ ms.locfileid: "77439544"
   
 -------------
 
-## <a name="troubleshooting"></a>故障排除
+## <a name="troubleshooting"></a>疑难解答
 
 PowerShell Direct 显示了一小部分的常见错误消息。  以下是最常见的错误消息、一些原因和诊断问题的工具。
 
 ### <a name="-vmname-or--vmid-parameters-dont-exist"></a>-VMName 或 -VMID 参数不存在
-**解决**  
-`Enter-PSSession`、`Invoke-Command`或 `New-PSSession` 没有 `-VMName` 或 `-VMId` 参数。
+**问题：**  
+`Enter-PSSession`、`Invoke-Command` 或 `New-PSSession` 没有 `-VMName` 或 `-VMId` 参数。
 
 **可能的原因：**  
 最可能的问题是你的主机操作系统不支持 PowerShell Direct。
@@ -219,7 +219,7 @@ New-PSSession : An error has occurred which Windows PowerShell cannot handle. A 
 ```
 
 **可能的原因：**
-* 上面列出的原因之一，它们都同样适用于 `New-PSSession`  
+* 上面列出的原因之一 - 它们都同等适用于 `New-PSSession`  
 * 当前版本中的一个 Bug，在这些版本中，必须使用 `-Credential` 显式传递凭据。  发生这种情况时，整个服务将在来宾操作系统中挂起，并需要重新启动。  可以检查是否仍可通过 Enter-PSSession 使用会话。
 
 若要解决凭据问题，使用 VMConnect 登录到虚拟机，打开 PowerShell，并使用以下 PowerShell 重新启动 vmicvmsession 服务：
@@ -235,7 +235,7 @@ Enter-PSSession : Parameter set cannot be resolved using the specified named par
 ```
 
 **可能的原因：**  
-* 连接到虚拟机时，不支持 `-RunAsAdministrator`。
+* `-RunAsAdministrator` 在连接到虚拟机时不受支持。
      
   连接到 Windows 容器时，`-RunAsAdministrator` 标志将允许管理员连接，而无需显式凭据。  由于虚拟机未授予主机默示的管理员访问权限，因此你需要显式输入凭据。
 
