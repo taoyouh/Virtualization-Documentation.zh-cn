@@ -8,12 +8,12 @@ ms.topic: article
 ms.prod: windows-10-hyperv
 ms.service: windows-10-hyperv
 ms.assetid: aee64ad0-752f-4075-a115-2d6b983b4f49
-ms.openlocfilehash: f1b33bf805f7868bb42ee1f49965c2ea9a45916f
-ms.sourcegitcommit: ac923217ee2f74f08df2b71c2a4c57b694f0d7c3
+ms.openlocfilehash: 6af2002d06258e2a4d89d1f5d2698d22d2f46049
+ms.sourcegitcommit: b140ac14124e4bee3c7f31a7f8274d4a0ccb2dda
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78853971"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "80929967"
 ---
 # <a name="hypervisor-specifications"></a>虚拟机监控程序规范
 
@@ -26,7 +26,7 @@ Hyper-V 虚拟机监控程序顶层功能规范 (TLFS) 描述了虚拟机监控�
 #### <a name="download"></a>下载
 版本 | 文档
 --- | ---
-Windows Server Standard 2012 R2 | [Hypervisor Top Level Functional Specification v6.0.pdf](https://github.com/MicrosoftDocs/Virtualization-Documentation/raw/master/tlfs/Hypervisor%20Top%20Level%20Functional%20Specification%20v6.0.pdf)
+Windows Server 2019（修订版 B） | [Hypervisor Top Level Functional Specification v6.0b.pdf](https://github.com/MicrosoftDocs/Virtualization-Documentation/raw/master/tlfs/Hypervisor%20Top%20Level%20Functional%20Specification%20v6.0b.pdf)
 Windows Server 2016（修订版 C） | [Hypervisor Top Level Functional Specification v5.0c.pdf](https://github.com/MicrosoftDocs/Virtualization-Documentation/raw/live/tlfs/Hypervisor%20Top%20Level%20Functional%20Specification%20v5.0C.pdf)
 Windows Server 2012 R2（修订版 B） | [Hypervisor Top Level Functional Specification v4.0b.pdf](https://github.com/Microsoft/Virtualization-Documentation/raw/master/tlfs/Hypervisor%20Top%20Level%20Functional%20Specification%20v4.0b.pdf)
 Windows Server 2012 | [Hypervisor Top Level Functional Specification v3.0.pdf](https://github.com/Microsoft/Virtualization-Documentation/raw/master/tlfs/Hypervisor%20Top%20Level%20Functional%20Specification%20v3.0.pdf)

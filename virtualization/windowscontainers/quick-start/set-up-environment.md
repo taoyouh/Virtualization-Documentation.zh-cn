@@ -9,12 +9,12 @@ ms.topic: article
 ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: bb9bfbe0-5bdc-4984-912f-9c93ea67105f
-ms.openlocfilehash: 2c52dd96b3bf2402d41ec5b178af36521d00a649
-ms.sourcegitcommit: 1ca9d7562a877c47f227f1a8e6583cb024909749
+ms.openlocfilehash: 13d8f1ead90b2c2c86afe9f596717c1c09905895
+ms.sourcegitcommit: b140ac14124e4bee3c7f31a7f8274d4a0ccb2dda
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "74909557"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "80929983"
 ---
 # <a name="get-started-prep-windows-for-containers"></a>入门：准备适用于容器的 Windows
 
@@ -31,7 +31,7 @@ ms.locfileid: "74909557"
 
 若要在 Windows Server 上运行容器，需要一台运行 Windows Server（半年频道）、Windows Server 2019 或 Windows Server 2016 的物理服务器或虚拟机。
 
-若要进行测试，可以下载 [Window Server 2019 评估版](https://www.microsoft.com/evalcenter/evaluate-windows-server-2019 )或 [Windows Server Insider Preview](https://insider.windows.com/for-business-getting-started-server/) 的副本。
+若要进行测试，可以下载 [Windows Server 2019 评估版](https://www.microsoft.com/evalcenter/evaluate-windows-server-2019 )或 [Windows Server Insider Preview](https://insider.windows.com/for-business-getting-started-server/) 的副本。
 
 # <a name="windows-10"></a>[Windows 10](#tab/Windows-10-Client)
 
