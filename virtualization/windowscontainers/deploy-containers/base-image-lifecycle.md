@@ -8,14 +8,17 @@ ms.date: 06/17/2019
 ms.topic: article
 ms.prod: windows-containers
 ms.service: windows-containers
-ms.openlocfilehash: 27672f6a8e71989bfd47fe9810dfd429eedd9206
-ms.sourcegitcommit: 379eb650f6af90f5963e2fcf9de7196238fbe9fa
+ms.openlocfilehash: 2dcd228af0984b55162894555fa21f9e02dd1934
+ms.sourcegitcommit: 16ebc4f00773d809fae84845208bd1dcf08a889c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77705682"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "81395740"
 ---
 # <a name="base-image-servicing-lifecycles"></a>基本映像服务生命周期
+
+> [!Note]  
+> Microsoft 推迟了计划的支持和服务日期，可帮助用户和组织关注他们对保持业务连续性的关注。 有关详细信息，请参阅从2020年4月14日开始[到支持和服务日期的生命周期更改](https://support.microsoft.com/en-us/help/4557164/lifecycle-changes-to-end-of-support-and-servicing-dates)。
 
 Windows 容器基本映像基于半年频道版本或 Windows Server 的长期服务通道版本。 本文将介绍这两个通道中不同版本的基本映像的持续时间。
 
@@ -30,7 +33,7 @@ Windows 容器基本映像基于半年频道版本或 Windows Server 的长期�
 |Server Core、Nano Server、Windows|半年      |1909   |18363   |2019/11/12  |2021/05/11                 |不可用                  |
 |Server Core、Nano Server、Windows|半年      |1903   |18362   |05/21/2019  |2020/12/08                 |不可用                  |
 |服务器核心                      |长期        |2019   |17763   |2018/11/13  |2024/01/09                 |2029/01/09           |
-|Server Core、Nano Server、Windows|半年      |1809   |17763   |2018/11/13  |05/12/2020                 |不可用                  |
+|Server Core、Nano Server、Windows|半年      |1809   |17763   |2018/11/13  |11/10/2020                 |不可用                  |
 |服务器核心，Nano Server         |半年      |1803   |17134   |2018/04/30  |2019/11/12                 |不可用                  |
 |服务器核心，Nano Server         |半年      |1709   |16299   |2017/10/17  |04/09/2019                 |不可用                  |
 |服务器核心                      |长期        |1607   |14393   |2016/10/15  |2022/01/11                 |2027/01/11           |
