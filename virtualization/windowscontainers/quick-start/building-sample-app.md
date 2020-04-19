@@ -8,12 +8,12 @@ ms.date: 11/12/2019
 ms.topic: article
 ms.prod: windows-containers
 ms.service: windows-containers
-ms.openlocfilehash: 587e8de5f0d593f92f6301c87bf68e08a8bbd839
-ms.sourcegitcommit: ac923217ee2f74f08df2b71c2a4c57b694f0d7c3
+ms.openlocfilehash: d81c6cb99b1d12b1df87e83220b39eef80f066c0
+ms.sourcegitcommit: 16ebc4f00773d809fae84845208bd1dcf08a889c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78854001"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "81395760"
 ---
 # <a name="containerize-a-net-core-app"></a>容器化 .NET Core 应用
 
@@ -121,7 +121,7 @@ ENTRYPOINT ["dotnet", "asp-net-getting-started.dll"]
 
    让我们仔细分析此命令：
 
-   * `-d` 告知 Docker 以“分离”模式运行容器，这意味着没有控制台与容器中的控制台挂钩。 容器在后台运行。 
+   * `-d` 告知 Docker 以“分离”模式运行容器，这意味着没有任何控制台与容器中的控制台挂钩。 容器在后台运行。 
    * `-p 5000:80` 告知 Docker 将主机上的端口 5000 映射到容器中的端口 80。 每个容器均获取其自己的 IP 地址。 默认情况下，ASP .NET 在端口 80 上侦听。 我们可以通过端口映射转到已映射端口的主机 IP 地址，Docker 会将所有流量转发到容器内的目标端口。
    * `--name myapp` 告知 Docker 为此容器指定一个方便进行查询的名称（这样就不需在运行时通过 Docker 查找分配的容器 ID）。
    * `my-asp-app` 是我们希望 Docker 运行的映像。 这是 `docker build` 过程结束时生成的容器映像。
