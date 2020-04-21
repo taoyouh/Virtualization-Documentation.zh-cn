@@ -28,7 +28,7 @@ Hyper-V 有三种类型的虚拟交换机 -- 外部、内部和专用。 创建�
 
 ### <a name="create-a-virtual-switch-with-hyper-v-manager"></a>使用 Hyper-V 管理器创建虚拟交换机
 
-1. 打开 Hyper-V 管理器。  执行此操作快速的方法是按 Windows 按钮或密钥，然后键入“Hyper-V 管理器”。  
+1. 打开 Hyper-V 管理器。 快速执行此操作的方法是按下 Windows 按钮或按键，然后键入“Hyper-V 管理器”。 
 如果搜索未找到 Hyper-V 管理器，那是因为未启用 Hyper-V 或 Hyper-V 管理工具。  请参阅[启用 Hyper-V](enable-hyper-v.md) 的说明。
 
 2. 在左窗格中选择服务器，或在右窗格中单击“连接到服务器…”。
