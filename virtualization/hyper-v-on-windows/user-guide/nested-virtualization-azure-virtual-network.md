@@ -8,12 +8,12 @@ ms.topic: article
 ms.prod: windows-10-hyperv
 ms.service: windows-10-hyperv
 ms.assetid: 1ecb85a6-d938-4c30-a29b-d18bd007ba08
-ms.openlocfilehash: b7944e34cab66df07df0ccc78947a774d775c9a7
-ms.sourcegitcommit: ac923217ee2f74f08df2b71c2a4c57b694f0d7c3
+ms.openlocfilehash: 63007d21fcc046f384405c7d85143bfc576ecc07
+ms.sourcegitcommit: 16ebc4f00773d809fae84845208bd1dcf08a889c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78853941"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "81395750"
 ---
 # <a name="configure-nested-vms-to-communicate-with-resources-in-an-azure-virtual-network"></a>将嵌套 VM 配置为与 Azure 虚拟网络中的资源通信
 
@@ -121,7 +121,7 @@ ms.locfileid: "78853941"
 
 1. 打开“服务器管理器”，选择“工具”，然后选择“路由和远程访问”。
 2. 在“路由和远程访问”管理面板左侧会出现一个图标，其旁边是你的服务器名称。请右键单击此图标，然后选择“配置并启用路由和远程访问”。
-3. 在向导中选择“下一步”，选中“自定义配置”单选按钮，然后选择“下一步”。
+3. 在向导中选择“下一步”，选择“自定义配置”，然后选择“下一步”。
 4. 选中“NAT”和“LAN 路由”，接着选择“下一步”，然后选择“完成”。 如果它要求你启动服务，则执行该操作。
 5. 现在，导航到“IPv4”节点并展开它，使“NAT”节点可用。
 6. 右键单击“NAT”，选择“新建接口...”，接着选择“以太网”（这应该是你的 IP 为“10.0.0.4”的第一个 NIC），然后选择用于连接到 Internet 的“公共接口”并在该接口上启用 NAT。 
