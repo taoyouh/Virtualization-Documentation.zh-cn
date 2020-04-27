@@ -8,10 +8,10 @@ ms.topic: article
 ms.prod: windows-10-hyperv
 ms.assetid: 752dc760-a33c-41bb-902c-3bb2ecd9ac86
 ms.openlocfilehash: bad59fcc65bf66ab3c6dc940a17111e46a9bc226
-ms.sourcegitcommit: 16744984ede5ec94cd265b6bff20aee2f782ca88
+ms.sourcegitcommit: 16ebc4f00773d809fae84845208bd1dcf08a889c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/18/2020
+ms.lasthandoff: 04/24/2020
 ms.locfileid: "77439694"
 ---
 # <a name="install-hyper-v-on-windows-10"></a>在 Windows 10 上安装 Hyper-V
