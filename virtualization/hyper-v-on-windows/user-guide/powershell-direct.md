@@ -9,10 +9,10 @@ ms.prod: windows-10-hyperv
 ms.service: windows-10-hyperv
 ms.assetid: fb228e06-e284-45c0-b6e6-e7b0217c3a49
 ms.openlocfilehash: ed96c7ba30c83906cd3245a279ab078229400d8d
-ms.sourcegitcommit: 16744984ede5ec94cd265b6bff20aee2f782ca88
+ms.sourcegitcommit: 16ebc4f00773d809fae84845208bd1dcf08a889c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/18/2020
+ms.lasthandoff: 04/24/2020
 ms.locfileid: "77439544"
 ---
 # <a name="virtual-machine-automation-and-management-using-powershell"></a>使用 PowerShell 实现虚拟机自动化和管理虚拟机
@@ -75,7 +75,7 @@ ms.locfileid: "77439544"
    Exit-PSSession 
    ``` 
 
-> 注意：如果你的会话未连接，请参阅[疑难解答](#troubleshooting)了解可能的原因。 
+> 请注意：如果你的会话未连接，请参阅[疑难解答](#troubleshooting)了解可能的原因。 
 
 若要了解有关这些 cmdlet 的详细信息，请参阅 [Enter-PSSession](https://docs.microsoft.com/powershell/module/Microsoft.PowerShell.Core/Enter-PSSession?view=powershell-5.1) 和 [Exit-PSSession](https://docs.microsoft.com/powershell/module/Microsoft.PowerShell.Core/Exit-PSSession?view=powershell-5.1)。 
 

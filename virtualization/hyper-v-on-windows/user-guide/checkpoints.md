@@ -9,10 +9,10 @@ ms.prod: windows-10-hyperv
 ms.service: windows-10-hyperv
 ms.assetid: d9c398c4-ee72-45c6-9ce8-4f06569dae6c
 ms.openlocfilehash: 8cdbd7b9881c973b6b5d269f986a03bdb21e276a
-ms.sourcegitcommit: 1ca9d7562a877c47f227f1a8e6583cb024909749
+ms.sourcegitcommit: 16ebc4f00773d809fae84845208bd1dcf08a889c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/04/2019
+ms.lasthandoff: 04/24/2020
 ms.locfileid: "74911227"
 ---
 # <a name="using-checkpoints-to-revert-virtual-machines-to-a-previous-state"></a>使用检查点将虚拟机恢复到以前的状态
@@ -96,7 +96,7 @@ Get-VMCheckpoint -VMName <VMName>
 1. 在“Hyper-V 管理器”中的“虚拟机”下，选择虚拟机。  
 2. 在“检查点”部分中，右键单击要使用的检查点，然后单击“应用”  。
 3. 将显示一个带有以下选项的对话框：  
-  * **创建检查点并应用**：在虚拟机应用以前的检查点之前创建新的检查点。 
+  * **创建检查点和应用**：在虚拟机应用以前的检查点之前创建新的检查点。 
   * **应用**：仅应用已选择的检查点。 不能撤消此操作。
   * **取消**：在不执行任何操作的情况下，关闭该对话框。
   

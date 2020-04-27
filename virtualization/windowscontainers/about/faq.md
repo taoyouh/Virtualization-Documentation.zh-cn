@@ -9,10 +9,10 @@ ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: 25de368c-5a10-40a4-b4aa-ac8c9a9ca022
 ms.openlocfilehash: 405b2abc43a4ae2c546de351679deb755e4a9317
-ms.sourcegitcommit: 1ca9d7562a877c47f227f1a8e6583cb024909749
+ms.sourcegitcommit: 16ebc4f00773d809fae84845208bd1dcf08a889c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/04/2019
+ms.lasthandoff: 04/24/2020
 ms.locfileid: "74910797"
 ---
 # <a name="frequently-asked-questions-about-containers"></a>有关容器的常见问题
@@ -49,7 +49,7 @@ Windows Server 容器映像使用情况通过读取该[版本](/windows-server/g
 
 ## <a name="as-a-developer-do-i-have-to-rewrite-my-app-for-each-type-of-container"></a>作为开发人员，我是否必须针对每种类型的容器重新编写我的应用？
 
-不能。 Windows 容器映像通用于 Windows Server 容器和 Hyper-V 隔离。 在你启动容器时选择容器类型。 从开发人员的角度看，Windows Server 容器和 Hyper-V 隔离是同一事物的两种风格。 它们提供相同的开发、编程和管理体验，它们是开放且可扩展的，并通过 Docker 提供相同级别的集成和支持。
+否。 Windows 容器映像通用于 Windows Server 容器和 Hyper-V 隔离。 在你启动容器时选择容器类型。 从开发人员的角度看，Windows Server 容器和 Hyper-V 隔离是同一事物的两种风格。 它们提供相同的开发、编程和管理体验，它们是开放且可扩展的，并通过 Docker 提供相同级别的集成和支持。
 
 开发人员可以使用 Windows Server 容器创建容器映像并通过 Hyper-V 隔离的方式对其进行部署，反之亦然，无需进行任何更改，只需指定相应的运行时标志即可。
 
@@ -57,7 +57,7 @@ Windows Server 容器映像使用情况通过读取该[版本](/windows-server/g
 
 ## <a name="can-i-run-windows-containers-in-process-isolated-mode-on-windows-10"></a>能否在 Windows 10 上以进程隔离模式运行 Windows 容器？
 
-从 Windows 10 2018 年 10 月版更新开始，可以运行实施了进程隔离的 Windows 容器，但在使用 `docker run` 运行容器时，必须首先使用 `--isolation=process` 标志直接请求进程隔离。 进程隔离在 Windows 10 专业版、Windows 10 企业版、Windows 10 IoT 核心版和 Windows 10 IoT 企业版上是兼容的。
+从 Windows 10 2018 年 10 月版更新开始，可以运行实施了进程隔离的 Windows 容器，但在使用 `--isolation=process` 运行容器时，必须首先使用 `docker run` 标志直接请求进程隔离。 进程隔离在 Windows 10 专业版、Windows 10 企业版、Windows 10 IoT 核心版和 Windows 10 IoT 企业版上是兼容的。
 
 如果要以这种方式运行 Windows 容器，则需确保主机运行的是 Windows 10 版本 17763+，并且你有一个引擎为 18.09 或更高版本的 Docker 版本。
 

@@ -8,10 +8,10 @@ ms.topic: article
 ms.prod: windows-10-hyperv
 ms.assetid: ae4a18ed-996b-4104-90c5-539c90798e4c
 ms.openlocfilehash: 25c72b910af15fc0b498a5b2abce72d32e6d1efd
-ms.sourcegitcommit: 16744984ede5ec94cd265b6bff20aee2f782ca88
+ms.sourcegitcommit: 16ebc4f00773d809fae84845208bd1dcf08a889c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/18/2020
+ms.lasthandoff: 04/24/2020
 ms.locfileid: "77439594"
 ---
 # <a name="supported-windows-guests"></a>受支持的 Windows 来宾
@@ -42,7 +42,7 @@ Microsoft 通过以下方式提供支持：
 | Windows Vista Service Pack 2 (SP2) | 2 | 商用版、企业版和旗舰版，包括 N 和 KN 版本。 |
 | - | | |
 | [Windows Server 半年频道](https://docs.microsoft.com/windows-server/get-started/semi-annual-channel-overview) | 64 | |
-| Windows Server Standard 2012 R2 | 64 | |
+| Windows Server 2019 | 64 | |
 | Windows Server 2016 | 64 | |
 | Windows Server 2012 R2 | 64 | |
 | Windows Server 2012 | 64 | |

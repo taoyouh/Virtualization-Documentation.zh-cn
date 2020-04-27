@@ -9,10 +9,10 @@ ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: 6885400c-5623-4cde-8012-f6a00019fafa
 ms.openlocfilehash: c84a6652b5918238ee8ef6e1fa7a9b2aa596aefd
-ms.sourcegitcommit: 8eedfdc1fda9d0abb36e28dc2b5fb39891777364
+ms.sourcegitcommit: 16ebc4f00773d809fae84845208bd1dcf08a889c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/15/2020
+ms.lasthandoff: 04/24/2020
 ms.locfileid: "79402878"
 ---
 # <a name="docker-engine-on-windows"></a>Windows 上的 Docker 引擎
@@ -184,9 +184,9 @@ docker system prune --volumes --all
 
 在 Windows 10 上卸载 Docker
 
-- 在 Windows 10 计算机上转到“设置” > “应用”  
+- 在 Windows 10 计算机上转到“设置” **“应用”**  >  
 - 在“应用和功能”下面，查找“适用于 Windows 的 Docker”  
-- 转到“适用于 Windows 的 Docker” > “卸载”  
+- 转到“适用于 Windows 的 Docker” **“卸载”**  >  
 
 在 Windows Server 2016 上卸载 Docker
 
@@ -223,7 +223,7 @@ Remove-Item "C:\ProgramData\Docker" -Recurse
 
 若要在 Windows 10 上删除 Windows 功能，请执行以下操作：
 
-- 转到“控制面板” > “程序” > “程序和功能” > “打开或关闭 Windows 功能。    
+- 转到“控制面板” **“程序”** “程序和功能” > “打开或关闭 Windows 功能。   >    >  
 - 查找想要禁用的一项或多项功能的名称，在本例中为“容器”和（可选）“Hyper-V”。  
 - 取消选中要禁用的功能名称旁边的框。
 - 选择“确定” 

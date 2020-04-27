@@ -9,10 +9,10 @@ ms.prod: windows-10-hyperv
 ms.service: windows-10-hyperv
 ms.assetid: 6d1ae036-0841-4ba5-b7e0-733aad31e9a7
 ms.openlocfilehash: d53bdce3438c6dafe3a1e0350c7a5df30ff8210b
-ms.sourcegitcommit: 1ca9d7562a877c47f227f1a8e6583cb024909749
+ms.sourcegitcommit: 16ebc4f00773d809fae84845208bd1dcf08a889c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/04/2019
+ms.lasthandoff: 04/24/2020
 ms.locfileid: "74911507"
 ---
 # <a name="working-with-hyper-v-and-windows-powershell"></a>使用 Hyper-V 和 Windows PowerShell
@@ -96,7 +96,7 @@ Get-Command -Module hyper-v | Out-GridView
 以下示例演示如何在 PowerShell 集成脚本环境 (ISE) 中创建新的虚拟机。 这是一个简单示例，并可扩展为包含其他 PowerShell 功能以及更高级的 VM 部署。
 
 1. 若要打开 PowerShell ISE，请单击“开始”，键入 **PowerShell ISE**。
-2. 运行以下代码来创建虚拟机。 有关 `New-VM` 命令的详细信息，请参阅 [New-VM](https://docs.microsoft.com/powershell/module/hyper-v/new-vm?view=win10-ps) 文档。
+2. 运行以下代码来创建虚拟机。 有关 [ 命令的详细信息，请参阅 ](https://docs.microsoft.com/powershell/module/hyper-v/new-vm?view=win10-ps)New-VM`New-VM` 文档。
 
  ```powershell
   $VMName = "VMNAME"

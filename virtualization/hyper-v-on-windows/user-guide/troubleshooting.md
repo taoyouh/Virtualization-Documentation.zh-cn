@@ -9,10 +9,10 @@ ms.prod: windows-10-hyperv
 ms.service: windows-10-hyperv
 ms.assetid: f0ec8eb4-ffc4-4bf1-9a19-7a8c3975b359
 ms.openlocfilehash: bdb9feeb2452f2784a3b814e85dc72f3b967a9d3
-ms.sourcegitcommit: 16744984ede5ec94cd265b6bff20aee2f782ca88
+ms.sourcegitcommit: 16ebc4f00773d809fae84845208bd1dcf08a889c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/18/2020
+ms.lasthandoff: 04/24/2020
 ms.locfileid: "77439324"
 ---
 # <a name="troubleshoot-hyper-v-on-windows-10"></a>Windows 10 上的 Hyper-V 疑难解答
@@ -29,11 +29,11 @@ ms.locfileid: "77439324"
 
 ## <a name="when-i-try-to-create-a-virtual-hard-disk-on-a-flash-drive-an-error-message-is-displayed"></a>当我尝试在 U 盘上创建虚拟硬盘时，将显示一条错误消息。
 Hyper-V 不支持 FAT/FAT32 格式化的磁盘驱动器，因为这些文件系统不提供访问控制列表 (ACL)，并且不支持大于 4GB 的文件。 ExFAT 格式化的磁盘仅提供有限的 ACL 功能，因此出于安全原因，这些磁盘不受支持。
-在 PowerShell 中显示的错误消息为“系统无法创建 '\[VHD 路径\]':由于文件系统限制，所请求的操作无法完成(0x80070299)。”
+在 PowerShell 中显示的错误消息为“系统无法创建‘\[到 VHD 的路径\]’：由于文件系统限制，请求的操作无法完成 (0x80070299)。”
 
 改为使用 NTFS 格式化的驱动器。 
 
-## <a name="i-get-this-message-when-i-try-to-install-hyper-v-cannot-be-installed-the-processor-does-not-support-second-level-address-translation-slat"></a>我在尝试安装时收到此消息：“无法安装 Hyper-V:处理器不支持二级地址转换(SLAT)”。
+## <a name="i-get-this-message-when-i-try-to-install-hyper-v-cannot-be-installed-the-processor-does-not-support-second-level-address-translation-slat"></a>在尝试安装时收到此消息：“无法安装 Hyper-V：处理器不支持二级地址转换 (SLAT)。”
 Hyper-V 需要使用 SLAT 才能运行虚拟机。 如果你的计算机不支持 SLAT，则它无法成为虚拟机的主机。
 
-如果仅尝试安装管理工具，请在“**程序和功能**” > “**打开或关闭 Windows 功能**”中取消选择“**Hyper-V 平台**”。
+如果仅尝试安装管理工具，请在“**程序和功能**” **“** 打开或关闭 Windows 功能 > ”中取消选择“**Hyper-V 平台**”。

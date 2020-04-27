@@ -9,10 +9,10 @@ ms.prod: windows-10-hyperv
 ms.service: windows-10-hyperv
 ms.assetid: 532195c6-564b-4954-97c2-5a5795368c09
 ms.openlocfilehash: 0139f51e909149dde59f4030c6571aee82fed27e
-ms.sourcegitcommit: 1ca9d7562a877c47f227f1a8e6583cb024909749
+ms.sourcegitcommit: 16ebc4f00773d809fae84845208bd1dcf08a889c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/04/2019
+ms.lasthandoff: 04/24/2020
 ms.locfileid: "74909477"
 ---
 # <a name="create-a-virtual-network"></a>创建虚拟网络
@@ -28,7 +28,7 @@ Hyper-V 有三种类型的虚拟交换机 -- 外部、内部和专用。 创建�
 
 ### <a name="create-a-virtual-switch-with-hyper-v-manager"></a>使用 Hyper-V 管理器创建虚拟交换机
 
-1. 打开 Hyper-V 管理器。  快速执行此操作的方法是按下 Windows 按钮或按键，然后键入“Hyper-V 管理器”。  
+1. 打开 Hyper-V 管理器。  执行此操作快速的方法是按 Windows 按钮或密钥，然后键入“Hyper-V 管理器”。  
 如果搜索未找到 Hyper-V 管理器，那是因为未启用 Hyper-V 或 Hyper-V 管理工具。  请参阅[启用 Hyper-V](enable-hyper-v.md) 的说明。
 
 2. 在左窗格中选择服务器，或在右窗格中单击“连接到服务器…”。
