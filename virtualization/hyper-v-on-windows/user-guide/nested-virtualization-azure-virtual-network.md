@@ -12,7 +12,7 @@ ms.openlocfilehash: 63007d21fcc046f384405c7d85143bfc576ecc07
 ms.sourcegitcommit: 16ebc4f00773d809fae84845208bd1dcf08a889c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/15/2020
+ms.lasthandoff: 04/24/2020
 ms.locfileid: "81395750"
 ---
 # <a name="configure-nested-vms-to-communicate-with-resources-in-an-azure-virtual-network"></a>将嵌套 VM 配置为与 Azure 虚拟网络中的资源通信
@@ -103,7 +103,7 @@ ms.locfileid: "81395750"
 
 ## <a name="install-and-configure-dhcp"></a>安装并配置 DHCP
 
-许多人在第一次尝试实现嵌套虚拟化时都错过了此组件。与本地不同（在本地，来宾 VM 会从主机所在的网络接收 DHCP），为 Azure 中的嵌套 VM 提供 DHCP 时，必须通过嵌套 VM 运行时所在的主机提供。因此，需要将一个 IP 地址静态分配给每个不可缩放的嵌套 VM。 
+许多人在第一次尝试实现嵌套虚拟化时都错过了此组件。*与本地不同（在本地，来宾 VM 会从主机所在的网络接收 DHCP），为 Azure 中的嵌套 VM 提供 DHCP 时，必须通过嵌套 VM 运行时所在的主机提供。* 因此，需要将一个 IP 地址静态分配给每个不可缩放的嵌套 VM。
 
 1. 安装 DHCP 角色：`Install-WindowsFeature DHCP -IncludeManagementTools`
 2. 创建 DHCP 作用域：`Add-DhcpServerV4Scope -Name "Nested VMs" -StartRange 10.0.2.2 -EndRange 10.0.2.254 -SubnetMask 255.255.255.0`
