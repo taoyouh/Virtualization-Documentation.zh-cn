@@ -8,12 +8,12 @@ ms.topic: article
 ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: 8e273856-3620-4e58-9d1a-d1e06550448
-ms.openlocfilehash: 4fad299db2c897a6be860ef0cc71e80969c75357
-ms.sourcegitcommit: 16ebc4f00773d809fae84845208bd1dcf08a889c
+ms.openlocfilehash: 67ac6e39ca4b3c485d1bb376be1893e871317fac
+ms.sourcegitcommit: 85e257cfd543bf5a37680cde07e184cbdd573bd7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "74909407"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83368008"
 ---
 # <a name="windows-and-containers"></a>Windows 和容器
 
@@ -30,7 +30,7 @@ Microsoft 提供了许多有助于在容器中开发和部署应用的工具和�
 - <strong>将应用作为容器映像发布</strong>到公共 DockerHub 供他人使用，或者发布到专用 [Azure 容器注册表](https://azure.microsoft.com/services/container-registry/)供组织进行自己的开发和部署，直接在 Visual Studio 和 Visual Studio Code 中进行推送和拉取。
 - <strong>在 Azure 上大规模部署容器</strong>，或者在其他云上这样做：
 
-  - 从容器注册表（例如 Azure 容器注册表）拉取应用（容器映像），然后使用 [Azure Kubernetes 服务 (AKS)](https://docs.microsoft.com/azure/aks/intro-kubernetes)（为基于 Windows 的应用提供预览版）或 [Azure Service Fabric](https://docs.microsoft.com/azure/service-fabric/) 之类的业务流程协调程序对其进行大规模部署和管理。
+  - 从容器注册表（例如 Azure 容器注册表）拉取应用（容器映像），然后使用 [Azure Kubernetes 服务 (AKS)](https://docs.microsoft.com/azure/aks/intro-kubernetes) 或 [Azure Service Fabric](https://docs.microsoft.com/azure/service-fabric/) 等业务流程协调程序对其进行大规模部署和管理。
   - Azure Kubernetes 服务将容器大规模部署到 Azure 虚拟机并对其进行管理，不管容器的数量是数十、数百还是数千。 Azure 虚拟机运行自定义 Windows Server 映像（如果部署基于 Windows 的应用）或自定义 Ubuntu Linux 映像（如果部署基于 Linux 的应用）。
 - 通过[将 Azure Stack 与 AKS 引擎配合使用](https://docs.microsoft.com/azure-stack/user/azure-stack-kubernetes-aks-engine-overview)（以预览版方式与 Linux 容器配合使用）或[将 Azure Stack 与 OpenShift 配合使用](https://docs.microsoft.com/azure/virtual-machines/linux/openshift-azure-stack)，<strong>在本地部署容器</strong>。 你也可以在 Windows Server 上自行设置 Kubernetes（请参阅 [Windows 上的 Kubernetes](../kubernetes/getting-started-kubernetes-windows.md)），我们也将致力于提供相关支持，方便你运行 [RedHat OpenShift Container Platform 上的 Windows 容器](https://techcommunity.microsoft.com/t5/Networking-Blog/Managing-Windows-containers-with-Red-Hat-OpenShift-Container/ba-p/339821)。
 
