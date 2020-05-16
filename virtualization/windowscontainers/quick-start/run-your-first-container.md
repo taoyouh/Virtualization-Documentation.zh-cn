@@ -9,12 +9,12 @@ ms.topic: article
 ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: bb9bfbe0-5bdc-4984-912f-9c93ea67105f
-ms.openlocfilehash: 551d405d836cfb16b587ef78bc2d5f5abbd8648f
-ms.sourcegitcommit: 16ebc4f00773d809fae84845208bd1dcf08a889c
+ms.openlocfilehash: 859ef38380e536a79a3dcd63397af8fd841253ee
+ms.sourcegitcommit: 62f4bcca4e07f2a34a927e5c4d786e505821d559
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "78853811"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "82784406"
 ---
 # <a name="get-started-run-your-first-windows-container"></a>入门：运行你的第一个 Windows 容器
 
@@ -89,8 +89,7 @@ ms.locfileid: "78853811"
    ```console
    docker run --rm helloworld cmd.exe /s /c type Hello.txt
    ```
-
-   结果就是从“HelloWorld”映像创建了一个容器，cmd.exe 的实例是在读取文件并将文件内容输出到 shell 的容器中启动的，然后该容器停止并被删除。
+   结果就是，Docker 从“HelloWorld”映像创建了一个容器，并且 Docker 在该容器中启动了 cmd.exe 的实例，然后 cmd.exe 读取文件并将内容输出到 shell。 作为最后一步，Docker 停止了容器并将其删除。
 
 ## <a name="next-steps"></a>后续步骤
 
