@@ -57,7 +57,7 @@ Windows Server 容器映像使用情况通过读取该[版本](/windows-server/g
 
 ## <a name="can-i-run-windows-containers-in-process-isolated-mode-on-windows-10"></a>能否在 Windows 10 上以进程隔离模式运行 Windows 容器？
 
-从 Windows 10 2018 年 10 月版更新开始，可以运行实施了进程隔离的 Windows 容器，但在使用 `--isolation=process` 运行容器时，必须首先使用 `docker run` 标志直接请求进程隔离。 进程隔离在 Windows 10 专业版、Windows 10 企业版、Windows 10 IoT 核心版和 Windows 10 IoT 企业版上是兼容的。
+从 Windows 10 2018 年 10 月版更新开始，可以运行实施了进程隔离的 Windows 容器，但在使用 `docker run` 运行容器时，必须首先使用 `--isolation=process` 标志直接请求进程隔离。 进程隔离在 Windows 10 专业版、Windows 10 企业版、Windows 10 IoT 核心版和 Windows 10 IoT 企业版上是兼容的。
 
 如果要以这种方式运行 Windows 容器，则需确保主机运行的是 Windows 10 版本 17763+，并且你有一个引擎为 18.09 或更高版本的 Docker 版本。
 
