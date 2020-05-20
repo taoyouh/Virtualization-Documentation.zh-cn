@@ -96,7 +96,7 @@ Get-Command -Module hyper-v | Out-GridView
 以下示例演示如何在 PowerShell 集成脚本环境 (ISE) 中创建新的虚拟机。 这是一个简单示例，并可扩展为包含其他 PowerShell 功能以及更高级的 VM 部署。
 
 1. 若要打开 PowerShell ISE，请单击“开始”，键入 **PowerShell ISE**。
-2. 运行以下代码来创建虚拟机。 有关 [ 命令的详细信息，请参阅 ](https://docs.microsoft.com/powershell/module/hyper-v/new-vm?view=win10-ps)New-VM`New-VM` 文档。
+2. 运行以下代码来创建虚拟机。 有关 `New-VM` 命令的详细信息，请参阅 [New-VM](https://docs.microsoft.com/powershell/module/hyper-v/new-vm?view=win10-ps) 文档。
 
  ```powershell
   $VMName = "VMNAME"

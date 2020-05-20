@@ -36,4 +36,4 @@ Hyper-V 不支持 FAT/FAT32 格式化的磁盘驱动器，因为这些文件系�
 ## <a name="i-get-this-message-when-i-try-to-install-hyper-v-cannot-be-installed-the-processor-does-not-support-second-level-address-translation-slat"></a>在尝试安装时收到此消息：“无法安装 Hyper-V：处理器不支持二级地址转换 (SLAT)。”
 Hyper-V 需要使用 SLAT 才能运行虚拟机。 如果你的计算机不支持 SLAT，则它无法成为虚拟机的主机。
 
-如果仅尝试安装管理工具，请在“**程序和功能**” **“** 打开或关闭 Windows 功能 > ”中取消选择“**Hyper-V 平台**”。
+如果仅尝试安装管理工具，请在“**程序和功能**” > “**打开或关闭 Windows 功能**”中取消选择“**Hyper-V 平台**”。

@@ -184,9 +184,9 @@ docker system prune --volumes --all
 
 在 Windows 10 上卸载 Docker
 
-- 在 Windows 10 计算机上转到“设置” > “应用”  
+- 在 Windows 10 计算机上转到“设置” > “应用”
 - 在“应用和功能”下面，查找“适用于 Windows 的 Docker”  
-- 转到“适用于 Windows 的 Docker” > “卸载”  
+- 转到“适用于 Windows 的 Docker” > “卸载”
 
 在 Windows Server 2016 上卸载 Docker
 
@@ -223,7 +223,7 @@ Remove-Item "C:\ProgramData\Docker" -Recurse
 
 若要在 Windows 10 上删除 Windows 功能，请执行以下操作：
 
-- 转到“控制面板” > “程序” > “程序和功能” > “打开或关闭 Windows 功能。    
+- 转到“控制面板” > “程序” > “程序和功能” > “打开或关闭 Windows 功能。
 - 查找想要禁用的一项或多项功能的名称，在本例中为“容器”和（可选）“Hyper-V”。  
 - 取消选中要禁用的功能名称旁边的框。
 - 选择“确定” 
