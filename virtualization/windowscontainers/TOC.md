@@ -84,6 +84,7 @@
 ## [容器 OS 映像 EULA](Images_EULA.md)
 
 # 资源
+## [已知问题](manage-containers/known-issues.md)
 ## [容器示例](samples.md)
 ## [疑难解答](troubleshooting.md)
 ## [容器论坛](https://social.msdn.microsoft.com/Forums/home?forum=windowscontainers)
