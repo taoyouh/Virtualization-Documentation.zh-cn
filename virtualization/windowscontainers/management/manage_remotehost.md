@@ -10,7 +10,7 @@ ms.service: windows-containers
 ms.assetid: 0cc1b621-1a92-4512-8716-956d7a8fe495
 ms.openlocfilehash: 2e1fec6aa7149c801b1c72a0f8a346ca879015c2
 ms.sourcegitcommit: 16744984ede5ec94cd265b6bff20aee2f782ca88
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 02/18/2020
 ms.locfileid: "77439514"
@@ -23,7 +23,7 @@ ms.locfileid: "77439514"
 
 * 使用 [dockertls](https://hub.docker.com/r/stefanscherer/dockertls-windows/) 在服务器上创建证书。 如果要使用 IP 地址创建证书，可能需要考虑使用静态 IP，以免在 IP 地址更改时需要重新创建证书。
 
-* 重新启动 docker 服务 `Restart-Service Docker`
+* 重启 Docker 服务 `Restart-Service Docker`
 * 创建允许入站流量的 NSG 规则，使端口 docker 的 TLS 端口 2375 和 2376 可用。 请注意，要建立安全连接，你仅需允许 2376。  
   门户应该会显示 NSG 配置，如：  
   ![NGS](media/nsg.png)  
@@ -41,7 +41,7 @@ ker\client\key.pem ps
 ```
 
 
-## <a name="troubleshooting"></a>故障排除
+## <a name="troubleshooting"></a>疑难解答
 ### <a name="try-connecting-without-tls-to-determine-your-nsg-firewall-settings-are-correct"></a>请尝试不使用 TLS 进行连接，以确定你的 NSG 防火墙设置是否正确
 连接错误通常表明其自身出现错误，如：
 ```
