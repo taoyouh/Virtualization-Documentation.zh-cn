@@ -8,12 +8,12 @@ ms.topic: article
 ms.prod: windows-10-hyperv
 ms.service: windows-10-hyperv
 ms.assetid: 1ecb85a6-d938-4c30-a29b-d18bd007ba08
-ms.openlocfilehash: 63007d21fcc046f384405c7d85143bfc576ecc07
-ms.sourcegitcommit: 16ebc4f00773d809fae84845208bd1dcf08a889c
+ms.openlocfilehash: b287ea091ad283ddf57727f315c7086865375ce7
+ms.sourcegitcommit: e9b3c9dcf7b5c9b9222edbc344764fb038529739
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "81395750"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "84334097"
 ---
 # <a name="configure-nested-vms-to-communicate-with-resources-in-an-azure-virtual-network"></a>将嵌套 VM 配置为与 Azure 虚拟网络中的资源通信
 
@@ -49,7 +49,7 @@ ms.locfileid: "81395750"
 
 ## <a name="creating-the-host"></a>创建主机
 
-我将快速讲解一下那些取决于个人偏好的配置值，例如 VM 名称、资源组等。
+我将快速讲解一下取决于个人偏好的配置值，例如 VM 名称、资源组等。
 
 1. 导航到 portal.azure.com
 2. 单击左上的“创建资源”
@@ -124,7 +124,7 @@ ms.locfileid: "81395750"
 3. 在向导中选择“下一步”，选择“自定义配置”，然后选择“下一步”。
 4. 选中“NAT”和“LAN 路由”，接着选择“下一步”，然后选择“完成”。 如果它要求你启动服务，则执行该操作。
 5. 现在，导航到“IPv4”节点并展开它，使“NAT”节点可用。
-6. 右键单击“NAT”，选择“新建接口...”，接着选择“以太网”（这应该是你的 IP 为“10.0.0.4”的第一个 NIC），然后选择用于连接到 Internet 的“公共接口”并在该接口上启用 NAT。 
+6. 右键单击“NAT”，选择“新建接口…”，接着选择“以太网”（这应该是你的 IP 为“10.0.0.4”的第一个 NIC），然后选择用于连接到 Internet 的“公共接口”并在该接口上启用 NAT。 
 7. 现在，我们需要创建一些静态路由，强制将 LAN 流量发送到第二个 NIC。 若要执行此操作，请转到“IPv4”下的“静态路由”节点。
 8. 然后，我们将创建以下路由。
     * 路由 1
@@ -168,7 +168,8 @@ ms.locfileid: "81395750"
 8. 依次选择“关联”、“Nested-Fun”VNet、“Azure-VMs”子网、“确定”。
 9. 对于 Hyper-V 主机所在的子网以及需要访问嵌套 VM 的任何其他子网，请执行这个相同的过程。 如果已连接 
 
-# <a name="end-state-configuration-reference"></a>结束状态配置参考
+## <a name="end-state-configuration-reference"></a>结束状态配置参考
+
 本指南中的环境有以下配置。 本部分用作参考。
 
 1. Azure 虚拟网络信息。

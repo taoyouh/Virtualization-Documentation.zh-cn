@@ -3,12 +3,12 @@ title: 容器中的持久性存储
 description: Windows 容器如何持久存储
 keywords: 容器, 卷, 存储, 装载, 绑定挂载
 author: cwilhit
-ms.openlocfilehash: 945a78d4ecb9c96da4de8f7246f84b6b444dd5b5
-ms.sourcegitcommit: 1ca9d7562a877c47f227f1a8e6583cb024909749
+ms.openlocfilehash: 8bdf45a46f2e88a2206894f7d412cb93d4491cac
+ms.sourcegitcommit: 57b1c0931a464ad040a7af81b749c7d66c0bc899
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "74909667"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84421003"
 ---
 # <a name="persistent-storage-in-containers"></a>容器中的持久性存储
 
@@ -64,9 +64,9 @@ Docker 很好地概述了如何[使用卷](https://docs.docker.com/engine/admin/
     > [!NOTE]
     > 对容器使用 SMB 全局映射时，容器主机上的所有用户都可以访问远程共享。 在容器主机上运行的任何应用程序也将有权访问映射的远程共享。
 
-2. 创建容器，并将数据卷映射到全局装载的 SMB 共享  docker run -it --name demo -v g:\ContainerData:G:\AppData1 microsoft/windowsservercore:1709 cmd.exe
+2. 创建容器，并将数据卷映射到全局装载的 SMB 共享 docker run -it --name demo -v g:\ContainerData:c:\AppData1 mcr.microsoft.com/windows/servercore:ltsc2019 cmd.exe
 
-    在容器内部，G:\AppData1 将映射到远程共享的“ContainerData”目录。 存储在全局映射的远程共享上的任何数据都将能够供容器内的应用程序使用。 多个容器可以通过相同的命令获得对此共享数据的读/写访问权限。
+    在容器内部，c:\AppData1 然后将映射到远程共享的“ContainerData”目录。 存储在全局映射的远程共享上的任何数据都将能够供容器内的应用程序使用。 多个容器可以通过相同的命令获得对此共享数据的读/写访问权限。
 
 此 SMB 全局映射支持是 SMB 客户端功能，可以在任何兼容的 SMB 服务器上工作，包括：
 
