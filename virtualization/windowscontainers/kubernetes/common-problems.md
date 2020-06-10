@@ -7,12 +7,12 @@ ms.topic: troubleshooting
 ms.prod: containers
 description: 关于部署 Kubernetes 和加入 Windows 节点的常见问题的解决方案。
 keywords: kubernetes，1.14，linux，编译
-ms.openlocfilehash: dfb9be5bb5a5dd3507ee7266346634579df503c0
-ms.sourcegitcommit: 7f3d98da46c73e428565268683691f383c72221f
+ms.openlocfilehash: eb8162a55eb1a639cde40faed7b01a48f0c50ad3
+ms.sourcegitcommit: fed735dafbe40179b1e1c46840655248b52617b0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "84461605"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84614871"
 ---
 # <a name="troubleshooting-kubernetes"></a>Kubernetes 疑难解答 #
 此页面逐一介绍 Kubernetes 设置、网络和部署的一些常见问题。
@@ -57,7 +57,7 @@ Policy creation failed: hcnCreateLoadBalancer failed in Win32: The specified por
 若要解决此问题，可以采取几个步骤：
 1.  对于永久解决方案，kube 负载平衡应设置为[DSR 模式](https://techcommunity.microsoft.com/t5/Networking-Blog/Direct-Server-Return-DSR-in-a-nutshell/ba-p/693710)。 DSR 模式完全实现，并且仅在较新的[Windows Server 有问必答版本 18945](https://blogs.windows.com/windowsexperience/2019/07/30/announcing-windows-server-vnext-insider-preview-build-18945/#o1bs7T2DGPFpf7HM.97) （或更高版本）上可用。
 2. 作为一种解决方法，用户还可以使用命令（如）增加可用的临时端口的默认 Windows 配置 `netsh int ipv4 set dynamicportrange TCP <start_port> <port_count>` 。 *警告：* 覆盖默认的动态端口范围可能会对主机上依赖于非暂时范围可用的 TCP 端口的其他进程/服务产生影响，因此应仔细选择此范围。
-3. 使用智能端口池共享，对非 DSR 模式负载平衡器进行了伸缩性增强，计划通过第2020季度累积更新发布。
+3. 使用累积更新[KB4551853](https://support.microsoft.com/en-us/help/4551853)中包含的智能端口池共享来实现非 DSR 模式负载均衡器的可伸缩性增强功能。
 
 ### <a name="hostport-publishing-is-not-working"></a>HostPort 发布不起作用 ###
 若要使用 HostPort 功能，请确保 CNI 插件为[0.8.6 以上](https://github.com/containernetworking/plugins/releases/tag/v0.8.6)版本或更高版本，并且 CNI 配置文件具有 `portMappings` 以下功能：
