@@ -26,7 +26,7 @@
 ### [使用 Windows 容器和 Azure 应用服务迁移 ASP.NET 应用](/azure/app-service/app-service-web-tutorial-windows-containers-custom-fonts)
 ## Windows 上的 Linux 容器
 ### [概述](deploy-containers/linux-containers.md)
-### [运行第一个 LCOW 容器](quick-start/quick-start-windows-10-linux.md)
+### [运行你的第一个 Linux 容器](quick-start/quick-start-windows-10-linux.md)
 ## 将容器与 Windows 预览体验计划配合使用
 ### [概述](deploy-containers/insider-overview.md)
 
