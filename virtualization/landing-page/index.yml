@@ -1,0 +1,107 @@
+### YamlMime:Hub
+title: 虚拟化文档
+summary: 查看 Windows 10 和 Windows Server 上的虚拟化的相关信息，包括运行虚拟机 (VM) 和容器的方式。
+brand: windows
+metadata:
+  title: 虚拟化文档
+  description: 查看 Windows 10 和 Windows Server 上的虚拟化的相关信息，包括运行虚拟机 (VM) 和容器的方式。
+  services: virtual-machines-windows
+  ms.service: virtual-machines-windows
+  ms.topic: hub-page
+  author: scooley
+  ms.prod: virtualization
+  ms.date: 03/31/2017
+  ms.assetid: addcfda8-1522-4137-bc02-14cbb1ff838f
+  ms.openlocfilehash: aaa36adcd6be5b54143ec038ae70abeaf29b5772
+  ms.sourcegitcommit: 87962cedf7a9e3425042255718cab9277f41532f
+  ms.translationtype: HT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 06/19/2020
+  ms.locfileid: "85092349"
+highlightedContent:
+  items:
+  - title: Windows 10 上的 Hyper-V
+    itemType: overview
+    url: /virtualization/hyper-v-on-windows/about/
+  - title: 在 Windows 10 上安装 Hyper-V
+    itemType: how-to-guide
+    url: /virtualization/hyper-v-on-windows/quick-start/enable-hyper-v
+  - title: Windows Server 上的 Hyper-V
+    itemType: overview
+    url: /windows-server/virtualization/hyper-v/hyper-v-technology-overview
+  - title: Windows 和容器
+    itemType: overview
+    url: /virtualization/windowscontainers/about/
+  - title: 开始在 Windows 上使用容器
+    itemType: how-to-guide
+    url: /virtualization/windowscontainers/quick-start/set-up-environment?tabs=Windows-10-Client
+conceptualContent:
+  items:
+  - title: 在 Windows 10 上运行虚拟机
+    links:
+    - url: /virtualization/hyper-v-on-windows/quick-start/quick-create-virtual-machine
+      itemType: quickstart
+      text: 创建虚拟机
+    - url: /virtualization/hyper-v-on-windows/reference/hyper-v-requirements
+      itemType: overview
+      text: 系统要求
+  - title: 在 Windows Server 上运行虚拟机
+    links:
+    - url: /windows-server/virtualization/hyper-v/system-requirements-for-hyper-v-on-windows
+      itemType: overview
+      text: 系统要求
+    - url: /windows-server/virtualization/hyper-v/get-started/install-the-hyper-v-role-on-windows-server
+      itemType: get-started
+      text: 安装 Hyper-V 角色
+    - url: /windows-server/virtualization/hyper-v/get-started/create-a-virtual-switch-for-hyper-v-virtual-machines
+      itemType: how-to-guide
+      text: 创建虚拟网络交换机
+  - title: 在 Windows 或 Azure 上运行容器
+    links:
+    - url: https://www.docker.com/docker-windows
+      itemType: overview
+      text: 获取适用于 Windows 的 Docker Desktop
+    - url: https://azure.microsoft.com/services/kubernetes-service/
+      itemType: overview
+      text: Azure Kubernetes 服务 (AKS)
+  - title: HYPER-V 管理工具
+    links:
+    - url: /windows-server/manage/windows-admin-center/use/manage-virtual-machines
+      itemType: how-to-guide
+      text: Windows Admin Center
+    - url: https://docs.microsoft.com/system-center/vmm/overview
+      itemType: overview
+      text: System Center Virtual Machine Manager
+    - url: https://docs.microsoft.com/powershell/module/hyper-v/index?view=win10-ps
+      itemType: reference
+      text: PowerShell
+  - title: Hyper-V 内部结构
+    links:
+    - url: /virtualization/hyper-v-on-windows/reference/hyper-v-architecture
+      itemType: reference
+      text: Hyper-V 体系结构
+    - url: /virtualization/api/index
+      itemType: reference
+      text: Windows 虚拟机监控程序平台
+    - url: /virtualization/hyper-v-on-windows/reference/tlfs
+      itemType: reference
+      text: 虚拟机监控程序规范
+  - title: 社区
+    links:
+    - url: https://insider.windows.com
+      itemType: overview
+      text: 加入 Windows 预览体验计划
+    - url: https://social.technet.microsoft.com/Forums/en-US/home?forum=winserverhyperv
+      itemType: reference
+      text: Hyper-V 论坛
+  - title: Hyper-V Server 和文档存档
+    links:
+    - url: https://www.microsoft.com/evalcenter/evaluate-hyper-v-server-2019
+      itemType: download
+      text: 下载 Hyper-V Server 2019
+    - url: https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/mt169373(v=ws.11)
+      itemType: overview
+      text: Windows Server 2012 R2 和 2012
+    - url: https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc753637(v=ws.10)
+      itemType: overview
+      text: Windows Server 2008 R2
