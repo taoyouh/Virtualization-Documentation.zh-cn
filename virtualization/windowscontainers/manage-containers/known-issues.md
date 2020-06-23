@@ -6,12 +6,12 @@ author: weijuans
 ms. author: weijuans
 manager: taylob
 ms.date: 05/26/2020
-ms.openlocfilehash: e1c461a1f28954fb558f0629e0fafd4a7934ca14
-ms.sourcegitcommit: 564a9226064077998020bfae721a17a8e0d9142e
+ms.openlocfilehash: f53ff0c8c07e86b25358a3acba09622fdd3a6bbb
+ms.sourcegitcommit: 82f45088d8b39e2c1f3f2a33bf359d18a88f975a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "84106887"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84978329"
 ---
 # <a name="known-issues"></a>已知问题
 
@@ -24,8 +24,13 @@ ms.locfileid: "84106887"
 
 如果你使用服务器核心容器映像来构建自己的映像并上传到远程容器注册表（如 Azure 容器注册表），然后你从注册表拉取该映像并运行它，你会发现容器的运行速度变慢了。 但是，如果在本地构建和运行映像，则不会观察到性能差异。
 
-后续步骤：我们确定了一些可能的根本原因，并在积极解决此问题。  
+我们已找到该问题的根本原因，且正在努力解决它。 可查找以下链接，它们用于跟踪问题：[microsoft/hcsshim#830](https://github.com/microsoft/hcsshim/issues/830)；
 
+[moby/moby#41066](https://github.com/moby/moby/issues/41066)；
+
+[containerd/containerd#4301](https://github.com/containerd/containerd/issues/4301)。
+
+我们还在合作伙伴 Mirantis 积极合作，力图在 Docker EE 中加入该修补程序。
 
 ## <a name="know-issues-of-windows-server-version-1909"></a>Windows Server 版本 1909 的已知问题
 
