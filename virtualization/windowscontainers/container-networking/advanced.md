@@ -4,20 +4,20 @@ description: Windows 容器高级网络。
 keywords: docker, 容器
 author: jmesser81
 ms.date: 03/27/2018
-ms.topic: article
+ms.topic: how-to
 ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: 538871ba-d02e-47d3-a3bf-25cda4a40965
-ms.openlocfilehash: deea1bfbcd3032f52a6912eb0c36ba467d8b9a9c
-ms.sourcegitcommit: 1ca9d7562a877c47f227f1a8e6583cb024909749
+ms.openlocfilehash: 5278d1d0aefadf81905c843609e1c922f5ca446a
+ms.sourcegitcommit: 1bafb5de322763e7f8b0e840b96774e813c39749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "74910707"
+ms.lasthandoff: 06/22/2020
+ms.locfileid: "85192684"
 ---
 # <a name="advanced-network-options-in-windows"></a>Windows 中的高级网络选项
 
-系统支持多个网络驱动程序选项，以便充分利用特定于 Windows 的功能和特性。 
+系统支持多个网络驱动程序选项，以便充分利用特定于 Windows 的功能和特性。
 
 ## <a name="switch-embedded-teaming-with-docker-networks"></a>交换机嵌入式组合与 Docker 网络
 
@@ -46,7 +46,7 @@ C:\> docker network create -d transparent -o com.docker.network.windowsshim.vlan
 
 > 适用于 l2bridge 网络
 
-通常情况下，当你使用 `docker network create`创建 `l2bridge` 容器网络时，容器终结点没有应用 HNS OutboundNAT 策略，导致容器无法访问外部世界。 如果创建的是网络，则可以使用 `-o com.docker.network.windowsshim.enable_outboundnat=<true|false>` 选项应用 OutboundNAT HNS 策略，以使容器能够访问外界：
+通常，当你使用创建 `l2bridge` 容器网络时， `docker network create` 容器终结点没有应用 HNS OutboundNAT 策略，导致容器无法访问外部。 如果创建的是网络，则可以使用 `-o com.docker.network.windowsshim.enable_outboundnat=<true|false>` 选项应用 OUTBOUNDNAT HNS 策略，以使容器能够访问外界：
 
 ```
 C:\> docker network create -d l2bridge -o com.docker.network.windowsshim.enable_outboundnat=true MyL2BridgeNetwork
@@ -60,7 +60,7 @@ C:\> docker network create -d l2bridge -o com.docker.network.windowsshim.enable_
 
 ## <a name="specify-the-name-of-a-network-to-the-hns-service"></a>为 HNS 服务指定网络名称
 
-> 适用于所有网络驱动程序 
+> 适用于所有网络驱动程序
 
 一般情况下，当你使用 `docker network create` 创建容器网络时，你提供的网络名称将由 Docker 服务使用，而不是由 HNS 服务使用。 如果你要创建网络，你可以使用选项 `-o com.docker.network.windowsshim.networkname=<network name>` 为 `docker network create` 命令指定由 HNS 服务提供的名称。 例如，可以采用以下命令，用为 HNS 服务指定的名称创建透明网络：
 
@@ -70,7 +70,7 @@ C:\> docker network create -d transparent -o com.docker.network.windowsshim.netw
 
 ## <a name="bind-a-network-to-a-specific-network-interface"></a>将网络绑定到特定网络接口
 
-> 适用于除“nat”之外的所有网络驱动程序  
+> 适用于除“nat”之外的所有网络驱动程序
 
 要将网络（通过 Hyper-V 虚拟交换机连接）绑定到特定网络接口，请对 `docker network create` 命令使用选项 `-o com.docker.network.windowsshim.interface=<Interface>`。 例如，可以使用以下命令创建连接到“以太网 2”网络接口的透明网络：
 
@@ -86,7 +86,7 @@ PS C:\> Get-NetAdapter
 
 ## <a name="specify-the-dns-suffix-andor-the-dns-servers-of-a-network"></a>指定网络的 DNS 后缀和/或 DNS 服务器
 
-> 适用于所有网络驱动程序 
+> 适用于所有网络驱动程序
 
 使用选项 `-o com.docker.network.windowsshim.dnssuffix=<DNS SUFFIX>` 指定网络的 DNS 后缀，使用选项 `-o com.docker.network.windowsshim.dnsservers=<DNS SERVER/S>` 指定网络的 DNS 服务器。 例如，你可以使用以下命令将网络的 DNS 后缀设置为“example.com”，将网络的 DNS 服务器设置为 4.4.4.4 和 8.8.8.8：
 
@@ -96,12 +96,12 @@ C:\> docker network create -d transparent -o com.docker.network.windowsshim.dnss
 
 ## <a name="vfp"></a>VFP
 
-有关更多信息，请参阅[此文章](https://www.microsoft.com/research/project/azure-virtual-filtering-platform/)。
+请参阅[本文](https://www.microsoft.com/research/project/azure-virtual-filtering-platform/)，了解详细信息。
 
 ## <a name="tips--insights"></a>提示和见解
 下面是好用的提示和见解的列表，这些内容的灵感源于我们从社区中听到的关于 Windows 容器网络的常见问题…
 
-#### <a name="hns-requires-that-ipv6-is-enabled-on-container-host-machines"></a>HNS 要求在容器主机上启用 IPv6 
+#### <a name="hns-requires-that-ipv6-is-enabled-on-container-host-machines"></a>HNS 要求在容器主机上启用 IPv6
 在 [KB4015217](https://support.microsoft.com/help/4015217/windows-10-update-kb4015217) 中，HNS 要求在 Windows 容器主机上启用 IPv6。 如果你遇到错误，如以下错误，则可能是在主机上禁用了 IPv6。
 ```
 docker: Error response from daemon: container e15d99c06e312302f4d23747f2dfda4b11b92d488e8c5b53ab5e4331fd80636d encountered an error during CreateContainer: failure in a Windows system call: Element not found.
@@ -118,7 +118,7 @@ C:\> reg delete HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip6\Para
 **新建：** 我们正在努力实现在_无 Moby Linux 虚拟机_的情况下并行运行 Linux 和 Windows 容器。 有关详细信息，请参阅此[关于 Windows 上的 Linux 容器 (LCOW) 的博客文章](https://blog.docker.com/2017/11/docker-for-windows-17-11/)。 下面是如何[开始](https://docs.microsoft.com/virtualization/windowscontainers/quick-start/quick-start-windows-10-linux)操作。
 > 注意：LCOW 将弃用 Moby Linux 虚拟机，并且它将使用默认的 HNS“nat”内部 vSwitch。
 
-#### <a name="moby-linux-vms-use-dockernat-switch-with-docker-for-windows-a-product-of-docker-cehttpswwwdockercomcommunity-edition"></a>Moby Linux 虚拟机将 DockerNAT 交换机与适用于 Windows 的 Docker（[Docker CE](https://www.docker.com/community-edition) 的产品）配合使用
+#### <a name="moby-linux-vms-use-dockernat-switch-with-docker-for-windows-a-product-of-docker-ce"></a>Moby Linux 虚拟机将 DockerNAT 交换机与适用于 Windows 的 Docker（[Docker CE](https://www.docker.com/community-edition) 的产品）配合使用
 
 Windows 10 上适用于 Windows 的 Docker（Docker CE 引擎的 Windows 驱动程序）将使用名为“DockerNAT”的内部 vSwitch，以将 Moby Linux 虚拟机连接到容器主机。 在 Windows 上使用 Moby Linux 虚拟机的开发人员应该知道他们的主机使用的是 DockerNAT vSwitch，而不是由 HNS 服务创建的“nat”vSwitch（这是用于 Windows 容器的默认交换机）。
 
@@ -137,7 +137,7 @@ PS C:\> Get-VMNetworkAdapter -VMName ContainerHostVM | Set-VMNetworkAdapter -Mac
 如果希望创建多个透明网络，则必须指定外部 Hyper-V 虚拟交换机应绑定到的（虚拟）网络适配器。 若要指定网络接口，请使用以下语法：
 ```
 # General syntax:
-C:\> docker network create -d transparent -o com.docker.network.windowsshim.interface=<INTERFACE NAME> <NETWORK NAME> 
+C:\> docker network create -d transparent -o com.docker.network.windowsshim.interface=<INTERFACE NAME> <NETWORK NAME>
 
 # Example:
 C:\> docker network create -d transparent -o com.docker.network.windowsshim.interface="Ethernet 2" myTransparent2
@@ -158,22 +158,22 @@ C:\> docker run -it --network=MyTransparentNet --ip=10.123.174.105 windowsserver
 使用 l2bridge 驱动程序创建的容器网络仅支持静态 IP 分配。 如上所述，请记住使用 *--subnet* 和 *--gateway* 参数来创建为静态 IP 分配配置的网络。
 
 #### <a name="networks-that-leverage-external-vswitch-must-each-have-their-own-network-adapter"></a>利用外部 vSwitch 的网络均须具有自己的网络适配器
-请注意，如果在同一容器主机上创建了使用外部 vSwitch 进行连接的多个网络（例如，透明、L2 桥接、L2 透明网络），则每个网络都需要具有自己的网络适配器。 
+请注意，如果在同一容器主机上创建了使用外部 vSwitch 进行连接的多个网络（例如，透明、L2 桥接、L2 透明网络），则每个网络都需要具有自己的网络适配器。
 
 #### <a name="ip-assignment-on-stopped-vs-running-containers"></a>已停止与正在运行的容器上的 IP 分配
 静态 IP 分配直接在容器的网络适配器上执行，并且必须仅当容器处于已停止状态时执行。 容器运行时，（Windows Server 2016 中）不支持“热添加”容器网络适配器或更改网络堆栈。
 
 #### <a name="existing-vswitch-not-visible-to-docker-can-block-transparent-network-creation"></a>现有 vSwitch（对 Docker 不可见）可以阻止创建透明网络
-如果创建透明网络出错，可能是未经 Docker 自动发现的系统上存在外部 vSwitch，因而使得透明网络无法绑定到容器主机的外部网络适配器。 
+如果创建透明网络出错，可能是未经 Docker 自动发现的系统上存在外部 vSwitch，因而使得透明网络无法绑定到容器主机的外部网络适配器。
 
-创建透明网络时，Docker 首先创建网络的外部 vSwitch，然后尝试将交换机绑定到（外部）网络适配器 - 该适配器可以是 VM 网络适配器或物理网络适配器。 如果已在容器主机上创建 vSwitch，*且对 Docker 可见*，Windows Docker 引擎将使用该交换机，而不是重新创建一个。 但是，如果该 vSwitch 创建于带外（即在容器主机上使用 HYper-V 管理器或 PowerShell 创建）并且对 Docker 不可见，Windows Docker 引擎将尝试创建一个新的 vSwitch，从而无法将新交换机连接到容器主机外部网络适配器（因为网络适配器已经连接到创建于带外的交换机）。
+创建透明网络时，Docker 首先创建网络的外部 vSwitch，然后尝试将交换机绑定到（外部）网络适配器 - 该适配器可以是 VM 网络适配器或物理网络适配器。 如果已在容器主机上创建 vSwitch，且对 Docker 可见**，Windows Docker 引擎将使用该交换机，而不是重新创建一个。 但是，如果该 vSwitch 创建于带外（即在容器主机上使用 HYper-V 管理器或 PowerShell 创建）并且对 Docker 不可见，Windows Docker 引擎将尝试创建一个新的 vSwitch，从而无法将新交换机连接到容器主机外部网络适配器（因为网络适配器已经连接到创建于带外的交换机）。
 
 例如，如果在 Docker 服务运行期间首先在主机上创建新的 vSwitch，然后尝试创建透明网络，则会出现此问题。 在此情况下，Docker 无法识别创建的交换机，并会为透明网络创建新的 vSwitch。
 
 解决此问题的方法有三种：
 
 * 当然，可以删除带外创建的 vSwitch，这将允许 Docker 创建新的 vSwitch 并将其顺利连接到主机网络适配器。 选择此方法前，请确保其他服务（如 Hyper-V）未使用带外 vSwitch。
-* 或者，如果决定使用创建于带外的外部 vSwitch，请重启 Docker 和 HNS 服务以*使交换机对 Docker 可见。*
+* 或者，如果决定使用创建于带外的外部 vSwitch，请重启 Docker 和 HNS 服务以使交换机对 Docker 可见。**
 ```
 PS C:\> restart-service hns
 PS C:\> restart-service docker
@@ -181,7 +181,7 @@ PS C:\> restart-service docker
 * 另一种方法是使用“-o com.docker.network.windowsshim.interface”选项以将透明网络的外部 vSwitch 绑定到未在容器主机上使用的特定网络适配器（即，除带外创建的 vSwitch 使用的其他网络适配器）。 本文档的 "[在单个容器主机上创建多个透明网络](advanced.md#creating-multiple-transparent-networks-on-a-single-container-host)" 部分进一步介绍了 "-o" 选项。
 
 
-## <a name="windows-server-2016-work-arounds"></a>Windows Server 2016 解决方法 
+## <a name="windows-server-2016-work-arounds"></a>Windows Server 2016 解决方法
 
 虽然我们会继续添加新功能并促进开发，但是其中一些功能将不会向后移植到旧版平台。 而最佳行动计划是获取 Windows 10 和 Windows Server 的最新更新。  以下部分列出了适用于 Windows Server 2016 和旧版本的 Windows 10（即 1704 创意者更新之前的版本）的一些解决方法和注意事项
 

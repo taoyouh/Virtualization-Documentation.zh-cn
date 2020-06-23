@@ -3,24 +3,24 @@ title: 编译 Kubernetes 二进制文件
 author: gkudra-msft
 ms.author: gekudray
 ms.date: 11/02/2018
-ms.topic: get-started-article
+ms.topic: how-to
 ms.prod: containers
 description: 编译和交叉编译源中的 Kubernetes 二进制文件。
 keywords: kubernetes，1.12，linux，编译
-ms.openlocfilehash: 40bf7e65a8910cdab095abb269aa0a92508189cd
-ms.sourcegitcommit: 1ca9d7562a877c47f227f1a8e6583cb024909749
+ms.openlocfilehash: a0c9ed6ef0872e19de49fa97f4727b6e0e09ed43
+ms.sourcegitcommit: 1bafb5de322763e7f8b0e840b96774e813c39749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "74909867"
+ms.lasthandoff: 06/22/2020
+ms.locfileid: "85192344"
 ---
 # <a name="compiling-kubernetes-binaries"></a>编译 Kubernetes 二进制文件 #
 编译 Kubernetes 需要有效的 Go 环境。 此页面将逐一介绍编译 Linux 二进制文件和交叉编译 Windows 二进制文件的一些方法。
-> [!NOTE] 
+> [!NOTE]
 > 此页面完全是自愿的，仅包含在想要试验最新 & 最新源代码的相关 Kubernetes 开发人员。
 
 > [!tip]
-> 若要接收有关可订阅[@kubernetes-announce](https://groups.google.com/forum/#!forum/kubernetes-announce)的最新开发的通知。
+> 接收有关可订阅的最新开发的通知 [@kubernetes-announce](https://groups.google.com/forum/#!forum/kubernetes-announce) 。
 
 ## <a name="installing-go"></a>安装 Go ##
 为简单起见，Go 将安装在临时的自定义位置：
@@ -35,7 +35,7 @@ export GOPATH="$HOME/gopath"
 export PATH="$GOROOT/bin:$PATH"
 ```
 
-> [!Note]  
+> [!Note]
 > 这将设置你的会话环境变量。 将 `export` 添加到你的 `~/.profile` 中以进行永久设置。
 
 运行 `go env` 以确保已正确设置路径。 以下是一些用于生成 Kubernetes 二进制文件的选项：
@@ -48,17 +48,17 @@ export PATH="$GOROOT/bin:$PATH"
 
 
 ## <a name="building-locally"></a>本地生成 ##
-> [!Tip]  
-> 如果你遇到“权限被拒绝”错误，则可以按照 [`acs-engine`](https://github.com/Azure/acs-engine/blob/master/scripts/build-windows-k8s.sh#L176) 中的注释先生成 Linux `kubelet` 来避免这些错误：
->  
-> _由于似乎是 Kubernetes Windows 生成系统中的 bug，因此必须首先构建 Linux 二进制文件来生成 `_output/bin/deepcopy-gen`。如果生成到 Windows，则执行此操作将生成空 `deepcopy-gen`。_
+> [!Tip]
+> 如果遇到 "权限被拒绝" 错误，可以根据 `kubelet` 中的说明，通过构建 Linux 来避免这些错误 [`acs-engine`](https://github.com/Azure/acs-engine/blob/master/scripts/build-windows-k8s.sh#L176) ：
+>
+> _由于似乎是 Kubernetes Windows 生成系统中的 bug，因此必须先生成 Linux 二进制文件才能生成 `_output/bin/deepcopy-gen` 。如果生成到 Windows，则执行此操作将生成一个空的 `deepcopy-gen` 。_
 
 首先，检索 Kubernetes 存储库：
 
 ```bash
 KUBEREPO="k8s.io/kubernetes"
 go get -d $KUBEREPO
-# Note: the above command may spit out a message about 
+# Note: the above command may spit out a message about
 #       "no Go files in...", but it can be safely ignored!
 cd $GOPATH/src/$KUBEREPO
 ```
@@ -96,8 +96,8 @@ git clone https://github.com/kubernetes/kubernetes.git ${SRC_DIR}
 cd ${SRC_DIR}
 git checkout tags/v1.12.2
 KUBE_BUILD_PLATFORMS=linux/amd64   build/run.sh make WHAT=cmd/kubelet
-KUBE_BUILD_PLATFORMS=windows/amd64 build/run.sh make WHAT=cmd/kubelet 
-KUBE_BUILD_PLATFORMS=windows/amd64 build/run.sh make WHAT=cmd/kube-proxy 
+KUBE_BUILD_PLATFORMS=windows/amd64 build/run.sh make WHAT=cmd/kubelet
+KUBE_BUILD_PLATFORMS=windows/amd64 build/run.sh make WHAT=cmd/kube-proxy
 cp _output/dockerized/bin/windows/amd64/kube*.exe ${DIST_DIR}
 
 ls ${DIST_DIR}

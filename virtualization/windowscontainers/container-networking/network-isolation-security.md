@@ -4,18 +4,18 @@ description: Windows 容器内的网络隔离和安全。
 keywords: docker, 容器
 author: jmesser81
 ms.date: 03/27/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: windows-containers
 ms.service: windows-containers
 ms.assetid: 538871ba-d02e-47d3-a3bf-25cda4a40965
-ms.openlocfilehash: d5081104f1614a91d6441a5e879a439f1df1bf77
-ms.sourcegitcommit: 16744984ede5ec94cd265b6bff20aee2f782ca88
+ms.openlocfilehash: 78f9240ccb184b182247617aba116d6ac5533a02
+ms.sourcegitcommit: 1bafb5de322763e7f8b0e840b96774e813c39749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/18/2020
-ms.locfileid: "77439284"
+ms.lasthandoff: 06/22/2020
+ms.locfileid: "85192084"
 ---
-# <a name="network-isolation-and-security"></a>网络隔离和安全
+# <a name="network-isolation-and-security"></a>网络隔离和安全性
 
 ## <a name="isolation-with-network-namespaces"></a>与网络命名空间隔离
 
@@ -27,7 +27,7 @@ ms.locfileid: "77439284"
 Get-NetCompartment
 ```
 
-## <a name="network-security"></a>网络安全性
+## <a name="network-security"></a>网络安全
 
 根据所使用的容器和网络驱动程序，系统会结合 Windows 防火墙和 [VFP](https://www.microsoft.com/research/project/azure-virtual-filtering-platform/) 来强制执行端口 ACL。
 
@@ -67,6 +67,6 @@ Get-NetCompartment
 | -------------- |-------------------------- | ------------------- |
 | 透明 | Windows 防火墙 | X |
 | NAT | Windows 防火墙 | X |
-| L2Bridge | 两者同时 | VFP |
-| L2Tunnel | 两者同时 | VFP |
-| 覆盖  | 两者同时 | VFP |
+| L2Bridge | 推送、请求和匿名 | VFP |
+| L2Tunnel | 推送、请求和匿名 | VFP |
+| 覆盖  | 推送、请求和匿名 | VFP |
