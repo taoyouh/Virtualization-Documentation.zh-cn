@@ -41,7 +41,7 @@ ms.locfileid: "80929983"
 - [Hyper-V](https://docs.microsoft.com/virtualization/hyper-v-on-windows/reference/hyper-v-requirements) 应已启用。
 
 > [!NOTE]
->  从 Windows 10 的 2018 年 10 月更新版开始，我们不再允许用户在 Windows 10 企业版或专业版上以进程隔离模式运行 Windows 容器进行开发/测试。 有关详细信息，请参阅[常见问题解答](../about/faq.md)。 
+>  从 Windows 10 的 2018 年 10 月更新版开始，我们不再禁止用户在 Windows 10 企业版或专业版上以进程隔离模式运行 Windows 容器进行开发/测试。 有关详细信息，请参阅[常见问题解答](../about/faq.md)。 
 > 
 > Windows Server 容器在 Windows 10 上默认使用 Hyper-V 隔离，为开发人员提供在生产中使用的相同内核版本和配置。 有关 Hyper-V 隔离的详细信息，请参阅文档的[概念](../manage-containers/hyperv-container.md)部分。
 
